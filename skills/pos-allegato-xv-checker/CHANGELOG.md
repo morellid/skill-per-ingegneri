@@ -22,13 +22,25 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   - `examples/incompleto-voci-mancanti/` - POS con 11 problemi (3 assenze, 5 inadeguatezze, 3 note medie)
   - Ogni esempio ha input.md (POS sintetico), expected-output.md (output atteso), note.md (razionale dominio)
 
-### Da fare (prossime iterazioni)
-- Completare contenuto di `check-coerenza-rischi.md`, `check-costi-sicurezza.md`, `check-coordinamento.md`
-- Esempi aggiuntivi: caso borderline-boilerplate, caso con PSC mancante
-- Validazione Livello 1 completa con test reale su caso d'uso
-- Individuare validatore di dominio per Livello 2 (potenziale: Fabrizio Vitale per aspetti RSPP/art. 96)
-- Valutare e catalogare interpelli rilevanti (INTERPELLO 25/2014, 13/2016)
-- Testare la skill su POS reale (con consenso) per verificare che l'output atteso sia effettivamente cio' che produce
+### Added (2026-04-25, terzo batch - task completi)
+- `tasks/check-coerenza-rischi.md` completo con tassonomia rischi/misure e prontuario matching
+- `tasks/check-costi-sicurezza.md` completo con verifica 7 categorie 4.1.1 e metodologia 4.1.3
+- `tasks/check-coordinamento.md` completo con verifica riferimenti PSC/CSE, altre imprese, interferenze, art. 96/97
+- 6 esempi aggiuntivi (1 conforme + 1 non conforme per ciascuno dei 3 task nuovi):
+  - `coerenza-buona-demolizioni/`, `coerenza-incoerente-boilerplate/`
+  - `costi-analitico-corretto/`, `costi-boilerplate-non-conforme/`
+  - `coordinamento-affidataria-strutturato/`, `coordinamento-generico-lacunoso/`
+
+### Stato complessivo
+- Tutti i 4 task operativi con procedura dettagliata
+- 8 esempi totali (2 per ciascun task)
+- Skill pronta per prima validazione su caso reale
+
+### Da fare (post v0.1 alpha)
+- Validazione Livello 2 con un ingegnere di dominio esterno
+- Test su almeno 1 POS reale con consenso del firmatario
+- Catalogare interpelli rilevanti (INTERPELLO 25/2014 costi manutenzione, 13/2016 piattaforma elevabile)
+- Consolidare in v0.2.0 dopo feedback primi usi
 
 ## [0.1.0-alpha] - 2026-04-25
 
