@@ -16,12 +16,19 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `tasks/check-completezza.md` completato con procedura operativa basata sul testo Allegato XV 3.2.1
 - Portale Normattiva dichiarato come fonte di cross-check autoritativo
 
+### Added (2026-04-25, secondo batch)
+- Esempi di test per `check-completezza.md`:
+  - `examples/conforme-cantiere-piccolo/` - POS ben redatto, piccola impresa, ristrutturazione
+  - `examples/incompleto-voci-mancanti/` - POS con 11 problemi (3 assenze, 5 inadeguatezze, 3 note medie)
+  - Ogni esempio ha input.md (POS sintetico), expected-output.md (output atteso), note.md (razionale dominio)
+
 ### Da fare (prossime iterazioni)
 - Completare contenuto di `check-coerenza-rischi.md`, `check-costi-sicurezza.md`, `check-coordinamento.md`
-- Aggiungere almeno 2 esempi in `examples/` (conforme + incompleto)
-- Validazione Livello 1 (self-check + `scripts/validate.sh`)
+- Esempi aggiuntivi: caso borderline-boilerplate, caso con PSC mancante
+- Validazione Livello 1 completa con test reale su caso d'uso
 - Individuare validatore di dominio per Livello 2 (potenziale: Fabrizio Vitale per aspetti RSPP/art. 96)
 - Valutare e catalogare interpelli rilevanti (INTERPELLO 25/2014, 13/2016)
+- Testare la skill su POS reale (con consenso) per verificare che l'output atteso sia effettivamente cio' che produce
 
 ## [0.1.0-alpha] - 2026-04-25
 
