@@ -1,0 +1,29 @@
+schema_version: 1
+skill: SKILL_NAME_PLACEHOLDER
+last_verified: YYYY-MM-DD
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
+#   url: URL canonico della fonte
+#   accessed: data consultazione (YYYY-MM-DD)
+#   sha256: hash SHA256 del file binario scaricato
+#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
+#   binary_path: path del binario in locale (fuori repo), oppure null
+#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null se non embedabile
+#   notes: note libere
+
+sources:
+  # Esempio (sostituire con fonti reali)
+  - id: esempio-dlgs
+    title: "D.Lgs. N/YYYY - Titolo completo"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/...
+    accessed: YYYY-MM-DD
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/esempio-dlgs.pdf
+    excerpt_path: references/estratti/esempio-dlgs.md
+    notes: |
+      Note sulla consultazione, ambito applicativo, versione consolidata.

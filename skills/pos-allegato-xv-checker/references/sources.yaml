@@ -1,0 +1,62 @@
+schema_version: 1
+skill: pos-allegato-xv-checker
+last_verified: 2026-04-25
+
+# Questo file elenca le fonti normative usate dalla skill.
+# Da completare con hash e percorsi reali in sessione di sviluppo dedicata.
+
+sources:
+  - id: dlgs-81-2008-consolidato
+    title: "D.Lgs. 9 aprile 2008 n. 81 - Testo consolidato sulla sicurezza sul lavoro"
+    type: decreto-legislativo
+    url: https://www.gazzettaufficiale.it/eli/id/2008/04/30/008G0104/sg
+    accessed: TBD
+    sha256: TBD
+    license: public-domain
+    binary_path: not_in_repo/dlgs-81-2008-consolidato.pdf
+    excerpt_path: references/estratti/dlgs-81-2008-art-96-100.md
+    notes: |
+      Testo consolidato con modifiche successive alla data di consultazione.
+      Articoli rilevanti per questa skill: 89 (definizioni), 96 (obblighi datori di lavoro imprese esecutrici),
+      100 (PSC), Allegato XV (contenuti minimi POS e PSC).
+
+  - id: allegato-xv-dlgs-81-2008
+    title: "D.Lgs. 81/2008 Allegato XV - Contenuti minimi dei piani di sicurezza nei cantieri temporanei o mobili"
+    type: allegato-normativo
+    parent: dlgs-81-2008-consolidato
+    url: https://www.gazzettaufficiale.it/eli/id/2008/04/30/008G0104/sg
+    accessed: TBD
+    sha256: TBD
+    license: public-domain
+    binary_path: not_in_repo/allegato-xv-dlgs-81.pdf
+    excerpt_path: references/estratti/allegato-xv-testo.md
+    notes: |
+      Allegato che definisce in dettaglio la struttura e i contenuti minimi obbligatori di PSC e POS.
+      Punto 3 (POS), punto 4 (stima costi), punto 2 (PSC - utile per confronto).
+
+  # Linee guida / fonti di supporto da valutare
+  - id: inail-linee-guida-pos
+    title: "INAIL - Linee guida per la redazione del POS (da identificare pubblicazione corrente)"
+    type: linea-guida
+    url: TBD
+    accessed: TBD
+    sha256: TBD
+    license: TBD
+    binary_path: null
+    excerpt_path: null
+    notes: |
+      Da verificare pubblicazione piu' recente di INAIL. Se presente, integra operativamente
+      i contenuti normativi obbligatori con esempi di buona pratica.
+
+  - id: cni-circolari-sicurezza
+    title: "CNI - Circolari su sicurezza cantieri (da catalogare)"
+    type: circolare
+    url: TBD
+    accessed: TBD
+    sha256: TBD
+    license: TBD
+    binary_path: null
+    excerpt_path: null
+    notes: |
+      Circolari CNI su applicazione D.Lgs. 81/2008 parte IV. Da catalogare e valutare
+      quali sono rilevanti per la verifica POS.

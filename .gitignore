@@ -1,0 +1,25 @@
+# Binari sorgente normativi - non vanno nel repo (vedi sources.yaml)
+not_in_repo/
+*.pdf
+!examples/**/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Output locali
+output/
+tmp/
