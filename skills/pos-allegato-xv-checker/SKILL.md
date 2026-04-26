@@ -1,6 +1,7 @@
 ---
 name: pos-allegato-xv-checker
 description: Verifica la completezza e coerenza di un Piano Operativo di Sicurezza (POS) italiano rispetto ai contenuti minimi previsti dall'Allegato XV del D.Lgs. 9 aprile 2008 n. 81 e s.m.i. Use when the user needs to validate a POS document for Italian construction safety compliance, check for missing mandatory sections, verify consistency between risk analysis and mitigation measures, or review safety cost computation. Target users are Italian civil engineers, coordinatori per la sicurezza (CSE/CSP), and safety professionals.
+license: MIT
 ---
 
 # POS Allegato XV Checker

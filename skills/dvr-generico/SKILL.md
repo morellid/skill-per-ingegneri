@@ -1,6 +1,7 @@
 ---
 name: dvr-generico
 description: Supporta la stesura, verifica e aggiornamento del Documento di Valutazione dei Rischi (DVR) per qualsiasi azienda italiana, ai sensi degli art. 17, 28 e 29 del D.Lgs. 81/2008. Use when an Italian datore di lavoro, RSPP, HSE manager, or consultant needs to draft a DVR for a new business, verify completeness of an existing DVR, decide whether a DVR update is required, or map risks for specific job profiles. Skill cross-settoriale, applicabile a uffici, manifattura, servizi, sanita', commercio, ecc.
+license: MIT
 ---
 
 # DVR Generico (D.Lgs. 81/2008 art. 17, 28, 29)

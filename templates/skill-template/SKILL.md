@@ -1,6 +1,7 @@
 ---
 name: SKILL_NAME_PLACEHOLDER
 description: Descrizione breve della skill in italiano. Specifica cosa fa, quando usarla, per chi. Esempio "Verifica la completezza e coerenza di un POS rispetto all'Allegato XV D.Lgs. 81/2008. Use when user asks to validate a POS document for Italian construction safety plans."
+license: MIT
 ---
 
 # NOME_LEGGIBILE_SKILL

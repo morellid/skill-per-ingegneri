@@ -1,0 +1,8 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: DVR Generico (D.Lgs. 81/2008)
+short_description: Documento di Valutazione dei Rischi per imprese italiane di qualunque settore (art. 17, 28, 29 D.Lgs. 81/2008). Stesura, verifica, aggiornamento.
+default_prompt: |
+  Aiutami con il DVR della mia azienda. Specifico settore e dimensione,
+  e tu mi guidi tra stesura, verifica completezza o decisione di aggiornamento.

@@ -100,6 +100,23 @@ Segue [`validazione.md`](validazione.md). Non si pubblica v0.1 senza passarla.
 - PR chiusa, main aggiornato
 - README di skill completo
 
+### Verifica compatibilita' dual-agent (obbligatoria)
+
+Prima del tag finale, verificare che la skill sia installabile e funzionante su entrambi gli agent:
+
+```bash
+# Test Claude Code
+ln -sfn "$(pwd)/skills/<nome-skill>" "$HOME/.claude/skills/<nome-skill>"
+# Avviare Claude Code, verificare che la skill sia rilevata e i task funzionino
+
+# Test Codex
+ln -sfn "$(pwd)/skills/<nome-skill>" "$HOME/.agents/skills/<nome-skill>"
+# Avviare Codex, verificare che la skill appaia nel picker (display_name da agents/openai.yaml)
+# Eseguire /skills <nome-skill> e provare il default_prompt
+```
+
+Se la skill funziona su uno ma non sull'altro, identificare la differenza (frontmatter incompleto, cartella agents/ mancante, link interni rotti) e correggere prima del release.
+
 ## Step 10 - Monitoring post-release
 
 - Issue GitHub aperte per feedback utenti

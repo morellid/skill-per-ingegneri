@@ -2,6 +2,9 @@
 # Crea una nuova skill dal template.
 # Uso: ./scripts/new-skill.sh <nome-skill>
 #   dove <nome-skill> e' in kebab-case (es. "pos-allegato-xv-checker")
+#
+# La skill creata e' compatibile sia con Anthropic Claude Code che con OpenAI Codex
+# (frontmatter SKILL.md con license: MIT + agents/openai.yaml).
 
 set -euo pipefail
 
@@ -28,7 +31,7 @@ if [ -d "$TARGET_DIR" ]; then
   exit 1
 fi
 
-# Copia template
+# Copia template (include automaticamente agents/openai.yaml)
 cp -r "$TEMPLATE_DIR" "$TARGET_DIR"
 
 # Sostituzione placeholder
@@ -38,13 +41,13 @@ find "$TARGET_DIR" -type f \( -name "*.md" -o -name "*.yaml" \) -exec sed -i '' 
   -e "s/YYYY-MM-DD/$TODAY/g" \
   {} \;
 
-# Rimuovi .gitkeep nelle sub-directories ora che ci saranno file reali
-# (lasciare .gitkeep per directory ancora vuote ok)
-
 echo "Skill '$SKILL_NAME' creata in $TARGET_DIR"
 echo ""
+echo "Compatibilita': Claude Code + OpenAI Codex (dual-agent)"
+echo ""
 echo "Prossimi passi:"
-echo "  1. Editare SKILL.md (nome leggibile, description, routing task)"
-echo "  2. Popolare references/sources.yaml con fonti reali"
-echo "  3. Creare task files in tasks/"
-echo "  4. Vedi methodology/generazione-skill.md per il processo completo"
+echo "  1. Editare SKILL.md (nome leggibile, description, routing task, license: MIT gia' presente)"
+echo "  2. Personalizzare agents/openai.yaml (display_name, short_description, default_prompt per il picker Codex)"
+echo "  3. Popolare references/sources.yaml con fonti reali"
+echo "  4. Creare task files in tasks/"
+echo "  5. Vedi methodology/generazione-skill.md per il processo completo"

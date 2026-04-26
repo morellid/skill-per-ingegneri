@@ -1,0 +1,8 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: NOME_LEGGIBILE_SKILL
+short_description: Sintesi di una riga della skill per il picker Codex (max 2-3 frasi). Stessa sostanza della "description" del frontmatter SKILL.md, ma piu' breve e orientata all'utente finale.
+default_prompt: |
+  Esempio di prompt che attiva la skill in modo naturale. Sara' suggerito
+  dall'UI Codex quando l'utente seleziona la skill dal picker.
