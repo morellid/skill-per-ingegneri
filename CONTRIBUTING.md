@@ -3,8 +3,9 @@
 ## Prima di contribuire
 
 - Essere ingegnere iscritto all'Albo (o professionista equivalente) nel dominio della skill cui si contribuisce.
-- Avere familiarita' con il formato [Anthropic skill-creator](https://docs.anthropic.com/) e la struttura di questo repo.
-- Aver letto [`methodology/generazione-skill.md`](methodology/generazione-skill.md) e [`methodology/validazione.md`](methodology/validazione.md).
+- Avere familiarita' con il formato skill condiviso da [Anthropic Claude Code](https://claude.com/claude-code) e [OpenAI Codex](https://developers.openai.com/codex), e con lo standard aperto [`AGENTS.md`](https://agents.md/) (governato dalla Linux Foundation Agentic AI Foundation).
+- Aver letto [`AGENTS.md`](AGENTS.md) (root del repo), [`methodology/generazione-skill.md`](methodology/generazione-skill.md), e [`methodology/validazione.md`](methodology/validazione.md).
+- Per modifiche a una skill specifica: aver letto anche `skills/<skill>/AGENTS.md` (convenzioni di dominio).
 
 ## Principi non negoziabili
 
@@ -12,6 +13,49 @@
 2. **Responsabilita' professionale**. Ogni skill include un disclaimer che l'output non sostituisce il giudizio del professionista firmatario.
 3. **Validazione pre-release**. Nessuna skill raggiunge v1.0 senza almeno una validazione da parte di un ingegnere di dominio diverso dall'autore.
 4. **Changelog sempre aggiornato**. Ogni modifica incrementa semver e appare in CHANGELOG.md della skill.
+5. **Dual-agent obbligatorio**. Ogni skill deve essere installabile e funzionante sia su Claude Code (`~/.claude/skills/<nome>/`) sia su OpenAI Codex (`~/.agents/skills/<nome>/`). Vedi sezione "Requisiti dual-agent" sotto.
+
+## Requisiti dual-agent (obbligatori per ogni skill)
+
+Da quando il repo supporta entrambi gli agent (vedi commit `feat: dual-agent support`), ogni skill nuova o modificata deve includere:
+
+### File obbligatori in `skills/<nome>/`
+
+- **`SKILL.md`** con frontmatter YAML che include i campi:
+  - `name` - nome skill in kebab-case (es. `pos-allegato-xv-checker`)
+  - `description` - 1-3 frasi che descrivono cosa fa la skill, quando usarla, per chi
+  - `license: MIT` - obbligatorio (Codex lo legge; Claude Code ignora i campi extra)
+
+- **`agents/openai.yaml`** - UI metadata per il picker Codex:
+  - `display_name` - nome leggibile dall'utente (es. "POS Allegato XV Checker")
+  - `short_description` - sintesi 1-2 righe per il picker
+  - `default_prompt` - prompt di esempio che attiva la skill in modo naturale
+
+- **`AGENTS.md`** - convenzioni di dominio specifiche per la skill (sources autoritative, articoli normativi rilevanti, validatori se identificati, don't specifici al dominio). Vedi `templates/skill-template/AGENTS.md` come scaffold.
+
+### File standard (gia' obbligatori prima)
+
+- `tasks/` - sotto-attivita' della skill, una per file (progressive disclosure)
+- `references/sources.yaml` - catalogo delle fonti normative
+- `references/estratti/` - estratti testuali delle fonti pubbliche
+- `examples/` - almeno 1 caso conforme + 1 caso problematico
+- `CHANGELOG.md` - history della skill in formato Keep a Changelog
+- `README.md` - doc utente (dominio, target, limiti)
+
+### Test di compatibilita' (obbligatorio prima del tag release)
+
+```bash
+# Claude Code
+ln -sfn "$(pwd)/skills/<nome>" "$HOME/.claude/skills/<nome>"
+# Avviare Claude Code, verificare discovery + esecuzione di un task
+
+# Codex
+ln -sfn "$(pwd)/skills/<nome>" "$HOME/.agents/skills/<nome>"
+# Avviare Codex, verificare che la skill appaia nel picker con il display_name
+# Eseguire /skills <nome> e provare il default_prompt
+```
+
+Se la skill funziona su uno solo dei due, identificare la differenza (frontmatter incompleto, `agents/openai.yaml` mancante, link interni rotti) e correggere prima del release.
 
 ## Processo
 
@@ -46,9 +90,10 @@ Quando una norma cambia (modifica legislativa, decreto attuativo, nuova linea gu
 
 - **Lingua**: contenuti utente in italiano, struttura/metadata in inglese.
 - **Punteggiatura**: caratteri standard ASCII. Evitare trattini lunghi, virgolette tipografiche, apostrofi tipografici.
-- **Commit message**: in inglese, formato [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, `refactor:`).
+- **Commit message**: in inglese, formato [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, `refactor:`). Quando il commit tocca una skill specifica, usa lo scope: `feat(pos-allegato-xv-checker): ...`.
 - **File YAML**: indentazione 2 spazi.
 - **Markdown**: una frase per riga per diff puliti (opzionale).
+- **AGENTS.md per skill**: lean, ~30-80 righe. Non duplicare il SKILL.md - aggiunge convenzioni di dominio e pointer alle fonti, non reinstaura la skill.
 
 ## Codice di condotta
 
