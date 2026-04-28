@@ -1,0 +1,186 @@
+schema_version: 1
+skill: nis2-self-assessment
+last_verified: 2026-04-29
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: legge | decreto | direttiva-ue | regolamento-ue | determinazione | linea-guida | altro
+#   url: URL canonico della fonte
+#   accessed: data consultazione (YYYY-MM-DD)
+#   sha256: hash SHA256 del file binario scaricato
+#   license: public-domain-italian-law | public-domain-eu-law | public-domain | other
+#   binary_path: path del binario in locale (fuori repo), oppure null
+#   excerpt_paths: paths degli estratti testuali (dentro repo)
+#   notes: note libere
+
+sources:
+  - id: dlgs-138-2024
+    title: "Decreto Legislativo 4 settembre 2024, n. 138 - Recepimento della direttiva (UE) 2022/2555 (NIS 2) relativa a misure per un livello comune elevato di cibersicurezza nell'Unione"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/id/2024/10/01/24G00155/SG
+    accessed: 2026-04-29
+    sha256: a049c6c12f2ff6d875891040fecb610eb6a46eb77b305a1bea5aab9301abf752
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-138-2024.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-138-2024-perimetro.md
+      - references/estratti/dlgs-138-2024-misure-art23.md
+      - references/estratti/dlgs-138-2024-incident-art25.md
+      - references/estratti/dlgs-138-2024-allegati-i-iv.md
+    notes: |
+      Pubblicato in GU Serie Generale n. 230 del 01/10/2024, in vigore dal
+      16/10/2024. Abroga il D.Lgs. 65/2018 (recepimento NIS originale).
+      Riferimento normativo principale: art. 3 (definizioni), art. 6
+      (perimetro essenziali/importanti), art. 7 (registrazione piattaforma
+      ACN), art. 23 (misure di gestione del rischio), art. 24 (obblighi
+      organo di amministrazione), art. 25 (notifica incidenti significativi),
+      art. 38 (sanzioni). Allegati I e II = settori (alta criticita' /
+      altri critici); III e IV = tipologie di soggetti.
+
+  - id: dir-2022-2555-nis2
+    title: "Direttiva (UE) 2022/2555 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativa a misure per un livello comune elevato di cibersicurezza nell'Unione (NIS 2)"
+    type: direttiva-ue
+    url: https://eur-lex.europa.eu/eli/dir/2022/2555/oj?locale=it
+    download_url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32022L2555
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-eu-law
+    binary_path: not_in_repo/dir-2022-2555-nis2.pdf
+    excerpt_paths: []
+    notes: |
+      Direttiva madre. Termine di recepimento 17/10/2024. Abroga la
+      Direttiva (UE) 2016/1148 (NIS originale). In Italia recepita con
+      D.Lgs. 138/2024. La skill cita la direttiva solo per concetti
+      strutturali (definizioni, ambito armonizzato); l'attuazione
+      operativa segue il decreto italiano.
+
+  - id: reg-ese-2024-2690
+    title: "Regolamento di esecuzione (UE) 2024/2690 della Commissione del 17 ottobre 2024 che stabilisce norme di applicazione della direttiva (UE) 2022/2555 per quanto riguarda i requisiti tecnici e metodologici delle misure di gestione dei rischi di cibersicurezza"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=OJ:L_202402690
+    download_url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=OJ:L_202402690
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-eu-law
+    binary_path: not_in_repo/reg-ese-2024-2690.pdf
+    excerpt_paths:
+      - references/estratti/reg-ese-2024-2690-ambito.md
+    notes: |
+      Si applica direttamente (non richiede trasposizione) a un
+      sottoinsieme specifico di soggetti elencati all'art. 1: fornitori
+      di servizi DNS, registri TLD, fornitori cloud, data center, content
+      delivery network, fornitori di servizi gestiti e di sicurezza
+      gestiti, mercati online, motori di ricerca online, piattaforme di
+      social network e prestatori di servizi fiduciari. Per gli altri
+      soggetti NIS in Italia il riferimento operativo e' la Determinazione
+      ACN 164179/2025.
+
+  - id: acn-det-164179-2025
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 164179 del 14 aprile 2025 - Modalita' e specifiche di base per gli obblighi degli artt. 23, 24, 25, 29 e 32 del D.Lgs. 138/2024"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/en/nis/modalita-specifiche-base
+    download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_nis_specifiche_2025_164179_signed
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-164179-2025.pdf
+    excerpt_paths:
+      - references/estratti/acn-misure-base-importanti.md
+      - references/estratti/acn-misure-base-essenziali.md
+      - references/estratti/acn-incidenti-significativi.md
+    notes: |
+      Atto attuativo principale per la fase 1 di applicazione del decreto
+      NIS in Italia. Definisce le misure di base distinte per:
+        - Allegato 1: soggetti importanti
+        - Allegato 2: soggetti essenziali
+      Strutturate secondo il Framework Nazionale per la Cybersecurity e la
+      Data Protection (edizione 2025) in funzioni, categorie,
+      sottocategorie e requisiti. In vigore dal 30/04/2025. Definisce
+      anche gli incidenti significativi di base che attivano l'obbligo
+      di notifica al CSIRT Italia.
+
+      ATTENZIONE: SUPERATA dalla Determinazione ACN 379907/2025 (vedi
+      `acn-det-379907-2025`), in vigore dal 15/01/2026. Conservata qui
+      perche' contiene l'Allegato 2 (essenziali) gia' scaricato e
+      analizzato strutturalmente nell'estratto.
+
+  - id: acn-det-164179-2025-allegato2
+    title: "ACN - Determinazione 164179/2025 - Allegato 2 - Misure di sicurezza di base per i soggetti essenziali"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/detacn_nis_specifiche_2025_164179_allegato2
+    accessed: 2026-04-29
+    sha256: 61eef8569850533a64ac803630a8b508865a338da76f0f0611572823188275a6
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-164179-2025-allegato2.pdf
+    excerpt_paths:
+      - references/estratti/acn-misure-base-essenziali.md
+    notes: |
+      Allegato 2 della Det. 164179/2025: 6 funzioni del Framework Nazionale
+      Cybersecurity 2025 (GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND,
+      RECOVER), 18 categorie, ~ 35 sottocategorie. Strutturato per
+      requisiti puntuali. PDF di 16 pagine.
+
+  - id: acn-det-379907-2025
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 379907 del 2025 - Aggiornamento misure e specifiche di base NIS2"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/en/nis/modalita-specifiche-base
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-379907-2025.pdf
+    excerpt_paths: []
+    notes: |
+      Aggiorna e sostituisce la Det. 164179/2025 dal 15/01/2026.
+      Contiene 4 allegati: Allegato 1 (misure soggetti importanti, 37
+      misure / 87 requisiti), Allegato 2 (misure soggetti essenziali,
+      43 misure / 116 requisiti), Allegato 3 (incidenti significativi
+      importanti), Allegato 4 (incidenti significativi essenziali).
+      Termine ultimo per la piena operativita': 31/10/2026 (art. 4 della
+      determinazione). Da catalogare con SHA256 e estratti dedicati nelle
+      iterazioni successive della skill.
+
+  - id: acn-portale-normativa
+    title: "Agenzia per la Cybersicurezza Nazionale - Pagina riepilogativa normativa NIS"
+    type: altro
+    url: https://www.acn.gov.it/portale/en/nis/la-normativa
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina indice ACN che raccoglie tutti gli atti generali NIS:
+      determinazioni, linee guida, FAQ. Riferimento operativo per
+      verificare aggiornamenti normativi e nuove determinazioni dopo
+      la prima fase (le scadenze sono modulate per fasi successive).
+
+# Fonti secondarie da catalogare in iterazioni successive
+secondary_sources_to_evaluate:
+  - id: enisa-tech-guidance-2024-2690
+    title: "ENISA - Technical implementation guidance on the cybersecurity risk-management measures of Regulation (EU) 2024/2690"
+    url: https://www.enisa.europa.eu/
+    notes: |
+      Linee guida tecniche ENISA pubblicate in versione draft 2024 e
+      finale nel 2025. Utili per il sottoinsieme di soggetti coperti
+      direttamente dal Reg. UE 2024/2690 (cloud, DNS, data center, ecc.).
+      Da catalogare quando la skill si estende oltre l'ambito ACN.
+
+  - id: framework-nazionale-cybersecurity-2025
+    title: "Framework Nazionale per la Cybersecurity e la Data Protection (FNCS) - edizione 2025"
+    url: https://www.cybersecurityframework.it/
+    notes: |
+      Framework di riferimento usato dalla Determinazione ACN 164179/2025
+      per strutturare le misure di base. Tassonomia funzioni/categorie/
+      sottocategorie/requisiti. Non e' una norma in senso stretto ma
+      l'ACN lo richiama come riferimento operativo.
+
+  - id: legge-90-2024-cybersicurezza
+    title: "Legge 28 giugno 2024, n. 90 - Disposizioni in materia di rafforzamento della cybersicurezza nazionale"
+    url: https://www.gazzettaufficiale.it/eli/id/2024/07/02/24G00108/sg
+    notes: |
+      Legge che precede di pochi mesi il D.Lgs. 138/2024 e introduce
+      obblighi cyber per la PA e operatori di servizi essenziali, oltre
+      a inasprire reati informatici nel codice penale. Sovrapposizione
+      parziale con NIS2 per gli ambiti PA. Non riferimento principale
+      della skill, ma da cross-checkare per soggetti pubblici.

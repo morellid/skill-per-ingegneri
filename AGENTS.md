@@ -16,6 +16,7 @@ Vedi [`README.md`](README.md) per l'elenco aggiornato. Al momento:
 - `skills/dvr-generico/` - DVR per imprese italiane di qualunque settore (D.Lgs. 81/2008 art. 17, 28, 29)
 - `skills/gdpr-registro-dpia/` - Registro art. 30 GDPR + DPIA art. 35
 - `skills/ai-act-compliance/` - AI Act italiano (versione preliminare; la versione inglese full-feature e' nel repo separato `ai-act-skill`)
+- `skills/nis2-self-assessment/` - self-assessment NIS2 italiana (D.Lgs. 138/2024 + Det. ACN 164179/2025 -> 379907/2025): perimetro essenziale/importante, gap analysis misure di base, verifica incidente significativo, obblighi organi di amministrazione
 
 ## Come installarle
 
