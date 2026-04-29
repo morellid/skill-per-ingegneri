@@ -30,7 +30,7 @@ Questa skill e' uno strumento di supporto alla self-assessment NIS2. **Non sosti
 In base alla richiesta dell'utente, carica il task file appropriato:
 
 - **Valutazione del perimetro NIS2**: l'utente chiede "siamo soggetti NIS2?", "siamo essenziali o importanti?", "rientriamo nell'ambito?" -> leggi [`tasks/valuta-perimetro.md`](tasks/valuta-perimetro.md)
-- **Gap analysis misure di base**: l'utente chiede "siamo conformi alle misure ACN?", "che gap abbiamo rispetto alla Determinazione 379907 (o 164179)?" -> leggi [`tasks/gap-analysis-misure.md`](tasks/gap-analysis-misure.md)
+- **Gap analysis misure di base**: l'utente chiede "siamo conformi alle misure ACN?", "che gap abbiamo rispetto alla Determinazione 379907?" (o, in domande riferite alla precedente Det. 164179/2025 ora superata, "rispetto alla 164179?") -> leggi [`tasks/gap-analysis-misure.md`](tasks/gap-analysis-misure.md)
 - **Verifica incidente significativo**: l'utente chiede "questo incidente va notificato?", "quali tempistiche di notifica si applicano?" -> leggi [`tasks/verifica-incidente-significativo.md`](tasks/verifica-incidente-significativo.md)
 - **Obblighi organo di amministrazione**: l'utente chiede "che obblighi ha il CdA?", "che formazione devono fare i dirigenti?" -> leggi [`tasks/check-obblighi-governance.md`](tasks/check-obblighi-governance.md)
 
