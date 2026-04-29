@@ -171,9 +171,10 @@ def vita_riferimento(vn_anni: float, classe_uso: str) -> float:
     """
     if vn_anni <= 0:
         raise ValueError("Vita nominale V_N deve essere positiva")
-    if classe_uso not in C_U:
+    cu = classe_uso.upper() if isinstance(classe_uso, str) else classe_uso
+    if cu not in C_U:
         raise ValueError(f"Classe d'uso {classe_uso!r} non valida (attesa: {list(C_U)})")
-    vr = vn_anni * C_U[classe_uso]
+    vr = vn_anni * C_U[cu]
     # par. 2.4.3 NTC: "se V_R risulta inferiore a 35 anni, si assume comunque V_R = 35 anni".
     return max(vr, 35.0)
 
@@ -463,6 +464,12 @@ def carica_parametri_riferimento(path: str) -> ParametriRiferimento:
             f"tr_anni nel file deve essere {list(TR_RIFERIMENTO)}, "
             f"trovato {raw['tr_anni']}"
         )
+    mancanti = [k for k in ("ag_g", "F0", "Tc_star") if k not in raw]
+    if mancanti:
+        raise ValueError(
+            f"chiavi mancanti nel file parametri di riferimento: {mancanti}. "
+            f"Schema atteso: tr_anni (opzionale), ag_g, F0, Tc_star (9 valori ciascuno)."
+        )
     return ParametriRiferimento(
         ag=list(raw["ag_g"]),
         F0=list(raw["F0"]),
@@ -585,11 +592,29 @@ def main(argv: list[str] | None = None) -> int:
                 f"--input-json: tr_anni in parametri_pericolosita_sito deve "
                 f"essere {list(TR_RIFERIMENTO)}, trovato {sito['tr_anni']}"
             )
-        riferimento = ParametriRiferimento(
-            ag=list(sito["ag_g"]),
-            F0=list(sito["F0"]),
-            Tc_star=list(sito["Tc_star"]),
-        )
+        sito_mancanti = [k for k in ("ag_g", "F0", "Tc_star") if k not in sito]
+        if sito_mancanti:
+            parser.error(
+                f"--input-json: parametri_pericolosita_sito: chiavi mancanti "
+                f"{sito_mancanti}. Schema atteso: tr_anni (opzionale), ag_g, "
+                f"F0, Tc_star (9 valori ciascuno)."
+            )
+        try:
+            riferimento = ParametriRiferimento(
+                ag=list(sito["ag_g"]),
+                F0=list(sito["F0"]),
+                Tc_star=list(sito["Tc_star"]),
+            )
+        except ValueError as e:
+            parser.error(f"--input-json: parametri_pericolosita_sito non valido: {e}")
+        pc_mancanti = [
+            k for k in ("vn_anni", "classe_uso", "cat_sottosuolo", "cat_topografica")
+            if k not in pc
+        ]
+        if pc_mancanti:
+            parser.error(
+                f"--input-json: parametri_calcolo: chiavi mancanti {pc_mancanti}."
+            )
         vn = float(pc["vn_anni"])
         classe_uso = pc["classe_uso"]
         cat_sottosuolo = pc["cat_sottosuolo"]
@@ -607,7 +632,16 @@ def main(argv: list[str] | None = None) -> int:
             )
         tab = pc.get("tabula_periodi")
         if tab:
-            tabula = _parse_periodi(f"{tab['start']}:{tab['stop']}:{tab['step']}")
+            tab_mancanti = [k for k in ("start", "stop", "step") if k not in tab]
+            if tab_mancanti:
+                parser.error(
+                    f"--input-json: parametri_calcolo.tabula_periodi: chiavi "
+                    f"mancanti {tab_mancanti} (attese: start, stop, step)."
+                )
+            try:
+                tabula = _parse_periodi(f"{tab['start']}:{tab['stop']}:{tab['step']}")
+            except (argparse.ArgumentTypeError, ValueError) as e:
+                parser.error(f"--input-json: tabula_periodi non valido: {e}")
         else:
             tabula = None
     else:
@@ -627,7 +661,10 @@ def main(argv: list[str] | None = None) -> int:
                 f"in modalita' senza --input-json sono richiesti: {', '.join(missing)}. "
                 f"Alternativa: usa --input-json puntando a un file con tutti i parametri."
             )
-        riferimento = carica_parametri_riferimento(args.tr_riferimento)
+        try:
+            riferimento = carica_parametri_riferimento(args.tr_riferimento)
+        except (ValueError, KeyError) as e:
+            parser.error(f"--tr-riferimento: file non valido: {e}")
         vn = args.vn
         classe_uso = args.classe_uso
         cat_sottosuolo = args.cat_sottosuolo
@@ -639,15 +676,18 @@ def main(argv: list[str] | None = None) -> int:
 
     risultati: list[RisultatoSpettro] = []
     for sl in stati:
-        p = calcola_parametri(
-            sl,
-            vn,
-            classe_uso,
-            cat_sottosuolo,
-            cat_topografica,
-            riferimento,
-            xi_percento=xi,
-        )
+        try:
+            p = calcola_parametri(
+                sl,
+                vn,
+                classe_uso,
+                cat_sottosuolo,
+                cat_topografica,
+                riferimento,
+                xi_percento=xi,
+            )
+        except ValueError as e:
+            parser.error(f"calcolo {sl} fallito: {e}")
         ordinate = tabula_spettro(p, tabula) if tabula else []
         risultati.append(RisultatoSpettro(parametri=p, ordinate=ordinate))
 

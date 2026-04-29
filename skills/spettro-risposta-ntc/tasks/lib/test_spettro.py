@@ -524,6 +524,115 @@ class TestCLI(unittest.TestCase):
                 main([])  # nessun flag, nessun --input-json
         self.assertIn("richiesti:", buf.getvalue())
 
+    def test_input_json_sito_chiavi_mancanti(self):
+        # parametri_pericolosita_sito senza ag_g/F0/Tc_star -> parser.error,
+        # non un KeyError che bubbla come traceback.
+        bad = {
+            "parametri_calcolo": {
+                "vn_anni": 50, "classe_uso": "II",
+                "cat_sottosuolo": "C", "cat_topografica": "T1",
+            },
+            "parametri_pericolosita_sito": {"tr_anni": list(TR_RIFERIMENTO)},
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            err = buf.getvalue()
+            self.assertIn("ag_g", err)
+            self.assertIn("F0", err)
+            self.assertIn("Tc_star", err)
+        finally:
+            os.unlink(path)
+
+    def test_input_json_pc_chiavi_mancanti(self):
+        # parametri_calcolo senza vn_anni/classe_uso/... -> parser.error.
+        bad = {
+            "parametri_calcolo": {"classe_uso": "II"},
+            "parametri_pericolosita_sito": {
+                "tr_anni": list(TR_RIFERIMENTO),
+                "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+                "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+                "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+            },
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            err = buf.getvalue()
+            self.assertIn("vn_anni", err)
+            self.assertIn("cat_sottosuolo", err)
+        finally:
+            os.unlink(path)
+
+    def test_input_json_stato_limite_invalido(self):
+        # stati_limite contiene "SLX" (non valido) -> parser.error,
+        # non un ValueError di calcola_parametri.
+        bad = {
+            "parametri_calcolo": {
+                "vn_anni": 50, "classe_uso": "II",
+                "cat_sottosuolo": "C", "cat_topografica": "T1",
+                "stati_limite": ["SLX"],
+            },
+            "parametri_pericolosita_sito": {
+                "tr_anni": list(TR_RIFERIMENTO),
+                "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+                "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+                "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+            },
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            self.assertIn("SLX", buf.getvalue())
+        finally:
+            os.unlink(path)
+
+    def test_classe_uso_case_insensitive(self):
+        # vita_riferimento accetta classe d'uso in lowercase.
+        self.assertAlmostEqual(vita_riferimento(50, "ii"), 50.0)
+        self.assertAlmostEqual(vita_riferimento(50, "iv"), 100.0)
+
+    def test_carica_parametri_riferimento_chiavi_mancanti(self):
+        # File senza ag_g -> ValueError esplicito (non KeyError).
+        bad = {"tr_anni": list(TR_RIFERIMENTO), "F0": [2.5] * 9, "Tc_star": [0.3] * 9}
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            with self.assertRaisesRegex(ValueError, "ag_g"):
+                carica_parametri_riferimento(path)
+        finally:
+            os.unlink(path)
+
     def test_main_su_stato_singolo(self):
         data = {
             "tr_anni": list(TR_RIFERIMENTO),

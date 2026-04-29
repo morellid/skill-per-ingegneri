@@ -62,7 +62,7 @@ Estratti pertinenti in `references/estratti/`:
 ## Stato attuale
 
 - Versione: 0.1.0-alpha (vedi `CHANGELOG.md`)
-- Validazione: Livello 1 self-check OK (`./scripts/validate.sh spettro-risposta-ntc`); test suite Python: 39/39 pass (12 classi: formule chiuse, raccordi, interpolazione, validazione input hardening, copertura categorie D/E/T2/T3/T4 e xi != 5%, anti-drift fixture-based su `examples/caso-conforme-.../{input,expected}.json`, CLI con --input-json + error handling). Livello 2 (confronto vs foglio CSLP su 10+ casi reali) da completare prima del release stabile.
+- Validazione: Livello 1 self-check OK (`./scripts/validate.sh spettro-risposta-ntc`); test suite Python: 44/44 pass (12 classi: formule chiuse, raccordi, interpolazione, validazione input hardening, copertura categorie D/E/T2/T3/T4 e xi != 5%, anti-drift fixture-based su `examples/caso-conforme-.../{input,expected}.json`, CLI con --input-json + error handling friendly su chiavi mancanti, stato_limite invalido, file --tr-riferimento incompleto). Livello 2 (confronto vs foglio CSLP su 10+ casi reali) da completare prima del release stabile.
 - Task files:
   - `tasks/calcola-spettro.md`
   - `tasks/valida-input-sito.md`
