@@ -62,7 +62,7 @@ Estratti pertinenti in `references/estratti/`:
 ## Stato attuale
 
 - Versione: 0.1.0-alpha (vedi `CHANGELOG.md`)
-- Validazione: Livello 1 self-check OK (`./scripts/validate.sh spettro-risposta-ntc`); test suite Python: 61/61 pass (14 classi: formule chiuse, raccordi, interpolazione, validazione input hardening vettoriale + scalare (NaN/inf rifiutati in vita_riferimento/coeff_eta/Se_T), copertura categorie D/E/T2/T3/T4 e xi != 5%, anti-drift fixture-based su `examples/caso-conforme-.../{input,expected}.json`, CLI con --input-json + error handling friendly su chiavi mancanti, stato_limite invalido, file --tr-riferimento incompleto, JSON con NaN/Infinity rifiutato come da RFC 8259). Livello 2 (confronto vs foglio CSLP su 10+ casi reali) da completare prima del release stabile.
+- Validazione: Livello 1 self-check OK (`./scripts/validate.sh spettro-risposta-ntc`); test suite Python: 63/63 pass (14 classi: formule chiuse, raccordi, interpolazione, validazione input hardening vettoriale + scalare (NaN/inf rifiutati in vita_riferimento/coeff_eta/Se_T), copertura categorie D/E/T2/T3/T4 e xi != 5%, anti-drift fixture-based su `examples/caso-conforme-.../{input,expected}.json`, CLI con --input-json + error handling friendly su chiavi mancanti, stato_limite invalido, file --tr-riferimento incompleto, JSON con NaN/Infinity rifiutato come da RFC 8259). Livello 2 (confronto vs foglio CSLP su 10+ casi reali) da completare prima del release stabile.
 - Task files:
   - `tasks/calcola-spettro.md`
   - `tasks/valida-input-sito.md`

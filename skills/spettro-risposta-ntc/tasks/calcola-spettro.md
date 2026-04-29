@@ -121,6 +121,12 @@ Esempio (parziale, in formato umano-leggibile):
 - I periodi sono in secondi.
 - F0 e' adimensionale.
 
+## Comportamento con stati limite parziali
+
+Con `--stato-limite TUTTI` (default), se uno o piu' stati producono `TR` fuori dal reticolo `[30, 2475]` anni (es. `VN=50 CU I` -> `V_R=35` -> `TR_SLO~21`), il modulo emette un blocco `ATTENZIONE: stato non calcolabile` per quegli stati e prosegue con i restanti. Nell'output JSON i fallimenti compaiono come `{"stato_limite": "...", "errore": "..."}` invece di `{"parametri": ..., "ordinate": ...}`. Il run abortisce con exit code != 0 solo se **tutti** gli stati richiesti falliscono. Per `--stato-limite SLO` (singolo) il fallimento e' equivalente a "tutti falliti" -> abort.
+
+Spiega all'utente che lo stato fuori reticolo richiede analisi specifiche o riconsiderazione di `VN`/classe d'uso (vedi `valida-input-sito.md` per il pre-check).
+
 ## Limiti
 
 Questo task NON fa:

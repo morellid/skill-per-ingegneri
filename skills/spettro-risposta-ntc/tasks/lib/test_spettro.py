@@ -895,6 +895,84 @@ class TestCLI(unittest.TestCase):
         finally:
             os.unlink(path)
 
+    def test_tutti_con_slo_fuori_reticolo_continua(self):
+        """VN=50 CU I -> V_R=35 (clamp), TR_SLO~21<30 -> SLO non calcolabile,
+        ma SLD/SLV/SLC sono in range. Senza fix Codex round 7, tutto il run
+        abortiva. Ora: emit error per SLO + parametri per SLD/SLV/SLC.
+        """
+        data = {
+            "tr_anni": list(TR_RIFERIMENTO),
+            "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+            "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+            "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(data, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stdout
+            buf = StringIO()
+            with redirect_stdout(buf):
+                rc = main(
+                    [
+                        "--tr-riferimento", path,
+                        "--vn", "50", "--classe-uso", "I",
+                        "--cat-sottosuolo", "C", "--cat-topografica", "T1",
+                        "--stato-limite", "TUTTI", "--json",
+                    ]
+                )
+            self.assertEqual(rc, 0, "exit code deve essere 0 con almeno uno SL valido")
+            out = json.loads(buf.getvalue())
+            stati_ok = [
+                e["parametri"]["stato_limite"] for e in out if "parametri" in e
+            ]
+            stati_err = [e["stato_limite"] for e in out if "errore" in e]
+            self.assertEqual(stati_ok, ["SLD", "SLV", "SLC"])
+            self.assertEqual(stati_err, ["SLO"])
+            self.assertIn("fuori dal reticolo", out[3]["errore"])
+        finally:
+            os.unlink(path)
+
+    def test_tutti_falliti_abortisce(self):
+        """Se nessuno stato e' calcolabile (es. tutti producono TR fuori reticolo),
+        il run deve abortire con parser.error invece di stampare lista vuota.
+        """
+        # Costruisce un dataset artificiale dove anche SLC produrra' TR > 2475:
+        # con VN=50 CU IV, V_R=100 -> TR_SLC=-100/ln(0.95)=1949 (in range).
+        # Per forzare tutti fuori, basta chiedere uno stato singolo invalido:
+        data = {
+            "tr_anni": list(TR_RIFERIMENTO),
+            "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+            "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+            "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(data, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(
+                        [
+                            "--tr-riferimento", path,
+                            "--vn", "50", "--classe-uso", "I",
+                            "--cat-sottosuolo", "C", "--cat-topografica", "T1",
+                            "--stato-limite", "SLO",  # singolo + fuori reticolo
+                        ]
+                    )
+            self.assertIn("SLO", buf.getvalue())
+            self.assertIn("nessuno stato limite calcolabile", buf.getvalue())
+        finally:
+            os.unlink(path)
+
     def test_main_su_stato_singolo(self):
         data = {
             "tr_anni": list(TR_RIFERIMENTO),

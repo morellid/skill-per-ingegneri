@@ -773,6 +773,7 @@ def main(argv: list[str] | None = None) -> int:
         tabula = args.tabula
 
     risultati: list[RisultatoSpettro] = []
+    errori_per_sl: dict[str, str] = {}
     for sl in stati:
         try:
             p = calcola_parametri(
@@ -784,19 +785,32 @@ def main(argv: list[str] | None = None) -> int:
                 riferimento,
                 xi_percento=xi,
             )
-        except (ValueError, AttributeError, TypeError) as e:
+        except ValueError as e:
+            # Errore semanticamente valido per uno stato specifico (es. TR fuori
+            # reticolo per VN/CU che producono V_R basso): registra ma continua
+            # con gli altri stati. Hard-error solo se tutti gli stati falliscono.
+            errori_per_sl[sl] = str(e)
+            continue
+        except (AttributeError, TypeError) as e:
+            # Bug strutturale (es. cat_sottosuolo non-string): abort intero run.
             parser.error(f"calcolo {sl} fallito: {e}")
         ordinate = tabula_spettro(p, tabula) if tabula else []
         risultati.append(RisultatoSpettro(parametri=p, ordinate=ordinate))
 
+    if not risultati:
+        msg = "; ".join(f"{sl}: {e}" for sl, e in errori_per_sl.items())
+        parser.error(f"nessuno stato limite calcolabile -> {msg}")
+
     if args.json:
-        out = [
+        out: list[dict] = [
             {
                 "parametri": asdict(r.parametri),
                 "ordinate": [asdict(o) for o in r.ordinate],
             }
             for r in risultati
         ]
+        for sl, errmsg in errori_per_sl.items():
+            out.append({"stato_limite": sl, "errore": errmsg})
         json.dump(out, sys.stdout, indent=2, ensure_ascii=False)
         sys.stdout.write("\n")
     else:
@@ -815,6 +829,10 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  Tabella Se(T) [{len(r.ordinate)} punti]:")
                 for o in r.ordinate:
                     print(f"    T = {o.T:>6.3f} s   Se = {o.Se:>9.5f} g   [{o.ramo}]")
+            print()
+        for sl, errmsg in errori_per_sl.items():
+            print(f"=== {sl} ===")
+            print(f"  ATTENZIONE: stato non calcolabile -> {errmsg}")
             print()
 
     if args.out_csv and any(r.ordinate for r in risultati):
