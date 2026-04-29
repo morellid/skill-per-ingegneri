@@ -45,7 +45,7 @@ Attenzione: il calcolo dimensionale per gruppi/imprese collegate (art. 6 par. 2 
 | Registrazione su piattaforma ACN | art. 7 co. 1 | finestra 1 gen - 28 feb (T+0 alla prossima finestra) |
 | Designazione punto di contatto NIS + sostituto | art. 7 co. 1 lett. c, co. 4 lett. d | T+0 e finestra apr-mag |
 | Approvazione modalita' di implementazione misure dal CdA / AU | art. 23 co. 1 lett. a | T+3-6 mesi |
-| Adozione misure tecniche/operative/organizzative | art. 24 co. 2 | T+18 mesi dalla notifica ACN, comunque entro **31/10/2026** |
+| Adozione misure tecniche/operative/organizzative | art. 24 co. 2 + art. 3 Det. 379907/2025 | T+18 mesi dalla comunicazione di inserimento ACN |
 | Formazione organi + dipendenti | art. 23 co. 2 | T+6-12 mesi |
 | Notifica incidenti significativi | art. 25 | T+9 mesi dalla notifica ACN |
 | Sanzioni in caso di violazione | art. 38 co. 9 lett. b | fino a **max(7M EUR; 1,4% fatturato annuo mondiale)** = max(7M; 588k) = **7M EUR** in questo caso. Minimo edittale 1/30 = 233k EUR |

@@ -10,7 +10,7 @@ Il task `valuta-perimetro` deve essere stato eseguito. La gap analysis ha senso 
 
 Produrre una **gap analysis strutturata** per le 6 funzioni del Framework Nazionale Cybersecurity (GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, RECOVER), con livello di copertura per ciascuna sottocategoria e con la lista dei gap prioritari.
 
-L'output deve consentire di pianificare un **roadmap** di adeguamento entro le scadenze ACN (in particolare 31/10/2026 per la piena operativita' delle misure di base ex Det. 379907/2025).
+L'output deve consentire di pianificare un **roadmap** di adeguamento entro le scadenze ACN: 18 mesi dalla **comunicazione di inserimento** ricevuta dal soggetto per le misure di base, 9 mesi per la notifica incidenti (art. 3 Det. ACN 379907/2025). Le scadenze sono personali: ciascun soggetto le calcola dalla propria comunicazione di inserimento.
 
 ## Input richiesti
 
@@ -142,7 +142,7 @@ Per ciascun gap (livello < 3), assegnare:
   - **Media** per altre sottocategorie
 - **Effort stimato**: in giorni-uomo o complessita' (S/M/L).
 - **Owner proposto**: CISO, IT, Risk, HR, Legal, Procurement.
-- **Scadenza target**: in base alla notifica ACN ricevuta dal soggetto + 18 mesi (o 31/10/2026 se non ancora ricevuta).
+- **Scadenza target**: comunicazione di inserimento ACN ricevuta dal soggetto + 18 mesi (art. 3 co. 1 Det. 379907/2025). Se la comunicazione non e' ancora stata ricevuta, la finestra di registrazione/inserimento e' ricorrente annualmente (1 gen-28 feb -> 31 mar comunicazione, art. 7 D.Lgs. 138/2024); il roadmap si pianifica con scadenze "T + N mesi" dove T e' la data attesa di comunicazione.
 
 ### Passo 4 - Confronto con elementi minimi art. 24 co. 2
 
@@ -225,7 +225,7 @@ Per **soggetti importanti** (Allegato 1 - 37 sottocategorie, 87 requisiti):
 ### Medio termine (3-9 mesi)
 - [...]
 
-### Lungo termine (9-18 mesi - completare entro 31/10/2026)
+### Lungo termine (9-18 mesi dalla comunicazione di inserimento ACN)
 - [...]
 
 ## Note di settore

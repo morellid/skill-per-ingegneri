@@ -103,8 +103,8 @@ Da ciascuna comunicazione di inserimento (art. 7 co. 3 lett. a D.Lgs. 138/2024):
 
 | Adempimento | Termine | Riferimento |
 |--------------|---------|-------------|
-| Adozione misure di base (Allegati 1 essenziali / 2 importanti) | **18 mesi** | art. 3 co. 1 |
-| Notifica incidenti significativi di base (Allegati 3 importanti / 4 essenziali) | **9 mesi** | art. 3 co. 2 |
+| Adozione misure di base (Allegato 1 importanti / Allegato 2 essenziali) | **18 mesi** | art. 3 co. 1 |
+| Notifica incidenti significativi di base (Allegato 3 importanti / Allegato 4 essenziali) | **9 mesi** | art. 3 co. 2 |
 | TLD/registrar - art. 29 + politiche pubbliche | **18 mesi** | art. 4 co. 1 |
 | Approvazione modalita' di adeguamento e politiche dai vertici (TLD/registrar) | continuativo | art. 4 co. 2 e 4 |
 
