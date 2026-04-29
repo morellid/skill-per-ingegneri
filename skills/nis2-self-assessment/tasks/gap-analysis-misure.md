@@ -36,12 +36,13 @@ In base al settore e alla classificazione:
 
 | Caso | Riferimento operativo |
 |------|------------------------|
-| Soggetto in settore Allegato I 8 (Infrastrutture digitali) - DNS/cloud/data center/CDN/serv. fiduciari | **Reg. UE 2024/2690** (diretto) + ENISA technical guidance |
-| Soggetto in settore Allegato II 6 (mercati online, motori di ricerca, social, registrar) | **Reg. UE 2024/2690** + Det. ACN |
-| Soggetto in altri settori Allegati I-IV | **Det. ACN 379907/2025** (Allegato 1 importanti / Allegato 2 essenziali) |
-| Soggetto in settori 3-4 Allegato I (banche/mercati finanziari) DORA-eligible | **DORA Reg. UE 2022/2554** (Capi IV-V NIS2 esclusi - art. 3 co. 14) |
+| Soggetto coperto direttamente dal Reg. UE 2024/2690 art. 1: fornitori DNS, gestori TLD, fornitori cloud, fornitori data center, fornitori CDN, **fornitori di servizi gestiti (MSP)**, **fornitori di servizi di sicurezza gestiti (MSSP)**, mercati online, motori di ricerca online, piattaforme di social network, prestatori di servizi fiduciari | **Reg. UE 2024/2690** (diretto) + ENISA technical guidance + Det. ACN 379907/2025 in coordinamento |
+| Soggetto in settori 3-4 Allegato I (banche / infrastrutture mercati finanziari) DORA-eligible | **DORA Reg. UE 2022/2554** (Capi IV-V NIS2 esclusi - art. 3 co. 14) |
+| Tutti gli altri soggetti NIS in Allegati I-IV | **Det. ACN 379907/2025** (Allegato 1 importanti / Allegato 2 essenziali) |
 
 Per la maggior parte dei soggetti italiani il riferimento e' la Determinazione ACN.
+
+> Nota: il criterio di applicazione del Reg. UE 2024/2690 e' **per tipologia di soggetto** (art. 1 del Regolamento), non per settore di Allegato. Un MSP che lavora nel settore Allegato II.5 manifatturiero ricade comunque nel Reg. UE 2024/2690 perche' "fornitore di servizi gestiti" e' nell'elenco art. 1.
 
 ### Passo 2 - Questionario per ciascuna funzione
 
@@ -146,19 +147,36 @@ Per ciascun gap (livello < 3), assegnare:
 
 ### Passo 4 - Confronto con elementi minimi art. 24 co. 2
 
-Verificare la mappatura ai 10 elementi minimi del decreto:
+Verificare la mappatura ai 10 elementi minimi del decreto. La tabella delle sottocategorie ACN richiamate **differisce fra Allegato 1 (importanti) e Allegato 2 (essenziali)** perche' il primo non include 6 sottocategorie presenti nel secondo (ID.AM-03, PR.AT-02, PR.PS-01, PR.PS-03, PR.IR-03, RC.CO-03).
 
-| Lett. art. 24 co. 2 | Ambito | Sottocategorie collegate | Copertura attuale | Gap prioritario? |
-|---------------------|--------|---------------------------|--------------------|------------------|
-| a | Politiche analisi rischi e sicurezza ICT | GV.RM, ID.RA, GV.PO | | |
+**Per soggetti essenziali (Allegato 2 - 43 sottocategorie)**:
+
+| Lett. art. 24 co. 2 | Ambito | Sottocategorie Allegato 2 | Copertura attuale | Gap prioritario? |
+|---------------------|--------|----------------------------|--------------------|------------------|
+| a | Politiche analisi rischi e sicurezza ICT | GV.RM-03, ID.RA-01/05/06/08, GV.PO-01/02 | | |
 | b | Gestione incidenti e notifiche | RS.MA-01, RS.CO-02, ID.IM-04 | | |
-| c | Continuita' operativa | RC.RP, RC.CO, PR.DS-11, PR.IR-03 | | |
-| d | Sicurezza catena di approvvigionamento | GV.SC (tutte) | | |
-| e | SDLC + vuln. disclosure | PR.PS-01..06, ID.RA-08 | | |
+| c | Continuita' operativa | RC.RP-01, RC.CO-03, PR.DS-11, PR.IR-03 | | |
+| d | Sicurezza catena di approvvigionamento | GV.SC-01/02/04/05/07 | | |
+| e | SDLC + vuln. disclosure | PR.PS-01/02/03/04/06, ID.RA-08 | | |
 | f | Valutazione efficacia | ID.IM-01, GV.RM-03 | | |
 | g | Igiene cyber e formazione | PR.AT-01, PR.AT-02 | | |
 | h | Crittografia / cifratura | PR.DS-01, PR.DS-02 | | |
-| i | Sicurezza personale, accessi, asset | GV.RR-04, PR.AA, ID.AM, PR.AA-06 | | |
+| i | Sicurezza personale, accessi, asset | GV.RR-04, PR.AA-01/03/05/06, ID.AM-01/02/03/04 | | |
+| l | MFA, comunicazioni protette | PR.AA-03, PR.IR-01 | | |
+
+**Per soggetti importanti (Allegato 1 - 37 sottocategorie)**:
+
+| Lett. art. 24 co. 2 | Ambito | Sottocategorie Allegato 1 | Copertura attuale | Gap prioritario? |
+|---------------------|--------|----------------------------|--------------------|------------------|
+| a | Politiche analisi rischi e sicurezza ICT | GV.RM-03, ID.RA-01/05/06/08, GV.PO-01/02 | | |
+| b | Gestione incidenti e notifiche | RS.MA-01, RS.CO-02, ID.IM-04 | | |
+| c | Continuita' operativa | RC.RP-01, PR.DS-11 | | |
+| d | Sicurezza catena di approvvigionamento | GV.SC-01/02/04/05/07 | | |
+| e | SDLC + vuln. disclosure | PR.PS-02/04/06, ID.RA-08 | | |
+| f | Valutazione efficacia | ID.IM-01, GV.RM-03 | | |
+| g | Igiene cyber e formazione | PR.AT-01 | | |
+| h | Crittografia / cifratura | PR.DS-01, PR.DS-02 | | |
+| i | Sicurezza personale, accessi, asset | GV.RR-04, PR.AA-01/03/05/06, ID.AM-01/02/04 | | |
 | l | MFA, comunicazioni protette | PR.AA-03, PR.IR-01 | | |
 
 Se uno dei 10 ambiti e' a livello < 3 con politica non documentata: e' un **rischio sanzionatorio diretto** (art. 38 co. 8 lett. a richiama l'art. 24 sostanziale).

@@ -38,7 +38,7 @@ Non rilevante per la classificazione (gia' essenziale via dimensione + settore A
 | Approvazione modalita' di implementazione misure dal CdA | art. 23 co. 1 lett. a | T+3-6 mesi (priorita' alta) |
 | Adozione misure tecniche/operative/organizzative (10 elementi) | art. 24 co. 2 + art. 3 Det. 379907/2025 | T+18 mesi dalla comunicazione di inserimento ACN |
 | Formazione CdA + dipendenti | art. 23 co. 2 | T+6-12 mesi |
-| Notifica incidenti significativi | art. 25 | T+9 mesi dalla notifica ACN |
+| Notifica incidenti significativi | art. 25 + art. 3 co. 2 Det. 379907/2025 | T+9 mesi dalla comunicazione di inserimento nell'elenco NIS |
 | Sanzioni in caso di violazione | art. 38 co. 9 lett. a | fino a **max(10M EUR; 2% fatturato annuo mondiale)** = max(10M; 7,6M) = **10M EUR** in questo caso. Minimo edittale 1/20 = 500k EUR |
 
 ### Rinvio

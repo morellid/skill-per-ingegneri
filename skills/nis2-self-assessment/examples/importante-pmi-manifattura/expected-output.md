@@ -47,7 +47,7 @@ Attenzione: il calcolo dimensionale per gruppi/imprese collegate (art. 6 par. 2 
 | Approvazione modalita' di implementazione misure dal CdA / AU | art. 23 co. 1 lett. a | T+3-6 mesi |
 | Adozione misure tecniche/operative/organizzative | art. 24 co. 2 + art. 3 Det. 379907/2025 | T+18 mesi dalla comunicazione di inserimento ACN |
 | Formazione organi + dipendenti | art. 23 co. 2 | T+6-12 mesi |
-| Notifica incidenti significativi | art. 25 | T+9 mesi dalla notifica ACN |
+| Notifica incidenti significativi | art. 25 + art. 3 co. 2 Det. 379907/2025 | T+9 mesi dalla comunicazione di inserimento nell'elenco NIS |
 | Sanzioni in caso di violazione | art. 38 co. 9 lett. b | fino a **max(7M EUR; 1,4% fatturato annuo mondiale)** = max(7M; 588k) = **7M EUR** in questo caso. Minimo edittale 1/30 = 233k EUR |
 
 ### Sovrapposizione con TISAX (note di esperienza, non normative)
@@ -70,7 +70,7 @@ Raccomandazione: implementare TISAX in modo che soddisfi anche i requisiti NIS2 
 | GOVERN | GV.PO-01 (16 ambiti politiche) | Liv. 1 (2 politiche su 16, vecchie) | **ALTA** |
 | GOVERN | GV.RR-02 (organizzazione cyber approvata) | Liv. 0 | **ALTA** |
 | GOVERN | GV.SC (supply chain) | Liv. 0 | ALTA |
-| IDENTIFY | ID.AM-01/02/03 (inventari + flussi) | Liv. 1 | MEDIA |
+| IDENTIFY | ID.AM-01/02/04 (inventari hardware/software/servizi fornitori) | Liv. 1 | MEDIA |
 | IDENTIFY | ID.RA-05 (risk assessment) | Liv. 0 | ALTA |
 | PROTECT | PR.AA-03 (MFA) | Liv. 1 (solo VPN) | ALTA |
 | PROTECT | PR.AT-01 (awareness) | Liv. 1 (corso 2022 mai ripetuto) | ALTA |

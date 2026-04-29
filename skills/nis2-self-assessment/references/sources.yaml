@@ -133,10 +133,11 @@ sources:
     notes: |
       Misure per soggetti essenziali, organizzate secondo il Framework
       Nazionale Cybersecurity ed. 2025 in 6 funzioni, categorie,
-      sottocategorie e requisiti. Conteggio dal PDF: 43 sottocategorie
-      con 112 requisiti operativi puntuali (le fonti giornalistiche
-      indicavano 116 requisiti; 4 di differenza si trovano probabilmente
-      nelle tabelle in appendice e includono requisiti raggruppati).
+      sottocategorie e requisiti. Conteggio diretto dal PDF: 43
+      sottocategorie con 112 requisiti operativi puntuali numerati.
+      Differenze rispetto a conteggi di fonti secondarie non
+      verificate (es. "116 requisiti") non sono ulteriormente
+      indagate in questa alpha.
 
   - id: acn-det-379907-allegato-3
     title: "ACN - Determinazione 379907/2025 - Allegato 3 - Incidenti significativi di base per i soggetti importanti"
