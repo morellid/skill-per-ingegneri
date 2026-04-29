@@ -784,6 +784,117 @@ class TestCLI(unittest.TestCase):
         finally:
             os.unlink(path)
 
+    def test_input_json_ag_g_non_lista(self):
+        # ag_g come scalare invece che lista -> parser.error, non TypeError.
+        bad = {
+            "parametri_calcolo": {
+                "vn_anni": 50, "classe_uso": "II",
+                "cat_sottosuolo": "C", "cat_topografica": "T1",
+            },
+            "parametri_pericolosita_sito": {
+                "tr_anni": list(TR_RIFERIMENTO),
+                "ag_g": 0.2,  # scalare invece di lista!
+                "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+                "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+            },
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            err = buf.getvalue()
+            self.assertIn("ag_g", err)
+            self.assertIn("lista", err)
+        finally:
+            os.unlink(path)
+
+    def test_input_json_stati_limite_con_int(self):
+        # stati_limite contiene un int invece di stringhe -> parser.error,
+        # non AttributeError su .upper().
+        bad = {
+            "parametri_calcolo": {
+                "vn_anni": 50, "classe_uso": "II",
+                "cat_sottosuolo": "C", "cat_topografica": "T1",
+                "stati_limite": ["SLV", 1],  # mix valido + int
+            },
+            "parametri_pericolosita_sito": {
+                "tr_anni": list(TR_RIFERIMENTO),
+                "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+                "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+                "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+            },
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            self.assertIn("stati_limite", buf.getvalue())
+        finally:
+            os.unlink(path)
+
+    def test_input_json_pc_non_dict(self):
+        # parametri_calcolo come stringa invece di oggetto -> parser.error.
+        bad = {
+            "parametri_calcolo": "non sono un dict",
+            "parametri_pericolosita_sito": {
+                "tr_anni": list(TR_RIFERIMENTO),
+                "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+                "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+                "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+            },
+        }
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(bad, f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            err = buf.getvalue()
+            self.assertIn("parametri_calcolo", err)
+            self.assertIn("oggetto JSON", err)
+        finally:
+            os.unlink(path)
+
+    def test_input_json_top_level_non_dict(self):
+        # JSON top-level e' una lista -> parser.error.
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump([1, 2, 3], f)
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            self.assertIn("oggetto JSON", buf.getvalue())
+        finally:
+            os.unlink(path)
+
     def test_main_su_stato_singolo(self):
         data = {
             "tr_anni": list(TR_RIFERIMENTO),

@@ -33,7 +33,7 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 
 ## Output atteso
 
-57 test, tutti pass. Le classi di test e cosa coprono:
+61 test, tutti pass. Le classi di test e cosa coprono:
 
 | Classe                       | # | Cosa copre                                                                  |
 |------------------------------|---|-----------------------------------------------------------------------------|
@@ -50,12 +50,12 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 | `TestFailClosedScalari`      | 10 | Hardening scalare: NaN/inf/zero/neg/bool rifiutati in vita_riferimento, coeff_eta, Se_T, coeff_SS, coeff_CC, periodi_caratteristici |
 | `TestCLINaNHandling`         | 3 | JSON con NaN/Infinity rifiutato (RFC 8259); tabula_periodi step=NaN          |
 | `TestEsempioConforme`        | 2 | Anti-drift end-to-end: input.json + expected.json letti dalle examples/     |
-| `TestCLI`                    | 9 | CLI: --input-json equivalente a flag scalari; error handling chiavi mancanti (sito, parametri_calcolo), stato_limite invalido, classe d'uso lowercase, file --tr-riferimento incompleto |
+| `TestCLI`                    | 13 | CLI: --input-json equivalente a flag scalari; error handling chiavi mancanti (sito, parametri_calcolo), stato_limite invalido, classe d'uso lowercase, file --tr-riferimento incompleto, type mismatch (ag_g scalare, stati_limite con int, pc non-dict, top-level non-dict) |
 
 Esempio output:
 
 ```
-Ran 57 tests in 0.00x s
+Ran 61 tests in 0.00x s
 OK
 ```
 

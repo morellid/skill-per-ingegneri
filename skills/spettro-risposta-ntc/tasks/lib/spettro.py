@@ -639,6 +639,11 @@ def main(argv: list[str] | None = None) -> int:
                 full = json.load(f, parse_constant=_reject_nan_inf)
         except ValueError as e:
             parser.error(f"--input-json: parse error: {e}")
+        if not isinstance(full, dict):
+            parser.error(
+                f"--input-json: il file deve contenere un oggetto JSON al "
+                f"livello superiore, trovato {type(full).__name__}."
+            )
         try:
             pc = full["parametri_calcolo"]
             sito = full["parametri_pericolosita_sito"]
@@ -647,6 +652,16 @@ def main(argv: list[str] | None = None) -> int:
                 f"--input-json: chiave mancante {e!r}. Atteso schema con "
                 f"'parametri_calcolo' e 'parametri_pericolosita_sito'. "
                 f"Vedi examples/caso-conforme-fittizio-cu2-c-t1/input.json."
+            )
+        if not isinstance(pc, dict):
+            parser.error(
+                f"--input-json: parametri_calcolo deve essere un oggetto JSON, "
+                f"trovato {type(pc).__name__}."
+            )
+        if not isinstance(sito, dict):
+            parser.error(
+                f"--input-json: parametri_pericolosita_sito deve essere un "
+                f"oggetto JSON, trovato {type(sito).__name__}."
             )
         if "tr_anni" in sito and tuple(sito["tr_anni"]) != TR_RIFERIMENTO:
             parser.error(
@@ -660,6 +675,12 @@ def main(argv: list[str] | None = None) -> int:
                 f"{sito_mancanti}. Schema atteso: tr_anni (opzionale), ag_g, "
                 f"F0, Tc_star (9 valori ciascuno)."
             )
+        for k in ("ag_g", "F0", "Tc_star"):
+            if not isinstance(sito[k], list):
+                parser.error(
+                    f"--input-json: parametri_pericolosita_sito.{k} deve essere "
+                    f"una lista di 9 numeri, trovato {type(sito[k]).__name__}."
+                )
         try:
             riferimento = ParametriRiferimento(
                 ag=list(sito["ag_g"]),
@@ -690,6 +711,12 @@ def main(argv: list[str] | None = None) -> int:
         if sl_list is None:
             stati = list(P_VR)
         elif isinstance(sl_list, list):
+            non_str = [s for s in sl_list if not isinstance(s, str)]
+            if non_str:
+                parser.error(
+                    f"--input-json: parametri_calcolo.stati_limite deve "
+                    f"contenere solo stringhe, trovato anche: {non_str}"
+                )
             stati = [s.upper() for s in sl_list]
         else:
             parser.error(
@@ -697,6 +724,11 @@ def main(argv: list[str] | None = None) -> int:
                 f"lista o omesso, trovato {type(sl_list).__name__}"
             )
         tab = pc.get("tabula_periodi")
+        if tab is not None and not isinstance(tab, dict):
+            parser.error(
+                f"--input-json: parametri_calcolo.tabula_periodi deve essere "
+                f"un oggetto JSON con start/stop/step, trovato {type(tab).__name__}."
+            )
         if tab:
             tab_mancanti = [k for k in ("start", "stop", "step") if k not in tab]
             if tab_mancanti:
@@ -752,7 +784,7 @@ def main(argv: list[str] | None = None) -> int:
                 riferimento,
                 xi_percento=xi,
             )
-        except ValueError as e:
+        except (ValueError, AttributeError, TypeError) as e:
             parser.error(f"calcolo {sl} fallito: {e}")
         ordinate = tabula_spettro(p, tabula) if tabula else []
         risultati.append(RisultatoSpettro(parametri=p, ordinate=ordinate))
