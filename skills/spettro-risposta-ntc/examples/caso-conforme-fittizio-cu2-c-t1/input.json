@@ -1,0 +1,22 @@
+{
+  "_comment": "Input canonico del caso conforme. Letto sia da tasks/lib/test_spettro.py (TestEsempioConforme) sia presentato all'utente da input.md. Modificare qui produce drift visibile: il test anti-drift fallira' finche' expected.json non e' rigenerato.",
+  "parametri_calcolo": {
+    "vn_anni": 50,
+    "classe_uso": "II",
+    "cat_sottosuolo": "C",
+    "cat_topografica": "T1",
+    "xi_percento": 5.0,
+    "stati_limite": ["SLO", "SLD", "SLV", "SLC"],
+    "tabula_periodi": {
+      "start": 0.0,
+      "stop": 4.0,
+      "step": 0.1
+    }
+  },
+  "parametri_pericolosita_sito": {
+    "tr_anni": [30, 50, 72, 101, 140, 201, 475, 975, 2475],
+    "ag_g":    [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+    "F0":      [2.50,  2.55,  2.60,  2.62,  2.65,  2.68,  2.72,  2.74,  2.76],
+    "Tc_star": [0.20,  0.22,  0.24,  0.26,  0.28,  0.30,  0.32,  0.34,  0.36]
+  }
+}

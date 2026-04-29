@@ -22,6 +22,7 @@ Contiene anche:
 | [`gdpr-registro-dpia`](skills/gdpr-registro-dpia/) | Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA) | GDPR art. 30, 35, 36 + provv. Garante |
 | [`nis2-self-assessment`](skills/nis2-self-assessment/) | Self-assessment NIS2 (perimetro, gap analysis misure ACN, notifica incidenti, governance) | D.Lgs. 138/2024 + Det. ACN 379907/2025 |
 | [`ai-act-compliance`](skills/ai-act-compliance/) | Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza | Reg. UE 2024/1689 (AI Act) |
+| [`spettro-risposta-ntc`](skills/spettro-risposta-ntc/) | Calcolo code-driven dello spettro di risposta elastico orizzontale (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)) per SLO/SLD/SLV/SLC | NTC 2018 par. 3.2 + Circ. 7/2019 |
 
 Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
 
@@ -42,7 +43,8 @@ skill-per-ingegneri/
 │   ├── dvr-generico/
 │   ├── gdpr-registro-dpia/
 │   ├── nis2-self-assessment/
-│   └── ai-act-compliance/
+│   ├── ai-act-compliance/
+│   └── spettro-risposta-ntc/
 ├── methodology/                 # come si genera e mantiene una skill
 ├── templates/                   # scaffold dual-agent per nuove skill
 └── scripts/                     # utility CLI (new-skill, validate, fetch-sources)

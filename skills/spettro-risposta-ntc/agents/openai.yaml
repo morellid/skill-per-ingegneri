@@ -1,0 +1,12 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Spettro di risposta NTC 2018 (par. 3.2)
+short_description: Calcolo dello spettro di risposta elastico orizzontale ai sensi delle NTC 2018 par. 3.2 e Circolare 7/2019. Dato il sito (parametri ag/F0/Tc* dal reticolo INGV), VN, classe d'uso, categoria di sottosuolo e topografica, restituisce TR per SLO/SLD/SLV/SLC, parametri costruttivi (S, eta, TB, TC, TD) e tabella Se(T). Code-driven, output verificabile vs foglio CSLP.
+default_prompt: |
+  Calcolami lo spettro di risposta NTC 2018 per il mio sito.
+  Vita nominale 50 anni, classe d'uso II, categoria di sottosuolo C,
+  topografica T1. Allego il JSON con i 9 valori di ag, F0, Tc* per
+  i TR di riferimento del reticolo INGV.
+  Dammi parametri e Se(T) tabulata da 0 a 4 s con passo 0.05 s,
+  per tutti gli stati limite.
