@@ -16,10 +16,11 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
   - `gap-analysis-misure` - gap analysis sui 10 elementi art. 24 + sottocategorie Framework Nazionale Cybersecurity
   - `verifica-incidente-significativo` - art. 25 e codici IS-1..4 della Det. ACN 379907/2025 (Allegati 3-4)
   - `check-obblighi-governance` - art. 23 obblighi del CdA
-- 9 estratti normativi:
+- 10 estratti normativi:
   - `dlgs-138-2024-perimetro.md` (art. 3, 6, 7 + note dimensionali Racc. 2003/361/CE)
   - `dlgs-138-2024-misure-art23.md` (art. 23 + art. 24 con i 10 elementi minimi)
   - `dlgs-138-2024-incident-art25.md` (art. 25 + tempistiche)
+  - `dlgs-138-2024-sanzioni-art38.md` (art. 38 + tabelle di sintesi sanzionatorie)
   - `dlgs-138-2024-allegati-i-iv.md` (settori e tipologie)
   - `acn-det-379907-articoli.md` (artt. 1-9 della Det. ACN vigente)
   - `acn-misure-base-essenziali.md` (Allegato 2 Det. 379907/2025 - 43 sottocategorie)

@@ -21,6 +21,7 @@ Estratti gia' preparati in `references/estratti/`:
 - `dlgs-138-2024-perimetro.md` - art. 3, art. 6, art. 7 + note dimensionali Racc. 2003/361/CE
 - `dlgs-138-2024-misure-art23.md` - art. 23 organi di amministrazione + art. 24 misure di gestione del rischio
 - `dlgs-138-2024-incident-art25.md` - art. 25 obblighi di notifica
+- `dlgs-138-2024-sanzioni-art38.md` - art. 38 sanzioni amministrative (commi rilevanti, tabelle di sintesi, sanzioni accessorie e strumenti deflattivi)
 - `dlgs-138-2024-allegati-i-iv.md` - Allegati I-IV (settori e tipologie)
 - `acn-det-379907-articoli.md` - artt. 1-9 della Determinazione 379907/2025 (vigente dal 15/01/2026)
 - `acn-misure-base-importanti.md` - Allegato 1 Det. 379907/2025 (37 sottocategorie)
@@ -92,6 +93,6 @@ Estratti gia' preparati in `references/estratti/`:
 - Versione: vedi `CHANGELOG.md` (v0.1.0-alpha)
 - Validazione: Livello 1 (auto-validazione autore) - Livello 2 da pianificare
 - Task files: 4 (`valuta-perimetro`, `gap-analysis-misure`, `verifica-incidente-significativo`, `check-obblighi-governance`)
-- Estratti normativi: 9 estratti preparati
+- Estratti normativi: 10 estratti preparati
 - Esempi: 2 (utility energetica essenziale + PMI manifattura importante)
 - Skill non ancora testata su organizzazione reale - validazione Livello 2 prioritaria
