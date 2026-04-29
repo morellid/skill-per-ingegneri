@@ -377,6 +377,117 @@ class TestCoperturaCategorie(unittest.TestCase):
         self.assertAlmostEqual(se10 / se5, p10.eta / p5.eta, places=6)
 
 
+class TestFailClosedScalari(unittest.TestCase):
+    """Fail-closed su input scalari non finiti (NaN/inf) coerentemente con
+    la validazione vettoriale di ParametriRiferimento.__post_init__.
+
+    Indirizza Codex adversarial review (round 4): un xi_percento NaN
+    silenzioso produrrebbe Se(T) tutti NaN, output corrotto in dominio
+    strutturale ad alto rischio.
+    """
+
+    def test_vita_riferimento_rifiuta_nan(self):
+        with self.assertRaisesRegex(ValueError, "Vita nominale.*finito"):
+            vita_riferimento(float("nan"), "II")
+
+    def test_vita_riferimento_rifiuta_inf(self):
+        with self.assertRaisesRegex(ValueError, "Vita nominale.*finito"):
+            vita_riferimento(float("inf"), "II")
+
+    def test_coeff_eta_rifiuta_nan(self):
+        with self.assertRaisesRegex(ValueError, "xi.*finito"):
+            coeff_eta(float("nan"))
+
+    def test_se_T_rifiuta_nan(self):
+        rif = ParametriRiferimento(
+            ag=[0.2] * 9, F0=[2.5] * 9, Tc_star=[0.30] * 9
+        )
+        p = calcola_parametri("SLV", 50, "II", "C", "T1", rif, xi_percento=5.0)
+        with self.assertRaisesRegex(ValueError, "T.*finito"):
+            Se_T(float("nan"), p)
+
+
+class TestCLINaNHandling(unittest.TestCase):
+    """JSON con NaN/Infinity (non standard RFC 8259) deve essere rifiutato a
+    livello di parser, non propagarsi a Se(T) come ordinate NaN."""
+
+    BASE_SITO = {
+        "tr_anni": list(TR_RIFERIMENTO),
+        "ag_g": [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+        "F0": [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+        "Tc_star": [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+    }
+
+    def _scrivi_raw(self, raw_text: str) -> str:
+        # Scrive raw text (puo' contenere "NaN" non quotato), restituisce path.
+        f = tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        )
+        f.write(raw_text)
+        f.close()
+        return f.name
+
+    def test_input_json_rifiuta_nan_in_xi(self):
+        # Costruisce manualmente il JSON con "NaN" non quotato (Python json
+        # lo accetta come float('nan') by default; il nostro parse_constant
+        # lo rifiuta).
+        raw = json.dumps(
+            {
+                "parametri_calcolo": {
+                    "vn_anni": 50, "classe_uso": "II",
+                    "cat_sottosuolo": "C", "cat_topografica": "T1",
+                    "xi_percento": 5.0,
+                },
+                "parametri_pericolosita_sito": self.BASE_SITO,
+            }
+        )
+        # Sostituisce 5.0 di xi_percento con NaN non quotato.
+        raw = raw.replace('"xi_percento": 5.0', '"xi_percento": NaN')
+        path = self._scrivi_raw(raw)
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            self.assertIn("NaN", buf.getvalue())
+        finally:
+            os.unlink(path)
+
+    def test_input_json_rifiuta_infinity_in_ag(self):
+        raw = json.dumps(
+            {
+                "parametri_calcolo": {
+                    "vn_anni": 50, "classe_uso": "II",
+                    "cat_sottosuolo": "C", "cat_topografica": "T1",
+                },
+                "parametri_pericolosita_sito": self.BASE_SITO,
+            }
+        )
+        raw = raw.replace("0.218", "Infinity")
+        path = self._scrivi_raw(raw)
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            self.assertIn("Infinity", buf.getvalue())
+        finally:
+            os.unlink(path)
+
+    def test_tabula_periodi_rifiuta_step_nan(self):
+        from io import StringIO
+        from contextlib import redirect_stderr
+        buf = StringIO()
+        with redirect_stderr(buf):
+            with self.assertRaises(SystemExit):
+                main(["--tabula", "0:4:nan"])
+        self.assertIn("step", buf.getvalue())
+
+
 class TestEsempioConforme(unittest.TestCase):
     """Anti-drift end-to-end del caso canonico.
 

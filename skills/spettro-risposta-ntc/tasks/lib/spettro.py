@@ -73,6 +73,21 @@ TR_RIFERIMENTO: tuple[int, ...] = (30, 50, 72, 101, 140, 201, 475, 975, 2475)
 # --- Strutture dati ------------------------------------------------------
 
 
+def _assert_finito(nome: str, valore: float) -> float:
+    """Valida che `valore` sia un numero reale finito (no NaN/inf, no bool, no string).
+
+    Restituisce il valore come float in caso di successo, solleva ValueError
+    altrimenti. Usato da entry point pubblici (vita_riferimento, coeff_eta,
+    Se_T, CLI) per garantire fail-closed su input non-finiti, coerentemente
+    con la validazione vettoriale di ParametriRiferimento.__post_init__.
+    """
+    if isinstance(valore, bool) or not isinstance(valore, (int, float)):
+        raise ValueError(f"{nome}: atteso numero reale, ricevuto {valore!r}")
+    if not math.isfinite(valore):
+        raise ValueError(f"{nome}: atteso valore finito, ricevuto {valore!r} (NaN o inf)")
+    return float(valore)
+
+
 @dataclass
 class ParametriRiferimento:
     """Parametri di pericolosita' al sito per i 9 TR di riferimento.
@@ -169,6 +184,7 @@ def vita_riferimento(vn_anni: float, classe_uso: str) -> float:
 
     V_R minima 35 anni e' applicata sotto come prescritto da par. 2.4.3.
     """
+    vn_anni = _assert_finito("Vita nominale V_N", vn_anni)
     if vn_anni <= 0:
         raise ValueError("Vita nominale V_N deve essere positiva")
     cu = classe_uso.upper() if isinstance(classe_uso, str) else classe_uso
@@ -329,6 +345,7 @@ def coeff_eta(xi_percento: float) -> float:
     eta = sqrt(10 / (5 + xi)) >= 0.55, dove xi in %.
     Per xi = 5 -> eta = 1.0.
     """
+    xi_percento = _assert_finito("xi (smorzamento %)", xi_percento)
     if xi_percento < 0:
         raise ValueError("xi (smorzamento %) deve essere >= 0")
     eta = math.sqrt(10.0 / (5.0 + xi_percento))
@@ -367,6 +384,7 @@ def Se_T(T: float, p: ParametriSpettro) -> tuple[float, str]:
       TC <= T < TD:   Se = ag*S*eta*F0*(TC/T)
       TD <= T:        Se = ag*S*eta*F0*(TC*TD/T^2)
     """
+    T = _assert_finito("T", T)
     if T < 0:
         raise ValueError("T deve essere >= 0")
     base = p.ag * p.S * p.eta * p.F0
@@ -444,6 +462,19 @@ def tabula_spettro(
 # --- I/O parametri di riferimento ---------------------------------------
 
 
+def _reject_nan_inf(token: str) -> float:
+    """Hook per json.load: rifiuta i token JSON non standard NaN/Infinity/-Infinity.
+
+    JSON standard (RFC 8259) non ammette questi token; il parser di Python li
+    accetta di default. Per evitare che NaN/inf si propaghino silenziosamente
+    nel calcolo dello spettro, li rifiutiamo a livello di I/O.
+    """
+    raise ValueError(
+        f"token JSON non ammesso: {token!r}. RFC 8259 non consente "
+        f"NaN/Infinity/-Infinity; passa un numero finito."
+    )
+
+
 def carica_parametri_riferimento(path: str) -> ParametriRiferimento:
     """Carica i parametri (ag, F0, Tc*) per i 9 TR da file JSON.
 
@@ -458,7 +489,7 @@ def carica_parametri_riferimento(path: str) -> ParametriRiferimento:
     Se "tr_anni" e' presente, deve coincidere con TR_RIFERIMENTO.
     """
     with open(path, encoding="utf-8") as f:
-        raw = json.load(f)
+        raw = json.load(f, parse_constant=_reject_nan_inf)
     if "tr_anni" in raw and tuple(raw["tr_anni"]) != TR_RIFERIMENTO:
         raise ValueError(
             f"tr_anni nel file deve essere {list(TR_RIFERIMENTO)}, "
@@ -487,9 +518,21 @@ def _parse_periodi(spec: str) -> list[float]:
         raise argparse.ArgumentTypeError(
             "spec periodi attesa nel formato 'start:stop:step' (es. '0:4:0.05')"
         )
-    start, stop, step = (float(p) for p in parti)
+    try:
+        start, stop, step = (float(p) for p in parti)
+    except ValueError as e:
+        raise argparse.ArgumentTypeError(f"spec periodi: numero non valido ({e})")
+    for nome, v in (("start", start), ("stop", stop), ("step", step)):
+        if not math.isfinite(v):
+            raise argparse.ArgumentTypeError(
+                f"spec periodi: {nome} deve essere finito (no NaN/inf), ricevuto {v!r}"
+            )
     if step <= 0:
         raise argparse.ArgumentTypeError("step deve essere > 0")
+    if stop < start:
+        raise argparse.ArgumentTypeError(
+            f"spec periodi: stop ({stop}) deve essere >= start ({start})"
+        )
     out: list[float] = []
     t = start
     # tolleranza per evitare ultimo punto fuori per arrotondamento
@@ -576,8 +619,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.input_json is not None:
         # Modalita' A: tutto da un singolo file JSON. I flag scalari sono ignorati
         # (warning silenzioso in argparse, esplicito qui solo se l'utente li passa).
-        with open(args.input_json, encoding="utf-8") as f:
-            full = json.load(f)
+        try:
+            with open(args.input_json, encoding="utf-8") as f:
+                full = json.load(f, parse_constant=_reject_nan_inf)
+        except ValueError as e:
+            parser.error(f"--input-json: parse error: {e}")
         try:
             pc = full["parametri_calcolo"]
             sito = full["parametri_pericolosita_sito"]
@@ -615,11 +661,16 @@ def main(argv: list[str] | None = None) -> int:
             parser.error(
                 f"--input-json: parametri_calcolo: chiavi mancanti {pc_mancanti}."
             )
-        vn = float(pc["vn_anni"])
+        try:
+            vn = float(pc["vn_anni"])
+            xi = float(pc.get("xi_percento", 5.0))
+        except (TypeError, ValueError) as e:
+            parser.error(
+                f"--input-json: vn_anni/xi_percento devono essere numerici ({e})"
+            )
         classe_uso = pc["classe_uso"]
         cat_sottosuolo = pc["cat_sottosuolo"]
         cat_topografica = pc["cat_topografica"]
-        xi = float(pc.get("xi_percento", 5.0))
         sl_list = pc.get("stati_limite")
         if sl_list is None:
             stati = list(P_VR)
