@@ -80,7 +80,7 @@ Caratteristiche operative:
 - Sanzione in caso di omissione: pagamento di sanzione pecuniaria ridotta (vedi art. 6-bis co. 5)
 - Categoria-cardine: **manutenzione straordinaria "leggera"** (senza interventi sulle parti strutturali) inclusi frazionamenti/accorpamenti senza opere strutturali
 
-> **Salva Casa**: ha confermato il ruolo "residuale" della CILA e ha introdotto la sanatoria semplificata (art. 36-bis) anche per opere realizzate in regime CILA mancante.
+> **Salva Casa**: ha confermato il ruolo "residuale" della CILA. Per la **CILA omessa** (opera CILA-dovuta realizzata senza CILA) si applica il regime sanzionatorio specifico dell'**art. 6-bis co. 5** (sanzione pecuniaria), NON il procedimento di sanatoria art. 36-bis che e' riservato alle parziali difformita' art. 34, alle variazioni essenziali art. 32 e agli abusi del regime SCIA art. 22 ex art. 37.
 
 ## Art. 9-bis - Stato legittimo dell'immobile
 
@@ -174,7 +174,7 @@ Comma 1-bis (introdotto dal Salva Casa): per gli interventi **realizzati entro i
 
 Comma 1-ter: la SU rilevante per l'applicazione delle soglie e' calcolata sulla **superficie assentita**.
 
-**Tolleranze esecutive** (introdotte dal Salva Casa nello stesso art. 34-bis): comprendono anche il **minore dimensionamento dell'edificio**, la **mancata realizzazione di elementi architettonici non strutturali**, le **irregolarita' geometriche**, le **modifiche alle finiture**, le **diverse collocazioni di impianti** e la **diversa realizzazione dei vani interni**, **a condizione** che non comportino:
+Comma 2 - **Tolleranze esecutive**: comprendono il **minore dimensionamento dell'edificio**, la **mancata realizzazione di elementi architettonici non strutturali**, le **irregolarita' geometriche**, le **modifiche alle finiture** e le **diverse collocazioni di impianti**, nonche' la **diversa realizzazione dei vani interni**, purche' non alterino la volumetria complessiva e non comportino:
 - variazione del numero di unita' immobiliari
 - variazione della destinazione d'uso che comporti diversa dotazione standard
 
@@ -209,7 +209,7 @@ Procedimento:
 
 Termini procedimentali (art. 36-bis co. 6 DPR 380):
 - Per il **permesso di costruire in sanatoria**: **45 giorni** dalla presentazione della domanda; decorso tale termine, "la richiesta si intende accolta" (**silenzio-assenso**)
-- Per la **SCIA in sanatoria**: si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (60 giorni)
+- Per la **SCIA in sanatoria**: si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (per la SCIA in materia edilizia il termine di 60 gg del co. 3 e' ridotto a **30 giorni**)
 - I termini sono **sospesi** in caso di richiesta di parere paesaggistico/MiC fino al rilascio
 - Ferma restando la possibilita' del Comune di esercitare i poteri di autotutela e di repressione dell'abuso quando ne sussistano i presupposti
 

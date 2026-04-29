@@ -237,7 +237,7 @@ Per pertinenze e opere minori (es. tettoia di 15 mq), gli allegati sono spesso r
 
 ### Sanatoria con piu' opere abusive di regime diverso
 
-Se nello stesso immobile ci sono opere abusive in regimi diversi (es. una in regime PdC, un'altra in regime CILA), serve **doppia istanza** o un'unica istanza con prospetto distinto: regime art. 36 per le opere PdC + regime art. 36-bis per le opere CILA/SCIA. Segnalalo al SUE.
+Se nello stesso immobile ci sono opere abusive in regimi diversi, servono istanze distinte (o un'unica istanza con prospetti separati per ciascun regime): art. 36 per assenza/totale difformita' da PdC o SCIA alternativa; art. 36-bis per parziali difformita' (art. 34), variazioni essenziali (art. 32) e abusi del regime SCIA art. 22 (ex art. 37); art. 6-bis co. 5 (sanzione pecuniaria) per CILA omessa. Segnalalo al SUE.
 
 ### Antincendio post-modifica (CILA non sufficiente)
 

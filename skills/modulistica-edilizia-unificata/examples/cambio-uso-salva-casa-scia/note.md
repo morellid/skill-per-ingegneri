@@ -39,7 +39,7 @@ Il titolo per il mutamento ex co. 1-ter, **con o senza opere CILA-art. 6-bis**, 
 
 ### 5. Efficacia della SCIA
 
-La SCIA ex art. 19 L. 241/1990 e' efficace **dalla presentazione**: l'inizio lavori e' immediato. Il termine di 60 giorni e' il termine entro cui il Comune puo' esercitare i poteri inibitori in caso di non conformita'; NON e' un termine di efficacia.
+La SCIA ex art. 19 L. 241/1990 e' efficace **dalla presentazione**: l'inizio lavori e' immediato. Per la SCIA in materia edilizia il termine generale di 60 gg del co. 3 e' ridotto a **30 gg** dal co. 6-bis: e' il termine entro cui il Comune puo' esercitare i poteri inibitori in caso di non conformita'; NON e' un termine di efficacia.
 
 Errore frequente: confondere il termine inibitorio con un termine di efficacia. Distinguere anche dalla **SCIA alternativa al PdC** (art. 23 DPR 380), che richiede attesa di 30 gg dalla presentazione.
 
@@ -48,7 +48,7 @@ Errore frequente: confondere il termine inibitorio con un termine di efficacia. 
 In Lombardia (LR 27/2015 art. 29), il **B&B (bed&breakfast)** e' attivita' **non imprenditoriale**, **non continuativa**, con un massimo di **4 camere** e 12 posti letto.
 
 Una struttura con 5 camere NON e' un B&B in Lombardia ma rientra in altre tipologie ricettive extra-alberghiere:
-- **Foresteria lombarda** (art. 38 LR 27/2015): struttura ricettiva non imprenditoriale; condizioni specifiche su numero camere/posti letto e durata del soggiorno.
+- **Foresteria lombarda** (art. 27 LR 27/2015): struttura ricettiva **imprenditoriale**, fino a **6 camere** e **14 posti letto**; servizi di alloggio ed eventuali servizi complementari (incluso somministrazione alimenti/bevande per i soli alloggiati).
 - **Locanda**, **affittacamere**, **case ed appartamenti per vacanze (CAV)**, **agriturismo** (per immobili rurali): altre forme con requisiti diversi.
 
 Per il caso (5 camere): inquadrare correttamente la tipologia ricettiva con il SUAP turismo del Comune e con la Regione, prima di presentare la SCIA edilizia.
@@ -91,7 +91,7 @@ L'errata classificazione (PdC vs SCIA) genera:
 Errore frequente nelle prime applicazioni del Salva Casa:
 - Continuare ad applicare standard/parcheggi pertinenziali per cambi co. 1-ter (non sono dovuti per legge).
 - Etichettare "B&B" una struttura con piu' di 4 camere in Lombardia (la LR 27/2015 non lo consente).
-- Confondere termine inibitorio (60 gg art. 19 co. 6-bis) con termine di efficacia (la SCIA e' efficace dalla presentazione).
+- Confondere termine inibitorio (30 gg art. 19 co. 6-bis per SCIA edilizia) con termine di efficacia (la SCIA e' efficace dalla presentazione).
 
 ## Limiti dell'esempio
 

@@ -12,6 +12,16 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - Estensione con scheda specifica per **sanatoria a "doppia conformita' alleggerita"** (art. 36-bis) e differenze procedurali rispetto all'art. 36.
 - Integrazione del **glossario opere di edilizia libera** (DM 2/3/2018) come tabella di lookup per le voci ricorrenti.
 
+## [0.1.2-alpha] - 2026-04-29
+
+### Fixed (revisione adversarial Codex - round 2)
+- **Art. 19 co. 6-bis L. 241/1990 in materia edilizia**: corretto il termine inibitorio per la SCIA edilizia (30 gg, non 60 gg). Il co. 6-bis riduce il termine generale di 60 gg del co. 3.
+- **Residui CILA -> art. 36-bis**: rimossi i riferimenti residui in `dpr-380-2001-regimi-edilizi.md`, `tasks/verifica-salva-casa.md`, `tasks/genera-elenco-allegati.md`, `references/estratti/modulistica-unificata-2025.md`, `tasks/determina-regime-edilizio.md`, `AGENTS.md`. Per CILA omessa vale solo art. 6-bis co. 5 (sanzione).
+- **Art. 34-bis tolleranze esecutive**: corretto il riferimento al **co. 2** (non co. 1-bis). Il co. 1-bis disciplina le soglie graduate dimensionali, il co. 2 disciplina le tolleranze esecutive (mancata realizzazione elementi architettonici, irregolarita' geometriche, finiture, impianti, vani interni).
+- **Art. 23-ter co. 1-bis**: chiarito che il mutamento all'interno della stessa categoria, sebbene "sempre consentito", richiede comunque il titolo SCIA ex art. 19 L. 241/1990 ai sensi del co. 1-quinquies (salvo condizioni regionali e comunali).
+- **Foresteria lombarda**: corretto riferimento da "art. 38" a **art. 27** LR Lombardia 27/2015. Corretta la qualifica come attivita' **imprenditoriale** (non non-imprenditoriale come precedentemente indicato). Aggiunto limite 6 camere/14 posti letto.
+- **Tabella A: tettoie e pergolati**: rimosso il residuo "tettoie/pergolati di limitate dimensioni e amovibili - edilizia libera". Sostituito con: tende, tende a pergola e pergotende (lett. b-ter) e VEPA (lett. b-bis); le tettoie stabili restano CILA/SCIA/PdC.
+
 ## [0.1.1-alpha] - 2026-04-29
 
 ### Fixed (revisione adversarial Codex)

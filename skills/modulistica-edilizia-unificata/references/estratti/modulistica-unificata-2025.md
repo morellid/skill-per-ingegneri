@@ -42,8 +42,8 @@ L'aggiornamento del **27/3/2025** ha modificato:
 | **SCIA alternativa al PdC** | art. 23 | Per interventi che richiederebbero PdC (art. 10 lett. c o e) ma il titolare opta per SCIA |
 | **Permesso di Costruire (PdC)** | art. 10 | Per nuova costruzione, ristrutturazione "pesante", ristrutturazione urbanistica |
 | **Comunicazione di fine lavori (CIL/SCA)** | varie | Conclusione e Segnalazione Certificata di Agibilita' (art. 24) |
-| **Sanatoria art. 36** | art. 36 | Doppia conformita' piena (per opere che richiedevano PdC) |
-| **Sanatoria semplificata art. 36-bis** (nuovo 2025) | art. 36-bis | Doppia conformita' alleggerita (per opere che richiedevano CILA/SCIA) |
+| **Sanatoria art. 36** | art. 36 | Doppia conformita' piena (assenza/totale difformita' da PdC o SCIA alternativa) |
+| **Sanatoria semplificata art. 36-bis** (nuovo 2025) | art. 36-bis | Doppia conformita' alleggerita (parziali difformita' art. 34, variazioni essenziali art. 32, abusi del regime SCIA art. 22 ex art. 37) |
 | **Variante in corso d'opera** | art. 22 / 23 / 10 | A seconda del titolo originario |
 
 > **Nota**: la modulistica e' rilasciata in formato editabile (.docx, .odt, .pdf compilabile). I Comuni la mettono a disposizione tramite portali SUE / SUAP.

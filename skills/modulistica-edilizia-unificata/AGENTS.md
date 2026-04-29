@@ -49,7 +49,7 @@ Quando l'agent produce output, **cita sempre l'articolo preciso** (DPR 380 e/o v
 ### Cosa NON fare
 
 - **Non confondere SCIA (art. 22) e SCIA alternativa al PdC (art. 23)**: sono regimi distinti, con diversi termini di inizio lavori (immediato vs 30 gg) e diverse sanzioni. La SCIA alternativa si applica SOLO ai casi che richiederebbero PdC (art. 23 co. 01).
-- **Non confondere art. 36 e art. 36-bis**: il regime di sanatoria dipende dal titolo originariamente dovuto (PdC -> art. 36; CILA/SCIA -> art. 36-bis post Salva Casa).
+- **Non confondere art. 36, art. 36-bis e art. 6-bis co. 5**: art. 36 per assenza/totale difformita' da PdC o SCIA alternativa (doppia conformita' piena); art. 36-bis (post Salva Casa) per parziali difformita' art. 34, variazioni essenziali art. 32 e abusi del regime SCIA art. 22 (regime art. 37, doppia conformita' alleggerita); art. 6-bis co. 5 (sanzione pecuniaria) per CILA omessa.
 - **Non emettere giudizi di "conformita' urbanistica"**: la conformita' al PRG/PUC e al regolamento edilizio e' giudizio del tecnico abilitato + verifica del SUE. La skill segnala l'obbligo, non lo verifica.
 - **Non assumere che il regolamento edilizio comunale coincida con il nazionale**: i Comuni possono integrare (es. soglia pertinenze ridotta, vincolo coloristico, dotazione standard).
 - **Non integrare automaticamente le leggi regionali** (recupero sottotetti, paesaggio, distanze): la skill cita il regime nazionale e rinvia alla LR.

@@ -6,7 +6,7 @@ La **parziale difformita' rispetto a una SCIA del 2013** (ristrutturazione inter
 
 Prima del Salva Casa, la regolarizzazione di queste micro-difformita' interne richiedeva spesso una "DIA in variante" tardiva o una sanatoria art. 36 con doppia conformita' piena. Il Salva Casa ha introdotto due strumenti che semplificano la gestione:
 
-1. **Tolleranze esecutive ampliate (art. 34-bis co. 1-bis)**: la "diversa realizzazione dei vani interni" e' espressamente qualificata come tolleranza esecutiva, **purche'** non vari il numero di UI o la destinazione d'uso con dotazione standard diversa. In molti casi non serve neppure la sanatoria.
+1. **Tolleranze esecutive ampliate (art. 34-bis co. 2)**: la "diversa realizzazione dei vani interni" e' espressamente qualificata come tolleranza esecutiva, **purche'** non vari il numero di UI o la destinazione d'uso con dotazione standard diversa. In molti casi non serve neppure la sanatoria.
 2. **Sanatoria art. 36-bis**: per gli abusi del regime SCIA art. 22 (regime art. 37) e per le parziali difformita' (art. 34) o variazioni essenziali (art. 32) di PdC/SCIA alternativa, e' applicabile la doppia conformita' alleggerita.
 
 Per le opere PdC-dovute realizzate in **assenza** o in **totale difformita'** resta invece l'art. 36 (doppia conformita' piena).
@@ -15,7 +15,7 @@ Per le opere PdC-dovute realizzate in **assenza** o in **totale difformita'** re
 
 ### 1. Tolleranza esecutiva vs sanatoria
 
-L'art. 34-bis co. 1-bis qualifica come tolleranze esecutive: minore dimensionamento, mancata realizzazione di elementi architettonici non strutturali, irregolarita' geometriche, modifiche alle finiture, diverse collocazioni di impianti, **diversa realizzazione dei vani interni**.
+L'art. 34-bis co. 2 qualifica come tolleranze esecutive: minore dimensionamento, mancata realizzazione di elementi architettonici non strutturali, irregolarita' geometriche, modifiche alle finiture, diverse collocazioni di impianti, **diversa realizzazione dei vani interni**.
 
 Non si applica se:
 - varia il numero di UI
@@ -57,7 +57,7 @@ Per opere interne 2014:
 
 Cruciale non confondere:
 - **Permesso in sanatoria** (per parziali difformita' ex art. 34 di PdC o SCIA alternativa o variazioni essenziali ex art. 32): **45 giorni** dalla presentazione; decorso il termine, "la richiesta si intende accolta" (**silenzio-assenso**).
-- **SCIA in sanatoria** (per abusi del regime SCIA art. 22, ex art. 37): si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (60 gg per i poteri inibitori).
+- **SCIA in sanatoria** (per abusi del regime SCIA art. 22, ex art. 37): si applica il termine dell'**art. 19 co. 6-bis L. 241/1990**, che per la SCIA in materia edilizia riduce a **30 gg** il termine generale di 60 gg del co. 3.
 - In caso di vincolo, i termini sono **sospesi** fino al rilascio del parere paesaggistico/MiC.
 
 ### 6. Documentazione probante l'epoca di realizzazione
@@ -81,7 +81,7 @@ La risoluzione (per via principale di tolleranza esecutiva o subordinata di sana
 ## Validazione attesa
 
 Confronto con sportello SUE Comune di Brescia: il caso dovrebbe ammettere:
-- per via principale, l'inquadramento come tolleranza esecutiva ex art. 34-bis co. 1-bis (no titolo richiesto, asseverazione del tecnico)
+- per via principale, l'inquadramento come tolleranza esecutiva ex art. 34-bis co. 2 (no titolo richiesto, asseverazione del tecnico)
 - per via subordinata, la SCIA in sanatoria art. 36-bis se la tolleranza non e' invocabile
 
 Se anche solo una delle due strade e' percorribile, la situazione si chiude.

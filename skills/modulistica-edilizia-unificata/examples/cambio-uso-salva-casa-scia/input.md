@@ -2,7 +2,7 @@
 
 ## Richiesta dell'utente
 
-> "Una mia cliente vuole trasformare il suo appartamento di 110 mq in **foresteria lombarda** con 5 camere (struttura ricettiva extra-alberghiera ai sensi LR Lombardia 27/2015 art. 38 - tipologia non-alberghiera diversa dal B&B che in Lombardia e' limitato a 4 camere art. 29 LR 27/2015). L'unita' e' in zona B di Milano, fuori centro storico, niente vincoli. Non vogliamo fare nessuna opera edilizia: solo arredo, segnaletica interna, e qualche bagnetto in piu' ma con allacci esistenti. E' applicabile il Salva Casa? Quale modulo edilizio? E gli adempimenti SUAP turismo + CIN?"
+> "Una mia cliente vuole trasformare il suo appartamento di 110 mq in **foresteria lombarda** con 5 camere (struttura ricettiva extra-alberghiera ai sensi LR Lombardia 27/2015 art. 27 - tipologia non-alberghiera diversa dal B&B che in Lombardia e' limitato a 4 camere art. 29 LR 27/2015). L'unita' e' in zona B di Milano, fuori centro storico, niente vincoli. Non vogliamo fare nessuna opera edilizia: solo arredo, segnaletica interna, e qualche bagnetto in piu' ma con allacci esistenti. E' applicabile il Salva Casa? Quale modulo edilizio? E gli adempimenti SUAP turismo + CIN?"
 
 ## Inquadramento intervento
 
@@ -11,7 +11,7 @@
 | Tipologia | Cambio destinazione d'uso senza opere edilizie sostanziali (art. 23-ter post Salva Casa, co. 1-ter + 1-quinquies) + bagno aggiuntivo a regime CILA-art. 6-bis assorbito dalla SCIA del cambio uso |
 | Categoria attuale | a) Residenziale |
 | Categoria nuova | a-bis) Turistico-ricettiva |
-| Tipologia ricettiva specifica (rinvio LR 27/2015) | Foresteria lombarda (struttura ricettiva extra-alberghiera, art. 38 LR 27/2015 - **non** B&B perche' B&B in Lombardia e' max 4 camere art. 29) |
+| Tipologia ricettiva specifica (rinvio LR 27/2015) | Foresteria lombarda (struttura ricettiva imprenditoriale, art. 27 LR 27/2015 - fino a 6 camere e 14 posti letto - **non** B&B perche' B&B in Lombardia e' max 4 camere art. 29) |
 | UI coinvolta | UI singola |
 | Immobile | Esistente, costruzione 1995, stato legittimo accertato (DIA 1995 + SCIA manutenzione 2018) |
 | Superficie utile (SU) | 110 mq |

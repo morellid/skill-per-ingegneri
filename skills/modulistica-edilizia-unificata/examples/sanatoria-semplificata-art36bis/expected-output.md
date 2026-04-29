@@ -5,19 +5,19 @@
 
 ## Branch attivati
 
-- **Branch A - Tolleranze esecutive art. 34-bis co. 1-bis**: VERIFICARE PER PRIMO (la "diversa realizzazione dei vani interni" e' tra le tolleranze esecutive del Salva Casa)
+- **Branch A - Tolleranze esecutive art. 34-bis co. 2**: VERIFICARE PER PRIMO (la "diversa realizzazione dei vani interni" e' tra le tolleranze esecutive del Salva Casa)
 - **Branch B - Sanatoria art. 36-bis**: SI, qualora le tolleranze esecutive non risultino applicabili
 - **Branch D - Stato legittimo art. 9-bis**: SI per la parte non in difformita'
 
-## Branch A - Tolleranze esecutive art. 34-bis co. 1-bis (verifica primaria)
+## Branch A - Tolleranze esecutive art. 34-bis co. 2 (verifica primaria)
 
-L'art. 34-bis co. 1-bis (introdotto dal Salva Casa) qualifica come **tolleranze esecutive** anche "la diversa realizzazione dei vani interni" e le "irregolarita' geometriche e modifiche alle finiture", **purche'** non comportino:
+L'art. 34-bis co. 2 (introdotto dal Salva Casa) qualifica come **tolleranze esecutive** anche "la diversa realizzazione dei vani interni" e le "irregolarita' geometriche e modifiche alle finiture", **purche'** non comportino:
 - variazione del numero di unita' immobiliari
 - variazione della destinazione d'uso che comporti diversa dotazione standard
 
 Nel caso: il numero di UI resta uno, la destinazione d'uso resta residenziale, la SU complessiva non varia, indici e distanze non sono toccati. La difformita' e' meramente interna e non incide su parametri urbanistici.
 
-**Esito Branch A**: la difformita' rientra **probabilmente** tra le **tolleranze esecutive** dell'art. 34-bis co. 1-bis, **previa autorizzazione Soprintendenza solo se l'immobile fosse vincolato** (qui non lo e').
+**Esito Branch A**: la difformita' rientra **probabilmente** tra le **tolleranze esecutive** dell'art. 34-bis co. 2, **previa autorizzazione Soprintendenza solo se l'immobile fosse vincolato** (qui non lo e').
 
 > **Effetto pratico**: in via principale **non e' richiesta sanatoria**, ma e' opportuno far asseverare la tolleranza dal tecnico abilitato e integrarla nello stato legittimo (con dichiarazione ex art. 9-bis), allegando agli atti gli elaborati grafici aggiornati come "stato di fatto come realizzato".
 
@@ -68,14 +68,14 @@ Se le verifiche puntuali confermano la doppia conformita' alleggerita:
 
 - **Sanzione pecuniaria** (art. 36-bis co. 4-5): graduata, rinvio al regolamento del Comune di Brescia per importi specifici. Stima orientativa per opera non strutturale di lieve entita': **alcune centinaia/migliaia di euro**.
 
-- **Termini procedimentali (art. 36-bis co. 6 DPR 380)**: trattandosi di **SCIA in sanatoria**, si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (60 gg per i poteri inibitori del Comune). Per il PdC in sanatoria opererebbe invece il termine di 45 gg con **silenzio-assenso** ex art. 36-bis co. 6 (qui non rileva).
+- **Termini procedimentali (art. 36-bis co. 6 DPR 380)**: trattandosi di **SCIA in sanatoria**, si applica il termine dell'**art. 19 co. 6-bis L. 241/1990**: per la SCIA in materia edilizia il termine generale di 60 gg del co. 3 e' ridotto a **30 gg** per i poteri inibitori del Comune. Per il PdC in sanatoria opererebbe invece il termine di 45 gg con **silenzio-assenso** ex art. 36-bis co. 6 (qui non rileva).
 
 - **Vincoli**: nessun vincolo Soprintendenza (immobile non vincolato).
 
 ### Passo B4 - Esito
 
 ```markdown
-**Esito principale**: la difformita' interna **probabilmente rientra** nelle **tolleranze esecutive** dell'art. 34-bis co. 1-bis (Salva Casa), che NON richiede sanatoria.
+**Esito principale**: la difformita' interna **probabilmente rientra** nelle **tolleranze esecutive** dell'art. 34-bis co. 2 (Salva Casa), che NON richiede sanatoria.
 
 **Esito subordinato** (se il SUE contesta la tolleranza esecutiva): SCIA in sanatoria art. 36-bis applicabile.
 
@@ -90,7 +90,7 @@ Se le verifiche puntuali confermano la doppia conformita' alleggerita:
 **Titoli abilitativi disponibili**: Concessione edilizia 1991 + SCIA 2013 (ristrutturazione interna)
 
 **Esito**: stato legittimo accertato per la **parte assentita** dell'immobile (co. 1-bis: ultimo titolo + titoli successivi parziali). La parte difforme va integrata o:
-- via dichiarazione di tolleranza esecutiva ex art. 34-bis co. 1-bis (esito principale), oppure
+- via dichiarazione di tolleranza esecutiva ex art. 34-bis co. 2 (esito principale), oppure
 - via SCIA in sanatoria ex art. 36-bis (esito subordinato), che, una volta efficace, integra lo stato legittimo.
 
 ## Allegati richiesti per modulo "SCIA in sanatoria art. 36-bis" (esito subordinato)
@@ -112,7 +112,7 @@ Se le verifiche puntuali confermano la doppia conformita' alleggerita:
 ## Effetto operativo
 
 **Cosa fare**:
-1. **Verifica primaria** dell'inquadramento come tolleranza esecutiva ex art. 34-bis co. 1-bis (la strada piu' veloce e meno onerosa).
+1. **Verifica primaria** dell'inquadramento come tolleranza esecutiva ex art. 34-bis co. 2 (la strada piu' veloce e meno onerosa).
 2. Se la tolleranza non e' invocabile, **predisporre SCIA in sanatoria art. 36-bis** con doppia conformita' alleggerita.
 3. **Verifica puntuale** della conformita' urbanistica al PGT 2024 e dell'eventuale conformita' al RE Brescia 2014.
 4. **Raccolta documentazione probante** dell'epoca (fatture, foto, dichiarazioni, fine lavori SCIA 2013).
@@ -120,14 +120,14 @@ Se le verifiche puntuali confermano la doppia conformita' alleggerita:
 
 **Cosa NON fare**:
 - Non confondere art. 36-bis con art. 36: in questo caso l'opera era SCIA-dovuta, non PdC-dovuta.
-- Non assumere il **silenzio-assenso 45 gg**: vale per il **PdC in sanatoria**; per la **SCIA in sanatoria** si applica l'art. 19 co. 6-bis L. 241/1990 (60 gg per i poteri inibitori).
+- Non assumere il **silenzio-assenso 45 gg**: vale per il **PdC in sanatoria**; per la **SCIA in sanatoria** si applica l'art. 19 co. 6-bis L. 241/1990 (30 gg per i poteri inibitori in materia edilizia).
 - Non avviare il rogito senza aver chiarito tolleranza/sanatoria con il SUE.
 
 ## Tempistica attesa per il rogito
 
 - Verifica preliminare con SUE Brescia (tolleranza esecutiva): 1-2 settimane
 - Predisposizione istanza (se serve sanatoria): 2-3 settimane
-- Termine per i poteri inibitori art. 19 co. 6-bis L. 241/1990: 60 gg dalla presentazione
+- Termine per i poteri inibitori art. 19 co. 6-bis L. 241/1990 in materia edilizia: 30 gg dalla presentazione
 - **Tempistica totale stimata**: 4-12 settimane in funzione del percorso scelto
 
 ## Avvertenze

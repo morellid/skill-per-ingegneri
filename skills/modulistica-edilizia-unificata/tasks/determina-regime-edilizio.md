@@ -91,7 +91,7 @@ Se l'intervento e' **gia' eseguito senza titolo** o in difformita':
 
 #### Branch B - Cambio destinazione d'uso (art. 23-ter post Salva Casa)
 
-1. **Stessa categoria funzionale** (co. 1-bis): sempre consentito, senza opere = nessun titolo (salvo condizioni comunali); con opere = regime delle opere.
+1. **Stessa categoria funzionale** (co. 1-bis): mutamento sempre consentito; titolo SCIA ex art. 19 L. 241/1990 per il mutamento senza opere (co. 1-quinquies); con opere CILA assorbite dalla SCIA; con opere a regime SCIA art. 22 o PdC, regime delle opere; salvo condizioni della disciplina regionale e comunale.
 2. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, senza opere** (co. 1-ter + 1-quinquies): **SCIA ex art. 19 L. 241/1990**; no obblighi standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria.
 3. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime CILA art. 6-bis**: **SCIA ex co. 1-quinquies** (assorbe la CILA).
 4. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime SCIA art. 22 o PdC**: regime delle opere.
@@ -273,4 +273,4 @@ Se la nuova destinazione non e' chiaramente in una delle 5 categorie (es. attivi
 Vedi `examples/`:
 - `manutenzione-frazionamento-cila/` - manutenzione straordinaria con frazionamento UI senza opere strutturali (regime CILA)
 - `cambio-uso-salva-casa-scia/` - cambio destinazione d'uso post Salva Casa (regime SCIA)
-- `sanatoria-semplificata-art36bis/` - sanatoria di opera abusiva CILA-dovuta (regime art. 36-bis)
+- `sanatoria-semplificata-art36bis/` - sanatoria di parziale difformita' rispetto a SCIA art. 22 (regime art. 37 -> art. 36-bis), con verifica primaria di tolleranza esecutiva ex art. 34-bis

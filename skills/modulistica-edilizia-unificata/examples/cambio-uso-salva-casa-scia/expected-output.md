@@ -1,7 +1,7 @@
 # Verifica applicabilita' Salva Casa + determinazione regime - cambio destinazione d'uso
 
 **Data**: 2026-04-29
-**Caso**: cambio destinazione d'uso da cat. a) residenziale a cat. a-bis) turistico-ricettiva (foresteria lombarda con 5 camere ex LR 27/2015 art. 38), su singola UI in zona B di Milano (fuori centro storico), senza opere strutturali e senza variazione di SU/UI/sagoma/volumetria; aggiunta di un bagno con allacci esistenti.
+**Caso**: cambio destinazione d'uso da cat. a) residenziale a cat. a-bis) turistico-ricettiva (foresteria lombarda con 5 camere ex LR 27/2015 art. 27), su singola UI in zona B di Milano (fuori centro storico), senza opere strutturali e senza variazione di SU/UI/sagoma/volumetria; aggiunta di un bagno con allacci esistenti.
 
 ## Branch attivati
 
@@ -88,7 +88,7 @@ L'aggiunta di un bagno con allacci esistenti, senza opere strutturali, ricadrebb
 
 > **IMPORTANTE**: oltre alla SCIA edilizia ex art. 23-ter, per avviare la foresteria lombarda servono adempimenti SEPARATI:
 
-1. **SCIA SUAP turismo** per avvio attivita' di foresteria lombarda ai sensi LR Lombardia 27/2015 art. 38 e DGR attuative.
+1. **SCIA SUAP turismo** per avvio attivita' di foresteria lombarda ai sensi LR Lombardia 27/2015 art. 27 e DGR attuative.
 2. **Codice Identificativo Nazionale (CIN)** ai sensi della L. 191/2023 e DM Ministero del Turismo 6/6/2024 (banca dati nazionale strutture ricettive). Il CIN va richiesto sul portale del Ministero del Turismo (operativo dal 1/1/2025) ed e' obbligatorio per tutte le strutture ricettive.
 3. **Classificazione regionale** (LR Lombardia 27/2015): livello dei servizi e requisiti tecnici della tipologia.
 4. **Iscrizione CCIAA** se l'attivita' e' imprenditoriale.
@@ -105,16 +105,16 @@ L'aggiunta di un bagno con allacci esistenti, senza opere strutturali, ricadrebb
 2. Calcolare e versare il contributo per oneri di urbanizzazione secondaria, ove previsto dalla disciplina regionale Lombardia / regolamento Comune Milano.
 3. Acquisire parere preventivo VVF (anche se sotto soglia DPR 151/2011, raccomandato per attivita' ricettive).
 4. Verificare il regolamento condominiale (vincoli destinazione d'uso).
-5. **Parallelamente**: avviare la SCIA SUAP turismo ex LR 27/2015 art. 38 + richiesta CIN + adempimenti CCIAA.
+5. **Parallelamente**: avviare la SCIA SUAP turismo ex LR 27/2015 art. 27 + richiesta CIN + adempimenti CCIAA.
 
 **Cosa NON fare**:
 - Non presentare PdC (non e' richiesto: UI singola, zona B, categorie a -> a-bis sono dentro il regime semplificato co. 1-ter).
-- Non chiamare l'attivita' "B&B" se ha 5 camere: in Lombardia il B&B e' max 4 camere (LR 27/2015 art. 29). Per 5 camere serve un'altra tipologia ricettiva (foresteria lombarda art. 38 o assimilabile).
+- Non chiamare l'attivita' "B&B" se ha 5 camere: in Lombardia il B&B e' max 4 camere (LR 27/2015 art. 29). Per 5 camere serve un'altra tipologia ricettiva (foresteria lombarda art. 27 o assimilabile).
 - Non confondere SCIA edilizia con SCIA turismo (sono due procedimenti distinti, anche se entrambi via SUAP).
 - Non calcolare standard/parcheggi pertinenziali ai sensi DM 1444/1968: il co. 1-quater li esclude per i cambi del co. 1-ter.
 - Non avviare l'attivita' di foresteria prima dell'avvenuta SCIA SUAP turismo + CIN.
 
-> **Efficacia della SCIA edilizia**: la SCIA art. 22 / art. 19 L. 241/1990 e' efficace **dalla presentazione** (inizio lavori immediato); il termine di 60 giorni (art. 19 co. 6-bis L. 241/1990) e' il termine entro cui il Comune puo' esercitare i poteri inibitori in caso di non conformita'. NON e' un termine di efficacia. Solo la SCIA alternativa al PdC (art. 23 DPR 380) richiede l'attesa di 30 gg.
+> **Efficacia della SCIA edilizia**: la SCIA art. 22 / art. 19 L. 241/1990 e' efficace **dalla presentazione** (inizio lavori immediato); per la SCIA in materia edilizia il termine generale di 60 gg del co. 3 e' ridotto a **30 giorni** dal co. 6-bis L. 241/1990, ed e' il termine entro cui il Comune puo' esercitare i poteri inibitori in caso di non conformita'. NON e' un termine di efficacia. Anche la SCIA alternativa al PdC (art. 23 DPR 380) richiede l'attesa di 30 gg dalla presentazione, ma in quel caso e' un termine di efficacia (inizio lavori posticipato).
 
 ## Avvertenze
 

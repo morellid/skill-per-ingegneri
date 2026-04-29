@@ -26,11 +26,11 @@
 | Sismica | Zona 3 (Brescia) - opere non strutturali |
 | Conformita' urbanistica oggi (PGT Brescia 2024) | DA-VERIFICARE: la nuova distribuzione interna e' compatibile con NTA della zona B + scheda d'ambito? Indicatori principali: indici, distanze e RC non sono toccati (la difformita' e' interna). |
 | Conformita' edilizia all'epoca (DPR 380 + RE Brescia 2014) | DA-VERIFICARE: il bagno di nuova dimensione rispetta i requisiti igienico-sanitari (DM 5/7/1975) e di aerazione vigenti nel 2014? |
-| Condizione di tolleranza art. 34-bis co. 1-bis | Possibile valutazione: la "diversa realizzazione dei vani interni" e' espressamente tra le tolleranze esecutive del Salva Casa **purche'** non comporti variazione del numero di UI o della destinazione d'uso che modifichi la dotazione standard. Verificare se la difformita' interna rientra nella tolleranza esecutiva o se serve sanatoria. |
+| Condizione di tolleranza art. 34-bis co. 2 | Possibile valutazione: la "diversa realizzazione dei vani interni" e' espressamente tra le tolleranze esecutive del Salva Casa **purche'** non comporti variazione del numero di UI o della destinazione d'uso che modifichi la dotazione standard. Verificare se la difformita' interna rientra nella tolleranza esecutiva o se serve sanatoria. |
 
 ## Domande dell'utente
 
-1. La parziale difformita' rientra nelle tolleranze esecutive art. 34-bis co. 1-bis o richiede sanatoria?
+1. La parziale difformita' rientra nelle tolleranze esecutive art. 34-bis co. 2 o richiede sanatoria?
 2. Se serve sanatoria, e' applicabile il Salva Casa? (Branch B - art. 36-bis via art. 37)
 3. La doppia conformita' alleggerita e' verificabile nel caso specifico?
 4. Quale modulo presentare (SCIA in sanatoria art. 36-bis)?

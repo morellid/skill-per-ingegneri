@@ -62,8 +62,8 @@ Per gli interventi **realizzati entro il 24 maggio 2024**, soglie graduate in fu
 #### Passo A3 - Verifica entita' delle difformita'
 
 Le tolleranze si applicano a:
-- **Misure di altezza, distacchi, cubatura, superficie coperta** (regime tradizionale)
-- **Tolleranze esecutive (co. 1-bis)**: minore dimensionamento, mancata realizzazione di elementi architettonici non strutturali, irregolarita' geometriche, modifiche alle finiture, diverse collocazioni di impianti, diversa realizzazione dei vani interni
+- **Misure di altezza, distacchi, cubatura, superficie coperta** (regime tradizionale, co. 1; soglie graduate co. 1-bis per interventi entro il 24/5/2024)
+- **Tolleranze esecutive (art. 34-bis co. 2)**: minore dimensionamento dell'edificio, mancata realizzazione di elementi architettonici non strutturali, irregolarita' geometriche, modifiche alle finiture, diverse collocazioni di impianti, diversa realizzazione dei vani interni - purche' non alterino la volumetria complessiva
 
 **Limiti**:
 - NON si applica a difformita' che comportino **variazione del numero di unita' immobiliari**
@@ -83,7 +83,7 @@ Le tolleranze si applicano a:
 
 **Esito**:
 - [In tolleranza] -> NESSUN titolo edilizio richiesto. Applicare l'art. 34-bis come tolleranza, integrando la dichiarazione nello stato legittimo.
-- [Fuori tolleranza] -> Servira' SANATORIA: art. 36 (se opera richiedeva PdC) o art. 36-bis (se opera richiedeva CILA/SCIA).
+- [Fuori tolleranza] -> Servira' SANATORIA: art. 36 (se opera richiedeva PdC o SCIA alternativa in assenza/totale difformita'), art. 36-bis (parziali difformita' art. 34, variazioni essenziali art. 32, abusi del regime SCIA art. 22 ex art. 37) oppure art. 6-bis co. 5 (sanzione per CILA omessa).
 
 **Avvertenza**: per immobili vincolati, l'applicazione richiede **autorizzazione preventiva Soprintendenza**.
 ```
@@ -134,7 +134,7 @@ Se almeno una NO -> sanatoria art. 36-bis NON applicabile. In tal caso valutare:
 - Per immobili vincolati: **parere preventivo Soprintendenza** (sospende i termini fino al rilascio)
 - **Termini procedimentali (art. 36-bis co. 6)**:
   - **Permesso in sanatoria**: 45 gg dalla presentazione; decorso il termine, "la richiesta si intende accolta" (**silenzio-assenso**)
-  - **SCIA in sanatoria**: termine ex **art. 19 co. 6-bis L. 241/1990** (60 gg per i poteri inibitori)
+  - **SCIA in sanatoria**: termine ex **art. 19 co. 6-bis L. 241/1990** (per la SCIA in materia edilizia il termine di 60 gg di cui al co. 3 e' ridotto a **30 gg**)
   - Termini sospesi in caso di parere paesaggistico/MiC fino al rilascio
 
 #### Passo B4 - Output Branch B
@@ -171,7 +171,7 @@ Identifica:
 
 | Caso | Regime |
 |------|--------|
-| **Stessa categoria** funzionale, qualunque zona | Sempre consentito (co. 1-bis); senza opere = nessun titolo (salvo condizioni comunali); con opere = regime delle opere |
+| **Stessa categoria** funzionale, qualunque zona | Mutamento sempre consentito ai sensi del co. 1-bis; il titolo edilizio (ai sensi del co. 1-quinquies) e' la **SCIA** ex art. 19 L. 241/1990 per il mutamento senza opere o con opere CILA-art. 6-bis; con opere a regime SCIA art. 22 o PdC, regime delle opere; salvo condizioni della disciplina regionale e comunale |
 | Categorie a/a-bis/b/c, **UI singola**, zone **A/B/C**, **senza opere** | **SCIA** ex art. 19 L. 241/1990 (co. 1-quinquies); no obblighi standard/parcheggi (co. 1-quater); eventuale contributo oneri di urbanizzazione secondaria |
 | Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime **CILA art. 6-bis** | **SCIA** ex co. 1-quinquies (assorbe la CILA) |
 | Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime **SCIA art. 22** | Regime delle opere = SCIA art. 22 |
@@ -364,5 +364,5 @@ Anche se l'opera e' "edilizia libera" ai sensi dell'art. 6, in zona vincolata pa
 ## Esempi
 
 Vedi `examples/`:
-- `sanatoria-semplificata-art36bis/` - applicazione sanatoria art. 36-bis a opera CILA-dovuta abusiva
+- `sanatoria-semplificata-art36bis/` - applicazione sanatoria art. 36-bis a parziale difformita' rispetto a SCIA art. 22 (regime art. 37); con verifica primaria di tolleranza esecutiva ex art. 34-bis
 - `cambio-uso-salva-casa-scia/` - cambio destinazione d'uso post Salva Casa con regime SCIA

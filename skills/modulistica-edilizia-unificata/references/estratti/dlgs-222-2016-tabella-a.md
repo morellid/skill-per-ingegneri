@@ -87,8 +87,9 @@ La sezione II raggruppa le voci secondo le seguenti tipologie di intervento (eti
 | Ampliamento volumetrico fuori sagoma esistente | **PdC** |
 | Manufatti pertinenziali eccedenti il 20% del volume principale | **PdC** (assimilati a nuova costruzione) |
 | Manufatti pertinenziali fino al 20% del volume principale | **SCIA** o **CILA** secondo regolamento comunale |
-| Tettoie, pergolati, gazebo strutturalmente significativi | **CILA o SCIA** (a seconda di dimensione e regolamento locale) |
-| Tettoie/pergolati di limitate dimensioni e amovibili | **Edilizia libera** (art. 6) - perimetro ampliato dal Salva Casa |
+| Tettoie, pergolati, gazebo strutturalmente significativi (struttura portante stabile, copertura permanente) | **CILA o SCIA** (a seconda di dimensione, struttura e regolamento locale); o **PdC** se assimilabili a nuova costruzione/pertinenza > 20% volume principale |
+| Tende, tende a pergola anche bioclimatiche, pergotende a protezione del sole/agenti atmosferici, con struttura principale costituita da tende e telo retrattile o elementi mobili/regolabili (art. 6 co. 1 lett. b-ter post Salva Casa) | **Edilizia libera**, purche' la struttura non determini la creazione di un nuovo locale autonomamente utilizzabile |
+| VEPA (vetrate panoramiche amovibili) su balconi, logge, porticati (art. 6 co. 1 lett. b-bis post Salva Casa) | **Edilizia libera**, salvo regolamento condominiale e vincoli paesaggistici |
 | Recinzioni e muri di cinta | **CILA** (con eccezioni per i muri "leggeri" - regolamento locale) |
 | Piscine pertinenziali interrate | **PdC** (oltre soglia) o SCIA / CILA (sotto soglia, secondo regolamento) |
 
@@ -96,7 +97,7 @@ La sezione II raggruppa le voci secondo le seguenti tipologie di intervento (eti
 
 | Intervento | Regime |
 |------------|--------|
-| Mutamento **all'interno della stessa categoria** funzionale (co. 1-bis), senza opere | Sempre consentito; **nessun titolo edilizio** salvo condizioni della disciplina regionale/comunale |
+| Mutamento **all'interno della stessa categoria** funzionale (co. 1-bis), senza opere | Sempre consentito ai sensi del co. 1-bis; titolo SCIA ex art. 19 L. 241/1990 per documentare il mutamento (co. 1-quinquies), salvo condizioni della disciplina regionale e comunale |
 | Mutamento all'interno della stessa categoria funzionale, con opere | Regime corrispondente alle opere (CILA / SCIA / PdC) |
 | Mutamento tra categorie **a/a-bis/b/c**, **UI singola**, **zone A/B/C**, **senza opere** (co. 1-ter + 1-quinquies) | **SCIA** ex art. 19 L. 241/1990; no obblighi standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria |
 | Mutamento a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime CILA art. 6-bis | **SCIA** ex co. 1-quinquies (assorbe la CILA) |

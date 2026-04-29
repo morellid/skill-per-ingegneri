@@ -64,7 +64,7 @@ Principi del nuovo art. 23-ter post Salva Casa:
 5. Le 5 categorie funzionali confermate: **a) residenziale, a-bis) turistico-ricettiva, b) produttiva e direzionale, c) commerciale, d) rurale**.
 
 > **Effetto operativo**: la skill, per richieste di cambio destinazione d'uso, applica il decision tree:
-> 1. **Stessa categoria funzionale**: sempre consentito (co. 1-bis); senza opere = nessun titolo (salvo condizioni comunali); con opere = regime delle opere.
+> 1. **Stessa categoria funzionale**: mutamento sempre consentito (co. 1-bis); titolo SCIA ex art. 19 L. 241/1990 per il mutamento senza opere (co. 1-quinquies); con opere CILA assorbite dalla SCIA; con opere a regime SCIA art. 22 o PdC, regime delle opere; salvo condizioni della disciplina regionale e comunale.
 > 2. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, senza opere**: **SCIA** ex art. 19 L. 241/1990 (comma 1-quinquies); nessun obbligo di standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria.
 > 3. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere CILA-art. 6-bis**: **SCIA** ex co. 1-quinquies (assorbe la CILA).
 > 4. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere SCIA art. 22 o PdC**: regime delle opere (SCIA art. 22 o PdC).
@@ -84,7 +84,7 @@ Per gli interventi **realizzati entro il 24 maggio 2024**, soglie variabili per 
 | SU compresa tra 300 e 500 mq | **3%** |
 | SU > 500 mq | **2%** (regime previgente confermato) |
 
-**Tolleranze esecutive** (co. 1-bis): comprendono il minore dimensionamento, la mancata realizzazione di elementi architettonici non strutturali, le irregolarita' geometriche, le modifiche alle finiture, le diverse collocazioni di impianti, e la diversa realizzazione dei vani interni, **purche'** non comportino:
+**Tolleranze esecutive** (art. 34-bis co. 2): comprendono il minore dimensionamento dell'edificio, la mancata realizzazione di elementi architettonici non strutturali, le irregolarita' geometriche, le modifiche alle finiture, le diverse collocazioni di impianti, e la diversa realizzazione dei vani interni, **purche'** non alterino la volumetria complessiva e non comportino:
 - variazione del numero di unita' immobiliari
 - variazione della destinazione d'uso che modifichi la dotazione standard
 
@@ -113,7 +113,7 @@ Procedimento (sintesi):
 - Per immobili vincolati: parere preventivo della Soprintendenza (con sospensione dei termini)
 - **Termini procedimentali (art. 36-bis co. 6)**:
   - **Permesso in sanatoria**: 45 gg dalla presentazione; decorso il termine, "la richiesta si intende accolta" (**silenzio-assenso**)
-  - **SCIA in sanatoria**: si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (60 gg per i poteri inibitori)
+  - **SCIA in sanatoria**: si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (per la SCIA in materia edilizia il termine di 60 gg del co. 3 e' ridotto a **30 gg**)
   - Termini sospesi in caso di richiesta di parere paesaggistico/MiC fino al rilascio
 
 > **Effetto operativo**: la skill, nel decision tree per sanatoria, distingue:
