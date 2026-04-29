@@ -8,10 +8,13 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 ## [Unreleased]
 
 ### Added
+- **Flag CLI `--input-json`**: consente di passare al modulo Python tutti i parametri di calcolo (`parametri_calcolo`) e di pericolosita' al sito (`parametri_pericolosita_sito`) in un singolo file JSON, invece di duplicarli su 7+ flag scalari. Schema in `examples/caso-conforme-fittizio-cu2-c-t1/input.json`. Round 3 Codex review: elimina il drift residuo fra il comando bash documentato (`input.md`) e il fixture (`input.json`). I flag scalari (`--vn`, `--classe-uso`, etc.) restano supportati come alternativa.
+- Test CLI di equivalenza: modalita' `--input-json` produce stdout bit-per-bit identico a modalita' flag scalari ed entrambi coincidono con `expected.json` (`TestCLI.test_input_json_equivalente_ai_flag_scalari`).
+- Test CLI di error handling: schema mancante in `--input-json` -> errore parser; flag scalari obbligatori mancanti -> errore parser con messaggio esplicito.
 - Test di validazione hardening su `ParametriRiferimento` (`TestValidazioneInput`, 7 test): rifiuto di valori zero/negativi/NaN/inf/non-numerici/bool ai 27 parametri (9 TR x ag/F0/Tc*), incluso JSON con `null` (mappato a None).
 - Test di copertura categorie (`TestCoperturaCategorie`, 4 test): D, E, T2/T3/T4, smorzamento xi != 5%. Le formule SS/CC sono confrontate contro l'algebra di Tab. 3.2.IV.
 - Test anti-drift sull'esempio canonico (`TestEsempioConforme`, 2 test): legge `examples/caso-conforme-fittizio-cu2-c-t1/input.json` ed esegue il modulo, poi confronta bit-per-bit con il golden master `expected.json`. Drift fra l'input documentato e quello eseguito dal test e' impossibile (round 2 Codex review).
-- Fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/input.json`: input canonico (parametri di calcolo + parametri di pericolosita') letto da test e da `input.md`.
+- Fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/input.json`: input canonico (parametri di calcolo + parametri di pericolosita') letto da test, `input.md` e CLI `--input-json`.
 - Fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/expected.json`: stdout JSON del modulo per il caso canonico (4 SL, ordinate Se(T) tabulate 0:4:0.1), usato come golden master.
 
 ### Changed

@@ -16,14 +16,22 @@ Edificio residenziale su area golenale con depositi di terreni saturi suscettibi
 
 ## Parametri di pericolosita' al sito
 
-Stesso file JSON dell'esempio conforme (`caso-conforme-fittizio-cu2-c-t1/input.md`).
+Identici a quelli del caso conforme (`caso-conforme-fittizio-cu2-c-t1/input.json`, oggetto `parametri_pericolosita_sito`). Sono irrilevanti: il calcolo si rifiuta prima di leggerli.
 
-## Comando
+## Comando di riproduzione
+
+Estrai i parametri di pericolosita' dal caso conforme (con jq oppure copia manuale) e prova a invocare il modulo con `--cat-sottosuolo S2`:
 
 ```bash
+jq '.parametri_pericolosita_sito' \
+   ${CLAUDE_SKILL_DIR}/examples/caso-conforme-fittizio-cu2-c-t1/input.json \
+   > /tmp/params-fittizio.json
+
 python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
     --tr-riferimento /tmp/params-fittizio.json \
     --vn 50 --classe-uso II \
     --cat-sottosuolo S2 --cat-topografica T1 \
     --stato-limite SLV
 ```
+
+Output atteso: `ValueError` esplicito + exit code != 0 (vedi `expected-output.md`).

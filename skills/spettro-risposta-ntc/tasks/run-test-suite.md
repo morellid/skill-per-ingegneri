@@ -33,7 +33,7 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 
 ## Output atteso
 
-36 test, tutti pass. Le classi di test e cosa coprono:
+39 test, tutti pass. Le classi di test e cosa coprono:
 
 | Classe                       | # | Cosa copre                                                                  |
 |------------------------------|---|-----------------------------------------------------------------------------|
@@ -48,12 +48,12 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 | `TestValidazioneInput`       | 7 | Hardening: zero/negativo/NaN/inf/stringa/bool/None-da-JSON                  |
 | `TestCoperturaCategorie`     | 4 | Cat. sottosuolo D, E; topografiche T2/T3/T4; smorzamento xi != 5%           |
 | `TestEsempioConforme`        | 2 | Anti-drift end-to-end: input.json + expected.json letti dalle examples/     |
-| `TestCLI`                    | 1 | Entry point CLI completo                                                    |
+| `TestCLI`                    | 4 | Entry point CLI: --input-json equivalente a flag scalari; errori parser     |
 
 Esempio output:
 
 ```
-Ran 36 tests in 0.00x s
+Ran 39 tests in 0.00x s
 OK
 ```
 

@@ -55,7 +55,17 @@ Vedi `references/sources.yaml`. Estratti rilevanti:
 
    (tutte le liste hanno 9 elementi, allineati con `tr_anni`).
 
-3. **Esegui il modulo Python** `tasks/lib/spettro.py` via Bash (regola inviolabile da SKILL.md: NON ricalcolare a mano dalle formule). Usa `${CLAUDE_SKILL_DIR}` in Claude Code, oppure il path assoluto della skill installata su Codex / altri agent:
+3. **Esegui il modulo Python** `tasks/lib/spettro.py` via Bash (regola inviolabile da SKILL.md: NON ricalcolare a mano dalle formule). Due modalita' equivalenti:
+
+   **Modo A - input unificato (preferito).** Tutto in un singolo JSON (vedi schema in [`examples/caso-conforme-fittizio-cu2-c-t1/input.json`](../examples/caso-conforme-fittizio-cu2-c-t1/input.json)):
+
+   ```bash
+   python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
+       --input-json /tmp/input-sito.json \
+       --json --out-csv /tmp/spettro-sito.csv
+   ```
+
+   **Modo B - flag scalari** (utile per pipeline shell):
 
    ```bash
    python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
@@ -67,7 +77,7 @@ Vedi `references/sources.yaml`. Estratti rilevanti:
        --out-csv /tmp/spettro-sito.csv
    ```
 
-   Per output JSON machine-readable usa `--json`. Tutti i numeri presentati all'utente devono provenire dallo stdout del modulo, non da rielaborazioni successive.
+   Tutti i numeri presentati all'utente devono provenire dallo stdout del modulo, non da rielaborazioni successive.
 
 4. **Citazione delle formule applicate** (sempre nell'output a video, prima della tabella):
    - Vita di riferimento: V_R = V_N * C_U  (NTC eq. 2.4.1) - valore minimo 35 anni (par. 2.4.3)

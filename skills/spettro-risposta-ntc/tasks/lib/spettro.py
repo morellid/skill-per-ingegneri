@@ -494,39 +494,58 @@ def _parse_periodi(spec: str) -> list[float]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Spettro di risposta elastico orizzontale NTC 2018 par. 3.2"
+        description="Spettro di risposta elastico orizzontale NTC 2018 par. 3.2",
+        epilog=(
+            "Modalita' di input: (A) --input-json punta a un singolo file con "
+            "tutti i parametri (parametri_calcolo + parametri_pericolosita_sito) "
+            "e gli altri flag scalari sono ignorati; (B) i flag scalari "
+            "--tr-riferimento/--vn/--classe-uso/--cat-sottosuolo/--cat-topografica "
+            "sono tutti richiesti, --stato-limite/--xi/--tabula opzionali."
+        ),
+    )
+    parser.add_argument(
+        "--input-json",
+        default=None,
+        help=(
+            "File JSON con tutti i parametri di input (oggetti "
+            "parametri_calcolo e parametri_pericolosita_sito). Schema: "
+            "vedi examples/caso-conforme-fittizio-cu2-c-t1/input.json. "
+            "Se passato, sovrascrive --tr-riferimento, --vn, --classe-uso, "
+            "--cat-sottosuolo, --cat-topografica, --xi, --stato-limite, --tabula."
+        ),
     )
     parser.add_argument(
         "--tr-riferimento",
-        required=True,
+        default=None,
         help=(
             "File JSON con ag_g, F0, Tc_star (9 valori ciascuno) per i TR di "
-            "riferimento {30,50,72,101,140,201,475,975,2475} anni"
+            "riferimento {30,50,72,101,140,201,475,975,2475} anni. Required "
+            "in modalita' B (no --input-json)."
         ),
     )
-    parser.add_argument("--vn", type=float, required=True, help="Vita nominale V_N [anni]")
+    parser.add_argument("--vn", type=float, default=None, help="Vita nominale V_N [anni]")
     parser.add_argument(
-        "--classe-uso", choices=list(C_U), required=True, help="Classe d'uso (par. 2.4.2 NTC)"
+        "--classe-uso", choices=list(C_U), default=None, help="Classe d'uso (par. 2.4.2 NTC)"
     )
     parser.add_argument(
         "--cat-sottosuolo",
-        required=True,
+        default=None,
         help="Categoria di sottosuolo: A, B, C, D, E (S1/S2 non supportate)",
     )
     parser.add_argument(
         "--cat-topografica",
         choices=list(S_T),
-        required=True,
+        default=None,
         help="Categoria topografica T1/T2/T3/T4 (Tab. 3.2.IV NTC)",
     )
     parser.add_argument(
         "--stato-limite",
         choices=list(P_VR) + ["TUTTI"],
-        default="TUTTI",
-        help="Stato limite: SLO, SLD, SLV, SLC, oppure TUTTI (default)",
+        default=None,
+        help="Stato limite: SLO, SLD, SLV, SLC, oppure TUTTI (default in modalita' B)",
     )
     parser.add_argument(
-        "--xi", type=float, default=5.0, help="Smorzamento viscoso xi [%%] (default 5)"
+        "--xi", type=float, default=None, help="Smorzamento viscoso xi [%%] (default 5 in modalita' B)"
     )
     parser.add_argument(
         "--tabula",
@@ -547,21 +566,89 @@ def main(argv: list[str] | None = None) -> int:
 
     args = parser.parse_args(argv)
 
-    riferimento = carica_parametri_riferimento(args.tr_riferimento)
+    if args.input_json is not None:
+        # Modalita' A: tutto da un singolo file JSON. I flag scalari sono ignorati
+        # (warning silenzioso in argparse, esplicito qui solo se l'utente li passa).
+        with open(args.input_json, encoding="utf-8") as f:
+            full = json.load(f)
+        try:
+            pc = full["parametri_calcolo"]
+            sito = full["parametri_pericolosita_sito"]
+        except KeyError as e:
+            parser.error(
+                f"--input-json: chiave mancante {e!r}. Atteso schema con "
+                f"'parametri_calcolo' e 'parametri_pericolosita_sito'. "
+                f"Vedi examples/caso-conforme-fittizio-cu2-c-t1/input.json."
+            )
+        if "tr_anni" in sito and tuple(sito["tr_anni"]) != TR_RIFERIMENTO:
+            parser.error(
+                f"--input-json: tr_anni in parametri_pericolosita_sito deve "
+                f"essere {list(TR_RIFERIMENTO)}, trovato {sito['tr_anni']}"
+            )
+        riferimento = ParametriRiferimento(
+            ag=list(sito["ag_g"]),
+            F0=list(sito["F0"]),
+            Tc_star=list(sito["Tc_star"]),
+        )
+        vn = float(pc["vn_anni"])
+        classe_uso = pc["classe_uso"]
+        cat_sottosuolo = pc["cat_sottosuolo"]
+        cat_topografica = pc["cat_topografica"]
+        xi = float(pc.get("xi_percento", 5.0))
+        sl_list = pc.get("stati_limite")
+        if sl_list is None:
+            stati = list(P_VR)
+        elif isinstance(sl_list, list):
+            stati = [s.upper() for s in sl_list]
+        else:
+            parser.error(
+                f"--input-json: parametri_calcolo.stati_limite deve essere "
+                f"lista o omesso, trovato {type(sl_list).__name__}"
+            )
+        tab = pc.get("tabula_periodi")
+        if tab:
+            tabula = _parse_periodi(f"{tab['start']}:{tab['stop']}:{tab['step']}")
+        else:
+            tabula = None
+    else:
+        # Modalita' B: flag scalari richiesti.
+        missing = [
+            n for n, v in (
+                ("--tr-riferimento", args.tr_riferimento),
+                ("--vn", args.vn),
+                ("--classe-uso", args.classe_uso),
+                ("--cat-sottosuolo", args.cat_sottosuolo),
+                ("--cat-topografica", args.cat_topografica),
+            )
+            if v is None
+        ]
+        if missing:
+            parser.error(
+                f"in modalita' senza --input-json sono richiesti: {', '.join(missing)}. "
+                f"Alternativa: usa --input-json puntando a un file con tutti i parametri."
+            )
+        riferimento = carica_parametri_riferimento(args.tr_riferimento)
+        vn = args.vn
+        classe_uso = args.classe_uso
+        cat_sottosuolo = args.cat_sottosuolo
+        cat_topografica = args.cat_topografica
+        xi = 5.0 if args.xi is None else args.xi
+        stato_limite = args.stato_limite or "TUTTI"
+        stati = list(P_VR) if stato_limite == "TUTTI" else [stato_limite]
+        tabula = args.tabula
 
-    stati = list(P_VR) if args.stato_limite == "TUTTI" else [args.stato_limite]
     risultati: list[RisultatoSpettro] = []
     for sl in stati:
         p = calcola_parametri(
             sl,
-            args.vn,
-            args.classe_uso,
-            args.cat_sottosuolo,
-            args.cat_topografica,
+            vn,
+            classe_uso,
+            cat_sottosuolo,
+            cat_topografica,
             riferimento,
-            xi_percento=args.xi,
+            xi_percento=xi,
         )
-        ordinate = tabula_spettro(p, args.tabula) if args.tabula else []
+        ordinate = tabula_spettro(p, tabula) if tabula else []
         risultati.append(RisultatoSpettro(parametri=p, ordinate=ordinate))
 
     if args.json:

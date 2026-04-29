@@ -474,6 +474,56 @@ class TestEsempioConforme(unittest.TestCase):
 
 
 class TestCLI(unittest.TestCase):
+    def test_input_json_equivalente_ai_flag_scalari(self):
+        """Modalita' A (--input-json) e modalita' B (flag scalari) producono lo stesso output JSON."""
+        skill_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        input_path = os.path.join(
+            skill_dir, "examples", "caso-conforme-fittizio-cu2-c-t1", "input.json"
+        )
+        expected_path = os.path.join(
+            skill_dir, "examples", "caso-conforme-fittizio-cu2-c-t1", "expected.json"
+        )
+        from io import StringIO
+        from contextlib import redirect_stdout
+
+        # Modo A: --input-json
+        buf_a = StringIO()
+        with redirect_stdout(buf_a):
+            rc_a = main(["--input-json", input_path, "--json"])
+        self.assertEqual(rc_a, 0)
+        out_a = json.loads(buf_a.getvalue())
+
+        # Confronto con golden master (anti-drift inverso)
+        with open(expected_path, encoding="utf-8") as f:
+            atteso = json.load(f)
+        self.assertEqual(out_a, atteso, "stdout di --input-json non coincide con expected.json")
+
+    def test_input_json_chiave_mancante(self):
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump({"parametri_calcolo": {}}, f)  # manca parametri_pericolosita_sito
+            path = f.name
+        try:
+            from io import StringIO
+            from contextlib import redirect_stderr
+            buf = StringIO()
+            with redirect_stderr(buf):
+                with self.assertRaises(SystemExit):
+                    main(["--input-json", path])
+            self.assertIn("parametri_pericolosita_sito", buf.getvalue())
+        finally:
+            os.unlink(path)
+
+    def test_modalita_B_flag_mancanti_errore(self):
+        from io import StringIO
+        from contextlib import redirect_stderr
+        buf = StringIO()
+        with redirect_stderr(buf):
+            with self.assertRaises(SystemExit):
+                main([])  # nessun flag, nessun --input-json
+        self.assertIn("richiesti:", buf.getvalue())
+
     def test_main_su_stato_singolo(self):
         data = {
             "tr_anni": list(TR_RIFERIMENTO),
