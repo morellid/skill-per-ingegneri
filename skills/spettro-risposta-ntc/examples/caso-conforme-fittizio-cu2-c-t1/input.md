@@ -35,7 +35,7 @@ File JSON da fornire al modulo Python:
 ## Comando
 
 ```bash
-python3 tasks/lib/spettro.py \
+python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
     --tr-riferimento /tmp/params-fittizio.json \
     --vn 50 --classe-uso II \
     --cat-sottosuolo C --cat-topografica T1 \

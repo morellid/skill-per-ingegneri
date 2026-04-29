@@ -37,15 +37,21 @@ In base alla richiesta dell'utente, carica il task file appropriato:
 
 Se la richiesta e' generica ("aiutami con lo spettro NTC"), chiedi se l'utente vuole calcolare lo spettro completo o solo validare gli input. La sequenza naturale e': prima `valida-input-sito` (sanity check), poi `calcola-spettro`.
 
-## Modulo di calcolo
+## Modulo di calcolo (code-driven - regola di invocazione)
 
-Le formule chiuse di NTC par. 3.2.3 sono implementate nel modulo Python [`tasks/lib/spettro.py`](tasks/lib/spettro.py). I task file richiamano il modulo con esempi di invocazione. La test suite [`tasks/lib/test_spettro.py`](tasks/lib/test_spettro.py) verifica i valori contro casi di confronto con il foglio Excel CSLP.
+Le formule chiuse di NTC par. 3.2.3 sono implementate nel modulo Python [`tasks/lib/spettro.py`](tasks/lib/spettro.py). La test suite [`tasks/lib/test_spettro.py`](tasks/lib/test_spettro.py) verifica i valori contro casi di confronto con il foglio Excel CSLP.
 
-Esecuzione minima:
+> **REGOLA OPERATIVA INVIOLABILE.** Per ogni calcolo numerico (TR, ag/F0/Tc* interpolati, S, eta, TB/TC/TD, Se(T)) **devi invocare il modulo Python via Bash**. NON riprodurre i numeri "a mano" leggendo le formule dagli estratti in `references/estratti/`: gli estratti sono materiale di citazione normativa, non sostituiscono l'esecuzione del modulo. Calcolare a mano vanifica l'intera ragion d'essere della skill (output deterministico verificabile vs CSLP) e introduce errore stocastico.
+
+### Path del modulo
+
+In Claude Code la variabile `${CLAUDE_SKILL_DIR}` punta a questa skill. Usala in tutti i comandi Bash:
 
 ```bash
-python3 skills/spettro-risposta-ntc/tasks/lib/spettro.py --help
+python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py --help
 ```
+
+In Codex e altri agent compatibili AGENTS.md la variabile potrebbe non essere risolta: in tal caso sostituiscila con il path assoluto della directory che contiene **questo** `SKILL.md` (l'agent conosce sempre il path da cui ha caricato la skill). Non usare path relativi tipo `tasks/lib/spettro.py`: la CWD dell'utente quasi mai coincide con la skill dir.
 
 Il modulo non ha dipendenze esterne (solo libreria standard Python 3.9+).
 

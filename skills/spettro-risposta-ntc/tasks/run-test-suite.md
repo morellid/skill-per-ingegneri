@@ -17,18 +17,19 @@ Eseguire la test suite Python che verifica:
 
 ## Procedura
 
-Da root del repo o dalla skill installata:
+In Claude Code, dalla skill installata (qualunque sia la CWD):
 
 ```bash
-cd skills/spettro-risposta-ntc/tasks/lib
-python3 -m unittest test_spettro -v
+cd ${CLAUDE_SKILL_DIR}/tasks/lib && python3 -m unittest test_spettro -v
 ```
 
 Oppure direttamente:
 
 ```bash
-python3 skills/spettro-risposta-ntc/tasks/lib/test_spettro.py -v
+python3 ${CLAUDE_SKILL_DIR}/tasks/lib/test_spettro.py -v
 ```
+
+In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` con il path assoluto della directory che contiene il `SKILL.md` di questa skill (es. `~/.agents/skills/spettro-risposta-ntc/`).
 
 ## Output atteso
 

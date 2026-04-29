@@ -38,12 +38,14 @@ Estratti pertinenti in `references/estratti/`:
 
 ### Cosa NON fare
 
+- **Non calcolare numeri "a mano" leggendo le formule dagli estratti.** Gli estratti in `references/estratti/` (par. 3.2, Allegato A, Circ. C3.2) sono materiale di citazione normativa: ti servono per spiegare i passaggi, NON per riprodurre Se(T), TR, S, SS, CC, eta, TB/TC/TD in chat. L'unica fonte legittima dei numeri e' lo stdout di `tasks/lib/spettro.py`. Calcolare a mano introduce errore stocastico LLM e annulla la ragion d'essere code-driven della skill.
 - **Non inventare parametri di pericolosita'** a_g/F_0/T_C* per il sito: la skill richiede i 9 valori dall'utente. Mai estrarli da memoria o da training data.
 - **Non eseguire il calcolo per S1/S2**: NTC par. 3.2.2 prescrive analisi di risposta sismica locale. Il modulo Python solleva `ValueError`; l'agent deve riportare il messaggio bloccante e suggerire RSL.
 - **Non estrapolare fuori reticolo**: se T_R < 30 o T_R > 2475 anni, il modulo solleva errore; non aggirarlo.
 - **Non confondere spettro elastico Se(T) e spettro di progetto S_d(T)**: la skill calcola solo Se(T). La riduzione con q dipende da scelte progettuali, fuori scope.
 - **Non applicare ST T2/T3/T4 senza chiedere se l'edificio e' in sommita'**: per quote intermedie va interpolato (NTC eq. 3.2.5), correzione non automatizzata.
 - **Non sostituire la categoria sottosuolo con un'altra "vicina"** se il dato dichiarato dal committente non corrisponde alla relazione geologica: chiedere chiarimento.
+- **Non usare path relativi tipo `tasks/lib/spettro.py`** nei comandi Bash: la CWD dell'utente quasi mai coincide con la skill. Usa sempre `${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py` (Claude Code) o il path assoluto della skill installata (Codex / altri).
 
 ### Cosa fare
 

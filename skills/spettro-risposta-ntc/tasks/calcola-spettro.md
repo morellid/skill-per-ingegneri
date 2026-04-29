@@ -55,10 +55,10 @@ Vedi `references/sources.yaml`. Estratti rilevanti:
 
    (tutte le liste hanno 9 elementi, allineati con `tr_anni`).
 
-3. **Esegui il modulo Python** `tasks/lib/spettro.py`. Esempio (dalla root del repo o dalla skill installata):
+3. **Esegui il modulo Python** `tasks/lib/spettro.py` via Bash (regola inviolabile da SKILL.md: NON ricalcolare a mano dalle formule). Usa `${CLAUDE_SKILL_DIR}` in Claude Code, oppure il path assoluto della skill installata su Codex / altri agent:
 
    ```bash
-   python3 tasks/lib/spettro.py \
+   python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
        --tr-riferimento /tmp/params-sito.json \
        --vn 50 --classe-uso II \
        --cat-sottosuolo C --cat-topografica T1 \
@@ -67,7 +67,7 @@ Vedi `references/sources.yaml`. Estratti rilevanti:
        --out-csv /tmp/spettro-sito.csv
    ```
 
-   Per output JSON machine-readable usa `--json`.
+   Per output JSON machine-readable usa `--json`. Tutti i numeri presentati all'utente devono provenire dallo stdout del modulo, non da rielaborazioni successive.
 
 4. **Citazione delle formule applicate** (sempre nell'output a video, prima della tabella):
    - Vita di riferimento: V_R = V_N * C_U  (NTC eq. 2.4.1) - valore minimo 35 anni (par. 2.4.3)
