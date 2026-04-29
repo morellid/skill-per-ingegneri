@@ -378,7 +378,14 @@ class TestCoperturaCategorie(unittest.TestCase):
 
 
 class TestEsempioConforme(unittest.TestCase):
-    """Anti-drift: rigenera l'esempio canonico e confronta con expected.json."""
+    """Anti-drift end-to-end del caso canonico.
+
+    Legge input.json e expected.json dalla cartella examples/, esegue
+    il modulo sull'input documentato e confronta con il golden master.
+    Modificare input.json senza rigenerare expected.json fa fallire
+    test_match_expected_json: questo e' il comportamento desiderato e
+    impedisce drift fra documentazione e codice (Codex review round 2).
+    """
 
     @classmethod
     def setUpClass(cls):
@@ -386,38 +393,74 @@ class TestEsempioConforme(unittest.TestCase):
         cls.example_dir = os.path.join(
             cls.skill_dir, "examples", "caso-conforme-fittizio-cu2-c-t1"
         )
+        cls.input_path = os.path.join(cls.example_dir, "input.json")
         cls.expected_path = os.path.join(cls.example_dir, "expected.json")
 
-    def test_expected_json_present(self):
+    def test_fixtures_presenti(self):
+        self.assertTrue(
+            os.path.isfile(self.input_path),
+            f"Manca il fixture input {self.input_path}",
+        )
         self.assertTrue(
             os.path.isfile(self.expected_path),
-            f"Manca il fixture {self.expected_path}",
+            f"Manca il fixture expected {self.expected_path}",
         )
 
+    def _carica_input(self):
+        with open(self.input_path, encoding="utf-8") as f:
+            return json.load(f)
+
+    def _periodi(self, tab):
+        # Replica argparse type=_parse_periodi senza dipendere dalla CLI
+        start, stop, step = float(tab["start"]), float(tab["stop"]), float(tab["step"])
+        out = []
+        t = start
+        while t <= stop + 1e-9:
+            out.append(round(t, 6))
+            t += step
+        return out
+
     def test_match_expected_json(self):
-        # Stesso input documentato in input.md
-        rif = ParametriRiferimento(
-            ag=[0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
-            F0=[2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
-            Tc_star=[0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
-        )
         from spettro import calcola_parametri as cp, tabula_spettro as ts
-        periodi = [round(i * 0.1, 6) for i in range(0, 41)]  # 0:4:0.1
-        atteso = json.load(open(self.expected_path, encoding="utf-8"))
-        sl_attesi = ["SLO", "SLD", "SLV", "SLC"]
-        self.assertEqual([r["parametri"]["stato_limite"] for r in atteso], sl_attesi)
+        ipt = self._carica_input()
+        pc = ipt["parametri_calcolo"]
+        sito = ipt["parametri_pericolosita_sito"]
+        # Sanity: tr_anni del fixture deve coincidere col reticolo del modulo.
+        self.assertEqual(
+            tuple(sito["tr_anni"]), TR_RIFERIMENTO,
+            "tr_anni in input.json non allineato col reticolo del modulo",
+        )
+        rif = ParametriRiferimento(
+            ag=list(sito["ag_g"]),
+            F0=list(sito["F0"]),
+            Tc_star=list(sito["Tc_star"]),
+        )
+        periodi = self._periodi(pc["tabula_periodi"])
+        with open(self.expected_path, encoding="utf-8") as f:
+            atteso = json.load(f)
+        sl_attesi = list(pc["stati_limite"])
+        self.assertEqual(
+            [r["parametri"]["stato_limite"] for r in atteso], sl_attesi,
+            "Ordine stati limite in expected.json non allineato con input.json",
+        )
 
         for sl, atteso_sl in zip(sl_attesi, atteso):
             with self.subTest(sl=sl):
-                p = cp(sl, 50, "II", "C", "T1", rif, xi_percento=5.0)
-                # Confronta parametri scalari
+                p = cp(
+                    sl,
+                    pc["vn_anni"],
+                    pc["classe_uso"],
+                    pc["cat_sottosuolo"],
+                    pc["cat_topografica"],
+                    rif,
+                    xi_percento=pc["xi_percento"],
+                )
                 par_atteso = atteso_sl["parametri"]
                 for k in ("TR", "ag", "F0", "Tc_star", "SS", "ST", "S", "CC", "eta", "TB", "TC", "TD"):
                     self.assertAlmostEqual(
                         getattr(p, k), par_atteso[k], places=10,
                         msg=f"{sl}.{k}: atteso {par_atteso[k]} ottenuto {getattr(p, k)}",
                     )
-                # Confronta ordinate Se(T) tabulate
                 ord_atteso = atteso_sl["ordinate"]
                 ord_attuale = ts(p, periodi)
                 self.assertEqual(

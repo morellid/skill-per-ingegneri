@@ -10,7 +10,8 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 ### Added
 - Test di validazione hardening su `ParametriRiferimento` (`TestValidazioneInput`, 7 test): rifiuto di valori zero/negativi/NaN/inf/non-numerici/bool ai 27 parametri (9 TR x ag/F0/Tc*), incluso JSON con `null` (mappato a None).
 - Test di copertura categorie (`TestCoperturaCategorie`, 4 test): D, E, T2/T3/T4, smorzamento xi != 5%. Le formule SS/CC sono confrontate contro l'algebra di Tab. 3.2.IV.
-- Test anti-drift sull'esempio canonico (`TestEsempioConforme`, 2 test): il modulo viene rieseguito sull'input documentato e confrontato bit-per-bit con il fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/expected.json`. Drift fra docs e codice fallisce subito.
+- Test anti-drift sull'esempio canonico (`TestEsempioConforme`, 2 test): legge `examples/caso-conforme-fittizio-cu2-c-t1/input.json` ed esegue il modulo, poi confronta bit-per-bit con il golden master `expected.json`. Drift fra l'input documentato e quello eseguito dal test e' impossibile (round 2 Codex review).
+- Fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/input.json`: input canonico (parametri di calcolo + parametri di pericolosita') letto da test e da `input.md`.
 - Fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/expected.json`: stdout JSON del modulo per il caso canonico (4 SL, ordinate Se(T) tabulate 0:4:0.1), usato come golden master.
 
 ### Changed

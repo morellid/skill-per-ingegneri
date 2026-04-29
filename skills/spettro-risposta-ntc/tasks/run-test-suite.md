@@ -33,26 +33,31 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 
 ## Output atteso
 
-23 test, tutti pass:
+36 test, tutti pass. Le classi di test e cosa coprono:
+
+| Classe                       | # | Cosa copre                                                                  |
+|------------------------------|---|-----------------------------------------------------------------------------|
+| `TestVitaTR`                 | 3 | V_R = V_N * C_U + clamp 35 anni; TR = -V_R/ln(1-P_VR); valori canonici      |
+| `TestCoeffSottosuolo`        | 5 | SS cat. A/B/C clamping; CC formule; rifiuto S1/S2 e categorie invalide      |
+| `TestEta`                    | 2 | eta(5%) = 1; clamp minimo 0.55                                              |
+| `TestPeriodi`                | 1 | TB = TC/3; TC = CC*Tc*; TD = 4*ag/g + 1.6                                   |
+| `TestInterpolazione`         | 3 | Round-trip sui nodi; bracket log-log; rifiuto fuori reticolo                |
+| `TestRaccordiSeT`            | 5 | Continuita' Se(T) ai raccordi TB/TC/TD; T=0; T grande                       |
+| `TestPipelineEndToEnd`       | 1 | Pipeline `calcola_parametri` con dataset realistico (TR ~ 475)              |
+| `TestIO`                     | 2 | Carica JSON; rifiuta lunghezza errata                                       |
+| `TestValidazioneInput`       | 7 | Hardening: zero/negativo/NaN/inf/stringa/bool/None-da-JSON                  |
+| `TestCoperturaCategorie`     | 4 | Cat. sottosuolo D, E; topografiche T2/T3/T4; smorzamento xi != 5%           |
+| `TestEsempioConforme`        | 2 | Anti-drift end-to-end: input.json + expected.json letti dalle examples/     |
+| `TestCLI`                    | 1 | Entry point CLI completo                                                    |
+
+Esempio output:
 
 ```
-test_continuita_TB ... ok
-test_continuita_TC ... ok
-test_continuita_TD ... ok
-test_Se_T_zero ... ok
-test_Se_T_T_grande ... ok
-test_round_trip_su_nodo ... ok
-test_interp_tra_due_nodi ... ok
-test_fuori_reticolo_solleva_errore ... ok
-test_SS_categoria_A ... ok
-test_SS_clamping ... ok
-test_SS_S1_S2_rifiutate ... ok
-...
-Ran 23 tests in 0.00x s
+Ran 36 tests in 0.00x s
 OK
 ```
 
-Se anche un solo test fallisce: NON usare la skill in produzione, segnala il fail come issue al maintainer.
+Se anche un solo test fallisce: NON usare la skill in produzione, segnala il fail come issue al maintainer. In particolare, un fail di `TestEsempioConforme.test_match_expected_json` indica drift fra `input.json`/`expected.json` (in `examples/caso-conforme-fittizio-cu2-c-t1/`) e l'output del modulo: rigenera il fixture o investiga l'eventuale regressione del modulo.
 
 ## Casi di confronto vs CSLP (validazione di campo)
 

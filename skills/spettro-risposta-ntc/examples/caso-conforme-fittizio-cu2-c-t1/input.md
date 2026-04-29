@@ -2,12 +2,16 @@
 
 > NB: i parametri di pericolosita' sono **fittizi** (non corrispondono a un sito reale del reticolo INGV). Sono scelti per essere ordinati e leggibili e coincidono con i valori usati come dataset di confronto della test suite.
 
+> **Fonte autoritativa machine-readable:** [`input.json`](input.json). Questa pagina e' una sintesi umana derivata dallo stesso file. Il test `TestEsempioConforme.test_match_expected_json` (in `tasks/lib/test_spettro.py`) **legge `input.json` ed esegue il modulo**, poi confronta lo stdout col fixture [`expected.json`](expected.json): drift fra i due fixture o fra i fixture e il modulo viene segnalato dal test.
+
 ## Dati committente
 
 - Costruzione residenziale ordinaria, cinque piani fuori terra.
 - Localizzazione: sito generico in zona sismica medio-bassa (esempio didattico).
 
 ## Parametri di calcolo
+
+(estratti da `input.json` -> `parametri_calcolo`)
 
 | Parametro                    | Valore     |
 |------------------------------|------------|
@@ -21,20 +25,34 @@
 
 ## Parametri di pericolosita' al sito
 
-File JSON da fornire al modulo Python:
+(estratti da `input.json` -> `parametri_pericolosita_sito`)
 
-```json
-{
-  "tr_anni": [30, 50, 72, 101, 140, 201, 475, 975, 2475],
-  "ag_g":    [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
-  "F0":      [2.50,  2.55,  2.60,  2.62,  2.65,  2.68,  2.72,  2.74,  2.76],
-  "Tc_star": [0.20,  0.22,  0.24,  0.26,  0.28,  0.30,  0.32,  0.34,  0.36]
-}
-```
+| TR (anni) | ag (g) | F0    | Tc* (s) |
+|-----------|--------|-------|---------|
+| 30        | 0.030  | 2.50  | 0.20    |
+| 50        | 0.045  | 2.55  | 0.22    |
+| 72        | 0.061  | 2.60  | 0.24    |
+| 101       | 0.080  | 2.62  | 0.26    |
+| 140       | 0.105  | 2.65  | 0.28    |
+| 201       | 0.135  | 2.68  | 0.30    |
+| 475       | 0.218  | 2.72  | 0.32    |
+| 975       | 0.297  | 2.74  | 0.34    |
+| 2475      | 0.420  | 2.76  | 0.36    |
 
-## Comando
+## Comando di riproduzione
+
+Per replicare l'esempio, estrai i parametri di pericolosita' da `input.json` in un file JSON allineato col formato richiesto dal modulo (chiavi `tr_anni`, `ag_g`, `F0`, `Tc_star`) e invoca:
 
 ```bash
+# Opzione A: estrai con jq i parametri di pericolosita' nel formato del modulo
+jq '.parametri_pericolosita_sito' \
+   ${CLAUDE_SKILL_DIR}/examples/caso-conforme-fittizio-cu2-c-t1/input.json \
+   > /tmp/params-fittizio.json
+
+# Opzione B (no jq): copia manualmente le 4 chiavi tr_anni/ag_g/F0/Tc_star
+#                    in un file JSON minimo. Vedi struttura attesa in
+#                    tasks/lib/spettro.py (carica_parametri_riferimento).
+
 python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
     --tr-riferimento /tmp/params-fittizio.json \
     --vn 50 --classe-uso II \
@@ -42,3 +60,5 @@ python3 ${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py \
     --stato-limite TUTTI \
     --tabula 0:4:0.1
 ```
+
+Lo stdout in `--json` mode coincide con [`expected.json`](expected.json). Modificare `input.json` (qualunque valore) e lasciare invariato `expected.json` fa fallire `TestEsempioConforme`: questo e' il comportamento desiderato.
