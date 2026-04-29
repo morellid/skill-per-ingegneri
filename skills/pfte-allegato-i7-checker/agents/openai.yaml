@@ -1,0 +1,16 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: PFTE Allegato I.7 Checker
+short_description: |
+  Checklist e verifica di completezza degli elaborati di un Progetto di
+  Fattibilita' Tecnico-Economica (PFTE) e del progetto esecutivo ai sensi
+  di D.Lgs. 36/2023 art. 41 + Allegato I.7, integrato dal correttivo
+  D.Lgs. 209/2024.
+default_prompt: |
+  Devo predisporre il PFTE per un'opera pubblica di nuova costruzione
+  (importo lavori 4,5 mln EUR, soggetta a VIA, espropri necessari, BIM
+  obbligatorio, modalita' di affidamento ad appalto integrato).
+  Mi generi la checklist degli elaborati obbligatori ai sensi
+  dell'Allegato I.7 del Codice dei contratti pubblici, citando articolo
+  e lettera per ogni voce?

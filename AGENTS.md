@@ -18,6 +18,7 @@ Vedi [`README.md`](README.md) per l'elenco aggiornato. Al momento:
 - `skills/ai-act-compliance/` - AI Act italiano (versione preliminare; la versione inglese full-feature e' nel repo separato `ai-act-skill`)
 - `skills/nis2-self-assessment/` - self-assessment NIS2 italiana (D.Lgs. 138/2024 + Det. ACN 164179/2025 -> 379907/2025): perimetro essenziale/importante, gap analysis misure di base, verifica incidente significativo, obblighi organi di amministrazione
 - `skills/spettro-risposta-ntc/` - calcolo code-driven dello spettro di risposta elastico orizzontale ai sensi NTC 2018 par. 3.2 + Circ. 7/2019; modulo Python con test suite, output verificabile vs foglio Excel CSLP
+- `skills/pfte-allegato-i7-checker/` - checklist e verifica completezza elaborati PFTE / progetto esecutivo di lavori pubblici ai sensi D.Lgs. 36/2023 art. 41 + Allegato I.7 (Codice contratti pubblici), integrato dal correttivo D.Lgs. 209/2024
 
 ## Come installarle
 
