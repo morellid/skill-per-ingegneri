@@ -18,11 +18,13 @@ L'esito di classificazione e' netto e non richiede valutazione discrezionale.
 
 ## Punti di attenzione tipici per soggetti essenziali energia
 
-1. **Sistemi ICS/OT (SCADA)**: regimi di patching specifici, segregazione di rete, autenticazione su HMI. La Det. ACN richiede ID.AM-03 (mappa flussi), PR.IR-01 (segmentazione), PR.PS-04 (logging) anche su questi sistemi.
-2. **Telecontrollo cabine secondarie**: spesso su rete di comunicazione dedicata (PLC su radio/4G), espone superfici di attacco peculiari.
-3. **Vendor management**: i fornitori di SCADA/RTU sono pochi (oligopolio internazionale), questo limita la negoziabilita' delle clausole TPRM. Approccio pragmatico: applicare i requisiti GV.SC con risk acceptance documentata su clausole non ottenibili.
-4. **Incident response in scenario blackout**: la procedura di notifica al CSIRT Italia deve interagire con la procedura di emergenza ARERA (CEI 11-37) e con eventuale notifica TERNA. Gestire la sovrapposizione.
-5. **ARERA e NIS2**: ARERA puo' chiedere reportistica sull'adeguamento NIS2 nell'ambito del proprio potere di vigilanza sul DSO. Documentare le evidenze in modo riusabile.
+> Le seguenti considerazioni sono **note di esperienza di dominio**, non normative. Le specifiche tecniche e le interazioni con ARERA/TERNA/CEI vanno verificate caso per caso con il consulente cyber specializzato per il settore energia. La skill non cataloga queste fonti tecniche come riferimento primario.
+
+1. **Sistemi ICS/OT (SCADA)**: ipotesi tipiche - patching su finestre di manutenzione, segregazione di rete, autenticazione su HMI. La Det. ACN 379907/2025 richiede per gli essenziali ID.AM-03 (mappa flussi), PR.IR-01 (segmentazione), PR.PS-04 (logging) anche su questi sistemi.
+2. **Telecontrollo cabine secondarie**: spesso su reti dedicate (es. PLC su radio/4G), con superfici di attacco peculiari da considerare nei requisiti DE.CM-01/09.
+3. **Vendor management**: il mercato dei fornitori SCADA/RTU e' concentrato; questo puo' limitare la negoziabilita' delle clausole TPRM. Approccio pragmatico tipico: applicare i requisiti GV.SC con risk acceptance documentata sulle clausole non ottenibili.
+4. **Incident response in scenario blackout**: la procedura di notifica al CSIRT Italia interagisce con eventuali procedure di emergenza settoriali (es. CEI/ARERA/TERNA) e con il regime PSNC quando applicabile. Gestire le sovrapposizioni con l'ufficio compliance/regolatorio.
+5. **ARERA e NIS2**: il regolatore di settore ha proprie leve di vigilanza sul DSO; documentare le evidenze in modo riusabile per entrambe le finalita'. **Nota**: la skill non cataloga le delibere ARERA come fonti normative; verificare separatamente con il responsabile regolatorio.
 
 ## Possibili evoluzioni future del caso
 
@@ -35,10 +37,4 @@ Se il fatturato cresce oltre 500M EUR:
 
 ## Riferimenti per validazione domain expert
 
-Validatore profilo target: CISO o consulente cybersecurity **con esperienza specifica su utility/energia** + familiarita' con:
-- Codice di Rete TERNA
-- Linee guida ARERA su sicurezza ICT (es. delibere su misure cyber per gestori reti)
-- IEC 62443 (cybersecurity per sistemi di automazione industriale)
-- ENISA Energy CSIRT Network reports
-
-Senza questa esperienza, la validazione delle raccomandazioni operative su SCADA/OT e procedure di emergenza puo' essere parziale.
+Validatore profilo target: CISO o consulente cybersecurity con esperienza specifica su utility/energia. La validazione delle raccomandazioni operative su SCADA/OT, procedure di emergenza, integrazione con i regolatori di settore (TERNA, ARERA) e standard tecnici settoriali (IEC 62443, ENISA Energy CSIRT Network) richiede competenze settoriali aggiuntive non incluse in questa skill alpha.

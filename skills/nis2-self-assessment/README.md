@@ -18,7 +18,7 @@ CISO, IT manager, DPO, ingegneri dell'informazione, consulenti cybersecurity di 
 La skill articola la self-assessment in 4 sotto-attivita':
 
 1. **Valutazione del perimetro** - "siamo soggetti NIS2? essenziali o importanti?" (art. 3, 6 D.Lgs. 138/2024 + Allegati I-IV)
-2. **Gap analysis misure di base** - confronto fra le misure adottate e i requisiti del Framework Nazionale Cybersecurity richiamati dalla Determinazione ACN 164179/2025 -> 379907/2025 (Allegato 1 importanti / Allegato 2 essenziali) + 10 elementi minimi art. 24 co. 2
+2. **Gap analysis misure di base** - confronto fra le misure adottate e i requisiti del Framework Nazionale Cybersecurity richiamati dalla Determinazione ACN 379907/2025 vigente dal 15/01/2026 (Allegato 1 importanti, 37 sottocat / Allegato 2 essenziali, 43 sottocat) + 10 elementi minimi art. 24 co. 2
 3. **Verifica incidente significativo** - "questo incidente va notificato? in quanto tempo?" (art. 25: 24h pre-notifica / 72h notifica / 1 mese report finale)
 4. **Obblighi governance** - "cosa deve fare il CdA?" (art. 23: approvazione misure, formazione, responsabilita' personale)
 
@@ -48,8 +48,8 @@ Fonti primarie (testo verbatim catalogato e analizzato):
 - **D.Lgs. 4 settembre 2024, n. 138** - GU Serie Generale n. 230 del 01/10/2024 (in vigore dal 16/10/2024)
 - **Direttiva (UE) 2022/2555 (NIS 2)** del 14/12/2022
 - **Regolamento di esecuzione (UE) 2024/2690** del 17/10/2024 (per sottoinsieme di soggetti)
-- **Determinazione ACN n. 164179 del 14/04/2025** (in vigore dal 30/04/2025) - aggiornata da
-- **Determinazione ACN n. 379907/2025** (in vigore dal 15/01/2026) - termine ultimo per piena operativita': **31/10/2026**
+- **Determinazione ACN n. 164179 del 14/04/2025** (sostituita)
+- **Determinazione ACN n. 379907 del 18/12/2025** (in vigore dal 15/01/2026; sostitutiva della 164179/2025; cataloga il documento principale + 4 Allegati: misure importanti, misure essenziali, incidenti importanti, incidenti essenziali). I termini di adeguamento (18 mesi misure / 9 mesi notifica incidenti) decorrono dalla **comunicazione di inserimento** personale ricevuta dal soggetto.
 
 Dettaglio completo in [`references/sources.yaml`](references/sources.yaml). Estratti testuali in [`references/estratti/`](references/estratti/).
 

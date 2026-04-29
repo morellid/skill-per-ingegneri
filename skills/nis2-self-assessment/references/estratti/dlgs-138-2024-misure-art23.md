@@ -65,6 +65,6 @@ I 10 elementi minimi (art. 24 co. 2 lett. a-l) costituiscono la **tassonomia uff
 | i | Sicurezza personale, controllo accessi, asset mgmt | PR.IP-11 / PR.AC / ID.AM |
 | l | MFA, comunicazioni protette, comm. emergenza protette | PR.AC-7 |
 
-I requisiti tecnici concreti per ciascun ambito sono dettagliati nella **Determinazione ACN 164179/2025** (Allegato 1 per i soggetti importanti, Allegato 2 per gli essenziali).
+I requisiti tecnici concreti per ciascun ambito sono dettagliati nella **Determinazione ACN 379907/2025** (Allegato 1 per i soggetti importanti, Allegato 2 per gli essenziali), vigente dal 15/01/2026 e sostitutiva della precedente Det. 164179/2025.
 
 Il comma 4 introduce un **obbligo di autoregolazione**: il soggetto che rileva non conformita' adotta misure correttive **senza indebito ritardo** (non c'e' un termine fisso, ma e' parametro di diligenza).

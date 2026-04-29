@@ -27,23 +27,23 @@ Il Regolamento si applica esclusivamente ai seguenti soggetti, indipendentemente
 
 ## Ambito di NON applicazione
 
-Il Regolamento NON si applica agli **altri soggetti NIS2**: ad esempio operatori energia, trasporti, banche, sanita', acqua, manifattura, PA, ricerca. Per questi soggetti il riferimento operativo italiano sono le **misure di base ACN** (Determinazioni 164179/2025 e 379907/2025).
+Il Regolamento NON si applica agli **altri soggetti NIS2**: ad esempio operatori energia, trasporti, banche, sanita', acqua, manifattura, PA, ricerca. Per questi soggetti il riferimento operativo italiano e' la **Determinazione ACN 379907/2025** (vigente dal 15/01/2026, sostitutiva della Det. 164179/2025).
 
 ## Principio di proporzionalita'
 
 Il Regolamento riconosce il principio di proporzionalita' (considerando di apertura): i soggetti possono adottare **misure compensative** se non possono attuare alcuni requisiti per dimensioni o specificita' operativa. Le misure devono essere documentate.
 
-## Allineamento con ISO/IEC 27001
+## Allineamento con ISO/IEC 27001 (NON VERIFICATO)
 
-Il Regolamento e' costruito in modo da risultare coerente con l'adesione alla **norma ISO/IEC 27001** (sistema di gestione della sicurezza delle informazioni - SGSI) come strada di compliance pratica per i soggetti coperti.
+> Affermazione **non ancora tracciata** a fonte verbatim del Regolamento. Diverse fonti secondarie indicano che la struttura del Regolamento e' coerente con l'adesione a ISO/IEC 27001 come strada di compliance pratica, ma senza un estratto verbatim del Regolamento e/o delle linee guida ENISA non riportiamo l'affermazione come verbatim. Da catalogare e verificare in iterazioni successive della skill (cfr. `secondary_sources_to_evaluate` in `sources.yaml`).
 
 ## Definizione di incidente significativo
 
-Il Regolamento contiene anche le specifiche per determinare quando un incidente e' "significativo" ai sensi dell'art. 23 della Direttiva, **per il sottoinsieme di soggetti coperti**. Per gli altri soggetti italiani vale la definizione dell'art. 25 co. 4 D.Lgs. 138/2024 + soglie ACN.
+Il Regolamento contiene anche le specifiche per determinare quando un incidente e' "significativo" ai sensi dell'art. 23 della Direttiva, **per il sottoinsieme di soggetti coperti**. Per gli altri soggetti italiani vale la definizione dell'art. 25 co. 4 D.Lgs. 138/2024 e i codici IS-1..4 della Det. ACN 379907/2025 (Allegati 3-4).
 
-## Linee guida ENISA
+## Linee guida ENISA (NON CATALOGATE)
 
-L'ENISA ha pubblicato (versione draft 2024 e versione finale 2025) le **Technical implementation guidance** sul Regolamento 2024/2690, disponibili sul portale `enisa.europa.eu`. Costituiscono il riferimento tecnico per l'implementazione operativa dei requisiti del Regolamento.
+> ENISA ha pubblicato linee guida tecniche di implementazione sul Regolamento 2024/2690 (`enisa.europa.eu`). Non sono catalogate come fonte primaria in v0.1.0-alpha. Per il dettaglio dei requisiti tecnici fare riferimento ai documenti pubblicati direttamente da ENISA, da scaricare e catalogare con SHA256 quando la skill estende l'analisi oltre l'ambito ACN italiano.
 
 ## Quando questa skill rinvia al Regolamento 2024/2690
 

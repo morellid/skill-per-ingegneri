@@ -74,10 +74,13 @@ I soggetti di Allegato IV rientrano nell'ambito **indipendentemente dalle dimens
 
 ## Tabella riassuntiva: come applicare la size-cap rule
 
-| Categoria | Soglia per essere "in ambito" | Soglia per essere "essenziale" |
-|-----------|--------------------------------|---------------------------------|
-| Soggetto privato in **Allegato I** | Supera massimali piccole imprese: >= 50 dipendenti **o** > 10M EUR fatturato/bilancio | Supera massimali medie imprese: >= 250 dipendenti **o** > 50M EUR fatturato **o** > 43M EUR bilancio |
-| Soggetto privato in **Allegato II** | Supera massimali piccole imprese | (Mai automaticamente essenziale; sempre importante salvo classificazione discrezionale ACN ex art. 6 co. 2) |
+> Riferimento: Raccomandazione 2003/361/CE - Allegato art. 2 par. 1 (media impresa) e par. 2 (piccola impresa).
+> Logica: PMI = (occupati < 250) AND (fatturato annuo <= 50M EUR OR totale di bilancio annuo <= 43M EUR). Piccola = (occupati < 50) AND (fatturato O bilancio <= 10M EUR).
+
+| Categoria | Soglia per essere "in ambito" (= NON piccola) | Soglia per essere "essenziale" (= grande, NON PMI) |
+|-----------|------------------------------------------------|-------------------------------------------------------|
+| Soggetto privato in **Allegato I** | occupati >= 50 **OPPURE** entrambi i valori finanziari (fatturato AND bilancio) > 10M EUR | occupati >= 250 **OPPURE** (fatturato > 50M **AND** bilancio > 43M) |
+| Soggetto privato in **Allegato II** | come sopra | (Mai automaticamente essenziale; sempre importante salvo classificazione discrezionale ACN ex art. 6 co. 2) |
 | Soggetto critico ex Dir. 2022/2557 | Indipendente dalle dimensioni | Sempre essenziale (art. 6 co. 1 lett. b) |
 | Fornitore reti/servizi comunicazione elettronica | Indipendente dalle dimensioni (art. 3 co. 5 lett. b) | Essenziale solo se "media impresa" o superiore (art. 6 co. 1 lett. c) |
 | Prestatori servizi fiduciari, gestori TLD/DNS | Indipendente dalle dimensioni | Servizi fiduciari **qualificati** + gestori TLD + DNS = essenziali. Servizi fiduciari non qualificati = importanti |

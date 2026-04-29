@@ -31,12 +31,14 @@ sources:
     notes: |
       Pubblicato in GU Serie Generale n. 230 del 01/10/2024, in vigore dal
       16/10/2024. Abroga il D.Lgs. 65/2018 (recepimento NIS originale).
-      Riferimento normativo principale: art. 3 (definizioni), art. 6
-      (perimetro essenziali/importanti), art. 7 (registrazione piattaforma
-      ACN), art. 23 (misure di gestione del rischio), art. 24 (obblighi
-      organo di amministrazione), art. 25 (notifica incidenti significativi),
-      art. 38 (sanzioni). Allegati I e II = settori (alta criticita' /
-      altri critici); III e IV = tipologie di soggetti.
+      Riferimento normativo principale: art. 2 (definizioni), art. 3
+      (ambito di applicazione), art. 5 (giurisdizione), art. 6 (perimetro
+      essenziali/importanti), art. 7 (identificazione/elencazione e
+      registrazione piattaforma ACN), art. 23 (organi di amministrazione
+      e direttivi), art. 24 (obblighi misure di gestione del rischio),
+      art. 25 (notifica incidenti significativi), art. 38 (sanzioni
+      amministrative). Allegati I e II = settori (alta criticita' /
+      altri critici); III = PA; IV = ulteriori tipologie di soggetti.
 
   - id: dir-2022-2555-nis2
     title: "Direttiva (UE) 2022/2555 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativa a misure per un livello comune elevato di cibersicurezza nell'Unione (NIS 2)"
@@ -74,10 +76,109 @@ sources:
       gestiti, mercati online, motori di ricerca online, piattaforme di
       social network e prestatori di servizi fiduciari. Per gli altri
       soggetti NIS in Italia il riferimento operativo e' la Determinazione
-      ACN 164179/2025.
+      ACN 379907/2025. Non scaricato in v0.1.0-alpha; URL canonico
+      verificato.
+
+  - id: acn-det-379907-2025
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 2511 v3 (protocollo 379907/2025) del 18 dicembre 2025 - Modalita' e specifiche di base per gli adempimenti agli obblighi di cui agli artt. 23, 24, 25, 29 e 32 del decreto legislativo 4 settembre 2024, n. 138"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/en/nis/modalita-specifiche-base
+    download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_obblighi_2511-v3_signed
+    accessed: 2026-04-29
+    sha256: dfb9d02bb11de75bc14f913d768eeece1e4f5ca7ef9d72ff939bf445c3979127
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-detacn_obblighi_2511-v3_signed.pdf
+    excerpt_paths:
+      - references/estratti/acn-det-379907-articoli.md
+    notes: |
+      Determinazione vigente dal 15/01/2026 (art. 9 co. 3). Aggiorna e
+      sostituisce la Det. ACN 164179/2025 (art. 9 co. 1). Adottata dal
+      Direttore Generale ACN il 18/12/2025 ai sensi degli artt. 31 co. 1
+      e 2, 40 co. 5 lett. l), 42 co. 1 lett. c) del decreto NIS.
+      Articoli: 1 (Definizioni), 2 (Adozione specifiche di base), 3
+      (Termini: 18 mesi misure / 9 mesi notifica incidenti dalla
+      comunicazione di inserimento), 4 (DNS/TLD/registrar - 18 mesi
+      adeguamento art. 29), 5 (Regime transitorio OSE), 6 (Regime
+      transitorio operatori telco con specifiche soglie quantitative
+      durata/utenti), 7 (Disposizioni finanziarie), 8 (Pubblicita'),
+      9 (Entrata in vigore). Quattro allegati (vedi sotto).
+
+  - id: acn-det-379907-allegato-1
+    title: "ACN - Determinazione 379907/2025 - Allegato 1 - Misure di sicurezza di base per i soggetti importanti"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/allegato-1-v2
+    accessed: 2026-04-29
+    sha256: 260acba9d8f948bb97e977ee71b7dd77cdac93ba2b74d0d42e5da81ceb8f3afb
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-allegato-1-v2.pdf
+    excerpt_paths:
+      - references/estratti/acn-misure-base-importanti.md
+    notes: |
+      Misure per soggetti importanti, organizzate secondo il Framework
+      Nazionale Cybersecurity ed. 2025 in 6 funzioni (GOVERN, IDENTIFY,
+      PROTECT, DETECT, RESPOND, RECOVER), categorie, sottocategorie e
+      requisiti operativi. Conteggio dal PDF: 37 sottocategorie con 87
+      requisiti operativi puntuali.
+
+  - id: acn-det-379907-allegato-2
+    title: "ACN - Determinazione 379907/2025 - Allegato 2 - Misure di sicurezza di base per i soggetti essenziali"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/allegato-2-v2
+    accessed: 2026-04-29
+    sha256: c8466e38fe5347bb0a6f612b6f15c9b4dbdb4ee4a8ee56a8652ab0134ac3fb2b
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-allegato-2-v2.pdf
+    excerpt_paths:
+      - references/estratti/acn-misure-base-essenziali.md
+    notes: |
+      Misure per soggetti essenziali, organizzate secondo il Framework
+      Nazionale Cybersecurity ed. 2025 in 6 funzioni, categorie,
+      sottocategorie e requisiti. Conteggio dal PDF: 43 sottocategorie
+      con 112 requisiti operativi puntuali (le fonti giornalistiche
+      indicavano 116 requisiti; 4 di differenza si trovano probabilmente
+      nelle tabelle in appendice e includono requisiti raggruppati).
+
+  - id: acn-det-379907-allegato-3
+    title: "ACN - Determinazione 379907/2025 - Allegato 3 - Incidenti significativi di base per i soggetti importanti"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/allegato-3-v2
+    accessed: 2026-04-29
+    sha256: d05b0038c68c5565edc22b3f6c9337d13ea81b7872c9487d584c030b80c8a8ca
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-allegato-3-v2.pdf
+    excerpt_paths:
+      - references/estratti/acn-incidenti-significativi.md
+    notes: |
+      Incidenti significativi di base per soggetti importanti. Tre
+      codici: IS-1 (perdita di riservatezza esterna), IS-2 (perdita di
+      integrita' con impatto esterno), IS-3 (violazione SLA stabiliti
+      ai sensi misura DE.CM-01). Definizioni qualitative; le soglie
+      quale-quantitative sono definite dal soggetto stesso ai sensi
+      della misura DE.CM-01 (Allegato 1). Per gli operatori telco si
+      applicano in aggiunta le soglie nazionali di cui all'art. 6 co. 2
+      della determinazione (durata + percentuale utenti).
+
+  - id: acn-det-379907-allegato-4
+    title: "ACN - Determinazione 379907/2025 - Allegato 4 - Incidenti significativi di base per i soggetti essenziali"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/allegato-4-v2
+    accessed: 2026-04-29
+    sha256: 0ab43835eda90600cd9331e8526790149e85160fe47244ec45e4f93376c8939c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-allegato-4-v2.pdf
+    excerpt_paths:
+      - references/estratti/acn-incidenti-significativi.md
+    notes: |
+      Incidenti significativi di base per soggetti essenziali. Quattro
+      codici: IS-1 (perdita riservatezza), IS-2 (perdita integrita' con
+      impatto esterno), IS-3 (violazione SLA misura DE.CM-01), IS-4
+      (accesso non autorizzato o abuso privilegi a dati - non presente
+      per gli importanti). Definizioni qualitative; soglie quale-
+      quantitative definite dal soggetto ai sensi della misura DE.CM-01
+      (Allegato 2).
 
   - id: acn-det-164179-2025
-    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 164179 del 14 aprile 2025 - Modalita' e specifiche di base per gli obblighi degli artt. 23, 24, 25, 29 e 32 del D.Lgs. 138/2024"
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 164179 del 14 aprile 2025 - Modalita' e specifiche di base per gli obblighi degli artt. 23, 24, 25, 29 e 32 del D.Lgs. 138/2024 (versione superata)"
     type: determinazione
     url: https://www.acn.gov.it/portale/en/nis/modalita-specifiche-base
     download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_nis_specifiche_2025_164179_signed
@@ -85,60 +186,54 @@ sources:
     sha256: null
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-det-164179-2025.pdf
-    excerpt_paths:
-      - references/estratti/acn-misure-base-importanti.md
-      - references/estratti/acn-misure-base-essenziali.md
-      - references/estratti/acn-incidenti-significativi.md
+    excerpt_paths: []
     notes: |
-      Atto attuativo principale per la fase 1 di applicazione del decreto
-      NIS in Italia. Definisce le misure di base distinte per:
-        - Allegato 1: soggetti importanti
-        - Allegato 2: soggetti essenziali
-      Strutturate secondo il Framework Nazionale per la Cybersecurity e la
-      Data Protection (edizione 2025) in funzioni, categorie,
-      sottocategorie e requisiti. In vigore dal 30/04/2025. Definisce
-      anche gli incidenti significativi di base che attivano l'obbligo
-      di notifica al CSIRT Italia.
-
-      ATTENZIONE: SUPERATA dalla Determinazione ACN 379907/2025 (vedi
-      `acn-det-379907-2025`), in vigore dal 15/01/2026. Conservata qui
-      perche' contiene l'Allegato 2 (essenziali) gia' scaricato e
-      analizzato strutturalmente nell'estratto.
+      ATTENZIONE: SUPERATA dalla Determinazione ACN 379907/2025 dal
+      15/01/2026 (cfr. art. 9 co. 1 della 379907/2025). Mantenuta nel
+      catalogo solo per riferimento storico. La skill non la usa come
+      base operativa. PDF principale non scaricato in v0.1.0-alpha.
 
   - id: acn-det-164179-2025-allegato2
-    title: "ACN - Determinazione 164179/2025 - Allegato 2 - Misure di sicurezza di base per i soggetti essenziali"
+    title: "ACN - Determinazione 164179/2025 - Allegato 2 - Misure di sicurezza di base per i soggetti essenziali (versione superata)"
     type: determinazione
     url: https://www.acn.gov.it/portale/documents/d/guest/detacn_nis_specifiche_2025_164179_allegato2
     accessed: 2026-04-29
     sha256: 61eef8569850533a64ac803630a8b508865a338da76f0f0611572823188275a6
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-det-164179-2025-allegato2.pdf
-    excerpt_paths:
-      - references/estratti/acn-misure-base-essenziali.md
+    excerpt_paths: []
     notes: |
-      Allegato 2 della Det. 164179/2025: 6 funzioni del Framework Nazionale
-      Cybersecurity 2025 (GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND,
-      RECOVER), 18 categorie, ~ 35 sottocategorie. Strutturato per
-      requisiti puntuali. PDF di 16 pagine.
+      Allegato 2 della Det. 164179/2025 (versione superata, mantenuta
+      come riferimento storico). 6 funzioni del Framework Nazionale
+      Cybersecurity 2025, 18 categorie, ~ 35 sottocategorie. PDF di 16
+      pagine. La struttura per funzioni/categorie e' coerente con la
+      379907/2025 ma il dettaglio dei requisiti e il numero di
+      sottocategorie e' aumentato nella nuova versione.
 
-  - id: acn-det-379907-2025
-    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 379907 del 2025 - Aggiornamento misure e specifiche di base NIS2"
-    type: determinazione
-    url: https://www.acn.gov.it/portale/en/nis/modalita-specifiche-base
+  - id: dl-105-2019-psnc
+    title: "Decreto-Legge 21 settembre 2019, n. 105, convertito con modificazioni dalla legge 18 novembre 2019, n. 133 - Disposizioni urgenti in materia di Perimetro di sicurezza nazionale cibernetica (PSNC)"
+    type: decreto
+    url: https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legge%3A2019-09-21%3B105
     accessed: 2026-04-29
     sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/acn-det-379907-2025.pdf
+    binary_path: null
     excerpt_paths: []
     notes: |
-      Aggiorna e sostituisce la Det. 164179/2025 dal 15/01/2026.
-      Contiene 4 allegati: Allegato 1 (misure soggetti importanti, 37
-      misure / 87 requisiti), Allegato 2 (misure soggetti essenziali,
-      43 misure / 116 requisiti), Allegato 3 (incidenti significativi
-      importanti), Allegato 4 (incidenti significativi essenziali).
-      Termine ultimo per la piena operativita': 31/10/2026 (art. 4 della
-      determinazione). Da catalogare con SHA256 e estratti dedicati nelle
-      iterazioni successive della skill.
+      Istituisce il Perimetro di Sicurezza Nazionale Cibernetica.
+      Rilevante per la skill solo per coordinamento notifiche: l'art. 1
+      co. 8 del DL 105/2019, come modificato dall'art. 44 D.Lgs. 138/2024,
+      stabilisce che "La notifica d'incidente ai sensi del comma 3,
+      lettera a), effettuata dai soggetti inclusi nel perimetro di
+      sicurezza nazionale cibernetica che rientrano nell'ambito di
+      applicazione del decreto legislativo di recepimento della direttiva
+      (UE) 2022/2555 assolve agli obblighi in materia di notifica di
+      incidente di cui all'articolo 25 del decreto legislativo medesimo".
+      Citazione tramite art. 44 D.Lgs. 138/2024 (gia' nel PDF principale).
+      Per i sistemi non PSNC dei soggetti dual (PSNC + non NIS) si
+      applicano le disposizioni del Capo IV NIS2 ex art. 1 co. 8-bis.
+      Catalogato senza binario: l'affermazione di assolvenza e' tracciabile
+      gia' al testo del D.Lgs. 138/2024 (estratto in `dlgs-138-2024-incident-art25.md`).
 
   - id: acn-portale-normativa
     title: "Agenzia per la Cybersicurezza Nazionale - Pagina riepilogativa normativa NIS"
@@ -161,19 +256,24 @@ secondary_sources_to_evaluate:
     title: "ENISA - Technical implementation guidance on the cybersecurity risk-management measures of Regulation (EU) 2024/2690"
     url: https://www.enisa.europa.eu/
     notes: |
-      Linee guida tecniche ENISA pubblicate in versione draft 2024 e
-      finale nel 2025. Utili per il sottoinsieme di soggetti coperti
-      direttamente dal Reg. UE 2024/2690 (cloud, DNS, data center, ecc.).
-      Da catalogare quando la skill si estende oltre l'ambito ACN.
+      Linee guida tecniche ENISA sul Reg. UE 2024/2690. Non catalogate
+      in v0.1.0-alpha: la skill cita ENISA solo come rinvio strutturale
+      per i soggetti coperti dal Reg. UE 2024/2690 (cloud, DNS, data
+      center, ecc.). Da catalogare con SHA256 e estratti dedicati quando
+      la skill estende l'analisi oltre l'ambito ACN italiano.
 
   - id: framework-nazionale-cybersecurity-2025
     title: "Framework Nazionale per la Cybersecurity e la Data Protection (FNCS) - edizione 2025"
     url: https://www.cybersecurityframework.it/
     notes: |
-      Framework di riferimento usato dalla Determinazione ACN 164179/2025
+      Framework di riferimento usato dalla Determinazione ACN 379907/2025
       per strutturare le misure di base. Tassonomia funzioni/categorie/
-      sottocategorie/requisiti. Non e' una norma in senso stretto ma
-      l'ACN lo richiama come riferimento operativo.
+      sottocategorie/requisiti. Realizzato dal Centro di ricerca CIS
+      Sapienza + Cybersecurity National Lab CINI in collaborazione con
+      ACN (cfr. premesse Det. 379907/2025). Non e' una norma in senso
+      stretto ma l'ACN lo richiama come riferimento operativo. Da
+      catalogare in iterazioni successive se la skill amplia il dettaglio
+      dei requisiti del Framework.
 
   - id: legge-90-2024-cybersicurezza
     title: "Legge 28 giugno 2024, n. 90 - Disposizioni in materia di rafforzamento della cybersicurezza nazionale"
@@ -184,3 +284,18 @@ secondary_sources_to_evaluate:
       a inasprire reati informatici nel codice penale. Sovrapposizione
       parziale con NIS2 per gli ambiti PA. Non riferimento principale
       della skill, ma da cross-checkare per soggetti pubblici.
+
+  - id: racc-2003-361-ce-pmi
+    title: "Raccomandazione 2003/361/CE della Commissione del 6 maggio 2003 relativa alla definizione delle microimprese, piccole e medie imprese - Allegato"
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32003H0361
+    notes: |
+      Definizioni dimensionali richiamate dall'art. 3 co. 2 e dall'art.
+      6 co. 1 lett. a) D.Lgs. 138/2024. Art. 2 par. 1 dell'Allegato:
+      media impresa = meno di 250 occupati e (fatturato annuo non
+      superiore a 50M EUR oppure totale di bilancio annuo non superiore
+      a 43M EUR). Art. 2 par. 2: piccola impresa = meno di 50 occupati
+      e (fatturato O bilancio annuo non superiori a 10M EUR). Art. 6
+      par. 2: regole per imprese collegate/associate. Art. 3 par. 4:
+      escluso dall'ambito NIS via art. 3 co. 3 D.Lgs. 138/2024. La
+      definizione e' stabile nel tempo; cataloghiamo solo se la skill
+      affronta casi complessi di imprese collegate.

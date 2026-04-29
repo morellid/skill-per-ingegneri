@@ -12,7 +12,7 @@ Produrre una valutazione strutturata che concluda con uno dei 4 esiti:
 
 - **NOTIFICA OBBLIGATORIA - SCATTATA** - l'evento e' incidente significativo: avviare immediatamente la procedura di pre-notifica entro 24 ore.
 - **NOTIFICA OBBLIGATORIA - DA AVVIARE** - in corso di acquisizione dei dati per confermare. Avviare procedura cautelativa.
-- **NON SIGNIFICATIVO** - evento non raggiunge le soglie. Documentare la valutazione e includere nel registro incidenti interno (registry obbligatorio per accountability).
+- **NON SIGNIFICATIVO** - evento non raggiunge le soglie IS-1..4. Buona pratica: documentare la valutazione internamente per finalita' di accountability e revisione periodica delle soglie DE.CM-01. Non e' previsto un "registro incidenti interno" come obbligo nominativo nel D.Lgs. 138/2024 ne' nella Det. 379907/2025; la documentazione interna deriva dai requisiti di gestione incidenti (RS.MA-01) e di miglioramento continuo (ID.IM-01, ID.IM-04).
 - **NOTIFICA VOLONTARIA RACCOMANDATA** - quasi-incidente o minaccia significativa che il soggetto puo' notificare ex art. 26.
 
 ## Input richiesti
@@ -71,24 +71,41 @@ Almeno UNO dei due deve essere soddisfatto perche' l'incidente sia significativo
 
 Anche un solo SI o POTENZIALE -> incidente significativo.
 
-### Passo 3 - Verifica soglie ACN (incidenti significativi di base)
+### Passo 3 - Verifica codici incidente significativo di base (Allegati 3-4 Det. ACN 379907/2025)
 
-Applicare le categorie/soglie della Det. ACN 379907/2025 Allegato 4 (essenziali) o Allegato 3 (importanti). Esempi (illustrativi):
+Applicare i codici **verbatim** della Determinazione (vedi `references/estratti/acn-incidenti-significativi.md` per il testo completo).
 
-| Categoria | Trigger | Soglia tipica essenziale | Soglia tipica importante | Soddisfatto? |
-|-----------|---------|---------------------------|---------------------------|--------------|
-| Indisponibilita' servizio | durata | > 1h | > 4h | [SI/NO] |
-| Indisponibilita' servizio | utenti coinvolti | > 1% bacino | > 5% bacino | [SI/NO] |
-| Compromissione confidenzialita' | volume dati | dataset critico | dataset esteso | [SI/NO] |
-| Compromissione integrita' | dati di servizio | qualsiasi modifica non autorizzata su asset critico | | [SI/NO] |
-| Compromissione account | privilegiati | qualsiasi compromissione AD admin | | [SI/NO] |
-| Compromissione asset | ICS/OT | qualsiasi compromissione | | [SI/NO] |
-| Cifratura malevola | sistemi rilevanti | qualsiasi cifratura su asset critico | | [SI/NO] |
-| Perdita finanziaria | EUR | > 500.000 | > 1.000.000 | [SI/NO] |
-| Impatto persone | salute/sicurezza | qualsiasi impatto su pazienti/operatori | | [SI/NO] |
-| Impatto transfrontaliero | UE | servizio fornito in piu' SM | | [SI/NO] |
+**Per soggetti importanti (Allegato 3) - 3 codici**:
 
-**Le soglie esatte sono nel testo della Determinazione ACN**: questo task fornisce categorie operative, non valori puntuali.
+| Codice | Descrizione (riassunta) | Soddisfatto? |
+|--------|--------------------------|---------------|
+| **IS-1** | Evidenza di perdita di riservatezza, verso l'esterno, di dati digitali del soggetto NIS | [SI/NO] |
+| **IS-2** | Evidenza di perdita di integrita', con impatto verso l'esterno, di dati digitali del soggetto NIS | [SI/NO] |
+| **IS-3** | Violazione dei livelli di servizio (SL) stabiliti ai sensi della misura DE.CM-01 | [SI/NO] |
+
+**Per soggetti essenziali (Allegato 4) - 4 codici** (tutti i precedenti + IS-4):
+
+| Codice | Descrizione (riassunta) | Soddisfatto? |
+|--------|--------------------------|---------------|
+| **IS-1** | Evidenza di perdita di riservatezza esterna | [SI/NO] |
+| **IS-2** | Evidenza di perdita di integrita' con impatto esterno | [SI/NO] |
+| **IS-3** | Violazione SL definiti ai sensi DE.CM-01 | [SI/NO] |
+| **IS-4** | Evidenza, anche sulla base dei parametri quali-quantitativi DE.CM-01, di accesso non autorizzato o abuso di privilegi a dati digitali del soggetto NIS | [SI/NO] |
+
+**Note operative**:
+- Le **soglie quale-quantitative** per IS-3 e IS-4 sono definite **dal soggetto stesso** ai sensi della misura DE.CM-01 dell'Allegato 1/2. La determinazione NON impone valori numerici generali (es. ore di indisponibilita', percentuali utenti, soglie EUR).
+- IS-1 e IS-2 sono qualitativi: la soglia e' "evidenza di perdita verso l'esterno", senza requisito di volume.
+- Per gli **operatori telco** (definiti dall'art. 1 lett. s della Det. 379907/2025: >= 1% utenti nazionali OR >= 1.000.000 utenti), si applicano in **aggiunta** le soglie quantitative dell'art. 6 co. 2:
+
+| Caso telco | Durata | % utenti nazionali colpiti |
+|-------------|--------|------------------------------|
+| a) | > 1 ora | > 15% |
+| b) | > 2 ore | > 10% |
+| c) | > 4 ore | > 5% |
+| d) | > 6 ore | > 2% |
+| e) | > 8 ore | > 1% |
+
+Per tutti gli altri soggetti, **non esistono soglie nazionali quantitative**: la soglia e' definita internamente al soggetto.
 
 ### Passo 4 - Verifica casi speciali
 
@@ -227,25 +244,26 @@ La presente valutazione e' di supporto. La decisione di notifica rimane in capo 
 
 ## Casi tipici (esempi orientativi)
 
-| Caso | Soggetto | Esito |
-|------|----------|-------|
-| Ransomware su 3 server di produzione, business 4h fermo, 50.000 utenti coinvolti | Importante (telco PMI) | Significativo - notifica obbligatoria |
-| Phishing campaign rilevata, 2 account utente compromessi, no movimento laterale | Importante | Non significativo (basso impatto), notifica volontaria raccomandata |
-| Esfiltrazione DB clienti 1M record, dati personali | Essenziale | Significativo (lett. b) + notifica GDPR parallela |
-| ICS compromesso in centrale elettrica, reroute manuale evitato blackout | Essenziale (energia) | Significativo (lett. a + b potenziale) - notifica entro 24h pre-notif |
-| Defacement homepage, no impatto su servizio core | Importante | Non significativo (cosmetico), notifica volontaria possibile |
-| Compromissione domain controller, AD admin compromesso, contenuto in 2h | Essenziale | Significativo per ACN (compromissione privilegio critico) - notifica obbligatoria |
-| Ransomware su server di test isolato, no impatto produzione, no esfiltrazione | Importante | Non significativo, registrare nel registry interno |
+Esempi non esaustivi: l'esito dipende dai parametri DE.CM-01 specifici del soggetto e dalle definizioni di "perdita di riservatezza/integrita' verso l'esterno" del soggetto stesso.
+
+| Caso | Soggetto | Codice possibile | Esito orientativo |
+|------|----------|-------------------|-------------------|
+| Ransomware su server di produzione: indisponibilita' supera SL definito ex DE.CM-01 | Importante | IS-3 | Significativo - notifica obbligatoria |
+| Phishing campaign rilevata, 2 account utente compromessi, no movimento laterale | Importante | (nessun codice IS soddisfatto) | Non significativo - documentazione interna |
+| Esfiltrazione DB clienti contenente dati personali con evidenza di trasferimento esterno | Essenziale | IS-1 (perdita riservatezza esterna) + IS-4 (accesso non autorizzato) | Significativo + notifica GDPR parallela (Garante 72h art. 33 GDPR) |
+| ICS compromesso in centrale elettrica, evitato blackout grazie a reroute manuale | Essenziale (energia) | IS-2 (potenziale modifica integrita' con impatto esterno) e/o IS-4 | Da valutare in relazione ai parametri DE.CM-01 e alla soglia interna; in dubbio, notifica per art. 25 co. 3 (la notifica non aggrava la responsabilita') |
+| Compromissione domain controller (AD admin) contenuta in 2 ore, no movimento ulteriore | Essenziale | IS-4 (abuso privilegi su asset rilevante con dati digitali) | Significativo - notifica obbligatoria |
+| Ransomware su server di test isolato, no impatto produzione, no esfiltrazione | Importante | (nessun codice IS soddisfatto) | Non significativo - registrazione nei log interni; valutare come quasi-incidente per notifica volontaria art. 26 |
+| Operatore telco, 1.5h indisponibilita' nazionale rete mobile, 18% utenti colpiti | Importante (telco) | Soglia art. 6 co. 2 lett. a Det. 379907/2025 (>1h e >15%) -> IS-3 | Significativo - notifica obbligatoria |
 
 ## Limiti di questo task
 
 - Non sostituisce la valutazione del CSIRT/SOC interno o del consulente cyber.
 - Non integra automaticamente con piattaforme di IR/SOAR.
 - Non produce la notifica formale: il punto di contatto NIS (art. 7) trasmette tramite la piattaforma ACN.
-- Le soglie quantitative ACN richiedono lettura del testo verbatim della Det. 379907/2025.
+- Le soglie quale-quantitative DE.CM-01 sono **definite dal soggetto stesso**: la valutazione finale dipende dai parametri puntuali interni, non da tabelle generiche.
+- Per gli operatori telco, le soglie nazionali dell'art. 6 co. 2 sono cumulative con i codici IS-1..3.
 
 ## Esempi
 
-Vedi `examples/`:
-- `incidente-ransomware-utility/` - utility energetica colpita da ransomware (significativo)
-- `incidente-phishing-no-significativo/` - phishing limitato (non significativo, registry)
+Vedi `examples/`. (In v0.1.0-alpha gli esempi disponibili coprono solo i casi di perimetro: utility energetica essenziale e PMI manifattura importante. Esempi dedicati di valutazione incidente da aggiungere in iterazioni successive.)

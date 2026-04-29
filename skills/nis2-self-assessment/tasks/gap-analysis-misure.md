@@ -1,6 +1,6 @@
-# Task: Gap analysis misure di base NIS2 (D.Lgs. 138/2024 art. 24 + Det. ACN 164179/2025)
+# Task: Gap analysis misure di base NIS2 (D.Lgs. 138/2024 art. 24 + Det. ACN 379907/2025)
 
-Confronta le misure di sicurezza informatica gia' adottate dall'organizzazione con i 10 elementi minimi dell'art. 24 co. 2 D.Lgs. 138/2024 e con le sottocategorie del Framework Nazionale Cybersecurity (ed. 2025) richiamate dalla Determinazione ACN 164179/2025 (Allegato 1 per importanti, Allegato 2 per essenziali) e dalla successiva Det. 379907/2025.
+Confronta le misure di sicurezza informatica gia' adottate dall'organizzazione con i 10 elementi minimi dell'art. 24 co. 2 D.Lgs. 138/2024 e con le sottocategorie del Framework Nazionale Cybersecurity (ed. 2025) richiamate dalla Determinazione ACN 379907/2025 (Allegato 1 per importanti = 37 sottocategorie / 87 requisiti; Allegato 2 per essenziali = 43 sottocategorie / 112 requisiti). La Det. 379907/2025 e' vigente dal 15/01/2026 e sostituisce la precedente Det. 164179/2025.
 
 ## Pre-requisito
 
@@ -38,28 +38,32 @@ In base al settore e alla classificazione:
 |------|------------------------|
 | Soggetto in settore Allegato I 8 (Infrastrutture digitali) - DNS/cloud/data center/CDN/serv. fiduciari | **Reg. UE 2024/2690** (diretto) + ENISA technical guidance |
 | Soggetto in settore Allegato II 6 (mercati online, motori di ricerca, social, registrar) | **Reg. UE 2024/2690** + Det. ACN |
-| Soggetto in altri settori Allegati I-IV | **Det. ACN 164179/2025 -> 379907/2025** (Allegato 1 importanti / Allegato 2 essenziali) |
+| Soggetto in altri settori Allegati I-IV | **Det. ACN 379907/2025** (Allegato 1 importanti / Allegato 2 essenziali) |
 | Soggetto in settori 3-4 Allegato I (banche/mercati finanziari) DORA-eligible | **DORA Reg. UE 2022/2554** (Capi IV-V NIS2 esclusi - art. 3 co. 14) |
 
 Per la maggior parte dei soggetti italiani il riferimento e' la Determinazione ACN.
 
 ### Passo 2 - Questionario per ciascuna funzione
 
-Per ciascuna delle 6 funzioni del Framework Nazionale Cybersecurity (ed. 2025), valutare lo stato di copertura. Riportare per ogni sottocategoria un livello da 0 a 4:
+Per ciascuna delle 6 funzioni del Framework Nazionale Cybersecurity (ed. 2025), valutare lo stato di copertura.
+
+> **Nota metodologica importante**: la Determinazione ACN 379907/2025 NON definisce livelli di maturita' numerici. I requisiti di ciascuna sottocategoria devono essere "implementati" o non implementati, e il rispetto si misura sulla presenza dei singoli requisiti puntuali elencati nell'Allegato 1 (importanti) o Allegato 2 (essenziali) della determinazione.
+>
+> La scala di maturita' 0-4 di seguito proposta e' una **rubric interna non normativa**, utile come strumento di self-assessment per pianificare il roadmap. Il livello 3 corrisponde a una pratica sistematica documentata; non equivale automaticamente alla conformita' formale ai requisiti ACN, che va verificata requisito per requisito. Il giudizio finale di conformita' va espresso confrontando ciascun requisito ACN con le evidenze disponibili.
+
+Scala di maturita' interna proposta (rubric, 0-4):
 
 - **0 - Assente**: nessuna misura.
 - **1 - Iniziale**: esistono pratiche informali, non documentate.
 - **2 - Documentato**: politica/procedura formalizzata, ma applicazione disomogenea.
-- **3 - Implementato**: misura applicata sistematicamente con monitoraggio.
+- **3 - Implementato**: misura applicata sistematicamente con monitoraggio. (Indicatore di candidata conformita' ai requisiti ACN, da verificare puntualmente.)
 - **4 - Ottimizzato**: misura applicata, monitorata, riesaminata, integrata in metriche di rischio.
-
-Soglia di conformita' alla Det. ACN: tipicamente livello **3** sui requisiti di base.
 
 #### 1. GOVERNO (GOVERN)
 
 | Sottocategoria | Domanda chiave | Livello (0-4) | Evidenza disponibile? |
 |----------------|----------------|----------------|------------------------|
-| GV.OC-4 | E' mantenuto un elenco aggiornato dei sistemi informativi e di rete rilevanti? | | |
+| GV.OC-04 | E' mantenuto un elenco aggiornato dei sistemi informativi e di rete rilevanti? | | |
 | GV.RM-03 | Esiste un piano di gestione dei rischi cyber documentato e parte dei processi aziendali? | | |
 | GV.RR-02 | L'organizzazione di sicurezza informatica e' definita, approvata dal CdA, riesaminata almeno biennalmente? | | |
 | GV.RR-04 | Vetting del personale autorizzato? Clausole contrattuali post-cessazione? | | |
@@ -167,9 +171,13 @@ Se uno dei 10 ambiti e' a livello < 3 con politica non documentata: e' un **risc
 **Data valutazione**: [data]
 **Organizzazione**: [...]
 **Classificazione NIS2**: [Essenziale | Importante]
-**Riferimento operativo**: [Det. ACN 164179/2025 -> 379907/2025 | Reg. UE 2024/2690 | DORA]
+**Riferimento operativo**: [Det. ACN 379907/2025 Allegato 1 (importanti, 37 sottocat / 87 requisiti) | Allegato 2 (essenziali, 43 sottocat / 112 requisiti) | Reg. UE 2024/2690 | DORA]
 
 ## Summary
+
+> Totali sottocategorie: 43 per soggetti essenziali (Allegato 2), 37 per soggetti importanti (Allegato 1). Riempire le righe pertinenti alla classificazione del soggetto.
+
+Per **soggetti essenziali** (Allegato 2 - 43 sottocategorie, 112 requisiti):
 
 | Funzione | Sottocategorie totali | A livello >= 3 | Gap rilevati |
 |----------|------------------------|-----------------|--------------|
@@ -180,6 +188,18 @@ Se uno dei 10 ambiti e' a livello < 3 con politica non documentata: e' un **risc
 | RESPOND | 2 | [N] | [N] |
 | RECOVER | 2 | [N] | [N] |
 | **TOTALE** | **43** | **[N]** | **[N]** |
+
+Per **soggetti importanti** (Allegato 1 - 37 sottocategorie, 87 requisiti):
+
+| Funzione | Sottocategorie totali | A livello >= 3 | Gap rilevati |
+|----------|------------------------|-----------------|--------------|
+| GOVERN | 11 | [N] | [N] |
+| IDENTIFY | 9 | [N] | [N] |
+| PROTECT | 11 | [N] | [N] |
+| DETECT | 2 | [N] | [N] |
+| RESPOND | 2 | [N] | [N] |
+| RECOVER | 1 | [N] | [N] |
+| **TOTALE** | **37** | **[N]** | **[N]** |
 
 ## Gap prioritari (ordinati per priorita')
 
@@ -229,7 +249,7 @@ L'output e' di supporto. Le decisioni operative su prioritizzazione, effort, sca
 
 - Non sostituisce un audit ISO/IEC 27001 ne' una verifica di conformita' su misurazione effettiva delle misure.
 - Non produce evidenze documentali ne' dossier per ispezione ACN.
-- Le sottocategorie elencate riflettono la struttura della Det. 164179/2025; la Det. 379907/2025 puo' aver aggiunto/modificato requisiti. Verificare il testo aggiornato.
+- Le sottocategorie elencate riflettono la struttura della Det. 379907/2025 (vigente dal 15/01/2026). Per il dettaglio dei requisiti puntuali consultare il testo verbatim degli Allegati 1/2 in `not_in_repo/`.
 
 ## Esempi
 

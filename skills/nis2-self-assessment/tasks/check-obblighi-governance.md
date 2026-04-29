@@ -72,7 +72,7 @@ Note operative:
 
 ### Passo 4 - Mappatura ai requisiti ACN
 
-Le sottocategorie del Framework Nazionale Cybersecurity (Det. ACN 164179/2025 Allegato 2) richiamano l'organo di amministrazione direttamente:
+Le sottocategorie del Framework Nazionale Cybersecurity (Det. ACN 379907/2025 Allegato 2) richiamano l'organo di amministrazione direttamente:
 
 | Sottocategoria | Requisito ACN |
 |----------------|----------------|

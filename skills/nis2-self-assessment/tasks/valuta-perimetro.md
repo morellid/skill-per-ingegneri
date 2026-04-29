@@ -120,17 +120,33 @@ Anche un solo SI -> ambito DUBBIO che richiede individuazione formale ACN.
 
 Solo per soggetti privati in Allegato I-II che NON ricadono nei casi indipendenti dalle dimensioni:
 
-L'organizzazione **supera i massimali per le piccole imprese** (Racc. 2003/361/CE art. 2 par. 2)?
+L'organizzazione **supera i massimali per le piccole imprese** (Racc. 2003/361/CE Allegato art. 2 par. 2)?
 
-Massimali piccole imprese: < 50 occupati **E** fatturato O bilancio <= 10M EUR.
+> **Definizione di piccola impresa**: occupati < 50 **AND** (fatturato annuo OR totale di bilancio annuo) <= 10M EUR.
+>
+> Quindi NOT-piccola (= in ambito NIS2 ai sensi dell'art. 3 co. 2): occupati >= 50 **OPPURE** entrambi i parametri finanziari (fatturato AND bilancio) > 10M EUR.
 
-| Misura | Valore | Soglia piccole imprese | Supera? |
-|--------|--------|------------------------|---------|
-| Occupati (annual mean) | [N] | < 50 | [SI/NO] |
-| Fatturato annuo | [EUR M] | <= 10M | [SI/NO] |
-| Totale di bilancio annuo | [EUR M] | <= 10M | [SI/NO] |
+Compilare:
 
-Una piccola impresa ha **TUTTE** le tre condizioni < soglia. Se anche solo UNA supera la soglia, **non e' piccola** e quindi (se in Allegato I-II) **e' in ambito** NIS2.
+| Misura | Valore | |
+|--------|--------|---|
+| Occupati (media annuale) | [N] | |
+| Fatturato annuo | [EUR M] | |
+| Totale di bilancio annuo | [EUR M] | |
+
+Verificare la condizione di esclusione dall'ambito (= il soggetto e' piccola impresa):
+
+- Occupati < 50? **AND**
+- (Fatturato <= 10M OR Bilancio <= 10M)?
+
+Se **entrambe** le condizioni sono vere -> e' piccola impresa -> **fuori ambito** salvo applicazione indipendente dalle dimensioni (Passo 4) o classificazione discrezionale ACN (Passo 5).
+
+Se anche solo una delle due e' falsa -> **non e' piccola** -> **in ambito** se ricade in Allegato I-II.
+
+Esempi:
+- 60 dipendenti, 5M fatturato, 4M bilancio: occupati >= 50 -> NOT piccola -> in ambito (in Allegato I-II)
+- 30 dipendenti, 15M fatturato, 12M bilancio: occupati < 50 ma valori finanziari entrambi > 10M -> NOT piccola -> in ambito
+- 30 dipendenti, 15M fatturato, 8M bilancio: occupati < 50 e bilancio <= 10M -> piccola -> fuori ambito (size-cap)
 
 ### Passo 7 - Classificazione essenziale vs importante (art. 6)
 
@@ -138,11 +154,15 @@ Se in ambito, classificare:
 
 **Soggetto essenziale (art. 6 co. 1)**:
 
-| Lettera | Criterio | Soddisfatto? |
+> **Definizione di media impresa** (Racc. 2003/361/CE Allegato art. 2 par. 1): occupati < 250 **AND** (fatturato annuo <= 50M EUR **OR** totale di bilancio annuo <= 43M EUR).
+>
+> Quindi NOT-media (= "grande", soggetto essenziale via art. 6 co. 1 lett. a): occupati >= 250 **OPPURE** (fatturato > 50M **AND** bilancio > 43M).
+
+| Lettera art. 6 co. 1 | Criterio | Soddisfatto? |
 |---------|----------|--------------|
-| a) | Soggetto Allegato I che supera massimali medie imprese: >= 250 occupati **OPPURE** > 50M EUR fatturato **OPPURE** > 43M EUR bilancio | [SI/NO] |
+| a) | Soggetto Allegato I che e' "grande": occupati >= 250 **OPPURE** (fatturato > 50M EUR **AND** bilancio > 43M EUR) | [SI/NO] |
 | b) | Soggetto critico ex Dir. 2022/2557 (indipendente dalle dimensioni) | [SI/NO] |
-| c) | Fornitore reti/servizi comunicazione elettronica considerato "media impresa" | [SI/NO] |
+| c) | Fornitore reti/servizi comunicazione elettronica considerato "media impresa" o superiore | [SI/NO] |
 | d) | Prestatore servizi fiduciari **qualificato** o gestore TLD o fornitore DNS (indipendente dalle dimensioni) | [SI/NO] |
 | e) | PA centrale Allegato III lett. a) | [SI/NO] |
 
@@ -232,16 +252,16 @@ La presente valutazione di perimetro e' di supporto, non sostituisce la decision
 
 | Caso | Settore | Dimensioni | Esito |
 |------|---------|-------------|-------|
-| Utility elettrica con 600 dipendenti | Allegato I.1.a | Grande | Essenziale (art. 6 co. 1 lett. a) |
-| ASL Roma 1 | Allegato III.c.4 | (n/a) | Essenziale solo se classificata da ACN; altrimenti importante |
-| PMI manifatturiera 80 dipendenti, 25M fatturato | Allegato II.5 | Media | Importante |
-| Microimpresa SaaS, 30 dipendenti, 8M fatturato | Allegato I.8 (cloud) | Piccola | Fuori ambito (size-cap; ma riconsiderare se classificato critico) |
+| Utility elettrica con 600 dipendenti | Allegato I.1.a | Grande (occupati >= 250) | Essenziale (art. 6 co. 1 lett. a) |
+| ASL Roma 1 | Allegato III.c.4 | (n/a, indip. dimensioni) | In ambito; importante salvo classificazione essenziale ACN |
+| PMI manifatturiera 80 dipendenti, 25M fatturato, 18M bilancio | Allegato II.5 | Media (occupati >= 50, ma < 250) | In ambito; importante (Allegato II non puo' essere essenziale via lett. a) |
+| Microimpresa SaaS, 30 dipendenti, 8M fatturato, 5M bilancio | Allegato I.8 (cloud) | Piccola (occupati < 50 e bilancio <= 10M) | Fuori ambito per size-cap; riconsiderare solo se classificato come soggetto critico ex Dir. 2022/2557 o ricade in art. 3 co. 9/10 |
 | Azienda ospedaliera universitaria, 2000 dipendenti | Allegato I.5 | Grande | Essenziale (art. 6 co. 1 lett. a) |
-| Comune di Bologna, 400.000 abitanti | Allegato III.c.2 + III.c.3 | (n/a) | In ambito (art. 3 co. 6); importante salvo classificazione essenziale ACN |
-| Comune di 10.000 abitanti | (non Allegato III) | (n/a) | Fuori ambito |
-| Universita' privata con istituto di ricerca | Allegato IV.2 | (n/a) | Ambito dubbio - serve individuazione ACN |
-| MSP fornitore servizi gestiti per ospedali, 50 dipendenti, 8M fatturato | Allegato I.8 (managed services) o Allegato I.9 | Piccola | In ambito (art. 3 co. 5 lett. b o art. 3 co. 10 catena approvvigionamento); importante |
-| Banca commerciale | Allegato I.3 | Grande | Essenziale ma esclusa dai Capi IV-V (DORA prevale) |
+| Comune di Bologna, 400.000 abitanti | Allegato III.c.2 + III.c.3 | (n/a, indip. dimensioni) | In ambito (art. 3 co. 6); importante salvo classificazione essenziale ACN ex art. 6 co. 2 |
+| Comune di 10.000 abitanti | (non rientra in Allegato III lett. c) | (n/a) | Fuori ambito (manca tipologia in Allegato III) |
+| Universita' privata con istituto di ricerca | Allegato IV.2 | (n/a, indip. dimensioni) | Ambito dubbio - in ambito solo se formalmente individuato dall'ACN ex art. 3 co. 8 + co. 13 |
+| Fornitore di servizi gestiti (MSP) per cliente ospedaliero, 60 dipendenti, 9M fatturato, 7M bilancio | Allegato I.8 (managed services) o Allegato I.9 (gestione servizi TIC B2B) | Media (occupati >= 50) | **In ambito per size-cap** (art. 3 co. 2 - non e' piccola); importante salvo art. 6. NB: art. 3 co. 5 lett. b e art. 3 co. 10 NON si applicano automaticamente; lett. b e' per fornitori di reti/servizi di comunicazione elettronica, co. 10 richiede impresa collegata che soddisfi i criteri a-d |
+| Banca commerciale di grandi dimensioni | Allegato I.3 | Grande | Essenziale ma esclusa dai Capi IV-V (DORA prevale ex art. 3 co. 14) |
 
 ## Limiti di questo task
 

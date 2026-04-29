@@ -46,9 +46,40 @@
 
 **Note operative.**
 
-- "Massimali per le piccole imprese" (Racc. 2003/361/CE art. 2 par. 2): meno di 50 occupati e fatturato/bilancio non superiore a 10 milioni di EUR. **Superare** questi massimali significa essere almeno medio. Quindi NIS2 in via ordinaria si applica a medie e grandi imprese.
-- "Massimali per le medie imprese" (Racc. 2003/361/CE art. 2 par. 1): meno di 250 occupati e fatturato fino a 50 milioni di EUR oppure totale di bilancio fino a 43 milioni di EUR. **Superare** questi massimali significa essere grande - rilevante per la classificazione di soggetto essenziale (art. 6).
-- I settori 3 e 4 dell'Allegato I (banche e infrastrutture mercati finanziari) sono **esclusi dai Capi IV e V** del decreto: l'attuazione segue il **DORA** (Reg. UE 2022/2554) per le entita' finanziarie identificate da quel Regolamento.
+### Definizioni dimensionali (Raccomandazione 2003/361/CE - Allegato art. 2)
+
+> Articolo 2 par. 1 dell'Allegato (verbatim): "La categoria delle microimprese, delle piccole imprese e delle medie imprese (PMI) e' costituita da imprese che occupano meno di 250 persone, il cui fatturato annuo non supera i 50 milioni di EUR oppure il cui totale di bilancio annuo non supera i 43 milioni di EUR".
+>
+> Articolo 2 par. 2: "Nella categoria delle PMI si definisce piccola impresa un'impresa che occupa meno di 50 persone e realizza un fatturato annuo o un totale di bilancio annuo non superiori a 10 milioni di EUR".
+
+Quindi:
+
+| Categoria | Definizione (regola UE) |
+|------------|--------------------------|
+| **Micro** | occupati < 10 **AND** (fatturato annuo OR totale di bilancio annuo) <= 2M EUR |
+| **Piccola** | occupati < 50 **AND** (fatturato annuo OR totale di bilancio annuo) <= 10M EUR |
+| **Media** | occupati < 250 **AND** (fatturato annuo <= 50M EUR **OR** totale di bilancio annuo <= 43M EUR) |
+| **Grande** | NON media |
+
+**Logica fondamentale**: gli operatori "AND" e "OR" non sono simmetrici. Per essere "piccola" servono **entrambe** le condizioni: occupati sotto soglia E almeno uno dei due valori finanziari sotto soglia. Lo stesso per "media".
+
+### Conseguenze per NIS2
+
+**Per essere in ambito** (art. 3 co. 2 - non piccola impresa):
+- occupati >= 50 **OPPURE** entrambi i valori finanziari (fatturato AND bilancio) > 10M EUR.
+
+**Per essere classificato come "grande"** ai sensi dell'art. 6 co. 1 lett. a) (essenziale via Allegato I):
+- occupati >= 250 **OPPURE** (fatturato annuo > 50M EUR **AND** totale di bilancio annuo > 43M EUR).
+
+Esempi chiarificatori:
+- 60 dipendenti, 8M fatturato, 5M bilancio: **media impresa** (occupati >= 50, ma valori finanziari sotto media). **In ambito** NIS2; non grande quindi non essenziale via lett. a).
+- 200 dipendenti, 80M fatturato, 30M bilancio: **media impresa** (occupati < 250 e bilancio <= 43M). **In ambito**; non grande quindi non essenziale via lett. a).
+- 200 dipendenti, 80M fatturato, 50M bilancio: **grande** (entrambi > 50M e > 43M). **Essenziale** se in Allegato I.
+- 300 dipendenti, 30M fatturato, 25M bilancio: **grande** (occupati >= 250). **Essenziale** se in Allegato I.
+
+### Esclusione settori finanziari
+
+I settori 3 e 4 dell'Allegato I (banche e infrastrutture mercati finanziari) sono **esclusi dai Capi IV e V** del decreto (art. 3 co. 14): l'attuazione segue il **DORA** (Reg. UE 2022/2554) per le entita' finanziarie identificate da quel Regolamento.
 
 ## Art. 6 - Soggetti essenziali e soggetti importanti
 
@@ -65,8 +96,8 @@
 
 **Sintesi pratica.**
 
-- **Essenziale (privato in Allegato I)**: dimensione "grande" - >= 250 dipendenti **oppure** > 50M EUR fatturato annuo **oppure** > 43M EUR totale di bilancio.
-- **Essenziale indipendentemente dalle dimensioni**: soggetto critico ex Dir. 2022/2557, prestatore servizi fiduciari qualificato, gestore TLD, fornitore DNS, PA centrale (Allegato III lett. a).
+- **Essenziale (privato in Allegato I)**: dimensione "grande" ai sensi della Racc. 2003/361/CE - cioe' occupati >= 250 **OPPURE** (fatturato > 50M EUR **AND** totale di bilancio > 43M EUR). Non basta che uno solo dei due valori finanziari superi la propria soglia: per la deroga "grande" via valori finanziari servono **entrambi** sopra soglia. Il caso piu' frequente che genera la classificazione e' >= 250 occupati.
+- **Essenziale indipendentemente dalle dimensioni**: soggetto critico ex Dir. 2022/2557, prestatore servizi fiduciari **qualificato**, gestore TLD, fornitore DNS, PA centrale (Allegato III lett. a).
 - **Importante**: tutto il resto in ambito (Allegati I-IV) che non rientra negli essenziali.
 
 ## Art. 7 - Identificazione ed elencazione dei soggetti essenziali e dei soggetti importanti

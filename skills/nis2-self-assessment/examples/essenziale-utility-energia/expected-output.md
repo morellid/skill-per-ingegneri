@@ -39,7 +39,7 @@ Non rilevante per la classificazione (gia' essenziale via dimensione + settore A
 | Adozione misure tecniche/operative/organizzative (10 elementi) | art. 24 co. 2 | T+18 mesi dalla notifica ACN, comunque entro **31/10/2026** |
 | Formazione CdA + dipendenti | art. 23 co. 2 | T+6-12 mesi |
 | Notifica incidenti significativi | art. 25 | T+9 mesi dalla notifica ACN |
-| Sanzioni in caso di violazione | art. 38 co. 9 lett. a | fino a **10M EUR o 2% fatturato annuo mondiale**, se superiore (su 380M EUR -> ipotesi cap a 7,6M EUR) |
+| Sanzioni in caso di violazione | art. 38 co. 9 lett. a | fino a **max(10M EUR; 2% fatturato annuo mondiale)** = max(10M; 7,6M) = **10M EUR** in questo caso. Minimo edittale 1/20 = 500k EUR |
 
 ### Rinvio
 
@@ -93,7 +93,7 @@ La presente valutazione e' di supporto. La registrazione su piattaforma ACN spet
 
 ### Esposizione sanzionatoria
 
-- **Sanzione max** ex art. 38 co. 9 lett. a) per violazione art. 23, 24, 25: fino a **10M EUR o 2% del fatturato annuo mondiale (380M EUR)**, se superiore. Cap operativo a **~ 7,6M EUR** in questo caso (2% di 380M).
+- **Sanzione max** ex art. 38 co. 9 lett. a) per violazione artt. 23, 24, 25: fino al **maggiore tra 10M EUR e 2% del fatturato annuo mondiale**. Per 380M EUR di fatturato: 2% = 7,6M EUR; il maggiore tra 10M e 7,6M e' **10M EUR**. Quindi cap operativo = **10M EUR**. Minimo edittale = 1/20 del massimo = 500.000 EUR.
 - **Sanzione accessoria** ex art. 38 co. 6: incapacita' a svolgere funzioni dirigenziali per i membri del CdA in caso di mancata ottemperanza alla diffida.
 
 ---

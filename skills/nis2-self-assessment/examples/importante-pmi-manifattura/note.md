@@ -37,10 +37,10 @@ In ogni caso, il soggetto e' gia' in ambito via Allegato II + size-cap rule, qui
 
 ### 4. PMI senza CISO
 
-Il caso evidenzia un problema reale: molte PMI italiane in ambito NIS2 non hanno mai avuto un CISO. Soluzioni pragmatiche:
-- **vCISO** (CISO virtuale, parte time): 1-2 giorni/mese a 1.000-1.500 EUR/giorno
-- **MSSP italiano** che fornisce SOC + advisory NIS2
-- Formazione del responsabile IT esistente come "compliance officer" cyber con supervisione esterna
+Il caso evidenzia un problema reale: molte PMI italiane in ambito NIS2 non hanno mai avuto un CISO. Soluzioni pragmatiche tipiche di mercato (la skill non fornisce stime di prezzo):
+- **vCISO** (CISO virtuale, part-time): impegno tipicamente 1-2 giorni/mese; costo da quotare con il fornitore.
+- **MSSP italiano** che fornisce SOC + advisory NIS2.
+- Formazione del responsabile IT esistente come "compliance officer" cyber con supervisione esterna.
 
 ### 5. Stabilimento in Slovacchia
 
@@ -59,8 +59,4 @@ Per la giurisdizione (art. 5 D.Lgs. 138/2024):
 
 ## Riferimenti per validazione domain expert
 
-Validatore profilo target: consulente cybersecurity con esperienza su PMI manifatturiere automotive/industria + familiarita' con:
-- TISAX (VDA-ISA), almeno conoscenza dei criteri AL2/AL3
-- IEC 62443 (per la parte OT/MES)
-- ISO/IEC 27001 implementazione su PMI
-- Esperienza con MSSP italiani (Cyberoo, Var Group, Tecnosoft, ecc.)
+Validatore profilo target: consulente cybersecurity con esperienza su PMI manifatturiere automotive/industria. Idealmente familiarita' con TISAX (VDA-ISA), IEC 62443 (per la parte OT/MES), ISO/IEC 27001 su PMI e con il mercato italiano dei MSSP. Questi standard tecnici NON sono catalogati come fonti primarie nella skill alpha; vanno trattati come riferimenti di mercato.

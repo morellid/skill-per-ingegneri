@@ -4,26 +4,29 @@
 
 ## Dominio
 
-Self-assessment di conformita' al **D.Lgs. 4 settembre 2024, n. 138** (recepimento italiano della Direttiva (UE) 2022/2555 - NIS 2) per organizzazioni italiane private e pubbliche. La skill copre quattro angoli: perimetro (essenziale/importante/fuori), gap analysis sulle misure di base ACN (Determinazione 164179/2025), verifica di significativita' di un incidente, obblighi di governance dell'organo di amministrazione.
+Self-assessment di conformita' al **D.Lgs. 4 settembre 2024, n. 138** (recepimento italiano della Direttiva (UE) 2022/2555 - NIS 2) per organizzazioni italiane private e pubbliche. La skill copre quattro angoli: perimetro (essenziale/importante/fuori), gap analysis sulle misure di base ACN (Determinazione 379907/2025 vigente dal 15/01/2026), verifica di significativita' di un incidente (codici IS-1..4 + soglie telco art. 6 co. 2), obblighi di governance dell'organo di amministrazione.
 
-Target utente: CISO, IT manager, DPO, ingegneri dell'informazione, consulenti cybersecurity di organizzazioni italiane potenzialmente in ambito NIS. Non per la PA Centrale gia' inquadrata in PSNC e perimetri analoghi pre-esistenti, salvo cross-check.
+Target utente: CISO, IT manager, DPO, ingegneri dell'informazione, consulenti cybersecurity di organizzazioni italiane potenzialmente in ambito NIS. Per le PA centrali gia' incluse nel PSNC (DL 105/2019) la skill resta applicabile in quanto le PA centrali Allegato III lett. a) sono comunque soggetti essenziali NIS2 (art. 6 co. 1 lett. e); cambia il coordinamento delle notifiche (art. 1 co. 8 DL 105/2019 come modificato da art. 44 D.Lgs. 138/2024). Non assumere esclusione automatica del perimetro NIS per i soggetti PSNC.
 
 ## Fonti autoritative
 
 - **D.Lgs. 138/2024** (id `dlgs-138-2024` in `sources.yaml`) - decreto di recepimento italiano. Riferimento normativo primario.
 - **Direttiva (UE) 2022/2555 - NIS 2** (id `dir-2022-2555-nis2`) - direttiva madre. Citata solo per concetti strutturali; l'attuazione operativa segue il decreto italiano.
 - **Regolamento di esecuzione (UE) 2024/2690** (id `reg-ese-2024-2690`) - applica direttamente a un sottoinsieme di soggetti (DNS, cloud, data center, social, ecc.). Per gli altri soggetti italiani il riferimento e' la Determinazione ACN.
-- **Determinazione ACN n. 164179 del 14/04/2025** (id `acn-det-164179-2025`) - misure di base distinte per soggetti importanti (Allegato 1) ed essenziali (Allegato 2), strutturate sul Framework Nazionale Cybersecurity ed. 2025; definizione degli "incidenti significativi di base" che attivano la notifica al CSIRT Italia.
+- **Determinazione ACN n. 379907 del 18/12/2025** (id `acn-det-379907-2025`, vigente dal 15/01/2026) - misure di base distinte per soggetti importanti (Allegato 1, 37 sottocategorie) ed essenziali (Allegato 2, 43 sottocategorie), strutturate sul Framework Nazionale Cybersecurity ed. 2025; codici di incidente significativo di base IS-1..3 (importanti, Allegato 3) e IS-1..4 (essenziali, Allegato 4); soglie quantitative aggiuntive solo per operatori telco all'art. 6 co. 2.
+- **Determinazione ACN n. 164179 del 14/04/2025** (id `acn-det-164179-2025`) - SUPERATA dalla 379907/2025 dal 15/01/2026; mantenuta in catalogo come riferimento storico.
 - **Pagina riepilogativa ACN** (id `acn-portale-normativa`) - indice atti generali, da consultare per nuove determinazioni.
 
 Estratti gia' preparati in `references/estratti/`:
-- `dlgs-138-2024-perimetro.md` - art. 3, art. 6, art. 7 (perimetro e registrazione)
-- `dlgs-138-2024-misure-art23.md` - art. 23 organi di amministrazione e direttivi + art. 24 misure di gestione del rischio
+- `dlgs-138-2024-perimetro.md` - art. 3, art. 6, art. 7 + note dimensionali Racc. 2003/361/CE
+- `dlgs-138-2024-misure-art23.md` - art. 23 organi di amministrazione + art. 24 misure di gestione del rischio
 - `dlgs-138-2024-incident-art25.md` - art. 25 obblighi di notifica
-- `dlgs-138-2024-allegati-i-iv.md` - estratto Allegati I-IV (settori e tipologie)
-- `acn-misure-base-importanti.md` - Allegato 1 Determinazione 164179/2025
-- `acn-misure-base-essenziali.md` - Allegato 2 Determinazione 164179/2025
-- `acn-incidenti-significativi.md` - definizioni e soglie incidenti significativi di base
+- `dlgs-138-2024-allegati-i-iv.md` - Allegati I-IV (settori e tipologie)
+- `acn-det-379907-articoli.md` - artt. 1-9 della Determinazione 379907/2025 (vigente dal 15/01/2026)
+- `acn-misure-base-importanti.md` - Allegato 1 Det. 379907/2025 (37 sottocategorie)
+- `acn-misure-base-essenziali.md` - Allegato 2 Det. 379907/2025 (43 sottocategorie)
+- `acn-incidenti-significativi.md` - Allegati 3-4 Det. 379907/2025 (codici IS-1..4) + soglie telco art. 6 co. 2
+- `reg-ese-2024-2690-ambito.md` - ambito del Reg. UE 2024/2690
 
 ## Articoli e punti chiave
 
@@ -61,7 +64,7 @@ Estratti gia' preparati in `references/estratti/`:
   - Allegato II (altri critici): 1. Servizi postali e di corriere; 2. Gestione dei rifiuti; 3. Fabbricazione/produzione/distribuzione sostanze chimiche; 4. Produzione/trasformazione/distribuzione alimenti; 5. Fabbricazione (dispositivi medici, computer/elettronica/ottica, apparecchiature elettriche, macchinari, autoveicoli, altri mezzi di trasporto); 6. Fornitori di servizi digitali (mercati online, motori di ricerca, social network, registrar domini); 7. Ricerca.
 - **Allegato III**: PA italiane (centrali, regionali, locali, altri soggetti pubblici). Le PA centrali (lett. a) sono soggetti essenziali indipendentemente dalle dimensioni (art. 6 co. 1 lett. e).
 - **Allegato IV**: trasporto pubblico locale; istituti di istruzione che svolgono ricerca; soggetti di interesse culturale; societa' in house, partecipate e a controllo pubblico (D.Lgs. 175/2016).
-- **Determinazione ACN 164179/2025 Allegato 1 (importanti) e Allegato 2 (essenziali)**: misure di base organizzate per funzioni/categorie/sottocategorie/requisiti del Framework Nazionale Cybersecurity ed. 2025. Tempi di adeguamento differenziati (es. 18 mesi dalla notifica per gli importanti per le misure, 9 mesi per la notifica incidenti).
+- **Determinazione ACN 379907/2025 Allegato 1 (importanti, 37 sottocat / 87 requisiti) e Allegato 2 (essenziali, 43 sottocat / 112 requisiti)**: misure di base organizzate per funzioni/categorie/sottocategorie/requisiti del Framework Nazionale Cybersecurity ed. 2025. Tempi di adeguamento (art. 3): **18 mesi** per le misure, **9 mesi** per la notifica incidenti, decorrenti dalla **comunicazione di inserimento** ricevuta da ciascun soggetto.
 
 ## Convenzioni specifiche
 
@@ -74,10 +77,10 @@ Estratti gia' preparati in `references/estratti/`:
 - Non sostituire le specifiche tecniche del Framework Nazionale Cybersecurity con valutazioni "a sentimento": l'output deve mappare gap a sottocategorie precise.
 
 ### Cosa fare
-- Citare sempre l'articolo, il comma e la lettera precisi (es. "art. 24 co. 2 lett. d) D.Lgs. 138/2024" oppure "Det. ACN 164179/2025 Allegato 2 funzione PROTECT categoria PR.AC sottocategoria PR.AC-1").
+- Citare sempre l'articolo, il comma e la lettera precisi (es. "art. 24 co. 2 lett. d) D.Lgs. 138/2024" oppure "Det. ACN 379907/2025 Allegato 2 funzione PROTECT categoria PR.AA sottocategoria PR.AA-03").
 - Per il perimetro, applicare la valutazione in cascata: (1) il settore rientra in Allegato I o II? (2) le tipologie di soggetto si applicano (Allegato I/II + III/IV)? (3) la size-cap rule e' superata (medie/grandi)? (4) c'e' applicazione indipendente dalle dimensioni (art. 3 commi 5, 6, 8, 9, 10)? (5) c'e' classificazione speciale come essenziale ex art. 6 co. 1 lett. b)-e)? Anche un solo trigger basta per essere "in ambito"; per essere "essenziale" servono i criteri di art. 6 co. 1.
 - Distinguere chiaramente fra obblighi del soggetto e obblighi dell'organo di amministrazione (art. 24 vs art. 23): sono distinti e cumulativi.
-- Per la verifica incidente, applicare prima i criteri art. 25 co. 4 (perturbazione operativa / perdite finanziarie / ripercussioni su altre persone), poi le definizioni della Determinazione ACN 164179/2025 (incidenti significativi di base) e citare la soglia specifica.
+- Per la verifica incidente, applicare prima i criteri art. 25 co. 4 (perturbazione operativa / perdite finanziarie / ripercussioni su altre persone), poi i codici IS-1..4 degli Allegati 3-4 della Determinazione ACN 379907/2025; per gli operatori telco verificare anche le soglie quantitative dell'art. 6 co. 2.
 - Concludere ogni output con il rinvio a CISO/compliance/legale e con il richiamo all'art. 38 sulle sanzioni.
 
 ## Validatori
@@ -89,6 +92,6 @@ Estratti gia' preparati in `references/estratti/`:
 - Versione: vedi `CHANGELOG.md` (v0.1.0-alpha)
 - Validazione: Livello 1 (auto-validazione autore) - Livello 2 da pianificare
 - Task files: 4 (`valuta-perimetro`, `gap-analysis-misure`, `verifica-incidente-significativo`, `check-obblighi-governance`)
-- Estratti normativi: 7 estratti preparati
-- Esempi: 1-2 (almeno un soggetto essenziale + un soggetto fuori ambito o importante)
+- Estratti normativi: 9 estratti preparati
+- Esempi: 2 (utility energetica essenziale + PMI manifattura importante)
 - Skill non ancora testata su organizzazione reale - validazione Livello 2 prioritaria

@@ -58,7 +58,7 @@ L'incidente e' significativo (art. 25 co. 4) se:
 - **lettera a)**: ha causato o e' in grado di causare grave perturbazione operativa o perdite finanziarie per il soggetto **OPPURE**
 - **lettera b)**: ha avuto o puo' avere ripercussioni su altre persone fisiche/giuridiche causando perdite materiali o immateriali **considerevoli**.
 
-Questi sono criteri elevati ma volutamente generali. La **Determinazione ACN 164179/2025** definisce gli "incidenti significativi di base" con soglie quantitative (vedi `acn-incidenti-significativi.md`).
+Questi sono criteri elevati ma volutamente generali. La **Determinazione ACN 379907/2025** definisce gli "incidenti significativi di base" tramite codici qualitativi (IS-1..3 per importanti, IS-1..4 per essenziali) e soglie quantitative aggiuntive solo per gli operatori telco (art. 6 co. 2). Vedi `acn-incidenti-significativi.md`.
 
 ## Coordinamento con altre notifiche
 

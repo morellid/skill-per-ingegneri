@@ -48,18 +48,18 @@ Attenzione: il calcolo dimensionale per gruppi/imprese collegate (art. 6 par. 2 
 | Adozione misure tecniche/operative/organizzative | art. 24 co. 2 | T+18 mesi dalla notifica ACN, comunque entro **31/10/2026** |
 | Formazione organi + dipendenti | art. 23 co. 2 | T+6-12 mesi |
 | Notifica incidenti significativi | art. 25 | T+9 mesi dalla notifica ACN |
-| Sanzioni in caso di violazione | art. 38 co. 9 lett. b | fino a **7M EUR o 1.4% fatturato annuo mondiale**, se superiore (cap operativo: ~ 588k EUR su 42M fatturato) |
+| Sanzioni in caso di violazione | art. 38 co. 9 lett. b | fino a **max(7M EUR; 1,4% fatturato annuo mondiale)** = max(7M; 588k) = **7M EUR** in questo caso. Minimo edittale 1/30 = 233k EUR |
 
-### Sovrapposizione con TISAX
+### Sovrapposizione con TISAX (note di esperienza, non normative)
 
-TISAX (Trusted Information Security Assessment eXchange) e' uno **standard di settore automotive** richiesto dai costruttori (es. VDA in Germania, OEM italiani). NON sostituisce NIS2.
+> Le seguenti considerazioni sono note di esperienza di dominio. La skill non cataloga TISAX come fonte normativa primaria; per i dettagli verificare direttamente con il cliente automotive che richiede l'audit.
 
-- **TISAX e' un audit privato** richiesto contrattualmente dai clienti (es. Marelli, Stellantis).
-- **NIS2 e' un obbligo di legge** indipendente dai contratti.
-- I due sono **parzialmente sovrapposti**: chi e' conforme TISAX livello AL3 ha gia' molte misure NIS2.
-- La mappatura TISAX -> Det. ACN richiede analisi specifica (TISAX 6.0 ha controlli che mappano su molte sottocategorie del Framework Nazionale Cybersecurity).
+- TISAX (Trusted Information Security Assessment eXchange) e' uno **schema di assessment di settore automotive** richiesto contrattualmente da OEM e Tier 1.
+- NIS2 e' un **obbligo di legge** indipendente dai contratti.
+- I due regimi sono parzialmente sovrapposti: chi e' conforme a TISAX (livello AL3 tipico per Tier 2 con dati riservati cliente) ha gia' molte misure ANCHE utili per la conformita' NIS2.
+- La mappatura puntuale TISAX -> Det. ACN richiede analisi specifica e va effettuata caso per caso.
 
-Raccomandazione: implementare TISAX in modo che soddisfi anche i requisiti NIS2 minimi (approccio "do-it-once").
+Raccomandazione: implementare TISAX in modo che soddisfi anche i requisiti NIS2 minimi (approccio "do-it-once") e' una scelta di efficienza operativa, da valutare con il consulente.
 
 ---
 
@@ -100,21 +100,23 @@ L'organizzazione e' a livello molto basso su tutti i 10 elementi minimi art. 24 
 9. Backup test trimestrale + DR plan documentato
 10. TPRM base sui fornitori critici (es. fornitore SAP)
 
-**Lungo termine (9-18 mesi - entro 31/10/2026)**:
+**Lungo termine (9-18 mesi dalla comunicazione di inserimento ACN)**:
 11. Implementazione TISAX (se richiesto dai clienti) come progetto integrato con NIS2
 12. Vulnerability management strutturato
 13. SDLC sicuro per software interno (PLM, integrazioni)
-14. Piena conformita' Det. ACN 379907/2025 Allegato 1 (importanti)
+14. Piena conformita' Det. ACN 379907/2025 Allegato 1 (importanti, 37 sottocategorie)
+
+> Nota: il termine 18 mesi decorre dalla **comunicazione personale di inserimento** sulla piattaforma ACN (art. 3 co. 1 Det. 379907/2025), non da una data assoluta.
 
 ### Risorse necessarie
 
-- **CISO/responsabile cyber**: la skill consiglia di valutare l'assunzione (almeno part-time) o l'affidamento a un vCISO esterno. Con 200+ dipendenti e ambito NIS2, la responsabilita' su un solo IT manager e' fragile.
-- **Budget di adeguamento**: stima preliminare per PMI di queste dimensioni: 150-300k EUR nel primo anno (consulenza + tooling + MSSP) + 50-100k/anno a regime.
+- **CISO/responsabile cyber**: per organizzazioni di queste dimensioni e in ambito NIS2 e' opportuno valutare l'assunzione (anche part-time) o l'affidamento a un vCISO esterno. Affidare la responsabilita' cyber a un solo IT manager senza supporto specialistico e' tipicamente fragile.
+- **Budget di adeguamento**: la skill non fornisce stime di mercato. Le quotazioni per consulenza, tooling e servizi MSSP variano per area geografica, livello di MSSP e maturita' iniziale del soggetto. Richiedere preventivi specifici a operatori di mercato.
 
 ### Esposizione sanzionatoria
 
-- **Sanzione max** ex art. 38 co. 9 lett. b) per violazioni art. 23, 24, 25: fino a **7M EUR o 1.4% fatturato (42M -> ~ 588k EUR)**, se superiore. Cap operativo: 7M EUR (la sanzione max edittale prevale sul calcolo percentuale).
-- **Sanzione minima**: 1/30 del massimo edittale = ~ 233k EUR (sanzione minima edittale, non assoluta).
+- **Sanzione max** ex art. 38 co. 9 lett. b) per violazioni artt. 23, 24, 25: fino al **maggiore tra 7M EUR e 1,4% del fatturato annuo mondiale**. Per 42M EUR di fatturato: 1,4% = 588.000 EUR; il maggiore tra 7M e 588k e' **7M EUR**. Quindi cap operativo = **7M EUR**.
+- **Sanzione minima edittale**: 1/30 del massimo edittale = **233.333 EUR**.
 
 ---
 

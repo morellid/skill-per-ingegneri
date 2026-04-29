@@ -1,6 +1,6 @@
 ---
 name: nis2-self-assessment
-description: Supporta la self-assessment NIS2 per soggetti italiani ai sensi del D.Lgs. 138/2024. Aiuta a determinare se l'organizzazione rientra nel perimetro come "soggetto essenziale" o "soggetto importante", a impostare la gap analysis rispetto alle misure di base ACN (Determinazione 164179/2025), a verificare gli obblighi di notifica di incidenti significativi al CSIRT Italia e gli obblighi di governance dell'organo di amministrazione. Use when an Italian organization (private or public) asks whether and how NIS2 applies to it, needs a structured self-assessment of perimeter and minimum measures, or wants to plan the path to compliance. Target users are CISO, IT manager, DPO, ingegneri dell'informazione e consulenti cybersecurity di organizzazioni italiane potenzialmente in ambito NIS.
+description: Supporta la self-assessment NIS2 per soggetti italiani ai sensi del D.Lgs. 138/2024. Aiuta a determinare se l'organizzazione rientra nel perimetro come "soggetto essenziale" o "soggetto importante", a impostare la gap analysis rispetto alle misure di base ACN (Determinazione 379907/2025, vigente dal 15/01/2026), a verificare gli obblighi di notifica di incidenti significativi al CSIRT Italia e gli obblighi di governance dell'organo di amministrazione. Use when an Italian organization (private or public) asks whether and how NIS2 applies to it, needs a structured self-assessment of perimeter and minimum measures, or wants to plan the path to compliance. Target users are CISO, IT manager, DPO, ingegneri dell'informazione e consulenti cybersecurity di organizzazioni italiane potenzialmente in ambito NIS.
 license: MIT
 ---
 
@@ -10,7 +10,7 @@ license: MIT
 
 Usare quando un'organizzazione italiana (privata o pubblica), o un consulente cybersecurity / ingegnere dell'informazione che la supporta, deve:
 - Determinare se rientra nel perimetro NIS2 come **soggetto essenziale**, **soggetto importante** o se e' **fuori ambito** (art. 3 e 6, Allegati I-IV del D.Lgs. 138/2024)
-- Impostare una **gap analysis** delle misure di sicurezza esistenti rispetto alle misure di base previste dalla Determinazione ACN 164179/2025 (allegati 1 per importanti, 2 per essenziali)
+- Impostare una **gap analysis** delle misure di sicurezza esistenti rispetto alle misure di base previste dalla Determinazione ACN 379907/2025 (vigente dal 15/01/2026, sostitutiva della 164179/2025): Allegato 1 per soggetti importanti, Allegato 2 per soggetti essenziali
 - Verificare se un evento subito **e' un incidente significativo** ai sensi dell'art. 25 D.Lgs. 138/2024 e quali tempistiche di notifica al CSIRT Italia si applicano
 - Verificare gli **obblighi sull'organo di amministrazione** (art. 23): approvazione delle modalita' di implementazione, formazione, responsabilita' personale per le violazioni
 
@@ -30,7 +30,7 @@ Questa skill e' uno strumento di supporto alla self-assessment NIS2. **Non sosti
 In base alla richiesta dell'utente, carica il task file appropriato:
 
 - **Valutazione del perimetro NIS2**: l'utente chiede "siamo soggetti NIS2?", "siamo essenziali o importanti?", "rientriamo nell'ambito?" -> leggi [`tasks/valuta-perimetro.md`](tasks/valuta-perimetro.md)
-- **Gap analysis misure di base**: l'utente chiede "siamo conformi alle misure ACN?", "che gap abbiamo rispetto alla Determinazione 164179?" -> leggi [`tasks/gap-analysis-misure.md`](tasks/gap-analysis-misure.md)
+- **Gap analysis misure di base**: l'utente chiede "siamo conformi alle misure ACN?", "che gap abbiamo rispetto alla Determinazione 379907 (o 164179)?" -> leggi [`tasks/gap-analysis-misure.md`](tasks/gap-analysis-misure.md)
 - **Verifica incidente significativo**: l'utente chiede "questo incidente va notificato?", "quali tempistiche di notifica si applicano?" -> leggi [`tasks/verifica-incidente-significativo.md`](tasks/verifica-incidente-significativo.md)
 - **Obblighi organo di amministrazione**: l'utente chiede "che obblighi ha il CdA?", "che formazione devono fare i dirigenti?" -> leggi [`tasks/check-obblighi-governance.md`](tasks/check-obblighi-governance.md)
 
@@ -51,7 +51,7 @@ Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fo
 - D.Lgs. 4 settembre 2024, n. 138 (recepimento NIS 2 in Italia) - in particolare art. 2 (definizioni), art. 3 (ambito di applicazione), art. 6 (perimetro essenziali/importanti), art. 7 (registrazione piattaforma ACN), art. 23 (organi di amministrazione), art. 24 (misure di gestione del rischio), art. 25 (notifica incidenti), art. 38 (sanzioni) e Allegati I-IV
 - Direttiva (UE) 2022/2555 (NIS 2) - direttiva madre
 - Regolamento di esecuzione (UE) 2024/2690 - solo per il sottoinsieme di soggetti coperti direttamente (DNS, cloud, data center, social, ecc.)
-- Determinazione ACN n. 164179 del 14/04/2025 - misure di base e definizione di "incidente significativo di base"
+- Determinazione ACN n. 379907/2025 del 18/12/2025 (vigente dal 15/01/2026, sostitutiva della Det. 164179/2025) - misure di base e codici di "incidente significativo di base" (IS-1..4)
 
 Estratti testuali in [`references/estratti/`](references/estratti/).
 
