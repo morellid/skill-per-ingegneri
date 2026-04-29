@@ -1,6 +1,6 @@
 # Modulistica edilizia unificata + Salva Casa
 
-> Versione: 0.1.0-alpha
+> Versione: 0.1.2-alpha
 > Stato: in sviluppo (Livello 1 di validazione)
 
 Skill di supporto per la **scelta del modulo edilizio nazionale unificato** (Edilizia libera, CILA, SCIA, SCIA alternativa al PdC, Permesso di Costruire, Sanatoria art. 36 / art. 36-bis) e l'**identificazione degli allegati** richiesti, ai sensi del **DPR 380/2001** e della **Tabella A del D.Lgs. 222/2016**, integrata con le modifiche del **Salva Casa** (DL 69/2024 conv. L. 105/2024) e con la **modulistica nazionale unificata** aggiornata in **Conferenza Unificata il 27/3/2025**.

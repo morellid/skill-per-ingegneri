@@ -15,9 +15,10 @@ Per le opere PdC-dovute realizzate in **assenza** o in **totale difformita'** re
 
 ### 1. Tolleranza esecutiva vs sanatoria
 
-L'art. 34-bis co. 2 qualifica come tolleranze esecutive: minore dimensionamento, mancata realizzazione di elementi architettonici non strutturali, irregolarita' geometriche, modifiche alle finiture, diverse collocazioni di impianti, **diversa realizzazione dei vani interni**.
+L'art. 34-bis co. 2 qualifica come tolleranze esecutive: minore dimensionamento dell'edificio, mancata realizzazione di elementi architettonici non strutturali, irregolarita' geometriche, modifiche alle finiture, diverse collocazioni di impianti, **diversa realizzazione dei vani interni**, **purche' non alterino la volumetria complessiva**.
 
 Non si applica se:
+- e' alterata la volumetria complessiva
 - varia il numero di UI
 - varia la destinazione d'uso con dotazione standard diversa
 - l'immobile e' vincolato e manca l'autorizzazione preventiva Soprintendenza

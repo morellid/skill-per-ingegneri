@@ -98,7 +98,7 @@ La sezione II raggruppa le voci secondo le seguenti tipologie di intervento (eti
 | Intervento | Regime |
 |------------|--------|
 | Mutamento **all'interno della stessa categoria** funzionale (co. 1-bis), senza opere | Sempre consentito ai sensi del co. 1-bis; titolo SCIA ex art. 19 L. 241/1990 per documentare il mutamento (co. 1-quinquies), salvo condizioni della disciplina regionale e comunale |
-| Mutamento all'interno della stessa categoria funzionale, con opere | Regime corrispondente alle opere (CILA / SCIA / PdC) |
+| Mutamento all'interno della stessa categoria funzionale, con opere | Regime corrispondente alle opere (CILA / SCIA / PdC). Per opere riconducibili al regime CILA-art. 6-bis, il titolo del cambio uso ex co. 1-quinquies (SCIA art. 19 L. 241/1990) **assorbe** la CILA |
 | Mutamento tra categorie **a/a-bis/b/c**, **UI singola**, **zone A/B/C**, **senza opere** (co. 1-ter + 1-quinquies) | **SCIA** ex art. 19 L. 241/1990; no obblighi standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria |
 | Mutamento a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime CILA art. 6-bis | **SCIA** ex co. 1-quinquies (assorbe la CILA) |
 | Mutamento a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime SCIA art. 22 o PdC | Regime delle opere |

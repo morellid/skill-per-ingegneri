@@ -12,6 +12,15 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - Estensione con scheda specifica per **sanatoria a "doppia conformita' alleggerita"** (art. 36-bis) e differenze procedurali rispetto all'art. 36.
 - Integrazione del **glossario opere di edilizia libera** (DM 2/3/2018) come tabella di lookup per le voci ricorrenti.
 
+## [0.1.3-alpha] - 2026-04-29
+
+### Fixed (revisione adversarial Codex - round 3, residui documentali)
+- **`examples/README.md`**: sostituite le descrizioni vecchie del cambio uso "B&B 5 camere" con la versione coerente "foresteria lombarda art. 27 LR 27/2015" e dell'esempio sanatoria con la versione coerente "parziale difformita' rispetto a SCIA 2013, regime art. 37 -> art. 36-bis con verifica primaria di tolleranza esecutiva ex art. 34-bis co. 2".
+- **`references/sources.yaml`**: corretta la nota sul Salva Casa che descriveva l'art. 36-bis come "sanatoria CILA/SCIA"; ora distingue art. 36-bis (parziali difformita' art. 34, variazioni essenziali art. 32, abusi SCIA art. 22) da art. 36 (assenza/totale difformita' PdC) e art. 6-bis co. 5 (CILA omessa).
+- **`README.md`**: aggiornata versione da 0.1.0-alpha a 0.1.3-alpha.
+- **Tolleranze esecutive negli esempi**: aggiunta esplicita la clausola "purche' non alterino la volumetria complessiva" (art. 34-bis co. 2) in `examples/sanatoria-semplificata-art36bis/{expected-output,note}.md`.
+- **Tabella A "stessa categoria con opere"**: chiarito l'assorbimento del regime CILA-art. 6-bis nella SCIA del cambio uso ex co. 1-quinquies in `references/estratti/dlgs-222-2016-tabella-a.md`.
+
 ## [0.1.2-alpha] - 2026-04-29
 
 ### Fixed (revisione adversarial Codex - round 2)

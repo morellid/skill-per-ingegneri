@@ -11,11 +11,12 @@
 
 ## Branch A - Tolleranze esecutive art. 34-bis co. 2 (verifica primaria)
 
-L'art. 34-bis co. 2 (introdotto dal Salva Casa) qualifica come **tolleranze esecutive** anche "la diversa realizzazione dei vani interni" e le "irregolarita' geometriche e modifiche alle finiture", **purche'** non comportino:
-- variazione del numero di unita' immobiliari
-- variazione della destinazione d'uso che comporti diversa dotazione standard
+L'art. 34-bis co. 2 (introdotto dal Salva Casa) qualifica come **tolleranze esecutive** anche "la diversa realizzazione dei vani interni" e le "irregolarita' geometriche e modifiche alle finiture", **purche'**:
+- non alterino la **volumetria complessiva**
+- non comportino variazione del numero di unita' immobiliari
+- non comportino variazione della destinazione d'uso che modifichi la dotazione standard
 
-Nel caso: il numero di UI resta uno, la destinazione d'uso resta residenziale, la SU complessiva non varia, indici e distanze non sono toccati. La difformita' e' meramente interna e non incide su parametri urbanistici.
+Nel caso: la volumetria complessiva non e' alterata (la difformita' e' meramente interna), il numero di UI resta uno, la destinazione d'uso resta residenziale, la SU complessiva non varia, indici e distanze non sono toccati. La difformita' non incide su parametri urbanistici.
 
 **Esito Branch A**: la difformita' rientra **probabilmente** tra le **tolleranze esecutive** dell'art. 34-bis co. 2, **previa autorizzazione Soprintendenza solo se l'immobile fosse vincolato** (qui non lo e').
 
