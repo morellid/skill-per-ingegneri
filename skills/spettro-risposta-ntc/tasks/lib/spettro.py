@@ -13,6 +13,11 @@ NB: la skill non incorpora il reticolo INGV. L'utente fornisce ag, F0, Tc*
 per i 9 TR di riferimento {30, 50, 72, 101, 140, 201, 475, 975, 2475} anni
 al sito di interesse, ricavati dal servizio INGV o dal foglio Excel CSLP.
 
+NB v0.1.0-alpha: la test suite copre solo consistenza interna delle
+formule (vedi test_spettro.py); il confronto numerico vs foglio CSLP su
+casi reali (validazione di campo) e' prerequisito del release stabile e
+non e' ancora stato eseguito.
+
 Uso CLI:
     python3 spettro.py --tr-riferimento params.json \\
             --vn 50 --classe-uso II \\
@@ -85,12 +90,37 @@ class ParametriRiferimento:
     Tc_star: list[float]
 
     def __post_init__(self) -> None:
+        # Range di sanita' usati come hint nei messaggi d'errore (non vincoli rigidi).
+        # ag in g (frazione di g): un sito italiano sta tipicamente in [0.001, 1.0].
+        # F0 e' adimensionale, range tipico [2.0, 3.5].
+        # Tc* in secondi, range tipico [0.10, 0.60].
+        hints: dict[str, str] = {
+            "ag": "ag e' atteso in g (frazione di g, non m/s^2): tipico in [0.001, 1.0]",
+            "F0": "F0 e' adimensionale, tipico in [2.0, 3.5]",
+            "Tc_star": "Tc* in [s], tipico in [0.10, 0.60]",
+        }
         for nome, valori in (("ag", self.ag), ("F0", self.F0), ("Tc_star", self.Tc_star)):
             if len(valori) != len(TR_RIFERIMENTO):
                 raise ValueError(
                     f"{nome}: attesi {len(TR_RIFERIMENTO)} valori (uno per TR di "
-                    f"riferimento), ricevuti {len(valori)}"
+                    f"riferimento {list(TR_RIFERIMENTO)}), ricevuti {len(valori)}"
                 )
+            for k, v in enumerate(valori):
+                if not isinstance(v, (int, float)) or isinstance(v, bool):
+                    raise ValueError(
+                        f"{nome}[{k}] (TR={TR_RIFERIMENTO[k]} anni): valore non "
+                        f"numerico {v!r}. {hints[nome]}."
+                    )
+                if not math.isfinite(v):
+                    raise ValueError(
+                        f"{nome}[{k}] (TR={TR_RIFERIMENTO[k]} anni): valore non "
+                        f"finito {v!r} (NaN o inf). {hints[nome]}."
+                    )
+                if v <= 0.0:
+                    raise ValueError(
+                        f"{nome}[{k}] (TR={TR_RIFERIMENTO[k]} anni): atteso "
+                        f"strettamente positivo, ricevuto {v!r}. {hints[nome]}."
+                    )
 
 
 @dataclass

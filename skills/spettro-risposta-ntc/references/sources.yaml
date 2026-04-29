@@ -73,8 +73,11 @@ sources:
     notes: |
       Foglio Excel pubblicato dal Consiglio Superiore dei Lavori Pubblici
       (Servizio Tecnico Centrale) come riferimento ufficiale per il calcolo
-      dello spettro di risposta. La test suite della skill (vedi
-      tasks/lib/test_spettro.py) confronta i propri output con valori
-      ricavati da questo foglio. NB: il foglio CSLP storico e' stato
-      distribuito in piu' versioni; la skill non lo ridistribuisce, si
-      limita a citarlo come benchmark di validazione.
+      dello spettro di risposta. **Stato v0.1.0-alpha**: il foglio CSLP
+      e' citato come benchmark di validazione da raggiungere ma il
+      confronto numerico vs CSLP NON e' ancora stato eseguito; i test in
+      tasks/lib/test_spettro.py coprono solo consistenza interna delle
+      formule. La validazione di campo (10+ casi reali) e' prerequisito
+      del release stabile, da eseguire seguendo tasks/run-test-suite.md.
+      NB: il foglio CSLP storico e' stato distribuito in piu' versioni;
+      la skill non lo ridistribuisce, si limita a citarlo.

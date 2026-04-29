@@ -10,14 +10,20 @@ oppure con unittest:
 I test verificano:
 1. Formule chiuse (TR<->P_VR, eta, SS clamping, periodi caratteristici)
 2. Continuita' di Se(T) ai raccordi TB, TC, TD
-3. Interpolazione logaritmica sui TR di riferimento (round-trip + monotonia)
+3. Interpolazione logaritmica sui TR di riferimento (round-trip + bracket)
 4. Valori canonici noti (VN=50 CU II -> TR_SLV ~ 475 anni)
 5. Rifiuto esplicito di S1/S2 e di TR fuori reticolo
+6. Validazione hardening input (non-finite, non-positive, non-numeric)
+7. Copertura categorie di sottosuolo D, E e topografiche T2/T3/T4
+8. Anti-drift: match bit-per-bit fra il modulo e il fixture
+   examples/caso-conforme-fittizio-cu2-c-t1/expected.json
 
-Per i casi di confronto numerico vs foglio Excel CSLP (validazione di
-campo prima del release v1.0) si fa riferimento ai dataset documentati
-in examples/. Il presente file copre la consistenza interna delle
-formule e i casi limite.
+ATTENZIONE: questi sono test di consistenza interna. NON confrontano
+i valori contro il foglio Excel CSLP del Servizio Tecnico Centrale.
+La validazione di campo (10+ casi reali sparsi sul territorio
+nazionale, con confronto numerico vs CSLP entro le tolleranze
+documentate in tasks/run-test-suite.md) e' prerequisito del release
+stabile e va eseguita prima di v0.1 stabile.
 """
 
 from __future__ import annotations
@@ -240,6 +246,188 @@ class TestIO(unittest.TestCase):
     def test_lunghezza_errata_solleva(self):
         with self.assertRaises(ValueError):
             ParametriRiferimento(ag=[0.1] * 8, F0=[2.5] * 9, Tc_star=[0.3] * 9)
+
+
+class TestValidazioneInput(unittest.TestCase):
+    """Validazione hardening di ParametriRiferimento: non-finite, non-positive, non-numeric."""
+
+    BASE_AG = [0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420]
+    BASE_F0 = [2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76]
+    BASE_TCS = [0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36]
+
+    def _sostituisci(self, lista, k, v):
+        x = list(lista)
+        x[k] = v
+        return x
+
+    def test_zero_solleva(self):
+        # ag = 0 a un nodo (interpolazione log richiede positivi anche al nodo)
+        with self.assertRaisesRegex(ValueError, "ag\\[3\\].*positivo"):
+            ParametriRiferimento(
+                ag=self._sostituisci(self.BASE_AG, 3, 0.0),
+                F0=self.BASE_F0,
+                Tc_star=self.BASE_TCS,
+            )
+
+    def test_negativo_solleva(self):
+        with self.assertRaisesRegex(ValueError, "F0\\[5\\].*positivo"):
+            ParametriRiferimento(
+                ag=self.BASE_AG,
+                F0=self._sostituisci(self.BASE_F0, 5, -1.0),
+                Tc_star=self.BASE_TCS,
+            )
+
+    def test_nan_solleva(self):
+        with self.assertRaisesRegex(ValueError, "Tc_star\\[0\\].*non finito"):
+            ParametriRiferimento(
+                ag=self.BASE_AG,
+                F0=self.BASE_F0,
+                Tc_star=self._sostituisci(self.BASE_TCS, 0, float("nan")),
+            )
+
+    def test_inf_solleva(self):
+        with self.assertRaisesRegex(ValueError, "ag\\[8\\].*non finito"):
+            ParametriRiferimento(
+                ag=self._sostituisci(self.BASE_AG, 8, float("inf")),
+                F0=self.BASE_F0,
+                Tc_star=self.BASE_TCS,
+            )
+
+    def test_stringa_solleva(self):
+        with self.assertRaisesRegex(ValueError, "F0\\[2\\].*non numerico"):
+            ParametriRiferimento(
+                ag=self.BASE_AG,
+                F0=self._sostituisci(self.BASE_F0, 2, "2.6"),  # type: ignore[arg-type]
+                Tc_star=self.BASE_TCS,
+            )
+
+    def test_bool_rifiutato(self):
+        # bool e' subclass di int in Python: lo escludiamo esplicitamente
+        with self.assertRaisesRegex(ValueError, "ag\\[0\\].*non numerico"):
+            ParametriRiferimento(
+                ag=self._sostituisci(self.BASE_AG, 0, True),  # type: ignore[arg-type]
+                F0=self.BASE_F0,
+                Tc_star=self.BASE_TCS,
+            )
+
+    def test_carica_da_json_con_nan_solleva(self):
+        # JSON tecnicamente non ammette NaN ma molti parser sono permissivi:
+        # qui usiamo un valore null che json.load mappa a None, non numerico.
+        data = {
+            "tr_anni": list(TR_RIFERIMENTO),
+            "ag_g": list(self.BASE_AG),
+            "F0": list(self.BASE_F0),
+            "Tc_star": list(self.BASE_TCS),
+        }
+        data["ag_g"][4] = None  # type: ignore[assignment]
+        with tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        ) as f:
+            json.dump(data, f)
+            path = f.name
+        try:
+            with self.assertRaisesRegex(ValueError, "ag\\[4\\].*non numerico"):
+                carica_parametri_riferimento(path)
+        finally:
+            os.unlink(path)
+
+
+class TestCoperturaCategorie(unittest.TestCase):
+    """Coverage delle categorie di sottosuolo D, E e topografiche T2/T3/T4 e xi != 5%."""
+
+    BASE = ParametriRiferimento(
+        ag=[0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+        F0=[2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+        Tc_star=[0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+    )
+
+    def test_categoria_D(self):
+        p = calcola_parametri("SLV", 50, "II", "D", "T1", self.BASE)
+        # SS(D) = clamp(2.40 - 1.50*F0*ag, 0.90, 1.80)
+        atteso_ss = max(0.90, min(1.80, 2.40 - 1.50 * p.F0 * p.ag))
+        self.assertAlmostEqual(p.SS, atteso_ss, places=6)
+        # CC(D) = 1.25 * Tc*^-0.50
+        self.assertAlmostEqual(p.CC, 1.25 * p.Tc_star ** -0.50, places=6)
+
+    def test_categoria_E(self):
+        p = calcola_parametri("SLV", 50, "II", "E", "T1", self.BASE)
+        # SS(E) = clamp(2.00 - 1.10*F0*ag, 1.00, 1.60)
+        atteso_ss = max(1.00, min(1.60, 2.00 - 1.10 * p.F0 * p.ag))
+        self.assertAlmostEqual(p.SS, atteso_ss, places=6)
+        self.assertAlmostEqual(p.CC, 1.15 * p.Tc_star ** -0.40, places=6)
+
+    def test_topografica_T2_T3_T4(self):
+        valori_attesi = {"T2": 1.2, "T3": 1.2, "T4": 1.4}
+        for cat, st_atteso in valori_attesi.items():
+            with self.subTest(cat_topo=cat):
+                p = calcola_parametri("SLV", 50, "II", "C", cat, self.BASE)
+                self.assertAlmostEqual(p.ST, st_atteso, places=6)
+                # S = SS * ST: ST entra moltiplicativamente
+                self.assertAlmostEqual(p.S, p.SS * st_atteso, places=6)
+
+    def test_xi_diverso_da_5_riduce_plateau(self):
+        # xi = 10% -> eta = sqrt(10/15) = 0.8165
+        p5 = calcola_parametri("SLV", 50, "II", "C", "T1", self.BASE, xi_percento=5.0)
+        p10 = calcola_parametri("SLV", 50, "II", "C", "T1", self.BASE, xi_percento=10.0)
+        self.assertAlmostEqual(p10.eta, math.sqrt(10.0 / 15.0), places=6)
+        # plateau Se(TC) = ag*S*eta*F0 si scala come eta
+        from spettro import Se_T as _Se_T
+        se5, _ = _Se_T(p5.TC, p5)
+        se10, _ = _Se_T(p10.TC, p10)
+        self.assertAlmostEqual(se10 / se5, p10.eta / p5.eta, places=6)
+
+
+class TestEsempioConforme(unittest.TestCase):
+    """Anti-drift: rigenera l'esempio canonico e confronta con expected.json."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.skill_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        cls.example_dir = os.path.join(
+            cls.skill_dir, "examples", "caso-conforme-fittizio-cu2-c-t1"
+        )
+        cls.expected_path = os.path.join(cls.example_dir, "expected.json")
+
+    def test_expected_json_present(self):
+        self.assertTrue(
+            os.path.isfile(self.expected_path),
+            f"Manca il fixture {self.expected_path}",
+        )
+
+    def test_match_expected_json(self):
+        # Stesso input documentato in input.md
+        rif = ParametriRiferimento(
+            ag=[0.030, 0.045, 0.061, 0.080, 0.105, 0.135, 0.218, 0.297, 0.420],
+            F0=[2.50, 2.55, 2.60, 2.62, 2.65, 2.68, 2.72, 2.74, 2.76],
+            Tc_star=[0.20, 0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36],
+        )
+        from spettro import calcola_parametri as cp, tabula_spettro as ts
+        periodi = [round(i * 0.1, 6) for i in range(0, 41)]  # 0:4:0.1
+        atteso = json.load(open(self.expected_path, encoding="utf-8"))
+        sl_attesi = ["SLO", "SLD", "SLV", "SLC"]
+        self.assertEqual([r["parametri"]["stato_limite"] for r in atteso], sl_attesi)
+
+        for sl, atteso_sl in zip(sl_attesi, atteso):
+            with self.subTest(sl=sl):
+                p = cp(sl, 50, "II", "C", "T1", rif, xi_percento=5.0)
+                # Confronta parametri scalari
+                par_atteso = atteso_sl["parametri"]
+                for k in ("TR", "ag", "F0", "Tc_star", "SS", "ST", "S", "CC", "eta", "TB", "TC", "TD"):
+                    self.assertAlmostEqual(
+                        getattr(p, k), par_atteso[k], places=10,
+                        msg=f"{sl}.{k}: atteso {par_atteso[k]} ottenuto {getattr(p, k)}",
+                    )
+                # Confronta ordinate Se(T) tabulate
+                ord_atteso = atteso_sl["ordinate"]
+                ord_attuale = ts(p, periodi)
+                self.assertEqual(
+                    len(ord_attuale), len(ord_atteso),
+                    f"{sl}: numero ordinate diverso",
+                )
+                for o_att, o_curr in zip(ord_atteso, ord_attuale):
+                    self.assertAlmostEqual(o_curr.T, o_att["T"], places=10)
+                    self.assertAlmostEqual(o_curr.Se, o_att["Se"], places=10)
+                    self.assertEqual(o_curr.ramo, o_att["ramo"])
 
 
 class TestCLI(unittest.TestCase):

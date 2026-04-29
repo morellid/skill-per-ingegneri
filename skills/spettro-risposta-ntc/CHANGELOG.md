@@ -7,6 +7,17 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Added
+- Test di validazione hardening su `ParametriRiferimento` (`TestValidazioneInput`, 7 test): rifiuto di valori zero/negativi/NaN/inf/non-numerici/bool ai 27 parametri (9 TR x ag/F0/Tc*), incluso JSON con `null` (mappato a None).
+- Test di copertura categorie (`TestCoperturaCategorie`, 4 test): D, E, T2/T3/T4, smorzamento xi != 5%. Le formule SS/CC sono confrontate contro l'algebra di Tab. 3.2.IV.
+- Test anti-drift sull'esempio canonico (`TestEsempioConforme`, 2 test): il modulo viene rieseguito sull'input documentato e confrontato bit-per-bit con il fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/expected.json`. Drift fra docs e codice fallisce subito.
+- Fixture machine-readable `examples/caso-conforme-fittizio-cu2-c-t1/expected.json`: stdout JSON del modulo per il caso canonico (4 SL, ordinate Se(T) tabulate 0:4:0.1), usato come golden master.
+
+### Changed
+- **Hardening `ParametriRiferimento.__post_init__`**: oltre alla lunghezza, ora valida che tutti i valori di ag, F0, Tc* siano numerici, finiti e strettamente positivi. Messaggi d'errore con indice e suggerimenti di unita' (ag in g, non m/s^2).
+- **Esempio caso conforme rigenerato dallo stdout reale del modulo.** L'`expected-output.md` precedente conteneva un valore errato al raccordo TD (0.16142 a T=2.472 invece del valore corretto 0.15775; T=2.472 cade sul ramo TD-inf perche' TD = 2.4716 < 2.472). La nuova pagina punta al fixture JSON come riferimento autoritativo.
+- **Claim CSLP corretti.** SKILL.md, sources.yaml, docstring del modulo Python e della test suite ora dichiarano esplicitamente che la versione 0.1.0-alpha contiene **solo test di consistenza interna**; il confronto numerico vs foglio Excel CSLP (validazione di campo, 10+ casi reali) e' prerequisito del release stabile e non e' stato eseguito. La pagina precedente sopravvalutava lo stato di validazione.
+
 ### Fixed
 - Path resolution dei comandi Bash: tutti gli esempi nei file `.md` ora usano `${CLAUDE_SKILL_DIR}/tasks/lib/spettro.py` invece del path relativo `tasks/lib/spettro.py`, che falliva quando la CWD dell'utente non coincideva con la skill dir.
 - Regola operativa esplicita in `SKILL.md` e in `AGENTS.md`: l'agent **deve** invocare il modulo Python via Bash per qualunque numero (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)); ricalcolare a mano dagli estratti normativi e' vietato e annulla l'invariante code-driven.

@@ -1,6 +1,6 @@
 ---
 name: spettro-risposta-ntc
-description: Calcola lo spettro di risposta elastico in accelerazione (componente orizzontale) ai sensi delle NTC 2018 par. 3.2 e Circolare 7/2019, dato il sito (parametri ag, F0, Tc* dal reticolo INGV per i 9 TR di riferimento), la vita nominale, la classe d'uso, la categoria di sottosuolo e la categoria topografica. Output: tempi di ritorno TR per gli stati limite SLO/SLD/SLV/SLC, parametri ag/F0/Tc* interpolati al TR di progetto, parametri costruttivi S, eta, TB, TC, TD e ordinate Se(T) tabulate. Implementazione code-driven con test suite, output verificabile vs foglio Excel CSLP. Use when an Italian structural engineer asks to compute the NTC 2018 elastic response spectrum, look up site seismic parameters interpolated on the return period, build the response spectrum table for a limit state, or verify spectrum values produced by other software. Target users are structural engineers preparing seismic design or assessment of new and existing buildings under NTC 2018.
+description: Calcola lo spettro di risposta elastico in accelerazione (componente orizzontale) ai sensi delle NTC 2018 par. 3.2 e Circolare 7/2019, dato il sito (parametri ag, F0, Tc* dal reticolo INGV per i 9 TR di riferimento), la vita nominale, la classe d'uso, la categoria di sottosuolo e la categoria topografica. Output: tempi di ritorno TR per gli stati limite SLO/SLD/SLV/SLC, parametri ag/F0/Tc* interpolati al TR di progetto, parametri costruttivi S, eta, TB, TC, TD e ordinate Se(T) tabulate. Implementazione code-driven, deterministica e riproducibile: la versione 0.1.0-alpha include solo test di consistenza interna delle formule; la validazione di campo (confronto numerico vs foglio Excel CSLP su 10+ casi reali) e' prerequisito del release stabile e non e' ancora stata eseguita. Use when an Italian structural engineer asks to compute the NTC 2018 elastic response spectrum, look up site seismic parameters interpolated on the return period, build the response spectrum table for a limit state, or verify spectrum values produced by other software. Target users are structural engineers preparing seismic design or assessment of new and existing buildings under NTC 2018.
 license: MIT
 ---
 
@@ -25,7 +25,7 @@ Usare quando un ingegnere strutturista italiano deve:
 
 ## Avvertenza
 
-Questa skill e' uno strumento di supporto al calcolo dello spettro di risposta NTC 2018. **Non sostituisce il giudizio del progettista strutturale firmatario.** L'output e' verificabile contro il foglio Excel CSLP e contro software di calcolo strutturale certificati: la responsabilita' del controllo dei valori e dell'uso nello spettro di progetto resta in capo al progettista. La skill non produce relazioni di calcolo pronte al deposito al Genio Civile e non firma elaborati. **Per categorie di sottosuolo S1 o S2 la skill rifiuta il calcolo e rinvia ad analisi specifiche di risposta sismica locale come prescritto da NTC par. 3.2.2.**
+Questa skill e' uno strumento di supporto al calcolo dello spettro di risposta NTC 2018. **Non sostituisce il giudizio del progettista strutturale firmatario.** L'output e' deterministico (formule chiuse) e quindi **confrontabile** dal progettista contro il foglio Excel CSLP del Servizio Tecnico Centrale e contro software di calcolo strutturale certificati: il confronto resta in capo al professionista. **Nello stato v0.1.0-alpha la skill non e' ancora stata validata con confronto numerico vs CSLP su casi reali**; i test interni coprono solo la consistenza delle formule e i raccordi tra rami. La skill non produce relazioni di calcolo pronte al deposito al Genio Civile e non firma elaborati. **Per categorie di sottosuolo S1 o S2 la skill rifiuta il calcolo e rinvia ad analisi specifiche di risposta sismica locale come prescritto da NTC par. 3.2.2.**
 
 ## Sotto-attivita' disponibili
 
@@ -33,15 +33,15 @@ In base alla richiesta dell'utente, carica il task file appropriato:
 
 - **Calcolo dello spettro elastico**: l'utente chiede "calcola lo spettro NTC", "qual e' Se(T) per il sito X?", "dammi i parametri S, eta, TB, TC, TD per SLV", "tabulami lo spettro per il mio sito" -> leggi [`tasks/calcola-spettro.md`](tasks/calcola-spettro.md)
 - **Validazione input sito**: l'utente chiede "i miei input sono coerenti?", "il reticolo INGV copre questo sito?", "VN/CU/PVR sono ragionevoli per questa opera?" -> leggi [`tasks/valida-input-sito.md`](tasks/valida-input-sito.md)
-- **Esecuzione test suite**: utente o validatore vuole verificare che il modulo Python produca i valori attesi rispetto al foglio CSLP -> leggi [`tasks/run-test-suite.md`](tasks/run-test-suite.md)
+- **Esecuzione test suite**: utente o validatore vuole verificare la consistenza interna del modulo (formule, raccordi, validazione input, fixture esempio) o pianificare la validazione di campo vs CSLP -> leggi [`tasks/run-test-suite.md`](tasks/run-test-suite.md)
 
 Se la richiesta e' generica ("aiutami con lo spettro NTC"), chiedi se l'utente vuole calcolare lo spettro completo o solo validare gli input. La sequenza naturale e': prima `valida-input-sito` (sanity check), poi `calcola-spettro`.
 
 ## Modulo di calcolo (code-driven - regola di invocazione)
 
-Le formule chiuse di NTC par. 3.2.3 sono implementate nel modulo Python [`tasks/lib/spettro.py`](tasks/lib/spettro.py). La test suite [`tasks/lib/test_spettro.py`](tasks/lib/test_spettro.py) verifica i valori contro casi di confronto con il foglio Excel CSLP.
+Le formule chiuse di NTC par. 3.2.3 sono implementate nel modulo Python [`tasks/lib/spettro.py`](tasks/lib/spettro.py). La test suite [`tasks/lib/test_spettro.py`](tasks/lib/test_spettro.py) copre **solo consistenza interna**: round-trip dell'interpolazione log-log, continuita' ai raccordi TB/TC/TD, validazione input non-finite/non-positive, copertura categorie sottosuolo (incluse D, E) e topografiche (T2/T3/T4), match esatto fra il modulo e il fixture `examples/caso-conforme-fittizio-cu2-c-t1/expected.json` (anti-drift). **Non** confronta vs foglio CSLP: la validazione di campo e' prerequisito del release stabile e va eseguita seguendo `tasks/run-test-suite.md`.
 
-> **REGOLA OPERATIVA INVIOLABILE.** Per ogni calcolo numerico (TR, ag/F0/Tc* interpolati, S, eta, TB/TC/TD, Se(T)) **devi invocare il modulo Python via Bash**. NON riprodurre i numeri "a mano" leggendo le formule dagli estratti in `references/estratti/`: gli estratti sono materiale di citazione normativa, non sostituiscono l'esecuzione del modulo. Calcolare a mano vanifica l'intera ragion d'essere della skill (output deterministico verificabile vs CSLP) e introduce errore stocastico.
+> **REGOLA OPERATIVA INVIOLABILE.** Per ogni calcolo numerico (TR, ag/F0/Tc* interpolati, S, eta, TB/TC/TD, Se(T)) **devi invocare il modulo Python via Bash**. NON riprodurre i numeri "a mano" leggendo le formule dagli estratti in `references/estratti/`: gli estratti sono materiale di citazione normativa, non sostituiscono l'esecuzione del modulo. Calcolare a mano vanifica l'intera ragion d'essere della skill (output deterministico e riproducibile, confrontabile dal progettista) e introduce errore stocastico.
 
 ### Path del modulo
 
