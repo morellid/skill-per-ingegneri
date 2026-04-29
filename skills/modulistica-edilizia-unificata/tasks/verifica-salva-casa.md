@@ -49,13 +49,15 @@ Chiedere all'utente la **superficie utile** (SU) dell'unita' immobiliare interes
 
 #### Passo A2 - Determina soglia applicabile
 
+Per gli interventi **realizzati entro il 24 maggio 2024**, soglie graduate in funzione della SU calcolata sulla **superficie assentita** (art. 34-bis co. 1-ter):
+
 | Superficie utile (SU) | Tolleranza % |
 |------------------------|--------------|
-| Fino a 60 mq | 6% |
-| Da 60 a 100 mq | 5% |
-| Da 100 a 300 mq | 4% |
-| Da 300 a 500 mq | 3% |
-| Oltre 500 mq | 2% (regime pre-Salva Casa) |
+| SU < 60 mq | 6% |
+| SU < 100 mq | 5% |
+| SU compresa tra 100 e 300 mq | 4% |
+| SU compresa tra 300 e 500 mq | 3% |
+| SU > 500 mq | 2% (regime pre-Salva Casa) |
 
 #### Passo A3 - Verifica entita' delle difformita'
 
@@ -88,19 +90,29 @@ Le tolleranze si applicano a:
 
 ### Branch B - Sanatoria semplificata (art. 36-bis)
 
-#### Passo B1 - Identifica titolo dovuto all'epoca
+#### Passo B1 - Identifica titolo dovuto all'epoca e tipologia di abuso
 
-L'art. 36-bis si applica **solo** a opere che, all'epoca della loro realizzazione, sarebbero state assoggettate a **CILA o SCIA** (non PdC).
+L'art. 36-bis (introdotto dal Salva Casa) si applica a:
+- **parziali difformita'** dal permesso di costruire o dalla SCIA alternativa al PdC, nelle ipotesi disciplinate dall'art. 34 DPR 380
+- **variazioni essenziali** ex art. 32 DPR 380
+- assenza o difformita' dalla **SCIA "ordinaria"** art. 22 (regime art. 37)
+
+Per le opere realizzate in **assenza** o **totale difformita'** dal **permesso di costruire** o dalla **SCIA alternativa al PdC** resta il regime dell'**art. 36** (doppia conformita' piena).
+
+Per le opere CILA-dovute realizzate senza CILA si applica il regime sanzionatorio specifico dell'**art. 6-bis co. 5** DPR 380 (sanzione pecuniaria, non procedimento art. 36-bis).
 
 Domande all'utente:
 - "Che intervento e' stato realizzato? (manutenzione, ristrutturazione, nuova costruzione, etc.)"
 - "Quando e' stato realizzato? (anno)"
 - "C'era un titolo originario o e' stato realizzato senza titolo / in difformita' parziale?"
+- "L'abuso e' una **parziale** difformita' dal titolo (entro art. 34) oppure una **totale** difformita'/assenza?"
 
-Applicare il regime in vigore all'epoca per determinare il titolo dovuto:
-- **CILA o SCIA** -> art. 36-bis applicabile
-- **PdC** -> art. 36 (doppia conformita' piena, NON si applica art. 36-bis)
-- Edilizia libera -> nessuna sanatoria necessaria
+Applicare il regime in vigore all'epoca per determinare il titolo dovuto, poi incrociare con la tipologia di abuso:
+- Opera **CILA-dovuta** realizzata senza CILA: art. 6-bis co. 5 (sanzione, no procedimento art. 36 ne' 36-bis)
+- Opera **SCIA art. 22-dovuta** realizzata senza SCIA o in difformita': **art. 36-bis applicabile** (regime art. 37)
+- Opera **PdC o SCIA alternativa-dovuta** in **parziale** difformita' (art. 34) o **variazione essenziale** (art. 32): **art. 36-bis applicabile**
+- Opera **PdC o SCIA alternativa-dovuta** realizzata in **assenza** o **totale difformita'**: **art. 36** (doppia conformita' piena)
+- Edilizia libera: nessuna sanatoria necessaria
 
 #### Passo B2 - Doppia conformita' alleggerita
 
@@ -119,8 +131,11 @@ Se almeno una NO -> sanatoria art. 36-bis NON applicabile. In tal caso valutare:
 - Istanza al Comune con relazione tecnica asseverata sulla doppia conformita' alleggerita
 - Documentazione probante dell'epoca di realizzazione (foto storiche, ortofoto, atti, dichiarazioni sostitutive)
 - Pagamento sanzione pecuniaria graduata (importo specifico nei regolamenti comunali, base nazionale art. 36-bis)
-- Per immobili vincolati: **parere preventivo Soprintendenza**
-- **Termine**: 45 gg per provvedimento espresso. **Silenzio-rifiuto** (no silenzio-assenso).
+- Per immobili vincolati: **parere preventivo Soprintendenza** (sospende i termini fino al rilascio)
+- **Termini procedimentali (art. 36-bis co. 6)**:
+  - **Permesso in sanatoria**: 45 gg dalla presentazione; decorso il termine, "la richiesta si intende accolta" (**silenzio-assenso**)
+  - **SCIA in sanatoria**: termine ex **art. 19 co. 6-bis L. 241/1990** (60 gg per i poteri inibitori)
+  - Termini sospesi in caso di parere paesaggistico/MiC fino al rilascio
 
 #### Passo B4 - Output Branch B
 
@@ -138,7 +153,7 @@ Se almeno una NO -> sanatoria art. 36-bis NON applicabile. In tal caso valutare:
 
 **Sanzione pecuniaria**: graduata in base alla gravita' (rinvio regolamento comunale per importi specifici).
 
-**Termini procedimento**: 45 gg, silenzio-rifiuto.
+**Termini procedimento**: per il PdC in sanatoria 45 gg con **silenzio-assenso** (art. 36-bis co. 6 DPR 380); per la SCIA in sanatoria si applica il termine dell'**art. 19 co. 6-bis L. 241/1990**; in caso di vincolo, termini sospesi fino al parere Soprintendenza.
 ```
 
 ### Branch C - Cambio destinazione d'uso (art. 23-ter post Salva Casa)
@@ -148,23 +163,29 @@ Se almeno una NO -> sanatoria art. 36-bis NON applicabile. In tal caso valutare:
 Identifica:
 - **Categoria attuale**: residenziale (a) / turistico-ricettiva (a-bis) / produttiva e direzionale (b) / commerciale (c) / rurale (d)
 - **Categoria nuova prevista**
+- **Zona urbanistica** dell'immobile (A / B / C / D / E)
+- **UI singola** o **intero edificio**?
+- **Opere** edilizie associate al cambio: assenti / CILA-art. 6-bis / SCIA art. 22 / PdC
 
-#### Passo C2 - Decision tree post Salva Casa
+#### Passo C2 - Decision tree post Salva Casa (art. 23-ter co. 1-bis, 1-ter, 1-quater, 1-quinquies)
 
 | Caso | Regime |
 |------|--------|
-| Stessa categoria, no opere | Edilizia libera (salvo regolamento comunale) |
-| Stessa categoria, con opere | Regime delle opere |
-| Categorie diverse, no opere, fuori zona A | **SCIA** (post Salva Casa, ampliato) |
-| Categorie diverse, con opere, fuori zona A | Regime piu' alto fra opere e cambio |
-| Centro storico (zona A) | Regime piu' restrittivo, generalmente PdC |
+| **Stessa categoria** funzionale, qualunque zona | Sempre consentito (co. 1-bis); senza opere = nessun titolo (salvo condizioni comunali); con opere = regime delle opere |
+| Categorie a/a-bis/b/c, **UI singola**, zone **A/B/C**, **senza opere** | **SCIA** ex art. 19 L. 241/1990 (co. 1-quinquies); no obblighi standard/parcheggi (co. 1-quater); eventuale contributo oneri di urbanizzazione secondaria |
+| Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime **CILA art. 6-bis** | **SCIA** ex co. 1-quinquies (assorbe la CILA) |
+| Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime **SCIA art. 22** | Regime delle opere = SCIA art. 22 |
+| Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime **PdC** | Regime delle opere = PdC (o SCIA alternativa al PdC) |
+| Cambio coinvolgente **categoria d) rurale**, oppure zone **D / E** | Fuori dal regime semplificato co. 1-ter; regime ordinario in funzione delle opere e del titolo che sarebbe richiesto |
+| Cambio non riferito a UI singola (intero edificio in cambio) | Verificare disciplina regionale e comunale specifica |
 
 #### Passo C3 - Verifiche aggiuntive
 
-- **Compatibilita' con la zona urbanistica**: il cambio uso non deve violare il PRG/PUC. Es: cambio da residenziale a commerciale ammesso in zona B/C/D, ma non in zona E (agricola).
-- **Dotazione standard**: il cambio non deve generare un aumento del carico urbanistico oltre la dotazione standard ammessa (DM 1444/1968 art. 3 e ss.).
-- **Vincoli sovraordinati**: paesaggio, beni culturali possono limitare il cambio.
-- **Regolamento edilizio comunale**: puo' essere piu' restrittivo (es. tutela commerciale dei centri storici, vincolo ricettivo).
+- **Compatibilita' con la zona urbanistica e con la disciplina comunale**: il regime del co. 1-ter opera "fatte salve le condizioni stabilite dalla disciplina regionale e comunale". Verificare NTA del PRG/PUC e regolamento edilizio per condizioni aggiuntive (es. soglia di superficie minima, requisiti acustici/igienico-sanitari della categoria di destinazione).
+- **Standard urbanistici**: per i cambi del co. 1-ter, **non scatta** l'obbligo di reperire ulteriori aree per servizi e di dotazione minima di parcheggi (co. 1-quater).
+- **Oneri**: ove previsto dalla disciplina regionale, e' dovuto il **contributo per gli oneri di urbanizzazione secondaria** (co. 1-quater).
+- **Vincoli sovraordinati**: paesaggio, beni culturali, idrogeologico, sismica restano dovuti come autorizzazioni accessorie.
+- **Cambio a uso turistico-ricettivo (cat. a-bis)**: verificare la **legge regionale turismo** per i requisiti specifici della tipologia (numero camere, classificazione, posti letto).
 
 #### Passo C4 - Output Branch C
 
@@ -238,10 +259,12 @@ Cataloga:
 #### Passo E1 - Identifica opera
 
 Casi tipici di estensione dell'edilizia libera post Salva Casa:
-- **VEPA** (Vetrate Panoramiche Amovibili) su balconi/logge: **edilizia libera** (salvo regolamento condominiale + vincoli paesaggistici)
-- **Tende, pergolati, tettoie a protezione del sole** di limitate dimensioni e amovibili: edilizia libera
-- **Cappotto termico esterno**: edilizia libera (con limite tecnici di sporgenza dalla sagoma)
-- **Pannelli solari/fotovoltaici a servizio dell'edificio**: edilizia libera (con condizioni post-rinnovabili)
+- **VEPA** (Vetrate Panoramiche Amovibili) su balconi, logge, porticati - **art. 6 co. 1 lett. b-bis**: **edilizia libera** se amovibili e senza creazione di nuovo locale autonomamente utilizzabile (salvo regolamento condominiale + vincoli paesaggistici)
+- **Tende, tende a pergola anche bioclimatiche, pergotende** - **art. 6 co. 1 lett. b-ter**: opere di protezione dal sole/agenti atmosferici con struttura principale costituita da tende, telo retrattile o elementi mobili/regolabili, **senza creazione di nuovo locale autonomamente utilizzabile**: edilizia libera
+- **Cappotto termico esterno**: edilizia libera (con limiti tecnici di sporgenza dalla sagoma)
+- **Pannelli solari/fotovoltaici a servizio dell'edificio**: edilizia libera (con condizioni rinnovabili)
+
+> **NB - tettoie**: non sono liberalizzate in via generale dall'art. 6. Le tettoie stabili restano soggette a CILA / SCIA / PdC in funzione di dimensione, struttura e disciplina locale. Verificare il regolamento edilizio comunale e l'eventuale glossario opere libere (DM 2/3/2018).
 
 #### Passo E2 - Verifica condizioni
 

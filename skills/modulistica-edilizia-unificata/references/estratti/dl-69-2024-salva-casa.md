@@ -34,7 +34,7 @@ La Conferenza Unificata ha approvato la **modulistica edilizia unificata** aggio
 - non determinino la creazione di un nuovo locale autonomamente utilizzabile (no nuova superficie utile)
 - nel rispetto dei vincoli sovraordinati e del regolamento condominiale
 
-**Tende, pergolati, tettoie e strutture mobili a protezione**: ampliato il regime di edilizia libera per opere a protezione dal sole/agenti atmosferici, di limitate dimensioni e amovibili, in aree pertinenziali a edifici esistenti.
+**Tende e tende a pergola (pergotende)**: art. 6 co. 1 lett. b-ter post Salva Casa: opere di protezione dal sole e dagli agenti atmosferici la cui struttura principale e' costituita da tende, tende a pergola anche bioclimatiche, con eventuale telo retrattile o elementi mobili/regolabili, purche' non determinino la creazione di un nuovo locale autonomamente utilizzabile (no nuova SU). NON sono incluse, a livello nazionale, le tettoie stabili: queste restano CILA / SCIA / PdC in funzione di dimensione, struttura e disciplina locale.
 
 **Cappotto termico esterno**: confermato in **edilizia libera** se non sporge oltre la sagoma originaria di valori tecnici minimi previsti dalla normativa di efficienza energetica.
 
@@ -51,36 +51,38 @@ Nuova disciplina dello **stato legittimo** dell'immobile:
 
 ### 3. Cambio di destinazione d'uso semplificato (art. 23-ter riformulato)
 
-Tre principi nuovi:
+Principi del nuovo art. 23-ter post Salva Casa:
 
-1. Il mutamento tra **categorie funzionali diverse** *senza opere* e' generalmente assoggettabile a **SCIA** (e non piu' a PdC) nelle zone urbanisticamente compatibili (B, C, D), purche':
-   - non si verifichi un aumento del carico urbanistico oltre la dotazione standard ammessa
-   - la nuova destinazione sia compatibile con la zona di PRG/PUC
-   - non ricorrano vincoli sovraordinati piu' restrittivi
+1. **Comma 1-bis**: mutamento all'**interno della stessa categoria** funzionale sempre consentito, fatte salve le condizioni della disciplina regionale e comunale.
 
-2. Per **immobili in zona omogenea A** (centri storici): il regime resta piu' restrittivo, generalmente PdC con verifica del regolamento edilizio comunale per il cambio destinazione d'uso urbanisticamente rilevante.
+2. **Comma 1-ter**: per le **singole unita' immobiliari** sono consentiti i mutamenti tra le categorie a), a-bis), b) e c) nelle **zone omogenee A, B e C**, fatte salve le condizioni della disciplina regionale e comunale. La categoria d) (rurale) e le zone D ed E restano fuori da questo regime semplificato.
 
-3. Le 5 categorie funzionali confermate: **a) residenziale, a-bis) turistico-ricettiva, b) produttiva e direzionale, c) commerciale, d) rurale**.
+3. **Comma 1-quater**: per i mutamenti del comma 1-ter, **non scattano** gli obblighi di reperire ulteriori aree per servizi e di dotazione minima di parcheggi. Resta ferma, ove prevista dalla disciplina regionale, la **corresponsione del contributo per gli oneri di urbanizzazione secondaria**.
+
+4. **Comma 1-quinquies**: per il mutamento **senza opere** il titolo edilizio e' la **SCIA** ai sensi dell'art. 19 L. 241/1990. Per il mutamento con opere riconducibili al regime CILA (art. 6-bis), il titolo e' comunque la SCIA del comma 1-quinquies. Per opere maggiori (SCIA art. 22 o PdC), prevale il regime delle opere.
+
+5. Le 5 categorie funzionali confermate: **a) residenziale, a-bis) turistico-ricettiva, b) produttiva e direzionale, c) commerciale, d) rurale**.
 
 > **Effetto operativo**: la skill, per richieste di cambio destinazione d'uso, applica il decision tree:
-> 1. **Stessa categoria funzionale, no opere**: edilizia libera (salvo regolamento)
-> 2. **Stessa categoria, con opere**: regime delle opere
-> 3. **Categorie diverse, no opere, fuori zona A**: **SCIA** (post Salva Casa)
-> 4. **Categorie diverse, con opere, fuori zona A**: regime piu' alto fra opere e cambio
-> 5. **Centro storico (zona A)**: PdC o regime piu' restrittivo
-> 6. **Vincoli paesaggistico/culturale**: verificare con SUE / Soprintendenza
+> 1. **Stessa categoria funzionale**: sempre consentito (co. 1-bis); senza opere = nessun titolo (salvo condizioni comunali); con opere = regime delle opere.
+> 2. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, senza opere**: **SCIA** ex art. 19 L. 241/1990 (comma 1-quinquies); nessun obbligo di standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria.
+> 3. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere CILA-art. 6-bis**: **SCIA** ex co. 1-quinquies (assorbe la CILA).
+> 4. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere SCIA art. 22 o PdC**: regime delle opere (SCIA art. 22 o PdC).
+> 5. **Categoria d) (rurale) o zone D/E o cambio non riconducibile al co. 1-ter**: regime ordinario (CILA / SCIA / PdC) in funzione delle opere e del titolo che sarebbe richiesto.
+> 6. **Condizioni regionali e comunali**: la disciplina locale puo' subordinare il mutamento a presupposti, condizioni o limitazioni: verificare il regolamento edilizio comunale e le NTA del PRG/PUC.
+> 7. **Vincoli paesaggistico/culturale**: pareri e autorizzazioni accessorie restano dovute.
 
 ### 4. Tolleranze costruttive ampliate (art. 34-bis)
 
-Soglie variabili per superficie utile (SU):
+Per gli interventi **realizzati entro il 24 maggio 2024**, soglie variabili per superficie utile (SU), calcolata sulla **superficie assentita** (art. 34-bis co. 1-ter):
 
 | Superficie utile (SU) | Tolleranza % |
 |------------------------|--------------|
-| Fino a 60 mq | **6%** |
-| Da 60 a 100 mq | **5%** |
-| Da 100 a 300 mq | **4%** |
-| Da 300 a 500 mq | **3%** |
-| Oltre 500 mq | **2%** (regime previgente confermato) |
+| SU < 60 mq | **6%** |
+| SU < 100 mq | **5%** |
+| SU compresa tra 100 e 300 mq | **4%** |
+| SU compresa tra 300 e 500 mq | **3%** |
+| SU > 500 mq | **2%** (regime previgente confermato) |
 
 **Tolleranze esecutive** (co. 1-bis): comprendono il minore dimensionamento, la mancata realizzazione di elementi architettonici non strutturali, le irregolarita' geometriche, le modifiche alle finiture, le diverse collocazioni di impianti, e la diversa realizzazione dei vani interni, **purche'** non comportino:
 - variazione del numero di unita' immobiliari
@@ -92,22 +94,32 @@ Soglie variabili per superficie utile (SU):
 
 ### 5. Sanatoria edilizia semplificata (art. 36-bis - nuovo)
 
-Introduce la **doppia conformita' alleggerita** per opere realizzate in **assenza** o in **difformita'** parziale dal titolo, **limitatamente** alle opere che all'epoca avrebbero richiesto **CILA o SCIA** (non PdC):
+Introduce la **doppia conformita' alleggerita** per le seguenti tipologie di abuso:
+- **parziali difformita'** dal permesso di costruire o dalla SCIA alternativa al PdC, nelle ipotesi disciplinate dall'**art. 34** DPR 380
+- **variazioni essenziali** di cui all'**art. 32** DPR 380
+- assenza o difformita' dalla **SCIA "ordinaria"** ex art. 22 (regime art. 37)
 
+Per le opere realizzate in **assenza** o **totale difformita'** dal **permesso di costruire** o dalla **SCIA alternativa al PdC**, **resta l'art. 36** (doppia conformita' piena urbanistica + edilizia, sia all'epoca sia oggi).
+
+Per le opere **CILA-dovute** realizzate senza CILA si applica il regime sanzionatorio specifico dell'**art. 6-bis co. 5** DPR 380 (sanzione pecuniaria, non procedimento art. 36-bis).
+
+Doppia conformita' alleggerita:
 - Conformita' alla disciplina **urbanistica vigente al momento della presentazione della domanda** di sanatoria
 - Conformita' alla disciplina **edilizia vigente al momento della realizzazione** dell'opera
-
-Per opere che richiedevano **PdC** all'epoca, **resta l'art. 36** (doppia conformita' piena).
 
 Procedimento (sintesi):
 - Istanza al Comune con relazione tecnica asseverata
 - Pagamento di sanzione pecuniaria graduata
-- Per immobili vincolati: parere preventivo della Soprintendenza
-- **Termine**: 45 gg per provvedimento espresso. **Silenzio-rifiuto** (no silenzio-assenso).
+- Per immobili vincolati: parere preventivo della Soprintendenza (con sospensione dei termini)
+- **Termini procedimentali (art. 36-bis co. 6)**:
+  - **Permesso in sanatoria**: 45 gg dalla presentazione; decorso il termine, "la richiesta si intende accolta" (**silenzio-assenso**)
+  - **SCIA in sanatoria**: si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (60 gg per i poteri inibitori)
+  - Termini sospesi in caso di richiesta di parere paesaggistico/MiC fino al rilascio
 
 > **Effetto operativo**: la skill, nel decision tree per sanatoria, distingue:
-> - art. 36 (doppia conformita' piena) per opere che richiedevano PdC
-> - art. 36-bis (doppia conformita' alleggerita) per opere che richiedevano CILA/SCIA
+> - art. 36 (doppia conformita' piena) per opere PdC/SCIA-alternativa-dovute realizzate in assenza o totale difformita'
+> - art. 36-bis (doppia conformita' alleggerita) per parziali difformita' (art. 34), variazioni essenziali (art. 32), e abusi del regime SCIA art. 22 (art. 37)
+> - art. 6-bis co. 5 (sanzione) per CILA omessa
 
 ### 6. Recupero abitativo dei sottotetti
 

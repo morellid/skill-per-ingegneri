@@ -15,7 +15,7 @@
 
 **Modulo unificato**: **CILA** (Comunicazione di Inizio Lavori Asseverata)
 **Riferimento DPR 380**: art. 6-bis (regime residuale per interventi non liberi e non SCIA/PdC)
-**Voce Tabella A D.Lgs. 222/2016**: sez. II - B "Manutenzione straordinaria" - voce **frazionamento o accorpamento di unita' immobiliari SENZA opere su parti strutturali**
+**Voce Tabella A D.Lgs. 222/2016**: sezione II - tipologia "Manutenzione straordinaria" (art. 3 co. 1 lett. b DPR 380), voce relativa al **frazionamento o accorpamento di unita' immobiliari SENZA opere su parti strutturali** -> regime CILA. (Per la citazione formale in atti, riferirsi al numero di voce della Tabella A vigente su Normattiva.)
 **Modulistica unificata**: modulo "CILA" della Conferenza Unificata 27/3/2025 (Salva Casa)
 
 ### Motivazione
@@ -39,7 +39,7 @@ Nessuna. La SCIA (art. 22) si applicherebbe solo se le opere riguardassero **par
 
 ## Adempimenti accessori al cantiere
 
-- **Notifica preliminare di cantiere** (art. 99 D.Lgs. 81/2008): **NON OBBLIGATORIA**. Cantiere monoimpresa, durata 30 gg, 3 lavoratori - sotto la soglia (almeno 2 imprese OPPURE 200 uomini-giorno OPPURE durata > 30 gg con almeno 20 lavoratori OPPURE entita' presunta di 500 uomini-giorno).
+- **Notifica preliminare di cantiere** (art. 99 co. 1 D.Lgs. 81/2008): **NON OBBLIGATORIA**. Cantiere mono-impresa, durata 30 gg, 3 lavoratori = entita' presunta circa 90 uomini-giorno (sotto la soglia di 200 uomini-giorno per impresa unica) e non rientra nelle ipotesi dell'art. 90 co. 3 (piu' imprese, anche non contemporanee).
 - **Designazione CSP/CSE**: NON OBBLIGATORIA (cantiere mono-impresa).
 - **DURC** dell'impresa: comunque richiesto in allegato per asseverazione idoneita' tecnico-professionale.
 - **Pratica antincendio**: NON APPLICABILE (uso residenziale, attivita' non in DPR 151/2011).

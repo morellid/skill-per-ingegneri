@@ -15,29 +15,31 @@
 
 ## Inquadramento
 
-La Tabella A e' organizzata per **gruppi di intervento**, e per ognuno indica:
+La Tabella A, sezione II "Edilizia", elenca per ciascuna **voce numerata** la coppia (tipologia di intervento, regime amministrativo). Per ogni voce indica:
 
 1. **Tipologia di intervento** (descrizione)
-2. **Categoria DPR 380** (lett. dell'art. 3)
-3. **Regime amministrativo** (CIL, CILA, SCIA, SCIA alternativa al PdC, PdC, edilizia libera)
-4. **Eventuale concentrazione** dei regimi se ricorrono altri vincoli (paesaggistico, sismico, idraulico, beni culturali, vincolo idrogeologico)
+2. **Categoria DPR 380** (lett. dell'art. 3) collegata
+3. **Regime amministrativo** applicabile (CIL, CILA, SCIA, SCIA alternativa al PdC, PdC, edilizia libera)
+4. **Eventuale concentrazione** dei regimi se ricorrono altri vincoli (paesaggistico, sismico, idraulico, beni culturali, idrogeologico)
 
-La sezione II e' suddivisa in:
-- **A. Manutenzione ordinaria** (lett. a)
-- **B. Manutenzione straordinaria** (lett. b)
-- **C. Restauro e risanamento conservativo** (lett. c)
-- **D. Ristrutturazione edilizia** (lett. d)
-- **E. Nuova costruzione** (lett. e)
-- **F. Mutamenti destinazione d'uso** (rinvio art. 23-ter)
-- **G. Varianti in corso d'opera**
-- **H. Opere pertinenziali e complementari**
-- **I. Interventi su beni culturali e paesaggistici**
+> **Nota su numerazione e citazione**: la sezione II contiene oltre 100 voci numerate raggruppate per tipologia. Le etichette in lettere maiuscole "A. Manutenzione ordinaria", "B. Manutenzione straordinaria" usate piu' avanti in questo estratto **NON** sono parte della struttura formale della Tabella A: sono **mnemonici interni** introdotti da questo estratto per agevolare il routing operativo. Per la **citazione formale** in atti e relazioni asseverate **usare il numero di voce della Tabella A** (es. "Tabella A, sezione II, voce n. 3 - manutenzione straordinaria con opere su parti strutturali"), facendo riferimento alla versione vigente su Normattiva.
+
+La sezione II raggruppa le voci secondo le seguenti tipologie di intervento (etichette mnemoniche):
+- **Manutenzione ordinaria** (art. 3 lett. a)
+- **Manutenzione straordinaria** (art. 3 lett. b)
+- **Restauro e risanamento conservativo** (art. 3 lett. c)
+- **Ristrutturazione edilizia** (art. 3 lett. d)
+- **Nuova costruzione** (art. 3 lett. e)
+- **Mutamenti destinazione d'uso** (rinvio art. 23-ter)
+- **Varianti in corso d'opera**
+- **Opere pertinenziali e complementari**
+- **Interventi su beni culturali e paesaggistici**
 
 ---
 
 ## Mapping principale (estratto operativo)
 
-### A. Manutenzione ordinaria (art. 3 lett. a)
+### Manutenzione ordinaria (art. 3 lett. a)
 
 | Intervento | Regime |
 |------------|--------|
@@ -48,7 +50,7 @@ La sezione II e' suddivisa in:
 
 > Riferimento: art. 6 co. 1 lett. a DPR 380.
 
-### B. Manutenzione straordinaria (art. 3 lett. b)
+### Manutenzione straordinaria (art. 3 lett. b)
 
 | Intervento | Regime |
 |------------|--------|
@@ -60,7 +62,7 @@ La sezione II e' suddivisa in:
 | Apertura di porte/finestre su pareti non portanti | **CILA** |
 | Sostituzione di caldaia con opera muraria minore | CILA (con SCIA o autorizzazione VVF se rientra in DPR 151/2011) |
 
-### C. Restauro e risanamento conservativo (art. 3 lett. c)
+### Restauro e risanamento conservativo (art. 3 lett. c)
 
 | Intervento | Regime |
 |------------|--------|
@@ -68,7 +70,7 @@ La sezione II e' suddivisa in:
 | Restauro o risanamento **con** opere su parti strutturali | **SCIA** (art. 22) |
 | Restauro su immobile **vincolato D.Lgs. 42/2004** | **CILA o SCIA** + **autorizzazione MiC** (Soprintendenza, art. 21 D.Lgs. 42) |
 
-### D. Ristrutturazione edilizia (art. 3 lett. d)
+### Ristrutturazione edilizia (art. 3 lett. d)
 
 | Intervento | Regime |
 |------------|--------|
@@ -76,7 +78,7 @@ La sezione II e' suddivisa in:
 | Ristrutturazione "pesante" che porta a: aumento UI / modifica volume complessivo / sagoma / prospetti / cambio destinazione d'uso urbanisticamente rilevante in zona omogenea A; o demolizione e ricostruzione con modifica di sagoma o sedime su immobili vincolati | **PdC** (art. 10 co. 1 lett. c) **oppure SCIA alternativa** (art. 23) a scelta del titolare |
 | Demolizione e ricostruzione con stessa volumetria, sagoma, sedime (no vincolo) | **SCIA** (ristrutturazione leggera) |
 
-### E. Nuova costruzione (art. 3 lett. e)
+### Nuova costruzione (art. 3 lett. e)
 
 | Intervento | Regime |
 |------------|--------|
@@ -90,17 +92,18 @@ La sezione II e' suddivisa in:
 | Recinzioni e muri di cinta | **CILA** (con eccezioni per i muri "leggeri" - regolamento locale) |
 | Piscine pertinenziali interrate | **PdC** (oltre soglia) o SCIA / CILA (sotto soglia, secondo regolamento) |
 
-### F. Mutamenti di destinazione d'uso (art. 23-ter)
+### Mutamenti di destinazione d'uso (art. 23-ter post Salva Casa)
 
 | Intervento | Regime |
 |------------|--------|
-| Mutamento all'interno della **stessa categoria funzionale** (es. da residenziale a residenziale) **senza opere** | **Edilizia libera** (salvo regolamento comunale) |
-| Mutamento all'interno della stessa categoria funzionale **con opere** | Regime corrispondente alle opere (CILA / SCIA / PdC) |
-| Mutamento tra **categorie funzionali diverse** **senza opere** | **SCIA** (post Salva Casa, ampliato) |
-| Mutamento tra categorie funzionali diverse **con opere** | Regime corrispondente alle opere, ricalibrato sul piu' alto fra opera e cambio (in genere SCIA o PdC) |
-| Cambio destinazione d'uso in centro storico (zona A) | Generalmente **PdC** o regime piu' restrittivo per i regolamenti comunali |
+| Mutamento **all'interno della stessa categoria** funzionale (co. 1-bis), senza opere | Sempre consentito; **nessun titolo edilizio** salvo condizioni della disciplina regionale/comunale |
+| Mutamento all'interno della stessa categoria funzionale, con opere | Regime corrispondente alle opere (CILA / SCIA / PdC) |
+| Mutamento tra categorie **a/a-bis/b/c**, **UI singola**, **zone A/B/C**, **senza opere** (co. 1-ter + 1-quinquies) | **SCIA** ex art. 19 L. 241/1990; no obblighi standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria |
+| Mutamento a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime CILA art. 6-bis | **SCIA** ex co. 1-quinquies (assorbe la CILA) |
+| Mutamento a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime SCIA art. 22 o PdC | Regime delle opere |
+| Mutamento che coinvolge la categoria **d) rurale** oppure ricade in zone **D / E** | Fuori dal regime semplificato del co. 1-ter; regime ordinario in funzione delle opere e del titolo richiesto |
 
-### G. Varianti in corso d'opera
+### Varianti in corso d'opera
 
 | Intervento | Regime |
 |------------|--------|
@@ -109,7 +112,7 @@ La sezione II e' suddivisa in:
 | Variante "non essenziale" che non riguarda parti strutturali | **CILA in variante** |
 | Variante "minore" da depositare a fine lavori | SCIA prima della Segnalazione Certificata di Agibilita' (art. 22 co. 2) |
 
-### I. Interventi su beni culturali e paesaggistici
+### Interventi su beni culturali e paesaggistici
 
 Per immobili soggetti a vincolo (D.Lgs. 42/2004 parti II/III) il regime edilizio del DPR 380 si **somma** all'autorizzazione paesaggistica (art. 146) e/o all'autorizzazione MiC per beni culturali (art. 21).
 

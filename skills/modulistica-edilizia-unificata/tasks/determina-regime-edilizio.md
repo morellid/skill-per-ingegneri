@@ -77,20 +77,26 @@ Applica nell'ordine:
 
 Se l'intervento e' **gia' eseguito senza titolo** o in difformita':
 
-1. Identifica il titolo che **all'epoca** sarebbe stato necessario (CILA / SCIA / PdC).
-2. Se **PdC**: regime **art. 36 DPR 380** (doppia conformita' piena: urbanistica ed edilizia, sia all'epoca sia oggi).
-3. Se **CILA o SCIA**: regime **art. 36-bis DPR 380** (Salva Casa - doppia conformita' alleggerita: urbanistica oggi + edilizia all'epoca).
+1. Identifica il titolo che **all'epoca** sarebbe stato necessario (CILA / SCIA art. 22 / SCIA alternativa al PdC art. 23 / PdC).
+2. Identifica la **tipologia di abuso**: assenza totale, totale difformita', parziale difformita' (art. 34), variazione essenziale (art. 32).
+3. Applica il regime:
+   - Opera **CILA-dovuta** realizzata senza CILA -> **art. 6-bis co. 5** DPR 380 (sanzione pecuniaria, no doppia conformita').
+   - Opera **SCIA art. 22-dovuta** realizzata senza SCIA o in difformita' -> **art. 36-bis** (Salva Casa, regime ex art. 37).
+   - Opera **PdC o SCIA alternativa** in **parziale** difformita' (art. 34) o **variazione essenziale** (art. 32) -> **art. 36-bis**.
+   - Opera **PdC o SCIA alternativa-dovuta** in **assenza** o **totale difformita'** -> **art. 36 DPR 380** (doppia conformita' piena: urbanistica + edilizia, all'epoca + oggi).
 4. Se in tolleranza ex art. 34-bis: **NON serve sanatoria** (vedi task `verifica-salva-casa.md`).
-5. Per immobili vincolati: **parere preventivo Soprintendenza** prima della sanatoria.
+5. Per immobili vincolati: **parere preventivo Soprintendenza** prima della sanatoria; i termini procedimentali sono sospesi fino al rilascio.
 
-> Output: indica modulo "Sanatoria art. 36" o "Sanatoria semplificata art. 36-bis" della modulistica unificata 2025.
+> Output: indica modulo "Sanatoria art. 36", "Sanatoria semplificata art. 36-bis" o "CILA in sanatoria (art. 6-bis co. 5)" della modulistica unificata 2025.
 
-#### Branch B - Cambio destinazione d'uso senza opere (art. 23-ter)
+#### Branch B - Cambio destinazione d'uso (art. 23-ter post Salva Casa)
 
-1. **Stessa categoria funzionale**: edilizia libera, salvo regolamento comunale che imponga comunicazione.
-2. **Categorie diverse, fuori zona A, post Salva Casa**: regime SCIA (art. 22).
-3. **Categorie diverse in zona A (centro storico)**: regime PdC (art. 10) o regime piu' restrittivo del regolamento comunale.
-4. **Cambio uso CON opere**: applica il regime del Branch C/D/E (sotto), prendendo il regime piu' alto fra opere e cambio.
+1. **Stessa categoria funzionale** (co. 1-bis): sempre consentito, senza opere = nessun titolo (salvo condizioni comunali); con opere = regime delle opere.
+2. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, senza opere** (co. 1-ter + 1-quinquies): **SCIA ex art. 19 L. 241/1990**; no obblighi standard/parcheggi (co. 1-quater); eventuale contributo per oneri di urbanizzazione secondaria.
+3. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime CILA art. 6-bis**: **SCIA ex co. 1-quinquies** (assorbe la CILA).
+4. **Categorie a/a-bis/b/c, UI singola, zone A/B/C, con opere a regime SCIA art. 22 o PdC**: regime delle opere.
+5. **Coinvolgimento categoria d) rurale o zone D/E**: fuori dal regime semplificato; regime ordinario (CILA / SCIA / PdC) in funzione delle opere e del titolo richiesto.
+6. **Condizioni regionali e comunali**: verificare sempre il regolamento edilizio comunale e le NTA del PRG/PUC per condizioni e limiti specifici.
 
 #### Branch C - Manutenzione ordinaria (art. 3 lett. a)
 
@@ -120,7 +126,7 @@ Se l'intervento e' **gia' eseguito senza titolo** o in difformita':
 2. **In attuazione di piano attuativo dettagliato** (planivolumetriche, tipologiche, formali e costruttive): **PdC** o **SCIA alternativa** (art. 23 co. 01 lett. b/c) a scelta del titolare.
 3. **Pertinenze fino al 20% del volume principale**: regime tipicamente **CILA o SCIA** (rinvio regolamento comunale).
 4. **Pertinenze oltre il 20%**: assimilate a nuova costruzione - **PdC**.
-5. **Tettoie/pergolati amovibili in dimensioni limitate**: edilizia libera (post Salva Casa).
+5. **Tende, tende a pergola e pergotende** (art. 6 co. 1 lett. b-ter post Salva Casa): edilizia libera, purche' la struttura non determini la creazione di un nuovo locale autonomamente utilizzabile. **Le tettoie stabili NON sono liberalizzate**: restano CILA / SCIA / PdC in funzione di dimensione, struttura e disciplina locale.
 6. **Manufatti temporanei** per attivita' di cantiere/eventi: regime variabile, di norma comunicazione preventiva.
 
 #### Branch H - Ristrutturazione urbanistica (art. 3 lett. f)
@@ -150,8 +156,11 @@ Per ogni regime individuato, identifica le autorizzazioni a monte:
 
 Per ogni regime:
 
-- **Notifica preliminare di cantiere** (art. 99 D.Lgs. 81/2008): obbligatoria se cantiere con almeno 2 imprese, durata > 30 gg con almeno 20 lavoratori, o 500 uomini-giorno
-- **Designazione CSP/CSE**: obbligatoria se cantiere con piu' imprese (D.Lgs. 81/2008 art. 90)
+- **Notifica preliminare di cantiere** (art. 99 co. 1 D.Lgs. 81/2008): obbligatoria nei casi previsti dall'articolo, in particolare:
+  - cantieri di cui all'art. 90 co. 3 (con piu' imprese, anche non contemporanee, esecutrici)
+  - cantieri inizialmente non soggetti che, in seguito a variante o subentro, ricadano in tale ipotesi
+  - cantieri di unica impresa con entita' presunta di lavoro **pari o superiore a 200 uomini-giorno**
+- **Designazione CSP/CSE**: obbligatoria se cantiere con piu' imprese, anche non contemporanee (D.Lgs. 81/2008 art. 90 co. 3)
 - **DURC** dell'impresa esecutrice
 - **Pratica antincendio** (DPR 151/2011) se l'attivita' esercitata e' inserita nell'allegato
 

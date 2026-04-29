@@ -76,7 +76,7 @@ Allegati base (vedi Passo 2) + condizionali:
 
 | Allegato | Quando obbligatorio | Riferimento |
 |----------|----------------------|-------------|
-| Notifica preliminare di cantiere | Cantiere con piu' imprese, durata > 30 gg con almeno 20 lavoratori, o 500 uomini-giorno | art. 99 D.Lgs. 81/2008 |
+| Notifica preliminare di cantiere | Cantieri ex art. 90 co. 3 (piu' imprese, anche non contemporanee), cantieri di unica impresa con entita' presunta >= 200 uomini-giorno, o cantieri inizialmente non soggetti che vi rientrino in seguito | art. 99 co. 1 D.Lgs. 81/2008 |
 | Designazione CSP/CSE + DURC + idoneita' tecnico-professionale imprese | Cantiere multiimpresa | art. 90 + 97 D.Lgs. 81/2008 |
 | Autorizzazione paesaggistica (ordinaria o semplificata) | Vincolo paesaggio non rientrante in DPR 31/2017 All. A | art. 146 D.Lgs. 42/2004 + DPR 31/2017 |
 | Autorizzazione MiC (Soprintendenza) | Bene culturale (parte II D.Lgs. 42/2004) | art. 21 D.Lgs. 42/2004 |
@@ -156,7 +156,11 @@ Allegati base + specifici:
 | Documentazione fotografica stato di fatto | Sempre | prassi |
 | Elaborati grafici di rilievo dell'opera difforme/realizzata | Sempre | prassi |
 
-> **Differenza chiave art. 36 vs art. 36-bis**: l'art. 36-bis si applica **solo** alle opere che all'epoca avrebbero richiesto **CILA o SCIA** (non PdC). Per opere PdC-dovute resta l'art. 36 (doppia conformita' piena).
+> **Differenza chiave art. 36 vs art. 36-bis** (versione coordinata post Salva Casa, vedi `dpr-380-2001-regimi-edilizi.md`):
+> - **art. 36**: opere PdC/SCIA-alternativa-dovute realizzate in **assenza** o **totale difformita'** -> doppia conformita' piena.
+> - **art. 36-bis**: parziali difformita' (art. 34), variazioni essenziali (art. 32), abusi del regime SCIA art. 22 (art. 37) -> doppia conformita' alleggerita.
+> - **art. 6-bis co. 5**: CILA omessa -> sanzione pecuniaria, non procedimento di sanatoria art. 36/36-bis.
+> - **Termini procedimentali**: PdC in sanatoria art. 36-bis = 45 gg con **silenzio-assenso** (co. 6); SCIA in sanatoria = termine art. 19 co. 6-bis L. 241/1990; sospensione per parere Soprintendenza.
 
 ### Passo 4 - Allegati locali / SUE-specifici
 

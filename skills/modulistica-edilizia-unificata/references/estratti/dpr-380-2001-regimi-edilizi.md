@@ -61,12 +61,14 @@ Interventi eseguibili **senza alcun titolo abilitativo** (no comunicazione, no S
 - Serre mobili stagionali, pannelli solari/fotovoltaici (a servizio degli edifici) entro determinate condizioni
 - Aree ludiche senza fini di lucro, elementi di arredo delle aree pertinenziali
 - Pavimentazione di spazi esterni gia' a servizio dell'unita'
-- VEPA su balconi e logge (Salva Casa: ampliato il regime di edilizia libera)
-- Tende, pergolati e tettoie di limitate dimensioni (con condizioni specifiche post Salva Casa)
+- **VEPA** (vetrate panoramiche amovibili) su balconi, logge, porticati: art. 6 co. 1 lett. b-bis post Salva Casa, purche' amovibili e tali da non determinare la creazione di un nuovo locale autonomamente utilizzabile (no nuova SU)
+- **Opere di protezione dal sole e dagli agenti atmosferici** la cui struttura principale e' costituita da **tende, tende a pergola anche bioclimatiche, con eventuali telo retrattile o elementi mobili o regolabili** (cd. pergotende): art. 6 co. 1 lett. b-ter post Salva Casa, purche' la struttura non determini la creazione di un nuovo locale autonomamente utilizzabile
+
+> **NB**: l'art. 6 NON liberalizza in via generale le **tettoie**. Le tettoie stabili (con struttura portante e copertura permanente) restano soggette al regime applicabile in funzione di dimensione, struttura e disciplina locale: tipicamente CILA art. 6-bis per tettoie minori, SCIA art. 22 o PdC art. 10 per tettoie maggiori o pertinenze ex art. 3 lett. e.6 (oltre 20% del volume principale). Verificare il regolamento edilizio comunale e l'eventuale glossario opere libere DM 2/3/2018.
 
 L'**Allegato A al "Glossario unico opere di edilizia libera"** (DM 2/3/2018) catalogo a fini operativi le opere riconducibili al regime libero.
 
-> **Salva Casa - co. 1 lett. e-ter (esempio)**: ampliata l'eseguibilita' senza titolo per le **opere di protezione dal sole e dagli agenti atmosferici** purche' la struttura non determini la creazione di un nuovo locale autonomamente utilizzabile. Per ogni intervento al limite, la skill segnala "verificare classificazione locale comunale".
+> **Salva Casa**: l'art. 6 co. 1 lett. b-bis (VEPA) e b-ter (tende/pergotende) sono le due principali estensioni dell'edilizia libera operate dal Salva Casa. Per ogni intervento al limite, la skill segnala "verificare classificazione locale comunale" e l'eventuale glossario opere libere DM 2/3/2018.
 
 ## Art. 6-bis - CILA (Comunicazione di Inizio Lavori Asseverata)
 
@@ -137,29 +139,42 @@ Caratteristiche operative:
 
 ## Art. 23-ter - Mutamento di destinazione d'uso
 
-Cinque categorie funzionali principali (Salva Casa ha riformulato e ampliato la flessibilita'):
+Cinque categorie funzionali (Salva Casa ha riformulato l'articolo, mantenendo l'elenco):
 - a) residenziale
 - a-bis) turistico-ricettiva
 - b) produttiva e direzionale
 - c) commerciale
 - d) rurale
 
-Il mutamento **all'interno della stessa categoria** funzionale e' generalmente libero (salvo regolamento comunale). Il mutamento **tra categorie diverse** e' **urbanisticamente rilevante** ed e' soggetto al regime del titolo che sarebbe richiesto per l'intervento se eseguito ex novo (CILA / SCIA / PdC).
+Comma 1: il mutamento di destinazione d'uso **urbanisticamente rilevante** e' quello che comporta il passaggio tra **categorie funzionali diverse**.
 
-> **Salva Casa - novita'**: ampliata la possibilita' di cambio destinazione d'uso anche tra categorie diverse senza opere, in zone non residenziali, con regime SCIA in molti casi (vedi sintesi `dl-69-2024-salva-casa.md`). Verificare sempre il regolamento edilizio comunale per restrizioni specifiche.
+Comma 1-bis (Salva Casa): il mutamento **all'interno della stessa categoria** e' sempre consentito, fatte salve le condizioni stabilite dalla disciplina regionale e comunale.
+
+Comma 1-ter (Salva Casa): per le **singole unita' immobiliari** sono consentiti i mutamenti tra le categorie a), a-bis), b) e c) **nelle zone omogenee A, B e C**, fatte salve le condizioni stabilite dalla disciplina regionale e comunale. La categoria d) (rurale) resta esclusa da questo regime semplificato.
+
+Comma 1-quater (Salva Casa): nei casi del comma 1-ter, il mutamento di destinazione d'uso, ove sussistano i presupposti, **non comporta l'obbligo di reperire ulteriori aree per servizi e di rispettare la dotazione minima obbligatoria di parcheggi** prevista dalla disciplina urbanistica. Resta ferma, ove prevista dalla disciplina regionale, la corresponsione del **contributo per gli oneri di urbanizzazione secondaria**.
+
+Comma 1-quinquies (Salva Casa): per il mutamento **senza opere** edilizie il titolo e' la **SCIA** ai sensi dell'art. 19 L. 241/1990. Per il mutamento **con opere** riconducibili al regime art. 6-bis (CILA), il titolo e' la SCIA del comma 1-quinquies (in luogo della CILA). Per il mutamento con opere a regime SCIA art. 22 o PdC, il regime e' quello delle opere.
+
+> **Salva Casa - novita'**: il regime semplificato del mutamento si applica anche nelle zone **A** (centri storici), salvo le condizioni piu' restrittive che la disciplina comunale puo' prevedere. Le zone D ed E restano fuori dall'ambito del comma 1-ter. Verificare sempre il regolamento edilizio comunale e gli strumenti urbanistici per condizioni e limiti specifici (es. tutele commerciali nei centri storici).
 
 ## Art. 34-bis - Tolleranze costruttive
 
-Comma 1 (testo pre-Salva Casa): le **discordanze** tra il progetto autorizzato e l'eseguito **non costituiscono violazione** se contenute entro il **2%** delle misure di altezza, distacchi, cubatura, superficie coperta.
+Comma 1 (testo previgente, confermato post Salva Casa): le **discordanze** tra il progetto autorizzato e l'eseguito **non costituiscono violazione** se contenute entro il **2%** delle misure di altezza, distacchi, cubatura, superficie coperta.
 
-Salva Casa - **soglia variabile per superficie utile**:
-- Immobili fino a 60 mq SU: **6%**
-- Immobili da 60 a 100 mq SU: **5%**
-- Immobili da 100 a 300 mq SU: **4%**
-- Immobili da 300 a 500 mq SU: **3%**
-- Immobili oltre 500 mq SU: **2%** (regime previgente)
+Comma 1-bis (introdotto dal Salva Casa): per gli interventi **realizzati entro il 24 maggio 2024**, le tolleranze sono **graduate** in funzione della **superficie utile (SU)** dell'unita' immobiliare:
 
-Comma 1-bis (introdotto da Salva Casa): le **tolleranze esecutive** comprendono anche il **minore dimensionamento dell'edificio**, la **mancata realizzazione di elementi architettonici non strutturali**, le **irregolarita' geometriche**, le **modifiche alle finiture**, le **diverse collocazioni di impianti**, e la **diversa realizzazione dei vani interni**, **a condizione** che non comportino:
+| Superficie utile (SU) | Tolleranza % |
+|------------------------|--------------|
+| SU < 60 mq | **6%** |
+| SU < 100 mq | **5%** |
+| SU compresa tra 100 e 300 mq | **4%** |
+| SU compresa tra 300 e 500 mq | **3%** |
+| SU > 500 mq | **2%** (regime previgente confermato) |
+
+Comma 1-ter: la SU rilevante per l'applicazione delle soglie e' calcolata sulla **superficie assentita**.
+
+**Tolleranze esecutive** (introdotte dal Salva Casa nello stesso art. 34-bis): comprendono anche il **minore dimensionamento dell'edificio**, la **mancata realizzazione di elementi architettonici non strutturali**, le **irregolarita' geometriche**, le **modifiche alle finiture**, le **diverse collocazioni di impianti** e la **diversa realizzazione dei vani interni**, **a condizione** che non comportino:
 - variazione del numero di unita' immobiliari
 - variazione della destinazione d'uso che comporti diversa dotazione standard
 
@@ -175,21 +190,30 @@ Sanzione: pagamento del contributo di costruzione in misura doppia.
 
 ## Art. 36-bis - Sanatoria edilizia semplificata (Salva Casa)
 
-Introdotto dal Salva Casa (DL 69/2024). Per opere realizzate in difformita' parziale dal titolo o in assenza di SCIA/CILA dovuta, e' possibile la sanatoria con **doppia conformita' "alleggerita"**:
-- Conformita' alla disciplina **urbanistica vigente al momento della presentazione della domanda** (NON piu' anche alla data di realizzazione, novita' del Salva Casa)
-- Conformita' alla disciplina **edilizia vigente al momento della realizzazione**
+Introdotto dal Salva Casa (DL 69/2024 conv. L. 105/2024). Si applica alle:
+- **parziali difformita'** dal permesso di costruire o dalla SCIA alternativa nelle ipotesi disciplinate dall'art. 34 DPR 380
+- **variazioni essenziali** di cui all'art. 32 DPR 380
+- assenza o difformita' dalla **SCIA "ordinaria"** ex art. 37 DPR 380 (interventi che richiedevano SCIA art. 22)
+- per le opere eseguibili con CILA, la sanatoria CILA "tardiva" segue il regime specifico dell'art. 6-bis co. 5 DPR 380 (sanzione pecuniaria, non procedimento art. 36-bis)
 
-Ambito applicativo: opere che, all'epoca, sarebbero state assoggettabili a **CILA o SCIA** (non PdC). Per opere che richiedevano PdC, resta il regime dell'art. 36 (doppia conformita' piena).
+Per le opere realizzate in **assenza** o **totale difformita'** dal permesso di costruire o dalla SCIA alternativa al PdC, **resta** il regime dell'**art. 36** (doppia conformita' piena urbanistica + edilizia, sia all'epoca sia oggi).
+
+L'art. 36-bis introduce la **doppia conformita' "alleggerita"**:
+- Conformita' alla disciplina **urbanistica** vigente al momento della **presentazione della domanda** (NON piu' anche alla data di realizzazione, novita' del Salva Casa)
+- Conformita' alla disciplina **edilizia** vigente al momento della **realizzazione**
 
 Procedimento:
 - Istanza al Comune con relazione tecnica asseverata
-- Pagamento di sanzione pecuniaria
-- Per opere su immobili vincolati: parere preventivo Soprintendenza
+- Pagamento di sanzione pecuniaria graduata
+- Per opere su immobili vincolati: parere preventivo Soprintendenza, con sospensione dei termini fino al rilascio del parere
 
-Termini di formazione del silenzio:
-- **Silenzio-rifiuto** se trascorsi 45 gg dalla presentazione (per la skill: NON c'e' silenzio-assenso, l'esito espresso e' necessario)
+Termini procedimentali (art. 36-bis co. 6 DPR 380):
+- Per il **permesso di costruire in sanatoria**: **45 giorni** dalla presentazione della domanda; decorso tale termine, "la richiesta si intende accolta" (**silenzio-assenso**)
+- Per la **SCIA in sanatoria**: si applica il termine dell'**art. 19 co. 6-bis L. 241/1990** (60 giorni)
+- I termini sono **sospesi** in caso di richiesta di parere paesaggistico/MiC fino al rilascio
+- Ferma restando la possibilita' del Comune di esercitare i poteri di autotutela e di repressione dell'abuso quando ne sussistano i presupposti
 
-> **Effetto pratico**: la skill segnala l'art. 36-bis come **regime di sanatoria distinto** dall'art. 36, e indica al tecnico la doppia conformita' applicabile in funzione del titolo originariamente dovuto.
+> **Effetto pratico**: la skill segnala l'art. 36-bis come **regime di sanatoria distinto** dall'art. 36, e indica al tecnico la doppia conformita' applicabile in funzione del titolo originariamente dovuto. La verifica preliminare del titolo dovuto all'epoca (PdC vs SCIA art. 22 vs SCIA alternativa vs CILA) e' cruciale per individuare il regime corretto.
 
 ---
 
@@ -202,8 +226,8 @@ Termini di formazione del silenzio:
 | SCIA | art. 22 | Immediato | 30 gg | Demolizione / sanzione pecuniaria |
 | SCIA alternativa al PdC | art. 23 | 30 gg | 30 gg | Sanzioni assimilate al PdC |
 | PdC | art. 10 | Dopo rilascio | Procedimento espresso | Demolizione (PdC mancante) |
-| Sanatoria art. 36 | art. 36 | Post-fatto | Doppia conformita' piena | Contributo doppio |
-| Sanatoria art. 36-bis (Salva Casa) | art. 36-bis | Post-fatto | Doppia conformita' alleggerita | Sanzione pecuniaria graduata |
+| Sanatoria art. 36 | art. 36 | Post-fatto | Doppia conformita' piena (urbanistica + edilizia, all'epoca + oggi) | Contributo doppio; silenzio-rifiuto a 60 gg |
+| Sanatoria art. 36-bis (Salva Casa) | art. 36-bis | Post-fatto | Doppia conformita' alleggerita (urbanistica oggi + edilizia all'epoca) | Sanzione pecuniaria graduata; PdC in sanatoria con silenzio-assenso a 45 gg, SCIA in sanatoria con termine art. 19 co. 6-bis L. 241/1990 |
 
 ---
 
