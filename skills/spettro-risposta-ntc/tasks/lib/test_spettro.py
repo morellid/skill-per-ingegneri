@@ -406,6 +406,46 @@ class TestFailClosedScalari(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "T.*finito"):
             Se_T(float("nan"), p)
 
+    def test_coeff_SS_rifiuta_nan_inf(self):
+        # Senza il check, coeff_SS('C', NaN, 2.5) ritornerebbe il clamp 1.0
+        # silenziosamente (Codex round 5).
+        with self.assertRaisesRegex(ValueError, "ag.*finito"):
+            coeff_SS("C", float("nan"), 2.5)
+        with self.assertRaisesRegex(ValueError, "ag.*finito"):
+            coeff_SS("C", float("inf"), 2.5)
+        with self.assertRaisesRegex(ValueError, "F0.*finito"):
+            coeff_SS("C", 0.2, float("nan"))
+
+    def test_coeff_SS_rifiuta_zero_negativo(self):
+        with self.assertRaisesRegex(ValueError, "ag.*positivo"):
+            coeff_SS("C", 0.0, 2.5)
+        with self.assertRaisesRegex(ValueError, "F0.*positivo"):
+            coeff_SS("C", 0.2, -1.0)
+
+    def test_coeff_SS_rifiuta_bool(self):
+        # bool e' subclass di int in Python: lo escludiamo esplicitamente.
+        with self.assertRaisesRegex(ValueError, "ag.*reale"):
+            coeff_SS("C", True, 2.5)  # type: ignore[arg-type]
+
+    def test_coeff_CC_rifiuta_nan_inf(self):
+        with self.assertRaisesRegex(ValueError, "Tc.*finito"):
+            coeff_CC("C", float("nan"))
+        with self.assertRaisesRegex(ValueError, "Tc.*finito"):
+            coeff_CC("C", float("inf"))
+
+    def test_coeff_CC_rifiuta_zero_negativo(self):
+        with self.assertRaisesRegex(ValueError, "Tc.*positivo"):
+            coeff_CC("C", 0.0)
+        with self.assertRaisesRegex(ValueError, "Tc.*positivo"):
+            coeff_CC("C", -0.3)
+
+    def test_periodi_caratteristici_rifiuta_non_finiti(self):
+        from spettro import periodi_caratteristici as pc
+        with self.assertRaisesRegex(ValueError, "Tc.*finito"):
+            pc(float("nan"), 0.2, "C")
+        with self.assertRaisesRegex(ValueError, "ag.*finito"):
+            pc(0.3, float("inf"), "C")
+
 
 class TestCLINaNHandling(unittest.TestCase):
     """JSON con NaN/Infinity (non standard RFC 8259) deve essere rifiutato a

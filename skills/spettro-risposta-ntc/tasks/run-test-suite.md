@@ -33,7 +33,7 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 
 ## Output atteso
 
-51 test, tutti pass. Le classi di test e cosa coprono:
+57 test, tutti pass. Le classi di test e cosa coprono:
 
 | Classe                       | # | Cosa copre                                                                  |
 |------------------------------|---|-----------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 | `TestIO`                     | 2 | Carica JSON; rifiuta lunghezza errata                                       |
 | `TestValidazioneInput`       | 7 | Hardening vettoriale: zero/negativo/NaN/inf/stringa/bool/None-da-JSON       |
 | `TestCoperturaCategorie`     | 4 | Cat. sottosuolo D, E; topografiche T2/T3/T4; smorzamento xi != 5%           |
-| `TestFailClosedScalari`      | 4 | Hardening scalare: NaN/inf rifiutati in vita_riferimento, coeff_eta, Se_T   |
+| `TestFailClosedScalari`      | 10 | Hardening scalare: NaN/inf/zero/neg/bool rifiutati in vita_riferimento, coeff_eta, Se_T, coeff_SS, coeff_CC, periodi_caratteristici |
 | `TestCLINaNHandling`         | 3 | JSON con NaN/Infinity rifiutato (RFC 8259); tabula_periodi step=NaN          |
 | `TestEsempioConforme`        | 2 | Anti-drift end-to-end: input.json + expected.json letti dalle examples/     |
 | `TestCLI`                    | 9 | CLI: --input-json equivalente a flag scalari; error handling chiavi mancanti (sito, parametri_calcolo), stato_limite invalido, classe d'uso lowercase, file --tr-riferimento incompleto |
@@ -55,7 +55,7 @@ In Codex / altri agent compatibili AGENTS.md, sostituisci `${CLAUDE_SKILL_DIR}` 
 Esempio output:
 
 ```
-Ran 51 tests in 0.00x s
+Ran 57 tests in 0.00x s
 OK
 ```
 

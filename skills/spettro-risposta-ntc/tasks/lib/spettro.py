@@ -294,6 +294,12 @@ def coeff_SS(cat_sottosuolo: str, ag_g: float, F0: float) -> float:
     Per cat. S1/S2: NTC par. 3.2.2 prescrive analisi specifiche di risposta
     sismica locale -> errore esplicito.
     """
+    ag_g = _assert_finito("ag (in g)", ag_g)
+    F0 = _assert_finito("F0", F0)
+    if ag_g <= 0:
+        raise ValueError(f"ag (in g) deve essere strettamente positivo, ricevuto {ag_g!r}")
+    if F0 <= 0:
+        raise ValueError(f"F0 deve essere strettamente positivo, ricevuto {F0!r}")
     cat = cat_sottosuolo.upper()
     fa = F0 * ag_g  # F_0 * ag/g
     if cat == "A":
@@ -320,6 +326,9 @@ def coeff_CC(cat_sottosuolo: str, Tc_star: float) -> float:
 
     Tc_star in [s].
     """
+    Tc_star = _assert_finito("Tc*", Tc_star)
+    if Tc_star <= 0:
+        raise ValueError(f"Tc* deve essere strettamente positivo, ricevuto {Tc_star!r}")
     cat = cat_sottosuolo.upper()
     if cat == "A":
         return 1.00
@@ -362,6 +371,12 @@ def periodi_caratteristici(
     TB = TC / 3
     TD = 4 * ag_g + 1.6   [s]
     """
+    Tc_star = _assert_finito("Tc*", Tc_star)
+    ag_g = _assert_finito("ag (in g)", ag_g)
+    if Tc_star <= 0:
+        raise ValueError(f"Tc* deve essere strettamente positivo, ricevuto {Tc_star!r}")
+    if ag_g <= 0:
+        raise ValueError(f"ag (in g) deve essere strettamente positivo, ricevuto {ag_g!r}")
     cc = coeff_CC(cat_sottosuolo, Tc_star)
     tc = cc * Tc_star
     tb = tc / 3.0
