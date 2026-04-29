@@ -1,0 +1,201 @@
+schema_version: 1
+skill: modulistica-edilizia-unificata
+last_verified: 2026-04-29
+
+# Fonti normative principali per la skill di selezione del modulo edilizio
+# unificato (CILA / SCIA / SCIA alternativa al PdC / Permesso di Costruire /
+# Edilizia libera) e dei relativi allegati, integrata con le modifiche
+# introdotte dal "Salva Casa" (DL 69/2024 conv. L. 105/2024) e dalla
+# modulistica nazionale unificata aggiornata in Conferenza Unificata.
+#
+# Nota operativa: il download diretto dei PDF della Gazzetta Ufficiale o del
+# portale Funzione Pubblica via script automatizzato puo' essere bloccato
+# dalle policy locali. Per popolare i binari e gli hash eseguire
+# manualmente:
+#   curl -Lo not_in_repo/dpr-380-2001-consolidato.pdf "<url>"
+#   shasum -a 256 not_in_repo/dpr-380-2001-consolidato.pdf
+# e aggiornare il campo sha256 corrispondente.
+
+sources:
+  - id: dpr-380-2001-testo-unico-edilizia
+    title: "DPR 6 giugno 2001 n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia (versione multivigente)"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dpr-380-2001-consolidato.pdf
+    excerpt_paths:
+      - references/estratti/dpr-380-2001-regimi-edilizi.md
+    notes: |
+      Testo Unico Edilizia. Definisce le tipologie di intervento edilizio
+      (art. 3) e i regimi amministrativi corrispondenti: edilizia libera
+      (art. 6), CILA (art. 6-bis), Permesso di Costruire (art. 10), SCIA
+      (art. 22), SCIA alternativa al PdC (art. 23), mutamento di
+      destinazione d'uso (art. 23-ter). Riferimento strutturale per la
+      skill: nessun modulo viene scelto senza prima passare dal regime
+      previsto dal DPR 380. Versione consolidata vigente recepisce le
+      modifiche del Salva Casa (DL 69/2024 conv. L. 105/2024).
+      Testo legislativo italiano riproducibile liberamente ai sensi
+      dell'art. 5 L. 633/1941 (atti ufficiali dello Stato).
+
+  - id: dlgs-222-2016-scia-2-tabella-a
+    title: "D.Lgs. 25 novembre 2016 n. 222 - Individuazione di procedimenti oggetto di autorizzazione, segnalazione certificata di inizio di attivita' (SCIA), silenzio assenso e comunicazione - Tabella A"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016-11-25;222
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-222-2016-consolidato.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-222-2016-tabella-a.md
+    notes: |
+      Cosiddetto "SCIA 2". Allegato Tabella A - sezione II "Edilizia"
+      mappa puntualmente le tipologie di intervento ai regimi
+      amministrativi del DPR 380 (edilizia libera, CIL, CILA, SCIA,
+      SCIA alternativa, PdC, autorizzazione paesaggistica). E' la
+      tabella di riferimento ufficiale per la classificazione di un
+      intervento. La skill la usa come fonte primaria di mapping
+      intervento -> regime, integrandola con le modifiche del Salva
+      Casa per gli interventi che il DL 69/2024 ha riclassificato.
+
+  - id: dl-69-2024-salva-casa
+    title: "DL 29 maggio 2024 n. 69 - Disposizioni urgenti in materia di semplificazione edilizia e urbanistica (Salva Casa) - convertito con modificazioni dalla L. 24 luglio 2024 n. 105"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-05-29;69
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-69-2024-conv-l-105-2024.pdf
+    excerpt_paths:
+      - references/estratti/dl-69-2024-salva-casa.md
+    notes: |
+      Cosiddetto "Salva Casa". Pacchetto di modifiche al DPR 380/2001
+      in vigore dal 30 maggio 2024 (DL) e dal 28 luglio 2024 (legge di
+      conversione). Punti rilevanti per la skill:
+      - Nuova ampiezza tolleranze costruttive (art. 34-bis DPR 380)
+      - Riformulazione cambio di destinazione d'uso (art. 23-ter)
+      - Nuova doppia conformita' "alleggerita" art. 36-bis DPR 380
+        per parziali difformita' (art. 34), variazioni essenziali
+        (art. 32) e abusi del regime SCIA art. 22 (art. 37); coordinamento
+        con art. 36 (assenza/totale difformita' da PdC o SCIA alternativa)
+        e art. 6-bis co. 5 (CILA omessa)
+      - Stato legittimo dell'immobile (art. 9-bis co. 1-bis e 1-ter)
+      - Ampliamento opere in edilizia libera per impianti tecnologici
+        e VEPA / strutture amovibili
+      - Modifica regime per il recupero abitativo dei sottotetti
+      Il testo coordinato e' integrato direttamente nel DPR 380/2001
+      consolidato (vedi sopra). Estratto dedicato per evidenziare le
+      novita' rispetto alla versione pre-2024.
+
+  - id: modulistica-unificata-salva-casa-2025
+    title: "Conferenza Unificata - Modulistica edilizia unificata aggiornata Salva Casa - approvazione 27 marzo 2025 (Funzione Pubblica)"
+    type: accordo-conferenza-unificata
+    url: https://www.funzionepubblica.gov.it/it/ministro/comunicazione/notizie/approvata-la-modulistica-edilizia-per-l-applicazione-del-salva-casa/
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/modulistica-unificata-salva-casa-2025.zip
+    excerpt_paths:
+      - references/estratti/modulistica-unificata-2025.md
+    notes: |
+      Modulistica nazionale unificata (CILA, SCIA, SCIA alternativa al
+      PdC, PdC, comunicazioni varie) aggiornata per recepire le novita'
+      del Salva Casa. Approvata in Conferenza Unificata il 27 marzo 2025.
+      Fonte autoritativa per:
+      - Struttura del modulo (intestazioni, dati anagrafici, dati intervento)
+      - Quadro di asseverazione del tecnico abilitato
+      - Elenco allegati richiesti per ciascun modulo
+      - Quadro riepilogativo regime (edilizia libera, CILA, SCIA, PdC,
+        SCIA alternativa, sanatoria art. 36, sanatoria semplificata
+        art. 36-bis)
+      I Comuni adottano la modulistica con possibili integrazioni locali
+      (es. tasse, oneri, allegati paesaggistici regionali). La skill cita
+      la modulistica nazionale; eventuali varianti comunali sono rinvio
+      allo sportello SUE competente.
+
+  - id: normattiva-portale-dpr-380
+    title: "Portale Normattiva - DPR 380/2001 - versione multivigente"
+    type: portale-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Portale autoritativo della Presidenza del Consiglio dei Ministri
+      per la consultazione del testo consolidato vigente. Da usare per
+      cross-check puntuale prima del rilascio o in caso di dubbio sulla
+      vigenza di un singolo comma (utile soprattutto per articoli
+      modificati da Salva Casa).
+
+  - id: d-lgs-42-2004-codice-beni-culturali
+    title: "D.Lgs. 22 gennaio 2004 n. 42 - Codice dei beni culturali e del paesaggio - rinvio strutturale"
+    type: rinvio-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2004-01-22;42
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Citato dalla skill esclusivamente come **rinvio strutturale** per
+      la coesistenza dell'autorizzazione paesaggistica (artt. 146 e ss.)
+      e della valutazione di interesse culturale con i moduli edilizi.
+      La skill segnala l'eventuale necessita' di autorizzazione
+      paesaggistica o autorizzazione ex art. 21 (beni vincolati) come
+      allegato/pre-requisito al modulo edilizio, ma non valuta il merito
+      paesaggistico ne' redige la relazione paesaggistica (DPR 31/2017).
+
+  - id: dpr-31-2017-paesaggistica-semplificata
+    title: "DPR 13 febbraio 2017 n. 31 - Regolamento autorizzazione paesaggistica semplificata"
+    type: rinvio-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2017-02-13;31
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Citato dalla skill esclusivamente come **rinvio strutturale** per
+      la classificazione degli interventi liberi (Allegato A) e
+      semplificati (Allegato B) ai fini paesaggistici. La skill
+      richiama l'eventuale obbligo di autorizzazione paesaggistica come
+      pre-requisito al deposito del modulo edilizio nei Comuni in
+      vincolo, ma non sostituisce la valutazione paesaggistica.
+
+  - id: dlgs-81-2008-rinvio-sicurezza-cantiere
+    title: "D.Lgs. 9 aprile 2008 n. 81 - Testo unico salute e sicurezza sul lavoro - rinvio strutturale"
+    type: rinvio-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Citato dalla skill come **rinvio strutturale** per la notifica
+      preliminare di cantiere (art. 99) e per la nomina del coordinatore
+      per la sicurezza (art. 90), allegati ricorrenti dei moduli quando
+      l'intervento e' soggetto a CSE/CSP. Per il merito si rinvia alla
+      skill 'pos-allegato-xv-checker' del repo.
+
+# Fonti secondarie da valutare per estensioni successive
+secondary_sources_to_evaluate:
+  - id: regolamenti-edilizi-comunali-tipo
+    title: "Regolamento Edilizio Tipo (RET) - intesa Conferenza Unificata 20/10/2016"
+    url: https://www.funzionepubblica.gov.it/articolo/ministro/13-04-2017/regolamento-edilizio-tipo
+    notes: |
+      Estensione futura: standardizzazione delle definizioni edilizie
+      uniformi (es. SUL, SU, volume, altezza) usate dai moduli. Utile
+      per ridurre l'ambiguita' nelle classificazioni di intervento
+      sopra/sotto le soglie del Salva Casa.
+
+  - id: linee-guida-anci-salva-casa
+    title: "ANCI - Linee guida operative Salva Casa per i Comuni"
+    url: https://www.anci.it/
+    notes: |
+      Da consultare archivio ANCI per linee guida applicative dei
+      Comuni post Salva Casa. Non sempre pubblicate in formato
+      citabile autoritativo - usare con cautela come fonte secondaria.

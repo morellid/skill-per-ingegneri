@@ -1,0 +1,18 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Modulistica edilizia unificata + Salva Casa
+short_description: |
+  Determina il modulo edilizio nazionale (Edilizia libera, CILA, SCIA,
+  SCIA alternativa al PdC, Permesso di Costruire) per un intervento ai
+  sensi del DPR 380/2001 e della Tabella A del D.Lgs. 222/2016, integrato
+  con le modifiche del Salva Casa (DL 69/2024 conv. L. 105/2024) e con la
+  modulistica unificata aggiornata in Conferenza Unificata il 27/3/2025.
+  Genera l'elenco strutturato degli allegati richiesti.
+default_prompt: |
+  Devo presentare la pratica edilizia per una manutenzione straordinaria
+  con frazionamento di un appartamento di 90 mq SU in due unita'
+  immobiliari, senza opere su parti strutturali, in zona B di un Comune
+  toscano, immobile non vincolato. Quale modulo unificato devo
+  presentare e quali allegati sono richiesti? Citami articolo del DPR
+  380 e voce della Tabella A del D.Lgs. 222/2016.
