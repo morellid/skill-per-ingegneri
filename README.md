@@ -13,20 +13,36 @@ Contiene anche:
 - **Template e script** per scaffolding e validazione (`templates/`, `scripts/`)
 - **Riferimenti bibliografici** strutturati con hash delle fonti (`sources.yaml` per ogni skill)
 
+## Skill disponibili
+
+| Skill | Ambito | Riferimenti normativi |
+|---|---|---|
+| [`pos-allegato-xv-checker`](skills/pos-allegato-xv-checker/) | Verifica completezza e coerenza di un Piano Operativo di Sicurezza (POS) di cantiere | D.Lgs. 81/2008 art. 96-97, Allegato XV |
+| [`dvr-generico`](skills/dvr-generico/) | Stesura, verifica e aggiornamento del Documento di Valutazione dei Rischi (DVR) cross-settoriale | D.Lgs. 81/2008 art. 17, 28, 29 |
+| [`gdpr-registro-dpia`](skills/gdpr-registro-dpia/) | Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA) | GDPR art. 30, 35, 36 + provv. Garante |
+| [`nis2-self-assessment`](skills/nis2-self-assessment/) | Self-assessment NIS2 (perimetro, gap analysis misure ACN, notifica incidenti, governance) | D.Lgs. 138/2024 + Det. ACN 379907/2025 |
+| [`ai-act-compliance`](skills/ai-act-compliance/) | Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza | Reg. UE 2024/1689 (AI Act) |
+
+Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
+
 ## Struttura
 
 ```
 skill-per-ingegneri/
 ├── AGENTS.md                    # guida cross-agent (Codex, Cursor, Copilot, ...)
 ├── skills/                      # le skill pubblicate
-│   └── pos-allegato-xv-checker/
-│       ├── SKILL.md             # punto d'ingresso + routing (license: MIT in frontmatter)
-│       ├── agents/
-│       │   └── openai.yaml      # UI metadata per Codex
-│       ├── tasks/               # istruzioni dettagliate per sotto-attivita'
-│       ├── references/          # metadata fonti + estratti normativi
-│       ├── examples/            # casi d'uso validi e problematici
-│       └── CHANGELOG.md
+│   ├── pos-allegato-xv-checker/
+│   │   ├── SKILL.md             # punto d'ingresso + routing (license: MIT in frontmatter)
+│   │   ├── agents/
+│   │   │   └── openai.yaml      # UI metadata per Codex
+│   │   ├── tasks/               # istruzioni dettagliate per sotto-attivita'
+│   │   ├── references/          # metadata fonti + estratti normativi
+│   │   ├── examples/            # casi d'uso validi e problematici
+│   │   └── CHANGELOG.md
+│   ├── dvr-generico/
+│   ├── gdpr-registro-dpia/
+│   ├── nis2-self-assessment/
+│   └── ai-act-compliance/
 ├── methodology/                 # come si genera e mantiene una skill
 ├── templates/                   # scaffold dual-agent per nuove skill
 └── scripts/                     # utility CLI (new-skill, validate, fetch-sources)
