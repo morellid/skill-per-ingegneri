@@ -1,0 +1,80 @@
+schema_version: 1
+skill: spettro-risposta-ntc
+last_verified: 2026-04-29
+
+# Fonti normative per il calcolo dello spettro di risposta elastico ai sensi
+# delle NTC 2018 (DM 17/01/2018) e Circolare esplicativa 21/01/2019 n. 7.
+# I parametri di pericolosita' sismica al sito (ag, F0, Tc*) sono pubblicati
+# da INGV/CSLP nel reticolo nazionale (Allegato A NTC); la skill non li
+# incorpora ma richiede all'utente di fornirli per il sito di interesse.
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
+    accessed: 2026-04-29
+    sha256: REPLACE_WHEN_DOWNLOADED
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    excerpt_path: references/estratti/ntc2018-par-3-2.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      Articoli rilevanti per questa skill:
+      - par. 2.4 (vita nominale, classi d'uso, vita di riferimento)
+      - par. 3.2 (azione sismica): definizioni stati limite (3.2.1),
+        categorie di sottosuolo (3.2.2), spettro di risposta elastico (3.2.3)
+      - Allegato A: reticolo di riferimento, parametri ag/F0/Tc* per 9 TR
+        (30, 50, 72, 101, 140, 201, 475, 975, 2475 anni)
+      Il file binario va scaricato e l'hash SHA256 calcolato con
+      ./scripts/fetch-sources.sh, oppure manualmente: sha256sum del PDF.
+
+  - id: circ-7-2019-mit
+    title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    accessed: 2026-04-29
+    sha256: REPLACE_WHEN_DOWNLOADED
+    license: public-domain
+    binary_path: not_in_repo/circ-7-2019.pdf
+    excerpt_path: references/estratti/circ-7-2019-c-3-2.md
+    notes: |
+      Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019.
+      Sezioni rilevanti: C2.4 (vita nominale, classi d'uso), C3.2 (azione
+      sismica, commento applicativo a NTC par. 3.2 con esempi numerici),
+      Appendice C3.2 (procedure di interpolazione del reticolo).
+
+  - id: ingv-reticolo-pericolosita
+    title: "Mappa interattiva pericolosita' sismica - Reticolo di riferimento INGV"
+    type: linea-guida
+    url: http://zonesismiche.mi.ingv.it/
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain
+    binary_path: null
+    excerpt_path: null
+    notes: |
+      Servizio interattivo INGV per la consultazione dei parametri di
+      pericolosita' sismica del reticolo di riferimento citato nelle NTC
+      Allegato A (10751 nodi su griglia ~ 0.05 grad lat/lon, 9 TR).
+      La skill non incorpora il reticolo: l'utente fornisce ag/F0/Tc*
+      per il sito di interesse estratti da questo servizio o da fogli
+      ufficiali equivalenti (Excel CSLP, software del progettista).
+
+  - id: cslp-spettri-ntc
+    title: "Foglio elettronico ufficiale CSLP per il calcolo dello spettro di risposta NTC"
+    type: linea-guida
+    url: https://www.cslp.mit.gov.it/
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain
+    binary_path: null
+    excerpt_path: null
+    notes: |
+      Foglio Excel pubblicato dal Consiglio Superiore dei Lavori Pubblici
+      (Servizio Tecnico Centrale) come riferimento ufficiale per il calcolo
+      dello spettro di risposta. La test suite della skill (vedi
+      tasks/lib/test_spettro.py) confronta i propri output con valori
+      ricavati da questo foglio. NB: il foglio CSLP storico e' stato
+      distribuito in piu' versioni; la skill non lo ridistribuisce, si
+      limita a citarlo come benchmark di validazione.
