@@ -16,8 +16,8 @@
 
 **COMPLETO CON RISERVA** - tutti gli elaborati obbligatori dell'art. 6 co. 7 sono presenti nell'indice consegnato; lo schema di contratto richiesto dall'art. 21 (appalto integrato) e' da-verificare.
 
-Elaborati a-t obbligatori per inquadramento dichiarato: 14 (a, b, c, e, f, g, h, i, l, n, o, p, q, r, t) - lett. d non obbligatoria perche' lo screening ha concluso "no VIA"; lett. s non obbligatoria perche' opera non soggetta a VIA; lett. m non applicabile (no PPP)
-Elaborati a-t presenti: 14/14
+Elaborati a-t obbligatori per inquadramento dichiarato: 15 (a, b, c, e, f, g, h, i, l, n, o, p, q, r, t) - lett. d non obbligatoria perche' lo screening ha concluso "no VIA"; lett. s non obbligatoria perche' opera non soggetta a VIA; lett. m non applicabile (no PPP)
+Elaborati a-t presenti: 15/15
 Elaborati appalto integrato (art. 21): disciplinare descrittivo e prestazionale presente, capitolato informativo presente, **schema di contratto da-verificare**
 Elaborati da-verificare per adeguatezza tecnica: tutti (rinvio al progettista firmatario e al verificatore ex art. 42)
 

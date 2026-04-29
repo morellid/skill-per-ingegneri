@@ -34,8 +34,6 @@ In regime di affidamento su PFTE per manutenzione, il PFTE deve contenere il **s
 
 > **Premessa di applicabilita'**: l'art. 41 co. 5-bis esclude gli interventi con rinnovo o sostituzione di **parti strutturali o impianti**. L'adeguamento dell'impianto elettrico per messa a norma dichiarato nell'inquadramento puo' integrare l'eccezione - **chiedere conferma al RUP** prima di proseguire.
 
-| Lett. | Elaborato | Stato | Riferimento | Note |
-|-------|-----------|-------|-------------|----|
 | Elaborato | Stato | Riferimento | Obbligatorieta' co. 8-bis | Note |
 |-----------|-------|-------------|---------------------------|----|
 | Relazione generale | Presente | All. I.7 art. 7 + co. 8-bis | **Obbligatoria** | File 01.01 |
