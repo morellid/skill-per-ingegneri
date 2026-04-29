@@ -132,6 +132,10 @@ Vedi [CONTRIBUTING.md](CONTRIBUTING.md). In sintesi:
 3. **Lingua italiana**. Gli adempimenti sono italiani: istruzioni, output e riferimenti normativi sono in italiano. Struttura del codice e metadata in inglese per compatibilita' internazionale.
 4. **Progressive disclosure**. Ogni skill e' monolitica ma carica solo i dettagli che servono per la specifica sotto-attivita' richiesta dall'utente.
 
+## Autore
+
+Davide Morelli <morelli.davide@gmail.com>
+
 ## Licenza
 
 MIT. Vedi [LICENSE](LICENSE).
