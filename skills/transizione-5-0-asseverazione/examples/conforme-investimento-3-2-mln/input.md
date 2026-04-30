@@ -32,11 +32,11 @@ L'impresa e' una **societa' a responsabilita' limitata** non in liquidazione, re
 
 | Categoria | Voce normativa | Bene | Costo (EUR) |
 |---|---|---|---|
-| Beni materiali Allegato A L. 232/2016, voce 1.6 (macchine utensili per la deformazione plastica dei metalli) | DM Trans. 5.0 art. 6 co. 1 lett. a | Centro di tornitura CNC 5 assi nuovo | 1.450.000 |
-| Beni materiali Allegato A L. 232/2016, voce 1.7 (macchine utensili per assemblaggio/giunzione/saldatura) | DM Trans. 5.0 art. 6 co. 1 lett. a | Robot collaborativo per saldatura | 750.000 |
+| Beni materiali Allegato A L. 232/2016, primo gruppo - macchine utensili che operano per **asportazione** di materiali (voce specifica da identificare nella perizia art. 16 DM, prassi MIMIT: voce 1.1 "macchine utensili per asportazione") | DM Trans. 5.0 art. 6 co. 1 lett. a | Centro di tornitura CNC 5 assi nuovo | 1.450.000 |
+| Beni materiali Allegato A L. 232/2016, primo gruppo - macchine utensili per **assemblaggio, giunzione e saldatura** (voce specifica da identificare nella perizia art. 16 DM, prassi MIMIT: voce 1.7) | DM Trans. 5.0 art. 6 co. 1 lett. a | Robot collaborativo per saldatura | 750.000 |
 | Beni immateriali Allegato B L. 232/2016, voce 10 (software/sistemi/piattaforme/applicazioni per monitoraggio macchine) + Energy Dashboarding | DM Trans. 5.0 art. 6 co. 1 lett. b | Software MES + modulo Energy Dashboarding integrato con sensoristica IoT esistente | 600.000 |
 | Beni materiali autoproduzione FER | DM Trans. 5.0 art. 7 | Impianto fotovoltaico tetto 250 kW + sistema di accumulo 500 kWh, su tetto stabilimento (stessa particella catastale) | 350.000 |
-| Formazione (10% beni A/B) | DM Trans. 5.0 art. 8 | Corso di 40 ore "Industry 4.0 + transizione energetica" presso ITS Academy di riferimento, esame finale | 50.000 |
+| Formazione (entro il 10% di beni A/B + FER e <= 300.000 EUR, art. 8 DM) | DM Trans. 5.0 art. 8 | Corso di 40 ore "Industry 4.0 + transizione energetica" presso ITS Academy di riferimento, esame finale | 50.000 |
 | **Totale** | | | **3.200.000** |
 
 - **Data di avvio progetto**: 15 marzo 2025 (firma ordine vincolante centro tornitura)
@@ -61,7 +61,7 @@ I due beni materiali (centro tornitura + robot saldatura) e il software MES sono
 
 **Variabili operative ex ante**: 1.250.000 pezzi prodotti/anno (variabile per normalizzazione), peso medio pezzo 0,8 kg (1.000 t totali).
 
-**Indicatore di prestazione ex ante**: 0,193 tep/t prodotto = **0,193 tep/t**.
+**Indicatore di prestazione ex ante**: 193,1 / 1.000 = **0,1931 tep/t** prodotto (4 decimali per allineamento con l'ex post).
 
 ## Stima ex post
 
@@ -73,7 +73,7 @@ Sulla base delle schede tecniche fornitore (centro tornitura + robot) e della mo
 | Gas naturale (forno) | 11.000 Sm3 | 9,0 |
 | **Totale processo interessato ex post (stima)** | | **173,6 tep/anno** |
 
-(Le 880.000 kWh ex post sono nette dell'autoproduzione FV per autoconsumo; il modello considera che l'impianto FV produca 320 MWh/anno di cui ~220 MWh autoconsumati, ma cio' non incide sul calcolo della soglia 5% sul processo: la riduzione e' calcolata sui beni 4.0 - art. 38 co. 4 DL 19/2024.)
+> Le 880.000 kWh ex post rappresentano il **consumo totale lordo** della linea "Componenti Critici" (misurato dal contatore dedicato), gia' considerati gli effetti efficientativi del CNC, del robot e del software MES. **L'impianto FV (350.000 EUR) non e' interno al perimetro del processo interessato**: e' installato sul tetto dello stabilimento e fornisce energia agli altri carichi della struttura (servizi generali, altre linee, illuminazione, climatizzazione uffici); la sua quota autoconsumata non viene sottratta dalla linea, ne' contribuisce alla soglia 5% sul processo (la soglia si calcola sui beni 4.0, allegati A/B L. 232/2016 - art. 38 co. 4 DL 19/2024 + art. 9 DM). L'investimento FER concorre comunque al credito d'imposta complessivo (art. 7 DM).
 
 **Variabile operativa ex post**: 1.250.000 pezzi/anno (stessa variabile - servizio reso invariato).
 
@@ -82,8 +82,8 @@ Sulla base delle schede tecniche fornitore (centro tornitura + robot) e della mo
 ## Calcolo del risparmio
 
 ```
-Risp_tep = (0,193 - 0,1736) tep/t * 1.000 t/anno = 19,4 tep/anno
-Riduzione_% = 19,4 / 193,1 * 100 = 10,05%
+Risp_tep = (0,1931 - 0,1736) tep/t * 1.000 t/anno = 19,5 tep/anno   (= 193,1 - 173,6 dai totali)
+Riduzione_% = 19,5 / 193,1 * 100 = 10,10%
 ```
 
 ## Soggetto certificatore
@@ -106,5 +106,5 @@ Riduzione_% = 19,4 / 193,1 * 100 = 10,05%
 ## Comunicazione GSE
 
 - **Comunicazione preventiva**: prevista per il 1 marzo 2025
-- **Comunicazione effettuazione ordini** + 20% acconto: entro 30 giorni dalla conferma del credito (presunta nei primi 10 giorni dall'invio preventivo, sui 3.200.000 EUR il 20% e' 640.000 EUR di acconto)
+- **Comunicazione effettuazione ordini** + 20% acconto: entro 30 giorni dalla conferma del credito (presunta nei primi 10 giorni dall'invio preventivo). L'acconto del 20% va calcolato sui soli investimenti art. 6 (beni 4.0) e art. 7 (FER), escludendo la formazione (art. 12 DM + FAQ MIMIT 2.11): 20% di (2.800.000 + 350.000) = **20% di 3.150.000 = 630.000 EUR di acconto** (cumulativo su beni 4.0 + FER, non bene per bene).
 - **Comunicazione di completamento**: prevista per il 15 gennaio 2026 (anticipata rispetto al termine 28/2/2026)

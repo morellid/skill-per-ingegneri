@@ -15,7 +15,7 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - agents/openai.yaml con metadata Codex
 - 4 task files: `verifica-ammissibilita.md`, `calcola-riduzione-consumi.md`, `struttura-certificazione-ex-ante.md`, `struttura-certificazione-ex-post.md`
 - references/sources.yaml con 11 fonti primarie e 3 fonti secondarie da valutare
-- references/estratti/ con 5 estratti testuali strutturati:
+- references/estratti/ con 6 estratti testuali strutturati:
   - `dl-19-2024-art-38.md`
   - `dm-24-07-2024-articoli-chiave.md`
   - `circolare-mimit-criteri-risparmio.md`

@@ -32,7 +32,7 @@ In tutti i casi il certificatore dichiara di essere "consapevole delle responsab
 
 ### Premesso, Visti, Attesta
 
-- **PREMESSO**: l'impresa dichiara di aver effettuato/previsto investimenti agevolabili ai sensi dell'art. 38 co. 2 DL 19/2024 e del DM 24/7/2024.
+- **PREMESSO**: l'impresa dichiara di aver effettuato/previsto investimenti agevolabili ai sensi dell'art. 38 co. 4 DL 19/2024 e del DM 24/7/2024.
 - **VISTI**: l'art. 38 DL 19/2024, il DM 24/7/2024.
 - **ATTESTA**:
   1. che quanto dichiarato si basa su elementi, dati e informazioni **personalmente acquisiti e verificati con diligenza tecnico-specialistica**, anche mediante **sopralluoghi** presso la struttura produttiva;

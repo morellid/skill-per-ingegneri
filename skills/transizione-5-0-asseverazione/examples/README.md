@@ -4,7 +4,7 @@ Casi d'uso illustrativi per la skill di asseverazione tecnica del Piano Transizi
 
 | Esempio | Scopo | Esito |
 |---|---|---|
-| [`conforme-investimento-3-2-mln/`](conforme-investimento-3-2-mln/) | PMI manifatturica meccanica con investimento 3,2 mln EUR (CNC + robot + MES + FV + formazione), processo interessato, riduzione 10,05% sul processo. Mostra l'output atteso di tutti i task (verifica ammissibilita', calcolo riduzione, struttura ex ante). | **Ammissibile, fascia 3** |
+| [`conforme-investimento-3-2-mln/`](conforme-investimento-3-2-mln/) | PMI manifatturiera meccanica con investimento 3,2 mln EUR (CNC + robot + MES + FV + formazione), processo interessato, riduzione 10,10% sul processo. Mostra l'output atteso dei task verifica ammissibilita', calcolo riduzione, struttura ex ante e una sintesi ex post. | **Ammissibile, Fascia 2** |
 | [`non-conforme-cogenerazione-fossili/`](non-conforme-cogenerazione-fossili/) | Industria alimentare con investimento 3,13 mln EUR su cogeneratore a gas naturale + SCADA + FV. Riduzione consumi 8,9% sulla struttura, ma esclusa per DNSH. Mostra come la skill arresta correttamente l'iter al rilevamento della violazione DNSH. | **Non ammissibile (DNSH)** |
 
 ## Struttura di ogni esempio

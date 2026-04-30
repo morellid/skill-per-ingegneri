@@ -2,7 +2,7 @@
 
 ## Contesto
 
-Una grande impresa del settore alimentare (ATECO 10.41 - produzione olio di oliva) intende accedere al credito d'imposta del Piano Transizione 5.0 per un progetto di **rinnovamento dell'impianto di cogenerazione** alimentato a gas naturale, in sostituzione di un cogeneratore obsoleto. L'investimento porta una **riduzione effettiva dei consumi del 8% sulla struttura produttiva** rispetto alla baseline.
+Una grande impresa del settore alimentare (ATECO 10.41 - produzione olio di oliva) intende accedere al credito d'imposta del Piano Transizione 5.0 per un progetto di **rinnovamento dell'impianto di cogenerazione** alimentato a gas naturale, in sostituzione di un cogeneratore obsoleto. L'investimento porta una **riduzione effettiva dei consumi dell'8,9% sulla struttura produttiva** rispetto alla baseline (vedi calcolo dettagliato piu' avanti).
 
 Il caso e' progettato per illustrare i **limiti del DNSH** (art. 5 + 18 DM 24/7/2024): pur con un risparmio energetico rilevante, il progetto **non e' ammissibile** al Piano Transizione 5.0 perche' incentrato sull'uso di combustibili fossili.
 

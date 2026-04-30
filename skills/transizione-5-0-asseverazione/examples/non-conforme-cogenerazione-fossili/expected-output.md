@@ -55,7 +55,7 @@
 
 **Conclusione**: il cogeneratore non rientra nelle eccezioni. **Il progetto e' inammissibile** per la quota dell'investimento riferita al cogeneratore.
 
-> ATTENZIONE: la non ammissibilita' si applica al **progetto di innovazione complessivo**, perche' la riduzione dei consumi (8,9% sulla struttura) e' realizzata **principalmente attraverso il cogeneratore**, non attraverso il SCADA + FV. Anche escludendo il cogeneratore dal computo, la riduzione conseguibile dal solo SCADA + Energy Dashboarding sui processi della struttura produttiva sarebbe **molto inferiore al 3%**: il progetto non raggiungerebbe la soglia minima.
+> ATTENZIONE: la non ammissibilita' si applica al **progetto di innovazione complessivo**, perche' la riduzione dei consumi (8,9% sulla struttura) e' realizzata **principalmente attraverso il cogeneratore**, non attraverso il SCADA + FV. Una riprogettazione del progetto **senza il cogeneratore** richiederebbe la rifirma di tutti i task: il certificatore dovrebbe ricalcolare ex novo la baseline ex ante e la stima ex post sui soli beni A/B residui (SCADA + Energy Dashboarding), considerando che le 4.035,2 tep/anno di consumo struttura ex ante sono dominate dal gas naturale del cogeneratore (3.690 tep/anno = 91,4% del totale): il margine residuo di efficientamento ottenibile dal solo software di monitoraggio sui sotto-processi non investiti sarebbe presumibilmente molto piu' basso. **La quantificazione esatta richiede un nuovo calcolo dedicato**, da verificare se l'impresa decide di riprogettare scorporando il cogeneratore.
 
 ## 6. Soggetto certificatore
 | Requisito | Esito |

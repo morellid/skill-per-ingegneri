@@ -44,7 +44,7 @@ Riepilogare con l'utente i dati gia' raccolti in `verifica-ammissibilita.md` e `
 4. **Investimenti (con classificazione allegati A/B L. 232/2016)**:
    - elenco voci dell'Allegato A (gruppi 1.1-1.13, 2.1-2.9, 3.1-3.4) e Allegato B (1-23) coinvolte;
    - descrizione discorsiva dei beni materiali e immateriali con riconducibilita' alle voci dell'allegato (es. "macchine per il confezionamento e l'imballaggio");
-   - eventuali investimenti FER per autoconsumo (Allegato A.7 DM);
+   - eventuali investimenti FER per autoconsumo (art. 7 DM);
    - eventuali attivita' di formazione (art. 8 DM).
 
 5. **Risparmio dichiarato**:
@@ -125,7 +125,7 @@ Consapevole delle responsabilita' e delle pene stabilite dalla legge per false a
 ## PREMESSO
 
 - che l'impresa **[ragione sociale]** dichiara:
-  - di aver effettuato o aver previsto di effettuare investimenti agevolabili ai sensi dell'art. 38 co. 2 del DL 2 marzo 2024 n. 19 e del DM Transizione 5.0 24 luglio 2024, cosi' come indicato nella documentazione e nei contratti di acquisto di cui ho preso visione;
+  - di aver effettuato o aver previsto di effettuare investimenti agevolabili ai sensi dell'art. 38 co. 4 del DL 2 marzo 2024 n. 19 e del DM Transizione 5.0 24 luglio 2024, cosi' come indicato nella documentazione e nei contratti di acquisto di cui ho preso visione;
   - che i costi di tali investimenti sono imputabili ai sensi dell'art. 109 commi 1 e 2 del TUIR al periodo d'imposta agevolabile, saranno determinati secondo corretti criteri fiscali e contabili e saranno correttamente iscritti in bilancio e nel libro cespiti.
 
 ## VISTI
@@ -448,7 +448,7 @@ Restituire all'utente il pacchetto:
 - [ ] Versioni vigenti delle FAQ MIMIT consultate (non utilizzare FAQ obsolete)
 
 ## Avvertenza
-**La presente bozza e' uno strumento di supporto. Il certificatore deve riveder ogni voce, integrare i dati mancanti, allegare la documentazione probatoria e firmare digitalmente sotto la propria personale responsabilita'.**
+**La presente bozza e' uno strumento di supporto. Il certificatore deve rivedere ogni voce, integrare i dati mancanti, allegare la documentazione probatoria e firmare digitalmente sotto la propria personale responsabilita'.**
 ```
 
 ## Casi limite da gestire
@@ -482,4 +482,4 @@ Le aliquote per scaglione di investimento si applicano a tutto il progetto, non 
 ## Esempi
 
 Vedi `examples/`:
-- `conforme-investimento-3-2-mln/expected-output.md` - bozza Allegato VIII per impresa manifatturiera con processo interessato 7,5%
+- `conforme-investimento-3-2-mln/expected-output.md` - bozza Allegato VIII per impresa manifatturiera con riduzione 10,10% sul processo interessato (Fascia 2)

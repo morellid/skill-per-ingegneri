@@ -106,7 +106,7 @@ Compila il modello vincolante della circolare MIMIT 25877/2024 - Allegato X:
 ## PREMESSO
 
 - che l'impresa **[ragione sociale]** dichiara:
-  - di aver effettuato gli investimenti agevolabili ai sensi dell'art. 38 co. 2 DL 19/2024 e DM Transizione 5.0 cosi' come indicato nella documentazione e nei contratti di acquisto di cui ho preso visione;
+  - di aver effettuato gli investimenti agevolabili ai sensi dell'art. 38 co. 4 DL 19/2024 e DM Transizione 5.0 cosi' come indicato nella documentazione e nei contratti di acquisto di cui ho preso visione;
   - che i costi sono imputabili ex art. 109 commi 1 e 2 TUIR al periodo d'imposta agevolabile, sono stati determinati secondo corretti criteri fiscali e contabili e sono stati correttamente iscritti in bilancio e nel libro cespiti.
 
 ## VISTI
@@ -336,7 +336,7 @@ Lista documenti da caricare sul portale TR5 GSE entro il **28 febbraio 2026**:
 5. **Certificazione ex post** firmata digitalmente dal certificatore (Allegato X);
 6. Documento di identita' del certificatore;
 7. **Attestazione di possesso della Perizia Tecnica e Certificazione Contabile** (Allegato V);
-8. Documentazione attestante l'idoneita' del certificatore (certificazione EGE/ESCO in corso di validita');
+8. Documentazione attestante l'idoneita' del certificatore: per **EGE/ESCo** la certificazione UNI CEI 11339/11352 in corso di validita' (recepita da banca dati Accredia); per **ingegneri sez. A/B** o **periti industriali** "meccanica ed efficienza energetica" / "impiantistica elettrica ed automazione" il certificato di iscrizione all'albo in corso di validita' + curriculum/dichiarazione di esperienza in efficienza energetica dei processi produttivi (art. 15 co. 6 lett. c DM, FAQ MIMIT 2.3);
 9. **Dichiarazione di terzieta'** del certificatore (Allegato III);
 10. **Dichiarazione di terzieta' per certificatori contabili** (Allegato IV);
 11. Per impianti FV: attestazione produttore moduli (DL 181/2023);
@@ -377,7 +377,7 @@ Restituire all'utente:
 
 ## Avvertenza
 **La presente bozza e' uno strumento di supporto. Il certificatore deve:**
-- riveder ogni voce e validare i dati misurati ex post;
+- rivedere ogni voce e validare i dati misurati ex post;
 - effettuare il sopralluogo post intervento e documentarlo;
 - motivare scostamenti rispetto all'ex ante;
 - firmare digitalmente sotto la propria personale responsabilita';
@@ -408,7 +408,7 @@ Ammesso. Il nuovo certificatore deve:
 Caso particolare: il progetto era gia' completato al momento della prenotazione. La ex post puo' essere caricata direttamente dopo la "Conferma di prenotazione" senza la fase di "Conferma 20%". I dati ex post sono comunque richiesti su un periodo rappresentativo dell'esercizio post intervento.
 
 ### Eventi eccezionali nel periodo di rilevazione ex post
-Se nei 12 mesi post intervento si sono verificati eventi che alterano i consumi (fermi prolungati, cause esterne, mercato anomalo), il certificatore puo' **estendere il periodo di rilevazione** (oltre 12 mesi) per ottenere dati rappresentativi, motivando la scelta. La normalizzazione tramite indicatori e variabili operative deve assorbire l'effetto. Documentare nella Relazione Tecnica.
+La comunicazione di completamento ha **scadenza fissa al 28/2/2026** (art. 12 DM): il periodo di misurazione ex post deve concludersi entro tale data e quindi raramente potra' arrivare a 12 mesi pieni dal completamento (specie per progetti completati a fine 2025). Se gli eventi eccezionali (fermi prolungati, cause esterne, mercato anomalo) alterano la rappresentativita' del periodo disponibile, il certificatore deve: (1) **utilizzare il periodo rappresentativo disponibile** entro la scadenza, applicando la normalizzazione tramite indicatori e variabili operative per assorbire l'effetto, motivando la scelta nella Relazione Tecnica (Allegato XI); (2) se il periodo disponibile e' insufficiente o non rappresentativo, **segnalare il rischio** o la non procedibilita' al beneficiario, evitando di firmare ex post con dati inattendibili. Non e' ammesso posticipare la comunicazione oltre il 28/2/2026.
 
 ### Strumenti di misura non MID-conformi nel periodo ex post
 Inammissibile. Il certificatore deve richiedere all'impresa la sostituzione/ricalibrazione e ripetere la misurazione. Se cio' non e' possibile, segnalare la non conformita' e non procedere con la ex post (art. 9 co. 4 DM).
@@ -426,4 +426,4 @@ Inammissibile. Il certificatore deve richiedere all'impresa la sostituzione/rica
 ## Esempi
 
 Vedi `examples/`:
-- `conforme-investimento-3-2-mln/expected-output.md` - bozza Allegato X con riduzione ex post 7,8% (leggermente superiore all'ex ante 7,5%)
+- `conforme-investimento-3-2-mln/expected-output.md` - sintesi confronto ex ante / ex post con riduzione ex post 10,98% (leggermente superiore all'ex ante 10,10%, Fascia 2 mantenuta)

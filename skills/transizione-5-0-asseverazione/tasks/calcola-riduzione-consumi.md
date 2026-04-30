@@ -343,5 +343,5 @@ Se i dati misurati ex ante divergono significativamente dalle schede tecniche de
 ## Esempi
 
 Vedi `examples/`:
-- `conforme-investimento-3-2-mln/` - calcolo riduzione 7,5% sul processo interessato (linea utensili + software MES)
-- `non-conforme-cogenerazione-fossili/` - cogenerazione gas naturale: riduzione consumi reale ma esclusa per DNSH
+- `conforme-investimento-3-2-mln/` - calcolo riduzione 10,10% sul processo interessato (linea utensili + software MES) -> Fascia 2
+- `non-conforme-cogenerazione-fossili/` - cogenerazione gas naturale: riduzione consumi reale 8,9% ma esclusa per DNSH (art. 5 co. 1 lett. a DM)

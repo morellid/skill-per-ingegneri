@@ -122,4 +122,4 @@ Quando l'agent produce output, **cita sempre l'articolo preciso**. Riferimenti p
   - `calcola-riduzione-consumi.md`
   - `struttura-certificazione-ex-ante.md`
   - `struttura-certificazione-ex-post.md`
-- Esempi: 1 conforme (manifatturiero meccanico, 3,2 mln EUR, processo interessato, riduzione 10,05%) + 1 non conforme (cogenerazione gas naturale, violazione DNSH)
+- Esempi: 1 conforme (manifatturiero meccanico, 3,2 mln EUR, processo interessato, riduzione 10,10% -> Fascia 2) + 1 non conforme (cogenerazione gas naturale, violazione DNSH)

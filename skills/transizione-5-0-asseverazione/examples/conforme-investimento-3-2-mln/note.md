@@ -7,7 +7,7 @@ Esempio costruito per illustrare il **caso tipico** di asseverazione T5.0:
 - **PMI manifatturiera** medie dimensioni con storico operativo (>12 mesi con dati misurati): la baseline ex ante non richiede scenario controfattuale.
 - **Mix di investimenti**: beni 4.0 (Allegato A + Allegato B) + autoproduzione FER + formazione: copre i 3 ambiti dell'art. 4 DM.
 - **Perimetro = processo interessato** (non struttura produttiva): caso piu' frequente quando l'investimento e' a servizio di una linea identificata.
-- **Riduzione 10,05%** (fascia 3): caso al confine fra fascia 2 e fascia 3, utile per illustrare la sensibilita' al ricalcolo ex post.
+- **Riduzione 10,10%** (Fascia 2: intervallo 10%-15% sul processo): caso poco sopra il confine 10% fra Fascia 1 e Fascia 2, utile per illustrare la sensibilita' al ricalcolo ex post (uno scostamento ex post sotto il 10% farebbe scendere a Fascia 1).
 - **Certificatore = ingegnere sez. A** (non EGE/ESCo): caso di applicazione dell'art. 15 co. 6 lett. c DM con esperienza dichiarata; mostra che la skill non distingue per privilegio fra le tre tipologie di certificatori.
 
 ## Punti critici evidenziati

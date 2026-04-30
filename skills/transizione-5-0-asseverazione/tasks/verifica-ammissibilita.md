@@ -105,7 +105,7 @@ Tabella di verifica:
 | Requisito | Riferimento | Esito |
 |---|---|---|
 | Avvio dal 1/1/2024 (primo impegno irreversibile) | art. 4 co. 3 DM | [...] |
-| Completamento entro 31/12/2025 | art. 38 co. 1 DL + art. 4 DM | [...] |
+| Completamento entro 31/12/2025 | art. 38 co. 4 DL + art. 4 co. 4 DM | [...] |
 | Comunicazione preventiva al GSE prima dell'investimento (per prenotazione del credito) | art. 12 co. 1 DM | [...] |
 | Comunicazione di avanzamento (con pagamento >=20% acconto) entro 30 giorni dalla conferma del credito prenotato | art. 12 co. 4 DM + FAQ MIMIT 2.11 | [...] |
 | Comunicazione di completamento entro 28 febbraio 2026 | art. 12 + cap. 7 circolare MIMIT | [...] |
@@ -254,5 +254,5 @@ Il Piano Transizione 5.0 non si cumula con il **credito d'imposta Industria 4.0*
 ## Esempi
 
 Vedi `examples/`:
-- `conforme-investimento-3-2-mln/` - PMI manifatturiera, due macchine 4.0 + software MES + autoproduzione FV, riduzione 7,5% processo interessato
+- `conforme-investimento-3-2-mln/` - PMI manifatturiera, due macchine 4.0 + software MES + autoproduzione FV + formazione, riduzione 10,10% sul processo interessato (Fascia 2)
 - `non-conforme-cogenerazione-fossili/` - Investimento in cogeneratore alimentato da gas naturale escluso da DNSH

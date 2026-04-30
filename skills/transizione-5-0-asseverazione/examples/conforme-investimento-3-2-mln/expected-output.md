@@ -29,11 +29,11 @@
 ## 2. Ambito oggettivo
 | Voce | Riferimento | Esito |
 |---|---|---|
-| Centro tornitura CNC -> All. A voce 1.6 L. 232/2016, nuovo, strumentale, interconnesso | art. 6 co. 1 lett. a DM | Conforme |
-| Robot saldatura -> All. A voce 1.7, nuovo, interconnesso | art. 6 co. 1 lett. a DM | Conforme |
+| Centro tornitura CNC 5 assi -> All. A L. 232/2016, primo gruppo, macchine utensili che operano per asportazione (prassi MIMIT: voce 1.1, da confermare in perizia art. 16 DM); nuovo, strumentale, interconnesso | art. 6 co. 1 lett. a DM | Conforme |
+| Robot saldatura -> All. A L. 232/2016, primo gruppo, macchine per assemblaggio/giunzione/saldatura (prassi MIMIT: voce 1.7, da confermare in perizia art. 16 DM); nuovo, interconnesso | art. 6 co. 1 lett. a DM | Conforme |
 | Software MES -> All. B voce 10 + Energy Dashboarding | art. 6 co. 1 lett. b DM | Conforme |
 | FV 250 kW + accumulo, stessa particella catastale, no biomasse | art. 7 DM | Conforme |
-| Formazione 50.000 EUR < 10% beni A/B+FER (=275.000 EUR) e <= 300.000 EUR, ITS Academy abilitato, esame finale | art. 8 DM | Conforme |
+| Formazione 50.000 EUR < 10% di beni A/B (2.800.000) + FER (350.000) = 315.000 EUR, e <= 300.000 EUR, ITS Academy abilitato, esame finale | art. 8 DM | Conforme |
 | Esclusioni TUIR/aliquote ammortamento/devolvibilita': non applicabili | art. 6 + L. 178/2020 art. 1 co. 1053 | Conforme |
 
 ## 3. Avvio e completamento
@@ -48,7 +48,7 @@
 
 ## 4. Soglia di risparmio energetico (preliminare)
 - Soglia perseguita: 5% sul processo interessato
-- Riduzione dichiarata: 10,05% (vedi calcolo)
+- Riduzione dichiarata: 10,10% (vedi calcolo) -> Fascia 2 (10%-15% sul processo)
 - Esito preliminare: Conforme - rinvio a `calcola-riduzione-consumi.md` per validazione metodologica
 
 ## 5. DNSH e attivita' escluse
@@ -133,7 +133,7 @@ Schede DNSH: A (apparecchiature elettriche), C (pannelli FV).
 
 | Indicatore | Unita' | Valore ex ante | Fonte |
 |---|---|---|---|
-| Consumo specifico processo | tep/t | **0,193** | calcolo proprio. Range BREF "Smitheries and Foundries Industry" + analoga letteratura settore meccanico: 0,15-0,25 tep/t. Valore in range. |
+| Consumo specifico processo | tep/t | **0,1931** | calcolo proprio (193,1 tep / 1.000 t). Range BREF "Smitheries and Foundries Industry" + analoga letteratura settore meccanico: 0,15-0,25 tep/t. Valore in range. |
 
 ## 3. Stima ex post
 
@@ -153,28 +153,32 @@ Metodologia: schede tecniche fornitore + simulazione MES su dataset di 30 giorni
 
 ```
 Risp_tep = (Indicatore_ex_ante - Indicatore_ex_post) * Variabile_operativa_post
-         = (0,193 - 0,1736) tep/t * 1.000 t/anno
-         = 0,0194 tep/t * 1.000 t/anno
-         = 19,4 tep/anno
+         = (0,1931 - 0,1736) tep/t * 1.000 t/anno
+         = 0,0195 tep/t * 1.000 t/anno
+         = 19,5 tep/anno   (verifica diretta dai totali: 193,1 - 173,6 = 19,5)
 
-Riduzione_% = 19,4 / 193,1 * 100 = 10,05%
+Riduzione_% = 19,5 / 193,1 * 100 = 10,10%
 ```
+
+> Riportiamo per l'Allegato VIII e per la Relazione Tecnica i valori arrotondati: **risparmio = 19,5 tep/anno, riduzione = 10,10%**, ben sopra la soglia minima 5% sul processo. La fascia di credito d'imposta e' la Fascia 2 (10% < riduzione <= 15%) - vedi sezione 6.
 
 ## 5. Verifica soglia
 
 | Perimetro | Soglia minima | Riduzione calcolata | Esito |
 |---|---|---|---|
-| Processo interessato | >=5% | 10,05% | **Conforme** |
+| Processo interessato | >=5% | 10,10% | **Conforme** |
 
 ## 6. Fascia di credito d'imposta
 
-10,05% > 10% sul processo interessato -> **Fascia 3** (aliquote 45%/25%/15% per scaglioni 0-2,5/2,5-10/10-50 mln EUR).
+10,10% sul processo interessato e' compreso fra 10% e 15% -> **Fascia 2** (aliquote 40%/20%/10% per scaglioni 0-2,5 / 2,5-10 / 10-50 mln EUR; vedi cap. 1 circolare MIMIT 25877/2024 e art. 10 DM).
+
+> Per accedere alla Fascia 3 (45%/25%/15%) occorrerebbe una riduzione **superiore al 15%** sul processo interessato (oppure superiore al 10% sulla struttura produttiva): non e' il caso.
 
 > Calcolo indicativo del credito (rinvio a consulente fiscale):
 > - Investimenti rilevanti per soglia 4.0 (beni A/B): 1.450.000 + 750.000 + 600.000 = 2.800.000 EUR
-> - 2.500.000 * 45% = 1.125.000 EUR
-> - 300.000 * 25% = 75.000 EUR
-> - **Sub-totale beni 4.0: 1.200.000 EUR**
+> - 2.500.000 * 40% = 1.000.000 EUR
+> - 300.000 * 20% = 60.000 EUR
+> - **Sub-totale beni 4.0: 1.060.000 EUR**
 > - FER (350.000 EUR) e formazione (50.000 EUR): aliquote applicabili sulla stessa fascia di riduzione, vedi art. 10 DM
 > - Maggiorazione PMI per certificazioni: fino a 10.000 EUR (art. 10 co. 2 DM, art. 15 DM) + 5.000 EUR (art. 17 DM) - solo se PMI
 
@@ -195,7 +199,7 @@ Riduzione_% = 19,4 / 193,1 * 100 = 10,05%
 - Il calcolo e' strumentale alla certificazione ex ante e va validato dal certificatore.
 - I coefficienti tep applicati sono quelli della circolare MISE 18/12/2014: verificare aggiornamenti.
 - Il foglio di calcolo va conservato 5 anni (art. 19 DM).
-- La fascia 3 implica rischio di scostamento ex post: validare con cura la stima 880.000 kWh.
+- La Fascia 2 (10,10% poco sopra il 10%) implica rischio di **scostamento ex post sotto la soglia di Fascia 2** (10% sul processo): se la riduzione effettiva ex post scende sotto il 10%, il caso passa in Fascia 1 e il credito si ricalcola su aliquote 35%/15%/5% invece di 40%/20%/10%. Validare con cura la stima 880.000 kWh.
 ```
 
 ## 3. Output atteso da `struttura-certificazione-ex-ante.md`
@@ -211,7 +215,7 @@ Il sottoscritto Ing. Marco ROSSI, nato a Brescia il 12/4/1975, CF RSSMRC75D12B15
 ## PREMESSO
 
 - che l'impresa **ALFA Meccanica Srl** dichiara:
-  - di aver previsto di effettuare investimenti agevolabili ai sensi dell'art. 38 co. 2 DL 2 marzo 2024 n. 19 e del DM Transizione 5.0 24 luglio 2024 cosi' come indicato nella documentazione e nei contratti di acquisto di cui ho preso visione;
+  - di aver previsto di effettuare investimenti agevolabili ai sensi dell'art. 38 co. 4 DL 2 marzo 2024 n. 19 e del DM Transizione 5.0 24 luglio 2024 cosi' come indicato nella documentazione e nei contratti di acquisto di cui ho preso visione;
   - che i costi di tali investimenti sono imputabili ai sensi dell'art. 109 commi 1 e 2 TUIR al periodo d'imposta 2025, saranno determinati secondo corretti criteri fiscali e contabili e saranno correttamente iscritti in bilancio e nel libro cespiti;
 
 ## VISTI
@@ -223,7 +227,7 @@ Il sottoscritto Ing. Marco ROSSI, nato a Brescia il 12/4/1975, CF RSSMRC75D12B15
 
 - che quanto dichiarato si basa su elementi, dati e informazioni personalmente acquisiti e verificati con diligenza tecnico-specialistica, anche mediante l'effettuazione di sopralluoghi presso la struttura produttiva (sopralluogo del 26/2/2025 - verbale prot. 25-002);
 - che il progetto di innovazione si caratterizza per l'acquisizione di tecnologie ai sensi dell'art. 38 co. 4 DL 19/2024 e DM Transizione 5.0;
-- che a seguito della realizzazione del progetto di innovazione, all'interno del processo interessato (linea "Componenti Critici") oggetto del progetto, e' ottenuto un livello di **risparmio energetico pari a 19,4 tep/anno, equivalente al 10,05%**;
+- che a seguito della realizzazione del progetto di innovazione, all'interno del processo interessato (linea "Componenti Critici") oggetto del progetto, e' ottenuto un livello di **risparmio energetico pari a 19,5 tep/anno, equivalente al 10,10%**;
 - di **essersi dotato di idonea copertura assicurativa**, cosi' come previsto all'art. 15 co. 8 DM Transizione 5.0 (Polizza ABC123, massimale 2.000.000 EUR, scadenza 31/12/2026).
 
 ## ASSEVERA I CONTENUTI DI SEGUITO RIPORTATI
@@ -245,7 +249,7 @@ Il sottoscritto Ing. Marco ROSSI, nato a Brescia il 12/4/1975, CF RSSMRC75D12B15
 
 ### Indicazione del progetto di innovazione
 - [X] Investimenti beni materiali e immateriali nuovi (Allegati A/B L. 232/2016) con riduzione consumi del **processo interessato**:
-  - [X] superiore al 10%
+  - [X] superiore al 10% (e inferiore al 15%) -> Fascia 2
 - [X] Investimenti FER per autoconsumo (no biomasse)
 - [X] Formazione personale (Reg. UE 651/2014 art. 31 par. 3)
 
@@ -253,21 +257,23 @@ Processo interessato: **linea "Componenti Critici"** (linea di tornitura+saldatu
 
 ### Beni impiegati
 
-**Allegato A L. 232/2016**:
-- [X] 1.6 (deformazione plastica metalli) -> centro tornitura CNC 5 assi
-- [X] 1.7 (assemblaggio/giunzione/saldatura) -> robot collaborativo saldatura
+**Allegato A L. 232/2016 (primo gruppo, macchine utensili)**:
+- [X] macchine utensili per asportazione (prassi MIMIT: voce 1.1) -> centro tornitura CNC 5 assi
+- [X] macchine utensili per assemblaggio/giunzione/saldatura (prassi MIMIT: voce 1.7) -> robot collaborativo saldatura
+
+> Le voci specifiche sono indicate qui secondo la prassi numerativa del manuale operativo MIMIT/MISE (Industria 4.0): la classificazione formale e' confermata nella perizia tecnica asseverata di cui all'art. 16 DM 24/7/2024 + art. 1 co. 11 L. 232/2016, di competenza dell'ingegnere/perito firmatario.
 
 **Allegato B L. 232/2016**:
 - [X] 10 (software/sistemi/piattaforme/applicazioni monitoraggio macchine) -> software MES + Energy Dashboarding
 
 **Descrizione**:
-- centro tornitura CNC 5 assi modello [...] del fornitore [...] riconducibile alle "macchine utensili per la deformazione plastica dei metalli e altri materiali" (Allegato A);
+- centro tornitura CNC 5 assi modello [...] del fornitore [...] riconducibile alle "macchine utensili che operano per **asportazione** di materiali" (Allegato A primo gruppo, prassi MIMIT voce 1.1);
 - robot collaborativo per saldatura modello [...] del fornitore [...] riconducibile alle "macchine utensili per l'assemblaggio, la giunzione e la saldatura" (Allegato A);
 - software MES + modulo Energy Dashboarding del fornitore [...] riconducibile ai "software, sistemi, piattaforme e applicazioni per il monitoraggio e controllo delle condizioni di lavoro delle macchine e dei sistemi di produzione interfacciati con i sistemi informativi di fabbrica" (Allegato B);
 
 ### Risparmio conseguibile
-- **Risparmio in tep [tep/anno]**: 19,4
-- **Risparmio annuo percentuale [%]**: 10,05
+- **Risparmio in tep [tep/anno]**: 19,5
+- **Risparmio annuo percentuale [%]**: 10,10
 
 ### Algoritmo di calcolo
 
@@ -309,15 +315,19 @@ Il Certificatore (timbro e firma digitale): Ing. Marco Rossi
 
 ## 4. Esito atteso al sopralluogo ex post (sintesi)
 
-A fine progetto (gennaio 2026), dopo 12 mesi di esercizio post completamento (novembre 2024 - ottobre 2025):
+A fine progetto, dopo un **periodo rappresentativo post completamento** di circa 2,5 mesi misurati direttamente (1/11/2025 - 14/1/2026), normalizzati a 12 mesi tramite indicatori di prestazione e variabili operative (parita' di servizio reso: 1.000 t/anno):
 
-| Voce | Ex ante (asseverato) | Ex post (effettivo) | Scostamento |
+> Il completamento e' del 30/10/2025 e la comunicazione di completamento e' fissata per il 15/1/2026 (anticipata rispetto al termine 28/2/2026): la finestra ~2,5 mesi misurati e' la massima realisticamente disponibile entro questa data. **Lo scenario richiede una giustificazione esplicita del periodo rappresentativo** nella Relazione Tecnica Ex Post (Allegato XI), con motivazione tecnica dell'estensione tramite normalizzazione (art. 9 co. 3 DM, cap. 2 circolare MIMIT). Una alternativa e' rinviare la comunicazione di completamento a fine febbraio 2026 (entro il 28/2/2026) per disporre di una finestra di ~4 mesi.
+
+| Voce | Ex ante (asseverato) | Ex post (effettivo, normalizzato) | Scostamento |
 |---|---|---|---|
 | Energia elettrica linea | 880.000 kWh | 870.000 kWh | -1,1% |
+| EE in tep | 164,6 | 162,7 (= 870.000 * 0,000187) | -1,2% |
 | Gas naturale forno | 11.000 Sm3 | 11.200 Sm3 | +1,8% |
-| Totale ex post | 173,6 tep/anno | 172,0 tep/anno | -0,9% |
-| Riduzione tep/anno | 19,4 | 21,1 | +8,8% |
-| Riduzione % | 10,05% | 10,93% | + |
-| Fascia | 3 | 3 (mantenuta) | OK |
+| Gas in tep | 9,0 | 9,2 (= 11.200 * 0,82 / 1.000) | +2,2% |
+| Totale ex post | 173,6 tep/anno | 171,9 tep/anno | -1,0% |
+| Riduzione tep/anno | 19,5 | 21,2 (= 193,1 - 171,9) | +8,7% (relativo) |
+| Riduzione % | 10,10% | 10,98% | +0,88 punti percentuali |
+| Fascia | 2 | 2 (mantenuta) | OK |
 
-Il certificatore conferma in ex post il rispetto della soglia 5% sul processo (10,93% > 5%), il superamento del 10% (fascia 3 mantenuta), e motiva i piccoli scostamenti (lieve aumento gas dovuto a inverno piu' rigido del previsto, leggera riduzione EE per migliore efficienza media misurata vs stima conservativa fornitore).
+Il certificatore conferma in ex post il rispetto della soglia 5% sul processo (10,98% > 5%), il superamento del 10% (Fascia 2, sotto la soglia del 15% che separa Fascia 2 da Fascia 3), e motiva i piccoli scostamenti (lieve aumento gas dovuto a inverno piu' rigido del previsto, leggera riduzione EE per migliore efficienza media misurata vs stima conservativa fornitore).

@@ -258,6 +258,25 @@ sources:
       5.0 + FAQ MIMIT 2.4): documento distinto dalla certificazione tecnica
       EGE/ESCO oggetto di questa skill.
 
+  - id: dl-181-2023-art-12
+    title: "DL 9 dicembre 2023 n. 181 - art. 12 co. 1 - Caratteristiche dei moduli fotovoltaici per autoconsumo"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-12-09;181
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: l'art. 12 co. 1 lett. a/b/c DL 181/2023 fissa i requisiti
+      di filiera UE per i moduli fotovoltaici di autoproduzione FER (es. Piano
+      Transizione 5.0 art. 7 DM 24/7/2024). La FAQ MIMIT 2.7 richiede in fase di
+      comunicazione di completamento l'attestazione del produttore dei moduli FV
+      coerente con questi requisiti. La skill cita la norma come riferimento
+      formale ma non riproduce il contenuto operativo: per il dettaglio applicativo
+      vedere il testo consolidato vigente su Normattiva e la FAQ MIMIT 2.7
+      (estratto `faq-mimit-soggetti-certificatori.md`).
+
 # Fonti secondarie da valutare per estensioni successive
 secondary_sources_to_evaluate:
   - id: legge-bilancio-2025-modifiche
