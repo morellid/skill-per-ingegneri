@@ -1,0 +1,353 @@
+schema_version: 1
+skill: catasto-pregeo-docfa-atti-telematici
+last_verified: 2026-05-01
+
+# Fonti per la skill di assistenza alla redazione e trasmissione telematica
+# degli atti di aggiornamento del Catasto Terreni (Pregeo 10) e del Catasto
+# Fabbricati (Docfa 4).
+#
+# La skill non riproduce ne' il manuale operativo Pregeo 10 ne' il manuale
+# Docfa, che cambiano frequentemente; rinvia ad essi e codifica solo:
+#   - inquadramento giuridico (DPR 380/2001 art. 30, DM 28/1998, DPR 445/2000)
+#   - tipologie atti Pregeo 10 (Circolare 3/2009, Circolare 44/E 2016)
+#   - novita' deposito telematico frazionamenti dal 1/7/2025 (Risoluzione 40/E 2025)
+#   - struttura delle dichiarazioni Docfa (Vademecum Docfa v1.0 7/2022)
+#
+# Tutti i PDF sono pubblico dominio (atti AdE) e archiviati in not_in_repo/.
+# Hash SHA256 calcolato all'atto del download.
+
+sources:
+  - id: dpr-380-2001-art-30
+    title: "DPR 6 giugno 2001, n. 380 - Testo Unico edilizia - art. 30 (Lottizzazione abusiva) commi 5 e 5-bis"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dpr-380-2001-art-30.md
+    notes: |
+      Comma 5: il deposito presso il Comune dei tipi di frazionamento e' presupposto
+      di approvazione catastale. Comma 5-bis (introdotto dall'art. 25 D.Lgs. 1/2024):
+      a partire dal 1/7/2025, per gli atti presentati telematicamente, il deposito
+      lo effettua direttamente l'Agenzia delle entrate sul Portale dei Comuni.
+      Cfr. anche Risoluzione AdE 40/E del 9/6/2025.
+
+  - id: dlgs-1-2024-art-25
+    title: "D.Lgs. 8 gennaio 2024, n. 1 - art. 25 - Razionalizzazione adempimenti tributari (introduce art. 30 co. 5-bis DPR 380/2001)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-01-08;1
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Art. 25 (Semplificazione adempimenti tecnici correlati ai trasferimenti
+      immobiliari) introduce il comma 5-bis nell'art. 30 DPR 380/2001 che
+      ha ridisegnato il deposito comunale dei frazionamenti.
+
+  - id: dm-28-1998-unita-immobiliare
+    title: "DM 2 gennaio 1998, n. 28 - Regolamento per l'aggiornamento del Catasto Edilizio Urbano - art. 2 (definizione unita' immobiliare) e art. 3 (altri beni inventariabili)"
+    type: decreto-ministeriale
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:1998-01-02;28
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dm-28-1998-uiu.md
+    notes: |
+      Definizione cardine di unita' immobiliare urbana (autonomia funzionale e
+      reddituale, appartenenza alla stessa ditta). Art. 3 disciplina i beni
+      iscrivibili senza rendita (categorie F del Gruppo "fittizio" del Catasto
+      Fabbricati). Citato dal Vademecum Docfa cap. 1.1.
+
+  - id: dpr-445-2000-dsan
+    title: "DPR 28 dicembre 2000, n. 445 - artt. 38, 47 e 76 - Dichiarazioni sostitutive di atto di notorieta' e sanzioni penali"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2000-12-28;445
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: le dichiarazioni del professionista nel modello unico
+      informatico catastale (riga 9 libretto Pregeo, dichiarazioni Docfa) sono
+      rese ai sensi degli artt. 38 e 47 DPR 445/2000. Mendacio sanzionato
+      ai sensi dell'art. 76 (artt. 359 e 481 c.p. per persona esercente servizio
+      di pubblica necessita').
+
+  - id: ade-circolare-3-2009-pregeo10
+    title: "Circolare Agenzia del Territorio n. 3 del 16 ottobre 2009, prot. n. 54825 - Approvazione automatica atti di aggiornamento Catasto Terreni con procedura Pregeo 10"
+    type: circolare
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/261125/Circolare+territorio+3+16102009_Circolare+del+16_10_2009+n.+3+-+Agenzia+del+Territorio+-+Direzione+Centrale+Cartografia%2C+Catasto+e+Pubblicita+Immobiliare.pdf/36e56493-4256-0f48-7452-d5153eb7f106
+    accessed: 2026-05-01
+    sha256: 580012be6b445f7f3fa9889593775fa331c3aa23dfefdd1f5ec62a2d9306d15f
+    license: public-domain-italian-law
+    binary_path: not_in_repo/circolare-3-2009-pregeo10.pdf
+    excerpt_paths:
+      - references/estratti/circolare-3-2009-pregeo10.md
+    notes: |
+      Circolare istitutiva del modello tecnico-organizzativo per l'approvazione
+      automatica degli atti di aggiornamento Pregeo 10. Allegato 2 contiene
+      le schede esemplificative di tutte le tipologie di atti (Tipo Mappale,
+      Tipo Frazionamento, Tipo Misto, ecc.). Citata come quadro normativo
+      di riferimento dalla Risoluzione 40/E 2025 e dalla Circolare 44/E 2016.
+
+  - id: ade-circolare-44-2016-pregeo
+    title: "Circolare Agenzia delle Entrate n. 44/E del 14 dicembre 2016 - Pregeo 10 versione 10.6.0 - APAG 2.08"
+    type: circolare
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/298015/Circolare+44E+14122016_CIRCOLARE+N.+44_E+DEL+14+DICEMBRE+2016.pdf/0733a8fc-f313-39f6-7212-093ed779cb17
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Linee guida operative per la versione APAG 2.08 di Pregeo 10. Aggiorna
+      la disciplina della Circolare 3/2009 con nuove tipologie e con regole
+      sulla strutturazione del libretto delle misure.
+
+  - id: ade-circolare-11-2023-frazionamento-enti-urbani
+    title: "Circolare Agenzia delle Entrate n. 11/E dell'8 maggio 2023 - Procedure aggiornamento per frazionamento enti urbani"
+    type: circolare
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/5256660/Circolare_Frazionamento_Enti_Urbani+accessibile.pdf/4b9b0350-b283-c650-0fa4-bd4b526223e7
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Disciplina specifica del frazionamento di Enti Urbani (codici 282, 278)
+      con allegato tecnico che codifica le casistiche A-G. Richiamata dalla
+      Risoluzione 40/E 2025 per la gestione mista Catasto Terreni / Catasto
+      Fabbricati.
+
+  - id: ade-risoluzione-40-2025-deposito-telematico
+    title: "Risoluzione Agenzia delle Entrate n. 40/E del 9 giugno 2025 - Deposito telematico atti di frazionamento Catasto Terreni"
+    type: risoluzione
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/8413104/2025_06_09_Risoluzione_deposito_frazionamenti+ok.pdf/32712499-0c6b-fbde-a055-b7898aea8a9d
+    accessed: 2026-05-01
+    sha256: 8b39d6265029f056dbfe96ee10b165ca9736379d0d2e02deb0e6e0f305315130
+    license: public-domain-italian-law
+    binary_path: not_in_repo/risoluzione-40-2025-deposito-telematico.pdf
+    excerpt_paths:
+      - references/estratti/risoluzione-40-2025-deposito-telematico.md
+    notes: |
+      Risoluzione che chiarisce: (1) ambito oggettivo del deposito telematico
+      ex art. 30 co. 5-bis DPR 380/2001 - solo Tipi di Frazionamento (FR),
+      Atti Misti (FM) e Tipi Mappali con stralcio di corte (SC); (2) obbligo
+      di Pregeo 10 versione 10.6.5 - APAG 2.15 dal 1/7/2025; (3) nuova
+      dichiarazione sostitutiva nel libretto delle misure (riga 9); (4) il
+      deposito presso il Comune e' effettuato dall'AdE via PEC unica
+      depositofrazionamenticatastali@pec.agenziaentrate.it; (5) per atti
+      diversi da FR/FM/SC permane la disciplina previgente.
+
+  - id: ade-provvedimento-30-12-2024-deposito-telematico
+    title: "Provvedimento Direttore AdE 30 dicembre 2024, prot. n. 460141 - Decorrenza deposito telematico frazionamenti (1/7/2025)"
+    type: provvedimento
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/6581861/Provvedimento+deposito+telematico+frazionamenti+30.12.24.pdf/19a2ef82-d512-9881-335a-124aaef4b3b4
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Provvedimento direttoriale di intesa con ANCI che fissa al 1/7/2025
+      la decorrenza del deposito telematico ex art. 30 co. 5-bis DPR 380/2001.
+
+  - id: ade-provvedimento-11-03-2015-obbligo-telematico
+    title: "Provvedimento Direttore AdE 11 marzo 2015, prot. n. 35112 - Obbligo trasmissione telematica atti di aggiornamento catastale per professionisti"
+    type: provvedimento
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/344363/Provvedimento+110315+Obbligo+trasmissione+modello+unico+informatico+catastale_Provvedimento_35112.pdf/72d3faed-fb25-d968-9adf-af6dd68947df
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Stabilisce il regime di obbligatorieta' della trasmissione telematica
+      tramite Sister per i professionisti iscritti agli Ordini/Collegi
+      abilitati alla redazione di atti di aggiornamento catastale (Pregeo
+      e Docfa). Per le PA permane la facoltativita' (cfr. Provv. 28/1/2021).
+
+  - id: ade-vademecum-docfa-v1
+    title: "Vademecum Do.C.Fa. - Versione 1.0 - luglio 2022 - Direzione Centrale Servizi Catastali, Cartografici e di Pubblicita' Immobiliare"
+    type: vademecum
+    url: https://www.agenziaentrate.gov.it/portale/documents/20143/257980/Vademecum_Docfa_ver1.0.pdf/eb1424b2-94d8-0327-df82-e3c45d62407b
+    accessed: 2026-05-01
+    sha256: 7ee7fbe724921d589448bc5d6f3322cc40e284c1d3498a37594162c6c299d6a0
+    license: public-domain-italian-law
+    binary_path: not_in_repo/vademecum-docfa-ver1.pdf
+    excerpt_paths:
+      - references/estratti/vademecum-docfa-categorie-causali.md
+      - references/estratti/vademecum-docfa-elaborato-planimetrico.md
+    notes: |
+      Strumento di supporto e riferimento nazionale per la redazione degli
+      atti di aggiornamento del Catasto Fabbricati. Persegue uniformita' nel
+      trattamento e favorisce l'automazione. Indice principale:
+        - cap. 1.1 unita' immobiliare urbana, BCC/BCNC, beni di Gruppo F
+        - cap. 1.2 categorie catastali Gruppi A, B, C, D, E + categorie
+          fittizie F/1-F/7
+        - cap. 1.3 classamento, consistenza, rendita catastale
+        - cap. 2 dichiarazione Docfa (Quadro A accatastamento, Quadro B
+          variazione, Quadro U dati UIU, Quadro D relazione tecnica, Quadro
+          dati del dichiarante)
+        - cap. 3 elaborato planimetrico, elenco subalterni, planimetria,
+          superficie catastale ex DPR 138/1998
+        - cap. 4 modelli 1N (categorie ordinarie A/B/C) e 2N (categorie
+          speciali D/E)
+
+  - id: ade-istruzioni-operative-docfa-2019
+    title: "Istruzioni operative Docfa per professionisti - Versione 4.00.5 (2 luglio 2019) e versioni precedenti (4.00.4 dell'8/6/2017, 4.00.3 dell'1/2/2016)"
+    type: istruzioni-operative
+    url: https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/aggiornamento-catasto-fabbricati-docfa/istruzioni-operative-docfa-professionisti
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Istruzioni operative AdE pubblicate ad ogni rilascio della procedura
+      Docfa 4. La versione vigente al last_verified e' la 4.00.5 (luglio
+      2019). Rinvio strutturale: la skill non riproduce le istruzioni di
+      compilazione ma rimanda alla scheda AdE per la verifica della versione
+      operativa pre-trasmissione.
+
+  - id: ade-istruzioni-pregeo-software
+    title: "Software Pregeo 10 - Pagina di download e istruzioni operative per versione (10.6.5 - APAG 2.15 vigente dal 1/7/2025)"
+    type: pagina-istituzionale
+    url: https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/aggiornamento-catasto-terreni-pregeo/software-pregeo
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina ufficiale per il download della procedura Pregeo 10. Contiene
+      le note di rilascio di ciascuna versione (10.6.0 APAG 2.08, 10.6.1,
+      10.6.3, 10.6.4 APAG 2.15, 10.6.5 APAG 2.15). Rinvio strutturale: la
+      skill ricorda che la versione del software e' vincolante (gli atti
+      predisposti con versione obsoleta vengono respinti dal canale telematico).
+
+  - id: ade-circolare-2t-2016-categorie-DE
+    title: "Circolare Agenzia delle Entrate n. 2/E del 1 febbraio 2016 - Categorie a destinazione speciale e particolare e DM Docfa 4.00.3"
+    type: circolare
+    url: https://www.agenziaentrate.gov.it/portale/normativa-e-prassi
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Circolare di accompagnamento al rilascio Docfa 4.00.3 con introduzione
+      delle "destinazioni d'uso" codificate per le UIU dei Gruppi D ed E.
+      Rinvio strutturale: la skill cita ma non riproduce l'elenco completo
+      di destinazioni d'uso, presenti nel Vademecum Docfa cap. 1.2.3
+      (Prospetti 1.6 - 1.24).
+
+  - id: ade-circolare-6t-2012-stima-D-E
+    title: "Circolare Agenzia del Territorio n. 6/T del 30 novembre 2012 - Stima diretta unita' immobiliari a destinazione speciale e particolare"
+    type: circolare
+    url: https://www.agenziaentrate.gov.it/portale/normativa-e-prassi
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Strumento di interpretazione autentica delle modalita' di determinazione
+      della rendita catastale degli immobili D ed E (rango normativo per art. 1
+      co. 244 L. 190/2014). Riferimento per la stima diretta degli opifici e
+      per la separazione delle componenti immobiliari escluse (art. 1 co. 21
+      L. 208/2015 - cd. "imbullonati").
+
+  - id: legge-208-2015-imbullonati
+    title: "L. 28 dicembre 2015, n. 208 - art. 1 commi 21-24 - Esclusione macchinari da stima diretta categorie D ed E (cd. 'imbullonati')"
+    type: legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Esclude dalla stima diretta della rendita degli immobili D ed E i macchinari,
+      congegni, attrezzature e altri impianti funzionali allo specifico processo
+      produttivo (impianti detti "imbullonati"). Operativizzato dalla Circolare
+      AdE 2/E del 1/2/2016 e dal Vademecum Docfa cap. 1.3.4.
+
+  - id: dm-138-1998-superficie-catastale
+    title: "DPR 23 marzo 1998, n. 138 - Allegato C - Norme tecniche per la determinazione della superficie catastale delle UIU a destinazione ordinaria"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-03-23;138
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Allegato C del DPR 138/1998 disciplina la determinazione della superficie
+      catastale per le UIU dei Gruppi A, B e C. La superficie catastale entra
+      nel Quadro U Docfa e nel calcolo della TARI (cfr. circolare ADE per
+      raccordo TARI). Citato nel Vademecum Docfa cap. 3.3.
+
+  - id: ade-quaderno-docfa
+    title: "Quaderno Docfa - raccolta casi operativi a cura delle Direzioni Provinciali AdE"
+    type: pagina-istituzionale
+    url: https://www.agenziaentrate.gov.it/portale/quaderno-docfa
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina di raccolta dei "Quaderni Docfa" pubblicati dalle Direzioni
+      Provinciali Territorio (raccolta di casistiche operative ricorrenti).
+      Rinvio strutturale: la skill cita la pagina come fonte di approfondimento
+      ma non riproduce il contenuto, che varia per provincia.
+
+  - id: ade-portale-sister
+    title: "Portale Sister - Servizi telematici Catasto e Pubblicita' Immobiliare"
+    type: portale-ente
+    url: https://sister.agenziaentrate.gov.it/
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Portale di trasmissione telematica degli atti di aggiornamento catastale
+      Pregeo e Docfa. Accesso con credenziali rilasciate dall'Ufficio Provinciale
+      Territorio. Rinvio strutturale: le procedure di upload, gestione dei lotti
+      e della sezione "tipi" non sono riprodotte nella skill (cambiano con i
+      rilasci Sister).
+
+# Fonti secondarie da valutare per estensioni successive
+secondary_sources_to_evaluate:
+  - id: ade-circolare-4t-2009-variazioni
+    title: "Circolare Agenzia del Territorio n. 4/T del 29 ottobre 2009 - Variazioni e rapporto con DPR 380/2001"
+    url: null
+    notes: |
+      Citata dal Vademecum Docfa per la disciplina della categoria F/4 e
+      delle variazioni post-intervento. Catalogare al prossimo aggiornamento
+      della skill quando l'estratto diventa rilevante per gli esempi.
+
+  - id: ade-circolare-1t-2009-F6
+    title: "Circolare Agenzia del Territorio n. 1/T dell'8 maggio 2009 - Categoria F/6 (Fabbricato in attesa di dichiarazione)"
+    url: null
+    notes: |
+      Disciplina della categoria F/6 e meccanismo di iscrizione automatica
+      post Tipo Mappale. Rilevante per il workflow Pregeo->Docfa.
+
+  - id: ade-istruzioni-pregeo-10-6-5-2025
+    title: "Note operative AdE Pregeo 10.6.5 APAG 2.15 - dettaglio nuova riga 9 deposito telematico"
+    url: https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/aggiornamento-catasto-terreni-pregeo/software-pregeo
+    notes: |
+      Da catalogare come fonte primaria al rilascio del manuale operativo
+      definitivo dell'AdE per la versione 10.6.5; serve per dettagliare
+      esattamente il testo della dichiarazione sostitutiva sul deposito
+      telematico (Risoluzione 40/E 2025).
