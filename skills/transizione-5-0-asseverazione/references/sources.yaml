@@ -1,0 +1,303 @@
+schema_version: 1
+skill: transizione-5-0-asseverazione
+last_verified: 2026-04-29
+
+# Fonti normative principali per la skill di asseverazione tecnica
+# del Piano Transizione 5.0 (credito d'imposta).
+#
+# Architettura normativa:
+#   - DL 19/2024 art. 38 (legge istitutiva, convertito da L. 56/2024)
+#   - DM 24/7/2024 (decreto interministeriale attuativo)
+#   - Circolare operativa MIMIT 16/8/2024 prot. 25877 (chiarimenti tecnici)
+#   - FAQ MIMIT (versione vigente, aggiornata periodicamente)
+#   - GSE - Regole operative + Manuale portale TR5
+#
+# Nota operativa: i PDF della Gazzetta Ufficiale e del MIMIT possono essere
+# scaricati manualmente per popolare hash e binary_path:
+#   curl -Lo not_in_repo/dm-24-07-2024-transizione50.pdf \
+#     "https://www.gazzettaufficiale.it/eli/gu/2024/08/06/183/sg/pdf"
+#   shasum -a 256 not_in_repo/dm-24-07-2024-transizione50.pdf
+#
+# Si segnala che la materia e' altamente dinamica: la Legge di Bilancio
+# 2025 (L. 207/2024) e successivi DM correttivi possono modificare aliquote,
+# soglie, perimetro temporale. Verificare last_verified prima di applicare.
+
+sources:
+  - id: dl-19-2024-art-38
+    title: "DL 2 marzo 2024, n. 19 - art. 38 - Piano Transizione 5.0 (convertito con modificazioni dalla L. 29 aprile 2024, n. 56)"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-03-02;19
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dl-19-2024-art-38.md
+    notes: |
+      Articolo 38 (Disposizioni urgenti per il sostegno al "Piano Transizione 5.0"):
+      istituisce il credito d'imposta, individua ambito soggettivo, oggetto
+      degli investimenti agevolabili (commi 4-5), soglie di risparmio energetico
+      minimo (3% struttura / 5% processo), aliquote per scaglioni e fascia di
+      risparmio, dotazione finanziaria 6,3 mld EUR. Delega l'attuazione al DM
+      MIMIT-MEF 24/7/2024. Testo consolidato vigente reperibile su Normattiva.
+
+  - id: dm-24-07-2024-transizione50
+    title: "DM MIMIT-MEF 24 luglio 2024 - Attuazione dell'art. 38 DL 19/2024 (Piano Transizione 5.0) - GU n. 183 del 06/08/2024"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/2024/08/06/24A04160/SG
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-24-07-2024-transizione50.pdf
+    excerpt_paths:
+      - references/estratti/dm-24-07-2024-articoli-chiave.md
+    notes: |
+      Decreto interministeriale attuativo del Piano Transizione 5.0,
+      codice redazionale 24A04160. Articoli rilevanti per la skill di
+      asseverazione:
+        - art. 4 (avvio/completamento progetto innovazione)
+        - art. 5 (DNSH e attivita' escluse)
+        - art. 6 (beni materiali/immateriali allegati A/B L. 232/2016)
+        - art. 7 (autoproduzione FER per autoconsumo)
+        - art. 8 (formazione personale)
+        - art. 9 (criteri determinazione risparmi energetici)
+        - art. 10 (intensita' beneficio - aliquote per scaglione)
+        - art. 12 (procedura: prenotazione, ordini 20%, completamento)
+        - art. 15 (certificazioni ex ante/ex post + soggetti abilitati EGE/ESCO/ingegneri/periti + polizza assicurativa)
+        - art. 16 (perizia asseverata interconnessione/caratteristiche beni 4.0)
+        - art. 17 (certificazione contabile)
+        - art. 18 (DNSH)
+        - art. 19-20 (vigilanza e controlli)
+
+  - id: circolare-mimit-16-08-2024
+    title: "Circolare operativa MIMIT 16 agosto 2024, prot. 25877 - Piano Transizione 5.0"
+    type: circolare
+    url: https://www.mimit.gov.it/images/stories/normativa/Circolare_Operativa_Transizione_5.0_mimit.AOO_PI.REGISTRO_UFFICIALEI.0025877.16-08-2024.pdf
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/circolare-mimit-25877-2024.pdf
+    excerpt_paths:
+      - references/estratti/circolare-mimit-criteri-risparmio.md
+      - references/estratti/circolare-mimit-modelli-certificazioni.md
+    notes: |
+      Circolare operativa di chiarimento tecnico, fonte primaria per:
+        - definizioni operative di "struttura produttiva" e "processo interessato"
+          (cap. 2.1 con esempi grafici 1-17)
+        - scenario controfattuale (cap. 2.2)
+        - esempi numerici di calcolo (cap. 2.3, tabelle 3-8)
+        - tabella indicatori di prestazione energetica per settore (cap. 2, tab. 2)
+        - DNSH e attivita' escluse (cap. 4)
+        - procedura prenotazione/avanzamento/completamento (cap. 5-7)
+        - vigilanza e controlli (cap. 8)
+        - esempi calcolo credito d'imposta (cap. 9)
+        - allegato VIII: modello Certificazione Ex Ante
+        - allegato IX: modello Relazione Tecnica Ex Ante
+        - allegato X: modello Certificazione Ex Post
+        - allegato XI: modello Relazione Tecnica Ex Post
+        - allegato III: dichiarazione terzieta' valutatore indipendente
+
+  - id: faq-mimit-transizione50
+    title: "FAQ MIMIT Transizione 5.0 - aggiornamento 10 aprile 2025 (versione vigente al last_verified)"
+    type: faq-ministeriale
+    url: https://www.mimit.gov.it/images/stories/documenti/allegati/FAQ_Transizione_50_-_10_aprile_2025.pdf
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/faq-mimit-transizione50-10-04-2025.pdf
+    excerpt_paths:
+      - references/estratti/faq-mimit-soggetti-certificatori.md
+    notes: |
+      FAQ ufficiali MIMIT, sostituiscono e integrano le precedenti versioni
+      (8/10/2024, 3/10/2024, 24/2/2025). Per la skill rilevano in particolare:
+        - FAQ 2.3: soggetti abilitati al rilascio delle certificazioni
+        - FAQ 2.4: perizia asseverata caratteristiche tecniche beni 4.0
+        - FAQ 2.5/2.6/2.7: documentazione comunicazioni preventiva/completamento
+        - FAQ 2.9: verifica DNSH
+        - FAQ 2.10: modifiche al programma di investimento (sostanziali vs ammesse)
+        - FAQ 2.13: intervento gia' completato
+        - FAQ 2.15: ESCo come soggetto beneficiario (non solo certificatore)
+      ATTENZIONE: il MIMIT aggiorna le FAQ periodicamente. Verificare la
+      versione piu' recente al momento dell'asseverazione.
+
+  - id: gse-portale-transizione50
+    title: "GSE - Portale Transizione 5.0 (Regole operative, Manuale utente, FAQ)"
+    type: portale-ente
+    url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr/transizione-5-0
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Sito istituzionale GSE per il Piano Transizione 5.0. Contiene:
+        - "Regole operative" GSE per la presentazione delle comunicazioni
+        - "Manuale Utente Portale Transizione 5.0"
+        - FAQ GSE complementari a quelle MIMIT
+        - elenco moduli aggiornato (delega, terzieta', dichiarazioni)
+      Accesso al portale TR5 esclusivamente tramite SPID nell'Area Clienti GSE.
+      La skill non riproduce i manuali operativi GSE, che cambiano in modo
+      frequente: rinvio strutturale per le procedure di trasmissione telematica.
+
+  - id: circolare-mise-18-12-2014-tep
+    title: "Circolare MISE 18 dicembre 2014 - Coefficienti di conversione in tep ex art. 19 L. 10/1991"
+    type: circolare
+    url: https://www.mimit.gov.it/it/normativa/circolari-note-direttive-e-atti-di-indirizzo/circolare-18-dicembre-2014-recante-disposizioni-integrative-per-il-meccanismo-dei-titoli-di-efficienza-energetica
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/circolare-mise-2014-tep.md
+    notes: |
+      Circolare di rinvio per i fattori di conversione in tep (tonnellate
+      equivalenti di petrolio) usati nei programmi di misura dei risparmi
+      energetici. Richiamata espressamente dall'art. 9 del DM Transizione 5.0
+      e dal cap. 2 della circolare operativa MIMIT 25877/2024 (tab. 11).
+      Citata dalla skill come rinvio strutturale: i coefficienti effettivi
+      vanno applicati alla data di calcolo. Estratto sintetico per i fattori
+      piu' usati (energia elettrica, gas naturale, gasolio).
+
+  - id: uni-cei-11339-ege
+    title: "UNI CEI 11339:2009 - Esperti in Gestione dell'Energia (EGE) - Requisiti generali per la qualificazione"
+    type: norma-uni
+    url: https://store.uni.com/uni-cei-11339-2009
+    accessed: 2026-04-29
+    sha256: null
+    license: proprietary-paid
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Norma UNI proprietaria (a pagamento). Rinvio strutturale: l'art. 15
+      co. 6 lett. a) del DM Transizione 5.0 individua come soggetto
+      certificatore l'EGE certificato secondo questa norma da organismo
+      accreditato Accredia. La skill cita la norma come riferimento
+      formale ma non ne riproduce il contenuto.
+
+  - id: uni-cei-11352-esco
+    title: "UNI CEI 11352:2014 - Energy Service Company (ESCo) - Requisiti generali"
+    type: norma-uni
+    url: https://store.uni.com/uni-cei-11352-2014
+    accessed: 2026-04-29
+    sha256: null
+    license: proprietary-paid
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Norma UNI proprietaria (a pagamento). Rinvio strutturale: l'art. 15
+      co. 6 lett. b) del DM Transizione 5.0 individua come soggetto
+      certificatore l'ESCo certificata secondo questa norma da organismo
+      accreditato Accredia. La skill cita la norma come riferimento
+      formale ma non ne riproduce il contenuto.
+
+  - id: regolamento-ue-2020-852-tassonomia
+    title: "Regolamento (UE) 2020/852 - Tassonomia delle attivita' ecosostenibili (art. 17 DNSH)"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/eli/reg/2020/852/oj/ita
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-eu-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: il principio "Do No Significant Harm" (DNSH)
+      richiamato dall'art. 5 e dall'art. 18 del DM Transizione 5.0 e' definito
+      dall'art. 17 di questo regolamento. La skill rinvia alle schede tecniche
+      DNSH dell'allegato VII della circolare operativa MIMIT 25877/2024 per
+      l'applicazione operativa.
+
+  - id: dpr-445-2000
+    title: "DPR 28 dicembre 2000, n. 445 - Testo unico in materia di documentazione amministrativa"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2000-12-28;445
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: la certificazione ex ante / ex post e' resa ai sensi
+      degli artt. 46 e segg. del DPR 445/2000 (dichiarazioni sostitutive di
+      atto di notorieta'). L'art. 76 DPR 445/2000 stabilisce le sanzioni penali
+      per false dichiarazioni e mendacio. Citato espressamente nei modelli
+      Allegati VIII e X della circolare MIMIT 25877/2024.
+
+  - id: codice-penale-359-481
+    title: "Codice penale - artt. 359 e 481 - Persone esercenti un servizio di pubblica necessita' / Falsita' ideologica in certificati"
+    type: codice
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: i modelli di certificazione ex ante/ex post
+      qualificano espressamente il certificatore come "persona esercente
+      un servizio di pubblica necessita'" ai sensi degli artt. 359 e 481
+      del codice penale. Cio' aggrava la responsabilita' penale del
+      certificatore in caso di falsa attestazione. La skill lo segnala come
+      elemento fondamentale del rischio professionale.
+
+  - id: legge-232-2016-allegati-A-B
+    title: "L. 11 dicembre 2016, n. 232 - Legge di bilancio 2017 - Allegati A e B (beni 4.0)"
+    type: legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2016-12-11;232
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: gli investimenti agevolabili dal Piano Transizione 5.0
+      (art. 4 co. 1 lett. a DM 24/7/2024) sono i beni materiali (Allegato A) e
+      immateriali (Allegato B) gia' definiti dalla L. 232/2016 per il Piano
+      Industria 4.0. La skill richiede che i beni siano riconducibili a una
+      voce dei due allegati e include un richiamo strutturale alla perizia
+      asseverata di cui all'art. 1 co. 11 L. 232/2016 (oggi art. 16 DM Transizione
+      5.0 + FAQ MIMIT 2.4): documento distinto dalla certificazione tecnica
+      EGE/ESCO oggetto di questa skill.
+
+  - id: dl-181-2023-art-12
+    title: "DL 9 dicembre 2023 n. 181 - art. 12 co. 1 - Caratteristiche dei moduli fotovoltaici per autoconsumo"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-12-09;181
+    accessed: 2026-04-29
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: l'art. 12 co. 1 lett. a/b/c DL 181/2023 fissa i requisiti
+      di filiera UE per i moduli fotovoltaici di autoproduzione FER (es. Piano
+      Transizione 5.0 art. 7 DM 24/7/2024). La FAQ MIMIT 2.7 richiede in fase di
+      comunicazione di completamento l'attestazione del produttore dei moduli FV
+      coerente con questi requisiti. La skill cita la norma come riferimento
+      formale ma non riproduce il contenuto operativo: per il dettaglio applicativo
+      vedere il testo consolidato vigente su Normattiva e la FAQ MIMIT 2.7
+      (estratto `faq-mimit-soggetti-certificatori.md`).
+
+# Fonti secondarie da valutare per estensioni successive
+secondary_sources_to_evaluate:
+  - id: legge-bilancio-2025-modifiche
+    title: "L. 30 dicembre 2024 n. 207 (Bilancio 2025) - art. 1 co. 427-429 - modifiche al Piano Transizione 5.0"
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207
+    notes: |
+      La Legge di Bilancio 2025 ha introdotto modifiche al Piano Transizione 5.0
+      (semplificazioni procedurali, ampliamento perimetro, aliquote modificate).
+      Da catalogare come fonte primaria al prossimo aggiornamento della skill,
+      verificando coerenza con le FAQ MIMIT vigenti.
+
+  - id: dm-correttivo-transizione50
+    title: "DM MIMIT-MEF correttivo Piano Transizione 5.0 (eventuale, post-Bilancio 2025)"
+    url: null
+    notes: |
+      Verificare se a valle della L. 207/2024 e' stato emanato un DM correttivo
+      del DM 24/7/2024. Se si', integrarlo come fonte primaria.
+
+  - id: gse-regole-operative-pdf
+    title: "GSE - Regole operative Piano Transizione 5.0 (PDF aggiornato)"
+    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/Transizione%205.0/
+    notes: |
+      Il GSE pubblica nel proprio sito istituzionale il documento "Regole
+      operative". Catalogarlo come fonte secondaria al prossimo aggiornamento.

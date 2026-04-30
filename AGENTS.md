@@ -20,6 +20,7 @@ Vedi [`README.md`](README.md) per l'elenco aggiornato. Al momento:
 - `skills/spettro-risposta-ntc/` - calcolo code-driven dello spettro di risposta elastico orizzontale ai sensi NTC 2018 par. 3.2 + Circ. 7/2019; modulo Python con test suite, output verificabile vs foglio Excel CSLP
 - `skills/pfte-allegato-i7-checker/` - checklist e verifica completezza elaborati PFTE / progetto esecutivo di lavori pubblici ai sensi D.Lgs. 36/2023 art. 41 + Allegato I.7 (Codice contratti pubblici), integrato dal correttivo D.Lgs. 209/2024
 - `skills/modulistica-edilizia-unificata/` - determinazione del modulo edilizio nazionale unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e relativo elenco di allegati, ai sensi DPR 380/2001 + Tabella A D.Lgs. 222/2016, integrato con il Salva Casa (DL 69/2024 conv. L. 105/2024) e con la modulistica unificata aggiornata in Conferenza Unificata il 27/3/2025
+- `skills/transizione-5-0-asseverazione/` - asseverazione tecnica ex ante/ex post del Piano Transizione 5.0 (calcolo riduzione consumi 3% struttura / 5% processo, conversione tep, modelli MIMIT) per EGE / ESCo / ingegneri / periti industriali ai sensi DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024 + Circolare MIMIT 25877/2024
 
 ## Come installarle
 

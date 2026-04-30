@@ -25,6 +25,7 @@ Contiene anche:
 | [`spettro-risposta-ntc`](skills/spettro-risposta-ntc/) | Calcolo code-driven dello spettro di risposta elastico orizzontale (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)) per SLO/SLD/SLV/SLC | NTC 2018 par. 3.2 + Circ. 7/2019 |
 | [`pfte-allegato-i7-checker`](skills/pfte-allegato-i7-checker/) | Checklist e verifica completezza degli elaborati di un PFTE / progetto esecutivo di lavori pubblici, integrato dal correttivo 2024 | D.Lgs. 36/2023 art. 41 + Allegato I.7 + D.Lgs. 209/2024 |
 | [`modulistica-edilizia-unificata`](skills/modulistica-edilizia-unificata/) | Determina il modulo edilizio unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e l'elenco degli allegati richiesti, integrato con le modifiche del Salva Casa | DPR 380/2001 + D.Lgs. 222/2016 Tabella A + DL 69/2024 conv. L. 105/2024 + Modulistica unificata 27/3/2025 |
+| [`transizione-5-0-asseverazione`](skills/transizione-5-0-asseverazione/) | Asseverazione tecnica ex ante / ex post per il credito d'imposta Piano Transizione 5.0 (calcolo riduzione consumi >=3% struttura o >=5% processo, conversione tep, modelli MIMIT) | DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024 + Circolare MIMIT 25877/2024 |
 
 Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
 
@@ -48,7 +49,8 @@ skill-per-ingegneri/
 │   ├── ai-act-compliance/
 │   ├── spettro-risposta-ntc/
 │   ├── pfte-allegato-i7-checker/
-│   └── modulistica-edilizia-unificata/
+│   ├── modulistica-edilizia-unificata/
+│   └── transizione-5-0-asseverazione/
 ├── methodology/                 # come si genera e mantiene una skill
 ├── templates/                   # scaffold dual-agent per nuove skill
 └── scripts/                     # utility CLI (new-skill, validate, fetch-sources)
@@ -131,6 +133,10 @@ Vedi [CONTRIBUTING.md](CONTRIBUTING.md). In sintesi:
 2. **Tracciabilita' delle fonti**. Ogni affermazione normativa e' riconducibile a un documento identificato da hash e data di consultazione (vedi `sources.yaml`).
 3. **Lingua italiana**. Gli adempimenti sono italiani: istruzioni, output e riferimenti normativi sono in italiano. Struttura del codice e metadata in inglese per compatibilita' internazionale.
 4. **Progressive disclosure**. Ogni skill e' monolitica ma carica solo i dettagli che servono per la specifica sotto-attivita' richiesta dall'utente.
+
+## Autore
+
+Davide Morelli <morelli.davide@gmail.com>
 
 ## Licenza
 
