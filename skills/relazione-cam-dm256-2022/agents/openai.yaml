@@ -1,0 +1,7 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Relazione CAM DM 256/2022
+short_description: Redazione e verifica della Relazione Tecnica dei Requisiti Ambientali CAM per lavori pubblici di edilizia (DM 23/06/2022 n. 256). Identifica i criteri applicabili per tipologia di intervento (NC/R1/R2/MS), genera la bozza criterio per criterio o verifica una relazione esistente.
+default_prompt: |
+  Devo preparare la relazione tecnica dei requisiti ambientali CAM per una gara di lavori pubblici. L'intervento e' una nuova costruzione di uffici comunali. Guidami nella redazione criterio per criterio.

@@ -1,0 +1,93 @@
+schema_version: 1
+skill: relazione-cam-dm256-2022
+last_verified: 2026-05-01
+
+# Fonti normative principali per la skill di redazione/verifica della
+# Relazione Tecnica dei Requisiti Ambientali CAM (DM 23/06/2022 n. 256).
+#
+# Architettura normativa:
+#   - DM 23/06/2022 n. 256 (decreto principale): ambito applicativo, definizioni,
+#     obblighi della stazione appaltante, struttura dei criteri
+#   - Allegato DM 256/2022: testo integrale dei criteri CAM (base + premianti)
+#     - Criterio 1: Selezione dei candidati
+#     - Criterio 2: Specifiche tecniche di base (obbligatorie per la Relazione)
+#     - Criterio 3: Condizioni di esecuzione
+#     - Criterio 4: Specifiche tecniche premianti (OEPV)
+#   - D.Lgs. 36/2023 art. 57: obbligo di applicazione dei CAM negli appalti PA
+#
+# Download manuale per popolare hash e binary_path:
+#   Allegato:
+#     curl -Lo not_in_repo/dm-256-2022-allegato.pdf \
+#       "https://www.bosettiegatti.eu/info/norme/statali/2022_dm_23_06_cam_edilizia_Allegato.pdf"
+#     shasum -a 256 not_in_repo/dm-256-2022-allegato.pdf
+#   GU decreto:
+#     (reperibile su gazzettaufficiale.it, eli/id/2022/08/06/22A04478/SG)
+#
+# Nota: il DM 256/2022 ha sostituito il precedente DM 11/01/2017 (CAM edilizia).
+# Verificare last_verified prima di applicare su una gara reale: il Ministero
+# dell'Ambiente aggiorna i CAM periodicamente.
+
+sources:
+  - id: dm-256-2022
+    title: "DM 23 giugno 2022 n. 256 - Criteri ambientali minimi per l'affidamento del servizio di progettazione di interventi edilizi, e per l'affidamento di lavori per la nuova costruzione, ristrutturazione e manutenzione di edifici pubblici (GU n. 183 del 06/08/2022)"
+    type: decreto-ministeriale
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.transizione.ecologica:decreto.ministeriale:2022-06-23;256
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dm-256-2022-articoli-chiave.md
+    notes: |
+      In vigore dall'08/10/2022 (60 giorni dalla GU). Sostituisce il DM 11/01/2017.
+      Art. 1 ambito applicativo (servizi di progettazione e lavori di edilizia pubblica).
+      Art. 2 definizioni (NC, ristrutturazione importante I/II livello, MS, CAM di base,
+      CAM premianti, Relazione Tecnica dei Requisiti Ambientali).
+      Art. 3 obblighi SA: inserimento CAM nel capitolato, nella documentazione di gara e
+      nella relazione progettuale.
+      Allegato 1: criteri CAM (il documento normativo operativo della skill).
+
+  - id: dm-256-2022-allegato
+    title: "Allegato al DM 23 giugno 2022 n. 256 - Criteri Ambientali Minimi per edilizia pubblica (testo dei criteri base e premianti)"
+    type: allegato
+    url: https://www.bosettiegatti.eu/info/norme/statali/2022_dm_23_06_cam_edilizia_Allegato.pdf
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-256-2022-allegato.pdf
+    excerpt_paths:
+      - references/estratti/dm-256-2022-allegato-criteri-2x.md
+      - references/estratti/dm-256-2022-allegato-criteri-premianti.md
+    notes: |
+      Documento principale della skill. Contiene:
+      - Criterio 1: Selezione dei candidati (SA)
+      - Criterio 2: Specifiche tecniche di base (obbligatorie; oggetto della Relazione)
+        2.1 Qualita' del suolo / 2.2 Durabilita' e adattabilita' /
+        2.3 Materiali da costruzione (sottocriteri 2.3.1-2.3.x per categoria) /
+        2.4 Sistemi di risparmio idrico / 2.5 Efficienza energetica /
+        2.6 Aree verdi / 2.7 Rifiuti da C&D / 2.8 Cantiere sostenibile /
+        2.9 Sistema di gestione ambientale esecutore
+      - Criterio 3: Condizioni di esecuzione (clausole contrattuali SA)
+      - Criterio 4: Specifiche tecniche premianti (OEPV)
+      SHA256 da popolare dopo download manuale.
+
+  - id: dlgs-36-2023-art57
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - art. 57 (Criteri ambientali minimi)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dlgs-36-2023-art57.md
+    notes: |
+      Art. 57 co. 1: le stazioni appaltanti contribuiscono al conseguimento degli
+      obiettivi ambientali previsti dal Piano d'azione per la sostenibilita' ambientale
+      (PAN GPP) attraverso l'inserimento nella documentazione progettuale e di gara
+      delle specifiche tecniche e delle clausole contrattuali contenute nei CAM.
+      Art. 57 co. 2: le stazioni appaltanti sono tenute ad applicare i CAM obbligatori
+      (specifiche tecniche di base) almeno per il 100% del valore a base d'asta
+      degli appalti di servizi e forniture e per almeno il 50% del valore a base
+      d'asta degli appalti di lavori.
+      Nota: il D.Lgs. 36/2023 e' in vigore dal 1/07/2023 (art. 229 co. 2).
