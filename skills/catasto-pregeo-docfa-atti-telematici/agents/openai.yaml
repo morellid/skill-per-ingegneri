@@ -1,0 +1,24 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Catasto - Atti telematici Pregeo 10 + Docfa 4
+short_description: |
+  Assistente alla redazione e al check pre-trasmissione degli atti di
+  aggiornamento del Catasto Terreni (Pregeo 10) e del Catasto Fabbricati
+  (Docfa 4): scelta tipologia atto Pregeo (TM/FR/FM/SC/TP), causale Docfa,
+  categoria catastale (A-F), Quadro D, Elaborato Planimetrico, dichiarazioni
+  ex art. 30 co. 5-bis DPR 380/2001 (deposito telematico frazionamenti dal
+  1/7/2025), diagnosi rifiuti telematici via Sister.
+default_prompt: |
+  Devo predisporre un atto di aggiornamento catastale (Pregeo o Docfa).
+  Dimmi:
+    1. e' Catasto Terreni (Pregeo) o Catasto Fabbricati (Docfa)?
+    2. che tipologia di intervento (nuova costruzione, ampliamento,
+       frazionamento, demolizione, ristrutturazione, regolarizzazione)?
+    3. la trasmissione e' gia' avvenuta (rifiuto da diagnosticare) o
+       in fase di redazione (check pre-invio)?
+  Procedi citando articolo, comma e fonte normativa precisa per ogni
+  passaggio (DPR 380/2001 art. 30, DM 28/1998, Circ. AdE 3/2009 par. ...,
+  Vademecum Docfa cap. ..., Risoluzione AdE 40/E 2025) e concludi con
+  l'elenco di elementi non automaticamente verificabili dalla skill +
+  rinvio alla revisione del professionista firmatario.

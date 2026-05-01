@@ -26,6 +26,7 @@ Contiene anche:
 | [`pfte-allegato-i7-checker`](skills/pfte-allegato-i7-checker/) | Checklist e verifica completezza degli elaborati di un PFTE / progetto esecutivo di lavori pubblici, integrato dal correttivo 2024 | D.Lgs. 36/2023 art. 41 + Allegato I.7 + D.Lgs. 209/2024 |
 | [`modulistica-edilizia-unificata`](skills/modulistica-edilizia-unificata/) | Determina il modulo edilizio unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e l'elenco degli allegati richiesti, integrato con le modifiche del Salva Casa | DPR 380/2001 + D.Lgs. 222/2016 Tabella A + DL 69/2024 conv. L. 105/2024 + Modulistica unificata 27/3/2025 |
 | [`transizione-5-0-asseverazione`](skills/transizione-5-0-asseverazione/) | Asseverazione tecnica ex ante / ex post per il credito d'imposta Piano Transizione 5.0 (calcolo riduzione consumi >=3% struttura o >=5% processo, conversione tep, modelli MIMIT) | DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024 + Circolare MIMIT 25877/2024 |
+| [`catasto-pregeo-docfa-atti-telematici`](skills/catasto-pregeo-docfa-atti-telematici/) | Assistente alla redazione e al check pre-trasmissione degli atti telematici di aggiornamento del Catasto Terreni (Pregeo 10) e del Catasto Fabbricati (Docfa 4): scelta tipologia atto Pregeo (TM/FR/FM/SC/TP), causale e categoria Docfa, EP/ES/ET/Quadro D, deposito telematico frazionamenti dal 1/7/2025, diagnosi rifiuti telematici via Sister | DPR 380/2001 art. 30 + DM 28/1998 + Circ. AdE 3/2009 + Vademecum Docfa v1.0 (7/2022) + Risoluzione AdE 40/E del 9/6/2025 |
 
 Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
 
@@ -50,7 +51,8 @@ skill-per-ingegneri/
 │   ├── spettro-risposta-ntc/
 │   ├── pfte-allegato-i7-checker/
 │   ├── modulistica-edilizia-unificata/
-│   └── transizione-5-0-asseverazione/
+│   ├── transizione-5-0-asseverazione/
+│   └── catasto-pregeo-docfa-atti-telematici/
 ├── methodology/                 # come si genera e mantiene una skill
 ├── templates/                   # scaffold dual-agent per nuove skill
 └── scripts/                     # utility CLI (new-skill, validate, fetch-sources)
