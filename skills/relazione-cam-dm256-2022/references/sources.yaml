@@ -15,13 +15,11 @@ last_verified: 2026-05-01
 #     - Criterio 4: Specifiche tecniche premianti (OEPV)
 #   - D.Lgs. 36/2023 art. 57: obbligo di applicazione dei CAM negli appalti PA
 #
-# Download manuale per popolare hash e binary_path:
-#   Allegato:
-#     curl -Lo not_in_repo/dm-256-2022-allegato.pdf \
-#       "https://www.bosettiegatti.eu/info/norme/statali/2022_dm_23_06_cam_edilizia_Allegato.pdf"
-#     shasum -a 256 not_in_repo/dm-256-2022-allegato.pdf
-#   GU decreto:
-#     (reperibile su gazzettaufficiale.it, eli/id/2022/08/06/22A04478/SG)
+# Fonte archiviata:
+#   not_in_repo/dm-256-2022-gu.pdf
+#   Scaricata da: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04478/SG
+#   SHA256: 9e960f335e2a19498e8bab9709d1462a559dd8d207043f45286a6b7de5607a1d
+#   Il PDF della GU include sia il decreto principale che l'Allegato con i criteri CAM.
 #
 # Nota: il DM 256/2022 ha sostituito il precedente DM 11/01/2017 (CAM edilizia).
 # Verificare last_verified prima di applicare su una gara reale: il Ministero
@@ -31,11 +29,11 @@ sources:
   - id: dm-256-2022
     title: "DM 23 giugno 2022 n. 256 - Criteri ambientali minimi per l'affidamento del servizio di progettazione di interventi edilizi, e per l'affidamento di lavori per la nuova costruzione, ristrutturazione e manutenzione di edifici pubblici (GU n. 183 del 06/08/2022)"
     type: decreto-ministeriale
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.transizione.ecologica:decreto.ministeriale:2022-06-23;256
+    url: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04478/SG
     accessed: 2026-05-01
-    sha256: null
+    sha256: 9e960f335e2a19498e8bab9709d1462a559dd8d207043f45286a6b7de5607a1d
     license: public-domain-italian-law
-    binary_path: null
+    binary_path: not_in_repo/dm-256-2022-gu.pdf
     excerpt_paths:
       - references/estratti/dm-256-2022-articoli-chiave.md
     notes: |
@@ -46,20 +44,22 @@ sources:
       Art. 3 obblighi SA: inserimento CAM nel capitolato, nella documentazione di gara e
       nella relazione progettuale.
       Allegato 1: criteri CAM (il documento normativo operativo della skill).
+      Il PDF scaricato dalla GU include sia il decreto principale che l'Allegato con i criteri.
 
   - id: dm-256-2022-allegato
     title: "Allegato al DM 23 giugno 2022 n. 256 - Criteri Ambientali Minimi per edilizia pubblica (testo dei criteri base e premianti)"
     type: allegato
-    url: https://www.bosettiegatti.eu/info/norme/statali/2022_dm_23_06_cam_edilizia_Allegato.pdf
+    url: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04478/SG
     accessed: 2026-05-01
-    sha256: null
+    sha256: 9e960f335e2a19498e8bab9709d1462a559dd8d207043f45286a6b7de5607a1d
     license: public-domain-italian-law
-    binary_path: not_in_repo/dm-256-2022-allegato.pdf
+    binary_path: not_in_repo/dm-256-2022-gu.pdf
     excerpt_paths:
       - references/estratti/dm-256-2022-allegato-criteri-2x.md
       - references/estratti/dm-256-2022-allegato-criteri-premianti.md
     notes: |
-      Documento principale della skill. Contiene:
+      Documento principale della skill (allegato al DM 256/2022, incluso nel PDF della GU).
+      Contiene:
       - Criterio 1: Selezione dei candidati (SA)
       - Criterio 2: Specifiche tecniche di base (obbligatorie; oggetto della Relazione)
         2.1 Qualita' del suolo / 2.2 Durabilita' e adattabilita' /
@@ -69,7 +69,7 @@ sources:
         2.9 Sistema di gestione ambientale esecutore
       - Criterio 3: Condizioni di esecuzione (clausole contrattuali SA)
       - Criterio 4: Specifiche tecniche premianti (OEPV)
-      SHA256 da popolare dopo download manuale.
+      Stessa fonte ufficiale GU del decreto principale (stesso binary_path).
 
   - id: dlgs-36-2023-art57
     title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - art. 57 (Criteri ambientali minimi)"
