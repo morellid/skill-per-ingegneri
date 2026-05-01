@@ -1,236 +1,460 @@
-# DM 256/2022 - Allegato - Criterio 2: Specifiche tecniche di base (estratto)
+# DM 256/2022 - Allegato - Criteri per l'affidamento del servizio di progettazione (estratto)
 
-**Fonte**: Allegato al DM 23/06/2022 n. 256  
-**Licenza**: public-domain-italian-law  
+**Fonte**: Allegato al DM 23/06/2022 n. 256
+**Licenza**: public-domain-italian-law
 
 ---
 
-## Legenda tipologie di intervento
+## Ambito di applicazione (Premessa - sezione 1.1)
 
-| Sigla | Tipo |
+I criteri dell'Allegato si applicano a tutti gli interventi edilizi disciplinati dal Codice dei Contratti Pubblici (art. 3 co. 1 lett. nn), oo quater) e oo quinquies)).
+
+**Interventi non riguardanti interi edifici**: si applicano solo i capitoli **2.5** (prodotti da costruzione) e **2.6** (cantiere).
+
+**Appalti di manutenzione immobili e impianti**: si applicano solo i capitoli **2.5**, **2.6**, e i criteri **3.1.2** (macchine operatrici) e **3.1.3** (grassi e oli lubrificanti).
+
+---
+
+## 2.2 Clausole contrattuali (estratto)
+
+### 2.2.1 Relazione CAM
+
+La **Relazione Tecnica dei Requisiti Ambientali** e' una clausola contrattuale obbligatoria per i contratti di progettazione. Il progettista redige la Relazione CAM come parte della documentazione progettuale. Per ciascun criterio obbligatorio dei capitoli 2.3, 2.4, 2.5 e 2.6, la Relazione CAM illustra:
+- in che modo il progetto ha tenuto conto del criterio;
+- gli elaborati progettuali pertinenti;
+- i materiali e prodotti specificati;
+- i mezzi di verifica che il Direttore dei Lavori richiede in fase esecutiva.
+
+Per i criteri non applicabili all'intervento, il progettista indica la motivazione nella Relazione CAM con i riferimenti normativi che determinano la non applicabilita'.
+
+---
+
+## 2.3 Specifiche tecniche di livello territoriale-urbanistico
+
+I criteri 2.3.x si applicano ai progetti di **nuova costruzione** e **ristrutturazione urbanistica**. La verifica avviene tramite la Relazione CAM.
+
+### 2.3.1 Inserimento naturalistico e paesaggistico
+
+Il progetto e' coerente con i valori naturalistici, paesaggistici e storico-culturali del contesto. Garantisce la conservazione delle specie arboree e arbustive autoctone presenti.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.2 Permeabilita' della superficie territoriale
+
+Il progetto di nuova costruzione e ristrutturazione urbanistica prevede che le superfici non edificate abbiano un **coefficiente di deflusso inferiore a 0,50** (superfici permeabili). Le superfici impermeabili confinate su tutti i lati da manufatti impermeabili non sono conteggiate.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.3 Riduzione dell'effetto "isola di calore estiva" e dell'inquinamento atmosferico
+
+Il progetto di nuova costruzione e ristrutturazione urbanistica garantisce e prevede:
+a. una superficie a verde pari ad almeno il **60%** della superficie permeabile (criterio 2.3.2);
+b. aree di verde pubblico conformi al DM 10/03/2020 n. 63 (CAM verde pubblico);
+c. valutazione qualitativa del verde presente (struttura orizzontale, verticale, temporale);
+d. specie arboree con bassa percentuale di trasmissione estiva e alta percentuale invernale; specie efficaci nell'assorbimento di inquinanti atmosferici;
+e. superfici pavimentate e aree di parcheggio con **SRI (Solar Reflectance Index) >= 29**;
+f. superfici esterne di parcheggio ombreggiate (almeno 10% da copertura verde; perimetro con cintura verde >= 1 m);
+g. per coperture degli edifici: sistemazioni a verde, oppure tetti ventilati o materiali con SRI >= 29 (pendenza > 15%) o SRI >= 76 (pendenza <= 15%).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.4 Riduzione dell'impatto sul sistema idrografico superficiale e sotterraneo
+
+Il progetto garantisce la conservazione degli ecosistemi fluviali, la realizzazione di impianti di depurazione delle acque di prima pioggia (primi 5 mm di ogni evento), il corretto deflusso superficiale e la prevenzione di erosione e contaminazione delle acque sotterranee.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.5 Infrastrutturazione primaria
+
+Il progetto prevede, in funzione delle dimensioni, tipologia e numero di utenti:
+
+**2.3.5.1 Raccolta, depurazione e riuso delle acque meteoriche**: rete separata per la raccolta delle acque meteoriche; vasche di raccolta per usi irrigui e cassette WC. Progetto redatto sulla base di UNI/TS 11445 e UNI EN 805.
+
+**2.3.5.2 Rete di irrigazione delle aree a verde pubblico**: si applica quanto previsto nei CAM verde pubblico (DM 10/03/2020 n. 63).
+
+**2.3.5.3 Aree attrezzate per la raccolta differenziata dei rifiuti**: aree dedicate per la raccolta differenziata locale coerenti con i regolamenti comunali.
+
+**2.3.5.4 Impianto di illuminazione pubblica**: criteri di progettazione rispondenti ai CAM illuminazione pubblica (DM 27/09/2017 n. 244).
+
+**2.3.5.5 Sottoservizi per infrastrutture tecnologiche**: canalizzazioni interrate per tutte le reti tecnologiche, con dimensionamento per futuri ampliamenti.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.6 Infrastrutturazione secondaria e mobilita' sostenibile
+
+Il progetto favorisce la localizzazione:
+1. a meno di 500 m dai servizi pubblici;
+2. a meno di 800 m dalle stazioni metropolitane o 2.000 m dalle stazioni ferroviarie;
+3. se non disponibili stazioni a meno di 800 m, prevede servizi navetta e rastrelliere bici ai nodi di scambio;
+4. a meno di 500 m dalle fermate del trasporto pubblico di superficie.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.7 Approvvigionamento energetico
+
+In aree di nuova edificazione o ristrutturazione urbanistica, il fabbisogno energetico complessivo e' soddisfatto, per quanto possibile, da impianti a fonti rinnovabili locali o nelle vicinanze (cogenerazione, fotovoltaico, eolico, solare termico, geotermia, pompe di calore, biogas), favorendo la partecipazione a comunita' energetiche rinnovabili.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.8 Rapporto sullo stato dell'ambiente
+
+*Indicazioni per la SA*: **non si applica** ai progetti sottoposti a procedure di valutazione d'impatto ambientale (D.Lgs. 3 aprile 2006 n. 152).
+
+In caso di nuova edificazione o ristrutturazione urbanistica e' allegato un Rapporto sullo stato dell'ambiente (suolo, flora, fauna, acque, ecc.) redatto da un professionista iscritto ad albi o registri professionali, in conformita' alle leggi e regolamenti vigenti.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.3.9 Risparmio idrico
+
+Il progetto garantisce e prevede:
+a. sistemi di riduzione di flusso e controllo della portata e della temperatura dell'acqua; rubinetteria temporizzata ed elettronica con interruzione del flusso per lavabi, bidet e docce con consumo **<= 6 l/min per lavabi/lavandini e bidet** e **<= 8 l/min per docce** (secondo UNI EN 816, UNI EN 15091); apparecchi sanitari con cassette a doppio scarico aventi **scarico completo <= 6 l** e **scarico ridotto <= 3 l**; in fase di esecuzione, per i sistemi di riduzione di flusso e' richiesta una dichiarazione del produttore o etichettatura (es. Unified Water Label);
+b. orinatoi senz'acqua.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+---
+
+## 2.4 Specifiche tecniche progettuali per gli edifici
+
+*Indicazioni per la SA*: I criteri di questo capitolo sono obbligatori ai sensi dell'art. 34 del D.Lgs. 18 aprile 2016 n. 50. La verifica avviene tramite la Relazione CAM.
+
+### 2.4.1 Diagnosi energetica
+
+*Indicazioni per la SA*: La SA fornisce i consumi effettivi dell'edificio ricavabili dalle bollette energetiche degli ultimi tre anni (o ultimi tre esercizi).
+
+Il progetto di fattibilita' tecnico-economica per la ristrutturazione importante di I e II livello di edifici con superficie utile >= 1.000 mq e < 5.000 mq e' predisposto sulla base di una diagnosi energetica "standard" (UNI CEI EN 16247-1/2, UNI/TR 11775). Per edifici con superficie >= 5.000 mq si usa la diagnosi "dinamica" (UNI CEI EN 16247-1/2, metodo dinamico orario UNI EN ISO 52016-1, analisi costi ciclo vita UNI EN 15459).
+
+*Verifica*: La Relazione CAM include una diagnosi energetica elaborata da un EGE (certificato UNI CEI 11339) o da una ESCo (certificata UNI CEI 11352), o da un esperto certificato UNI CEI EN ISO/IEC 17024.
+
+### 2.4.2 Prestazione energetica
+
+Il progetto di nuova costruzione, demolizione e ricostruzione e ristrutturazione importante di primo livello garantisce adeguate condizioni di comfort termico tramite una delle seguenti:
+a. massa superficiale >= **250 kg/m²** per ogni struttura opaca verticale dell'involucro esterno (D.Lgs. 19/08/2005 n. 192, co. 29 Allegato A);
+b. trasmittanza termica periodica Yie < **0,09 W/m²K** per pareti opache verticali (escluse NordOvest/Nord/NordEst) e < **0,16 W/m²K** per pareti opache orizzontali e inclinate (UNI EN ISO 13786);
+c. verifica del numero di ore di occupazione con |differenza temperatura operante - temperatura riferimento| < 4°C superiore all'85% delle ore tra il 20 giugno e il 21 settembre.
+
+Gli edifici di nuova costruzione e quelli oggetto di ristrutturazione importante di primo livello devono essere edifici a **energia quasi zero** (NZEB).
+
+*Verifica*: La Relazione CAM include la relazione tecnica (DM interministeriale 26/06/2015) e la relazione tecnica e relativi elaborati di applicazione CAM. Per verifica dinamica oraria: temperatura operante estiva secondo UNI EN ISO 52016-1, verifica |theta_o,t - theta_rif| < 4°C per >85% delle ore (20 giugno - 21 settembre).
+
+Per n50 (tenuta all'aria, criterio 2.4.9): **n50 < 2** per nuove costruzioni (minimo), **n50 < 1** (premiante); **n50 < 3,5** per R1 (minimo), **n50 < 3** (premiante).
+
+### 2.4.3 Impianti di illuminazione per interni
+
+Il progetto di nuova costruzione (inclusa demolizione e ricostruzione) e ristrutturazione prevede impianti di illuminazione conformi a UNI EN 12464-1 con:
+a. sistemi di gestione automatica (accensione, spegnimento, dimmerazione) su base oraria e in funzione degli apporti naturali; per edifici non residenziali e aree comuni residenziali;
+b. lampade LED con durata minima di **50.000 ore** per abitazioni, scuole e uffici.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.4 Ispezionabilita' e manutenzione degli impianti di riscaldamento e condizionamento
+
+I locali tecnici destinati ad alloggiare apparecchiature devono essere adeguati ai fini di una corretta manutenzione igienica degli stessi. Il progetto individua i locali tecnici con gli spazi minimi obbligatori e i punti di accesso ai circuiti degli impianti tecnologici. Per tutti gli impianti aeraulici e' prevista una **ispezione tecnica iniziale** (prima del primo avviamento) secondo UNI EN 15780.
+
+*Indicazioni per la SA*: In fase di esecuzione sara' verificato che l'impresa sia in possesso della certificazione F-gas (DPR 16 novembre 2018 n. 146).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.5 Aerazione, ventilazione e qualita' dell'aria
+
+Per nuove costruzioni, demolizione e ricostruzione, ampliamento e sopra elevazione e ristrutturazioni importanti di primo livello: sono garantite le portate d'aria esterna previste da UNI 10339 oppure e' garantita almeno la **Classe II** di UNI EN 16798-1 (*very low polluting building* per NC; *low polluting building* per R1). I sistemi di VMC prevedono il **recupero di calore** (recuperatore aria estratta-aria immessa).
+
+Per R2 e riqualificazioni energetiche, in caso di impossibilita' tecnica, e' concesso il conseguimento della **Classe III** della UNI EN 16798-1, previo rispetto del criterio 2.4.6 e di contenimento del fabbisogno di energia termica per ventilazione.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio. L'eventuale impossibilita' tecnica e' documentata con la non fattibilita' delle opzioni tecnologiche disponibili.
+
+### 2.4.6 Benessere termico
+
+E' garantito il benessere termico e di qualita' dell'aria interna in conformita' almeno alla **classe B** secondo UNI EN ISO 7730 in termini di PMV (Voto Medio Previsto) e PPD (Percentuale Prevista di Insoddisfatti), con verifica dell'assenza di discomfort locale.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.7 Illuminazione naturale
+
+In progetti di ristrutturazione urbanistica, nuova costruzione e demolizione e ricostruzione, per qualsiasi destinazione d'uso (escluse sale operatorie, sale radiologiche e simili; escluse scuole materne, asili nido e scuole primarie e secondarie per le quali vigono norme specifiche), e' garantito un illuminamento da luce naturale di almeno:
+- **300 lux** verificato nel 50% dei punti di misura (all'interno del locale);
+- **100 lux** verificato nel 95% dei punti di misura (livello minimo);
+per almeno la meta' delle ore di luce diurna.
+
+Per scuole primarie e secondarie: 500 lux (50% punti) e 300 lux (95% punti). Per scuole materne e asili: 750 lux (50% punti) e 500 lux (95% punti).
+
+Calcolo secondo UNI EN 17037 (fattore medio di luce diurna tramite UNI 10840 per edifici scolastici, UNI EN 15193-1 per altri).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.8 Dispositivi di ombreggiamento
+
+In ristrutturazione urbanistica, nuova costruzione e demolizione e ricostruzione: le parti trasparenti esterne degli edifici, sia verticali che inclinate, con esposizione da EST a OVEST passando da Sud, sono dotate di **sistemi di schermatura o ombreggiamento fissi o mobili** verso l'esterno, oppure la sola componente vetrata ha un fattore di trasmissione totale solare **gtot <= 0,35** (UNI EN 14501).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.9 Tenuta all'aria
+
+In tutte le unita' immobiliari riscaldate e' garantita la tenuta all'aria dell'involucro con i seguenti valori n50 (verificati secondo UNI EN ISO 9972):
+- Nuove costruzioni: **n50 < 2** (valore minimo), n50 < 1 (valore premiante);
+- Ristrutturazione importante di primo livello: **n50 < 3,5** (valore minimo), n50 < 3 (valore premiante).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.10 Inquinamento elettromagnetico negli ambienti interni
+
+Il progetto riduce l'esposizione a campi magnetici a bassa frequenza (ELF) e ad alta frequenza (RF) attraverso:
+a. quadro generale, contatori e colonne montanti collocati all'esterno e non in adiacenza a locali;
+b. posa degli impianti elettrici a "stella" o ad "albero" o a "lisca di pesce", con i conduttori di un circuito il piu' possibile vicini l'uno all'altro;
+c. posa dei cavi elettrici con i conduttori di ritorno affiancati alle fasi di andata e alla minima distanza possibile;
+d. access-point wi-fi posizionati ad altezze superiori a quella delle persone, non in corrispondenza di aree ad elevata frequentazione o permanenza.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.11 Prestazioni e comfort acustici
+
+I valori prestazionali dei requisiti acustici passivi degli elementi tecnici dell'edificio (partizioni orizzontali e verticali, facciate, impianti tecnici), definiti dalla UNI 11367, corrispondono almeno a quelli della **classe II** del prospetto 1 di tale norma. Per ospedali e case di cura: "prestazione superiore" (prospetto A.1 Appendice A) e "prestazione buona" (prospetto B.1 Appendice B). Per scuole: valori UNI 11532-2.
+
+*Verifica*: La Relazione CAM include una relazione acustica di calcolo previsionale redatta da un tecnico competente in acustica. In fase di verifica finale: relazione di collaudo su misure acustiche in opera.
+
+### 2.4.12 Radon
+
+Il livello massimo di riferimento per la concentrazione di gas radon all'interno degli edifici e' di **200 Bq/m³** (valore medio annuo). Sono adottate strategie progettuali per prevenire e ridurre la concentrazione di radon, in conformita' al Piano nazionale d'azione per il radon (D.Lgs. 31/07/2020 n. 101, art. 10 co. 1).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio. E' previsto un sistema di misurazione (D.Lgs. 101/2020, Allegato II Sezione I).
+
+### 2.4.13 Piano di manutenzione dell'opera
+
+Il progettista redige il piano di manutenzione generale dell'opera con archiviazione della documentazione tecnica riguardante l'edificio, accessibile al gestore per ottimizzarne la gestione. I documenti da archiviare includono: relazione generale, relazioni specialistiche, elaborati grafici, elaborati dell'edificio "come costruito" con documentazione fotografica, piano di manutenzione (manuale d'uso, manuale di manutenzione, programma di manutenzione), piano di gestione e irrigazione delle aree verdi, piano di fine vita con elenco di tutti i materiali, componenti edilizi ed elementi prefabbricati che possono essere riutilizzati o riciclati.
+
+Deve essere prevista l'archiviazione della documentazione tecnica nella rappresentazione **BIM** (IFC - Industry Foundation Classes), con indicazione del livello LOD del modello BIM (A-B-C-D-E-F-G, norma UNI 11337-4).
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
+
+### 2.4.14 Disassemblaggio e fine vita
+
+Il progetto relativo a edifici di nuova costruzione (inclusa demolizione e ricostruzione e ristrutturazione edilizia) prevede che almeno il **70% peso/peso** dei componenti edilizi e degli elementi prefabbricati utilizzati nel progetto, esclusi gli impianti, sia sottoponibile a fine vita a disassemblaggio o demolizione selettiva (decostruzione) per essere sottoposto a preparazione per il riutilizzo, riciclaggio o altre operazioni di recupero.
+
+Il piano per il disassemblaggio e la demolizione selettiva e' redatto sulla base della norma ISO 20887 "Sustainability in buildings and civil engineering works - Design for disassembly and adaptability" o della UNI/PdR 75 "Decostruzione selettiva".
+
+*Verifica*: Il progettista redige il piano per il disassemblaggio e la demolizione selettiva, allegando schede tecniche o la documentazione tecnica del fabbricante dei componenti con EPD conformi alla UNI EN 15804.
+
+---
+
+## 2.5 Specifiche tecniche per i prodotti da costruzione
+
+*Indicazioni per la SA*: I criteri di questo capitolo sono obbligatori ai sensi dell'art. 34 del D.Lgs. 18 aprile 2016 n. 50. Per i prodotti con norma armonizzata, le dichiarazioni di prestazione (DoP) devono essere rese in accordo con il Regolamento prodotti da costruzione 305/2011/UE e il D.Lgs. 16 giugno 2017 n. 106. I mezzi di prova della conformita' sono presentati dall'appaltatore al direttore dei lavori per le verifiche prima dell'accettazione dei materiali in cantiere.
+
+Il valore percentuale del contenuto di materia riciclata, recuperata o di sottoprodotti e' dimostrato tramite una delle seguenti opzioni: EPD di Tipo III (UNI EN 15804 e ISO 14025); certificazione "ReMade in Italy(R)"; marchio "Plastica seconda vita"; certificazione VinylPlus (per PVC); certificazione di tracciabilita' rilasciata da organismo accreditato; certificazione UNI/PdR 88 "Requisiti di verifica del contenuto di riciclato".
+
+### 2.5.1 Emissioni negli ambienti confinati (inquinamento indoor)
+
+Le seguenti categorie di materiali rispettano i limiti di emissione nella tabella seguente (verificati a 28 giorni):
+a. pitture e vernici per interni;
+b. pavimentazioni (escluse piastrelle ceramica e laterizi senza lavorazione post cottura con vernici/resine);
+c. adesivi e sigillanti;
+d. rivestimenti interni (escluse piastrelle ceramica e laterizi);
+e. pannelli di finitura interni (comprensivi di eventuali isolanti a vista);
+f. controsoffitti;
+g. schermi al vapore sintetici per protezione interna del pacchetto di isolamento.
+
+| Sostanza | Limite (µg/m³) a 28 giorni |
 |---|---|
-| NC | Nuova costruzione |
-| R1 | Ristrutturazione importante I livello (>50% superficie disperdente) |
-| R2 | Ristrutturazione importante II livello (<=50% superficie disperdente o elementi singoli) |
-| MS | Manutenzione straordinaria |
+| Benzene, Tricloroetilene, DEHP, DBP | 1 (per ogni sostanza) |
+| COV totali | 1.500 |
+| Formaldeide | <60 |
+| Acetaldeide | <300 |
+| Toluene | <450 |
+| Tetracloroetilene | <350 |
+| Xilene | <300 |
+| 1,2,4-Trimetilbenzene | <1.500 |
+| 1,4-Diclorobenzene | <90 |
+| Etilbenzene | <1.000 |
+| 2-Butossietanolo | <1.500 |
+| Stirene | <350 |
 
-Nella colonna "Applicabilita'" si riporta a quali tipologie si applica ciascun criterio.
+Fattori di carico da applicare: 1,0 m²/m³ per pareti; 0,4 m²/m³ per pavimenti o soffitto; 0,05 m²/m³ per piccole superfici (porte); 0,07 m²/m³ per finestre; 0,007 m²/m³ per sigillanti.
 
----
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio. In alternativa ai test, possono essere scelti prodotti con etichettatura specifica (AgBB, Blue Angel, Eco INSTITUT-Label, EMICODE EC1/EC1+, Indoor Air Comfort, M1 Emission Classification, CATAS quality award CAM edilizia, Cosmob Qualitas Praemium INDOOR HI-QUALITY).
 
-## Criterio 2.1 - Qualita' del suolo
+### 2.5.2 Calcestruzzi confezionati in cantiere e preconfezionati
 
-**Applicabilita'**: NC, R1, R2 con nuova edificazione su suolo
+I calcestruzzi confezionati in cantiere e preconfezionati hanno un contenuto di materie riciclate, ovvero recuperate, ovvero di sottoprodotti di almeno il **5% sul peso del prodotto** (somma delle tre frazioni, calcolata come rapporto tra peso secco delle materie riciclate/recuperate/sottoprodotti e il peso del calcestruzzo al netto dell'acqua).
 
-Per gli interventi di nuova costruzione e per le ristrutturazioni che prevedano scavi e movimentazione terra, il progettista deve:
-- Verificare che il sito non sia soggetto a fenomeni di contaminazione (ex DM 471/1999 e D.Lgs. 152/2006, Titolo V parte IV).
-- In caso di sito bonificato o con presenza di rifiuti, presentare certificazione dell'avvenuto completamento della bonifica o, in mancanza, escludere il sito dall'intervento.
-- Privilegiare la riqualificazione di aree degradate o gia' edificate rispetto all'uso di suolo vergine.
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-*Documenti di verifica*: certificato di bonifica o dichiarazione di assenza di contaminazione; estratto catastale; planimetria con destinazione d'uso pregressa.
+### 2.5.3 Prodotti prefabbricati in calcestruzzo, in calcestruzzo aerato autoclavato e in calcestruzzo vibrocompresso
 
----
+I prodotti prefabbricati in calcestruzzo hanno un contenuto di materia recuperata, ovvero riciclata, ovvero di sottoprodotti di almeno il **5% sul peso** del prodotto (somma delle tre frazioni). I blocchi per muratura in **calcestruzzo aerato autoclavato** (CAC) hanno un contenuto di almeno il **7,5%** sul peso del prodotto.
 
-## Criterio 2.2 - Durabilita', adattabilita' e flessibilita'
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-**Applicabilita'**: NC, R1
+### 2.5.4 Acciaio
 
-Il progetto deve prevedere:
-- Vita utile degli elementi costruttivi non inferiore a 50 anni per la struttura e almeno 25 anni per l'involucro e gli impianti principali.
-- Accessibilita' ai componenti impiantistici per la manutenzione e sostituzione senza opere murarie invasive.
-- Flessibilita' distributiva: struttura progettata per consentire modifiche di layout interno con interventi non strutturali.
-- Adattabilita' climatica: involucro progettato per resistere agli scenari di stress termico previsti dalle proiezioni climatiche locali per i prossimi 50 anni.
+Per gli **usi strutturali**: acciaio con contenuto minimo di materia recuperata, ovvero riciclata, ovvero di sottoprodotti:
+- acciaio da forno elettrico non legato: >= **75%**
+- acciaio da forno elettrico legato: >= **60%**
+- acciaio da ciclo integrale: >= **12%**
 
-*Documenti di verifica*: relazione tecnica con vita utile dichiarata per ciascun elemento costruttivo; tavole progettuali con schema degli impianti e accessi manutentivi.
+Per gli **usi non strutturali**:
+- acciaio da forno elettrico non legato: >= **65%**
+- acciaio da forno elettrico legato: >= **60%**
+- acciaio da ciclo integrale: >= **12%**
 
----
+"Acciaio da forno elettrico legato" = acciai inossidabili e altri acciai legati (UNI EN 10020) e acciai alto legati da EAF (Regolamento delegato (UE) 2019/331).
 
-## Criterio 2.3 - Materiali da costruzione
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-**Applicabilita'**: tutti gli interventi per le categorie di materiale effettivamente utilizzate
+### 2.5.5 Laterizi
 
-### Criterio 2.3.1 - Requisiti generali per i materiali da costruzione
+I laterizi usati per muratura e solai hanno un contenuto di materie riciclate, ovvero recuperate, ovvero di sottoprodotti (sul secco) di almeno il **15%** sul peso del prodotto. Qualora i laterizi contengano solo materia riciclata ovvero recuperata: almeno **10%**.
 
-Tutti i materiali da costruzione devono avere un contenuto minimo di materia recuperata o riciclata post-consumo secondo le percentuali indicate per ciascuna categoria nei criteri successivi.
+I laterizi per coperture, pavimenti e muratura faccia vista hanno un contenuto di materie riciclate/recuperate/sottoprodotti (sul secco) di almeno il **7,5%** sul peso. Qualora contengano solo materia riciclata/recuperata: almeno **5%**.
 
-In assenza di specifica percentuale per una categoria, si applica il requisito generale: **almeno il 15% in peso** del materiale deve provenire da recupero o riciclo, salvo comprovata indisponibilita' di mercato documentata dal progettista.
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-Le dichiarazioni di prodotto possono essere fornite tramite:
-- Certificazione di prodotto rilasciata da organismo accreditato (es. EPD, DAP);
-- Dichiarazione del produttore, verificabile con audit;
-- Etichette ambientali di Tipo I (ISO 14024) pertinenti (es. Ecolabel UE, Blauer Engel).
+### 2.5.6 Prodotti legnosi
 
-### Criterio 2.3.2 - Calcestruzzi strutturali
+Tutti i prodotti in legno devono provenire da foreste gestite in maniera sostenibile (certificazione **FSC(R)** o **PEFC** per materie prime vergini, come per elementi strutturali), oppure rispettare le percentuali di riciclato indicate al punto "b" della verifica se costituiti prevalentemente da materie prime seconde.
 
-**Contenuto minimo di materiale riciclato**: almeno il **5% in peso** di aggregati riciclati sul totale degli aggregati impiegati nel calcestruzzo, per edifici con meno di 4 piani fuori terra; almeno **25%** per edifici con piu' di 4 piani (calcestruzzo non strutturale) oppure come da normativa tecnica vigente se piu' restrittiva.
+*Verifica*:
+a. Per origine sostenibile: certificato di catena di custodia FSC(R) o PEFC.
+b. Per legno riciclato: certificazione di catena di custodia che attesti almeno il **70%** di materiale riciclato (FSC(R) Riciclato o FSC(R) Misto con Ciclo di Moebius >= 70%; PEFC Riciclato; ReMade in Italy(R); Ecolabel UE).
 
-Il contenuto di aggregati riciclati deve essere dichiarato nella specifica tecnica di prodotto e nella bolla di consegna del calcestruzzo.
+*Nota*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-*Eccezioni*: calcestruzzi per fondazioni speciali o ambienti fortemente aggressivi possono essere esentati su giustificazione tecnica del progettista strutturale.
+### 2.5.7 Isolanti termici ed acustici
 
-### Criterio 2.3.3 - Elementi laterizi
+Gli isolanti (termici o acustici) rispettano i seguenti requisiti:
+c. marcatura CE per materiale isolante con DoP (lambda dichiarato);
+d. nessuna sostanza SVHC (Substances of Very High Concern) in concentrazione > 0,1% peso/peso (Regolamento REACH);
+e. nessun agente espandente ODP (solventi che riducono lo strato di ozono, es. HCFC);
+f. nessun catalizzatore al piombo;
+g. se EPS: agenti espandenti < 6% peso del prodotto finito;
+h. se lane minerali: conformi alla Nota Q o Nota R del Regolamento (CE) n. 1272/2008 (CLP).
+i. se appartengono ai materiali elencati nella tabella seguente: contenuto minimo cumulativo di materiale recuperato, riciclato o sottoprodotti:
 
-Devono contenere almeno il **10% in peso** di materiale recuperato o riciclato (scarti di produzione propri o altrui, laterizi frantumati, argilla espansa da riciclo).
+| Materiale | Contenuto cumulativo minimo |
+|---|---|
+| Cellulosa | 80% |
+| Lana di vetro | 60% |
+| Lana di roccia | 15% |
+| Vetro cellulare | 60% |
+| Fibre in poliestere | 50% (puo' essere 20% se contenuto rinnovabile >= 85%) |
+| Polistirene espanso sinterizzato (EPS) | 15% (di cui riciclato minimo 10%) |
+| Polistirene espanso estruso (XPS) | 10% (di cui riciclato minimo 5%) |
+| Poliuretano espanso rigido | 2% |
+| Poliuretano espanso flessibile | 20% |
+| Agglomerato di poliuretano | 70% |
+| Agglomerato di gomma | 60% |
+| Fibre tessili | 60% |
 
-### Criterio 2.3.4 - Elementi in legno massello e ingegnerizzato
+Gli isolanti non elencati in tabella non richiedono un contenuto minimo di riciclato.
 
-Il legno massello o ingegnerizzato deve provenire da **foreste gestite in modo sostenibile** certificate FSC (Forest Stewardship Council) o PEFC (Programme for the Endorsement of Forest Certification), oppure da legno di recupero con tracciabilita' documentata.
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-I prodotti a base di legno legati con adesivi devono rispettare i limiti di emissione di formaldeide: classe E1 (<=8 mg/100g pezzo secco) o, preferibilmente, E0 (<=3 mg/100g).
+### 2.5.8 Tramezzature, contropareti perimetrali e controsoffitti
 
-### Criterio 2.3.5 - Pannelli a base di legno (MDF, OSB, compensato, truciolato)
+Le tramezzature, le contropareti perimetrali e i controsoffitti, realizzati con sistemi a secco, hanno un contenuto di almeno il **10%** (5% per prodotti a base gesso) in peso di materiale recuperato, ovvero riciclato, ovvero di sottoprodotti. I materiali di origine legnosa rispondono al criterio 2.5.6.
 
-Stessa certificazione FSC/PEFC o legno recuperato di cui al 2.3.4. Limiti formaldeide: classe E1 o migliore.
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-### Criterio 2.3.6 - Elementi metallici strutturali (acciaio, alluminio)
+### 2.5.9 Murature in pietrame e miste
 
-- **Acciaio**: contenuto minimo di acciaio riciclato **>=75% in peso** (acciaio da forno elettrico con scrap).
-- **Alluminio**: contenuto minimo di alluminio riciclato **>=30% in peso**.
-- **Ghisa**: contenuto minimo di ghisa riciclata **>=30% in peso**.
+Il progetto, per le murature in pietrame e miste, prevede l'uso di **solo materiale riutilizzato o di recupero** (pietrame e blocchetti).
 
-Le dichiarazioni devono essere accompagnate da certificazione di prodotto o dichiarazione del produttore con riferimento al metodo di produzione (forno elettrico vs BOF per l'acciaio).
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-### Criterio 2.3.7 - Prodotti per tinteggiatura interna e pitture/vernici
+### 2.5.10 Pavimenti
 
-- Contenuto di VOC (Composti Organici Volatili) nei prodotti per tinteggiatura interna non superiore ai limiti dell'Ecolabel UE per tale categoria di prodotto (Decisione 2014/312/UE e succ. modifiche), oppure certificazione Ecolabel UE o equivalente.
-- Per impermeabilizzanti e sigillanti: rispetto dei limiti VOC della Direttiva 2004/42/CE.
+**2.5.10.1 Pavimentazioni dure**: Per pavimentazioni in legno: si fa riferimento al criterio 2.5.6 (prodotti legnosi). Le piastrelle di ceramica devono essere conformi almeno ai criteri inclusi nella **Decisione 2009/607/CE** (Ecolabel UE coperture dure); dal 1 gennaio 2024, conformi alla **Decisione 2021/476** (Ecolabel UE prodotti per coperture dure). In alternativa: Ecolabel UE; EPD Tipo III (UNI EN 15804/ISO 14025) con evidenza dei criteri pertinenti.
 
-### Criterio 2.3.8 - Materiali isolanti
+**2.5.10.2 Pavimenti resilienti**: Le pavimentazioni plastiche hanno un contenuto di materie riciclate/recuperate/sottoprodotti di almeno il **20%** sul peso del prodotto (esclusi prodotti con spessore < 1 mm). Le pavimentazioni in gomma: almeno **10%** (esclusi prodotti con spessore < 1 mm). Le pavimentazioni non devono essere prodotte con ritardanti di fiamma classificati pericolosi (Regolamento CLP n. 1272/2008).
 
-Almeno il **10% in peso** del materiale isolante totale deve contenere materia riciclata o recuperata (es. cellulosa riciclata, lana di vetro con vetro riciclato, lana di roccia con scorie recuperate).
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-Preferire prodotti con Ecolabel UE o equivalente oppure con EPD verificata che dichiari il contenuto di riciclato.
+### 2.5.11 Serramenti ed oscuranti in PVC
 
-Prodotti biobased (lana di legno, sughero, canapa, fibre di lino): esenti dal requisito minimo di riciclato purchE' provenga da coltivazioni certificate.
+I serramenti oscuranti in PVC sono prodotti con un contenuto di materie riciclate, ovvero recuperate, ovvero di sottoprodotti di almeno il **20%** sul peso del prodotto.
 
-### Criterio 2.3.9 - Infissi (serramenti, porte e finestre esterne)
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-- **Profili in alluminio**: contenuto minimo di alluminio riciclato >=30% in peso.
-- **Profili in PVC**: contenuto minimo di PVC riciclato >=10% in peso, oppure certificazione Ecolabel UE.
-- **Profili in legno**: provenienza da foreste certificate FSC/PEFC o legno recuperato.
+### 2.5.12 Tubazioni in PVC e Polipropilene
 
-In ogni caso, l'infisso deve garantire le prestazioni energetiche richieste dal criterio 2.5 per la tipologia di edificio.
+Le tubazioni in PVC e polipropilene sono prodotte con un contenuto di materie riciclate, ovvero recuperate, ovvero di sottoprodotti di almeno il **20%** sul peso del prodotto.
 
-### Criterio 2.3.10 - Coperture e rivestimenti
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-- Per membrane bituminose e guaine: almeno il **20% in peso** di bitume proveniente da rigenerazione (bitume rigenerato).
-- Per tegole e coppi in laterizio: come criterio 2.3.3.
-- Per coperture in metallo: come criterio 2.3.6.
+### 2.5.13 Pitture e vernici
 
-### Criterio 2.3.11 - Elementi di facciata
+Il progetto prevede l'utilizzo di pitture e vernici che rispondono a uno o piu' dei seguenti requisiti (la SA sceglie in base agli obiettivi ambientali e alla destinazione d'uso):
+a. recano il **Marchio Ecolabel UE**;
+b. non contengono additivi a base di cadmio, piombo, cromo esavalente, mercurio, arsenico o selenio in concentrazione > **0,010%** in peso, per ciascun metallo sulla vernice secca;
+c. non contengono sostanze o miscele classificate pericolose per l'ambiente acquatico di categoria 1 e 2 con i codici H400, H410, H411 (Regolamento (CE) n. 1272/2008 CLP) *(tale criterio va utilizzato, qualora ritenuto opportuno dalla stazione appaltante)*.
 
-Per sistemi a cappotto (ETICS) e facciate continue:
-- Isolante: come criterio 2.3.8.
-- Profili e supporti metallici: come criterio 2.3.6.
-- Pannelli cementizi: contenuto minimo di riciclato >=10%.
-
-### Criterio 2.3.12 - Pavimentazioni interne
-
-- Pavimenti in ceramica e gres: contenuto minimo di materia prima secondaria >=13% in peso, oppure Ecolabel UE.
-- Pavimenti in legno: come criterio 2.3.4.
-- Pavimenti in materiale polimerico (vinile, linoleum, gomma): contenuto minimo di materiale riciclato >=10% in peso, oppure Ecolabel UE.
-- Moquette e tessili per pavimentazioni: Ecolabel UE per moquette o equivalente.
-
-### Criterio 2.3.13 - Vetro piano
-
-Contenuto minimo di vetro riciclato (calcin): **>=6% in peso** per vetro float; il dato deve essere dichiarato dal produttore.
-
----
-
-## Criterio 2.4 - Sistemi di risparmio idrico
-
-**Applicabilita'**: NC, R1, R2 (se include impianti idro-sanitari), MS (se include sostituzione impianti idrico-sanitari)
-
-Il progetto deve prevedere:
-- **Rubinetti e miscelatori** di categoria a basso flusso (flusso <=6 l/min per lavabi), con etichetta Ecolabel UE per sanitari o equivalente.
-- **Cassette WC** a doppio pulsante (pieno 6 l / ridotto 3 l), oppure sistemi con consumo ridotto <=4,5 l ciclo pieno.
-- **Sistemi di raccolta e riutilizzo delle acque meteoriche** per usi compatibili (irrigazione aree verdi, risciacquo WC), nei casi in cui la superficie dell'area verde >= 200 mq o la copertura >= 500 mq (NC e R1).
-- **Contatori d'acqua** per i diversi usi (irrigazione, uso sanitario, uso tecnologico) nei casi di edifici pubblici con superficie utile >= 1.000 mq.
-
-*Documenti di verifica*: specifiche tecniche dei prodotti sanitari con flusso dichiarato; scheda tecnica sistema di raccolta meteorica (se applicabile); schema impianto idraulico.
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio. Prove tramite: marchio Ecolabel UE (per "a"); rapporti di prova di laboratori accreditati (per "b"); dichiarazione del legale rappresentante con fascicolo tecnico datato e firmato (per "c").
 
 ---
 
-## Criterio 2.5 - Efficienza energetica
+## 2.6 Specifiche tecniche progettuali relative al cantiere
 
-**Applicabilita'**: NC (su intero edificio), R1 (su intero edificio), R2 (sugli elementi interessati), MS (sugli elementi sostituiti)
+*Indicazioni per la SA*: I criteri di questo capitolo sono obbligatori ai sensi dell'art. 34 del D.Lgs. 18 aprile 2016 n. 50. Sono costituiti da criteri progettuali per l'organizzazione e gestione sostenibile del cantiere. Il progettista li integra nel progetto di cantiere e nel capitolato speciale d'appalto del progetto esecutivo. La verifica avviene tramite la Relazione CAM.
 
-Il progetto deve dimostrare:
-- Per NC e R1: rispetto dei **requisiti minimi di prestazione energetica** di cui al D.Lgs. 192/2005 e al DM 26/06/2015 (decreti requisiti minimi), con target di classe energetica A3 o superiore (per NC) o miglioramento di almeno 2 classi (per R1), salvo vincoli tecnici documentati.
-- Per R2 e MS: rispetto dei requisiti per gli elementi sostituiti (trasmittanza termica U degli elementi, rendimento degli impianti).
-- Preferenza per sistemi a fonte rinnovabile per la produzione di energia termica e frigorifera (pompe di calore, solare termico, biomasse certificate).
-- Per edifici pubblici con superficie utile >= 1.000 mq: valutazione obbligatoria della fattibilita' tecnico-economica di impianti FER (fotovoltaico, solare termico) ai sensi del D.Lgs. 199/2021.
+### 2.6.1 Prestazioni ambientali del cantiere
 
-*Documenti di verifica*: APE (Attestato di Prestazione Energetica) del progetto oppure calcolo energetico ai sensi del DM 26/06/2015; relazione tecnica impianti.
+Le attivita' di preparazione e conduzione del cantiere prevedono le seguenti azioni:
+a. individuazione delle criticita' legate all'impatto nell'area di cantiere e alle emissioni di inquinanti;
+b. misure di protezione delle risorse naturali, paesaggistiche e storico-culturali (recinzione di fossi, torrenti, filari arborei; rimozione specie alloctone invasive quali Ailanthus altissima e Robinia pseudoacacia);
+c. protezione delle specie arboree e arbustive autoctone (protezione con materiali idonei; fascia di rispetto >= 10 m dai depositi di materiali);
+d. misure di efficienza energetica nel cantiere e di minimizzazione emissioni di inquinanti e gas climalteranti (lampade a basso consumo energetico o a LED, generatori eco-diesel con silenziatore, pannelli solari per acqua calda, ecc.);
+e. valutazione previsionale di impatto acustico (L. 447/1995) e misure per l'abbattimento di rumori e vibrazioni da scavo, carico e scarico, taglio materiali; eventuale installazione di schermature/coperture antirumore;
+f. misure per l'abbattimento delle emissioni gassose dalle macchine operatrici e da cantiere; **macchine di fase III A minimo** a decorrere da gennaio 2022; **fase IV minimo** dal gennaio 2024; **fase V** dal gennaio 2026 (Regolamento UE 1628/2016 modificato da Regolamento UE 2020/1040);
+g. misure per il risparmio idrico (raccolta acque meteoriche, riciclo acque di lavaggio inerti, reti di drenaggio e scarico);
+h. misure per l'abbattimento delle polveri (bagnatura periodica, tecniche di contenimento del sollevamento della polvere);
+i. misure per la protezione del suolo e del sottosuolo (prevenzione di contaminazione locale o diffusa, salinizzazione, erosione; impermeabilizzazione di aree di deposito rifiuti non inerti; depurazione acque di dilavamento);
+j. misure a tutela delle acque superficiali e sotterranee;
+k. misure per ridurre l'impatto visivo del cantiere (schermi, sistemazioni a verde in presenza di abitazioni contigue);
+l. misure per realizzare la demolizione selettiva, raccolta dei materiali da avviare a preparazione per il riutilizzo, recupero e riciclo;
+m. misure per implementare la raccolta differenziata nel cantiere (imballaggi, rifiuti pericolosi, speciali; aree dedicate con cassonetti/contenitori etichettati).
 
----
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio (stato ante operam, interventi previsti, risultati raggiungibili, stato post operam).
 
-## Criterio 2.6 - Requisiti per le aree verdi
+### 2.6.2 Demolizione selettiva, recupero e riciclo
 
-**Applicabilita'**: NC, R1 (se il progetto include aree esterne o a verde)
+Nei casi di ristrutturazione, manutenzione e demolizione, il progetto prevede che almeno il **70% in peso** dei rifiuti non pericolosi generati in cantiere, escludendo gli scavi, venga avviato a operazioni di preparazione per il riutilizzo, riciclaggio o altre operazioni di recupero (gerarchia rifiuti art. 179 D.Lgs. 152/2006).
 
-Se il progetto include aree a verde pubblico o pertinenziale >= 500 mq:
-- Almeno il **50% delle specie vegetali** deve essere autoctono del contesto biogeografico locale.
-- Utilizzo di **substrati ricchi di materia organica** (compost certificato da rifiuti organici o da verde urbano), almeno il 30% del substrato di impianto.
-- **Sistemi di irrigazione** a goccia o subirrigazione con sensori di umidita' del suolo, per ridurre i consumi idrici del 30% rispetto all'irrigazione tradizionale.
-- Priorita' alla **permeabilita'** delle superfici esterne: almeno il 30% delle superfici esterne non edificate deve essere permeabile o semi-permeabile.
+Il progetto individua le seguenti categorie di rifiuti (codici EER): 170101, 170102, 170103, 170201, 170202, 170203, 170401, 170402, 170403, 170404, 170405, 170406, 170504, 170604, 170802, con stima quantitativa per frazioni monomateriali e frazioni miste.
 
-*Documenti di verifica*: planimetria aree verdi; elenco specie con indicazione autoctone/alloctone; scheda substrato; schema impianto irriguo.
+Il progetto stima la quota parte di rifiuti che potra' essere avviata a preparazione per il riutilizzo, riciclaggio o altre operazioni di recupero.
 
----
+In caso di edifici storici, e' necessaria una campagna di analisi conoscitiva dell'edificio e dei materiali costitutivi (tipologia, epoca, stato di conservazione).
 
-## Criterio 2.7 - Gestione dei rifiuti da costruzione e demolizione (C&D)
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
-**Applicabilita'**: tutti gli interventi con produzione di rifiuti da demolizione o scavo
+### 2.6.3 Conservazione dello strato superficiale del terreno
 
-Il progetto deve prevedere:
-- **Piano di gestione dei rifiuti da C&D** con stima quantitativa dei rifiuti prodotti per categoria (codice EER), destinazione (riutilizzo in situ, recupero, smaltimento).
-- **Target di recupero**: almeno il **70% in peso** dei rifiuti non pericolosi da demolizione deve essere avviato a recupero di materia (conforme all'art. 11 Direttiva 2008/98/CE).
-- Per i materiali di scavo: preferenza per il riutilizzo in situ o in altri cantieri, in conformita' con il DPR 120/2017 (gestione terre e rocce da scavo).
-- Per le demolizioni selettive: separazione delle frazioni (calcestruzzo, laterizi, metalli, legno, vetro) per massimizzare il riciclo.
+Nel caso in cui il progetto includa movimenti di terra (scavi, splateamenti o altri interventi sul suolo esistente), il progetto prevede la **rimozione e l'accantonamento del primo strato del terreno** (orizzonti "O" organico e "A" attivo) per il successivo riutilizzo in opere a verde. Il suolo rimosso deve essere conservato in cantiere separatamente dalla matrice inorganica.
 
-*Documenti di verifica*: piano di gestione rifiuti C&D in progetto; formulari/MUD nella fase esecutiva (non oggetto della Relazione CAM di progetto, ma dell'attestazione a fine lavori).
+Se il profilo pedologico non e' noto, il progetto include un'analisi pedologica per determinare l'altezza dello strato da accantonare.
 
----
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio. Per la prescrizione sull'accantonamento, e' allegato il profilo pedologico e la relazione specialistica.
 
-## Criterio 2.8 - Cantiere sostenibile
+### 2.6.4 Rinterri e riempimenti
 
-**Applicabilita'**: tutti gli interventi
+Per i **rinterri**: il progetto prescrive il riutilizzo del materiale di scavo (escluso il primo strato del terreno di cui al criterio 2.6.3), proveniente dal cantiere stesso o da altri cantieri, ovvero materiale riciclato, conformi ai parametri della norma UNI 11531-1.
 
-Il progetto e il capitolato speciale d'appalto devono prevedere le seguenti misure di cantiere:
-- **Riduzione delle emissioni di polveri**: bagnatura delle superfici, barriere antipolvere, copertura dei materiali polverosi.
-- **Riduzione del rumore**: rispetto dei limiti del DPCM 01/03/1991 e del D.Lgs. 277/1991; attrezzature a bassa emissione sonora dove disponibili.
-- **Efficienza idrica nel cantiere**: riciclo dell'acqua di lavaggio, riduzione dell'uso di acqua potabile per usi di cantiere.
-- **Macchine di cantiere**: preferenza per macchine conformi almeno allo **Stage IIIA** della Direttiva 97/68/CE (o stage IV/V dove disponibili) per la riduzione delle emissioni di gas e particolato.
-- **Smaltimento corretto dei rifiuti**: aree di raccolta differenziata in cantiere, nessun abbandono o bruciatura.
-- **Documentazione fotografica** periodica dello stato del cantiere (almeno mensile) per verifica delle misure adottate.
+Per i **riempimenti con miscele betonabili** (miscele fluide, a bassa resistenza controllata, facilmente removibili): almeno il **70%** di materiale riciclato conforme a UNI EN 13242 e con caratteristiche prestazionali rispondenti all'aggregato riciclato di Tipo B (prospetto 4 di UNI 11104).
 
-*Documenti di verifica*: piano di cantiere con misure ambientali; capitolato speciale con clausole ambientali.
+Per i **riempimenti con miscele legate con leganti idraulici** (UNI EN 14227-1): almeno il **30%** in peso di materiale riciclato conforme alla UNI EN 13242.
+
+*Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio. I mezzi di prova della conformita' dei singoli materiali sono verificati secondo il paragrafo 2.5 (prodotti da costruzione-indicazioni alla stazione appaltante).
 
 ---
 
-## Criterio 2.9 - Sistema di gestione ambientale dell'esecutore
+## Tabella di applicabilita' dei criteri
 
-**Applicabilita'**: appalti di lavori con importo >= soglia comunitaria (attualmente 5.538.000 EUR per lavori)
+| Sezione | Criterio | NC | R1 | R2 | MS | Non-intero edificio |
+|---|---|---|---|---|---|---|
+| 2.3 | Territoriali-urbanistici (2.3.1-2.3.9) | SI | SI (1) | NO | NO | NO |
+| 2.4 | Edifici (2.4.1-2.4.14) | SI | SI | SI (2) | SI (2) | NO |
+| 2.5 | Prodotti da costruzione (2.5.1-2.5.13) | SI | SI | SI (3) | SI (3) | SI |
+| 2.6 | Cantiere (2.6.1-2.6.4) | SI | SI | SI | SI | SI |
 
-L'appaltatore deve essere in possesso di una certificazione **ISO 14001** o di registrazione **EMAS** (Regolamento CE 1221/2009) in corso di validita', rilasciata da organismo accreditato, per il campo di attivita' pertinente (costruzioni edili).
-
-In alternativa: piano di gestione ambientale del sito approvato dalla SA.
-
-*Documenti di verifica*: copia certificato ISO 14001/EMAS o piano di gestione ambientale.
-
----
-
-## Note generali sull'applicabilita' dei criteri
-
-| Criterio | NC | R1 | R2 | MS |
-|---|---|---|---|---|
-| 2.1 Qualita' suolo | SI | SI | SI (se scavi) | NO |
-| 2.2 Durabilita' | SI | SI | NO | NO |
-| 2.3 Materiali | SI | SI | SI (materiali usati) | SI (materiali usati) |
-| 2.4 Risparmio idrico | SI | SI | SI (se impianti) | SI (se impianti) |
-| 2.5 Energia | SI | SI | SI (elementi) | SI (elementi) |
-| 2.6 Aree verdi | SI | SI (se verde) | NO | NO |
-| 2.7 Rifiuti C&D | SI | SI | SI | SI |
-| 2.8 Cantiere | SI | SI | SI | SI |
-| 2.9 ISO 14001 | SI (>=soglia) | SI (>=soglia) | SI (>=soglia) | SI (>=soglia) |
+(1) I criteri 2.3.x si applicano ai progetti di NC e di ristrutturazione urbanistica.
+(2) Per R2 e MS si applicano solo i criteri pertinenti agli elementi tecnici oggetto di intervento.
+(3) Per R2 e MS si applicano solo i criteri pertinenti ai materiali effettivamente utilizzati nell'intervento.

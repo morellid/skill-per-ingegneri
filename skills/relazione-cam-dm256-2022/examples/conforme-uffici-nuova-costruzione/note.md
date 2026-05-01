@@ -2,16 +2,18 @@
 
 ## Perche' questo esempio e' importante
 
-Dimostra il flusso completo del task `draft-relazione-cam` per una nuova costruzione (tipologia piu' frequente e piu' complessa per numero di criteri applicabili). Tutti i criteri di base del DM 256/2022 sono trattati: 9 criteri principali (2.1-2.9) piu' i sottocriteri materiali 2.3.x applicabili.
+Dimostra il flusso completo del task `draft-relazione-cam` per una nuova costruzione su appalto congiunto (tipologia piu' frequente e piu' complessa per numero di criteri applicabili). Tutti i criteri obbligatori del DM 256/2022 applicabili alla NC sono trattati, organizzati per sezione (2.3 territoriali-urbanistici, 2.4 edifici, 2.5 prodotti, 2.6 cantiere) con i numeri di criterio corretti dell'Allegato.
 
 ## Aspetti degni di nota
 
-- **Criterio 2.9 non applicabile**: l'importo (4,8 mln EUR) e' sotto la soglia comunitaria. Mostra come dichiarare correttamente la non applicabilita' con motivazione normativa.
-- **Criterio 2.4 raccolta meteorica non applicabile**: mostra che un sub-requisito puo' essere dichiarato non applicabile con giustificazione tecnica documentata.
-- **Criteri premianti OEPV**: l'esempio mostra come inserire i criteri 4.3 (nZEB A4) e 4.6 (BMS) nella relazione per una gara OEPV.
-- **Percentuali dichiarate superiori ai minimi**: il progettista dichiara percentuali di riciclato superiori ai minimi (es. 8% vs 5% per il calcestruzzo). Questa e' una buona pratica per dimostrare proattivita' e, nel caso di gara OEPV, puo' contribuire al criterio premiante 4.1.
+- **ISO 14001 non e' obbligatorio**: nel DM 256/2022, la certificazione ISO 14001 dell'impresa esecutrice e' un criterio **premiante** (3.2.1 per lavori), non obbligatorio. Nell'esempio e' inserita nella sezione criteri premianti OEPV, non nella parte obbligatoria.
+- **Sezione 2.3 (territoriali-urbanistici) per NC**: tutti i criteri 2.3.1-2.3.9 si applicano per nuova costruzione. Il criterio 2.3.3 (verde >= 60% superficie permeabile) richiede motivazione quando non raggiungibile per vincoli urbanistici - l'esempio mostra come dichiararlo correttamente con motivazione documentata.
+- **Sezione 2.4 (edifici) per NC**: l'unico criterio non applicabile per NC e' il 2.4.1 (diagnosi energetica), riservato a R1 e R2.
+- **Sezione 2.5 (prodotti)**: ogni categoria di materiale usato ha il suo sotto-criterio specifico. I criteri non applicabili sono quelli per categorie di materiali non usate nel progetto. Il gres porcellanato risponde alla Decisione 2021/476 (Ecolabel UE), non a una percentuale di riciclato.
+- **Criteri premianti congiunto**: per affidamento congiunto, oltre ai criteri 2.7 (progettazione) e 3.2 (lavori), si applicano i criteri aggiuntivi 4.3.x. L'esempio mostra 3.2.1 ISO 14001, 4.3.3 prestazione energetica migliorativa e 4.3.6 BACS classe A.
 
 ## Limitazioni note dell'esempio
 
 - I dati tecnici (percentuali di riciclato, COP della pompa di calore, etc.) sono plausibili ma non riferiti a prodotti reali specifici. In un caso reale, devono essere verificati tramite le schede tecniche del fornitore prescelto.
-- L'APE di progetto classe A4 e' dichiarata come target ma non allegata: nell'esempio reale deve essere prodotta e allegata.
+- L'APE di progetto NZEB e' dichiarata come target ma non allegata: nell'esempio reale deve essere prodotta e allegata.
+- La sezione 2.3.3 (isola di calore/verde) mostra un caso di non pieno raggiungimento del 60% con motivazione: in un caso reale, la SA deve valutare se la motivazione e' sufficiente o se e' necessaria una verifica piu' approfondita.

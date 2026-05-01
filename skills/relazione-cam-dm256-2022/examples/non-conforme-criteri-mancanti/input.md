@@ -14,9 +14,9 @@ L'ACER (Azienda Casa Emilia-Romagna) di Ferrara deve ristrutturare un edificio r
 
 **RELAZIONE TECNICA AMBIENTALE**
 
-**Oggetto**: Ristrutturazione energetica Edificio B - Via Manzoni 14, Ferrara  
-**Committente**: ACER Ferrara  
-**Progettista**: Arch. Maria Bianchi  
+**Oggetto**: Ristrutturazione energetica Edificio B - Via Manzoni 14, Ferrara
+**Committente**: ACER Ferrara
+**Progettista**: Arch. Maria Bianchi
 
 **Premessa**
 
@@ -38,8 +38,8 @@ Il progetto prevede il miglioramento della classe energetica dell'edificio. L'im
 
 ## Dati di progetto
 
-**Intervento**: Ristrutturazione energetica con sostituzione involucro e impianti  
-**Committente**: ACER Ferrara  
-**Importo lavori**: 1.200.000 EUR  
-**Tipo di gara**: Prezzo piu' basso  
-**Superficie disperdente interessata**: >50% del totale (R1)
+**Intervento**: Ristrutturazione energetica con sostituzione involucro e impianti
+**Classificazione DM 256/2022**: R1 (superficie disperdente interessata > 50% del totale)
+**Committente**: ACER Ferrara
+**Tipo di gara**: Prezzo piu' basso
+**Tipo di affidamento**: Solo lavori (progettazione gia' eseguita separatamente)

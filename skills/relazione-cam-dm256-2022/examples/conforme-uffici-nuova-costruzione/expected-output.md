@@ -6,258 +6,396 @@
 
 ai sensi del DM 23 giugno 2022 n. 256 - Criteri Ambientali Minimi per l'edilizia pubblica
 
-**Oggetto**: Nuova costruzione edificio uffici municipali  
-**Committente**: Comune di Reggio nell'Emilia  
-**CIG**: 12345678AB  
-**Progettista**: [da completare]  
-**Localizzazione**: Via Roma 12, Reggio nell'Emilia (RE)  
-**Classificazione intervento DM 256/2022**: NC - Nuova Costruzione  
+**Oggetto**: Nuova costruzione edificio uffici municipali
+**Committente**: Comune di Reggio nell'Emilia
+**CIG**: 12345678AB
+**Progettista**: [da completare]
+**Localizzazione**: Via Roma 12, Reggio nell'Emilia (RE)
+**Classificazione intervento DM 256/2022**: NC - Nuova Costruzione
 **Data**: [data redazione]
 
 **Premessa normativa**
 
-Il presente progetto e' soggetto all'applicazione dei Criteri Ambientali Minimi (CAM) per l'edilizia pubblica ai sensi del DM 23 giugno 2022 n. 256 (GU n. 183 del 06/08/2022), in vigore dall'08 ottobre 2022, e dell'art. 57 del D.Lgs. 31 marzo 2023 n. 36 (Codice dei Contratti Pubblici). La presente Relazione dimostra la conformita' del progetto ai criteri di base (Criterio 2) del DM 256/2022.
+Il presente progetto e' soggetto all'applicazione dei Criteri Ambientali Minimi (CAM) per l'edilizia pubblica ai sensi del DM 23 giugno 2022 n. 256 (GU n. 183 del 06/08/2022), in vigore dal 4 dicembre 2022, e dell'art. 57 del D.Lgs. 31 marzo 2023 n. 36 (Codice dei Contratti Pubblici). La presente Relazione e' redatta ai sensi del criterio 2.2.1 dell'Allegato al DM 256/2022 e dimostra la conformita' del progetto ai criteri obbligatori applicabili alla tipologia NC (Nuova Costruzione).
 
 ---
 
-## Criterio 2.1 - Qualita' del suolo
+## Sezione 2.3 - Specifiche tecniche di livello territoriale-urbanistico
+
+*(Criteri 2.3.1-2.3.9 - applicabili a NC)*
+
+### Criterio 2.3.1 - Inserimento naturalistico e paesaggistico
 
 **Applicabilita'**: SI (NC)
 
-**Requisito minimo DM 256/2022**: Assenza di contaminazione del sito; preferenza per la riqualificazione di aree gia' edificate.
+**Requisito minimo**: Il progetto e' coerente con i valori naturalistici, paesaggistici e storico-culturali del contesto; garantisce la conservazione delle specie arboree e arbustive autoctone presenti.
 
-**Soluzione progettuale adottata**:
-Il sito e' un'area gia' edificata (ex deposito comunale), oggetto di demolizione del fabbricato preesistente. L'intervento costituisce un caso di riqualificazione di area gia' urbanizzata, coerente con il principio di minimizzazione del consumo di suolo vergine.
+**Soluzione progettuale adottata**: Il sito e' un'area gia' edificata (ex deposito comunale) priva di specie arboree autoctone preesistenti da conservare. Il progetto prevede la piantumazione di 12 alberi di specie autoctone (Quercus pubescens, Carpinus betulus) e 80 arbusti autoctoni (Pistacia lentiscus) nelle aree perimetrali.
 
-**Conformita' dichiarata**:
-Si dichiara che il sito non e' inserito in anagrafi di siti contaminati. Prima dell'avvio dei lavori, in sede di indagini geotecniche, sara' verificata l'assenza di contaminazione del suolo tramite indagine ambientale di Fase I (o Fase II se emergono elementi di sospetto). In caso di rilevazione di contaminazione, si dara' avvio alla procedura di bonifica ex D.Lgs. 152/2006, Titolo V Parte IV.
+**Documentazione di verifica**: relazione paesaggistica; planimetria aree a verde con elenco specie.
 
-**Documentazione di verifica**: relazione geologica e geotecnica con verifica assenza contaminazione (da produrre in fase definitiva/esecutiva).
+**Riferimento normativo**: Criterio 2.3.1, Allegato DM 23/06/2022 n. 256.
 
-**Riferimento normativo**: Criterio 2.1, Allegato DM 23/06/2022 n. 256.
-
----
-
-## Criterio 2.2 - Durabilita', adattabilita' e flessibilita'
+### Criterio 2.3.2 - Permeabilita' della superficie territoriale
 
 **Applicabilita'**: SI (NC)
 
-**Requisito minimo DM 256/2022**: Vita utile >= 50 anni per la struttura, >= 25 anni per involucro e impianti principali; accessibilita' impianti; flessibilita' distributiva.
+**Requisito minimo**: Le superfici non edificate hanno un coefficiente di deflusso inferiore a 0,50.
 
-**Soluzione progettuale adottata**:
-La struttura in telaio di c.a. e' progettata per una vita utile di 50 anni (VN = 50, Classe d'uso II, coefficiente Cu = 1.0, ai sensi delle NTC 2018). L'involucro (cappotto, infissi, copertura) e' dimensionato per una vita utile >= 25 anni, con materiali di qualita' durabile e resistenza agli agenti atmosferici. Gli impianti sono progettati in cavedi accessibili senza demolizioni, con ispezioni periodiche previste nel piano di manutenzione.
+**Soluzione progettuale adottata**: Le aree non edificate comprendono: aree a verde (350 mq, coefficiente di deflusso 0,10), parcheggio con masselli drenanti (600 mq, coefficiente stimato 0,35). Coefficiente medio ponderato delle superfici non edificate: 0,26 < 0,50.
 
-**Conformita' dichiarata**: Il progetto rispetta i requisiti di vita utile e accessibilita' impiantistica. La struttura ad open space con setti fissi perimetrali e nuclei di servizio fissi consente modifiche di layout interno con sole partizioni leggere.
-
-**Documentazione di verifica**: relazione strutturale con dichiarazione vita utile (NTC 2018); tavole impianti con schema cavedi e accessi.
-
-**Riferimento normativo**: Criterio 2.2, Allegato DM 23/06/2022 n. 256.
-
----
-
-## Criterio 2.3 - Materiali da costruzione
-
-### Criterio 2.3.2 - Calcestruzzi strutturali
-
-**Applicabilita'**: SI (calcestruzzo strutturale C28/35 previsto)
-
-**Requisito minimo**: >= 5% in peso di aggregati riciclati (edificio < 4 piani fuori terra).
-
-**Conformita' dichiarata**: Il calcestruzzo strutturale C28/35 conterra' almeno l'**8% in peso** di aggregati riciclati certificati (da riciclo di calcestruzzo da demolizione), superiore al minimo richiesto del 5%. Il produttore ha dichiarato la disponibilita' a fornire specifica tecnica con indicazione del contenuto di aggregati riciclati.
-
-**Documentazione di verifica**: specifica tecnica del calcestruzzo con percentuale di aggregati riciclati; dichiarazione del produttore; bolle di consegna in corso d'opera.
+**Documentazione di verifica**: planimetria con calcolo coefficienti di deflusso.
 
 **Riferimento normativo**: Criterio 2.3.2, Allegato DM 23/06/2022 n. 256.
 
-### Criterio 2.3.6 - Elementi metallici strutturali
+### Criterio 2.3.3 - Riduzione effetto isola di calore estiva
 
-**Applicabilita'**: SI (profilati in acciaio HEA per scale e strutture secondarie; infissi in alluminio)
+**Applicabilita'**: SI (NC)
 
-**Requisito minimo**: Acciaio >= 75% riciclato (forno elettrico); Alluminio >= 30% riciclato.
+**Requisito minimo**: Superficie a verde >= 60% della superficie permeabile (criterio 2.3.2); SRI superfici pavimentate e parcheggi >= 29; coperture: tetto verde, tetto ventilato o SRI >= 29 (pendenza >15%) / SRI >= 76 (pendenza <= 15%).
 
-**Conformita' dichiarata**:
-- I profilati in acciaio sono prodotti da forno elettrico con contenuto di acciaio riciclato **85%** (dichiarazione produttore disponibile).
-- I profili in alluminio per infissi contengono **40% di alluminio riciclato** (certificazione del profilista).
+**Soluzione progettuale adottata**:
+- Verde sul totale permeabile: 350 mq verde su 950 mq permeabili totali = **37%** (< 60% richiesto). Motivazione di non applicabilita' parziale: la riduzione del verde rispetto al 60% e' giustificata dalla necessita' di parcheggi impermeabilizzati imposta dal Regolamento Edilizio Comunale. Le superfici di parcheggio sono realizzate con masselli autobloccanti drenanti (SRI 35 > 29).
+- Copertura: tetto verde estensivo (substrato 10 cm) su tutta la copertura piana. Nessun requisito SRI richiesto per tetto verde.
 
-**Documentazione di verifica**: dichiarazione produttore acciaio con metodo di produzione (EAF); certificato alluminio riciclato del profilista.
+*Nota*: per il criterio del 60% di verde, il progettista deve documentare la motivazione di impossibilita' tecnica ai sensi dell'art. 2 co. 2 DM 256/2022 (intervento in ZTO "A" o "B" o motivazione tecnica equivalente).
 
-**Riferimento normativo**: Criterio 2.3.6, Allegato DM 23/06/2022 n. 256.
+**Documentazione di verifica**: planimetria aree verdi con calcolo percentuali; relazione motivazione per deroghe; documentazione masselli (SRI dichiarato).
 
-### Criterio 2.3.7 - Prodotti per tinteggiatura interna
+**Riferimento normativo**: Criterio 2.3.3, Allegato DM 23/06/2022 n. 256.
 
-**Applicabilita'**: SI (idropittura murale interna prevista)
+### Criteri 2.3.4, 2.3.5, 2.3.6, 2.3.7, 2.3.8
 
-**Requisito minimo**: VOC <= limiti Ecolabel UE per tinteggiature interne (categoria "pareti e soffitti interni": VOC <= 30 g/l per pitture opache; il prodotto prescelto dichiara <= 10 g/l).
+**Applicabilita'**: SI (NC)
 
-**Conformita' dichiarata**: L'idropittura murale interna ha contenuto VOC di **10 g/l**, ampiamente inferiore ai limiti Ecolabel UE (cat. pareti/soffitti interni opachi: 30 g/l). Il produttore ha richiesto certificazione Ecolabel UE attualmente in istruttoria.
+Si rimanda alle tavole progettuali specifiche per i dettagli tecnici di ciascun criterio (rete drenaggio e gestione acque meteoriche per 2.3.4; infrastruttura raccolta meteorica e rete irrigazione per 2.3.5; prossimita' fermate TPL per 2.3.6; FV 50 kWp per 2.3.7; rapporto stato ambiente per 2.3.8). La conformita' a ciascun criterio e' illustrata nella Relazione Tecnica specialistica allegata.
 
-**Documentazione di verifica**: scheda tecnica prodotto con dichiarazione VOC; certificato Ecolabel UE (quando disponibile) o equivalente.
+### Criterio 2.3.9 - Risparmio idrico
 
-**Riferimento normativo**: Criterio 2.3.7, Allegato DM 23/06/2022 n. 256.
+**Applicabilita'**: SI (NC)
 
-### Criterio 2.3.8 - Materiali isolanti
+**Requisito minimo**: Rubinetteria con consumo <= 6 l/min (lavabi/lavandini/bidet) e <= 8 l/min (docce) secondo UNI EN 816 / UNI EN 15091; cassette WC a doppio scarico con scarico completo <= 6 l e scarico ridotto <= 3 l.
 
-**Applicabilita'**: SI (lana di roccia per cappotto ETICS)
+**Soluzione progettuale adottata**:
+- Miscelatori monocomando aerati: flusso **5 l/min** (scheda tecnica disponibile).
+- Cassette WC a doppio pulsante: ciclo pieno **6 l**, ciclo ridotto **3 l**.
+- Raccolta acque meteoriche: vasca da 5 mc per irrigazione aree verdi (criterio 2.3.5.1).
 
-**Requisito minimo**: >= 10% in peso di materiale riciclato o recuperato.
+**Conformita' dichiarata**: Tutti i dispositivi idrici rispettano i limiti del criterio 2.3.9.
 
-**Conformita' dichiarata**: Il pannello di lana di roccia per il sistema a cappotto contiene il **12% in peso** di materiale riciclato (scorie di fonderia recuperate). Il produttore ha fornito scheda tecnica con dichiarazione del contenuto riciclato verificabile tramite audit.
-
-**Documentazione di verifica**: scheda tecnica isolante con dichiarazione contenuto riciclato.
-
-**Riferimento normativo**: Criterio 2.3.8, Allegato DM 23/06/2022 n. 256.
-
-### Criterio 2.3.9 - Infissi
-
-**Applicabilita'**: SI (serramenti alluminio)
-
-**Requisito minimo**: Profili in alluminio >= 30% riciclato; prestazioni energetiche conformi al criterio 2.5.
-
-**Conformita' dichiarata**: Gli infissi in alluminio contengono 40% di alluminio riciclato (come dichiarato al criterio 2.3.6). La trasmittanza termica del serramento e' U = 1,1 W/m2K, coerente con i requisiti energetici dell'edificio di classe A4.
-
-**Documentazione di verifica**: scheda tecnica infisso con U-value dichiarato; certificato alluminio riciclato.
+**Documentazione di verifica**: schede tecniche rubinetteria e cassette WC con portate dichiarate (o etichettatura Unified Water Label).
 
 **Riferimento normativo**: Criterio 2.3.9, Allegato DM 23/06/2022 n. 256.
 
-### Criterio 2.3.10 - Coperture e rivestimenti
+---
 
-**Applicabilita'**: SI (guaina bituminosa in copertura piana)
+## Sezione 2.4 - Specifiche tecniche progettuali per gli edifici
 
-**Requisito minimo**: >= 20% in peso di bitume rigenerato nelle membrane bituminose.
+### Criterio 2.4.1 - Diagnosi energetica
 
-**Conformita' dichiarata**: La guaina bituminosa della copertura contiene il **25% in peso di bitume rigenerato** (da pneumatici o oli esausti - dichiarazione produttore disponibile).
+**Applicabilita'**: NON APPLICABILE - la diagnosi energetica e' richiesta solo per interventi di ristrutturazione (R1 e R2) con superficie >= 1.000 mq, non per nuove costruzioni.
 
-**Documentazione di verifica**: scheda tecnica guaina con percentuale bitume rigenerato.
+### Criterio 2.4.2 - Prestazione energetica
 
-**Riferimento normativo**: Criterio 2.3.10, Allegato DM 23/06/2022 n. 256.
+**Applicabilita'**: SI (NC)
 
-### Criterio 2.3.12 - Pavimentazioni interne
+**Requisito minimo**: L'edificio e' un edificio a energia quasi zero (NZEB) ai sensi del D.Lgs. 192/2005. Comfort termico estivo: massa superficiale pareti opache >= 250 kg/m² oppure Yie < 0,09 W/m²K (pareti verticali) e < 0,16 W/m²K (pareti orizzontali e inclinate) secondo UNI EN ISO 13786.
+
+**Soluzione progettuale adottata**:
+- Impianto termico: pompa di calore aria-acqua con COP >= 3,8 (inverter); solare termico 12 mq per ACS.
+- Impianto FV: 50 kWp in copertura.
+- Classe energetica: **NZEB** (attestata da APE di progetto; si stima classe A4).
+- Comfort termico estivo: cappotto in lana di roccia sp. 16 cm su pareti esterne; Yie calcolato = 0,06 W/m²K < 0,09 richiesto.
+
+**Documentazione di verifica**: APE di progetto firmato da tecnico abilitato; relazione tecnica di cui al DM interministeriale 26/06/2015.
+
+**Riferimento normativo**: Criterio 2.4.2, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.3 - Impianti di illuminazione per interni
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: Lampade LED con durata minima 50.000 ore (uffici); sistemi di gestione automatica (accensione/spegnimento/dimmerazione) su base oraria e in funzione degli apporti naturali.
+
+**Soluzione progettuale adottata**: Impianto illuminazione a LED con durata >= 50.000 ore per tutti i locali. Sistema di gestione DALI con sensori di presenza e di luminosita' per tutti gli ambienti uffici e le aree comuni.
+
+**Documentazione di verifica**: schede tecniche lampade LED (durata dichiarata); elaborato impianto elettrico con schema del sistema di gestione.
+
+**Riferimento normativo**: Criterio 2.4.3, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.5 - Aerazione, ventilazione e qualita' dell'aria
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: NC - Classe II UNI EN 16798-1 (*very low polluting building*); VMC con recupero di calore.
+
+**Soluzione progettuale adottata**: Impianto di ventilazione meccanica controllata (VMC) con recuperatore di calore ad alto rendimento (efficienza >= 75%). Portate conformi alla Classe II UNI EN 16798-1 per tutti gli ambienti lavorativi.
+
+**Documentazione di verifica**: relazione impianti aeraulici con verifica portate; scheda tecnica recuperatore di calore.
+
+**Riferimento normativo**: Criterio 2.4.5, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.7 - Illuminazione naturale
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: Almeno 300 lux verificato nel 50% dei punti di misura e 100 lux nel 95% dei punti, per almeno la meta' delle ore di luce diurna (calcolo secondo UNI EN 17037).
+
+**Soluzione progettuale adottata**: Il progetto prevede superfici finestrate pari al 25% della superficie di pavimento per tutti gli uffici. Il calcolo del fattore di luce diurna secondo UNI EN 17037 dimostra il raggiungimento di 300 lux al 55% dei punti.
+
+**Documentazione di verifica**: relazione di calcolo illuminazione naturale (UNI EN 17037).
+
+**Riferimento normativo**: Criterio 2.4.7, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.8 - Dispositivi di ombreggiamento
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: Parti trasparenti con esposizione da EST a OVEST passando da Sud dotate di sistemi di schermatura fissi o mobili verso l'esterno, oppure gtot <= 0,35 (UNI EN 14501).
+
+**Soluzione progettuale adottata**: Le facciate sud, est e ovest sono dotate di sistemi di schermatura esterna con frangisole metallici orientabili. Il fattore di trasmissione totale solare gtot con schermatura chiusa = 0,15 < 0,35.
+
+**Documentazione di verifica**: elaborati architettonici con schemi di ombreggiamento; calcolo gtot del serramento + schermatura.
+
+**Riferimento normativo**: Criterio 2.4.8, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.9 - Tenuta all'aria
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: n50 < 2 (valore minimo per NC).
+
+**Soluzione progettuale adottata**: L'involucro e' progettato per garantire n50 < 2, mediante continuita' dello strato a tenuta all'aria su tutte le superfici disperdenti. In fase di esecuzione sara' eseguito il test di pressurizzazione dell'edificio (Blower Door Test) secondo UNI EN ISO 9972.
+
+**Documentazione di verifica**: elaborati di progetto con dettagli della continuita' dello strato a tenuta; rapporto Blower Door Test (in corso d'opera).
+
+**Riferimento normativo**: Criterio 2.4.9, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.11 - Prestazioni e comfort acustici
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: Classe II del prospetto 1 della norma UNI 11367.
+
+**Soluzione progettuale adottata**: Il progetto prevede partizioni con prestazioni acustiche conformi alla classe II UNI 11367. La relazione di calcolo previsionale (da tecnico competente in acustica) e' allegata al progetto definitivo.
+
+**Documentazione di verifica**: relazione acustica di calcolo previsionale (tecnico competente in acustica); relazione di collaudo su misure in opera (post realizzazione).
+
+**Riferimento normativo**: Criterio 2.4.11, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.12 - Radon
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: Livello massimo 200 Bq/m³ (valore medio annuo); adozione di strategie progettuali conformi al Piano nazionale radon (D.Lgs. 101/2020).
+
+**Soluzione progettuale adottata**: Il sito e' in area a rischio radon medio (secondo mappa nazionale). Il progetto prevede soletta di fondazione con barriera impermeabile ai gas radon e sistema di ventilazione sub-slab con presa d'aria radon dall'esterno.
+
+**Documentazione di verifica**: verifica del rischio radon per il sito (riferimento mappa regionale); elaborati di progetto con dettaglio barriera radon e sistema di ventilazione.
+
+**Riferimento normativo**: Criterio 2.4.12, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.13 - Piano di manutenzione dell'opera
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: Piano di manutenzione con archivio tecnico (manuale d'uso, manuale di manutenzione, programma di manutenzione); rappresentazione BIM (IFC) con livello LOD dichiarato (UNI 11337-4); piano di fine vita con elenco materiali riutilizzabili/riciclabili.
+
+**Soluzione progettuale adottata**: Il progetto e' sviluppato in BIM (Revit) con modello IFC a LOD 400 per gli elementi costruttivi e gli impianti. Il piano di manutenzione prevede: manuale d'uso, programma interventi decennale, piano di fine vita con elenco dei componenti disassemblabili (collegato al criterio 2.4.14).
+
+**Documentazione di verifica**: modello IFC con livello LOD dichiarato; piano di manutenzione allegato al progetto esecutivo.
+
+**Riferimento normativo**: Criterio 2.4.13, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.4.14 - Disassemblaggio e fine vita
+
+**Applicabilita'**: SI (NC)
+
+**Requisito minimo**: >= 70% peso/peso dei componenti edilizi (esclusi impianti) disassemblabili a fine vita per riutilizzo, riciclaggio o recupero; piano per il disassemblaggio secondo ISO 20887 o UNI/PdR 75.
+
+**Soluzione progettuale adottata**: Il piano per il disassemblaggio include: (a) struttura in c.a. e solai (stimati 65% del peso): recupero come aggregati riciclati; (b) facciata ventilata e pannelli cappotto (8%): recupero differenziato; (c) tramezzature a secco (7%): disassemblaggio e riciclo lastre. Totale componenti disassemblabili: 80% > 70% richiesto.
+
+**Documentazione di verifica**: piano per il disassemblaggio e la demolizione selettiva (allegato al progetto esecutivo) redatto secondo UNI/PdR 75; EPD dei componenti principali (UNI EN 15804).
+
+**Riferimento normativo**: Criterio 2.4.14, Allegato DM 23/06/2022 n. 256.
+
+---
+
+## Sezione 2.5 - Specifiche tecniche per i prodotti da costruzione
+
+### Criterio 2.5.1 - Emissioni negli ambienti confinati (inquinamento indoor)
+
+**Applicabilita'**: SI (pitture e vernici per interni; pavimentazioni; tramezzature a secco)
+
+**Requisito minimo**: COV totali <= 1.500 µg/m³; formaldeide < 60 µg/m³; acetaldeide < 300 µg/m³ (tabella completa al criterio 2.5.1 Allegato DM 256/2022), verificati a 28 giorni.
+
+**Soluzione progettuale adottata**: L'idropittura murale interna scelta ha il Marchio Ecolabel UE, che e' riconosciuto come equivalente alla conformita' al criterio 2.5.1 (etichettatura accettata: Ecolabel UE). Le pavimentazioni in gres porcellanato e le lastre in gessofibra non rientrano nelle categorie soggette al criterio (piastrelle ceramiche e laterizi senza lavorazione post cottura con resine sono escluse).
+
+**Documentazione di verifica**: Certificato Ecolabel UE della pittura.
+
+**Riferimento normativo**: Criterio 2.5.1, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.5.2 - Calcestruzzi confezionati in cantiere e preconfezionati
+
+**Applicabilita'**: SI (calcestruzzo strutturale C28/35)
+
+**Requisito minimo**: >= 5% sul peso del prodotto di materie riciclate, recuperate o sottoprodotti.
+
+**Conformita' dichiarata**: Il calcestruzzo strutturale C28/35 conterra' almeno il **8% in peso** di materiale riciclato/recuperato/sottoprodotti (aggregati riciclati da calcestruzzo di demolizione), superiore al minimo richiesto del 5%. Il produttore ha dichiarato la disponibilita' a fornire la certificazione del contenuto.
+
+**Documentazione di verifica**: Dichiarazione del produttore o certificazione (ReMade in Italy(R) o UNI/PdR 88 o EPD Tipo III) con indicazione del contenuto di riciclato; bolle di consegna in corso d'opera.
+
+**Riferimento normativo**: Criterio 2.5.2, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.5.4 - Acciaio
+
+**Applicabilita'**: SI (profilati HEA da forno elettrico per scale e strutture secondarie)
+
+**Requisito minimo** per usi strutturali, acciaio da forno elettrico non legato: >= 75%.
+
+**Conformita' dichiarata**: I profilati in acciaio sono prodotti da forno elettrico non legato (EAF) con contenuto di acciaio riciclato **85%** (dichiarazione produttore disponibile).
+
+**Documentazione di verifica**: Dichiarazione del produttore con indicazione del metodo di produzione (EAF) e del contenuto di riciclato, o EPD Tipo III.
+
+**Riferimento normativo**: Criterio 2.5.4, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.5.7 - Isolanti termici ed acustici
+
+**Applicabilita'**: SI (lana di roccia per cappotto ETICS)
+
+**Requisito minimo** per lana di roccia: >= 15% contenuto cumulativo di materiale recuperato, riciclato o sottoprodotti; nessuna sostanza SVHC > 0,1%; conformita' Nota Q o Nota R del Regolamento CLP (lane minerali).
+
+**Conformita' dichiarata**: Il pannello di lana di roccia contiene il **20% in peso** di materiale riciclato (scorie di fonderia), superiore al 15% richiesto. Il prodotto e' conforme alla Nota Q del Regolamento CLP e privo di sostanze SVHC in concentrazione > 0,1%.
+
+**Documentazione di verifica**: Scheda tecnica isolante con dichiarazione del contenuto riciclato (certificazione ReMade in Italy(R) o EPD Tipo III); scheda informativa ai sensi dell'art. 32 del Regolamento REACH per la conformita' alla Nota Q.
+
+**Riferimento normativo**: Criterio 2.5.7, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.5.8 - Tramezzature, contropareti perimetrali e controsoffitti
+
+**Applicabilita'**: SI (tramezzature in lastre di gessofibra - sistema a secco)
+
+**Requisito minimo**: >= 5% in peso di materiale recuperato/riciclato/sottoprodotti (valore ridotto per prodotti a base gesso).
+
+**Conformita' dichiarata**: Le lastre in gessofibra contengono il **10% in peso** di materiale riciclato (superiore al 5% minimo per prodotti a base gesso).
+
+**Documentazione di verifica**: Dichiarazione del produttore o certificazione del contenuto di riciclato.
+
+**Riferimento normativo**: Criterio 2.5.8, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.5.10.1 - Pavimentazioni dure (piastrelle ceramica)
 
 **Applicabilita'**: SI (gres porcellanato)
 
-**Requisito minimo**: >= 13% di materia prima secondaria per ceramica e gres.
+**Requisito minimo**: Le piastrelle di ceramica devono essere conformi ai criteri inclusi nella Decisione 2021/476 (Ecolabel UE coperture dure, in vigore dal 1 gennaio 2024).
 
-**Conformita' dichiarata**: Il gres porcellanato previsto contiene il **18% di materia prima secondaria** (scarti di produzione riciclati), superiore al minimo del 13%.
+**Conformita' dichiarata**: Il gres porcellanato previsto e' conforme alla Decisione 2021/476 per l'assegnazione del marchio comunitario di qualita' ecologica Ecolabel UE ai prodotti per coperture dure.
 
-**Documentazione di verifica**: certificato produttore con dichiarazione contenuto materia prima secondaria.
+**Documentazione di verifica**: Marchio Ecolabel UE o EPD Tipo III (UNI EN 15804/ISO 14025) con evidenza dei criteri pertinenti alla Decisione 2021/476.
 
-**Riferimento normativo**: Criterio 2.3.12, Allegato DM 23/06/2022 n. 256.
+**Riferimento normativo**: Criterio 2.5.10.1, Allegato DM 23/06/2022 n. 256.
 
----
+### Criterio 2.5.13 - Pitture e vernici
 
-## Criterio 2.4 - Sistemi di risparmio idrico
+**Applicabilita'**: SI (tinteggiatura murale interna)
 
-**Applicabilita'**: SI (NC con impianti idro-sanitari)
+**Requisito minimo**: Uno o piu' dei seguenti: (a) Marchio Ecolabel UE; (b) assenza additivi con cadmio, piombo, cromo esavalente, mercurio, arsenico, selenio > 0,010% in peso; (c) assenza sostanze pericolose per ambiente acquatico H400/H410/H411.
 
-**Requisito minimo**: Rubinetti <= 6 l/min; WC doppio pulsante; raccolta meteorica se verde >= 200 mq.
+**Conformita' dichiarata**: L'idropittura murale interna reca il **Marchio Ecolabel UE** (requisito "a" soddisfatto).
 
-**Soluzione progettuale adottata**:
-- Miscelatori monocomando a flusso ridotto: flusso **5 l/min** (scheda tecnica prodotto disponibile).
-- Cassette WC a doppio pulsante: ciclo pieno **6 l**, ciclo ridotto **3 l**.
-- Sistema di raccolta acque meteoriche: NON previsto (area verde = 350 mq, ma l'altezza e la conformazione del tetto non consentono un sistema di raccolta economicamente sostenibile - superficie raccoglibile < 100 mq efficaci). Motivazione tecnica documentata nella relazione idraulica.
+**Documentazione di verifica**: Certificato Ecolabel UE in corso di validita'.
 
-**Conformita' dichiarata**: Il progetto e' conforme ai requisiti di risparmio idrico del criterio 2.4 per i fissaggi (rubinetteria e WC). Per la raccolta meteorica, si dichiara l'inapplicabilita' tecnica con motivazione documentata.
-
-**Documentazione di verifica**: schede tecniche rubinetteria e cassette WC con portate dichiarate; relazione idraulica con giustificazione assenza raccolta meteorica.
-
-**Riferimento normativo**: Criterio 2.4, Allegato DM 23/06/2022 n. 256.
+**Riferimento normativo**: Criterio 2.5.13, Allegato DM 23/06/2022 n. 256.
 
 ---
 
-## Criterio 2.5 - Efficienza energetica
+## Sezione 2.6 - Specifiche tecniche progettuali relative al cantiere
 
-**Applicabilita'**: SI (NC - intero edificio)
-
-**Requisito minimo**: Classe A3 o superiore per NC; rispetto D.Lgs. 192/2005 e DM 26/06/2015.
-
-**Soluzione progettuale adottata**:
-- Impianto termico: pompa di calore aria-acqua con COP >= 3,8 (inverter); solare termico da 12 mq per ACS.
-- Raffrescamento: stesso circuito idronico della pompa di calore, con raffrescamento radiante a pavimento.
-- Fotovoltaico: impianto FV da 50 kWp in copertura piana.
-- Classe energetica di progetto: **A4** (migliore classe del sistema nazionale).
-
-**Conformita' dichiarata**: Il progetto supera i requisiti minimi richiesti dal criterio 2.5 (A3 per NC), raggiungendo la classe energetica A4. L'APE di progetto sara' allegato alla documentazione di gara.
-
-**Documentazione di verifica**: APE di progetto con classe A4; relazione tecnica impianti; scheda tecnica pompa di calore (COP dichiarato).
-
-**Riferimento normativo**: Criterio 2.5, Allegato DM 23/06/2022 n. 256.
-
----
-
-## Criterio 2.6 - Requisiti per le aree verdi
-
-**Applicabilita'**: SI (NC, area verde = 350 mq)
-
-**Requisito minimo**: >= 50% specie autoctone; compost >= 30% substrato; irrigazione a goccia con sensori; >= 30% superfici esterne permeabili.
-
-**Soluzione progettuale adottata**:
-- Specie vegetali previste: Quercus pubescens (farnia), Carpinus betulus (carpino), Pistacia lentiscus (lentisco), Lavandula angustifolia (lavanda), Hedera helix (edera). **Specie autoctone**: 5 su 5 = **100%** (superiore al 50% richiesto).
-- Substrato: 35% compost da FORSU certificato UNI EN 16428 (> 30% richiesto).
-- Irrigazione: sistema a goccia con sensore di umidita' del suolo e programmatore stagionale.
-- Superfici esterne permeabili: parcheggio con masselli drenanti (600 mq) + aree verdi (350 mq) = 950 mq su 1.200 mq totali area esterna = **79%** (> 30% richiesto).
-
-**Documentazione di verifica**: planimetria aree verdi con elenco specie; scheda substrato con certificato compost; schema impianto irriguo; computo superfici permeabili.
-
-**Riferimento normativo**: Criterio 2.6, Allegato DM 23/06/2022 n. 256.
-
----
-
-## Criterio 2.7 - Gestione rifiuti da C&D
-
-**Applicabilita'**: SI (NC con demolizione edificio preesistente)
-
-**Requisito minimo**: Piano gestione rifiuti C&D; >= 70% recupero rifiuti non pericolosi da demolizione.
-
-**Soluzione progettuale adottata**:
-La demolizione dell'ex deposito produrra' circa 800 t di rifiuti. Piano di gestione in allegato. Demolizione selettiva per fasi:
-1. Rimozione impianti e materiali recuperabili (metalli, infissi): stimati 40 t -> recupero 100%.
-2. Demolizione struttura in laterizi e c.a.: stimati 740 t -> avvio a impianto di recupero autorizzato -> aggregati riciclati.
-3. Materiali potenzialmente pericolosi (sondaggio amianto eseguito - esito negativo): no rifiuti pericolosi da rimozione involontaria.
-
-**Target di recupero**: 780 t su 800 t = **97,5%** (> 70% richiesto).
-
-**Documentazione di verifica**: piano gestione rifiuti C&D allegato; formulari/FIR a fine demolizione (in corso d'opera).
-
-**Riferimento normativo**: Criterio 2.7, Allegato DM 23/06/2022 n. 256.
-
----
-
-## Criterio 2.8 - Cantiere sostenibile
+### Criterio 2.6.1 - Prestazioni ambientali del cantiere
 
 **Applicabilita'**: SI (tutti gli interventi)
 
 **Misure ambientali di cantiere previste**:
-- Bagnatura quotidiana delle aree di scavo e demolizione; recinzione di cantiere con pannelli antirumore.
-- Mezzi di cantiere (escavatori, autobetoniere) di classe Stage IIIA o superiore.
-- Raccolta differenziata in cantiere: contenitori separati per inerti, metalli, legno, plastica, rifiuti urbani.
-- Acque di lavaggio: vasca di decantazione interna al cantiere; divieto di scarico diretto in fognatura senza pre-trattamento.
-- Documentazione fotografica mensile del cantiere con report ambientale trimestrale.
+- Misure antipolvere: bagnatura quotidiana delle aree di scavo e demolizione; recinzione di cantiere perimetrale.
+- Misure antirumore: recinzioni fonoassorbenti nelle aree piu' rumorose; valutazione previsionale di impatto acustico (L. 447/1995).
+- Macchine operatrici: motori di fase **IV** (minimo da gennaio 2024) ai sensi del Regolamento UE 1628/2016.
+- Risparmio idrico: vasca di raccolta e riciclo delle acque di lavaggio degli inerti; raccolta acque meteoriche per abbattimento polveri.
+- Protezione suolo: impermeabilizzazione delle aree di deposito di rifiuti non inerti; rimozione e accantonamento dello strato superficiale del terreno (criterio 2.6.3).
+- Raccolta differenziata: contenitori separati per inerti, metalli, legno, plastica, rifiuti pericolosi.
 
 Le misure saranno inserite nel **Piano di Sicurezza e Coordinamento (PSC)** e nel **Capitolato Speciale d'Appalto**.
 
-**Documentazione di verifica**: piano di cantiere con misure ambientali (allegato al CSA).
+**Documentazione di verifica**: Piano di cantiere con misure ambientali (allegato al CSA); relazione ante operam sullo stato ambientale.
 
-**Riferimento normativo**: Criterio 2.8, Allegato DM 23/06/2022 n. 256.
+**Riferimento normativo**: Criterio 2.6.1, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.6.2 - Demolizione selettiva, recupero e riciclo
+
+**Applicabilita'**: SI (presente demolizione dell'ex deposito preesistente)
+
+**Requisito minimo**: >= 70% in peso dei rifiuti non pericolosi generati in cantiere (esclusi scavi) avviati a preparazione per il riutilizzo, riciclaggio o altre operazioni di recupero.
+
+**Stima rifiuti da demolizione**:
+| Categoria (codice EER) | Stima quantita' | Destinazione | % recupero |
+|---|---|---|---|
+| Calcestruzzo (170101) | 600 t | Impianto recupero agregati riciclati | 100% |
+| Laterizi (170102) | 160 t | Impianto recupero aggregati | 100% |
+| Metalli misti (170407) | 30 t | Rottamatore autorizzato | 100% |
+| Rifiuti misti C&D (170107) | 10 t | Impianto selezione e recupero | 70% |
+
+**Target di recupero**: circa 795 t su 800 t = **99%** > 70% richiesto.
+
+**Documentazione di verifica**: Piano gestione rifiuti C&D (allegato al progetto esecutivo); FIR/formulari di consegna in corso d'opera.
+
+**Riferimento normativo**: Criterio 2.6.2, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.6.3 - Conservazione dello strato superficiale del terreno
+
+**Applicabilita'**: SI (presenti movimenti di terra per le fondazioni)
+
+**Requisito minimo**: Rimozione e accantonamento degli orizzonti "O" (organico) e "A" (attivo) del profilo pedologico per il successivo riutilizzo in opere a verde.
+
+**Soluzione progettuale adottata**: Ante operam, il profilo pedologico e' identificato tramite analisi pedologica (da effettuare in fase esecutiva). Durante lo scotico, il primo strato organico (stima: 30 cm) e' rimosso e accantonato separatamente dalla matrice inorganica per riutilizzo nella sistemazione a verde perimetrale.
+
+**Documentazione di verifica**: Profilo pedologico e relazione specialistica (fase esecutiva); attestazione di riutilizzo del materiale accantonato.
+
+**Riferimento normativo**: Criterio 2.6.3, Allegato DM 23/06/2022 n. 256.
+
+### Criterio 2.6.4 - Rinterri e riempimenti
+
+**Applicabilita'**: SI (rinterri attorno alle fondazioni)
+
+**Requisito minimo**: Per rinterri: riutilizzo del materiale di scavo (escluso il primo strato accantonato al criterio 2.6.3), proveniente dal cantiere stesso o da altri cantieri, conformi ai parametri UNI 11531-1.
+
+**Soluzione progettuale adottata**: Il materiale di scavo eccedente alle fondazioni e' riutilizzato come rinterro perimetrale, previo accertamento della conformita' ai parametri della norma UNI 11531-1.
+
+**Documentazione di verifica**: Documentazione tecnica di verifica dei materiali di rinterro (UNI 11531-1).
+
+**Riferimento normativo**: Criterio 2.6.4, Allegato DM 23/06/2022 n. 256.
 
 ---
 
-## Criterio 2.9 - Sistema di gestione ambientale esecutore
+## Criteri Premianti (OEPV - Affidamento congiunto progettazione + lavori)
 
-**Applicabilita'**: NON APPLICABILE - importo lavori 4.800.000 EUR inferiore alla soglia comunitaria per lavori (5.538.000 EUR). Il criterio 2.9 si applica per importi >= soglia comunitaria.
+La gara e' aggiudicata con il criterio OEPV. L'offerta propone l'adozione dei seguenti criteri premianti (sezioni 2.7, 3.2 e 4.3 dell'Allegato al DM 256/2022):
 
-**Riferimento normativo**: Criterio 2.9, Allegato DM 23/06/2022 n. 256; soglia comunitaria art. 14 D.Lgs. 36/2023.
+### Criterio 3.2.1 - Sistemi di gestione ambientale
 
----
+**Criterio premiante per l'affidamento dei lavori.** L'impresa dimostra la certificazione **UNI EN ISO 14001** in corso di validita', comprovante la capacita' di gestire gli aspetti ambientali dell'intero processo costruttivo.
 
-## Criteri Premianti (OEPV)
+**Verifica**: Certificazione ISO 14001 in corso di validita' (allegata all'offerta tecnica).
 
-La gara e' aggiudicata con il criterio OEPV. Il progetto propone l'adozione dei seguenti criteri premianti (Criterio 4 DM 256/2022):
+### Criterio 4.3.3 - Prestazione energetica migliorativa
 
-### Criterio 4.3 - nZEB avanzato (classe A4)
-Il progetto raggiunge la classe A4 (criterio adottato come premiante in aggiunta al minimo A3 richiesto dal criterio di base 2.5). APE di progetto dimostra il raggiungimento della classe A4.
+**Criterio premiante per l'affidamento congiunto.** Il progetto consegue una riduzione del **10% rispetto al valore limite EP per la classe A4** (DM interministeriale 26/06/2015, allegato 1). Questo criterio non e' cumulabile con il criterio 4.3.1 (LCA/LCC).
 
-### Criterio 4.6 - Monitoraggio BMS
-Il progetto prevede un sistema BMS (Schneider Electric EcoStruxure Building) con monitoraggio orario di energia elettrica, termica e idrica; storicizzazione 5 anni; soglie di allarme per anomalie. Interfaccia web accessibile al gestore.
+**Verifica**: Relazione tecnica di cui al decreto interministeriale 26 giugno 2015.
+
+### Criterio 4.3.6 - Sistema di automazione, controllo e monitoraggio dell'edificio (BACS)
+
+**Criterio premiante per l'affidamento congiunto.** Il progetto prevede un sistema BACS (Building Automation and Control System) di **classe A** (Tabella 1, UNI EN 15232-1) per la gestione degli impianti tecnologici di climatizzazione e illuminazione.
+
+**Verifica**: Progetto del sistema di monitoraggio e dichiarazione di asseverazione della classe A ai sensi della norma UNI/TS 11651.
 
 ---
 
@@ -265,35 +403,63 @@ Il progetto prevede un sistema BMS (Schneider Electric EcoStruxure Building) con
 
 ### Dichiarazione di conformita'
 
-Il sottoscritto [nome e qualifica del progettista], responsabile della progettazione dell'intervento in oggetto, dichiara che il progetto presentato e' conforme ai Criteri Ambientali Minimi di base di cui al DM 23 giugno 2022 n. 256, per tutti i criteri applicabili alla tipologia NC (Nuova Costruzione).
+Il sottoscritto [nome e qualifica del progettista], responsabile della progettazione dell'intervento in oggetto, dichiara che il progetto e' conforme ai criteri obbligatori dell'Allegato al DM 23 giugno 2022 n. 256, per tutti i criteri applicabili alla tipologia NC (Nuova Costruzione), ai sensi del criterio 2.2.1 (Relazione CAM).
 
 ### Tabella riassuntiva
 
 | Criterio | Esito |
 |---|---|
-| 2.1 Qualita' del suolo | CONFORME |
-| 2.2 Durabilita' | CONFORME |
-| 2.3.2 Calcestruzzi | CONFORME (8% riciclato vs 5% min) |
-| 2.3.3-2.3.5 Laterizi/legno | NON APPLICABILE (non previsti) |
-| 2.3.6 Elementi metallici | CONFORME |
-| 2.3.7 Tinteggiatura | CONFORME (Ecolabel in corso) |
-| 2.3.8 Isolanti | CONFORME |
-| 2.3.9 Infissi | CONFORME |
-| 2.3.10 Coperture | CONFORME |
-| 2.3.12 Pavimentazioni | CONFORME |
-| 2.4 Risparmio idrico | CONFORME |
-| 2.5 Efficienza energetica | CONFORME (A4 > A3 min) |
-| 2.6 Aree verdi | CONFORME |
-| 2.7 Rifiuti C&D | CONFORME |
-| 2.8 Cantiere sostenibile | CONFORME |
-| 2.9 ISO 14001 esecutore | NON APPLICABILE (importo < soglia) |
+| **Sezione 2.3 - Territoriali-urbanistici** | |
+| 2.3.1 Inserimento naturalistico | CONFORME |
+| 2.3.2 Permeabilita' superfici (deflusso <0,50) | CONFORME |
+| 2.3.3 Isola di calore / verde >= 60% sup. permeabile | CONFORME CON MOTIVAZIONE (verde 37%; motivazione urbanistica documentata) |
+| 2.3.4 Riduzione impatto idrografico | CONFORME |
+| 2.3.5 Infrastrutturazione primaria | CONFORME |
+| 2.3.6 Mobilita' sostenibile | CONFORME |
+| 2.3.7 Approvvigionamento energetico FER | CONFORME (FV 50 kWp) |
+| 2.3.8 Rapporto stato ambiente | CONFORME |
+| 2.3.9 Risparmio idrico | CONFORME |
+| **Sezione 2.4 - Edifici** | |
+| 2.4.1 Diagnosi energetica | NON APPLICABILE (NC) |
+| 2.4.2 Prestazione energetica NZEB | CONFORME (NZEB, classe A4 stimata) |
+| 2.4.3 Illuminazione LED 50.000 ore + gestione automatica | CONFORME |
+| 2.4.4 Ispezionabilita' impianti | CONFORME |
+| 2.4.5 Aerazione VMC con recupero calore, Classe II | CONFORME |
+| 2.4.6 Benessere termico Classe B UNI EN ISO 7730 | CONFORME |
+| 2.4.7 Illuminazione naturale 300 lux / 50% punti | CONFORME |
+| 2.4.8 Dispositivi ombreggiamento gtot <= 0,35 | CONFORME |
+| 2.4.9 Tenuta all'aria n50 < 2 | CONFORME (verifica Blower Door in corso d'opera) |
+| 2.4.10 Inquinamento elettromagnetico | CONFORME |
+| 2.4.11 Comfort acustico classe II UNI 11367 | CONFORME |
+| 2.4.12 Radon <= 200 Bq/m³ | CONFORME |
+| 2.4.13 Piano manutenzione + BIM IFC | CONFORME |
+| 2.4.14 Disassemblaggio fine vita >= 70% | CONFORME (80%) |
+| **Sezione 2.5 - Prodotti da costruzione** | |
+| 2.5.1 Emissioni indoor | CONFORME (Ecolabel UE pitture) |
+| 2.5.2 Calcestruzzi >= 5% riciclato | CONFORME (8%) |
+| 2.5.3 Prefabbricati calcestruzzo | NON APPLICABILE (non previsti) |
+| 2.5.4 Acciaio strutturale FEN >= 75% | CONFORME (85%) |
+| 2.5.5 Laterizi | NON APPLICABILE (non previsti) |
+| 2.5.6 Prodotti legnosi | NON APPLICABILE (non previsti) |
+| 2.5.7 Isolanti lana di roccia >= 15% | CONFORME (20%) |
+| 2.5.8 Tramezzature a secco >= 5% (gesso) | CONFORME (10%) |
+| 2.5.9 Murature pietrame e miste | NON APPLICABILE (non previste) |
+| 2.5.10.1 Piastrelle ceramica (Decisione 2021/476) | CONFORME |
+| 2.5.11 Serramenti PVC | NON APPLICABILE (serramenti in alluminio) |
+| 2.5.12 Tubazioni PVC/PP | DA VERIFICARE con lista materiali definitiva |
+| 2.5.13 Pitture e vernici Ecolabel UE | CONFORME |
+| **Sezione 2.6 - Cantiere** | |
+| 2.6.1 Prestazioni ambientali cantiere | CONFORME |
+| 2.6.2 Demolizione selettiva >= 70% recupero | CONFORME (99% stimato) |
+| 2.6.3 Conservazione strato terreno | CONFORME |
+| 2.6.4 Rinterri e riempimenti | CONFORME |
 
 ### Avvertenze
 
 Elementi non automaticamente verificabili da questa relazione:
-- Effettiva percentuale di riciclato nei materiali a fornitura: da verificare tramite schede tecniche e dichiarazioni di prodotto in sede di esecuzione.
-- Certificazione Ecolabel UE della tinteggiatura: in corso; se non disponibile alla data di gara, sostituire con equivalente verificabile.
-- APE di progetto: da allegare alla documentazione di gara firmata da tecnico abilitato.
-- Attestazioni ISO 14001/EMAS esecutore: non richiesta per questo importo, ma consigliabile come buona pratica.
+- Effettivo contenuto di riciclato nei materiali: da verificare tramite dichiarazioni di prodotto e certificazioni in sede di esecuzione (direttore dei lavori).
+- Test Blower Door per n50: da eseguire in corso d'opera.
+- Conformita' acustica: da verificare tramite collaudo acustico in opera.
+- Lista materiali definitiva (sezione 2.5): alcuni criteri (es. 2.5.12 tubazioni) dipendono dalla scelta definitiva dei materiali nel progetto esecutivo.
 
 La presente relazione e' uno strumento di supporto alla redazione. **Deve essere revisionata, completata e firmata dal progettista responsabile** prima dell'allegazione agli atti di gara.

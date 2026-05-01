@@ -1,56 +1,52 @@
 # DM 23 giugno 2022 n. 256 - Articoli chiave (estratto)
 
-**Fonte**: DM 23/06/2022 n. 256, GU n. 183 del 06/08/2022  
-**Licenza**: public-domain-italian-law  
-**URL**: https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.transizione.ecologica:decreto.ministeriale:2022-06-23;256  
+**Fonte**: DM 23/06/2022 n. 256, GU n. 183 del 06/08/2022
+**Licenza**: public-domain-italian-law
+**URL**: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04478/SG
 
 ---
 
 ## Art. 1 - Oggetto e ambito di applicazione
 
-1. Il presente decreto stabilisce i criteri ambientali minimi (CAM) per:
-   a) l'affidamento del **servizio di progettazione** di interventi edilizi;
-   b) l'affidamento di **lavori di nuova costruzione, ristrutturazione e manutenzione di edifici pubblici**.
+1. Ai sensi e per gli effetti dell'art. 34 del decreto legislativo 18 aprile 2016, n. 50, sono adottati i criteri ambientali minimi di cui all'allegato al presente decreto:
+   a) per l'affidamento del **servizio di progettazione** di interventi edilizi;
+   b) per l'affidamento dei **lavori per interventi edilizi**;
+   c) per l'affidamento **congiunto di progettazione e lavori** per interventi edilizi.
 
-2. I criteri di cui al comma 1 si applicano alle procedure di affidamento di cui al decreto legislativo 18 aprile 2016, n. 50, e successive modificazioni, ovvero al D.Lgs. 36/2023 per i contratti aggiudicati successivamente alla sua entrata in vigore.
+2. Per gli interventi di ristrutturazione edilizia, comprensiva degli interventi di demolizione e ricostruzione di edifici effettuati nelle zone territoriali omogenee (ZTO) "A" e "B" di cui al decreto del Ministro dei lavori pubblici 2 aprile 1968, n. 1444, le stazioni appaltanti possono applicare in misura diversa, motivando le ragioni, le prescrizioni previste dai criteri 2.3.2 (Permeabilita') e 2.4.7 (Illuminazione naturale).
 
 ---
 
 ## Art. 2 - Definizioni
 
-Ai fini del presente decreto si intende per:
+Ai fini del presente decreto si applicano le definizioni di prodotto da costruzione di cui all'art. 2 del Regolamento 305/2011/UE e le definizioni di intervento di ristrutturazione urbanistica di cui all'art. 3 del DPR 6 giugno 2001, n. 380 (T.U. edilizia). Si applica altresi' la seguente ulteriore definizione:
 
-- **Nuova costruzione (NC)**: realizzazione ex novo di un edificio;
-- **Ristrutturazione importante di primo livello (R1)**: intervento in cui la superficie disperdente, oggetto di intervento, e' superiore al 50% della superficie disperdente totale dell'edificio; e' altrettanto richiesto il rispetto dei requisiti di cui alla voce 2.5 sull'intero edificio;
-- **Ristrutturazione importante di secondo livello (R2)**: intervento in cui la superficie disperdente oggetto di intervento e' pari o inferiore al 50% della superficie disperdente totale dell'edificio oppure intervento su singoli elementi tecnici che non riguardano l'intero edificio (es. sostituzione infissi, rifacimento copertura);
-- **Manutenzione straordinaria (MS)**: intervento che non altera la forma esterna dell'edificio ne' aumenta la superficie utile o il numero delle unita' immobiliari e non implica incrementi dei parametri urbanistici;
-- **CAM di base**: criteri ambientali la cui applicazione e' obbligatoria (Criteri 2 del presente decreto);
-- **CAM premianti**: criteri ambientali migliorativi rispetto a quelli di base, la cui applicazione e' facoltativa ma che, se adottati, contribuiscono ad assegnare un punteggio tecnico aggiuntivo nell'OEPV (Criteri 4 del presente decreto);
-- **Relazione Tecnica dei Requisiti Ambientali**: documento predisposto dal progettista che dimostra la conformita' del progetto ai CAM applicabili, da allegare agli atti di gara.
+a) **solar reflectance index** (SRI): indice di riflessione solare, ovvero la temperatura relativa di una superficie in rapporto al bianco standard (SRI=100) e al nero standard (SRI=0) in condizioni ambientali e solari standard.
 
----
-
-## Art. 3 - Obblighi della stazione appaltante
-
-1. Le stazioni appaltanti inseriscono nella documentazione di gara:
-   a) le specifiche tecniche di base (Criterio 2) come **requisiti minimi obbligatori**;
-   b) le condizioni di esecuzione (Criterio 3) come **clausole contrattuali**;
-   c) le specifiche tecniche premianti (Criterio 4) come **criteri di valutazione** nelle gare aggiudicate con il criterio dell'offerta economicamente piu' vantaggiosa (OEPV).
-
-2. Il progettista dimostra la conformita' del progetto ai CAM tramite la **Relazione Tecnica dei Requisiti Ambientali**, da allegare alla documentazione progettuale di gara.
+Le tipologie di intervento edilizio rilevanti ai fini dei CAM sono definite nell'Allegato (sezione 1.1) con riferimento al T.U. edilizia:
+- **Nuova costruzione (NC)**: realizzazione ex novo di un edificio.
+- **Ristrutturazione importante di primo livello (R1)**: intervento in cui la superficie disperdente oggetto di intervento e' superiore al 50% della superficie disperdente totale dell'edificio; comprende anche la demolizione e ricostruzione con stessa volumetria.
+- **Ristrutturazione importante di secondo livello (R2)**: intervento in cui la superficie disperdente oggetto di intervento e' pari o inferiore al 50% oppure intervento su singoli elementi tecnici che non riguardano l'intero edificio.
+- **Manutenzione straordinaria (MS)**: intervento che non altera la forma esterna dell'edificio ne' aumenta la superficie utile o il numero delle unita' immobiliari.
 
 ---
 
-## Art. 4 - Entrata in vigore
+## Art. 3 - Abrogazioni e norme finali
 
-Il presente decreto entra in vigore il sessantesimo giorno successivo alla sua pubblicazione nella Gazzetta Ufficiale della Repubblica Italiana.
+1. Il presente decreto entra in vigore dopo **centoventi giorni** dalla pubblicazione nella Gazzetta Ufficiale della Repubblica Italiana.
 
-*(GU n. 183 del 06/08/2022 -> entrata in vigore: 08/10/2022)*
+*(GU n. 183 del 06/08/2022 -> entrata in vigore: 4 dicembre 2022)*
+
+2. Il decreto del Ministro dell'ambiente e della tutela del territorio e del mare dell'11 ottobre 2017 (CAM edilizia precedenti) e' abrogato dalla data di entrata in vigore del presente decreto.
 
 ---
 
 ## Note operative
 
-- Il DM 256/2022 sostituisce integralmente il **DM 11 gennaio 2017** (precedenti CAM edilizia).
-- L'obbligo di applicazione e' ora rafforzato dall'**art. 57 D.Lgs. 36/2023** (Codice dei Contratti Pubblici 2023): le SA sono tenute ad applicare i CAM di base per il 100% del valore a base d'asta per servizi/forniture e per almeno il 50% per i lavori.
-- In caso di gara sopra soglia con OEPV, i **CAM premianti** (Criterio 4) devono essere inseriti nella griglia di valutazione dell'offerta tecnica.
+- Il DM 256/2022 sostituisce integralmente il **DM 11 ottobre 2017** (precedenti CAM edilizia), abrogato dal 4 dicembre 2022.
+- L'obbligo di applicazione e' rafforzato dall'**art. 57 D.Lgs. 36/2023** (Codice dei Contratti Pubblici 2023): le SA sono tenute a inserire i CAM obbligatori nella documentazione progettuale e di gara.
+- Per **interventi che non riguardano interi edifici** (es. sostituzione infissi, rifacimento cappotto): si applicano solo i criteri dei capitoli 2.5 (prodotti da costruzione) e 2.6 (cantiere).
+- Per **appalti di manutenzione immobili e impianti**: si applicano solo i criteri di cui ai capitoli 2.5, 2.6 e ai criteri 3.1.2 (Macchine operatrici) e 3.1.3 (Grassi e oli lubrificanti).
+- La **Relazione Tecnica dei Requisiti Ambientali** (criterio 2.2.1) e' il documento con cui il progettista dimostra la conformita' del progetto ai criteri CAM applicabili, da allegare alla documentazione progettuale di gara.
+- In caso di gara sopra soglia con OEPV, i **CAM premianti** (cap. 2.7, 3.2, 4.3) devono essere inseriti nella griglia di valutazione dell'offerta tecnica.
+- Se uno o piu' criteri sono in contrasto con normative tecniche di settore, il progettista motiva la non applicabilita' nella Relazione CAM indicando i riferimenti normativi.
