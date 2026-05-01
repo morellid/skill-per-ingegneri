@@ -74,15 +74,18 @@ La giurisprudenza e' costante: i criteri discrezionali devono avere sub-elementi
 
 Giurisprudenza: la formula deve essere esplicitata nel disciplinare (Cons. Stato, sez. III, costante).
 
-**Azione correttiva**: sostituire con formula lineare esplicita:
+**Azione correttiva**: sostituire con formula lineare esplicita. Usare il prezzo (non il ribasso percentuale) come parametro per evitare ambiguita':
 ```
-Pe_i = 50 x (Ribasso_max / Ribasso_i)
+Pe_i = Vmax x (Prezzo_min / Prezzo_i)
 ```
-oppure, se il prezzo e' il parametro preferito:
+dove Prezzo_min e' il prezzo piu' basso tra tutte le offerte ammesse e Vmax e' il punteggio massimo assegnato all'offerta economica.
+L'offerente con il prezzo piu' basso ottiene Vmax; gli altri proporzionalmente meno (formula bounded 0..Vmax).
+
+Se si vuole usare il ribasso percentuale, la formula corretta e' crescente (piu' ribasso = piu' punti):
 ```
-Pe_i = 50 x (Prezzo_min / Prezzo_i)
+Pe_i = Vmax x (Ribasso_i / Ribasso_max)
 ```
-dove Ribasso_max/Prezzo_min e' il miglior ribasso/prezzo offerto tra tutti gli ammessi.
+dove Ribasso_max e' il ribasso piu' alto tra tutte le offerte ammesse. Le due formule sono equivalenti e producono la stessa classifica.
 
 **Nota**: se l'appalto ricade nella definizione di lavori ad alta intensita' di manodopera (costo manodopera >= 50% del totale), il peso economico deve essere ridotto dal 50% al **massimo 30%** (art. 108 co. 4). Il RUP deve verificare la composizione del costo e, se applicabile, ridistribuire i 20 punti in eccesso sui criteri tecnici.
 

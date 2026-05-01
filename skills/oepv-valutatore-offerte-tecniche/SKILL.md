@@ -58,6 +58,15 @@ Ai sensi dell'art. 108 co. 2 D.Lgs. 36/2023, l'aggiudicazione con criterio quali
 
 Per tutti gli altri contratti, il criterio del prezzo piu' basso e' ammesso se l'oggetto e' standardizzato, tranne per i servizi ad alta intensita' di manodopera (art. 108 co. 3).
 
+## Criteri premianti obbligatori (art. 108 co. 7)
+
+In ogni gara OEPV, il testo dell'art. 108 co. 7 stabilisce che "e' **sempre previsto** il maggiore punteggio possibile" per **tutte e tre** le seguenti categorie:
+1. **Produttori di beni a basse emissioni di CO2** - principalmente per forniture e lavori con componente materiali significativa
+2. **Imprese con misure di welfare aziendale** - applicabile a qualsiasi contratto
+3. **Imprese con certificazione parita' di genere** (UNI/PdR 125:2022 o equivalente, D.Lgs. 198/2006 art. 46-bis) - applicabile a qualsiasi contratto
+
+Omettere anche una sola delle tre categorie rende la matrice contestabile. Se una categoria non e' pertinente all'oggetto specifico del contratto (art. 108 co. 6), documentare la ragione nel disciplinare.
+
 ## Limiti sul punteggio economico (art. 108 co. 4)
 
 - **Appalti IT in contesti di interesse strategico nazionale**: punteggio economico max **10%** del totale

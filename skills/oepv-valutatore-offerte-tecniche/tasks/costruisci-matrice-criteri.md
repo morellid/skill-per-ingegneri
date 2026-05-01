@@ -8,7 +8,7 @@ Produrre una **bozza di matrice criteri/sottocriteri** che possa essere integrat
 - Elenco criteri con peso (ponderazione) e metodo di valutazione
 - Eventuale suddivisione in sottocriteri con peso parziale
 - Metodo di attribuzione del punteggio per ciascun criterio/sottocriterio (tabellare, discrezionale, formula)
-- Note sulle vincoli normativi applicabili (limiti punteggio economico, OEPV obbligatorio, bonus parita' di genere)
+- Note sulle vincoli normativi applicabili (limiti punteggio economico, OEPV obbligatorio, criteri premianti obbligatori art. 108 co. 7)
 
 ## Input richiesti
 
@@ -46,9 +46,11 @@ Prima di costruire la matrice, verificare:
    - Servizi/lavori alta intensita' manodopera -> max 30%
    - Tutti gli altri -> nessun limite esplicito, ma giustificare la scelta (motivazione proporzionalita')
    
-3. **Bonus parita' di genere** (art. 108 co. 7, D.Lgs. 198/2006 art. 46-bis):
-   - Obbligatorio prevedere il punteggio piu' alto disponibile per certificazione parita' di genere (UNI/PdR 125:2022 o equivalente)
-   - Segnalare se la SA non lo ha incluso
+3. **Criteri premianti obbligatori** (art. 108 co. 7): il testo dice "e' sempre previsto il maggiore punteggio possibile" per **tutte e tre** le categorie seguenti:
+   - **Produttori di beni a basse emissioni di CO2**: obbligatorio per contratti di forniture e lavori con componente significativa di materiali da costruzione; per servizi puri (intellettuali) la fattispecie e' meno diretta ma la cautela suggerisce di includerlo o motivarne l'esclusione
+   - **Imprese con misure di welfare aziendale**: applicabile a tutti i contratti; verificare che la SA abbia definito cosa si intende per "misure di welfare" (es. asili nido aziendali, flessibilita' oraria, buoni pasto: specificare nel disciplinare)
+   - **Certificazione parita' di genere** (UNI/PdR 125:2022 o equivalente, D.Lgs. 198/2006 art. 46-bis): applicabile a tutti i contratti; il punteggio deve essere il massimo disponibile per un singolo sottocriterio
+   - Se la SA omette una delle tre categorie, la matrice e' esposta a contestazione. Documentare nel disciplinare la ragione dell'eventuale esclusione con riferimento all'oggetto specifico del contratto (art. 108 co. 6: criterio collegato all'oggetto).
 
 ### Passo 2 - Proposta struttura criteri
 
@@ -62,20 +64,27 @@ Proporre una struttura articolata in criteri e sottocriteri. Linee guida general
 - Criterio B - Caratteristiche del team: 20-30 punti
   - B1 Qualificazione e esperienza del responsabile: 10-15 punti (tabellare - anni esperienza + titoli)
   - B2 Qualificazione specialisti del team: 5-10 punti (tabellare)
-  - B3 Parita' di genere (certificazione UNI/PdR 125): 3-5 punti (tabellare on/off)
-- Criterio C - Tempistiche di consegna: 5-10 punti (formula quantitativa - riduzione tempi proposta)
-- Criterio D - Offerta economica: 30 punti (formula lineare)
+- Criterio C - Criteri premianti obbligatori art. 108 co. 7: 8-15 punti (tutti e tre obbligatori)
+  - C1 Parita' di genere (certificazione UNI/PdR 125 o equiv.): 3-5 punti (tabellare on/off) [OBBLIGATORIO]
+  - C2 Welfare aziendale (misure concrete: specificare nel disciplinare): 2-5 punti (tabellare/discrezionale) [OBBLIGATORIO]
+  - C3 Basse emissioni CO2 (per servizi: dichiarazione politica ambientale o certificazione; per forniture/lavori: materiali a basse emissioni): 2-5 punti (tabellare on/off) [OBBLIGATORIO, collegare all'oggetto]
+- Criterio D - Tempistiche di consegna: 5-10 punti (formula quantitativa - riduzione tempi proposta)
+- Criterio E - Offerta economica: 30 punti (formula lineare)
   Totale: 100 punti
 
 **Per lavori (tipico, quando OEPV scelto):**
 - Criterio A - Qualita' esecutiva e organizzazione del cantiere: 20-30 punti
   - A1 Piano organizzativo cantiere: 10-15 punti (discrezionale)
   - A2 Misure per la riduzione dei disagi: 5-10 punti (discrezionale)
-- Criterio B - Caratteristiche tecniche dei materiali e soluzioni migliorative: 15-25 punti
-  - B1 Soluzioni migliorative rispetto al capitolato: 10-15 punti (tabellare/discrezionale)
-  - B2 Sostenibilita' ambientale (CAM migliorativi): 5-10 punti (tabellare on/off)
-- Criterio C - Tempi di esecuzione: 5-10 punti (formula: riduzione % del tempo contrattuale)
-- Criterio D - Offerta economica: 40-50 punti (formula lineare)
+- Criterio B - Caratteristiche tecniche dei materiali e soluzioni migliorative: 10-20 punti
+  - B1 Soluzioni migliorative rispetto al capitolato: 8-12 punti (tabellare/discrezionale)
+  - B2 Sostenibilita' ambientale (CAM migliorativi, basse emissioni CO2): 5-10 punti (tabellare on/off) [copre criterio obbligatorio CO2 art. 108 co. 7]
+- Criterio C - Criteri premianti obbligatori art. 108 co. 7: 8-12 punti
+  - C1 Parita' di genere (certificazione UNI/PdR 125 o equiv.): 3-5 punti (tabellare on/off) [OBBLIGATORIO]
+  - C2 Welfare aziendale (misure concrete: specificare nel disciplinare): 3-5 punti (tabellare/discrezionale) [OBBLIGATORIO]
+  Nota: per lavori, il criterio CO2 (B2) conta anche per l'obbligo art. 108 co. 7 purche' il peso sia il massimo disponibile per un singolo sottocriterio.
+- Criterio D - Tempi di esecuzione: 5-10 punti (formula: riduzione % del tempo contrattuale)
+- Criterio E - Offerta economica: 30-40 punti (formula lineare)
   Totale: 100 punti
 
 > Questi sono schemi indicativi. Adattare all'oggetto specifico. I pesi devono riflettere le priorita' reali della stazione appaltante e devono essere motivati.
@@ -137,7 +146,10 @@ Per ogni criterio/sottocriterio indicare il metodo:
 ## Vincoli applicati
 
 - Punteggio economico: [XX]% ([entro limiti art. 108 co. 4 / limite 10% per IT / limite 30% per alta intensita' manodopera])
-- Bonus parita' di genere: incluso nel criterio [X], sottocriterio [Xn], peso [X] punti (massimo disponibile)
+- Criteri premianti obbligatori art. 108 co. 7 (tutti e tre verificati):
+  - Parita' di genere: incluso nel criterio [X], sottocriterio [Xn], peso [X] punti (massimo disponibile)
+  - Welfare aziendale: incluso nel criterio [X], sottocriterio [Xn], peso [X] punti (massimo disponibile)
+  - Basse emissioni CO2: [incluso come criterio [X], sottocriterio [Xn] / motivazione esclusione se inapplicabile all'oggetto]
 
 ---
 

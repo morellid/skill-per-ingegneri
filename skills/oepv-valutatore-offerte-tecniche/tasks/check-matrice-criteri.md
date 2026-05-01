@@ -42,7 +42,9 @@ Controllare sistematicamente:
 | Subcriteri e sub-pesi (se presenti) | Art. 108 co. 7 | I sottocriteri hanno pesi coerenti con il criterio padre? |
 | Limite punteggio economico 10% (IT strategico) | Art. 108 co. 4 | Il contratto e' IT interesse nazionale? Il punteggio economico e' <= 10%? |
 | Limite punteggio economico 30% (alta intensita' manodopera) | Art. 108 co. 4 | Il contratto e' ad alta intensita' manodopera? Il punteggio economico e' <= 30%? |
-| Bonus parita' di genere | Art. 108 co. 7 + D.Lgs. 198/2006 art. 46-bis | E' previsto il punteggio massimo disponibile per certificazione parita' di genere? |
+| Bonus parita' di genere (certificazione UNI/PdR 125 o equiv.) | Art. 108 co. 7 + D.Lgs. 198/2006 art. 46-bis | E' previsto il punteggio massimo disponibile per certificazione parita' di genere? |
+| Bonus welfare aziendale | Art. 108 co. 7 | E' previsto il punteggio massimo disponibile per imprese con misure di welfare aziendale? |
+| Bonus basse emissioni CO2 | Art. 108 co. 7 | E' previsto il punteggio massimo disponibile per produttori di beni a basse emissioni CO2? Se non pertinente all'oggetto (es. servizio intellettuale puro), documentare la ragione. |
 | Formula offerta economica specificata | Art. 108 co. 7 + giurisprudenza | La formula e' esplicitata nel disciplinare o solo "formula proporzionale" generico? |
 | Metodo riproporzionamento specificato | ANAC LG n.2 + giurisprudenza | E' indicato se si applica il riproporzionamento per i criteri discrezionali? |
 | Criteri collegati all'oggetto del contratto | Art. 108 co. 6 | Tutti i criteri sono pertinenti all'appalto? Nessun criterio soggettivo sull'operatore? |
