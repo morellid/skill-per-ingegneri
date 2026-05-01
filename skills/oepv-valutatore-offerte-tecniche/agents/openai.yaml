@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: OEPV - Valutatore offerte tecniche
+short_description: Costruisce la matrice criteri/sottocriteri OEPV conforme all'art. 108 D.Lgs. 36/2023, calcola i punteggi con il metodo aggregativo-compensatore e verifica una matrice esistente per rischi TAR.
+default_prompt: |
+  Devo fare una gara OEPV [per lavori / servizi di ingegneria / forniture].
+  Importo base d'asta: EUR [importo]. Oggetto: [descrizione appalto].
+  Puoi aiutarmi a costruire la matrice criteri, verificare quella che ho gia' preparato,
+  o calcolare i punteggi delle offerte ricevute?

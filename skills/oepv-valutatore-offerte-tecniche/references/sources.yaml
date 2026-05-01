@@ -1,0 +1,123 @@
+schema_version: 1
+skill: oepv-valutatore-offerte-tecniche
+last_verified: 2026-05-02
+
+# Fonti normative per la skill di supporto alla valutazione OEPV (offerta economicamente
+# piu' vantaggiosa) nelle procedure di appalto pubblico ai sensi del D.Lgs. 36/2023.
+#
+# Struttura normativa di riferimento:
+# - Art. 107-108 D.Lgs. 36/2023: principi e criteri di aggiudicazione OEPV
+# - Art. 93 D.Lgs. 36/2023: commissione giudicatrice
+# - ANAC Linea Guida n. 2 (Delibera n. 424/2018): metodologia valutazione
+#   (non vincolante sotto D.Lgs. 36/2023, ma ancora di riferimento operativo)
+#
+# NOTA: l'issue originale (#5) citava "Allegato II.4 D.Lgs 36/2023" per la
+# "matrice criteri/sottocriteri OEPV". Questo riferimento e' errato:
+# l'Allegato II.4 del D.Lgs. 36/2023 riguarda la "Qualificazione delle stazioni
+# appaltanti e delle centrali di committenza", non la valutazione delle offerte.
+# La normativa corretta per OEPV e' l'art. 108 D.Lgs. 36/2023.
+
+sources:
+  - id: dlgs-36-2023-originale-gu-2023
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - GU n. 77 del 31/03/2023 Suppl. Ordinario n. 12 (riedito su GU n. 87 del 13/04/2023 Suppl. Ordinario n. 14)"
+    type: decreto-legislativo
+    url: https://www.gazzettaufficiale.it/eli/gu/2023/04/13/87/so/14/sg/pdf
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-36-2023-gu87-so14.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-36-art93.md
+      - references/estratti/dlgs-36-art107-108.md
+    notes: |
+      Codice dei contratti pubblici, in vigore dal 1 aprile 2023, efficace dal
+      1 luglio 2023. Per questa skill rilevano:
+      - Art. 93: composizione e requisiti della commissione giudicatrice
+      - Art. 107: principi generali OEPV
+      - Art. 108: criteri di aggiudicazione (OEPV obbligatorio, limiti punteggio
+        economico 10%/30%, bonus parita' di genere, criterio collegato all'oggetto)
+      Il D.Lgs. 36/2023 NON ha un allegato specifico per le formule di valutazione
+      OEPV. La metodologia di calcolo e' delegata agli atti di gara e alla prassi.
+
+  - id: dlgs-209-2024-correttivo
+    title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025"
+    type: decreto-legislativo
+    url: https://www.gazzettaufficiale.it/eli/id/2025/01/22/25A00154/sg
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-209-2024-correttivo.pdf
+    excerpt_paths: []
+    notes: |
+      Decreto correttivo in vigore dal 31/12/2024. Non modifica sostanzialmente
+      gli artt. 93 e 108 rilevanti per questa skill. Da consultare per eventuali
+      modifiche puntuali ai commi degli articoli sopra citati.
+
+  - id: normattiva-portale-dlgs-36
+    title: "Portale Normattiva - D.Lgs. 36/2023 - versione multivigente consolidata"
+    type: portale-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Testo consolidato vigente con modifiche del correttivo integrate.
+      Usare per cross-check puntuale prima del release o in caso di dubbio.
+
+  - id: anac-linea-guida-n2-delibera-424-2018
+    title: "ANAC - Linee guida n. 2 - Offerta economicamente piu' vantaggiosa - Delibera n. 424 del 2 maggio 2018"
+    type: linea-guida-anac
+    url: https://www.anticorruzione.it/documents/91439/221cee7f-adba-5368-6d25-69fd2884aa91
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-lg-n2-delibera-424-2018.pdf
+    excerpt_paths:
+      - references/estratti/anac-lg-n2-metodologia-oepv.md
+    notes: |
+      Linee guida ANAC n. 2 aggiornate con delibera n. 424 del 2/5/2018.
+      STATO NORMATIVO: vincolanti sotto D.Lgs. 50/2016 (vecchio codice).
+      Sotto D.Lgs. 36/2023 (nuovo codice, efficace 1/7/2023) non sono state
+      rinnovate ne' formalmente ritirate per la materia OEPV. La prassi nei
+      disciplinari di gara e la giurisprudenza TAR/CdS continuano a fare
+      riferimento alla metodologia aggregativo-compensatore e al riproporzionamento
+      descritti in queste linee guida. Usare come riferimento metodologico di
+      prassi, non come fonte vincolante. In caso di contrasto con art. 108
+      D.Lgs. 36/2023, il decreto prevale.
+
+  - id: dlgs-198-2006-art46bis
+    title: "D.Lgs. 11 aprile 2006 n. 198 - Codice delle pari opportunita' - art. 46-bis (certificazione parita' di genere)"
+    type: rinvio-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-11;198
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Richiamato dall'art. 108 co. 7 D.Lgs. 36/2023 per il bonus parita' di genere.
+      Art. 46-bis definisce la certificazione della parita' di genere (UNI/PdR 125:2022
+      o equivalente). La stazione appaltante deve assegnare il "maggiore punteggio
+      possibile" alle imprese certificate. Il riferimento e' rinvio strutturale: la
+      skill segnala l'obbligo ma non valuta la certificazione specifica.
+
+secondary_sources_to_evaluate:
+  - id: anac-bandi-tipo
+    title: "ANAC - Bandi-tipo e schemi di disciplinare di gara"
+    url: https://www.anticorruzione.it/-/bandi-tipo
+    notes: |
+      I bandi-tipo ANAC contengono sezioni standard per la matrice OEPV.
+      Fonte principale per la futura skill PR.2 (bandi-tipo ANAC conformi).
+      Per questa skill, i bandi-tipo sono citati come best practice ma non
+      analizzati sistematicamente.
+
+  - id: cons-stato-giurisprudenza-oepv
+    title: "Consiglio di Stato - giurisprudenza OEPV consolidata"
+    url: https://www.giustizia-amministrativa.it/
+    notes: |
+      Giurisprudenza in evoluzione. I principi citati (criteri discrezionali non
+      vaghi, riproporzionamento dichiarato, formula economica esplicitata) sono
+      consolidati da numerose sentenze TAR/CdS. Per gare rilevanti, verificare
+      le sentenze piu' recenti.
