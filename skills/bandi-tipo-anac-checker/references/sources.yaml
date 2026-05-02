@@ -1,0 +1,146 @@
+schema_version: 1
+skill: bandi-tipo-anac-checker
+last_verified: 2026-05-02
+
+# Fonti normative per la skill di verifica conformita' disciplinari di gara
+# agli schemi ANAC (bandi-tipo) ai sensi del D.Lgs. 36/2023.
+#
+# Struttura normativa di riferimento:
+# - D.Lgs. 36/2023 artt. 11, 74, 87, 90, 94-103, 117-120: clausole disciplinare obbligatorie
+# - ANAC schemi di disciplinare 2023: template per SA qualificate, articolati per
+#   tipo contratto (lavori / servizi+forniture) e criterio (PPB / OEPV)
+#
+# NOTA sugli schemi ANAC: ANAC ha pubblicato gli schemi di disciplinare per il
+# D.Lgs. 36/2023 a partire da fine 2023. I PDF sono disponibili sul portale ANAC
+# alla sezione "Bandi-tipo". Non e' possibile embedare l'intero testo degli schemi
+# (documenti lunghi, aggiornati periodicamente); questa skill verifica la struttura
+# e i requisiti normativi. Per confronto puntuale con il testo verbatim, l'utente
+# deve scaricare l'ultima versione dal portale ANAC.
+
+sources:
+  - id: dlgs-36-2023-originale-gu-2023
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - GU n. 77 del 31/03/2023 Suppl. Ordinario n. 12 (riedito su GU n. 87 del 13/04/2023 Suppl. Ordinario n. 14)"
+    type: decreto-legislativo
+    url: https://www.gazzettaufficiale.it/eli/gu/2023/04/13/87/so/14/sg/pdf
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-36-2023-gu87-so14.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-36-artt-clausole-disciplinare.md
+    notes: |
+      Codice dei contratti pubblici, in vigore dal 1 aprile 2023, efficace dal
+      1 luglio 2023. Per questa skill rilevano:
+      - Art. 11: clausole sociali (CCNL settore e zona)
+      - Art. 74: contenuto minimo del bando/disciplinare
+      - Art. 87: DGUE (documento di gara unico europeo)
+      - Art. 90: comunicazioni e accesso agli atti
+      - Artt. 94-98: motivi di esclusione (automatici e non automatici)
+      - Art. 99: self-cleaning
+      - Artt. 100-103: requisiti di partecipazione (idoneita', capacita' econ., capacita' tecn.)
+      - Art. 101 (bis, ter): soccorso istruttorio
+      - Artt. 104-106: avvalimento
+      - Art. 117: garanzia provvisoria
+      - Art. 118: garanzia definitiva
+      - Artt. 119-120: subappalto
+
+  - id: dlgs-209-2024-correttivo
+    title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025"
+    type: decreto-legislativo
+    url: https://www.gazzettaufficiale.it/eli/id/2025/01/22/25A00154/sg
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-209-2024-correttivo.pdf
+    excerpt_paths: []
+    notes: |
+      Decreto correttivo in vigore dal 31/12/2024. Introduce modifiche puntuali
+      ad alcuni articoli del D.Lgs. 36/2023. Verificare l'impatto sulle clausole
+      del disciplinare prima del rilascio di ogni versione della skill.
+
+  - id: normattiva-portale-dlgs-36
+    title: "Portale Normattiva - D.Lgs. 36/2023 - versione multivigente consolidata"
+    type: portale-normativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Testo consolidato vigente con modifiche del correttivo integrate.
+      Usare per cross-check puntuale prima del release o in caso di dubbio.
+
+  - id: anac-schema-disciplinare-sf-ppb-2023
+    title: "ANAC - Schema di disciplinare di gara per servizi e forniture - Criterio del prezzo piu' basso (sopra soglia)"
+    type: schema-anac
+    url: https://www.anticorruzione.it/-/bandi-tipo
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-schema-disciplinare-sf-ppb-2023.pdf
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-struttura-2023.md
+    notes: |
+      Schema di disciplinare per servizi e forniture con criterio del prezzo piu' basso,
+      pubblicato da ANAC per il D.Lgs. 36/2023. Verificare la versione aggiornata sul
+      portale ANAC (https://www.anticorruzione.it/-/bandi-tipo) prima dell'utilizzo:
+      ANAC aggiorna periodicamente gli schemi. Il documento e' gratuito e di dominio pubblico.
+
+  - id: anac-schema-disciplinare-sf-oepv-2023
+    title: "ANAC - Schema di disciplinare di gara per servizi e forniture - Criterio OEPV (sopra soglia)"
+    type: schema-anac
+    url: https://www.anticorruzione.it/-/bandi-tipo
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-schema-disciplinare-sf-oepv-2023.pdf
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-struttura-2023.md
+    notes: |
+      Schema di disciplinare per servizi e forniture con criterio OEPV. Per la sezione
+      criteri di aggiudicazione, usare in combinazione con la skill
+      oepv-valutatore-offerte-tecniche che copre in dettaglio l'art. 108 D.Lgs. 36/2023.
+
+  - id: anac-schema-disciplinare-lavori-ppb-2023
+    title: "ANAC - Schema di disciplinare di gara per lavori - Criterio del prezzo piu' basso (sopra soglia)"
+    type: schema-anac
+    url: https://www.anticorruzione.it/-/bandi-tipo
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-schema-disciplinare-lavori-ppb-2023.pdf
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-struttura-2023.md
+    notes: |
+      Schema di disciplinare per lavori con criterio del prezzo piu' basso. Include
+      sezioni specifiche per PNRR (termini accelerati), subappalto, qualificazione SOA.
+
+  - id: anac-schema-disciplinare-lavori-oepv-2023
+    title: "ANAC - Schema di disciplinare di gara per lavori - Criterio OEPV (sopra soglia)"
+    type: schema-anac
+    url: https://www.anticorruzione.it/-/bandi-tipo
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-schema-disciplinare-lavori-oepv-2023.pdf
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-struttura-2023.md
+    notes: |
+      Schema di disciplinare per lavori con criterio OEPV. Include sezione criteri
+      valutativi art. 108 D.Lgs. 36/2023; per il dettaglio vedere skill
+      oepv-valutatore-offerte-tecniche.
+
+  - id: regolamento-esecuzione-dlgs-36-allegati
+    title: "Allegati al D.Lgs. 36/2023 - Allegato I.14 (schema tipo atti concessori)"
+    type: allegato-decreto
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Gli allegati tecnici al D.Lgs. 36/2023 contengono specifiche per qualificazioni,
+      contratti tipo, e documentazione di gara. Allegato I.14 per atti concessori.
+      Verificare quali allegati si applicano al tipo di gara in analisi.
