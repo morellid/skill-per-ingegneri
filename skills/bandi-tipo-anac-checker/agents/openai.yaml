@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Bandi-tipo ANAC - Checker disciplinare di gara
+short_description: Verifica la conformita' di un disciplinare di gara agli schemi ANAC obbligatori (D.Lgs. 36/2023), identifica deroghe non giustificate, clausole mancanti e rischi TAR prima della pubblicazione.
+default_prompt: |
+  Devo verificare il disciplinare di gara per un appalto di [lavori / servizi / forniture].
+  Importo stimato: EUR [importo]. Criterio di aggiudicazione: [prezzo piu' basso / OEPV].
+  Puoi controllare se il disciplinare e' conforme allo schema ANAC applicabile
+  e segnalarmi eventuali anomalie o clausole da correggere prima della pubblicazione?
