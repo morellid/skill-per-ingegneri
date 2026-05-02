@@ -20,6 +20,9 @@ node_modules/
 .idea/
 *.swp
 
+# Claude Code local state (permessi, lock, settings personali)
+.claude/
+
 # Output locali
 output/
 tmp/

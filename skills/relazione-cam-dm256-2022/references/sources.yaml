@@ -1,0 +1,102 @@
+schema_version: 1
+skill: relazione-cam-dm256-2022
+last_verified: 2026-05-01
+
+# Fonti normative principali per la skill di redazione/verifica della
+# Relazione Tecnica dei Requisiti Ambientali CAM (DM 23/06/2022 n. 256).
+#
+# Architettura normativa:
+#   - DM 23/06/2022 n. 256 (decreto principale): ambito applicativo (Art. 1),
+#     definizioni (Art. 2), abrogazioni e norme finali (Art. 3).
+#     In vigore dal 4 dicembre 2022 (centoventi giorni dalla GU 6/8/2022).
+#   - Allegato DM 256/2022: testo integrale dei criteri CAM (base + premianti)
+#     Sezione 2: Criteri per l'affidamento del SERVIZIO DI PROGETTAZIONE
+#       - 2.1 Selezione dei candidati
+#       - 2.2 Clausole contrattuali (2.2.1 Relazione CAM)
+#       - 2.3-2.6 Specifiche tecniche obbligatorie (oggetto della Relazione CAM)
+#       - 2.7 Criteri premianti (OEPV)
+#     Sezione 3: Criteri per l'affidamento dei LAVORI PER INTERVENTI EDILIZI
+#       - 3.1 Clausole contrattuali obbligatorie
+#       - 3.2 Criteri premianti (OEPV)
+#     Sezione 4: Criteri per l'affidamento CONGIUNTO progettazione e lavori
+#       - 4.1 Specifiche tecniche (rinvia a 2.3-2.6)
+#       - 4.2 Clausole contrattuali (rinvia a 3.1)
+#       - 4.3 Criteri premianti (rinvia a 2.7 e 3.2, piu' 4.3.1-4.3.8)
+#   - D.Lgs. 36/2023 art. 57: obbligo di applicazione dei CAM negli appalti PA
+#
+# Nota: il DM 256/2022 ha sostituito il precedente DM 11/10/2017 (CAM edilizia).
+# Verificare last_verified prima di applicare su una gara reale: il Ministero
+# dell'Ambiente aggiorna i CAM periodicamente.
+
+sources:
+  - id: dm-256-2022
+    title: "DM 23 giugno 2022 n. 256 - Criteri ambientali minimi per l'affidamento del servizio di progettazione di interventi edilizi, e per l'affidamento di lavori per la nuova costruzione, ristrutturazione e manutenzione di edifici pubblici (GU n. 183 del 06/08/2022)"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04478/SG
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dm-256-2022-articoli-chiave.md
+    notes: |
+      AVVISO: il download diretto dalla URL della GU restituisce una pagina HTML,
+      non un PDF valido. Il testo del decreto (articoli 1-3) e' estratto nella
+      relativa excerpt_path. Per il testo integrale dell'Allegato (criteri CAM)
+      usare la source dm-256-2022-allegato (binary_path: not_in_repo/dm-256-2022-allegato.pdf).
+      In vigore dal 4 dicembre 2022 (centoventi giorni dalla GU del 6/8/2022, Art. 3).
+      Sostituisce il DM 11/10/2017 (CAM edilizia precedenti), abrogato dalla stessa data.
+      Art. 1: ambito applicativo (servizi di progettazione, lavori, affidamento congiunto).
+      Art. 2: definizioni (rinvia a T.U. edilizia DPR 380/2001 per le tipologie di intervento;
+              definisce SRI - Solar Reflectance Index).
+      Art. 3: abrogazioni e norme finali (centoventi giorni dalla GU).
+
+  - id: dm-256-2022-allegato
+    title: "Allegato al DM 23 giugno 2022 n. 256 - Criteri Ambientali Minimi per edilizia pubblica (testo integrale dei criteri)"
+    type: allegato
+    url: https://www.bosettiegatti.eu/info/norme/statali/2022_dm_256_cam_edilizia_allegato.pdf
+    accessed: 2026-05-01
+    sha256: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-256-2022-allegato.pdf
+    excerpt_paths:
+      - references/estratti/dm-256-2022-allegato-criteri-2x.md
+      - references/estratti/dm-256-2022-allegato-criteri-premianti.md
+    notes: |
+      Documento principale della skill (Allegato al DM 256/2022, 66 pagine).
+      Scaricato da bosettiegatti.eu - testo integrale dell'Allegato (GU n. 183 del 6/8/2022).
+      SHA256 verificato: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5.
+      Struttura del documento (sezioni rilevanti per la Relazione CAM):
+        Sezione 2 - Progettazione:
+          2.2.1 Relazione CAM (clausola contrattuale obbligatoria)
+          2.3.1-2.3.9 Specifiche tecniche territoriali-urbanistiche (NC e ristrutturazione urbanistica)
+          2.4.1-2.4.14 Specifiche tecniche progettuali per gli edifici
+          2.5.1-2.5.13 Specifiche tecniche per i prodotti da costruzione
+          2.6.1-2.6.4 Specifiche tecniche progettuali relative al cantiere
+          2.7.1-2.7.4 Criteri premianti per l'affidamento del servizio di progettazione
+        Sezione 3 - Lavori:
+          3.1.1-3.1.3 Clausole contrattuali obbligatorie (personale, macchine, lubrificanti)
+          3.2.1-3.2.10 Criteri premianti per l'affidamento dei lavori
+        Sezione 4 - Congiunto:
+          4.1 rinvia a 2.3-2.6 / 4.2 rinvia a 3.1 / 4.3.1-4.3.8 criteri premianti aggiuntivi
+
+  - id: dlgs-36-2023-art57
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - art. 57 (Criteri ambientali minimi)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dlgs-36-2023-art57.md
+    notes: |
+      Art. 57 co. 1: le stazioni appaltanti contribuiscono al conseguimento degli
+      obiettivi ambientali previsti dal Piano d'azione per la sostenibilita' ambientale
+      (PAN GPP) attraverso l'inserimento nella documentazione progettuale e di gara
+      delle specifiche tecniche e delle clausole contrattuali contenute nei CAM.
+      Art. 57 co. 2: nella documentazione progettuale e di gara sono inseriti almeno
+      i criteri ambientali minimi relativi alle SPECIFICHE TECNICHE DI BASE (obbligatorie).
+      Non esiste piu' la soglia percentuale (100%/50%) che era prevista dall'art. 34 co. 2
+      del previgente D.Lgs. 50/2016, abrogato dall'art. 226 co. 1 del D.Lgs. 36/2023.
+      Nota: il D.Lgs. 36/2023 e' in vigore dal 1/07/2023 (art. 229 co. 2).
