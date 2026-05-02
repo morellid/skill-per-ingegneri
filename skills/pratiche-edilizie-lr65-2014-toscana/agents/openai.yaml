@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Pratiche edilizie LR 65/2014 Toscana - Document checker
+short_description: Determina il titolo abilitativo edilizio (CILA/SCIA/PdC) per un intervento in Toscana e genera la checklist dei documenti richiesti ai sensi della LR 65/2014, incluse le specificita' regionali (zona sismica, Genio Civile, vincolo paesaggistico).
+default_prompt: |
+  Ho un intervento edilizio in Toscana e devo sapere quale pratica presentare.
+  L'intervento riguarda [descrivere i lavori].
+  Il Comune e' [nome Comune]. L'immobile e' [residenziale / commerciale / altro].
+  Ci sono parti strutturali coinvolte? [si/no]. Vincoli noti: [nessuno / paesaggistico / altro].
+  Puoi dirmi se serve CILA, SCIA o Permesso di Costruire, e quali documenti allegare?
