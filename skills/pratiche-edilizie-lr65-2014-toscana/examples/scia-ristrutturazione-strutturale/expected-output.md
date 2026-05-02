@@ -4,7 +4,7 @@
 
 **Comune**: Castiglione della Pescaia (GR)
 **Intervento**: Ristrutturazione edilizia con demolizione muro portante e trave acciaio
-**Zona sismica**: 3
+**Zona sismica**: da verificare su portale Regione Toscana (indicativamente area costiera grossetana)
 **Vincoli**: paesaggistico art. 142 D.Lgs. 42/2004 (fascia 300 m costa)
 **Data analisi**: [esempio]
 
@@ -26,7 +26,7 @@ soggetta a SCIA ai sensi dell'art. 22 DPR 380/2001 e della LR Toscana 65/2014.
 
 | Adempimento | Richiesto | Condizione | Riferimento |
 |-------------|-----------|------------|-------------|
-| **Deposito al Genio Civile (PRIMA dell'inizio lavori)** | **SI - OBBLIGATORIO** | Intervento strutturale (trave acciaio su muro portante) in zona sismica 3 | Art. 93 DPR 380/2001 |
+| **Adempimenti Genio Civile (PRIMA dell'inizio lavori)** | **SI - OBBLIGATORIO** | Intervento strutturale (trave acciaio su muro portante) in zona sismica | Art. 93-94 DPR 380/2001 + DPGR 1/R/2022 |
 | **Autorizzazione paesaggistica** | **SI - OBBLIGATORIA** | Immobile in fascia 300 m costa (vincolo art. 142 D.Lgs. 42/2004) | D.Lgs. 42/2004 artt. 146-149 |
 | Nulla osta VVF | Da verificare | Se l'edificio ha attivita' soggette DPR 151/2011 | DPR 151/2011 |
 | Relazione energetica / APE | Da verificare | Se l'intervento coinvolge l'involucro o impianti termici | D.Lgs. 192/2005 |
@@ -62,7 +62,7 @@ quale procedura e' applicabile - ordinaria 90 giorni o semplificata DPCM 13/9/20
 | # | Documento | Condizione | Norma |
 |---|-----------|------------|-------|
 | 1 | Progetto strutturale (tavole + relazione di calcolo) | Intervento strutturale (muro portante + trave acciaio): OBBLIGATORIO | NTC 2018 |
-| 2 | Deposito al Genio Civile (prima dell'inizio lavori) | Zona sismica 3 + intervento strutturale: OBBLIGATORIO | Art. 93 DPR 380/2001 |
+| 2 | Adempimenti Genio Civile (prima dell'inizio lavori) | Intervento strutturale in zona sismica: OBBLIGATORIO (procedura da verificare su DPGR 1/R/2022) | Art. 93-94 DPR 380/2001 + DPGR 1/R/2022 |
 | 3 | Autorizzazione paesaggistica | Vincolo art. 142 D.Lgs. 42/2004 (fascia costiera): OBBLIGATORIA | D.Lgs. 42/2004 art. 146 |
 | 4 | Dichiarazione di conformita' impianti | Se i lavori includono modifiche agli impianti (DM 37/2008) | DM 37/2008 |
 
@@ -101,6 +101,6 @@ quale procedura e' applicabile - ordinaria 90 giorni o semplificata DPCM 13/9/20
 
 - Questo output e' un supporto informativo; l'ingegnere firmatario assevera e risponde
   della correttezza del titolo scelto e della documentazione presentata
-- La zona sismica indicata (3) e' indicativa per la Provincia di Grosseto costiera;
-  verificare la classificazione esatta per il Comune di Castiglione della Pescaia su INGV
+- La zona sismica deve essere verificata per il Comune di Castiglione della Pescaia
+  sul portale della Regione Toscana (DGRT 421/2014 e s.m.i.), non sull'INGV che usa classificazioni nazionali
 - In zona paesaggistica i tempi si allungano significativamente: pianificare con anticipo

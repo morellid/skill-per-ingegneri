@@ -23,7 +23,8 @@ Fonti catalogate in `references/sources.yaml`:
 - **DPR 380/2001** - id `dpr-380-2001-tue` - Testo Unico Edilizia (applicabile in Toscana per le materie non coperte da LR 65/2014)
 - **DPGR 64/R/2018** - id `dpgr-64r-2018-regolamento-edilizio-tipo-toscana` - regolamento edilizio tipo regionale
 - **D.Lgs. 42/2004** - id `dlgs-42-2004-codice-paesaggio` - vincoli paesaggistici e beni culturali
-- **DM 28/7/2021** - id `dm-28-07-2021-classificazione-sismica` - classificazione sismica vigente
+- **DGRT 421/2014** - id `dgrt-421-2014-classificazione-sismica-toscana` - classificazione sismica regionale toscana (fonte corretta per la Toscana)
+- **DPGR 1/R/2022** - id `dpgr-1r-2022-norme-sismiche-toscana` - procedura regionale toscana deposito/autorizzazione Genio Civile
 - **NTC 2018** - id `ntc-2018-dm-17-01-2018` - norme tecniche costruzioni (per interventi strutturali)
 
 Estratti in `references/estratti/`:
@@ -61,7 +62,7 @@ Specificita' toscane LR 65/2014 (verificare numerazione sul testo vigente):
 - Non affermare che un intervento e' sicuramente "CILA" o "SCIA" senza aver raccolto le informazioni sull'intervento strutturale e sulla zona sismica: in zona sismica 2 la presenza di parti strutturali cambia significativamente gli adempimenti.
 - Non citare articoli della LR 65/2014 con certezza: la numerazione e' soggetta a variazioni per effetto delle modifiche 2019-2024. Usare la formulazione "verificare sul portale normativo regionale" quando si cita un articolo specifico.
 - Non affermare mai che un progetto e' "conforme" o "approvato" dal SUE: la skill produce una checklist di supporto, non una valutazione di conformita' urbanistica.
-- Non ignorare la zona sismica: in Toscana e' quasi sempre rilevante. Se non si conosce la zona sismica, chiedere al tecnico di verificarla.
+- Non ignorare la zona sismica: in Toscana e' quasi sempre rilevante. Non indicare mai la zona sismica di un Comune specifico senza aver verificato il portale della Regione Toscana (DGRT 421/2014 aggiornata). Chiedere sempre al tecnico di verificarla.
 - Non confondere le categorie di intervento del DPR 380/2001 (art. 3) con le categorie di intervento dei Piani Operativi comunali: spesso usano la stessa nomenclatura ma con perimetri diversi.
 - Non trattare il portale APREA come unico canale: alcuni Comuni toscani usano portali propri per le pratiche SUE/SUAP.
 
@@ -93,8 +94,10 @@ Specificita' toscane LR 65/2014 (verificare numerazione sul testo vigente):
 - Task files: 2 (determina-tipo-pratica, checklist-documenti)
 - Esempi: 1 CILA + 1 SCIA
 - Known issues:
-  - Numerazione articoli LR 65/2014 non verificata sul testo consolidato vigente
-  - Non copre casi speciali: PdC in deroga, varianti in corso d'opera, proroga PdC
+  - Numerazione articoli LR 65/2014 non verificata sul testo consolidato vigente: non citare mai numeri di articolo senza aver verificato il portale normativo regionale
+  - Non copre casi speciali: PdC in deroga, varianti in corso d'opera, proroga PdC, concessione convenzionata
   - Non integra le specificita' del Salva Casa (DL 69/2024) per la Toscana (modifiche art. 36-bis, 34-bis): rinviare alla skill `modulistica-edilizia-unificata` per i casi di sanatoria
   - Non copre il recupero dei sottotetti (LR Toscana 5/2010 e s.m.i.)
-  - La classificazione sismica per Comune specifico non e' embedata: va sempre verificata esternamente
+  - Non copre SUAP per immobili produttivi, interventi agricoli, demanio marittimo
+  - La classificazione sismica per Comune specifico va verificata sul portale regionale (DGRT 421/2014); non fornire zone sismiche indicative per singoli Comuni
+  - Il DPGR 1/R/2022 (procedura regionale sismica) non e' ancora embedato negli estratti

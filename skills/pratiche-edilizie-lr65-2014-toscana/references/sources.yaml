@@ -96,36 +96,56 @@ sources:
       - DPCM 13/9/2017: elenco interventi di lieve entita' soggetti ad autorizzazione
         paesaggistica semplificata (Allegato 1 e 2)
 
-  - id: dpcm-13-09-2017-paesaggio-semplificato
-    title: "DPCM 13 settembre 2017 - Regolamento autorizzazione paesaggistica semplificata"
-    type: decreto-presidenziale-consiglio-ministri
-    url: https://www.gazzettaufficiale.it/eli/id/2017/10/25/17G00190/sg
+  - id: dpr-31-2017-paesaggio-semplificato
+    title: "DPR 13 febbraio 2017 n. 31 - Regolamento recante individuazione degli interventi esclusi dall'autorizzazione paesaggistica o sottoposti a procedura autorizzatoria semplificata"
+    type: decreto-presidenziale
+    url: https://www.gazzettaufficiale.it/eli/id/2017/03/22/17G00036/sg
     accessed: 2026-05-02
     sha256: null
     license: public-domain-italian-law
     binary_path: null
     excerpt_paths: []
     notes: |
-      Disciplina la procedura semplificata di autorizzazione paesaggistica per gli
-      interventi di minore impatto elencati nell'Allegato 1 (esclusi dall'autorizzazione)
-      e Allegato 2 (procedura semplificata). Rilevante quando l'intervento edilizio e'
-      in area vincolata art. 142 D.Lgs. 42/2004.
+      Disciplina le procedure semplificate di autorizzazione paesaggistica:
+      - Allegato A: interventi esclusi dall'autorizzazione paesaggistica
+      - Allegato B: interventi soggetti ad autorizzazione paesaggistica semplificata (30 gg)
+      Gli interventi non in Allegato A o B sono soggetti alla procedura ordinaria
+      (artt. 146-149 D.Lgs. 42/2004 - tempi fino a 90 giorni con parere Soprintendenza).
+      ATTENZIONE: citare correttamente DPR 31/2017, non "DPCM 13/9/2017" (atto diverso).
 
-  - id: dm-28-07-2021-classificazione-sismica
-    title: "DM 28 luglio 2021 - Nuova classificazione sismica del territorio nazionale"
-    type: decreto-ministeriale
-    url: https://www.gazzettaufficiale.it/eli/id/2021/08/07/21A04933/sg
+  - id: dgrt-421-2014-classificazione-sismica-toscana
+    title: "Delibera GRT n. 421 del 26/05/2014 - Classificazione sismica dei Comuni della Toscana"
+    type: delibera-regionale
+    url: https://www.regione.toscana.it/-/classificazione-sismica-della-toscana
     accessed: 2026-05-02
     sha256: null
     license: public-domain-italian-law
     binary_path: null
     excerpt_paths: []
     notes: |
-      Aggiorna la classificazione sismica per comune (sostituisce OPCM 3274/2003 per
-      le parti aggiornate). In Toscana la maggior parte dei Comuni e' in zona 2 o 3;
-      alcuni comuni montani (Mugello, Pistoiese) sono in zona 1. Non esiste zona 4 in Toscana.
-      La classificazione aggiornata per ogni Comune e' disponibile sul sito INGV
-      (mappa interattiva) e sul portale della Regione Toscana.
+      Classificazione sismica dei Comuni toscani adottata dalla Regione Toscana.
+      Questa e' la fonte regionale da usare per la Toscana, non il DM nazionale 28/7/2021.
+      Il portale della Regione Toscana mantiene l'elenco aggiornato dei Comuni per zona.
+      Verificare sempre la classificazione di ogni Comune sul portale regionale prima
+      di indicare gli adempimenti sismici applicabili.
+
+  - id: dpgr-1r-2022-norme-sismiche-toscana
+    title: "DPGR Toscana - Regolamento n. 1/R del 2022 - Norme tecniche per le costruzioni in zona sismica in Toscana"
+    type: decreto-regionale
+    url: https://raccoltanormativa.consiglio.regione.toscana.it/
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Regolamento regionale toscano che disciplina la procedura di deposito, preavviso
+      e autorizzazione al Genio Civile per interventi in zone sismiche in Toscana,
+      in attuazione degli artt. 93-94 DPR 380/2001.
+      Definisce il sistema informatico regionale per le istanze sismiche, i termini
+      procedurali e le tipologie di intervento soggetti ad autorizzazione preventiva
+      vs deposito con controllo a campione.
+      Da verificare sul portale normativo della Regione Toscana per la versione vigente.
 
   - id: ntc-2018-dm-17-01-2018
     title: "DM 17 gennaio 2018 - Norme Tecniche per le Costruzioni (NTC 2018)"

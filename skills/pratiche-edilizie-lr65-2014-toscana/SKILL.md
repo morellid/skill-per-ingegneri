@@ -56,25 +56,29 @@ La LR Toscana 65/2014 si sovrappone al DPR 380/2001 (Testo Unico Edilizia). Il r
 - DPR 380/2001 rimane applicabile per le materie non disciplinate dalla legge regionale
 - I Comuni toscani operano attraverso **Piano Strutturale (PS)** e **Piano Operativo (PO)** invece del tradizionale PRG
 
-### Titoli abilitativi edilizi in Toscana (art. 134 e seguenti LR 65/2014)
+### Titoli abilitativi edilizi in Toscana
+
+**AVVERTENZA CRITICA**: La LR 65/2014 ha subito modifiche negli anni 2019, 2020, 2021 e 2024.
+La numerazione degli articoli indicata in questa skill e' indicativa e NON deve essere copiata
+in asseverazioni o relazioni tecniche senza aver verificato il testo vigente sul portale della
+Regione Toscana. Citare sempre "LR 65/2014 testo vigente" senza numero di articolo se non si
+e' verificato il testo aggiornato.
 
 | Titolo | Quando | Norma di riferimento |
 |--------|--------|----------------------|
-| Edilizia libera | Manutenzione ordinaria, opere interne senza modifica parametri, interventi minori elencati | Art. 136 LR 65/2014 + art. 6 DPR 380/2001 |
-| CILA | Manutenzione straordinaria non strutturale, restauro, risanamento conservativo leggero | Art. 137 LR 65/2014 + art. 6-bis DPR 380/2001 |
-| SCIA | Ristrutturazione edilizia, interventi strutturali in zona non sismica, cambio uso, ampliamenti minori | Art. 140 LR 65/2014 + artt. 22-23 DPR 380/2001 |
-| SCIA alternativa al PdC | Demolizione e ricostruzione senza incremento volumetrico, ristrutturazione pesante | Art. 140 co. 3 LR 65/2014 + art. 23 DPR 380/2001 |
-| Permesso di Costruire | Nuova costruzione, ampliamenti rilevanti, interventi in zona A (centri storici) per alcuni casi | Artt. 134-135 LR 65/2014 + art. 10 DPR 380/2001 |
-
-**AVVERTENZA**: La numerazione esatta degli articoli della LR 65/2014 puo' variare per effetto degli aggiornamenti 2019-2024. Verificare sempre la versione consolidata vigente al link in `references/sources.yaml`.
+| Edilizia libera | Manutenzione ordinaria, opere interne senza modifica parametri, interventi minori | LR 65/2014 (verificare articolo) + art. 6 DPR 380/2001 |
+| CILA | Manutenzione straordinaria **non strutturale**, restauro/risanamento leggero senza modifiche strutturali | LR 65/2014 (verificare articolo) + art. 6-bis DPR 380/2001 |
+| SCIA | Ristrutturazione edilizia (inclusi interventi strutturali), cambio uso, ampliamenti minori | LR 65/2014 (verificare articolo) + artt. 22-23 DPR 380/2001 |
+| SCIA alternativa al PdC | Demolizione e ricostruzione senza incremento volumetrico, ristrutturazione pesante | LR 65/2014 (verificare articolo) + art. 23 DPR 380/2001 |
+| Permesso di Costruire | Nuova costruzione, ampliamenti rilevanti, interventi in zone specifiche per certi casi | LR 65/2014 (verificare articolo) + art. 10 DPR 380/2001 |
 
 ### Specificita' toscane rispetto al regime nazionale
 
-1. **Zona sismica e Genio Civile**: quasi tutta la Toscana e' in zona sismica 2 o 3 (classificazione OPCM 3274/2003 e DM 28/7/2021). Gli interventi strutturali in zona sismica richiedono **denuncia e deposito al Genio Civile** prima dell'inizio lavori (art. 93-94 DPR 380/2001 + Circ. Regione Toscana). Per interventi in zona sismica 2, il Genio Civile effettua controllo preventivo; in zona 3, deposito con eventuale controllo a campione.
+1. **Zona sismica e Genio Civile**: quasi tutta la Toscana e' in zona sismica (classificazione regionale approvata con DGRT 421/2014, aggiornata successivamente). Gli interventi strutturali in zona sismica richiedono preavviso, deposito o autorizzazione al Genio Civile ai sensi degli artt. 93-94 DPR 380/2001 e del DPGR 1/R/2022 (regolamento regionale sismico). La procedura esatta (deposito, autorizzazione preventiva, controllo a campione) dipende dalla zona sismica e dalla tipologia di intervento: verificare sempre sul portale della Regione Toscana e con il Genio Civile competente. La classificazione sismica per Comune e' disponibile sul portale della Regione Toscana (non su DM nazionale: la classificazione toscana e' stabilita da DGRT 421/2014 e s.m.i.).
 
 2. **Piano Strutturale e Piano Operativo**: i Comuni toscani adottano PS e PO ai sensi degli artt. 92-107 LR 65/2014. Le NTA del PO sostituiscono le NTA del vecchio PRG e possono imporre prescrizioni aggiuntive rispetto al regime statale.
 
-3. **Vincolo paesaggistico**: la Toscana ha estesa copertura paesaggistica (art. 142 D.Lgs. 42/2004). Per interventi in zona vincolata: procedimento autorizzatorio con parere Soprintendenza o procedimento semplificato (DPCM 13/9/2017) a seconda della tipologia di intervento.
+3. **Vincolo paesaggistico**: la Toscana ha estesa copertura paesaggistica (art. 142 D.Lgs. 42/2004 e PIT con valenza paesaggistica). Per interventi in zona vincolata: procedimento ordinario con parere Soprintendenza (artt. 146-149 D.Lgs. 42/2004) o procedimento semplificato (DPR 31/2017) a seconda della tipologia di intervento. Nota: la fonte corretta per il procedimento semplificato e' il **DPR 13 febbraio 2017 n. 31** (non DPCM 13/9/2017).
 
 4. **Recupero sottotetti**: LR Toscana 5/2010 (parzialmente abrogata da LR 65/2014) - verificare le norme comunali vigenti per i recuperi abitativi dei sottotetti.
 

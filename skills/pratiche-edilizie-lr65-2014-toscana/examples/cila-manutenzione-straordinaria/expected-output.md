@@ -25,7 +25,7 @@ e della LR Toscana 65/2014 (articolo da verificare sul testo vigente).
 
 | Adempimento | Richiesto | Condizione | Riferimento |
 |-------------|-----------|------------|-------------|
-| Denuncia/Autorizzazione Genio Civile | NO | Nessun intervento strutturale | Art. 93-94 DPR 380/2001 |
+| Adempimenti Genio Civile (sismica) | NO | Nessun intervento strutturale (CILA non strutturale) | Art. 93-94 DPR 380/2001 + DPGR 1/R/2022 |
 | Autorizzazione paesaggistica | NO | Nessun vincolo paesaggistico | D.Lgs. 42/2004 |
 | Autorizzazione Soprintendenza | NO | Immobile non vincolato | D.Lgs. 42/2004 |
 | Nulla osta VVF | Da verificare | Se il condominio ha attivita' soggette DPR 151/2011 | DPR 151/2011 |

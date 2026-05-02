@@ -21,7 +21,7 @@ incluse le seguenti lavorazioni:
 - **Vincoli**: area soggetta a vincolo paesaggistico art. 142 D.Lgs. 42/2004 (a meno di 300 m dal mare)
 - **Parti strutturali coinvolte**: SI (muro portante + trave acciaio)
 - **Cambio destinazione d'uso**: NO
-- **Zona sismica**: zona 3 (area grossetana)
+- **Zona sismica**: da verificare sul portale Regione Toscana per Castiglione della Pescaia (indicativamente area costiera grossetana)
 
 ## Soggetto richiedente
 

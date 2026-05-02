@@ -62,19 +62,25 @@ in c.a. (art. 65 co. 1 DPR 380/2001).
 
 ---
 
-## Classificazione sismica della Toscana (DM 28/7/2021)
+## Classificazione sismica della Toscana
 
-| Zona sismica | Pericolosita' | Esempi di Comuni toscani | Obbligo |
-|-------------|--------------|--------------------------|---------|
-| 1 | Molto alta | Alcuni comuni del Mugello, Alta Valle del Reno (PT) | Autorizzazione preventiva Genio Civile |
-| 2 | Alta | Firenze, Arezzo, Siena, Pistoia, parte Pisa, Livorno... | Autorizzazione preventiva Genio Civile (per interventi strutturali rilevanti) |
-| 3 | Media | Alcune aree costiere (Grosseto, parte Livorno, Massa-Carrara) | Deposito prima dell'inizio lavori |
-| 4 | Bassa | Non presente in Toscana | Solo denuncia strutturale |
+**FONTE REGIONALE**: La classificazione sismica dei Comuni toscani e' stabilita dalla
+**Delibera GRT n. 421 del 26/05/2014** e successive modifiche, NON dal DM nazionale 28/7/2021.
+Il portale della Regione Toscana mantiene l'elenco aggiornato: https://www.regione.toscana.it/-/classificazione-sismica-della-toscana
 
-> **ATTENZIONE**: La classificazione sismica esatta per ogni Comune va verificata
-> sull'applicazione cartografica dell'INGV (http://esse1-gis.mi.ingv.it/) o sul
-> portale della Regione Toscana. La tabella sopra e' indicativa e potrebbe non
-> essere aggiornata agli ultimi OPCM e decreti.
+Le zone presenti in Toscana sono 1, 2 e 3 (la zona 4 non e' presente nella classificazione regionale vigente).
+
+**NON indicare la zona sismica specifica di un Comune senza aver verificato il portale regionale.**
+Gli elenchi di Comuni per zona che circolano online possono essere obsoleti o basarsi su
+classificazioni nazionali non recepite dalla Regione Toscana.
+
+La procedura di deposito/autorizzazione al Genio Civile in Toscana e' disciplinata dal
+**DPGR 1/R/2022**, che definisce:
+- Modalita' telematiche di trasmissione delle istanze
+- Tipologie di intervento soggetti ad autorizzazione vs deposito con controllo a campione
+- Tempistiche e decorrenza
+
+Consultare il DPGR 1/R/2022 o il portale del Genio Civile competente per la procedura aggiornata.
 
 ---
 

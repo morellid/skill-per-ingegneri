@@ -93,27 +93,26 @@ Risposta si' -> **Permesso di Costruire** (o SCIA alternativa se ammessa dal PO)
 
 ### Passo 2 - Verifica la zona sismica
 
-Per quasi tutto il territorio toscano valgono le seguenti zone sismiche (DM 28/7/2021):
-- **Zona sismica 1** (pericolo piu' alto): alcuni comuni del pistoiese, area Mugello
-- **Zona sismica 2**: gran parte della Toscana (Firenze, Siena, Arezzo, parte Pisa/Livorno...)
-- **Zona sismica 3**: alcune aree costiere (parte Livorno, Grosseto...)
-- **Zona sismica 4** (pericolosita' minima): non presente in Toscana
+**CLASSIFICAZIONE SISMICA TOSCANA**: la classificazione sismica per Comune in Toscana e' definita dalla Delibera GRT n. 421 del 26/05/2014 e successive modifiche (non dal DM nazionale 28/7/2021, che ha efficacia differita in Toscana). La Regione Toscana mantiene l'elenco aggiornato dei Comuni per zona sul proprio portale. NON dare per scontata la zona sismica di un Comune: chiedere al tecnico di verificarla sul portale della Regione Toscana.
+
+Le zone presenti in Toscana sono:
+- **Zona sismica 1** (pericolosita' piu' alta): alcuni Comuni (verificare portale regionale)
+- **Zona sismica 2**: molti Comuni della Toscana centrale e interna
+- **Zona sismica 3**: alcuni Comuni, principalmente costieri e della pianura
+- **Zona sismica 4**: non presente in Toscana per la classificazione regionale vigente
 
 **Implicazioni per il titolo abilitativo**:
 
-Per interventi in **zona sismica 2** con parti strutturali coinvolte:
-- Se rilevante ai fini sismici (art. 94 DPR 380/2001): obbligo di **autorizzazione preventiva del Genio Civile** prima dell'inizio lavori (non solo deposito)
-- Presentare il progetto strutturale al Genio Civile e attendere il via libera prima di iniziare
-- Il titolo edilizio (SCIA/PdC) e' parallelo e non sostituisce l'autorizzazione sismica
+Per interventi con parti strutturali coinvolte in qualsiasi zona sismica (1, 2 o 3):
+- Obbligo di adempimenti al Genio Civile ai sensi degli artt. 93-94 DPR 380/2001 e del DPGR Toscana 1/R/2022
+- La procedura esatta (preavviso, deposito, autorizzazione preventiva) varia per zona e tipologia di intervento
+- Il DPGR 1/R/2022 disciplina la procedura regionale: consultarlo o verificare con il Genio Civile competente
+- Il titolo edilizio (SCIA/PdC) e' parallelo e non sostituisce gli adempimenti sismici
+- Gli adempimenti sismici devono essere completati **prima dell'inizio dei lavori**
 
-Per interventi in **zona sismica 3** con parti strutturali coinvolte:
-- **Denuncia deposito al Genio Civile** prima dell'inizio lavori (art. 93 DPR 380/2001)
-- Controllo a campione (non obbligatorio in tutti i casi): il Genio Civile seleziona i progetti da controllare
-- Non e' necessario attendere il nulla osta, ma il deposito deve precedere l'inizio lavori
+Per interventi di edilizia libera e CILA **senza alcun intervento strutturale**: nessun obbligo Genio Civile.
 
-Per interventi di edilizia libera e CILA **senza intervento strutturale**: nessun obbligo Genio Civile.
-
-**ATTENZIONE**: La classificazione sismica per comune specifico va verificata sull'applicazione INGV o sul sito della Regione Toscana. La Regione Toscana fornisce la classificazione aggiornata per ogni Comune.
+**ATTENZIONE**: Non indicare zone sismiche specifiche per singoli Comuni senza aver verificato il portale della Regione Toscana. Errori nella classificazione sismica possono comportare omissione di adempimenti obbligatori con conseguenze penali per il tecnico.
 
 ### Passo 3 - Verifica i vincoli sovraordinati
 
@@ -124,7 +123,7 @@ Per ogni intervento, verificare se presenti (l'utente deve indicarli o verificar
 - Boschi e foreste
 - Fascia costiera 300 m
 - Zone di interesse paesaggistico specifico (piani paesaggistici regionali)
-- Se presente: serve **autorizzazione paesaggistica** (procedura ordinaria o semplificata DPCM 13/9/2017) prima o contestualmente al titolo edilizio
+- Se presente: serve **autorizzazione paesaggistica** (procedura ordinaria art. 146 D.Lgs. 42/2004 oppure semplificata DPR 31/2017 se intervento in All. B) prima o contestualmente al titolo edilizio
 
 **Vincolo beni culturali (D.Lgs. 42/2004 Parte II)**:
 - Edifici storici di interesse architettonico

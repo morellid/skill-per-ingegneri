@@ -36,14 +36,16 @@ Prima di generare la checklist, indicare all'utente:
 
 ### Passo 2 - Checklist per CILA
 
-Usare quando il titolo abilitativo e' **CILA** (art. 137 LR 65/2014).
+Usare quando il titolo abilitativo e' **CILA** (LR 65/2014, articolo da verificare sul testo vigente).
+
+**IMPORTANTE**: La CILA riguarda interventi di manutenzione straordinaria **senza coinvolgimento di parti strutturali**. Se l'intervento coinvolge elementi strutturali (pilastri, travi, solai, pareti portanti, fondazioni), il titolo corretto e' la **SCIA** (non la CILA). Il tecnico deve verificare questa condizione prima di procedere.
 
 #### Documenti obbligatori CILA
 
 | Documento | Note | Riferimento |
 |-----------|------|-------------|
-| Modulo CILA compilato e sottoscritto | Modello unificato nazionale; verificare varianti locali | LR 65/2014 art. 137 |
-| Asseverazione del tecnico abilitato | Il tecnico assevera che l'intervento non e' soggetto a PdC ne' a SCIA, e' conforme agli strumenti urbanistici e alle norme igienico-sanitarie | Art. 6-bis co. 1 DPR 380/2001 |
+| Modulo CILA compilato e sottoscritto | Modello unificato nazionale; verificare varianti locali | LR 65/2014 + art. 6-bis DPR 380/2001 |
+| Asseverazione del tecnico abilitato | Il tecnico assevera che l'intervento non e' soggetto a PdC ne' a SCIA, non coinvolge parti strutturali, e' conforme agli strumenti urbanistici e alle norme igienico-sanitarie | Art. 6-bis co. 1 DPR 380/2001 |
 | Elaborati grafici - stato di fatto | Planimetria e/o pianta con indicazione delle lavorazioni; scala adeguata (tipicamente 1:100 o 1:200) | Regolamento edilizio comunale |
 | Elaborati grafici - progetto | Planimetria e/o pianta progetto; confronto stato di fatto/progetto se ci sono modifiche | Regolamento edilizio comunale |
 | Documentazione fotografica | Foto esterne e interne che documentano lo stato attuale | Prassi / regolamento edilizio |
@@ -54,24 +56,29 @@ Usare quando il titolo abilitativo e' **CILA** (art. 137 LR 65/2014).
 
 | Documento | Condizione | Riferimento |
 |-----------|------------|-------------|
-| Comunicazione al Genio Civile | SE zone sismica 2 o 3 e intervento riguarda parti strutturali (anche se minime) | Art. 93-94 DPR 380/2001 |
-| Autorizzazione paesaggistica | SE area vincolata art. 142 D.Lgs. 42/2004; procedura semplificata se intervento in All. 1 DPCM 13/9/2017 | D.Lgs. 42/2004 |
+| Autorizzazione paesaggistica | SE area vincolata art. 142 D.Lgs. 42/2004; procedura semplificata (DPR 31/2017 All. B) se intervento incluso; procedura ordinaria negli altri casi | D.Lgs. 42/2004 + DPR 31/2017 |
 | Autorizzazione Soprintendenza | SE immobile vincolato come bene culturale (D.Lgs. 42/2004 Parte II) | Art. 21 D.Lgs. 42/2004 |
 | Relazione energetica / APE | SE intervento riguarda l'involucro edilizio o impianti termici (verifica obbligo D.Lgs. 192/2005) | D.Lgs. 192/2005 |
 | Denuncia ISTAT inizio/fine lavori | Obbligatoria per le statistiche; modulo ISTAT da compilare e inviare | Circolare ISTAT |
 | Ricevuta pagamento diritti di segreteria | Importo definito dal Comune (spesso 50-150 EUR per CILA) | Regolamento tariffe Comune |
 
 **NOTA**: Per la CILA il contributo di costruzione generalmente non e' dovuto salvo in casi specifici definiti dal Piano Operativo.
+**NOTA**: Non e' prevista comunicazione al Genio Civile per la CILA non strutturale. Se l'intervento riguarda parti strutturali (anche minime), il titolo e' la SCIA, non la CILA.
 
 ### Passo 3 - Checklist per SCIA
 
-Usare quando il titolo abilitativo e' **SCIA** (art. 140 LR 65/2014) o **SCIA alternativa al PdC**.
+Usare quando il titolo abilitativo e' **SCIA** (LR 65/2014, articolo da verificare sul testo vigente) o **SCIA alternativa al PdC**.
+
+**TEMPI DI INIZIO LAVORI (distinzione importante)**:
+- **SCIA ordinaria**: l'inizio dei lavori e' possibile dalla data di presentazione della SCIA (art. 23 co. 1 DPR 380/2001), salvo che siano necessari atti presupposti (autorizzazione paesaggistica, autorizzazione Genio Civile in zona 2) che devono essere ottenuti prima
+- **SCIA in zona vincolata paesaggisticamente**: attendere l'autorizzazione paesaggistica prima di iniziare i lavori; la SCIA non puo' essere efficace senza il previo atto di assenso
+- **SCIA alternativa al PdC**: regime temporale diverso dalla SCIA ordinaria; l'inizio lavori decorre dai termini previsti dalla legge per la SCIA alternativa; verificare con il SUE
 
 #### Documenti obbligatori SCIA
 
 | Documento | Note | Riferimento |
 |-----------|------|-------------|
-| Modulo SCIA compilato e sottoscritto | Modello unificato nazionale con eventuali allegati locali | LR 65/2014 art. 140 |
+| Modulo SCIA compilato e sottoscritto | Modello unificato nazionale con eventuali allegati locali | LR 65/2014 + art. 22-23 DPR 380/2001 |
 | Relazione tecnica asseverata | Il tecnico descrive l'intervento, assevera la conformita' agli strumenti urbanistici, al DPR 380/2001, alle norme tecniche; firmata e timbrata | Art. 23 co. 1 DPR 380/2001 |
 | Elaborati grafici completi | Piante (tutti i livelli), prospetti (tutti i fronti), sezioni (almeno 2), planimetria di inquadramento; scala 1:100 o 1:50 per dettagli | Regolamento edilizio |
 | Elaborati grafici - confronto stato di fatto / progetto | Per ogni tavola di progetto, indicare (o tavola separata) lo stato di fatto; la lettura del confronto e' obbligatoria per la SCIA | Prassi / regolamento |
@@ -89,7 +96,7 @@ Usare quando il titolo abilitativo e' **SCIA** (art. 140 LR 65/2014) o **SCIA al
 | Progetto strutturale con relazione di calcolo | SE intervento riguarda parti strutturali (consolidamento, modifica, nuovi elementi portanti) | NTC 2018 + DPR 380/2001 |
 | Autorizzazione Genio Civile (preventiva) | SE zona sismica 2 e intervento strutturale rilevante ai sensi art. 94 DPR 380/2001 | Art. 94 DPR 380/2001 |
 | Deposito al Genio Civile (prima dell'inizio) | SE zona sismica 3 e intervento strutturale | Art. 93 DPR 380/2001 |
-| Autorizzazione paesaggistica | SE area vincolata (procedura ordinaria o semplificata DPCM 13/9/2017) | D.Lgs. 42/2004 |
+| Autorizzazione paesaggistica | SE area vincolata (procedura ordinaria art. 146 D.Lgs. 42/2004 oppure semplificata DPR 31/2017 All. B) | D.Lgs. 42/2004 + DPR 31/2017 |
 | Autorizzazione Soprintendenza | SE immobile vincolato (D.Lgs. 42/2004 Parte II) | Art. 21 D.Lgs. 42/2004 |
 | Nulla osta VVF (SCIA antincendio o parere) | SE attivita' soggetta a controllo prevenzione incendi (DPR 151/2011 All. I) | DPR 151/2011 |
 | Relazione energetica + APE post intervento | SE intervento su involucro o impianti termici; certificazione energetica richiesta | D.Lgs. 192/2005 + DM 26/6/2015 |
@@ -106,7 +113,7 @@ Usare quando il titolo abilitativo e' **SCIA** (art. 140 LR 65/2014) o **SCIA al
 
 ### Passo 4 - Checklist per Permesso di Costruire
 
-Usare quando il titolo abilitativo e' **Permesso di Costruire** (artt. 134-135 LR 65/2014).
+Usare quando il titolo abilitativo e' **Permesso di Costruire** (LR 65/2014, articolo da verificare sul testo vigente).
 
 #### Documenti obbligatori PdC
 
