@@ -1,6 +1,6 @@
 ---
 name: dm37-2008-dichiarazione-conformita
-description: Supporta la compilazione e verifica della Dichiarazione di Conformita' (DdC) degli impianti tecnologici ai sensi del DM 22/01/2008 n. 37. Verifica completezza del modello Allegato I, determina gli allegati obbligatori per categoria di impianto e soglie dimensionali, controlla i requisiti di abilitazione dell'installatore. Use when an Italian installer or engineer needs to compile, check, or review a Dichiarazione di Conformita' for building systems (electrical, heating, gas, plumbing, fire protection, etc.) under DM 37/2008. Target users are installatori abilitati, ingegneri/periti, responsabili tecnici di imprese installatrici, collaudatori.
+description: Supporta la compilazione e verifica della Dichiarazione di Conformita' (DdC) degli impianti tecnologici ai sensi del DM 22/01/2008 n. 37. Verifica completezza del modello Allegato I (7 categorie impianti a-g), determina gli allegati obbligatori (relazione materiali sempre; schema impianto sempre; progetto da professionista sopra soglie Art. 5). Use when an Italian installer or engineer needs to compile, check, or review a Dichiarazione di Conformita' for building systems (electrical, heating, gas, plumbing, fire protection, etc.) under DM 37/2008. Target users are installatori abilitati, ingegneri/periti, responsabili tecnici di imprese installatrici, collaudatori.
 license: MIT
 ---
 
@@ -11,8 +11,8 @@ license: MIT
 Usare quando un installatore, ingegnere o responsabile tecnico chiede di:
 - **Verificare una DdC gia' redatta**: controllare che il modello Allegato I sia compilato in tutti i campi obbligatori e che gli allegati richiesti siano presenti
 - **Determinare gli allegati obbligatori**: sapere quali documenti devono essere allegati alla DdC in base alla categoria di impianto (a-h) e alle dimensioni/potenza
-- **Verificare l'obbligo di progetto**: determinare se per l'impianto in questione era obbligatoria la progettazione preliminare ai sensi dell'Art. 6
-- **Classificare l'impianto**: identificare sotto quale categoria (a-h) ricade l'impianto e quali regole si applicano
+- **Verificare l'obbligo di progetto**: determinare se per l'impianto in questione era obbligatoria la progettazione da professionista ai sensi dell'Art. 5 (in ogni caso serve un elaborato tecnico minimo)
+- **Classificare l'impianto**: identificare sotto quale categoria (a-g) ricade l'impianto e quali regole si applicano
 
 **Non usare** se l'utente chiede:
 - Progettare l'impianto (dimensionamento elettrico, calcolo carichi termici, ecc.)
@@ -33,8 +33,8 @@ Se la richiesta e' generica ("compila/verifica questa DdC"), esegui prima identi
 
 ## Processo generale
 
-1. Determina la categoria di impianto (a-h, Art. 1 DM 37/2008)
-2. Verifica le soglie dimensionali/potenza per capire se progetto era obbligatorio (Art. 6)
+1. Determina la categoria di impianto (a-g, Art. 1 DM 37/2008)
+2. Verifica le soglie dimensionali/potenza per capire se progetto da professionista era obbligatorio (Art. 5); in ogni caso e' necessario uno schema/elaborato tecnico
 3. Carica il task file corrispondente alla sotto-attivita' richiesta
 4. Applica la procedura e produci il report con citazioni normative precise
 5. Concludi sempre con rinvio al responsabile tecnico firmatario
@@ -42,7 +42,7 @@ Se la richiesta e' generica ("compila/verifica questa DdC"), esegui prima identi
 ## Fonti normative
 
 Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fonti primarie:
-- DM 22 gennaio 2008 n. 37, Art. 1, 5, 6, 7 e Allegato I
+- DM 22 gennaio 2008 n. 37, Art. 1, 3, 4, 5, 7 e Allegato I
 - Normattiva - testo consolidato vigente DM 37/2008
 
 Estratti testuali in [`references/estratti/`](references/estratti/).

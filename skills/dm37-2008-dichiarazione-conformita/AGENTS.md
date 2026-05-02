@@ -4,52 +4,57 @@
 
 ## Dominio
 
-Skill per la Dichiarazione di Conformita' (DdC) degli impianti tecnologici negli edifici ai sensi del DM 22/01/2008 n. 37. Copre le 8 categorie di impianti (elettrico, radiotelevisivo, riscaldamento/climatizzazione, idrico-sanitario, gas, sollevamento, antincendio, automazione accessi). Target: installatori abilitati, responsabili tecnici di impresa installatrice, ingegneri/periti che verificano la documentazione.
+Skill per la Dichiarazione di Conformita' (DdC) degli impianti tecnologici negli edifici ai sensi del DM 22/01/2008 n. 37. Copre le **7 categorie (a-g)** di impianti (elettrico, radiotelevisivo/elettronico, riscaldamento/climatizzazione, idrico-sanitario, gas, sollevamento, antincendio). L'automazione di porte/cancelli e' inclusa in cat. a), non e' categoria separata. Target: installatori abilitati, responsabili tecnici di impresa installatrice, ingegneri/periti che verificano la documentazione.
 
 ## Fonti autoritative
 
-- **DM 37/2008 - Normattiva** - id `dm37-2008-normattiva` in `references/sources.yaml`
+- **DM 37/2008 - Normattiva** (testo consolidato vigente)
+  - id `dm37-2008-normattiva` in `references/sources.yaml`
   - URL: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2008-01-22;37
 - **DM 37/2008 - GU originale** - id `dm37-2008-gu-originale` in `references/sources.yaml`
   - GU n. 61 del 12/03/2008 Suppl. Ordinario n. 54
 
-Estratti pertinenti in `references/estratti/`:
-- `dm37-2008-artt-1-7-allegato-i.md` - Art. 1 (campo applicazione e categorie), Art. 5 (abilitazioni), Art. 6 (obbligo progetto), Art. 7 (contenuto DdC), Allegato I (modello DdC)
+Estratti in `references/estratti/`:
+- `dm37-2008-artt-1-7-allegato-i.md` - parafasi operativa di Art. 1, 3, 4, 5, 7 e struttura Allegato I.
+  **Contiene soglie che devono essere verificate su Normattiva prima dell'uso operativo.**
 
 ## Articoli e punti chiave
 
-- **Art. 1**: Campo di applicazione - definisce le 8 categorie (a-h) di impianti soggetti al DM 37/2008 negli edifici
-- **Art. 5**: Imprese abilitate - requisiti (iscrizione CCIAA, responsabile tecnico con abilitazione per categoria)
-- **Art. 6 co. 1**: Obbligo di progettazione per categoria a) (elettrico): superficie > 200 mq, potenza > 6 kW, ambienti con pericolo di esplosione, edifici > 16 unita' immobiliari
-- **Art. 6 co. 2**: Obbligo di progettazione per categoria c) (riscaldamento/climatizzazione): potenza termica nominale > 35 kW
-- **Art. 6 co. 4**: Il progetto deve essere redatto da un tecnico abilitato (ingegnere/perito/geometra secondo competenze di legge)
-- **Art. 7 co. 1**: Contenuto obbligatorio DdC (dati impresa, responsabile tecnico, tipo impianto, ubicazione, dichiarazione conformita', norme applicate, data e firma)
-- **Art. 7 co. 2**: Allegati obbligatori - relazione tipologia materiali (sempre); schema impianto realizzato (quando progetto obbligatorio o richiesto da committente)
-- **Art. 7 co. 3**: La DdC va consegnata al committente entro 30 gg dal termine dei lavori
-- **Art. 7 co. 6**: Responsabilita' penale e civile per DdC falsa o incompleta in capo all'installatore firmatario
-- **Allegato I**: Modello ufficiale della DdC - 5 sezioni obbligatorie da compilare
+- **Art. 1**: Categorie di impianti a-g; automazione cancelli dentro cat. a); esclusioni
+- **Art. 3**: Requisiti per l'abilitazione delle imprese installatrici (iscrizione CCIAA/Albo)
+- **Art. 4**: Responsabile tecnico - requisiti di qualifica (diploma, formazione, esperienza)
+- **Art. 5**: Progettazione degli impianti - soglie per obbligo di progetto da professionista iscritto all'albo; sotto le soglie il responsabile tecnico predispone almeno lo schema impianto
+- **Art. 6**: Realizzazione secondo la regola dell'arte; riferimento alle norme UNI, CEI, etc.
+- **Art. 7 co. 1**: DdC obbligatoria al termine dei lavori, su modello Allegato I
+- **Art. 7 co. 2**: Allegati integranti DdC: relazione materiali (sempre); schema/progetto (sempre, con livello di dettaglio che dipende da Art. 5)
+- **Art. 7 co. 4**: Responsabilita' del soggetto che rilascia la DdC per la veridicita' dei contenuti
+- **Art. 8**: Collaudo degli impianti (separato dalla DdC)
+- **Art. 15**: Sanzioni per violazioni DM 37/2008
 
 ## Convenzioni specifiche
 
 ### Cosa NON fare
-- Non affermare che un impianto e' "conforme alle norme tecniche" senza precisare quali CEI/UNI specifiche sono applicabili: la skill verifica solo la completezza formale della DdC
-- Non confondere la DdC DM 37/2008 con il Certificato di Collaudo o con la SCIA edilizia: sono documenti distinti con iter separati
-- Non omettere di citare il numero di articolo e comma quando si indica un obbligo (es. "Art. 6 co. 1 lett. a)")
-- Non applicare le soglie Art. 6 per la categoria a) anche alle altre categorie: le soglie sono diverse per ogni categoria
+- Non confondere Art. 3/4 (abilitazione imprese/responsabile tecnico) con Art. 5 (progettazione)
+- Non affermare "progetto non necessario" senza specificare che sotto-soglia serve comunque lo schema dell'impianto a cura del responsabile tecnico (Art. 7 co. 2)
+- Non omettere di citare numero articolo e comma per ogni obbligo citato
+- Non applicare soglie categoria a) alle altre categorie: ogni categoria ha soglie proprie nell'Art. 5
+- Non citare "Art. 6 obbligo progetto": Art. 6 riguarda la regola dell'arte, non il progetto; usare "Art. 5"
+- Non scrivere "categoria h)" o "8 categorie": le categorie sono a-g (7)
 
 ### Cosa fare
-- Per ogni categoria, indicare esplicitamente se l'impianto ricade o meno nell'obbligo di progetto Art. 6
-- Nella verifica completezza DdC, esaminare ogni campo dell'Allegato I separatamente
-- Segnalare se il committente e' anche il proprietario o e' un soggetto diverso (rilevante per la consegna DdC)
-- Indicare il codice ATECO dell'installatore come elemento di verifica abilitazione (non obbligatorio nel modello ma indicatore di coerenza)
+- Prima di determinare l'obbligo di progetto professionale, verificare la categoria e confrontarla con le soglie specifiche dell'Art. 5
+- Distinguere sempre tra "progetto da professionista iscritto all'albo" (sopra soglia Art. 5) e "schema/elaborato tecnico del responsabile tecnico" (sotto soglia, ma sempre necessario)
+- Segnalare esplicitamente che le soglie Art. 5 devono essere verificate su Normattiva perche' sono state oggetto di modifiche e interpretazioni
+- Citare la norma tecnica specifica nella DdC (es. CEI 64-8 per cat. a), non solo "DM 37/2008")
 
 ## Validatori
 
-- Da identificare: ingegnere elettrico o responsabile tecnico di impresa installatrice elettrica abilitata ai sensi del DM 37/2008.
+- Da identificare: ingegnere elettrico o responsabile tecnico di impresa installatrice abilitata ai sensi del DM 37/2008.
 
 ## Stato attuale
 
 - Versione: 0.1.0-alpha
-- Validazione: Livello 1 (autore)
+- Validazione: Livello 1 (autore) - post revisione adversarial review Codex
 - Task files: `verifica-completezza-ddc.md`, `identifica-allegati-obbligatori.md`
 - Esempi: 1 conforme + 1 problematico
+- Nota: le soglie Art. 5 nell'estratto sono parafrasate; richiedono verifica su Normattiva prima di v1.0

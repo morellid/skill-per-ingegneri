@@ -1,4 +1,4 @@
-# Input esempio: impianto elettrico residenziale < 200 mq, 3 kW
+# Input esempio: impianto elettrico residenziale 85 mq, 3 kW - con schema impianto
 
 ## Scenario
 
@@ -14,11 +14,11 @@ Installatore elettrico che ha realizzato l'impianto elettrico di un appartamento
 
 **Responsabile tecnico**:
 - Nome: Rossi Mario
-- Qualifica: Diploma ITIS indirizzo elettrico, 3 anni esperienza alle dipendenze di impresa abilitata (ai sensi Art. 5 co. 1 lett. b) DM 37/2008)
-- Abilitazione: Categoria I - impianti elettrici
+- Qualifica: Diploma ITIS indirizzo elettrico + 2 anni esperienza alle dipendenze di impresa abilitata (ai sensi Art. 4 co. 1 lett. b) DM 37/2008)
+- Abilitazione: impianti elettrici (categoria a)
 
 **Impianto**:
-- Tipologia: a) impianto elettrico
+- Tipologia: a) impianto elettrico (produzione, distribuzione, utilizzo energia elettrica)
 - Destinazione d'uso: residenziale (appartamento privato)
 - Indirizzo: Via Roma 45 int. 8, Firenze (FI) 50100
 - Committente: Bianchi Luigi, Via Roma 45 int. 8, Firenze
@@ -30,6 +30,6 @@ Installatore elettrico che ha realizzato l'impianto elettrico di un appartamento
 - Firma: Mario Rossi
 
 **Allegati dichiarati**:
-- [X] Relazione con tipologia dei materiali: cavi FG7OR 450/750 V, quadro ABB - modello specificato, interruttori differenziali presenti
-- [ ] Schema impianto: non allegato
-- [ ] Progetto: non allegato (non obbligatorio)
+- [X] Relazione con tipologia dei materiali: cavi FG7OR 450/750 V sez. 2,5 mmq, quadro ABB MISTRAL65 8M, interruttori differenziali VYNCKIER - 2P 25A 30mA tipo A
+- [X] Schema dell'impianto realizzato: schema unifilare redatto dal responsabile tecnico (elaborato tecnico minimo sotto-soglia Art. 5)
+- [ ] Progetto da professionista: non allegato (non obbligatorio - potenza 3 kW <= 6 kW, superficie 85 mq <= 200 mq)

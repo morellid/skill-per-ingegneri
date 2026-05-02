@@ -1,150 +1,192 @@
 # Task: Identifica allegati obbligatori per categoria di impianto
 
-Determina quali documenti devono essere allegati alla DdC in base alla categoria di impianto (a-g), alle caratteristiche dimensionali/di potenza e alle soglie dell'Art. 6 DM 37/2008.
+Determina quali documenti devono essere allegati alla DdC in base alla categoria di impianto (a-g), alle caratteristiche dimensionali/di potenza e alle soglie dell'Art. 5 DM 37/2008.
 
 ## Obiettivo
 
-Produrre un elenco preciso degli allegati obbligatori, distinto tra sempre-obbligatori e condizionali (dipendono da soglie), con citazione normativa per ognuno.
+Produrre un elenco preciso degli allegati obbligatori, distinguendo tra:
+1. Sempre obbligatori (per tutte le categorie, sempre)
+2. Elaborato tecnico minimo (schema o progetto - sempre necessario, varia il livello e l'autore)
+3. Progetto da professionista (obbligatorio sopra le soglie Art. 5)
+
+Con citazione normativa per ognuno.
 
 ## Input richiesti
 
-Raccogliere dall'utente prima di procedere:
+Raccogliere dall'utente:
 
-1. **Categoria di impianto** (a-g ai sensi Art. 1 DM 37/2008):
-   - a) Impianto elettrico (energia, protezione scariche, automazione accessi)
-   - b) Impianto radiotelevisivo / antenne / elettronico
+1. **Categoria di impianto** (a-g, Art. 1 DM 37/2008):
+   - a) Elettrico (produzione, distribuzione, utilizzo energia elettrica; protezione scariche atmosferiche; automazione porte/cancelli)
+   - b) Radiotelevisivo, antenne, elettronico
    - c) Riscaldamento, climatizzazione, condizionamento, refrigerazione, ventilazione
-   - d) Impianto idrico-sanitario
-   - e) Impianto gas (distribuzione e utilizzo)
-   - f) Impianto di sollevamento (ascensori, montacarichi, scale mobili)
-   - g) Impianto protezione antincendio
+   - d) Idrico-sanitario
+   - e) Gas (distribuzione e utilizzo)
+   - f) Sollevamento (ascensori, montacarichi, scale mobili)
+   - g) Protezione antincendio
 
-2. **Caratteristiche dell'impianto** (solo quelle rilevanti per la categoria dichiarata):
-   - Per cat. a): superficie dell'unita' immobiliare (mq) + potenza impegnata (kW) + tipo edificio (residenziale/commerciale/industriale) + presenza di classificazione ATEX + altezza in gronda (m)
-   - Per cat. c) ed e): potenza termica nominale (kW)
-   - Per cat. d): numero di unita' abitative dell'edificio + superficie utile (se non residenziale)
-   - Per cat. g): sempre richiede progetto (vedi sotto)
+2. **Caratteristiche dimensionali/di potenza** (rilevanti per la categoria):
+   - Cat. a): potenza impegnata (kW) + superficie unita' immobiliare (mq) + altezza in gronda edificio (m) + numero unita' immobiliari edificio + presenza classificazione ATEX + alimentazione media tensione (si/no)
+   - Cat. b): potenza nominale complessiva (VA)
+   - Cat. c): portata termica nominale (kW) + potenza frigorifera (frigorie/h) se pertinente
+   - Cat. d): numero unita' abitative edificio + superficie utile (se non residenziale)
+   - Cat. e): portata termica totale (kW)
+   - Cat. f): tipo impianto (ascensore, montacarichi, scala mobile)
+   - Cat. g): sempre progetto professionale - non servono dati dimensionali per questa determinazione
 
 3. **Tipo di intervento**: nuova installazione / trasformazione / ampliamento
 
-Se i dati non sono disponibili, procedere per il caso piu' cautelativo (richiedere progetto e schema se c'e' incertezza) e indicare esplicitamente l'assunzione.
+Se i dati non sono disponibili, procedere con il caso piu' cautelativo e indicare l'assunzione esplicitamente.
 
 ## Fonti normative
 
 Prima di procedere, leggere:
-- `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 6 (soglie obbligo progetto) e Art. 7 co. 2 (allegati DdC)
+- `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 5 (soglie progetto professionale) e Art. 7 co. 2 (allegati DdC)
+
+**ATTENZIONE**: le soglie nell'estratto sono parafrasate e potrebbero differire dal testo vigente su Normattiva. In caso di dubbio o uso operativo, verificare il testo aggiornato.
 
 ## Procedura
 
-### Passo 1 - Allegato sempre obbligatorio
+### Passo 1 - Allegato sempre obbligatorio per tutte le categorie
 
 **Relazione con tipologia dei materiali utilizzati** (Art. 7 co. 2 DM 37/2008):
-- Obbligatoria in **TUTTI** i casi, per tutte le categorie, sempre
-- Non e' opzionale: la legge dice "fanno parte integrante" della DdC
-- Contenuto minimo: elenco dei principali materiali e componenti installati (es. marca/modello del quadro elettrico, tipo cavi, marca caldaia, ecc.)
+- Obbligatoria in **TUTTI** i casi, per tutte le categorie a-g, sempre
+- Contenuto minimo: tipologia, marca/modello dei principali componenti installati
 
-### Passo 2 - Obbligo di progetto e schema impianto per categoria a) (elettrico)
+### Passo 2 - Elaborato tecnico: schema o progetto
 
-Il progetto e' obbligatorio (Art. 6 co. 1) per impianti cat. a) se almeno una delle seguenti condizioni e' soddisfatta:
+**Per tutte le categorie e tutti gli interventi** (nuova installazione, trasformazione, ampliamento),
+deve essere predisposto un elaborato tecnico che viene allegato alla DdC (Art. 7 co. 2):
 
-| Condizione | Soglia | Riferimento |
-|-----------|--------|-------------|
-| Utenze in media tensione | qualsiasi | Art. 6 co. 1 lett. a) |
-| Potenza impegnata | > 6 kW | Art. 6 co. 1 lett. a) |
-| Luoghi con pericolo di esplosione (ATEX) | qualsiasi | Art. 6 co. 1 lett. a) |
-| Altezza in gronda edificio civile | > 12 m | Art. 6 co. 1 lett. a) |
-| Unita' abitativa residenziale (superficie) | > 400 mq | Art. 6 co. 1 lett. b) |
+- **Elaborato minimo (sotto-soglia Art. 5)**: schema dell'impianto realizzato, redatto dal responsabile tecnico dell'impresa installatrice
+- **Progetto completo (sopra-soglia Art. 5)**: progetto redatto da professionista iscritto all'albo, allegato insieme allo schema as-built
 
-**NOTA IMPORTANTE**: Le soglie di Art. 6 DM 37/2008 sono state oggetto di diverse interpretazioni e modifiche nel tempo. La soglia di 200 mq era presente in versioni precedenti; il testo vigente su Normattiva riporta 400 mq per le unita' abitative. **Verificare sempre il testo aggiornato su Normattiva prima di determinare l'obbligo.** In caso di dubbio, consigliare la redazione del progetto come misura cautelativa.
+In entrambi i casi un elaborato tecnico deve essere allegato. La differenza e' il livello di dettaglio e l'autore, non la presenza/assenza.
 
-Se il progetto era obbligatorio:
-- [ ] **Progetto di impianto** (Art. 6 co. 2): redatto da tecnico abilitato iscritto all'albo
-- [ ] **Schema dell'impianto realizzato** (as-built): allegato obbligatorio insieme al progetto
+### Passo 3 - Soglie per obbligo di progetto da professionista (Art. 5)
 
-Se il progetto NON era obbligatorio:
-- Lo schema impianto non e' obbligatorio per legge, ma e' fortemente raccomandato per manutenzione futura
-- Il committente puo' sempre richiederlo e l'installatore puo' includerlo volontariamente
+Determina se le caratteristiche dell'impianto superano le soglie che richiedono un professionista:
 
-### Passo 3 - Obbligo di progetto per categoria c) (riscaldamento, climatizzazione)
+#### Categoria a) - Elettrico
 
-| Condizione | Soglia | Riferimento |
-|-----------|--------|-------------|
-| Potenza termica nominale (impianto riscaldamento) | > 35 kW | Art. 6 co. 1 lett. d) |
-| Impianto di climatizzazione/condizionamento | > 35 kW | Art. 6 co. 1 lett. d) |
+| Condizione | Soglia | Obbligo |
+|-----------|--------|---------|
+| Alimentazione in media tensione | qualsiasi | Progetto professionista |
+| Potenza impegnata | > 6 kW | Progetto professionista |
+| Luoghi ATEX | qualsiasi | Progetto professionista |
+| Altezza in gronda (edifici civili) | > 12 m | Progetto professionista |
+| Superficie unita' abitativa | > 200 mq (*) | Progetto professionista |
+| Edificio condominiale (impianti comuni) | > 16 unita' immob. | Progetto professionista |
 
-Se il progetto era obbligatorio: allegare progetto + schema impianto (come per cat. a).
+(*) La soglia per unita' abitative residenziali - verificare testo vigente su Normattiva prima
+dell'uso operativo: alcune versioni indicano 400 mq. In caso di incertezza, usare la soglia
+piu' bassa (200 mq) come misura cautelativa.
 
-Per impianti termici civili: se la potenza e' <= 35 kW, il progetto non e' obbligatorio ex DM 37/2008 (ma verificare se altri regolamenti - es. regolamento edilizio comunale, DGUE regionale - richiedono documentazione aggiuntiva).
+#### Categoria b) - Radiotelevisivo/elettronico
 
-### Passo 4 - Obbligo di progetto per categoria e) (gas)
+- Potenza nominale complessiva > 1200 VA: **verificare testo vigente** - la soglia esatta
+  richiede consultazione diretta di Art. 5 DM 37/2008 su Normattiva.
 
-| Condizione | Soglia | Riferimento |
-|-----------|--------|-------------|
-| Portata termica dell'impianto gas | > 35 kW | Art. 6 co. 1 lett. c) |
+#### Categoria c) - Riscaldamento/climatizzazione
 
-Nota: la UNI 7129 (impianti gas per uso domestico) definisce soglie e requisiti tecnici aggiuntivi che l'installatore deve dichiarare nella DdC come norma applicata. Per impianti sopra soglia, la UNI 11528 (impianti a gas di portata maggiore) e' la norma tecnica di riferimento.
+| Condizione | Soglia | Obbligo |
+|-----------|--------|---------|
+| Portata termica nominale | > 35 kW | Progetto professionista |
+| Potenza frigorifera (climatizzazione) | > 40.000 frigorie/h (*) | Progetto professionista |
 
-### Passo 5 - Obbligo di progetto per categoria d) (idrico-sanitario)
+(*) Verificare testo vigente su Normattiva per la soglia esatta.
 
-| Condizione | Soglia | Riferimento |
-|-----------|--------|-------------|
-| Edificio di civile abitazione | > 16 unita' abitative | Art. 6 co. 1 lett. e) |
-| Edificio commerciale/terziario/produttivo | superficie > 1000 mq | Art. 6 co. 1 lett. e) |
+#### Categoria d) - Idrico-sanitario
 
-### Passo 6 - Categorie con obbligo di progetto incondizionato
+| Condizione | Soglia | Obbligo |
+|-----------|--------|---------|
+| Edificio di civile abitazione | > 16 unita' abitative | Progetto professionista |
+| Edificio commerciale/terziario/produttivo | superficie > 1000 mq | Progetto professionista |
 
-**Categoria g) (protezione antincendio)**: il progetto e' sempre obbligatorio ai sensi dell'Art. 6 co. 1 lett. f). Non esistono soglie: qualsiasi impianto di protezione antincendio richiede progetto.
+#### Categoria e) - Gas
 
-**Categoria f) (sollevamento - ascensori, montacarichi)**: gli ascensori sono soggetti a disciplina speciale (DPR 162/1999 e DM 587/1987) che prevede propri obblighi progettuali e di collaudo. Il DM 37/2008 si applica ma e' integrato dalla normativa specifica di settore.
+- Portata termica totale > 50 kW: **verificare testo vigente** - alcune fonti indicano 35 kW.
+  Usare la soglia piu' bassa come misura cautelativa.
 
-### Passo 7 - Riepilogo e output
+#### Categoria f) - Sollevamento (ascensori, montacarichi)
 
-Produrre il seguente report:
+Soggetta a disciplina speciale (DPR 162/1999 e DM 587/1987) che prevede obblighi progettuali
+e di collaudo specifici. Il DM 37/2008 si applica ma e' integrato dalla normativa di settore.
+Indicare all'utente la necessita' di verificare anche la normativa specifica per ascensori.
+
+#### Categoria g) - Antincendio
+
+**Progetto da professionista sempre obbligatorio**, indipendentemente dalle dimensioni.
+Non applicare soglie dimensionali: qualsiasi impianto cat. g) richiede progetto professionale.
+
+### Passo 4 - Documenti aggiuntivi per categorie specifiche
+
+**Cat. c) impianti termici**: il DPR 16/04/2013 n. 74 (efficienza energetica) richiede il
+**libretto di impianto** (o libretto di centrale per impianti > 35 kW), separato dalla DdC.
+L'installatore deve compilarlo e consegnarlo al responsabile dell'impianto.
+
+**Cat. a) messa a terra e protezione scariche atmosferiche**: la DdC DM 37/2008 e' separata
+dalla **denuncia/dichiarazione impianti di terra** da presentare a INAIL o ASL ai sensi del
+DPR 462/2001. Sono due adempimenti distinti con iter separati.
+
+**Cat. e) gas**: dopo la DdC, la **verifica di tenuta** dell'impianto e' obbligatoria prima
+della messa in servizio. Non e' un allegato della DdC ma un atto separato.
+
+### Passo 5 - Riepilogo e output
 
 ```markdown
 # Allegati obbligatori DdC - DM 37/2008
 
-**Categoria impianto**: [a-g]
+**Categoria impianto**: [a-g e descrizione]
 **Tipo intervento**: [nuova installazione / trasformazione / ampliamento]
-**Caratteristiche dichiarate**: [elenco dati rilevanti forniti]
+**Caratteristiche dichiarate**: [elenco dati forniti]
 
-## Obbligo di progetto
+## Obbligo di progetto da professionista
 
-[SI / NO / DA VERIFICARE]
+[SI / NO / DA VERIFICARE - con motivazione e riferimento Art. 5 DM 37/2008]
 
-Motivazione: [es. "Potenza dichiarata 8 kW > soglia 6 kW Art. 6 co. 1 lett. a) DM 37/2008"]
+In ogni caso, deve essere predisposto un elaborato tecnico:
+- [Progetto professionale / Schema del responsabile tecnico]
 
-## Allegati obbligatori per la DdC
+## Allegati obbligatori per la DdC (Art. 7 co. 2 DM 37/2008)
 
-### Sempre obbligatori (Art. 7 co. 2 DM 37/2008)
+### Sempre obbligatori
 - [X] Relazione con tipologia dei materiali utilizzati
 
-### Obbligatori condizionali
-- [X / ] Schema dell'impianto realizzato - [obbligatorio: si/no - motivo]
-- [X / ] Progetto di impianto redatto da tecnico abilitato - [obbligatorio: si/no - motivo]
-- [ ] Libretto di impianto (per impianti termici - obbligatorio per impianti cat. c) secondo DPR 74/2013)
+### Elaborato tecnico (sempre necessario - livello dipende da soglie Art. 5)
+- [X] Schema dell'impianto realizzato (da responsabile tecnico) - minimo obbligatorio in tutti i casi
+- [X se sopra soglia] Progetto da professionista iscritto all'albo - [si/no - motivazione]
 
-## Raccomandazioni anche se non obbligatori per legge
+### Specifici per categoria
+- [ ] Libretto di impianto (cat. c - obbligatorio per legge DPR 74/2013, separato dalla DdC)
 
-- Schema dell'impianto: [raccomandato per facilita' di manutenzione futura, anche quando non obbligatorio]
-- ...
+## Adempimenti separati dalla DdC da non dimenticare
 
-## Avvertenze
+[Eventuale lista: denuncia impianto di terra INAIL, verifica tenuta gas, collaudo ascensore, ecc.]
 
-[Eventuali incertezze sulle soglie, variazioni regionali, normativa speciale di settore]
+## Avvertenze sulle soglie
+
+Le soglie Art. 5 indicate sono tratte dall'estratto in references/estratti/ che e' una parafrasi
+operativa. Prima di qualsiasi applicazione operativa, verificare il testo vigente su Normattiva.
+In caso di dubbio, la scelta cautelativa e' sempre redigere il progetto da professionista.
 
 ## Rinvio al responsabile tecnico
 
-La responsabilita' di determinare correttamente gli obblighi documentali e di redigere la DdC con i corretti allegati resta in capo al responsabile tecnico firmatario. In caso di dubbio sulle soglie o sull'applicabilita' delle norme di settore, consultare un tecnico abilitato o la CCIAA competente.
+La responsabilita' di determinare correttamente gli obblighi documentali e di allegare quanto
+richiesto resta in capo al responsabile tecnico firmatario. In caso di dubbio sulle soglie o
+sulla normativa specifica di settore, consultare un tecnico abilitato o la CCIAA competente.
 ```
 
-## Note su normativa collegata
+## Casi limite
 
-### Impianti termici - Libretto impianto
-Per gli impianti di riscaldamento (cat. c), il DPR 16 aprile 2013 n. 74 (recepimento Direttiva 2010/31/UE sull'efficienza energetica degli edifici) richiede il **libretto di impianto** o **libretto di centrale** come documento separato dalla DdC. L'installatore deve compilarlo e consegnarlo al responsabile dell'impianto.
+### Impianto che tocca piu' categorie
+Es. rifacimento elettrico + impianto termico nello stesso intervento: la DdC puo' coprire piu'
+categorie, ma le soglie di Art. 5 si applicano separatamente a ciascuna. Se una sola delle
+categorie supera le soglie, serve il progetto professionale per quella categoria.
 
-### Impianti gas - Verifiche aggiuntive
-Per gli impianti gas (cat. e), dopo il rilascio della DdC, e' necessaria la **verifica di tenuta** dell'impianto prima della messa in servizio. La DdC attesta la conformita' ma non sostituisce la verifica di tenuta obbligatoria.
+### Ampliamento di impianto esistente
+L'obbligo di progetto si valuta sull'intero impianto risultante dopo l'ampliamento, non solo
+sulla parte aggiunta. Se l'ampliamento porta il totale sopra soglia, il progetto diventa obbligatorio.
 
-### Impianti elettrici - Denunce ASL/INAIL
-Per gli impianti di messa a terra e protezione scariche atmosferiche (rientranti in cat. a), la **denuncia/dichiarazione di conformita' agli impianti di terra** va presentata all'ente competente (ex ISPESL, ora INAIL o ASL secondo regioni) ai sensi del DPR 462/2001. Questa e' un adempimento **separato** dalla DdC DM 37/2008 e non sostituisce ne' e' sostituita da essa.
+### Impianti eseguiti da professionista direttamente
+Se il committente e' anche il progettista (es. ingegnere che fa da se'), il regime DM 37/2008
+si applica comunque: la DdC e' emessa dall'impresa installatrice, non dal progettista.
