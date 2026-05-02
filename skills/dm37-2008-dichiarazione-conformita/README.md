@@ -12,7 +12,7 @@ Installatori abilitati, responsabili tecnici di imprese installatrici, ingegneri
 ## Cosa fa
 
 - **Verifica completezza DdC**: controlla che il modello Allegato I sia compilato in tutti i campi obbligatori
-- **Identifica allegati obbligatori**: determina quali allegati sono richiesti in base alla categoria di impianto (a-h) e alle soglie dimensionali/di potenza
+- **Identifica allegati obbligatori**: determina quali allegati sono richiesti in base alla categoria di impianto (a-g) e alle soglie dimensionali/di potenza; lo schema dell'impianto e' sempre necessario (livello minimo = schema del responsabile tecnico; sopra soglia Art. 5 = progetto da professionista)
 
 ## Fonti consultate
 

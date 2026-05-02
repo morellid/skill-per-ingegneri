@@ -88,15 +88,15 @@ segnalare il problema senza sostituirsi alla sua valutazione tecnica.
 Verificare la coerenza tra le caselle barrate nella sezione allegati e gli allegati dichiarati
 dall'utente.
 
-**Allegato sempre obbligatorio (Art. 7 co. 2)**:
+**Allegato sempre obbligatorio (Art. 7 co. 1 DM 37/2008)**:
 - [ ] Relazione con tipologia dei materiali utilizzati: deve essere presente in tutti i casi.
   Una relazione generica ("materiali conformi alle norme") senza specificare tipologia/marca/modello
   e' `inadeguata`.
 
-**Elaborato tecnico (sempre necessario)**:
+**Elaborato tecnico (sempre necessario - Art. 7 co. 1-2 DM 37/2008)**:
 - [ ] Schema dell'impianto o progetto: deve essere sempre presente. La distinzione e' nel livello:
-  - Sotto soglie Art. 5: schema dell'impianto realizzato redatto dal responsabile tecnico (minimo)
-  - Sopra soglie Art. 5: progetto da professionista + schema as-built
+  - Sotto soglie Art. 5: schema dell'impianto realizzato redatto dal responsabile tecnico (minimo - Art. 7 co. 2)
+  - Sopra soglie Art. 5: progetto da professionista + schema as-built (Art. 7 co. 1)
   - Se **nessun elaborato tecnico** e' allegato, classificare come `assente - non conforme`
     indipendentemente dalle dimensioni dell'impianto
 
@@ -145,7 +145,7 @@ Allegati obbligatori: [stato]
 - [ ] Firma: [presente/assente]
 
 ### Sezione 5 - Allegati
-- [ ] Relazione materiali (OBBLIGATORIA - Art. 7 co. 2): [presente/assente/generica]
+- [ ] Relazione materiali (OBBLIGATORIA - Art. 7 co. 1): [presente/assente/generica]
 - [ ] Elaborato tecnico (schema/progetto - sempre necessario): [presente/assente - livello]
 - [ ] Progetto da professionista: [presente/assente/non-richiesto sopra-soglia]
 
@@ -153,7 +153,7 @@ Allegati obbligatori: [stato]
 
 | # | Sezione | Campo | Carenza | Riferimento | Priorita' |
 |---|---------|-------|---------|-------------|-----------|
-| 1 | 5 | Elaborato tecnico | Schema/progetto assente | Art. 7 co. 2 DM 37/2008 | Alta |
+| 1 | 5 | Elaborato tecnico | Schema/progetto assente | Art. 7 co. 1-2 DM 37/2008 | Alta |
 | ... |
 
 ## Raccomandazioni

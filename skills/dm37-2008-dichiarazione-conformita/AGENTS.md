@@ -26,7 +26,8 @@ Estratti in `references/estratti/`:
 - **Art. 5**: Progettazione degli impianti - soglie per obbligo di progetto da professionista iscritto all'albo; sotto le soglie il responsabile tecnico predispone almeno lo schema impianto
 - **Art. 6**: Realizzazione secondo la regola dell'arte; riferimento alle norme UNI, CEI, etc.
 - **Art. 7 co. 1**: DdC obbligatoria al termine dei lavori, su modello Allegato I
-- **Art. 7 co. 2**: Allegati integranti DdC: relazione materiali (sempre); schema/progetto (sempre, con livello di dettaglio che dipende da Art. 5)
+- **Art. 7 co. 1**: DdC obbligatoria su modello Allegato I; allegati integranti: relazione materiali (sempre) e progetto (quando richiesto da Art. 5)
+- **Art. 7 co. 2**: Quando il progetto e' redatto dal responsabile tecnico (sotto soglia Art. 5), l'elaborato tecnico e' almeno lo schema dell'impianto
 - **Art. 7 co. 4**: Responsabilita' del soggetto che rilascia la DdC per la veridicita' dei contenuti
 - **Art. 8**: Collaudo degli impianti (separato dalla DdC)
 - **Art. 15**: Sanzioni per violazioni DM 37/2008
@@ -35,7 +36,7 @@ Estratti in `references/estratti/`:
 
 ### Cosa NON fare
 - Non confondere Art. 3/4 (abilitazione imprese/responsabile tecnico) con Art. 5 (progettazione)
-- Non affermare "progetto non necessario" senza specificare che sotto-soglia serve comunque lo schema dell'impianto a cura del responsabile tecnico (Art. 7 co. 2)
+- Non affermare "progetto non necessario" senza specificare che sotto-soglia serve comunque lo schema dell'impianto a cura del responsabile tecnico (Art. 7 co. 2 DM 37/2008)
 - Non omettere di citare numero articolo e comma per ogni obbligo citato
 - Non applicare soglie categoria a) alle altre categorie: ogni categoria ha soglie proprie nell'Art. 5
 - Non citare "Art. 6 obbligo progetto": Art. 6 riguarda la regola dell'arte, non il progetto; usare "Art. 5"

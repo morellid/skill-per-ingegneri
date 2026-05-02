@@ -53,7 +53,7 @@ Elaborato tecnico minimo obbligatorio: schema dell'impianto realizzato dal respo
 - [X] Firma: presente - Mario Rossi
 
 ### Sezione 5 - Allegati
-- [X] Relazione materiali (OBBLIGATORIA - Art. 7 co. 2): presente con contenuto specifico (tipologia, marca, modello dei materiali principali)
+- [X] Relazione materiali (OBBLIGATORIA - Art. 7 co. 1): presente con contenuto specifico (tipologia, marca, modello dei materiali principali)
 - [X] Schema dell'impianto realizzato: presente - elaborato tecnico del responsabile tecnico; adeguato per impianto sotto-soglia (Art. 5)
 - [ ] Progetto da professionista: non presente - NON OBBLIGATORIO (soglie Art. 5 non superate)
 

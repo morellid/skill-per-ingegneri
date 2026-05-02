@@ -111,7 +111,8 @@ Per cat. **g)** (antincendio): **sempre** obbligatorio il progetto da profession
 
 **Quando il progetto professionale NON e' obbligatorio** (sotto le soglie sopra indicate):
 L'elaborato tecnico minimo - quantomeno lo schema dell'impianto realizzato - deve essere
-predisposto dal responsabile tecnico dell'impresa e allegato alla DdC (Art. 7 co. 2).
+predisposto dal responsabile tecnico dell'impresa e allegato alla DdC (Art. 7 co. 2 DM 37/2008).
+La mancanza di qualsiasi elaborato tecnico e' una carenza della DdC anche sotto-soglia.
 
 **ATTENZIONE**: le soglie sono state oggetto di diverse letture e possibili modifiche successive
 al testo originale. Verificare SEMPRE il testo vigente su Normattiva prima di determinare
@@ -124,11 +125,11 @@ l'obbligo. In caso di dubbio, redigere il progetto e' sempre la scelta cautelati
 1. **Obbligo**: al termine dei lavori l'impresa installatrice rilascia al committente la DdC.
    La DdC e' resa su modello conforme all'Allegato I.
 
-2. **Allegati integranti** (Art. 7 co. 2): fanno parte integrante della DdC:
+2. **Allegati integranti** (Art. 7 co. 1): fanno parte integrante della DdC:
    - **Relazione con tipologia dei materiali utilizzati**: sempre obbligatoria
-   - **Schema dell'impianto realizzato**: obbligatorio quando il progetto era richiesto;
-     piu' in generale, un elaborato tecnico (schema o progetto) deve sempre essere allegato
    - **Progetto**: quando obbligatorio ai sensi dell'Art. 5, redatto da professionista
+   (Art. 7 co. 2): quando il progetto e' redatto dal responsabile tecnico (sotto soglia Art. 5),
+   l'elaborato tecnico e' almeno lo schema dell'impianto realizzato.
 
 3. **Consegna**: copia al committente; l'originale resta all'installatore.
 

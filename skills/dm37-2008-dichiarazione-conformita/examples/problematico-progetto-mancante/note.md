@@ -15,7 +15,7 @@
 
 3. **Soglia 6 kW per uso terziario**: La soglia di 6 kW per l'obbligo di progetto si applica a tutti gli impianti alimentati in bassa tensione sopra questa potenza, indipendentemente dalla destinazione d'uso (residenziale, commerciale, industriale). La soglia dei 400 mq (o 200 mq nel testo originale) e' specifica per le unita' abitative residenziali. Per il terziario, la soglia di potenza e' quella determinante.
 
-4. **Responsabile tecnico di SRL**: Per le societa' (SRL, SPA), il "responsabile tecnico" deve essere una persona fisica nominata dalla societa' con i requisiti dell'Art. 5. La DdC deve essere firmata da questa persona fisica, non dalla societa'. La verifica dell'effettiva nomina e dei requisiti richiede consultazione del registro imprese.
+4. **Responsabile tecnico di SRL**: Per le societa' (SRL, SPA), il "responsabile tecnico" deve essere una persona fisica nominata dalla societa' con i requisiti dell'Art. 4 DM 37/2008. La DdC deve essere firmata da questa persona fisica, non dalla societa'. La verifica dell'effettiva nomina e dei requisiti richiede consultazione del registro imprese.
 
 ## Casistiche simili
 

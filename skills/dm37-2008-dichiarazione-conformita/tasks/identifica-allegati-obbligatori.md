@@ -40,7 +40,7 @@ Se i dati non sono disponibili, procedere con il caso piu' cautelativo e indicar
 ## Fonti normative
 
 Prima di procedere, leggere:
-- `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 5 (soglie progetto professionale) e Art. 7 co. 2 (allegati DdC)
+- `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 5 (soglie progetto professionale), Art. 7 co. 1 (allegati DdC) e Art. 7 co. 2 (schema del RT come elaborato minimo)
 
 **ATTENZIONE**: le soglie nell'estratto sono parafrasate e potrebbero differire dal testo vigente su Normattiva. In caso di dubbio o uso operativo, verificare il testo aggiornato.
 
@@ -48,14 +48,14 @@ Prima di procedere, leggere:
 
 ### Passo 1 - Allegato sempre obbligatorio per tutte le categorie
 
-**Relazione con tipologia dei materiali utilizzati** (Art. 7 co. 2 DM 37/2008):
+**Relazione con tipologia dei materiali utilizzati** (Art. 7 co. 1 DM 37/2008):
 - Obbligatoria in **TUTTI** i casi, per tutte le categorie a-g, sempre
 - Contenuto minimo: tipologia, marca/modello dei principali componenti installati
 
 ### Passo 2 - Elaborato tecnico: schema o progetto
 
 **Per tutte le categorie e tutti gli interventi** (nuova installazione, trasformazione, ampliamento),
-deve essere predisposto un elaborato tecnico che viene allegato alla DdC (Art. 7 co. 2):
+deve essere predisposto un elaborato tecnico che viene allegato alla DdC (Art. 7 co. 1-2 DM 37/2008):
 
 - **Elaborato minimo (sotto-soglia Art. 5)**: schema dell'impianto realizzato, redatto dal responsabile tecnico dell'impresa installatrice
 - **Progetto completo (sopra-soglia Art. 5)**: progetto redatto da professionista iscritto all'albo, allegato insieme allo schema as-built
@@ -147,7 +147,7 @@ della messa in servizio. Non e' un allegato della DdC ma un atto separato.
 In ogni caso, deve essere predisposto un elaborato tecnico:
 - [Progetto professionale / Schema del responsabile tecnico]
 
-## Allegati obbligatori per la DdC (Art. 7 co. 2 DM 37/2008)
+## Allegati obbligatori per la DdC (Art. 7 co. 1-2 DM 37/2008)
 
 ### Sempre obbligatori
 - [X] Relazione con tipologia dei materiali utilizzati

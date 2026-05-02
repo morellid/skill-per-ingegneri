@@ -25,7 +25,7 @@ Verifica soglie Art. 5 DM 37/2008:
 
 **Esito**: Progetto da professionista iscritto all'albo **OBBLIGATORIO** - potenza 15 kW supera la soglia di 6 kW (Art. 5 DM 37/2008).
 
-Conseguenza: il progetto redatto da tecnico abilitato (ingegnere elettrico / perito industriale) era obbligatorio prima dei lavori. Lo schema as-built dell'impianto realizzato deve essere allegato insieme al progetto (Art. 7 co. 2 DM 37/2008).
+Conseguenza: il progetto redatto da tecnico abilitato (ingegnere elettrico / perito industriale) era obbligatorio prima dei lavori. Lo schema as-built dell'impianto realizzato deve essere allegato insieme al progetto (Art. 7 co. 1 DM 37/2008).
 
 **Nota**: la soglia dei 350 mq in uso terziario non e' una soglia Art. 5 rilevante per cat. a) (le soglie mq riguardano le unita' abitative residenziali). La soglia determinante qui e' la potenza (6 kW).
 
@@ -55,24 +55,24 @@ Conseguenza: il progetto redatto da tecnico abilitato (ingegnere elettrico / per
 - [X] Firma: presente - Giuseppe Verdi
 
 ### Sezione 5 - Allegati
-- [!] Relazione materiali (OBBLIGATORIA - Art. 7 co. 2): presente ma **INADEGUATA** - "cavi conformi alle norme CEI, quadro certificato" e' generica; non specifica tipologia, sezione, marca/modello
-- [X] Elaborato tecnico (schema/progetto): **ASSENTE - NON CONFORME** - nessuno schema ne' progetto allegato; obbligatorio in tutti i casi (Art. 7 co. 2)
-- [X] Progetto da professionista: **ASSENTE - NON CONFORME** - obbligatorio (potenza 15 kW > 6 kW, Art. 5 DM 37/2008)
+- [!] Relazione materiali (OBBLIGATORIA - Art. 7 co. 1): presente ma **INADEGUATA** - "cavi conformi alle norme CEI, quadro certificato" e' generica; non specifica tipologia, sezione, marca/modello
+- [!] Elaborato tecnico (schema/progetto): **ASSENTE - NON CONFORME** - nessuno schema ne' progetto allegato; obbligatorio in tutti i casi (Art. 7 co. 1 DM 37/2008)
+- [!] Progetto da professionista: **ASSENTE - NON CONFORME** - obbligatorio (potenza 15 kW > 6 kW, Art. 5 DM 37/2008)
 
 ## Carenze rilevate
 
 | # | Sezione | Campo | Carenza | Riferimento | Priorita' |
 |---|---------|-------|---------|-------------|-----------|
-| 1 | 5 | Progetto da professionista | Mancante - obbligatorio per potenza 15 kW > 6 kW | Art. 5 + Art. 7 co. 2 DM 37/2008 | **CRITICA** |
-| 2 | 5 | Schema impianto | Nessun elaborato tecnico - obbligatorio in tutti i casi | Art. 7 co. 2 DM 37/2008 | **CRITICA** |
+| 1 | 5 | Progetto da professionista | Mancante - obbligatorio per potenza 15 kW > 6 kW | Art. 5 + Art. 7 co. 1 DM 37/2008 | **CRITICA** |
+| 2 | 5 | Schema impianto | Nessun elaborato tecnico - obbligatorio in tutti i casi | Art. 7 co. 1-2 DM 37/2008 | **CRITICA** |
 | 3 | 4 | Norma tecnica | Nessuna norma tecnica specifica citata | Allegato I DM 37/2008 | Alta |
 | 4 | 4 | Formula dichiarativa | Generica, non conforme al modello Allegato I | Allegato I DM 37/2008 | Alta |
 | 5 | 2 | Abilitazione | Categoria abilitazione non specificata | Art. 7 co. 1 + Art. 4 DM 37/2008 | Media |
-| 6 | 5 | Relazione materiali | Descrizione generica senza tipologia/marca/modello | Art. 7 co. 2 DM 37/2008 | Media |
+| 6 | 5 | Relazione materiali | Descrizione generica senza tipologia/marca/modello | Art. 7 co. 1 DM 37/2008 | Media |
 
 ## Raccomandazioni
 
-1. **Urgente**: Recuperare o far redigere il progetto da tecnico abilitato (ingegnere elettrico / perito industriale iscritto all'albo). Il progetto dovrebbe precedere i lavori: se e' gia' completato, va redatto come "progetto as-built" e allegato.
+1. **Urgente**: Carenza critica - il progetto da tecnico abilitato era obbligatorio prima dell'inizio dei lavori (Art. 5 DM 37/2008). Far valutare da un ingegnere elettrico / perito industriale iscritto all'albo il percorso documentale corretto, considerando lo stato attuale dell'impianto. La redazione retroattiva di un "progetto as-built" non equivale al progetto preventivo obbligatorio per legge: la questione deve essere affrontata con il professionista competente.
 2. **Urgente**: Allegare lo schema dell'impianto realizzato (as-built) redatto dal responsabile tecnico.
 3. Correggere la formula dichiarativa con quella conforme all'Allegato I DM 37/2008.
 4. Indicare esplicitamente la norma tecnica applicata: per impianti elettrici cat. a) la CEI 64-8 (specificare edizione).

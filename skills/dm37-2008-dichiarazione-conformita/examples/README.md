@@ -11,7 +11,7 @@ Ogni esempio contiene:
 
 ### Conformi
 
-- **`conforme-elettrico-residenziale-piccolo/`**: DdC corretta per impianto elettrico appartamento 85 mq, 3 kW. Nessuna soglia Art. 6 superata. Relazione materiali specifica. Norma CEI 64-8 citata. Esito: COMPLETA.
+- **`conforme-elettrico-residenziale-piccolo/`**: DdC corretta per impianto elettrico appartamento 85 mq, 3 kW. Nessuna soglia Art. 5 superata. Relazione materiali specifica. Schema impianto presente. Norma CEI 64-8 citata. Esito: COMPLETA.
 
 ### Problematici
 

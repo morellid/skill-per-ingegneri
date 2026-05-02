@@ -10,7 +10,7 @@ license: MIT
 
 Usare quando un installatore, ingegnere o responsabile tecnico chiede di:
 - **Verificare una DdC gia' redatta**: controllare che il modello Allegato I sia compilato in tutti i campi obbligatori e che gli allegati richiesti siano presenti
-- **Determinare gli allegati obbligatori**: sapere quali documenti devono essere allegati alla DdC in base alla categoria di impianto (a-h) e alle dimensioni/potenza
+- **Determinare gli allegati obbligatori**: sapere quali documenti devono essere allegati alla DdC in base alla categoria di impianto (a-g) e alle dimensioni/potenza
 - **Verificare l'obbligo di progetto**: determinare se per l'impianto in questione era obbligatoria la progettazione da professionista ai sensi dell'Art. 5 (in ogni caso serve un elaborato tecnico minimo)
 - **Classificare l'impianto**: identificare sotto quale categoria (a-g) ricade l'impianto e quali regole si applicano
 
@@ -22,7 +22,7 @@ Usare quando un installatore, ingegnere o responsabile tecnico chiede di:
 
 ## Avvertenza
 
-Questa skill e' uno strumento di supporto alla compilazione e verifica della Dichiarazione di Conformita'. **Non sostituisce il giudizio del responsabile tecnico firmatario ne' la verifica in campo dell'impianto.** La DdC attesta la conformita' dell'impianto alle regole dell'arte; la skill verifica la completezza formale del documento, non la correttezza tecnica dell'impianto. La responsabilita' penale e civile per la DdC resta esclusivamente in capo all'installatore firmatario (Art. 7 co. 6 DM 37/2008).
+Questa skill e' uno strumento di supporto alla compilazione e verifica della Dichiarazione di Conformita'. **Non sostituisce il giudizio del responsabile tecnico firmatario ne' la verifica in campo dell'impianto.** La DdC attesta la conformita' dell'impianto alle regole dell'arte; la skill verifica la completezza formale del documento, non la correttezza tecnica dell'impianto. La responsabilita' per la veridicita' dei contenuti della DdC resta esclusivamente in capo all'installatore firmatario (Art. 7 co. 4 DM 37/2008).
 
 ## Sotto-attivita' disponibili
 
