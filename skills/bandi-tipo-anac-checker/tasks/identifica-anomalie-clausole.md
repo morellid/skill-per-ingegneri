@@ -67,10 +67,10 @@ Cercare specificamente:
 |------|----------------------|-------------|
 | Clausola sociale | CCNL non indicato o "di settore" generico | Art. 11 D.Lgs. 36/2023 |
 | Esclusioni | Elenco cause esclusione incompleto o basato su vecchio art. 80 | Artt. 94-98 D.Lgs. 36/2023 |
-| Requisiti | Fatturato > 2x valore stimato senza motivazione | Art. 102 D.Lgs. 36/2023 |
-| DGUE | Assente in procedure sopra soglia | Art. 87 D.Lgs. 36/2023 |
+| Requisiti | Fatturato > 2x valore stimato senza motivazione | Art. 100 D.Lgs. 36/2023 |
+| DGUE | Assente in procedure sopra soglia | Art. 91 D.Lgs. 36/2023 |
 | Subappalto | Limite percentuale non motivato | Art. 119 D.Lgs. 36/2023 |
-| Garanzia provvisoria | Importo diverso da 2% (senza riduzioni qualita' applicate) | Art. 117 D.Lgs. 36/2023 |
+| Garanzia provvisoria | Importo non coerente con base 2% o scelta non motivata | Art. 106 D.Lgs. 36/2023 |
 | Soccorso istruttorio | Escluso anche per documenti amministrativi (non dell'offerta) | Art. 101 D.Lgs. 36/2023 |
 | OEPV | Criteri non collegati all'oggetto del contratto | Art. 108 co. 6 D.Lgs. 36/2023 |
 

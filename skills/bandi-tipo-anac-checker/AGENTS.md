@@ -23,20 +23,24 @@ Estratti in `references/estratti/`:
 
 ## Articoli e punti chiave
 
-- **Art. 11**: clausole sociali obbligatorie - CCNL applicabile al settore e alla zona geografica; operatore economico deve garantire ai lavoratori condizioni non inferiori al CCNL; pena esclusione
+**AVVERTENZA**: La numerazione degli articoli del D.Lgs. 36/2023 e' diversa dal D.Lgs. 50/2016.
+Verificare sempre il numero esatto su Normattiva prima di citare un articolo in un documento.
+
+- **Art. 11**: clausole sociali obbligatorie - CCNL applicabile al settore e alla zona geografica; operatore economico deve garantire ai lavoratori condizioni non inferiori al CCNL
+- **Art. 57**: criteri ambientali minimi (CAM) - obbligatori per le categorie coperte dai DM attuativi
+- **Art. 58**: suddivisione in lotti - motivazione obbligatoria se appalto non suddiviso
+- **Art. 60**: revisione prezzi - obbligatoria per contratti > 12 mesi
 - **Art. 74 co. 1**: contenuto minimo del bando di gara (oggetto, CPV, importo, criteri selezione, criterio aggiudicazione, termine presentazione offerte)
-- **Art. 87**: DGUE - obbligatorio per procedure sopra soglia; format europeo standardizzato; deve essere richiamato correttamente
-- **Art. 90**: comunicazioni e accesso agli atti - modalita' digitali obbligatorie; piattaforma certificata
-- **Art. 94**: motivi di esclusione automatica (condanne penali, violazioni fiscali, false dichiarazioni, irregolarita' grave verso dipendenti)
-- **Art. 95-98**: motivi di esclusione non automatica (insolvenza, illecito professionale, conflitti di interesse, distorsione della concorrenza)
-- **Art. 99**: self-cleaning - misure di autodisciplina per superare cause di esclusione
-- **Art. 100**: idoneita' professionale - iscrizione albi/registri
-- **Art. 101**: soccorso istruttorio - consentito per carenze non essenziali; non ammesso per carenze che incidono sull'offerta
-- **Art. 102-103**: capacita' economica/finanziaria e tecnica/professionale
-- **Art. 104-106**: avvalimento - condizioni, limiti, divieti (per operatori economici con carenze di requisiti)
-- **Art. 117**: garanzia provvisoria - 2% del valore stimato; riduzioni per certificazioni qualita' (fino a max 50%)
-- **Art. 118**: garanzia definitiva - 5-10% del valore contratto
-- **Art. 119-120**: subappalto - nessun limite percentuale generale; indicazione subappaltatori sopra soglia; pagamento diretto obbligatorio in certi casi
+- **Art. 87**: disciplinare di gara e capitolato speciale (NON il DGUE: quello e' art. 91)
+- **Art. 91**: DGUE - obbligatorio per procedure sopra soglia; format europeo standardizzato
+- **Art. 90**: comunicazioni - modalita' digitali obbligatorie; piattaforma certificata
+- **Art. 94**: motivi di esclusione automatica (condanne penali, violazioni fiscali, false dichiarazioni, irregolarita' grave)
+- **Art. 95-98**: motivi di esclusione non automatica (insolvenza, illecito professionale, conflitti di interesse)
+- **Art. 100**: criteri di selezione e requisiti speciali - include proporzionalita' del fatturato richiesto
+- **Art. 101**: soccorso istruttorio - ammesso per documenti amministrativi; non ammesso per carenze che incidono sull'offerta
+- **Art. 106**: garanzia provvisoria - base 2% con possibilita' di modifica motivata (1-4%); riduzioni per certificazioni qualita'
+- **Art. 117**: garanzia definitiva - 5-10% in funzione del ribasso
+- **Art. 119-120**: subappalto - nessun limite percentuale generale; indicazione subappaltatori sopra soglia; pagamento diretto in certi casi
 
 ## Convenzioni specifiche
 

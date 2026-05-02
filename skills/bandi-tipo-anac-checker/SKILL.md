@@ -47,16 +47,17 @@ Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' vuole ese
 
 ## Schemi ANAC applicabili (D.Lgs. 36/2023)
 
-ANAC ha pubblicato schemi di disciplinare per il nuovo codice articolati per tipo di contratto e criterio di aggiudicazione:
+ANAC pubblica schemi di disciplinare per il nuovo codice articolati per tipo di contratto e criterio di aggiudicazione. Il documento verificato e' il **Bando tipo n. 1/2023** (aggiornato Delibera ANAC n. 365/2025) per servizi/forniture OEPV sopra soglia. Per gli altri schemi, verificare sempre il portale ANAC prima dell'utilizzo:
 
-| Tipo contratto | Criterio | Schema ANAC di riferimento |
-|---------------|----------|---------------------------|
-| Servizi e forniture (sopra soglia) | Prezzo piu' basso | Schema disciplinare PPB servizi/forniture |
-| Servizi e forniture (sopra soglia) | OEPV | Schema disciplinare OEPV servizi/forniture |
-| Lavori (sopra soglia) | Prezzo piu' basso | Schema disciplinare PPB lavori |
-| Lavori (sopra soglia) | OEPV | Schema disciplinare OEPV lavori |
+| Tipo contratto | Criterio | Schema ANAC | Stato verifica |
+|---------------|----------|-------------|----------------|
+| Servizi e forniture (sopra soglia) | OEPV | Bando tipo n. 1/2023 | Confermato (Delibera 365/2025) |
+| Servizi e forniture (sopra soglia) | Prezzo piu' basso | Da verificare su portale ANAC | - |
+| Lavori (sopra soglia) | Prezzo piu' basso | Da verificare su portale ANAC | - |
+| Lavori (sopra soglia) | OEPV | Da verificare su portale ANAC | - |
 
-Per le procedure sotto soglia e per le procedure negoziate, gli schemi ANAC si applicano per analogia ove possibile, ma con adattamenti motivati nel disciplinare.
+Per le procedure sotto soglia: gli schemi sopra soglia si applicano come riferimento
+con adattamenti motivati; verificare se ANAC ha pubblicato schemi specifici.
 
 ## Aree di verifica principali
 

@@ -18,8 +18,9 @@ Produrre un report strutturato che indichi, per ciascuna sezione del disciplinar
 2. **Tipo di contratto**: lavori / servizi / forniture
 3. **Criterio di aggiudicazione**: prezzo piu' basso (PPB) o OEPV
 4. **Importo a base d'asta** (EUR, IVA esclusa)
-5. **Soglia**: sopra o sotto soglia europea (al 2025: lavori >= 5.538.000 EUR,
-   servizi/forniture >= 221.000 EUR per PA centrali / 221.000 EUR PA locali / 443.000 EUR enti di settore speciale)
+5. **Soglia**: sopra o sotto soglia europea (dal 1/1/2026: lavori >= 5.404.000 EUR;
+   servizi/forniture >= 140.000 EUR PA centrali / 216.000 EUR PA sub-centrali / 432.000 EUR settori speciali;
+   le soglie sono aggiornate ogni 2 anni dalla Commissione UE: verificare i valori vigenti)
 6. **Contesto PNRR** (si/no): se si', il disciplinare deve rispettare termini accelerati
 
 ## Fonti normative
@@ -80,12 +81,13 @@ Cercare nel disciplinare i seguenti indicatori di mancato aggiornamento:
 
 | Indicatore da cercare | Impatto | Correzione richiesta |
 |-----------------------|---------|----------------------|
-| "art. 80 D.Lgs. 50/2016" | Critico | Sostituire con artt. 94-98 D.Lgs. 36/2023 |
-| "art. 83 D.Lgs. 50/2016" | Critico | Sostituire con artt. 100-103 D.Lgs. 36/2023 |
-| "art. 89 D.Lgs. 50/2016" | Critico | Sostituire con artt. 104-106 D.Lgs. 36/2023 |
-| "art. 105 D.Lgs. 50/2016" | Critico | Sostituire con artt. 119-120 D.Lgs. 36/2023 |
-| "art. 93 D.Lgs. 50/2016" | Critico | Sostituire con artt. 117-118 D.Lgs. 36/2023 |
-| "art. 95/97 D.Lgs. 50/2016" | Critico | Sostituire con artt. 107-108 D.Lgs. 36/2023 |
+| "art. 80 D.Lgs. 50/2016" (esclusioni) | Critico | Sostituire con artt. 94-98 D.Lgs. 36/2023 |
+| "art. 83 D.Lgs. 50/2016" (requisiti) | Critico | Sostituire con art. 100 D.Lgs. 36/2023 |
+| "art. 85 D.Lgs. 50/2016" (DGUE) | Critico | Sostituire con art. 91 D.Lgs. 36/2023 |
+| "art. 89 D.Lgs. 50/2016" (avvalimento) | Critico | Verificare l'articolo corretto su Normattiva |
+| "art. 105 D.Lgs. 50/2016" (subappalto) | Critico | Sostituire con artt. 119-120 D.Lgs. 36/2023 |
+| "art. 93 D.Lgs. 50/2016" (garanzie) | Critico | Provvisoria: art. 106; definitiva: art. 117 |
+| "art. 95 o 97 D.Lgs. 50/2016" (criteri) | Critico | Sostituire con artt. 107-108 D.Lgs. 36/2023 |
 | "D.Lgs. 50/2016" senza specifica | Sostanziale | Verificare ogni riferimento e aggiornare |
 | Limite subappalto "max 30%" o "40%" | Critico | Rimuovere: illegittimo sotto art. 119 D.Lgs. 36/2023 |
 
@@ -101,23 +103,24 @@ Verificare il contenuto delle clausole principali contro i requisiti di legge:
 **4b. Esclusioni (artt. 94-98 D.Lgs. 36/2023)**
 - [ ] Cause di esclusione automatica elencate (non solo rinvio all'articolo)
 - [ ] Cause facoltative indicate con scelta esplicita della SA
-- [ ] Self-cleaning (art. 99) previsto
-- [ ] Nessun riferimento a vecchio art. 80
+- [ ] Possibilita' di misure di autodisciplina prevista (verificare articolo corretto su Normattiva)
+- [ ] Nessun riferimento a vecchio art. 80 D.Lgs. 50/2016
 
-**4c. Requisiti di partecipazione**
+**4c. Requisiti di partecipazione (art. 100 D.Lgs. 36/2023)**
 - [ ] Fatturato richiesto <= doppio del valore stimato (salvo eccezioni motivate)
-- [ ] DGUE richiesto (procedure sopra soglia)
+- [ ] DGUE richiesto per procedure sopra soglia (art. 91 D.Lgs. 36/2023)
 - [ ] PassOE richiesto
 - [ ] FVOE menzionato per la fase di verifica
-- [ ] Nessun riferimento a vecchio art. 83
+- [ ] Nessun riferimento a vecchio art. 83 D.Lgs. 50/2016
 
 **4d. Subappalto (art. 119 D.Lgs. 36/2023)**
 - [ ] Nessun limite percentuale generale non motivato
 - [ ] Dichiarazione subappalto al momento dell'offerta (sopra soglia)
 - [ ] Modalita' pagamento diretto al subappaltatore
 
-**4e. Garanzia provvisoria (art. 117 D.Lgs. 36/2023)**
-- [ ] Importo = 2% del valore stimato
+**4e. Garanzia provvisoria (art. 106 D.Lgs. 36/2023)**
+- [ ] Importo base = 2% del valore stimato (modificabile motivatamente tra 1% e 4%)
+- [ ] Per procedure sotto soglia: verifica se la garanzia e' richiesta (non sempre obbligatoria)
 - [ ] Tabella riduzioni per certificazioni di qualita'
 - [ ] Schema fidejussione allegato o rinvio a modello ANAC
 

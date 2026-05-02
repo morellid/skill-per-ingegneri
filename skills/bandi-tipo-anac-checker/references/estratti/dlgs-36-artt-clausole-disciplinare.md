@@ -6,9 +6,13 @@
 **Note**: Testo consolidato con modifiche del D.Lgs. 209/2024 (correttivo). Verificare
 il testo vigente su Normattiva prima dell'utilizzo in una procedura di gara.
 
+**AVVERTENZA SULLE NUMERAZIONI**: La numerazione degli articoli del D.Lgs. 36/2023 e'
+sostanzialmente diversa dal D.Lgs. 50/2016. Verificare sempre il numero esatto su
+Normattiva prima di citare un articolo in un documento ufficiale.
+
 ---
 
-## Art. 11 - Principio di inserimento di clausole sociali nei contratti pubblici e promozione della parita' di genere
+## Art. 11 - Clausole sociali
 
 **Sintesi**: Le stazioni appaltanti inseriscono obbligatoriamente nel disciplinare:
 - Indicazione del contratto collettivo nazionale di lavoro (CCNL) applicabile
@@ -20,10 +24,45 @@ il testo vigente su Normattiva prima dell'utilizzo in una procedura di gara.
   di risoluzione del contratto
 
 **Implicazioni per il disciplinare**:
-- La sezione requisiti/ammissione deve indicare il CCNL di riferimento
-- Non e' sufficiente un generico rinvio ai CCNL di settore: occorre indicarne uno
-- In caso di piu' CCNL applicabili, indicare quello prevalente e la modalita' di
-  scelta in caso di controversia
+- La sezione requisiti/ammissione deve indicare il CCNL di riferimento con nome completo
+- Non e' sufficiente un generico rinvio ai CCNL di settore: occorre indicarne uno specifico
+- Il D.Lgs. 209/2024 (correttivo) ha modificato alcuni profili dell'art. 11: verificare
+  il testo aggiornato su Normattiva
+
+---
+
+## Art. 57 - Criteri ambientali minimi (CAM)
+
+**Sintesi**: Per le categorie di appalto interessate dai decreti CAM, il disciplinare deve
+includere i criteri ambientali minimi obbligatori definiti dai DM attuativi (es. DM 256/2022
+per edilizia). I criteri CAM sono obbligatori e non derogabili nei disciplinari per quelle
+categorie.
+
+**Implicazioni per il disciplinare**:
+- Verificare se l'oggetto del contratto ricade in una categoria CAM-obbligatoria
+- Inserire i criteri CAM come requisiti tecnici o come criteri di aggiudicazione premianti
+
+---
+
+## Art. 58 - Suddivisione in lotti
+
+**Sintesi**: Le SA devono valutare la suddivisione dell'appalto in lotti. Se non suddividono
+un appalto di importo rilevante in lotti, devono motivarlo nella decisione a contrarre.
+
+**Implicazioni per il disciplinare**:
+- Il disciplinare deve indicare il numero di lotti (o motivare l'assenza di suddivisione)
+- Se ci sono piu' lotti, specificare se le offerte possono essere per singolo lotto o per tutti
+
+---
+
+## Art. 60 - Revisione prezzi
+
+**Sintesi**: I contratti pubblici di durata > 12 mesi devono prevedere clausole di revisione
+dei prezzi. Le modalita' di calcolo devono essere indicate nel disciplinare.
+
+**Implicazioni per il disciplinare**:
+- Per contratti di durata superiore a 12 mesi: includere la clausola di revisione prezzi
+- Indicare il metodo di calcolo (indici ISTAT, ...): non puo' essere discrezionale
 
 ---
 
@@ -42,19 +81,29 @@ presenti anche nel disciplinare (non solo nel bando di gara in senso stretto).
 
 ---
 
-## Art. 87 - DGUE (Documento di Gara Unico Europeo)
+## Art. 87 - Disciplinare di gara e capitolato speciale
+
+**Sintesi**: Disciplina la struttura del disciplinare di gara e del capitolato speciale.
+Il disciplinare contiene le modalita' di svolgimento della gara; il capitolato le
+specifiche tecniche dell'oggetto del contratto.
+
+**NOTA**: In D.Lgs. 36/2023, art. 87 riguarda il disciplinare stesso, NON il DGUE.
+Il DGUE e' regolato dall'art. 91.
+
+---
+
+## Art. 91 - DGUE (Documento di Gara Unico Europeo)
 
 **Sintesi**:
 - Per le procedure sopra soglia europea, le SA richiedono il DGUE come mezzo di
   prova preliminare per esclusioni e requisiti di partecipazione
 - Il DGUE e' un'autodichiarazione dell'operatore economico
-- La SA verifica i requisiti dichiarati prima dell'aggiudicazione (o dell'aggiudicazione
-  provvisoria) tramite FVOE (Fascicolo Virtuale dell'Operatore Economico)
+- La SA verifica i requisiti dichiarati prima dell'aggiudicazione tramite FVOE
 - Formato standard europeo (Regolamento di esecuzione UE 2016/7)
 
 **Implicazioni per il disciplinare**:
-- Sezione "documentazione amministrativa" deve includere il DGUE
-- Deve essere indicato il link al DGUE precompilato o allo standard
+- Sezione "documentazione amministrativa" deve includere il DGUE per procedure sopra soglia
+- Deve essere indicato il link al DGUE precompilato o allo standard UE
 - Deve essere citato il FVOE per la verifica post-aggiudicazione
 - Deve essere richiesto il PassOE (codice ANAC) per la verifica online dei requisiti
 
@@ -66,13 +115,10 @@ presenti anche nel disciplinare (non solo nel bando di gara in senso stretto).
 - Le comunicazioni tra SA e concorrenti avvengono esclusivamente tramite piattaforma
   digitale certificata (es. MEPA, piattaforme regioni, piattaforme certificate AGID)
 - Ogni comunicazione deve essere tracciata e conservata
-- Accesso agli atti: l'operatore economico ha diritto di accesso ai documenti di gara
-  nei termini dell'art. 36 D.Lgs. 36/2023
 
 **Implicazioni per il disciplinare**:
 - Indicare la piattaforma digitale di gara usata (nome e URL)
 - Indicare le modalita' di comunicazione per quesiti, risposte, sedute pubbliche
-- Indicare le modalita' di accesso agli atti post-aggiudicazione
 
 ---
 
@@ -80,64 +126,38 @@ presenti anche nel disciplinare (non solo nel bando di gara in senso stretto).
 
 ### Art. 94 - Esclusioni automatiche (obbligatorie)
 
-**Sintesi**: Sono esclusi obbligatoriamente gli operatori economici nei confronti dei quali:
-a) e' stata pronunciata condanna penale definitiva per determinati reati (corruzione,
-   truffa, riciclaggio, terrorismo, criminalita' organizzata, lavoro irregolare, ecc.)
-b) sono stati commessi gravi illeciti professionali che incidono sull'affidabilita'
-c) ricorrono situazioni di conflitto di interessi non eliminabili
-d) vi sono prove di accordi illeciti volti a falsare la concorrenza
-e) vi e' una falsa dichiarazione o omissione di informazioni rilevanti per l'esclusione
-f) vi sono irregolarita' fiscali o contributive definitivamente accertate
-g) sono stati imposti provvedimenti di interdizione antimafia
+**Sintesi**: Sono esclusi obbligatoriamente gli operatori economici nei confronti dei quali
+ricorrono determinate condanne penali o irregolarita' gravi. L'elenco delle fattispecie
+automatiche e' tassativo.
 
 **Implicazioni per il disciplinare**:
-- Il disciplinare DEVE elencare esattamente le cause di art. 94 (non rimandare solo
-  all'articolo: elencare le ipotesi)
-- La sezione DGUE deve corrispondere alle cause di esclusione dichiarate
-- ATTENZIONE: riferimenti al vecchio art. 80 D.Lgs. 50/2016 sono SBAGLIATI:
-  il nuovo equivalente e' art. 94-98 D.Lgs. 36/2023
+- Il disciplinare DEVE elencare le cause di art. 94 (non rimandare solo all'articolo)
+- ATTENZIONE: riferimenti al vecchio art. 80 D.Lgs. 50/2016 sono obsoleti
 
 ### Artt. 95-98 - Esclusioni non automatiche (facoltative)
 
-**Sintesi**: La SA puo' escludere (ma non e' obbligata) gli operatori in caso di:
-- Insolvenza, amministrazione controllata, procedure concorsuali (art. 95)
-- Gravi illeciti professionali (art. 96)
-- Conflitti di interesse non dichiarati (art. 97)
-- Distorsione della concorrenza (art. 98)
+**Sintesi**: La SA puo' escludere (ma non e' obbligata) gli operatori in caso di insolvenza,
+gravi illeciti professionali, conflitti di interesse e distorsione della concorrenza.
 
 **Implicazioni per il disciplinare**:
-- Il disciplinare deve dichiarare quali cause di esclusione facoltativa intende
-  applicare (non basta un rinvio generico)
-- La scelta di applicare o meno le cause facoltative va motivata
+- Il disciplinare deve dichiarare quali cause di esclusione facoltativa intende applicare
 
 ---
 
-## Art. 99 - Self-cleaning
+## Art. 100 - Criteri di selezione e requisiti speciali
 
-**Sintesi**: L'operatore economico colpito da cause di esclusione (automatiche o non
-automatiche) puo' dimostrare la propria affidabilita' presentando prove concrete di:
-- Risarcimento o impegno a risarcire il danno
-- Collaborazione attiva con le autorita'
-- Misure tecniche, organizzative e personali idonee a prevenire il ripetersi
+**Sintesi**: Disciplina i requisiti di idoneita' professionale e le condizioni di partecipazione.
+Include il limite di proporzionalita' per il fatturato richiesto.
 
-**Implicazioni per il disciplinare**:
-- Il disciplinare deve prevedere la possibilita' di self-cleaning
-- Se la SA decide di non ammettere il self-cleaning per determinate cause, deve
-  motivare la scelta
-
----
-
-## Art. 100 - Idoneita' professionale
-
-**Sintesi**: La SA puo' richiedere come requisito:
-- Iscrizione al registro professionale o commerciale applicabile
-- Autorizzazioni, licenze, abilitazioni richieste dalla legge per l'esecuzione
-  del contratto specifico
+**Nota**: In D.Lgs. 36/2023, art. 100 copre parte di cio' che nel vecchio codice era
+distribuito tra artt. 83 e 84 D.Lgs. 50/2016. Il limite del fatturato a "non piu' del doppio
+del valore stimato" e' stabilito in questo articolo (o in disposizioni correlate): verificare
+il testo aggiornato su Normattiva.
 
 **Implicazioni per il disciplinare**:
+- Fatturato richiesto non puo' superare il doppio del valore stimato del contratto
+  (salvo eccezioni motivate dalla particolarita' dell'appalto)
 - I requisiti di idoneita' professionale devono essere pertinenti all'oggetto
-  del contratto
-- Non e' ammesso richiedere iscrizioni generiche non collegate all'oggetto
 
 ---
 
@@ -146,71 +166,36 @@ automatiche) puo' dimostrare la propria affidabilita' presentando prove concrete
 **Sintesi**:
 - La SA invita il concorrente a completare o chiarire documenti irregolari,
   incompleti o mancanti entro un termine perentorio
-- Il soccorso istruttorio non e' ammesso per:
-  - Carenze che incidono sull'offerta (tecnica o economica)
-  - Carenze dell'offerta stessa
-  - Documentazione che doveva essere prodotta a pena di esclusione espressa
+- Il soccorso istruttorio NON e' ammesso per carenze che incidono sull'offerta
 
 **Implicazioni per il disciplinare**:
 - Il disciplinare deve indicare per quali documenti il soccorso istruttorio e' ammesso
-- Non puo' dichiarare l'esclusione per qualsiasi carenza documentale senza distinguere
-  tra documenti dell'offerta e documenti amministrativi
+- Non puo' dichiarare l'esclusione per qualsiasi carenza documentale
 
 ---
 
-## Artt. 102-103 - Capacita' economica/finanziaria e tecnica/professionale
+## Art. 106 - Garanzie per la partecipazione (garanzia provvisoria)
 
-**Sintesi**:
-- Art. 102: capacita' economica/finanziaria (fatturato, assicurazione RC, rating)
-  - I requisiti devono essere proporzionati all'importo e alle caratteristiche del contratto
-  - Limite: fatturato annuo non puo' superare il doppio del valore stimato del contratto
-    (salvo eccezioni motivate)
-- Art. 103: capacita' tecnica/professionale (esperienze, certificazioni, personale)
-  - L'elenco dei mezzi di prova ammissibili e' tassativo (non inventare prove non previste)
-
-**Implicazioni per il disciplinare**:
-- I requisiti di capacita' devono essere correlati all'oggetto e proporzionati
-- Richiedere un fatturato superiore al doppio del valore stimato del contratto
-  espone la SA a ricorso per limitazione della concorrenza
-- I requisiti di capacita' tecnica devono usare le prove previste dalla norma
-
----
-
-## Artt. 104-106 - Avvalimento
-
-**Sintesi**:
-- L'operatore economico puo' avvalersi delle capacita' di altri soggetti per
-  soddisfare i requisiti di partecipazione (art. 104)
-- Limiti: non e' ammesso per alcuni requisiti specifici (es. qualificazione SOA
-  per lavori di alcuni importi, art. 105)
-- Responsabilita' solidale tra ausiliaria e ausiliato (art. 106)
+**Sintesi**: Disciplina la garanzia provvisoria richiesta ai partecipanti alla gara.
+- Importo base: 2% del valore stimato del contratto (con possibilita' di modifica motivata
+  tra 1% e 4%)
+- Riduzioni per certificazioni di qualita' (ISO 9001, ISO 14001, ecc.)
+- Per procedure sotto soglia: la garanzia provvisoria puo' non essere richiesta;
+  se richiesta, l'importo non puo' superare 1%
 
 **Implicazioni per il disciplinare**:
-- Il disciplinare deve prevedere le modalita' di avvalimento e i documenti richiesti
-- Deve essere specificato se ci sono requisiti per i quali l'avvalimento non e' ammesso
-
----
-
-## Art. 117 - Garanzia provvisoria
-
-**Sintesi**:
-- Importo: 2% del valore stimato del contratto
-- Riduzioni per certificazioni di qualita' (art. 93 co. 7 del vecchio codice, ora art. 117):
-  50% per certificazione ISO 9001; ulteriori riduzioni cumulabili per altre certificazioni
-- Durata: fino alla stipula del contratto
-
-**Implicazioni per il disciplinare**:
-- Indicare l'importo della garanzia (con e senza riduzioni per certificazioni)
+- Indicare l'importo della garanzia (con riduzioni per certificazioni)
 - Specificare le modalita' di presentazione (fidejussione bancaria o assicurativa)
-- Indicare il testo standard della fidejussione (rinvio allo schema ANAC)
+- Per sotto soglia: motivare esplicitamente se si richiede la garanzia
 
 ---
 
-## Art. 118 - Garanzia definitiva
+## Art. 117 - Garanzia definitiva
 
-**Sintesi**:
-- Importo: dal 5% al 10% del valore del contratto (variabile in funzione del ribasso)
-- L'importo aumenta all'aumentare del ribasso offerto (meccanismo anti-anomalia)
+**Sintesi**: Disciplina la garanzia da prestare dopo l'aggiudicazione, a garanzia
+dell'esecuzione del contratto.
+- Importo base: 5-10% del valore del contratto (variabile in funzione del ribasso)
+- L'importo aumenta all'aumentare del ribasso offerto
 
 **Implicazioni per il disciplinare**:
 - Indicare la formula di calcolo della garanzia definitiva in funzione del ribasso
@@ -222,19 +207,23 @@ automatiche) puo' dimostrare la propria affidabilita' presentando prove concrete
 
 **Sintesi**:
 - Art. 119: nessun limite percentuale generale al subappalto (rimosso dal D.Lgs. 36/2023)
-- I concorrenti devono indicare i subappaltatori per contratti sopra soglia
-  (o dichiarare di non ricorrere al subappalto)
-- La SA puo' stabilire che talune lavorazioni/servizi non siano subappaltabili
-  se motivato dalla natura del contratto
-- Pagamento diretto al subappaltatore: obbligatorio in certi casi (contratti di lavori
-  sopra soglia) o su richiesta del subappaltatore (altri casi)
+- Per contratti sopra soglia: obbligo di indicare i subappaltatori nell'offerta
+- Pagamento diretto al subappaltatore: obbligatorio in certi casi o su richiesta
 - Art. 120: verifica requisiti del subappaltatore prima dell'autorizzazione
 
 **Implicazioni per il disciplinare**:
-- Non e' piu' ammesso fissare un limite percentuale massimo di subappalto
-  (es. "max 30%") senza specifica motivazione: il limite generale e' stato rimosso
-- Se la SA vuole limitare il subappalto per determinate lavorazioni, deve motivarlo
-  nel disciplinare
-- ATTENZIONE: riferimenti al vecchio limite del 30% o 40% del D.Lgs. 50/2016
-  sono SBAGLIATI e devono essere rimossi
+- Non e' ammesso fissare un limite percentuale massimo di subappalto senza motivazione
+- Il limite del 30% del D.Lgs. 50/2016 non esiste piu': va rimosso dai disciplinari
 - La sezione subappalto deve includere le modalita' di pagamento diretto
+
+---
+
+## Soglie europee (valori dal 1 gennaio 2026)
+
+*Nota: le soglie sono aggiornate ogni 2 anni dalla Commissione UE. Verificare i valori
+vigenti sul portale EUR-Lex o sul sito MIT prima della pubblicazione di una gara.*
+
+- **Lavori**: EUR 5.404.000
+- **Servizi e forniture - Amministrazioni centrali dello Stato**: EUR 140.000
+- **Servizi e forniture - Altre stazioni appaltanti (sub-centrali)**: EUR 216.000
+- **Servizi e forniture - Settori speciali**: EUR 432.000

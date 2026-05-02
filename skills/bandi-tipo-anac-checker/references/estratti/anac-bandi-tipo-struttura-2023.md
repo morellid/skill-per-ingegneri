@@ -12,15 +12,25 @@ dal portale ANAC.
 
 ## Tipologie di schemi disponibili
 
-ANAC ha pubblicato schemi di disciplinare distinti per:
+**NOTA**: Gli schemi ANAC per il D.Lgs. 36/2023 sono in evoluzione. Il documento
+verificato e' il **Bando tipo n. 1/2023** (aggiornato con Delibera ANAC n. 365 del
+16 settembre 2025), che riguarda i servizi e le forniture sopra soglia con OEPV.
 
-1. **Servizi e forniture - Prezzo piu' basso (PPB)** (sopra soglia europea)
-2. **Servizi e forniture - OEPV** (sopra soglia europea)
-3. **Lavori - Prezzo piu' basso (PPB)** (sopra soglia europea)
-4. **Lavori - OEPV** (sopra soglia europea)
+Per le altre tipologie (lavori, PPB, sotto soglia), ANAC ha pubblicato ulteriori
+schemi / comunicati / delibere: verificare il portale ANAC
+(https://www.anticorruzione.it/-/bandi-tipo) per il catalogo aggiornato prima
+dell'utilizzo. Non tutti i "quattro schemi" che questa skill cita come riferimento
+sono stati verificati come bandi-tipo ANAC formalmente adottati.
+
+Tipologie per cui esistono o sono attesi schemi ANAC:
+1. **Servizi e forniture - OEPV** (sopra soglia) - Bando tipo n. 1/2023 confermato
+2. **Servizi e forniture - Prezzo piu' basso (PPB)** (sopra soglia) - verificare portale
+3. **Lavori - PPB** (sopra soglia) - verificare portale
+4. **Lavori - OEPV** (sopra soglia) - verificare portale
 
 Per le procedure sotto soglia, ANAC fornisce indicazioni ma non schemi separati;
-si applicano gli schemi sopra soglia con gli adattamenti previsti dal D.Lgs. 36/2023.
+si applicano gli schemi sopra soglia come riferimento con gli adattamenti previsti
+dal D.Lgs. 36/2023.
 
 ---
 
@@ -192,14 +202,15 @@ Le SA possono derogare agli schemi ANAC nelle seguenti condizioni:
 I seguenti riferimenti in un disciplinare indicano che non e' stato aggiornato
 al D.Lgs. 36/2023 e richiedono revisione urgente:
 
-| Riferimento trovato nel disciplinare | Riferimento corretto (D.Lgs. 36/2023) |
-|--------------------------------------|---------------------------------------|
-| Art. 80 D.Lgs. 50/2016 (esclusioni) | Artt. 94-98 D.Lgs. 36/2023 |
-| Art. 83 D.Lgs. 50/2016 (requisiti) | Artt. 100-103 D.Lgs. 36/2023 |
-| Art. 89 D.Lgs. 50/2016 (avvalimento) | Artt. 104-106 D.Lgs. 36/2023 |
-| Art. 105 D.Lgs. 50/2016 (subappalto) | Artt. 119-120 D.Lgs. 36/2023 |
-| Art. 93 D.Lgs. 50/2016 (garanzie) | Artt. 117-118 D.Lgs. 36/2023 |
-| Art. 95 D.Lgs. 50/2016 (criteri aggiudicazione) | Artt. 107-108 D.Lgs. 36/2023 |
-| Art. 97 D.Lgs. 50/2016 (anomalia) | Art. 110 D.Lgs. 36/2023 |
-| Limite subappalto "max 30%" o "max 40%" | Rimuovere: art. 119 D.Lgs. 36/2023 non ha limite generale |
-| "ANSI" anziche' "ANAC" (errore tipografico frequente) | ANAC |
+| Riferimento trovato nel disciplinare | Riferimento corretto (D.Lgs. 36/2023) | Note |
+|--------------------------------------|---------------------------------------|------|
+| Art. 80 D.Lgs. 50/2016 (esclusioni) | Artt. 94-98 D.Lgs. 36/2023 | |
+| Art. 83 D.Lgs. 50/2016 (requisiti) | Art. 100 D.Lgs. 36/2023 | |
+| Art. 85 D.Lgs. 50/2016 (DGUE) | Art. 91 D.Lgs. 36/2023 | Attenzione: nel nuovo codice art. 87 = disciplinare, art. 91 = DGUE |
+| Art. 89 D.Lgs. 50/2016 (avvalimento) | Verificare su Normattiva | Articolo corretto nel nuovo codice da verificare |
+| Art. 105 D.Lgs. 50/2016 (subappalto) | Artt. 119-120 D.Lgs. 36/2023 | |
+| Art. 93 D.Lgs. 50/2016 (garanzie) | Provvisoria: art. 106; Definitiva: art. 117 | |
+| Art. 95 D.Lgs. 50/2016 (criteri aggiudicazione) | Artt. 107-108 D.Lgs. 36/2023 | |
+| Art. 97 D.Lgs. 50/2016 (anomalia) | Art. 110 D.Lgs. 36/2023 | |
+| Limite subappalto "max 30%" o "max 40%" | Rimuovere: art. 119 D.Lgs. 36/2023 non ha limite generale | |
+| "ANSI" anziche' "ANAC" (errore tipografico) | ANAC | |

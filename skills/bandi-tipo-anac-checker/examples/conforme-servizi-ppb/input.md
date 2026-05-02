@@ -44,7 +44,7 @@ per attivita' coerente con l'oggetto del contratto.
 **Capacita' economica** (art. 102 D.Lgs. 36/2023): fatturato specifico nel settore ICT negli
 ultimi 3 anni >= EUR 280.000 (pari al valore stimato del contratto).
 **Capacita' tecnica** (art. 103 D.Lgs. 36/2023): almeno 2 contratti analoghi negli ultimi 3 anni.
-DGUE obbligatorio ai sensi dell'art. 87 D.Lgs. 36/2023.
+DGUE obbligatorio ai sensi dell'art. 91 D.Lgs. 36/2023.
 PassOE ANAC obbligatorio.
 
 ### 7. Avvalimento
@@ -68,13 +68,13 @@ Documentazione amministrativa: DGUE, PassOE, garanzia provvisoria, [elenco compl
 Documentazione economica: modulo offerta con ribasso percentuale unico.
 
 ### 11. Garanzia provvisoria
-EUR 5.600 (2% di EUR 280.000, art. 117 D.Lgs. 36/2023).
+EUR 5.600 (2% di EUR 280.000, art. 106 D.Lgs. 36/2023).
 Riduzioni: 50% per certificazione ISO 9001; 20% per certificazione ISO 14001;
 15% per certificazione ISO 45001. Le riduzioni sono cumulabili fino al massimo consentito.
 Fidejussione bancaria o assicurativa secondo schema allegato [ALLEGATO A].
 
 ### 12. Soccorso istruttorio
-Ammesso per i documenti amministrativi ai sensi dell'art. 101 D.Lgs. 36/2023.
+Ammesso per i documenti amministrativi (art. 101 D.Lgs. 36/2023).
 Non ammesso per l'offerta economica e per le carenze che incidono sull'offerta.
 Termine per la regolarizzazione: 5 giorni dalla richiesta della SA.
 
@@ -90,7 +90,7 @@ Controllo antimafia ai sensi del D.Lgs. 159/2011. Termine per la stipula: 65 gio
 dall'efficacia dell'aggiudicazione definitiva.
 
 ### 15. Garanzia definitiva
-[Formula in funzione del ribasso, art. 118 D.Lgs. 36/2023; tabella esplicita].
+[Formula in funzione del ribasso, art. 117 D.Lgs. 36/2023; tabella esplicita].
 
 ### 16. Comunicazioni
 Tutte le comunicazioni avvengono tramite la piattaforma indicata al punto 1

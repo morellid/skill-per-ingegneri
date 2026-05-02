@@ -71,65 +71,39 @@ sources:
       Testo consolidato vigente con modifiche del correttivo integrate.
       Usare per cross-check puntuale prima del release o in caso di dubbio.
 
-  - id: anac-schema-disciplinare-sf-ppb-2023
-    title: "ANAC - Schema di disciplinare di gara per servizi e forniture - Criterio del prezzo piu' basso (sopra soglia)"
-    type: schema-anac
+  - id: anac-portale-bandi-tipo-da-verificare
+    title: "ANAC - Portale bandi-tipo: schemi per PPB e lavori da verificare"
+    type: portale-normativo
     url: https://www.anticorruzione.it/-/bandi-tipo
     accessed: 2026-05-02
     sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/anac-schema-disciplinare-sf-ppb-2023.pdf
-    excerpt_paths:
-      - references/estratti/anac-bandi-tipo-struttura-2023.md
+    binary_path: null
+    excerpt_paths: []
     notes: |
-      Schema di disciplinare per servizi e forniture con criterio del prezzo piu' basso,
-      pubblicato da ANAC per il D.Lgs. 36/2023. Verificare la versione aggiornata sul
-      portale ANAC (https://www.anticorruzione.it/-/bandi-tipo) prima dell'utilizzo:
-      ANAC aggiorna periodicamente gli schemi. Il documento e' gratuito e di dominio pubblico.
+      Portale ANAC per il catalogo aggiornato dei bandi-tipo e schemi di disciplinare.
+      Gli schemi per lavori PPB, lavori OEPV e servizi/forniture PPB non sono stati
+      verificati in dettaglio per questa versione della skill (v0.1.0-alpha).
+      Scaricare e verificare i documenti aggiornati prima di usare la skill per
+      quelle tipologie. Il portale e' gratuito e pubblico.
 
-  - id: anac-schema-disciplinare-sf-oepv-2023
-    title: "ANAC - Schema di disciplinare di gara per servizi e forniture - Criterio OEPV (sopra soglia)"
+  - id: anac-bando-tipo-n1-2023-delibera-365-2025
+    title: "ANAC - Bando tipo n. 1/2023 (aggiornato con Delibera n. 365 del 16 settembre 2025) - Schema disciplinare servizi e forniture OEPV sopra soglia"
     type: schema-anac
     url: https://www.anticorruzione.it/-/bandi-tipo
     accessed: 2026-05-02
     sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/anac-schema-disciplinare-sf-oepv-2023.pdf
+    binary_path: not_in_repo/anac-bando-tipo-n1-2023-delibera-365-2025.pdf
     excerpt_paths:
       - references/estratti/anac-bandi-tipo-struttura-2023.md
     notes: |
-      Schema di disciplinare per servizi e forniture con criterio OEPV. Per la sezione
-      criteri di aggiudicazione, usare in combinazione con la skill
-      oepv-valutatore-offerte-tecniche che copre in dettaglio l'art. 108 D.Lgs. 36/2023.
+      Unico schema ANAC confermato al momento della redazione della skill (v0.1.0-alpha).
+      Bando tipo n. 1/2023 aggiornato con Delibera ANAC n. 365 del 16/09/2025.
+      Riguarda servizi e forniture sopra soglia con criterio OEPV (offerta economicamente
+      piu' vantaggiosa). Per la sezione criteri di aggiudicazione, usare in combinazione
+      con la skill oepv-valutatore-offerte-tecniche (art. 108 D.Lgs. 36/2023).
 
-  - id: anac-schema-disciplinare-lavori-ppb-2023
-    title: "ANAC - Schema di disciplinare di gara per lavori - Criterio del prezzo piu' basso (sopra soglia)"
-    type: schema-anac
-    url: https://www.anticorruzione.it/-/bandi-tipo
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: not_in_repo/anac-schema-disciplinare-lavori-ppb-2023.pdf
-    excerpt_paths:
-      - references/estratti/anac-bandi-tipo-struttura-2023.md
-    notes: |
-      Schema di disciplinare per lavori con criterio del prezzo piu' basso. Include
-      sezioni specifiche per PNRR (termini accelerati), subappalto, qualificazione SOA.
-
-  - id: anac-schema-disciplinare-lavori-oepv-2023
-    title: "ANAC - Schema di disciplinare di gara per lavori - Criterio OEPV (sopra soglia)"
-    type: schema-anac
-    url: https://www.anticorruzione.it/-/bandi-tipo
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: not_in_repo/anac-schema-disciplinare-lavori-oepv-2023.pdf
-    excerpt_paths:
-      - references/estratti/anac-bandi-tipo-struttura-2023.md
-    notes: |
-      Schema di disciplinare per lavori con criterio OEPV. Include sezione criteri
-      valutativi art. 108 D.Lgs. 36/2023; per il dettaglio vedere skill
-      oepv-valutatore-offerte-tecniche.
 
   - id: regolamento-esecuzione-dlgs-36-allegati
     title: "Allegati al D.Lgs. 36/2023 - Allegato I.14 (schema tipo atti concessori)"

@@ -87,39 +87,39 @@ specifiche lavorazioni (es. opere speciali), motivarlo esplicitamente.
 ### C4. Fatturato richiesto sproporzionato (4x valore stimato)
 **Sezione**: 6
 **Trovato**: fatturato richiesto EUR 4.800.000 = 4x importo a base d'asta EUR 1.200.000
-**Problema**: L'art. 102 D.Lgs. 36/2023 stabilisce che il fatturato richiesto non puo'
-superare il doppio del valore stimato del contratto (EUR 2.400.000), salvo eccezioni
-motivate dalla particolarita' dell'appalto. Il requisito di 4x non e' proporzionato
-e limita indebitamente la concorrenza.
-**Riferimento normativo**: Art. 102 co. 3 D.Lgs. 36/2023
+**Problema**: Il D.Lgs. 36/2023 (art. 100 e disposizioni sui criteri di selezione)
+stabilisce che i requisiti di capacita' economica devono essere proporzionati all'oggetto
+del contratto e non possono eccedere il doppio del valore stimato (EUR 2.400.000),
+salvo eccezioni motivate. Il requisito di 4x non e' proporzionato e limita indebitamente
+la concorrenza, esponendo la SA a ricorso per violazione dei principi di accesso al mercato.
+**Riferimento normativo**: Art. 100 D.Lgs. 36/2023 (principio di proporzionalita' criteri selezione)
 **Azione**: Ridurre il fatturato richiesto a max EUR 2.400.000 (2x). Se si ritiene
 necessario un fatturato superiore, inserire una motivazione specifica nel disciplinare.
 
 ### C5. Garanzia provvisoria al 3% invece del 2%
 **Sezione**: 11
 **Trovato**: "EUR 36.000 (3% di EUR 1.200.000)"
-**Problema**: L'art. 117 D.Lgs. 36/2023 fissa la garanzia provvisoria al 2% del valore
-stimato. L'importo corretto e' EUR 24.000. Non e' prevista la riduzione del 50% per
-certificazione ISO 9001 (richiesta dall'art. 117 co. 4 e dallo schema ANAC).
-**Riferimento normativo**: Art. 117 D.Lgs. 36/2023
-**Azione**: Correggere a EUR 24.000 (2%). Aggiungere la tabella delle riduzioni per
-certificazioni di qualita'.
+**Problema**: L'art. 106 D.Lgs. 36/2023 fissa la garanzia provvisoria con base al 2%
+del valore stimato (modificabile motivatamente tra 1% e 4%). Il 3% non e' il valore
+base e la SA non ha motivato la scelta. L'importo base sarebbe EUR 24.000. Non e' prevista
+la tabella delle riduzioni per certificazioni di qualita' (ISO 9001, ecc.).
+**Riferimento normativo**: Art. 106 D.Lgs. 36/2023
+**Azione**: Correggere a EUR 24.000 (2% base) o motivare la scelta di un importo
+diverso. Aggiungere la tabella delle riduzioni per certificazioni di qualita'.
 
 ---
 
 ## Anomalie sostanziali
 
-### S1. DGUE assente per procedura sopra soglia
+### S1. DGUE assente per procedura aperta
 **Sezione**: 6
 **Trovato**: "dichiarazione sostitutiva" al posto del DGUE
-**Problema**: L'art. 87 D.Lgs. 36/2023 rende il DGUE obbligatorio per le procedure
-sopra soglia. Una dichiarazione sostitutiva non e' equivalente.
-**Nota**: l'importo (EUR 1.200.000) e' sotto la soglia europea per lavori (EUR 5.538.000)
-ma sopra soglia per i servizi. Per i lavori sotto soglia europea, il DGUE non e'
-formalmente obbligatorio per legge, ma e' raccomandato dallo schema ANAC.
-Verificare se la SA intende applicare la procedura sopra o sotto soglia.
-**Azione**: Aggiungere il DGUE o indicare esplicitamente che si tratta di procedura
-sotto soglia con le relative semplificazioni.
+**Problema**: L'art. 91 D.Lgs. 36/2023 rende il DGUE obbligatorio per le procedure
+sopra soglia europea. L'importo (EUR 1.200.000) e' sotto la soglia europea per lavori
+(EUR 5.404.000 dal 1/1/2026): il DGUE non e' formalmente obbligatorio per legge, ma
+e' raccomandato dagli schemi ANAC come strumento di standardizzazione anche sotto soglia.
+**Azione**: Valutare se adottare il DGUE anche sotto soglia (consigliato per uniformita')
+o indicare esplicitamente che si tratta di procedura sotto soglia con semplificazioni.
 
 ### S2. CCNL non specificato
 **Sezione**: 9
