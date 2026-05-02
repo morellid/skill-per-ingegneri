@@ -1,0 +1,8 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: DM 37/2008 - Dichiarazione Conformita' Impianti
+short_description: Verifica completezza e allegati obbligatori della Dichiarazione di Conformita' (DdC) per impianti elettrici, termici, gas e altri impianti tecnologici negli edifici ai sensi del DM 22/01/2008 n. 37.
+default_prompt: |
+  Ho una Dichiarazione di Conformita' per un impianto elettrico in un appartamento di 150 mq.
+  Puoi verificare che sia completa e dirmi quali allegati devo includere?

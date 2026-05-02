@@ -1,0 +1,63 @@
+schema_version: 1
+skill: dm37-2008-dichiarazione-conformita
+last_verified: 2026-05-02
+
+sources:
+  - id: dm37-2008-normattiva
+    title: "DM 22 gennaio 2008 n. 37 - Regolamento concernente l'attuazione dell'articolo 11-quaterdecies, comma 13, lettera a) della legge n. 248 del 2005 - testo vigente consolidato"
+    type: decreto
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2008-01-22;37
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dm37-2008-artt-1-7-allegato-i.md
+    notes: |
+      Portale Normattiva (Presidenza Consiglio Ministri) - testo consolidato vigente.
+      Consultabile articolo per articolo. Non scaricabile come PDF unico.
+      Usare per cross-check su articoli specifici e per verificare eventuali modifiche
+      successive all'entrata in vigore (marzo 2008).
+      Il DM 37/2008 ha abrogato la Legge 5 marzo 1990 n. 46 (ex L. 46/1990) e il DPR
+      18 aprile 1994 n. 392 (regolamento attuativo L. 46/1990) ad eccezione dell'art. 1.
+
+  - id: dm37-2008-gu-originale
+    title: "DM 22 gennaio 2008 n. 37 - Testo originale - GU n. 61 del 12/03/2008 Suppl. Ordinario n. 54"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2008/03/12/61/so/54/sg/pdf
+    accessed: 2026-05-02
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm37-2008-gu-originale.pdf
+    excerpt_paths: []
+    notes: |
+      Testo originale pubblicato in Gazzetta Ufficiale. Include Allegato I (modello DdC)
+      e Allegato II (elenco attivita' installatori). Utile come riferimento per il testo
+      originale dell'Allegato I (il modello DdC). Per il testo vigente degli articoli
+      usare Normattiva (id: dm37-2008-normattiva).
+
+# Norme tecniche richiamate dal DM 37/2008 (non embedabili - proprietary)
+secondary_sources_to_evaluate:
+  - id: cei-64-8
+    title: "CEI 64-8 - Impianti elettrici utilizzatori a tensione nominale non superiore a 1000 V in corrente alternata e a 1500 V in corrente continua"
+    type: norma-cei
+    notes: |
+      Norma tecnica a pagamento. Il DM 37/2008 non la cita esplicitamente ma la categoria a)
+      la richiama implicitamente come "regola dell'arte". Gli installatori devono dichiararla
+      nella DdC come norma applicata. Non embedabile: licenza CEI proprietaria.
+      Per la skill: citare solo la denominazione, non il testo.
+
+  - id: uni-7129
+    title: "UNI 7129 - Impianti a gas per uso domestico e similare alimentati da rete di distribuzione"
+    type: norma-uni
+    notes: |
+      Norma tecnica a pagamento, principale riferimento per categoria e) (gas). Non embedabile.
+      Sostituisce il precedente richiamo nell'abrogata L. 46/1990. Per la skill: citare
+      solo la denominazione come norma da dichiarare nella DdC.
+
+  - id: circolare-mise-2008
+    title: "Circolare MiSE esplicativa DM 37/2008 - da identificare"
+    notes: |
+      Verificare se il Ministero delle Imprese e del Made in Italy (ex MSE) ha emesso
+      circolari esplicative sul DM 37/2008 disponibili su mimit.gov.it.
+      Non ancora identificata: da cercare prima della versione v1.0.
