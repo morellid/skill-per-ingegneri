@@ -86,6 +86,24 @@ class TestCombinazioni(unittest.TestCase):
         with self.assertRaises(ValueError):
             generate_combinations(data)
 
+    def test_slu_senza_variabili(self):
+        data = {
+            "gamma_profile": "A1",
+            "permanent_actions": [{"name": "G1", "kind": "G1", "value": 10.0, "effect": "sfavorevole"}],
+            "variable_actions": [],
+        }
+        combos = generate_combinations(data)
+        slu = next(c for c in combos if c.id == "SLU-A1-1")
+        self.assertIsNone(slu.leading_action)
+        self.assertEqual(slu.expression(), "1.3*G1")
+        self.assertAlmostEqual(slu.result, 13.0)
+
+    def test_categoria_variabile_normalizza_spazi(self):
+        data = dict(FIXTURE)
+        data["variable_actions"] = [{"name": "Q_A", "category": " A ", "value": 1.0}]
+        slu = next(c for c in generate_combinations(data) if c.id == "SLU-A1-1")
+        self.assertEqual(slu.leading_action, "Q_A")
+
 
 class TestCli(unittest.TestCase):
     def test_cli_json(self):

@@ -13,3 +13,8 @@ Il formato e' basato su Keep a Changelog e questa skill aderisce a Semantic Vers
 - Estratto normativo strutturato e `sources.yaml`
 - Due esempi: caso ordinario con sismica e caso con categoria non supportata
 - Test suite standard-library per coefficienti, combinazioni e CLI
+
+### Fixed
+- Generazione della combinazione SLU fondamentale anche in assenza di azioni variabili
+- Normalizzazione degli spazi nelle categorie delle azioni variabili
+- Hash SHA256 reale per il PDF ufficiale NTC 2018 in `sources.yaml`

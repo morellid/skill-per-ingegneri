@@ -6,9 +6,9 @@ sources:
   - id: ntc2018-dm-17-01-2018
     title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
     type: decreto
-    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
     accessed: 2026-05-03
-    sha256: REPLACE_WHEN_DOWNLOADED
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
     excerpt_path: references/estratti/ntc2018-par-2-5-2-6.md
@@ -19,5 +19,4 @@ sources:
       - par. 2.5.3: combinazioni fondamentale, rara, frequente, quasi permanente,
         sismica ed eccezionale
       - par. 2.6.1: coefficienti parziali per SLU e Tab. 2.6.I
-      Il binario ufficiale va scaricato in not_in_repo/ e hashato con
-      scripts/fetch-sources.sh o comando SHA256 equivalente prima di una release stabile.
+      Hash SHA256 calcolato sul PDF ufficiale scaricato dall'URL indicato.

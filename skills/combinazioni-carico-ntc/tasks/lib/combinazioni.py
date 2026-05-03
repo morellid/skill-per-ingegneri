@@ -169,7 +169,7 @@ def variable_specs(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     variables: List[Dict[str, Any]] = []
     for idx, action in enumerate(data.get("variable_actions", []), start=1):
         name = str(action.get("name") or f"Q{idx}")
-        category = str(action.get("category") or "").upper()
+        category = str(action.get("category") or "").strip().upper()
         if category not in PSI:
             raise ValueError(
                 f"{name}: categoria variabile non supportata {category!r}. "
@@ -196,6 +196,17 @@ def generate_combinations(data: Dict[str, Any]) -> List[Combination]:
     combinations: List[Combination] = []
 
     base_slu = permanent_terms(data, profile)
+    if not variables:
+        combinations.append(
+            Combination(
+                id=f"SLU-{profile}-1",
+                kind=f"SLU fondamentale {profile}",
+                leading_action=None,
+                terms=list(base_slu),
+                reference="NTC 2018 eq. 2.5.1 + Tab. 2.6.I",
+            )
+        )
+
     for i, lead in enumerate(variables, start=1):
         terms = list(base_slu)
         terms.append(variable_term(lead, GAMMA[profile]["Q"][lead["effect"]], "Q_principale"))
