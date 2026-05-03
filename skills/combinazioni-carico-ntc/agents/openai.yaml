@@ -1,0 +1,4 @@
+display_name: Combinazioni Carico NTC
+short_description: Genera e verifica matrici SLU/SLE/sismiche secondo NTC 2018 par. 2.5.3, con coefficienti psi e gamma tabellati per edifici civili e industriali correnti.
+default_prompt: |
+  Genera la matrice delle combinazioni NTC 2018 per queste azioni: G1=..., G2=..., Q categoria A=..., neve=..., vento=...

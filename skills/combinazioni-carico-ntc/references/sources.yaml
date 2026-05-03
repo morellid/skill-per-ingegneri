@@ -1,0 +1,23 @@
+schema_version: 1
+skill: combinazioni-carico-ntc
+last_verified: 2026-05-03
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
+    accessed: 2026-05-03
+    sha256: REPLACE_WHEN_DOWNLOADED
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    excerpt_path: references/estratti/ntc2018-par-2-5-2-6.md
+    notes: |
+      Pubblicato in GU Serie Generale n. 42 del 20/02/2018, Suppl. Ord. n. 8.
+      Sezioni rilevanti per questa skill:
+      - par. 2.5.2: valori rappresentativi delle azioni variabili e Tab. 2.5.I
+      - par. 2.5.3: combinazioni fondamentale, rara, frequente, quasi permanente,
+        sismica ed eccezionale
+      - par. 2.6.1: coefficienti parziali per SLU e Tab. 2.6.I
+      Il binario ufficiale va scaricato in not_in_repo/ e hashato con
+      scripts/fetch-sources.sh o comando SHA256 equivalente prima di una release stabile.

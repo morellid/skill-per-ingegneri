@@ -23,6 +23,7 @@ Contiene anche:
 | [`nis2-self-assessment`](skills/nis2-self-assessment/) | Self-assessment NIS2 (perimetro, gap analysis misure ACN, notifica incidenti, governance) | D.Lgs. 138/2024 + Det. ACN 379907/2025 |
 | [`ai-act-compliance`](skills/ai-act-compliance/) | Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza | Reg. UE 2024/1689 (AI Act) |
 | [`spettro-risposta-ntc`](skills/spettro-risposta-ntc/) | Calcolo code-driven dello spettro di risposta elastico orizzontale (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)) per SLO/SLD/SLV/SLC | NTC 2018 par. 3.2 + Circ. 7/2019 |
+| [`combinazioni-carico-ntc`](skills/combinazioni-carico-ntc/) | Generazione/verifica code-driven delle combinazioni delle azioni SLU/SLE/sismiche/eccezionali per edifici civili e industriali correnti | NTC 2018 par. 2.5.3 + Tab. 2.5.I + Tab. 2.6.I |
 | [`pfte-allegato-i7-checker`](skills/pfte-allegato-i7-checker/) | Checklist e verifica completezza degli elaborati di un PFTE / progetto esecutivo di lavori pubblici, integrato dal correttivo 2024 | D.Lgs. 36/2023 art. 41 + Allegato I.7 + D.Lgs. 209/2024 |
 | [`modulistica-edilizia-unificata`](skills/modulistica-edilizia-unificata/) | Determina il modulo edilizio unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e l'elenco degli allegati richiesti, integrato con le modifiche del Salva Casa | DPR 380/2001 + D.Lgs. 222/2016 Tabella A + DL 69/2024 conv. L. 105/2024 + Modulistica unificata 27/3/2025 |
 | [`transizione-5-0-asseverazione`](skills/transizione-5-0-asseverazione/) | Asseverazione tecnica ex ante / ex post per il credito d'imposta Piano Transizione 5.0 (calcolo riduzione consumi >=3% struttura o >=5% processo, conversione tep, modelli MIMIT) | DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024 + Circolare MIMIT 25877/2024 |
@@ -50,6 +51,7 @@ skill-per-ingegneri/
 │   ├── nis2-self-assessment/
 │   ├── ai-act-compliance/
 │   ├── spettro-risposta-ntc/
+│   ├── combinazioni-carico-ntc/
 │   ├── pfte-allegato-i7-checker/
 │   ├── modulistica-edilizia-unificata/
 │   ├── transizione-5-0-asseverazione/
