@@ -1,0 +1,17 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: DNSH PNRR - schede e checklist
+short_description: |
+  Supporta RUP, progettisti, soggetti attuatori e consulenti nella verifica
+  DNSH per interventi PNRR e, solo se la misura lo richiede espressamente,
+  per interventi PNC: mappa misura e schede tecniche RGS, individua regime
+  1/2, controlla checklist ex ante/ex post, prepara piano evidenze e bozza
+  di report DNSH per gara, SAL, collaudo e rendicontazione ReGiS.
+default_prompt: |
+  Devo verificare il DNSH di un intervento PNRR per riqualificazione energetica
+  di un edificio pubblico. Sono in fase di progetto esecutivo e devo capire
+  quali schede tecniche RGS applicare, quali checklist ex ante compilare e quali
+  evidenze prevedere in capitolato, SAL e collaudo. Mi guidi con riferimenti
+  alla Guida operativa DNSH RGS 2024 e mi restituisci una tabella di conformita'
+  con documenti mancanti?

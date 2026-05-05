@@ -1,0 +1,136 @@
+schema_version: 1
+skill: dnsh-pnrr-checker
+last_verified: 2026-05-05
+
+# Fonti normative e operative per la verifica DNSH PNRR e per supporto PNC
+# solo su base misura-specifica documentata.
+# Architettura:
+#   - Reg. UE 2020/852 art. 17: definizione DNSH nella tassonomia UE
+#   - Reg. UE 2021/241 artt. 5 e 18: obbligo DNSH per RRF/PNRR
+#   - Circolare RGS n. 22/2024: aggiornamento Guida operativa DNSH
+#   - Guida operativa RGS DNSH terza edizione 2024: schede tecniche, checklist, mappature
+#   - DL 77/2021 art. 14: estensione di governance/procedure PNRR al PNC
+#   - fonti settoriali PNC: rilevanza del DNSH o richiamo operativo nella singola misura
+#
+# I PDF RGS sono stati scaricati in not_in_repo/ e hashati. Le fonti EUR-Lex
+# sono rinvii web ufficiali a testo consolidato/HTML e non vengono versionate.
+
+sources:
+  - id: reg-ue-2020-852-tassonomia-art-17
+    title: "Regolamento (UE) 2020/852 - Tassonomia delle attivita' ecosostenibili - art. 17 DNSH"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/eli/reg/2020/852/oj/ita
+    accessed: 2026-05-04
+    sha256: null
+    license: public-domain-eu-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/reg-ue-2020-852-art-17.md
+    notes: |
+      Fonte primaria per la definizione di "danno significativo" rispetto ai
+      sei obiettivi ambientali: mitigazione, adattamento, acque/risorse marine,
+      economia circolare, prevenzione e riduzione inquinamento, biodiversita'.
+
+  - id: reg-ue-2021-241-rrf-dnsh
+    title: "Regolamento (UE) 2021/241 - Dispositivo per la ripresa e la resilienza - artt. 5 e 18"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/eli/reg/2021/241/oj/ita
+    accessed: 2026-05-04
+    sha256: null
+    license: public-domain-eu-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/reg-ue-2021-241-art-5-18.md
+    notes: |
+      Fonte primaria RRF: il dispositivo finanzia solo misure conformi al
+      principio DNSH; i Piani nazionali devono spiegare come le misure rispettano
+      il principio.
+
+  - id: circolare-rgs-22-2024-dnsh
+    title: "Circolare RGS n. 22 del 14 maggio 2024 - Aggiornamento Guida operativa DNSH"
+    type: circolare
+    url: https://www.rgs.mef.gov.it/VERSIONE-I/circolari/2024/circolare_n_22_2024/
+    accessed: 2026-05-04
+    sha256: 6f3f94e38ba0046250abfbb793ef432c6ab437f7218ec7e6593674c9d8681cb5
+    license: public-domain-italian-public-sector
+    binary_path: not_in_repo/circolare-rgs-22-2024-dnsh.pdf
+    excerpt_paths:
+      - references/estratti/circolare-rgs-22-2024.md
+    notes: |
+      Circolare di aggiornamento della Guida operativa DNSH. Rileva per la
+      nuova edizione delle schede tecniche, l'allineamento ai criteri europei,
+      gli elementi di comprova tracciabili e il collegamento con CAM.
+
+  - id: guida-operativa-dnsh-2024
+    title: "Guida operativa per il rispetto del principio di non arrecare danno significativo all'ambiente (DNSH) - terza edizione, allegata alla circolare RGS n. 22/2024"
+    type: guida-operativa
+    url: https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/CIRCOLARI/2024/22/Guida-Operativa_terza-edizione.pdf
+    accessed: 2026-05-04
+    sha256: f924cb6d94740f3cd03bf405a65ec9eef822626330c2cd1664255589c9ce2c29
+    license: public-domain-italian-public-sector
+    binary_path: not_in_repo/guida-operativa-dnsh-terza-edizione.pdf
+    excerpt_paths:
+      - references/estratti/guida-operativa-dnsh-2024.md
+    notes: |
+      Fonte operativa principale: introduzione metodologica, schede tecniche,
+      checklist ex ante/ex post, mappature fra misure PNRR e schede, regime 1/2,
+      elementi di verifica e documentazione probatoria.
+
+  - id: circolare-rgs-33-2022-dnsh
+    title: "Circolare RGS n. 33 del 13 ottobre 2022 - Aggiornamento Guida operativa DNSH"
+    type: circolare-storica
+    url: https://www.rgs.mef.gov.it/VERSIONE-I/circolari/2022/circolare_n_33_2022/
+    accessed: 2026-05-04
+    sha256: null
+    license: public-domain-italian-public-sector
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Fonte indicata dall'issue #16. E' mantenuta come rinvio storico; per la
+      skill prevale l'aggiornamento 2024 della circolare RGS n. 22/2024.
+
+  - id: italia-domani-dnsh
+    title: "Italia Domani - Do No Significant Harm (DNSH)"
+    type: portale-istituzionale
+    url: https://www.italiadomani.gov.it/it/Interventi/dnsh.html
+    accessed: 2026-05-04
+    sha256: null
+    license: public-domain-italian-public-sector
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina istituzionale di rinvio per documentazione DNSH, aggiornamenti,
+      materiali di supporto e allegati operativi. Da controllare prima di ogni
+      applicazione reale per template e versioni aggiornate.
+
+  - id: dl-77-2021-art-14-piano-complementare
+    title: "Decreto-legge 31 maggio 2021, n. 77 - art. 14 'Estensione della disciplina del PNRR al Piano complementare'"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legge%3A2021%3B77=
+    accessed: 2026-05-05
+    sha256: null
+    license: public-domain-italian-public-sector
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dl-77-2021-art-14-pnc.md
+    notes: |
+      Fonte di contesto sulla governance del Piano complementare: estende al
+      PNC misure e procedure di accelerazione del DL 77/2021. Non e' da sola
+      una fonte sufficiente per presumere l'applicabilita' automatica dell'intero
+      workflow DNSH PNRR a ogni misura PNC.
+
+  - id: ministero-salute-principio-dnsh-pnc
+    title: "Ministero della Salute - Principio DNSH"
+    type: portale-istituzionale
+    url: https://www.pnrr.salute.gov.it/it/pnrr-pagina/principio-dnsh/
+    accessed: 2026-05-05
+    sha256: null
+    license: public-domain-italian-public-sector
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/ministero-salute-principio-dnsh-pnc.md
+    notes: |
+      Pagina istituzionale settoriale che afferma la rilevanza del principio
+      DNSH anche per interventi ricompresi nel PNC, pur fuori dalla rendicontazione
+      RRF. Utile per giustificare supporto PNC solo in modalita' condizionata e
+      non come estensione automatica a tutto il PNC.
