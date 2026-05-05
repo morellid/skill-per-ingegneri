@@ -4,7 +4,7 @@
 
 ## Dominio
 
-Verifica del Piano Operativo di Sicurezza (POS) rispetto ai contenuti minimi previsti dall'**Allegato XV del D.Lgs. 9 aprile 2008 n. 81** (Testo Unico Sicurezza sul Lavoro). Target utente: ingegneri civili, coordinatori per la sicurezza in fase di esecuzione (CSE) e in fase di progettazione (CSP), datori di lavoro di imprese esecutrici, consulenti sicurezza.
+Compilazione assistita e verifica del Piano Operativo di Sicurezza (POS) rispetto ai contenuti minimi previsti dall'**Allegato XV del D.Lgs. 9 aprile 2008 n. 81** (Testo Unico Sicurezza sul Lavoro), con possibile uso dell'impostazione dei modelli semplificati del **Decreto Interministeriale 9 settembre 2014**. Target utente: ingegneri civili, coordinatori per la sicurezza in fase di esecuzione (CSE) e in fase di progettazione (CSP), datori di lavoro di imprese esecutrici, consulenti sicurezza.
 
 ## Fonti autoritative
 
@@ -17,6 +17,7 @@ Tutte gia' catalogate in `references/sources.yaml` con URL + hash. Quando aggior
 Estratti pertinenti gia' preparati in `references/estratti/`:
 - `allegato-xv-testo.md` - testo integrale Allegato XV punti 1, 3, 4 + Allegati XV.1 e XV.2
 - `dlgs-81-art-96-97.md` - obblighi datori di lavoro imprese esecutrici e affidatarie
+- `decreto-interministeriale-2014-modelli-semplificati.md` - modelli semplificati utilizzabili come guida strutturale di compilazione
 
 ## Articoli e punti chiave
 
@@ -32,12 +33,15 @@ Quando produci output, cita SEMPRE l'articolo o il punto specifico (non "il D.Lg
 ## Convenzioni specifiche
 
 ### Cosa NON fare
-- Non firmare/produrre POS pronti al deposito - la skill verifica, non sostituisce CSE/datore di lavoro.
+- Non firmare/produrre POS pronti al deposito - la skill guida e verifica, ma non sostituisce CSE/datore di lavoro.
+- Non inventare nominativi, attestati, lavorazioni, subappalti, PSC, costi o DPI se non forniti dall'utente.
 - Non valutare congruita' del POS al PSC senza il PSC stesso (skill separata, futura).
 - Non interpretare "workplace emotion recognition" sotto Art. 5 AI Act qui (skill `ai-act-compliance`).
 - Non usare prezziari regionali specifici - la skill verifica metodologia, non prezzi unitari.
 
 ### Cosa fare
+- Se l'utente vuole compilare il POS, produrre una bozza sezione per sezione con campi `DA COMPLETARE` dove i dati non sono disponibili.
+- Se l'utente chiede il modello semplificato, usare la struttura del DI 9/9/2014 come scaffolding, senza affermare che il suo uso sia obbligatorio in ogni caso.
 - Per ogni problema rilevato, indicare priorita' (Critica / Alta / Media / Bassa) e riferimento normativo preciso.
 - Sanzione art. 159 co. 1 D.Lgs. 81 (ammenda 2.847,69 - 5.695,36 euro per POS con elementi Allegato XV mancanti) e' il riferimento di severita'. Citarla senza quantificare l'applicazione al caso specifico (compito ispettivo).
 - Casi limite: mere forniture (art. 96 co. 1-bis), POS affidataria vs esecutrice (art. 97), PSC assente, riferimenti obsoleti al D.Lgs. 163/2006 - tutti gestiti nei task files.
@@ -49,6 +53,6 @@ Quando produci output, cita SEMPRE l'articolo o il punto specifico (non "il D.Lg
 ## Stato attuale
 
 - v0.1.0-alpha rilasciata, validata Livello 1 (`scripts/validate.sh` OK).
-- 4 task files completi: `check-completezza`, `check-coerenza-rischi`, `check-costi-sicurezza`, `check-coordinamento`.
+- 6 task files: 2 per compilazione assistita/precheck e 4 per verifica.
 - 8 esempi (4 conformi + 4 non conformi).
 - Validazione Livello 2 da pianificare (validatore esterno).

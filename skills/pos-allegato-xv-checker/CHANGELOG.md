@@ -7,6 +7,18 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- Estensione della skill dalla sola verifica alla compilazione assistita di bozze POS
+- Nuovi task:
+  - `tasks/guida-compilazione-pos.md`
+  - `tasks/precheck-bozza-pos.md`
+- Nuova fonte primaria: Decreto Interministeriale 9 settembre 2014 sui modelli semplificati POS/PSC/FO/PSS
+- Nuovo estratto operativo sul decreto 2014 per uso come traccia di compilazione
+
+### Changed
+- `SKILL.md`, `README.md`, `AGENTS.md` e metadata Codex aggiornati per chiarire che la skill puo' guidare la compilazione, ma non produrre automaticamente un POS definitivo pronto al deposito
+- Aggiornata la descrizione delle fonti normative per includere il decreto 2014 e rimuovere rinvii non ancora catalogati come fonti operative
+
 ### Added (2026-04-25, post v0.1.0-alpha)
 - Estratto integrale Allegato XV punti 1, 3, 4 + Allegati XV.1 e XV.2 in `references/estratti/allegato-xv-testo.md`
 - Estratto art. 96 e 97 D.Lgs. 81/2008 in `references/estratti/dlgs-81-art-96-97.md`
