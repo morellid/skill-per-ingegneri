@@ -118,6 +118,7 @@ Usa campi come:
 Ricorda sempre nella bozza:
 
 - invio almeno 30 giorni prima dell'inizio lavori, salvo urgenza motivata;
+- nei casi di urgenza, indicazione espressa di **data e orario di inizio** delle attivita';
 - indicazione separata di eventuali allegati;
 - necessita' di revisione finale prima della trasmissione.
 

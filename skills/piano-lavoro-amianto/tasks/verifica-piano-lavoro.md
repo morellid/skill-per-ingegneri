@@ -70,7 +70,7 @@ Esempi di finding:
 Controlla se il piano:
 
 - prevede invio almeno 30 giorni prima dell'inizio lavori;
-- oppure motiva correttamente l'urgenza;
+- oppure, nei casi di urgenza, motiva correttamente l'urgenza e indica **data e orario di inizio**;
 - evita di duplicare/confondere la notifica art. 250 quando e' gia' nel perimetro art. 256.
 
 ## Output
