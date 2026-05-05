@@ -17,7 +17,7 @@ Contiene anche:
 
 | Skill | Ambito | Riferimenti normativi |
 |---|---|---|
-| [`pos-allegato-xv-checker`](skills/pos-allegato-xv-checker/) | Verifica completezza e coerenza di un Piano Operativo di Sicurezza (POS) di cantiere | D.Lgs. 81/2008 art. 96-97, Allegato XV |
+| [`pos-allegato-xv-checker`](skills/pos-allegato-xv-checker/) | Guida la compilazione assistita e verifica completezza e coerenza di un Piano Operativo di Sicurezza (POS) di cantiere | D.Lgs. 81/2008 art. 96-97, Allegato XV + DI 9/9/2014 modelli semplificati |
 | [`dvr-generico`](skills/dvr-generico/) | Stesura, verifica e aggiornamento del Documento di Valutazione dei Rischi (DVR) cross-settoriale | D.Lgs. 81/2008 art. 17, 28, 29 |
 | [`gdpr-registro-dpia`](skills/gdpr-registro-dpia/) | Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA) | GDPR art. 30, 35, 36 + provv. Garante |
 | [`nis2-self-assessment`](skills/nis2-self-assessment/) | Self-assessment NIS2 (perimetro, gap analysis misure ACN, notifica incidenti, governance) | D.Lgs. 138/2024 + Det. ACN 379907/2025 |

@@ -1,9 +1,10 @@
 # OpenAI Codex skill metadata.
 # Used by Codex CLI / IDE for the skill picker (UI display).
 # Not used by Claude Code (which reads SKILL.md frontmatter directly).
-display_name: POS Allegato XV Checker
-short_description: Verifica il Piano Operativo di Sicurezza (POS) rispetto ai contenuti minimi dell'Allegato XV D.Lgs. 81/2008. Per CSE/CSP, datori di lavoro, ingegneri civili.
+display_name: POS Allegato XV Assistant
+short_description: Guida la compilazione assistita e verifica il Piano Operativo di Sicurezza (POS) rispetto ai contenuti minimi dell'Allegato XV D.Lgs. 81/2008. Per CSE/CSP, datori di lavoro, ingegneri civili.
 default_prompt: |
-  Verifica questo POS rispetto all'Allegato XV D.Lgs. 81/2008. Controlla
-  completezza voci, coerenza rischi-misure, computo costi sicurezza, e
-  gestione coordinamento con altre imprese.
+  Devo compilare il POS di una piccola impresa esecutrice per un cantiere di
+  ristrutturazione. Guidami sezione per sezione secondo Allegato XV D.Lgs.
+  81/2008, marca i dati mancanti come DA COMPLETARE, poi fai un precheck finale
+  su completezza, coerenza rischi-misure, costi sicurezza e coordinamento.

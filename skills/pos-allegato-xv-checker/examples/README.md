@@ -2,6 +2,11 @@
 
 Casi d'uso per testare e validare la skill. Da preparare in sessione dedicata.
 
+Con l'estensione della skill alla compilazione assistita, saranno utili anche esempi di:
+
+- intake dati incompleto con output `DA COMPLETARE`
+- bozza POS guidata prima del precheck finale
+
 ## Strutture attese
 
 ### Caso conforme

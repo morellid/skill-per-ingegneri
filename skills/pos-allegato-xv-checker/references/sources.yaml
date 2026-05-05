@@ -1,6 +1,6 @@
 schema_version: 1
 skill: pos-allegato-xv-checker
-last_verified: 2026-04-25
+last_verified: 2026-05-05
 
 sources:
   - id: dlgs-81-2008-consolidato-inl-2025-01
@@ -57,6 +57,22 @@ sources:
       Usare per cross-check puntuale su articoli specifici prima di release o in caso
       di dubbio su un'affermazione normativa.
 
+  - id: decreto-interministeriale-2014-modelli-semplificati-pos
+    title: "Decreto Interministeriale 9 settembre 2014 - Modelli semplificati per la redazione del POS, PSC, FO e PSS"
+    type: decreto-interministeriale
+    url: https://www.lavoro.gov.it/documenti-e-norme/normative/Documents/2014/Decreto_Interministeriale_9_settembre_2014.pdf
+    accessed: 2026-05-05
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/decreto-interministeriale-2014-modelli-semplificati.md
+    notes: |
+      Fonte primaria per l'esistenza e l'uso dei modelli semplificati di POS,
+      PSC, fascicolo dell'opera e PSS. Nella skill e' usata come guida strutturale
+      opzionale per la compilazione assistita del POS, senza assumere che il modello
+      semplificato sia obbligatorio in ogni caso concreto.
+
 # Fonti secondarie da valutare in fasi successive
 secondary_sources_to_evaluate:
   - id: inail-linee-guida-pos
@@ -64,12 +80,6 @@ secondary_sources_to_evaluate:
     notes: |
       Da cercare su www.inail.it/portale/it/inail-comunica/pubblicazioni.html
       eventuale pubblicazione operativa su redazione POS.
-
-  - id: cni-circolari-sicurezza
-    title: "CNI - Circolari su applicazione D.Lgs. 81/2008 parte IV"
-    notes: |
-      Da consultare archivio circolari CNI per individuare eventuali chiarimenti
-      su redazione e verifica POS.
 
   - id: interpelli-commissione-interpello
     title: "Interpelli Commissione Interpello - art. 12 D.Lgs. 81/2008"

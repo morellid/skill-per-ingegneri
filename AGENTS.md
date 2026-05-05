@@ -12,7 +12,7 @@ Le skill sono pensate per girare come pacchetti installabili dentro un agent (Cl
 
 Vedi [`README.md`](README.md) per l'elenco aggiornato. Al momento:
 
-- `skills/pos-allegato-xv-checker/` - verifica POS rispetto Allegato XV D.Lgs. 81/2008
+- `skills/pos-allegato-xv-checker/` - guida la compilazione assistita e verifica POS rispetto Allegato XV D.Lgs. 81/2008, con possibile uso del DI 9/9/2014 sui modelli semplificati
 - `skills/dvr-generico/` - DVR per imprese italiane di qualunque settore (D.Lgs. 81/2008 art. 17, 28, 29)
 - `skills/gdpr-registro-dpia/` - Registro art. 30 GDPR + DPIA art. 35
 - `skills/ai-act-compliance/` - AI Act italiano (versione preliminare; la versione inglese full-feature e' nel repo separato `ai-act-skill`)
