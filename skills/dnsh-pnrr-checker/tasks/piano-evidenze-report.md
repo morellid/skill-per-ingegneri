@@ -20,6 +20,8 @@ Produrre:
 4. Fase procedurale e scadenza.
 5. Ruoli: RUP, progettista, DL, impresa, fornitori, collaudatore, consulente ambientale.
 
+Se il caso e' PNC, acquisire anche l'atto della misura che richiama il DNSH o la documentazione ambientale equivalente. Senza questa fonte il report deve restare preliminare.
+
 ## Procedura
 
 ### Passo 1 - Matrice evidenze
@@ -44,6 +46,7 @@ Separare sempre:
 ### Passo 3 - Bozza di report
 
 Il report deve essere asciutto e verificabile. Non dichiarare conformita' finale se mancano evidenze.
+Per PNC, non trattare la Guida RGS 2024 come automaticamente applicabile se il collegamento non e' supportato da una fonte della misura.
 
 Formato:
 

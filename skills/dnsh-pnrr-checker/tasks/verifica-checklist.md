@@ -20,6 +20,8 @@ Restituire:
 4. Elaborati a supporto: relazione tecnica, capitolato, CAM, computo, autorizzazioni, certificazioni, foto, verbali, dichiarazioni fornitori, prove/collaudi.
 5. Eventuali prescrizioni del bando/decreto/atto d'obbligo.
 
+Se il caso e' PNC, chiedi sempre l'atto della misura che richiama il DNSH o le checklist equivalenti. In assenza di tale fonte, la verifica puo' essere solo preliminare.
+
 ## Procedura
 
 ### Passo 1 - Normalizza gli esiti
@@ -30,7 +32,7 @@ Usa solo questi stati:
 - `Non conforme`: requisito violato o evidenza contraria.
 - `Non applicabile motivato`: il requisito non si applica e la motivazione e' esplicita.
 - `Da integrare`: requisito potenzialmente applicabile ma evidenza assente/incompleta.
-- `Da confermare su fonte di misura`: manca la fonte specifica PNRR/PNC.
+- `Da confermare su fonte di misura`: manca la fonte specifica PNRR/PNC o, nei casi PNC, non e' documentato il richiamo al DNSH.
 
 ### Passo 2 - Verifica qualita' delle risposte
 

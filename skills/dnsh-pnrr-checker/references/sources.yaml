@@ -1,13 +1,16 @@
 schema_version: 1
 skill: dnsh-pnrr-checker
-last_verified: 2026-05-04
+last_verified: 2026-05-05
 
-# Fonti normative e operative per la verifica DNSH PNRR/PNC.
+# Fonti normative e operative per la verifica DNSH PNRR e per supporto PNC
+# solo su base misura-specifica documentata.
 # Architettura:
 #   - Reg. UE 2020/852 art. 17: definizione DNSH nella tassonomia UE
 #   - Reg. UE 2021/241 artt. 5 e 18: obbligo DNSH per RRF/PNRR
 #   - Circolare RGS n. 22/2024: aggiornamento Guida operativa DNSH
 #   - Guida operativa RGS DNSH terza edizione 2024: schede tecniche, checklist, mappature
+#   - DL 77/2021 art. 14: estensione di governance/procedure PNRR al PNC
+#   - fonti settoriali PNC: rilevanza del DNSH o richiamo operativo nella singola misura
 #
 # I PDF RGS sono stati scaricati in not_in_repo/ e hashati. Le fonti EUR-Lex
 # sono rinvii web ufficiali a testo consolidato/HTML e non vengono versionate.
@@ -99,3 +102,35 @@ sources:
       Pagina istituzionale di rinvio per documentazione DNSH, aggiornamenti,
       materiali di supporto e allegati operativi. Da controllare prima di ogni
       applicazione reale per template e versioni aggiornate.
+
+  - id: dl-77-2021-art-14-piano-complementare
+    title: "Decreto-legge 31 maggio 2021, n. 77 - art. 14 'Estensione della disciplina del PNRR al Piano complementare'"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legge%3A2021%3B77=
+    accessed: 2026-05-05
+    sha256: null
+    license: public-domain-italian-public-sector
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dl-77-2021-art-14-pnc.md
+    notes: |
+      Fonte di contesto sulla governance del Piano complementare: estende al
+      PNC misure e procedure di accelerazione del DL 77/2021. Non e' da sola
+      una fonte sufficiente per presumere l'applicabilita' automatica dell'intero
+      workflow DNSH PNRR a ogni misura PNC.
+
+  - id: ministero-salute-principio-dnsh-pnc
+    title: "Ministero della Salute - Principio DNSH"
+    type: portale-istituzionale
+    url: https://www.pnrr.salute.gov.it/it/pnrr-pagina/principio-dnsh/
+    accessed: 2026-05-05
+    sha256: null
+    license: public-domain-italian-public-sector
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/ministero-salute-principio-dnsh-pnc.md
+    notes: |
+      Pagina istituzionale settoriale che afferma la rilevanza del principio
+      DNSH anche per interventi ricompresi nel PNC, pur fuori dalla rendicontazione
+      RRF. Utile per giustificare supporto PNC solo in modalita' condizionata e
+      non come estensione automatica a tutto il PNC.

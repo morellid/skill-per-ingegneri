@@ -4,9 +4,10 @@
 display_name: DNSH PNRR - schede e checklist
 short_description: |
   Supporta RUP, progettisti, soggetti attuatori e consulenti nella verifica
-  DNSH per interventi PNRR/PNC: mappa misura e schede tecniche RGS, individua
-  regime 1/2, controlla checklist ex ante/ex post, prepara piano evidenze e
-  bozza di report DNSH per gara, SAL, collaudo e rendicontazione ReGiS.
+  DNSH per interventi PNRR e, solo se la misura lo richiede espressamente,
+  per interventi PNC: mappa misura e schede tecniche RGS, individua regime
+  1/2, controlla checklist ex ante/ex post, prepara piano evidenze e bozza
+  di report DNSH per gara, SAL, collaudo e rendicontazione ReGiS.
 default_prompt: |
   Devo verificare il DNSH di un intervento PNRR per riqualificazione energetica
   di un edificio pubblico. Sono in fase di progetto esecutivo e devo capire

@@ -1,6 +1,6 @@
 # Task: Inquadramento misura e schede DNSH applicabili
 
-Identifica il perimetro DNSH dell'intervento PNRR/PNC: misura, fase, schede tecniche RGS applicabili, regime DNSH e checklist da attivare.
+Identifica il perimetro DNSH dell'intervento PNRR o, nei soli casi documentati, PNC: misura, fase, schede tecniche RGS applicabili, regime DNSH e checklist da attivare.
 
 ## Obiettivo
 
@@ -25,6 +25,7 @@ Chiedere se non forniti:
 6. Documenti disponibili: bando/decreto, relazione tecnica, computo, capitolato, CAM, autorizzazioni, checklist gia' compilate.
 
 Se l'utente fornisce solo dati parziali, procedi con una mappatura preliminare e marca gli esiti come `Da confermare`.
+Se il caso e' PNC e manca l'atto della misura che richiama il DNSH, non produrre una mappatura definitiva.
 
 ## Fonti da leggere
 
@@ -32,6 +33,8 @@ Se l'utente fornisce solo dati parziali, procedi con una mappatura preliminare e
 - `references/estratti/reg-ue-2021-241-art-5-18.md`
 - `references/estratti/circolare-rgs-22-2024.md`
 - `references/estratti/guida-operativa-dnsh-2024.md`
+- `references/estratti/dl-77-2021-art-14-pnc.md`
+- `references/estratti/ministero-salute-principio-dnsh-pnc.md`
 
 ## Procedura
 
@@ -48,6 +51,7 @@ Riassumi i dati disponibili:
 | Fonte specifica di misura disponibile | si'/no | [...] |
 
 Se la fonte specifica di misura manca, dichiara: "La mappatura e' preliminare: la scheda DNSH definitiva deve essere verificata sul bando/decreto/atto d'obbligo e sui template ReGiS vigenti".
+Se il caso e' PNC e manca un atto che richiami il DNSH, dichiara anche: "Per il PNC la skill non puo' assumere automaticamente l'applicabilita' della Guida RGS 2024: serve una fonte misura-specifica".
 
 ### Passo 2 - Classifica le attivita'
 
@@ -59,6 +63,7 @@ Scomponi l'intervento in componenti tecniche. Esempi:
 - rifiuti/acque: impianti trattamento, reti, fanghi, emissioni, autorizzazioni.
 
 Per ogni componente, individua la possibile scheda tecnica della Guida RGS. Se non sei certo, non assegnare in modo definitivo: usa `Da confermare sulla mappatura RGS/misura`.
+Per i casi PNC, assegna schede RGS solo se l'atto della misura le richiama espressamente o se il collegamento e' motivato e documentabile.
 
 ### Passo 3 - Regime DNSH
 
@@ -68,13 +73,14 @@ Quando la Guida distingue regime 1 e regime 2:
 - **Regime 2**: l'intervento deve rispettare il DNSH senza dimostrare contributo sostanziale.
 
 Non inferire il regime solo dalla tipologia di opera: verificare la mappatura misura/scheda e le indicazioni dell'amministrazione titolare.
+Per PNC, se il regime non emerge dall'atto della misura o da un allegato ufficiale, segnalo come `Da confermare su fonte di misura`.
 
 ### Passo 4 - Output
 
 Produrre:
 
 ```markdown
-# Inquadramento DNSH PNRR
+# Inquadramento DNSH
 
 ## 1. Dati intervento
 [tabella]

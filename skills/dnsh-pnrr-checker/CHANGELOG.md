@@ -7,6 +7,14 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Changed
+- Reso esplicito che il supporto PNC e' solo condizionato a una fonte misura-specifica che richiami il DNSH
+- Aggiornate regole operative, task e metadata per impedire l'uso automatico della Guida RGS 2024 su casi PNC privi di base documentale
+
+### Added
+- Fonti integrative per supporto PNC condizionato (`DL 77/2021 art. 14` e pagina istituzionale Ministero della Salute sul principio DNSH)
+- Estratti operativi dedicati al perimetro PNC condizionato
+
 ## [0.1.0-alpha] - 2026-05-04
 
 ### Added
