@@ -1,0 +1,6 @@
+display_name: Piano di Lavoro Amianto
+short_description: Verifica se serve il piano di lavoro ex art. 256 D.Lgs. 81/2008, genera una bozza strutturata e controlla completezza/coerenza tecnica secondo il testo vigente dal 24 gennaio 2026 e il DM 6 settembre 1994.
+default_prompt: |
+  Devo predisporre o controllare un piano di lavoro amianto per rimozione o demolizione:
+  aiutami a capire se ricado nell'art. 256, quali dati devo raccogliere e
+  genera una bozza/checklist pronta per la revisione del professionista.
