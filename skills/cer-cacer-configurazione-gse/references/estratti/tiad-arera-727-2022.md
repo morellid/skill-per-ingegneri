@@ -44,6 +44,6 @@ L'energia condivisa annua e' la sommatoria oraria di `E_cond(h)` su 8.760 ore (8
 
 ## Implicazioni operative per la skill
 
-- Quando l'utente chiede la **simulazione**, l'agent deve usare un'aggregazione oraria; se non sono disponibili profili di consumo orari, va dichiarato chiaramente che la stima e' parametrica (es. ipotesi di **fattore di autoconsumo condiviso** desunto da letteratura GSE: tipicamente 30-50% dell'energia immessa per profili residenziali misti, da rivedere caso per caso).
+- Quando l'utente chiede la **simulazione**, l'agent deve usare un'aggregazione oraria. Se non sono disponibili profili di consumo orari, l'agent **non assume un fattore di condivisione di default** (`eta_share`): il valore va dichiarato dall'utente o dal progettista con la propria fonte/motivazione, e la stima resta parametrica.
 - L'agent non puo' restituire un calcolo "ufficiale": il calcolo finale e' del GSE su dati di misura validati.
-- L'agent cita il TIAD per i flussi e per la TR, ma per la TIP rinvia al DM 7/12/2023.
+- L'agent cita il TIAD per i flussi e per la TR, ma per la TIP rinvia al DM 7/12/2023 (e al DM 127/2025 per il regime PNRR vigente).

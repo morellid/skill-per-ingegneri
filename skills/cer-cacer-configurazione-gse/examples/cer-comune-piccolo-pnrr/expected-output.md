@@ -31,14 +31,15 @@ Output sintetico atteso, articolato sulle 4 sotto-attivita' richieste.
   - piu' soggetti distinti, alcuni distanti tra loro, sotto stessa cabina primaria;
   - presenza di ente locale e finalita' di riduzione poverta' energetica;
   - PMI con partecipazione non principale.
-- Configurazioni alternative compatibili: nessuna (GAC esclusa per assenza di "stesso edificio/condominio", AID esclusa per piu' soggetti).
+- Configurazioni alternative compatibili: nessuna (GAC art. 30 c. 2 esclusa per assenza di "stesso edificio/condominio", AID art. 30 c. 1 lett. a) n. 2 esclusa per piu' soggetti).
 
 ## 5. Verifiche obbligatorie residue
 - [ ] Verifica formale cabina primaria sul portale GSE (gia' indicata, da stampare)
-- [x] Forma giuridica CER da scegliere con notaio (associazione vs cooperativa vs ente del terzo settore)
-- [ ] Verifica titolo abilitativo impianto (Modello Unico se < 200 kW non si applica; per 350 kW serve PAS o autorizzazione regionale)
-- [ ] Verifica popolazione ISTAT 31/12/2025 (dichiarata 1.812 ab.)
-- [ ] Predisposizione DNSH per misura PNRR M2C2 1.2
+- [ ] Forma giuridica CER da scegliere e formalizzare (associazione, cooperativa, ente del terzo settore con iscrizione RUNTS, ecc.) - decisione da prendere con consulente legale e fiscale
+- [ ] Verifica titolo abilitativo impianto FER 350 kW: il titolo applicabile dipende da DPR 380/2001, D.Lgs. 28/2011 e normativa regionale - DA VERIFICARE con il professionista (la skill non ha tra le fonti questa normativa)
+- [ ] Verifica popolazione ISTAT 31/12/2025 (dichiarata 1.812 ab., dentro soglia PNRR < 50.000 ab.)
+- [ ] Predisposizione DNSH per misura PNRR M2C2 1.2 (rinvio a `dnsh-pnrr-checker`)
+- [ ] Verifica scadenze PNRR: stipula accordo entro 30/6/2026, esercizio entro 31/12/2027
 
 ## 6. Avvertenza finale
 La presente scheda e' un supporto preliminare. La qualifica formale del servizio
@@ -50,7 +51,7 @@ giuridica della CER richiede la consulenza di notaio e commercialista.
 
 L'output del task e' la bozza completa di statuto. Estratto dei punti chiave attesi:
 
-- **Art. 1**: denominazione "CER [Nome]", forma giuridica suggerita "associazione riconosciuta" (DA VERIFICARE CON NOTAIO), sede nel municipio.
+- **Art. 1**: denominazione "CER [Nome]", forma giuridica suggerita "associazione riconosciuta" (DA VERIFICARE con consulente legale e formalizzare con la modalita' richiesta dalla forma scelta), sede nel municipio.
 - **Art. 2**: finalita' principale = benefici ambientali (riduzione CO2) + economici (riduzione costi energia) + sociali (fondo poverta' energetica). Avanzi reinvestiti.
 - **Art. 3**: perimetro = cabina primaria [ID], Comune di [Nome].
 - **Art. 4**: soci ammessi = persone fisiche, PMI con partecipazione non principale, enti locali, enti religiosi; grandi imprese escluse.
@@ -66,11 +67,11 @@ L'output del task e' la bozza completa di statuto. Estratto dei punti chiave att
 
 ## 1. Ipotesi di calcolo
 - FV in copertura, 350 kW
-- Producibilita': 1.150 kWh/kWp/anno (Centro Italia)
+- Producibilita': 1.150 kWh/kWp/anno (FONTE: dichiarazione del progettista, simulazione PVGIS sito-specifica per copertura inclinata 15°)
 - Livello di tensione: BT
-- Comune: [Nome] - popolazione 1.812 ab. (< 5.000)
+- Comune: [Nome] - popolazione 1.812 ab. (dentro soglia PNRR < 50.000 ab. post DM 127/2025; era anche dentro la soglia originaria < 5.000 ab.)
 - Profilo utenze: misto residenziale + terziario diurno (PMI turismo)
-- Fattore di condivisione `eta_share`: 0.45 (mix residenziale/diurno, no accumulo)
+- Fattore di condivisione `eta_share`: 0.45 (FONTE: ipotesi del progettista basata su analisi semplificata di sovrapposizione produzione/prelievo, mix residenziale/diurno, no accumulo - da rivedere su profili orari)
 - Valori TIP/TR: parametrici, DA VERIFICARE su pubblicazione GSE/ARERA vigente
 
 ## 2. Bilancio energetico annuo
@@ -85,7 +86,7 @@ L'output del task e' la bozza completa di statuto. Estratto dei punti chiave att
 |---|---|---|
 | TIP | E_cond * (T_fissa(200-600 kW) + correttivo zonale) - DA QUANTIFICARE su valori vigenti | durata 20 anni |
 | TR | E_cond * tr_unitaria(BT) - DA QUANTIFICARE su delibera ARERA vigente | |
-| Contributo PNRR | min(0.40 * 420.000; massimale PNRR) = 168.000 una tantum | riduce parte fissa TIP |
+| Contributo PNRR | min(0.40 * 420.000; massimale PNRR) ~ 168.000 una tantum | regime post DM 127/2025; scadenze 30/6/2026 e 31/12/2027; anticipo fino al 30%; riduce parte fissa TIP |
 
 ## 4. Avvertenze
 - Stima parametrica, calcolo ufficiale a cura del GSE.
@@ -101,7 +102,7 @@ Documento di supporto, non costituisce promessa di flussi economici futuri.
 
 - Documenti generali: anagrafica referente (CER), mandato, elenco POD (41 prelievo + 1 immissione), elenco impianti (1 FV 350 kW), stampa mappa cabina primaria.
 - Documenti CER: atto costitutivo + statuto firmati, verbale nomina referente, eventuale convenzione con ESCo per gestione operativa.
-- Documenti TIP: PAS dell'impianto FV 350 kW (Comunicazione/Modello Unico non applicabili sopra 200 kW), titolo di disponibilita' del capannone (proprieta' Comune), schema unifilare, fine lavori, codice CENSIMP, dichiarazione non doppio incentivo.
-- Documenti PNRR: attestazione ISTAT 1.812 ab. al 31/12/2025, computo metrico 420.000 EUR, cronoprogramma con milestone PNRR, dichiarazione DNSH (rinvio skill dedicata), dichiarazioni anti-doppio-finanziamento, eventuale documentazione gara per appalto del Comune.
+- Documenti TIP: titolo abilitativo dell'impianto FV 350 kW DA VERIFICARE secondo DPR 380/2001 + D.Lgs. 28/2011 + normativa regionale (la skill non determina il titolo applicabile), titolo di disponibilita' del capannone (proprieta' Comune), schema unifilare, fine lavori, codice CENSIMP, dichiarazione non doppio incentivo.
+- Documenti PNRR: attestazione ISTAT 1.812 ab. al 31/12/2025 (dentro soglia < 50.000 ab.), computo metrico 420.000 EUR, cronoprogramma con scadenze 30/6/2026 (accordo) e 31/12/2027 (esercizio), dichiarazione DNSH (rinvio skill dedicata), dichiarazioni anti-doppio-finanziamento, eventuale documentazione gara per appalto del Comune, eventuale richiesta anticipo fino al 30%.
 - Adempimenti continuativi del referente.
 - Avvertenza che la lista esatta segue le Regole Operative GSE vigenti.

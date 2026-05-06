@@ -10,7 +10,7 @@ Produrre una **scheda di simulazione** che riporti, in maniera trasparente:
 - energia immessa annua, energia prelevata annua, energia condivisa stimata;
 - TIP stimata (parte fissa per fascia di potenza + indicazione di applicabilita' del correttivo zonale);
 - TR stimata (sulla base del livello di tensione e del valore vigente ARERA, da verificare);
-- contributo PNRR stimato, se Comune < 5.000 ab.;
+- contributo PNRR stimato, se Comune < 50.000 ab. (regime vigente post DM 127/2025);
 - riduzione TIP per cumulo PNRR, se applicabile;
 - avvertenze esplicite sui limiti.
 
@@ -21,14 +21,15 @@ La simulazione e' **parametrica**: il calcolo definitivo e' del GSE su dati di m
 ### Impianto/i FER
 - Tecnologia (FV, eolico, idro, biomassa).
 - Potenza nominale (kW) per ciascun impianto.
-- Producibilita' attesa (kWh/kWp/anno) per impianti FV: tipicamente 1.000-1.300 a seconda della latitudine; per altre tecnologie va dichiarato il fattore di carico annuo.
+- **Producibilita' attesa** in kWh/kWp/anno o equivalente fattore di carico annuo: il valore va **fornito dall'utente** (sulla base di stime PVGIS / studio di producibilita' sito-specifico, dato storico, dichiarazione del progettista). La skill non assume valori "tipici" non sourceati.
 - Livello di tensione di connessione (BT / MT).
 - Comune e popolazione (per verifica condizione PNRR).
 
 ### Profilo dei consumatori CACER
 - Consumo annuo aggregato (kWh) dei membri.
 - Tipologia profilo (residenziale, terziario, PMI, mista).
-- Se disponibili, profili orari o monthly load profile; altrimenti si applica un **fattore di condivisione** parametrico.
+- Se disponibili, profili orari o monthly load profile.
+- Se profili orari **non disponibili**, l'utente deve **dichiarare un fattore di condivisione** `eta_share` (frazione dell'energia immessa che si stima diventi energia condivisa) e la fonte/ragionamento alla base del valore. La skill non propone un default: senza dato, la simulazione resta parziale.
 
 ### Parametri economici
 - Valore atteso TIP parte fissa per fascia (richiamare il DM 7/12/2023 art. 7, riportare i valori vigenti come ipotesi - **NON inventare**).
@@ -50,8 +51,8 @@ Leggere prima:
 Per ogni impianto FER:
 
 - `E_imm_annua [kWh] = P [kW] * h_eq [h/anno]`
-  - per FV: `h_eq` = 1.000-1.300 in funzione della latitudine (Nord/Centro/Sud);
-  - per eolico, idro, biomassa: dichiarare il fattore di carico (es. 2.500 h/anno biomassa cogen, 1.800 h/anno idro fluente, 2.000-2.500 h/anno eolico onshore di buona qualita').
+
+Il valore di `h_eq` (ore equivalenti annue) deve essere **fornito dall'utente** o dal progettista, con esplicita dichiarazione della fonte (PVGIS, studio anemologico, idrologia di sito, dichiarazione del costruttore, dato storico). La skill non assume valori "tipici" per FV, eolico, idro o biomassa: indicare `DA FORNIRE` se non disponibile e proseguire con quel campo aperto.
 
 Sommare tra impianti per ottenere `E_imm_CACER`.
 
@@ -63,23 +64,23 @@ Sommare i consumi annui dichiarati dai POD partecipanti -> `E_prel_CACER`.
 
 ### Passo 3 - Stima dell'energia condivisa
 
-Senza profili orari, usare un **fattore di condivisione** `eta_share` tale che:
-
-- `E_cond_annua ~ eta_share * min(E_imm_CACER, E_prel_CACER)`
-
-con `eta_share` parametrico (dichiarare il valore scelto):
-
-- `0.30 - 0.40` per impianti FV su utenze prevalentemente residenziali senza accumulo (consumi serali, produzione diurna);
-- `0.40 - 0.55` per CACER con utenze terziarie/PMI con consumi diurni allineati alla produzione FV;
-- `0.55 - 0.70` con sistemi di accumulo dimensionati o profili molto diurni;
-- ridurre se l'energia immessa supera in modo significativo i consumi totali (situazione di sovra-produzione).
-
-L'agent deve esplicitare il valore scelto e la motivazione.
-
-Se sono disponibili **profili orari**, calcolare invece direttamente:
+La definizione operativa, ai sensi del TIAD ARERA 727/2022/R/eel, e':
 
 ```
-E_cond_annua = sum_h min( E_imm_CACER(h) ,  E_prel_CACER(h) )
+E_cond(h) = min( E_imm_CACER(h) ,  E_prel_CACER(h) )
+E_cond_annua = sum_h E_cond(h)
+```
+
+con aggregazione oraria su 8.760 (o 8.784 per anni bisestili) ore.
+
+In presenza di profili orari, applicare direttamente la formula sopra.
+
+In assenza di profili orari, la skill **non assume un fattore di condivisione di default**: l'utente o il progettista devono dichiarare un valore `eta_share` con relativa motivazione/fonte (es. studio sito-specifico, simulazione di scenario, riferimento bibliografico). La skill registra il valore dichiarato come ipotesi e lo riporta esplicitamente nelle avvertenze.
+
+Formula di stima parametrica (quando l'utente fornisce `eta_share`):
+
+```
+E_cond_annua ~ eta_share * min( E_imm_CACER , E_prel_CACER )
 ```
 
 ### Passo 4 - Stima della TIP
@@ -111,7 +112,7 @@ dove `tr_unitaria` (EUR/kWh) e' il valore vigente per la tensione di connessione
 
 ### Passo 6 - Stima del contributo PNRR (se applicabile)
 
-Solo se l'impianto e' situato in Comune con popolazione < 5.000 ab.:
+Solo se l'impianto e' situato in Comune con popolazione **< 50.000 ab.** (regime vigente post DM MASE 127/2025; il DM 414/2023 originario fissava la soglia a 5.000 ab.):
 
 ```
 Contributo_PNRR [EUR] = min( 0.40 * costo_ammissibile ,  massimale_PNRR_applicabile )
@@ -121,6 +122,8 @@ Considerare:
 
 - riduzione della parte fissa della TIP secondo il meccanismo previsto dal DM 7/12/2023;
 - vincoli di spesa ammissibile e cronoprogramma PNRR;
+- **scadenze**: stipula degli accordi di concessione entro il 30 giugno 2026, entrata in esercizio dell'impianto entro 24 mesi e comunque entro il 31 dicembre 2027;
+- **anticipo** richiedibile pari al 30% del contributo massimo (con eventuali opzioni differenziate per impianti 200-1.000 kW dichiarate dal GSE);
 - adempimenti DNSH (rinvio alla skill `dnsh-pnrr-checker`).
 
 ### Passo 7 - Componi la scheda di simulazione
@@ -135,11 +138,11 @@ Output strutturato come sotto.
 ## 1. Ipotesi di calcolo
 - Tecnologia impianto: [...]
 - Potenza nominale: [...] kW
-- Producibilita' attesa: [...] kWh/kWp/anno (fonte: ipotesi parametrica)
+- Producibilita' attesa: [...] kWh/kWp/anno (FONTE DICHIARATA DALL'UTENTE: PVGIS / studio sito-specifico / dato storico / dichiarazione progettista)
 - Livello di tensione: BT / MT
 - Comune: [Nome] - popolazione: [N]
 - Profilo utenze: [residenziale / terziario / misto]
-- Fattore di condivisione `eta_share`: [valore] (con motivazione)
+- Fattore di condivisione `eta_share`: [valore dichiarato dall'utente, con fonte/motivazione] - se profili orari disponibili, indicare "calcolo orario diretto"
 - Valori TIP e TR: ipotizzati sui valori pubblicati vigenti, DA VERIFICARE su pubblicazione GSE/ARERA
 
 ## 2. Bilancio energetico annuo (stima)
@@ -154,7 +157,7 @@ Output strutturato come sotto.
 |---|---|---|
 | TIP | [...] | T_fissa(P) + correttivo zonale, durata 20 anni |
 | TR | [...] | tariffa restituzione, livello tensione [...] |
-| Contributo PNRR (una tantum) | [...] | solo se Comune < 5.000 ab.; riduce parte fissa TIP |
+| Contributo PNRR (una tantum) | [...] | solo se Comune < 50.000 ab. (regime post DM 127/2025); scadenze 30/6/2026 e 31/12/2027; anticipo 30%; riduce parte fissa TIP |
 
 ## 4. Avvertenze
 - I valori sono stime parametriche su ipotesi dichiarate.

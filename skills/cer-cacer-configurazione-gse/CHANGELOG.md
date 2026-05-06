@@ -7,6 +7,21 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Changed (review interno + revisione adversariale Codex, 2026-05-06)
+- Mappatura corretta degli articoli del D.Lgs. 199/2021: AID = art. 30 c. 1 lett. a) n. 2, GAC = art. 30 c. 2 (con vincolo "stesso edificio o condominio" alla lett. a)), CER = art. 31, art. 32 = ARERA / contratti / referente (NON GAC).
+- Recepimento del **DM MASE 16 maggio 2025 n. 127** che modifica il DM 414/2023: soglia PNRR estesa da Comuni < 5.000 ab. a Comuni < 50.000 ab.; scadenze 30/6/2026 (accordi) e 31/12/2027 (esercizio); anticipo richiedibile dal 10% al 30%; estensione alle persone fisiche dell'esclusione del fattore di riduzione F.
+- Distinzione esplicita tra **perimetro soggettivo della CER** (potenzialmente multi-cabina) e **perimetro tecnico della sotto-configurazione incentivata** (vincolo cabina primaria ai fini TIP).
+- Rimosso ogni numero "tipico" non sourceato (h_eq per FV/eolico/idro/biomassa, range `eta_share` 0.30-0.70, "30-50% per residenziale"): ora i parametri vanno dichiarati dall'utente con relativa fonte/motivazione.
+- Rimosse le asserzioni sull'iter autorizzativo dell'impianto ("per 350 kW serve PAS", "Modello Unico se applicabile") che eccedevano le fonti della skill: ora marcate `DA VERIFICARE` con rinvio a DPR 380/2001 + D.Lgs. 28/2011 + DM 19/5/2015 + normativa regionale (fuori scope skill).
+- Soft-end del linguaggio "atto pubblico presso notaio" come unica via di formalizzazione: ora form-dependent (atto pubblico / scrittura privata autenticata / RUNTS / ecc.).
+- Sostituito il placeholder fittizio `PLACEHOLDER_TO_BE_COMPUTED_AT_FETCH` con `null` in tutti i campi `sha256` di `sources.yaml`, in linea con la convenzione del repo.
+- Citazione corretta dell'art. 31 (rimosso il riferimento errato `art. 31 c. 2 lett. a)`).
+- Esempio GAC condominio: rimossa l'equivocazione tra art. 31 e art. 30 c. 2 sul vincolo grandi imprese; il vincolo riguarda la qualita' di socio CER, non l'autoconsumatore GAC.
+
+### Added
+- Nuova fonte `dm-mase-127-2025` in `sources.yaml`.
+- Nuova fonte `gse-pnrr-cacer` (pagina GSE attuazione misure PNRR per CACER < 50.000 ab.).
+
 ## [0.1.0-alpha] - 2026-05-06
 
 ### Added
@@ -22,10 +37,10 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
   - Delibera ARERA 727/2022/R/eel (TIAD)
   - Regole Operative CACER del GSE (Allegato 1)
 - Esempi:
-  - `cer-comune-piccolo-pnrr` - CER su Comune < 5.000 ab. con cumulo TIP + contributo PNRR.
+  - `cer-comune-piccolo-pnrr` - CER su Comune piccolo (1.812 ab.) con cumulo TIP + contributo PNRR.
   - `gac-condominio-fotovoltaico-tetto` - Gruppo Autoconsumatori condominiale con FV in copertura.
 
 ### Note di sviluppo
 - Skill non ancora validata da dominio terzo (energy manager / EGE indipendente).
 - Da considerare draft finche' non passa validazione Livello 2 (vedi `methodology/validazione.md`).
-- Verificare aggiornamenti TIAD ARERA e Regole Operative GSE prima dell'uso operativo: il framework CACER e' stato oggetto di aggiornamenti frequenti dopo l'avvio del servizio (gennaio 2024).
+- Verificare aggiornamenti TIAD ARERA e Regole Operative GSE prima dell'uso operativo: il framework CACER e' stato oggetto di aggiornamenti frequenti dopo l'avvio del servizio (gennaio 2024), incluso il DM MASE 127/2025.

@@ -1,6 +1,6 @@
 # Task: Redazione guidata dello statuto / atto costitutivo di una CER
 
-Costruisce una **bozza strutturata di statuto** di una Comunita' di Energia Rinnovabile, allineata ai contenuti minimi richiesti dal **DM MASE 7/12/2023 art. 4-5** e dal **D.Lgs. 199/2021 art. 31**, da finalizzare in atto pubblico presso un notaio.
+Costruisce una **bozza strutturata di statuto** di una Comunita' di Energia Rinnovabile, allineata ai contenuti minimi richiesti dal **DM MASE 7/12/2023 art. 4-5** e dal **D.Lgs. 199/2021 art. 31**, da finalizzare con la modalita' formale richiesta dalla **forma giuridica scelta** (atto pubblico presso notaio per le forme che lo richiedono, scrittura privata autenticata, procedura RUNTS per gli enti del terzo settore, ecc.).
 
 ## Obiettivo
 
@@ -15,7 +15,7 @@ Produrre un documento markdown con:
 - ruolo del referente verso il GSE;
 - norme su modifiche, recesso, scioglimento.
 
-Lo statuto NON e' definitivo: la skill produce una **bozza tecnica** da consegnare al notaio.
+Lo statuto NON e' definitivo: la skill produce una **bozza tecnica** da consegnare al soggetto chiamato a formalizzarlo (notaio, intermediario abilitato, ufficio RUNTS) secondo la forma giuridica scelta.
 
 ## Input richiesti
 
@@ -82,8 +82,7 @@ Lo statuto della CER deve coprire **almeno** queste voci:
 | | criteri di ripartizione dei benefici economici e quota a finalita' di comunita' |
 | | individuazione del referente verso il GSE |
 | | modifiche statutarie, scioglimento, destinazione del patrimonio residuo |
-| D.Lgs. 199/2021 art. 31 c. 2 | divieto di partecipazione delle grandi imprese |
-| | partecipazione delle PMI subordinata al carattere non principale |
+| D.Lgs. 199/2021 art. 31 | divieto di partecipazione delle grandi imprese alla CER come socie e partecipazione delle PMI subordinata al carattere non principale (citare il comma puntuale dopo verifica sul testo vigente in `references/estratti/dlgs-199-2021-art-30-31-32.md`) |
 
 ### Passo 3 - Genera la bozza con sezioni numerate
 
@@ -108,7 +107,7 @@ Esplicita che eventuali avanzi di gestione sono destinati a:
 
 ### Passo 6 - Disclaimer finale
 
-Concludi con: "La presente bozza non costituisce statuto definitivo. La sua validita' giuridica richiede la sottoscrizione presso notaio o intermediario abilitato e la verifica da parte di un consulente legale e fiscale, in particolare per gli aspetti del terzo settore e degli aiuti di Stato."
+Concludi con: "La presente bozza non costituisce statuto definitivo. La sua validita' giuridica richiede la formalizzazione richiesta dalla forma giuridica scelta (atto pubblico presso notaio, scrittura privata autenticata, iscrizione al RUNTS per gli enti del terzo settore, ecc.) e la verifica da parte di un consulente legale e fiscale, in particolare per gli aspetti del terzo settore, degli aiuti di Stato e della cumulabilita' fiscale."
 
 ## Output
 
@@ -117,8 +116,8 @@ Il task produce un documento markdown strutturato come segue:
 ```markdown
 # Statuto della Comunita' di Energia Rinnovabile [DENOMINAZIONE]
 
-> Bozza tecnica - non sottoscritta - da finalizzare in atto pubblico presso notaio.
-> Riferimenti: D.Lgs. 199/2021 art. 31 + DM MASE 7/12/2023 art. 4-5.
+> Bozza tecnica - non sottoscritta - da finalizzare con la modalita' formale richiesta dalla forma giuridica scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.).
+> Riferimenti: D.Lgs. 199/2021 art. 31 + DM MASE 7/12/2023 art. 4-5 + DM MASE 16/5/2025 n. 127 (modifiche al regime PNRR).
 
 ## Art. 1 - Denominazione, forma giuridica, sede
 [...]
@@ -177,8 +176,10 @@ D.Lgs. 199/2021 art. 31, del DM MASE 7/12/2023, del TIAD ARERA 727/2022/R/eel
 e delle Regole Operative CACER del GSE pro tempore vigenti.
 
 ## Avvertenza
-Bozza tecnica di supporto; richiede revisione di notaio, consulente legale e
-commercialista prima della sottoscrizione.
+Bozza tecnica di supporto; richiede revisione di consulente legale e
+commercialista, e formalizzazione secondo la forma giuridica scelta (atto
+pubblico presso notaio, scrittura privata autenticata, iscrizione al RUNTS,
+ecc.) prima dell'invio al GSE.
 ```
 
 ## Limiti del task

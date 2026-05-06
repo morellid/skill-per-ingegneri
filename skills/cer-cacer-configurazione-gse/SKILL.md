@@ -1,18 +1,18 @@
 ---
 name: cer-cacer-configurazione-gse
-description: Supporta la configurazione di una Comunita' di Energia Rinnovabile (CER), di un Gruppo di Autoconsumatori (GAC) o di un Autoconsumatore Individuale a Distanza (AID) ai sensi del DM MASE 7 dicembre 2023 n. 414 e del D.Lgs. 199/2021 art. 30-32, con verifica del perimetro cabina primaria, redazione guidata dello statuto, simulazione semplificata dell'autoconsumo condiviso e dei flussi economici (TIP, TR, contributo PNRR per Comuni < 5000 abitanti) secondo il TIAD ARERA 727/2022/R/eel, e checklist documentale per la qualifica al portale GSE in conformita' alle Regole Operative CACER. Use when an Italian engineer, energy manager, EGE/ESCo, GSE consultant, ente locale, or amministratore di condominio needs to assess CER/GAC/AID feasibility, prepare the statute of a renewable energy community, simulate shared self-consumption and incentive cash flows, or build the GSE qualification dossier for the CACER service.
+description: Supporta la configurazione di una Comunita' di Energia Rinnovabile (CER, art. 31 D.Lgs. 199/2021), di un Gruppo di Autoconsumatori (GAC, art. 30 c. 2) o di un Autoconsumatore Individuale a Distanza (AID, art. 30 c. 1 lett. a) n. 2) ai sensi del DM MASE 7 dicembre 2023 n. 414 come modificato dal DM MASE 16 maggio 2025 n. 127, con verifica del perimetro cabina primaria, redazione guidata dello statuto, simulazione semplificata dell'autoconsumo condiviso e dei flussi economici (TIP, TR, contributo PNRR per Comuni con popolazione < 50.000 abitanti) secondo il TIAD ARERA 727/2022/R/eel, e checklist documentale per la qualifica al portale GSE in conformita' alle Regole Operative CACER. Use when an Italian engineer, energy manager, EGE/ESCo, GSE consultant, ente locale, or amministratore di condominio needs to assess CER/GAC/AID feasibility, prepare the statute of a renewable energy community, simulate shared self-consumption and incentive cash flows, or build the GSE qualification dossier for the CACER service.
 license: MIT
 ---
 
-# Configurazione CER/CACER e Qualifica GSE (DM 7/12/2023 + Regole Operative GSE + TIAD)
+# Configurazione CER/CACER e Qualifica GSE (DM 7/12/2023 e DM 127/2025 + Regole Operative GSE + TIAD)
 
 ## Quando usare questa skill
 
 Usare questa skill quando un **ingegnere**, **energy manager**, **EGE/ESCo**, **consulente GSE**, **ente locale** o **amministratore di condominio** deve:
-- decidere se un'iniziativa di autoconsumo da fonti rinnovabili puo' configurarsi come **AID**, **GAC** o **CER** ai sensi del **D.Lgs. 199/2021 art. 30-32**;
-- verificare il **perimetro di cabina primaria** richiesto dal DM 7/12/2023 per accedere alla tariffa incentivante (TIP);
+- decidere se un'iniziativa di autoconsumo da fonti rinnovabili puo' configurarsi come **AID** (art. 30 c. 1 lett. a) n. 2), **GAC** (art. 30 c. 2) o **CER** (art. 31) del **D.Lgs. 199/2021**;
+- verificare il **perimetro di cabina primaria** richiesto dal DM 7/12/2023 per accedere alla tariffa incentivante (TIP) sulla sotto-configurazione incentivata, distinguendolo dal perimetro **soggettivo/giuridico** della CER (che puo' coprire piu' cabine primarie con piu' richieste GSE);
 - redigere una **bozza di statuto / atto costitutivo** di una CER coerente con il DM 7/12/2023 e con le Regole Operative CACER del GSE;
-- effettuare una **simulazione semplificata** dell'energia condivisa, della TIP, della tariffa di restituzione (TR) e del **contributo PNRR a fondo perduto** per Comuni con popolazione inferiore a 5.000 abitanti;
+- effettuare una **simulazione semplificata** dell'energia condivisa, della TIP, della tariffa di restituzione (TR) e del **contributo PNRR a fondo perduto** per Comuni con popolazione inferiore a **50.000 abitanti** (soglia introdotta dal DM MASE 127/2025, in luogo dei < 5.000 abitanti del testo originario);
 - predisporre la **checklist documentale** per la richiesta di qualifica al GSE (servizio CACER, accesso TIP, accesso eventuale al contributo PNRR).
 
 **Non usare** questa skill come unico strumento quando l'utente chiede:
@@ -25,7 +25,7 @@ Usare questa skill quando un **ingegnere**, **energy manager**, **EGE/ESCo**, **
 
 ## Avvertenza
 
-Questa skill e' uno strumento di supporto alla redazione/verifica di documenti tecnici. **Non sostituisce il giudizio del professionista firmatario**, del notaio per gli atti costitutivi, del commercialista per gli aspetti fiscali, ne' del soggetto referente nei rapporti con il GSE. L'utilizzo improprio degli output e' responsabilita' esclusiva dell'utente. La skill non produce documenti pronti al deposito, alla firma o al caricamento sul portale GSE.
+Questa skill e' uno strumento di supporto alla redazione/verifica di documenti tecnici. **Non sostituisce il giudizio del professionista firmatario**, del soggetto chiamato a formalizzare l'atto costitutivo (notaio o intermediario abilitato secondo la forma giuridica scelta), del commercialista per gli aspetti fiscali, ne' del soggetto referente nei rapporti con il GSE. L'utilizzo improprio degli output e' responsabilita' esclusiva dell'utente. La skill non produce documenti pronti al deposito, alla firma o al caricamento sul portale GSE.
 
 ## Sotto-attivita' disponibili
 
@@ -49,22 +49,23 @@ Se la richiesta e' generica ("aiutami a fare una CER"), parti da `valuta-perimet
    - soggetti partecipanti (persone fisiche, PMI, enti locali, terzo settore) e ruolo (produttore, consumatore, prosumer, referente);
    - profili di consumo medi orari/annui se disponibili (altrimenti procedi con stime parametriche dichiarate).
 4. Applica la procedura del task con riferimenti puntuali a:
-   - **D.Lgs. 199/2021 art. 30, 31, 32** (definizioni AID, GAC, CER);
-   - **DM MASE 7 dicembre 2023 n. 414** (regolamentazione CACER, TIP, contributo PNRR);
-   - **Regole Operative CACER del GSE** (Allegato 1 - procedure di qualifica e gestione);
+   - **D.Lgs. 199/2021**: art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con il vincolo "stesso edificio o condominio" alla lett. a)), art. 31 (CER), art. 32 (ARERA, contratti, ruolo del referente);
+   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** (regolamentazione CACER, TIP, contributo PNRR per Comuni < 50.000 ab., scadenze 30/6/2026 e 31/12/2027, anticipo al 30%);
+   - **Regole Operative CACER del GSE** (Allegato 1 - procedure di qualifica e gestione, da consultare nella versione vigente);
    - **TIAD - Delibera ARERA 727/2022/R/eel** (regolazione dei flussi fisici/economici di autoconsumo diffuso).
 5. Produci output strutturato che distingua nettamente:
    - dati certi (forniti dall'utente o da fonte ufficiale);
    - stime parametriche (con assunzioni esplicite);
    - voci `DA VERIFICARE CON GSE / NOTAIO / COMMERCIALISTA`.
-6. Chiudi sempre ricordando che la qualifica formale e' rilasciata dal GSE secondo le proprie Regole Operative e che lo statuto deve essere finalizzato in atto pubblico.
+6. Chiudi sempre ricordando che la qualifica formale e' rilasciata dal GSE secondo le proprie Regole Operative e che lo statuto va formalizzato secondo la forma giuridica scelta (atto pubblico presso notaio per le forme che lo richiedono, scrittura privata autenticata o procedure RUNTS per gli enti del terzo settore, ecc.).
 
 ## Fonti normative
 
 Dettaglio in [`references/sources.yaml`](references/sources.yaml). Fonti primarie usate dalla skill:
 
-- **D.Lgs. 8 novembre 2021 n. 199** - art. 30 (Autoconsumo individuale a distanza), art. 31 (Comunita' di energia rinnovabile), art. 32 (Autoconsumatori che agiscono collettivamente).
-- **DM MASE 7 dicembre 2023 n. 414** - Regolamentazione delle CACER e contributo PNRR.
+- **D.Lgs. 8 novembre 2021 n. 199** - art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con stesso edificio/condominio alla lett. a)), art. 31 (CER), art. 32 (ARERA + contratti).
+- **DM MASE 7 dicembre 2023 n. 414** - Regolamentazione delle CACER, TIP, contributo PNRR.
+- **DM MASE 16 maggio 2025 n. 127** - Modifiche al DM 414/2023: estensione perimetro PNRR ai Comuni < 50.000 ab., scadenze 30/6/2026 e 31/12/2027, quota di anticipo dal 10% al 30%, applicazione alle persone fisiche dell'esclusione del fattore di riduzione F.
 - **Delibera ARERA 727/2022/R/eel - TIAD** - Testo Integrato Autoconsumo Diffuso e successivi aggiornamenti applicabili alle CACER.
 - **Regole Operative CACER del GSE** (Allegato 1) - procedure di qualifica, gestione, calcolo energia condivisa.
 

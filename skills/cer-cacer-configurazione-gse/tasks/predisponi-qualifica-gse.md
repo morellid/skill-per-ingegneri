@@ -9,7 +9,7 @@ Produrre una checklist:
 - generale, valida per AID/GAC/CER;
 - specifica per la **forma scelta** (AID, GAC, CER);
 - specifica per **accesso TIP**;
-- specifica per **contributo PNRR** (solo se Comune < 5.000 ab.).
+- specifica per **contributo PNRR** (solo se Comune < 50.000 ab., regime vigente post DM MASE 127/2025).
 
 La checklist e' un supporto al referente; non sostituisce le Regole Operative GSE vigenti.
 
@@ -34,8 +34,8 @@ La checklist e' un supporto al referente; non sostituisce le Regole Operative GS
 - Per CER: forma giuridica, atto costitutivo, statuto firmato, mandato del referente.
 
 ### PNRR (solo se applicabile)
-- Comune di localizzazione dell'impianto e popolazione (riferimento ISTAT al 31/12 anno precedente la domanda).
-- Documenti di spesa stimata, cronoprogramma realizzazione.
+- Comune di localizzazione dell'impianto e popolazione **inferiore a 50.000 abitanti** (riferimento ISTAT al 31/12 anno precedente la domanda; soglia introdotta dal DM MASE 127/2025).
+- Documenti di spesa stimata, cronoprogramma realizzazione coerente con scadenze PNRR (accordi entro 30/6/2026, esercizio entro 31/12/2027).
 - Adempimenti DNSH preliminari.
 
 ## Fonti
@@ -89,14 +89,15 @@ Leggere prima:
 
 ### Passo 4 - Documenti per contributo PNRR (solo se applicabile)
 
-Solo se l'impianto e' in Comune con popolazione < 5.000 ab.:
+Solo se l'impianto e' in Comune con popolazione **< 50.000 abitanti** (regime vigente post DM MASE 127/2025):
 
 - Attestazione popolazione ISTAT al 31/12 anno precedente la domanda.
 - Computo metrico estimativo dell'investimento (parte ammissibile a contributo).
-- Cronoprogramma di realizzazione coerente con i milestone PNRR.
+- Cronoprogramma di realizzazione coerente con i milestone PNRR: stipula accordi di concessione entro **30 giugno 2026** ed entrata in esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque entro il **31 dicembre 2027**.
 - Dichiarazione DNSH per la misura PNRR M2C2 1.2 (rinvio a `dnsh-pnrr-checker`).
 - Dichiarazioni anti-doppio finanziamento (in particolare verso TIP, fondi nazionali e altre agevolazioni).
 - Documentazione di gara per i contratti rilevanti, se l'investimento e' soggetto a obblighi di pubblicita' / trasparenza.
+- Eventuale **richiesta di anticipo** fino al 30% del contributo massimo (con opzioni differenziate per impianti 200-1.000 kW dichiarate dal GSE).
 
 ### Passo 5 - Cronoprogramma e adempimenti del referente post-qualifica
 
@@ -157,13 +158,14 @@ Output strutturato come sotto.
 - [ ] Codice CENSIMP / GAUDI
 - [ ] Dichiarazione non-doppio-incentivo
 
-## 5. Documenti per contributo PNRR (solo se Comune < 5.000 ab.)
+## 5. Documenti per contributo PNRR (solo se Comune < 50.000 ab., regime vigente post DM 127/2025)
 - [ ] Attestazione popolazione ISTAT
 - [ ] Computo metrico estimativo
-- [ ] Cronoprogramma coerente con milestone PNRR
+- [ ] Cronoprogramma coerente con milestone PNRR (accordi entro 30/6/2026, esercizio entro 31/12/2027)
 - [ ] Dichiarazione DNSH (rinvio skill `dnsh-pnrr-checker`)
 - [ ] Dichiarazioni anti-doppio-finanziamento
 - [ ] Documentazione gara, se applicabile
+- [ ] Eventuale richiesta di anticipo (fino al 30% del contributo massimo)
 
 ## 6. Adempimenti continuativi del referente
 - Aggiornamento anagrafica membri

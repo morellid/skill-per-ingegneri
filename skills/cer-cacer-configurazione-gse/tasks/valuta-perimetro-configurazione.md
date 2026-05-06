@@ -1,6 +1,6 @@
 # Task: Verifica perimetro cabina primaria e scelta della configurazione (AID / GAC / CER)
 
-Aiuta a decidere se l'iniziativa di autoconsumo da rinnovabile rientra nel servizio CACER del GSE e in quale forma giuridica conviene impostarla, ai sensi del **D.Lgs. 199/2021 art. 30-32** e del **DM MASE 7/12/2023**.
+Aiuta a decidere se l'iniziativa di autoconsumo da rinnovabile rientra nel servizio CACER del GSE e in quale forma giuridica conviene impostarla, ai sensi del **D.Lgs. 199/2021** (AID art. 30 c. 1 lett. a) n. 2, GAC art. 30 c. 2, CER art. 31) e del **DM MASE 7/12/2023 n. 414** come modificato dal **DM MASE 16/5/2025 n. 127** (regime PNRR vigente: Comuni < 50.000 ab., scadenze 30/6/2026 e 31/12/2027).
 
 ## Obiettivo
 
@@ -34,7 +34,7 @@ Produrre una **scheda di pre-fattibilita'** che indichi:
 ### Obiettivi del cliente
 - Solo riduzione dei costi energetici? Anche obiettivi sociali/ambientali a livello di comunita'? Coinvolgimento di soggetti pubblici?
 - Disponibilita' a costituire un **soggetto giuridico autonomo** (necessario per la CER).
-- Comune ospite con popolazione **< 5.000 abitanti** (rilevante per il contributo PNRR).
+- Comune ospite con popolazione **inferiore a 50.000 abitanti** (regime vigente post DM 127/2025; rilevante per il contributo PNRR a fondo perduto).
 
 ## Fonti
 
@@ -57,35 +57,44 @@ Verifica che:
 
 Se uno di questi vincoli e' violato, segnala chiaramente nel report.
 
-### Passo 2 - Verifica perimetro cabina primaria
+### Passo 2 - Verifica perimetro cabina primaria (sotto-configurazione incentivata)
 
-Per accedere alla TIP, **tutti i POD** della CACER (sia di immissione sia di prelievo) devono trovarsi nell'**area sottesa alla stessa cabina primaria**, identificata sulla mappa pubblicata dal GSE.
+Distingui due piani:
+
+1. **Perimetro tecnico per la TIP**: per ogni **sotto-configurazione incentivata** (richiesta GSE con accesso alla tariffa incentivante), tutti i POD coinvolti - di immissione e di prelievo - devono trovarsi nell'**area sottesa alla stessa cabina primaria**, identificata sulla mappa pubblicata dal GSE. Questo vincolo opera ai fini dell'incentivo, non come requisito costitutivo del soggetto.
+2. **Perimetro soggettivo della CER**: la CER come **soggetto giuridico** non e' obbligata a stare in una sola cabina primaria. Una CER puo' avere soci sotto cabine primarie diverse e presentare al GSE **piu' richieste**, una per ciascun perimetro tecnico.
+
+Procedi cosi':
 
 - Se l'utente fornisce la cabina primaria, registra il dato.
-- Se non la fornisce, indica come **azione obbligatoria** la consultazione della mappa GSE (tramite portale Autoconsumo) prima della costituzione della CACER.
-- Annota il caso in cui i POD ricadano in **cabine primarie diverse**: in tal caso si possono comunque ipotizzare CACER **distinte** per cabina primaria, oppure escludere alcuni POD.
+- Se non la fornisce, indica come **azione obbligatoria** la consultazione della mappa GSE (tramite portale Autoconsumo) prima della richiesta di qualifica della singola sotto-configurazione.
+- Se i POD ricadono in **cabine primarie diverse**:
+  - per AID o GAC, la configurazione resta legata a una sola cabina primaria (per AID per definizione di "POD prelievo + POD immissione", per GAC perche' il vincolo "stesso edificio o condominio" implica una sola cabina);
+  - per CER, valuta l'opzione di una **CER unica con piu' sotto-configurazioni incentivate distinte** (una per cabina primaria) oppure di restringere il perimetro tecnico iniziale, mantenendo aperto il futuro ampliamento.
 
 ### Passo 3 - Mappa la configurazione
 
 Usa il seguente albero decisionale (output testuale, non grafico):
 
-1. **Un solo soggetto** che possiede sia impianto sia POD di prelievo distinti -> **AID** (art. 30 D.Lgs. 199/2021).
-2. **Piu' soggetti** che si trovano nello **stesso edificio o condominio** -> **GAC** (art. 32 D.Lgs. 199/2021), tipicamente strutturato come accordo privato/regolamento condominiale.
-3. **Piu' soggetti** in posizioni diverse, ma sotto la **stessa cabina primaria**, con disponibilita' a un soggetto giuridico autonomo -> **CER** (art. 31 D.Lgs. 199/2021).
+1. **Un solo soggetto** che possiede sia impianto sia POD di prelievo distinti, connessi tramite la rete pubblica -> **AID** (art. 30 c. 1 lett. a) n. 2 D.Lgs. 199/2021).
+2. **Piu' soggetti** che si trovano nello **stesso edificio o condominio** -> **GAC** (art. 30 c. 2 D.Lgs. 199/2021, con il vincolo edificio/condominio alla lett. a)), tipicamente strutturato come accordo privato/regolamento condominiale, con un referente unico verso il GSE ai sensi dell'art. 32.
+3. **Piu' soggetti** distinti che si associano in un soggetto giuridico autonomo per scopi di benefici ambientali/economici/sociali -> **CER** (art. 31 D.Lgs. 199/2021). Per accedere alla TIP, ciascuna sotto-configurazione incentivata deve restare nella stessa cabina primaria, ma il soggetto CER puo' coprire un perimetro piu' ampio.
 
 Se piu' rami sono compatibili, presentali come opzioni con i loro pro/contro:
-- **CER** vs **GAC**: CER e' piu' aperta (anche soggetti distanti, anche enti locali), ma richiede atto costitutivo/statuto e governance. GAC e' piu' snello ma limitato a stesso edificio/condominio.
+- **CER** vs **GAC**: la CER e' piu' aperta (anche soggetti distanti, anche enti locali, possibilita' di piu' sotto-configurazioni incentivate), ma richiede atto costitutivo/statuto e governance. Il GAC e' piu' snello ma limitato a stesso edificio/condominio.
 - **AID** vs **GAC**: AID e' adatto al singolo soggetto multi-POD; non si applica se ci sono piu' soggetti distinti.
 
-### Passo 4 - Valuta il contributo PNRR
+### Passo 4 - Valuta il contributo PNRR (regime vigente post DM 127/2025)
 
-Per gli impianti situati in Comuni con popolazione **< 5.000 abitanti**:
+Per gli impianti situati in Comuni con popolazione **inferiore a 50.000 abitanti** (soglia introdotta dal DM MASE 127/2025; il testo originario del DM 414/2023 limitava il regime a Comuni < 5.000 ab.):
 
-- Segnala l'opportunita' del **contributo PNRR a fondo perduto** ex art. 8 DM 7/12/2023.
-- Ricorda la **riduzione della parte fissa della TIP** in caso di cumulo.
+- Segnala l'opportunita' del **contributo PNRR a fondo perduto** ex art. 8 DM 7/12/2023, nel testo modificato dal DM 127/2025.
+- Ricorda le **scadenze PNRR**: stipula degli accordi di concessione entro il **30 giugno 2026**, entrata in esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque entro il **31 dicembre 2027**.
+- Ricorda la **riduzione della parte fissa della TIP** in caso di cumulo per evitare doppio finanziamento.
+- Ricorda la quota di **anticipo** richiedibile pari al **30%** del contributo massimo (con opzioni specifiche dichiarate dal GSE per impianti 200-1.000 kW).
 - Ricorda gli obblighi PNRR (DNSH, milestone, controlli ANAC/RGS): rinvio alla skill `dnsh-pnrr-checker`.
 
-Se il Comune ha popolazione >= 5.000 abitanti, il contributo PNRR non e' accessibile per quell'impianto: la TIP resta comunque accessibile.
+Se il Comune ha popolazione **>= 50.000 abitanti**, il contributo PNRR non e' accessibile per quell'impianto: la TIP resta comunque accessibile.
 
 ### Passo 5 - Componi la scheda di pre-fattibilita'
 
@@ -113,15 +122,16 @@ Output strutturato come segue.
 - Stato: [in progetto / autorizzato / in esercizio]
 
 ## 4. Configurazione consigliata
-- Configurazione: AID | GAC | CER (con motivazione richiamando art. 30/31/32 D.Lgs. 199/2021)
+- Configurazione: AID | GAC | CER (con motivazione e citazione puntuale di art. 30 c. 1 lett. a) n. 2 / art. 30 c. 2 / art. 31 D.Lgs. 199/2021)
 - Configurazioni alternative compatibili: [se applicabili]
 
 ## 5. Verifiche obbligatorie residue
-- [ ] Verifica cabina primaria sulla mappa GSE
-- [ ] Verifica titolo abilitativo dell'impianto (PAS / Comunicazione / Modello Unico / AU)
+- [ ] Verifica cabina primaria sulla mappa GSE (per ciascuna sotto-configurazione incentivata)
+- [ ] Verifica titolo abilitativo dell'impianto (Comunicazione / Modello Unico / PAS / AU) DA VERIFICARE: la skill non ha tra le fonti il DPR 380/2001 ne' il DM 19/5/2015 sul Modello Unico, l'utente o il professionista determinano il titolo applicabile
 - [ ] Verifica cumulabilita' incentivi (art. 11 DM 7/12/2023)
-- [ ] (Solo CER) Decisione forma giuridica + costituzione presso notaio
-- [ ] (Solo PNRR) Verifica popolazione Comune ISTAT < 5.000 ab.
+- [ ] (Solo CER) Decisione forma giuridica + formalizzazione secondo la forma scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.)
+- [ ] (Solo PNRR) Verifica popolazione Comune ISTAT < 50.000 ab. (regime post DM 127/2025)
+- [ ] (Solo PNRR) Verifica scadenze: accordo di concessione entro 30/6/2026, esercizio entro 31/12/2027
 - [ ] (Solo PNRR) Predisposizione adempimenti DNSH
 
 ## 6. Avvertenza finale
