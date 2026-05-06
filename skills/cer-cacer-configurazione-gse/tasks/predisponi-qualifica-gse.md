@@ -166,8 +166,8 @@ Output strutturato come sotto.
 - [ ] Dichiarazione DNSH (rinvio skill `dnsh-pnrr-checker`)
 - [ ] Dichiarazioni anti-doppio-finanziamento
 - [ ] Documentazione gara, se applicabile
-- [ ] Eventuale richiesta di anticipazione fino al 30% del contributo massimo erogabile
-- [ ] Eventuale richiesta di quota intermedia (40% del contributo, dopo 40% spese ammissibili sostenute e avvio lavori comunicato)
+- [ ] Eventuale richiesta di anticipazione fino al 30% del contributo massimo erogabile (schema di derivazione DM 127/2025, percentuali da confermare sulle Regole Operative GSE post DL 19/2026)
+- [ ] Eventuale richiesta di quota intermedia (40% del contributo, dopo 40% spese ammissibili sostenute e avvio lavori comunicato; schema di derivazione DM 127/2025, da confermare sulle Regole Operative GSE post DL 19/2026)
 
 ## 6. Adempimenti continuativi del referente
 - Aggiornamento anagrafica membri

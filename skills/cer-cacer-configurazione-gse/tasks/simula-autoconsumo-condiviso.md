@@ -157,7 +157,7 @@ Output strutturato come sotto.
 |---|---|---|
 | TIP | [...] | T_fissa(P) + correttivo zonale, durata 20 anni |
 | TR | [...] | tariffa restituzione, livello tensione [...] |
-| Contributo PNRR (una tantum) | [...] | solo se Comune < 50.000 ab.; regime vigente al 2026-05-07 (DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27): stipula accordi di concessione 30/6/2026 + esercizio entro 24 mesi dalla comunicazione dell'accordo (max 31/12/2027); anticipazione 30% + quota intermedia 40% + saldo; riduce parte fissa TIP |
+| Contributo PNRR (una tantum) | [...] | solo se Comune < 50.000 ab.; regime vigente al 2026-05-07 (DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27): stipula accordi di concessione 30/6/2026 + esercizio entro 24 mesi dalla comunicazione dell'accordo (max 31/12/2027); anticipazione 30% + quota intermedia 40% + saldo (schema di derivazione DM 127/2025, da confermare sulle Regole Operative GSE post DL 19/2026); riduce parte fissa TIP |
 
 ## 4. Avvertenze
 - I valori sono stime parametriche su ipotesi dichiarate.
