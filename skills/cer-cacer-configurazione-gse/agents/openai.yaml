@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Configurazione CER/CACER e Qualifica GSE
+short_description: Verifica del perimetro cabina primaria, scelta tra AID/GAC/CER, redazione guidata dello statuto, simulazione di energia condivisa, TIP, tariffa di restituzione e contributo PNRR, e checklist documentale per la qualifica al portale GSE secondo DM 7/12/2023 e Regole Operative CACER.
+default_prompt: |
+  Devo configurare una Comunita' Energetica Rinnovabile (o un Gruppo di
+  Autoconsumatori, o un Autoconsumatore Individuale a Distanza) e qualificarla
+  al GSE: aiutami a verificare il perimetro cabina primaria, scegliere la forma
+  giuridica, redigere lo statuto, simulare l'energia condivisa e gli incentivi
+  (TIP, TR, contributo PNRR) e preparare la checklist documentale.

@@ -1,0 +1,106 @@
+schema_version: 1
+skill: cer-cacer-configurazione-gse
+last_verified: 2026-05-06
+
+# Le fonti sono pubbliche. Per le fonti GSE (linee guida e Regole Operative) la
+# riproduzione integrale del testo non e' consentita: la skill cita riferimenti
+# strutturali (cap. X, par. Y) e parafrasa, senza embed testuale esteso.
+
+sources:
+  - id: dlgs-199-2021
+    title: "D.Lgs. 8 novembre 2021 n. 199 - Attuazione della direttiva (UE) 2018/2001 sulla promozione dell'uso dell'energia da fonti rinnovabili"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;199
+    accessed: 2026-05-06
+    sha256: PLACEHOLDER_TO_BE_COMPUTED_AT_FETCH
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-199-2021.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-199-2021-art-30-31-32.md
+    notes: |
+      Articoli 30 (Autoconsumatore Individuale a Distanza), 31 (CER) e 32 (Gruppi di
+      Autoconsumatori) sono i riferimenti soggettivi delle tre forme di CACER.
+      L'estratto riporta in forma sintetica i requisiti soggettivi e oggettivi citati
+      dalla skill.
+
+  - id: dm-mase-414-2023
+    title: "DM MASE 7 dicembre 2023 n. 414 - Modalita' di individuazione di una tariffa incentivante per la remunerazione degli impianti a fonti rinnovabili inseriti nelle CACER e per la concessione di un contributo PNRR per i Comuni con popolazione fino a 5.000 abitanti"
+    type: decreto-ministeriale
+    url: https://www.mase.gov.it/sites/default/files/archivio/DM_CER_414_07122023.pdf
+    accessed: 2026-05-06
+    sha256: PLACEHOLDER_TO_BE_COMPUTED_AT_FETCH
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-mase-414-2023.pdf
+    excerpt_paths:
+      - references/estratti/dm-mase-414-2023.md
+    notes: |
+      Decreto MASE che disciplina la TIP per le CACER (durata 20 anni, parte fissa
+      per fascia di potenza + correttivo zonale) e il contributo PNRR a fondo perduto
+      (intensita' fino al 40% del costo ammissibile, riservato a impianti in Comuni
+      con popolazione < 5.000 abitanti, cumulabile con TIP ridotta nei limiti del
+      decreto). Articoli rilevanti: 3 (definizioni), 4 (requisiti soggettivi CER),
+      5 (atto costitutivo e statuto), 7 (TIP), 8 (contributo PNRR), 11 (cumulabilita').
+
+  - id: delibera-arera-727-2022-tiad
+    title: "Delibera ARERA 727/2022/R/eel - Testo Integrato Autoconsumo Diffuso (TIAD)"
+    type: delibera-autorita
+    url: https://www.arera.it/atti-e-provvedimenti/dettaglio/it/22/727-22
+    accessed: 2026-05-06
+    sha256: PLACEHOLDER_TO_BE_COMPUTED_AT_FETCH
+    license: public-domain-italian-law
+    binary_path: not_in_repo/delibera-arera-727-2022-tiad.pdf
+    excerpt_paths:
+      - references/estratti/tiad-arera-727-2022.md
+    notes: |
+      Il TIAD definisce le configurazioni di autoconsumo diffuso, regola i flussi
+      verso il GSE e i corrispettivi di restituzione delle componenti tariffarie
+      (TR) sull'energia condivisa. La definizione operativa di energia condivisa
+      come minimo orario tra immessa CACER e prelevata CACER e' centrale per la
+      simulazione. Verificare aggiornamenti successivi (delibere di revisione TIAD).
+
+  - id: gse-regole-operative-cacer
+    title: "GSE - Regole Operative per l'accesso al servizio per l'autoconsumo diffuso (Allegato 1)"
+    type: linee-guida
+    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf
+    accessed: 2026-05-06
+    sha256: PLACEHOLDER_TO_BE_COMPUTED_AT_FETCH
+    license: gse-public-no-redistribution
+    binary_path: not_in_repo/gse-allegato-1-regole-operative-cacer.pdf
+    excerpt_paths:
+      - references/estratti/gse-regole-operative-cacer.md
+    notes: |
+      Allegato 1 delle Regole Operative GSE per il servizio CACER. Documento del
+      GSE: la skill cita riferimenti strutturali (capitolo, paragrafo) e parafrasa,
+      senza embedding integrale del testo. Coprono il flusso di richiesta della
+      qualifica, la documentazione attesa, gli adempimenti del referente e il
+      regime di gestione.
+
+  - id: gse-portale-autoconsumo
+    title: "GSE - Portale Autoconsumo (servizio CACER e mappa cabine primarie)"
+    type: portale-istituzionale
+    url: https://www.gse.it/servizi-per-te/autoconsumo
+    accessed: 2026-05-06
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina ufficiale del GSE da cui si accede a: mappa interattiva delle cabine
+      primarie, applicativo per la richiesta di qualifica CACER, simulatore TIP,
+      regole operative aggiornate. Riferimento operativo per la verifica del
+      perimetro cabina primaria, che la skill non puo' eseguire al posto dell'utente.
+
+  - id: dl-77-2021-pnrr
+    title: "DL 77/2021 conv. L. 108/2021 - Governance del PNRR e prime misure di rafforzamento delle strutture amministrative"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2021-05-31;77
+    accessed: 2026-05-06
+    sha256: PLACEHOLDER_TO_BE_COMPUTED_AT_FETCH
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-77-2021.pdf
+    excerpt_paths: []
+    notes: |
+      Riferimento di cornice per la misura PNRR M2C2 1.2 a sostegno delle CER nei
+      Comuni con popolazione < 5.000 abitanti. La skill non riproduce il testo, ma
+      lo cita come fonte della cornice di governance e dei vincoli DNSH applicabili
+      (rinvio alla skill `dnsh-pnrr-checker`).
