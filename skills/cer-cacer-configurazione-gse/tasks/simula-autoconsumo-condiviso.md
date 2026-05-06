@@ -10,7 +10,7 @@ Produrre una **scheda di simulazione** che riporti, in maniera trasparente:
 - energia immessa annua, energia prelevata annua, energia condivisa stimata;
 - TIP stimata (parte fissa per fascia di potenza + indicazione di applicabilita' del correttivo zonale);
 - TR stimata (sulla base del livello di tensione e del valore vigente ARERA, da verificare);
-- contributo PNRR stimato, se Comune < 50.000 ab. (regime vigente post DM 127/2025);
+- contributo PNRR stimato, se Comune < 50.000 ab. (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27);
 - riduzione TIP per cumulo PNRR, se applicabile;
 - avvertenze esplicite sui limiti.
 
@@ -112,7 +112,7 @@ dove `tr_unitaria` (EUR/kWh) e' il valore vigente per la tensione di connessione
 
 ### Passo 6 - Stima del contributo PNRR (se applicabile)
 
-Solo se l'impianto e' situato in Comune con popolazione **< 50.000 ab.** (regime vigente post DM MASE 127/2025; il DM 414/2023 originario fissava la soglia a 5.000 ab.):
+Solo se l'impianto e' situato in Comune con popolazione **< 50.000 ab.** (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27; la soglia e' stata estesa dal DM MASE 127/2025 da < 5.000 ab. a < 50.000 ab.):
 
 ```
 Contributo_PNRR [EUR] = min( 0.40 * costo_ammissibile ,  massimale_PNRR_applicabile )
@@ -123,7 +123,7 @@ Considerare:
 - riduzione della parte fissa della TIP secondo il meccanismo previsto dal DM 7/12/2023;
 - vincoli di spesa ammissibile e cronoprogramma PNRR;
 - **scadenze (post DL 19/2026 art. 27)**: stipula degli accordi di concessione lato GSE entro il 30 giugno 2026; entrata in esercizio entro 24 mesi dalla comunicazione dell'accordo di concessione e comunque non oltre il 31 dicembre 2027;
-- **erogazione in tre fasi**: anticipazione fino al 30% del contributo massimo erogabile, quota intermedia pari al 40% (post-40% delle spese ammissibili sostenute e comunicato l'avvio dei lavori), saldo finale;
+- **erogazione in tre fasi** (schema introdotto dal DM 127/2025 e Regole Operative GSE 16/7/2025; continuita' nel regime post DL 19/2026 da confermare sulla versione vigente delle Regole Operative): anticipazione fino al 30% del contributo massimo erogabile, quota intermedia pari al 40% (post-40% delle spese ammissibili sostenute e comunicato l'avvio dei lavori), saldo finale;
 - adempimenti DNSH (rinvio alla skill `dnsh-pnrr-checker`).
 
 ### Passo 7 - Componi la scheda di simulazione

@@ -50,7 +50,7 @@ Se la richiesta e' generica ("aiutami a fare una CER"), parti da `valuta-perimet
    - profili di consumo medi orari/annui se disponibili (altrimenti procedi con stime parametriche dichiarate).
 4. Applica la procedura del task con riferimenti puntuali a:
    - **D.Lgs. 199/2021**: art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con il vincolo "stesso edificio o condominio" alla lett. a)), art. 31 (CER), art. 32 (ARERA, contratti, ruolo del referente);
-   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** e da ultimo dal **DL 19 febbraio 2026 n. 19 art. 27** (regime CACER vigente: TIP, contributo PNRR per Comuni < 50.000 ab.; **stipula accordi di concessione entro 30/6/2026**; esercizio **entro 24 mesi dalla comunicazione dell'accordo** e comunque non oltre 31/12/2027; erogazione in tre fasi: anticipazione 30% + quota intermedia 40% + saldo);
+   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** e da ultimo dal **DL 19 febbraio 2026 n. 19 art. 27** (regime CACER vigente: TIP, contributo PNRR per Comuni < 50.000 ab.; **stipula accordi di concessione entro 30/6/2026**; esercizio **entro 24 mesi dalla comunicazione dell'accordo** e comunque non oltre 31/12/2027; erogazione in tre fasi - anticipazione 30% + quota intermedia 40% + saldo - di derivazione DM 127/2025, da confermare sulle Regole Operative GSE post DL 19/2026);
    - **Regole Operative CACER del GSE** (Allegato 1 - procedure di qualifica e gestione, da consultare nella versione vigente);
    - **TIAD - Delibera ARERA 727/2022/R/eel** (regolazione dei flussi fisici/economici di autoconsumo diffuso).
 5. Produci output strutturato che distingua nettamente:

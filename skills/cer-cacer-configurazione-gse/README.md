@@ -10,7 +10,7 @@ Skill di supporto alla configurazione di una **Configurazione di Autoconsumo Col
 - Ingegneri (industriali, energetici, gestionali) e periti industriali
 - Energy manager, EGE, ESCo
 - Consulenti GSE / consulenti PNRR
-- Enti locali (Comuni, Unioni di Comuni) e in particolare Comuni con popolazione < 50.000 abitanti che valutano il contributo PNRR (regime vigente post DM MASE 127/2025; soglia originaria del DM 414/2023 era < 5.000 ab.)
+- Enti locali (Comuni, Unioni di Comuni) e in particolare Comuni con popolazione < 50.000 abitanti che valutano il contributo PNRR (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27; soglia originaria del DM 414/2023 era < 5.000 ab., poi estesa a < 50.000 ab. dal DM 127/2025)
 - Amministratori di condominio per GAC condominiali
 
 ## Cosa fa

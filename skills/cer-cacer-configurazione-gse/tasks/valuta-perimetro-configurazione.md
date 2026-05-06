@@ -34,7 +34,7 @@ Produrre una **scheda di pre-fattibilita'** che indichi:
 ### Obiettivi del cliente
 - Solo riduzione dei costi energetici? Anche obiettivi sociali/ambientali a livello di comunita'? Coinvolgimento di soggetti pubblici?
 - Disponibilita' a costituire un **soggetto giuridico autonomo** (necessario per la CER).
-- Comune ospite con popolazione **inferiore a 50.000 abitanti** (regime vigente post DM 127/2025; rilevante per il contributo PNRR a fondo perduto).
+- Comune ospite con popolazione **inferiore a 50.000 abitanti** (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27; soglia rilevante per il contributo PNRR a fondo perduto).
 
 ## Fonti
 
@@ -91,7 +91,7 @@ Per gli impianti situati in Comuni con popolazione **inferiore a 50.000 abitanti
 - Segnala l'opportunita' del **contributo PNRR a fondo perduto** ex art. 8 DM 7/12/2023, nel testo modificato dal DM 127/2025 e dall'art. 27 DL 19/2026.
 - Ricorda le **scadenze PNRR vigenti** (post DL 19/2026): **stipula degli accordi di concessione** lato GSE **entro il 30 giugno 2026**; entrata in esercizio entro **24 mesi dalla comunicazione dell'accordo di concessione** e comunque **non oltre il 31 dicembre 2027** (limite invalicabile).
 - Ricorda la **riduzione della parte fissa della TIP** in caso di cumulo per evitare doppio finanziamento.
-- Ricorda l'articolazione del rimborso in tre fasi: **anticipazione** fino al **30%** del contributo massimo, **quota intermedia** pari al **40%** del contributo (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori), **saldo** finale.
+- Ricorda l'articolazione del rimborso in tre fasi (schema introdotto dal DM 127/2025 e formalizzato nelle Regole Operative GSE 16/7/2025; **continuita' nel regime post DL 19/2026 da confermare** sulla versione vigente): **anticipazione** fino al **30%** del contributo massimo, **quota intermedia** pari al **40%** del contributo (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori), **saldo** finale.
 - Ricorda gli obblighi PNRR (DNSH, milestone, controlli ANAC/RGS): rinvio alla skill `dnsh-pnrr-checker`.
 
 Se il Comune ha popolazione **>= 50.000 abitanti**, il contributo PNRR non e' accessibile per quell'impianto: la TIP resta comunque accessibile.
@@ -130,7 +130,7 @@ Output strutturato come segue.
 - [ ] Verifica titolo abilitativo dell'impianto (Comunicazione / Modello Unico / PAS / AU) DA VERIFICARE: la skill non ha tra le fonti il DPR 380/2001 ne' il DM 19/5/2015 sul Modello Unico, l'utente o il professionista determinano il titolo applicabile
 - [ ] Verifica cumulabilita' incentivi (art. 11 DM 7/12/2023)
 - [ ] (Solo CER) Decisione forma giuridica + formalizzazione secondo la forma scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.)
-- [ ] (Solo PNRR) Verifica popolazione Comune ISTAT < 50.000 ab. (regime post DM 127/2025)
+- [ ] (Solo PNRR) Verifica popolazione Comune ISTAT < 50.000 ab. (regime vigente al 2026-05-07; soglia introdotta dal DM 127/2025)
 - [ ] (Solo PNRR) Verifica scadenze (post DL 19/2026): stipula accordi di concessione GSE entro 30/6/2026, esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque non oltre 31/12/2027
 - [ ] (Solo PNRR) Predisposizione adempimenti DNSH
 

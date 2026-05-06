@@ -86,7 +86,7 @@ L'output del task e' la bozza completa di statuto. Estratto dei punti chiave att
 |---|---|---|
 | TIP | E_cond * (T_fissa(200-600 kW) + correttivo zonale) - DA QUANTIFICARE su valori vigenti | durata 20 anni |
 | TR | E_cond * tr_unitaria(BT) - DA QUANTIFICARE su delibera ARERA vigente | |
-| Contributo PNRR | min(0.40 * 420.000; massimale PNRR) ~ 168.000 una tantum | regime vigente al 2026-05-07 (DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27); stipula accordi di concessione GSE entro 30/6/2026; esercizio entro 24 mesi dalla comunicazione dell'accordo (max 31/12/2027); erogazione in 3 fasi: anticipazione 30% + quota intermedia 40% + saldo; riduce parte fissa TIP |
+| Contributo PNRR | min(0.40 * 420.000; massimale PNRR) ~ 168.000 una tantum | regime vigente al 2026-05-07 (DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27); stipula accordi di concessione GSE entro 30/6/2026; esercizio entro 24 mesi dalla comunicazione dell'accordo (max 31/12/2027); erogazione in 3 fasi (anticipazione 30% + quota intermedia 40% + saldo - schema di derivazione DM 127/2025, da confermare sulla versione vigente delle Regole Operative GSE post DL 19/2026); riduce parte fissa TIP |
 
 ## 4. Avvertenze
 - Stima parametrica, calcolo ufficiale a cura del GSE.
