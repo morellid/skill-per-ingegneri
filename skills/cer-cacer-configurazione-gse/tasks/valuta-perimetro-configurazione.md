@@ -89,9 +89,9 @@ Se piu' rami sono compatibili, presentali come opzioni con i loro pro/contro:
 Per gli impianti situati in Comuni con popolazione **inferiore a 50.000 abitanti** (soglia introdotta dal DM MASE 127/2025; il testo originario del DM 414/2023 limitava il regime a Comuni < 5.000 ab.):
 
 - Segnala l'opportunita' del **contributo PNRR a fondo perduto** ex art. 8 DM 7/12/2023, nel testo modificato dal DM 127/2025.
-- Ricorda le **scadenze PNRR**: stipula degli accordi di concessione entro il **30 giugno 2026**, entrata in esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque entro il **31 dicembre 2027**.
+- Ricorda le **scadenze PNRR**: completamento dei lavori entro il **30 giugno 2026**; entrata in esercizio entro **24 mesi dalla data di completamento dei lavori** e comunque non oltre il **31 dicembre 2027**.
 - Ricorda la **riduzione della parte fissa della TIP** in caso di cumulo per evitare doppio finanziamento.
-- Ricorda la quota di **anticipo** richiedibile pari al **30%** del contributo massimo (con opzioni specifiche dichiarate dal GSE per impianti 200-1.000 kW).
+- Ricorda l'articolazione del rimborso in tre fasi: **anticipazione** fino al **30%** del contributo massimo, **quota intermedia** pari al **40%** del contributo (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori), **saldo** finale.
 - Ricorda gli obblighi PNRR (DNSH, milestone, controlli ANAC/RGS): rinvio alla skill `dnsh-pnrr-checker`.
 
 Se il Comune ha popolazione **>= 50.000 abitanti**, il contributo PNRR non e' accessibile per quell'impianto: la TIP resta comunque accessibile.
@@ -131,18 +131,18 @@ Output strutturato come segue.
 - [ ] Verifica cumulabilita' incentivi (art. 11 DM 7/12/2023)
 - [ ] (Solo CER) Decisione forma giuridica + formalizzazione secondo la forma scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.)
 - [ ] (Solo PNRR) Verifica popolazione Comune ISTAT < 50.000 ab. (regime post DM 127/2025)
-- [ ] (Solo PNRR) Verifica scadenze: accordo di concessione entro 30/6/2026, esercizio entro 31/12/2027
+- [ ] (Solo PNRR) Verifica scadenze: completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027
 - [ ] (Solo PNRR) Predisposizione adempimenti DNSH
 
 ## 6. Avvertenza finale
 La presente scheda e' un supporto preliminare. La qualifica formale del servizio
 CACER e' rilasciata dal GSE secondo le Regole Operative vigenti. La forma
-giuridica della CER richiede la consulenza di notaio e commercialista.
+giuridica della CER richiede la consulenza di un professionista (consulente legale, commercialista) e la formalizzazione dello statuto secondo la forma scelta (atto pubblico, scrittura privata autenticata, procedura RUNTS, ecc.).
 ```
 
 ## Limiti del task
 
 - Non sostituisce la verifica della cabina primaria sul portale GSE.
 - Non valuta in autonomia la cumulabilita' con incentivi pre-esistenti: rinvio al GSE / consulente.
-- Non determina la forma giuridica concreta della CER: rinvio al notaio.
+- Non determina la forma giuridica concreta della CER: rinvio al consulente legale e alla modalita' di formalizzazione richiesta dalla forma scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.).
 - Non considera vincoli regionali o piani territoriali energetici, da verificare a parte.

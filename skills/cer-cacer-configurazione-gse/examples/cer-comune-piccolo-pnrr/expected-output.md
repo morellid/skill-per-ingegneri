@@ -39,7 +39,7 @@ Output sintetico atteso, articolato sulle 4 sotto-attivita' richieste.
 - [ ] Verifica titolo abilitativo impianto FER 350 kW: il titolo applicabile dipende da DPR 380/2001, D.Lgs. 28/2011 e normativa regionale - DA VERIFICARE con il professionista (la skill non ha tra le fonti questa normativa)
 - [ ] Verifica popolazione ISTAT 31/12/2025 (dichiarata 1.812 ab., dentro soglia PNRR < 50.000 ab.)
 - [ ] Predisposizione DNSH per misura PNRR M2C2 1.2 (rinvio a `dnsh-pnrr-checker`)
-- [ ] Verifica scadenze PNRR: stipula accordo entro 30/6/2026, esercizio entro 31/12/2027
+- [ ] Verifica scadenze PNRR: completamento dei lavori entro 30/6/2026, entrata in esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027
 
 ## 6. Avvertenza finale
 La presente scheda e' un supporto preliminare. La qualifica formale del servizio
@@ -86,7 +86,7 @@ L'output del task e' la bozza completa di statuto. Estratto dei punti chiave att
 |---|---|---|
 | TIP | E_cond * (T_fissa(200-600 kW) + correttivo zonale) - DA QUANTIFICARE su valori vigenti | durata 20 anni |
 | TR | E_cond * tr_unitaria(BT) - DA QUANTIFICARE su delibera ARERA vigente | |
-| Contributo PNRR | min(0.40 * 420.000; massimale PNRR) ~ 168.000 una tantum | regime post DM 127/2025; scadenze 30/6/2026 e 31/12/2027; anticipo fino al 30%; riduce parte fissa TIP |
+| Contributo PNRR | min(0.40 * 420.000; massimale PNRR) ~ 168.000 una tantum | regime post DM 127/2025; completamento lavori entro 30/6/2026; esercizio entro 24 mesi dal completamento, max 31/12/2027; erogazione in 3 fasi: anticipazione 30% + quota intermedia 40% + saldo; riduce parte fissa TIP |
 
 ## 4. Avvertenze
 - Stima parametrica, calcolo ufficiale a cura del GSE.
@@ -103,6 +103,6 @@ Documento di supporto, non costituisce promessa di flussi economici futuri.
 - Documenti generali: anagrafica referente (CER), mandato, elenco POD (41 prelievo + 1 immissione), elenco impianti (1 FV 350 kW), stampa mappa cabina primaria.
 - Documenti CER: atto costitutivo + statuto firmati, verbale nomina referente, eventuale convenzione con ESCo per gestione operativa.
 - Documenti TIP: titolo abilitativo dell'impianto FV 350 kW DA VERIFICARE secondo DPR 380/2001 + D.Lgs. 28/2011 + normativa regionale (la skill non determina il titolo applicabile), titolo di disponibilita' del capannone (proprieta' Comune), schema unifilare, fine lavori, codice CENSIMP, dichiarazione non doppio incentivo.
-- Documenti PNRR: attestazione ISTAT 1.812 ab. al 31/12/2025 (dentro soglia < 50.000 ab.), computo metrico 420.000 EUR, cronoprogramma con scadenze 30/6/2026 (accordo) e 31/12/2027 (esercizio), dichiarazione DNSH (rinvio skill dedicata), dichiarazioni anti-doppio-finanziamento, eventuale documentazione gara per appalto del Comune, eventuale richiesta anticipo fino al 30%.
+- Documenti PNRR: attestazione ISTAT 1.812 ab. al 31/12/2025 (dentro soglia < 50.000 ab.), computo metrico 420.000 EUR, cronoprogramma con completamento dei lavori entro 30/6/2026 ed esercizio entro 24 mesi dal completamento (max 31/12/2027), dichiarazione DNSH (rinvio skill dedicata), dichiarazioni anti-doppio-finanziamento, eventuale documentazione gara per appalto del Comune, eventuale richiesta di anticipazione fino al 30% e successiva quota intermedia del 40%.
 - Adempimenti continuativi del referente.
 - Avvertenza che la lista esatta segue le Regole Operative GSE vigenti.

@@ -48,14 +48,17 @@ sources:
       fondo perduto. Articoli rilevanti: 3 (definizioni), 4 (requisiti
       soggettivi CER), 5 (atto costitutivo e statuto), 7 (TIP), 8 (contributo
       PNRR), 11 (cumulabilita'). Il testo del decreto e' stato modificato dal
-      DM MASE 127/2025 (vedi sotto): la soglia di popolazione del Comune e'
-      passata da < 5.000 ab. a < 50.000 ab. e sono cambiate scadenze e quota
-      di anticipo.
+      DM MASE 127/2025 (vedi sotto): soglia popolazione Comune passata da
+      < 5.000 ab. a < 50.000 ab.; aggancio del termine 30/6/2026 al
+      "completamento dei lavori"; aggancio del termine 24 mesi/31-12-2027 alla
+      "data di completamento dei lavori"; quota di anticipazione passata dal
+      10% al 30%; introduzione/aggiornamento del meccanismo a tre fasi
+      (anticipazione + quota intermedia 40% + saldo).
 
   - id: dm-mase-127-2025
-    title: "DM MASE 16 maggio 2025 n. 127 - Modifiche al DM 7/12/2023 n. 414 (Decreto CACER): estensione del perimetro PNRR ai Comuni con popolazione fino a 50.000 abitanti, nuove scadenze e nuova quota di anticipo"
+    title: "DM MASE 16 maggio 2025 n. 127 - Modifiche al DM 7/12/2023 n. 414 (Decreto CACER): estensione del perimetro PNRR ai Comuni con popolazione fino a 50.000 abitanti, nuove scadenze e nuovo schema di erogazione (anticipazione 30% + quota intermedia 40% + saldo)"
     type: decreto-ministeriale
-    url: https://www.mase.gov.it/normativa/dm-127-2025-modifiche-decreto-cacer
+    url: null
     accessed: 2026-05-06
     sha256: null
     license: public-domain-italian-law
@@ -64,20 +67,32 @@ sources:
       - references/estratti/dm-mase-414-2023.md
     notes: |
       Decreto del Ministro dell'ambiente e della sicurezza energetica n. 127
-      del 16 maggio 2025, pubblicato il 25 giugno 2025. Modifiche principali al
-      regime PNRR del DM 414/2023:
+      del 16 maggio 2025, pubblicato in Gazzetta Ufficiale il 25 giugno 2025.
+
+      URL CANONICO DA RECUPERARE: in questa versione della skill l'URL del
+      provvedimento sul portale MASE/Normattiva non e' confermato. Fonti
+      autoritative su cui si basano le sintesi di questa skill, da consultare
+      finche' l'URL del decreto non e' verificato:
+      - GSE - Allegato 1 Regole Operative CACER (id `gse-regole-operative-cacer`,
+        versione 16/7/2025), che recepisce le modifiche del DM 127/2025;
+      - MASE - documento procedimenti PIF del 13/6/2025
+        (https://www.mase.gov.it/portale/documents/d/guest/2025-06-13_procedimenti_pif-pdf).
+
+      Modifiche principali al regime PNRR del DM 414/2023 (verificate sulle fonti
+      GSE/MASE sopra):
       - perimetro soggettivo esteso ai Comuni con popolazione < 50.000 abitanti
         (in luogo di < 5.000 abitanti);
-      - stipula degli accordi di concessione del contributo entro il 30 giugno 2026;
-      - entrata in esercizio degli impianti entro 24 mesi dalla comunicazione
-        dell'accordo e comunque entro il 31 dicembre 2027;
-      - quota di anticipo richiedibile aumentata dal 10% al 30% (con opzioni
-        ulteriori per impianti 200-1.000 kW secondo le Regole Operative GSE);
+      - completamento dei lavori entro il 30 giugno 2026;
+      - entrata in esercizio entro 24 mesi dalla data di completamento dei
+        lavori e comunque entro il 31 dicembre 2027;
+      - quota di anticipazione richiedibile aumentata dal 10% al 30% del
+        contributo massimo erogabile;
+      - introduzione/aggiornamento di una "quota intermedia" pari al 40% del
+        contributo, richiedibile dopo aver sostenuto il 40% delle spese
+        ammissibili e comunicato la data di avvio dei lavori (par. 2.2.3.2
+        delle Regole Operative GSE CACER);
       - estensione alle persone fisiche dell'esclusione del fattore di riduzione F
-        ai fini della tariffa incentivante.
-      L'URL puntuale del provvedimento sul portale MASE va verificato in fase di
-      fetch-sources; in alternativa, fonte autoritativa GSE
-      `https://www.gse.it/servizi-per-te/attuazione-misure-pnrr/comunita-energetiche-5000abitanti`.
+        di cui all'Allegato 1 par. 3 del Decreto CACER, ai fini della TIP.
 
   - id: delibera-arera-727-2022-tiad
     title: "Delibera ARERA 727/2022/R/eel - Testo Integrato Autoconsumo Diffuso (TIAD)"
@@ -131,21 +146,23 @@ sources:
       perimetro cabina primaria, che la skill non puo' eseguire al posto dell'utente.
 
   - id: gse-pnrr-cacer
-    title: "GSE - Attuazione misure PNRR - Comunita' energetiche e gruppi di autoconsumatori in Comuni < 50.000 abitanti"
+    title: "GSE - Attuazione misure PNRR - Comunita' energetiche e gruppi di autoconsumatori (regime vigente post DM MASE 127/2025)"
     type: portale-istituzionale
-    url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr/comunita-energetiche-5000abitanti
+    url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr
     accessed: 2026-05-06
     sha256: null
     license: gse-public-no-redistribution
     binary_path: null
     excerpt_paths: []
     notes: |
-      Pagina dedicata del GSE alla misura PNRR per le CACER. Conferma il
-      perimetro soggettivo aggiornato (Comuni < 50.000 ab.) e le scadenze
-      operative (30/6/2026 per accordi di concessione, 31/12/2027 per entrata in
-      esercizio), la quota di anticipo (30%) e i criteri operativi.
-      Lo slug URL "5000abitanti" e' eredita' del regime originario; il contenuto
-      della pagina riflette il regime vigente post DM 127/2025.
+      Sezione del portale GSE relativa all'attuazione delle misure PNRR
+      pertinenti alle CACER. La pagina puntuale dedicata all'estensione ai
+      Comuni < 50.000 ab. e alle nuove scadenze post DM 127/2025 e' raggiungibile
+      dalla sezione "Attuazione misure PNRR / Autoconsumo". L'URL specifico
+      della pagina dedicata va verificato sul portale (in passato lo slug
+      conteneva la stringa "5000abitanti" come retaggio del regime originario).
+      Per il dettaglio normativo si rinvia all'Allegato 1 Regole Operative CACER
+      (id `gse-regole-operative-cacer`, versione 16/7/2025).
 
   - id: dl-77-2021-pnrr
     title: "DL 77/2021 conv. L. 108/2021 - Governance del PNRR e prime misure di rafforzamento delle strutture amministrative"

@@ -44,8 +44,8 @@ Quando l'agent produce output deve citare il riferimento puntuale, non la legge 
 - **DM 7/12/2023 art. 3** - definizioni operative, soglia 1 MW per impianti incentivati, perimetro cabina primaria (sub-configurazione incentivata).
 - **DM 7/12/2023 art. 4-5** - requisiti CER, contenuti minimi statuto e atto costitutivo.
 - **DM 7/12/2023 art. 7** - tariffa incentivante (TIP) per energia condivisa, struttura parte fissa + correttivo zonale, durata 20 anni.
-- **DM 7/12/2023 art. 8** (testo vigente post DM 127/2025) - contributo PNRR a fondo perduto per impianti in Comuni con popolazione < 50.000 abitanti, intensita' fino al 40% costo, cumulabile con TIP ridotta. Scadenza accordi di concessione 30/6/2026, esercizio entro 24 mesi e comunque entro 31/12/2027, anticipo richiedibile 30%.
-- **DM MASE 127/2025** - decreto modificativo dell'art. 8 e disposizioni correlate del DM 414/2023; estende il perimetro soggettivo PNRR e applica alle persone fisiche l'esclusione del fattore di riduzione F sulla TIP.
+- **DM 7/12/2023 art. 8** (testo vigente post DM 127/2025) - contributo PNRR a fondo perduto per impianti in Comuni con popolazione < 50.000 abitanti, intensita' fino al 40% costo, cumulabile con TIP ridotta. **Completamento dei lavori entro il 30 giugno 2026**, **entrata in esercizio entro 24 mesi dalla data di completamento dei lavori e comunque non oltre il 31 dicembre 2027**. Erogazione articolata in tre fasi: **anticipazione fino al 30%** del contributo massimo, **quota intermedia del 40%** (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato la data di avvio dei lavori) e saldo.
+- **DM MASE 16 maggio 2025 n. 127** - decreto modificativo dell'art. 8 e disposizioni correlate del DM 414/2023; estende il perimetro soggettivo PNRR ai Comuni < 50.000 ab., aggiorna scadenze e percentuali (vedi sopra) e applica alle persone fisiche l'esclusione del fattore di riduzione F (par. 3 dell'Allegato 1 al Decreto CACER) sulla TIP.
 - **TIAD - art. 3 e 5** - definizione e calcolo dell'energia condivisa orariamente come minimo tra immessa CACER e prelevata CACER.
 - **Regole Operative CACER cap. 4-5** - flusso di qualifica, documenti, scadenze, gestione referente (versione vigente sul portale GSE).
 
@@ -64,11 +64,11 @@ Quando l'agent produce output deve citare il riferimento puntuale, non la legge 
 - Non spingersi su decisioni autorizzative dell'impianto (PAS / Comunicazione / Modello Unico / AU): la skill non ha tra le fonti il DPR 380/2001 ne' il DM 19/5/2015 sul Modello Unico; rinviare al titolo abilitativo specifico come "DA VERIFICARE" se non fornito dall'utente.
 
 ### Cosa fare
-- Citare sempre la coppia **art. + comma** (es. "art. 31 c. 2 lett. a) D.Lgs. 199/2021") quando si esprimono requisiti soggettivi della CER.
+- Citare sempre la **coppia articolo + comma + lettera** (es. "art. 30 c. 2 lett. a) D.Lgs. 199/2021" per il vincolo edificio/condominio del GAC) quando si esprimono requisiti soggettivi. Per la CER, il vincolo "no grandi imprese" e i requisiti sui soci sono in art. 31 D.Lgs. 199/2021: citare il comma puntuale verificandolo sul testo vigente in `references/estratti/dlgs-199-2021-art-30-31-32.md`.
 - Distinguere graficamente nelle uscite: dati certi vs stime parametriche vs voci `DA VERIFICARE CON GSE / NOTAIO / COMMERCIALISTA`.
 - Per il calcolo dell'energia condivisa, dichiarare esplicitamente la formula `E_cond(h) = min(E_imm_CACER(h), E_prel_CACER(h))` e l'aggregazione oraria.
 - Per la TIP, presentare lo schema `TIP(h) = parte_fissa(P) + correttivo_zonale(prezzo_zonale_h)` e rinviare al valore vigente sulla pubblicazione GSE.
-- Per il contributo PNRR (regime vigente post DM 127/2025), ricordare le condizioni: Comune < 50.000 ab., investimento ammissibile, riduzione parte fissa TIP, scadenze 30/6/2026 e 31/12/2027, anticipo fino al 30%.
+- Per il contributo PNRR (regime vigente post DM 127/2025), ricordare le condizioni: Comune < 50.000 ab., investimento ammissibile, riduzione parte fissa TIP, completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento lavori e comunque non oltre 31/12/2027, anticipazione fino al 30% e successiva quota intermedia del 40% (post-spesa ammissibile sostenuta al 40%).
 - Indicare sempre che la **firma dei documenti tecnici e dello statuto** spetta al professionista / referente / notaio competenti.
 - Quando l'utente non fornisce i POD esatti, lavorare per ipotesi e segnalare l'esigenza della verifica cabina primaria sul portale GSE.
 

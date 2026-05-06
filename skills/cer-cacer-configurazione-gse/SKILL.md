@@ -50,7 +50,7 @@ Se la richiesta e' generica ("aiutami a fare una CER"), parti da `valuta-perimet
    - profili di consumo medi orari/annui se disponibili (altrimenti procedi con stime parametriche dichiarate).
 4. Applica la procedura del task con riferimenti puntuali a:
    - **D.Lgs. 199/2021**: art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con il vincolo "stesso edificio o condominio" alla lett. a)), art. 31 (CER), art. 32 (ARERA, contratti, ruolo del referente);
-   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** (regolamentazione CACER, TIP, contributo PNRR per Comuni < 50.000 ab., scadenze 30/6/2026 e 31/12/2027, anticipo al 30%);
+   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** (regolamentazione CACER, TIP, contributo PNRR per Comuni < 50.000 ab., completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027, erogazione in tre fasi: anticipazione 30% + quota intermedia 40% + saldo);
    - **Regole Operative CACER del GSE** (Allegato 1 - procedure di qualifica e gestione, da consultare nella versione vigente);
    - **TIAD - Delibera ARERA 727/2022/R/eel** (regolazione dei flussi fisici/economici di autoconsumo diffuso).
 5. Produci output strutturato che distingua nettamente:
@@ -65,7 +65,7 @@ Dettaglio in [`references/sources.yaml`](references/sources.yaml). Fonti primari
 
 - **D.Lgs. 8 novembre 2021 n. 199** - art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con stesso edificio/condominio alla lett. a)), art. 31 (CER), art. 32 (ARERA + contratti).
 - **DM MASE 7 dicembre 2023 n. 414** - Regolamentazione delle CACER, TIP, contributo PNRR.
-- **DM MASE 16 maggio 2025 n. 127** - Modifiche al DM 414/2023: estensione perimetro PNRR ai Comuni < 50.000 ab., scadenze 30/6/2026 e 31/12/2027, quota di anticipo dal 10% al 30%, applicazione alle persone fisiche dell'esclusione del fattore di riduzione F.
+- **DM MASE 16 maggio 2025 n. 127** - Modifiche al DM 414/2023: estensione perimetro PNRR ai Comuni < 50.000 ab.; completamento dei lavori entro 30/6/2026; esercizio entro 24 mesi dal completamento dei lavori e comunque non oltre 31/12/2027; erogazione in tre fasi (anticipazione fino al 30% del contributo, quota intermedia del 40% al 40% delle spese ammissibili sostenute, saldo); applicazione alle persone fisiche dell'esclusione del fattore di riduzione F.
 - **Delibera ARERA 727/2022/R/eel - TIAD** - Testo Integrato Autoconsumo Diffuso e successivi aggiornamenti applicabili alle CACER.
 - **Regole Operative CACER del GSE** (Allegato 1) - procedure di qualifica, gestione, calcolo energia condivisa.
 
@@ -74,7 +74,7 @@ Estratti operativi in [`references/estratti/`](references/estratti/).
 ## Limiti
 
 Questa skill NON fa:
-- Non produce statuti pronti per atto pubblico: l'atto costitutivo richiede notaio o intermediario abilitato.
+- Non produce statuti pronti per la formalizzazione: a seconda della forma giuridica scelta, l'atto costitutivo va perfezionato con atto pubblico presso notaio, scrittura privata autenticata, procedure RUNTS per gli enti del terzo settore, ecc.
 - Non simula in modo certificato l'energia condivisa: il calcolo orario ufficiale e' eseguito dal GSE su dati di misura (Allegato A TIAD).
 - Non sostituisce la mappa cabine primarie del GSE: la verifica del perimetro va fatta sul portale GSE prima di costituire la CACER.
 - Non determina importi puntuali della TIP: la TIP e' una sommatoria di una parte fissa e di un correttivo legato al prezzo zonale, e va sempre validata sulla pubblicazione GSE/MASE vigente.

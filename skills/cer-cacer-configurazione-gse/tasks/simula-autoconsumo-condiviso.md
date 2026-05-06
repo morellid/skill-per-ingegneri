@@ -122,8 +122,8 @@ Considerare:
 
 - riduzione della parte fissa della TIP secondo il meccanismo previsto dal DM 7/12/2023;
 - vincoli di spesa ammissibile e cronoprogramma PNRR;
-- **scadenze**: stipula degli accordi di concessione entro il 30 giugno 2026, entrata in esercizio dell'impianto entro 24 mesi e comunque entro il 31 dicembre 2027;
-- **anticipo** richiedibile pari al 30% del contributo massimo (con eventuali opzioni differenziate per impianti 200-1.000 kW dichiarate dal GSE);
+- **scadenze**: completamento dei lavori entro il 30 giugno 2026; entrata in esercizio entro 24 mesi dalla data di completamento dei lavori e comunque non oltre il 31 dicembre 2027;
+- **erogazione in tre fasi**: anticipazione fino al 30% del contributo massimo erogabile, quota intermedia pari al 40% (post-40% delle spese ammissibili sostenute e comunicato l'avvio dei lavori), saldo finale;
 - adempimenti DNSH (rinvio alla skill `dnsh-pnrr-checker`).
 
 ### Passo 7 - Componi la scheda di simulazione
@@ -157,7 +157,7 @@ Output strutturato come sotto.
 |---|---|---|
 | TIP | [...] | T_fissa(P) + correttivo zonale, durata 20 anni |
 | TR | [...] | tariffa restituzione, livello tensione [...] |
-| Contributo PNRR (una tantum) | [...] | solo se Comune < 50.000 ab. (regime post DM 127/2025); scadenze 30/6/2026 e 31/12/2027; anticipo 30%; riduce parte fissa TIP |
+| Contributo PNRR (una tantum) | [...] | solo se Comune < 50.000 ab. (regime post DM 127/2025); completamento lavori 30/6/2026 + esercizio entro 24 mesi (max 31/12/2027); anticipazione 30% + quota intermedia 40% + saldo; riduce parte fissa TIP |
 
 ## 4. Avvertenze
 - I valori sono stime parametriche su ipotesi dichiarate.

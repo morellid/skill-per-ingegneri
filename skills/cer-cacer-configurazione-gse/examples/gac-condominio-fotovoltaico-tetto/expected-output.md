@@ -12,7 +12,7 @@ L'output deve **correggere la richiesta dell'utente** (che chiede una CER) verso
 - 2 attivita' commerciali, di cui:
   - 1 PMI (bar a gestione familiare)
   - 1 GRANDE IMPRESA (filiale di catena nazionale, > 250 dipendenti)
-- Grandi imprese: SI -> incompatibili con la qualita' di socio CER ai sensi dell'art. 31 D.Lgs. 199/2021. Nel GAC ex art. 30 c. 2 il partecipante e' un autoconsumatore, non un socio di un soggetto giuridico, quindi il vincolo "no grandi imprese" della CER non si applica con la stessa portata; verificare comunque le Regole Operative GSE vigenti per i requisiti soggettivi specifici del GAC.
+- Grandi imprese: SI -> incompatibili con la qualita' di socio CER ai sensi dell'art. 31 D.Lgs. 199/2021. Nel GAC ex art. 30 c. 2 il partecipante e' un autoconsumatore, non un socio di un soggetto giuridico CER: il vincolo "no grandi imprese" dell'art. 31 non si applica al GAC. Restano da verificare a livello documentale i requisiti soggettivi GAC indicati dalle Regole Operative GSE vigenti (capitolo dedicato all'adesione di nuovi membri).
 - Referente ipotizzato: amministratore di condominio (DA CONFERMARE con delega in assemblea).
 
 ## 2. Posizione e perimetro
@@ -68,7 +68,7 @@ L'output del task `redigi-statuto-cer` deve **chiarire all'utente** che, nella c
 Se l'utente insiste sulla CER, l'output deve segnalare:
 
 - la grande impresa va **esclusa come socia**;
-- la CER va costituita come ente autonomo presso notaio;
+- la CER va costituita come ente autonomo, formalizzato secondo la forma giuridica scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.);
 - la rigidita' aggiuntiva e' giustificata solo se ci sono finalita' di comunita' che il GAC non copre.
 
 ## 3. Simulazione
@@ -102,7 +102,7 @@ Se l'utente insiste sulla CER, l'output deve segnalare:
 ## 4. Avvertenze
 - Stima parametrica, calcolo ufficiale GSE.
 - TIP e TR vanno aggiornate alla data di qualifica.
-- Sul vincolo grandi imprese: si applica per la qualita' di **socio CER** (art. 31 D.Lgs. 199/2021), non opera con la stessa portata sull'**autoconsumatore GAC** ex art. 30 c. 2. Verificare i requisiti soggettivi GAC delle Regole Operative GSE vigenti per la fase di caricamento documenti, ma la regola sostanziale e' chiara.
+- Sul vincolo grandi imprese: si applica per la qualita' di **socio CER** (art. 31 D.Lgs. 199/2021); **non si applica all'autoconsumatore GAC** ex art. 30 c. 2. Restano da verificare in fase di caricamento documenti i requisiti soggettivi GAC formalizzati dalle Regole Operative GSE vigenti.
 
 ## 5. Disclaimer
 Documento di supporto, non costituisce promessa di flussi economici futuri.

@@ -35,7 +35,7 @@ La checklist e' un supporto al referente; non sostituisce le Regole Operative GS
 
 ### PNRR (solo se applicabile)
 - Comune di localizzazione dell'impianto e popolazione **inferiore a 50.000 abitanti** (riferimento ISTAT al 31/12 anno precedente la domanda; soglia introdotta dal DM MASE 127/2025).
-- Documenti di spesa stimata, cronoprogramma realizzazione coerente con scadenze PNRR (accordi entro 30/6/2026, esercizio entro 31/12/2027).
+- Documenti di spesa stimata, cronoprogramma realizzazione coerente con scadenze PNRR (completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027).
 - Adempimenti DNSH preliminari.
 
 ## Fonti
@@ -93,11 +93,12 @@ Solo se l'impianto e' in Comune con popolazione **< 50.000 abitanti** (regime vi
 
 - Attestazione popolazione ISTAT al 31/12 anno precedente la domanda.
 - Computo metrico estimativo dell'investimento (parte ammissibile a contributo).
-- Cronoprogramma di realizzazione coerente con i milestone PNRR: stipula accordi di concessione entro **30 giugno 2026** ed entrata in esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque entro il **31 dicembre 2027**.
+- Cronoprogramma di realizzazione coerente con i milestone PNRR: completamento dei lavori entro il **30 giugno 2026** ed entrata in esercizio entro **24 mesi dalla data di completamento dei lavori** e comunque non oltre il **31 dicembre 2027**.
 - Dichiarazione DNSH per la misura PNRR M2C2 1.2 (rinvio a `dnsh-pnrr-checker`).
 - Dichiarazioni anti-doppio finanziamento (in particolare verso TIP, fondi nazionali e altre agevolazioni).
 - Documentazione di gara per i contratti rilevanti, se l'investimento e' soggetto a obblighi di pubblicita' / trasparenza.
-- Eventuale **richiesta di anticipo** fino al 30% del contributo massimo (con opzioni differenziate per impianti 200-1.000 kW dichiarate dal GSE).
+- Eventuale **richiesta di anticipazione** fino al 30% del contributo massimo erogabile.
+- Eventuale **richiesta di quota intermedia** pari al 40% del contributo massimo erogabile (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori).
 
 ### Passo 5 - Cronoprogramma e adempimenti del referente post-qualifica
 
@@ -161,11 +162,12 @@ Output strutturato come sotto.
 ## 5. Documenti per contributo PNRR (solo se Comune < 50.000 ab., regime vigente post DM 127/2025)
 - [ ] Attestazione popolazione ISTAT
 - [ ] Computo metrico estimativo
-- [ ] Cronoprogramma coerente con milestone PNRR (accordi entro 30/6/2026, esercizio entro 31/12/2027)
+- [ ] Cronoprogramma coerente con milestone PNRR (completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027)
 - [ ] Dichiarazione DNSH (rinvio skill `dnsh-pnrr-checker`)
 - [ ] Dichiarazioni anti-doppio-finanziamento
 - [ ] Documentazione gara, se applicabile
-- [ ] Eventuale richiesta di anticipo (fino al 30% del contributo massimo)
+- [ ] Eventuale richiesta di anticipazione fino al 30% del contributo massimo erogabile
+- [ ] Eventuale richiesta di quota intermedia (40% del contributo, dopo 40% spese ammissibili sostenute e avvio lavori comunicato)
 
 ## 6. Adempimenti continuativi del referente
 - Aggiornamento anagrafica membri

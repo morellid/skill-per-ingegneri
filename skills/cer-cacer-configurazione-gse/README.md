@@ -45,13 +45,13 @@ Dettaglio completo con URL, hash e date di consultazione in [`references/sources
 
 ## Limiti noti
 
-- Non produce statuti pronti per atto pubblico (serve notaio o intermediario abilitato).
+- Non produce statuti pronti per la formalizzazione: a seconda della forma giuridica scelta, lo statuto va finalizzato con atto pubblico presso notaio, scrittura privata autenticata, procedura RUNTS per gli enti del terzo settore, ecc.
 - Non sostituisce il calcolo ufficiale GSE dell'energia condivisa, eseguito su dati di misura orari.
 - Non determina importi puntuali della TIP: la parte variabile dipende dal prezzo zonale e va validata sulle pubblicazioni GSE/MASE vigenti.
 - Non gestisce aspetti fiscali, antitrust o aiuti di Stato.
 - Non sostituisce la mappa cabine primarie pubblicata dal GSE.
 
-Per ogni dubbio significativo, rinvio al **soggetto referente** della CACER, al **professionista firmatario** della relazione tecnica, al **notaio** per l'atto costitutivo, al **commercialista** per gli aspetti fiscali e al **GSE** per la qualifica formale.
+Per ogni dubbio significativo, rinvio al **soggetto referente** della CACER, al **professionista firmatario** della relazione tecnica, al **soggetto chiamato a formalizzare lo statuto** secondo la forma giuridica scelta (notaio per atto pubblico, intermediario abilitato per scrittura privata autenticata, procedura RUNTS per ETS, ecc.), al **commercialista** per gli aspetti fiscali e al **GSE** per la qualifica formale.
 
 ## Changelog
 
