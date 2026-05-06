@@ -97,8 +97,8 @@ Solo se l'impianto e' in Comune con popolazione **< 50.000 abitanti** (regime vi
 - Dichiarazione DNSH per la misura PNRR M2C2 1.2 (rinvio a `dnsh-pnrr-checker`).
 - Dichiarazioni anti-doppio finanziamento (in particolare verso TIP, fondi nazionali e altre agevolazioni).
 - Documentazione di gara per i contratti rilevanti, se l'investimento e' soggetto a obblighi di pubblicita' / trasparenza.
-- Eventuale **richiesta di anticipazione** fino al 30% del contributo massimo erogabile.
-- Eventuale **richiesta di quota intermedia** pari al 40% del contributo massimo erogabile (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori).
+- Eventuale **richiesta di anticipazione** fino al 30% del contributo massimo erogabile (schema di derivazione DM 127/2025, percentuali da confermare sulle Regole Operative GSE post DL 19/2026).
+- Eventuale **richiesta di quota intermedia** pari al 40% del contributo massimo erogabile (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori; schema di derivazione DM 127/2025, da confermare sulle Regole Operative GSE post DL 19/2026).
 
 ### Passo 5 - Cronoprogramma e adempimenti del referente post-qualifica
 
