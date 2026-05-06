@@ -146,23 +146,27 @@ sources:
       perimetro cabina primaria, che la skill non puo' eseguire al posto dell'utente.
 
   - id: gse-pnrr-cacer
-    title: "GSE - Attuazione misure PNRR - Comunita' energetiche e gruppi di autoconsumatori (regime vigente post DM MASE 127/2025)"
+    title: "GSE - Attuazione misure PNRR - Comunita' energetiche e gruppi di autoconsumatori (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27)"
     type: portale-istituzionale
     url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr
-    accessed: 2026-05-06
+    accessed: 2026-05-07
     sha256: null
     license: gse-public-no-redistribution
     binary_path: null
     excerpt_paths: []
     notes: |
       Sezione del portale GSE relativa all'attuazione delle misure PNRR
-      pertinenti alle CACER. La pagina puntuale dedicata all'estensione ai
-      Comuni < 50.000 ab. e alle nuove scadenze post DM 127/2025 e' raggiungibile
-      dalla sezione "Attuazione misure PNRR / Autoconsumo". L'URL specifico
-      della pagina dedicata va verificato sul portale (in passato lo slug
-      conteneva la stringa "5000abitanti" come retaggio del regime originario).
-      Per il dettaglio normativo si rinvia all'Allegato 1 Regole Operative CACER
-      (id `gse-regole-operative-cacer`, versione 16/7/2025).
+      pertinenti alle CACER. Il regime vigente al 2026-05-07 risulta dal
+      cumularsi di DM 414/2023, DM 127/2025 e DL 19 febbraio 2026 n. 19
+      art. 27 (Decreto PNRR 2026), quest'ultimo avendo re-ancorato il
+      termine del 30/6/2026 alla "stipula degli accordi di concessione"
+      lato GSE e il termine di 24 mesi alla "comunicazione dell'accordo".
+      La pagina puntuale dedicata e' raggiungibile dalla sezione "Attuazione
+      misure PNRR / Autoconsumo". L'URL specifico va verificato sul portale
+      (in passato lo slug conteneva la stringa "5000abitanti" come retaggio
+      del regime originario). Per il dettaglio normativo si rinvia
+      all'Allegato 1 Regole Operative CACER (id `gse-regole-operative-cacer`)
+      nella versione vigente al momento della consultazione.
 
   - id: dl-19-2026-pnrr
     title: "DL 19 febbraio 2026 n. 19 (Decreto PNRR 2026), art. 27 - Modifiche al regime CACER PNRR del DM 414/2023 come modificato dal DM 127/2025"
@@ -201,6 +205,18 @@ sources:
       circa 18 mesi (DM 414/2023 -> DM 127/2025 -> DL 19/2026). Verificare
       sempre la **versione vigente** delle Regole Operative GSE prima dell'uso
       operativo della skill.
+
+      LIMITE DI VERIFICA. Le fonti tecniche secondarie sopra confermano in modo
+      univoco le modifiche apportate dal DL 19/2026 sui termini temporali
+      (stipula accordi di concessione 30/6/2026 + 24 mesi dalla comunicazione
+      dell'accordo + 31/12/2027 come limite invalicabile). Non e' invece stato
+      possibile, da queste sole fonti, verificare in modo diretto se l'art. 27
+      abbia modificato anche le percentuali dello schema di erogazione in tre
+      fasi (anticipazione 30% + quota intermedia 40% + saldo) introdotte dal
+      DM 127/2025. La skill mantiene quel modello in continuita' con le Regole
+      Operative GSE pubblicate prima del DL 19/2026, ma andra' confermato sul
+      testo del DL e sulle Regole Operative GSE post DL 19/2026 in fase di
+      validazione Livello 2 della skill.
 
   - id: dl-77-2021-pnrr
     title: "DL 77/2021 conv. L. 108/2021 - Governance del PNRR e prime misure di rafforzamento delle strutture amministrative"

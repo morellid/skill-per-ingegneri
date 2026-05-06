@@ -23,9 +23,10 @@ Le fonti sono catalogate in `references/sources.yaml`. Per ognuna sono presenti 
 - **D.Lgs. 199/2021** (recepimento direttiva RED II) - id `dlgs-199-2021`
 - **DM MASE 7 dicembre 2023 n. 414** (Decreto CACER, testo originario) - id `dm-mase-414-2023`
 - **DM MASE 16 maggio 2025 n. 127** (modifiche al DM 414/2023) - id `dm-mase-127-2025`
+- **DL 19 febbraio 2026 n. 19, art. 27** (Decreto PNRR 2026) - id `dl-19-2026-pnrr`
 - **Delibera ARERA 727/2022/R/eel - TIAD** - id `delibera-arera-727-2022-tiad`
 - **Regole Operative CACER del GSE - Allegato 1** - id `gse-regole-operative-cacer`
-- **GSE - Pagina misura PNRR CACER < 50.000 ab.** - id `gse-pnrr-cacer`
+- **GSE - Pagina misura PNRR CACER** - id `gse-pnrr-cacer`
 
 Estratti pertinenti gia' preparati in `references/estratti/`:
 - `dlgs-199-2021-art-30-31-32.md` - mappatura corretta degli articoli (AID art. 30 c. 1 lett. a) n. 2, GAC art. 30 c. 2, CER art. 31, ARERA/contratti art. 32) e requisiti soggettivi.
