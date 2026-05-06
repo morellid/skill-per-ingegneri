@@ -1,6 +1,6 @@
 # Task: Checklist documentale per la qualifica GSE del servizio CACER
 
-Predispone l'**elenco strutturato dei documenti** necessari alla richiesta di qualifica al servizio CACER sul portale GSE, secondo le **Regole Operative CACER del GSE** vigenti, con focus sui requisiti del **DM 7/12/2023** e del **TIAD ARERA 727/2022/R/eel**.
+Predispone l'**elenco strutturato dei documenti** necessari alla richiesta di qualifica al servizio CACER sul portale GSE, secondo le **Regole Operative CACER del GSE** vigenti, con focus sui requisiti del **DM 7/12/2023** (come modificato dal **DM 127/2025** e dal **DL 19/2026 art. 27**) e del **TIAD ARERA 727/2022/R/eel**.
 
 ## Obiettivo
 
@@ -9,7 +9,7 @@ Produrre una checklist:
 - generale, valida per AID/GAC/CER;
 - specifica per la **forma scelta** (AID, GAC, CER);
 - specifica per **accesso TIP**;
-- specifica per **contributo PNRR** (solo se Comune < 50.000 ab., regime vigente post DM MASE 127/2025).
+- specifica per **contributo PNRR** (solo se Comune < 50.000 ab., regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27).
 
 La checklist e' un supporto al referente; non sostituisce le Regole Operative GSE vigenti.
 
@@ -35,7 +35,7 @@ La checklist e' un supporto al referente; non sostituisce le Regole Operative GS
 
 ### PNRR (solo se applicabile)
 - Comune di localizzazione dell'impianto e popolazione **inferiore a 50.000 abitanti** (riferimento ISTAT al 31/12 anno precedente la domanda; soglia introdotta dal DM MASE 127/2025).
-- Documenti di spesa stimata, cronoprogramma realizzazione coerente con scadenze PNRR (completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027).
+- Documenti di spesa stimata, cronoprogramma realizzazione coerente con scadenze PNRR (regime post DL 19/2026: stipula accordi di concessione lato GSE entro 30/6/2026, esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque non oltre 31/12/2027).
 - Adempimenti DNSH preliminari.
 
 ## Fonti
@@ -89,11 +89,11 @@ Leggere prima:
 
 ### Passo 4 - Documenti per contributo PNRR (solo se applicabile)
 
-Solo se l'impianto e' in Comune con popolazione **< 50.000 abitanti** (regime vigente post DM MASE 127/2025):
+Solo se l'impianto e' in Comune con popolazione **< 50.000 abitanti** (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27):
 
 - Attestazione popolazione ISTAT al 31/12 anno precedente la domanda.
 - Computo metrico estimativo dell'investimento (parte ammissibile a contributo).
-- Cronoprogramma di realizzazione coerente con i milestone PNRR: completamento dei lavori entro il **30 giugno 2026** ed entrata in esercizio entro **24 mesi dalla data di completamento dei lavori** e comunque non oltre il **31 dicembre 2027**.
+- Cronoprogramma di realizzazione coerente con i milestone PNRR (post DL 19/2026): **stipula degli accordi di concessione lato GSE entro il 30 giugno 2026** ed entrata in esercizio entro **24 mesi dalla comunicazione dell'accordo di concessione** e comunque non oltre il **31 dicembre 2027** (limite invalicabile).
 - Dichiarazione DNSH per la misura PNRR M2C2 1.2 (rinvio a `dnsh-pnrr-checker`).
 - Dichiarazioni anti-doppio finanziamento (in particolare verso TIP, fondi nazionali e altre agevolazioni).
 - Documentazione di gara per i contratti rilevanti, se l'investimento e' soggetto a obblighi di pubblicita' / trasparenza.
@@ -159,10 +159,10 @@ Output strutturato come sotto.
 - [ ] Codice CENSIMP / GAUDI
 - [ ] Dichiarazione non-doppio-incentivo
 
-## 5. Documenti per contributo PNRR (solo se Comune < 50.000 ab., regime vigente post DM 127/2025)
+## 5. Documenti per contributo PNRR (solo se Comune < 50.000 ab., regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27)
 - [ ] Attestazione popolazione ISTAT
 - [ ] Computo metrico estimativo
-- [ ] Cronoprogramma coerente con milestone PNRR (completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027)
+- [ ] Cronoprogramma coerente con milestone PNRR post DL 19/2026 (stipula accordi di concessione lato GSE entro 30/6/2026, esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque non oltre 31/12/2027)
 - [ ] Dichiarazione DNSH (rinvio skill `dnsh-pnrr-checker`)
 - [ ] Dichiarazioni anti-doppio-finanziamento
 - [ ] Documentazione gara, se applicabile

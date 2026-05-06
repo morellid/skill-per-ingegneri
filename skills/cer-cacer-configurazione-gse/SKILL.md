@@ -12,7 +12,7 @@ Usare questa skill quando un **ingegnere**, **energy manager**, **EGE/ESCo**, **
 - decidere se un'iniziativa di autoconsumo da fonti rinnovabili puo' configurarsi come **AID** (art. 30 c. 1 lett. a) n. 2), **GAC** (art. 30 c. 2) o **CER** (art. 31) del **D.Lgs. 199/2021**;
 - verificare il **perimetro di cabina primaria** richiesto dal DM 7/12/2023 per accedere alla tariffa incentivante (TIP) sulla sotto-configurazione incentivata, distinguendolo dal perimetro **soggettivo/giuridico** della CER (che puo' coprire piu' cabine primarie con piu' richieste GSE);
 - redigere una **bozza di statuto / atto costitutivo** di una CER coerente con il DM 7/12/2023 e con le Regole Operative CACER del GSE;
-- effettuare una **simulazione semplificata** dell'energia condivisa, della TIP, della tariffa di restituzione (TR) e del **contributo PNRR a fondo perduto** per Comuni con popolazione inferiore a **50.000 abitanti** (soglia introdotta dal DM MASE 127/2025, in luogo dei < 5.000 abitanti del testo originario);
+- effettuare una **simulazione semplificata** dell'energia condivisa, della TIP, della tariffa di restituzione (TR) e del **contributo PNRR a fondo perduto** per Comuni con popolazione inferiore a **50.000 abitanti** (soglia introdotta dal DM MASE 127/2025, in luogo dei < 5.000 abitanti del testo originario; tempistiche aggiornate dal DL 19 febbraio 2026 n. 19 art. 27 che aggancia il 30/6/2026 alla stipula degli accordi di concessione GSE);
 - predisporre la **checklist documentale** per la richiesta di qualifica al GSE (servizio CACER, accesso TIP, accesso eventuale al contributo PNRR).
 
 **Non usare** questa skill come unico strumento quando l'utente chiede:
@@ -50,7 +50,7 @@ Se la richiesta e' generica ("aiutami a fare una CER"), parti da `valuta-perimet
    - profili di consumo medi orari/annui se disponibili (altrimenti procedi con stime parametriche dichiarate).
 4. Applica la procedura del task con riferimenti puntuali a:
    - **D.Lgs. 199/2021**: art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con il vincolo "stesso edificio o condominio" alla lett. a)), art. 31 (CER), art. 32 (ARERA, contratti, ruolo del referente);
-   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** (regolamentazione CACER, TIP, contributo PNRR per Comuni < 50.000 ab., completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027, erogazione in tre fasi: anticipazione 30% + quota intermedia 40% + saldo);
+   - **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** e da ultimo dal **DL 19 febbraio 2026 n. 19 art. 27** (regime CACER vigente: TIP, contributo PNRR per Comuni < 50.000 ab.; **stipula accordi di concessione entro 30/6/2026**; esercizio **entro 24 mesi dalla comunicazione dell'accordo** e comunque non oltre 31/12/2027; erogazione in tre fasi: anticipazione 30% + quota intermedia 40% + saldo);
    - **Regole Operative CACER del GSE** (Allegato 1 - procedure di qualifica e gestione, da consultare nella versione vigente);
    - **TIAD - Delibera ARERA 727/2022/R/eel** (regolazione dei flussi fisici/economici di autoconsumo diffuso).
 5. Produci output strutturato che distingua nettamente:
@@ -65,7 +65,8 @@ Dettaglio in [`references/sources.yaml`](references/sources.yaml). Fonti primari
 
 - **D.Lgs. 8 novembre 2021 n. 199** - art. 30 c. 1 lett. a) n. 2 (AID), art. 30 c. 2 (GAC, con stesso edificio/condominio alla lett. a)), art. 31 (CER), art. 32 (ARERA + contratti).
 - **DM MASE 7 dicembre 2023 n. 414** - Regolamentazione delle CACER, TIP, contributo PNRR.
-- **DM MASE 16 maggio 2025 n. 127** - Modifiche al DM 414/2023: estensione perimetro PNRR ai Comuni < 50.000 ab.; completamento dei lavori entro 30/6/2026; esercizio entro 24 mesi dal completamento dei lavori e comunque non oltre 31/12/2027; erogazione in tre fasi (anticipazione fino al 30% del contributo, quota intermedia del 40% al 40% delle spese ammissibili sostenute, saldo); applicazione alle persone fisiche dell'esclusione del fattore di riduzione F.
+- **DM MASE 16 maggio 2025 n. 127** - Modifiche al DM 414/2023: estensione perimetro PNRR ai Comuni < 50.000 ab.; aumento della quota di anticipazione dal 10% al 30%; introduzione/aggiornamento della quota intermedia del 40%; estensione alle persone fisiche dell'esclusione del fattore di riduzione F. Nel regime DM 127/2025 i termini erano ancorati al **completamento dei lavori** (30/6/2026) e al **completamento dei lavori** per il decorrere dei 24 mesi.
+- **DL 19 febbraio 2026 n. 19, art. 27** ("Decreto PNRR 2026") - Re-aggancio dei termini PNRR: il 30/6/2026 e' ora la scadenza per la **stipula degli accordi di concessione** lato GSE; il termine di 24 mesi decorre dalla **comunicazione dell'accordo di concessione**; il limite invalicabile resta il 31/12/2027 per l'entrata in esercizio. **Regime vigente al 2026-05-07**.
 - **Delibera ARERA 727/2022/R/eel - TIAD** - Testo Integrato Autoconsumo Diffuso e successivi aggiornamenti applicabili alle CACER.
 - **Regole Operative CACER del GSE** (Allegato 1) - procedure di qualifica, gestione, calcolo energia condivisa.
 

@@ -2,7 +2,7 @@
 # Used by Codex CLI / IDE for the skill picker (UI display).
 # Not used by Claude Code (which reads SKILL.md frontmatter directly).
 display_name: Configurazione CER/CACER e Qualifica GSE
-short_description: Verifica del perimetro cabina primaria, scelta tra AID/GAC/CER, redazione guidata dello statuto, simulazione di energia condivisa, TIP, tariffa di restituzione e contributo PNRR, e checklist documentale per la qualifica al portale GSE secondo DM 7/12/2023 e Regole Operative CACER.
+short_description: Verifica del perimetro cabina primaria, scelta tra AID (art. 30 c. 1) / GAC (art. 30 c. 2) / CER (art. 31) D.Lgs. 199/2021, redazione guidata dello statuto, simulazione di energia condivisa, TIP, tariffa di restituzione e contributo PNRR per Comuni < 50.000 ab., e checklist documentale per la qualifica al portale GSE. Regime PNRR aggiornato a DM 7/12/2023 + DM 127/2025 + DL 19/2026 art. 27.
 default_prompt: |
   Devo configurare una Comunita' Energetica Rinnovabile (o un Gruppo di
   Autoconsumatori, o un Autoconsumatore Individuale a Distanza) e qualificarla

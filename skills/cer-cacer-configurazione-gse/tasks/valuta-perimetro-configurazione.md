@@ -1,6 +1,6 @@
 # Task: Verifica perimetro cabina primaria e scelta della configurazione (AID / GAC / CER)
 
-Aiuta a decidere se l'iniziativa di autoconsumo da rinnovabile rientra nel servizio CACER del GSE e in quale forma giuridica conviene impostarla, ai sensi del **D.Lgs. 199/2021** (AID art. 30 c. 1 lett. a) n. 2, GAC art. 30 c. 2, CER art. 31) e del **DM MASE 7/12/2023 n. 414** come modificato dal **DM MASE 16/5/2025 n. 127** (regime PNRR vigente: Comuni < 50.000 ab., scadenze 30/6/2026 e 31/12/2027).
+Aiuta a decidere se l'iniziativa di autoconsumo da rinnovabile rientra nel servizio CACER del GSE e in quale forma giuridica conviene impostarla, ai sensi del **D.Lgs. 199/2021** (AID art. 30 c. 1 lett. a) n. 2, GAC art. 30 c. 2, CER art. 31) e del **DM MASE 7/12/2023 n. 414** come modificato dal **DM MASE 16/5/2025 n. 127** e da ultimo dal **DL 19 febbraio 2026 n. 19 art. 27** (regime PNRR vigente al 2026-05-07: Comuni < 50.000 ab.; stipula accordi di concessione entro 30/6/2026; esercizio entro 24 mesi dalla comunicazione dell'accordo, max 31/12/2027).
 
 ## Obiettivo
 
@@ -84,12 +84,12 @@ Se piu' rami sono compatibili, presentali come opzioni con i loro pro/contro:
 - **CER** vs **GAC**: la CER e' piu' aperta (anche soggetti distanti, anche enti locali, possibilita' di piu' sotto-configurazioni incentivate), ma richiede atto costitutivo/statuto e governance. Il GAC e' piu' snello ma limitato a stesso edificio/condominio.
 - **AID** vs **GAC**: AID e' adatto al singolo soggetto multi-POD; non si applica se ci sono piu' soggetti distinti.
 
-### Passo 4 - Valuta il contributo PNRR (regime vigente post DM 127/2025)
+### Passo 4 - Valuta il contributo PNRR (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27)
 
 Per gli impianti situati in Comuni con popolazione **inferiore a 50.000 abitanti** (soglia introdotta dal DM MASE 127/2025; il testo originario del DM 414/2023 limitava il regime a Comuni < 5.000 ab.):
 
-- Segnala l'opportunita' del **contributo PNRR a fondo perduto** ex art. 8 DM 7/12/2023, nel testo modificato dal DM 127/2025.
-- Ricorda le **scadenze PNRR**: completamento dei lavori entro il **30 giugno 2026**; entrata in esercizio entro **24 mesi dalla data di completamento dei lavori** e comunque non oltre il **31 dicembre 2027**.
+- Segnala l'opportunita' del **contributo PNRR a fondo perduto** ex art. 8 DM 7/12/2023, nel testo modificato dal DM 127/2025 e dall'art. 27 DL 19/2026.
+- Ricorda le **scadenze PNRR vigenti** (post DL 19/2026): **stipula degli accordi di concessione** lato GSE **entro il 30 giugno 2026**; entrata in esercizio entro **24 mesi dalla comunicazione dell'accordo di concessione** e comunque **non oltre il 31 dicembre 2027** (limite invalicabile).
 - Ricorda la **riduzione della parte fissa della TIP** in caso di cumulo per evitare doppio finanziamento.
 - Ricorda l'articolazione del rimborso in tre fasi: **anticipazione** fino al **30%** del contributo massimo, **quota intermedia** pari al **40%** del contributo (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori), **saldo** finale.
 - Ricorda gli obblighi PNRR (DNSH, milestone, controlli ANAC/RGS): rinvio alla skill `dnsh-pnrr-checker`.
@@ -131,7 +131,7 @@ Output strutturato come segue.
 - [ ] Verifica cumulabilita' incentivi (art. 11 DM 7/12/2023)
 - [ ] (Solo CER) Decisione forma giuridica + formalizzazione secondo la forma scelta (atto pubblico, scrittura privata autenticata, RUNTS, ecc.)
 - [ ] (Solo PNRR) Verifica popolazione Comune ISTAT < 50.000 ab. (regime post DM 127/2025)
-- [ ] (Solo PNRR) Verifica scadenze: completamento lavori entro 30/6/2026, esercizio entro 24 mesi dal completamento e comunque non oltre 31/12/2027
+- [ ] (Solo PNRR) Verifica scadenze (post DL 19/2026): stipula accordi di concessione GSE entro 30/6/2026, esercizio entro 24 mesi dalla comunicazione dell'accordo e comunque non oltre 31/12/2027
 - [ ] (Solo PNRR) Predisposizione adempimenti DNSH
 
 ## 6. Avvertenza finale

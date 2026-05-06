@@ -7,10 +7,13 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
-### Changed (review interno + 2 round di revisione adversariale Codex, 2026-05-06 / 2026-05-07)
+### Changed (review interno + 3 round di revisione adversariale Codex, 2026-05-06 / 2026-05-07)
 - Mappatura corretta degli articoli del D.Lgs. 199/2021: AID = art. 30 c. 1 lett. a) n. 2, GAC = art. 30 c. 2 (con vincolo "stesso edificio o condominio" alla lett. a)), CER = art. 31, art. 32 = ARERA / contratti / referente (NON GAC).
-- Recepimento del **DM MASE 16 maggio 2025 n. 127** che modifica il DM 414/2023: soglia PNRR estesa da Comuni < 5.000 ab. a Comuni < 50.000 ab.; **completamento dei lavori** entro il **30/6/2026**; **entrata in esercizio** entro **24 mesi dalla data di completamento dei lavori** e comunque entro il **31/12/2027**; erogazione PNRR articolata in **tre fasi**: anticipazione fino al 30% del contributo + quota intermedia del 40% (richiedibile dopo aver sostenuto il 40% delle spese ammissibili e comunicato l'avvio dei lavori) + saldo finale; estensione alle persone fisiche dell'esclusione del fattore di riduzione F.
-- Verifica letterale dei termini sopra sulle Regole Operative GSE CACER (Allegato 1, versione 16/7/2025), in particolare lin. 2553-2555 e par. 2.2.2.1 / 2.2.3.2.
+- Recepimento della stratificazione regolatoria del regime PNRR CACER:
+  - **DM MASE 7/12/2023 n. 414** (testo originario): Comuni < 5.000 ab.;
+  - **DM MASE 16/5/2025 n. 127**: estensione a Comuni < 50.000 ab.; aumento anticipazione dal 10% al 30%; quota intermedia 40% (post 40% spese ammissibili sostenute e avvio lavori comunicato); applicazione alle persone fisiche dell'esclusione del fattore di riduzione F. Nel regime DM 127/2025 i termini erano agganciati al "completamento dei lavori" entro 30/6/2026 e ai "24 mesi dal completamento dei lavori" per l'esercizio.
+  - **DL 19 febbraio 2026 n. 19, art. 27** ("Decreto PNRR 2026"): re-aggancio dei termini PNRR. Il 30/6/2026 e' ora la scadenza per la **stipula degli accordi di concessione** lato GSE; il termine di 24 mesi per l'esercizio decorre dalla **comunicazione dell'accordo di concessione**; il 31/12/2027 resta il limite invalicabile. Regime vigente al 2026-05-07.
+- Verifica letterale dei termini DM 127/2025 sulle Regole Operative GSE CACER (Allegato 1, versione 16/7/2025), lin. 2553-2555 e par. 2.2.2.1 / 2.2.3.2; verifica del re-aggancio post DL 19/2026 su FAQ GSE 2026-04-03 e su sintesi tecniche pubbliche (BibLus, Rinnovabili, LegaNet).
 - Distinzione esplicita tra **perimetro soggettivo della CER** (potenzialmente multi-cabina) e **perimetro tecnico della sotto-configurazione incentivata** (vincolo cabina primaria ai fini TIP).
 - Rimosso ogni numero "tipico" non sourceato (h_eq per FV/eolico/idro/biomassa, range `eta_share` 0.30-0.70, "30-50% per residenziale"): ora i parametri vanno dichiarati dall'utente con relativa fonte/motivazione.
 - Rimosse le asserzioni sull'iter autorizzativo dell'impianto ("per 350 kW serve PAS", "Modello Unico se applicabile") che eccedevano le fonti della skill: ora marcate `DA VERIFICARE` con rinvio a DPR 380/2001 + D.Lgs. 28/2011 + DM 19/5/2015 + normativa regionale (fuori scope skill).
@@ -21,7 +24,8 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Added
 - Nuova fonte `dm-mase-127-2025` in `sources.yaml`.
-- Nuova fonte `gse-pnrr-cacer` (pagina GSE attuazione misure PNRR per CACER < 50.000 ab.).
+- Nuova fonte `dl-19-2026-pnrr` in `sources.yaml` (Decreto PNRR 2026 art. 27).
+- Nuova fonte `gse-pnrr-cacer` (pagina GSE attuazione misure PNRR).
 
 ## [0.1.0-alpha] - 2026-05-06
 

@@ -3,7 +3,7 @@
 > Versione: 0.1.0-alpha
 > Stato: in sviluppo
 
-Skill di supporto alla configurazione di una **Configurazione di Autoconsumo Collettivo da Energie Rinnovabili (CACER)** - in forma di **Comunita' Energetica Rinnovabile (CER)**, **Gruppo di Autoconsumatori (GAC)** o **Autoconsumatore Individuale a Distanza (AID)** - e alla **qualifica del servizio** sul portale del GSE, ai sensi del **DM MASE 7 dicembre 2023 n. 414** e del **D.Lgs. 199/2021**.
+Skill di supporto alla configurazione di una **Configurazione di Autoconsumo Collettivo da Energie Rinnovabili (CACER)** - in forma di **Comunita' Energetica Rinnovabile (CER, art. 31)**, **Gruppo di Autoconsumatori (GAC, art. 30 c. 2)** o **Autoconsumatore Individuale a Distanza (AID, art. 30 c. 1 lett. a) n. 2)** - e alla **qualifica del servizio** sul portale del GSE, ai sensi del **D.Lgs. 199/2021**, del **DM MASE 7 dicembre 2023 n. 414** come modificato dal **DM MASE 16 maggio 2025 n. 127** e da ultimo dal **DL 19 febbraio 2026 n. 19 art. 27** ("Decreto PNRR 2026").
 
 ## Target
 
@@ -37,7 +37,9 @@ Riavviare l'agent per la discovery.
 ## Fonti consultate
 
 - D.Lgs. 8 novembre 2021 n. 199, art. 30, 31, 32 (recepimento RED II)
-- DM MASE 7 dicembre 2023 n. 414 (Decreto CACER)
+- DM MASE 7 dicembre 2023 n. 414 (Decreto CACER, testo originario)
+- DM MASE 16 maggio 2025 n. 127 (modifiche al DM 414/2023)
+- DL 19 febbraio 2026 n. 19, art. 27 (Decreto PNRR 2026, ulteriori modifiche al regime PNRR CACER - **regime vigente al 2026-05-07**)
 - Delibera ARERA 727/2022/R/eel - TIAD (Testo Integrato Autoconsumo Diffuso)
 - Regole Operative CACER del GSE (Allegato 1 - procedure di qualifica)
 
