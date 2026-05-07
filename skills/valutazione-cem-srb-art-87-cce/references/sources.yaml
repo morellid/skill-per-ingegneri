@@ -1,0 +1,79 @@
+schema_version: 1
+skill: valutazione-cem-srb-art-87-cce
+last_verified: 2026-05-07
+
+# Fonti normative per la skill: pratica art. 87 D.Lgs. 259/2003 (Codice
+# delle comunicazioni elettroniche) per impianti radioelettrici (stazioni
+# radio base, ripetitori, ponti radio) + valutazione esposizione CEM nella
+# banda 100 kHz - 300 GHz secondo DPCM 8 luglio 2003. Tutte fonti pubbliche
+# istituzionali (MIMIT, Gazzetta Ufficiale).
+
+sources:
+  - id: dlgs-259-2003-cce-mimit
+    title: "D.Lgs. 1 agosto 2003 n. 259 - Codice delle comunicazioni elettroniche - testo coordinato pubblicato dal Ministero dello sviluppo economico (oggi MIMIT)"
+    type: decreto-legislativo
+    url: https://www.mimit.gov.it/images/stories/documenti/259-2013-pub.pdf
+    accessed: 2026-05-07
+    sha256: 476b36ffc3bf045cefadb0a6c53e6b3ab58844946c6e05c4ac6487f632c5e9d8
+    license: public-domain
+    binary_path: not_in_repo/dlgs-259-2003-cce-mimit.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-259-2003-art-87.md
+    notes: |
+      Versione coordinata pubblicata dal MIMIT (ex MISE). Il file riflette il
+      testo del D.Lgs. 259/2003 e successive modifiche fino al 2013-2014
+      (CreationDate del PDF: marzo 2014). L'art. 87 ha subito ulteriori
+      modifiche dopo il 2014 (in particolare D.L. 76/2020 conv. L. 120/2020 e
+      D.Lgs. 8 novembre 2021 n. 207). La struttura procedurale (autorizzazione
+      Ente locale, parere ARPA, modello A allegato 13, SCIA per impianti
+      <= 20 W, silenzio-assenso 90 giorni, decadenza 12 mesi) e' rimasta
+      sostanzialmente stabile e costituisce il nucleo procedurale su cui
+      questa skill si basa.
+
+      L'utente che redige documenti destinati a deposito e firma DEVE
+      verificare il testo vigente puntuale dell'art. 87 nella versione
+      consolidata su Normattiva
+      (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-08-01;259).
+
+  - id: dpcm-8-7-2003-cem
+    title: "DPCM 8 luglio 2003 - Fissazione dei limiti di esposizione, dei valori di attenzione e degli obiettivi di qualita' per la protezione della popolazione dalle esposizioni a campi elettrici, magnetici ed elettromagnetici generati a frequenze comprese tra 100 kHz e 300 GHz"
+    type: decreto-presidente-consiglio-ministri
+    url: https://www.gazzettaufficiale.it/eli/gu/2003/08/28/199/sg/pdf
+    accessed: 2026-05-07
+    sha256: 362144b32d12e0bd473f87b7a47364ed325ef0a8465285b703e38661cd32bb83
+    license: public-domain
+    binary_path: not_in_repo/dpcm-8-luglio-2003-cem.pdf
+    excerpt_paths:
+      - references/estratti/dpcm-8-7-2003-limiti-cem.md
+    notes: |
+      Pubblicato in GU Serie Generale n. 199 del 28 agosto 2003, codice
+      redazionale 03A09711. Il PDF della GU comprende l'intera Gazzetta
+      del giorno; il DPCM e' contenuto nella sezione "Decreti presidenziali"
+      e in queste pagine sono riportati gli articoli 1-7 in forma testuale.
+      Le Tabelle 1, 2, 3 dell'Allegato B (valori numerici dei limiti di
+      esposizione, valori di attenzione, obiettivi di qualita') sono
+      pubblicate come immagini e non sono estraibili come testo dal PDF;
+      la skill rinvia strutturalmente alle Tabelle senza riprodurne i
+      valori numerici e demanda al professionista firmatario la verifica
+      puntuale dei valori sulla GU.
+
+  - id: legge-36-2001-quadro-cem
+    title: "Legge 22 febbraio 2001 n. 36 - Legge quadro sulla protezione dalle esposizioni a campi elettrici, magnetici ed elettromagnetici"
+    type: legge
+    url: https://www.gazzettaufficiale.it/eli/gu/2001/03/07/55/sg/pdf
+    accessed: 2026-05-07
+    sha256: 7e705e7fc62b91a4b7296ffd714b2d3df5379615f9bc436337f957744d309f3f
+    license: public-domain
+    binary_path: not_in_repo/legge-36-2001-quadro-cem.pdf
+    excerpt_paths: null
+    notes: |
+      Pubblicata in GU Serie Generale n. 55 del 7 marzo 2001. Nel PDF della
+      GU il testo articolato della legge e' presente in forma di immagine e
+      non e' estraibile come testo. La skill non quota direttamente i
+      contenuti di L. 36/2001: la utilizza solo come quadro di riferimento
+      richiamato da DPCM 8/7/2003 (che cita art. 4, 14 e definisce
+      operativamente "limiti di esposizione", "valori di attenzione",
+      "obiettivi di qualita'") e da art. 87 D.Lgs. 259/2003 (che cita
+      l'Organismo di cui all'art. 14 L. 36/2001 per i controlli ARPA).
+      Il testo letterale di L. 36/2001 e' consultabile su Normattiva
+      (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-02-22;36).
