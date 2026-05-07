@@ -1,6 +1,7 @@
 {
-  "fonte_normativa": "DM 58/2017 Allegato A (testo aggiornato DM 65/2017, DM 24/2020, DM 329/2020)",
-  "metodo": "Convenzionale (DM 58/2017 Allegato A punto 2)",
+  "fonte_normativa": "DM 58/2017 Allegato A (testo coordinato DM 65/2017, agg. DM 24/2020)",
+  "metodo": "Convenzionale (DM 58/2017 Allegato A punto 2.1)",
+  "capping_attivo": true,
   "fatto": {
     "pam": {
       "PAM": 0.012925,
@@ -41,7 +42,16 @@
       "classe_IS_V": "B"
     },
     "classe_finale": "B",
-    "descrizione_classe_finale": "Classe finale = peggiore tra classe PAM (B) e classe IS-V (B) = B"
+    "descrizione_classe_finale": "Classe finale = peggiore tra classe PAM (B) e classe IS-V (B) = B",
+    "capping": {
+      "capping_attivo": true,
+      "TR_C_SLO_originale": 30.0,
+      "TR_C_SLD_originale": 50.0,
+      "TR_C_SLO_capped": 30.0,
+      "TR_C_SLD_capped": 50.0,
+      "SLO_modificato": false,
+      "SLD_modificato": false
+    }
   },
   "progetto": {
     "pam": {
@@ -83,7 +93,16 @@
       "classe_IS_V": "A+"
     },
     "classe_finale": "A",
-    "descrizione_classe_finale": "Classe finale = peggiore tra classe PAM (A) e classe IS-V (A+) = A"
+    "descrizione_classe_finale": "Classe finale = peggiore tra classe PAM (A) e classe IS-V (A+) = A",
+    "capping": {
+      "capping_attivo": true,
+      "TR_C_SLO_originale": 100.0,
+      "TR_C_SLD_originale": 250.0,
+      "TR_C_SLO_capped": 100.0,
+      "TR_C_SLD_capped": 250.0,
+      "SLO_modificato": false,
+      "SLD_modificato": false
+    }
   },
   "salto_classi": {
     "classe_stato_fatto": "B",

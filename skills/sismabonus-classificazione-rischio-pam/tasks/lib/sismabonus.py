@@ -210,6 +210,25 @@ class CurvaIndividuazione:
 
 
 @dataclass
+class CappingApplicato:
+    """Tracciabilita' del capping applicato al passo 2.1 punto 3
+    dell'Allegato A DM 58/2017.
+
+    Memorizza i valori PRE-capping di TR_C(SLO) e TR_C(SLD) e i flag che
+    indicano se il capping ha effettivamente modificato il valore. Serve
+    per riportare in output sia il dato originario fornito dall'utente
+    sia quello effettivamente usato per il calcolo PAM.
+    """
+    capping_attivo: bool
+    TR_C_SLO_originale: float
+    TR_C_SLD_originale: float
+    TR_C_SLO_capped: float
+    TR_C_SLD_capped: float
+    SLO_modificato: bool
+    SLD_modificato: bool
+
+
+@dataclass
 class RisultatoPAM:
     """Risultato del calcolo PAM con tutti i sub-totali tracciabili."""
     PAM: float                        # frazione del costo di ricostruzione [adim.]
@@ -235,6 +254,7 @@ class RisultatoClassificazione:
     isv: RisultatoISV
     classe_finale: str                # peggiore tra classe_PAM e classe_IS_V
     descrizione_classe_finale: str    # "minimo (peggiore) tra A e B = B"
+    capping: CappingApplicato         # info su capping passo 2.1.3 dell'Allegato A
 
 
 @dataclass
@@ -254,55 +274,112 @@ def costruisci_curva_individuazione(
     capacita: StatiLimiteCapacita,
     *,
     tr_slid_anni: int = TR_SLID_ANNI,
-) -> CurvaIndividuazione:
+    capping: bool = True,
+) -> tuple[CurvaIndividuazione, CappingApplicato]:
     """Costruisce i punti (lambda_SL, CR_SL) della Curva di Individuazione.
 
     DM 58/2017 Allegato A punto 2.1: lambda(SL) = 1 / TR_C(SL); SLID e'
     convenzionale a TR=10 anni con CR=0.
 
-    NB: non esegue alcun "capping" o riordino. Se i TR_C forniti dal
-    progettista sono incongruenti (p.es. TR_C(SLO) > TR_C(SLD) implica
-    edificio che raggiunge SLD prima di SLO), la non-monotonia viene
-    segnalata in `RisultatoPAM.monotona`. La correzione delle
-    incongruenze e' responsabilita' del progettista.
+    Se `capping` (default True), applica la regola del DM 58/2017
+    Allegato A punto 2.1, passo 3:
+
+        "per il calcolo del tempo di ritorno TrC associato al
+         raggiungimento degli stati limite di esercizio (SLD ed SLO) e'
+         necessario assumere il valore minore tra quello ottenuto per
+         tali stati limite e quello valutato per lo stato limite di
+         salvaguardia della vita. Si assume, di fatto, che non si possa
+         raggiungere lo stato limite di salvaguardia della vita senza
+         aver raggiunto gli stati limite di operativita' e danno."
+
+    Operativamente:
+        TR_C(SLO) := min(TR_C(SLO), TR_C(SLV))
+        TR_C(SLD) := min(TR_C(SLD), TR_C(SLV))
+
+    Equivalente in lambda:
+        lambda_SLO := max(lambda_SLO, lambda_SLV)
+        lambda_SLD := max(lambda_SLD, lambda_SLV)
+
+    Il decreto NON disciplina esplicitamente il caso TR_C(SLO) > TR_C(SLD)
+    (SLO meno frequente di SLD), che resta a discrezione del progettista
+    nelle situazioni in cui possa effettivamente verificarsi.
+
+    Se `capping=False`, nessuna modifica ai TR_C: utile per validazione
+    di campo vs software certificati che applicano il capping a monte
+    (input gia' capped) o per analisi avanzate che giustificano la
+    deviazione dal capping standard.
     """
     if tr_slid_anni <= 0:
         raise ValueError(f"tr_slid_anni: atteso positivo, ricevuto {tr_slid_anni}")
-    return CurvaIndividuazione(
+
+    tr_slo_orig = capacita.TR_C_SLO
+    tr_sld_orig = capacita.TR_C_SLD
+    tr_slv = capacita.TR_C_SLV
+
+    if capping:
+        tr_slo_eff = min(tr_slo_orig, tr_slv)
+        tr_sld_eff = min(tr_sld_orig, tr_slv)
+    else:
+        tr_slo_eff = tr_slo_orig
+        tr_sld_eff = tr_sld_orig
+
+    info_capping = CappingApplicato(
+        capping_attivo=capping,
+        TR_C_SLO_originale=tr_slo_orig,
+        TR_C_SLD_originale=tr_sld_orig,
+        TR_C_SLO_capped=tr_slo_eff,
+        TR_C_SLD_capped=tr_sld_eff,
+        SLO_modificato=(tr_slo_eff != tr_slo_orig),
+        SLD_modificato=(tr_sld_eff != tr_sld_orig),
+    )
+
+    curva = CurvaIndividuazione(
         lam_SLID=1.0 / tr_slid_anni,
-        lam_SLO=1.0 / capacita.TR_C_SLO,
-        lam_SLD=1.0 / capacita.TR_C_SLD,
+        lam_SLO=1.0 / tr_slo_eff,
+        lam_SLD=1.0 / tr_sld_eff,
         lam_SLV=1.0 / capacita.TR_C_SLV,
         lam_SLC=1.0 / capacita.TR_C_SLC,
     )
+    return curva, info_capping
 
 
 def calcola_PAM(curva: CurvaIndividuazione) -> RisultatoPAM:
     """Calcola la Perdita Annua Media (PAM) come area sottesa alla Curva
     di Individuazione (DM 58/2017 Allegato A punto 2.1).
 
-    Formula (riportata letteralmente dall'Allegato A):
+    Formula (riportata letteralmente dall'Allegato A, passo 7):
 
         PAM = sum_{i=2}^{5} [lambda(SL_i) - lambda(SL_{i-1})] *
               [CR(SL_i) + CR(SL_{i-1})] / 2  +  lambda(SLC) * CR(SLR)
 
     con SL_1=SLID, SL_2=SLO, SL_3=SLD, SL_4=SLV, SL_5=SLC.
 
-    Implementazione: somma trapezoidale di 4 termini in valore assoluto
-    sulla differenza di lambda (la differenza fisica e' sempre il
-    "consumo di rate" tra due livelli adiacenti, indipendente dal verso
-    di sommatoria) piu' il termine di coda lambda(SLC) * CR(SLR) =
-    lambda(SLC) * 1.0.
+    Implementazione: somma trapezoidale di 4 termini in **valore
+    assoluto** sulla differenza di lambda piu' il termine di coda
+    lambda(SLC) * CR(SLR) = lambda(SLC) * 1.0.
 
-    L'uso del valore assoluto e' coerente con la geometria della curva
-    (area sempre positiva) ed e' esplicitamente confermato dal verso del
-    calcolo PAM in tutti gli output dei software certificati italiani
-    (ClaSS, CDM Win, EdiSis, MasterSap-SismiClass): l'utente fornisce
-    lambda > 0 per ciascun SL e ottiene PAM > 0.
+    Verifica della scelta di abs():
+    Letta letteralmente con i segni (lambda decrescente per i crescente:
+    lambda_SLID > lambda_SLO > lambda_SLD > lambda_SLV > lambda_SLC), la
+    sommatoria nel testo del decreto produrrebbe valore NEGATIVO, da cui
+    PAM negativo dopo l'aggiunta della coda - in contraddizione con il
+    significato fisico ("perdita annua media").
+    Lo stesso decreto (Allegato A, nota 2.1) afferma che una costruzione
+    nuova con V_R=50 anni progettata al minimo NTC ha PAM = 1.13%; il
+    calcolo con abs() su tali parametri produce esattamente 1.1344% =
+    1.13% arrotondato. Il calcolo con segni produce -0.929%.
+    L'interpretazione consolidata in letteratura tecnica italiana
+    (Cosenza et al. 2018) e nei software certificati e' geometrica
+    (area positiva sotto la spezzata), da cui l'uso del valore assoluto.
 
     Risultato:
         PAM in frazione adimensionale (es. 0.012 = 1.2% del costo di
         ricostruzione, da confrontare con la tabella classi PAM).
+
+    NB: il chiamante DEVE aver gia' applicato il capping passo 2.1.3
+    dell'Allegato A (vedi `costruisci_curva_individuazione` con
+    capping=True) prima di invocare questa funzione, altrimenti il PAM
+    calcolato puo' non essere quello prescritto dal decreto.
     """
     punti = curva.punti()
     contributi: list[dict[str, Any]] = []
@@ -373,21 +450,34 @@ def classifica_PAM(pam: float) -> str:
 
 def classifica_IS_V(is_v: float) -> str:
     """Attribuisce la classe di rischio IS-V (DM 58/2017 Allegato A
-    Tab. classi IS-V): A+ > 100%, A >= 80%, B >= 60%, C >= 45%,
-    D >= 30%, E >= 15%, F < 15%.
+    Tabella 2, testo letterale):
 
-    Boundary IS-V = 100%: la fonte (DM 58/2017 testo coordinato + esempi
-    di output dei software certificati ClaSS 2017, MasterSap-SismiClass)
-    riporta `100% < IS-V` per A+ e `80% <= IS-V <= 100%` per A. In
-    questa implementazione IS-V > 1.00 -> A+, IS-V == 1.00 -> A,
-    IS-V == 0.80 -> A (boundary inclusivo per A). Coerente con
-    l'esempio ClaSS 2017 (output testuale).
+        100% <  IS-V          -> A+
+        80%  <= IS-V <  100%  -> A
+        60%  <= IS-V <  80%   -> B
+        45%  <= IS-V <  60%   -> C
+        30%  <= IS-V <  45%   -> D
+        15%  <= IS-V <  30%   -> E
+                IS-V <= 15%   -> F
+
+    NB1: il decreto adotta la convenzione "lower bound incluso, upper
+    bound escluso" per le classi A..E. La classe F include IS-V = 0.15
+    nel suo upper bound. La classe A+ richiede IS-V STRETTAMENTE > 100%.
+
+    NB2 - ambiguita' del decreto al bordo IS-V = 100%: il testo letterale
+    pone A: `80% <= IS-V < 100%` e A+: `100% < IS-V`. Il valore esatto
+    100% non e' formalmente coperto da nessuna classe. L'interpretazione
+    conservativa (adottata anche dai software certificati come ClaSS
+    2017, MasterSap-SismiClass) e' classificare IS-V = 100% come A
+    (la classe meno migliorativa tra A+ e A). Questa implementazione
+    segue tale interpretazione.
     """
     is_v = _assert_finito_non_neg("IS-V", is_v)
     # A+ se IS-V > 1.0 (strettamente)
     if is_v > 1.00:
         return "A+"
-    # A se 0.80 <= IS-V <= 1.00
+    # A se 0.80 <= IS-V < 1.00 (testo del decreto). Per IS-V = 1.00
+    # esatto, ambiguita' del decreto: interpretazione conservativa -> A.
     if is_v >= 0.80:
         return "A"
     # B se 0.60 <= IS-V < 0.80
@@ -426,10 +516,17 @@ def classifica(
     domanda: StatiLimiteDomanda,
     *,
     tr_slid_anni: int = TR_SLID_ANNI,
+    capping: bool = True,
 ) -> RisultatoClassificazione:
     """Esegue la classificazione completa per un singolo stato (di fatto
-    o di progetto): calcola PAM, IS-V, classi e classe finale."""
-    curva = costruisci_curva_individuazione(capacita, tr_slid_anni=tr_slid_anni)
+    o di progetto): calcola PAM, IS-V, classi e classe finale.
+
+    `capping` (default True): applica la regola del DM 58/2017 Allegato A
+    punto 2.1, passo 3 (TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV))).
+    """
+    curva, info_capping = costruisci_curva_individuazione(
+        capacita, tr_slid_anni=tr_slid_anni, capping=capping
+    )
     pam = calcola_PAM(curva)
     isv = calcola_ISV(capacita.PGA_C_SLV, domanda.PGA_D_SLV)
     finale = classe_peggiore(pam.classe_PAM, isv.classe_IS_V)
@@ -442,6 +539,7 @@ def classifica(
         isv=isv,
         classe_finale=finale,
         descrizione_classe_finale=desc,
+        capping=info_capping,
     )
 
 
@@ -519,6 +617,35 @@ def _serializza(obj: Any) -> Any:
     return obj
 
 
+_CHIAVI_PGA_D = ("PGA_D_SLO", "PGA_D_SLD", "PGA_D_SLV", "PGA_D_SLC")
+
+
+def _domanda_progetto(progetto: dict[str, Any], domanda_fatto: StatiLimiteDomanda) -> StatiLimiteDomanda:
+    """Restituisce la domanda da usare per lo stato di progetto.
+
+    Regola: PGA_D dipende dal sito, non dall'edificio, quindi per
+    default e' la stessa di "fatto". Tuttavia per evitare il fallback
+    silenzioso su typo/chiavi parziali, si applicano queste regole:
+    - se nessuna chiave PGA_D_* e' presente in `progetto`: eredita da
+      `fatto` (caso normale: utente sa che la domanda non cambia);
+    - se TUTTE e 4 le chiavi PGA_D_* sono presenti: usa i valori di
+      progetto (caso anomalo: cambio sito, da segnalare al progettista);
+    - se solo ALCUNE (ma non tutte) sono presenti: ERRORE esplicito
+      (probabile typo o copy/paste parziale).
+    """
+    pga_d_present = [k for k in _CHIAVI_PGA_D if k in progetto]
+    if not pga_d_present:
+        return domanda_fatto
+    if len(pga_d_present) == 4:
+        return _build_domanda(progetto)
+    mancanti = [k for k in _CHIAVI_PGA_D if k not in progetto]
+    raise ValueError(
+        f"chiavi PGA_D_* in 'progetto' parziali: presenti {pga_d_present}, "
+        f"mancanti {mancanti}. Per la PGA_D di progetto specificare TUTTE "
+        f"le 4 chiavi, oppure NESSUNA (eredita da 'fatto')."
+    )
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description="Classificazione rischio sismico DM 58/2017 (sismabonus, metodo convenzionale).",
@@ -538,6 +665,16 @@ def main(argv: list[str] | None = None) -> int:
         default=TR_SLID_ANNI,
         help=f"TR convenzionale SLID in anni (default {TR_SLID_ANNI}).",
     )
+    parser.add_argument(
+        "--no-capping",
+        action="store_true",
+        help=(
+            "Disabilita il capping prescritto al passo 2.1.3 dell'Allegato A "
+            "(TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV))). Default: applicato. "
+            "Disabilitarlo solo per validazione vs software che applicano "
+            "il capping a monte (input gia' capped) o per analisi avanzate."
+        ),
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -550,15 +687,18 @@ def main(argv: list[str] | None = None) -> int:
         print("Errore: chiave 'fatto' obbligatoria nel JSON di input.", file=sys.stderr)
         return 2
 
+    capping = not args.no_capping
+
     output: dict[str, Any] = {
-        "fonte_normativa": "DM 58/2017 Allegato A (testo aggiornato DM 65/2017, DM 24/2020, DM 329/2020)",
-        "metodo": "Convenzionale (DM 58/2017 Allegato A punto 2)",
+        "fonte_normativa": "DM 58/2017 Allegato A (testo coordinato DM 65/2017, agg. DM 24/2020)",
+        "metodo": "Convenzionale (DM 58/2017 Allegato A punto 2.1)",
+        "capping_attivo": capping,
     }
 
     try:
         cap_f = _build_capacita(dati["fatto"])
         dom_f = _build_domanda(dati["fatto"])
-        ris_f = classifica(cap_f, dom_f, tr_slid_anni=args.tr_slid_anni)
+        ris_f = classifica(cap_f, dom_f, tr_slid_anni=args.tr_slid_anni, capping=capping)
         output["fatto"] = _serializza(ris_f)
     except ValueError as exc:
         print(f"Errore in 'fatto': {exc}", file=sys.stderr)
@@ -567,12 +707,8 @@ def main(argv: list[str] | None = None) -> int:
     if "progetto" in dati:
         try:
             cap_p = _build_capacita(dati["progetto"])
-            # PGA_D non cambia tra fatto e progetto (stesso sito); se
-            # l'utente non la replica, eredita da fatto.
-            dom_p = _build_domanda(dati["progetto"]) if all(
-                k in dati["progetto"] for k in ("PGA_D_SLO", "PGA_D_SLD", "PGA_D_SLV", "PGA_D_SLC")
-            ) else dom_f
-            ris_p = classifica(cap_p, dom_p, tr_slid_anni=args.tr_slid_anni)
+            dom_p = _domanda_progetto(dati["progetto"], dom_f)
+            ris_p = classifica(cap_p, dom_p, tr_slid_anni=args.tr_slid_anni, capping=capping)
             salto = calcola_salto_classi(ris_f, ris_p)
             output["progetto"] = _serializza(ris_p)
             output["salto_classi"] = _serializza(salto)

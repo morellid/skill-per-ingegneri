@@ -1,35 +1,47 @@
-# DM 58/2017 Allegato A punto 2.3 - Tabelle classi PAM e IS-V + classe finale
+# DM 58/2017 Allegato A - Tabelle 1 e 2 + classe finale
 
-> Fonte: DM 58/2017 Allegato A (testo aggiornato dal DM 65/2017, DM 24/2020, DM 329/2020).
-> Consultata su: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
+> Fonte: DM 58/2017 Allegato A, sostituito dal DM 65/2017 (testo coordinato vigente per le procedure di classificazione).
+> Consultata letteralmente su: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf (PDF ufficiale MIT)
 > Cross-check con output di software certificato: ClaSS 2017 di S.I.S. (Esempio_ClaSS_SIS.pdf, accesso 2026-05-07).
 > Data accesso: 2026-05-07
 > Licenza: dominio pubblico (atto normativo italiano)
 
-## Tabella classi PAM (8 classi)
+## Tabella 1 classi PAM (8 classi)
+
+> Testo letterale dell'Allegato A (Tab. 1):
 
 | Classe | Intervallo PAM (frazione del costo di ricostruzione)        |
-|:------:|:------------------------------------------------------------:|
-| A+     | PAM <= 0,50%                                                 |
-| A      | 0,50% < PAM <= 1,0%                                          |
-| B      | 1,0%  < PAM <= 1,5%                                          |
-| C      | 1,5%  < PAM <= 2,5%                                          |
-| D      | 2,5%  < PAM <= 3,5%                                          |
-| E      | 3,5%  < PAM <= 4,5%                                          |
-| F      | 4,5%  < PAM <= 7,5%                                          |
-| G      | PAM > 7,5%                                                   |
+|:------:|:-----------------------------------------------------------:|
+| A+     | PAM <= 0,50%                                                |
+| A      | 0,50% < PAM <= 1,0%                                         |
+| B      | 1,0%  < PAM <= 1,5%                                         |
+| C      | 1,5%  < PAM <= 2,5%                                         |
+| D      | 2,5%  < PAM <= 3,5%                                         |
+| E      | 3,5%  < PAM <= 4,5%                                         |
+| F      | 4,5%  < PAM <= 7,5%                                         |
+| G      | 7,5% <= PAM                                                 |
 
-## Tabella classi IS-V (7 classi - non esiste classe G per IS-V)
+**Convenzione bordi**: lower bound ESCLUSO, upper bound INCLUSO per A..F.
 
-| Classe | Intervallo IS-V |
-|:------:|:----------------:|
-| A+     | IS-V > 100%      |
-| A      | 80% <= IS-V <= 100% |
-| B      | 60% <= IS-V <  80%  |
-| C      | 45% <= IS-V <  60%  |
-| D      | 30% <= IS-V <  45%  |
-| E      | 15% <= IS-V <  30%  |
-| F      | IS-V < 15%       |
+**Ambiguita' del decreto al bordo PAM = 7.5%**: il testo letterale pone F a `4.5% < PAM <= 7.5%` (incluso) e G a `7.5% <= PAM` (incluso). Il valore esatto PAM = 7.5% rientra letteralmente in entrambe. **Interpretazione conservativa adottata** (e coerente con la prassi dei software certificati): PAM = 7.5% e' classificato come F.
+
+## Tabella 2 classi IS-V (7 classi - non esiste classe G per IS-V)
+
+> Testo letterale dell'Allegato A (Tab. 2):
+
+| Classe | Intervallo IS-V        |
+|:------:|:-----------------------:|
+| A+     | 100% < IS-V             |
+| A      | 80%  <= IS-V <  100%    |
+| B      | 60%  <= IS-V <  80%     |
+| C      | 45%  <= IS-V <  60%     |
+| D      | 30%  <= IS-V <  45%     |
+| E      | 15%  <= IS-V <  30%     |
+| F      | IS-V <= 15%             |
+
+**Convenzione bordi**: lower bound INCLUSO, upper bound ESCLUSO per A..E. La classe F include IS-V = 15% nel suo upper bound.
+
+**Ambiguita' del decreto al bordo IS-V = 100%**: il testo letterale pone A+ a `100% < IS-V` (esclusivo) e A a `80% <= IS-V < 100%` (esclusivo). Il valore esatto IS-V = 100% NON e' formalmente coperto da nessuna classe. **Interpretazione conservativa adottata da questa skill** (in linea con i software certificati ClaSS 2017 e MasterSap-SismiClass): IS-V = 100% e' classificato come A (la classe meno migliorativa tra A+ e A).
 
 ## Regola classe finale
 

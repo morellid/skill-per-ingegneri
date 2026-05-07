@@ -23,6 +23,7 @@ import json
 import math
 import os
 import sys
+import tempfile
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
 
@@ -44,7 +45,7 @@ class TestPAMFormula(unittest.TestCase):
             TR_C_SLO=10000, TR_C_SLD=10000, TR_C_SLV=20000, TR_C_SLC=50000,
             PGA_C_SLO=0.05, PGA_C_SLD=0.10, PGA_C_SLV=0.50, PGA_C_SLC=1.00,
         )
-        curva = sb.costruisci_curva_individuazione(cap)
+        curva, _ = sb.costruisci_curva_individuazione(cap, capping=False)
         ris = sb.calcola_PAM(curva)
         # PAM dovrebbe essere molto piccolo (<<0.5%)
         self.assertLess(ris.PAM_percentuale, 0.5)
@@ -58,7 +59,7 @@ class TestPAMFormula(unittest.TestCase):
             TR_C_SLO=30, TR_C_SLD=50, TR_C_SLV=475, TR_C_SLC=975,
             PGA_C_SLO=0.05, PGA_C_SLD=0.07, PGA_C_SLV=0.15, PGA_C_SLC=0.20,
         )
-        curva = sb.costruisci_curva_individuazione(cap)
+        curva, _ = sb.costruisci_curva_individuazione(cap, capping=False)
         ris = sb.calcola_PAM(curva)
         self.assertEqual(len(ris.contributi_trapezoidali), 4)
         nomi = [c["tratto"] for c in ris.contributi_trapezoidali]
@@ -74,7 +75,7 @@ class TestPAMFormula(unittest.TestCase):
             TR_C_SLO=20, TR_C_SLD=50, TR_C_SLV=200, TR_C_SLC=500,
             PGA_C_SLO=0.05, PGA_C_SLD=0.07, PGA_C_SLV=0.10, PGA_C_SLC=0.15,
         )
-        curva = sb.costruisci_curva_individuazione(cap)
+        curva, _ = sb.costruisci_curva_individuazione(cap, capping=False)
         ris = sb.calcola_PAM(curva)
         # trap = sum |dlam| * avg(CR)
         # SLID->SLO: |0.1-0.05| * (0+0.07)/2  = 0.05 * 0.035  = 0.00175
@@ -88,23 +89,94 @@ class TestPAMFormula(unittest.TestCase):
 
     def test_pam_non_monotona_segnalata(self):
         """Se TR_C non sono ordinati per severita' decrescente
-        (lambda non monotona), il flag deve essere False."""
+        (lambda non monotona), il flag deve essere False (con capping
+        disattivato per esporre la non monotonia originale)."""
         # TR_C(SLO)=50 piu' grande di TR_C(SLD)=30 -> edificio raggiunge
         # SLD prima di SLO (caso raro ma fisicamente possibile)
         cap = sb.StatiLimiteCapacita(
             TR_C_SLO=50, TR_C_SLD=30, TR_C_SLV=200, TR_C_SLC=500,
             PGA_C_SLO=0.10, PGA_C_SLD=0.07, PGA_C_SLV=0.15, PGA_C_SLC=0.20,
         )
-        curva = sb.costruisci_curva_individuazione(cap)
+        curva, _ = sb.costruisci_curva_individuazione(cap, capping=False)
         ris = sb.calcola_PAM(curva)
         self.assertFalse(ris.monotona)
+
+    def test_pam_riferimento_decreto_VR_50(self):
+        """Allegato A nota a Tab. 1: una costruzione con V_R=50 anni
+        progettata al minimo NTC (TR_C identici ai TR di domanda) ha
+        PAM = 1.13%.
+
+        TR di domanda NTC per V_R=50 anni:
+            P_VR = {0.81, 0.63, 0.10, 0.05} per {SLO, SLD, SLV, SLC}
+            TR_D = -V_R / ln(1 - P_VR)
+                 ~= {30, 50, 475, 975} anni
+
+        Questo test e' la verifica numerica fondamentale del modulo
+        contro un valore esplicitamente dichiarato dal decreto stesso.
+        Tolleranza: il decreto arrotonda a 2 decimali (1.13%); la mia
+        formula con abs() produce 1.1344% ~= 1.13%. Calcolato a mano
+        nel CHANGELOG.
+        """
+        cap = sb.StatiLimiteCapacita(
+            TR_C_SLO=30, TR_C_SLD=50, TR_C_SLV=475, TR_C_SLC=975,
+            PGA_C_SLO=0.05, PGA_C_SLD=0.07,
+            PGA_C_SLV=0.15, PGA_C_SLC=0.20,
+        )
+        curva, _ = sb.costruisci_curva_individuazione(cap, capping=True)
+        ris = sb.calcola_PAM(curva)
+        # Atteso 1.13% (decreto). Tolleranza 0.01% per arrotondamento.
+        self.assertAlmostEqual(ris.PAM_percentuale, 1.13, delta=0.01)
+        self.assertEqual(ris.classe_PAM, "B")
+
+    def test_capping_punto_2_1_3_attivo_default(self):
+        """Verifica capping prescritto da Allegato A passo 2.1.3:
+        TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV))."""
+        # TR_C(SLO)=2000 > TR_C(SLV)=475 -> SLO viene cappato a 475
+        cap = sb.StatiLimiteCapacita(
+            TR_C_SLO=2000, TR_C_SLD=50, TR_C_SLV=475, TR_C_SLC=975,
+            PGA_C_SLO=0.20, PGA_C_SLD=0.07,
+            PGA_C_SLV=0.15, PGA_C_SLC=0.20,
+        )
+        curva, info = sb.costruisci_curva_individuazione(cap, capping=True)
+        self.assertTrue(info.capping_attivo)
+        self.assertTrue(info.SLO_modificato)
+        self.assertFalse(info.SLD_modificato)
+        self.assertEqual(info.TR_C_SLO_originale, 2000)
+        self.assertEqual(info.TR_C_SLO_capped, 475)
+        # lambda_SLO dovrebbe essere uguale a lambda_SLV dopo capping
+        self.assertAlmostEqual(curva.lam_SLO, curva.lam_SLV)
+
+    def test_capping_disattivato_via_flag(self):
+        """Con capping=False, i TR_C originali sono usati invariati."""
+        cap = sb.StatiLimiteCapacita(
+            TR_C_SLO=2000, TR_C_SLD=50, TR_C_SLV=475, TR_C_SLC=975,
+            PGA_C_SLO=0.20, PGA_C_SLD=0.07,
+            PGA_C_SLV=0.15, PGA_C_SLC=0.20,
+        )
+        curva, info = sb.costruisci_curva_individuazione(cap, capping=False)
+        self.assertFalse(info.capping_attivo)
+        self.assertFalse(info.SLO_modificato)
+        self.assertEqual(info.TR_C_SLO_capped, 2000)
+        self.assertAlmostEqual(curva.lam_SLO, 1.0 / 2000)
+
+    def test_capping_no_op_su_input_gia_monotono(self):
+        """Su input gia' monotono il capping non altera nulla."""
+        cap = sb.StatiLimiteCapacita(
+            TR_C_SLO=30, TR_C_SLD=50, TR_C_SLV=475, TR_C_SLC=975,
+            PGA_C_SLO=0.05, PGA_C_SLD=0.07,
+            PGA_C_SLV=0.15, PGA_C_SLC=0.20,
+        )
+        curva, info = sb.costruisci_curva_individuazione(cap, capping=True)
+        self.assertTrue(info.capping_attivo)
+        self.assertFalse(info.SLO_modificato)
+        self.assertFalse(info.SLD_modificato)
 
     def test_pam_monotona_caso_normale(self):
         cap = sb.StatiLimiteCapacita(
             TR_C_SLO=20, TR_C_SLD=50, TR_C_SLV=200, TR_C_SLC=500,
             PGA_C_SLO=0.05, PGA_C_SLD=0.07, PGA_C_SLV=0.10, PGA_C_SLC=0.15,
         )
-        curva = sb.costruisci_curva_individuazione(cap)
+        curva, _ = sb.costruisci_curva_individuazione(cap, capping=False)
         ris = sb.calcola_PAM(curva)
         self.assertTrue(ris.monotona)
 
@@ -155,16 +227,20 @@ class TestClassiPAMBoundary(unittest.TestCase):
 
 
 class TestClassiISVBoundary(unittest.TestCase):
-    """Test sui bordi della Tab. classi IS-V (Allegato A punto 2.3).
+    """Test sui bordi della Tab. 2 classi IS-V dell'Allegato A
+    (testo letterale DM 65/2017):
 
-    Convenzione boundary:
-    - A+ se IS-V > 100% (strettamente)
-    - A  se 80% <= IS-V <= 100% (entrambi inclusi)
-    - B  se 60% <= IS-V <  80% (sup esclusivo)
-    - C  se 45% <= IS-V <  60%
-    - D  se 30% <= IS-V <  45%
-    - E  se 15% <= IS-V <  30%
-    - F  se IS-V <  15%
+        100% <  IS-V          -> A+
+        80%  <= IS-V <  100%  -> A
+        60%  <= IS-V <  80%   -> B
+        45%  <= IS-V <  60%   -> C
+        30%  <= IS-V <  45%   -> D
+        15%  <= IS-V <  30%   -> E
+                IS-V <= 15%   -> F
+
+    Convenzione: lower bound INCLUSO, upper bound ESCLUSO per A..E.
+    Caso ambiguo IS-V = 100%: il decreto non lo copre formalmente
+    (A+: > 100%, A: < 100%); interpretazione conservativa = A.
     """
 
     def test_classe_A_plus(self):
@@ -172,18 +248,23 @@ class TestClassiISVBoundary(unittest.TestCase):
         self.assertEqual(sb.classifica_IS_V(1.0001), "A+")
 
     def test_classe_A(self):
-        # 100% boundary -> A
+        # 100% esatto: ambiguita' del decreto, interpretazione conservativa -> A
         self.assertEqual(sb.classifica_IS_V(1.00), "A")
+        # 99.99%: chiaramente A (< 100%)
+        self.assertEqual(sb.classifica_IS_V(0.9999), "A")
         self.assertEqual(sb.classifica_IS_V(0.90), "A")
-        # 80% boundary -> A (incluso)
+        # 80% esatto: lower bound INCLUSO di A -> A
         self.assertEqual(sb.classifica_IS_V(0.80), "A")
 
     def test_classe_B(self):
+        # 79.99%: < 80%, quindi B (upper bound ESCLUSO di A)
         self.assertEqual(sb.classifica_IS_V(0.7999), "B")
+        # 60% esatto: lower bound INCLUSO di B -> B
         self.assertEqual(sb.classifica_IS_V(0.60), "B")
 
     def test_classe_C(self):
         self.assertEqual(sb.classifica_IS_V(0.5999), "C")
+        # 45% esatto: lower bound INCLUSO di C -> C
         self.assertEqual(sb.classifica_IS_V(0.45), "C")
 
     def test_classe_D(self):
@@ -195,6 +276,10 @@ class TestClassiISVBoundary(unittest.TestCase):
         self.assertEqual(sb.classifica_IS_V(0.15), "E")
 
     def test_classe_F(self):
+        # 14.99%: < 15%, quindi F (upper bound ESCLUSO di E, nota: F ha
+        # IS-V <= 15%, quindi anche 15% rientra in entrambi - ambiguita'
+        # del decreto al solo bordo 15%; interpretazione: 15% va in E
+        # come da convenzione "lower bound incluso").
         self.assertEqual(sb.classifica_IS_V(0.1499), "F")
         self.assertEqual(sb.classifica_IS_V(0.0), "F")
 
@@ -275,9 +360,16 @@ class TestSaltoClassi(unittest.TestCase):
             contributi_trapezoidali=[], contributo_coda_SLR=0.0, monotona=True,
         )
         isv = sb.RisultatoISV(IS_V=1.0, IS_V_percentuale=100.0, classe_IS_V=classe)
+        capping = sb.CappingApplicato(
+            capping_attivo=True,
+            TR_C_SLO_originale=30, TR_C_SLD_originale=50,
+            TR_C_SLO_capped=30, TR_C_SLD_capped=50,
+            SLO_modificato=False, SLD_modificato=False,
+        )
         return sb.RisultatoClassificazione(
             pam=pam, isv=isv, classe_finale=classe,
             descrizione_classe_finale="(test)",
+            capping=capping,
         )
 
     def test_salto_zero(self):
@@ -370,19 +462,18 @@ class TestValidazioneInput(unittest.TestCase):
 
 
 class TestCLI(unittest.TestCase):
-    """Smoke test CLI con file JSON."""
+    """Smoke test CLI con file JSON. Usa tempfile per supportare
+    filesystem read-only sulla skill installata."""
 
     def setUp(self):
-        self.tmpdir = os.path.join(_THIS_DIR, "_tmp_test")
-        os.makedirs(self.tmpdir, exist_ok=True)
+        self._tmp = tempfile.TemporaryDirectory()
+        self.tmpdir = self._tmp.name
 
     def tearDown(self):
-        for f in os.listdir(self.tmpdir):
-            os.remove(os.path.join(self.tmpdir, f))
-        os.rmdir(self.tmpdir)
+        self._tmp.cleanup()
 
-    def _scrivi(self, payload: dict) -> str:
-        path = os.path.join(self.tmpdir, "input.json")
+    def _scrivi(self, payload: dict, name: str = "input.json") -> str:
+        path = os.path.join(self.tmpdir, name)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f)
         return path
@@ -468,6 +559,82 @@ class TestCLI(unittest.TestCase):
         with redirect_stderr(buf_err):
             rc = sb.main(["--input-json", path])
         self.assertEqual(rc, 2)
+
+    def test_cli_pga_d_progetto_parziale_errore(self):
+        """Se 'progetto' contiene SOLO ALCUNE chiavi PGA_D_*, la CLI
+        deve segnalare errore esplicito (no fallback silenzioso)."""
+        path = self._scrivi({
+            "fatto": {
+                "TR_C_SLO": 30, "TR_C_SLD": 50, "TR_C_SLV": 475, "TR_C_SLC": 975,
+                "PGA_C_SLO": 0.05, "PGA_C_SLD": 0.07,
+                "PGA_C_SLV": 0.15, "PGA_C_SLC": 0.20,
+                "PGA_D_SLO": 0.05, "PGA_D_SLD": 0.07,
+                "PGA_D_SLV": 0.15, "PGA_D_SLC": 0.20,
+            },
+            "progetto": {
+                "TR_C_SLO": 100, "TR_C_SLD": 250, "TR_C_SLV": 800, "TR_C_SLC": 1500,
+                "PGA_C_SLO": 0.10, "PGA_C_SLD": 0.15,
+                "PGA_C_SLV": 0.30, "PGA_C_SLC": 0.40,
+                # SOLO una chiave PGA_D in progetto: typo simulato
+                "PGA_D_SLV": 0.15,
+            }
+        })
+        buf_err = io.StringIO()
+        with redirect_stderr(buf_err):
+            rc = sb.main(["--input-json", path])
+        self.assertEqual(rc, 2)
+        self.assertIn("PGA_D", buf_err.getvalue())
+
+    def test_cli_pga_d_progetto_assente_eredita(self):
+        """Se 'progetto' NON ha alcuna chiave PGA_D_*, eredita da fatto."""
+        path = self._scrivi({
+            "fatto": {
+                "TR_C_SLO": 30, "TR_C_SLD": 50, "TR_C_SLV": 475, "TR_C_SLC": 975,
+                "PGA_C_SLO": 0.05, "PGA_C_SLD": 0.07,
+                "PGA_C_SLV": 0.15, "PGA_C_SLC": 0.20,
+                "PGA_D_SLO": 0.05, "PGA_D_SLD": 0.07,
+                "PGA_D_SLV": 0.15, "PGA_D_SLC": 0.20,
+            },
+            "progetto": {
+                "TR_C_SLO": 100, "TR_C_SLD": 250, "TR_C_SLV": 800, "TR_C_SLC": 1500,
+                "PGA_C_SLO": 0.10, "PGA_C_SLD": 0.15,
+                "PGA_C_SLV": 0.30, "PGA_C_SLC": 0.40,
+            }
+        })
+        buf_out = io.StringIO()
+        with redirect_stdout(buf_out):
+            rc = sb.main(["--input-json", path])
+        self.assertEqual(rc, 0)
+        out = json.loads(buf_out.getvalue())
+        # IS-V progetto = PGA_C(SLV)/PGA_D(SLV) = 0.30/0.15 = 2.0 (eredita PGA_D fatto)
+        self.assertAlmostEqual(out["progetto"]["isv"]["IS_V"], 2.0)
+
+    def test_cli_no_capping_flag(self):
+        """Verifica che --no-capping disattivi il capping prescritto."""
+        path = self._scrivi({
+            "fatto": {
+                "TR_C_SLO": 2000, "TR_C_SLD": 50, "TR_C_SLV": 475, "TR_C_SLC": 975,
+                "PGA_C_SLO": 0.20, "PGA_C_SLD": 0.07,
+                "PGA_C_SLV": 0.15, "PGA_C_SLC": 0.20,
+                "PGA_D_SLO": 0.05, "PGA_D_SLD": 0.07,
+                "PGA_D_SLV": 0.15, "PGA_D_SLC": 0.20,
+            }
+        })
+        # Con capping (default)
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            self.assertEqual(sb.main(["--input-json", path]), 0)
+        with_capping = json.loads(buf.getvalue())
+        self.assertTrue(with_capping["capping_attivo"])
+        self.assertTrue(with_capping["fatto"]["capping"]["SLO_modificato"])
+
+        # Senza capping
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            self.assertEqual(sb.main(["--input-json", path, "--no-capping"]), 0)
+        no_capping = json.loads(buf.getvalue())
+        self.assertFalse(no_capping["capping_attivo"])
+        self.assertFalse(no_capping["fatto"]["capping"]["SLO_modificato"])
 
 
 class TestAntiDriftFixture(unittest.TestCase):

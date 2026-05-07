@@ -23,59 +23,63 @@ sources:
     type: decreto
     url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: PENDING_FETCH
     license: public-domain
     binary_path: not_in_repo/dm-58-2017.pdf
     excerpt_path: references/estratti/dm-58-2017-art-3.md
     notes: |
       Decreto istitutivo del sismabonus tecnico (rinvio aliquote a legge
-      finanziaria). Allegato A contiene le Linee Guida per la
-      classificazione del rischio sismico. Allegato B (modello di
-      asseverazione) e successivo Allegato B-bis (asseverazione progetto)
-      sono fuori scope di questa skill.
+      finanziaria). Allegato A originale (poi sostituito dal DM 65/2017)
+      contiene le Linee Guida per la classificazione del rischio sismico.
+      Hash da calcolare al primo fetch del PDF integrale (la pagina MIT
+      e' un indice; il PDF integrale e' linkato come sotto-allegato).
 
-  - id: dm-65-2017
-    title: "DM MIT 7/3/2017 n. 65 - Sostituzione dell'Allegato A del DM 58/2017"
-    type: decreto
-    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-65-del-07032017
+  - id: dm-65-2017-all-a
+    title: "DM MIT 7/3/2017 n. 65 - Allegato A: Linee guida per la classificazione del rischio sismico delle costruzioni (testo letterale vigente)"
+    type: allegato
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
     license: public-domain
-    binary_path: not_in_repo/dm-65-2017.pdf
+    binary_path: not_in_repo/dm-65-2017-allegato-a.pdf
     excerpt_path: references/estratti/dm-58-2017-allegato-a-formula-pam.md
     notes: |
-      Sostituisce l'Allegato A del DM 58/2017 con versione che chiarisce
-      la formula PAM, le tabelle classi e introduce la regola del salto
-      classi. Base del testo coordinato (poi aggiornato da DM 24/2020 e
-      DM 329/2020).
+      ALLEGATO A del DM 58/2017 sostituito dal DM 65/2017. Testo letterale
+      di riferimento per la procedura di classificazione (PAM, IS-V,
+      tabelle classi, capping al passo 2.1.3, classe finale, salto
+      classi). PDF di 594 KB scaricato direttamente dal sito MIT;
+      hash SHA256 calcolato al fetch del 2026-05-07.
 
   - id: dm-24-2020
     title: "DM MIT 9/1/2020 n. 24 - Modifiche all'Allegato A del DM 58/2017"
     type: decreto
     url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-24-del-09012020
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: PENDING_FETCH
     license: public-domain
     binary_path: not_in_repo/dm-24-2020.pdf
     excerpt_path: null
     notes: |
-      Aggiornamento Allegato A: precisazioni metodologiche, allineamento
-      a NTC 2018, nuovi modelli Allegato B.
+      Aggiornamento successivo del DM 58/2017. Da fetchare e includere
+      negli estratti se introduce modifiche all'Allegato A rispetto alla
+      versione DM 65/2017.
 
   - id: dm-329-2020
-    title: "DM MIT 6/8/2020 n. 329 - Ulteriore modifica dell'Allegato A del DM 58/2017"
+    title: "DM MIT 6/8/2020 n. 329 - Modifica all'art. 3 del DM 58/2017 e sostituzione dell'Allegato B"
     type: decreto
-    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-329-del-06082020
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2020-08/Decreto%20SismaBonus.pdf
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: 9031321161c6d7e3eaa71228a9f9c333f2f1f08d209ad7d6bb73fcd0438837a5
     license: public-domain
     binary_path: not_in_repo/dm-329-2020.pdf
     excerpt_path: null
     notes: |
-      Versione attualmente vigente del testo coordinato Allegato A.
-      Mantiene formula PAM, tabelle classi e regola salto classi
-      identiche al DM 65/2017; cambia principalmente la modulistica
-      Allegato B / B-bis.
+      Modifica l'art. 3 del DM 58/2017 (commi 4-bis, 4-ter, 4-quater:
+      super-sismabonus 110%, polizza assicurativa, SAL) e SOSTITUISCE
+      l'Allegato B (modello di asseverazione tecnica del professionista).
+      NON modifica l'Allegato A. Fuori scope diretto della skill (tocca
+      asseverazione e adempimenti fiscali, non la procedura di calcolo).
+      Hash SHA256 calcolato al fetch del 2026-05-07.
 
   # --- Riferimenti tecnici NTC 2018 ------------------------------------
 
@@ -84,7 +88,7 @@ sources:
     type: decreto
     url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-8-del-17012018
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: PENDING_FETCH
     license: public-domain
     binary_path: not_in_repo/ntc-2018.pdf
     excerpt_path: null
@@ -100,7 +104,7 @@ sources:
     type: circolare
     url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: PENDING_FETCH
     license: public-domain
     binary_path: not_in_repo/circ-7-2019.pdf
     excerpt_path: null
@@ -117,7 +121,7 @@ sources:
     type: altro
     url: https://infowebsrl.it/Newsletter/SIS_ingegneria/1/Pdf/Esempio_ClaSS_SIS.pdf
     accessed: 2026-05-07
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: 5a9ceccf7fd37529da7a3e894fde31cc52720ceadea833484b19378cefe3f985
     license: other
     binary_path: not_in_repo/class-2017-esempio.pdf
     excerpt_path: null
@@ -129,4 +133,5 @@ sources:
       operative del produttore software). Da usare come benchmark
       qualitativo per la validazione di campo Livello 2 insieme ad
       altri software (CDM Win STS, EdiSis Newsoft, MasterSap-SismiClass
-      AMV).
+      AMV). Hash SHA256 calcolato al fetch del 2026-05-07 (PDF di
+      874 KB scaricato dall'URL pubblico InfoWebSrl).

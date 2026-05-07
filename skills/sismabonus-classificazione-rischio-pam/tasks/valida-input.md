@@ -22,9 +22,20 @@ Tutti i valori di TR_C e PGA devono essere:
 
 Il modulo Python `sismabonus.py` rifiuta automaticamente input non validi e ritorna codice di uscita 2 con messaggio su stderr. Se l'utente fornisce input via JSON, il modulo segnala la chiave problematica.
 
-### Check 2 - monotonia di lambda (atteso fisico)
+### Check 2 - capping prescritto dal decreto (passo 2.1.3)
 
-In condizioni "ben condizionate", al crescere della severita' del SL il TR_C deve aumentare (lambda diminuisce):
+Il DM 58/2017 Allegato A punto 2.1, passo 3, **prescrive** una correzione obbligatoria sui TR_C:
+
+  TR_C(SLO) := min(TR_C(SLO), TR_C(SLV))
+  TR_C(SLD) := min(TR_C(SLD), TR_C(SLV))
+
+Il modulo applica questo capping di **default** (`capping=True`). L'output riporta nel campo `capping` i valori originali e quelli effettivamente usati per il calcolo PAM, con flag `SLO_modificato`/`SLD_modificato` per tracciabilita'.
+
+Se il capping ha modificato qualcosa (`SLO_modificato=true` o `SLD_modificato=true`), avvertire l'utente: l'analisi originaria produceva TR_C(SLO o SLD) > TR_C(SLV), che il decreto non ammette. Il PAM calcolato e' coerente con il decreto; il professionista deve comunque verificare la qualita' dell'analisi a monte.
+
+### Check 3 - monotonia residua di lambda (atteso fisico)
+
+Dopo il capping, in condizioni "ben condizionate", al crescere della severita' del SL il TR_C deve aumentare:
 
   TR_C(SLO) <= TR_C(SLD) <= TR_C(SLV) <= TR_C(SLC)
 
@@ -32,10 +43,10 @@ equivalentemente:
 
   lambda(SLID) >= lambda(SLO) >= lambda(SLD) >= lambda(SLV) >= lambda(SLC)
 
-Se non e' rispettato, il modulo segnala `monotona: false` ma calcola comunque. Il professionista deve verificare:
+Se NON e' rispettato anche dopo il capping (caso TR_C(SLO) > TR_C(SLD) non disciplinato esplicitamente dal decreto), il modulo segnala `monotona: false` ma calcola comunque. Il professionista deve verificare:
 - errore di analisi (LC sbagliato, FC sbagliato, modello incoerente);
 - edificio realmente non duttile, dove SLD e' raggiunto a livelli di azione piu' bassi di SLO (raro ma fisicamente possibile per costruzioni esistenti molto rigide e fragili);
-- necessita' di "capping" coerente con DM 58/2017 Allegato A (cap. 2.1) - es. porre TR_C(SLO) = TR_C(SLD) se SLO uscirebbe dal modello con TR maggiore. La regola di capping NON e' applicata automaticamente dalla skill: e' responsabilita' del progettista.
+- necessita' di una correzione conservativa aggiuntiva caso per caso, non automatizzata dalla skill.
 
 ### Check 3 - ordine di grandezza (sanity)
 

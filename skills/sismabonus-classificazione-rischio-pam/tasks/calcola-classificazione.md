@@ -31,39 +31,42 @@ Estratti normativi in [`../references/estratti/`](../references/estratti/):
 
 ### Passo 1 - costruzione file JSON di input
 
-Costruire un file JSON con struttura:
+Costruire un file JSON con struttura (sostituire `<...>` con i valori numerici - le chiavi PGA_D_* in `progetto` sono OPZIONALI: se assenti, la skill eredita la PGA_D di `fatto`):
 
 ```json
 {
   "fatto": {
-    "TR_C_SLO": <anni>,
-    "TR_C_SLD": <anni>,
-    "TR_C_SLV": <anni>,
-    "TR_C_SLC": <anni>,
-    "PGA_C_SLO": <g>,
-    "PGA_C_SLD": <g>,
-    "PGA_C_SLV": <g>,
-    "PGA_C_SLC": <g>,
-    "PGA_D_SLO": <g>,
-    "PGA_D_SLD": <g>,
-    "PGA_D_SLV": <g>,
-    "PGA_D_SLC": <g>
+    "TR_C_SLO": "<anni>",
+    "TR_C_SLD": "<anni>",
+    "TR_C_SLV": "<anni>",
+    "TR_C_SLC": "<anni>",
+    "PGA_C_SLO": "<g>",
+    "PGA_C_SLD": "<g>",
+    "PGA_C_SLV": "<g>",
+    "PGA_C_SLC": "<g>",
+    "PGA_D_SLO": "<g>",
+    "PGA_D_SLD": "<g>",
+    "PGA_D_SLV": "<g>",
+    "PGA_D_SLC": "<g>"
   },
   "progetto": {
-    "TR_C_SLO": <anni>,
-    "TR_C_SLD": <anni>,
-    "TR_C_SLV": <anni>,
-    "TR_C_SLC": <anni>,
-    "PGA_C_SLO": <g>,
-    "PGA_C_SLD": <g>,
-    "PGA_C_SLV": <g>,
-    "PGA_C_SLC": <g>
-    // PGA_D ereditate da "fatto" (stesso sito); ripetere solo se diverse
+    "TR_C_SLO": "<anni>",
+    "TR_C_SLD": "<anni>",
+    "TR_C_SLV": "<anni>",
+    "TR_C_SLC": "<anni>",
+    "PGA_C_SLO": "<g>",
+    "PGA_C_SLD": "<g>",
+    "PGA_C_SLV": "<g>",
+    "PGA_C_SLC": "<g>"
   }
 }
 ```
 
+(Nota: nello schema sopra i valori sono mostrati come stringhe placeholder solo perche' JSON non ammette commenti; sostituirli con numeri reali.)
+
 La sezione `progetto` e' opzionale: omessa se l'utente vuole solo classificare lo stato di fatto.
+
+**Regola PGA_D in `progetto`** (per evitare typo silenziosi): o si forniscono TUTTE e 4 le chiavi `PGA_D_*` (caso anomalo: cambio sito), oppure NESSUNA (caso normale: PGA_D ereditata da `fatto`). Una sola o due o tre chiavi -> errore esplicito.
 
 ### Passo 2 - invocazione modulo
 
@@ -73,16 +76,20 @@ python3 ${CLAUDE_SKILL_DIR}/tasks/lib/sismabonus.py --input-json caso.json
 
 In Codex / altri agent: sostituire `${CLAUDE_SKILL_DIR}` con il path assoluto della skill installata.
 
+**Capping**: di default il modulo applica il capping prescritto dall'Allegato A passo 2.1.3 (TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV))). Per disattivarlo (es. validazione vs software che applicano il capping a monte) usare `--no-capping`. Sconsigliato in tutti gli altri casi.
+
 ### Passo 3 - lettura e parafrasi output
 
 L'output del modulo e' un JSON con campi:
 - `fonte_normativa`: stringa di citazione
-- `metodo`: "Convenzionale (DM 58/2017 Allegato A punto 2)"
+- `metodo`: "Convenzionale (DM 58/2017 Allegato A punto 2.1)"
+- `capping_attivo`: bool (true se applicato il capping del passo 2.1.3)
 - `fatto`: struttura `RisultatoClassificazione`
   - `pam`: `RisultatoPAM` con `PAM`, `PAM_percentuale`, `classe_PAM`, `contributi_trapezoidali` (4 termini SLID->SLO, SLO->SLD, SLD->SLV, SLV->SLC), `contributo_coda_SLR`, `monotona`
   - `isv`: `RisultatoISV` con `IS_V`, `IS_V_percentuale`, `classe_IS_V`
-  - `classe_finale`: classe peggiore (Allegato A punto 2.3)
+  - `classe_finale`: classe peggiore tra classe_PAM e classe_IS_V
   - `descrizione_classe_finale`: spiegazione testuale
+  - `capping`: `CappingApplicato` con TR_C originali e capped per SLO/SLD + flag `SLO_modificato`/`SLD_modificato`
 - `progetto`: idem (se richiesto)
 - `salto_classi`: `RisultatoSaltoClassi` con `classe_stato_fatto`, `classe_stato_progetto`, `salto_classi`, `miglioramento_pam_percent`, `miglioramento_isv_percent` (se richiesto)
 
