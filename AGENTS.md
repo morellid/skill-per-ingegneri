@@ -1,126 +1,104 @@
 # AGENTS.md - skill-per-ingegneri
 
-> File di guida cross-agent secondo lo standard aperto [AGENTS.md](https://agents.md/), governato dalla Linux Foundation Agentic AI Foundation. Letto nativamente da Codex, Cursor, Windsurf, GitHub Copilot, Devin, Amp, Antigravity e altri tool. Claude Code usa il suo formato (`CLAUDE.md` + `SKILL.md`); le skill in questo repo sono compatibili con entrambi.
+> Guida cross-agent ([standard aperto](https://agents.md/), Linux Foundation Agentic AI Foundation) per chi **crea o modifica skill in questo repo**. Letta nativamente da Codex, Cursor, Windsurf, GitHub Copilot, Devin, Amp, Antigravity. Claude Code la legge tramite [`CLAUDE.md`](CLAUDE.md), che rinvia qui.
+>
+> **Per installare e usare le skill** (utenti finali): vedi [`README.md`](README.md). Questo file e' solo per agent che modificano il repo.
 
-## Cos'e' questo repository
+## Cos'e' questo repo
 
-`skill-per-ingegneri` e' un **catalogo di skill AI** per la pratica dell'ingegneria italiana. Ogni skill in `skills/<nome>/` e' un pacchetto autonomo con `SKILL.md` (entry point) + `tasks/` (sotto-attivita') + `references/` (estratti normativi + sources.yaml) + `examples/`.
+Catalogo di skill AI per la pratica dell'ingegneria italiana, in formato dual-agent (Claude Code + OpenAI Codex). Ogni skill in `skills/<nome>/` e' un pacchetto autonomo, source-grounded su norme italiane/UE, scritto in italiano, distribuito come supporto al professionista firmatario (mai sostituto).
 
-Le skill sono pensate per girare come pacchetti installabili dentro un agent (Claude Code, OpenAI Codex), oppure essere referenziate come contesto da agent che leggono AGENTS.md.
+Per l'elenco aggiornato delle skill pubblicate: [`README.md`](README.md).
 
-## Skill disponibili
+## Struttura minima che un agent deve conoscere
 
-Vedi [`README.md`](README.md) per l'elenco aggiornato. Al momento:
+```
+skill-per-ingegneri/
+├── AGENTS.md                  # questo file
+├── CLAUDE.md                  # rinvia ad AGENTS.md
+├── README.md                  # doc utenti finali (install/uso)
+├── CONTRIBUTING.md            # processo per contributori umani
+├── methodology/               # SOP dettagliate (leggi prima di operare)
+│   ├── criteri-selezione.md   # quando una skill ha senso
+│   ├── generazione-skill.md   # workflow nuova skill
+│   ├── validazione.md         # 3 livelli di validazione
+│   └── update-cycle.md        # mantenimento post-release
+├── templates/skill-template/  # scaffold per scripts/new-skill.sh
+├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh
+└── skills/<nome>/             # le skill
+    ├── SKILL.md               # entry point + frontmatter (name, description, license: MIT)
+    ├── agents/openai.yaml     # UI metadata Codex
+    ├── tasks/                 # sotto-attivita' (progressive disclosure)
+    ├── references/
+    │   ├── sources.yaml       # catalogo fonti (URL, accessed, sha256, licenza)
+    │   └── estratti/          # estratti testuali delle fonti pubbliche
+    ├── examples/              # >=1 caso conforme + >=1 caso problematico
+    ├── AGENTS.md              # convenzioni di dominio della skill
+    ├── README.md              # doc utente della skill
+    └── CHANGELOG.md           # semver per skill
+```
 
-- `skills/pos-allegato-xv-checker/` - guida la compilazione assistita e verifica POS rispetto Allegato XV D.Lgs. 81/2008, con possibile uso del DI 9/9/2014 sui modelli semplificati
-- `skills/dvr-generico/` - DVR per imprese italiane di qualunque settore (D.Lgs. 81/2008 art. 17, 28, 29)
-- `skills/gdpr-registro-dpia/` - Registro art. 30 GDPR + DPIA art. 35
-- `skills/ai-act-compliance/` - AI Act italiano (versione preliminare; la versione inglese full-feature e' nel repo separato `ai-act-skill`)
-- `skills/nis2-self-assessment/` - self-assessment NIS2 italiana (D.Lgs. 138/2024 + Det. ACN 164179/2025 -> 379907/2025): perimetro essenziale/importante, gap analysis misure di base, verifica incidente significativo, obblighi organi di amministrazione
-- `skills/spettro-risposta-ntc/` - calcolo code-driven dello spettro di risposta elastico orizzontale ai sensi NTC 2018 par. 3.2 + Circ. 7/2019; modulo Python con test suite, output verificabile vs foglio Excel CSLP
-- `skills/combinazioni-carico-ntc/` - generazione e verifica code-driven delle combinazioni delle azioni SLU/SLE/sismiche/eccezionali ai sensi NTC 2018 par. 2.5.3, con coefficienti psi Tab. 2.5.I e gamma Tab. 2.6.I; modulo Python con test suite
-- `skills/pfte-allegato-i7-checker/` - checklist e verifica completezza elaborati PFTE / progetto esecutivo di lavori pubblici ai sensi D.Lgs. 36/2023 art. 41 + Allegato I.7 (Codice contratti pubblici), integrato dal correttivo D.Lgs. 209/2024
-- `skills/modulistica-edilizia-unificata/` - determinazione del modulo edilizio nazionale unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e relativo elenco di allegati, ai sensi DPR 380/2001 + Tabella A D.Lgs. 222/2016, integrato con il Salva Casa (DL 69/2024 conv. L. 105/2024) e con la modulistica unificata aggiornata in Conferenza Unificata il 27/3/2025
-- `skills/transizione-5-0-asseverazione/` - asseverazione tecnica ex ante/ex post del Piano Transizione 5.0 (calcolo riduzione consumi 3% struttura / 5% processo, conversione tep, modelli MIMIT) per EGE / ESCo / ingegneri / periti industriali ai sensi DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024 + Circolare MIMIT 25877/2024
-- `skills/dnsh-pnrr-checker/` - verifica documentale DNSH per interventi PNRR e, solo se la misura lo richiama espressamente, per interventi PNC: mappatura misura, schede tecniche RGS, checklist ex ante/ex post, piano evidenze e report per gara/SAL/collaudo/ReGiS, ai sensi Reg. UE 2020/852 art. 17 + Reg. UE 2021/241 art. 5 e 18 + Circolare RGS 22/2024 + Guida operativa DNSH RGS 2024 + DL 77/2021 art. 14
-- `skills/piano-lavoro-amianto/` - supporta il precheck, la redazione guidata e la verifica del piano di lavoro per demolizione o rimozione di amianto ai sensi dell'art. 256 D.Lgs. 81/2008, nel testo aggiornato dal D.Lgs. 213/2025, con misure tecniche dal DM 6/9/1994
-- `skills/catasto-pregeo-docfa-atti-telematici/` - assistente alla redazione e al check pre-trasmissione degli atti telematici di aggiornamento del Catasto Terreni (Pregeo 10) e del Catasto Fabbricati (Docfa 4): scelta tipologia atto Pregeo (TM/FR/FM/SC/TP), causale e categoria Docfa, EP/ES/ET/Quadro D, deposito telematico frazionamenti dal 1/7/2025 (art. 30 co. 5-bis DPR 380/2001 - Risoluzione AdE 40/E del 9/6/2025), diagnosi rifiuti telematici via Sister, ai sensi DPR 380/2001 + DM 28/1998 + Circ. AdE Territorio 3/2009 + Vademecum Docfa v1.0 (luglio 2022)
-- `skills/pratiche-edilizie-lr65-2014-toscana/` - determina il titolo abilitativo edilizio (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC) per interventi in Toscana e genera la checklist documentale completa, con specificita' regionali (classificazione sismica DGRT 421/2014, DPGR 1/R/2022 Genio Civile, vincolo paesaggistico, Piano Operativo), ai sensi LR Toscana 65/2014 + DPR 380/2001; asset locale Ordine Ingegneri Livorno
-- `skills/cer-cacer-configurazione-gse/` - configurazione di CER (Comunita' di Energia Rinnovabile, art. 31 D.Lgs. 199/2021), GAC (Gruppo di Autoconsumatori, art. 30 c. 2) o AID (Autoconsumatore Individuale a Distanza, art. 30 c. 1 lett. a) n. 2) e qualifica al servizio CACER del GSE: verifica perimetro cabina primaria, scelta forma, redazione guidata dello statuto, simulazione semplificata di energia condivisa, TIP, tariffa di restituzione (TR) e contributo PNRR per Comuni < 50.000 ab. (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27, con stipula degli accordi di concessione GSE entro 30/6/2026 ed esercizio entro 24 mesi dalla comunicazione dell'accordo, max 31/12/2027), checklist documentale per la qualifica al portale GSE, ai sensi del D.Lgs. 199/2021 artt. 30-31-32 + DM MASE 7/12/2023 n. 414 + DM MASE 16/5/2025 n. 127 + DL 19/2/2026 n. 19 art. 27 + Delibera ARERA 727/2022/R/eel (TIAD) + Regole Operative CACER del GSE
+## Regole non negoziabili (applicano sempre)
 
-## Come installarle
+1. **Source-grounded**. Ogni affermazione normativa DEVE essere riconducibile a una voce in `skills/<skill>/references/sources.yaml` (URL, `accessed`, `sha256`, licenza). Senza fonte, niente affermazione.
+2. **Niente fabbricazioni**. Se un fatto non e' in `references/estratti/`, non inventarlo: o scarichi la fonte e aggiorni `sources.yaml` (vedi `scripts/fetch-sources.sh`), o segnali la lacuna all'utente.
+3. **Disclaimer obbligatorio** in ogni `SKILL.md`: la skill e' supporto, non sostituto del professionista firmatario. Mai derogare.
+4. **Plain markdown**. Niente HTML, niente immagini, niente codice eseguibile inline (eccetto code block illustrativi).
+5. **Italiano per il contenuto utente**, inglese per struttura/codice/metadata.
+6. **Dual-agent obbligatorio**:
+   - Frontmatter `SKILL.md` con `name`, `description`, `license: MIT` (Codex usa `license`; Claude Code lo ignora senza problemi).
+   - File `agents/openai.yaml` con `display_name`, `short_description`, `default_prompt`.
+   - Resto del contenuto identico per i due agent.
+7. **Progressive disclosure**. `SKILL.md` e' un router leggero: rinvia a `tasks/<task>.md` solo quando il task e' richiesto.
+8. **Caratteri ASCII standard**. Niente trattini lunghi, virgolette tipografiche, apostrofi tipografici.
 
-Ogni skill si installa singolarmente nella directory skills del tuo agent.
+## Quando crei una nuova skill
 
-| Agent | Path target |
-|---|---|
-| Anthropic Claude Code | `~/.claude/skills/<nome-skill>/` |
-| OpenAI Codex | `~/.agents/skills/<nome-skill>/` |
+1. Verifica idoneita' del task secondo `methodology/criteri-selezione.md`.
+2. Segui il workflow completo in `methodology/generazione-skill.md` (mapping fonti -> download/hash -> scaffold -> SKILL.md -> tasks -> esempi -> disclaimer -> validazione).
+3. Scaffold: `./scripts/new-skill.sh <nome-skill>` (kebab-case).
+4. Versione iniziale: `0.1.0-alpha`.
+5. Validazione obbligatoria prima del rilascio: `methodology/validazione.md` (almeno Livello 1, Livello 2 da ingegnere di dominio diverso dall'autore prima di v1.0).
 
-Esempi:
+## Quando modifichi una skill esistente
+
+- Bug fix -> patch (`0.1.0 -> 0.1.1`).
+- Miglioramento compatibile -> minor (`0.1.0 -> 0.2.0`).
+- Breaking change o major update normativo -> major (`0.x.y -> 1.0.0`).
+- Aggiorna sempre `skills/<skill>/CHANGELOG.md` (Keep a Changelog).
+- Se cambia una norma: aggiorna `sources.yaml` (URL, `accessed`, `sha256`), gli `estratti/` se servono, e cita il trigger normativo nel changelog. Vedi `methodology/update-cycle.md`.
+- Tocca solo cio' che serve: non ristrutturare skill adiacenti, non riformattare codice non tuo.
+
+## Prima di committare
 
 ```bash
-# Claude Code - una sola skill
-cp -r skills/pos-allegato-xv-checker ~/.claude/skills/
-
-# Codex - una sola skill
-cp -r skills/pos-allegato-xv-checker ~/.agents/skills/
-
-# Claude Code - tutte le skill via symlink
-for s in skills/*/; do
-  ln -sfn "$(pwd)/$s" "$HOME/.claude/skills/$(basename "$s")"
-done
-
-# Codex - tutte le skill via symlink
-for s in skills/*/; do
-  ln -sfn "$(pwd)/$s" "$HOME/.agents/skills/$(basename "$s")"
-done
+./scripts/validate.sh --all          # check strutturale di tutto il catalogo
+./scripts/validate.sh <nome-skill>   # check di una skill sola
 ```
 
-Riavvia il tuo agent (Claude Code o Codex) per la discovery.
+Se hai aggiunto/aggiornato fonti: `./scripts/fetch-sources.sh <nome-skill>` (i binari finiscono in `not_in_repo/`, mai committati; sono referenziati via hash in `sources.yaml`).
 
-## Come usarle (post-installazione)
+## Commit style
 
-In Claude Code o Codex, fai una domanda nel dominio della skill. L'agent la carica automaticamente.
-
-```
-"Verifica questo POS rispetto all'Allegato XV..."
-"Aiutami a redigere un DVR per un'azienda di 30 dipendenti"
-"Serve una DPIA per il nostro nuovo sistema di scoring clienti?"
-```
-
-In Codex puoi anche invocare esplicitamente:
+Conventional Commits in inglese, con scope quando tocchi una skill specifica:
 
 ```
-/skills pos-allegato-xv-checker
+feat(pos-allegato-xv-checker): add modello semplificato DI 9/9/2014
+fix(dvr-generico): correct art. 28 citation
+docs: clarify dual-agent requirements in AGENTS.md
+chore(scripts): bump validate.sh schema check
 ```
 
-## Convenzioni quando lavori SU questo repo (modifichi le skill)
-
-### Source-grounded
-Ogni affermazione normativa in una skill DEVE essere riconducibile a un documento ufficiale catalogato in `skills/<skill>/references/sources.yaml` (con URL, data accessed, SHA256 hash, licenza). Senza fonte, niente affermazione.
-
-### Niente fabricazioni
-Se un fatto non e' negli estratti `references/estratti/<skill>/...`, non inventarlo. O scarichi la fonte e aggiorni `sources.yaml`, o segnali la lacuna all'utente.
-
-### Disclaimer obbligatorio
-Ogni skill include in `SKILL.md` una sezione "Avvertenza" che dichiara che la skill e' supporto, non sostituto del giudizio del professionista. Mai derogare.
-
-### Plain markdown
-Skill, task, esempi sono markdown puro. Niente HTML embed, niente immagini, niente codice eseguibile inline (eccezione: code block illustrativi di output template).
-
-### Lingua italiana per il contenuto
-Gli adempimenti sono italiani. Istruzioni, output, esempi sono in italiano. Solo struttura, codice, metadata sono in inglese (convenzione internazionale).
-
-### Progressive disclosure
-Ogni skill e' monolitica ma carica i dettagli specifici on-demand. SKILL.md fa da router verso `tasks/<task-scelto>.md` solo quando il task corrispondente e' richiesto.
-
-### Doppio formato (Claude Code + Codex)
-Da quando il repo supporta entrambi gli agent (vedi convenzioni in `methodology/generazione-skill.md`):
-- Frontmatter SKILL.md con campi: `name`, `description`, **`license: MIT`** (il campo `license` viene utilizzato da Codex; e' ignorato da Claude Code senza problemi)
-- Cartella `agents/openai.yaml` per ciascuna skill, con `display_name`, `short_description`, `default_prompt` (Codex UI metadata)
-- Tutto il resto del contenuto e' identico per i due agent
-
-### Versioning per skill
-Ogni skill ha la sua `CHANGELOG.md` e segue Semantic Versioning. Il repo collettivo non ha una versione unica.
-
-### Quando esegui uno script
-
-- `scripts/new-skill.sh <nome>` - scaffold di una nuova skill dal template
-- `scripts/validate.sh <nome>` (o `--all`) - check strutturale di una skill o di tutto il catalogo
-- `scripts/fetch-sources.sh <nome>` (o tutto) - scarica le fonti pubbliche in `not_in_repo/`, verifica hash
-
-Esegui `./scripts/validate.sh --all` prima di committare modifiche.
-
-### Commit style
-Conventional Commits in inglese (`feat:`, `fix:`, `docs:`, `chore:`, `refactor:`). Quando il commit tocca una skill specifica, usa lo scope: `feat(pos-allegato-xv-checker): ...`. Co-authored-by trailer per AI agent che hanno contribuito.
+Trailer `Co-authored-by:` per gli AI agent che hanno contribuito.
 
 ## Cosa NON fare
 
-- Non aggiungere skill che richiedono giudizio professionale non delegabile (calcoli strutturali a firma, certificazioni)
-- Non versionare binari (PDF, DOCX, ecc.) - vanno in `not_in_repo/` e sono referenziati via hash in `sources.yaml`
-- Non rimuovere il disclaimer di responsabilita' professionale
-- Non rompere il formato dual-agent: ogni skill nuova deve avere sia `license: MIT` nel frontmatter che `agents/openai.yaml`
+- Non aggiungere skill che richiedono giudizio professionale non delegabile (es. calcoli strutturali a firma, certificazioni firmate).
+- Non committare binari (PDF, DOCX) - vanno in `not_in_repo/`, referenziati via hash in `sources.yaml`.
+- Non rimuovere il disclaimer di responsabilita' professionale.
+- Non rompere il formato dual-agent: senza `license: MIT` nel frontmatter o senza `agents/openai.yaml` la skill e' incompleta.
+- Non duplicare l'`AGENTS.md` di skill rispetto al `SKILL.md`: deve essere lean (~30-80 righe) e aggiungere convenzioni di dominio, non reinstaurare la skill.
+- Non duplicare contenuto tra root `AGENTS.md`, `CLAUDE.md` e `README.md`. Una sola sorgente per ogni informazione.
 
 ## Disclaimer
 
