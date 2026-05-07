@@ -1,0 +1,28 @@
+{
+  "_descrizione": "Edificio fittizio in c.a. - 4 piani - costruito anni '80 - sito zona sismica 3 (PGA_D(SLV)=0.10g) - LC2 con FC=1.20 - analisi statica lineare. Stato di fatto: edificio cosi' come e'. Stato di progetto: dopo intervento di rinforzo locale dei nodi trave-pilastro + incamiciatura selettiva di 4 pilastri di base - migliorativo coerente con NTC 2018 cap. 8.4.",
+  "_unita": "TR_C in anni; PGA_C, PGA_D in g (frazione di g)",
+  "fatto": {
+    "TR_C_SLO": 30,
+    "TR_C_SLD": 50,
+    "TR_C_SLV": 200,
+    "TR_C_SLC": 350,
+    "PGA_C_SLO": 0.030,
+    "PGA_C_SLD": 0.040,
+    "PGA_C_SLV": 0.075,
+    "PGA_C_SLC": 0.090,
+    "PGA_D_SLO": 0.030,
+    "PGA_D_SLD": 0.045,
+    "PGA_D_SLV": 0.100,
+    "PGA_D_SLC": 0.130
+  },
+  "progetto": {
+    "TR_C_SLO": 100,
+    "TR_C_SLD": 250,
+    "TR_C_SLV": 600,
+    "TR_C_SLC": 1100,
+    "PGA_C_SLO": 0.045,
+    "PGA_C_SLD": 0.060,
+    "PGA_C_SLV": 0.135,
+    "PGA_C_SLC": 0.165
+  }
+}

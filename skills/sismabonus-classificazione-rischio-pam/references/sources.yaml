@@ -1,0 +1,137 @@
+schema_version: 1
+skill: sismabonus-classificazione-rischio-pam
+last_verified: 2026-05-07
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
+#   url: URL canonico della fonte
+#   accessed: data consultazione (2026-05-07)
+#   sha256: hash SHA256 del file binario scaricato (REPLACE_WITH_ACTUAL_HASH se non ancora calcolato)
+#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
+#   binary_path: path del binario in locale (fuori repo), oppure null
+#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null
+#   notes: note libere
+
+sources:
+
+  # --- Decreti istitutivi e modificativi del Sismabonus ----------------
+
+  - id: dm-58-2017
+    title: "DM Min. Infrastrutture e Trasporti 28/2/2017 n. 58 - Linee guida per la classificazione del rischio sismico delle costruzioni nonche' modalita' per l'attestazione, da parte di professionisti abilitati, dell'efficacia degli interventi effettuati"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
+    accessed: 2026-05-07
+    sha256: PENDING_FETCH
+    license: public-domain
+    binary_path: not_in_repo/dm-58-2017.pdf
+    excerpt_path: references/estratti/dm-58-2017-art-3.md
+    notes: |
+      Decreto istitutivo del sismabonus tecnico (rinvio aliquote a legge
+      finanziaria). Allegato A originale (poi sostituito dal DM 65/2017)
+      contiene le Linee Guida per la classificazione del rischio sismico.
+      Hash da calcolare al primo fetch del PDF integrale (la pagina MIT
+      e' un indice; il PDF integrale e' linkato come sotto-allegato).
+
+  - id: dm-65-2017-all-a
+    title: "DM MIT 7/3/2017 n. 65 - Allegato A: Linee guida per la classificazione del rischio sismico delle costruzioni (testo letterale vigente)"
+    type: allegato
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf
+    accessed: 2026-05-07
+    sha256: 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
+    license: public-domain
+    binary_path: not_in_repo/dm-65-2017-allegato-a.pdf
+    excerpt_path: references/estratti/dm-58-2017-allegato-a-formula-pam.md
+    notes: |
+      ALLEGATO A del DM 58/2017 sostituito dal DM 65/2017. Testo letterale
+      di riferimento per la procedura di classificazione (PAM, IS-V,
+      tabelle classi, capping al passo 2.1.3, classe finale, salto
+      classi). PDF di 594 KB scaricato direttamente dal sito MIT;
+      hash SHA256 calcolato al fetch del 2026-05-07.
+
+  - id: dm-24-2020
+    title: "DM MIT 9/1/2020 n. 24 - Modifiche all'Allegato A del DM 58/2017"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-24-del-09012020
+    accessed: 2026-05-07
+    sha256: PENDING_FETCH
+    license: public-domain
+    binary_path: not_in_repo/dm-24-2020.pdf
+    excerpt_path: null
+    notes: |
+      Aggiornamento successivo del DM 58/2017. Da fetchare e includere
+      negli estratti se introduce modifiche all'Allegato A rispetto alla
+      versione DM 65/2017.
+
+  - id: dm-329-2020
+    title: "DM MIT 6/8/2020 n. 329 - Modifica all'art. 3 del DM 58/2017 e sostituzione dell'Allegato B"
+    type: decreto
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2020-08/Decreto%20SismaBonus.pdf
+    accessed: 2026-05-07
+    sha256: 9031321161c6d7e3eaa71228a9f9c333f2f1f08d209ad7d6bb73fcd0438837a5
+    license: public-domain
+    binary_path: not_in_repo/dm-329-2020.pdf
+    excerpt_path: null
+    notes: |
+      Modifica l'art. 3 del DM 58/2017 (commi 4-bis, 4-ter, 4-quater:
+      super-sismabonus 110%, polizza assicurativa, SAL) e SOSTITUISCE
+      l'Allegato B (modello di asseverazione tecnica del professionista).
+      NON modifica l'Allegato A. Fuori scope diretto della skill (tocca
+      asseverazione e adempimenti fiscali, non la procedura di calcolo).
+      Hash SHA256 calcolato al fetch del 2026-05-07.
+
+  # --- Riferimenti tecnici NTC 2018 ------------------------------------
+
+  - id: ntc-2018
+    title: "DM 17/1/2018 - Aggiornamento delle Norme Tecniche per le Costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-8-del-17012018
+    accessed: 2026-05-07
+    sha256: PENDING_FETCH
+    license: public-domain
+    binary_path: not_in_repo/ntc-2018.pdf
+    excerpt_path: null
+    notes: |
+      Cap. 3.2 (azione sismica al sito, P_VR per stato limite, categorie
+      sottosuolo/topografia) e cap. 8 (costruzioni esistenti) sono
+      prerequisito tecnico per produrre PGA_C e TR_C input della skill.
+      Per il calcolo dello spettro al sito vedi anche skill
+      `spettro-risposta-ntc` nel repo.
+
+  - id: circ-7-2019
+    title: "Circolare Min. Infrastrutture e Trasporti 21/1/2019 n. 7 - Istruzioni per l'applicazione delle NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    accessed: 2026-05-07
+    sha256: PENDING_FETCH
+    license: public-domain
+    binary_path: not_in_repo/circ-7-2019.pdf
+    excerpt_path: null
+    notes: |
+      Cap. C8 contiene il commento applicativo a NTC cap. 8
+      (costruzioni esistenti), inclusi livelli di conoscenza LC1/LC2/LC3
+      e fattori di confidenza FC. Riferimento per il professionista
+      strutturista che produce TR_C e PGA_C input della skill.
+
+  # --- Materiali di confronto / esempio (non normativi) ----------------
+
+  - id: class-2017-attestato-esempio
+    title: "ClaSS 2017 - Attestato di Classificazione Sismica - esempio output (S.I.S. Software Ingegneria Strutturale)"
+    type: altro
+    url: https://infowebsrl.it/Newsletter/SIS_ingegneria/1/Pdf/Esempio_ClaSS_SIS.pdf
+    accessed: 2026-05-07
+    sha256: 5a9ceccf7fd37529da7a3e894fde31cc52720ceadea833484b19378cefe3f985
+    license: other
+    binary_path: not_in_repo/class-2017-esempio.pdf
+    excerpt_path: null
+    notes: |
+      Output di esempio di software certificato italiano per
+      classificazione DM 58/2017 (ClaSS 2017 di S.I.S.). Usato come
+      riferimento qualitativo per le tabelle classi PAM/IS-V e per
+      lo schema di attestato. NON e' fonte normativa (linee guida
+      operative del produttore software). Da usare come benchmark
+      qualitativo per la validazione di campo Livello 2 insieme ad
+      altri software (CDM Win STS, EdiSis Newsoft, MasterSap-SismiClass
+      AMV). Hash SHA256 calcolato al fetch del 2026-05-07 (PDF di
+      874 KB scaricato dall'URL pubblico InfoWebSrl).

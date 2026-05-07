@@ -1,0 +1,18 @@
+{
+  "_descrizione": "Caso problematico: edificio fittizio in muratura con TR_C(SLO)=80 anni > TR_C(SLD)=40 anni, ovvero raggiunge SLD prima di SLO. Possibile per costruzioni rigide/fragili o per errori di analisi. Il modulo segnala monotona=false ma calcola comunque; il professionista deve diagnosticare e applicare capping coerente con DM 58/2017 Allegato A punto 2.1 prima dell'asseverazione.",
+  "_unita": "TR_C in anni; PGA_C, PGA_D in g",
+  "fatto": {
+    "TR_C_SLO": 80,
+    "TR_C_SLD": 40,
+    "TR_C_SLV": 150,
+    "TR_C_SLC": 250,
+    "PGA_C_SLO": 0.025,
+    "PGA_C_SLD": 0.020,
+    "PGA_C_SLV": 0.060,
+    "PGA_C_SLC": 0.075,
+    "PGA_D_SLO": 0.040,
+    "PGA_D_SLD": 0.055,
+    "PGA_D_SLV": 0.120,
+    "PGA_D_SLC": 0.150
+  }
+}

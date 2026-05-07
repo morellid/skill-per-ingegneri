@@ -1,0 +1,16 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Sismabonus - Classificazione rischio (DM 58/2017)
+short_description: |
+  Calcolo code-driven di PAM, IS-V, classe di rischio sismico (A+..G) e salto
+  classi tra stato di fatto e stato di progetto, ai sensi del DM 58/2017
+  Allegato A (metodo convenzionale). Solo edifici esistenti; non genera
+  l'asseverazione (Allegato B), che resta a cura del progettista.
+default_prompt: |
+  Aiutami a classificare il rischio sismico di un edificio esistente ai sensi
+  del DM 58/2017 Allegato A (metodo convenzionale). Ho gia' eseguito l'analisi
+  di vulnerabilita' (NTC 2018 cap. 8) e ho per i 4 SL NTC i valori di TR_C,
+  PGA_C (capacita' edificio) e PGA_D (domanda al sito). Vorrei: PAM, IS-V,
+  classe PAM, classe IS-V, classe finale per stato di fatto e stato di
+  progetto, e il salto classi.
