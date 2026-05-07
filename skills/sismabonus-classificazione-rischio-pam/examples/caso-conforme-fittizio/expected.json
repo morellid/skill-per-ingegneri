@@ -1,0 +1,95 @@
+{
+  "fonte_normativa": "DM 58/2017 Allegato A (testo aggiornato DM 65/2017, DM 24/2020, DM 329/2020)",
+  "metodo": "Convenzionale (DM 58/2017 Allegato A punto 2)",
+  "fatto": {
+    "pam": {
+      "PAM": 0.012925,
+      "PAM_percentuale": 1.2925,
+      "classe_PAM": "B",
+      "contributi_trapezoidali": [
+        {
+          "tratto": "SLID->SLO",
+          "delta_lambda": 0.06666666666666668,
+          "media_CR": 0.035,
+          "area": 0.002333333333333334
+        },
+        {
+          "tratto": "SLO->SLD",
+          "delta_lambda": 0.013333333333333332,
+          "media_CR": 0.11,
+          "area": 0.0014666666666666667
+        },
+        {
+          "tratto": "SLD->SLV",
+          "delta_lambda": 0.015,
+          "media_CR": 0.325,
+          "area": 0.004875
+        },
+        {
+          "tratto": "SLV->SLC",
+          "delta_lambda": 0.002142857142857143,
+          "media_CR": 0.65,
+          "area": 0.001392857142857143
+        }
+      ],
+      "contributo_coda_SLR": 0.002857142857142857,
+      "monotona": true
+    },
+    "isv": {
+      "IS_V": 0.7499999999999999,
+      "IS_V_percentuale": 74.99999999999999,
+      "classe_IS_V": "B"
+    },
+    "classe_finale": "B",
+    "descrizione_classe_finale": "Classe finale = peggiore tra classe PAM (B) e classe IS-V (B) = B"
+  },
+  "progetto": {
+    "pam": {
+      "PAM": 0.005969848484848485,
+      "PAM_percentuale": 0.5969848484848485,
+      "classe_PAM": "A",
+      "contributi_trapezoidali": [
+        {
+          "tratto": "SLID->SLO",
+          "delta_lambda": 0.09000000000000001,
+          "media_CR": 0.035,
+          "area": 0.0031500000000000005
+        },
+        {
+          "tratto": "SLO->SLD",
+          "delta_lambda": 0.006,
+          "media_CR": 0.11,
+          "area": 0.00066
+        },
+        {
+          "tratto": "SLD->SLV",
+          "delta_lambda": 0.002333333333333333,
+          "media_CR": 0.325,
+          "area": 0.0007583333333333333
+        },
+        {
+          "tratto": "SLV->SLC",
+          "delta_lambda": 0.0007575757575757577,
+          "media_CR": 0.65,
+          "area": 0.0004924242424242426
+        }
+      ],
+      "contributo_coda_SLR": 0.0009090909090909091,
+      "monotona": true
+    },
+    "isv": {
+      "IS_V": 1.35,
+      "IS_V_percentuale": 135.0,
+      "classe_IS_V": "A+"
+    },
+    "classe_finale": "A",
+    "descrizione_classe_finale": "Classe finale = peggiore tra classe PAM (A) e classe IS-V (A+) = A"
+  },
+  "salto_classi": {
+    "classe_stato_fatto": "B",
+    "classe_stato_progetto": "A",
+    "salto_classi": 1,
+    "miglioramento_pam_percent": 0.6955151515151515,
+    "miglioramento_isv_percent": 60.000000000000014
+  }
+}

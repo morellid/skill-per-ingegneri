@@ -32,6 +32,7 @@ Contiene anche:
 | [`catasto-pregeo-docfa-atti-telematici`](skills/catasto-pregeo-docfa-atti-telematici/) | Assistente alla redazione e al check pre-trasmissione degli atti telematici di aggiornamento del Catasto Terreni (Pregeo 10) e del Catasto Fabbricati (Docfa 4): scelta tipologia atto Pregeo (TM/FR/FM/SC/TP), causale e categoria Docfa, EP/ES/ET/Quadro D, deposito telematico frazionamenti dal 1/7/2025, diagnosi rifiuti telematici via Sister | DPR 380/2001 art. 30 + DM 28/1998 + Circ. AdE 3/2009 + Vademecum Docfa v1.0 (7/2022) + Risoluzione AdE 40/E del 9/6/2025 |
 | [`pratiche-edilizie-lr65-2014-toscana`](skills/pratiche-edilizie-lr65-2014-toscana/) | Determina il titolo abilitativo edilizio (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC) per interventi in Toscana e genera la checklist documenti richiesti, con specificita' regionali (sismica DGRT 421/2014, DPGR 1/R/2022 Genio Civile, vincolo paesaggistico, Piano Operativo) | LR Toscana 65/2014 + DPR 380/2001 + DPGR 1/R/2022 + DPR 31/2017 (paesaggio) |
 | [`cer-cacer-configurazione-gse`](skills/cer-cacer-configurazione-gse/) | Configurazione di CER (art. 31), GAC (art. 30 c. 2) o AID (art. 30 c. 1 lett. a) n. 2) con verifica perimetro cabina primaria, redazione guidata dello statuto, simulazione semplificata di energia condivisa, TIP, tariffa di restituzione e contributo PNRR per Comuni < 50.000 ab. (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27), e checklist documentale per la qualifica al portale GSE | D.Lgs. 199/2021 artt. 30-31-32 + DM MASE 7/12/2023 n. 414 + DM MASE 16/5/2025 n. 127 + DL 19/2/2026 n. 19 art. 27 + Delibera ARERA 727/2022/R/eel (TIAD) + Regole Operative CACER del GSE |
+| [`sismabonus-classificazione-rischio-pam`](skills/sismabonus-classificazione-rischio-pam/) | Calcolo code-driven della classe di rischio sismico DM 58/2017 (sismabonus, metodo convenzionale): PAM come area trapezoidale della Curva di Individuazione su SLID/SLO/SLD/SLV/SLC + coda SLR, IS-V = PGA_C(SLV)/PGA_D(SLV), classe finale = peggiore tra classe PAM (8 classi A+..G) e classe IS-V (7 classi A+..F), salto classi tra stato di fatto e stato di progetto | DM 58/2017 + DM 65/2017 + DM 24/2020 + DM 329/2020 (Allegato A) + NTC 2018 cap. 3.2 e cap. 8 + Circ. 7/2019 |
 
 Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
 
@@ -61,7 +62,8 @@ skill-per-ingegneri/
 │   ├── dnsh-pnrr-checker/
 │   ├── catasto-pregeo-docfa-atti-telematici/
 │   ├── pratiche-edilizie-lr65-2014-toscana/
-│   └── cer-cacer-configurazione-gse/
+│   ├── cer-cacer-configurazione-gse/
+│   └── sismabonus-classificazione-rischio-pam/
 ├── methodology/                 # come si genera e mantiene una skill
 ├── templates/                   # scaffold dual-agent per nuove skill
 └── scripts/                     # utility CLI (new-skill, validate, fetch-sources)

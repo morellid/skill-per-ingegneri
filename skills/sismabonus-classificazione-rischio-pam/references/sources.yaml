@@ -1,0 +1,132 @@
+schema_version: 1
+skill: sismabonus-classificazione-rischio-pam
+last_verified: 2026-05-07
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
+#   url: URL canonico della fonte
+#   accessed: data consultazione (2026-05-07)
+#   sha256: hash SHA256 del file binario scaricato (REPLACE_WITH_ACTUAL_HASH se non ancora calcolato)
+#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
+#   binary_path: path del binario in locale (fuori repo), oppure null
+#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null
+#   notes: note libere
+
+sources:
+
+  # --- Decreti istitutivi e modificativi del Sismabonus ----------------
+
+  - id: dm-58-2017
+    title: "DM Min. Infrastrutture e Trasporti 28/2/2017 n. 58 - Linee guida per la classificazione del rischio sismico delle costruzioni nonche' modalita' per l'attestazione, da parte di professionisti abilitati, dell'efficacia degli interventi effettuati"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/dm-58-2017.pdf
+    excerpt_path: references/estratti/dm-58-2017-art-3.md
+    notes: |
+      Decreto istitutivo del sismabonus tecnico (rinvio aliquote a legge
+      finanziaria). Allegato A contiene le Linee Guida per la
+      classificazione del rischio sismico. Allegato B (modello di
+      asseverazione) e successivo Allegato B-bis (asseverazione progetto)
+      sono fuori scope di questa skill.
+
+  - id: dm-65-2017
+    title: "DM MIT 7/3/2017 n. 65 - Sostituzione dell'Allegato A del DM 58/2017"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-65-del-07032017
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/dm-65-2017.pdf
+    excerpt_path: references/estratti/dm-58-2017-allegato-a-formula-pam.md
+    notes: |
+      Sostituisce l'Allegato A del DM 58/2017 con versione che chiarisce
+      la formula PAM, le tabelle classi e introduce la regola del salto
+      classi. Base del testo coordinato (poi aggiornato da DM 24/2020 e
+      DM 329/2020).
+
+  - id: dm-24-2020
+    title: "DM MIT 9/1/2020 n. 24 - Modifiche all'Allegato A del DM 58/2017"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-24-del-09012020
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/dm-24-2020.pdf
+    excerpt_path: null
+    notes: |
+      Aggiornamento Allegato A: precisazioni metodologiche, allineamento
+      a NTC 2018, nuovi modelli Allegato B.
+
+  - id: dm-329-2020
+    title: "DM MIT 6/8/2020 n. 329 - Ulteriore modifica dell'Allegato A del DM 58/2017"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-329-del-06082020
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/dm-329-2020.pdf
+    excerpt_path: null
+    notes: |
+      Versione attualmente vigente del testo coordinato Allegato A.
+      Mantiene formula PAM, tabelle classi e regola salto classi
+      identiche al DM 65/2017; cambia principalmente la modulistica
+      Allegato B / B-bis.
+
+  # --- Riferimenti tecnici NTC 2018 ------------------------------------
+
+  - id: ntc-2018
+    title: "DM 17/1/2018 - Aggiornamento delle Norme Tecniche per le Costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-8-del-17012018
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/ntc-2018.pdf
+    excerpt_path: null
+    notes: |
+      Cap. 3.2 (azione sismica al sito, P_VR per stato limite, categorie
+      sottosuolo/topografia) e cap. 8 (costruzioni esistenti) sono
+      prerequisito tecnico per produrre PGA_C e TR_C input della skill.
+      Per il calcolo dello spettro al sito vedi anche skill
+      `spettro-risposta-ntc` nel repo.
+
+  - id: circ-7-2019
+    title: "Circolare Min. Infrastrutture e Trasporti 21/1/2019 n. 7 - Istruzioni per l'applicazione delle NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: public-domain
+    binary_path: not_in_repo/circ-7-2019.pdf
+    excerpt_path: null
+    notes: |
+      Cap. C8 contiene il commento applicativo a NTC cap. 8
+      (costruzioni esistenti), inclusi livelli di conoscenza LC1/LC2/LC3
+      e fattori di confidenza FC. Riferimento per il professionista
+      strutturista che produce TR_C e PGA_C input della skill.
+
+  # --- Materiali di confronto / esempio (non normativi) ----------------
+
+  - id: class-2017-attestato-esempio
+    title: "ClaSS 2017 - Attestato di Classificazione Sismica - esempio output (S.I.S. Software Ingegneria Strutturale)"
+    type: altro
+    url: https://infowebsrl.it/Newsletter/SIS_ingegneria/1/Pdf/Esempio_ClaSS_SIS.pdf
+    accessed: 2026-05-07
+    sha256: REPLACE_WITH_ACTUAL_HASH
+    license: other
+    binary_path: not_in_repo/class-2017-esempio.pdf
+    excerpt_path: null
+    notes: |
+      Output di esempio di software certificato italiano per
+      classificazione DM 58/2017 (ClaSS 2017 di S.I.S.). Usato come
+      riferimento qualitativo per le tabelle classi PAM/IS-V e per
+      lo schema di attestato. NON e' fonte normativa (linee guida
+      operative del produttore software). Da usare come benchmark
+      qualitativo per la validazione di campo Livello 2 insieme ad
+      altri software (CDM Win STS, EdiSis Newsoft, MasterSap-SismiClass
+      AMV).
