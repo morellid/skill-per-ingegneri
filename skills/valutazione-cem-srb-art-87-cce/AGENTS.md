@@ -57,6 +57,10 @@ Estratti in `references/estratti/`:
 - Includere sempre nel report finale il rinvio al testo vigente su Normattiva.
 - Mantenere il disclaimer di responsabilita' professionale.
 
+### Terminologia: "asseverazione" vs "documentazione tecnica firmata attestante"
+- **Modello B / SCIA**: usare "asseverazione di tecnico abilitato" (dispositivo proprio della SCIA ex art. 19 c. 1 L. 241/1990, richiamato implicitamente dal regime semplificato dell'art. 87 c. 3 ultimo periodo CCE).
+- **Modello A / regime ordinario**: usare "documentazione tecnica firmata da tecnico abilitato attestante il rispetto di limiti / valori di attenzione / obiettivi di qualita' DPCM 8/7/2003". L'art. 87 c. 3 parla letteralmente di "documentazione atta a comprovare il rispetto dei limiti", senza richiamare il dispositivo dell'asseverazione. Se il richiedente sceglie di produrre un'asseverazione anche in regime ordinario, e' a maggior tutela (dichiarazione piu' impegnativa di quanto richiesto): la skill puo' annotarlo come "OK + maggior tutela", non puo' richiederlo come item bloccante.
+
 ## Validatori
 
 - Da identificare per Livello 2 validation (ingegnere CEM ARPA-side o tecnico operatore mobile diverso dall'autore della skill).

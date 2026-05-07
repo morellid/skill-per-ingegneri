@@ -47,15 +47,16 @@ Per ciascun item: stato `OK` / `MANCANTE` / `DA VERIFICARE`, riferimento normati
 7. **Indicazione di eventuali co-siting** (impianti gia' presenti sullo stesso sito o in prossimita') con relativa stima cumulativa.
 8. **Trasmissione contestuale** dell'istanza/denuncia ad **ARPA/APPA** territorialmente competente (art. 87 c. 4 CCE): l'ARPA si pronuncia entro 30 giorni dalla comunicazione.
 9. **Dati amministrativi**: ufficio SUAP destinatario, indicazione del responsabile del procedimento (che l'Ente locale comunica al richiedente al momento della presentazione - art. 87 c. 2).
+9-bis. **Catasto nazionale delle sorgenti elettromagnetiche**: il modello A e' "pensato per acquisizione su supporti informatici e per il catasto nazionale delle sorgenti elettromagnetiche" (art. 87 c. 3 CCE). Verificare l'eventuale obbligo di caricamento dati nel catasto regionale ARPA / nel sistema informativo nazionale (modulistica e procedure variano per regione - vedi anche art. 87 c. 7 sull'informativa al MIMIT).
 
 ### C. Specifica per Modello A (regime ordinario)
 
-10. **Pubblicizzazione dell'istanza** da parte dello sportello locale, senza diffusione dei dati caratteristici dell'impianto (art. 87 c. 4): verificare che la pratica preveda questo passaggio.
+10. **Pubblicizzazione dell'istanza** da parte dello sportello locale, senza diffusione dei dati caratteristici dell'impianto (art. 87 c. 4): verificare che la pratica preveda questo passaggio. Nota: l'art. 87 c. 4 cita letteralmente "l'istanza"; per la denuncia/SCIA Modello B la pubblicizzazione e' eventualmente disposta dal SUAP nei limiti consentiti dalla disciplina locale e dall'art. 19 L. 241/1990.
 11. **Eventuale richiesta di integrazione** entro 15 giorni dalla ricezione, una sola volta (art. 87 c. 5): non e' un allegato dell'istanza, ma il professionista deve essere pronto a rispondere.
 
 ### D. Specifica per Modello B (SCIA, impianti <= 20 W per singola antenna)
 
-12. **Asseverazione tecnica** del rispetto dei limiti CEM (resta dovuta nonostante il regime SCIA - art. 87 c. 3 CCE: "fermo restando il rispetto dei limiti, dei valori di attenzione e degli obiettivi di qualita'").
+12. **Asseverazione tecnica** del rispetto dei limiti CEM ai sensi dell'art. 19 c. 1 L. 241/1990 (la SCIA richiede asseverazione di tecnico abilitato; resta dovuta nonostante il regime semplificato - art. 87 c. 3 CCE: "fermo restando il rispetto dei limiti, dei valori di attenzione e degli obiettivi di qualita'").
 13. **Verifica modello locale**: alcune amministrazioni hanno modelli SCIA propri; in assenza, vale il Modello B Allegato 13.
 
 ### E. Verifica del testo vigente

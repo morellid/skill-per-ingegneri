@@ -7,6 +7,19 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Changed (post-review #86)
+- `tasks/check-completezza-istanza.md`: chiarita la regola di pubblicizzazione dell'istanza (art. 87 c. 4) anche per il regime SCIA Modello B; allineata la terminologia "asseverazione" (SCIA, art. 19 L. 241/1990) vs. "documentazione tecnica firmata attestante" (regime ordinario, art. 87 c. 3); aggiunto item 9-bis sul catasto nazionale delle sorgenti elettromagnetiche.
+- `examples/srb-lte-30w-conforme/expected-output.md`: stato dell'item co-siting da `OK (con caveat)` a `DA VERIFICARE` per coerenza con la grammatica della tabella; allineata la voce "asseverazione" Modello A.
+- `AGENTS.md` di skill: documentata la scelta terminologica asseverazione vs. documentazione tecnica firmata.
+
+### Da chiudere prima di v0.1.0 (uscita da alpha)
+- Aggiungere nei task una nota strutturale sui regimi regionali speciali (DPCM art. 1 c. 5: regioni a statuto speciale e PA Trento/Bolzano; verifica leggi regionali per Sicilia, Sardegna, FVG, Valle d'Aosta).
+- Distinguere nei task tra modifica sostanziale (riapre iter art. 87) e variazione non sostanziale (regime alleggerito secondo guida ARPA regionale).
+- Verificare in validazione di Livello 2 la denominazione esatta della Guida CEI 211-7 per le SRB ("Guida CEI 211-7/E" vs. "Guida CEI 211-7 nelle Appendici dedicate alle SRB"): la norma e' a pagamento e non catalogabile in `references/sources.yaml`.
+- Precisare in `tasks/mappa-iter-procedurale.md` il rapporto di lex specialis tra art. 87 c. 9 (90 gg) e disciplina generale SCIA dell'art. 19 L. 241/1990 (avvio attivita' immediato + controllo postumo 60 gg).
+- `SKILL.md` riga 13: sostituire "consulente CEM ARPA-side" con "validatore ARPA" o "tecnico ARPA" (terminologia coerente con il resto del file).
+- Eventuale rimozione dei `.gitkeep` orfani in `tasks/`, `examples/`, `references/estratti/` ora che le directory non sono piu' vuote (convenzione condivisa con altre skill: nessuna rimozione finche' la convenzione di repo non cambia).
+
 ## [0.1.0-alpha] - 2026-05-07
 
 ### Added

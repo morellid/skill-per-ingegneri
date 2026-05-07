@@ -14,10 +14,10 @@
 | 4 | Caratteristiche radioelettriche (LTE B3+B20, 30 W, 3 settori, tilt -4 deg, guadagno 18 dBi, h=18 m) | art. 87 c. 3 | OK | - |
 | 5 | Relazione predittiva CEM con modelli conformi CEI 211-7 (Guida 211-7/E) | art. 87 c. 3; DPCM 8/7/2003 art. 6 | OK | Conferma in sede ARPA |
 | 6 | Confronto con Tabella 1, 2, 3 Allegato B DPCM 8/7/2003 (riga banda pertinente) e mediazione 6 min / sezione verticale | DPCM art. 3 c. 3, art. 4 c. 1 | OK | - |
-| 7 | Esposizioni multiple - co-siting | DPCM art. 5 + Allegato C | OK (assenza co-siting dichiarata; verificare in campo) | Conferma assenza in sede di sopralluogo |
+| 7 | Esposizioni multiple - co-siting | DPCM art. 5 + Allegato C | DA VERIFICARE | Assenza co-siting dichiarata dal richiedente: confermare in sede di sopralluogo / parere ARPA |
 | 8 | Trasmissione contestuale ARPA | art. 87 c. 4 | OK | - |
 | 9 | Pubblicizzazione SUAP (senza dati caratteristici) | art. 87 c. 4 | DA VERIFICARE | A cura dell'Ente locale dopo presentazione |
-| 10 | Asseverazione di rispetto limiti DPCM | art. 87 c. 3; DPCM art. 3, 4 | OK | - |
+| 10 | Documentazione tecnica firmata da tecnico CEM abilitato attestante il rispetto di limiti, valori di attenzione, obiettivi di qualita' DPCM | art. 87 c. 3; DPCM art. 3, 4 | OK | - |
 | 11 | Verifica testo vigente art. 87 su Normattiva | (verifica autonoma del firmatario) | OK | - |
 
 ## Sintesi BLOCCANTI
