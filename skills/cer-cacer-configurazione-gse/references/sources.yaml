@@ -1,0 +1,234 @@
+schema_version: 1
+skill: cer-cacer-configurazione-gse
+last_verified: 2026-05-07
+
+# Le fonti sono pubbliche. Per le fonti GSE (linee guida e Regole Operative) la
+# riproduzione integrale del testo non e' consentita: la skill cita riferimenti
+# strutturali (cap. X, par. Y) e parafrasa, senza embed testuale esteso.
+#
+# Convenzione hash: i campi sha256 sono lasciati a `null` finche' i binari non
+# vengono scaricati con `scripts/fetch-sources.sh`. Non si committano valori
+# placeholder fittizi.
+
+sources:
+  - id: dlgs-199-2021
+    title: "D.Lgs. 8 novembre 2021 n. 199 - Attuazione della direttiva (UE) 2018/2001 sulla promozione dell'uso dell'energia da fonti rinnovabili"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;199
+    accessed: 2026-05-06
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-199-2021.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-199-2021-art-30-31-32.md
+    notes: |
+      Articoli rilevanti per la skill:
+      - art. 30 c. 1 lett. a) n. 2: Autoconsumatore Individuale a Distanza (AID);
+      - art. 30 c. 2 (con lett. a) per il vincolo "stesso edificio o condominio"):
+        Autoconsumatori che agiscono collettivamente (GAC);
+      - art. 31: Comunita' di Energia Rinnovabile (CER);
+      - art. 32: ARERA, contratti tra clienti finali in configurazioni di
+        autoconsumo, ruolo del referente.
+      L'estratto riporta in forma sintetica i requisiti soggettivi e oggettivi
+      citati dalla skill.
+
+  - id: dm-mase-414-2023
+    title: "DM MASE 7 dicembre 2023 n. 414 - Modalita' di individuazione di una tariffa incentivante per la remunerazione degli impianti a fonti rinnovabili inseriti nelle CACER e per la concessione di un contributo PNRR (testo originario; soglia di popolazione 5.000 ab. successivamente estesa dal DM 127/2025)"
+    type: decreto-ministeriale
+    url: https://www.mase.gov.it/sites/default/files/archivio/DM_CER_414_07122023.pdf
+    accessed: 2026-05-06
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-mase-414-2023.pdf
+    excerpt_paths:
+      - references/estratti/dm-mase-414-2023.md
+    notes: |
+      Decreto MASE che disciplina la TIP per le CACER (durata 20 anni, parte
+      fissa per fascia di potenza + correttivo zonale) e il contributo PNRR a
+      fondo perduto. Articoli rilevanti: 3 (definizioni), 4 (requisiti
+      soggettivi CER), 5 (atto costitutivo e statuto), 7 (TIP), 8 (contributo
+      PNRR), 11 (cumulabilita'). Il testo del decreto e' stato modificato dal
+      DM MASE 127/2025 (vedi sotto): soglia popolazione Comune passata da
+      < 5.000 ab. a < 50.000 ab.; aggancio del termine 30/6/2026 al
+      "completamento dei lavori"; aggancio del termine 24 mesi/31-12-2027 alla
+      "data di completamento dei lavori"; quota di anticipazione passata dal
+      10% al 30%; introduzione/aggiornamento del meccanismo a tre fasi
+      (anticipazione + quota intermedia 40% + saldo).
+
+  - id: dm-mase-127-2025
+    title: "DM MASE 16 maggio 2025 n. 127 - Modifiche al DM 7/12/2023 n. 414 (Decreto CACER): estensione del perimetro PNRR ai Comuni con popolazione fino a 50.000 abitanti, nuove scadenze e nuovo schema di erogazione (anticipazione 30% + quota intermedia 40% + saldo)"
+    type: decreto-ministeriale
+    url: null
+    accessed: 2026-05-06
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-mase-127-2025.pdf
+    excerpt_paths:
+      - references/estratti/dm-mase-414-2023.md
+    notes: |
+      Decreto del Ministro dell'ambiente e della sicurezza energetica n. 127
+      del 16 maggio 2025, pubblicato in Gazzetta Ufficiale il 25 giugno 2025.
+
+      URL CANONICO DA RECUPERARE: in questa versione della skill l'URL del
+      provvedimento sul portale MASE/Normattiva non e' confermato. Fonti
+      autoritative su cui si basano le sintesi di questa skill, da consultare
+      finche' l'URL del decreto non e' verificato:
+      - GSE - Allegato 1 Regole Operative CACER (id `gse-regole-operative-cacer`,
+        versione 16/7/2025), che recepisce le modifiche del DM 127/2025;
+      - MASE - documento procedimenti PIF del 13/6/2025
+        (https://www.mase.gov.it/portale/documents/d/guest/2025-06-13_procedimenti_pif-pdf).
+
+      Modifiche principali al regime PNRR del DM 414/2023 (verificate sulle fonti
+      GSE/MASE sopra):
+      - perimetro soggettivo esteso ai Comuni con popolazione < 50.000 abitanti
+        (in luogo di < 5.000 abitanti);
+      - completamento dei lavori entro il 30 giugno 2026;
+      - entrata in esercizio entro 24 mesi dalla data di completamento dei
+        lavori e comunque entro il 31 dicembre 2027;
+      - quota di anticipazione richiedibile aumentata dal 10% al 30% del
+        contributo massimo erogabile;
+      - introduzione/aggiornamento di una "quota intermedia" pari al 40% del
+        contributo, richiedibile dopo aver sostenuto il 40% delle spese
+        ammissibili e comunicato la data di avvio dei lavori (par. 2.2.3.2
+        delle Regole Operative GSE CACER);
+      - estensione alle persone fisiche dell'esclusione del fattore di riduzione F
+        di cui all'Allegato 1 par. 3 del Decreto CACER, ai fini della TIP.
+
+  - id: delibera-arera-727-2022-tiad
+    title: "Delibera ARERA 727/2022/R/eel - Testo Integrato Autoconsumo Diffuso (TIAD)"
+    type: delibera-autorita
+    url: https://www.arera.it/atti-e-provvedimenti/dettaglio/it/22/727-22
+    accessed: 2026-05-06
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/delibera-arera-727-2022-tiad.pdf
+    excerpt_paths:
+      - references/estratti/tiad-arera-727-2022.md
+    notes: |
+      Il TIAD definisce le configurazioni di autoconsumo diffuso, regola i flussi
+      verso il GSE e i corrispettivi di restituzione delle componenti tariffarie
+      (TR) sull'energia condivisa. La definizione operativa di energia condivisa
+      come minimo orario tra immessa CACER e prelevata CACER e' centrale per la
+      simulazione. Verificare aggiornamenti successivi (delibere di revisione TIAD).
+
+  - id: gse-regole-operative-cacer
+    title: "GSE - Regole Operative per l'accesso al servizio per l'autoconsumo diffuso (Allegato 1)"
+    type: linee-guida
+    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf
+    accessed: 2026-05-06
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: not_in_repo/gse-allegato-1-regole-operative-cacer.pdf
+    excerpt_paths:
+      - references/estratti/gse-regole-operative-cacer.md
+    notes: |
+      Allegato 1 delle Regole Operative GSE per il servizio CACER. Documento del
+      GSE: la skill cita riferimenti strutturali (capitolo, paragrafo) e parafrasa,
+      senza embedding integrale del testo. Coprono il flusso di richiesta della
+      qualifica, la documentazione attesa, gli adempimenti del referente e il
+      regime di gestione. Le Regole Operative sono periodicamente aggiornate dal
+      GSE per recepire le modifiche del DM 127/2025 e dei successivi provvedimenti
+      attuativi: verificare sempre la versione vigente sul portale GSE.
+
+  - id: gse-portale-autoconsumo
+    title: "GSE - Portale Autoconsumo (servizio CACER e mappa cabine primarie)"
+    type: portale-istituzionale
+    url: https://www.gse.it/servizi-per-te/autoconsumo
+    accessed: 2026-05-06
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina ufficiale del GSE da cui si accede a: mappa interattiva delle cabine
+      primarie, applicativo per la richiesta di qualifica CACER, simulatore TIP,
+      regole operative aggiornate. Riferimento operativo per la verifica del
+      perimetro cabina primaria, che la skill non puo' eseguire al posto dell'utente.
+
+  - id: gse-pnrr-cacer
+    title: "GSE - Attuazione misure PNRR - Comunita' energetiche e gruppi di autoconsumatori (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27)"
+    type: portale-istituzionale
+    url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr
+    accessed: 2026-05-07
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Sezione del portale GSE relativa all'attuazione delle misure PNRR
+      pertinenti alle CACER. Il regime vigente al 2026-05-07 risulta dal
+      cumularsi di DM 414/2023, DM 127/2025 e DL 19 febbraio 2026 n. 19
+      art. 27 (Decreto PNRR 2026), quest'ultimo avendo re-ancorato il
+      termine del 30/6/2026 alla "stipula degli accordi di concessione"
+      lato GSE e il termine di 24 mesi alla "comunicazione dell'accordo".
+      La pagina puntuale dedicata e' raggiungibile dalla sezione "Attuazione
+      misure PNRR / Autoconsumo". L'URL specifico va verificato sul portale
+      (in passato lo slug conteneva la stringa "5000abitanti" come retaggio
+      del regime originario). Per il dettaglio normativo si rinvia
+      all'Allegato 1 Regole Operative CACER (id `gse-regole-operative-cacer`)
+      nella versione vigente al momento della consultazione.
+
+  - id: dl-19-2026-pnrr
+    title: "DL 19 febbraio 2026 n. 19 (Decreto PNRR 2026), art. 27 - Modifiche al regime CACER PNRR del DM 414/2023 come modificato dal DM 127/2025"
+    type: decreto-legge
+    url: null
+    accessed: 2026-05-07
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-19-2026.pdf
+    excerpt_paths:
+      - references/estratti/dm-mase-414-2023.md
+    notes: |
+      Decreto-legge 19 febbraio 2026 n. 19 ("Decreto PNRR 2026"). L'art. 27
+      ridefinisce il regime CACER PNRR e in particolare:
+
+      - sposta il termine del **30 giugno 2026** dalla "conclusione dei lavori"
+        (regime DM 127/2025) alla "**stipula degli accordi di concessione**" da
+        parte del GSE con i beneficiari;
+      - aggancia il termine di **24 mesi** per l'entrata in esercizio alla
+        "**comunicazione dell'accordo di concessione**", e non piu' alla data
+        di completamento dei lavori;
+      - mantiene il termine massimo del **31 dicembre 2027** per l'entrata in
+        esercizio, indipendentemente dalla data di stipula dell'accordo;
+      - consolida il GSE come soggetto che stipula gli accordi e gestisce i
+        controlli per i target PNRR (in luogo del MASE per la gestione
+        operativa).
+
+      L'URL canonico (Normattiva, Gazzetta Ufficiale o portale governativo) va
+      verificato in fase di fetch-sources. Fonti tecniche secondarie usate per
+      la sintesi (consultazione 2026-05-07):
+      - https://biblus.acca.it/facility-cacer/
+      - https://www.rinnovabili.it/energia/comunita-energetiche-rinnovabili/contributi-pnrr-cacer-nuove-regole-gse/
+      - https://www.leganet.net/decreto-pnrr-2026-d-l-19-2026-silenzio-assenso-conferenza-di-servizi-e-appalti-tutte-le-novita-per-gli-enti-locali/
+
+      ATTENZIONE: il regime CACER PNRR ha subito tre modifiche significative in
+      circa 18 mesi (DM 414/2023 -> DM 127/2025 -> DL 19/2026). Verificare
+      sempre la **versione vigente** delle Regole Operative GSE prima dell'uso
+      operativo della skill.
+
+      LIMITE DI VERIFICA. Le fonti tecniche secondarie sopra confermano in modo
+      univoco le modifiche apportate dal DL 19/2026 sui termini temporali
+      (stipula accordi di concessione 30/6/2026 + 24 mesi dalla comunicazione
+      dell'accordo + 31/12/2027 come limite invalicabile). Non e' invece stato
+      possibile, da queste sole fonti, verificare in modo diretto se l'art. 27
+      abbia modificato anche le percentuali dello schema di erogazione in tre
+      fasi (anticipazione 30% + quota intermedia 40% + saldo) introdotte dal
+      DM 127/2025. La skill mantiene quel modello in continuita' con le Regole
+      Operative GSE pubblicate prima del DL 19/2026, ma andra' confermato sul
+      testo del DL e sulle Regole Operative GSE post DL 19/2026 in fase di
+      validazione Livello 2 della skill.
+
+  - id: dl-77-2021-pnrr
+    title: "DL 77/2021 conv. L. 108/2021 - Governance del PNRR e prime misure di rafforzamento delle strutture amministrative"
+    type: decreto-legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2021-05-31;77
+    accessed: 2026-05-06
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-77-2021.pdf
+    excerpt_paths: []
+    notes: |
+      Riferimento di cornice per la misura PNRR M2C2 1.2 a sostegno delle CER.
+      La skill non riproduce il testo, ma lo cita come fonte della cornice di
+      governance e dei vincoli DNSH applicabili (rinvio alla skill
+      `dnsh-pnrr-checker`).
