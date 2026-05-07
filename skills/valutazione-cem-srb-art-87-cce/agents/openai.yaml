@@ -1,0 +1,14 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Valutazione CEM SRB - art. 87 CCE
+short_description: Supporto al tecnico abilitato per la pratica autorizzativa di stazione radio base / ripetitore / ponte radio ex art. 87 D.Lgs. 259/2003. Verifica completezza istanza o SCIA, mapping iter (Ente locale + parere ARPA art. 14 L. 36/2001), checklist per la relazione predittiva CEM ai limiti DPCM 8/7/2003 (CEI 211-7). Non calcola valori di campo, non sostituisce il professionista firmatario.
+default_prompt: |
+  Aiutami a verificare la completezza di una pratica art. 87 D.Lgs. 259/2003
+  per l'installazione di una stazione radio base. Indicami quali allegati
+  servono, quali parametri devono comparire nella relazione predittiva CEM
+  rispetto al DPCM 8/7/2003 (limiti di esposizione, valori di attenzione,
+  obiettivi di qualita', mediazione 6 minuti, ambienti con permanenza
+  >= 4 ore, aree intensamente frequentate), e qual e' l'iter procedurale
+  con tempistiche e attori (Ente locale, ARPA, eventuale conferenza di
+  servizi, silenzio-assenso 90 giorni, decadenza 12 mesi).
