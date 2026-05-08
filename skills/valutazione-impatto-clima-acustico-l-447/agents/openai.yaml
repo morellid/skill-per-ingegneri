@@ -1,0 +1,14 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Valutazione di impatto e clima acustico (L. 447/1995 art. 8)
+short_description: Supporto al TCAA per la documentazione previsionale di impatto acustico (art. 8 c. 2 e c. 4) e per la valutazione di clima acustico (art. 8 c. 3) richieste a corredo di SCIA, PdC, autorizzazioni e licenze ai sensi della Legge quadro 447/1995. Mappa applicabilita', check completezza, riferimenti puntuali a DPCM 14/11/1997 (limiti) e DM 16/3/1998 (misure).
+default_prompt: |
+  Sto preparando la documentazione previsionale di impatto acustico /
+  clima acustico per un'opera o un insediamento ai sensi della L. 447/1995
+  art. 8. Aiutami: (1) a capire quale documentazione mi serve (impatto
+  c. 2, clima c. 3, previsione di impatto a corredo della concessione/SCIA
+  c. 4, nulla-osta c. 6); (2) a verificare la completezza dei contenuti
+  minimi rispetto a DPCM 14/11/1997 (valori limite) e DM 16/3/1998
+  (tecniche di misurazione); (3) a identificare cosa rinviare alla legge
+  regionale e al regolamento comunale.
