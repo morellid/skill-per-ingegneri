@@ -1,0 +1,145 @@
+schema_version: 1
+skill: valutazione-impatto-clima-acustico-l-447
+last_verified: 2026-05-08
+
+# Fonti normative per la skill: documentazione previsionale di impatto
+# acustico (L. 447/1995 art. 8 c. 2 e c. 4) e valutazione previsionale di
+# clima acustico (L. 447/1995 art. 8 c. 3) per opere e insediamenti
+# soggetti a SCIA / PdC / VIA / autorizzazioni edilizie. Tutte fonti
+# pubbliche istituzionali (Ministero dell'ambiente, Gazzetta Ufficiale,
+# Normattiva).
+
+sources:
+  - id: legge-447-1995-mase
+    title: "Legge 26 ottobre 1995 n. 447 - Legge quadro sull'inquinamento acustico"
+    type: legge
+    url: https://www.mase.gov.it/portale/documents/d/guest/legge_26_10_95_447-pdf-1
+    accessed: 2026-05-08
+    sha256: fde4e8d55618848c73e7a4ba4f4a2fb3edfb49cb3f30802cc591e2985ef9a6ae
+    license: public-domain
+    binary_path: not_in_repo/legge-447-1995.pdf
+    excerpt_paths:
+      - references/estratti/legge-447-1995-art-8.md
+    notes: |
+      Versione testuale pubblicata sul portale del Ministero dell'ambiente
+      e della sicurezza energetica (MASE, ex Ministero dell'ambiente). PDF
+      di 28 pagine che riporta L. 447/1995 con annotazioni delle modifiche
+      successive (note redazionali a margine; in particolare la pubblicazione
+      MASE riporta a margine della legge la modifica dell'art. 2 c. 6-8
+      introdotta con L. 9 dicembre 1998 n. 426, oltre alle modifiche
+      successive al 1995). La struttura procedurale rilevante per la
+      skill - art. 8 (impatto e clima acustico), art. 4 c. 1 lett. l)
+      (rinvio alle leggi regionali per la documentazione), art. 6 c. 1
+      lett. d) (controllo comunale al rilascio concessione edilizia) -
+      e' rimasta sostanzialmente stabile.
+
+      L'utente che redige documenti destinati a deposito e firma DEVE
+      verificare il testo vigente puntuale della L. 447/1995 nella versione
+      consolidata su Normattiva
+      (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-10-26;447)
+      e verificare le ulteriori prescrizioni della legge regionale
+      applicabile (la L. 447/1995 art. 4 c. 1 lett. l) demanda alle Regioni
+      la definizione dei criteri da seguire per la redazione della
+      documentazione di cui all'art. 8 commi 2, 3 e 4: contenuti puntuali,
+      modalita' di presentazione e di controllo possono variare per
+      regione).
+
+  - id: dpcm-14-11-1997-limiti
+    title: "DPCM 14 novembre 1997 - Determinazione dei valori limite delle sorgenti sonore"
+    type: decreto-presidente-consiglio-ministri
+    url: https://www.gazzettaufficiale.it/eli/id/1997/12/01/097A9602/sg
+    accessed: 2026-05-08
+    sha256: 265982c3e2970b27d6078d33e19a9ad06d91c683bb1c1ecd86758a8dc377a47c
+    license: public-domain
+    binary_path: not_in_repo/dpcm-14-11-1997-gu.html
+    excerpt_paths:
+      - references/estratti/dpcm-14-11-1997-valori-limite.md
+    notes: |
+      Pubblicato in GU Serie Generale n. 280 del 1 dicembre 1997, codice
+      redazionale 097A9602. Il decreto attua l'art. 3 c. 1 lett. a) della
+      L. 447/1995 e fissa, per le sei classi acustiche di destinazione
+      d'uso del territorio (Tabella A allegata al DPCM), i valori limite
+      di emissione (Tabella B), i valori limite assoluti di immissione
+      (Tabella C) e i valori di qualita' (Tabella D). I valori distinguono
+      fra periodo diurno (06:00-22:00) e periodo notturno (22:00-06:00).
+      L'art. 4 fissa i valori limite differenziali di immissione: 5 dB
+      per il periodo diurno e 3 dB per il periodo notturno, all'interno
+      degli ambienti abitativi, con esclusioni (classe VI, fonti < 50 dB(A)
+      diurni / < 40 dB(A) notturni a finestre aperte oppure < 35 / < 25
+      a finestre chiuse, infrastrutture dei trasporti, comportamenti non
+      produttivi, servizi/impianti fissi dell'edificio adibiti a uso
+      comune). L'art. 6 definisce i valori di attenzione (Tabella C
+      aumentata di 10 dB diurno / 5 dB notturno se riferiti a 1 ora,
+      oppure pari ai valori di Tabella C se riferiti al tempo di
+      riferimento). L'art. 5 rinvia ai decreti attuativi per i valori
+      relativi alle infrastrutture dei trasporti.
+
+      Il binario archiviato in not_in_repo/ e' un file HTML aggregato che
+      contiene tutti gli articoli del DPCM e l'allegato (Tabelle A-D)
+      come pubblicati sulle pagine articolo per articolo del portale
+      gazzettaufficiale.it. L'utente che debba citare il testo in pratica
+      o ricorso deve usare la versione consolidata vigente disponibile su
+      Normattiva.
+
+  - id: dm-16-03-1998-tecniche
+    title: "Decreto del Ministro dell'ambiente 16 marzo 1998 - Tecniche di rilevamento e di misurazione dell'inquinamento acustico"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/1998/04/01/098A2679/sg
+    accessed: 2026-05-08
+    sha256: 76e067861e2477d6ea782ca621bea641ca3be0a5e9bceaeaa7fc9df2865c83c4
+    license: public-domain
+    binary_path: not_in_repo/dm-16-03-1998-gu.html
+    excerpt_paths:
+      - references/estratti/dm-16-03-1998-tecniche-misurazione.md
+    notes: |
+      Pubblicato in GU Serie Generale n. 76 del 1 aprile 1998, codice
+      redazionale 098A2679. Attua l'art. 3 c. 1 lett. c) della L. 447/1995.
+      Definisce le tecniche di rilevamento e di misurazione
+      dell'inquinamento acustico:
+      - art. 2: strumentazione conforme classe 1 (EN 60651/1994 e
+        EN 60804/1994), calibrazione pre/post sessione con scarto
+        < 0,5 dB, taratura biennale presso laboratori accreditati;
+      - allegato A: definizioni (sorgente specifica, T_L, T_R, T_O, T_M,
+        livelli L_AS/L_AF/L_AI e relativi massimi, L_Aeq, L_Aeq,TL, SEL,
+        rumore ambientale L_A, rumore residuo L_R, livello differenziale
+        L_D, livello di emissione, fattori correttivi K_I/K_T/K_B = 3 dB
+        ciascuno, presenza di rumore a tempo parziale, livello corretto
+        L_C);
+      - allegato B: norme tecniche per esecuzione misure (rumore
+        ambientale, microfono a 1,5 m dal pavimento e >= 1 m da superfici
+        riflettenti negli ambienti abitativi, a 1 m dalla facciata in
+        esterno, condizioni meteo: assenza precipitazioni / nebbia / neve
+        e vento <= 5 m/s, criteri per impulsivita' e tonalita');
+      - allegato C: misura del rumore ferroviario (microfono a 1 m da
+        facciata e a quota 4 m, T_M >= 24 h) e stradale (T_M >= una
+        settimana per traffico stradale, microfono a 1 m da facciata e
+        a quota 4 m);
+      - allegato D: presentazione dei risultati (rapporto fonometrico
+        completo con catena, classe acustica, conclusioni, firma del
+        tecnico competente).
+
+      Il binario archiviato in not_in_repo/ e' un file HTML aggregato che
+      contiene tutti gli articoli e gli allegati A-D come pubblicati sulle
+      pagine articolo per articolo del portale gazzettaufficiale.it.
+
+  - id: legge-447-1995-normattiva
+    title: "Legge 26 ottobre 1995 n. 447 - testo vigente consolidato (Normattiva)"
+    type: legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-10-26;447
+    accessed: 2026-05-08
+    sha256: ""
+    license: public-domain
+    binary_path: null
+    excerpt_paths: null
+    notes: |
+      Riferimento al testo consolidato vigente della L. 447/1995 sul portale
+      Normattiva (gestito dal Ministero della Giustizia / Istituto
+      Poligrafico e Zecca dello Stato). La pagina e' navigabile
+      interattivamente con accesso multi-vigenza: non viene scaricata
+      come binario unico (le versioni multi-vigenza sono accessibili
+      via interfaccia web). La skill rinvia a Normattiva per la verifica
+      del testo vigente al momento del deposito della pratica, in
+      particolare per modifiche post-1995 (es. L. 9 dicembre 1998 n. 426
+      sull'art. 2 c. 8; art. 4 D.Lgs. 17 febbraio 2017 n. 42 attuativo
+      della direttiva 2002/49/CE; modifiche introdotte dal D.Lgs. 3
+      aprile 2006 n. 152) che possono interessare l'art. 8 e l'art. 4.
