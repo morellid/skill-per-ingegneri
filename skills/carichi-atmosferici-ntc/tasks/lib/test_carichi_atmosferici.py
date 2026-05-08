@@ -230,6 +230,12 @@ class TestQskZone(unittest.TestCase):
         expected = 1.39 * (1.0 + (1000.0 / 728.0) ** 2)
         self.assertAlmostEqual(carico_neve_al_suolo_qsk("I-Alpina", 1000.0), expected)
 
+    def test_zona_case_insensitive(self):
+        # accetta varianti di case e separatori
+        ref = carico_neve_al_suolo_qsk("I-Alpina", 500.0)
+        for variante in ("i-alpina", "I-ALPINA", "i alpina", "I-Alpina "):
+            self.assertAlmostEqual(carico_neve_al_suolo_qsk(variante, 500.0), ref)
+
 
 class TestMu1(unittest.TestCase):
     def test_pendenza_bassa(self):

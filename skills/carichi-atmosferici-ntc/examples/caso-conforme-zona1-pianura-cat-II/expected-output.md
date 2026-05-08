@@ -16,7 +16,7 @@
 - `c_e = 2.212338` (eq. 3.3.5 NTC con k_r=0.19, z_0=0.05, z_min=4.0 per cat. II)
 
 ### Output
-- **p = 691.36 N/m^2 = 0.6914 kN/m^2** (eq. 3.3.1 NTC: p = q_r * c_e * c_p * c_d)
+- **p = 691.36 N/m^2 = 0.691356 kN/m^2** (eq. 3.3.1 NTC: p = q_r * c_e * c_p * c_d)
 
 ## Carico neve (NTC par. 3.4)
 

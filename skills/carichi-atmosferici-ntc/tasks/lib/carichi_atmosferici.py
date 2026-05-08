@@ -96,8 +96,6 @@ def coefficiente_ritorno_cr(t_r_anni: float) -> float:
     Validita': 5 <= T_R <= 500 anni (intervallo coerente con NTC par. 3.3.4).
     """
     t_r_anni = _finite(t_r_anni, "t_r_anni")
-    if t_r_anni <= 1:
-        raise ValueError("T_R deve essere > 1 anno")
     if t_r_anni < 5 or t_r_anni > 500:
         raise ValueError(
             "T_R fuori intervallo 5-500 anni: NTC par. 3.3.4 limita la formula 3.3.3"
@@ -189,14 +187,14 @@ class RisultatoVento:
                 "c_d": self.c_d,
             },
             "intermedi": {
-                "v_b_m_s": round(self.v_b, 4),
+                "v_b_m_s": round(self.v_b, 6),
                 "c_r": round(self.c_r, 6),
-                "v_r_m_s": round(self.v_r, 4),
-                "q_r_N_m2": round(self.q_r, 4),
+                "v_r_m_s": round(self.v_r, 6),
+                "q_r_N_m2": round(self.q_r, 6),
                 "c_e": round(self.c_e, 6),
             },
             "output": {
-                "p_N_m2": round(self.p, 4),
+                "p_N_m2": round(self.p, 6),
                 "p_kN_m2": round(self.p / 1000.0, 6),
             },
             "riferimenti_ntc": self.riferimenti,
@@ -278,11 +276,13 @@ def carico_neve_al_suolo_qsk(zona: str, a_s: float) -> float:
     a_s = _finite(a_s, "a_s")
     if a_s < 0:
         raise ValueError("a_s (altitudine sito) non puo' essere negativa")
-    z = (zona or "").strip()
-    if z not in ZONE_NEVE:
+    z_norm = (zona or "").strip().lower().replace(" ", "-")
+    canonical = {z.lower(): z for z in ZONE_NEVE}
+    if z_norm not in canonical:
         raise ValueError(
             f"zona neve '{zona}' non valida: usare una di {ZONE_NEVE}"
         )
+    z = canonical[z_norm]
     if a_s <= 200.0:
         return {"I-Alpina": 1.50, "I-Mediterranea": 1.50, "II": 1.00, "III": 0.60}[z]
     if z == "I-Alpina":
