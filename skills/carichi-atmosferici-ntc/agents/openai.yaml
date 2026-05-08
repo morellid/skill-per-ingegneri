@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Carichi atmosferici NTC 2018 (vento + neve)
+short_description: Calcolo della pressione del vento p (par. 3.3) e del carico neve sulla copertura q_s (par. 3.4) ai sensi delle NTC 2018 + Circolare 7/2019. Dato il sito (zona vento o neve, altitudine), categoria di esposizione, geometria (z, c_p, alpha, classe esposizione neve), restituisce v_b, c_r, q_r, c_e, p e q_sk, mu_1, c_E, q_s con citazione paragrafi NTC. Code-driven, output verificabile.
+default_prompt: |
+  Calcolami pressione vento e carico neve NTC 2018 per il mio edificio
+  in pianura piemontese a 350 m s.l.m., zona vento 1 (v_b_0=25, a_0=1000,
+  k_s=0.40), categoria esposizione II, copertura a falde con alpha=20 deg,
+  classe esposizione neve "normale", quota di riferimento z=10 m,
+  c_p=0.8, c_d=1, c_t=1.

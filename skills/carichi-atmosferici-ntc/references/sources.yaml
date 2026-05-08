@@ -1,0 +1,75 @@
+schema_version: 1
+skill: carichi-atmosferici-ntc
+last_verified: 2026-05-08
+
+# Fonti normative per il calcolo dei carichi atmosferici (vento e neve) ai
+# sensi delle NTC 2018 (DM 17/01/2018) e Circolare esplicativa 21/01/2019 n. 7.
+# La skill non incorpora la mappa zone vento (Tab. 3.3.I): l'utente fornisce
+# v_b_0, a_0, k_s consultando la tabella su una copia ufficiale di NTC.
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
+    accessed: 2026-05-08
+    sha256: REPLACE_WHEN_DOWNLOADED
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    excerpt_path: references/estratti/ntc2018-par-3-3.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      Articoli rilevanti per questa skill:
+      - par. 3.3 (vento): definizioni di p, v_b, c_r, q_r, c_e; eq. 3.3.1-3.3.5.
+        Tab. 3.3.I (zone vento, NON incorporata: input utente).
+        Tab. 3.3.II (categorie esposizione I-V, k_r/z_0/z_min: incorporata).
+        Tab. 3.3.III (assegnazione classe rugosita' -> categoria esposizione,
+        NON incorporata: dichiarazione utente).
+        par. 3.3.8 c_p coefficienti di forma: NON incorporato, input utente.
+        par. 3.3.9 c_d coefficiente dinamico: default 1, fuori scope per
+        strutture sensibili.
+      - par. 3.4 (neve): q_s = mu_1 * q_sk * c_E * c_t (eq. 3.4.1).
+        par. 3.4.2: q_sk per Zona I-Alpina, I-Mediterranea, II, III in
+        funzione di a_s con soglia 200 m (incorporata).
+        par. 3.4.3: c_E (Tab. 3.4.I, 3 classi: battuta dai venti / normale /
+        riparata, incorporata).
+        par. 3.4.4: c_t coefficiente termico (default 1.0).
+        par. 3.4.5.2.1: mu_1 per copertura ad una/due falde (incorporato).
+        par. 3.4.5.5: accumuli, deriva, scorrimento (NON coperti).
+      Il file binario va scaricato e l'hash SHA256 calcolato con
+      ./scripts/fetch-sources.sh, oppure manualmente: sha256sum del PDF.
+
+  - id: circ-7-2019-mit
+    title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    accessed: 2026-05-08
+    sha256: REPLACE_WHEN_DOWNLOADED
+    license: public-domain
+    binary_path: not_in_repo/circ-7-2019.pdf
+    excerpt_path: references/estratti/circ-7-2019-c-3-3-3-4.md
+    notes: |
+      Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019.
+      Sezioni rilevanti: C3.3 (commento applicativo a NTC par. 3.3 con
+      riferimenti CNR-DT 207 per c_p e c_d) e C3.4 (commento applicativo
+      a par. 3.4 con esempi di mu_1 e considerazioni su accumuli e
+      scorrimento). La skill cita C3.3-C3.4 come riferimento di contesto;
+      la validazione Livello 2 vs esempi numerici della Circolare e' da
+      eseguire prima del release stabile.
+
+  - id: cnr-dt-207-2008
+    title: "CNR-DT 207/2008 - Istruzioni per la valutazione delle azioni e degli effetti del vento sulle costruzioni"
+    type: linea-guida
+    url: https://www.cnr.it/it/normativa-tecnica
+    accessed: 2026-05-08
+    sha256: null
+    license: public-domain
+    binary_path: null
+    excerpt_path: null
+    notes: |
+      Documento tecnico CNR richiamato dalla Circolare 7/2019 par. C3.3
+      come riferimento per il calcolo dei coefficienti aerodinamici c_p
+      e del coefficiente dinamico c_d. La skill NON incorpora CNR-DT 207:
+      lo cita come fonte di letteratura per il progettista che debba
+      determinare c_p su geometrie correnti. Il progettista resta
+      responsabile della scelta dei valori.
