@@ -132,15 +132,22 @@ Per ciascuna sorgente significativa al ricettore:
   segnala l'obbligo di tenerne conto solo quando la valutazione
   evidenzia rumore prevedibile gia' molto vicino al limite di
   immissione - rinvio diretto all'art. 6 del DPCM.
-- 4.4 **Criterio differenziale** (DPCM 14/11/1997 art. 4): il limite
-  differenziale (5 dB diurno, 3 dB notturno) si applica all'**interno
-  degli ambienti abitativi**. Per l'insediamento sensibile in fase
-  previsionale, va verificato se le sorgenti previste hanno
-  caratteristiche tali da poterlo violare a finestre aperte/chiuse;
-  non si applica nelle aree classe VI ne' nei casi dell'art. 4 c. 2
-  (effetto trascurabile). Per la metodologia dei descrittori
-  rilevati, rinvio a `references/estratti/dm-16-03-1998-tecniche-misurazione.md`
-  (allegato B).
+- 4.4 **Criterio differenziale** (DPCM 14/11/1997 art. 4): in fase
+  previsionale di **clima acustico** il differenziale e' di norma
+  **non applicabile**, perche' il differenziale presuppone una
+  sorgente specifica determinata (oggetto di valutazione di impatto
+  c. 2 / c. 4) di cui calcolare la differenza tra rumore ambientale
+  e rumore residuo presso un ricettore esistente. Nel clima
+  previsionale il sito e' invece il futuro ricettore. Il
+  differenziale puo' diventare rilevante solo se nel contorno e'
+  identificabile una **sorgente specifica determinata** (es.
+  attivita' produttiva, discoteca) gia' soggetta a valutazione di
+  impatto autonoma; in tal caso, segnalare il rinvio alla
+  valutazione di impatto della singola sorgente. Limiti del
+  differenziale (5 dB diurno, 3 dB notturno, all'interno degli
+  ambienti abitativi, escluse classe VI e i casi di trascurabilita'
+  del comma 2) sono dettagliati nell'estratto
+  `references/estratti/dpcm-14-11-1997-valori-limite.md`.
 - 4.5 Se il comune **non ha adottato la classificazione acustica**:
   applicare regime transitorio DPCM 1/3/1991 ai sensi dell'art. 8
   c. 1 del DPCM 14/11/1997 e rinvio alla legge regionale per i
@@ -177,10 +184,12 @@ Per ciascuna sorgente significativa al ricettore:
     di taratura SIT.
   - 6.2.2 Calibrazione **prima e dopo** ogni ciclo di misura, scarto
     massimo +/- 0.5 dB (DM 16/3/1998 art. 2 c. 2).
-  - 6.2.3 Indicazioni di posizionamento del microfono (1.5 m dal
-    piano di calpestio, almeno 1 m da superfici riflettenti;
-    condizioni di misura in esterno descritte all'allegato B DM
-    16/3/1998).
+  - 6.2.3 Indicazioni di posizionamento del microfono secondo il
+    contesto: ambienti abitativi 1,5 m dal pavimento e >= 1 m da
+    superfici riflettenti (allegato B DM 16/3/1998 punto 5);
+    misure in esterno >= 1 m dalla facciata, altezza coerente con
+    la posizione del ricettore (allegato B punto 6); rumore stradale
+    o ferroviario 1 m dalla facciata e 4 m da terra (allegato C).
   - 6.2.4 Condizioni meteo durante le misure: vento <= 5 m/s (allegato
     B DM 16/3/1998 punto 6 e 7), assenza di precipitazione, fenomeno
     di inversione termica solo se rilevante.

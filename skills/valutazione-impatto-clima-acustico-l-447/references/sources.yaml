@@ -143,3 +143,28 @@ sources:
       sull'art. 2 c. 8; art. 4 D.Lgs. 17 febbraio 2017 n. 42 attuativo
       della direttiva 2002/49/CE; modifiche introdotte dal D.Lgs. 3
       aprile 2006 n. 152) che possono interessare l'art. 8 e l'art. 4.
+
+  - id: dlgs-42-2017-normattiva
+    title: "D.Lgs. 17 febbraio 2017 n. 42 - testo vigente consolidato (Normattiva)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-02-17;42
+    accessed: 2026-05-08
+    sha256: ""
+    license: public-domain
+    binary_path: null
+    excerpt_paths: null
+    notes: |
+      Riferimento al testo consolidato vigente del D.Lgs. 17 febbraio
+      2017 n. 42 sul portale Normattiva. Il decreto reca disposizioni in
+      materia di armonizzazione della normativa nazionale in materia di
+      inquinamento acustico, in attuazione della L. 30 ottobre 2014 n.
+      161 art. 19. L'art. 21 disciplina la figura del tecnico competente
+      in acustica ambientale (TCAA) e l'elenco nazionale (sostituendo /
+      coordinando le previsioni dell'art. 2 cc. 6-8 della L. 447/1995).
+      La skill rinvia al testo vigente su Normattiva per la verifica
+      puntuale dei requisiti professionali (formazione, aggiornamento,
+      iscrizione all'elenco) e non riproduce in proprio il dettaglio di
+      art. 21. Pubblicato in GU Serie Generale n. 79 del 4 aprile 2017.
+      Il testo non viene scaricato come binario unico: l'utente
+      consulta la versione multi-vigenza su Normattiva al momento del
+      deposito della pratica.

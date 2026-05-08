@@ -98,12 +98,19 @@ Le citazioni provengono dagli estratti seguenti:
 
 ### C. Condizioni e modalita' di misura (allegato B DM 16/3/1998)
 
-- C.1 **Posizione del microfono**: per misure in esterno (rumore
-  stradale, sorgente fissa industriale) il microfono e' posto a
-  1.5 m dal piano di calpestio (suolo o piano di campagna); per
-  misure in facciata ad almeno 1 m dalla facciata e in posizione
-  rappresentativa del ricettore. Indicazioni puntuali allegato B
-  DM 16/3/1998.
+- C.1 **Posizione del microfono** secondo il contesto di misura
+  (DM 16/3/1998 allegati B e C):
+  - **Misure all'interno di ambienti abitativi** (allegato B punto 5):
+    microfono a 1,5 m dal pavimento e ad almeno 1 m da superfici
+    riflettenti; rilevamento sia a finestre aperte (microfono a 1 m
+    dalla finestra) sia a finestre chiuse (nel punto di maggior
+    livello).
+  - **Misure in esterno generiche** (allegato B punto 6): microfono
+    a non meno di 1 m dalla facciata, altezza coerente con la
+    posizione reale o ipotizzata del ricettore.
+  - **Misure di rumore stradale o ferroviario** (allegato C):
+    microfono a 1 m dalla facciata e a quota 4 m da terra (cuffia
+    antivento, orientato verso la sorgente).
 - C.2 **Condizioni meteorologiche** durante la misura: vento <= 5 m/s,
   assenza di precipitazione, eventuali fenomeni di inversione termica
   segnalati. Documentazione (es. data, ora, vento, temperatura,

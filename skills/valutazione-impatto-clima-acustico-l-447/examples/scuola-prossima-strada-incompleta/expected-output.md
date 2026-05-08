@@ -17,7 +17,7 @@
 
 | Item | Esito | Riferimento | Azione |
 |------|-------|-------------|--------|
-| 1.1 TCAA firmatario con n. iscrizione D.Lgs. 42/2017 art. 21 | **mancante** | D.Lgs. 17 febbraio 2017 n. 42 art. 21 | identificare TCAA iscritto e farlo firmare la valutazione |
+| 1.1 TCAA firmatario con n. iscrizione | **mancante** | L. 447/1995 art. 2 cc. 6-7 + D.Lgs. 42/2017 art. 21 (testo vigente da verificare su Normattiva) | identificare TCAA iscritto e farlo firmare la valutazione |
 | 1.2 Progettista | mancante | - | identificare |
 | 1.3 Committente e pratica | parziale | - | inserire estremi PdC |
 | 2.1 Indirizzo, particella, coordinate | mancante | - | inserire |
@@ -40,7 +40,7 @@
 | 6.3 Posizionamento microfono e condizioni meteo | **mancante** | DM 16/3/1998 allegato B | dipendente da 6.2 |
 | 6.4 Componenti K_I/K_T/K_B | **mancante** | DM 16/3/1998 allegato A e B | dipendente da 6.2 |
 | 7.1 Mitigazione progettuale | **mancante** | - | definire necessita' di barriere, schermature o requisiti acustici passivi (DPCM 5/12/1997, fuori scope) |
-| 8.1 Firma TCAA | **mancante** | D.Lgs. 17 febbraio 2017 n. 42 art. 21 | bloccante: la valutazione non puo' essere considerata atto tecnico ai sensi della L. 447/1995 |
+| 8.1 Firma TCAA | **mancante** | L. 447/1995 art. 2 cc. 6-7 e art. 8 cc. 2-4 + D.Lgs. 42/2017 art. 21 (testo vigente Normattiva) | bloccante ai fini istruttori: l'atto privo di firma TCAA non integra la documentazione tecnica richiesta dalla L. 447/1995; valutazione finale di sufficienza spetta al responsabile del procedimento del comune (L. 447/1995 art. 6 c. 1 lett. d) |
 | 8.2 Data | da verificare | - | inserire |
 | 8.3 Allegati | **mancante** | - | inserire planimetrie, foto, estratti, eventuali rapporti di misura |
 | 8.4 Rinvio LR Veneto | **mancante** | L. 447/1995 art. 4 c. 1 lett. l) | aggiungere |
@@ -48,9 +48,14 @@
 
 ## Sintesi BLOCCANTI
 
-- Documento privo di **firma di TCAA iscritto all'elenco nazionale**
-  (D.Lgs. 17 febbraio 2017 n. 42 art. 21): non costituisce
-  valutazione tecnica ai sensi della L. 447/1995.
+- Documento privo di **firma di TCAA**: la L. 447/1995 (art. 2
+  cc. 6-7 testo originario, oggi disciplinato dal D.Lgs. 42/2017
+  art. 21 - testo vigente da verificare su Normattiva) richiede che
+  la documentazione tecnica di cui all'art. 8 cc. 2-4 sia redatta
+  da tecnico competente in acustica ambientale; in assenza, l'atto
+  non integra la documentazione tecnica richiesta. La sufficienza
+  finale resta valutazione del responsabile del procedimento
+  comunale.
 - **Mancata caratterizzazione fonometrica** del rumore residuo: per
   insediamento sensibile esposto a strada di tipo C, l'omissione e'
   sostanziale; il DM 16/3/1998 allegato C richiede T_M >= 1 settimana

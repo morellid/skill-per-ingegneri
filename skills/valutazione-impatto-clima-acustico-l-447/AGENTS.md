@@ -26,6 +26,9 @@ Catalogate in `references/sources.yaml`:
 - **DPCM 14/11/1997** - HTML aggregato gazzettaufficiale.it, hash `265982c3e2970b27d6078d33e19a9ad06d91c683bb1c1ecd86758a8dc377a47c`. URL: https://www.gazzettaufficiale.it/eli/id/1997/12/01/097A9602/sg
 - **DM 16/3/1998** - HTML aggregato gazzettaufficiale.it, hash `76e067861e2477d6ea782ca621bea641ca3be0a5e9bceaeaa7fc9df2865c83c4`. URL: https://www.gazzettaufficiale.it/eli/id/1998/04/01/098A2679/sg
 - **L. 447/1995 (Normattiva)** - reference-only per testo vigente con coordinamento.
+- **D.Lgs. 17/2/2017 n. 42 (Normattiva)** - reference-only per
+  testo vigente del decreto attuativo della direttiva 2002/49/CE
+  (art. 21 disciplina TCAA ed elenco nazionale).
 
 Estratti pertinenti in `references/estratti/`:
 

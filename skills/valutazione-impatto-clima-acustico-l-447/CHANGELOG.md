@@ -7,6 +7,31 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Changed
+
+- Hardening review-driven (Codex adversarial review):
+  - aggiunta entry reference-only `dlgs-42-2017-normattiva` in
+    `references/sources.yaml` (rinvio Normattiva al D.Lgs. 17/2/2017
+    n. 42 art. 21 - TCAA), per ancorare le citazioni del decreto
+    nelle parti dei task ed esempi che le richiamano;
+  - rianchoraggio della firma TCAA come requisito bloccante su
+    L. 447/1995 art. 2 cc. 6-7 (testo originario, presente
+    nell'estratto di repo) + rinvio testo vigente D.Lgs. 42/2017
+    art. 21 su Normattiva, in entrambi gli `expected-output.md`
+    degli esempi;
+  - `tasks/checklist-relazione-previsionale.md` C.1 e
+    `tasks/check-completezza-clima-acustico.md` 6.2.3:
+    posizionamento del microfono ora distinto per contesto di
+    misura (ambienti abitativi: DM 16/3/1998 allegato B punto 5;
+    esterno generico: allegato B punto 6; rumore stradale o
+    ferroviario: allegato C);
+  - `tasks/check-completezza-clima-acustico.md` 4.4: criterio
+    differenziale chiarito come **di norma non applicabile** in
+    fase previsionale di clima acustico (manca una sorgente
+    specifica determinata gia' soggetta a valutazione di impatto
+    autonoma), allineato con il commento corrispondente nelle
+    note degli esempi.
+
 ## [0.1.0-alpha] - 2026-05-08
 
 ### Added

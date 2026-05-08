@@ -22,7 +22,7 @@ Rinvio:
 
 | Item | Esito | Riferimento | Azione |
 |------|-------|-------------|--------|
-| 1.1 Identificazione TCAA | OK | D.Lgs. 42/2017 art. 21 | - |
+| 1.1 Identificazione TCAA | OK | L. 447/1995 art. 2 cc. 6-7 + D.Lgs. 42/2017 art. 21 (testo vigente Normattiva) | - |
 | 1.2 Identificazione progettista | da verificare | - | controllare presenza nella relazione |
 | 1.3 Identificazione committente e pratica | OK | - | - |
 | 2.1 Ubicazione e particella | OK | - | - |
