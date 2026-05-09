@@ -59,7 +59,7 @@ Estratti pertinenti in `references/estratti/`:
 ## Stato attuale
 
 - Versione: 0.1.0-alpha (vedi `CHANGELOG.md`)
-- Validazione: Livello 1 self-check OK (`./scripts/validate.sh cedimenti-edometrici-ntc`); test suite Python: 28/28 pass (5 classi: OCR, cedimento OC, cedimento NC, end-to-end con copertura ramo OC / NC / transizione + raccordo a sigma_p + avvertenza epsilon > 10%, monotonia in delta_sigma e h0, validazione input fuori dominio Cr > Cc / sigma_p < sigma_0 / scarichi / negativi / NaN; CLI con error handling). Livello 2 (vs casi pubblicati e software geotecnico) da completare prima del release stabile.
+- Validazione: Livello 1 self-check OK (`./scripts/validate.sh cedimenti-edometrici-ntc`); test suite Python: 29/29 pass (5 classi: OCR, cedimento OC, cedimento NC, end-to-end con copertura ramo OC / NC / transizione + raccordo a sigma_p + avvertenza epsilon > 10%, monotonia in delta_sigma e h0, riproducibilita' valori expected-output.md del caso conforme, validazione input fuori dominio Cr > Cc / sigma_p < sigma_0 / scarichi / negativi / NaN; CLI con error handling). Livello 2 (vs casi pubblicati e software geotecnico) da completare prima del release stabile.
 - Task files:
   - `tasks/calcola-cedimento.md`
 - Modulo di calcolo: `tasks/lib/cedimenti.py` + `tasks/lib/test_cedimenti.py`

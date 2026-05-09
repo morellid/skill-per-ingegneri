@@ -109,6 +109,24 @@ class TestEndToEnd(unittest.TestCase):
         self.assertGreater(res.delta_h_nc_m, 0.0)
         self.assertAlmostEqual(res.delta_h_m, res.delta_h_oc_m + res.delta_h_nc_m)
 
+    def test_caso_conforme_esempio_valori_pinnati(self):
+        # Riproducibilita' valori expected-output.md di
+        # examples/caso-conforme-strato-argilla-OC-transizione/.
+        # Ancora i numeri attesi al modulo: se cambia la formula, il test rompe.
+        res = calcola_cedimento(
+            h0=2.0, e0=0.8, c_c=0.30, c_r=0.05,
+            sigma_0=100.0, sigma_p=150.0, delta_sigma=200.0,
+        )
+        self.assertEqual(res.ramo, "transizione")
+        self.assertAlmostEqual(res.sigma_f, 300.0)
+        self.assertAlmostEqual(res.ocr, 1.5)
+        self.assertAlmostEqual(res.delta_h_oc_m, 0.009782848, places=9)
+        self.assertAlmostEqual(res.delta_h_nc_m, 0.100343332, places=9)
+        self.assertAlmostEqual(res.delta_h_m, 0.110126180, places=9)
+        self.assertAlmostEqual(res.delta_h_mm, 110.126180, places=6)
+        self.assertAlmostEqual(res.epsilon_media, 0.055063090, places=9)
+        self.assertEqual(res.avvertenze, [])
+
     def test_continuita_a_sigma_p(self):
         # cedimento totale per delta tale che sigma_f = sigma_p deve coincidere col solo OC
         # e con la transizione che ha NC ~ 0
