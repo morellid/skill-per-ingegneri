@@ -10,16 +10,14 @@ sources:
   - id: ntc2018-dm-17-01-2018
     title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
     type: decreto
-    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
     accessed: 2026-05-09
-    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    sha256: REPLACE_WHEN_DOWNLOADED
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
     excerpt_path: references/estratti/ntc2018-par-4-1-2.md
     notes: |
       Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
-      URL diretto al PDF del SO n. 8 alla GU n. 42/2018.
-      SHA256 verificato dalla skill combinazioni-carico-ntc (stesso binario).
       Articoli rilevanti per questa skill:
       - par. 4.1.2.1 (resistenze e diagrammi tensione/deformazione c.a.):
         f_cd = alpha_cc * fck / gamma_c (eq. 4.1.4), Tab. 4.1.II coefficienti
@@ -36,11 +34,13 @@ sources:
       - par. 7.4.4 e 7.4.6 (sismica CD"A" / CD"B"): limiti rho_min/rho_max,
         gerarchia delle resistenze - **NON applicati dalla skill**, da
         verificare separatamente dal progettista.
+      Il file binario va scaricato e l'hash SHA256 calcolato con
+      ./scripts/fetch-sources.sh, oppure manualmente: sha256sum del PDF.
 
   - id: circ-7-2019-mit
     title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
     type: circolare
-    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
     accessed: 2026-05-09
     sha256: REPLACE_WHEN_DOWNLOADED
     license: public-domain
