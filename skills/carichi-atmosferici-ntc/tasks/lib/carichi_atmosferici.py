@@ -60,12 +60,14 @@ def _finite(value: Any, field_name: str) -> float:
 # ---------------------------------------------------------------------------
 
 def velocita_riferimento_vb(v_b_0: float, a_0: float, k_s: float, a_s: float) -> float:
-    """Velocita' di riferimento v_b in m/s, NTC eq. 3.3.2.
+    """Velocita' base di riferimento v_b in m/s, NTC par. 3.3.1 eq. [3.3.1].
 
-    v_b = v_b_0                                     se a_s <= a_0
-    v_b = v_b_0 * (1 + k_s * (a_s/a_0 - 1))         se a_0 < a_s <= 1500 m
+    v_b = v_{b,0} * c_a
+    con:
+      c_a = 1                                   se a_s <= a_0
+      c_a = 1 + k_s * (a_s/a_0 - 1)             se a_0 < a_s <= 1500 m  (eq. [3.3.1.b])
 
-    Per a_s > 1500 m la norma rinvia a indagini specifiche (NTC par. 3.3.2);
+    Per a_s > 1500 m la norma rinvia a indagini specifiche (NTC par. 3.3.1 p. GU 52);
     il modulo solleva ValueError.
     """
     v_b_0 = _finite(v_b_0, "v_b_0")
@@ -88,12 +90,13 @@ def velocita_riferimento_vb(v_b_0: float, a_0: float, k_s: float, a_s: float) ->
 
 
 def coefficiente_ritorno_cr(t_r_anni: float) -> float:
-    """Coefficiente di ritorno c_r per T_R != 50 anni, NTC eq. 3.3.3.
+    """Coefficiente di ritorno c_r, NTC par. 3.3.3 eq. [3.3.3].
 
-    c_r = 0.75 * sqrt(1 - 0.2 * ln(-ln(1 - 1/T_R)))   per T_R != 50 anni
-    Per T_R = 50 anni c_r = 1.
+    c_r = 0.75 * sqrt(1 - 0.2 * ln(-ln(1 - 1/T_R)))
+    Per T_R = 50 anni c_r = 1 (valore standard NTC).
 
-    Validita': 5 <= T_R <= 500 anni (intervallo coerente con NTC par. 3.3.4).
+    Intervallo applicato: 5 <= T_R <= 500 anni (coerente con i periodi
+    di ritorno ridotti per fasi transitorie indicati da NTC par. 3.3.2).
     """
     t_r_anni = _finite(t_r_anni, "t_r_anni")
     if t_r_anni < 5 or t_r_anni > 500:
@@ -108,7 +111,7 @@ def coefficiente_ritorno_cr(t_r_anni: float) -> float:
 
 
 def velocita_progetto_vr(v_b: float, c_r: float) -> float:
-    """v_r = c_r * v_b (m/s), NTC par. 3.3.3."""
+    """Velocita' di riferimento v_r = v_b * c_r (m/s), NTC par. 3.3.2 eq. [3.3.2]."""
     v_b = _finite(v_b, "v_b")
     c_r = _finite(c_r, "c_r")
     if v_b <= 0 or c_r <= 0:
@@ -117,9 +120,9 @@ def velocita_progetto_vr(v_b: float, c_r: float) -> float:
 
 
 def pressione_cinetica_qr(v_r: float) -> float:
-    """Pressione cinetica di riferimento q_r in N/m^2, NTC eq. 3.3.4.
+    """Pressione cinetica di riferimento q_r in N/m^2, NTC par. 3.3.6 eq. [3.3.6].
 
-    q_r = 0.5 * rho * v_r^2   con rho = 1.25 kg/m^3
+    q_r = 0.5 * rho * v_r^2   con rho = 1.25 kg/m^3 (NTC par. 3.3.6 GU p. 54)
     """
     v_r = _finite(v_r, "v_r")
     if v_r <= 0:
@@ -130,10 +133,12 @@ def pressione_cinetica_qr(v_r: float) -> float:
 def coefficiente_esposizione_ce(
     z: float, categoria: str, c_t: float = 1.0
 ) -> float:
-    """c_e(z) per categoria di esposizione I-V, NTC eq. 3.3.5.
+    """c_e(z) per categoria di esposizione I-V, NTC par. 3.3.7 eq. [3.3.7] (GU p. 54).
 
     c_e(z) = k_r^2 * c_t * ln(z/z_0) * [7 + c_t * ln(z/z_0)]   per z >= z_min
     c_e(z) = c_e(z_min)                                          per z < z_min
+
+    Parametri k_r, z_0, z_min dalla Tab. 3.3.II (GU p. 54, incorporata).
     """
     z = _finite(z, "z")
     c_t = _finite(c_t, "c_t")
@@ -213,7 +218,7 @@ def calcola_pressione_vento(
     c_t: float = 1.0,
     t_r_anni: float = 50.0,
 ) -> RisultatoVento:
-    """Calcola la pressione del vento p su un elemento, NTC eq. 3.3.1.
+    """Calcola la pressione del vento p su un elemento, NTC par. 3.3.4 eq. [3.3.4].
 
     p = q_r * c_e * c_p * c_d
     """
@@ -245,10 +250,12 @@ def calcola_pressione_vento(
         c_d=c_d,
         p=p,
         riferimenti=[
-            "NTC 2018 par. 3.3.1 - eq. 3.3.1 p = q_r * c_e * c_p * c_d",
-            "NTC 2018 par. 3.3.2 - eq. 3.3.2 v_b in funzione di a_s vs a_0",
-            "NTC 2018 par. 3.3.4 - eq. 3.3.3-3.3.4 c_r e q_r",
-            "NTC 2018 par. 3.3.7 - eq. 3.3.5 c_e(z), Tab. 3.3.II categorie I-V",
+            "NTC 2018 par. 3.3.4 eq. [3.3.4] - p = q_r * c_e * c_p * c_d (GU p. 54)",
+            "NTC 2018 par. 3.3.1 eq. [3.3.1] - v_b = v_{b,0}*c_a (altitudine) (GU p. 52)",
+            "NTC 2018 par. 3.3.2 eq. [3.3.2] - v_r = v_b * c_r (GU p. 53)",
+            "NTC 2018 par. 3.3.3 eq. [3.3.3] - c_r formula (GU p. 53)",
+            "NTC 2018 par. 3.3.6 eq. [3.3.6] - q_r = 0.5*1.25*v_r^2 (GU p. 54)",
+            "NTC 2018 par. 3.3.7 eq. [3.3.7] - c_e(z), Tab. 3.3.II categorie I-V (GU p. 54)",
         ],
     )
 
@@ -295,7 +302,7 @@ def carico_neve_al_suolo_qsk(zona: str, a_s: float) -> float:
 
 
 def coefficiente_forma_mu1(alpha_deg: float) -> float:
-    """Coefficiente di forma mu_1 per copertura ad una/due falde, NTC par. 3.4.5.2.1.
+    """Coefficiente di forma mu_1 per copertura ad una/due falde, NTC par. 3.4.3.2 Tab. 3.4.II (GU p. 58).
 
     0 <=  alpha <= 30:   mu_1 = 0.8
     30 < alpha <  60:   mu_1 = 0.8 * (60 - alpha) / 30
@@ -312,7 +319,7 @@ def coefficiente_forma_mu1(alpha_deg: float) -> float:
 
 
 def coefficiente_esposizione_neve_ce(classe: str) -> float:
-    """c_E per la neve, NTC Tab. 3.4.I.
+    """c_E per la neve, NTC par. 3.4.4 Tab. 3.4.I (GU p. 59).
 
     battuta_dai_venti -> 0.9
     normale           -> 1.0
@@ -390,10 +397,11 @@ def calcola_carico_neve(
         c_t=c_t,
         q_s=q_s,
         riferimenti=[
-            "NTC 2018 par. 3.4.1 - eq. 3.4.1 q_s = mu_1 * q_sk * c_E * c_t",
-            "NTC 2018 par. 3.4.2 - eq. 3.4.1-3.4.4 q_sk per zona e altitudine",
-            "NTC 2018 par. 3.4.5.2.1 - mu_1 per copertura a 1-2 falde",
-            "NTC 2018 par. 3.4.3 - Tab. 3.4.I c_E topografia",
+            "NTC 2018 par. 3.4.1 eq. [3.4.1] - q_s = q_sk * mu_i * C_E * C_t (GU p. 57)",
+            "NTC 2018 par. 3.4.2 eq. [3.4.2]-[3.4.5] - q_sk per zona e altitudine (GU pp. 57-58)",
+            "NTC 2018 par. 3.4.3.2 Tab. 3.4.II - mu_1 per copertura a 1-2 falde (GU p. 58)",
+            "NTC 2018 par. 3.4.4 Tab. 3.4.I - C_E topografia (GU p. 59)",
+            "NTC 2018 par. 3.4.5 - C_t = 1 in assenza di studi termici (GU p. 59)",
         ],
     )
 
