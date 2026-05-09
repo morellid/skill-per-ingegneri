@@ -11,14 +11,16 @@ sources:
   - id: ntc2018-dm-17-01-2018
     title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
     type: decreto
-    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
     accessed: 2026-05-08
-    sha256: REPLACE_WHEN_DOWNLOADED
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
     excerpt_path: references/estratti/ntc2018-par-3-3.md
     notes: |
       Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      URL diretto al PDF del Supplemento Ordinario n. 8 alla GU n. 42.
+      SHA256 verificato dalla skill combinazioni-carico-ntc (stesso binario).
       Articoli rilevanti per questa skill:
       - par. 3.3 (vento): definizioni di p, v_b, c_r, q_r, c_e; eq. 3.3.1-3.3.5.
         Tab. 3.3.I (zone vento, NON incorporata: input utente).
@@ -36,13 +38,11 @@ sources:
         par. 3.4.4: c_t coefficiente termico (default 1.0).
         par. 3.4.5.2.1: mu_1 per copertura ad una/due falde (incorporato).
         par. 3.4.5.5: accumuli, deriva, scorrimento (NON coperti).
-      Il file binario va scaricato e l'hash SHA256 calcolato con
-      ./scripts/fetch-sources.sh, oppure manualmente: sha256sum del PDF.
 
   - id: circ-7-2019-mit
     title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
     type: circolare
-    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
     accessed: 2026-05-08
     sha256: REPLACE_WHEN_DOWNLOADED
     license: public-domain
