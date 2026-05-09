@@ -7,6 +7,19 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-09
+
+### Fixed (source-grounding remediation - issue #92)
+
+- Creato `references/fonti/ai-act-it-eurlex.md`: trascrizione fedele del PDF scaricato (`not_in_repo/ai-act-it-eurlex.pdf`, SHA256 a61b6170...), coprendo Art. 3, 5, 6, 9, 26, 27, 50, 51-55, 113, Allegato II e III. File mancante in 0.1.0-alpha.
+- Aggiornato `references/sources.yaml`: rimosso placeholder-example `esempio-dlgs`, aggiunta voce reale `ai-act-it-eurlex` con tutti i campi compilati (sha256, url, binary_path, excerpt_path, license, notes).
+- Riscritto `SKILL.md`: rimosso scaffold generico template, sostituito con contenuto reale della skill (routing task, date applicazione, target, limiti).
+
+### Note
+
+- La fonte PDF `not_in_repo/ai-act-it-eurlex.pdf` era gia' presente nel repo prima di questa fix; la remediation ha aggiunto la trascrizione fonti/ mancante.
+- Gli estratti in `references/estratti/` sono stati verificati contro il testo del PDF e risultano coerenti con il contenuto letto.
+
 ### Da fare
 - Validazione Livello 1 con `scripts/validate.sh`
 - Validazione Livello 2 da consulente legale specializzato in diritto digitale

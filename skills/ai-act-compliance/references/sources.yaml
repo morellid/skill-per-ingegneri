@@ -1,29 +1,34 @@
 schema_version: 1
 skill: ai-act-compliance
-last_verified: 2026-04-25
+last_verified: 2026-05-09
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
 #   title: titolo completo
 #   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
 #   url: URL canonico della fonte
-#   accessed: data consultazione (2026-04-25)
+#   accessed: data consultazione
 #   sha256: hash SHA256 del file binario scaricato
 #   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
 #   binary_path: path del binario in locale (fuori repo), oppure null
-#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null se non embedabile
+#   md_path: path del markdown di fonte (dentro repo), obbligatorio per fonti pubbliche con binary_path
 #   notes: note libere
 
 sources:
-  # Esempio (sostituire con fonti reali)
-  - id: esempio-dlgs
-    title: "D.Lgs. N/YYYY - Titolo completo"
-    type: decreto
-    url: https://www.gazzettaufficiale.it/eli/...
+  - id: ai-act-it-eurlex
+    title: "Regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024, che stabilisce regole armonizzate sull'intelligenza artificiale (legge sull'intelligenza artificiale)"
+    type: legge
+    url: http://data.europa.eu/eli/reg/2024/1689/oj
     accessed: 2026-04-25
-    sha256: REPLACE_WITH_ACTUAL_HASH
+    sha256: a61b61706aee6676e3988ab696162d71d759c3debd48b2ecccac3555207f2b0c
     license: public-domain
-    binary_path: not_in_repo/esempio-dlgs.pdf
-    excerpt_path: references/estratti/esempio-dlgs.md
+    binary_path: not_in_repo/ai-act-it-eurlex.pdf
+    md_path: references/fonti/ai-act-it-eurlex.md
     notes: |
-      Note sulla consultazione, ambito applicativo, versione consolidata.
+      Testo italiano integrale pubblicato nella GU UE serie L del 12.7.2024, 144 pagine.
+      Entrata in vigore: 1 agosto 2024 (ventesimo giorno dopo la pubblicazione).
+      Applicazione generale: 2 agosto 2026.
+      Applicazione anticipata capo I e II (pratiche vietate): 2 febbraio 2025.
+      Applicazione anticipata capo V (GPAI) e capo III sez. 4: 2 agosto 2025.
+      Applicazione art. 6 par. 1 (componenti di sicurezza prodotti): 2 agosto 2027.
+      PDF scaricato direttamente da EUR-Lex, link canonico OJ.
