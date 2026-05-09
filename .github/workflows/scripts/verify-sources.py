@@ -93,6 +93,25 @@ def verify_skill(skill_dir: Path) -> list[str]:
         binary_path = src.get("binary_path")
         declared_hash = src.get("sha256")
         license_type = src.get("license", "unknown")
+        md_path = src.get("md_path")
+
+        # Regola zero Step 3: per ogni fonte pubblica con binary_path non null,
+        # md_path deve essere dichiarato e il file deve esistere e non essere vuoto.
+        is_free_license = license_type in ("public-domain", "cc-by", "cc-by-nc")
+        has_binary = binary_path and binary_path not in (None, "null")
+        if has_binary and is_free_license:
+            if not md_path or md_path in (None, "null"):
+                errors.append(
+                    f"[{skill_name}/{sid}] md_path mancante: per fonti pubbliche con binary_path "
+                    "occorre committare references/fonti/<id>.md (Regola zero Step 3)"
+                )
+            else:
+                target = skill_dir / md_path
+                if not target.is_file() or target.stat().st_size == 0:
+                    errors.append(
+                        f"[{skill_name}/{sid}] md_path '{md_path}' dichiarato ma file mancante o vuoto "
+                        "(Regola zero Step 3)"
+                    )
 
         # Caso 1: niente binario dichiarato -> solo URL online, skip fetch
         if not binary_path or binary_path in (None, "null"):
