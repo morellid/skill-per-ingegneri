@@ -8,7 +8,7 @@ last_verified: 2026-05-07
 #   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
 #   url: URL canonico della fonte
 #   accessed: data consultazione (2026-05-07)
-#   sha256: hash SHA256 del file binario scaricato (REPLACE_WITH_ACTUAL_HASH se non ancora calcolato)
+#   sha256: hash SHA256 del file binario scaricato (calcolato con sha256sum; null se binary_path e' null)
 #   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
 #   binary_path: path del binario in locale (fuori repo), oppure null
 #   excerpt_path: path dell'estratto testuale (dentro repo), oppure null
@@ -21,9 +21,9 @@ sources:
   - id: dm-58-2017
     title: "DM Min. Infrastrutture e Trasporti 28/2/2017 n. 58 - Linee guida per la classificazione del rischio sismico delle costruzioni nonche' modalita' per l'attestazione, da parte di professionisti abilitati, dell'efficacia degli interventi effettuati"
     type: decreto
-    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2058%20del%2028-02-2017.pdf
     accessed: 2026-05-07
-    sha256: PENDING_FETCH
+    sha256: REPLACE_WHEN_DOWNLOADED
     license: public-domain
     binary_path: not_in_repo/dm-58-2017.pdf
     excerpt_path: references/estratti/dm-58-2017-art-3.md
@@ -31,8 +31,11 @@ sources:
       Decreto istitutivo del sismabonus tecnico (rinvio aliquote a legge
       finanziaria). Allegato A originale (poi sostituito dal DM 65/2017)
       contiene le Linee Guida per la classificazione del rischio sismico.
-      Hash da calcolare al primo fetch del PDF integrale (la pagina MIT
-      e' un indice; il PDF integrale e' linkato come sotto-allegato).
+      URL aggiornato al pattern diretto PDF MIT (stesso pattern del DM 65/2017
+      gia' verificato: .../2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf).
+      Hash da calcolare via workflow auto-fetch-sources.yml (CI ha rete libera).
+      Se il CI 404: aggiornare URL con il path corretto trovato sulla pagina
+      https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
 
   - id: dm-65-2017-all-a
     title: "DM MIT 7/3/2017 n. 65 - Allegato A: Linee guida per la classificazione del rischio sismico delle costruzioni (testo letterale vigente)"
@@ -53,16 +56,21 @@ sources:
   - id: dm-24-2020
     title: "DM MIT 9/1/2020 n. 24 - Modifiche all'Allegato A del DM 58/2017"
     type: decreto
-    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-24-del-09012020
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2020-01/DM%2024%20del%2009-01-2020.pdf
     accessed: 2026-05-07
-    sha256: PENDING_FETCH
+    sha256: REPLACE_WHEN_DOWNLOADED
     license: public-domain
     binary_path: not_in_repo/dm-24-2020.pdf
     excerpt_path: null
     notes: |
-      Aggiornamento successivo del DM 58/2017. Da fetchare e includere
-      negli estratti se introduce modifiche all'Allegato A rispetto alla
-      versione DM 65/2017.
+      Aggiornamento successivo del DM 58/2017.
+      URL aggiornato al pattern diretto PDF MIT (stesso dominio/path del DM 329/2020
+      gia' verificato: .../2020-08/Decreto%20SismaBonus.pdf).
+      Hash da calcolare via workflow auto-fetch-sources.yml (CI ha rete libera).
+      Se il CI 404: aggiornare URL con il path corretto trovato sulla pagina
+      https://www.mit.gov.it/normativa/decreto-ministeriale-numero-24-del-09012020
+      Da includere negli estratti se introduce modifiche all'Allegato A
+      rispetto alla versione DM 65/2017.
 
   - id: dm-329-2020
     title: "DM MIT 6/8/2020 n. 329 - Modifica all'art. 3 del DM 58/2017 e sostituzione dell'Allegato B"
@@ -86,13 +94,19 @@ sources:
   - id: ntc-2018
     title: "DM 17/1/2018 - Aggiornamento delle Norme Tecniche per le Costruzioni (NTC 2018)"
     type: decreto
-    url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-8-del-17012018
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
     accessed: 2026-05-07
-    sha256: PENDING_FETCH
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc-2018.pdf
     excerpt_path: null
     notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      URL diretto al PDF del SO n. 8 alla GU n. 42/2018.
+      SHA256 verificato dalla skill combinazioni-carico-ntc
+      (stesso file ntc2018-gu42.pdf, hash identico).
+      Il binary_path usa nome locale diverso (ntc-2018.pdf vs ntc2018-gu42.pdf)
+      ma il contenuto e l'hash sono identici.
       Cap. 3.2 (azione sismica al sito, P_VR per stato limite, categorie
       sottosuolo/topografia) e cap. 8 (costruzioni esistenti) sono
       prerequisito tecnico per produrre PGA_C e TR_C input della skill.
@@ -102,13 +116,16 @@ sources:
   - id: circ-7-2019
     title: "Circolare Min. Infrastrutture e Trasporti 21/1/2019 n. 7 - Istruzioni per l'applicazione delle NTC 2018"
     type: circolare
-    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
     accessed: 2026-05-07
-    sha256: PENDING_FETCH
+    sha256: REPLACE_WHEN_DOWNLOADED
     license: public-domain
     binary_path: not_in_repo/circ-7-2019.pdf
     excerpt_path: null
     notes: |
+      Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019.
+      URL aggiornato all'URL diretto del PDF del SO n. 5 alla GU n. 35/2019.
+      Hash da calcolare via workflow auto-fetch-sources.yml (CI ha rete libera).
       Cap. C8 contiene il commento applicativo a NTC cap. 8
       (costruzioni esistenti), inclusi livelli di conoscenza LC1/LC2/LC3
       e fattori di confidenza FC. Riferimento per il professionista
