@@ -7,6 +7,24 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Fixed
+
+- Source-grounding remediation (issue #113):
+  - Creati 3 file `references/fonti/` con trascrizione fedele dei testi
+    ufficiali letti dai binari in `not_in_repo/`:
+    - `fonti/legge-447-1995-mase.md` (art. 2 cc. 1 e)-h), 3, 6-7;
+      art. 4 c. 1 lett. l; art. 6 c. 1 lett. d; art. 8 cc. 1-6)
+    - `fonti/dpcm-14-11-1997-limiti.md` (testo integrale: artt. 1-10
+      + tabelle A, B, C, D)
+    - `fonti/dm-16-03-1998-tecniche.md` (testo integrale: artt. 1-4
+      + allegati A, B, C, D)
+  - Aggiunto campo `md_path` in `references/sources.yaml` per le 3
+    fonti con binario scaricato; impostato `md_path: null` per le
+    2 fonti reference-only (Normattiva).
+  - Corretto `sha256: ""` in `sha256: null` per le 2 fonti
+    reference-only (legge-447-1995-normattiva, dlgs-42-2017-normattiva)
+    che hanno `binary_path: null` e non sono scaricate come binario.
+
 ### Changed
 
 - Hardening review-driven (Codex adversarial review):
