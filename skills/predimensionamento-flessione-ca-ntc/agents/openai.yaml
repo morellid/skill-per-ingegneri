@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Pre-dimensionamento flessione c.a. NTC 2018 (par. 4.1.2)
+short_description: Calcolo del momento resistente M_Rd di sezione rettangolare in c.a. singolarmente armata in flessione semplice SLU ai sensi NTC 2018 par. 4.1.2.1 e 4.1.2.3.4.2 + Circolare 7/2019. Dato b/h/d/As/fck/fyk restituisce f_cd, f_yd, eps_yd, x, x/d, eps_s, z, M_Rd in kNm con verifica duttilita'. Code-driven, output verificabile vs software certificato. Solo Classe 1 (fck <= 50 MPa), solo singolarmente armata, solo flessione semplice SLU.
+default_prompt: |
+  Calcolami M_Rd per sezione rettangolare in c.a. singolarmente armata.
+  Geometria: b = 300 mm, h = 500 mm, d = 460 mm.
+  Armatura tesa: A_s = 603 mm^2 (3 phi 16).
+  Materiali: C25/30 (fck = 25), B450C (fyk = 450).
+  Restituisci anche x/d e l'avvertenza di duttilita' Circ. 7/2019 C4.1.2.
