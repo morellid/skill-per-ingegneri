@@ -22,7 +22,7 @@
 
 ## Output
 
-- **M_Rd = 102 020 015 Nmm = 102.020015 kNm** (par. 4.1.2.3.4.2 NTC: M_Rd = A_s * f_yd * z)
+- **M_Rd = 102020015.130857 Nmm = 102.020015 kNm** (par. 4.1.2.3.4.2 NTC: M_Rd = A_s * f_yd * z)
 - Duttile snervamento acciaio: **true**
 - Duttile x/d <= 0.45: **true**
 - Avvertenze: nessuna
