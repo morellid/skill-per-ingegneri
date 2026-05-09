@@ -1,6 +1,6 @@
 schema_version: 1
 skill: carichi-atmosferici-ntc
-last_verified: 2026-05-08
+last_verified: 2026-05-10
 
 # Fonti normative per il calcolo dei carichi atmosferici (vento e neve) ai
 # sensi delle NTC 2018 (DM 17/01/2018) e Circolare esplicativa 21/01/2019 n. 7.
@@ -12,50 +12,52 @@ sources:
     title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
     type: decreto
     url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
-    accessed: 2026-05-08
-    sha256: REPLACE_WHEN_DOWNLOADED
+    accessed: 2026-05-10
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
     excerpt_path: references/estratti/ntc2018-par-3-3.md
     notes: |
       Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-05-10.
+      Estratti letti direttamente dal PDF (pagine GU indicate negli estratti).
       Articoli rilevanti per questa skill:
-      - par. 3.3 (vento): definizioni di p, v_b, c_r, q_r, c_e; eq. 3.3.1-3.3.5.
-        Tab. 3.3.I (zone vento, NON incorporata: input utente).
-        Tab. 3.3.II (categorie esposizione I-V, k_r/z_0/z_min: incorporata).
-        Tab. 3.3.III (assegnazione classe rugosita' -> categoria esposizione,
-        NON incorporata: dichiarazione utente).
-        par. 3.3.8 c_p coefficienti di forma: NON incorporato, input utente.
-        par. 3.3.9 c_d coefficiente dinamico: default 1, fuori scope per
-        strutture sensibili.
-      - par. 3.4 (neve): q_s = mu_1 * q_sk * c_E * c_t (eq. 3.4.1).
-        par. 3.4.2: q_sk per Zona I-Alpina, I-Mediterranea, II, III in
-        funzione di a_s con soglia 200 m (incorporata).
-        par. 3.4.3: c_E (Tab. 3.4.I, 3 classi: battuta dai venti / normale /
-        riparata, incorporata).
-        par. 3.4.4: c_t coefficiente termico (default 1.0).
-        par. 3.4.5.2.1: mu_1 per copertura ad una/due falde (incorporato).
-        par. 3.4.5.5: accumuli, deriva, scorrimento (NON coperti).
-      Il file binario va scaricato e l'hash SHA256 calcolato con
-      ./scripts/fetch-sources.sh, oppure manualmente: sha256sum del PDF.
+      - par. 3.3 (vento, GU pp. 52-56):
+        par. 3.3.1 v_b = v_{b,0}*c_a (eq. [3.3.1]); Tab. 3.3.I (zone 1-9, NON incorporata: input utente).
+        par. 3.3.2 v_r = v_b*c_r (eq. [3.3.2]).
+        par. 3.3.3 c_r formula (eq. [3.3.3]).
+        par. 3.3.4 p = q_r*c_e*c_p*c_d (eq. [3.3.4]).
+        par. 3.3.6 q_r = 0.5*rho*v_r^2, rho=1.25 kg/m^3 (eq. [3.3.6]).
+        par. 3.3.7 c_e(z) formula + Tab. 3.3.II (categorie I-V, k_r/z_0/z_min: incorporata, eq. [3.3.7]).
+        Tab. 3.3.III (assegnazione rugosita' -> categoria, NON incorporata: input utente).
+        par. 3.3.8 c_p coefficienti aerodinamici: NON incorporato, input utente.
+        par. 3.3.9 c_d = 1 per edifici regolari < 80 m e capannoni: default skill.
+      - par. 3.4 (neve, GU pp. 57-59):
+        par. 3.4.1 q_s = q_sk*mu_i*C_E*C_t (eq. [3.4.1]).
+        par. 3.4.2 q_sk per Zone I-Alpina/I-Mediterranea/II/III vs a_s (eq. [3.4.2]-[3.4.5], incorporata).
+        par. 3.4.3 coefficiente di forma mu_1 (Tab. 3.4.II); par. 3.4.3.2 mu_1 per 1-2 falde (incorporato).
+        par. 3.4.4 C_E (Tab. 3.4.I, 3 classi: battuta dai venti/normale/riparata, incorporata).
+        par. 3.4.5 C_t = 1 in assenza di studi specifici (default skill).
+        par. 3.4.5.5 accumuli, deriva, scorrimento: NON coperti.
 
   - id: circ-7-2019-mit
     title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
     type: circolare
     url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
-    accessed: 2026-05-08
-    sha256: REPLACE_WHEN_DOWNLOADED
+    accessed: 2026-05-10
+    sha256: null
     license: public-domain
-    binary_path: not_in_repo/circ-7-2019.pdf
+    binary_path: null
     excerpt_path: references/estratti/circ-7-2019-c-3-3-3-4.md
     notes: |
       Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019.
-      Sezioni rilevanti: C3.3 (commento applicativo a NTC par. 3.3 con
-      riferimenti CNR-DT 207 per c_p e c_d) e C3.4 (commento applicativo
-      a par. 3.4 con esempi di mu_1 e considerazioni su accumuli e
-      scorrimento). La skill cita C3.3-C3.4 come riferimento di contesto;
-      la validazione Livello 2 vs esempi numerici della Circolare e' da
-      eseguire prima del release stabile.
+      PDF non scaricato localmente (il GU restituisce HTML invece del binario
+      al tentativo di download diretto). L'estratto circ-7-2019-c-3-3-3-4.md
+      riporta i contenuti principali di C3.3 e C3.4 rilevanti per la skill;
+      le affermazioni sui riferimenti NTC sono state verificate sul PDF di NTC 2018
+      letto direttamente (vedi sha256 ntc2018-dm-17-01-2018). Prima del release
+      stabile occorre scaricare la Circolare e verificare l'estratto sul testo
+      originale.
 
   - id: cnr-dt-207-2008
     title: "CNR-DT 207/2008 - Istruzioni per la valutazione delle azioni e degli effetti del vento sulle costruzioni"
