@@ -5,7 +5,7 @@
 Strato di argilla limosa, spessore h0 = 2.0 m al di sotto della futura fondazione superficiale di un edificio civile ordinario. Dalla relazione geotecnica e dalle prove edometriche su campioni indisturbati:
 - indice dei vuoti iniziale e0 = 0.80
 - indice di compressione Cc = 0.30 (ramo vergine, NC)
-- indice di ricompressione Cr = 0.05 (ramo OC) — rapporto Cr/Cc = 1/6, tipico
+- indice di ricompressione Cr = 0.05 (ramo OC) - rapporto Cr/Cc = 1/6, tipico
 - tensione efficace verticale media iniziale sigma_0' = 100 kPa (geostatica)
 - tensione di preconsolidazione sigma_p' = 150 kPa (metodo Casagrande)
 
