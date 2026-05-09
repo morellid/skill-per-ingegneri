@@ -50,6 +50,19 @@ validate_skill() {
       echo "  ERRORE: sources.yaml senza schema_version"
       errors=$((errors + 1))
     fi
+    # 2a. Regola zero (vedi AGENTS.md): nessun placeholder SHA256.
+    if grep -qE "sha256:.*(REPLACE_WHEN_DOWNLOADED|REPLACE_WITH_ACTUAL_HASH|PENDING_FETCH|TODO_HASH|XXX_HASH)" "$skill_path/references/sources.yaml"; then
+      echo "  ERRORE: sources.yaml contiene placeholder SHA256 (Regola zero violata)"
+      grep -nE "sha256:.*(REPLACE_WHEN_DOWNLOADED|REPLACE_WITH_ACTUAL_HASH|PENDING_FETCH|TODO_HASH|XXX_HASH)" "$skill_path/references/sources.yaml" | sed 's/^/    /'
+      errors=$((errors + 1))
+    fi
+    # 2b. sha256 vuoto e' violazione (deve essere o un hash valido o esplicitamente null)
+    # cattura sia "sha256:" senza valore sia "sha256: \"\"" (stringa vuota)
+    if grep -qE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$skill_path/references/sources.yaml"; then
+      echo "  ERRORE: sources.yaml contiene sha256 vuoto (deve essere hash valido o null esplicito)"
+      grep -nE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$skill_path/references/sources.yaml" | sed 's/^/    /'
+      errors=$((errors + 1))
+    fi
   fi
 
   # 3. CHANGELOG.md

@@ -1,0 +1,102 @@
+name: source-grounding
+
+# Verifica la conformita' alla Regola zero (vedi AGENTS.md):
+#   1. nessun placeholder negli SHA256 di references/sources.yaml
+#   2. ogni binary_path dichiarato deve essere effettivamente scaricabile
+#      dall'URL pubblico, e l'hash calcolato deve coincidere con quello in sources.yaml
+#
+# La CI ha rete libera (a differenza degli ambienti di sviluppo che possono
+# avere allowlist sandbox), quindi puo' fare il fetch reale delle fonti
+# normative italiane (Gazzetta Ufficiale, Normattiva, eur-lex, MIT, ecc.)
+# e validare gli hash dichiarati.
+#
+# Job:
+#   - check-no-placeholders: rifiuta sha256 placeholder (REPLACE_*, PENDING_FETCH, vuoti)
+#   - validate-sources:      scarica i binari pubblici e verifica gli hash
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    paths:
+      - 'skills/**/references/sources.yaml'
+      - 'skills/**'
+      - '.github/workflows/source-grounding.yml'
+      - 'scripts/fetch-sources.sh'
+      - 'AGENTS.md'
+      - 'CLAUDE.md'
+
+permissions:
+  contents: read
+
+jobs:
+  check-no-placeholders:
+    name: No placeholder SHA256
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Reject placeholder SHA256 in sources.yaml
+        run: |
+          set -euo pipefail
+          PATTERNS='REPLACE_WHEN_DOWNLOADED|REPLACE_WITH_ACTUAL_HASH|PENDING_FETCH|TODO_HASH|XXX_HASH'
+          violations=0
+          while IFS= read -r f; do
+            if grep -nE "sha256:.*(${PATTERNS})" "$f" > /tmp/hits.txt 2>/dev/null; then
+              if [ -s /tmp/hits.txt ]; then
+                echo "::error file=$f::placeholder SHA256 trovato in $f"
+                cat /tmp/hits.txt
+                violations=$((violations + $(wc -l < /tmp/hits.txt)))
+              fi
+            fi
+            # rifiuta sha256 con valore vuoto: "sha256:", "sha256: ", "sha256: \"\""
+            if grep -nE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$f" > /tmp/empty.txt 2>/dev/null; then
+              if [ -s /tmp/empty.txt ]; then
+                echo "::error file=$f::sha256 vuoto in $f"
+                cat /tmp/empty.txt
+                violations=$((violations + $(wc -l < /tmp/empty.txt)))
+              fi
+            fi
+          done < <(find skills -path '*/references/sources.yaml' -type f)
+          if [ "$violations" -gt 0 ]; then
+            echo ""
+            echo "Trovate $violations violazioni della Regola zero (vedi AGENTS.md)."
+            echo "Le skill devono avere SHA256 reali calcolati sui binari scaricati."
+            echo "Esegui ./scripts/fetch-sources.sh <skill> per scaricare e calcolare gli hash."
+            exit 1
+          fi
+          echo "OK: nessun placeholder SHA256."
+
+  validate-sources:
+    name: Validate sources are reachable and hash matches
+    runs-on: ubuntu-latest
+    needs: check-no-placeholders
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pyyaml
+        run: pip install --quiet pyyaml
+
+      - name: Fetch and verify all declared sources
+        run: |
+          set -euo pipefail
+          mkdir -p not_in_repo
+          python3 .github/workflows/scripts/verify-sources.py
+
+  validate-script-runs:
+    name: scripts/validate.sh passes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run validate.sh --all
+        run: bash scripts/validate.sh --all

@@ -102,7 +102,17 @@ Se l'agent (umano o AI) **non puo' accedere** alle fonti ufficiali necessarie - 
 grep -r "REPLACE_WHEN_DOWNLOADED" skills/<nome-skill>/   # DEVE non trovare nulla
 ```
 
-**Nessuna PR puo' essere aperta** finche' `grep REPLACE_WHEN_DOWNLOADED` su `references/sources.yaml` ritorna anche solo una riga. I binari scaricati finiscono in `not_in_repo/` (mai committati); sono referenziati via hash in `sources.yaml`. Gli estratti in `references/estratti/` devono riportare contenuti tratti dal file scaricato, mai da training data dell'agent.
+**Nessuna PR puo' essere aperta** finche' `grep REPLACE_WHEN_DOWNLOADED` (o equivalenti `REPLACE_WITH_ACTUAL_HASH`, `PENDING_FETCH`, `sha256:` vuoti) su `references/sources.yaml` ritorna anche solo una riga. I binari scaricati finiscono in `not_in_repo/` (mai committati); sono referenziati via hash in `sources.yaml`. Gli estratti in `references/estratti/` devono riportare contenuti tratti dal file scaricato, mai da training data dell'agent.
+
+### CI gate (GitHub Actions)
+
+Il workflow `.github/workflows/source-grounding.yml` implementa il gate lato server:
+
+- `check-no-placeholders`: rifiuta qualunque PR che contenga placeholder SHA256 nei `sources.yaml`. Bloccante.
+- `validate-sources`: per ogni voce con `binary_path` non null e licenza libera, scarica il file dall'URL pubblico (la CI ha rete libera) e verifica che lo SHA256 dichiarato coincida con quello calcolato. Bloccante: hash mismatch o fonte non raggiungibile fa fallire la PR.
+- `validate-script-runs`: esegue `scripts/validate.sh --all`.
+
+Lo stesso check anti-placeholder e' baked in `scripts/validate.sh`, quindi `./scripts/validate.sh <skill>` localmente fallisce se ci sono placeholder.
 
 ## Commit style
 
