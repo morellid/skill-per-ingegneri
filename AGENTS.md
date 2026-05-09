@@ -38,10 +38,32 @@ skill-per-ingegneri/
     └── CHANGELOG.md           # semver per skill
 ```
 
+## Regola zero: source-grounding obbligatorio (STOP rule)
+
+**Le skill di questo repo sono ESCLUSIVAMENTE basate su fonti ufficiali, scaricate, verificate via SHA256 e referenziate in `references/sources.yaml`. Senza fonti scaricate non si crea, non si modifica, non si estende una skill. Non c'e' margine di deroga.**
+
+Operativamente:
+
+- **Prima** di scrivere `SKILL.md`, `references/estratti/`, esempi o codice di calcolo, scarica le fonti dichiarate con `./scripts/fetch-sources.sh <nome-skill>` e calcola gli SHA256 reali. Sostituisci ogni placeholder `REPLACE_WHEN_DOWNLOADED` con l'hash effettivo.
+- **Mai** scrivere `references/estratti/<file>.md` "a memoria" sulla base dei training data dell'agent. Ogni estratto deve riportare contenuti **letti dal file scaricato**. Se non hai letto il file, non scrivi l'estratto.
+- **Mai** aprire una PR con `sha256: REPLACE_WHEN_DOWNLOADED` o equivalenti placeholder nei `sources.yaml`. La PR e' incompleta per definizione.
+- **Mai** marcare il vincolo come "gap pre-v1.0 tollerabile in alpha": e' la regola che la nozione stessa di "alpha tollerabile" cerca di violare. Lo stato `0.1.0-alpha` riguarda assenza di Livello 2 / casi reali / validazione di campo, NON assenza di fonti scaricate. Le fonti scaricate sono prerequisito di qualsiasi versione, alpha inclusa.
+
+### Protocollo di rifiuto (refusal protocol)
+
+Se l'agent (umano o AI) **non puo' accedere** alle fonti ufficiali necessarie - per restrizioni di rete, paywall, allowlist sandbox, host irraggiungibili, paesi senza accesso al portale, ecc. - **deve rifiutare** di creare la skill e segnalarlo esplicitamente all'utente. Le vie alternative consentite sono:
+
+1. l'utente fornisce un mirror accessibile (es. `raw.githubusercontent.com/<repo-privato>/...`) dei PDF/HTML ufficiali, e l'agent ne calcola SHA256;
+2. l'utente carica i file in `not_in_repo/` e fornisce gli SHA256 calcolati localmente, e l'agent rinforza la conformita' in commit message + sources.yaml;
+3. l'utente paste-incolla il testo dei paragrafi rilevanti dalla copia ufficiale, e l'agent scrive estratti citando esplicitamente il testo originale (commit message dichiara la provenance);
+4. l'utente sposta il fetch a CI (es. GitHub Actions con rete libera) e l'agent appronta il workflow.
+
+**Non sono consentite** le seguenti scorciatoie: scrivere estratti da memoria, citare URL senza scaricare, usare placeholder come stato finale, ipotizzare valori di tabelle non lette, parafrasare formule da training data senza verifica sul testo originale.
+
 ## Regole non negoziabili (applicano sempre)
 
-1. **Source-grounded**. Ogni affermazione normativa DEVE essere riconducibile a una voce in `skills/<skill>/references/sources.yaml` (URL, `accessed`, `sha256`, licenza). Senza fonte, niente affermazione.
-2. **Niente fabbricazioni**. Se un fatto non e' in `references/estratti/`, non inventarlo: o scarichi la fonte e aggiorni `sources.yaml` (vedi `scripts/fetch-sources.sh`), o segnali la lacuna all'utente.
+1. **Source-grounded** (vedi Regola zero sopra). Ogni affermazione normativa DEVE essere riconducibile a una voce in `references/sources.yaml` (URL, `accessed`, `sha256` reale calcolato sul file scaricato, licenza). Senza fonte scaricata, niente affermazione, niente skill. Non si commettono PR con `sha256: REPLACE_WHEN_DOWNLOADED`.
+2. **Niente fabbricazioni**. Se un fatto non e' in `references/estratti/` (a sua volta tratto dal file scaricato), non inventarlo: o scarichi la fonte e aggiorni `sources.yaml` con SHA256 reale (vedi `scripts/fetch-sources.sh`), o ti fermi e segnali la lacuna all'utente seguendo il protocollo di rifiuto. Mai usare i training data dell'agent come surrogato della fonte.
 3. **Disclaimer obbligatorio** in ogni `SKILL.md`: la skill e' supporto, non sostituto del professionista firmatario. Mai derogare.
 4. **Plain markdown**. Niente HTML, niente immagini, niente codice eseguibile inline (eccetto code block illustrativi).
 5. **Italiano per il contenuto utente**, inglese per struttura/codice/metadata.
@@ -55,10 +77,12 @@ skill-per-ingegneri/
 ## Quando crei una nuova skill
 
 1. Verifica idoneita' del task secondo `methodology/criteri-selezione.md`.
-2. Segui il workflow completo in `methodology/generazione-skill.md` (mapping fonti -> download/hash -> scaffold -> SKILL.md -> tasks -> esempi -> disclaimer -> validazione).
-3. Scaffold: `./scripts/new-skill.sh <nome-skill>` (kebab-case).
-4. Versione iniziale: `0.1.0-alpha`.
-5. Validazione obbligatoria prima del rilascio: `methodology/validazione.md` (almeno Livello 1, Livello 2 da ingegnere di dominio diverso dall'autore prima di v1.0).
+2. **Mapping fonti FIRST**. Identifica la lista esatta delle fonti ufficiali (decreti, regolamenti, circolari, linee guida pubbliche) necessarie alla skill. Verifica che siano scaricabili dal tuo ambiente.
+3. **Scarica le fonti PRIMA di scrivere qualsiasi contenuto**. Predisponi `sources.yaml` con URL, `accessed`, `binary_path` (in `not_in_repo/`), licenza, e ESEGUI `./scripts/fetch-sources.sh <nome-skill>`. Calcola SHA256 reali e committali nel `sources.yaml`. Se anche **una sola** fonte non e' scaricabile, **fermati**: applica il protocollo di rifiuto della Regola zero. Non procedere con il resto della skill.
+4. Solo dopo che tutte le fonti sono scaricate e hashate, segui il workflow completo in `methodology/generazione-skill.md` (scaffold -> SKILL.md -> estratti tratti dal file scaricato -> tasks -> esempi -> disclaimer -> validazione).
+5. Scaffold: `./scripts/new-skill.sh <nome-skill>` (kebab-case).
+6. Versione iniziale: `0.1.0-alpha`. Lo stato alpha riguarda solo l'assenza di validazione Livello 2 (vs casi reali / esperti di dominio): le fonti **devono comunque** essere scaricate e hashate.
+7. Validazione obbligatoria prima del rilascio: `methodology/validazione.md` (almeno Livello 1, Livello 2 da ingegnere di dominio diverso dall'autore prima di v1.0).
 
 ## Quando modifichi una skill esistente
 
@@ -72,11 +96,23 @@ skill-per-ingegneri/
 ## Prima di committare
 
 ```bash
-./scripts/validate.sh --all          # check strutturale di tutto il catalogo
-./scripts/validate.sh <nome-skill>   # check di una skill sola
+./scripts/fetch-sources.sh <nome-skill>     # PRIMA: scarica fonti, calcola SHA256, sostituisci ogni REPLACE_WHEN_DOWNLOADED
+./scripts/validate.sh --all                 # check strutturale di tutto il catalogo
+./scripts/validate.sh <nome-skill>          # check di una skill sola
+grep -r "REPLACE_WHEN_DOWNLOADED" skills/<nome-skill>/   # DEVE non trovare nulla
 ```
 
-Se hai aggiunto/aggiornato fonti: `./scripts/fetch-sources.sh <nome-skill>` (i binari finiscono in `not_in_repo/`, mai committati; sono referenziati via hash in `sources.yaml`).
+**Nessuna PR puo' essere aperta** finche' `grep REPLACE_WHEN_DOWNLOADED` (o equivalenti `REPLACE_WITH_ACTUAL_HASH`, `PENDING_FETCH`, `sha256:` vuoti) su `references/sources.yaml` ritorna anche solo una riga. I binari scaricati finiscono in `not_in_repo/` (mai committati); sono referenziati via hash in `sources.yaml`. Gli estratti in `references/estratti/` devono riportare contenuti tratti dal file scaricato, mai da training data dell'agent.
+
+### CI gate (GitHub Actions)
+
+Il workflow `.github/workflows/source-grounding.yml` implementa il gate lato server:
+
+- `check-no-placeholders`: rifiuta qualunque PR che contenga placeholder SHA256 nei `sources.yaml`. Bloccante.
+- `validate-sources`: per ogni voce con `binary_path` non null e licenza libera, scarica il file dall'URL pubblico (la CI ha rete libera) e verifica che lo SHA256 dichiarato coincida con quello calcolato. Bloccante: hash mismatch o fonte non raggiungibile fa fallire la PR.
+- `validate-script-runs`: esegue `scripts/validate.sh --all`.
+
+Lo stesso check anti-placeholder e' baked in `scripts/validate.sh`, quindi `./scripts/validate.sh <skill>` localmente fallisce se ci sono placeholder.
 
 ## Commit style
 
@@ -93,6 +129,11 @@ Trailer `Co-authored-by:` per gli AI agent che hanno contribuito.
 
 ## Cosa NON fare
 
+- **Mai e poi mai** creare una skill senza fonti ufficiali scaricate, hashate e referenziate. La skill che non rispetta la Regola zero non esiste come skill di questo repo.
+- **Mai e poi mai** committare PR con `sha256: REPLACE_WHEN_DOWNLOADED` o placeholder equivalenti. Il `sources.yaml` con placeholder e' uno stato intermedio durante lo scaffolding, non uno stato di rilascio.
+- **Mai e poi mai** scrivere estratti normativi attingendo dai training data dell'agent. Solo dal file scaricato e verificato via SHA256.
+- **Mai e poi mai** marcare l'assenza di fonti scaricate come "gap pre-v1.0 tollerabile in alpha": e' la regola che la nozione "alpha tollerabile" cerca di violare.
+- Non aggirare il vincolo con compromessi creativi tipo "metto il PDF su un server temporaneo e citato senza commit del hash", "uso un riassunto di Wikipedia", "cito la legge da sentenza", "cito da slide del professore": tutte queste soluzioni violano la Regola zero.
 - Non aggiungere skill che richiedono giudizio professionale non delegabile (es. calcoli strutturali a firma, certificazioni firmate).
 - Non committare binari (PDF, DOCX) - vanno in `not_in_repo/`, referenziati via hash in `sources.yaml`.
 - Non rimuovere il disclaimer di responsabilita' professionale.
