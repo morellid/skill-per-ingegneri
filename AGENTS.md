@@ -75,6 +75,37 @@ Se l'agent (umano o AI) **non puo' accedere** alle fonti ufficiali necessarie - 
 
 **Non sono consentite** le seguenti scorciatoie: scrivere estratti da memoria, citare URL senza scaricare, usare placeholder come stato finale, ipotizzare valori di tabelle non lette, parafrasare formule da training data senza verifica sul testo originale.
 
+### Anti-pattern: la CI verde non e' source-grounding (lezione PR #115-#120)
+
+Maggio 2026, caso reale chiuso senza merge. Un agente Sonnet a cui era stato chiesto "fai passare la CI" ha:
+
+- calcolato gli SHA256 reali dei PDF tramite GitHub Actions (rete libera, a differenza del sandbox di sviluppo)
+- committato i risultati nei `sources.yaml`, sostituendo i placeholder
+- aperto 6 PR di "remediation" che facevano passare i check sintattici della CI
+
+**Tutte e 6 le PR sono state chiuse senza merge** perche' il lavoro era una **violazione semantica**: gli `references/estratti/*.md` e le costanti numeriche dei moduli Python erano rimasti scritti dai training data dell'agent originario, **senza nessuna lettura del PDF**.
+
+Lezione operativa per ogni agent:
+
+- **Calcolare lo SHA256 di un PDF non rende source-grounded la skill che cita quel PDF.** L'hash conferma che il file esiste e non e' stato manomesso, non che il suo contenuto sia stato letto.
+- **Far passare la CI non e' obiettivo, e' effetto collaterale.** L'obiettivo e' che ogni affermazione normativa nella skill sia tracciabile al testo del PDF realmente letto. Se un agent prende come prompt "fai passare la CI" e ottiene CI verde senza aver letto i PDF, sta producendo lavoro corrotto.
+- **GitHub Actions puo' scaricare PDF, non puo' leggerli e parafrasarli.** Il fetch automatico e' uno strumento per la fase finale (calcolo hash dopo che la remediation semantica e' fatta), non un sostituto della remediation.
+- **Refusal protocol applicato anche alla remediation**: se un agent e' richiesto di "sistemare le P1 source-grounding remediation issues" ma non ha modo di leggere i PDF (sandbox blocca host normativi, paywall, ecc.), **deve rifiutare** e segnalarlo, non delegare a CI il calcolo degli hash. Vedi `methodology/source-grounding-remediation.md` per il workflow corretto.
+
+### Differenza fra "validazione sintattica" e "remediation semantica"
+
+| Operazione | Tipo | Sufficiente per Regola zero? |
+|---|---|---|
+| `grep REPLACE_WHEN_DOWNLOADED sources.yaml` ritorna 0 righe | sintattica | NO |
+| `validate.sh` passa | sintattica | NO |
+| Workflow `source-grounding.yml` verde | sintattica | NO |
+| Hash SHA256 dichiarato coincide con il binario scaricato | sintattica | NO |
+| Estratti riscritti dopo lettura del PDF, con citazioni paragrafo+pagina | semantica | si' (necessario) |
+| Costanti del codice di calcolo verificate contro il testo del PDF | semantica | si' (necessario) |
+| Affermazioni nei tasks/examples cite paragrafi specifici del PDF | semantica | si' (necessario) |
+
+Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione mascherata.
+
 ## Regole non negoziabili (applicano sempre)
 
 1. **Source-grounded** (vedi Regola zero sopra). Ogni affermazione normativa DEVE essere riconducibile a una voce in `references/sources.yaml` (URL, `accessed`, `sha256` reale calcolato sul file scaricato, licenza). Senza fonte scaricata, niente affermazione, niente skill. Non si commettono PR con `sha256: REPLACE_WHEN_DOWNLOADED`.
