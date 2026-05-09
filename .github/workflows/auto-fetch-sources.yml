@@ -11,7 +11,7 @@ name: auto-fetch-sources
 #
 # Trigger:
 #   - workflow_dispatch: avvio manuale (utile per retry o run on-demand)
-#   - pull_request: sui branch claude/auto-fetch-sources/* (avvio automatico sulle PR di remediation)
+#   - pull_request: sui branch claude/auto-fetch-sources/*, claude/remediation/*, claude/sc-*
 #
 # Output:
 #   - Se il fetch ha successo: committa sources.yaml aggiornato sul branch della PR
@@ -38,11 +38,13 @@ jobs:
   fetch-and-update:
     name: Fetch binaries and update SHA256
     runs-on: ubuntu-latest
-    # Solo su branch di remediation o workflow_dispatch
+    # Solo su branch di remediation/auto-fetch o workflow_dispatch
+    # Copre: claude/auto-fetch-sources/*, claude/remediation/*, claude/sc-* (PR feature esistenti)
     if: |
       github.event_name == 'workflow_dispatch' ||
       startsWith(github.head_ref, 'claude/auto-fetch-sources/') ||
-      startsWith(github.head_ref, 'claude/remediation/')
+      startsWith(github.head_ref, 'claude/remediation/') ||
+      startsWith(github.head_ref, 'claude/sc-')
     steps:
       - name: Checkout
         uses: actions/checkout@v4
