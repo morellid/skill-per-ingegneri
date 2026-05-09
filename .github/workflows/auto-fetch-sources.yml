@@ -1,0 +1,321 @@
+name: auto-fetch-sources
+
+# Scarica i binari normativi per le skill con sha256 placeholder/mancante,
+# calcola SHA256 reali e committa il sources.yaml aggiornato sul branch della PR.
+#
+# Prerequisiti:
+#   - Il branch deve contenere sources.yaml con URL validi (non placeholder URL)
+#   - Le fonti devono essere pubblicamente raggiungibili dalla CI (la CI ha rete libera)
+#   - Solo fonti con licenza libera (public-domain, cc-by, cc-by-nc) vengono scaricate
+#     automaticamente; le altre restano null (da compilare manualmente)
+#
+# Trigger:
+#   - workflow_dispatch: avvio manuale (utile per retry o run on-demand)
+#   - pull_request: sui branch claude/auto-fetch-sources/* (avvio automatico sulle PR di remediation)
+#
+# Output:
+#   - Se il fetch ha successo: committa sources.yaml aggiornato sul branch della PR
+#   - Se il fetch fallisce (404/403/timeout): fail con messaggio diagnostico,
+#     NON committa nulla (la PR rimane con il placeholder originale e va risolta manualmente)
+
+on:
+  workflow_dispatch:
+    inputs:
+      skill_name:
+        description: 'Nome della skill (es. carichi-atmosferici-ntc). Lasciare vuoto per processare tutte.'
+        required: false
+        default: ''
+  pull_request:
+    branches: [main]
+    paths:
+      - 'skills/**/references/sources.yaml'
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  fetch-and-update:
+    name: Fetch binaries and update SHA256
+    runs-on: ubuntu-latest
+    # Solo su branch di remediation o workflow_dispatch
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      startsWith(github.head_ref, 'claude/auto-fetch-sources/') ||
+      startsWith(github.head_ref, 'claude/remediation/')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Per le PR, checkout del branch della PR con permesso di push
+          ref: ${{ github.head_ref || github.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pyyaml
+        run: pip install --quiet pyyaml
+
+      - name: Fetch sources and update SHA256
+        id: fetch
+        run: |
+          set -euo pipefail
+          mkdir -p not_in_repo
+
+          python3 << 'PYEOF'
+          import hashlib
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
+          from pathlib import Path
+
+          import yaml
+
+          REPO_ROOT = Path(".")
+          SKILLS_DIR = REPO_ROOT / "skills"
+          BINARIES_ROOT = REPO_ROOT / "not_in_repo"
+
+          # Solo licenze libere vengono scaricate automaticamente
+          FREE_LICENSES = {"public-domain", "cc-by", "cc-by-nc"}
+
+          # Placeholder SHA256 da sostituire
+          PLACEHOLDER_VALUES = {
+              "REPLACE_WHEN_DOWNLOADED",
+              "REPLACE_WITH_ACTUAL_HASH",
+              "PENDING_FETCH",
+              "TODO_HASH",
+              "XXX_HASH",
+          }
+
+          USER_AGENT = (
+              "Mozilla/5.0 (compatible; skill-per-ingegneri-CI-autofetch/1.0; "
+              "+https://github.com/morellid/skill-per-ingegneri)"
+          )
+          TIMEOUT_SECONDS = 120
+
+          # Skill specifica da processare (se specificata via workflow_dispatch)
+          target_skill = os.environ.get("TARGET_SKILL", "").strip()
+
+          def fetch_file(url: str, dest: Path) -> None:
+              req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+              with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as resp, dest.open("wb") as out:
+                  while True:
+                      chunk = resp.read(65536)
+                      if not chunk:
+                          break
+                      out.write(chunk)
+
+          def sha256_of(path: Path) -> str:
+              h = hashlib.sha256()
+              with path.open("rb") as fh:
+                  while True:
+                      chunk = fh.read(65536)
+                      if not chunk:
+                          break
+                      h.update(chunk)
+              return h.hexdigest()
+
+          def needs_fetch(sha: object) -> bool:
+              """Returns True if sha256 is a placeholder, null, or empty."""
+              if sha is None:
+                  return True
+              s = str(sha).strip()
+              return s in PLACEHOLDER_VALUES or s in ("", "null")
+
+          def process_skill(skill_dir: Path) -> tuple[bool, list[str]]:
+              """
+              Process a skill directory.
+              Returns (modified: bool, errors: list[str]).
+              """
+              sources_yaml = skill_dir / "references" / "sources.yaml"
+              if not sources_yaml.is_file():
+                  return False, []
+
+              with sources_yaml.open(encoding="utf-8") as fh:
+                  raw = fh.read()
+              data = yaml.safe_load(raw)
+              if data is None:
+                  return False, []
+
+              sources = data.get("sources", []) or []
+              modified = False
+              errors = []
+
+              for src in sources:
+                  sid = src.get("id", "<unknown>")
+                  url = src.get("url")
+                  binary_path = src.get("binary_path")
+                  declared_hash = src.get("sha256")
+                  license_type = src.get("license", "unknown")
+
+                  # Skip: niente binary_path dichiarato
+                  if not binary_path or binary_path in (None, "null"):
+                      continue
+
+                  # Skip: licenza non libera (fetch manuale)
+                  if license_type not in FREE_LICENSES:
+                      print(f"[{skill_dir.name}/{sid}] licenza {license_type!r} - skip (fetch manuale)")
+                      continue
+
+                  # Skip: sha256 gia' valido
+                  if not needs_fetch(declared_hash):
+                      print(f"[{skill_dir.name}/{sid}] sha256 gia' presente - skip")
+                      continue
+
+                  # Skip: URL mancante o placeholder
+                  if not url or "..." in url or url in (None, "null"):
+                      errors.append(
+                          f"[{skill_dir.name}/{sid}] URL mancante o placeholder ({url!r}) "
+                          "- aggiornare URL nel sources.yaml prima del fetch"
+                      )
+                      continue
+
+                  # Calcola path locale
+                  bp = Path(binary_path)
+                  if binary_path.startswith("not_in_repo/"):
+                      local_path = BINARIES_ROOT / bp.relative_to("not_in_repo")
+                  else:
+                      local_path = BINARIES_ROOT / bp.name
+                  local_path.parent.mkdir(parents=True, exist_ok=True)
+
+                  # Fetch
+                  print(f"[{skill_dir.name}/{sid}] fetching {url}", flush=True)
+                  try:
+                      fetch_file(url, local_path)
+                  except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
+                      errors.append(
+                          f"[{skill_dir.name}/{sid}] fonte non raggiungibile da CI: {url} ({exc})"
+                      )
+                      continue
+
+                  actual_hash = sha256_of(local_path)
+                  print(f"[{skill_dir.name}/{sid}] SHA256 calcolato: {actual_hash}")
+
+                  # Aggiorna il sources.yaml in-place sostituendo il placeholder
+                  # Usiamo sostituzione testo per preservare commenti e formattazione
+                  if declared_hash is None:
+                      # sha256: null -> sha256: <hash>
+                      old_val = "null"
+                  elif str(declared_hash).strip() == "":
+                      # sha256: "" -> sha256: <hash>
+                      old_val = '""'
+                  else:
+                      old_val = str(declared_hash).strip()
+
+                  # Sostituzione puntuale nella riga sha256: <old> -> sha256: <new>
+                  # Usa replace per la prima occorrenza di questo specifico placeholder
+                  # per evitare di toccare altri campi
+                  import re
+                  pattern = re.compile(
+                      r'^(\s*sha256:\s*)' + re.escape(old_val) + r'\s*$',
+                      re.MULTILINE
+                  )
+                  count = len(pattern.findall(raw))
+                  if count == 0:
+                      # Prova anche con virgolette
+                      pattern = re.compile(
+                          r'^(\s*sha256:\s*["\']?)' + re.escape(old_val) + r'["\']?\s*$',
+                          re.MULTILINE
+                      )
+                      count = len(pattern.findall(raw))
+
+                  if count == 0:
+                      errors.append(
+                          f"[{skill_dir.name}/{sid}] non riesco a localizzare il placeholder "
+                          f"{old_val!r} nel testo del sources.yaml - sostituzione manuale richiesta"
+                      )
+                      continue
+
+                  # Se c'e' piu' di un'occorrenza con lo stesso valore, dobbiamo
+                  # distinguere per id - in tal caso usiamo un approccio YAML-aware
+                  if count > 1:
+                      # Aggiorna via struttura dati YAML
+                      src["sha256"] = actual_hash
+                      modified = True
+                      print(f"[{skill_dir.name}/{sid}] aggiornato via struttura YAML (count={count})")
+                  else:
+                      # Sostituzione testo precisa (preserva commenti)
+                      new_raw = pattern.sub(r'\g<1>' + actual_hash, raw, count=1)
+                      if new_raw != raw:
+                          raw = new_raw
+                          modified = True
+                          print(f"[{skill_dir.name}/{sid}] aggiornato via sostituzione testo")
+                      else:
+                          errors.append(
+                              f"[{skill_dir.name}/{sid}] sostituzione testo non riuscita"
+                          )
+
+              if modified:
+                  # Se abbiamo usato sostituzione YAML-aware per qualche entry,
+                  # ricostruiamo il file preservando il piu' possibile la formattazione
+                  # NB: in questo caso usiamo il testo gia' aggiornato in `raw`
+                  # oppure riscriviamo da struttura dati
+                  sources_yaml.write_text(raw, encoding="utf-8")
+                  print(f"[{skill_dir.name}] sources.yaml aggiornato")
+
+              return modified, errors
+
+          # Main
+          all_errors = []
+          any_modified = False
+
+          if target_skill:
+              skill_dir = SKILLS_DIR / target_skill
+              if not skill_dir.is_dir():
+                  print(f"ERRORE: skill {target_skill!r} non trovata", file=sys.stderr)
+                  sys.exit(1)
+              mod, errs = process_skill(skill_dir)
+              any_modified = mod
+              all_errors.extend(errs)
+          else:
+              for skill_dir in sorted(SKILLS_DIR.iterdir()):
+                  if not skill_dir.is_dir() or skill_dir.name.startswith("_"):
+                      continue
+                  mod, errs = process_skill(skill_dir)
+                  if mod:
+                      any_modified = True
+                  all_errors.extend(errs)
+
+          if any_modified:
+              print("\nSorgenti aggiornate con successo.")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("modified=true\n")
+          else:
+              print("\nNessun aggiornamento necessario.")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("modified=false\n")
+
+          if all_errors:
+              print(f"\nERRORI ({len(all_errors)}) - fonti non raggiungibili da CI:")
+              for e in all_errors:
+                  print(f"  {e}")
+                  print(f"::error::{e}")
+              sys.exit(1)
+          PYEOF
+        env:
+          TARGET_SKILL: ${{ inputs.skill_name }}
+
+      - name: Commit updated sources.yaml
+        if: steps.fetch.outputs.modified == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add skills/*/references/sources.yaml
+          if git diff --cached --quiet; then
+            echo "Nessun file modificato nel staging area"
+            exit 0
+          fi
+          git commit -m "fix(sources): auto-fetch SHA256 reali per fonti pubbliche
+
+Calcolato e inserito SHA256 reale per tutte le fonti con licenza
+libera (public-domain / cc-by / cc-by-nc) che avevano placeholder
+o sha256 null con binary_path dichiarato.
+
+Eseguito dal workflow auto-fetch-sources.yml (CI ha rete libera).
+
+Co-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          git push

@@ -127,7 +127,7 @@ sources:
     type: legge
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-10-26;447
     accessed: 2026-05-08
-    sha256: ""
+    sha256: null
     license: public-domain
     binary_path: null
     excerpt_paths: null
@@ -149,7 +149,7 @@ sources:
     type: decreto-legislativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-02-17;42
     accessed: 2026-05-08
-    sha256: ""
+    sha256: null
     license: public-domain
     binary_path: null
     excerpt_paths: null
