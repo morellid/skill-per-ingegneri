@@ -18,6 +18,7 @@ sources:
     sha256: fde4e8d55618848c73e7a4ba4f4a2fb3edfb49cb3f30802cc591e2985ef9a6ae
     license: public-domain
     binary_path: not_in_repo/legge-447-1995.pdf
+    md_path: references/fonti/legge-447-1995-mase.md
     excerpt_paths:
       - references/estratti/legge-447-1995-art-8.md
     notes: |
@@ -52,6 +53,7 @@ sources:
     sha256: 265982c3e2970b27d6078d33e19a9ad06d91c683bb1c1ecd86758a8dc377a47c
     license: public-domain
     binary_path: not_in_repo/dpcm-14-11-1997-gu.html
+    md_path: references/fonti/dpcm-14-11-1997-limiti.md
     excerpt_paths:
       - references/estratti/dpcm-14-11-1997-valori-limite.md
     notes: |
@@ -89,6 +91,7 @@ sources:
     sha256: 76e067861e2477d6ea782ca621bea641ca3be0a5e9bceaeaa7fc9df2865c83c4
     license: public-domain
     binary_path: not_in_repo/dm-16-03-1998-gu.html
+    md_path: references/fonti/dm-16-03-1998-tecniche.md
     excerpt_paths:
       - references/estratti/dm-16-03-1998-tecniche-misurazione.md
     notes: |
@@ -127,9 +130,10 @@ sources:
     type: legge
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-10-26;447
     accessed: 2026-05-08
-    sha256: ""
+    sha256: null
     license: public-domain
     binary_path: null
+    md_path: null
     excerpt_paths: null
     notes: |
       Riferimento al testo consolidato vigente della L. 447/1995 sul portale
@@ -149,9 +153,10 @@ sources:
     type: decreto-legislativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-02-17;42
     accessed: 2026-05-08
-    sha256: ""
+    sha256: null
     license: public-domain
     binary_path: null
+    md_path: null
     excerpt_paths: null
     notes: |
       Riferimento al testo consolidato vigente del D.Lgs. 17 febbraio
