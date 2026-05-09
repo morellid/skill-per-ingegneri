@@ -25,6 +25,7 @@ Contiene anche:
 | [`spettro-risposta-ntc`](skills/spettro-risposta-ntc/) | Calcolo code-driven dello spettro di risposta elastico orizzontale (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)) per SLO/SLD/SLV/SLC | NTC 2018 par. 3.2 + Circ. 7/2019 |
 | [`combinazioni-carico-ntc`](skills/combinazioni-carico-ntc/) | Generazione/verifica code-driven delle combinazioni delle azioni SLU/SLE/sismiche/eccezionali per edifici civili e industriali correnti | NTC 2018 par. 2.5.3 + Tab. 2.5.I + Tab. 2.6.I |
 | [`carichi-atmosferici-ntc`](skills/carichi-atmosferici-ntc/) | Calcolo code-driven della pressione del vento p (par. 3.3) e del carico neve sulla copertura q_s (par. 3.4) per edifici civili e industriali correnti, dato sito (parametri zonali, altitudine), categoria di esposizione I-V, geometria (z, c_p, alpha falda, classe esposizione neve); output v_b/c_r/q_r/c_e/p e q_sk/mu_1/c_E/q_s con citazione paragrafi NTC | NTC 2018 par. 3.3 + par. 3.4 + Circ. 7/2019 par. C3.3-C3.4 |
+| [`cedimenti-edometrici-ntc`](skills/cedimenti-edometrici-ntc/) | Stima code-driven del cedimento edometrico (compressione monodimensionale) di singolo strato omogeneo per verifiche SLE NTC 2018 par. 6.2.4: dato h0/e0/Cc/Cr/sigma_0'/sigma_p'/Delta sigma' restituisce sigma_f', OCR, ramo (OC/NC/transizione), contributi parziali e Delta h totale in m e mm. Solo singolo strato omogeneo, solo carico in compressione, solo cedimento primario | NTC 2018 par. 6.2.2 e 6.2.4 + Circ. 7/2019 par. C6.2 + formulazione classica Terzaghi/Skempton |
 | [`pfte-allegato-i7-checker`](skills/pfte-allegato-i7-checker/) | Checklist e verifica completezza degli elaborati di un PFTE / progetto esecutivo di lavori pubblici, integrato dal correttivo 2024 | D.Lgs. 36/2023 art. 41 + Allegato I.7 + D.Lgs. 209/2024 |
 | [`modulistica-edilizia-unificata`](skills/modulistica-edilizia-unificata/) | Determina il modulo edilizio unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e l'elenco degli allegati richiesti, integrato con le modifiche del Salva Casa | DPR 380/2001 + D.Lgs. 222/2016 Tabella A + DL 69/2024 conv. L. 105/2024 + Modulistica unificata 27/3/2025 |
 | [`transizione-5-0-asseverazione`](skills/transizione-5-0-asseverazione/) | Asseverazione tecnica ex ante / ex post per il credito d'imposta Piano Transizione 5.0 (calcolo riduzione consumi >=3% struttura o >=5% processo, conversione tep, modelli MIMIT) | DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024 + Circolare MIMIT 25877/2024 |
@@ -58,6 +59,7 @@ skill-per-ingegneri/
 │   ├── spettro-risposta-ntc/
 │   ├── combinazioni-carico-ntc/
 │   ├── carichi-atmosferici-ntc/
+│   ├── cedimenti-edometrici-ntc/
 │   ├── pfte-allegato-i7-checker/
 │   ├── modulistica-edilizia-unificata/
 │   ├── transizione-5-0-asseverazione/

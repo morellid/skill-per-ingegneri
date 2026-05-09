@@ -1,0 +1,12 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Cedimenti edometrici - SLE NTC 2018 par. 6.2.4
+short_description: Calcolo del cedimento edometrico di singolo strato omogeneo per verifiche SLE NTC 2018 par. 6.2.4 (compressione monodimensionale, formulazione classica Terzaghi/Skempton). Dato h0/e0/Cc/Cr/sigma_0'/sigma_p'/Delta sigma' restituisce OCR, ramo (OC/NC/transizione), Delta h in m e mm, deformazione media epsilon. Code-driven, output verificabile vs software geotecnico certificato. Solo singolo strato omogeneo, solo carico in compressione, solo cedimento primario.
+default_prompt: |
+  Stimami il cedimento edometrico di uno strato di argilla.
+  h0 = 2 m, e0 = 0.8, Cc = 0.30, Cr = 0.05.
+  sigma_0' = 100 kPa (tensione efficace iniziale media),
+  sigma_p' = 150 kPa (preconsolidazione da prova edometrica),
+  Delta sigma' = 200 kPa (incremento medio per fondazione).
+  Restituisci ramo (OC/NC/transizione), OCR e Delta h in mm.
