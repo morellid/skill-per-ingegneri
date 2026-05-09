@@ -29,33 +29,33 @@ Leggere prima: `references/estratti/ai-act-art-26-27-deployer-fria.md`
 - [ ] Possesso di competenza, formazione, autorita'
 - [ ] Risorse di supporto
 
-### Par. 3 - Dati di input (se controllati dal deployer)
+### Par. 4 - Dati di input (se controllati dal deployer)
 - [ ] Rilevanza e rappresentativita' rispetto alla finalita'
 
-### Par. 4 - Monitoraggio funzionamento
+### Par. 5 - Monitoraggio funzionamento
 - [ ] Monitoraggio attivo sul funzionamento secondo istruzioni
 - [ ] Procedura per informare il provider in caso di anomalie (art. 72)
 - [ ] Sospensione uso e notifica autorita' in caso di rischio per salute/sicurezza/diritti
 
-### Par. 5 - Conservazione log
+### Par. 6 - Conservazione log
 - [ ] Log automatici conservati per periodo adeguato, **almeno 6 mesi**
 
-### Par. 6 - Lavoratori (se uso in luogo di lavoro)
+### Par. 7 - Lavoratori (se uso in luogo di lavoro)
 - [ ] Informazione preventiva ai rappresentanti dei lavoratori
 - [ ] Informazione preventiva ai lavoratori interessati
 
-### Par. 7 - Persone fisiche interessate
-- [ ] Informazione che sono soggette al sistema high-risk per decisioni o assistenza decisioni
-
-### Par. 8 - Cooperazione autorita'
-- [ ] Disponibilita' a cooperare
+### Par. 8 - Registrazione banca dati UE (solo per PA e istituzioni UE)
+- [ ] Se deployer e' autorita' pubblica o istituzione/organo/organismo UE: registrazione banca dati UE art. 49
+- [ ] Verifica che il sistema sia registrato prima dell'uso
 
 ### Par. 9 - DPIA GDPR
 - [ ] Uso delle informazioni art. 13 per la DPIA quando trattati dati personali
 
-### Par. 11+12 - Registrazione + FRIA per deployer pubblici/servizi pubblici
-- [ ] Registrazione banca dati UE (per deployer pubblici e privati che forniscono servizi pubblici, salvo Allegato III par. 2 infrastrutture critiche)
-- [ ] FRIA art. 27 prima della messa in servizio
+### Par. 11 - Informazione persone fisiche interessate
+- [ ] Informazione che sono soggette al sistema high-risk per decisioni o assistenza decisioni
+
+### Par. 12 - Cooperazione autorita'
+- [ ] Disponibilita' a cooperare con autorita' competenti
 
 ## Procedura - FRIA art. 27 (quando applicabile)
 
@@ -66,7 +66,7 @@ Il FRIA e' obbligatorio per i deployer che siano:
 - Enti privati che forniscono servizi pubblici
 - Deployer di sistemi Allegato III par. 5 lett. b) (credit scoring) e c) (insurance pricing)
 
-(Esclusi: Allegato III par. 2 infrastrutture critiche; Allegato III par. 6-7 contrasto/migrazione)
+Esclusi dall'obbligo FRIA: solo i sistemi per il settore **Allegato III punto 2 (infrastrutture critiche)** sono esplicitamente esclusi dal testo dell'art. 27 par. 1. I deployer pubblici di sistemi per contrasto (pt. 6) o migrazione/asilo/frontiere (pt. 7) che rientrano nella definizione di "organismo di diritto pubblico" sono soggetti all'obbligo.
 
 ### Contenuti minimi (par. 1 lett. a-f)
 
@@ -108,15 +108,14 @@ Risultati FRIA da notificare via modello standardizzato dall'AI Office (in via d
 |------|---------|-------|------|
 | 1 | Uso conforme istruzioni | ... | ... |
 | 2 | Sorveglianza umana - persone designate | ... | ... |
-| 3 | Dati input (se applicabile) | ... | ... |
-| 4 | Monitoraggio funzionamento + escalation | ... | ... |
-| 5 | Log >= 6 mesi | ... | ... |
-| 6 | Informazione lavoratori | ... | ... |
-| 7 | Informazione persone fisiche interessate | ... | ... |
-| 8 | Cooperazione autorita' | ... | ... |
+| 4 | Dati input (se controllati dal deployer) | ... | ... |
+| 5 | Monitoraggio funzionamento + escalation | ... | ... |
+| 6 | Log >= 6 mesi | ... | ... |
+| 7 | Informazione lavoratori (se uso in luogo di lavoro) | ... | ... |
+| 8 | Registrazione banca dati UE (se PA/ist. UE) | ... | ... |
 | 9 | DPIA GDPR (se dati personali) | ... | ... |
-| 11 | Registrazione banca dati UE (se applicabile) | ... | ... |
-| 12 | FRIA (se applicabile) | ... | rinvio art. 27 |
+| 11 | Informazione persone fisiche interessate | ... | ... |
+| 12 | Cooperazione autorita' | ... | ... |
 
 ## FRIA - se applicabile
 
@@ -176,7 +175,7 @@ Sanzioni: fino a 15M EUR o 3% del fatturato globale annuo (art. 99 par. 4).
 - Sinergia con normativa Banca d'Italia + Codice deontologia centrali rischi
 
 ### Azienda manifatturiera che usa sistema HR di reclutamento AI (Allegato III par. 4)
-- Deployer privato, **non obbligato a FRIA** (settore non in par. 11/12 art. 26)
+- Deployer privato, **non obbligato a FRIA** (non e' organismo pubblico ne' privato che fornisce servizi pubblici, e Allegato III par. 4 non rientra tra le categorie art. 27 par. 1)
 - Obblighi art. 26 si applicano (sorveglianza umana, informazione lavoratori, DPIA GDPR per dati personali)
 
 ### Comune che usa sistema biometrico controllo accessi dipendenti (Allegato III par. 1 lett. b)

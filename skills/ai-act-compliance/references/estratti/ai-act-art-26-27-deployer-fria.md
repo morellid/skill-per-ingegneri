@@ -6,61 +6,55 @@
 
 ---
 
-## Articolo 26 - Obblighi dei deployer di sistemi di IA ad alto rischio
+## Articolo 26 - Obblighi dei deployer dei sistemi di IA ad alto rischio
 
 Il "**deployer**" (utilizzatore) e' la persona fisica o giuridica che usa un sistema di IA sotto la propria autorita', salvo uso personale non professionale (art. 3 par. 4).
 
 ### Par. 1 - Obblighi generali
 
-I deployer di sistemi high-risk:
-- Adottano misure tecniche e organizzative adeguate per garantire l'**uso conforme alle istruzioni d'uso**
-- Garantiscono che i sistemi siano usati per le **finalita' previste**
+I deployer di sistemi high-risk adottano idonee misure tecniche e organizzative per garantire di utilizzare tali sistemi conformemente alle **istruzioni per l'uso** che accompagnano i sistemi, a norma dei paragrafi 3 e 6.
 
 ### Par. 2 - Sorveglianza umana
 
-I deployer **affidano la sorveglianza umana** a persone fisiche dotate della **competenza, formazione e autorita' necessarie** + risorse di supporto.
+I deployer **affidano la sorveglianza umana** a persone fisiche dotate della **competenza, formazione e autorita' necessarie** nonche' del sostegno necessario.
 
-### Par. 3 - Dati di input
+### Par. 4 - Dati di input
 
-Quando i deployer **controllano i dati di input**, ne garantiscono la **rilevanza e rappresentativita'** rispetto alla finalita' prevista.
+Fatti salvi i paragrafi 1 e 2, nella misura in cui esercita il controllo sui dati di input, il deployer garantisce che tali dati di input siano **pertinenti e sufficientemente rappresentativi** alla luce della finalita' prevista del sistema di IA ad alto rischio.
 
-### Par. 4 - Monitoraggio funzionamento
+### Par. 5 - Monitoraggio funzionamento
 
-I deployer monitorano il funzionamento del sistema in base alle istruzioni d'uso e, se necessario, **informano il fornitore** in conformita' all'art. 72.
+I deployer **monitorano il funzionamento** del sistema di IA ad alto rischio sulla base delle istruzioni per l'uso e, se del caso, informano i fornitori a tale riguardo conformemente all'art. 72.
 
-Quando ritengono che l'uso possa comportare un **rischio per salute, sicurezza, diritti fondamentali**, sospendono l'uso e informano fornitore + autorita' di vigilanza.
+Qualora abbiano motivo di ritenere che l'uso del sistema possa comportare un rischio ai sensi dell'art. 79 par. 1, i deployer **ne informano, senza indebito ritardo**, il fornitore o il distributore e la pertinente autorita' di vigilanza del mercato, e **sospendono l'uso**.
 
-### Par. 5 - Conservazione log
+Qualora abbiano individuato un **incidente grave**, i deployer ne informano immediatamente il fornitore (in primo luogo), poi l'importatore o il distributore e le pertinenti autorita' di vigilanza.
 
-I deployer conservano i **log automaticamente generati** dal sistema per un periodo adeguato alla finalita' prevista, **almeno 6 mesi** (salvo applicabilita' di altre norme UE/nazionale).
+### Par. 6 - Conservazione log
 
-### Par. 6 - Lavoratori
+I deployer conservano i **log automaticamente generati** dal sistema per un periodo adeguato alla finalita' prevista, di **almeno 6 mesi**, salvo diversamente disposto dal diritto UE o nazionale applicabile.
 
-Prima di mettere in servizio o usare un sistema high-risk **nel luogo di lavoro**, i deployer **datori di lavoro** informano i rappresentanti dei lavoratori e i lavoratori interessati.
+### Par. 7 - Informazione lavoratori
 
-### Par. 7 - Informazione interessati persone fisiche
+Prima di mettere in servizio o utilizzare un sistema high-risk **sul luogo di lavoro**, i deployer che sono **datori di lavoro** informano i rappresentanti dei lavoratori e i lavoratori interessati che saranno soggetti all'uso del sistema.
 
-I deployer di sistemi high-risk che decidono o assistono a decisioni su persone fisiche **informano** tali persone che sono soggette all'uso del sistema high-risk. Per sistemi high-risk usati per attivita' di contrasto: si applica l'art. 13 della direttiva (UE) 2016/680 (LED).
+### Par. 8 - Deployer PA e istituzioni UE - registrazione
 
-### Par. 8 - Cooperazione con autorita'
+I deployer di sistemi di IA ad alto rischio che sono **autorita' pubbliche o istituzioni, organi e organismi dell'Unione** rispettano gli **obblighi di registrazione** di cui all'art. 49. Verificano che il sistema sia registrato nella banca dati UE prima dell'uso.
 
-I deployer cooperano con le autorita' competenti su qualsiasi azione intrapresa in relazione ai sistemi high-risk.
+*Nota*: questa registrazione riguarda PA e istituzioni UE. I privati che forniscono servizi pubblici hanno obblighi diversi derivanti dall'art. 27 (FRIA), non dall'art. 26 par. 8.
 
-### Par. 9 - DPIA
+### Par. 9 - Sinergia DPIA
 
-Quando applicabile, i deployer usano le informazioni fornite ai sensi dell'art. 13 per condurre la **DPIA** ai sensi del GDPR art. 35 o LED art. 27.
+Se del caso, i deployer usano le informazioni fornite ai sensi dell'art. 13 per adempiere all'obbligo di effettuare una **DPIA** a norma dell'art. 35 GDPR o dell'art. 27 della direttiva LED.
 
-### Par. 10 - Identificazione biometrica remota post-evento (per attivita' di contrasto)
+### Par. 11 - Informazione persone fisiche interessate
 
-Disciplina specifica.
+I deployer dei sistemi high-risk di cui all'Allegato III che adottano decisioni o assistono nell'adozione di decisioni che riguardano persone fisiche **informano** tali persone che sono soggette all'uso del sistema di IA ad alto rischio (fatta salva l'art. 50).
 
-### Par. 11 - Deployer pubblici e simili - registrazione art. 49
+### Par. 12 - Cooperazione con autorita'
 
-I deployer che siano autorita' pubbliche, agenzie/organismi UE, o privati che forniscono servizi pubblici (lett. b) e par. 12), prima di mettere in servizio sistemi high-risk Allegato III (escluso punto 2 infrastrutture critiche), si registrano nella **banca dati UE**.
-
-### Par. 12 - FRIA: rinvio art. 27
-
-Per i deployer di cui al par. 11 di cui al primo comma di tale paragrafo, **prima di mettere in servizio** un sistema high-risk Allegato III (esclusi quelli per attivita' di contrasto, migrazione, asilo, frontiere) - **eseguono il FRIA** ai sensi dell'art. 27.
+I deployer **cooperano** con le pertinenti autorita' competenti in merito a qualsiasi azione intrapresa da dette autorita' in relazione al sistema high-risk.
 
 ---
 
@@ -68,55 +62,60 @@ Per i deployer di cui al par. 11 di cui al primo comma di tale paragrafo, **prim
 
 ### Par. 1 - Quando e' obbligatorio
 
-Prima di mettere in servizio un sistema high-risk dell'**Allegato III** (esclusi punto 2 infrastrutture critiche), il deployer effettua una **FRIA** quando e':
-- **Organismo di diritto pubblico**, oppure
-- **Ente privato che fornisce servizi pubblici**, oppure
-- Deployer di sistemi che effettuano attivita' di cui all'**Allegato III, punti 5 lett. b) e c)** (credit scoring + insurance pricing).
+Prima di utilizzare un sistema high-risk dell'**Allegato III** (con esclusione esplicita solo dei sistemi per l'Allegato III **punto 2** - infrastrutture critiche), i deployer che rientrano in una delle seguenti categorie effettuano il FRIA:
+- **Organismi di diritto pubblico**
+- **Enti privati che forniscono servizi pubblici**
+- Deployer di sistemi di cui all'**Allegato III, punto 5, lettere b) e c)** (credit scoring + insurance pricing per persone fisiche)
+
+*Nota*: gli altri deployer privati (es. datori di lavoro che usano HR AI, banche per antifrode) non sono obbligati al FRIA da Art. 27, salvo ricadano nelle categorie sopra. L'esclusione esplicita del regolamento riguarda solo il settore infrastrutture critiche (Allegato III pt. 2), non il settore contrasto (pt. 6) ne' migrazione/asilo/frontiere (pt. 7).
 
 ### Par. 1 - Contenuti del FRIA
 
-La FRIA contiene:
+La valutazione comprende:
 
-- **a)** Descrizione dei **processi del deployer** in cui il sistema sara' usato
-- **b)** Periodo e frequenza d'uso
-- **c)** Categorie di **persone fisiche e gruppi** che potrebbero essere interessati
-- **d)** **Rischi specifici di danno** che potrebbero impattare le categorie identificate, considerando le informazioni del fornitore (art. 13)
-- **e)** Descrizione dell'attuazione delle **misure di sorveglianza umana**
-- **f)** Misure da adottare in caso di **materializzazione dei rischi**, inclusi accordi per governance interna e meccanismi di reclamo
+- **a)** Descrizione dei **processi del deployer** in cui il sistema sara' utilizzato in linea con la sua finalita' prevista
+- **b)** Descrizione del **periodo di tempo** entro il quale ciascun sistema e' destinato a essere utilizzato e con che **frequenza**
+- **c)** Le **categorie di persone fisiche** e i gruppi verosimilmente interessati nel contesto specifico
+- **d)** I **rischi specifici di danno** che possono incidere sulle categorie identificate, tenendo conto delle informazioni trasmesse dal fornitore ai sensi dell'art. 13
+- **e)** Descrizione dell'attuazione delle **misure di sorveglianza umana**, secondo le istruzioni per l'uso
+- **f)** Le **misure da adottare qualora i rischi si concretizzino**, comprese le disposizioni relative alla governance interna e ai meccanismi di reclamo
 
-### Par. 2 - Aggiornamenti
+### Par. 2 - Primo uso e aggiornamenti
 
-L'obbligo si applica al primo uso. Per usi successivi simili, il deployer puo' fare riferimento a una FRIA precedentemente effettuata o **aggiornarla**.
+L'obbligo si applica al **primo uso**. Il deployer puo' basarsi su valutazioni d'impatto precedenti o fornite dal fornitore. Se durante l'uso ritiene che un elemento sia cambiato, adotta le misure necessarie per aggiornare le informazioni.
 
 ### Par. 3 - Notifica autorita' di vigilanza
 
-Il deployer notifica i risultati della FRIA all'autorita' di vigilanza tramite il **modello standardizzato** che l'AI Office sviluppera' (art. 27 par. 5).
+Una volta effettuata la FRIA, il deployer **notifica all'autorita' di vigilanza del mercato i risultati**, presentando il modello standardizzato di cui al par. 5.
 
 ### Par. 4 - Sinergia con DPIA
 
-Se uno qualsiasi degli obblighi di FRIA e' gia' soddisfatto da una **DPIA condotta ai sensi del GDPR art. 35 o LED art. 27**, la FRIA **integra** tale DPIA.
+Se uno qualsiasi degli obblighi FRIA e' gia' soddisfatto da una **DPIA condotta ai sensi del GDPR art. 35** o della direttiva LED art. 27, la FRIA **integra** tale DPIA.
+
+### Par. 5 - Modello standardizzato
+
+L'ufficio per l'IA elabora un modello di questionario, anche attraverso uno strumento automatizzato, per agevolare i deployer nell'adempimento.
 
 ---
 
 ## Note operative
 
-### Chi DEVE fare il FRIA
+### Chi DEVE fare il FRIA (sintesi)
 
-- **Sempre**: organismi pubblici e privati che forniscono servizi pubblici essenziali, prima di usare sistemi high-risk Allegato III (esclusi infrastrutture, contrasto, migrazione)
-- **Sempre**: deployer privati di sistemi credit scoring (Allegato III par. 5 lett. b) e insurance pricing (par. 5 lett. c)
+- **Sempre**: organismi di diritto pubblico che usano sistemi high-risk Allegato III, **eccetto** infrastrutture critiche (punto 2)
+- **Sempre**: enti privati che forniscono servizi pubblici + stessi sistemi Allegato III eccetto pt. 2
+- **Sempre**: qualunque deployer (anche privato standard) che usa sistemi di credit scoring (Allegato III par. 5 lett. b) o insurance pricing (par. 5 lett. c)
 
 ### Chi NON deve (necessariamente) fare il FRIA
 
-- Deployer privati di sistemi HR/educazione/biometria che non rientrano nei casi sopra
-- Provider del sistema (loro fanno gestione rischi art. 9, non FRIA)
+- Deployer **privati standard** (es. azienda HR, retailer) per sistemi HR/educazione/biometria, a meno che rientrino nelle categorie sopra
+- Fornitori del sistema (loro adempiono all'art. 9 gestione rischi, non al FRIA che e' obbligo del deployer)
 
 ### Sinergia FRIA-DPIA
 
-Se il sistema tratta dati personali (quasi sempre per Allegato III), il deployer deve fare entrambe ma puo' integrarle. In pratica si scrive **un unico documento** che soddisfa GDPR art. 35 + AI Act art. 27, con sezioni dedicate per gli aspetti specifici (rischi diritti fondamentali oltre privacy).
+Se il sistema tratta dati personali, il deployer deve fare entrambe ma puo' integrarle. In pratica: documento unico che soddisfa GDPR art. 35 + AI Act art. 27, con sezioni dedicate.
 
-### Differenza con il sistema gestione rischi del provider (art. 9)
+### Differenza art. 9 (fornitore) vs art. 27 (deployer FRIA)
 
-- **Provider art. 9**: gestione rischi interna al sistema, su tutto il ciclo di vita
-- **Deployer art. 27 (FRIA)**: valutazione contestuale al **proprio uso del sistema**, prima di metterlo in servizio
-
-Sono complementari. Il provider ha gia' fornito al deployer (tramite art. 13 - istruzioni d'uso) le informazioni che il deployer usa per il proprio FRIA.
+- **Art. 9**: gestione rischi interna del fornitore, su tutto il ciclo di vita del sistema
+- **Art. 27 (FRIA)**: valutazione contestuale del deployer al **proprio uso specifico**, prima di metterlo in servizio. Usa le informazioni che il fornitore ha gia' fornito ai sensi dell'art. 13.

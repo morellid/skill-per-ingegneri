@@ -58,7 +58,7 @@ Il sistema copre l'**intero ciclo di vita** del sistema IA e include:
 
 I rischi affrontati sono solo quelli **ragionevolmente mitigabili o eliminabili** tramite progettazione del sistema, considerando lo **stato dell'arte**.
 
-### Par. 4 - Misure di gestione rischio appropriate
+### Par. 5 - Misure di gestione rischio appropriate
 
 - Riduzione/eliminazione tramite **progettazione e sviluppo**
 - Quando rischi non possono essere eliminati: **misure di mitigazione e controllo**
