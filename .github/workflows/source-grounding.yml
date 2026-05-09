@@ -4,6 +4,15 @@ name: source-grounding
 #   1. nessun placeholder negli SHA256 di references/sources.yaml
 #   2. ogni binary_path dichiarato deve essere effettivamente scaricabile
 #      dall'URL pubblico, e l'hash calcolato deve coincidere con quello in sources.yaml
+#   3. ogni md_path dichiarato deve esistere e non essere vuoto
+#      (Step 3 della Regola zero: il MD della fonte e' committato nella skill)
+#
+# Limite intrinseco: la CI puo' verificare il check sintattico (placeholder,
+# hash mismatch, file MD presenti e non vuoti) ma NON puo' verificare se il
+# contenuto del MD di fonte sia effettivamente la transcrizione del PDF
+# (vs un'invenzione dei training data dell'agent). Quel check e' semantico
+# e richiede review umana o agent indipendente che legga il PDF.
+# Vedi `methodology/source-grounding-remediation.md` "Criteri di chiusura issue".
 #
 # La CI ha rete libera (a differenza degli ambienti di sviluppo che possono
 # avere allowlist sandbox), quindi puo' fare il fetch reale delle fonti
@@ -12,6 +21,7 @@ name: source-grounding
 #
 # Job:
 #   - check-no-placeholders: rifiuta sha256 placeholder (REPLACE_*, PENDING_FETCH, vuoti)
+#   - check-md-fonti-present: per ogni md_path dichiarato non null, verifica file presente e non vuoto
 #   - validate-sources:      scarica i binari pubblici e verifica gli hash
 
 on:
@@ -69,10 +79,63 @@ jobs:
           fi
           echo "OK: nessun placeholder SHA256."
 
+  check-md-fonti-present:
+    name: MD di fonte presenti (Regola zero Step 3)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pyyaml
+        run: pip install --quiet pyyaml
+
+      - name: Verify md_path target exists for each declared source
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import sys
+          import pathlib
+          import yaml
+
+          repo = pathlib.Path('.')
+          violations = []
+          for sources_yaml in repo.glob('skills/*/references/sources.yaml'):
+              skill_dir = sources_yaml.parent.parent
+              skill = skill_dir.name
+              with sources_yaml.open(encoding='utf-8') as fh:
+                  data = yaml.safe_load(fh) or {}
+              for src in data.get('sources', []) or []:
+                  sid = src.get('id', '<unknown>')
+                  md_path = src.get('md_path')
+                  if not md_path or md_path == 'null':
+                      continue
+                  target = skill_dir / md_path
+                  if not target.is_file() or target.stat().st_size == 0:
+                      violations.append((skill, sid, md_path))
+
+          if violations:
+              for skill, sid, md_path in violations:
+                  print(f"::error::[{skill}/{sid}] md_path '{md_path}' "
+                        f"dichiarato in sources.yaml ma file mancante o vuoto "
+                        f"(Regola zero Step 3 - AGENTS.md)")
+              print()
+              print(f"Trovate {len(violations)} fonti con md_path mancante o vuoto.")
+              print("Step 3 della Regola zero richiede che ogni fonte pubblica abbia")
+              print("references/fonti/<id>.md committato come transcrizione del PDF.")
+              print("Vedi methodology/generazione-skill.md Step 2.5.")
+              sys.exit(1)
+          print("OK: tutti gli md_path dichiarati puntano a file esistenti e non vuoti.")
+          PY
+
   validate-sources:
     name: Validate sources are reachable and hash matches
     runs-on: ubuntu-latest
-    needs: check-no-placeholders
+    needs: [check-no-placeholders, check-md-fonti-present]
     steps:
       - name: Checkout
         uses: actions/checkout@v4

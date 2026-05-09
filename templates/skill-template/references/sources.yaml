@@ -8,11 +8,21 @@ last_verified: YYYY-MM-DD
 #   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
 #   url: URL canonico della fonte
 #   accessed: data consultazione (YYYY-MM-DD)
-#   sha256: hash SHA256 del file binario scaricato
+#   sha256: hash SHA256 del file binario scaricato (REALE, no placeholder)
 #   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
-#   binary_path: path del binario in locale (fuori repo), oppure null
-#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null se non embedabile
+#   binary_path: path del binario in locale (fuori repo, in not_in_repo/), oppure null
+#   md_path: path del markdown della fonte in references/fonti/ (mandatory per fonti pubbliche), oppure null
+#   excerpt_path: path dell'estratto curato in references/estratti/ (parafrasi mirata di md_path)
 #   notes: note libere
+#
+# Workflow obbligato (vedi AGENTS.md "Regola zero"):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path (committato nella skill, transcrizione fedele)
+#   4. USARE il MD per scrivere la skill (estratti, tasks, examples, codice)
+#
+# Step 3 e' lo step gating: senza md_path popolato per ogni fonte pubblica
+# dichiarata, la skill non si scrive. Niente eccezioni.
 
 sources:
   # Esempio (sostituire con fonti reali)
@@ -24,6 +34,7 @@ sources:
     sha256: REPLACE_WITH_ACTUAL_HASH
     license: public-domain
     binary_path: not_in_repo/esempio-dlgs.pdf
+    md_path: references/fonti/esempio-dlgs.md
     excerpt_path: references/estratti/esempio-dlgs.md
     notes: |
       Note sulla consultazione, ambito applicativo, versione consolidata.

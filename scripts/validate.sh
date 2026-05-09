@@ -63,6 +63,18 @@ validate_skill() {
       grep -nE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$skill_path/references/sources.yaml" | sed 's/^/    /'
       errors=$((errors + 1))
     fi
+    # 2c. Regola zero Step 3 (vedi AGENTS.md): per ogni fonte con md_path dichiarato
+    # non null, il file referenziato deve esistere ed essere non vuoto.
+    while IFS= read -r mdline; do
+      mdpath=$(echo "$mdline" | sed -E 's/^[[:space:]]*md_path:[[:space:]]*//; s/[[:space:]]*$//; s/^"//; s/"$//')
+      if [ -z "$mdpath" ] || [ "$mdpath" = "null" ]; then
+        continue
+      fi
+      if [ ! -s "$skill_path/$mdpath" ]; then
+        echo "  ERRORE: md_path '$mdpath' dichiarato in sources.yaml ma file mancante o vuoto (Regola zero Step 3)"
+        errors=$((errors + 1))
+      fi
+    done < <(grep -E "^[[:space:]]*md_path:" "$skill_path/references/sources.yaml" 2>/dev/null || true)
   fi
 
   # 3. CHANGELOG.md

@@ -30,8 +30,9 @@ skill-per-ingegneri/
     ├── agents/openai.yaml     # UI metadata Codex
     ├── tasks/                 # sotto-attivita' (progressive disclosure)
     ├── references/
-    │   ├── sources.yaml       # catalogo fonti (URL, accessed, sha256, licenza)
-    │   └── estratti/          # estratti testuali delle fonti pubbliche
+    │   ├── sources.yaml       # catalogo fonti (URL, accessed, sha256, md_path, licenza)
+    │   ├── fonti/             # MD delle fonti ufficiali (transcrizione/conversione del PDF), committato
+    │   └── estratti/          # estratti curati (parafrasi mirate dei fonti/, citate nei tasks)
     ├── examples/              # >=1 caso conforme + >=1 caso problematico
     ├── AGENTS.md              # convenzioni di dominio della skill
     ├── README.md              # doc utente della skill
@@ -40,14 +41,28 @@ skill-per-ingegneri/
 
 ## Regola zero: source-grounding obbligatorio (STOP rule)
 
-**Le skill di questo repo sono ESCLUSIVAMENTE basate su fonti ufficiali, scaricate, verificate via SHA256 e referenziate in `references/sources.yaml`. Senza fonti scaricate non si crea, non si modifica, non si estende una skill. Non c'e' margine di deroga.**
+**Le skill di questo repo sono ESCLUSIVAMENTE basate su fonti ufficiali, scaricate, verificate via SHA256, convertite in markdown committato nella skill (`references/fonti/<id>.md`), e referenziate in `references/sources.yaml`. Senza fonti scaricate E convertite a MD non si crea, non si modifica, non si estende una skill. Non c'e' margine di deroga.**
 
-Operativamente:
+### Workflow obbligato (4 step in ordine, sequenziali, non saltabili)
 
-- **Prima** di scrivere `SKILL.md`, `references/estratti/`, esempi o codice di calcolo, scarica le fonti dichiarate con `./scripts/fetch-sources.sh <nome-skill>` e calcola gli SHA256 reali. Sostituisci ogni placeholder `REPLACE_WHEN_DOWNLOADED` con l'hash effettivo.
-- **Mai** scrivere `references/estratti/<file>.md` "a memoria" sulla base dei training data dell'agent. Ogni estratto deve riportare contenuti **letti dal file scaricato**. Se non hai letto il file, non scrivi l'estratto.
-- **Mai** aprire una PR con `sha256: REPLACE_WHEN_DOWNLOADED` o equivalenti placeholder nei `sources.yaml`. La PR e' incompleta per definizione.
-- **Mai** marcare il vincolo come "gap pre-v1.0 tollerabile in alpha": e' la regola che la nozione stessa di "alpha tollerabile" cerca di violare. Lo stato `0.1.0-alpha` riguarda assenza di Livello 2 / casi reali / validazione di campo, NON assenza di fonti scaricate. Le fonti scaricate sono prerequisito di qualsiasi versione, alpha inclusa.
+```
+1. SCARICARE le fonti ufficiali (PDF/HTML)        -> not_in_repo/<id>.pdf
+2. SALVARE l'hash SHA256                          -> references/sources.yaml (campo sha256)
+3. CONVERTIRE il PDF in markdown                  -> references/fonti/<id>.md (COMMITTATO)
+4. USARE il markdown della fonte per la skill     -> SKILL.md, tasks/, examples/, codice
+```
+
+**Step 3 e' lo step gating della Regola zero.** Il file `references/fonti/<id>.md` e' la transcrizione (o conversione fedele) del PDF nei suoi paragrafi rilevanti. Va committato nel repo. E' la prova non falsificabile che qualcuno ha letto la fonte: qualunque agent che genera skill content senza un MD di fonte alle spalle sta inevitabilmente attingendo dai training data, non dalla fonte.
+
+**Non si scrive neanche un token di SKILL.md, AGENTS.md (di skill), tasks/, examples/, o codice di calcolo prima che `references/fonti/<id>.md` esista, generato dalla lettura del PDF scaricato.** Questo include i placeholder, i TODO, le bozze: niente di niente.
+
+### Vincoli operativi
+
+- **Prima** di scrivere qualunque contenuto della skill, esegui i 4 step sopra in ordine. Per lo step 1: `./scripts/fetch-sources.sh <nome-skill>`. Per lo step 3: leggi il PDF e produci `references/fonti/<id>.md` con la transcrizione dei paragrafi rilevanti (vedi `methodology/generazione-skill.md` Step 2.5).
+- **Mai** scrivere `references/estratti/<file>.md` "a memoria" sulla base dei training data. Gli estratti sono parafrasi mirate di contenuto presente in `references/fonti/<id>.md`. Se il MD della fonte non c'e', l'estratto non si scrive.
+- **Mai** aprire una PR con `sha256: REPLACE_WHEN_DOWNLOADED` o equivalenti placeholder, ne' con `references/fonti/<id>.md` mancante per fonti dichiarate non-paywall.
+- **Mai** committare un `references/fonti/<id>.md` vuoto, segnaposto, o con testo "TBD/TODO". Se la fonte non e' stata letta, il file non esiste e la skill non si scrive.
+- **Mai** marcare il vincolo come "gap pre-v1.0 tollerabile in alpha": lo stato `0.1.0-alpha` riguarda assenza di Livello 2 / casi reali / validazione di campo, NON assenza di fonti scaricate, hashate, e convertite a MD. Sono prerequisito di qualsiasi versione, alpha inclusa.
 
 ### Protocollo di rifiuto (refusal protocol)
 
@@ -109,11 +124,13 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 
 1. Verifica idoneita' del task secondo `methodology/criteri-selezione.md`.
 2. **Mapping fonti FIRST**. Identifica la lista esatta delle fonti ufficiali (decreti, regolamenti, circolari, linee guida pubbliche) necessarie alla skill. Verifica che siano scaricabili dal tuo ambiente.
-3. **Scarica le fonti PRIMA di scrivere qualsiasi contenuto**. Predisponi `sources.yaml` con URL, `accessed`, `binary_path` (in `not_in_repo/`), licenza, e ESEGUI `./scripts/fetch-sources.sh <nome-skill>`. Calcola SHA256 reali e committali nel `sources.yaml`. Se anche **una sola** fonte non e' scaricabile, **fermati**: applica il protocollo di rifiuto della Regola zero. Non procedere con il resto della skill.
-4. Solo dopo che tutte le fonti sono scaricate e hashate, segui il workflow completo in `methodology/generazione-skill.md` (scaffold -> SKILL.md -> estratti tratti dal file scaricato -> tasks -> esempi -> disclaimer -> validazione).
-5. Scaffold: `./scripts/new-skill.sh <nome-skill>` (kebab-case).
-6. Versione iniziale: `0.1.0-alpha`. Lo stato alpha riguarda solo l'assenza di validazione Livello 2 (vs casi reali / esperti di dominio): le fonti **devono comunque** essere scaricate e hashate.
-7. Validazione obbligatoria prima del rilascio: `methodology/validazione.md` (almeno Livello 1, Livello 2 da ingegnere di dominio diverso dall'autore prima di v1.0).
+3. **Step 1 - SCARICA le fonti**. Predisponi `sources.yaml` con URL, `accessed`, `binary_path` (in `not_in_repo/`), licenza. Esegui `./scripts/fetch-sources.sh <nome-skill>`. Se anche **una sola** fonte non e' scaricabile, **fermati**: applica il protocollo di rifiuto della Regola zero.
+4. **Step 2 - SALVA l'hash SHA256**. Per ogni fonte scaricata calcola e committa lo `sha256:` reale nel `sources.yaml`. Sostituisci ogni placeholder `REPLACE_WHEN_DOWNLOADED`.
+5. **Step 3 - CONVERTI il PDF in markdown** in `references/fonti/<id>.md`, committato. Il MD deve essere una transcrizione fedele dei paragrafi rilevanti del PDF (non tutto il PDF se troppo lungo; ma tutto cio' che la skill cita). Vedi `methodology/generazione-skill.md` Step 2.5 per le convenzioni.
+6. **Step 4 - USA il markdown per la skill**. Solo ora apri `SKILL.md` e cominci a scrivere. Ogni affermazione normativa deve poter citare un punto specifico in `references/fonti/<id>.md`. Gli `references/estratti/*.md` sono parafrasi mirate di parti di `fonti/`. Vedi `methodology/generazione-skill.md` per il resto del workflow (scaffold, tasks, esempi, disclaimer, validazione).
+7. Scaffold tecnico: `./scripts/new-skill.sh <nome-skill>` (kebab-case). Da eseguire dopo lo Step 4 inizia.
+8. Versione iniziale: `0.1.0-alpha`. Lo stato alpha riguarda solo l'assenza di validazione Livello 2 (vs casi reali / esperti di dominio): le fonti **devono comunque** essere scaricate, hashate e convertite a MD prima di scrivere la skill.
+9. Validazione obbligatoria prima del rilascio: `methodology/validazione.md` (almeno Livello 1, Livello 2 da ingegnere di dominio diverso dall'autore prima di v1.0).
 
 ## Quando modifichi una skill esistente
 
