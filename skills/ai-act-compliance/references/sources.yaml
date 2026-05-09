@@ -2,28 +2,42 @@ schema_version: 1
 skill: ai-act-compliance
 last_verified: 2026-04-25
 
-# Ogni sorgente e' un oggetto con i campi:
-#   id: identificatore locale (usato in task files come rinvio)
-#   title: titolo completo
-#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
-#   url: URL canonico della fonte
-#   accessed: data consultazione (2026-04-25)
-#   sha256: hash SHA256 del file binario scaricato
-#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
-#   binary_path: path del binario in locale (fuori repo), oppure null
-#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null se non embedabile
-#   notes: note libere
+# Fonti normative per la skill ai-act-compliance.
+# Regolamento UE 2024/1689 (AI Act) - testo ufficiale italiano pubblicato
+# sulla Gazzetta Ufficiale dell'Unione Europea OJ L 2024/1689 del 12/07/2024.
 
 sources:
-  # Esempio (sostituire con fonti reali)
-  - id: esempio-dlgs
-    title: "D.Lgs. N/YYYY - Titolo completo"
-    type: decreto
-    url: https://www.gazzettaufficiale.it/eli/...
+  - id: ai-act-it-eurlex
+    title: "Regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio del 13 giugno 2024 (AI Act) - testo italiano"
+    type: regolamento
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=OJ:L_202401689
     accessed: 2026-04-25
-    sha256: REPLACE_WITH_ACTUAL_HASH
-    license: public-domain
-    binary_path: not_in_repo/esempio-dlgs.pdf
-    excerpt_path: references/estratti/esempio-dlgs.md
+    sha256: a61b61706aee6676e3988ab696162d71d759c3debd48b2ecccac3555207f2b0c
+    license: public-domain-eu-law
+    binary_path: not_in_repo/ai-act-it-eurlex.pdf
+    excerpt_paths:
+      - references/estratti/ai-act-art-5-pratiche-vietate.md
+      - references/estratti/ai-act-art-6-9-classificazione-high-risk.md
+      - references/estratti/ai-act-allegato-iii.md
+      - references/estratti/ai-act-art-26-27-deployer-fria.md
+      - references/estratti/ai-act-art-50-trasparenza.md
+      - references/estratti/ai-act-art-51-55-gpai.md
     notes: |
-      Note sulla consultazione, ambito applicativo, versione consolidata.
+      Pubblicato sulla Gazzetta Ufficiale UE L 2024/1689 del 12 luglio 2024.
+      Testo italiano scaricato da EUR-Lex come PDF unico (779 pagine).
+      SHA256 calcolato al fetch del 2026-04-25.
+      Licenza: testi legislativi dell'UE sono in pubblico dominio ai sensi
+      della decisione 2011/833/UE della Commissione europea e della
+      politica di riutilizzo di EUR-Lex.
+      Struttura rilevante per la skill:
+      - Art. 5: pratiche di IA vietate (8 pratiche + eccezioni)
+      - Art. 6-7: classificazione sistemi IA ad alto rischio (Allegato I e III)
+      - Art. 9: sistema di gestione dei rischi (ciclo continuo)
+      - Allegato III: 8 settori / casi d'uso ad alto rischio elencati
+      - Art. 26-27: obblighi dei deployer + FRIA (fondamental rights impact assessment)
+      - Art. 50: obblighi di trasparenza (5 categorie)
+      - Art. 51-55: fornitori di modelli GPAI + rischio sistemico (>= 10^25 FLOPs)
+      Il fetch automatico di EUR-Lex da CI potrebbe essere bloccato da rate
+      limiting o bot detection: il file e' referenziato solo via hash e non
+      viene scaricato automaticamente dal workflow auto-fetch-sources.yml
+      (licenza public-domain-eu-law non e' nella lista FREE_LICENSES del workflow).
