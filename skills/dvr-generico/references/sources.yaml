@@ -2,28 +2,41 @@ schema_version: 1
 skill: dvr-generico
 last_verified: 2026-04-25
 
-# Ogni sorgente e' un oggetto con i campi:
-#   id: identificatore locale (usato in task files come rinvio)
-#   title: titolo completo
-#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
-#   url: URL canonico della fonte
-#   accessed: data consultazione (2026-04-25)
-#   sha256: hash SHA256 del file binario scaricato
-#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
-#   binary_path: path del binario in locale (fuori repo), oppure null
-#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null se non embedabile
-#   notes: note libere
+# Fonti normative per la skill dvr-generico.
+# D.Lgs. 9 aprile 2008 n. 81 (Testo Unico Sicurezza sul Lavoro) -
+# Artt. 17, 28, 29: obblighi del datore di lavoro, contenuto minimo del DVR,
+# procedura e tempistiche di elaborazione.
 
 sources:
-  # Esempio (sostituire con fonti reali)
-  - id: esempio-dlgs
-    title: "D.Lgs. N/YYYY - Titolo completo"
-    type: decreto
-    url: https://www.gazzettaufficiale.it/eli/...
+  - id: dlgs-81-2008-consolidato-inl-2025-01
+    title: "D.Lgs. 9 aprile 2008 n. 81 - Testo Unico Sicurezza sul Lavoro - testo coordinato gennaio 2025 (INL)"
+    type: decreto-legislativo
+    url: https://www.ispettorato.gov.it/files/2025/01/TU-81-08-Ed.-Gennaio-2025-1.pdf
     accessed: 2026-04-25
-    sha256: REPLACE_WITH_ACTUAL_HASH
-    license: public-domain
-    binary_path: not_in_repo/esempio-dlgs.pdf
-    excerpt_path: references/estratti/esempio-dlgs.md
+    sha256: f593e1806de920dc16def37920c5623cda2450075ed56051852f2caf6045899a
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs-81-2008-consolidato-inl-2025-01.pdf
+    excerpt_paths:
+      - references/estratti/dlgs-81-art-17-28-29.md
     notes: |
-      Note sulla consultazione, ambito applicativo, versione consolidata.
+      Edizione coordinata gennaio 2025 dell'Ispettorato Nazionale del Lavoro
+      (INL). PDF di 675 pagine che riporta il D.Lgs. 81/2008 con tutte le
+      modifiche e integrazioni al gennaio 2025.
+      SHA256 calcolato al fetch del 2026-04-25 (medesimo file e hash
+      verificati in parallelo dalla skill pos-allegato-xv-checker v0.1.0,
+      id: dlgs-81-2008-consolidato-inl-2025-01).
+      Sezioni rilevanti per questa skill:
+      - Art. 17 c. 1 lett. a): obbligo non delegabile del datore di lavoro
+        di effettuare la valutazione dei rischi e di elaborare il DVR.
+      - Art. 28: contenuto minimo del DVR (relazione su rischi, misure
+        preventive, programma, procedure, ruoli, mansioni esposte a rischi
+        specifici).
+      - Art. 29: modalita' di effettuazione della valutazione dei rischi
+        (collaborazione con RSPP e MC, previa consultazione dell'RLS,
+        tempistiche di revisione e aggiornamento).
+      Licenza: testi legislativi italiani sono in pubblico dominio ai sensi
+      dell'art. 5 L. 633/1941 (non soggetti a diritto d'autore). Il documento
+      INL non aggiunge contenuto creativo proprio: solo coordinamento redazionale.
+      Il fetch automatico da CI e' possibile (ispettorato.gov.it e' accessibile)
+      ma la licenza public-domain-italian-law causa skip da verify-sources.py:
+      la coerenza dell'hash e' verificabile manualmente o via workflow dedicato.
