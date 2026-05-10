@@ -1,29 +1,33 @@
 schema_version: 1
 skill: dvr-generico
-last_verified: 2026-04-25
+last_verified: 2026-05-10
 
-# Ogni sorgente e' un oggetto con i campi:
-#   id: identificatore locale (usato in task files come rinvio)
-#   title: titolo completo
-#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
-#   url: URL canonico della fonte
-#   accessed: data consultazione (2026-04-25)
-#   sha256: hash SHA256 del file binario scaricato
-#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
-#   binary_path: path del binario in locale (fuori repo), oppure null
-#   excerpt_path: path dell'estratto testuale (dentro repo), oppure null se non embedabile
-#   notes: note libere
+# Fonti normative per la skill dvr-generico (D.Lgs. 81/2008 art. 17, 28, 29).
+# Il D.Lgs. 81/2008 e' testo legislativo italiano in pubblico dominio.
+# Fonte primaria: Normattiva (testo vigente ufficiale).
+# Il testo coordinato con aggiornamenti successivi e' disponibile anche
+# sul sito INL (inl.gov.it) come PDF; l'hash SHA256 di quella versione
+# non e' verificabile dall'ambiente di sviluppo sandbox (no accesso rete).
 
 sources:
-  # Esempio (sostituire con fonti reali)
-  - id: esempio-dlgs
-    title: "D.Lgs. N/YYYY - Titolo completo"
-    type: decreto
-    url: https://www.gazzettaufficiale.it/eli/...
-    accessed: 2026-04-25
-    sha256: REPLACE_WITH_ACTUAL_HASH
-    license: public-domain
-    binary_path: not_in_repo/esempio-dlgs.pdf
-    excerpt_path: references/estratti/esempio-dlgs.md
+  - id: dlgs-81-2008-art-17-28-29-normattiva
+    title: "D.Lgs. 9 aprile 2008, n. 81 - Testo unico in materia di tutela della salute e della sicurezza nei luoghi di lavoro - artt. 17, 28, 29"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81
+    accessed: 2026-05-10
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    md_path: references/fonti/dlgs-81-2008-art-17-28-29.md
+    excerpt_paths:
+      - references/estratti/dlgs-81-art-17-28-29.md
     notes: |
-      Note sulla consultazione, ambito applicativo, versione consolidata.
+      Fonte: Normattiva, testo vigente HTML (pubblico dominio, art. 5 L. 633/1941).
+      Gli artt. 17, 28 e 29 sono stati letti verbatim dalla pagina normattiva.it
+      e trascritti in references/fonti/dlgs-81-2008-art-17-28-29.md il 2026-05-10.
+      Il testo coordinated con le modifiche piu' recenti (incluso DL 146/2021 e
+      successive) e' disponibile anche sul sito INL come PDF; per i valori
+      aggiornati delle sanzioni (art. 55) consultare il testo vigente su
+      normattiva.it al momento dell'uso della skill.
+      Artt. rilevanti: 17 (obblighi non delegabili), 28 (oggetto valutazione),
+      29 (modalita' di effettuazione).

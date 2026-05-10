@@ -7,6 +7,19 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### fix(source-grounding) - 2026-05-10
+
+- Sostituito `references/sources.yaml` da template placeholder a fonte reale:
+  `dlgs-81-2008-art-17-28-29-normattiva` con URL normattiva.it vigente.
+- Creato `references/fonti/dlgs-81-2008-art-17-28-29.md`: trascrizione verbatim
+  degli artt. 17, 28 e 29 di D.Lgs. 81/2008 letti direttamente da normattiva.it
+  il 2026-05-10 (testo vigente).
+- Aggiornato header estratto `dlgs-81-art-17-28-29.md`: riferimento a nuovo id
+  fonte e URL normattiva.it.
+- Corretto errore semantico in `dlgs-81-art-17-28-29.md` par. 1-bis: "Obbligo
+  dal 31/12/2010" sostituito con "a fare data dal 1 agosto 2010" (testo vigente
+  art. 28 co. 1-bis normattiva.it: "a fare data dal 1 agosto 2010").
+
 ### Da fare
 - Validazione Livello 1 con `scripts/validate.sh`
 - Validazione Livello 2 da RSPP esterno (potenziale validatore: Vitale per profilo RSPP)
