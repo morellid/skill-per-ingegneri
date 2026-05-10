@@ -1,10 +1,14 @@
 # DM 58/2017 Allegato A - Tabelle 1 e 2 + classe finale
 
 > Fonte: DM 58/2017 Allegato A, sostituito dal DM 65/2017 (testo coordinato vigente per le procedure di classificazione).
-> Consultata letteralmente su: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf (PDF ufficiale MIT)
+> Testo letto da: references/fonti/dm-65-2017-all-a.md (trascrizione verbatim del PDF ufficiale MIT)
+> URL PDF ufficiale: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf
+> SHA256 PDF: 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
 > Cross-check con output di software certificato: ClaSS 2017 di S.I.S. (Esempio_ClaSS_SIS.pdf, accesso 2026-05-07).
-> Data accesso: 2026-05-07
+> Data accesso: 2026-05-10
 > Licenza: dominio pubblico (atto normativo italiano)
+> Verifica semantica: le tabelle di questo estratto sono state verificate letteralmente contro
+> il testo del PDF trascritto in references/fonti/dm-65-2017-all-a.md.
 
 ## Tabella 1 classi PAM (8 classi)
 
@@ -60,7 +64,24 @@ classe_finale = max_in_graduatoria(classe_PAM, classe_IS-V)
 3. **Classe G non per IS-V**: la peggior classe di IS-V e' F. La classe G compare solo per PAM (PAM > 7.5%) o come risultato della regola "classe finale = peggiore" se classe_PAM = G.
 4. **Implementazione**: la convenzione di bordo e' nel modulo `sismabonus.py`, funzioni `classifica_PAM` e `classifica_IS_V`. Test unitari sui bordi in `test_sismabonus.py` (`TestClassiPAMBoundary`, `TestClassiISVBoundary`).
 
+## Verifiche semantiche effettuate vs PDF (2026-05-10)
+
+1. **Tabella 1 PAM (pag. 2-3 del PDF)**: VERIFICATA letteralmente - tutti i valori soglia
+   (0,50% / 1,0% / 1,5% / 2,5% / 3,5% / 4,5% / 7,5%) sono presenti nel PDF con le
+   stesse convenzioni di bordo (lower escluso, upper incluso per A..F).
+2. **Ambiguita' PAM = 7.5%**: CONFERMATA - il PDF pone F: `4,5% < PAM <= 7,5%` (incluso) e
+   G: `7,5% <= PAM` (incluso). Il valore esatto 7.5% appare in entrambe le classi nel
+   testo letterale. L'interpretazione conservativa PAM=7.5% -> F e' corretta.
+3. **Tabella 2 IS-V (pag. 3 del PDF)**: VERIFICATA letteralmente - tutti i valori soglia
+   (15% / 30% / 45% / 60% / 80% / 100%) sono presenti nel PDF con le stesse convenzioni.
+4. **Classe finale = peggiore (passo 11, pag. 4 del PDF)**: CONFERMATA: "Si individua la
+   Classe di Rischio della costruzione come la peggiore tra la Classe PAM e la Classe IS-V."
+5. **Classe G non esiste per IS-V**: CONFERMATO - la Tabella 2 del PDF si ferma a FIS-V.
+
 ## Riferimenti puntuali
 
-- DM 58/2017 Allegato A punto 2.3 (testo coordinato DM 329/2020): tabelle classi e regola classe finale
+- PDF DM 65/2017 All. A pag. 2-3 (Tabella 1): classi PAM
+- PDF DM 65/2017 All. A pag. 3 (Tabella 2): classi IS-V
+- PDF DM 65/2017 All. A pag. 4 (passo 11): regola classe finale = peggiore tra PAM e IS-V
+- Trascrizione verbatim: references/fonti/dm-65-2017-all-a.md
 - ClaSS 2017 attestato di esempio (S.I.S. Software Ingegneria Strutturale) - cross-check qualitativo dei bordi tabella, accessibile su `infowebsrl.it/Newsletter/SIS_ingegneria/1/Pdf/Esempio_ClaSS_SIS.pdf`

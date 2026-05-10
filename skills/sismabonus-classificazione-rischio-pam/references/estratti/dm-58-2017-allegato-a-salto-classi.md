@@ -1,9 +1,13 @@
 # DM 58/2017 Allegato A punto 3 - Salto classi e asseverazione
 
-> Fonte: DM 58/2017 Allegato A (testo aggiornato dal DM 65/2017, DM 24/2020, DM 329/2020).
-> Consultata su: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
-> Data accesso: 2026-05-07
+> Fonte: DM 58/2017 Allegato A, sezione 3.1 (testo del DM 65/2017).
+> Testo letto da: references/fonti/dm-65-2017-all-a.md (trascrizione verbatim del PDF ufficiale MIT)
+> URL PDF ufficiale: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf
+> SHA256 PDF: 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
+> Data accesso: 2026-05-10
 > Licenza: dominio pubblico (atto normativo italiano)
+> Verifica semantica: le affermazioni su salto classi e metodo convenzionale sono tracciate
+> alla sezione 3.1 del PDF, trascritto in references/fonti/dm-65-2017-all-a.md.
 
 ## Salto classi
 
@@ -48,8 +52,27 @@ Le aliquote di detrazione (50%, 70%, 75%, 80%, 85%, super-sismabonus 110% e succ
 - Il **metodo di analisi** (lineare, non lineare, push-over, time-history) e il **livello di conoscenza** LC1/LC2/LC3 (con relativo fattore di confidenza FC, NTC 2018 par. 8.5.4) **devono essere gli stessi** per stato di fatto e stato di progetto, per garantire la confrontabilita' del salto classi. La skill non controlla questo (input dell'utente), ma il task `valida-input.md` lo segnala come check da eseguire dal professionista.
 - La PGA_D al sito **non cambia** tra fatto e progetto (dipende dal sito, non dall'edificio). La skill assume che PGA_D fornita per "fatto" valga anche per "progetto" se non ridichiarata.
 
+## Verifiche semantiche effettuate vs PDF (2026-05-10)
+
+1. **Salto classi - metodo convenzionale (sezione 3.1, pag. 8 del PDF)**: CONFERMATO. Il PDF
+   dice: "Utilizzando il metodo convenzionale, l'effetto degli interventi per la riduzione
+   del rischio, in termini di numero di cambi di Classe di Rischio conseguiti, e'
+   facilmente determinabile valutando la Classe di Rischio della costruzione in esame
+   nella situazione pre-intervento e post-intervento."
+2. **Obbligo di analisi globale anche per interventi locali**: CONFERMATO nella sezione 3.1.
+   Il testo richiede che, anche per interventi locali, la verifica globale sia eseguita
+   "esclusivamente per finalita' di attribuzione della classe e senza in alcun modo
+   incidere sulle procedure amministrative previste per tali interventi".
+3. **Stesso metodo pre e post intervento**: CONFERMATO nella sezione 1 del PDF (Introduzione):
+   "Laddove si preveda l'esecuzione di interventi volti alla riduzione del rischio,
+   l'attribuzione della Classe di Rischio pre e post intervento deve essere effettuata
+   utilizzando il medesimo metodo e con le stesse modalita' di analisi e di verifica."
+4. **Aliquote fiscali**: non sono in questo PDF (correttamente fuori scope della skill).
+
 ## Riferimenti puntuali
 
-- DM 58/2017 Allegato A punto 3 (testo coordinato DM 329/2020): salto classi
+- PDF DM 65/2017 All. A pag. 1 (Introduzione): stesso metodo pre/post intervento
+- PDF DM 65/2017 All. A pag. 8 (sezione 3.1): metodo convenzionale per salto classi
+- Trascrizione verbatim: references/fonti/dm-65-2017-all-a.md
 - DM 58/2017 art. 3 + Allegati B, B-bis: modelli di asseverazione (fuori scope skill)
 - TUIR + leggi di bilancio: aliquote fiscali (fuori scope skill)

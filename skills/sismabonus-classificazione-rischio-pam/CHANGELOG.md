@@ -7,6 +7,62 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.1.1-alpha] - 2026-05-10
+
+### fix(source-grounding): remediation semantica (closes #110)
+
+#### Fonti scaricate e lette
+
+- **dm-65-2017-all-a** (DM MIT 7/3/2017 n. 65 Allegato A): PDF testuale scaricato,
+  testo estratto integralmente via `pdftotext`, trascritto in
+  `references/fonti/dm-65-2017-all-a.md`. SHA256 confermato:
+  `8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878`.
+- **dm-58-2017** (DM MIT 28/2/2017 n. 58): PDF scaricato ma scansionato (non testuale),
+  SHA256 calcolato: `4b03025c0c9c0a81860ad454e3448ec325569002e8b3332d3abf20ae78851267`.
+  Il contenuto rilevante (Allegato A) e' sostituito integralmente dal DM 65/2017.
+- **dm-24-2020** (DM MIT 9/1/2020 n. 24): PDF scaricato ma scansionato, SHA256 calcolato:
+  `028d77270f06f7a6985b12bf0d42aae0558e9211508fb4c3083c10b2592517ff`.
+- **ntc-2018**: pagina MIT risponde HTTP 404; sha256 impostato a null (fonte di contesto,
+  non citata direttamente nei calcoli della skill).
+- **circ-7-2019**: PDF non scaricato (supplemento GU di grandi dimensioni); sha256 a null
+  (fonte di contesto, non citata direttamente nei calcoli della skill).
+
+#### Verifiche semantiche effettuate
+
+Tutti i valori seguenti sono stati verificati letteralmente contro il testo del PDF
+`dm-65-2017-all-a` estratto via `pdftotext`:
+
+1. **Tabella 3 - %CR per stato limite** (pag. 4 PDF): SLID=0%, SLO=7%, SLD=15%,
+   SLV=50%, SLC=80%, SLR=100% - CONFERMATI. Coincidono con i valori in `sismabonus.py`.
+2. **TR convenzionale SLID = 10 anni** (passo 4, pag. 4 PDF): CONFERMATO.
+3. **TR convenzionale SLR = TR(SLC)** (passo 5, pag. 4 PDF): CONFERMATO.
+4. **Formula PAM** (passo 7, pag. 4 PDF): formula trapezoidale con termine di coda
+   lambda(SLC)*CR(SLR) - CONFERMATA.
+5. **Capping SLD/SLO** (passo 3 + nota 6, pag. 3-4 PDF): obbligo di assumere
+   TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV)) - CONFERMATO.
+6. **Valore PAM 1,13%** per V_R=50 anni ai minimi NTC (nota a Tabella 1, pag. 2-3 PDF):
+   CONFERMATO testualmente nel PDF.
+7. **Tabella 1 classi PAM** (pag. 2-3 PDF): 8 classi A+..G con soglie 0.5/1.0/1.5/
+   2.5/3.5/4.5/7.5% - CONFERMATA. Ambiguita' al bordo 7.5% documentata correttamente.
+8. **Tabella 2 classi IS-V** (pag. 3 PDF): 7 classi A+..F con soglie 100/80/60/45/
+   30/15% - CONFERMATA. Ambiguita' al bordo IS-V=100% documentata correttamente.
+9. **Classe finale = peggiore tra PAM e IS-V** (passo 11, pag. 4 PDF): CONFERMATO.
+10. **Salto classi - sezione 3.1** (pag. 8 PDF): valutazione pre/post intervento con
+    stesso metodo - CONFERMATO.
+
+#### Nessuna modifica al codice Python
+
+Tutti i valori costanti verificati contro il PDF corrispondono esattamente a quanto
+implementato in `sismabonus.py`. I test (55/55 OK) non sono stati modificati.
+Aggiunti commenti di tracciabilita' nel codice con riferimento alla pagina/tabella del PDF.
+
+#### Estratti aggiornati
+
+Tutti i 5 estratti in `references/estratti/` aggiornati con:
+- Header fonte aggiornato con SHA256 e riferimento a `references/fonti/dm-65-2017-all-a.md`
+- Sezione "Verifiche semantiche effettuate vs PDF" con stato CONFERMATO per ogni affermazione
+- Riferimenti puntuali aggiornati con numero di pagina del PDF
+
 ## [0.1.0-alpha] - 2026-05-07
 
 ### Added
@@ -62,4 +118,7 @@ SHA256 calcolati al primo fetch (2026-05-07) per i PDF accessibili:
 - DM 329/2020: `9031321161c6d7e3eaa71228a9f9c333f2f1f08d209ad7d6bb73fcd0438837a5`
 - ClaSS 2017 esempio: `5a9ceccf7fd37529da7a3e894fde31cc52720ceadea833484b19378cefe3f985`
 
-Altre fonti (DM 58/2017 originale, DM 24/2020, NTC 2018, Circ. 7/2019) hanno `sha256: PENDING_FETCH` perche' non ancora scaricate; non bloccanti per la procedura di calcolo della skill (il testo vigente di riferimento e' DM 65/2017 Allegato A, gia' verificato).
+Altre fonti (DM 58/2017 originale, DM 24/2020, NTC 2018, Circ. 7/2019) non scaricate
+nella v0.1.0-alpha; non bloccanti per la procedura di calcolo della skill (il testo
+vigente di riferimento e' DM 65/2017 Allegato A, gia' verificato). SHA256 per DM 58/2017
+originale e DM 24/2020 calcolati nella v0.1.1-alpha (documenti scansionati, non testuali).
