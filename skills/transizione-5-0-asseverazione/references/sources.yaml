@@ -1,6 +1,6 @@
 schema_version: 1
 skill: transizione-5-0-asseverazione
-last_verified: 2026-04-29
+last_verified: 2026-05-10
 
 # Fonti normative principali per la skill di asseverazione tecnica
 # del Piano Transizione 5.0 (credito d'imposta).
@@ -44,11 +44,12 @@ sources:
   - id: dm-24-07-2024-transizione50
     title: "DM MIMIT-MEF 24 luglio 2024 - Attuazione dell'art. 38 DL 19/2024 (Piano Transizione 5.0) - GU n. 183 del 06/08/2024"
     type: decreto-ministeriale
-    url: https://www.gazzettaufficiale.it/eli/id/2024/08/06/24A04160/SG
-    accessed: 2026-04-29
-    sha256: null
+    url: https://www.gazzettaufficiale.it/eli/gu/2024/08/06/183/sg/pdf
+    accessed: 2026-05-10
+    sha256: 6ceb304bbe503860ef73c978cc4eabcbdfe41d5c0a3521af6be09efb581e9b53
     license: public-domain-italian-law
     binary_path: not_in_repo/dm-24-07-2024-transizione50.pdf
+    md_path: references/fonti/dm-24-07-2024-transizione50.md
     excerpt_paths:
       - references/estratti/dm-24-07-2024-articoli-chiave.md
     notes: |
@@ -73,10 +74,11 @@ sources:
     title: "Circolare operativa MIMIT 16 agosto 2024, prot. 25877 - Piano Transizione 5.0"
     type: circolare
     url: https://www.mimit.gov.it/images/stories/normativa/Circolare_Operativa_Transizione_5.0_mimit.AOO_PI.REGISTRO_UFFICIALEI.0025877.16-08-2024.pdf
-    accessed: 2026-04-29
-    sha256: null
+    accessed: 2026-05-10
+    sha256: 964798d9f97353cffe23a6327e479b09e7820401986e09869448ce405dd8e62f
     license: public-domain-italian-law
     binary_path: not_in_repo/circolare-mimit-25877-2024.pdf
+    md_path: references/fonti/circolare-mimit-25877-2024.md
     excerpt_paths:
       - references/estratti/circolare-mimit-criteri-risparmio.md
       - references/estratti/circolare-mimit-modelli-certificazioni.md
@@ -101,10 +103,11 @@ sources:
     title: "FAQ MIMIT Transizione 5.0 - aggiornamento 10 aprile 2025 (versione vigente al last_verified)"
     type: faq-ministeriale
     url: https://www.mimit.gov.it/images/stories/documenti/allegati/FAQ_Transizione_50_-_10_aprile_2025.pdf
-    accessed: 2026-04-29
-    sha256: null
+    accessed: 2026-05-10
+    sha256: 6d051b5f18b64b1fd97f829f026e1677644ec552426cdc29625f8f70d559a6b3
     license: public-domain-italian-law
     binary_path: not_in_repo/faq-mimit-transizione50-10-04-2025.pdf
+    md_path: references/fonti/faq-mimit-transizione50-10-04-2025.md
     excerpt_paths:
       - references/estratti/faq-mimit-soggetti-certificatori.md
     notes: |

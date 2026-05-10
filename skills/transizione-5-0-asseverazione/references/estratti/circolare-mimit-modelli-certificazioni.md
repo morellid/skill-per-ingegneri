@@ -3,7 +3,7 @@
 > Estratto strutturato degli **Allegati VIII, IX, X, XI** della Circolare MIMIT 16 agosto 2024, prot. 25877: modelli ufficiali della Certificazione Ex Ante (VIII), Relazione Tecnica Ex Ante (IX), Certificazione Ex Post (X), Relazione Tecnica Ex Post (XI), e Allegato III (Dichiarazione di terzieta' del valutatore).
 >
 > **Fonte ufficiale**: MIMIT, prot. AOO_PI 0025877.16-08-2024.
-> **Data consultazione**: 2026-04-29.
+> **Data consultazione**: 2026-05-10 (ri-verificato su PDF circolare prot. 25877, pagg. 82-86).
 > **Licenza**: testo amministrativo italiano, riproducibile.
 >
 > Riferimento sources.yaml: `circolare-mimit-16-08-2024`.
@@ -192,11 +192,13 @@ Analoga all'Allegato IX (Ex Ante), ma con dati **misurati** (non stimati) per la
 
 > Documento obbligatorio da presentare con la comunicazione preventiva (per ex ante) e con la comunicazione di completamento (per ex post).
 
-Il certificatore dichiara, ai sensi degli artt. 46 e segg. DPR 445/2000:
-- di **non aver fornito consulenza** o intrattenuto rapporti con l'impresa beneficiaria nei **3 anni** precedenti l'incarico, in materie collegate al progetto agevolato;
-- di **non avere alcun interesse economico, finanziario o personale** che possa influenzare l'imparzialita' del giudizio;
-- di non avere rapporti di **parentela o affinita'** entro il quarto grado con il legale rappresentante o con i soci dell'impresa;
-- di essere consapevole delle **responsabilita' civili e penali** derivanti dal rilascio di dichiarazioni non veritiere (art. 76 DPR 445/2000).
+Il certificatore dichiara, con dichiarazione sostitutiva di atto notorio (artt. 46 e 47 DPR 445/2000), di essere **consapevole delle responsabilita' e delle pene stabilite dalla legge per false attestazioni e mendaci dichiarazioni (art. 76 d.p.r. 445/2000), sotto la sua personale responsabilita'**.
+
+La sezione **DICHIARA** dell'Allegato III (pag. 83 circolare) contiene la seguente dichiarazione unica:
+
+"il possesso dei requisiti di professionalita' previsti dal richiamato Decreto, nonche', ai fini della dimostrazione del possesso dei requisiti di indipendenza, imparzialita' e onorabilita', di non trovarsi in situazioni di conflitto di interessi, anche potenziale, ai sensi della vigente normativa in materia e di non aver riportato condanne penali."
+
+> Nota: la dichiarazione non menziona alcun periodo temporale specifico (es. "3 anni precedenti") ne' alcun divieto esplicito di aver prestato consulenza in passato all'impresa beneficiaria. Il requisito di indipendenza e' formulato in termini generali con rinvio alla "vigente normativa in materia".
 
 ## Allegato V - Attestazione perizia tecnica e certificazione contabile
 
