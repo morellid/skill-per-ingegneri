@@ -16,13 +16,16 @@ Produrre un report strutturato che per ogni sezione del modello Allegato I indic
 
 Se l'input e' solo parziale, segnalarlo nel report e limitare la verifica a quanto fornito.
 
-**Nota**: Per determinare la coerenza degli allegati con le soglie Art. 5, eseguire anche il task
+Per determinare la coerenza degli allegati con le soglie Art. 5, eseguire anche il task
 `identifica-allegati-obbligatori.md` prima o in parallelo.
 
 ## Fonti normative
 
 Prima di procedere, leggere:
-- `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 7 (obblighi DdC) e struttura Allegato I
+- `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 7 (obblighi DdC e allegati integranti)
+
+Le citazioni nell'estratto sono basate sul PDF MIMIT (testo originale 2008, SHA256 verificato).
+Il modello vigente di Allegato I e' del Decreto 19 maggio 2010 (non letto).
 
 ## Procedura
 
@@ -165,7 +168,10 @@ Allegati obbligatori: [stato]
 - Verifica formale sulla presenza dei campi, non sulla veridicita' delle dichiarazioni
 - Non verifica l'effettiva abilitazione dell'installatore (richiede consultazione registro CCIAA)
 - Non giudica l'adeguatezza tecnica delle norme citate rispetto all'impianto specifico
-- Le soglie Art. 5 richiedono verifica su Normattiva per uso operativo
+- Le soglie Art. 5 derivano dal testo originale 2008 (PDF MIMIT, SHA256 verificato); per uso
+  operativo verificare il testo consolidato su Normattiva per eventuali modifiche successive
+- Il modello vigente di Allegato I e' quello del Decreto 19 maggio 2010, non incluso nel PDF
+  letto; la struttura dei campi usata in questo task e' quella standard della prassi applicativa
 
 ## Rinvio al responsabile tecnico firmatario
 
