@@ -1,173 +1,208 @@
-# Estratto DM 22 gennaio 2008 n. 37 - Art. 1, 3, 4, 5, 7 e Allegato I
+# Estratto DM 22 gennaio 2008 n. 37 - Art. 1, 3, 4, 5, 7
 
-**Fonte**: Gazzetta Ufficiale n. 61 del 12/03/2008 Suppl. Ordinario n. 54 (testo originale)
-**Fonte consolidata**: Normattiva - https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2008-01-22;37
-**Consultato**: 2026-05-02
-**Licenza**: pubblico dominio - atti ufficiali dello Stato italiano (art. 5 L. 633/1941)
+**Fonte letta**: PDF MIMIT (Ministero Imprese e Made in Italy)
+**URL fonte**: https://www.mimit.gov.it/images/stories/recuperi/Impresa_internazionalizzazione/DM-22-gennaio-2008.pdf
+**SHA256 fonte**: 86afc81c9e942c893052a8b2988f9f3b71fdc6f6779325dcae895fd694654fc1
+**Testo integrale**: `references/fonti/dm37-2008-mimit.md`
+**Letto**: 2026-05-10
+**Licenza**: pubblico dominio - atto ufficiale dello Stato italiano (art. 5 L. 633/1941)
 
-**AVVERTENZA**: Il testo seguente e' una parafrasi operativa degli articoli, non un estratto letterale.
-Per il testo normativo autoritativo verificare su Normattiva o GU prima di qualsiasi applicazione.
-L'estratto e' stato preparato per supportare la skill; le soglie e condizioni devono essere
-verificate sul testo vigente prima dell'uso operativo.
+**Nota**: Il PDF MIMIT contiene il testo originale del 2008. Allegato I e II sono stati sostituiti
+dal Decreto 19 maggio 2010 (non nel PDF). Per il testo consolidato vigente verificare su Normattiva.
 
 ---
 
 ## Art. 1 - Campo di applicazione
 
-Il DM 37/2008 si applica agli impianti posti al servizio degli edifici, indipendentemente dalla
-destinazione d'uso. Gli impianti sono classificati nelle seguenti **7 categorie (a-g)**:
+_(fonti/dm37-2008-mimit.md, Art. 1 co. 1-3)_
 
-**a)** impianti di produzione, trasformazione, trasporto, distribuzione, utilizzo dell'energia
+Il DM 37/2008 si applica agli impianti posti al servizio degli edifici, indipendentemente dalla
+destinazione d'uso. Se l'impianto e' connesso a reti di distribuzione, si applica a partire dal
+punto di consegna della fornitura (Art. 1 co. 1).
+
+Gli impianti soggetti a requisiti di sicurezza di normativa comunitaria o specifica non sono
+disciplinati dal decreto per quegli aspetti (Art. 1 co. 3).
+
+Gli impianti sono classificati nelle seguenti **7 categorie (a-g)** (Art. 1 co. 2):
+
+**a)** impianti di produzione, trasformazione, trasporto, distribuzione, utilizzazione dell'energia
 elettrica, impianti di protezione contro le scariche atmosferiche, nonche' gli impianti per
 l'automazione di porte, cancelli e barriere;
 
-**b)** impianti radiotelevisivi, antenne e impianti elettronici in genere;
+**b)** impianti radiotelevisivi, le antenne e gli impianti elettronici in genere;
 
 **c)** impianti di riscaldamento, di climatizzazione, di condizionamento e di refrigerazione di
-qualsiasi natura o specie, compresi raccolta/smaltimento fluidi esausti e condensazioni,
-ventilazione e aerazione;
+qualsiasi natura o specie, comprese le opere di evacuazione dei prodotti della combustione e delle
+condense, e di ventilazione ed aerazione dei locali;
 
 **d)** impianti idrici e sanitari di qualsiasi natura o specie;
 
-**e)** impianti per la distribuzione e l'utilizzazione di gas di qualsiasi tipo, compresi impianti
-di stoccaggio temporaneo;
+**e)** impianti per la distribuzione e l'utilizzazione di gas di qualsiasi tipo, comprese le opere
+di evacuazione dei prodotti della combustione e ventilazione ed aerazione dei locali;
 
-**f)** impianti di sollevamento di persone o di cose per mezzo di ascensori, montacarichi, scale
-mobili e simili;
+**f)** impianti di sollevamento di persone o di cose per mezzo di ascensori, di montacarichi, di
+scale mobili e simili;
 
 **g)** impianti di protezione antincendio.
-
-**Note applicative**:
-- L'automazione di porte, cancelli e barriere e' inclusa nella categoria a), non e' una categoria separata.
-- Sono escluse le navi, aeromobili, mezzi ferroviari; stabilimenti soggetti a disciplina speciale
-  diversa. Verificare Normattiva per l'elenco completo delle esclusioni.
 
 ---
 
 ## Art. 3 - Abilitazione delle imprese installatrici
 
-Le imprese installatrici abilitano se stesse iscrivendosi al Registro delle Imprese o all'Albo
-Provinciale delle Imprese Artigiane e soddisfacendo i requisiti di Art. 4 (responsabile tecnico).
+_(fonti/dm37-2008-mimit.md, Art. 3 co. 1-3, 5)_
 
-L'abilitazione e' specifica per categoria di impianto. Un'impresa abilitata per cat. a) non e'
-automaticamente abilitata per cat. c) o altre categorie.
+Le imprese installatrici devono essere iscritte nel registro delle imprese (DPR 581/1995) o
+nell'Albo provinciale delle imprese artigiane (L. 443/1985), e il loro imprenditore individuale,
+legale rappresentante o responsabile tecnico preposto con atto formale deve possedere i requisiti
+di Art. 4 (Art. 3 co. 1).
+
+Il responsabile tecnico svolge tale funzione per una sola impresa; la qualifica e' incompatibile
+con ogni altra attivita' continuativa (Art. 3 co. 2).
+
+Le imprese non installatrici con uffici tecnici interni sono autorizzate ad operare sulle proprie
+strutture interne, nei limiti della tipologia di lavori per cui il responsabile ha i requisiti
+Art. 4 (Art. 3 co. 5). In questo caso la DdC e' emessa secondo Allegato II (Art. 7 co. 4).
 
 ---
 
-## Art. 4 - Responsabile tecnico
+## Art. 4 - Requisiti tecnico-professionali del responsabile tecnico
 
-Ogni impresa installatrice deve avere un responsabile tecnico con i seguenti requisiti alternativi:
+_(fonti/dm37-2008-mimit.md, Art. 4 co. 1-2)_
 
-a) Laurea, laurea triennale o diploma di scuola secondaria superiore in materie tecniche del
-   settore specifico conseguito presso istituto statale o legalmente riconosciuto; oppure
+I requisiti tecnico-professionali sono, in alternativa, uno dei seguenti (Art. 4 co. 1):
 
-b) Titolo o attestato di formazione professionale + periodo di inserimento di almeno 2 anni
-   continuativi alle dipendenze di un'impresa del settore; oppure
+**a)** diploma di laurea in materia tecnica specifica (universita' statale o legalmente
+riconosciuta);
 
-c) Attivita' lavorativa per almeno 3 anni alle dipendenze di un'impresa abilitata nel ramo
-   specifico di attivita'.
+**b)** diploma o qualifica al termine di scuola secondaria del secondo ciclo con specializzazione
+nel settore, + periodo di inserimento di almeno **2 anni continuativi** alle dirette dipendenze di
+un'impresa del settore (ridotto a 1 anno per cat. d);
 
-Il responsabile tecnico deve essere indicato nella DdC e nella sua firma risiede la responsabilita'
-tecnica dell'installazione.
+**c)** titolo o attestato di formazione professionale + periodo di inserimento di almeno **4 anni
+consecutivi** alle dirette dipendenze di un'impresa del settore (ridotto a 2 anni per cat. d);
+
+**d)** prestazione lavorativa per **almeno 3 anni** come operaio installatore specializzato alle
+dirette dipendenze di un'impresa abilitata del settore (escluso periodo apprendistato).
 
 ---
 
 ## Art. 5 - Progettazione degli impianti
 
-Per l'installazione, la trasformazione e l'ampliamento degli impianti e' **sempre necessario un
-elaborato tecnico** (progetto o schema). La distinzione e' chi lo redige:
+_(fonti/dm37-2008-mimit.md, Art. 5 co. 1-2, 6)_
 
-**Casi in cui il progetto deve essere redatto da un professionista iscritto all'albo** (ingegnere,
-perito industriale, geometra secondo competenze di legge):
+### Obbligo generale di progetto
 
-Per cat. **a)** (elettrico):
-- Utenze alimentate in media tensione
-- Potenza impegnata superiore a 6 kW
-- Impianti in luoghi con pericolo di esplosione (ATEX)
-- Impianti in edifici adibiti ad uso civile con altezza in gronda superiore a 12 m
-- Unita' abitative con superficie superiore a 200 mq (NB: verificare testo vigente su Normattiva;
-  alcune versioni indicano 400 mq - la soglia esatta deve essere verificata prima dell'uso operativo)
-- Impianti in edifici con piu' di 16 unita' immobiliari (per gli impianti comuni/condominiali)
+Per l'installazione, trasformazione e ampliamento degli impianti di categorie **a, b, c, d, e, g**
+e' sempre redatto un progetto (Art. 5 co. 1).
 
-Per cat. **b)** (radiotelevisivi/elettronici):
-- Impianti con potenza nominale complessiva superiore a 1200 VA (da verificare su Normattiva)
+La categoria **f)** (sollevamento/ascensori) non e' inclusa nell'elenco di Art. 5 co. 1: e'
+soggetta a disciplina specifica (DPR 162/1999 e DM 587/1987).
 
-Per cat. **c)** (riscaldamento, climatizzazione):
-- Impianti con portata termica superiore a 35 kW
-- Impianti di climatizzazione con potenza superiore a 40.000 frigorie/ora (verificare testo vigente)
-- Impianti di canalizzazione del calore o del freddo di superficie superiore a 2000 mq
-  con generatori di aria calda (verificare testo vigente)
+### Chi redige il progetto
 
-Per cat. **d)** (idrico-sanitario):
-- Edifici civili con oltre 16 unita' abitative
-- Edifici adibiti ad attivita' produttive, commerciali, terziarie, con superficie > 1000 mq
+- **Casi di Art. 5 co. 2** (elencati sotto): professionista iscritto agli albi professionali
+- **Tutti gli altri casi**: responsabile tecnico dell'impresa installatrice, con elaborato tecnico
+  che e' almeno lo schema dell'impianto da realizzare (Art. 7 co. 2)
 
-Per cat. **e)** (gas):
-- Portata termica superiore a 50 kW (verificare testo vigente - alcune fonti indicano 35 kW)
+### Casi che richiedono progettista professionista (Art. 5 co. 2)
 
-Per cat. **f)** (sollevamento): soggetta a disciplina specifica (DPR 162/1999 e DM 587/1987)
+**Lettera a) - cat. a) elettrico, utenze residenziali/condominiali:**
+- Tutte le utenze condominiali (senza soglia dimensionale)
+- Utenze domestiche di singole unita' abitative con potenza impegnata > **6 kW**
+- Utenze domestiche di singole unita' abitative di superficie > **400 mq**
 
-Per cat. **g)** (antincendio): **sempre** obbligatorio il progetto da professionista abilitato
+**Lettera b) - cat. a) lampade fluorescenti a catodo freddo:**
+- Impianti elettrici con lampade fluorescenti a catodo freddo, per i quali e' obbligatorio il
+  progetto (cioe' quelli gia' rientranti in una delle lettere a, c, d)
+- In ogni caso: potenza complessiva > **1200 VA** resa dagli alimentatori
 
-**Quando il progetto professionale NON e' obbligatorio** (sotto le soglie sopra indicate):
-L'elaborato tecnico minimo - quantomeno lo schema dell'impianto realizzato - deve essere
-predisposto dal responsabile tecnico dell'impresa e allegato alla DdC (Art. 7 co. 2 DM 37/2008).
-La mancanza di qualsiasi elaborato tecnico e' una carenza della DdC anche sotto-soglia.
+**Lettera c) - cat. a) elettrico, attivita' produttive/commerciali/terziarie:**
+- Utenze alimentate a tensione > **1000 V** (inclusa la parte in bassa tensione)
+- Utenze in bassa tensione con potenza impegnata > **6 kW**
+- Superficie > **200 mq**
 
-**ATTENZIONE**: le soglie sono state oggetto di diverse letture e possibili modifiche successive
-al testo originale. Verificare SEMPRE il testo vigente su Normattiva prima di determinare
-l'obbligo. In caso di dubbio, redigere il progetto e' sempre la scelta cautelativa corretta.
+**Lettera d) - cat. a) elettrico, ambienti particolari:**
+- Locali adibiti ad uso medico
+- Locali con pericolo di esplosione (ATEX)
+- Locali a maggior rischio di incendio
+- Impianti di protezione da scariche atmosferiche in edifici di volume > **200 mc**
+
+**Lettera e) - cat. b) radiotelevisivi/elettronici:**
+- Impianti elettronici quando coesistono con impianti elettrici con obbligo di progettazione
+  (cioe' quando l'impianto elettrico associato rientra in una delle lettere a-d)
+
+**Lettera f) - cat. c) riscaldamento/climatizzazione:**
+- Impianti dotati di **canne fumarie collettive ramificate**
+- Impianti di climatizzazione con potenzialita' frigorifera >= **40.000 frigorie/ora**
+
+**Lettera g) - cat. e) gas:**
+- Portata termica > **50 kW**
+- Impianti dotati di **canne fumarie collettive ramificate**
+- Impianti relativi a **gas medicali** per uso ospedaliero e simili, compreso lo stoccaggio
+
+**Lettera h) - cat. g) antincendio:**
+- Attivita' soggetta al rilascio del **certificato prevenzione incendi (CPI)**
+- In ogni caso: idranti in numero >= **4**
+- In ogni caso: apparecchi di rilevamento in numero >= **10**
+
+### Nota su categoria d) (idrico-sanitario)
+
+L'Art. 5 co. 1 include la categoria d) tra quelle per cui e' redatto un progetto, ma l'Art. 5 co. 2
+(testo originale 2008) NON elenca casi specifici per cat. d) che richiedano un professionista.
+Pertanto, per cat. d) il progetto e' redatto dal responsabile tecnico (Art. 7 co. 2) salvo normative
+piu' rigorose (Art. 5 co. 1 prima parte) o modifiche successive al testo originale.
+
+### Deposito del progetto
+
+Il progetto di cui al comma 2 e' depositato presso lo sportello unico per l'edilizia del comune
+entro i termini di Art. 11 (Art. 5 co. 6).
 
 ---
 
 ## Art. 7 - Dichiarazione di conformita'
 
-1. **Obbligo**: al termine dei lavori l'impresa installatrice rilascia al committente la DdC.
-   La DdC e' resa su modello conforme all'Allegato I.
+_(fonti/dm37-2008-mimit.md, Art. 7 co. 1-6)_
 
-2. **Allegati integranti** (Art. 7 co. 1): fanno parte integrante della DdC:
-   - **Relazione con tipologia dei materiali utilizzati**: sempre obbligatoria
-   - **Progetto**: quando obbligatorio ai sensi dell'Art. 5, redatto da professionista
-   (Art. 7 co. 2): quando il progetto e' redatto dal responsabile tecnico (sotto soglia Art. 5),
-   l'elaborato tecnico e' almeno lo schema dell'impianto realizzato.
+### Obbligo di rilascio e allegati integranti
 
-3. **Consegna**: copia al committente; l'originale resta all'installatore.
+Al termine dei lavori, previa effettuazione delle verifiche di funzionalita', l'impresa installatrice
+rilascia **al committente** la DdC (Art. 7 co. 1).
 
-4. **Responsabilita'**: il soggetto che rilascia la DdC e' responsabile della veridicita'
-   delle affermazioni ivi contenute.
+La DdC e' resa sul modello di Allegato I. Fanno parte integrante della DdC (Art. 7 co. 1):
+- **Relazione contenente la tipologia dei materiali impiegati** - sempre obbligatoria
+- **Il progetto di cui all'Art. 5** - obbligatorio (nella forma prevista: professionista se sopra
+  soglie Art. 5 co. 2; schema del responsabile tecnico se sotto soglie, ex Art. 7 co. 2)
 
----
+### Elaborato tecnico minimo sotto-soglia
 
-## Allegato I - Modello Dichiarazione di Conformita' (struttura)
+Quando il progetto e' redatto dal responsabile tecnico (casi sotto-soglia Art. 5 co. 2), l'elaborato
+tecnico e' costituito **almeno dallo schema dell'impianto da realizzare**, inteso come descrizione
+funzionale ed effettiva dell'opera da eseguire, eventualmente integrato con documentazione tecnica
+attestante varianti in corso d'opera (Art. 7 co. 2).
 
-Il modello ufficiale (GU n. 61/2008 Suppl. Ord. n. 54) contiene le seguenti sezioni:
+### Rifacimento parziale
 
-**Sezione 1 - Impresa installatrice**
-- Ragione sociale
-- Sede legale completa
-- Numero iscrizione Registro Imprese / Albo Imprese Artigiane + CCIAA
-- Codice fiscale / P.IVA
+In caso di rifacimento parziale, progetto e DdC si riferiscono alla parte oggetto del rifacimento,
+ma tengono conto della sicurezza e funzionalita' dell'intero impianto. Va indicata la compatibilita'
+tecnica con le condizioni preesistenti (Art. 7 co. 3).
 
-**Sezione 2 - Responsabile tecnico**
-- Nome e cognome
-- Qualifica ai sensi Art. 4 DM 37/2008
-- Categoria di abilitazione specifica
+### DdC per imprese non installatrici
 
-**Sezione 3 - Dati impianto**
-- Tipo di impianto (lettera categoria: a, b, c, d, e, f, g)
-- Destinazione d'uso edificio
-- Indirizzo completo dell'impianto
-- Committente (nome/ragione sociale)
+Le imprese non installatrici con uffici tecnici interni (Art. 3 co. 5) rilasciano la DdC secondo
+il modello di Allegato II, a firma del responsabile dell'ufficio tecnico interno (Art. 7 co. 4).
 
-**Sezione 4 - Dichiarazione e norme applicate**
-- Formula dichiarativa: "dichiara sotto la propria responsabilita' che l'impianto e' stato
-  realizzato in conformita' alla regola dell'arte, in osservanza delle seguenti norme:"
-- Elenco norme tecniche specifiche (CEI, UNI, ecc.) - non basta "norme vigenti"
-- Data e firma del responsabile tecnico
+### Dichiarazione di rispondenza (impianti pre-DM 37/2008)
 
-**Sezione 5 - Allegati**
-Caselle da barrare con indicazione degli allegati effettivamente presenti:
-- [ ] Relazione con tipologia dei materiali utilizzati (obbligatoria)
-- [ ] Schema dell'impianto realizzato (obbligatorio se progetto richiesto; comunque raccomandato)
-- [ ] Progetto redatto da tecnico abilitato (obbligatorio nei casi Art. 5)
-- [ ] Libretto di impianto (impianti termici cat. c)
+Per impianti realizzati prima dell'entrata in vigore del decreto per cui la DdC non e' reperibile,
+la DdC puo' essere sostituita da una **dichiarazione di rispondenza** resa da:
+- professionista iscritto all'albo che ha esercitato per almeno 5 anni nel settore specifico, o
+- responsabile tecnico di impresa abilitata con almeno 5 anni nel ruolo, per impianti non
+  rientranti in Art. 5 co. 2 (Art. 7 co. 6)
+
+### Allegato I e Allegato II (nota sulla versione vigente)
+
+I modelli di cui agli allegati I e II del DM 37/2008 sono stati sostituiti dal Decreto 19 maggio
+2010 (Art. 1, comma 1). Il testo del modello vigente (post-2010) non e' incluso nel PDF MIMIT letto.
+I campi standard che il modello DdC deve contenere (dati impresa, responsabile tecnico, dati impianto,
+dichiarazione e norme, allegati) derivano da Art. 7 e dalla prassi applicativa; per il modello
+preciso vigente consultare il Decreto 19 maggio 2010 o Normattiva.

@@ -42,7 +42,9 @@ Se i dati non sono disponibili, procedere con il caso piu' cautelativo e indicar
 Prima di procedere, leggere:
 - `references/estratti/dm37-2008-artt-1-7-allegato-i.md` - Art. 5 (soglie progetto professionale), Art. 7 co. 1 (allegati DdC) e Art. 7 co. 2 (schema del RT come elaborato minimo)
 
-**ATTENZIONE**: le soglie nell'estratto sono parafrasate e potrebbero differire dal testo vigente su Normattiva. In caso di dubbio o uso operativo, verificare il testo aggiornato.
+Le soglie nell'estratto sono tratte dal PDF MIMIT (testo originale 2008, SHA256 verificato).
+Per uso operativo, confrontare con il testo consolidato su Normattiva per eventuali modifiche
+successive. In caso di dubbio, la scelta cautelativa e' sempre redigere il progetto da professionista.
 
 ## Procedura
 
@@ -68,55 +70,89 @@ Determina se le caratteristiche dell'impianto superano le soglie che richiedono 
 
 #### Categoria a) - Elettrico
 
+Il DM 37/2008 Art. 5 co. 2 distingue tre sottocasi per cat. a):
+
+**Utenze residenziali (Art. 5 co. 2 lett. a):**
+
 | Condizione | Soglia | Obbligo |
 |-----------|--------|---------|
-| Alimentazione in media tensione | qualsiasi | Progetto professionista |
-| Potenza impegnata | > 6 kW | Progetto professionista |
-| Luoghi ATEX | qualsiasi | Progetto professionista |
-| Altezza in gronda (edifici civili) | > 12 m | Progetto professionista |
-| Superficie unita' abitativa | > 200 mq (*) | Progetto professionista |
-| Edificio condominiale (impianti comuni) | > 16 unita' immob. | Progetto professionista |
+| Utenze condominiali | qualsiasi | Progetto professionista |
+| Potenza impegnata (unita' abitativa) | > 6 kW | Progetto professionista |
+| Superficie (unita' abitativa) | > 400 mq | Progetto professionista |
 
-(*) La soglia per unita' abitative residenziali - verificare testo vigente su Normattiva prima
-dell'uso operativo: alcune versioni indicano 400 mq. In caso di incertezza, usare la soglia
-piu' bassa (200 mq) come misura cautelativa.
+**Utenze non residenziali - attivita' produttive/commerciali/terziarie (Art. 5 co. 2 lett. c):**
+
+| Condizione | Soglia | Obbligo |
+|-----------|--------|---------|
+| Tensione di alimentazione | > 1000 V | Progetto professionista |
+| Potenza impegnata | > 6 kW | Progetto professionista |
+| Superficie | > 200 mq | Progetto professionista |
+
+**Ambienti particolari (Art. 5 co. 2 lett. d):**
+
+| Condizione | Obbligo |
+|-----------|---------|
+| Locali adibiti ad uso medico | Progetto professionista |
+| Locali con pericolo di esplosione (ATEX) | Progetto professionista |
+| Locali a maggior rischio di incendio | Progetto professionista |
+| Protezione scariche atmosferiche (edifici volume > 200 mc) | Progetto professionista |
 
 #### Categoria b) - Radiotelevisivo/elettronico
 
-- Potenza nominale complessiva > 1200 VA: **verificare testo vigente** - la soglia esatta
-  richiede consultazione diretta di Art. 5 DM 37/2008 su Normattiva.
+- **Impianti elettronici che coesistono con impianti elettrici con obbligo di progettazione**
+  (Art. 5 co. 2 lett. e): segue l'obbligo dell'impianto elettrico associato.
+- **Lampade fluorescenti a catodo freddo** (Art. 5 co. 2 lett. b): progetto professionista se
+  gia' obbligatorio per l'impianto elettrico, e in ogni caso se potenza complessiva > **1200 VA**
+  resa dagli alimentatori.
 
 #### Categoria c) - Riscaldamento/climatizzazione
 
-| Condizione | Soglia | Obbligo |
-|-----------|--------|---------|
-| Portata termica nominale | > 35 kW | Progetto professionista |
-| Potenza frigorifera (climatizzazione) | > 40.000 frigorie/h (*) | Progetto professionista |
+| Condizione | Obbligo |
+|-----------|---------|
+| Impianti dotati di canne fumarie collettive ramificate | Progetto professionista |
+| Potenzialita' frigorifera >= 40.000 frigorie/ora | Progetto professionista |
 
-(*) Verificare testo vigente su Normattiva per la soglia esatta.
+_(Art. 5 co. 2 lett. f - letto da PDF MIMIT, SHA256 verificato)_
+
+**Nota**: Il testo originale del 2008 non prevede una soglia di portata termica (es. 35 kW) per
+cat. c) in generale. Il criterio e' la presenza di canne fumarie collettive ramificate oppure la
+potenzialita' frigorifera >= 40.000 frigorie/ora. Per verificare eventuali modifiche nel testo
+consolidato vigente, consultare Normattiva.
 
 #### Categoria d) - Idrico-sanitario
 
-| Condizione | Soglia | Obbligo |
-|-----------|--------|---------|
-| Edificio di civile abitazione | > 16 unita' abitative | Progetto professionista |
-| Edificio commerciale/terziario/produttivo | superficie > 1000 mq | Progetto professionista |
+Il testo originale del DM 37/2008 (Art. 5 co. 2) NON include casi specifici per cat. d) che
+richiedano un professionista. La progettazione e' sempre richiesta (Art. 5 co. 1 include d)),
+ma e' redatta dal responsabile tecnico dell'impresa installatrice (Art. 7 co. 2), non da un
+professionista esterno, salvo normative piu' rigorose applicabili al caso specifico.
+
+Per verificare se il testo consolidato vigente (Normattiva) ha introdotto soglie specifiche per
+cat. d), consultare Normattiva prima dell'uso operativo.
 
 #### Categoria e) - Gas
 
-- Portata termica totale > 50 kW: **verificare testo vigente** - alcune fonti indicano 35 kW.
-  Usare la soglia piu' bassa come misura cautelativa.
+- **Portata termica > 50 kW**: Progetto professionista (Art. 5 co. 2 lett. g)
+- **Canne fumarie collettive ramificate**: Progetto professionista (Art. 5 co. 2 lett. g)
+- **Gas medicali per uso ospedaliero e simili** (compreso stoccaggio): Progetto professionista
+  (Art. 5 co. 2 lett. g)
+
+_(letto da PDF MIMIT, SHA256 verificato - la soglia e' 50 kW, non 35 kW)_
 
 #### Categoria f) - Sollevamento (ascensori, montacarichi)
 
-Soggetta a disciplina speciale (DPR 162/1999 e DM 587/1987) che prevede obblighi progettuali
-e di collaudo specifici. Il DM 37/2008 si applica ma e' integrato dalla normativa di settore.
-Indicare all'utente la necessita' di verificare anche la normativa specifica per ascensori.
+La categoria f) NON e' inclusa nell'Art. 5 co. 1 del DM 37/2008: e' soggetta a disciplina
+specifica (DPR 30 aprile 1999, n. 162 per ascensori; DM 587/1987 per montacarichi).
+Il DM 37/2008 si applica per gli aspetti non disciplinati dalla normativa specifica.
+Indicare all'utente la necessita' di verificare la normativa specifica di settore.
 
 #### Categoria g) - Antincendio
 
-**Progetto da professionista sempre obbligatorio**, indipendentemente dalle dimensioni.
-Non applicare soglie dimensionali: qualsiasi impianto cat. g) richiede progetto professionale.
+Progetto da professionista obbligatorio nei seguenti casi (Art. 5 co. 2 lett. h):
+- Attivita' soggetta al rilascio del **certificato prevenzione incendi (CPI)**
+- In ogni caso: numero di idranti >= **4**
+- In ogni caso: numero di apparecchi di rilevamento >= **10**
+
+_(letto da PDF MIMIT, SHA256 verificato)_
 
 ### Passo 4 - Documenti aggiuntivi per categorie specifiche
 
@@ -165,9 +201,10 @@ In ogni caso, deve essere predisposto un elaborato tecnico:
 
 ## Avvertenze sulle soglie
 
-Le soglie Art. 5 indicate sono tratte dall'estratto in references/estratti/ che e' una parafrasi
-operativa. Prima di qualsiasi applicazione operativa, verificare il testo vigente su Normattiva.
-In caso di dubbio, la scelta cautelativa e' sempre redigere il progetto da professionista.
+Le soglie Art. 5 indicate sono tratte dal testo originale del DM 37/2008 (PDF MIMIT, SHA256
+verificato, letto in data 2026-05-10). Per uso operativo, verificare il testo consolidato vigente
+su Normattiva per eventuali modifiche successive. In caso di dubbio, la scelta cautelativa e'
+sempre redigere il progetto da professionista.
 
 ## Rinvio al responsabile tecnico
 

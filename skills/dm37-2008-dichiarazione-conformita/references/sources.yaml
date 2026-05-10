@@ -1,63 +1,65 @@
 schema_version: 1
 skill: dm37-2008-dichiarazione-conformita
-last_verified: 2026-05-02
+last_verified: 2026-05-10
 
 sources:
-  - id: dm37-2008-normattiva
-    title: "DM 22 gennaio 2008 n. 37 - Regolamento concernente l'attuazione dell'articolo 11-quaterdecies, comma 13, lettera a) della legge n. 248 del 2005 - testo vigente consolidato"
+  - id: dm37-2008-mimit
+    title: "DM 22 gennaio 2008 n. 37 - Testo originale 2008 (PDF MIMIT)"
     type: decreto
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2008-01-22;37
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
+    url: https://www.mimit.gov.it/images/stories/recuperi/Impresa_internazionalizzazione/DM-22-gennaio-2008.pdf
+    accessed: 2026-05-10
+    sha256: 86afc81c9e942c893052a8b2988f9f3b71fdc6f6779325dcae895fd694654fc1
+    license: public-domain
+    binary_path: not_in_repo/dm37-2008-mimit.pdf
+    md_path: references/fonti/dm37-2008-mimit.md
     excerpt_paths:
       - references/estratti/dm37-2008-artt-1-7-allegato-i.md
     notes: |
-      Portale Normattiva (Presidenza Consiglio Ministri) - testo consolidato vigente.
-      Consultabile articolo per articolo. Non scaricabile come PDF unico.
-      Usare per cross-check su articoli specifici e per verificare eventuali modifiche
-      successive all'entrata in vigore (marzo 2008).
-      Il DM 37/2008 ha abrogato la Legge 5 marzo 1990 n. 46 (ex L. 46/1990) e il DPR
-      18 aprile 1994 n. 392 (regolamento attuativo L. 46/1990) ad eccezione dell'art. 1.
+      PDF pubblicato dal Ministero delle Imprese e del Made in Italy (MIMIT, ex MSE).
+      Contiene il testo originale del 2008 (artt. 1-15 + struttura allegati).
+      Attenzione: Allegato I e II sono stati sostituiti dal Decreto 19 maggio 2010
+      e non sono inclusi nel PDF. Per il modello DdC vigente consultare il Decreto 19
+      maggio 2010 o Normattiva.
 
-  - id: dm37-2008-gu-originale
-    title: "DM 22 gennaio 2008 n. 37 - Testo originale - GU n. 61 del 12/03/2008 Suppl. Ordinario n. 54"
+  - id: dm37-2008-normattiva
+    title: "DM 22 gennaio 2008 n. 37 - Testo vigente consolidato (Normattiva)"
     type: decreto
-    url: https://www.gazzettaufficiale.it/eli/gu/2008/03/12/61/so/54/sg/pdf
-    accessed: 2026-05-02
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2008-01-22;37
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/dm37-2008-gu-originale.pdf
+    binary_path: null
     excerpt_paths: []
     notes: |
-      Testo originale pubblicato in Gazzetta Ufficiale. Include Allegato I (modello DdC)
-      e Allegato II (elenco attivita' installatori). Utile come riferimento per il testo
-      originale dell'Allegato I (il modello DdC). Per il testo vigente degli articoli
-      usare Normattiva (id: dm37-2008-normattiva).
+      Portale Normattiva (Presidenza Consiglio Ministri) - testo consolidato vigente.
+      Non scaricabile come PDF unico; il sito e' a contenuto dinamico (JavaScript).
+      sha256: null e' coerente con binary_path: null (fonte HTML non scaricabile come binario).
+      Usare per verificare eventuali modifiche successive al testo originale 2008,
+      in particolare per: Art. 5 co. 2 (soglie progettazione), Allegato I/II vigenti.
+      Il testo originale letto dal PDF MIMIT e' consistente con le soglie del testo vigente
+      per gli articoli chiave (Art. 5 co. 2 lett. a: 400 mq, 6 kW; lett. g: 50 kW).
 
 # Norme tecniche richiamate dal DM 37/2008 (non embedabili - proprietary)
 secondary_sources_to_evaluate:
+  - id: dm-19-maggio-2010
+    title: "Decreto 19 maggio 2010 - Sostituzione Allegato I e II del DM 37/2008"
+    type: decreto
+    notes: |
+      Sostituisce Allegato I (modello DdC per imprese installatrici) e Allegato II
+      (modello DdC per uffici tecnici interni) del DM 37/2008.
+      Da aggiungere come fonte per la prossima versione della skill che descriva
+      esplicitamente il modello di Allegato I vigente.
+
   - id: cei-64-8
-    title: "CEI 64-8 - Impianti elettrici utilizzatori a tensione nominale non superiore a 1000 V in corrente alternata e a 1500 V in corrente continua"
+    title: "CEI 64-8 - Impianti elettrici utilizzatori a tensione nominale non superiore a 1000 V"
     type: norma-cei
     notes: |
-      Norma tecnica a pagamento. Il DM 37/2008 non la cita esplicitamente ma la categoria a)
-      la richiama implicitamente come "regola dell'arte". Gli installatori devono dichiararla
-      nella DdC come norma applicata. Non embedabile: licenza CEI proprietaria.
-      Per la skill: citare solo la denominazione, non il testo.
+      Norma tecnica a pagamento. Riferimento per la regola dell'arte per cat. a).
+      Non embedabile: licenza CEI proprietaria. Per la skill: citare solo la denominazione.
 
   - id: uni-7129
     title: "UNI 7129 - Impianti a gas per uso domestico e similare alimentati da rete di distribuzione"
     type: norma-uni
     notes: |
-      Norma tecnica a pagamento, principale riferimento per categoria e) (gas). Non embedabile.
-      Sostituisce il precedente richiamo nell'abrogata L. 46/1990. Per la skill: citare
-      solo la denominazione come norma da dichiarare nella DdC.
-
-  - id: circolare-mise-2008
-    title: "Circolare MiSE esplicativa DM 37/2008 - da identificare"
-    notes: |
-      Verificare se il Ministero delle Imprese e del Made in Italy (ex MSE) ha emesso
-      circolari esplicative sul DM 37/2008 disponibili su mimit.gov.it.
-      Non ancora identificata: da cercare prima della versione v1.0.
+      Norma tecnica a pagamento, principale riferimento per cat. e) (gas). Non embedabile.
+      Per la skill: citare solo la denominazione come norma da dichiarare nella DdC.
