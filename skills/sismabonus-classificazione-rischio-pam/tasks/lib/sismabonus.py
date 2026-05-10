@@ -55,22 +55,32 @@ from dataclasses import dataclass, asdict
 from typing import Any
 
 
-# --- Costanti normative (DM 58/2017 Allegato A, agg. DM 329/2020) -------
+# --- Costanti normative (DM 65/2017 Allegato A) --------------------------
+#
+# Fonte: DM MIT 7/3/2017 n. 65 Allegato A, SHA256:
+# 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
+# Testo verificato in: references/fonti/dm-65-2017-all-a.md
+#
+# VERIFICA SEMANTICA (2026-05-10): tutti i valori CR, TR_SLID e le tabelle
+# classi PAM/IS-V sono stati verificati letteralmente contro il PDF ufficiale
+# (estratto via pdftotext, trascritto in references/fonti/dm-65-2017-all-a.md).
 
-# Allegato A, punto 2.1: Costo di Ricostruzione (CR) associato a ciascuno
-# stato limite [adimensionale, frazione del costo di ricostruzione].
+# Allegato A passo 6 (pag. 4) + Tabella 3: Costo di Ricostruzione (CR)
+# associato a ciascuno stato limite [adimensionale, frazione del costo di
+# ricostruzione]. Valori esatti da Tabella 3 del PDF.
 CR: dict[str, float] = {
-    "SLID": 0.00,  # Stato Limite di Inizio Danno (convenzionale, TR=10 anni)
-    "SLO":  0.07,  # Stato Limite di Operativita'
-    "SLD":  0.15,  # Stato Limite di Danno
-    "SLV":  0.50,  # Stato Limite di salvaguardia della Vita
-    "SLC":  0.80,  # Stato Limite di prevenzione del Collasso
+    "SLID": 0.00,  # Stato Limite di Inizio Danno (convenzionale, TR=10 anni) - Tab. 3 PDF
+    "SLO":  0.07,  # Stato Limite di Operativita' - Tab. 3 PDF
+    "SLD":  0.15,  # Stato Limite di Danno - Tab. 3 PDF
+    "SLV":  0.50,  # Stato Limite di salvaguardia della Vita - Tab. 3 PDF
+    "SLC":  0.80,  # Stato Limite di prevenzione del Collasso - Tab. 3 PDF
     "SLR":  1.00,  # Stato Limite di Ricostruzione (convenzionale, stessa
-                   # frequenza di SLC ma CR=100%)
+                   # frequenza di SLC ma CR=100%) - Tab. 3 PDF
 }
 
-# Allegato A, punto 2.1: Periodo di Ritorno convenzionale dell'evento
-# associato allo stato limite SLID [anni].
+# Allegato A passo 4 (pag. 4): Periodo di Ritorno convenzionale dell'evento
+# associato allo stato limite SLID [anni]. Testo PDF: "il cui periodo di
+# ritorno e' assunto, convenzionalmente, pari a 10 anni, ossia lambda = 0,1".
 TR_SLID_ANNI: int = 10
 
 # Stati limite NTC che devono essere valutati dal progettista (in ordine
@@ -78,35 +88,38 @@ TR_SLID_ANNI: int = 10
 # in frequenza con SLC ma ha CR=100%.
 STATI_LIMITE_NTC: tuple[str, ...] = ("SLO", "SLD", "SLV", "SLC")
 
-# Tabella attribuzione classi PAM (Allegato A, punto 2.3, Tab.).
+# Tabella 1 classi PAM (Allegato A pag. 2-3 PDF, verificata vs testo PDF 2026-05-10).
 # Lista ordinata di tuple (classe, soglia_sup_inclusa).
-# Una classe e' assegnata se PAM <= soglia_sup E PAM > soglia_inf
-# (dove soglia_inf = soglia_sup della classe migliore precedente).
-# La classe migliore "A+" usa soglia_inf = 0; la classe peggiore "G" non
-# ha soglia_sup (PAM > 7.5%).
+# Convenzione bordi: lower bound ESCLUSO, upper bound INCLUSO per A..F.
+# Classe G: PAM > 7.5% (nessuna soglia_sup).
+# Ambiguita' PDF al bordo 7.5%: Tab. 1 pone F "<=7.5%" e G ">=7.5%";
+# interpretazione conservativa: PAM=7.5% -> F (vedi estratto tabelle-classi.md).
 CLASSI_PAM: tuple[tuple[str, float], ...] = (
-    ("A+", 0.005),  # PAM <= 0.50%
-    ("A",  0.010),  # 0.50% < PAM <= 1.0%
-    ("B",  0.015),  # 1.0%  < PAM <= 1.5%
-    ("C",  0.025),  # 1.5%  < PAM <= 2.5%
-    ("D",  0.035),  # 2.5%  < PAM <= 3.5%
-    ("E",  0.045),  # 3.5%  < PAM <= 4.5%
-    ("F",  0.075),  # 4.5%  < PAM <= 7.5%
-    # ("G",  +inf)  # PAM > 7.5%
+    ("A+", 0.005),  # PAM <= 0.50%  - Tab. 1 PDF pag. 2
+    ("A",  0.010),  # 0.50% < PAM <= 1.0%  - Tab. 1 PDF pag. 2
+    ("B",  0.015),  # 1.0%  < PAM <= 1.5%  - Tab. 1 PDF pag. 2
+    ("C",  0.025),  # 1.5%  < PAM <= 2.5%  - Tab. 1 PDF pag. 2
+    ("D",  0.035),  # 2.5%  < PAM <= 3.5%  - Tab. 1 PDF pag. 3
+    ("E",  0.045),  # 3.5%  < PAM <= 4.5%  - Tab. 1 PDF pag. 3
+    ("F",  0.075),  # 4.5%  < PAM <= 7.5%  - Tab. 1 PDF pag. 3
+    # ("G",  +inf)  # 7.5% <= PAM  - Tab. 1 PDF pag. 3
 )
 
-# Tabella attribuzione classi IS-V (Allegato A, punto 2.3, Tab.).
-# Stessa convenzione: (classe, soglia_inf_inclusa). La classe migliore
-# A+ richiede IS-V > 100% (soglia_inf > 1.00).
+# Tabella 2 classi IS-V (Allegato A pag. 3 PDF, verificata vs testo PDF 2026-05-10).
+# Convenzione bordi: lower bound INCLUSO, upper bound ESCLUSO per A..E.
+# Classe F: IS-V <= 15% (upper bound incluso a 15%).
+# Classe A+: IS-V > 100% (strettamente).
 # NB: non esiste classe "G" per IS-V; la classe peggiore e' F.
+# NB: IS-V = 100% non e' formalmente coperto dal PDF (A+: >100%, A: <100%);
+# interpretazione conservativa adottata: IS-V=100% -> A.
 CLASSI_IS_V: tuple[tuple[str, float], ...] = (
-    ("A+", 1.00),  # IS-V > 100%
-    ("A",  0.80),  # 80%  <= IS-V <= 100%
-    ("B",  0.60),  # 60%  <= IS-V <  80%
-    ("C",  0.45),  # 45%  <= IS-V <  60%
-    ("D",  0.30),  # 30%  <= IS-V <  45%
-    ("E",  0.15),  # 15%  <= IS-V <  30%
-    # ("F",  0)     # IS-V <= 15%
+    ("A+", 1.00),  # IS-V > 100%  - Tab. 2 PDF pag. 3
+    ("A",  0.80),  # 80% <= IS-V < 100% (IS-V=100% -> A per interpretazione conservativa)
+    ("B",  0.60),  # 60% <= IS-V < 80%  - Tab. 2 PDF pag. 3
+    ("C",  0.45),  # 45% <= IS-V < 60%  - Tab. 2 PDF pag. 3
+    ("D",  0.30),  # 30% <= IS-V < 45%  - Tab. 2 PDF pag. 3
+    ("E",  0.15),  # 15% <= IS-V < 30%  - Tab. 2 PDF pag. 3
+    # ("F",  0)     # IS-V <= 15%  - Tab. 2 PDF pag. 3
 )
 
 # Ordine delle classi in graduatoria, da migliore (rischio minimo) a

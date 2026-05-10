@@ -1,9 +1,13 @@
 # DM 58/2017 Allegato A punto 2.1 - PAM e Curva di Individuazione
 
 > Fonte: DM 58/2017 Allegato A, sostituito dal DM 65/2017 (testo coordinato vigente per le procedure di classificazione).
-> Consultata letteralmente su: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf (PDF ufficiale MIT)
-> Data accesso: 2026-05-07
+> Testo letto da: references/fonti/dm-65-2017-all-a.md (trascrizione verbatim del PDF ufficiale MIT)
+> URL PDF ufficiale: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf
+> SHA256 PDF: 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
+> Data accesso: 2026-05-10
 > Licenza: dominio pubblico (atto normativo italiano)
+> Verifica semantica: ogni affermazione di questo estratto e' rintracciabile nel testo del PDF
+> trascritto in references/fonti/dm-65-2017-all-a.md (sezione "Pagine 2-5: Sezione 2.1").
 
 ## Definizione PAM
 
@@ -99,8 +103,39 @@ PAM totale                                                    = 0.01134 = 1.13%
 
 3. **Curva monotona dopo il capping**: dopo l'applicazione del capping prescritto, lambda_SLO >= lambda_SLV e lambda_SLD >= lambda_SLV. Se l'input e' fisicamente coerente (TR_C(SLO) <= TR_C(SLD) <= TR_C(SLV) <= TR_C(SLC)) la curva e' monotona; altrimenti il modulo segnala `monotona: false` come avvertenza per il progettista.
 
+## Verifiche semantiche effettuate vs PDF (2026-05-10)
+
+I valori seguenti sono stati verificati direttamente nel testo del PDF (file sha256:
+8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878, estratto via pdftotext):
+
+1. **%CR per ogni stato limite**: CONFERMATI dal PDF Tabella 3 (pag. 4):
+   SLID=0%, SLO=7%, SLD=15%, SLV=50%, SLC=80%, SLR=100%.
+2. **TR convenzionale SLID = 10 anni** (lambda=0,1): CONFERMATO al passo 4 del PDF, pag. 4.
+3. **TR convenzionale SLR = TR di SLC**: CONFERMATO al passo 5 del PDF, pag. 4.
+4. **Formula PAM** (passo 7, pag. 4): il PDF riporta
+   "PAM = SUM_{i=2}^{5} [(SL_i) - (SL_{i-1})] * [CR(SL_i) + CR(SL_{i-1})] / 2 + (SLC)*CR(SLR)"
+   (con lambda rappresentato dalla lettera greca nel PDF originale). CONFERMATA.
+5. **Capping SLD/SLO**: CONFERMATO al passo 3 del PDF, pag. 3-4 e in nota 6, pag. 4:
+   "per il calcolo del tempo di ritorno TrC associato al raggiungimento degli stati limite
+   di esercizio (SLD ed SLO) e' necessario assumere il valore minore tra quello ottenuto
+   per tali stati limite e quello valutato per lo stato limite di salvaguardia della vita."
+   La nota 6 conferma: "lambda(SLD) = max[lambda(SLD), lambda(SLV)],
+   lambda(SLO) = max[lambda(SLO), lambda(SLV)]".
+6. **Valore PAM di riferimento 1,13%** per V_R=50 anni ai minimi NTC: CONFERMATO dalla nota
+   a Tabella 1 del PDF (pag. 2-3): "una costruzione con periodo di riferimento VR pari a 50
+   anni [...] ha un valore di PAM che la colloca in Classe PAM B (il valore di PAM e', in
+   questo caso, pari a 1,13%)".
+7. **Classe finale = peggiore tra PAM e IS-V**: CONFERMATO al passo 11 del PDF, pag. 4.
+8. **Nota sul segno della formula (abs())**: il PDF non specifica esplicitamente che la
+   differenza di lambda debba essere in valore assoluto. La nota 6 del PDF conferma che
+   la formula "e' valida anche nei casi in cui il tempo di ritorno relativo a SLD e SLO
+   sia superiore al tempo di ritorno di SLV", il che implica che l'interpretazione
+   geometrica (area positiva) e' corretta. L'interpretazione abs() e' coerente col PDF.
+
 ## Riferimenti puntuali
 
-- DM 58/2017 Allegato A punto 2.1 (testo coordinato DM 329/2020): definizione PAM, Curva di Individuazione, formula
-- DM 58/2017 Allegato A punto 2.3: tabella classi PAM (vedi `dm-58-2017-allegato-a-tabelle-classi.md`)
-- NTC 2018 par. 3.2.1 + Tab. 3.2.I: P_VR e TR_D di domanda per SLO/SLD/SLV/SLC (utili al progettista per derivare PGA_D al sito; non direttamente la TR_C)
+- PDF DM 65/2017 All. A pag. 2-3 (Tabella 1): classi PAM e valore PAM 1,13% per VR=50 anni
+- PDF DM 65/2017 All. A pag. 3-4 (passi 1-11): procedura metodo convenzionale
+- PDF DM 65/2017 All. A pag. 4 (Tabella 3): %CR per stato limite
+- PDF DM 65/2017 All. A pag. 4 (nota 6): conferma capping e interpretazione formula
+- Trascrizione verbatim: references/fonti/dm-65-2017-all-a.md

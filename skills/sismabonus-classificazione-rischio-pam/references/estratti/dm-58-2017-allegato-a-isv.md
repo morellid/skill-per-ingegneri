@@ -1,9 +1,13 @@
 # DM 58/2017 Allegato A punto 2.2 - Indice di Sicurezza per la Vita IS-V
 
-> Fonte: DM 58/2017 Allegato A (testo aggiornato dal DM 65/2017, DM 24/2020, DM 329/2020).
-> Consultata su: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-58-del-28022017
-> Data accesso: 2026-05-07
+> Fonte: DM 58/2017 Allegato A (testo aggiornato dal DM 65/2017).
+> Testo letto da: references/fonti/dm-65-2017-all-a.md (trascrizione verbatim del PDF ufficiale MIT)
+> URL PDF ufficiale: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-03/DM%2065%20del%2007-03-2017%20All%20A.pdf
+> SHA256 PDF: 8392e1dddd5ff99de3fab805e86414bd61ac8fc022a95ba2731c485a48fa5878
+> Data accesso: 2026-05-10
 > Licenza: dominio pubblico (atto normativo italiano)
+> Verifica semantica: ogni affermazione e' rintracciabile in references/fonti/dm-65-2017-all-a.md
+> (sezione "Pagine 2-5: Sezione 2.1", passo 9 e Tabella 2).
 
 ## Definizione
 
@@ -31,9 +35,30 @@ espresso come frazione adimensionale; per la Tab. classi IS-V (Allegato A punto 
 - Per edifici **esistenti** l'IS-V e' sempre minore o uguale a quello richiesto per nuove costruzioni (per definizione dell'analisi di vulnerabilita'). Edifici fuori zona sismica con domanda molto bassa possono comunque avere IS-V > 100% senza interventi.
 - L'IS-V e' un parametro **separato** dal PAM: due edifici con stesso IS-V possono avere PAM molto diversi, perche' il PAM dipende anche dal comportamento agli SL meno severi (SLO, SLD).
 
+## Verifiche semantiche effettuate vs PDF (2026-05-10)
+
+1. **Definizione IS-V**: CONFERMATA - il PDF al passo 9 (pag. 4) dice: "Si determina l'indice di
+   sicurezza per la vita IS-V, ovvero il rapporto tra la PGAC (di capacita') che ha fatto
+   raggiungere al fabbricato lo stato limite di salvaguardia della vita umana e la PGAD
+   (di domanda) del sito in cui e' posizionato la costruzione, con riferimento al medesimo
+   stato limite." - cioe' IS-V = PGAC(SLV) / PGAD(SLV).
+2. **Tabella classi IS-V (Tabella 2, pag. 3 del PDF)**: CONFERMATA con i seguenti valori esatti:
+   - A+: 100% < IS-V (strettamente maggiore)
+   - A: 80% <= IS-V < 100%
+   - B: 60% <= IS-V < 80%
+   - C: 45% <= IS-V < 60%
+   - D: 30% <= IS-V < 45%
+   - E: 15% <= IS-V < 30%
+   - F: IS-V <= 15%
+3. **Ambiguita' bordo IS-V = 100%**: CONFERMATA - il PDF pone A+: `100% < IS-V` (esclusivo) e
+   A: `80% <= IS-V < 100%` (esclusivo a 100%). Il valore esatto 100% non e' formalmente
+   coperto. L'interpretazione conservativa (IS-V=100% -> classe A) e' quella adottata.
+4. **Non esiste classe G per IS-V**: CONFERMATO - la Tabella 2 del PDF elenca solo 7 classi
+   (da A+ a F), non include G.
+
 ## Riferimenti puntuali
 
-- DM 58/2017 Allegato A punto 2.2 (testo coordinato DM 329/2020): definizione e formula IS-V
-- DM 58/2017 Allegato A punto 2.3: tabella classi IS-V (vedi `dm-58-2017-allegato-a-tabelle-classi.md`)
-- NTC 2018 par. 3.2 + Allegato A: calcolo PGA_D al sito (vedi anche skill `spettro-risposta-ntc` nel repo)
-- NTC 2018 cap. 8: calcolo PGA_C dell'edificio (analisi di vulnerabilita')
+- PDF DM 65/2017 All. A pag. 3 (Tabella 2): classi IS-V con soglie
+- PDF DM 65/2017 All. A pag. 4 (passo 9): definizione IS-V = PGAC(SLV)/PGAD(SLV)
+- PDF DM 65/2017 All. A pag. 4 (passo 11): classe finale = peggiore tra PAM e IS-V
+- Trascrizione verbatim: references/fonti/dm-65-2017-all-a.md
