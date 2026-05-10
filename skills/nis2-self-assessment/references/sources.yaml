@@ -1,6 +1,6 @@
 schema_version: 1
 skill: nis2-self-assessment
-last_verified: 2026-04-29
+last_verified: 2026-05-10
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
@@ -23,6 +23,7 @@ sources:
     sha256: a049c6c12f2ff6d875891040fecb610eb6a46eb77b305a1bea5aab9301abf752
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-138-2024.pdf
+    md_path: references/fonti/dlgs-138-2024.md
     excerpt_paths:
       - references/estratti/dlgs-138-2024-perimetro.md
       - references/estratti/dlgs-138-2024-misure-art23.md
@@ -49,14 +50,16 @@ sources:
     accessed: 2026-04-29
     sha256: null
     license: public-domain-eu-law
-    binary_path: not_in_repo/dir-2022-2555-nis2.pdf
+    binary_path: null
     excerpt_paths: []
     notes: |
       Direttiva madre. Termine di recepimento 17/10/2024. Abroga la
       Direttiva (UE) 2016/1148 (NIS originale). In Italia recepita con
       D.Lgs. 138/2024. La skill cita la direttiva solo per concetti
       strutturali (definizioni, ambito armonizzato); l'attuazione
-      operativa segue il decreto italiano.
+      operativa segue il decreto italiano. PDF non scaricato in v0.1.0-alpha
+      (binary_path: null). Il contenuto operativo e' interamente coperto
+      dal recepimento italiano D.Lgs. 138/2024.
 
   - id: reg-ese-2024-2690
     title: "Regolamento di esecuzione (UE) 2024/2690 della Commissione del 17 ottobre 2024 che stabilisce norme di applicazione della direttiva (UE) 2022/2555 per quanto riguarda i requisiti tecnici e metodologici delle misure di gestione dei rischi di cibersicurezza"
@@ -66,7 +69,7 @@ sources:
     accessed: 2026-04-29
     sha256: null
     license: public-domain-eu-law
-    binary_path: not_in_repo/reg-ese-2024-2690.pdf
+    binary_path: null
     excerpt_paths:
       - references/estratti/reg-ese-2024-2690-ambito.md
     notes: |
@@ -77,8 +80,10 @@ sources:
       gestiti, mercati online, motori di ricerca online, piattaforme di
       social network e prestatori di servizi fiduciari. Per gli altri
       soggetti NIS in Italia il riferimento operativo e' la Determinazione
-      ACN 379907/2025. Non scaricato in v0.1.0-alpha; URL canonico
-      verificato.
+      ACN 379907/2025. PDF non scaricato in v0.1.0-alpha (binary_path: null).
+      URL canonico verificato. Per i soggetti dell'elenco art. 1 del Reg.
+      il riferimento tecnico operativo e' il Reg. UE 2024/2690 + linee
+      guida ENISA (da catalogare in iterazioni successive).
 
   - id: acn-det-379907-2025
     title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 2511 v3 (protocollo 379907/2025) del 18 dicembre 2025 - Modalita' e specifiche di base per gli adempimenti agli obblighi di cui agli artt. 23, 24, 25, 29 e 32 del decreto legislativo 4 settembre 2024, n. 138"
@@ -89,6 +94,7 @@ sources:
     sha256: dfb9d02bb11de75bc14f913d768eeece1e4f5ca7ef9d72ff939bf445c3979127
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-detacn_obblighi_2511-v3_signed.pdf
+    md_path: references/fonti/acn-det-379907-2025.md
     excerpt_paths:
       - references/estratti/acn-det-379907-articoli.md
     notes: |
@@ -112,6 +118,7 @@ sources:
     sha256: 260acba9d8f948bb97e977ee71b7dd77cdac93ba2b74d0d42e5da81ceb8f3afb
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-allegato-1-v2.pdf
+    md_path: references/fonti/acn-allegato-1-v2.md
     excerpt_paths:
       - references/estratti/acn-misure-base-importanti.md
     notes: |
@@ -129,6 +136,7 @@ sources:
     sha256: c8466e38fe5347bb0a6f612b6f15c9b4dbdb4ee4a8ee56a8652ab0134ac3fb2b
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-allegato-2-v2.pdf
+    md_path: references/fonti/acn-allegato-2-v2.md
     excerpt_paths:
       - references/estratti/acn-misure-base-essenziali.md
     notes: |
@@ -148,6 +156,7 @@ sources:
     sha256: d05b0038c68c5565edc22b3f6c9337d13ea81b7872c9487d584c030b80c8a8ca
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-allegato-3-v2.pdf
+    md_path: references/fonti/acn-allegato-3-v2.md
     excerpt_paths:
       - references/estratti/acn-incidenti-significativi.md
     notes: |
@@ -168,6 +177,7 @@ sources:
     sha256: 0ab43835eda90600cd9331e8526790149e85160fe47244ec45e4f93376c8939c
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-allegato-4-v2.pdf
+    md_path: references/fonti/acn-allegato-4-v2.md
     excerpt_paths:
       - references/estratti/acn-incidenti-significativi.md
     notes: |
@@ -187,13 +197,13 @@ sources:
     accessed: 2026-04-29
     sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/acn-det-164179-2025.pdf
+    binary_path: null
     excerpt_paths: []
     notes: |
       ATTENZIONE: SUPERATA dalla Determinazione ACN 379907/2025 dal
       15/01/2026 (cfr. art. 9 co. 1 della 379907/2025). Mantenuta nel
       catalogo solo per riferimento storico. La skill non la usa come
-      base operativa. PDF principale non scaricato in v0.1.0-alpha.
+      base operativa. PDF principale non scaricato (binary_path: null).
 
   - id: acn-det-164179-2025-allegato2
     title: "ACN - Determinazione 164179/2025 - Allegato 2 - Misure di sicurezza di base per i soggetti essenziali (versione superata)"

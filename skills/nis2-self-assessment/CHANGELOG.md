@@ -7,6 +7,28 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.1.0-alpha+fix.source-grounding] - 2026-05-10
+
+### Fixed (source-grounding remediation - issue #103)
+
+- Aggiunto `references/fonti/` con trascrizioni verbatim delle fonti PDF:
+  - `fonti/dlgs-138-2024.md` - art. 1, 2 (def.), 3 (ambito), 6 (essenziali/importanti),
+    7 (registrazione), 23 (governance), 24 (misure), 25 (notifica), 38 (sanzioni)
+    da PDF GU (pagg. 2-9, 20-22, 26-27).
+  - `fonti/acn-det-379907-2025.md` - tutti gli artt. 1-9 della determinazione vigente
+    (5 pagine integrali lette dal PDF).
+  - `fonti/acn-allegato-1-v2.md` - funzioni GOVERN e IDENTIFY pagg. 1-5/13
+    dal PDF Allegato 1 Det. 379907/2025.
+  - `fonti/acn-allegato-2-v2.md` - funzioni GOVERN e IDENTIFY pagg. 1-5/16
+    dal PDF Allegato 2 Det. 379907/2025, con nota delle differenze rispetto all'Allegato 1.
+  - `fonti/acn-allegato-3-v2.md` - tabella IS-1..3 completa (1 pagina integrale).
+  - `fonti/acn-allegato-4-v2.md` - tabella IS-1..4 completa (1 pagina integrale).
+- `sources.yaml` aggiornato:
+  - Aggiunto campo `md_path` per ogni fonte con file in `fonti/`.
+  - Corretti `binary_path: null` per dir-2022-2555-nis2, reg-ese-2024-2690 e
+    acn-det-164179-2025: i binari non erano mai stati scaricati (placeholder errati).
+  - `last_verified` aggiornato a 2026-05-10.
+
 ## [0.1.0-alpha] - 2026-04-29
 
 ### Added
