@@ -33,24 +33,26 @@ Leggere prima di procedere:
 
 Prima di costruire la matrice, verificare:
 
-1. **OEPV obbligatorio?** (art. 108 co. 2):
-   - Servizi architettura/ingegneria >= 140.000 EUR -> SI, obbligatorio
-   - Forniture/servizi alta tecnologia/innovazione >= 140.000 EUR -> SI, obbligatorio
-   - Appalto integrato con progettazione -> SI, obbligatorio
-   - Servizi sociali / ristorazione -> SI, obbligatorio
-   - Lavori standard senza componente progettuale -> NO, ma ammesso
-   - Se OEPV non obbligatorio e oggetto standardizzato: segnalare che il prezzo piu' basso e' ammesso
+1. **OEPV obbligatorio?** (art. 108 co. 2 - le 6 fattispecie della GU 2023):
+   - a) Servizi sociali / ristorazione / alta intensita' manodopera -> SI, obbligatorio
+   - b) Servizi architettura/ingegneria/tecnici >= 140.000 EUR -> SI, obbligatorio
+   - c) Servizi/forniture alta tecnologia/innovazione >= 140.000 EUR -> SI, obbligatorio
+   - d) Dialogo competitivo / partenariato innovazione -> SI, obbligatorio
+   - e) Appalto integrato (progettazione + esecuzione) -> SI, obbligatorio
+   - f) Lavori ad alto contenuto tecnologico / innovativi -> SI, obbligatorio
+   - Lavori standard senza componente progettuale / tecnologica -> NO, ammesso ma non obbligatorio
+   - Se OEPV non obbligatorio e oggetto standardizzato: segnalare che il prezzo piu' basso e' ammesso (co. 3)
 
 2. **Limite punteggio economico** (art. 108 co. 4):
    - Appalto IT interesse strategico nazionale -> max 10%
    - Servizi/lavori alta intensita' manodopera -> max 30%
    - Tutti gli altri -> nessun limite esplicito, ma giustificare la scelta (motivazione proporzionalita')
    
-3. **Criteri premianti obbligatori** (art. 108 co. 7): il testo dice "e' sempre previsto il maggiore punteggio possibile" per **tutte e tre** le categorie seguenti:
-   - **Produttori di beni a basse emissioni di CO2**: obbligatorio per contratti di forniture e lavori con componente significativa di materiali da costruzione; per servizi puri (intellettuali) la fattispecie e' meno diretta ma la cautela suggerisce di includerlo o motivarne l'esclusione
-   - **Imprese con misure di welfare aziendale**: applicabile a tutti i contratti; verificare che la SA abbia definito cosa si intende per "misure di welfare" (es. asili nido aziendali, flessibilita' oraria, buoni pasto: specificare nel disciplinare)
-   - **Certificazione parita' di genere** (UNI/PdR 125:2022 o equivalente, D.Lgs. 198/2006 art. 46-bis): applicabile a tutti i contratti; il punteggio deve essere il massimo disponibile per un singolo sottocriterio
-   - Se la SA omette una delle tre categorie, la matrice e' esposta a contestazione. Documentare nel disciplinare la ragione dell'eventuale esclusione con riferimento all'oggetto specifico del contratto (art. 108 co. 6: criterio collegato all'oggetto).
+3. **Criterio premiante obbligatorio** (art. 108 co. 7): il testo dell'art. 108 co. 7 D.Lgs. 36/2023 (GU 2023) impone esplicitamente un solo obbligo:
+   - **Certificazione parita' di genere** (D.Lgs. 198/2006 art. 46-bis): la SA "prevede nei bandi di gara, negli avvisi e negli inviti, il maggior punteggio da attribuire alle imprese che attestano [...] il possesso dei requisiti di cui all'articolo 46-bis". L'autocertificazione e' ammessa. E' l'**unico criterio premiante esplicitamente obbligatorio** nel co. 7.
+   - **Criteri premiali facoltativi** (co. 7): la SA puo' inserire criteri premiali per PMI, operatori locali (principio di prossimita'), basse emissioni CO2, welfare aziendale, start-up innovative. Questi sono facoltativi, non obbligatori ai sensi del co. 7. Se inclusi, devono essere connessi all'oggetto (art. 108 co. 6).
+   - **Nota**: versioni precedenti di questa skill elencavano CO2 e welfare come obbligatori ("sempre previsto"). Questa affermazione non e' rintracciabile nel testo GU 2023 dell'art. 108 co. 7. L'errore e' corretto in questa versione.
+   - Verificare il testo consolidato su Normattiva per verificare se il D.Lgs. 209/2024 correttivo ha modificato il co. 7.
 
 ### Passo 2 - Proposta struttura criteri
 
@@ -64,10 +66,10 @@ Proporre una struttura articolata in criteri e sottocriteri. Linee guida general
 - Criterio B - Caratteristiche del team: 20-30 punti
   - B1 Qualificazione e esperienza del responsabile: 10-15 punti (tabellare - anni esperienza + titoli)
   - B2 Qualificazione specialisti del team: 5-10 punti (tabellare)
-- Criterio C - Criteri premianti obbligatori art. 108 co. 7: 8-15 punti (tutti e tre obbligatori)
-  - C1 Parita' di genere (certificazione UNI/PdR 125 o equiv.): 3-5 punti (tabellare on/off) [OBBLIGATORIO]
-  - C2 Welfare aziendale (misure concrete: specificare nel disciplinare): 2-5 punti (tabellare/discrezionale) [OBBLIGATORIO]
-  - C3 Basse emissioni CO2 (per servizi: dichiarazione politica ambientale o certificazione; per forniture/lavori: materiali a basse emissioni): 2-5 punti (tabellare on/off) [OBBLIGATORIO, collegare all'oggetto]
+- Criterio C - Criteri premianti art. 108 co. 7: 8-15 punti
+  - C1 Parita' di genere (D.Lgs. 198/2006 art. 46-bis, autocertificazione ammessa): 3-5 punti (tabellare on/off) [OBBLIGATORIO art. 108 co. 7]
+  - C2 Welfare aziendale (misure concrete: specificare nel disciplinare): 2-5 punti (tabellare/discrezionale) [FACOLTATIVO - criterio premiale]
+  - C3 Basse emissioni CO2 (per servizi: dichiarazione politica ambientale o certificazione; per forniture/lavori: materiali a basse emissioni): 2-5 punti (tabellare on/off) [FACOLTATIVO - criterio premiale, collegare all'oggetto art. 108 co. 6]
 - Criterio D - Tempistiche di consegna: 5-10 punti (formula quantitativa - riduzione tempi proposta)
 - Criterio E - Offerta economica: 30 punti (formula lineare)
   Totale: 100 punti
@@ -79,10 +81,10 @@ Proporre una struttura articolata in criteri e sottocriteri. Linee guida general
 - Criterio B - Caratteristiche tecniche dei materiali e soluzioni migliorative: 10-20 punti
   - B1 Soluzioni migliorative rispetto al capitolato: 8-12 punti (tabellare/discrezionale)
   - B2 Sostenibilita' ambientale (CAM migliorativi, basse emissioni CO2): 5-10 punti (tabellare on/off) [copre criterio obbligatorio CO2 art. 108 co. 7]
-- Criterio C - Criteri premianti obbligatori art. 108 co. 7: 8-12 punti
-  - C1 Parita' di genere (certificazione UNI/PdR 125 o equiv.): 3-5 punti (tabellare on/off) [OBBLIGATORIO]
-  - C2 Welfare aziendale (misure concrete: specificare nel disciplinare): 3-5 punti (tabellare/discrezionale) [OBBLIGATORIO]
-  Nota: per lavori, il criterio CO2 (B2) conta anche per l'obbligo art. 108 co. 7 purche' il peso sia il massimo disponibile per un singolo sottocriterio.
+- Criterio C - Criteri premianti art. 108 co. 7: 8-12 punti
+  - C1 Parita' di genere (D.Lgs. 198/2006 art. 46-bis): 3-5 punti (tabellare on/off) [OBBLIGATORIO art. 108 co. 7]
+  - C2 Welfare aziendale (misure concrete: specificare nel disciplinare): 3-5 punti (tabellare/discrezionale) [FACOLTATIVO - criterio premiale]
+  Nota: per lavori, il criterio CO2 (B2) e' un criterio premiale facoltativo (non obbligatorio ai sensi del co. 7); se incluso deve essere connesso all'oggetto (art. 108 co. 6).
 - Criterio D - Tempi di esecuzione: 5-10 punti (formula: riduzione % del tempo contrattuale)
 - Criterio E - Offerta economica: 30-40 punti (formula lineare)
   Totale: 100 punti
@@ -146,10 +148,11 @@ Per ogni criterio/sottocriterio indicare il metodo:
 ## Vincoli applicati
 
 - Punteggio economico: [XX]% ([entro limiti art. 108 co. 4 / limite 10% per IT / limite 30% per alta intensita' manodopera])
-- Criteri premianti obbligatori art. 108 co. 7 (tutti e tre verificati):
-  - Parita' di genere: incluso nel criterio [X], sottocriterio [Xn], peso [X] punti (massimo disponibile)
-  - Welfare aziendale: incluso nel criterio [X], sottocriterio [Xn], peso [X] punti (massimo disponibile)
-  - Basse emissioni CO2: [incluso come criterio [X], sottocriterio [Xn] / motivazione esclusione se inapplicabile all'oggetto]
+- Criterio premiante obbligatorio art. 108 co. 7:
+  - Parita' di genere (D.Lgs. 198/2006 art. 46-bis): incluso nel criterio [X], sottocriterio [Xn], peso [X] punti [OBBLIGATORIO]
+- Criteri premiali facoltativi inclusi (se presenti):
+  - Welfare aziendale: [incluso nel criterio [X], sottocriterio [Xn] / non incluso]
+  - Basse emissioni CO2: [incluso nel criterio [X], sottocriterio [Xn], con collegamento all'oggetto art. 108 co. 6 / non incluso]
 
 ---
 
