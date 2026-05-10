@@ -22,41 +22,54 @@ sources:
     title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - GU n. 77 del 31/03/2023 Suppl. Ordinario n. 12 (riedito su GU n. 87 del 13/04/2023 Suppl. Ordinario n. 14)"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/gu/2023/04/13/87/so/14/sg/pdf
-    accessed: 2026-05-02
-    sha256: null
+    accessed: 2026-05-10
+    sha256: b139f0515a8aa018a25b7a31acce39fc39329cdc07aedd17e870dd9dc91025ff
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-36-2023-gu87-so14.pdf
+    md_path: references/fonti/dlgs-36-2023-gu87-so14.md
     excerpt_paths:
       - references/estratti/dlgs-36-artt-clausole-disciplinare.md
     notes: |
       Codice dei contratti pubblici, in vigore dal 1 aprile 2023, efficace dal
-      1 luglio 2023. Per questa skill rilevano:
-      - Art. 11: clausole sociali (CCNL settore e zona)
-      - Art. 74: contenuto minimo del bando/disciplinare
-      - Art. 87: DGUE (documento di gara unico europeo)
-      - Art. 90: comunicazioni e accesso agli atti
-      - Artt. 94-98: motivi di esclusione (automatici e non automatici)
-      - Art. 99: self-cleaning
-      - Artt. 100-103: requisiti di partecipazione (idoneita', capacita' econ., capacita' tecn.)
-      - Art. 101 (bis, ter): soccorso istruttorio
-      - Artt. 104-106: avvalimento
-      - Art. 117: garanzia provvisoria
-      - Art. 118: garanzia definitiva
-      - Artt. 119-120: subappalto
+      1 luglio 2023. PDF letto e verificato il 2026-05-10. SHA256 calcolato sul
+      file scaricato da GU. Per questa skill rilevano:
+      - Art. 11: principio CCNL (clausole sociali)
+      - Art. 87: definizione del disciplinare di gara
+      - Art. 91: DGUE (documento di gara unico europeo) - NON art. 87
+      - Art. 90: informazioni ai candidati/offerenti (post-aggiudicazione)
+      - Art. 94: cause di esclusione automatica
+      - Art. 95: cause di esclusione non automatica
+      - Art. 96: disciplina dell'esclusione (self-cleaning al co. 6)
+      - Art. 99: verifica del possesso dei requisiti (FVOE)
+      - Art. 100: requisiti di ordine speciale (idoneita', cap. econ., cap. tecn.)
+      - Art. 101: soccorso istruttorio
+      - Art. 104: avvalimento
+      - Art. 106: garanzie per la partecipazione (garanzia PROVVISORIA) - NON art. 117
+      - Art. 117: garanzie definitive (garanzia DEFINITIVA, 10% importo contrattuale)
+      - Art. 118: garanzie per lavori di particolare valore (>100M o contraente generale)
+      - Art. 119: subappalto (nessun limite % generale)
+      - Art. 120: modifica dei contratti in corso di esecuzione
+      ATTENZIONE: le modifiche del D.Lgs. 209/2024 (correttivo) non sono integrate
+      in questo file. Per il testo consolidato vigente vedere Normattiva.
 
   - id: dlgs-209-2024-correttivo
     title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/id/2025/01/22/25A00154/sg
-    accessed: 2026-05-02
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/dlgs-209-2024-correttivo.pdf
+    binary_path: null
     excerpt_paths: []
     notes: |
-      Decreto correttivo in vigore dal 31/12/2024. Introduce modifiche puntuali
-      ad alcuni articoli del D.Lgs. 36/2023. Verificare l'impatto sulle clausole
-      del disciplinare prima del rilascio di ogni versione della skill.
+      Decreto correttivo in vigore dal 31/12/2024. Il PDF diretto (URL:
+      https://www.gazzettaufficiale.it/eli/gu/2025/01/22/17/so/4/sg/pdf) restituisce
+      redirect a pagina not-found al momento dell'accesso (2026-05-10). Il testo
+      consolidato D.Lgs. 36/2023 con le modifiche del correttivo e' disponibile su
+      Normattiva (url: normattiva-portale-dlgs-36). Il bando tipo ANAC n. 1/2023
+      (Delibera 365/2025) ha gia' recepito le modifiche del correttivo: si usa quello
+      come riferimento primario per le procedure OEPV servizi/forniture sopra soglia.
+      binary_path: null (PDF non scaricabile all'accesso del 2026-05-10).
 
   - id: normattiva-portale-dlgs-36
     title: "Portale Normattiva - D.Lgs. 36/2023 - versione multivigente consolidata"
@@ -90,19 +103,25 @@ sources:
   - id: anac-bando-tipo-n1-2023-delibera-365-2025
     title: "ANAC - Bando tipo n. 1/2023 (aggiornato con Delibera n. 365 del 16 settembre 2025) - Schema disciplinare servizi e forniture OEPV sopra soglia"
     type: schema-anac
-    url: https://www.anticorruzione.it/-/bandi-tipo
-    accessed: 2026-05-02
-    sha256: null
+    url: https://www.anticorruzione.it/documents/91439/336190007/Bando+tipo+n.+1.2023+agg.+al+dl+31.12.2024+n.209+-+Schema+disciplinare+gara+-+del.365.2025.pdf/ec669e07-715b-d874-8f8c-f11da8614466?t=1759159831877
+    accessed: 2026-05-10
+    sha256: 8af1ec9dc5b645e1b2d88e700e44b5b65204c9582913eeb91a90afc665951241
     license: public-domain-italian-law
     binary_path: not_in_repo/anac-bando-tipo-n1-2023-delibera-365-2025.pdf
+    md_path: references/fonti/anac-bando-tipo-n1-2023-delibera-365-2025.md
     excerpt_paths:
       - references/estratti/anac-bandi-tipo-struttura-2023.md
     notes: |
-      Unico schema ANAC confermato al momento della redazione della skill (v0.1.0-alpha).
       Bando tipo n. 1/2023 aggiornato con Delibera ANAC n. 365 del 16/09/2025.
+      PDF letto e verificato il 2026-05-10. SHA256 calcolato sul file scaricato.
       Riguarda servizi e forniture sopra soglia con criterio OEPV (offerta economicamente
-      piu' vantaggiosa). Per la sezione criteri di aggiudicazione, usare in combinazione
-      con la skill oepv-valutatore-offerte-tecniche (art. 108 D.Lgs. 36/2023).
+      piu' vantaggiosa). Recepisce D.Lgs. 36/2023 come modificato da D.Lgs. 209/2024.
+      ATTENZIONE: dalla pagina del portale ANAC risulta che questo bando tipo e' stato
+      ulteriormente aggiornato con Delibera n. 148 del 1 aprile 2026. Verificare sul
+      portale ANAC la versione piu' recente prima di usare la skill per una gara reale.
+      URL pagina portale: https://www.anticorruzione.it/-/del.n.365-16.09.2025.bando.tipo.n.1/2023.agg.dl.31.12.2024.n.209
+      Per la sezione criteri di aggiudicazione, usare in combinazione con la skill
+      oepv-valutatore-offerte-tecniche (art. 108 D.Lgs. 36/2023).
 
 
   - id: regolamento-esecuzione-dlgs-36-allegati

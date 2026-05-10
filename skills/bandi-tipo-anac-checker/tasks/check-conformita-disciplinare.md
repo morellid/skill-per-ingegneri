@@ -58,17 +58,17 @@ Controllare che il disciplinare contenga tutte le sezioni elencate in
 | 2. Procedura e criterio aggiudicazione | | Tipo procedura, criterio |
 | 3. Documentazione di gara | | Accesso documenti, termine chiarimenti |
 | 4. Soggetti ammessi | | Impresa singola, RTI, consorzi |
-| 5. Motivi di esclusione | | Artt. 94-98 D.Lgs. 36/2023 |
-| 6. Requisiti di partecipazione | | Artt. 100-103, DGUE, PassOE, FVOE |
-| 7. Avvalimento | | Artt. 104-106 |
-| 8. Subappalto | | Artt. 119-120, no limite % generale |
+| 5. Motivi di esclusione | | Artt. 94, 95, 96 D.Lgs. 36/2023 |
+| 6. Requisiti di partecipazione | | Art. 100, DGUE (art. 91), FVOE (art. 99) |
+| 7. Avvalimento | | Artt. 104, 105 |
+| 8. Subappalto | | Art. 119, no limite % generale |
 | 9. Clausola sociale | | CCNL specifico (art. 11) |
 | 10. Modalita' presentazione offerte | | Termini, firma digitale |
-| 11. Garanzia provvisoria | | 2%, riduzioni qualita' (art. 117) |
-| 12. Soccorso istruttorio | | Art. 101 |
+| 11. Garanzia provvisoria | | 2%, riduzioni qualita' (art. 106) |
+| 12. Soccorso istruttorio | | Art. 101, termine 5-10 gg |
 | 13. Criteri aggiudicazione | | PPB: offerta anomala; OEPV: matrice |
-| 14. Verifica requisiti / aggiudicazione | | FVOE, antimafia, termini |
-| 15. Garanzia definitiva | | 5-10% (art. 118) |
+| 14. Verifica requisiti / aggiudicazione | | FVOE (art. 99), antimafia, termini |
+| 15. Garanzia definitiva | | 10% importo contrattuale (art. 117) |
 | 16. Comunicazioni | | Piattaforma certificata (art. 90) |
 | 17. Trattamento dati personali | | GDPR |
 
@@ -81,15 +81,17 @@ Cercare nel disciplinare i seguenti indicatori di mancato aggiornamento:
 
 | Indicatore da cercare | Impatto | Correzione richiesta |
 |-----------------------|---------|----------------------|
-| "art. 80 D.Lgs. 50/2016" (esclusioni) | Critico | Sostituire con artt. 94-98 D.Lgs. 36/2023 |
+| "art. 80 D.Lgs. 50/2016" (esclusioni) | Critico | Sostituire con artt. 94, 95, 96 D.Lgs. 36/2023 |
 | "art. 83 D.Lgs. 50/2016" (requisiti) | Critico | Sostituire con art. 100 D.Lgs. 36/2023 |
 | "art. 85 D.Lgs. 50/2016" (DGUE) | Critico | Sostituire con art. 91 D.Lgs. 36/2023 |
-| "art. 89 D.Lgs. 50/2016" (avvalimento) | Critico | Verificare l'articolo corretto su Normattiva |
-| "art. 105 D.Lgs. 50/2016" (subappalto) | Critico | Sostituire con artt. 119-120 D.Lgs. 36/2023 |
-| "art. 93 D.Lgs. 50/2016" (garanzie) | Critico | Provvisoria: art. 106; definitiva: art. 117 |
+| "art. 89 D.Lgs. 50/2016" (avvalimento) | Critico | Sostituire con artt. 104, 105 D.Lgs. 36/2023 |
+| "art. 105 D.Lgs. 50/2016" (subappalto) | Critico | Sostituire con art. 119 D.Lgs. 36/2023 |
+| "art. 93 D.Lgs. 50/2016" (garanzie) | Critico | Provvisoria: art. 106; definitiva: art. 117 D.Lgs. 36/2023 |
 | "art. 95 o 97 D.Lgs. 50/2016" (criteri) | Critico | Sostituire con artt. 107-108 D.Lgs. 36/2023 |
 | "D.Lgs. 50/2016" senza specifica | Sostanziale | Verificare ogni riferimento e aggiornare |
-| Limite subappalto "max 30%" o "40%" | Critico | Rimuovere: illegittimo sotto art. 119 D.Lgs. 36/2023 |
+| Limite subappalto "max 30%" o "40%" | Critico | Rimuovere: art. 119 D.Lgs. 36/2023 non ha limite % generale |
+| "art. 87 D.Lgs. 36/2023" per il DGUE | Sostanziale | Sostituire con art. 91 D.Lgs. 36/2023 (art. 87 = disciplinare) |
+| Garanzia definitiva "5-10%" | Sostanziale | Sostituire con "10% importo contrattuale" (art. 117 D.Lgs. 36/2023) |
 
 ### Passo 4 - Verifica clausole chiave
 
@@ -100,29 +102,29 @@ Verificare il contenuto delle clausole principali contro i requisiti di legge:
 - [ ] Obbligo esteso ai subappaltatori
 - [ ] Conseguenza del mancato rispetto: esclusione o risoluzione
 
-**4b. Esclusioni (artt. 94-98 D.Lgs. 36/2023)**
-- [ ] Cause di esclusione automatica elencate (non solo rinvio all'articolo)
-- [ ] Cause facoltative indicate con scelta esplicita della SA
-- [ ] Possibilita' di misure di autodisciplina prevista (verificare articolo corretto su Normattiva)
+**4b. Esclusioni (artt. 94, 95, 96 D.Lgs. 36/2023)**
+- [ ] Cause di esclusione automatica (art. 94) elencate o rinvio esplicito all'articolo con DGUE
+- [ ] Cause non automatiche (art. 95): contraddittorio previsto
+- [ ] Self-cleaning previsto (art. 96 co. 6 D.Lgs. 36/2023)
 - [ ] Nessun riferimento a vecchio art. 80 D.Lgs. 50/2016
 
 **4c. Requisiti di partecipazione (art. 100 D.Lgs. 36/2023)**
-- [ ] Fatturato richiesto <= doppio del valore stimato (salvo eccezioni motivate)
-- [ ] DGUE richiesto per procedure sopra soglia (art. 91 D.Lgs. 36/2023)
-- [ ] PassOE richiesto
-- [ ] FVOE menzionato per la fase di verifica
+- [ ] Iscrizione CCIAA o albo professionale (art. 100 co. 3)
+- [ ] Fatturato, se richiesto, non superiore al doppio del valore stimato (art. 100 co. 11)
+- [ ] DGUE richiesto compilato sulla PAD (art. 91 D.Lgs. 36/2023)
+- [ ] FVOE menzionato per la fase di verifica dei requisiti (art. 99 D.Lgs. 36/2023)
 - [ ] Nessun riferimento a vecchio art. 83 D.Lgs. 50/2016
 
 **4d. Subappalto (art. 119 D.Lgs. 36/2023)**
 - [ ] Nessun limite percentuale generale non motivato
-- [ ] Dichiarazione subappalto al momento dell'offerta (sopra soglia)
-- [ ] Modalita' pagamento diretto al subappaltatore
+- [ ] Indicazione delle prestazioni da subappaltare nell'offerta (condizione ammissibilita')
+- [ ] Impegno PMI: almeno 20% della quota subappaltata (salvo motivazione)
+- [ ] Modalita' pagamento diretto al subappaltatore (microimprese/PMI e inadempimento)
 
 **4e. Garanzia provvisoria (art. 106 D.Lgs. 36/2023)**
 - [ ] Importo base = 2% del valore stimato (modificabile motivatamente tra 1% e 4%)
-- [ ] Per procedure sotto soglia: verifica se la garanzia e' richiesta (non sempre obbligatoria)
-- [ ] Tabella riduzioni per certificazioni di qualita'
-- [ ] Schema fidejussione allegato o rinvio a modello ANAC
+- [ ] Tabella riduzioni per certificazioni (ISO 9001 -30%, PMI -50%, DLT -10%, Allegato II.13 fino a -20%)
+- [ ] Schema fidejussione conforme al decreto ministeriale di cui all'art. 117 co. 12
 
 **4f. Soccorso istruttorio (art. 101 D.Lgs. 36/2023)**
 - [ ] Differenziato tra documenti ammissibili e non ammissibili
@@ -182,7 +184,10 @@ disciplinare appare aggiornato al D.Lgs. 36/2023 o se usa ancora il vecchio codi
 ### Subappalto (artt. 119-120)
 ...
 
-### Garanzia provvisoria (art. 117)
+### Garanzia provvisoria (art. 106)
+...
+
+### Garanzia definitiva (art. 117)
 ...
 
 ### Soccorso istruttorio (art. 101)

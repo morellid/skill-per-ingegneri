@@ -53,8 +53,8 @@ Prima di un'analisi approfondita, cercare i seguenti pattern ad alto impatto:
   senza motivazione proporzionata all'oggetto
 
 **Pattern clausole mancanti ad alto impatto**:
-- Assenza di menzione del CCNL (violazione art. 11 D.Lgs. 36/2023)
-- Assenza di DGUE (per procedure sopra soglia: art. 87 D.Lgs. 36/2023)
+- Assenza di menzione del CCNL (violazione art. 11 co. 2 D.Lgs. 36/2023)
+- Assenza di DGUE o mancata compilazione sulla PAD (art. 91 D.Lgs. 36/2023)
 - Assenza di soccorso istruttorio o clausola che lo esclude genericamente
 
 ### Passo 2 - Analisi per categorie di anomalia
@@ -65,13 +65,14 @@ Cercare specificamente:
 
 | Area | Indicatore di anomalia | Art. violato |
 |------|----------------------|-------------|
-| Clausola sociale | CCNL non indicato o "di settore" generico | Art. 11 D.Lgs. 36/2023 |
-| Esclusioni | Elenco cause esclusione incompleto o basato su vecchio art. 80 | Artt. 94-98 D.Lgs. 36/2023 |
-| Requisiti | Fatturato > 2x valore stimato senza motivazione | Art. 100 D.Lgs. 36/2023 |
-| DGUE | Assente in procedure sopra soglia | Art. 91 D.Lgs. 36/2023 |
-| Subappalto | Limite percentuale non motivato | Art. 119 D.Lgs. 36/2023 |
-| Garanzia provvisoria | Importo non coerente con base 2% o scelta non motivata | Art. 106 D.Lgs. 36/2023 |
-| Soccorso istruttorio | Escluso anche per documenti amministrativi (non dell'offerta) | Art. 101 D.Lgs. 36/2023 |
+| Clausola sociale | CCNL non indicato o "di settore" generico senza codice alfanumerico | Art. 11 co. 2 D.Lgs. 36/2023 |
+| Esclusioni | Elenco cause esclusione incompleto o basato su vecchio art. 80 D.Lgs. 50/2016 | Artt. 94, 95, 96 D.Lgs. 36/2023 |
+| Requisiti | Fatturato > 2x valore stimato senza motivazione (per servizi/forniture) | Art. 100 co. 11 D.Lgs. 36/2023 |
+| DGUE | Assente o non compilato sulla PAD | Art. 91 D.Lgs. 36/2023 |
+| Subappalto | Limite percentuale non motivato (es. "max 30%") | Art. 119 D.Lgs. 36/2023 |
+| Garanzia provvisoria | Importo non coerente con base 2% (range 1-4%) o riduzioni omesse | Art. 106 D.Lgs. 36/2023 |
+| Garanzia definitiva | Percentuale errata (es. "5-10%" invece di 10% con incrementi ribasso) | Art. 117 D.Lgs. 36/2023 |
+| Soccorso istruttorio | Escluso per documenti amministrativi o termine fuori range 5-10 gg | Art. 101 D.Lgs. 36/2023 |
 | OEPV | Criteri non collegati all'oggetto del contratto | Art. 108 co. 6 D.Lgs. 36/2023 |
 
 **Categoria B - Deroghe allo schema ANAC non giustificate**
