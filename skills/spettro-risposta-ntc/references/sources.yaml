@@ -13,36 +13,45 @@ sources:
     title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
     type: decreto
     url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
-    accessed: 2026-04-29
-    sha256: REPLACE_WHEN_DOWNLOADED
+    accessed: 2026-05-10
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
     excerpt_path: references/estratti/ntc2018-par-3-2.md
     notes: |
       Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      PDF scaricato da: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+      SHA256 calcolato il 2026-05-10 con sha256sum sul file scaricato (9.888.288 byte).
       Articoli rilevanti per questa skill:
       - par. 2.4 (vita nominale, classi d'uso, vita di riferimento)
       - par. 3.2 (azione sismica): definizioni stati limite (3.2.1),
         categorie di sottosuolo (3.2.2), spettro di risposta elastico (3.2.3)
-      - Allegato A: reticolo di riferimento, parametri ag/F0/Tc* per 9 TR
-        (30, 50, 72, 101, 140, 201, 475, 975, 2475 anni)
-      Il file binario va scaricato e l'hash SHA256 calcolato con
-      ./scripts/fetch-sources.sh, oppure manualmente: sha256sum del PDF.
+      - Allegato A: NTC 2018 rinvia agli Allegati A e B al DM 14/01/2008 per
+        il reticolo di riferimento (ag/F0/Tc* per 9 TR: 30,50,72,101,140,201,475,975,2475 anni)
+      Paragrafi letti e trascritti in references/fonti/ntc2018-dm-17-01-2018.md:
+      par. 2.4.1, 2.4.2, 2.4.3, 3.2, 3.2.1, 3.2.2, 3.2.3.2.1, Tab. 3.2.I-V.
 
   - id: circ-7-2019-mit
     title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
     type: circolare
     url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
-    accessed: 2026-04-29
-    sha256: REPLACE_WHEN_DOWNLOADED
+    accessed: 2026-05-10
+    sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
     license: public-domain
     binary_path: not_in_repo/circ-7-2019.pdf
+    md_path: references/fonti/circ-7-2019-mit.md
     excerpt_path: references/estratti/circ-7-2019-c-3-2.md
     notes: |
       Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019.
+      PDF scaricato da: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+      SHA256 calcolato il 2026-05-10 con sha256sum sul file scaricato (50.658.045 byte).
       Sezioni rilevanti: C2.4 (vita nominale, classi d'uso), C3.2 (azione
-      sismica, commento applicativo a NTC par. 3.2 con esempi numerici),
-      Appendice C3.2 (procedure di interpolazione del reticolo).
+      sismica, commento applicativo a NTC par. 3.2), C3.2.1 (formula TR e
+      Tabella C2.4.I con VR minimo = 35 anni), C3.2.3 (commento su SS e CC),
+      C3.2.3.2.1 (conferma numerazione eq. [3.2.4] per eta).
+      Paragrafi letti e trascritti in references/fonti/circ-7-2019-mit.md:
+      C2.4.1, C2.4.3 (Tab. C2.4.I), C3.2, C3.2.1, C3.2.3, C3.2.3.2.1.
 
   - id: ingv-reticolo-pericolosita
     title: "Mappa interattiva pericolosita' sismica - Reticolo di riferimento INGV"

@@ -2,10 +2,13 @@
 Spettro di risposta elastico NTC 2018 par. 3.2 - componente orizzontale.
 
 Implementa formule chiuse di:
-- NTC 2018 par. 2.4 (vita di riferimento V_R)
-- NTC 2018 par. 3.2.1 (probabilita' di superamento P_VR per stato limite, Tab. 3.2.I)
-- NTC 2018 par. 3.2.3.2.1 (parametri costruttivi S, eta, TB, TC, TD e ordinate Se(T))
-- NTC 2018 Allegato A (interpolazione logaritmica sul reticolo di 9 TR di riferimento)
+- NTC 2018 par. 2.4 (vita di riferimento V_R, Tab. 2.4.II coefficienti CU)
+- NTC 2018 par. 3.2.1 (probabilita' di superamento P_VR per stato limite, Tab. 3.2.I,
+  formula TR = -VR/ln(1-PVR) indicata come eq. [3.2.0] nelle NTC)
+- NTC 2018 par. 3.2.3.2.1 (parametri costruttivi S=SS*ST [3.2.3], eta [3.2.4],
+  TC [3.2.5], TB [3.2.6], TD [3.2.7] e ordinate Se(T) eq. [3.2.2])
+- Allegato A al DM 14/01/2008 richiamato da NTC 2018 par. 3.2 (interpolazione logaritmica
+  sul reticolo di 9 TR di riferimento: {30,50,72,101,140,201,475,975,2475} anni)
 
 Riferimenti puntuali ai paragrafi sono nelle docstring delle singole funzioni.
 
@@ -41,8 +44,9 @@ from typing import Iterable
 
 # --- Costanti normative (NTC 2018) ---------------------------------------
 
-# Tabella 3.2.I NTC 2018: probabilita' di superamento P_VR nel periodo di
-# riferimento V_R per ciascuno stato limite.
+# Tabella 3.2.I NTC 2018 (p. 45 S.O. n. 8): probabilita' di superamento P_VR nel
+# periodo di riferimento V_R per ciascuno stato limite.
+# Fonte: references/fonti/ntc2018-dm-17-01-2018.md, par. 3.2.1
 P_VR: dict[str, float] = {
     "SLO": 0.81,
     "SLD": 0.63,
@@ -50,7 +54,8 @@ P_VR: dict[str, float] = {
     "SLC": 0.05,
 }
 
-# par. 2.4.3 NTC: coefficiente d'uso C_U per classe d'uso (Tab. 2.4.II).
+# Tabella 2.4.II NTC 2018 (p. 37 S.O. n. 8): coefficiente d'uso C_U per classe d'uso.
+# Fonte: references/fonti/ntc2018-dm-17-01-2018.md, par. 2.4.3
 C_U: dict[str, float] = {
     "I": 0.7,
     "II": 1.0,
@@ -58,7 +63,8 @@ C_U: dict[str, float] = {
     "IV": 2.0,
 }
 
-# Tabella 3.2.IV NTC: categoria topografica -> ST in sommita' del rilievo.
+# Tabella 3.2.V NTC 2018 (p. 48-49 S.O. n. 8): coefficiente topografico S_T in
+# sommita' del rilievo (o pianura per T1). Fonte: references/fonti/ntc2018-dm-17-01-2018.md
 S_T: dict[str, float] = {
     "T1": 1.0,
     "T2": 1.2,
@@ -66,7 +72,9 @@ S_T: dict[str, float] = {
     "T4": 1.4,
 }
 
-# Allegato A NTC: 9 TR di riferimento del reticolo INGV [anni].
+# Allegato A al DM 14/01/2008 (richiamato da NTC 2018 par. 3.2):
+# 9 TR di riferimento del reticolo INGV [anni].
+# Fonte: references/fonti/ntc2018-dm-17-01-2018.md, sezione Allegato A
 TR_RIFERIMENTO: tuple[int, ...] = (30, 50, 72, 101, 140, 201, 475, 975, 2475)
 
 
@@ -180,9 +188,13 @@ class RisultatoSpettro:
 
 
 def vita_riferimento(vn_anni: float, classe_uso: str) -> float:
-    """V_R = V_N * C_U  (NTC par. 2.4.3, eq. 2.4.1).
+    """V_R = V_N * C_U  (NTC 2018 par. 2.4.3, eq. [2.4.1]).
 
-    V_R minima 35 anni e' applicata sotto come prescritto da par. 2.4.3.
+    Il VR minimo di 35 anni e' applicato coerentemente con la Tab. C2.4.I della
+    Circolare MIT n. 7/2019 (C2.4.3), che mostra VR = 35 anni per VN <= 10 anni
+    (qualsiasi classe d'uso). Il testo NTC 2018 par. 2.4.3 non formula esplicitamente
+    il minimo, ma la Circolare lo conferma operativamente.
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, references/fonti/circ-7-2019-mit.md
     """
     vn_anni = _assert_finito("Vita nominale V_N", vn_anni)
     if vn_anni <= 0:
@@ -191,14 +203,17 @@ def vita_riferimento(vn_anni: float, classe_uso: str) -> float:
     if cu not in C_U:
         raise ValueError(f"Classe d'uso {classe_uso!r} non valida (attesa: {list(C_U)})")
     vr = vn_anni * C_U[cu]
-    # par. 2.4.3 NTC: "se V_R risulta inferiore a 35 anni, si assume comunque V_R = 35 anni".
+    # VR minimo 35 anni: Tab. C2.4.I Circolare MIT 7/2019 (C2.4.3).
+    # (la NTC 2018 par. 2.4.3 non enuncia il minimo esplicitamente ma la
+    # Circolare lo mostra operativamente per VN <= 10 anni, qualsiasi CU)
     return max(vr, 35.0)
 
 
 def tempo_ritorno(vita_riferimento_anni: float, p_vr: float) -> float:
-    """T_R = - V_R / ln(1 - P_VR)  (NTC par. 3.2.1, eq. 3.2.0).
+    """T_R = - V_R / ln(1 - P_VR)  (NTC 2018 par. 3.2.1, eq. [3.2.0]).
 
     Inverso della relazione P_VR = 1 - exp(-V_R/T_R).
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, par. 3.2.1
     """
     if not 0.0 < p_vr < 1.0:
         raise ValueError("P_VR deve essere in (0, 1)")
@@ -226,8 +241,10 @@ def _interpola_log(
     log(p) = log(p_k) + (log(p_{k+1}) - log(p_k)) *
                         (log(T*/T_k) / log(T_{k+1}/T_k))
 
-    Procedura prescritta da NTC Allegato A e ripresa da Circolare 7/2019
-    Appendice C3.2.
+    Procedura definita nell'Allegato A al DM 14/01/2008 (richiamato da NTC 2018
+    par. 3.2) e confermata dalla Circolare MIT 7/2019 (C2.4.3).
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md (sezione Allegato A),
+           references/fonti/circ-7-2019-mit.md (sezione interpolazione).
 
     Per ag, F0, Tc* tutti i valori sono positivi e monotonia non
     necessariamente assicurata; l'interpolazione log-log e' comunque
@@ -286,13 +303,19 @@ def parametri_al_TR(
 
 
 def coeff_SS(cat_sottosuolo: str, ag_g: float, F0: float) -> float:
-    """Coefficiente di amplificazione stratigrafica SS (NTC Tab. 3.2.IV).
+    """Coefficiente di amplificazione stratigrafica SS (NTC 2018 Tab. 3.2.IV, p. 48 S.O. n. 8).
 
     ag_g: ag espresso in unita' di g (adimensionale).
-    Per cat. A: SS = 1.0.
-    Per cat. B/C/D/E: formula con clamp ai limiti di tabella.
-    Per cat. S1/S2: NTC par. 3.2.2 prescrive analisi specifiche di risposta
-    sismica locale -> errore esplicito.
+    Per cat. A: SS = 1.0, CC = 1.0.
+    Per cat. B/C/D/E: formula con clamp ai limiti di tabella come da Tab. 3.2.IV NTC 2018:
+      B: 1.00 <= 1.40 - 0.40*F0*ag/g <= 1.20
+      C: 1.00 <= 1.70 - 0.60*F0*ag/g <= 1.50
+      D: 0.90 <= 2.40 - 1.50*F0*ag/g <= 1.80
+      E: 1.00 <= 2.00 - 1.10*F0*ag/g <= 1.60
+    La NTC 2018 Tab. 3.2.II definisce solo le categorie A, B, C, D, E.
+    Per sottosuoli non classificabili in tali categorie e' richiesta analisi
+    di risposta sismica locale (par. 3.2.2 NTC 2018).
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, Tab. 3.2.IV
     """
     ag_g = _assert_finito("ag (in g)", ag_g)
     F0 = _assert_finito("F0", F0)
@@ -314,7 +337,9 @@ def coeff_SS(cat_sottosuolo: str, ag_g: float, F0: float) -> float:
         return min(1.60, max(1.00, 2.00 - 1.10 * fa))
     if cat in {"S1", "S2"}:
         raise ValueError(
-            f"Categoria di sottosuolo {cat}: NTC par. 3.2.2 prescrive analisi "
+            f"Categoria di sottosuolo {cat}: non inclusa nella Tab. 3.2.II NTC 2018 "
+            "(che definisce solo categorie A, B, C, D, E). Per sottosuoli non "
+            "classificabili in tali categorie, NTC 2018 par. 3.2.2 prescrive analisi "
             "specifiche di risposta sismica locale. Calcolo non eseguibile con "
             "questa skill."
         )
@@ -322,9 +347,16 @@ def coeff_SS(cat_sottosuolo: str, ag_g: float, F0: float) -> float:
 
 
 def coeff_CC(cat_sottosuolo: str, Tc_star: float) -> float:
-    """Coefficiente CC per il calcolo di TC (NTC Tab. 3.2.IV).
+    """Coefficiente CC per il calcolo di TC (NTC 2018 Tab. 3.2.IV, p. 48 S.O. n. 8).
 
     Tc_star in [s].
+    Valori dalla Tab. 3.2.IV NTC 2018:
+      A: CC = 1.00
+      B: CC = 1.10 * Tc_star^(-0.20)
+      C: CC = 1.05 * Tc_star^(-0.33)
+      D: CC = 1.25 * Tc_star^(-0.50)
+      E: CC = 1.15 * Tc_star^(-0.40)
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, Tab. 3.2.IV
     """
     Tc_star = _assert_finito("Tc*", Tc_star)
     if Tc_star <= 0:
@@ -349,10 +381,13 @@ def coeff_CC(cat_sottosuolo: str, Tc_star: float) -> float:
 
 
 def coeff_eta(xi_percento: float) -> float:
-    """Fattore di alterazione dello smorzamento viscoso (NTC eq. 3.2.6).
+    """Fattore di alterazione dello smorzamento viscoso (NTC 2018 eq. [3.2.4]).
 
     eta = sqrt(10 / (5 + xi)) >= 0.55, dove xi in %.
     Per xi = 5 -> eta = 1.0.
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, par. 3.2.3.2.1
+    Nota: l'equazione e' identificata come [3.2.4] nelle NTC 2018, non [3.2.6]
+    (confermato dalla Circolare MIT 7/2019, C3.2.3.2.1).
     """
     xi_percento = _assert_finito("xi (smorzamento %)", xi_percento)
     if xi_percento < 0:
@@ -366,10 +401,11 @@ def periodi_caratteristici(
 ) -> tuple[float, float, float, float]:
     """Restituisce (CC, TB, TC, TD).
 
-    NTC eq. 3.2.7-3.2.8:
-    TC = CC * Tc_star
-    TB = TC / 3
-    TD = 4 * ag_g + 1.6   [s]
+    Equazioni NTC 2018 par. 3.2.3.2.1 (p. 47-48 S.O. n. 8):
+    TC = CC * Tc_star    [eq. 3.2.5]
+    TB = TC / 3          [eq. 3.2.6]
+    TD = 4*(ag/g) + 1.6  [eq. 3.2.7]   [s]
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, par. 3.2.3.2.1
     """
     Tc_star = _assert_finito("Tc*", Tc_star)
     ag_g = _assert_finito("ag (in g)", ag_g)
@@ -388,16 +424,17 @@ def periodi_caratteristici(
 
 
 def Se_T(T: float, p: ParametriSpettro) -> tuple[float, str]:
-    """Ordinata Se(T) per la componente orizzontale (NTC eq. 3.2.4).
+    """Ordinata Se(T) per la componente orizzontale (NTC 2018 eq. [3.2.2]).
 
     Tutti i ag, F0 sono valori al sito (gia' interpolati al TR di progetto).
     Restituisce (Se in g, etichetta del ramo).
 
-    NTC eq. 3.2.4:
+    NTC 2018 eq. [3.2.2] (par. 3.2.3.2.1, p. 47 S.O. n. 8):
       0 <= T < TB:    Se = ag*S*eta*F0*[T/TB + 1/(eta*F0)*(1 - T/TB)]
       TB <= T < TC:   Se = ag*S*eta*F0
       TC <= T < TD:   Se = ag*S*eta*F0*(TC/T)
       TD <= T:        Se = ag*S*eta*F0*(TC*TD/T^2)
+    Fonte: references/fonti/ntc2018-dm-17-01-2018.md, par. 3.2.3.2.1
     """
     T = _assert_finito("T", T)
     if T < 0:

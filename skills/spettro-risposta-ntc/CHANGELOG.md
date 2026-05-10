@@ -7,6 +7,24 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Fixed (source-grounding remediation semantica - issue #111)
+
+- **Fonti scaricate e hashate**: NTC 2018 (DM 17/01/2018, GU n. 42 S.O. n. 8) e Circolare MIT n. 7/2019 (GU n. 35 S.O. n. 5) scaricati dal portale Gazzetta Ufficiale, SHA256 calcolati e committati in `sources.yaml`.
+  - NTC 2018: SHA256 `dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46`
+  - Circ. 7/2019: SHA256 `f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c`
+- **Trascrizioni verbatim create** (directory `references/fonti/` precedentemente assente):
+  - `references/fonti/ntc2018-dm-17-01-2018.md`: testo letto con pdftotext, trascritti par. 2.4.1, 2.4.2, 2.4.3, 3.2, 3.2.1, 3.2.2, 3.2.3.2.1, Tab. 3.2.I-V
+  - `references/fonti/circ-7-2019-mit.md`: testo letto con pdftotext, trascritti par. C2.4.1, C2.4.3 (Tab. C2.4.I), C3.2, C3.2.1, C3.2.3, C3.2.3.2.1
+- **Estratti riscritti** dopo lettura del PDF (non dai training data):
+  - `ntc2018-par-3-2.md`: corretti i numeri delle equazioni (Se(T) e' eq. [3.2.2] non [3.2.4]; eta e' eq. [3.2.4] non [3.2.6]; TC=[3.2.5], TB=[3.2.6], TD=[3.2.7]); corretta la nota su S1/S2 (non sono nella Tab. 3.2.II NTC 2018, solo A-E); aggiunte citazioni pagina.
+  - `ntc2018-classi-uso-vita.md`: corretta la fonte del VR minimo 35 anni (non e' in NTC 2018 par. 2.4.3 ma emerge dalla Tab. C2.4.I della Circolare 7/2019); aggiunte citazioni pagina.
+  - `ntc2018-allegato-a-tab.md`: corretto: il NTC 2018 non ha un proprio Allegato A numerico, ma rinvia all'Allegato A al DM 14/01/2008; i 9 TR sono confermati dalla Circolare.
+  - `circ-7-2019-c-3-2.md`: riscritto dall'esempio inventato a testo reale letto dal PDF; rimossa la "nota sintetica" che era un esempio inventato non corrispondente al testo.
+- **Docstring spettro.py corrette**: equazioni NTC corrette ([3.2.0] per TR, [3.2.2] per Se(T), [3.2.3] per S, [3.2.4] per eta, [3.2.5]-[3.2.7] per TC/TB/TD); fonte del VR minimo 35 anni corretta (Circ. Tab. C2.4.I, non NTC 2018 par. 2.4.3); commento S1/S2 aggiornato (non in Tab. 3.2.II NTC 2018); aggiunti riferimenti a `references/fonti/`.
+- **Valori numerici verificati**: tutti i coefficienti di Tab. 3.2.IV (SS formule e clamp, CC esponenti), i valori ST di Tab. 3.2.V, la formula TD = 4*(ag/g)+1.6, i coefficienti CU di Tab. 2.4.II, e i valori P_VR di Tab. 3.2.I corrispondono ESATTAMENTE al testo letto dal PDF (nessuna discrepanza trovata).
+
+
+
 ### Added
 - **Per-state error reporting nella CLI** (Codex round 7): con `--stato-limite TUTTI` (default), se uno stato limite produce TR fuori reticolo (es. VN=50 CU I -> V_R=35 -> TR_SLO~21<30), gli altri stati continuano a essere calcolati invece di abortire l'intero run. Lo stato fallito appare nell'output JSON come `{"stato_limite": "SLO", "errore": "..."}` e nel testo come blocco `=== SLO === ATTENZIONE: stato non calcolabile -> ...`. Il run abortisce con `parser.error()` solo se **tutti** gli stati richiesti falliscono. Test: +2 (`test_tutti_con_slo_fuori_reticolo_continua`, `test_tutti_falliti_abortisce`).
 - **Validazione type-mismatch nel JSON di input** (Codex round 6): l'`--input-json` ora valida i tipi di top-level (deve essere dict), `parametri_calcolo`/`parametri_pericolosita_sito` (dict), `ag_g`/`F0`/`Tc_star` (liste), `tabula_periodi` (dict), `stati_limite` (lista di string) prima di passarli al pipeline. Senza questi check, un JSON malformato (es. `ag_g: 0.2` scalare invece di lista, oppure `stati_limite: [1]`) crashava con `TypeError`/`AttributeError` Python invece del friendly `parser.error()`. Test: +4 (`test_input_json_ag_g_non_lista`, `test_input_json_stati_limite_con_int`, `test_input_json_pc_non_dict`, `test_input_json_top_level_non_dict`).
@@ -57,13 +75,13 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Note di sviluppo
 - Skill **non ancora validata da dominio terzo** (Livello 2). I parametri usati negli esempi sono fittizi e progettati per leggibilita'.
-- I file binari delle fonti (NTC 2018 PDF, Circ. 7/2019 PDF) **non sono ancora archiviati** in `not_in_repo/`: gli sha256 in `sources.yaml` sono placeholder `REPLACE_WHEN_DOWNLOADED`. Eseguire `./scripts/fetch-sources.sh` prima del release stabile.
+- I file binari delle fonti (NTC 2018 PDF, Circ. 7/2019 PDF) erano placeholder al momento del tag 0.1.0-alpha; la remediation source-grounding semantica (issue #111) li ha scaricati, hashati e convertiti a MD.
 - La validazione Livello 2 richiede confronto numerico vs foglio Excel CSLP su almeno 10 casi reali (siti sparsi sul territorio nazionale, categorie sottosuolo diverse, classi d'uso diverse). Tolleranze documentate in `tasks/run-test-suite.md`.
 - Da considerare draft fino a validazione Livello 2 superata. Vedi `methodology/validazione.md`.
 
 ### Limiti noti (versione 0.1.0-alpha)
 - Solo componente orizzontale (par. 3.2.3.2.1). Verticale (3.2.3.2.2) in roadmap.
 - Solo spettro elastico Se(T). Spettro di progetto S_d(T) con riduzione q (par. 3.2.3.5) fuori scope.
-- Categorie sottosuolo S1/S2 rifiutate (richiedono RSL ai sensi par. 3.2.2).
-- ST T2/T3/T4 applicato in sommita' del rilievo. Quote intermedie (NTC eq. 3.2.5) non automatizzate.
+- Sottosuoli non classificabili nelle categorie A-E rifiutati (richiedono RSL ai sensi par. 3.2.2 NTC 2018; le categorie S1/S2 della NTC 2008 non sono in Tab. 3.2.II NTC 2018).
+- ST T2/T3/T4 applicato in sommita' del rilievo. Quote intermedie (decremento lineare, NTC 2018 par. 3.2.3.2.1 dopo Tab. 3.2.V) non automatizzate.
 - Non incorpora il reticolo INGV: l'utente fornisce i 9 valori (a_g, F_0, T_C*) al sito.
