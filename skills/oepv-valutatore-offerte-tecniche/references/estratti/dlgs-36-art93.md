@@ -1,54 +1,55 @@
 # Estratto: D.Lgs. 36/2023 - Art. 93 (Commissione giudicatrice)
 
 **Fonte**: D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici
-**GU**: n. 77 del 31/03/2023, Suppl. Ordinario n. 12
+**GU**: n. 87 del 13/04/2023, Supplemento Ordinario n. 14, p. 80-81
+**Testo di riferimento**: `references/fonti/dlgs-36-2023-artt93-107-108.md`
+**SHA256 PDF**: b139f0515a8aa018a25b7a31acce39fc39329cdc07aedd17e870dd9dc91025ff
 **Vigenza**: in vigore dal 1 aprile 2023; efficace dall'1 luglio 2023
-**Aggiornato con**: D.Lgs. 31 dicembre 2024 n. 209 (correttivo)
+**Nota correttivo**: il D.Lgs. 209/2024 non ha modificato l'art. 93 (testo originale GU 2023 vigente)
 
 ---
 
-## Art. 93 - Commissione giudicatrice
+## Art. 93 - Commissione giudicatrice (testo originale GU 2023)
 
-**Co. 1.** Nelle procedure di aggiudicazione di contratti pubblici con il criterio dell'offerta economicamente piu' vantaggiosa, la valutazione delle offerte dal punto di vista tecnico e' affidata a una commissione giudicatrice, composta da esperti nello specifico settore cui si riferisce l'oggetto del contratto.
+**Co. 1.** Ai fini della selezione della migliore offerta nelle procedure di aggiudicazione di contratti di appalti con il criterio dell'offerta economicamente piu' vantaggiosa, **dopo la scadenza del termine per la presentazione delle offerte**, e' nominata una commissione giudicatrice, che, su richiesta del RUP, svolge anche attivita' di supporto per la verifica dell'anomalia.
 
-**Co. 2.** I commissari sono scelti tra i funzionari della stazione appaltante ovvero, in mancanza di adeguate professionalita' interne, tra i funzionari di altre stazioni appaltanti, sulla base di un elenco redatto dalla stazione appaltante stessa sulla scorta delle curricula pervenuti. I commissari non possono essere individuati tra soggetti che rientrano nelle situazioni di incompatibilita' previste dai commi da 4 a 6.
+**Co. 2.** La commissione e' composta da un numero dispari di componenti, **in numero massimo di cinque**, esperti nello specifico settore cui si riferisce l'oggetto del contratto. Possono essere nominati componenti supplenti.
 
-**Co. 3.** La commissione e' composta da un numero dispari non inferiore a tre e non superiore a cinque componenti, salvo che per i contratti di particolare complessita' per i quali il numero massimo e' sette. I commissari effettivi sono accompagnati da un eguale numero di commissari supplenti, i quali partecipano alla commissione unicamente in caso di assenza o astensione di quelli effettivi.
+**Co. 3.** La commissione e' presieduta e composta da dipendenti della stazione appaltante o delle amministrazioni beneficiarie dell'intervento, in possesso del necessario inquadramento giuridico e di adeguate competenze professionali. Della commissione giudicatrice puo' far parte il RUP. In mancanza di adeguate professionalita' in organico, la stazione appaltante puo' scegliere il Presidente e i singoli componenti della commissione anche tra funzionari di altre amministrazioni e, in caso di documentata indisponibilita', tra professionisti esterni. Le nomine di cui al presente comma sono compiute secondo criteri di trasparenza, competenza e rotazione.
 
-**Co. 4.** Non puo' far parte della commissione giudicatrice, ne' svolgere funzione di segretario della commissione stessa:
-a) il soggetto che ha svolto o svolge attivita' di controllo, di verifica, di ispezione, di vigilanza e di monitoraggio sullo stesso appalto;
-b) il soggetto che ha concorso alla definizione degli elementi essenziali della gara;
-c) coloro che, nell'anno antecedente alla nomina, abbiano avuto incarichi di progettazione o consulenza per l'appalto in questione;
-d) coloro che abbiano partecipato a procedimenti giurisdizionali o arbitrali in qualita' di parte o di difensore della parte che abbia un interesse nel procedimento;
-e) coloro che abbiano rapporti di lavoro in corso con operatori economici partecipanti alla gara o abbiano avuto tali rapporti nei tre anni antecedenti alla nomina.
+**Co. 4.** La commissione puo' riunirsi con modalita' telematiche che salvaguardino la riservatezza delle comunicazioni. La commissione opera attraverso la piattaforma di approvvigionamento digitale per la valutazione della documentazione di gara e delle offerte dei partecipanti.
 
-**Co. 5.** I commissari devono dichiarare, prima dell'insediamento della commissione, l'assenza di cause di astensione ai sensi dell'articolo 51 del codice di procedura civile. In caso di conflitto di interesse successivo, i commissari devono darne immediata comunicazione alla stazione appaltante.
+**Co. 5.** Non possono essere nominati commissari:
+a) coloro che nel biennio precedente all'indizione della procedura di aggiudicazione sono stati componenti di organi di indirizzo politico della stazione appaltante;
+b) coloro che sono stati condannati, anche con sentenza non passata in giudicato, per i reati previsti nel Capo I del Titolo II del Libro II del codice penale;
+c) coloro che si trovano in una situazione di conflitto di interessi con uno degli operatori economici partecipanti alla procedura; costituiscono situazioni di conflitto di interessi quelle che determinano l'obbligo di astensione previste dall'articolo 7 del regolamento recante il codice di comportamento dei dipendenti pubblici, di cui al decreto del Presidente della Repubblica 16 aprile 2013, n. 62.
 
-**Co. 6.** I commissari che ricoprono cariche in partiti politici, in organizzazioni sindacali e che abbiano rivestito cariche politiche o siano stati candidati alle elezioni politiche, europee, regionali, provinciali e comunali nei tre anni antecedenti alla nomina a commissario non possono essere designati.
+**Co. 6.** Salvo diversa motivata determinazione della stazione appaltante, in caso di rinnovo del procedimento di gara per effetto dell'annullamento dell'aggiudicazione o dell'esclusione di taluno dei concorrenti, e' riconvocata la medesima commissione, tranne quando l'annullamento sia derivato da un vizio nella composizione della commissione.
 
-**Co. 7.** La commissione e' formalmente istituita con provvedimento della stazione appaltante in cui sono indicati i curricula dei commissari.
+**Co. 7.** Nelle procedure di aggiudicazione di contratti di appalto con il criterio del minor prezzo o costo, la valutazione delle offerte e' effettuata da un seggio di gara, anche monocratico, composto da personale della stazione appaltante, scelto secondo criteri di trasparenza e competenza, al quale si applicano le cause di incompatibilita' di cui alle lettere b) e c) del comma 5.
 
-**Co. 8.** Ai commissari non sono corrisposti compensi, indennita', gettoni di presenza o rimborsi spese, ad esclusione dei commissari esterni all'amministrazione affidante.
+---
 
-**Co. 9.** La nomina della commissione giudicatrice avviene dopo la scadenza del termine fissato per la presentazione delle offerte. I commissari interni sono nominati direttamente dall'amministrazione; i commissari esterni sono scelti con sorteggio dall'elenco redatto dalla stazione appaltante.
+## Differenze rispetto alla versione precedente dell'estratto
 
-**Co. 10.** Non possono fare parte della commissione i soggetti che abbiano svolto o stiano svolgendo in qualunque modo l'attivita' di verifica della progettazione da porre a base di gara.
+L'estratto precedente (v0.1.0-alpha) riportava una versione dell'art. 93 non corrispondente al testo della GU 2023. Le principali differenze rilevate dalla lettura del PDF:
+
+1. **Co. 1**: Il testo originale include gia' la regola sulla nomina post-scadenza offerte ("dopo la scadenza del termine per la presentazione delle offerte"). Non esiste un comma 9 separato con questa previsione: e' tutto nel co. 1.
+2. **Co. 2**: Il numero massimo di componenti e' **cinque** (non "da tre a cinque" come scritto nell'estratto precedente). La dimensione minima non e' specificata nell'articolo, solo "numero dispari".
+3. **Co. 3**: Riguarda le qualifiche (dipendenti SA, funzionari di altre PA, professionisti esterni), non le incompatibilita'. Non menziona commissari interni/esterni con distinzioni di nomina come nell'estratto precedente.
+4. **Co. 5**: Le cause di ineleggibilita' sono tre (a, b, c) e riguardano: incarichi politici nel biennio, condanne penali, conflitti di interesse. Non corrispondono alle cause elencate nell'estratto precedente (co. 4 e seguenti della versione vecchia erano diversi).
+5. **Nessun comma 8, 9, 10 separati**: L'estratto precedente aveva co. 8 (compensi), co. 9 (nomina e sorteggio), co. 10 (progettazione) che non corrispondono al testo GU 2023. L'art. 93 originale ha solo 7 commi.
 
 ---
 
 ## Note operative per la commissione
 
-**Sedute di valutazione - prassi corretta:**
+Le seguenti note operative sono basate sul testo dell'art. 93 co. 1 e 3 e sulla prassi consolidata:
 
-1. **Prima seduta (pubblica)**: apertura buste amministrative, verifica ammissibilita', comunicazione ammessi ed esclusi
-2. **Seduta tecnica (riservata)**: apertura offerte tecniche, esame e attribuzione coefficienti discrezionali - DEVE essere riservata (non pubblica) per garantire l'indipendenza dei commissari
-3. **Attribuzione individuale simultanea**: per i criteri discrezionali, ogni commissario deve attribuire i coefficienti individualmente, poi li comunica agli altri contemporaneamente (simultaneita' garantisce indipendenza)
-4. **Seconda seduta (pubblica o riservata)**: apertura offerte economiche, calcolo punteggi complessivi, stesura graduatoria
-5. **Proposta di aggiudicazione** al RUP con verbali e calcoli
+**Tempistica di nomina (co. 1)**: La commissione e' nominata dopo la scadenza del termine per la presentazione delle offerte. Questa regola e' esplicita nel co. 1 stesso.
 
-**Errori frequenti della commissione (fonti di ricorso TAR):**
-- Commissari che si consultano prima di assegnare i coefficienti individuali -> annullamento per condizionamento
-- Commissario nominato dopo l'apertura delle offerte che partecipa retroattivamente -> illegittimo
-- Mancata dichiarazione di incompatibilita' da parte di un commissario -> annullamento dell'aggiudicazione
-- Commissario che ha curato la progettazione a base di gara (violazione co. 4 lett. c) -> incompatibilita'
-- Attribuzione di coefficienti diversi dalla scala stabilita nel disciplinare -> illegittimo
+**Composizione (co. 2 e 3)**: Numero dispari, massimo cinque. I commissari devono essere dipendenti della SA o di altre PA con adeguate competenze; solo in caso di documentata indisponibilita' si ricorre a professionisti esterni. Le nomine seguono criteri di trasparenza, competenza e rotazione.
+
+**Incompatibilita' (co. 5)**: Le tre cause di ineleggibilita' sono tassative (co. 5 lett. a, b, c): incarico politico nel biennio pre-gara, condanna penale anche non definitiva per reati contro la PA, conflitto di interessi ai sensi del DPR 62/2013.
+
+**Seduta riservata**: Il co. 4 consente sessioni telematiche con riservatezza garantita. La prassi consolidata (non esplicitata nell'art. 93 ma consolidata in giurisprudenza) vuole che la valutazione delle offerte tecniche avvenga in sessione riservata, con attribuzione individuale e simultanea dei coefficienti discrezionali da parte di ciascun commissario.

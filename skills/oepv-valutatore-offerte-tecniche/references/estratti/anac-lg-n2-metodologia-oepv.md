@@ -1,196 +1,117 @@
 # Estratto: ANAC Linea Guida n. 2 - Metodologia valutazione OEPV
 
-**Fonte**: ANAC Delibera n. 424 del 2 maggio 2018 - Linee guida n. 2 (aggiornamento)
-**Titolo**: "Offerta economicamente piu' vantaggiosa"
-**Vigenza normativa**: Le Linee Guida ANAC erano vincolanti sotto D.Lgs. 50/2016 (vecchio codice). Sotto D.Lgs. 36/2023 (nuovo codice), ANAC non ha ancora emesso una nuova linea guida equivalente; la LG n. 2 e' quindi **non piu' formalmente vincolante** ma e' ancora largamente citata come riferimento di prassi e dalla giurisprudenza TAR/CdS nelle procedure non ancora concluse.
-**Nota**: nella prassi del settore, le formule e i metodi descritti nella LG n.2 sono ancora ampiamente applicati dai disciplinari di gara come standard di fatto.
+**Fonte**: ANAC Delibera n. 1005 del 21 settembre 2016 / aggiornata con Delibera n. 424 del 2 maggio 2018
+**Titolo**: "Linee guida n. 2 - Offerta economicamente piu' vantaggiosa"
+**URL**: https://www.anticorruzione.it/documents/91439/221cee7f-adba-5368-6d25-69fd2884aa91
+**Testo di riferimento**: `references/fonti/anac-lg-n2-delibera-424-2018.md`
+**SHA256 PDF**: 719e06f3ec3ce5b36d1f606adaa874377438a83f92fc2e47bf9c6dde7c93d1f8
+**Vigenza normativa**: vincolante sotto D.Lgs. 50/2016; sotto D.Lgs. 36/2023 non e' stata aggiornata ne' ritirata. Usare come riferimento metodologico di prassi (non come norma vincolante). In caso di contrasto con l'art. 108 D.Lgs. 36/2023, il decreto prevale.
 
 ---
 
-## Metodo aggregativo-compensatore
+## Metodo aggregativo-compensatore (Sezione VI, cap. 1, p. 17 del PDF)
 
-La formula base del metodo aggregativo-compensatore e':
+Il metodo aggregativo compensatore, semplice e intuitivo, e' il piu' utilizzato dalle stazioni appaltanti; si basa sulla sommatoria dei coefficienti attribuiti per ciascun criterio, ponderati per il peso relativo del criterio. A ciascun candidato il punteggio viene assegnato sulla base della seguente formula:
 
 ```
-Pi = Sigma_j (Wj x V(aij))
+P_i = sommatoria [ W_i * V_ai ]
 ```
 
-Dove:
-- `Pi` = punteggio totale dell'offerta i
-- `Wj` = peso del criterio j (somma di tutti i Wj = 100)
-- `V(aij)` = coefficiente (tra 0 e 1) assegnato all'offerta i per il criterio j
-
-Il punteggio finale e' la somma dei prodotti peso x coefficiente per tutti i criteri.
+dove:
+- P_i = Punteggio dell'offerta i-esima
+- n = numero totale dei requisiti
+- W_i = peso o punteggio attribuito al requisito (i)
+- V_ai = coefficiente della prestazione dell'offerta (a) rispetto al requisito (i) variabile tra zero ed uno
 
 ---
 
-## Metodi di attribuzione del coefficiente V(aij)
+## Metodi di attribuzione del coefficiente V_ai
 
-### Metodo tabellare (on/off)
+### Metodo tabellare (on/off o scala discreta) (Sezione IV, p. 13 del PDF)
 
-Per criteri con requisiti certi e verificabili:
-- Requisito soddisfatto: V = 1
-- Requisito non soddisfatto: V = 0
+Per le forniture e per taluni servizi, ovvero quando non e' necessario esprimere una valutazione di natura soggettiva, e' possibile attribuire il punteggio anche sulla base tabellare o del punteggio assoluto. Si attribuisce il punteggio 0 al concorrente che non presenta il requisito richiesto e un punteggio crescente (predeterminato) al concorrente che presenta il requisito richiesto con intensita' maggiore.
 
-Variante a scala discreta: il disciplinare definisce soglie (es. 0 - 0.25 - 0.50 - 0.75 - 1.00) corrispondenti a livelli del requisito.
+**Esempio dal PDF**: se per il rating di legalita' sono previsti fino a tre punti, e' attribuito il punteggio 0 a chi non ha il rating, il punteggio 1 a chi lo ha con una stella, 2 a chi ha due stelle e 3 a chi ha tre stelle.
 
-### Metodo discrezionale (giudizio della commissione)
+### Metodo discrezionale con coefficiente variabile (Sezione V, p. 14-15 del PDF)
 
-Per criteri qualitativi che richiedono valutazione tecnica:
+Ciascun commissario attribuisce un coefficiente (da moltiplicare poi per il punteggio massimo attribuibile in relazione al criterio), variabile tra zero e uno. Le ragioni di tale attribuzione devono essere adeguatamente motivate e la motivazione deve essere collegata ai criteri presenti nel bando.
 
-**Procedura:**
-1. Ogni commissario esamina l'offerta tecnica individualmente
-2. Ciascun commissario assegna un coefficiente provvisorio tra 0 e 1 (o su scala 0-10 con normalizzazione)
-3. I coefficienti individuali vengono rivelati simultaneamente (nessun commissario conosce la valutazione degli altri prima di comunicare la propria)
-4. Si calcola la media aritmetica dei coefficienti individuali come coefficiente provvisorio dell'offerta
-5. Si riproporziona: il coefficiente finale e' calcolato dividendo per il coefficiente massimo ottenuto tra tutte le offerte
+In relazione a ciascun criterio o subcriterio di valutazione la stazione appaltante deve indicare gli specifici profili oggetto di valutazione, in maniera analitica e concreta, con i relativi descrittori che consentono di definire i livelli qualitativi attesi.
 
-**Formula di riproporzionamento:**
+**Procedura di calcolo**: Una volta che ciascun commissario ha attribuito il coefficiente a ciascun concorrente, viene calcolata la media dei coefficienti attribuiti, viene attribuito il valore 1 al coefficiente piu' elevato e vengono di conseguenza riparametrati tutti gli altri coefficienti. (Sezione V, p. 15 del PDF)
+
+**Nota di procedura**: Il metodo del confronto a coppie e' un'alternativa al metodo del coefficiente discrezionale (Sezione V, p. 15-16 del PDF).
+
+### Metodo con formula quantitativa per elementi numerici (Sezione IV, p. 11 del PDF)
+
+#### Formula lineare (interpolazione lineare) - formula base
+
 ```
-V(aij) = media_ij / max(media_ij per tutti gli offerenti j)
+V_ai = R_a / R_max
 ```
 
-Il miglior offerente per quel criterio ottiene sempre V(aij) = 1; gli altri ottengono valori tra 0 e 1.
+dove:
+- V_ai = Coefficiente della prestazione dell'offerta (a) rispetto al requisito (i), variabile tra 0 e 1
+- R_a = Valore (ribasso) offerto dal concorrente a
+- R_max = Valore (ribasso) dell'offerta piu' conveniente
 
-**Attenzione**: il riproporzionamento deve essere esplicitamente previsto nel disciplinare, altrimenti la sua applicazione da parte della commissione e' contestabile.
+**Nota importante**: La formula e' espressa in termini di **ribasso** (sconto percentuale), non in termini di prezzo assoluto. Il punteggio minimo (zero) e' per l'offerta che non presenta sconti; il massimo per lo sconto maggiore.
 
-### Metodo con formula quantitativa
+Il coefficiente va poi moltiplicato per il punteggio massimo attribuibile al criterio.
 
-Per criteri misurabili numericamente (tempo, percentuale, quantita'):
+#### Formula bilineare con valore soglia (Sezione IV, p. 11-12 del PDF)
 
-**Parametro crescente** (piu' e' alto, meglio e'): es. numero di risorse aggiuntive, percentuale di riduzione emissioni
 ```
-V(ai) = Ra_i / Ra_max
+C_i (per A_i <= A_soglia) = X * A_i / A_soglia
+C_i (per A_i > A_soglia) = X + (1 - X) * [(A_i - A_soglia) / (A_max - A_soglia)]
 ```
-Dove Ra_max = valore massimo tra tutte le offerte.
 
-**Parametro decrescente** (meno e' alto, meglio e'): es. tempo di consegna, numero di giorni
-```
-V(ai) = Ra_min / Ra_i
-```
-Dove Ra_min = valore minimo tra tutte le offerte.
-
-**Parametro con soglia** (valore ottimale predefinito):
-```
-Se Ra_i <= Ra_soglia: V(ai) = Ra_i / Ra_soglia
-Se Ra_i > Ra_soglia: V(ai) = Ra_soglia / Ra_i
-```
+dove:
+- C_i = coefficiente attribuito al concorrente i-esimo
+- A_i = valore dell'offerta (ribasso) del concorrente i-esimo
+- A_soglia = media aritmetica dei valori delle offerte (ribasso sul prezzo) dei concorrenti
+- X = 0,80 oppure 0,85 oppure 0,90 (da scegliere e dichiarare nel bando)
+- A_max = valore dell'offerta (ribasso) piu' conveniente
 
 ---
 
-## Formula per il punteggio dell'offerta economica
+## Riparametrazione (Sezione III, p. 10 del PDF)
 
-### Formula lineare (la piu' comune)
+La riparametrazione si applica quando il coefficiente (o punteggio) massimo ottenuto per un determinato criterio dall'offerta migliore non raggiunge il valore 1 (o il punteggio massimo previsto). In questo caso:
 
+```
+V_riparam = V_i / V_max
+```
+
+dove V_max e' il coefficiente massimo attribuito tra tutte le offerte per quel criterio.
+
+**Condizione essenziale**: la riparametrazione deve essere espressamente prevista nei documenti di gara. Se non e' prevista nel bando, la sua applicazione da parte della commissione e' contestabile.
+
+La riparametrazione "e' finalizzata a preservare l'equilibrio tra le diverse componenti dell'offerta, in modo che in relazione a tutte le componenti, l'offerta migliore ottenga il massimo punteggio, con conseguente rimodulazione delle altre offerte." (p. 10 del PDF)
+
+---
+
+## Differenze rispetto alla versione precedente dell'estratto
+
+L'estratto precedente (v0.1.0-alpha) conteneva affermazioni non corrispondenti al testo del PDF ANAC LG n.2:
+
+### 1. Formula per il punteggio economico: espressa in modo impreciso
+L'estratto precedente riportava la formula economica come:
 ```
 Pe_i = Vmax x (Prezzo_min / Prezzo_i)
 ```
-
-Dove:
-- `Vmax` = punteggio massimo assegnato al criterio economico
-- `Prezzo_min` = prezzo piu' basso tra tutte le offerte ammesse
-- `Prezzo_i` = prezzo offerto dall'operatore i
-
-L'offerente con il prezzo piu' basso ottiene il punteggio massimo; gli altri ottengono punteggi proporzionalmente inferiori.
-
-**Esempio**: Vmax = 30, offerte: A = 100.000 EUR, B = 85.000 EUR, C = 92.000 EUR
-- Prezzo_min = 85.000 (offerente B)
-- Pe_A = 30 x (85.000 / 100.000) = 25,5 punti
-- Pe_B = 30 x (85.000 / 85.000) = 30,0 punti
-- Pe_C = 30 x (85.000 / 92.000) = 27,7 punti
-
-### Formula bilineare con soglia di anomalia (alternativa, rara)
-
+Questa formula e' espressa in termini di prezzo assoluto. Il PDF ANAC LG n.2 (Sezione IV, p. 11) esprime la formula in termini di **ribasso** (sconto):
 ```
-Se Ri <= Ra: V(ai) = X x Ri / Ra
-Se Ri > Ra: V(ai) = X + (1 - X) x (Ri - Ra) / (Rmax - Ra)
+V_ai = R_a / R_max
 ```
+dove R_a e' il ribasso offerto e R_max e' il ribasso massimo. Nella pratica le due formulazioni sono equivalenti (un prezzo piu' basso corrisponde a un ribasso piu' alto), ma la formulazione corretta nel documento e' per ribasso. Il punteggio si ottiene moltiplicando il coefficiente per Vmax.
 
-Dove Ra e' il ribasso soglia di anomalia, X e' un fattore prestabilito (es. 0.8). Questa formula e' complessa e puo' generare contestazioni; si sconsiglia salvo casi specifici motivati.
+### 2. Procedura di attribuzione coefficienti discrezionali: dettagli di procedura
+L'estratto precedente descriveva la procedura di attribuzione individuale e simultanea con riferimento alla "attribuzione individuale simultanea" e al "non consultarsi". Il PDF ANAC LG n.2 (Sezione V, p. 14-15) descrive il metodo in modo piu' generico: ciascun commissario attribuisce, poi si calcola la media, poi si riparametra. La simultaneita' e il divieto di consultazione non sono tematizzati esplicitamente nel PDF ANAC; e' la giurisprudenza TAR/CdS che ha consolidato quel requisito procedurale.
 
----
+### 3. Formule per parametri crescenti/decrescenti: non presenti nel PDF ANAC LG n.2
+L'estratto precedente riportava formule per "parametro crescente" (V = Ra/Ra_max) e "parametro decrescente" (V = Ra_min/Ra_i). Queste formule non compaiono nel PDF ANAC LG n.2 in questa forma. Nel PDF ANAC le formule quantitative sono espresse in termini di ribasso. Le formule per altri parametri quantitativi (tempi, risorse) sono una convenzione di prassi non esplicitamente descritta in questo documento.
 
-## Calcolo punteggio tecnico complessivo
-
-Per ogni offerente, il punteggio tecnico e' la somma dei contributi di tutti i criteri tecnici:
-
-```
-PT_i = Sigma_j (Wj x V(aij))   per tutti i criteri tecnici j
-```
-
-Il punteggio totale e':
-
-```
-P_totale_i = PT_i + Pe_i
-```
-
----
-
-## Esempio numerico completo (3 offerenti, 3 criteri tecnici + economico)
-
-**Matrice criteri:**
-
-| Criterio | Peso | Metodo |
-|----------|------|--------|
-| A - Qualita' metodologia | 30 | Discrezionale |
-| B - Esperienza team (anni) | 15 | Tabellare (< 5 anni: 0; 5-10: 0.5; > 10: 1) |
-| C - Riduzione tempi (gg) | 25 | Formula decrescente |
-| D - Prezzo | 30 | Formula lineare |
-| **TOTALE** | **100** | |
-
-**Dati offerenti:**
-
-| Offerente | Coeff. A (media comm.) | Anni esperienza (B) | Riduzione tempi (C, gg) | Prezzo (D, EUR) |
-|-----------|------------------------|--------------------|-----------------------|----------------|
-| Alfa | 7,2 | 12 anni | 10 gg | 340.000 |
-| Beta | 8,8 | 8 anni | 5 gg | 290.000 |
-| Gamma | 6,0 | 15 anni | 15 gg | 360.000 |
-
-**Calcolo criterio A (discrezionale con riproporzionamento):**
-- Media Alfa = 7,2; Media Beta = 8,8; Media Gamma = 6,0
-- Max = 8,8 (Beta)
-- V(A_Alfa) = 7,2 / 8,8 = 0,818; PA_Alfa = 30 x 0,818 = 24,5
-- V(A_Beta) = 8,8 / 8,8 = 1,000; PA_Beta = 30 x 1,000 = 30,0
-- V(A_Gamma) = 6,0 / 8,8 = 0,682; PA_Gamma = 30 x 0,682 = 20,5
-
-**Calcolo criterio B (tabellare, scala: <5->0; 5-10->0.5; >10->1):**
-- Alfa: 12 anni -> V=1 -> PB_Alfa = 15 x 1 = 15,0
-- Beta: 8 anni -> V=0.5 -> PB_Beta = 15 x 0.5 = 7,5
-- Gamma: 15 anni -> V=1 -> PB_Gamma = 15 x 1 = 15,0
-
-**Calcolo criterio C (formula decrescente V = Rmin/Ri):**
-- Rmin = 5 gg (Beta)
-- V(C_Alfa) = 5/10 = 0,500 -> PC_Alfa = 25 x 0,500 = 12,5
-- V(C_Beta) = 5/5 = 1,000 -> PC_Beta = 25 x 1,000 = 25,0
-- V(C_Gamma) = 5/15 = 0,333 -> PC_Gamma = 25 x 0,333 = 8,3
-
-**Punteggio tecnico:**
-
-| Offerente | PA | PB | PC | PT |
-|-----------|----|----|----|-----|
-| Alfa | 24,5 | 15,0 | 12,5 | **52,0** |
-| Beta | 30,0 | 7,5 | 25,0 | **62,5** |
-| Gamma | 20,5 | 15,0 | 8,3 | **43,8** |
-
-**Calcolo criterio D (formula lineare Pe_i = 30 x Prezzomin/Prezzo_i):**
-- Prezzomin = 290.000 (Beta)
-- PE_Alfa = 30 x (290.000/340.000) = 25,6
-- PE_Beta = 30 x (290.000/290.000) = 30,0
-- PE_Gamma = 30 x (290.000/360.000) = 24,2
-
-**Classifica finale:**
-
-| Pos. | Offerente | PT | PE | Totale |
-|------|-----------|----|----|--------|
-| 1 | **Beta** | 62,5 | 30,0 | **92,5** |
-| 2 | Alfa | 52,0 | 25,6 | 77,6 |
-| 3 | Gamma | 43,8 | 24,2 | 68,0 |
-
----
-
-## Principi di base del metodo
-
-1. **Confronto relativo**: i punteggi sono calcolati rispetto alle offerte presentate, non in assoluto. Il cambiamento di un'offerta modifica i punteggi di tutte le altre (tramite riproporzionamento)
-2. **Compensabilita'**: un offerente puo' compensare una debolezza su un criterio con la forza su un altro (entro i limiti del metodo aggregativo)
-3. **Trasparenza**: tutti i calcoli devono essere riproducibili dagli offerenti sulla base delle informazioni nel disciplinare
-4. **Parita' di trattamento**: stessa formula, stessi criteri per tutti gli offerenti
+### 4. Esempio numerico: costruito ad hoc, non nel PDF
+L'estratto precedente conteneva un esempio numerico completo con 3 offerenti. Questo esempio non e' presente nel PDF ANAC LG n.2; era un'elaborazione dell'agent. L'unico esempio nel PDF riguarda il rating di legalita' con punteggio tabellare (p. 13).

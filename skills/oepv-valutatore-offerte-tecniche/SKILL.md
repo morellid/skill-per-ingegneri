@@ -47,25 +47,29 @@ Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' vuole ese
 
 ## Quando l'OEPV e' obbligatorio
 
-Ai sensi dell'art. 108 co. 2 D.Lgs. 36/2023, l'aggiudicazione con criterio qualita'/prezzo e' **obbligatoria** per:
-- Servizi sociali e di ristorazione ospedaliera, assistenziale e scolastica
-- Servizi di architettura, ingegneria e altri servizi tecnici di importo >= 140.000 EUR
-- Servizi ad alto contenuto tecnologico o con carattere innovativo di importo >= 140.000 EUR
-- Forniture ad alto contenuto tecnologico di importo >= 140.000 EUR
-- Dialogo competitivo e partenariato per l'innovazione
-- Contratti con componente progettuale (appalti integrati)
-- Servizi di trasporto scolastico
+Ai sensi dell'art. 108 co. 2 D.Lgs. 36/2023 (GU 2023), l'aggiudicazione con criterio qualita'/prezzo e' **obbligatoria** per (le sei fattispecie del co. 2):
+- a) Servizi sociali e di ristorazione ospedaliera, assistenziale e scolastica; servizi ad alta intensita' di manodopera
+- b) Servizi di ingegneria e architettura e altri servizi tecnici di importo >= 140.000 EUR
+- c) Servizi e forniture di importo >= 140.000 EUR con notevole contenuto tecnologico o carattere innovativo
+- d) Dialogo competitivo e partenariato per l'innovazione
+- e) Appalti integrati (progettazione + esecuzione)
+- f) Lavori con notevole contenuto tecnologico o carattere innovativo
 
 Per tutti gli altri contratti, il criterio del prezzo piu' basso e' ammesso se l'oggetto e' standardizzato, tranne per i servizi ad alta intensita' di manodopera (art. 108 co. 3).
 
-## Criteri premianti obbligatori (art. 108 co. 7)
+**Nota**: il co. 2 nella GU 2023 originale ha 6 lettere (a-f). Versioni precedenti di questa skill citavano anche il trasporto scolastico e i servizi con requisiti DPR 328 come categorie obbligatorie distinte, ma queste fattispecie non compaiono nel co. 2 del testo originale GU 2023. Verificare sul testo consolidato Normattiva se il D.Lgs. 209/2024 correttivo abbia aggiunto ulteriori fattispecie.
 
-In ogni gara OEPV, il testo dell'art. 108 co. 7 stabilisce che "e' **sempre previsto** il maggiore punteggio possibile" per **tutte e tre** le seguenti categorie:
-1. **Produttori di beni a basse emissioni di CO2** - principalmente per forniture e lavori con componente materiali significativa
-2. **Imprese con misure di welfare aziendale** - applicabile a qualsiasi contratto
-3. **Imprese con certificazione parita' di genere** (UNI/PdR 125:2022 o equivalente, D.Lgs. 198/2006 art. 46-bis) - applicabile a qualsiasi contratto
+## Criterio premiante obbligatorio: parita' di genere (art. 108 co. 7)
 
-Omettere anche una sola delle tre categorie rende la matrice contestabile. Se una categoria non e' pertinente all'oggetto specifico del contratto (art. 108 co. 6), documentare la ragione nel disciplinare.
+Il testo dell'art. 108 co. 7 D.Lgs. 36/2023 (GU 2023) stabilisce un obbligo esplicito: "Al fine di promuovere la parita' di genere, le stazioni appaltanti **prevedono** nei bandi di gara, negli avvisi e negli inviti, il maggior punteggio da attribuire alle imprese che attestano, anche a mezzo di autocertificazione, il possesso dei requisiti di cui all'articolo 46-bis del codice delle pari opportunita' tra uomo e donna, di cui al decreto legislativo 11 aprile 2006, n. 198."
+
+Questo e' l'**unico criterio premiante esplicitamente obbligatorio** nell'art. 108 co. 7 del testo originale GU 2023. L'autocertificazione e' ammessa ma la SA verifica l'attendibilita' sull'aggiudicataria.
+
+Il co. 7 consente altresi' alla SA di inserire **criteri premiali facoltativi** per PMI, operatori locali (principio di prossimita'), start-up innovative, ecc.
+
+**Nota**: Versioni precedenti di questa skill riportavano erroneamente che anche basse emissioni CO2 e welfare aziendale erano obbligatori ai sensi del co. 7. Questa affermazione non e' rintracciabile nel testo GU 2023 dell'art. 108. CO2 e welfare possono essere inclusi come criteri premianti facoltativi, purche' connessi all'oggetto (art. 108 co. 6).
+
+**Nota sul D.Lgs. 209/2024**: il testo del co. 7 potrebbe essere stato modificato dal correttivo. Verificare sul testo consolidato Normattiva prima della pubblicazione di gare successive al 31/12/2024.
 
 ## Limiti sul punteggio economico (art. 108 co. 4)
 

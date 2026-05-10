@@ -1,6 +1,6 @@
 schema_version: 1
 skill: oepv-valutatore-offerte-tecniche
-last_verified: 2026-05-02
+last_verified: 2026-05-10
 
 # Fonti normative per la skill di supporto alla valutazione OEPV (offerta economicamente
 # piu' vantaggiosa) nelle procedure di appalto pubblico ai sensi del D.Lgs. 36/2023.
@@ -19,23 +19,27 @@ last_verified: 2026-05-02
 
 sources:
   - id: dlgs-36-2023-originale-gu-2023
-    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - GU n. 77 del 31/03/2023 Suppl. Ordinario n. 12 (riedito su GU n. 87 del 13/04/2023 Suppl. Ordinario n. 14)"
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - GU n. 87 del 13/04/2023 Suppl. Ordinario n. 14"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/gu/2023/04/13/87/so/14/sg/pdf
-    accessed: 2026-05-02
-    sha256: null
+    accessed: 2026-05-10
+    sha256: b139f0515a8aa018a25b7a31acce39fc39329cdc07aedd17e870dd9dc91025ff
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-36-2023-gu87-so14.pdf
+    md_path: references/fonti/dlgs-36-2023-artt93-107-108.md
     excerpt_paths:
       - references/estratti/dlgs-36-art93.md
       - references/estratti/dlgs-36-art107-108.md
     notes: |
       Codice dei contratti pubblici, in vigore dal 1 aprile 2023, efficace dal
-      1 luglio 2023. Per questa skill rilevano:
-      - Art. 93: composizione e requisiti della commissione giudicatrice
-      - Art. 107: principi generali OEPV
-      - Art. 108: criteri di aggiudicazione (OEPV obbligatorio, limiti punteggio
-        economico 10%/30%, bonus parita' di genere, criterio collegato all'oggetto)
+      1 luglio 2023. PDF scaricato dalla GU il 2026-05-10, SHA256 calcolato.
+      Testo verbatim di art. 93, 107 e 108 trascritto in references/fonti/.
+      Per questa skill rilevano:
+      - Art. 93: composizione, requisiti e incompatibilita' della commissione (7 commi)
+      - Art. 107: principi generali di selezione (3 commi) - NON contiene criteri OEPV
+      - Art. 108: criteri di aggiudicazione (OEPV obbligatorio co.2, limiti punteggio
+        economico 10%/30% co.4, bonus parita' di genere co.7, criterio collegato
+        all'oggetto co.6, divieto punti per opere extra co.11)
       Il D.Lgs. 36/2023 NON ha un allegato specifico per le formule di valutazione
       OEPV. La metodologia di calcolo e' delegata agli atti di gara e alla prassi.
 
@@ -43,15 +47,19 @@ sources:
     title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/id/2025/01/22/25A00154/sg
-    accessed: 2026-05-02
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-209-2024-correttivo.pdf
+    md_path: null
     excerpt_paths: []
     notes: |
-      Decreto correttivo in vigore dal 31/12/2024. Non modifica sostanzialmente
-      gli artt. 93 e 108 rilevanti per questa skill. Da consultare per eventuali
-      modifiche puntuali ai commi degli articoli sopra citati.
+      Decreto correttivo in vigore dal 31/12/2024. Il PDF non e' stato scaricabile
+      dall'ambiente di sviluppo (redirect GU non funzionante al 2026-05-10).
+      Da verificare se modifica art. 93, 107 o 108 del D.Lgs. 36/2023 rilevanti
+      per questa skill. Il testo degli artt. 93, 107, 108 riportato nella skill
+      e' quello della GU originale 2023 (pre-correttivo). Aggiornare questa voce
+      e references/fonti/ non appena il PDF e' accessibile. Pending: issue aperta.
 
   - id: normattiva-portale-dlgs-36
     title: "Portale Normattiva - D.Lgs. 36/2023 - versione multivigente consolidata"
@@ -70,14 +78,17 @@ sources:
     title: "ANAC - Linee guida n. 2 - Offerta economicamente piu' vantaggiosa - Delibera n. 424 del 2 maggio 2018"
     type: linea-guida-anac
     url: https://www.anticorruzione.it/documents/91439/221cee7f-adba-5368-6d25-69fd2884aa91
-    accessed: 2026-05-02
-    sha256: null
+    accessed: 2026-05-10
+    sha256: 719e06f3ec3ce5b36d1f606adaa874377438a83f92fc2e47bf9c6dde7c93d1f8
     license: public-domain-italian-law
     binary_path: not_in_repo/anac-lg-n2-delibera-424-2018.pdf
+    md_path: references/fonti/anac-lg-n2-delibera-424-2018.md
     excerpt_paths:
       - references/estratti/anac-lg-n2-metodologia-oepv.md
     notes: |
       Linee guida ANAC n. 2 aggiornate con delibera n. 424 del 2/5/2018.
+      PDF scaricato il 2026-05-10, SHA256 calcolato. Testo verbatim trascritto
+      in references/fonti/anac-lg-n2-delibera-424-2018.md (Sezioni III, IV, V, VI.1).
       STATO NORMATIVO: vincolanti sotto D.Lgs. 50/2016 (vecchio codice).
       Sotto D.Lgs. 36/2023 (nuovo codice, efficace 1/7/2023) non sono state
       rinnovate ne' formalmente ritirate per la materia OEPV. La prassi nei
