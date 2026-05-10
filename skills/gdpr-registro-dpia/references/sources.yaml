@@ -1,17 +1,18 @@
 schema_version: 1
 skill: gdpr-registro-dpia
-last_verified: 2026-04-25
+last_verified: 2026-05-10
 
 sources:
   - id: gdpr-it-garante-2018
     title: "Reg. UE 2016/679 (GDPR) - Testo italiano arricchito con considerando, aggiornato alle rettifiche pubblicate in GUUE 127 del 23/05/2018"
     type: regolamento-ue
-    url: https://www.garanteprivacy.it/regolamentoue/il-testo-del-regolamento
-    download_url: https://www.garanteprivacy.it/documents/10160/0/Regolamento+UE+2016+679.+Arricchito+con+riferimenti+ai+Considerando+Aggiornato+alle+rettifiche+pubblicate+sulla+Gazzetta+Ufficiale++dell%27Unione+europea+127+del+23+maggio+2018.pdf
-    accessed: 2026-04-25
+    url: https://www.garanteprivacy.it/garante/document?ID=6264597
+    download_url: https://www.garanteprivacy.it/documents/10160/0/Regolamento+UE+2016+679.+Arricchito+con+riferimenti+ai+Considerando+Aggiornato+alle+rettifiche+pubblicate+sulla+Gazzetta+Ufficiale++dell%27Unione+europea+127+del+23+maggio+2018.pdf/1bd9bde0-d074-4ca8-b37d-82a3478fd5d3?version=1.9
+    accessed: 2026-05-10
     sha256: 16c0bb358414707b194678bdf80d7e4ba721a0d9cb0e76965569257b75be3e58
     license: public-domain-eu-law
     binary_path: not_in_repo/gdpr-it-garante.pdf
+    md_path: references/fonti/gdpr-it-garante-2018.md
     excerpt_paths:
       - references/estratti/gdpr-art-30.md
       - references/estratti/gdpr-art-35-36.md
@@ -20,16 +21,19 @@ sources:
       riferimenti incrociati ai Considerando. Versione di lavoro autoritativa
       per la pratica italiana. Per uso strettamente legale, cross-checkare
       contro la versione ufficiale Eur-Lex (CELEX:02016R0679).
+      SHA256 verificato in data 2026-05-10 scaricando da download_url (URL
+      originale in sources.yaml restituiva 404 - aggiornato il percorso).
 
   - id: garante-prov-467-2018-allegato1
     title: "Provvedimento Garante Privacy n. 467/2018 - Allegato 1 - Elenco delle tipologie di trattamenti soggetti al meccanismo di coerenza, da sottoporre a valutazione d'impatto"
     type: provvedimento-garante
     url: https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9058979
     download_url: https://www.garanteprivacy.it/documents/10160/0/ALLEGATO+1+Elenco+delle+tipologie+di+trattamenti+soggetti+al+meccanismo+di+coerenza+da+sottoporre+a+valutazione+di+impatto
-    accessed: 2026-04-25
+    accessed: 2026-05-10
     sha256: 6ece43c22d072acb58879f8382f72a7f2230893d882e7916f78c553929b5ca10
     license: public-domain-italian-law
     binary_path: not_in_repo/garante-allegato1-prov467-2018.pdf
+    md_path: references/fonti/garante-prov467-2018-allegato1.md
     excerpt_paths:
       - references/estratti/garante-allegato1-prov467-2018.md
     notes: |
@@ -37,23 +41,27 @@ sources:
       indipendentemente dalle previsioni dell'art. 35 par. 3 GDPR. In aggiunta
       ai 9 criteri WP248 rev. 01: anche solo 1 criterio + 1 tipologia rende
       la DPIA quasi sempre necessaria. Pubblicato in GU n. 269 del 19/11/2018.
+      SHA256 verificato in data 2026-05-10 scaricando da download_url.
 
   - id: wp248-rev01-edpb
     title: "WP248 rev. 01 - Linee guida sulla valutazione d'impatto sulla protezione dei dati (DPIA), Article 29 Working Party, endorsed by EDPB"
     type: linee-guida-edpb
     url: https://ec.europa.eu/newsroom/article29/items/611236
-    accessed: 2026-04-25
-    sha256: null
+    download_url: https://ec.europa.eu/newsroom/just/document.cfm?doc_id=47711
+    accessed: 2026-05-10
+    sha256: 4de1ee2df6bbe9517847b45ba8b0657e7de4c1bd796f107d940df255ca6ded67
     license: public-domain-eu-doc
     binary_path: not_in_repo/wp248-rev01.pdf
-    excerpt_paths: []
+    md_path: references/fonti/wp248-rev01.md
+    excerpt_paths:
+      - references/estratti/wp248-criteri.md
     notes: |
       Linee guida emanate dal Gruppo di lavoro art. 29 (poi confluito nell'EDPB
       Comitato Europeo per la Protezione dei Dati). Il documento e' stato
       adottato dall'EDPB come proprio orientamento. Definisce i 9 criteri
       per identificare trattamenti "ad alto rischio" che richiedono DPIA.
-      Da scaricare manualmente per uso completo: la skill cita riferimenti
-      strutturali ai criteri ma non riproduce il testo integrale.
+      Adottato il 4 aprile 2017, rivisto il 4 ottobre 2017 (rev. 01).
+      SHA256 calcolato in data 2026-05-10 scaricando da download_url.
 
   - id: dlgs-196-2003-101-2018
     title: "D.Lgs. 196/2003 - Codice in materia di protezione dei dati personali, come modificato dal D.Lgs. 101/2018"

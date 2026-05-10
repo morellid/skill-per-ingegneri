@@ -3,9 +3,14 @@
 **Fonte**: `sources.yaml` id `garante-prov-467-2018-allegato1`
 **Documento**: Allegato 1 al Provvedimento del Garante per la protezione dei dati personali n. 467 dell'11 ottobre 2018
 **Pubblicazione**: Gazzetta Ufficiale n. 269 del 19 novembre 2018
-**Data consultazione**: 2026-04-25
+**Data consultazione**: 2026-05-10 (verificato SHA256 - coincide con hash dichiarato)
 **Hash SHA256**: 6ece43c22d072acb58879f8382f72a7f2230893d882e7916f78c553929b5ca10
 **Licenza**: provvedimento amministrativo italiano in pubblico dominio.
+**Testo di riferimento**: `references/fonti/garante-prov467-2018-allegato1.md`
+
+Nota metodologica: i titoli sintetici in grassetto prima di ogni voce (es. "Scoring e profilazione
+su larga scala") sono annotazioni editoriali per facilita' di consultazione: il PDF originale riporta
+solo i numeri 1-12 senza intestazioni.
 
 ---
 
@@ -49,27 +54,6 @@ Trattamenti sistematici di dati genetici, tenendo conto, in particolare, del vol
 
 ---
 
-## Note interpretative del Garante
-
-Le 12 tipologie sopra **non sono esaustive**: la DPIA puo' essere richiesta anche per trattamenti che non rientrano in queste categorie ma che soddisfano i criteri WP248 rev. 01.
-
-In presenza di una di queste tipologie, **si presume che la DPIA sia richiesta** (presunzione iuris tantum, ribaltabile solo con motivazione documentata).
-
-Il Garante ha precisato che il riferimento al "trattamento su larga scala" va valutato considerando:
-- numero degli interessati (in valore assoluto o in % della popolazione di riferimento)
-- volume dei dati e/o varieta' dei dati trattati
-- durata del trattamento
-- ambito geografico
-
-## Tipologie particolarmente rilevanti per ingegneri / sviluppatori software
-
-Per il pubblico di **ingegneri dell'informazione e industriale** (target della commissione Ordine Livorno):
-
-- **Tipologia 1** - sistemi di scoring/credit/HR analytics
-- **Tipologia 2** - decisioni automatizzate (selezione candidati, antifrode, ecc.)
-- **Tipologia 3** - app/web con tracciamento utente, IoT
-- **Tipologia 5** - videosorveglianza dipendenti, geolocalizzazione veicoli aziendali, sistemi di asset tracking
-- **Tipologia 7** - **IoT**, **AI/ML**, assistenti vocali, wearable, wi-fi tracking
-- **Tipologia 8** - integrazione dati tra aziende (B2B data sharing)
-- **Tipologia 9** - data warehouse multi-source
-- **Tipologia 11** - controlli accesso biometrici
+Il PDF originale non contiene ulteriori note interpretative: il testo del Allegato 1 e' limitato
+all'elenco delle 12 tipologie riportato sopra. Per i criteri di supporto (es. definizione di
+"larga scala", soglie di applicazione) si veda `references/estratti/wp248-criteri.md`.

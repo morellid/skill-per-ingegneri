@@ -2,9 +2,10 @@
 
 **Fonte**: `sources.yaml` id `gdpr-it-garante-2018`
 **Documento**: Reg. UE 2016/679 - testo italiano arricchito con considerando, Garante Privacy, aggiornato alle rettifiche GUUE 127 del 23/05/2018
-**Data consultazione**: 2026-04-25
+**Data consultazione**: 2026-05-10 (verificato SHA256 - coincide con hash dichiarato)
 **Hash SHA256**: 16c0bb358414707b194678bdf80d7e4ba721a0d9cb0e76965569257b75be3e58
 **Licenza**: testo regolamentare UE in pubblico dominio.
+**Testo di riferimento**: `references/fonti/gdpr-it-garante-2018.md`
 
 ---
 

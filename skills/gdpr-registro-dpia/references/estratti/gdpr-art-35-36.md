@@ -2,9 +2,10 @@
 
 **Fonte**: `sources.yaml` id `gdpr-it-garante-2018`
 **Documento**: Reg. UE 2016/679 - testo italiano arricchito Garante
-**Data consultazione**: 2026-04-25
+**Data consultazione**: 2026-05-10 (verificato SHA256 - coincide con hash dichiarato)
 **Hash SHA256**: 16c0bb358414707b194678bdf80d7e4ba721a0d9cb0e76965569257b75be3e58
 **Licenza**: testo regolamentare UE in pubblico dominio.
+**Testo di riferimento**: `references/fonti/gdpr-it-garante-2018.md`
 
 ---
 
@@ -69,23 +70,12 @@ Una DPIA conforme contiene **almeno** questi 4 elementi:
 3. **Valutazione dei rischi** per gli interessati
 4. **Misure** per affrontare i rischi
 
-I 9 criteri WP248 rev. 01 (linee guida endorsed EDPB) per identificare un trattamento "ad alto rischio":
+Per i **9 criteri WP248 rev. 01** (linee guida WP29 endorsed EDPB) che precisano quando un
+trattamento e' "ad alto rischio" ai fini del par. 1, vedi l'estratto dedicato:
+`references/estratti/wp248-criteri.md` (fonte verificata: SHA256 `4de1ee2df6bb...`).
 
-| # | Criterio |
-|---|----------|
-| 1 | Valutazione o assegnazione di un punteggio (scoring/profilazione) |
-| 2 | Decisioni automatizzate con effetti giuridici o analoghi |
-| 3 | Monitoraggio sistematico |
-| 4 | Dati sensibili o aventi carattere altamente personale |
-| 5 | Trattamenti su larga scala |
-| 6 | Combinazione o raffronto di insiemi di dati |
-| 7 | Dati relativi a interessati vulnerabili |
-| 8 | Uso innovativo o applicazione di nuove soluzioni tecnologiche/organizzative |
-| 9 | Trattamenti che impediscono l'esercizio di un diritto o l'uso di un servizio/contratto |
-
-**Regola pratica EDPB**: trattamenti che soddisfano **2 o piu' criteri** sopra richiedono la DPIA. Trattamenti che soddisfano 1 solo criterio e' opportuno valutare caso per caso (linee guida WP248 rev. 01).
-
-In Italia, l'**Allegato 1 al Provv. Garante 467/2018** definisce 12 tipologie per cui la DPIA e' richiesta esplicitamente, dandone certezza (vedi estratto dedicato).
+In Italia, l'**Allegato 1 al Provv. Garante 467/2018** definisce 12 tipologie per cui la DPIA e'
+richiesta esplicitamente: vedi `references/estratti/garante-allegato1-prov467-2018.md`.
 
 ## Sanzioni
 
