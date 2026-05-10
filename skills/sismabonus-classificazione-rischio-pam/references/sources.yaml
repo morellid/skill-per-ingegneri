@@ -67,17 +67,19 @@ sources:
     license: public-domain
     binary_path: not_in_repo/dm-24-2020.pdf
     excerpt_path: null
+    md_path: references/fonti/dm-24-2020.md
     notes: |
       PDF scaricato 2026-05-10 da URL diretto MIT. SHA256 calcolato sul
       file scaricato. ATTENZIONE: il PDF e' un documento scansionato (2
-      pagine). pdftotext non produce testo estraibile. La pagina MIT del
-      DM 24/2020 indica che questo decreto introduce modifiche al DM
-      58/2017 (tra cui probabilmente il metodo semplificato per capannoni
-      e c.a.), ma l'Allegato A della procedura di classificazione
-      convenzionale non risulta modificato rispetto al DM 65/2017.
-      Non e' stato possibile verificare in modo testuale il contenuto
-      esatto delle modifiche. Il Testo coordinato disponibile sul sito
-      MIT e' anch'esso scansionato.
+      pagine). pdftotext non produce testo estraibile. Trascrizione
+      effettuata via lettura visiva delle immagini PNG estratte con
+      pdftoppm a 200dpi (2026-05-11). Il decreto modifica art. 2 comma 1,
+      art. 3 comma 3, art. 3 comma 6 del DM 58/2017 (correzioni formali e
+      modalita' di presentazione SCIA), e sostituisce Allegato A e Allegato B.
+      Il testo dell'Allegato A non e' incluso nel PDF disponibile sul sito
+      MIT: l'impatto sulla procedura di classificazione convenzionale non e'
+      verificabile dal solo PDF scaricato. Il Testo coordinato disponibile
+      sul sito MIT e' anch'esso scansionato.
 
   - id: dm-329-2020
     title: "DM MIT 6/8/2020 n. 329 - Modifica all'art. 3 del DM 58/2017 e sostituzione dell'Allegato B"
@@ -88,13 +90,16 @@ sources:
     license: public-domain
     binary_path: not_in_repo/dm-329-2020.pdf
     excerpt_path: null
+    md_path: references/fonti/dm-329-2020.md
     notes: |
-      Modifica l'art. 3 del DM 58/2017 (commi 4-bis, 4-ter, 4-quater:
-      super-sismabonus 110%, polizza assicurativa, SAL) e SOSTITUISCE
-      l'Allegato B (modello di asseverazione tecnica del professionista).
-      NON modifica l'Allegato A. Fuori scope diretto della skill (tocca
-      asseverazione e adempimenti fiscali, non la procedura di calcolo).
-      Hash SHA256 calcolato al fetch del 2026-05-07.
+      PDF testuale (non scansionato), letto con pdftotext (2026-05-11).
+      Modifica l'art. 3 del DM 58/2017 inserendo i commi 4-bis, 4-ter,
+      4-quater (super-sismabonus 110%, polizza assicurativa obbligatoria,
+      SAL con modello allegato 1) e SOSTITUISCE l'Allegato B (modello di
+      asseverazione tecnica del professionista). NON modifica l'Allegato A.
+      Fuori scope diretto della skill (tocca asseverazione e adempimenti
+      fiscali, non la procedura di calcolo PAM/IS-V). Hash SHA256 calcolato
+      al fetch del 2026-05-07.
 
   # --- Riferimenti tecnici NTC 2018 ------------------------------------
 
