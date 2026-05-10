@@ -1,65 +1,76 @@
 schema_version: 1
 skill: pfte-allegato-i7-checker
-last_verified: 2026-04-29
+last_verified: 2026-05-10
 
 # Fonti normative principali per la skill di verifica PFTE secondo
 # D.Lgs. 36/2023 art. 41 + Allegato I.7, integrato dal correttivo
 # D.Lgs. 209/2024.
 #
-# Nota operativa: il download diretto dei PDF della Gazzetta Ufficiale via
-# script automatizzato puo' essere bloccato dalle policy locali. Per
-# popolare i binari e gli hash eseguire manualmente:
-#   curl -Lo not_in_repo/dlgs-36-2023-gu87-so14.pdf \
-#     "https://www.gazzettaufficiale.it/eli/gu/2023/04/13/87/so/14/sg/pdf"
-#   shasum -a 256 not_in_repo/dlgs-36-2023-gu87-so14.pdf
-# e aggiornare il campo sha256 corrispondente.
+# Nota: il testo principale del D.Lgs. 36/2023 (artt. 1-229, incluso art. 41)
+# e' nella GU n. 87/SO n. 14 del 13/04/2023.
+# L'Allegato I.7 e' nella GU n. 77/SO n. 12/L del 31/03/2023 (originale
+# pubblicazione). La GU n. 87 (riedizione) esplicita: "Si omettono gli Allegati
+# e Tabelle, gia' pubblicati nel Supplemento ordinario n. 12/L alla Gazzetta
+# Ufficiale - Serie generale - n. 77 del 31 marzo 2023."
+# Per la skill sono stati scaricati entrambi i PDF.
 
 sources:
   - id: dlgs-36-2023-originale-gu-2023
-    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - GU n. 77 del 31/03/2023 Suppl. Ordinario n. 12 (riedito su GU n. 87 del 13/04/2023 Suppl. Ordinario n. 14)"
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - Art. 41: GU n. 87 del 13/04/2023 SO n. 14; Allegato I.7: GU n. 77 del 31/03/2023 SO n. 12/L"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/gu/2023/04/13/87/so/14/sg/pdf
-    accessed: 2026-04-29
-    sha256: null
+    url_allegati: https://www.gazzettaufficiale.it/eli/gu/2023/03/31/77/so/12/sg/pdf
+    accessed: 2026-05-10
+    sha256: b139f0515a8aa018a25b7a31acce39fc39329cdc07aedd17e870dd9dc91025ff
+    sha256_allegati: 1604cafa9bbd258ada08978b9ca0376d929017a0ce18c78ee89ea68cd8f07702
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-36-2023-gu87-so14.pdf
+    binary_path_allegati: not_in_repo/dlgs-36-2023-gu77-so12.pdf
+    md_path: references/fonti/dlgs-36-2023-allegato-i7.md
     excerpt_paths:
       - references/estratti/dlgs-36-art-41.md
       - references/estratti/allegato-i7-pfte.md
       - references/estratti/allegato-i7-esecutivo.md
     notes: |
       Codice dei contratti pubblici, in vigore dal 1 aprile 2023, efficace dal
-      1 luglio 2023. Comprende 5 libri, 229 articoli, 36 allegati. Riferimento
-      principale per la skill: art. 41 (Livelli e contenuti della progettazione)
-      e Allegato I.7 (Contenuti minimi del quadro esigenziale, del documento
-      di fattibilita' delle alternative progettuali, del documento di indirizzo
-      della progettazione, del progetto di fattibilita' tecnica ed economica
-      e del progetto esecutivo).
+      1 luglio 2023. Il testo principale (art. 41) e' nel SO n. 14 alla GU n. 87
+      del 13/04/2023 (sha256: b139f051...). L'Allegato I.7 completo (artt. 1-44)
+      e' nel SO n. 12/L alla GU n. 77 del 31/03/2023 (sha256: 1604cafa...).
+      Entrambi i PDF sono stati scaricati, estratti via pdftotext e letti verbatim
+      per la produzione di references/fonti/dlgs-36-2023-allegato-i7.md.
+      Riferimento principale per la skill: art. 41 (Livelli e contenuti della
+      progettazione) e Allegato I.7 (Contenuti minimi del quadro esigenziale,
+      del DOCFAP, del DIP, del PFTE e del progetto esecutivo).
       Testo legislativo italiano riproducibile liberamente ai sensi
       dell'art. 5 L. 633/1941 (atti ufficiali dello Stato).
 
   - id: dlgs-209-2024-correttivo-gu-2025
-    title: "D.Lgs. 31 dicembre 2024 n. 209 - Disposizioni integrative e correttive al codice dei contratti pubblici di cui al D.Lgs. 36/2023 - GU n. 17 del 22/01/2025 Suppl. Ordinario"
+    title: "D.Lgs. 31 dicembre 2024 n. 209 - Disposizioni integrative e correttive al codice dei contratti pubblici di cui al D.Lgs. 36/2023 - GU n. 17 del 22/01/2025 Suppl. Ordinario n. 3"
     type: decreto-legislativo
-    url: https://www.gazzettaufficiale.it/eli/id/2025/01/22/25A00154/sg
-    accessed: 2026-04-29
-    sha256: null
+    url: https://www.gazzettaufficiale.it/eli/gu/2025/01/22/17/so/3/sg/pdf
+    accessed: 2026-05-10
+    sha256: 55b6f60ed930f29cc12f2e92e468a60152b428bde7e2977423f99be4341b0df9
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-209-2024-correttivo.pdf
+    md_path: references/fonti/dlgs-209-2024-correttivo.md
     excerpt_paths:
       - references/estratti/dlgs-209-2024-modifiche.md
     notes: |
       Decreto correttivo entrato in vigore il 31/12/2024, pubblicato in GU
-      del 22/01/2025. Modifica oltre 70 articoli del Codice e introduce 3
-      nuovi allegati. Per la skill rilevano in particolare le modifiche
-      all'art. 41 (commi bis introdotti, vedi estratto) e all'Allegato I.7
-      (semplificazioni sui contratti di manutenzione ordinaria/straordinaria).
+      del 22/01/2025 (SO n. 3, non n. 4 come inizialmente dichiarato: la pagina
+      GU rimanda al SO n. 3). Il PDF e' stato scaricato, estratto via pdftotext
+      e letto verbatim per la produzione di references/fonti/dlgs-209-2024-correttivo.md.
+      Per la skill rilevano: art. 14 (modifiche art. 41) e art. 78 (modifiche
+      Allegato I.7), in particolare: co. 5-bis e art. 6 co. 8-bis (manutenzione
+      su PFTE), nuova lettera p art. 6 co. 7 (capitolato informativo solo per
+      appalto integrato), art. 4-bis, artt. 13-bis e 13-ter, lett. p-bis e p-ter
+      all'art. 22 co. 4 (esecutivo BIM), abrogazione art. 22 co. 5.
 
   - id: normattiva-portale-dlgs-36
     title: "Portale Normattiva - D.Lgs. 36/2023 - versione multivigente"
     type: portale-normativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
-    accessed: 2026-04-29
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
     binary_path: null
@@ -69,13 +80,14 @@ sources:
       la consultazione del testo consolidato vigente. Non scaricabile come
       PDF unico ma consultabile articolo per articolo con storicizzazione
       delle modifiche. Usare per cross-check puntuale prima del release o
-      in caso di dubbio sulla vigenza di un singolo comma.
+      in caso di dubbio sulla vigenza di un singolo comma. sha256 null per
+      fonte HTML non scaricabile come file unico.
 
   - id: dlgs-81-2008-richiamato
     title: "D.Lgs. 9 aprile 2008 n. 81 - Testo unico salute e sicurezza sul lavoro - rinvio strutturale"
     type: rinvio-normativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81
-    accessed: 2026-04-29
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
     binary_path: null
@@ -91,24 +103,23 @@ sources:
     title: "DM 23 giugno 2022 n. 256 - Criteri Ambientali Minimi (CAM) per l'affidamento del servizio di progettazione e dei lavori per la nuova costruzione, ristrutturazione e manutenzione di edifici pubblici"
     type: rinvio-normativo
     url: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04307/sg
-    accessed: 2026-04-29
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
     binary_path: null
     excerpt_paths: []
     notes: |
       Citato dalla skill esclusivamente come **rinvio strutturale** (lett. o
-      progetto esecutivo, art. 22 co. 4 Allegato I.7: "relazione tecnica ed
-      elaborati di applicazione dei CAM"). La skill segnala l'obbligo di
-      conformita' CAM ma non valuta i contenuti specifici. Per progetti che
-      richiedano la verifica CAM, usare skill dedicata (futura, vedi catalog
-      P1.7 'Relazione CAM DM 256/2022').
+      progetto esecutivo, art. 22 co. 4: "relazione tecnica ed elaborati di
+      applicazione dei criteri minimi ambientali (CAM) di riferimento, di cui
+      al codice, ove applicabili"). La skill segnala l'obbligo di conformita'
+      CAM ma non valuta i contenuti specifici.
 
   - id: dpr-31-2017-paesaggistica
     title: "DPR 13 febbraio 2017 n. 31 - Regolamento autorizzazione paesaggistica semplificata"
     type: rinvio-normativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2017-02-13;31
-    accessed: 2026-04-29
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
     binary_path: null
@@ -124,7 +135,7 @@ sources:
     title: "DM MIT 2 agosto 2021 n. 312 - Decreto BIM (modalita' e tempi obbligo metodi e strumenti di gestione informativa digitale)"
     type: rinvio-normativo
     url: https://www.mit.gov.it/normativa/decreto-ministeriale-numero-312-del-02082021
-    accessed: 2026-04-29
+    accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
     binary_path: null

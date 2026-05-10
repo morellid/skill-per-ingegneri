@@ -45,7 +45,10 @@ Leggere prima di procedere:
 
 ### Passo 1 - Riconoscimento elaborati nel PFTE
 
-Mappare il contenuto fornito ai 16 elaborati dell'art. 6 co. 7 (lett. a-t). Le denominazioni effettive nel PFTE possono variare; alcune euristiche di matching:
+Mappare il contenuto fornito ai 18 elaborati dell'art. 6 co. 7 (lett. a-t, escluse j,k,w,x,y per convenzione legislativa italiana). Le denominazioni effettive nel PFTE possono variare; alcune euristiche di matching:
+
+> **Riferimento**: l'elenco normativo e' all'Allegato I.7 art. 6 co. 7 (D.Lgs. 36/2023,
+> GU n. 77 SO n. 12/L). Verificato verbatim in `references/fonti/dlgs-36-2023-allegato-i7.md`.
 
 | Voce normativa | Possibili denominazioni nei PFTE reali |
 |----------------|----------------------------------------|
