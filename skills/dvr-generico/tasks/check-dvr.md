@@ -167,9 +167,9 @@ Aspetti formali (data certa, firme): [OK / Carenti]
 ## Sanzioni potenzialmente applicabili
 
 In caso di carenze:
-- Mancata redazione DVR: arresto 3-6 mesi o ammenda 2.949 - 7.532 EUR
-- DVR senza lett. b/c/d: ammenda 2.847 - 5.695 EUR
-- DVR senza lett. a primo periodo o f: ammenda 1.423 - 2.847 EUR
+- Mancata redazione DVR (art. 55 co. 1): arresto da tre a sei mesi o ammenda da 2.500 a 6.400 euro
+- DVR senza lett. b/c/d (art. 55 co. 3): ammenda da 2.000 a 4.000 euro
+- DVR senza lett. a primo periodo o f (art. 55 co. 4): ammenda da 1.000 a 2.000 euro
 
 ## Limiti
 

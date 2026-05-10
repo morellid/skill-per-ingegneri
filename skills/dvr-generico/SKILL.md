@@ -25,10 +25,10 @@ Skill **cross-settoriale**: applicabile a uffici, manifattura, servizi, sanita',
 ## Avvertenza
 
 Questa skill e' uno strumento di supporto alla redazione/verifica del DVR. **Non sostituisce il giudizio del RSPP, del medico competente o del datore di lavoro firmatario.** Il DVR e' atto di **competenza non delegabile** del datore di lavoro (art. 17 co. 1 lett. a). Sanzioni penali per assenza/incompletezza DVR:
-- **Arresto da 3 a 6 mesi o ammenda da 2.949,03 a 7.532,82 euro** per omessa redazione
-- **Ammenda da 2.847,69 a 5.695,36 euro** se DVR redatto senza elementi art. 28 co. 2 lett. b/c/d
-- **Ammenda da 1.423,83 a 2.847,69 euro** per assenza elementi art. 28 co. 2 lett. a (primo periodo) ed f
-*(Importi rivalutati periodicamente.)*
+- **Arresto da tre a sei mesi o ammenda da 2.500 a 6.400 euro** per omessa redazione (art. 55 co. 1 lett. a)
+- **Ammenda da 2.000 a 4.000 euro** se DVR redatto senza elementi art. 28 co. 2 lett. b/c/d (art. 55 co. 3)
+- **Ammenda da 1.000 a 2.000 euro** per assenza elementi art. 28 co. 2 lett. a (primo periodo) ed f (art. 55 co. 4)
+*(Importi da normattiva.it testo vigente. Verificare sempre il testo vigente al momento dell'uso.)*
 
 ## Sotto-attivita' disponibili
 

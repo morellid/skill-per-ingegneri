@@ -57,4 +57,4 @@ Vedi [CHANGELOG.md](CHANGELOG.md).
 
 Strumento di supporto. **Ogni DVR prodotto richiede revisione del RSPP, validazione del datore di lavoro, e consultazione obbligatoria del RLS (art. 29 co. 2). Coinvolgimento del medico competente nei casi di art. 41.**
 
-Sanzioni: arresto 3-6 mesi o ammenda 2.949 - 7.532 EUR per omessa redazione; ammende fino a 5.695 EUR per DVR con elementi mancanti.
+Sanzioni (art. 55): arresto da tre a sei mesi o ammenda da 2.500 a 6.400 euro per omessa redazione; ammende da 1.000 a 4.000 euro per DVR con elementi mancanti.
