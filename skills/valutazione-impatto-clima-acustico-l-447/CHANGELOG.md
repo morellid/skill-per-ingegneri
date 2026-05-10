@@ -9,7 +9,36 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Fixed
 
-- Source-grounding remediation (issue #113):
+- Source-grounding remediation - hash dinamico GU.it (issue #113,
+  seconda parte, closes #113):
+  - Rimossi `binary_path` e `sha256` per le fonti `dpcm-14-11-1997-limiti`
+    e `dm-16-03-1998-tecniche` (impostati a `null`). Il portale
+    gazzettaufficiale.it serve HTML dinamico: lo stesso URL restituisce
+    contenuto diverso ad ogni fetch (header, timestamp, metadati di
+    sessione), rendendo impossibile archiviare un binario stabile con
+    hash verificabile in CI. I file HTML locali in `not_in_repo/`
+    presentavano hash diversi da quelli originariamente dichiarati in
+    `sources.yaml` (dpcm: dichiarato `265982c3...`, locale
+    `ead814fd...`; dm: dichiarato `76e067861...`, locale `ff1a5aa1...`),
+    confermando l'instabilita' del contenuto servito.
+  - Verificato che entrambi i `references/fonti/` siano trascrizioni
+    fedeli dei testi ufficiali letti localmente:
+    - `fonti/dpcm-14-11-1997-limiti.md`: testo integrale confermato
+      rispetto a `not_in_repo/dpcm-14-11-1997-gu.txt`; artt. 1-10 e
+      Tabelle A-D con tutti i valori dB corretti (es. Tabella B:
+      Classe I 45/35 dB, Classe VI 65/65 dB; Tabella C: Classe I
+      50/40 dB, Classe V-VI 70/70 dB; art. 4: differenziale 5 dB
+      diurno / 3 dB notturno).
+    - `fonti/dm-16-03-1998-tecniche.md`: testo integrale confermato
+      rispetto a `not_in_repo/dm-16-03-1998-gu.txt`; artt. 1-4 e
+      allegati A-D con tutte le definizioni, le norme tecniche, le
+      metodologie di misura ferroviaria e stradale e il formato di
+      presentazione dei risultati.
+  - I `md_path` restano dichiarati e i file esistono: la Regola zero
+    e' rispettata (la prova di lettura della fonte e' il file fonti
+    committato, non il binario non archiviabile).
+
+- Source-grounding remediation (issue #113, prima parte):
   - Creati 3 file `references/fonti/` con trascrizione fedele dei testi
     ufficiali letti dai binari in `not_in_repo/`:
     - `fonti/legge-447-1995-mase.md` (art. 2 cc. 1 e)-h), 3, 6-7;

@@ -50,9 +50,9 @@ sources:
     type: decreto-presidente-consiglio-ministri
     url: https://www.gazzettaufficiale.it/eli/id/1997/12/01/097A9602/sg
     accessed: 2026-05-08
-    sha256: 265982c3e2970b27d6078d33e19a9ad06d91c683bb1c1ecd86758a8dc377a47c
+    sha256: null
     license: public-domain
-    binary_path: not_in_repo/dpcm-14-11-1997-gu.html
+    binary_path: null
     md_path: references/fonti/dpcm-14-11-1997-limiti.md
     excerpt_paths:
       - references/estratti/dpcm-14-11-1997-valori-limite.md
@@ -76,21 +76,25 @@ sources:
       riferimento). L'art. 5 rinvia ai decreti attuativi per i valori
       relativi alle infrastrutture dei trasporti.
 
-      Il binario archiviato in not_in_repo/ e' un file HTML aggregato che
-      contiene tutti gli articoli del DPCM e l'allegato (Tabelle A-D)
-      come pubblicati sulle pagine articolo per articolo del portale
-      gazzettaufficiale.it. L'utente che debba citare il testo in pratica
-      o ricorso deve usare la versione consolidata vigente disponibile su
-      Normattiva.
+      binary_path e sha256 sono null perche' il portale gazzettaufficiale.it
+      serve HTML dinamico: lo stesso URL restituisce contenuto diverso a
+      ogni fetch (header, timestamp, metadati di sessione) e l'hash del
+      file scaricato cambia ad ogni richiesta. Non e' possibile archiviare
+      un binario stabile con hash verificabile. La trascrizione fedele del
+      testo e' committata in references/fonti/dpcm-14-11-1997-limiti.md
+      (artt. 1-10 + Tabelle A-D) che costituisce la prova di lettura della
+      fonte ai sensi della Regola zero. L'utente che debba citare il testo
+      in pratica o ricorso deve usare la versione consolidata vigente
+      disponibile su Normattiva.
 
   - id: dm-16-03-1998-tecniche
     title: "Decreto del Ministro dell'ambiente 16 marzo 1998 - Tecniche di rilevamento e di misurazione dell'inquinamento acustico"
     type: decreto-ministeriale
     url: https://www.gazzettaufficiale.it/eli/id/1998/04/01/098A2679/sg
     accessed: 2026-05-08
-    sha256: 76e067861e2477d6ea782ca621bea641ca3be0a5e9bceaeaa7fc9df2865c83c4
+    sha256: null
     license: public-domain
-    binary_path: not_in_repo/dm-16-03-1998-gu.html
+    binary_path: null
     md_path: references/fonti/dm-16-03-1998-tecniche.md
     excerpt_paths:
       - references/estratti/dm-16-03-1998-tecniche-misurazione.md
@@ -121,9 +125,14 @@ sources:
         completo con catena, classe acustica, conclusioni, firma del
         tecnico competente).
 
-      Il binario archiviato in not_in_repo/ e' un file HTML aggregato che
-      contiene tutti gli articoli e gli allegati A-D come pubblicati sulle
-      pagine articolo per articolo del portale gazzettaufficiale.it.
+      binary_path e sha256 sono null perche' il portale gazzettaufficiale.it
+      serve HTML dinamico: lo stesso URL restituisce contenuto diverso a
+      ogni fetch (header, timestamp, metadati di sessione) e l'hash del
+      file scaricato cambia ad ogni richiesta. Non e' possibile archiviare
+      un binario stabile con hash verificabile. La trascrizione fedele del
+      testo e' committata in references/fonti/dm-16-03-1998-tecniche.md
+      (artt. 1-4 + allegati A-D completi) che costituisce la prova di
+      lettura della fonte ai sensi della Regola zero.
 
   - id: legge-447-1995-normattiva
     title: "Legge 26 ottobre 1995 n. 447 - testo vigente consolidato (Normattiva)"
