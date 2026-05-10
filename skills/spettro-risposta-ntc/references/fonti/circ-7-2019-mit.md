@@ -3,9 +3,8 @@
 **Fonte**: Circolare del Ministero delle Infrastrutture e dei Trasporti n. 7 del 21 gennaio 2019 -
 "Istruzioni per l'applicazione dell'aggiornamento delle Norme tecniche per le costruzioni"
 **Pubblicazione**: Supplemento Ordinario n. 5 alla Gazzetta Ufficiale n. 35 dell'11 febbraio 2019
-**URL**: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
-**PDF GU**: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
-**Data accesso**: 2026-05-10
+**URL PDF GU**: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+**Data accesso**: 2026-05-11
 **SHA256**: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
 **Licenza**: pubblico dominio
 

@@ -9,7 +9,10 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Fixed (source-grounding remediation semantica - issue #111)
 
-- **Fonti scaricate e hashate**: NTC 2018 (DM 17/01/2018, GU n. 42 S.O. n. 8) e Circolare MIT n. 7/2019 (GU n. 35 S.O. n. 5) scaricati dal portale Gazzetta Ufficiale, SHA256 calcolati e committati in `sources.yaml`.
+- **URL corretti in sources.yaml**: l'url dei due decreti puntava alle pagine HTML del portale GU.it invece che ai PDF diretti. Corretti a URL PDF diretti (eli/gu/.../pdf) per entrambe le fonti. Il CI scaricava HTML e otteneva SHA256 diverso da quello del PDF.
+  - NTC 2018: url corretto da `.../eli/id/2018/2/20/18A00716/sg` a `.../eli/gu/2018/02/20/42/so/8/sg/pdf`
+  - Circ. 7/2019: url corretto da `.../eli/id/2019/02/11/19A00855/sg` a `.../eli/gu/2019/02/11/35/so/5/sg/pdf`
+- **Fonti scaricate e hashate**: NTC 2018 (DM 17/01/2018, GU n. 42 S.O. n. 8) e Circolare MIT n. 7/2019 (GU n. 35 S.O. n. 5) scaricati dal portale Gazzetta Ufficiale, SHA256 calcolati e committati in `sources.yaml`. Circolare (48 MB) scaricata e hashata il 2026-05-11; SHA256 confermato coincidente con quello gia' dichiarato nel commit precedente.
   - NTC 2018: SHA256 `dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46`
   - Circ. 7/2019: SHA256 `f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c`
 - **Trascrizioni verbatim create** (directory `references/fonti/` precedentemente assente):
