@@ -1,6 +1,6 @@
 schema_version: 1
 skill: spettro-risposta-ntc
-last_verified: 2026-04-29
+last_verified: 2026-05-11
 
 # Fonti normative per il calcolo dello spettro di risposta elastico ai sensi
 # delle NTC 2018 (DM 17/01/2018) e Circolare esplicativa 21/01/2019 n. 7.
@@ -12,8 +12,8 @@ sources:
   - id: ntc2018-dm-17-01-2018
     title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
     type: decreto
-    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
-    accessed: 2026-05-10
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-05-11
     sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
@@ -22,7 +22,7 @@ sources:
     notes: |
       Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
       PDF scaricato da: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
-      SHA256 calcolato il 2026-05-10 con sha256sum sul file scaricato (9.888.288 byte).
+      SHA256 calcolato il 2026-05-11 con sha256sum sul file scaricato (9.888.288 byte).
       Articoli rilevanti per questa skill:
       - par. 2.4 (vita nominale, classi d'uso, vita di riferimento)
       - par. 3.2 (azione sismica): definizioni stati limite (3.2.1),
@@ -35,8 +35,8 @@ sources:
   - id: circ-7-2019-mit
     title: "Circolare Ministero Infrastrutture e Trasporti n. 7 del 21/01/2019 - Istruzioni per l'applicazione delle NTC 2018"
     type: circolare
-    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
-    accessed: 2026-05-10
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+    accessed: 2026-05-11
     sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
     license: public-domain
     binary_path: not_in_repo/circ-7-2019.pdf
@@ -45,7 +45,7 @@ sources:
     notes: |
       Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019.
       PDF scaricato da: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
-      SHA256 calcolato il 2026-05-10 con sha256sum sul file scaricato (50.658.045 byte).
+      SHA256 calcolato il 2026-05-11 con sha256sum sul file scaricato (50.658.045 byte).
       Sezioni rilevanti: C2.4 (vita nominale, classi d'uso), C3.2 (azione
       sismica, commento applicativo a NTC par. 3.2), C3.2.1 (formula TR e
       Tabella C2.4.I con VR minimo = 35 anni), C3.2.3 (commento su SS e CC),
