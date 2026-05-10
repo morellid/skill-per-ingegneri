@@ -16,7 +16,7 @@ Tabella rischi-misure-DPI per la mansione richiesta, con riferimenti normativi.
 
 Leggere prima: `references/estratti/dlgs-81-art-17-28-29.md` (tassonomia generale).
 
-Per Titoli specifici, riferirsi al PDF `not_in_repo/dlgs-81-2008-consolidato-inl-2025-01.pdf` (estratti specifici da preparare in iterazioni successive).
+Per Titoli specifici, consultare il testo vigente su normattiva.it (URL in `references/sources.yaml`); estratti specifici per Titoli particolari da integrare in iterazioni successive.
 
 ## Procedura
 

@@ -268,7 +268,7 @@ Il task produce documento markdown completo strutturato. Esempio iniziale:
 - Aggiornamento obbligatorio in caso di: modifiche significative processo/organizzazione, infortuni significativi, sorveglianza sanitaria che lo richiede (vedi task `valuta-aggiornamento.md`).
 - Custodia presso unita' produttiva (art. 29 co. 4).
 
-Sanzioni applicabili: arresto 3-6 mesi o ammenda 2.949,03 - 7.532,82 EUR per omessa redazione DVR.
+Sanzioni applicabili: arresto da tre a sei mesi o ammenda da 2.500 a 6.400 euro per omessa redazione DVR (art. 55 co. 1).
 ```
 
 ## Casi limite

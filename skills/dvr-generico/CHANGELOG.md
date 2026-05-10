@@ -7,6 +7,27 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### fix(source-grounding) - 2026-05-10
+
+- Sostituito `references/sources.yaml` da template placeholder a fonte reale:
+  `dlgs-81-2008-art-17-28-29-normattiva` con URL normattiva.it vigente.
+- Creato `references/fonti/dlgs-81-2008-art-17-28-29.md`: trascrizione verbatim
+  degli artt. 17, 28 e 29 di D.Lgs. 81/2008 letti direttamente da normattiva.it
+  il 2026-05-10 (testo vigente).
+- Aggiornato header estratto `dlgs-81-art-17-28-29.md`: riferimento a nuovo id
+  fonte e URL normattiva.it.
+- Corretto errore semantico in `dlgs-81-art-17-28-29.md` par. 1-bis: "Obbligo
+  dal 31/12/2010" sostituito con "a fare data dal 1 agosto 2010" (testo vigente
+  art. 28 co. 1-bis normattiva.it: "a fare data dal 1 agosto 2010").
+- Letto art. 55 co. 1, 3, 4 da normattiva.it: corretto importo sanzioni errato
+  in SKILL.md, estratto, tasks/check-dvr.md, tasks/draft-dvr.md.
+  Valori precedenti (2.949,03-7.532,82 / 2.847,69-5.695,36 / 1.423,83-2.847,69
+  euro) non corrispondono al testo letto. Corretti a: co. 1 arresto 3-6 mesi o
+  ammenda 2.500-6.400 euro; co. 3 ammenda 2.000-4.000 euro; co. 4 ammenda
+  1.000-2.000 euro. Art. 55 co. 1, 3, 4 aggiunti al file fonti/.
+- Corretto riferimento a PDF inesistente in tasks/mappa-rischi-mansione.md
+  (non_in_repo/dlgs-81-2008-consolidato-inl-2025-01.pdf -> normattiva.it URL).
+
 ### Da fare
 - Validazione Livello 1 con `scripts/validate.sh`
 - Validazione Livello 2 da RSPP esterno (potenziale validatore: Vitale per profilo RSPP)
