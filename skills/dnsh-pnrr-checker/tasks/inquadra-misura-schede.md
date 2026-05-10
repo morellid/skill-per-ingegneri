@@ -67,13 +67,17 @@ Per i casi PNC, assegna schede RGS solo se l'atto della misura le richiama espre
 
 ### Passo 3 - Regime DNSH
 
-Quando la Guida distingue regime 1 e regime 2:
+La Guida RGS 2024 distingue due regimi (p. 12-13):
 
-- **Regime 1**: l'intervento deve contribuire sostanzialmente all'obiettivo ambientale pertinente e rispettare gli altri obiettivi DNSH.
-- **Regime 2**: l'intervento deve rispettare il DNSH senza dimostrare contributo sostanziale.
+- **Regime 1**: la misura deve contribuire sostanzialmente a uno degli obiettivi climatici o ambientali e rispettare il DNSH per tutti gli altri. Si applica quando:
+  - il campo di intervento ha tagging climatico 100% (contributo sostanziale alla mitigazione), oppure
+  - il campo di intervento ha tagging ambientale 100% (contributo sostanziale a un altro obiettivo), oppure
+  - la scheda di autovalutazione PNRR o la Decisione di esecuzione del Consiglio lo indica esplicitamente.
+- **Regime 2**: la misura deve solo garantire di non arrecare danno significativo a nessuno dei sei obiettivi ambientali, senza contributo sostanziale.
 
-Non inferire il regime solo dalla tipologia di opera: verificare la mappatura misura/scheda e le indicazioni dell'amministrazione titolare.
-Per PNC, se il regime non emerge dall'atto della misura o da un allegato ufficiale, segnalo come `Da confermare su fonte di misura`.
+Il Regime applicabile emerge dalla **mappatura ufficiale** della Guida RGS, che va consultata e riportata. L'associazione mappatura-scheda ha carattere indicativo: le Amministrazioni titolari possono adattarla alle specificita' concrete degli interventi (Guida p. 17). Non inferire il regime autonomamente: verificare la mappatura misura/scheda e le indicazioni dell'Amministrazione titolare.
+
+Per PNC, se il regime non emerge dall'atto della misura o da un allegato ufficiale, segnalare come `Da confermare su fonte di misura`.
 
 ### Passo 4 - Output
 

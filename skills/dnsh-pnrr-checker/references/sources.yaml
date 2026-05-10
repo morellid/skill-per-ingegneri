@@ -1,6 +1,6 @@
 schema_version: 1
 skill: dnsh-pnrr-checker
-last_verified: 2026-05-05
+last_verified: 2026-05-10
 
 # Fonti normative e operative per la verifica DNSH PNRR e per supporto PNC
 # solo su base misura-specifica documentata.
@@ -50,31 +50,38 @@ sources:
     title: "Circolare RGS n. 22 del 14 maggio 2024 - Aggiornamento Guida operativa DNSH"
     type: circolare
     url: https://www.rgs.mef.gov.it/VERSIONE-I/circolari/2024/circolare_n_22_2024/
-    accessed: 2026-05-04
+    accessed: 2026-05-10
     sha256: 6f3f94e38ba0046250abfbb793ef432c6ab437f7218ec7e6593674c9d8681cb5
     license: public-domain-italian-public-sector
     binary_path: not_in_repo/circolare-rgs-22-2024-dnsh.pdf
+    md_path: references/fonti/circolare-rgs-22-2024.md
     excerpt_paths:
       - references/estratti/circolare-rgs-22-2024.md
     notes: |
-      Circolare di aggiornamento della Guida operativa DNSH. Rileva per la
-      nuova edizione delle schede tecniche, l'allineamento ai criteri europei,
-      gli elementi di comprova tracciabili e il collegamento con CAM.
+      PDF letto 2026-05-10 (3 pagine integrali). Circolare di aggiornamento
+      della Guida operativa DNSH. Motivata dalla riprogrammazione CID n. 16051/23
+      del 8 dicembre 2023. Introduce recepimento Reg. Delegato (UE) 2023/2486,
+      specifica elementi di comprova ReGiS (3 fasi) e collegamento CAM art. 57
+      D.lgs. 36/2023.
 
   - id: guida-operativa-dnsh-2024
     title: "Guida operativa per il rispetto del principio di non arrecare danno significativo all'ambiente (DNSH) - terza edizione, allegata alla circolare RGS n. 22/2024"
     type: guida-operativa
     url: https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/CIRCOLARI/2024/22/Guida-Operativa_terza-edizione.pdf
-    accessed: 2026-05-04
+    accessed: 2026-05-10
     sha256: f924cb6d94740f3cd03bf405a65ec9eef822626330c2cd1664255589c9ce2c29
     license: public-domain-italian-public-sector
     binary_path: not_in_repo/guida-operativa-dnsh-terza-edizione.pdf
+    md_path: references/fonti/guida-operativa-dnsh-2024.md
     excerpt_paths:
       - references/estratti/guida-operativa-dnsh-2024.md
     notes: |
-      Fonte operativa principale: introduzione metodologica, schede tecniche,
-      checklist ex ante/ex post, mappature fra misure PNRR e schede, regime 1/2,
-      elementi di verifica e documentazione probatoria.
+      PDF letto 2026-05-10 (pp. 1-23 integrali: introduzione metodologica
+      completa). Schede tecniche 1-34 (pp. 37-327) indicizzate ma non lette
+      nel dettaglio. Fonte operativa principale: principio DNSH, 6 obiettivi,
+      Regime 1/2, struttura schede (sezioni A-F), check list (SI/NO/NA),
+      3 fasi ReGiS, CAM (art. 57 D.lgs. 36/2023), analisi rischio climatico
+      (soglia 10 MLN euro), mappature 1 e 2.
 
   - id: circolare-rgs-33-2022-dnsh
     title: "Circolare RGS n. 33 del 13 ottobre 2022 - Aggiornamento Guida operativa DNSH"
