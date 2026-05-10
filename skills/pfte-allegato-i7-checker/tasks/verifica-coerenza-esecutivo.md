@@ -32,7 +32,11 @@ Leggere prima di procedere:
 
 ### Passo 1 - Verifica completezza esecutivo (art. 22 co. 4)
 
-Mappare l'elenco esecutivo ai 14+2 elaborati lett. a-p (+ p-bis, p-ter):
+Mappare l'elenco esecutivo agli elaborati dell'art. 22 co. 4 (lett. a-p + p-bis, p-ter post-correttivo):
+
+> **Riferimento**: elenco verificato verbatim in `references/fonti/dlgs-36-2023-allegato-i7.md`,
+> art. 22 co. 4. Le lettere p-bis e p-ter sono state aggiunte dal D.Lgs. 209/2024 art. 78 co. 1
+> lett. s sub 2 (`references/fonti/dlgs-209-2024-correttivo.md`).
 
 | Lett. | Elaborato | Articolo dettaglio | Quando obbligatorio |
 |-------|-----------|--------------------|--|

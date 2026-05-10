@@ -110,14 +110,24 @@ Tabella di riferimento (vedi `allegato-i7-pfte.md` per il dettaglio):
 
 ### Passo 4 - Elaborati aggiuntivi per appalto integrato
 
-Se la modalita' di affidamento e' **appalto integrato** (PFTE base di gara), aggiungere:
+Se la modalita' di affidamento e' **appalto integrato** (PFTE base di gara), l'Allegato I.7
+art. 21 co. 2 prescrive che il progetto contenga **obbligatoriamente** i seguenti elaborati
+aggiuntivi (testo normativo verificato in `references/fonti/dlgs-36-2023-allegato-i7.md`):
 
-- **Disciplinare descrittivo e prestazionale** (art. 14) sviluppato a livello idoneo all'aggiudicazione
-- **PSC** (art. 15) sviluppato in modo da consentire la quantificazione dei costi della sicurezza non ribassabili
-- **Capitolato informativo** (art. 13-ter) se BIM si applica
-- **Schema di contratto** (richiamato in art. 21)
+- **a) Piano di sicurezza e di coordinamento** (art. 15 All. I.7)
+- **b) Piano di manutenzione dell'opera e delle sue parti** (art. 19 All. I.7)
+- **c) Schema di contratto**
+- **d) Capitolato speciale d'appalto**
 
-Riferimento: Allegato I.7 art. 21.
+E, condizionatamente (dall'elenco principale lett. p post-correttivo):
+- **Capitolato informativo** (art. 13-ter) se BIM si applica (art. 43)
+
+> **Nota**: il disciplinare descrittivo e prestazionale (art. 14 All. I.7) NON compare
+> nell'elenco obbligatorio dell'art. 21 co. 2. La sua presenza dipende dal DIP del RUP
+> e dalla tipologia di contratto. La versione precedente di questo task lo indicava
+> erroneamente come elaborato aggiuntivo obbligatorio per appalto integrato.
+
+Riferimento: Allegato I.7 art. 21 co. 2 (`references/fonti/dlgs-36-2023-allegato-i7.md`).
 
 ### Passo 5 - Manutenzioni - regimi alternativi
 
