@@ -50,6 +50,18 @@ secondary_sources_to_evaluate:
       Da aggiungere come fonte per la prossima versione della skill che descriva
       esplicitamente il modello di Allegato I vigente.
 
+  - id: dm-192-2022-mimit
+    title: "DM 16 novembre 2022 n. 192 - Modifiche al DM 37/2008 per infrastrutture digitali"
+    type: decreto
+    notes: |
+      Modifica DM 37/2008: espande Art. 1 co. 2 lett. b) alle infrastrutture digitali in fibra
+      ottica e aggiunge Art. 5-bis sulle infrastrutture fisiche passive per impianti cat. b).
+      Pubblicato in GU: da verificare (numero e data GU non confermati da fonte primaria letta).
+      Da aggiungere come fonte per la prossima versione della skill che tratti la cat. b)
+      estesa e i nuovi obblighi dichiarativi per infrastrutture ultra-broadband (PNRR).
+      Attenzione: il numero 192 e la data 16 novembre 2022 sono da verificare su Normattiva
+      o GU prima di usare questa informazione in contenuto della skill.
+
   - id: cei-64-8
     title: "CEI 64-8 - Impianti elettrici utilizzatori a tensione nominale non superiore a 1000 V"
     type: norma-cei

@@ -7,6 +7,15 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.1.2-alpha] - 2026-05-10
+
+### Aggiunto
+
+- `secondary_sources_to_evaluate`: aggiunto DM 192/2022 (modifica DM 37/2008 per infrastrutture
+  digitali cat. b) e Art. 5-bis) come fonte da leggere nella prossima versione della skill.
+  Nota: numero e data del decreto non ancora verificati da fonte primaria letta; da confermare
+  su Normattiva o GU prima di integrare contenuto nella skill.
+
 ## [0.1.1-alpha] - 2026-05-10
 
 ### fix(source-grounding)
