@@ -64,19 +64,20 @@ con adattamenti motivati; verificare se ANAC ha pubblicato schemi specifici.
 Le principali aree di controllo in un disciplinare rispetto allo schema ANAC:
 - **Struttura e sezioni obbligatorie**: presenza di tutte le sezioni previste dallo schema
 - **Clausole sociali** (art. 11 D.Lgs. 36/2023): CCNL applicabile, parita' di trattamento economico
-- **Cause di esclusione** (artt. 94-98 D.Lgs. 36/2023): conformita' al nuovo codice, non ancora basate su D.Lgs. 50/2016
-- **Requisiti partecipazione** (artt. 100-103 D.Lgs. 36/2023): DGUE, FVOE, PassOE
-- **Soccorso istruttorio** (art. 101 D.Lgs. 36/2023): disciplina corretta, non onerosa
-- **Subappalto** (artt. 119-120 D.Lgs. 36/2023): nuove regole (nessun limite percentuale generale)
-- **Garanzie** (art. 117 D.Lgs. 36/2023): provvisoria e definitiva, importi e condizioni
-- **Comunicazioni** (art. 90 D.Lgs. 36/2023): modalita' digitali, accesso agli atti
+- **Cause di esclusione** (artt. 94-96 D.Lgs. 36/2023): conformita' al nuovo codice, non basate su D.Lgs. 50/2016
+- **Requisiti partecipazione** (art. 100 D.Lgs. 36/2023): DGUE (art. 91), FVOE (art. 99)
+- **Soccorso istruttorio** (art. 101 D.Lgs. 36/2023): disciplina corretta, termine 5-10 giorni
+- **Subappalto** (art. 119 D.Lgs. 36/2023): nessun limite percentuale generale
+- **Garanzia provvisoria** (art. 106 D.Lgs. 36/2023): 2% con riduzioni per certificazioni
+- **Garanzia definitiva** (art. 117 D.Lgs. 36/2023): 10% importo contrattuale con incrementi per ribasso
+- **Comunicazioni e accesso agli atti** (artt. 22, 88, 90 D.Lgs. 36/2023)
 - **Criteri aggiudicazione** (art. 108 D.Lgs. 36/2023): conformita' gia' verificata da skill OEPV
 
 ## Fonti normative
 
 Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fonti primarie:
-- D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici, artt. 11, 74, 87, 90, 94-103, 108, 117-120
-- ANAC - Schemi di disciplinare di gara (bandi-tipo) per il D.Lgs. 36/2023
+- D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici, artt. 11, 87, 90, 91, 94-96, 99-101, 104, 106, 117-119
+- ANAC - Bando tipo n. 1/2023 (Delibera 365/2025), schema disciplinare servizi/forniture OEPV sopra soglia
 
 Estratti testuali in [`references/estratti/`](references/estratti/):
 - [`dlgs-36-artt-clausole-disciplinare.md`](references/estratti/dlgs-36-artt-clausole-disciplinare.md) - artt. 74, 87, 90, 94-103, 117-120
