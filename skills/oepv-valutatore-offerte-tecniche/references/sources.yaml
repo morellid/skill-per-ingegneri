@@ -44,22 +44,24 @@ sources:
       OEPV. La metodologia di calcolo e' delegata agli atti di gara e alla prassi.
 
   - id: dlgs-209-2024-correttivo
-    title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025"
+    title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025 SO n. 3"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/gu/2025/01/22/17/so/3/sg/pdf
-    accessed: 2026-05-10
-    sha256: null
+    accessed: 2026-05-11
+    sha256: 55b6f60ed930f29cc12f2e92e468a60152b428bde7e2977423f99be4341b0df9
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-209-2024-correttivo.pdf
-    md_path: null
+    md_path: references/fonti/dlgs-209-2024-correttivo.md
     excerpt_paths: []
     notes: |
-      Decreto correttivo in vigore dal 31/12/2024. Il PDF non e' stato scaricabile
-      dall'ambiente di sviluppo (redirect GU non funzionante al 2026-05-10).
-      Da verificare se modifica art. 93, 107 o 108 del D.Lgs. 36/2023 rilevanti
-      per questa skill. Il testo degli artt. 93, 107, 108 riportato nella skill
-      e' quello della GU originale 2023 (pre-correttivo). Aggiornare questa voce
-      e references/fonti/ non appena il PDF e' accessibile. Pending: issue aperta.
+      Decreto correttivo in vigore dal 31/12/2024. PDF scaricato dalla GU il
+      2026-05-11, SHA256 calcolato. Testo degli articoli rilevanti (art. 36
+      modifica art. 108, art. 37 abroga art. 109) trascritto in references/fonti/.
+      Impatto sulla skill: art. 93 e art. 107 NON modificati. Art. 108 co. 4:
+      modifica terminologica (da "aspetti qualitativi, ambientali o sociali" a
+      "impatto economico, sociale e ambientale"), limiti 10%/30% invariati.
+      Art. 108 co. 7: aggiunto criterio premiale facoltativo per prodotti ETS.
+      Art. 109 abrogato (non citato nella skill).
 
   - id: normattiva-portale-dlgs-36
     title: "Portale Normattiva - D.Lgs. 36/2023 - versione multivigente consolidata"
