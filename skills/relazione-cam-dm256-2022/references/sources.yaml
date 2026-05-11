@@ -59,6 +59,7 @@ sources:
     sha256: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5
     license: public-domain-italian-law
     binary_path: not_in_repo/dm-256-2022-allegato.pdf
+    md_path: references/fonti/dm-256-2022-allegato.md
     excerpt_paths:
       - references/estratti/dm-256-2022-allegato-criteri-2x.md
       - references/estratti/dm-256-2022-allegato-criteri-premianti.md

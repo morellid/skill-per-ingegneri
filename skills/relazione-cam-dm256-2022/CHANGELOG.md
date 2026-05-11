@@ -5,6 +5,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.2-alpha] - 2026-05-11
+
+### Fixed
+- fix(source-grounding): aggiunto `references/fonti/dm-256-2022-allegato.md` da lettura
+  diretta del PDF (SHA256: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5);
+  trascrizione fedele di tutti i paragrafi rilevanti (sezioni 2.2.1-2.7.4, 3.1-3.2, 4.1-4.3.8)
+  con indicazione della pagina della GU n. 183 del 06/08/2022 (chiude #109)
+- fix(sources.yaml): aggiunto campo `md_path: references/fonti/dm-256-2022-allegato.md`
+  alla entry `dm-256-2022-allegato`
+- fix(estratti/dm-256-2022-allegato-criteri-2x.md): corretto criterio 2.3.2
+  (Permeabilita' della superficie territoriale): l'estratto riportava solo la definizione
+  di superficie permeabile (deflusso < 0,50) omettendo la soglia minima del 60% di
+  superficie territoriale permeabile richiesta per la NC; riscritta la voce con entrambe
+  le informazioni e citazione del paragrafo/pagina GU
+
 ## [0.1.1-alpha] - 2026-05-01
 
 ### Fixed - Riscrittura completa contenuto normativo (criteri tutti errati)
