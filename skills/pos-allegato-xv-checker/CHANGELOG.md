@@ -7,6 +7,24 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Fixed (2026-05-11 - source-grounding remediation #106)
+
+- Creato `references/fonti/dlgs-81-2008-consolidato-inl-2025-01.md` con trascrizione fedele del PDF
+  (SHA256 f593e18...) letto da `not_in_repo/dlgs-81-2008-consolidato-inl-2025-01.pdf`:
+  - Art. 89 co. 1 lett. h) (definizione di POS)
+  - Art. 96 completo (commi 1, 1-bis, 2 + sanzioni)
+  - Art. 97 completo (commi 1, 2, 3, 3-bis, 3-ter + sanzioni)
+  - Allegato XV completo: punti 1.1.1 (definizioni), 2.1.1-2.3.5 (PSC), 3.1.1-3.2.2 (PSS e POS),
+    4.1.1-4.1.6 (costi sicurezza), Allegati XV.1 e XV.2
+- Aggiunto `md_path: references/fonti/dlgs-81-2008-consolidato-inl-2025-01.md` in `sources.yaml`
+- Verificati `references/estratti/allegato-xv-testo.md` e `references/estratti/dlgs-81-art-96-97.md`:
+  contenuto conforme al testo letto nel PDF, nessuna modifica necessaria agli estratti
+- Verificati `tasks/check-completezza.md`, `tasks/check-costi-sicurezza.md`,
+  `tasks/check-coerenza-rischi.md`, `tasks/check-coordinamento.md`: i riferimenti normativi
+  (art. 96, 97, Allegato XV punti e lettere) sono tutti rintracciabili nel file fonti/
+
+
+
 ### Added
 - Estensione della skill dalla sola verifica alla compilazione assistita di bozze POS
 - Nuovi task:

@@ -11,6 +11,7 @@ sources:
     sha256: f593e1806de920dc16def37920c5623cda2450075ed56051852f2caf6045899a
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-81-2008-consolidato-inl-2025-01.pdf
+    md_path: references/fonti/dlgs-81-2008-consolidato-inl-2025-01.md
     excerpt_paths:
       - references/estratti/allegato-xv-testo.md
       - references/estratti/dlgs-81-art-96-97.md
