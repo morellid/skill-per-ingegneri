@@ -7,6 +7,13 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Fixed (source-grounding remediation - PR #154)
+- `references/sources.yaml`: valorizzati gli SHA256 mancanti per le tre fonti residue con artefatti ufficiali verificati: snapshot HTML Normattiva congelata al `2026-05-11` per `dpr-380-2001-testo-unico-edilizia`, PDF GU ufficiale per `dlgs-222-2016-scia-2-tabella-a`, PDF istituzionale Funzione Pubblica/Allegato 1 per `modulistica-unificata-salva-casa-2025`.
+- `references/fonti/dpr-380-2001-testo-unico-edilizia.md`: aggiornata la provenance sullo snapshot ufficiale Normattiva effettivamente hashato.
+- `references/fonti/dlgs-222-2016-scia-2-tabella-a.md`: rimossa la dipendenza dal PDF non ufficiale e riallineata la fonte al PDF originale della Gazzetta Ufficiale.
+- `references/fonti/modulistica-unificata-salva-casa-2025.md`: sostituita la limitazione "ZIP non letto" con la lettura diretta del PDF ufficiale `moduli_clean.pdf`.
+- `references/estratti/dlgs-222-2016-tabella-a.md`, `references/estratti/dpr-380-2001-regimi-edilizi.md`, `references/estratti/modulistica-unificata-2025.md`: riallineati gli header di provenance agli artefatti ufficiali effettivamente verificati.
+
 ### Changed (source-grounding remediation - issue #102)
 - **references/fonti/dl-69-2024-salva-casa.md** (NUOVO): trascrizione fedele dell'art. 1 del DL 69/2024 (lett. a-i) letto dal PDF della Gazzetta Ufficiale n. 124 del 29/05/2024 (SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05). Include il testo letterale delle modifiche a: art. 6 co. 1 lett. b-ter (tende/pergotende), art. 9-bis co. 1-bis (stato legittimo), art. 23-ter co. 1-bis/ter/quater/quinquies (cambio uso), art. 34-bis co. 1-bis/ter/2-bis/3-bis/ter (tolleranze), art. 36 (rubrica e ambito), art. 36-bis (sanatoria semplificata), art. 37.
 - **references/fonti/dpr-380-2001-testo-unico-edilizia.md** (NUOVO): trascrizione degli articoli chiave del DPR 380/2001 vigente (artt. 3, 6, 6-bis, 9-bis, 10, 22, 23, 23-ter, 34-bis, 36, 36-bis) letti su Normattiva, integrata con il testo delle modifiche dal DL 69/2024. Nota: il PDF del testo consolidato non e' stato scaricato; articoli letti via Normattiva singolarmente.

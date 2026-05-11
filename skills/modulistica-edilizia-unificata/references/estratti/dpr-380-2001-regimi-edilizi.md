@@ -5,7 +5,7 @@
 **Modifiche rilevanti**: integrato con `sources.yaml` id `dl-69-2024-salva-casa` (Salva Casa, in vigore dal 30/05/2024 e dal 28/07/2024 con la legge di conversione)
 **Documento**: DPR 6 giugno 2001 n. 380 - Testo Unico delle disposizioni legislative e regolamentari in materia edilizia, versione consolidata vigente
 **Data consultazione**: 2026-05-11
-**Fonti lette**: articoli 3, 6, 6-bis, 9-bis, 10, 22, 23, 23-ter, 34-bis, 36 letti su Normattiva; testo delle modifiche introdotte dal DL 69/2024 letto dal PDF GU n. 124/2024 (SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05)
+**Fonti lette**: versione multivigente ufficiale Normattiva del DPR 380 congelata al 2026-05-11 (`https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-05-11`, SHA256 snapshot HTML `38823c2626259bf3f098a837cca8a1e957cd3035839eeeed6bff0ef0dd23d672`); testo delle modifiche introdotte dal DL 69/2024 letto dal PDF GU n. 124/2024 (SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05)
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
 > Sintesi strutturata dei contenuti normativi rilevanti per la skill, basata sulla

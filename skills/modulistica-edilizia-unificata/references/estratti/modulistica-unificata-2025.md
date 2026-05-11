@@ -4,14 +4,14 @@
 **MD di fonte**: `references/fonti/modulistica-unificata-salva-casa-2025.md`
 **Documento**: Conferenza Unificata - Accordo Repertorio n. 35/CU del 27 marzo 2025 - Modifiche alla modulistica edilizia unificata per il Salva Casa
 **Data consultazione**: 2026-05-11
-**Fonti lette**: pagine web statoregioni.it (atto n. 35/CU) e funzionepubblica.gov.it (comunicato stampa)
-**AVVISO**: il file ZIP con i moduli editabili non e' stato scaricato e aperto. Le informazioni sui quadri specifici dei moduli (struttura a quadri 1-10, elenco dettagliato allegati) riportate in questo estratto sono struttura generale della modulistica nazionale confermata dall'accordo n. 35/CU, ma non sono state verificate campo per campo sui moduli aggiornati al 27/3/2025. Necessaria verifica da reviewer con accesso ai moduli .docx/.odt scaricati da SUE comunale.
+**Fonti lette**: pagina istituzionale statoregioni.it dell'atto n. 35/CU + PDF ufficiale dell'Allegato 1 pubblicato da funzionepubblica.gov.it (`moduli_clean.pdf`)
+**AVVISO**: i quadri modificati dei moduli nazionali unificati sono stati verificati direttamente sul PDF ufficiale dell'Allegato 1. Restano da verificare a parte solo le eventuali integrazioni locali di Regioni e Comuni nei rispettivi portali SUE/SUAP.
 **Licenza**: testo amministrativo italiano in pubblico dominio (atti ufficiali della PA)
 
-> Sintesi dell'accordo Conferenza Unificata n. 35/CU del 27 marzo 2025 e della
-> struttura dei moduli unificati nazionali, basata sulla lettura delle pagine web
-> di statoregioni.it e funzionepubblica.gov.it.
-> Per i dettagli puntuali di ogni campo consultare i moduli rilasciati dal portale SUE/SUAP.
+> Sintesi dell'accordo Conferenza Unificata n. 35/CU del 27 marzo 2025 e dei
+> quadri modificati dei moduli unificati nazionali, basata sulla lettura diretta
+> del PDF ufficiale dell'Allegato 1 e della pagina istituzionale dell'atto.
+> Per le sole integrazioni locali consultare il portale SUE/SUAP competente.
 > Testo fonte: references/fonti/modulistica-unificata-salva-casa-2025.md
 
 ---
@@ -210,5 +210,5 @@ Firma digitale del titolare (PIN, SPID, CIE) e del tecnico (firma digitale quali
 ## Limiti dell'estratto
 
 - L'estratto **sintetizza** la struttura dei moduli e gli allegati ricorrenti. Per il modulo specifico vigente nel Comune di interesse consultare il portale SUE/SUAP.
-- Non sostituisce la **lettura del modulo originale** (il modulo nazionale ha decine di campi specifici che devono essere compilati con precisione).
-- L'elenco degli allegati varia in funzione del singolo intervento e di vincoli locali; il quadro 8 dei moduli fa da guida puntuale.
+- Non sostituisce la **lettura del modulo originale** integrale ne' le eventuali personalizzazioni regionali/comunali.
+- L'elenco degli allegati varia in funzione del singolo intervento e di vincoli locali; il quadro riepilogativo del modulo applicabile fa da guida puntuale.

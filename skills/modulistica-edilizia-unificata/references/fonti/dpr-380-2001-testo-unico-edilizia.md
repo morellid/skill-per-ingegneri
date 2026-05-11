@@ -2,14 +2,14 @@
 
 **Titolo**: Decreto del Presidente della Repubblica 6 giugno 2001, n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia
 **Versione letta**: versione vigente al 2026-05-11 (multivigente Normattiva), modificata da numerosi interventi successivi al 2001 tra cui il D.Lgs. 222/2016 (SCIA 2) e il DL 69/2024 conv. L. 105/2024 (Salva Casa)
-**Fonte consultata**: Normattiva - https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=
+**Fonte consultata**: Normattiva - https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-05-11
+**Artefatto verificato**: snapshot HTML ufficiale Normattiva salvato in `not_in_repo/dpr-380-2001-consolidato.html` (SHA256: `38823c2626259bf3f098a837cca8a1e957cd3035839eeeed6bff0ef0dd23d672`)
 **Testo originale pubblicato**: Gazzetta Ufficiale n. 245 del 20 ottobre 2001, Supplemento Ordinario n. 239
 **Data di lettura**: 2026-05-11
-**Metodo di accesso**: lettura articoli via Normattiva (WebFetch per articoli singoli) + testo delle modifiche introdotte dal DL 69/2024 letto direttamente dal PDF della GU n. 124/2024 (file: not_in_repo/dl-69-2024-gu124-originale.pdf, SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05)
+**Metodo di accesso**: lettura della versione multivigente congelata su Normattiva + verifica del testo delle modifiche introdotte dal DL 69/2024 sul PDF della GU n. 124/2024 (file: `not_in_repo/dl-69-2024-gu124-originale.pdf`, SHA256: `2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05`)
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
-**NOTA IMPORTANTE**: Il testo consolidato vigente del DPR 380/2001 non e' stato scaricato come PDF singolo (l'export PDF di Normattiva non e' risultato accessibile in modo diretto). Gli articoli rilevanti sono stati letti singolarmente via Normattiva. Il testo delle modifiche introdotte dal DL 69/2024 e' stato letto dal PDF della GU n. 124/2024 (see file: dl-69-2024-salva-casa.md in questa directory). Il testo originale del 2001 non e' stato usato come fonte per gli articoli vigenti.
-
+**NOTA IMPORTANTE**: La fonte primaria per gli articoli vigenti usati dalla skill e' la versione multivigente ufficiale di Normattiva congelata alla data 2026-05-11. Il PDF della GU 2001 resta il testo originario di pubblicazione; per le modifiche Salva Casa e' stata verificata anche la fonte `dl-69-2024-salva-casa`.
 ---
 
 ## Trascrizione fedele degli articoli rilevanti per la skill

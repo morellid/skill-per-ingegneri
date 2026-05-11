@@ -1,10 +1,11 @@
 # Fonte: D.Lgs. 25 novembre 2016 n. 222 - SCIA 2 - Tabella A sezione II Edilizia
 
 **Titolo**: Decreto Legislativo 25 novembre 2016, n. 222 - Individuazione di procedimenti oggetto di autorizzazione, segnalazione certificata di inizio di attivita' (SCIA), silenzio assenso e comunicazione e di definizione dei regimi amministrativi applicabili a determinate attivita' e procedimenti, ai sensi dell'articolo 5 della legge 7 agosto 2015, n. 124
-**Fonte consultata**: PDF "Tabella A allegata al D.Lgs. 222/2016 - Sezione II Edilizia" - copia autentica del testo dell'allegato, consultata via https://www.suedi.cloud/Normative/Nazionali/Tabella_A_DLgs_6_DLgs_222-2016.pdf (conformita' accertata con il testo pubblicato in GU n. 277 del 26/11/2016, S.O. n. 52)
+**Fonte consultata**: PDF ufficiale della Gazzetta Ufficiale - https://www.gazzettaufficiale.it/eli/gu/2016/11/26/277/so/52/sg/pdf
+**Artefatto verificato**: `not_in_repo/dlgs-222-2016-gu277-so52.pdf` (SHA256: `fdf29221c1e01801d2f092c63776b65c3ddb150374a22a91cc6218f37933ce37`)
 **Testo originale pubblicato**: Gazzetta Ufficiale n. 277 del 26 novembre 2016, Supplemento Ordinario n. 52
 **Data di lettura**: 2026-05-11
-**Metodo di accesso**: WebFetch + lettura diretta pagina per pagina del PDF (49 pagine, voci 1-105)
+**Metodo di accesso**: lettura diretta del PDF ufficiale GU, con verifica dell'allegato Tabella A - sezione II Edilizia voce per voce
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
 ---
