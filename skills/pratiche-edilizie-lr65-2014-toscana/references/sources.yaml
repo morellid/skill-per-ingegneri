@@ -44,9 +44,14 @@ sources:
     type: portale-istituzionale
     url: https://www.regione.toscana.it/-/classificazione-sismica-della-toscana
     accessed: 2026-05-11
-    sha256: e8ff0ab568e994fafe10efc3e90cfe9c71ccaafad6d1b7385c0edf220cb7be2e
+    sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/regione-toscana-classificazione-sismica.html
+    binary_path: null
     md_path: references/fonti/regione-toscana-classificazione-sismica.md
     excerpt_paths:
       - references/estratti/dpr-380-2001-artt-zona-sismica.md
+    notes: |
+      Pagina istituzionale dinamica (genera token CSRF e timestamp ad ogni caricamento):
+      hash non stabile tra richieste successive. Trattata come fonte URL-only (binary_path
+      null, sha256 null). Il contenuto rilevante (riferimento a DGRT 421/2014 con allegato
+      comuni e mappa) e' documentato in references/fonti/regione-toscana-classificazione-sismica.md.
