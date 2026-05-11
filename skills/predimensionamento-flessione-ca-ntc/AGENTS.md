@@ -19,12 +19,12 @@ Estratti pertinenti in `references/estratti/`:
 
 ## Articoli e punti chiave
 
-- **NTC par. 4.1.2.1.1** - calcestruzzo: f_cd = alpha_cc * fck / gamma_c (eq. 4.1.4); per fck <= 50 MPa stress-block rettangolare con lambda = 0.8, eta = 1; per fck > 50 MPa lambda e eta riducono progressivamente (eq. 4.1.10-4.1.11) - **fuori scope skill**
-- **NTC par. 4.1.2.1.1** - alpha_cc = 0.85 (carichi di lunga durata); gamma_c = 1.5 (PERS, Tab. 4.1.II)
-- **NTC par. 4.1.2.1.1.2** - acciaio: Es = 200000 MPa; eps_yd = fyd / Es
-- **NTC par. 4.1.2.1.1.3** - acciaio: f_yd = fyk / gamma_s; gamma_s = 1.15 (PERS)
+- **NTC par. 4.1.2.1.1.1** - calcestruzzo: f_cd = alpha_cc * fck / gamma_c (eq. [4.1.3]); alpha_cc = 0.85; gamma_c = 1.5 (PERS); per fck <= 50 MPa stress-block rettangolare con lambda = 0.8, eta = 1; per fck > 50 MPa lambda e eta riducono progressivamente (eq. 4.1.10-4.1.11) - **fuori scope skill**
+- **NTC par. 11.3.2.1** - acciaio: Es = 200000 MPa (valore standardizzato); eps_yd = fyd / Es
+- **NTC par. 4.1.2.1.1.3** - acciaio: f_yd = fyk / gamma_s (eq. [4.1.5]); gamma_s = 1.15 (PERS)
 - **NTC par. 4.1.2.3.4.2** - flessione semplice SLU: equilibrio sezione, eps_cu = 0.0035 (Classe 1), zona snervata acciaio, formula M_Rd = A_s * f_yd * z con z = d - 0.4 x (per stress-block lambda = 0.8)
-- **Circ. 7/2019 par. C4.1.2** - commento, raccomandazione x/d <= 0.45 per duttilita' adeguata
+- **NTC 2018 par. 4.1.1.1** - limite x/d <= 0.45 per fck <= 50 MPa (eq. [4.1.1], ridistribuzione momenti travi continue/solette) - NON limite universale per flessione semplice
+- **Circ. 7/2019 par. C4.1.2.3.4.2** - duttilita' di curvatura richiesta esplicitamente solo al Cap. 7 NTC (zona sismica); per flessione semplice non sismica la condizione necessaria e' eps_s >= eps_yd
 
 ## Convenzioni specifiche
 
@@ -42,7 +42,7 @@ Estratti pertinenti in `references/estratti/`:
 
 ### Cosa fare
 
-- **Citare sempre il paragrafo NTC** per ogni passaggio (es. "f_cd = alpha_cc * fck / gamma_c - eq. 4.1.4 NTC", "eps_yd = f_yd / Es - par. 4.1.2.1.1.2 NTC", "z = d - 0.4 x - stress-block lambda = 0.8 NTC par. 4.1.2.1.1").
+- **Citare sempre il paragrafo NTC** per ogni passaggio (es. "f_cd = alpha_cc * fck / gamma_c - eq. [4.1.3] NTC par. 4.1.2.1.1.1", "eps_yd = f_yd / Es - Es da NTC par. 11.3.2.1", "z = d - 0.4 x - stress-block lambda = 0.8 NTC par. 4.1.2.1.2.1").
 - **Eseguire il modulo Python** per il calcolo, non riprodurre i numeri "a mano". Output del modulo + parafrasi in linguaggio naturale.
 - **Mostrare la struttura completa**: prima i dati di input (geometria, armatura, materiali), poi i materiali derivati (f_cd, f_yd, eps_yd), poi geometria interna (x, x/d, eps_s, z), poi l'output (M_Rd in kNm), poi le avvertenze di duttilita'.
 - **Concludere con rinvio al progettista**: "L'output e' un pre-dimensionamento. Restano a carico del progettista la verifica completa con software di calcolo strutturale, le verifiche SLE (fessurazione, deformazione), le verifiche di taglio/torsione, e in zona sismica i requisiti di duttilita' e gerarchia delle resistenze."
