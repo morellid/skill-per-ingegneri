@@ -6,7 +6,7 @@ sources:
   - id: dlgs-213-2025-amianto-gu-2026-01-09
     title: "D.Lgs. 31 dicembre 2025 n. 213 - Attuazione della direttiva (UE) 2023/2668 sulla protezione dei lavoratori esposti all'amianto"
     type: decreto-legislativo
-    url: https://www.gazzettaufficiale.it/eli/id/2026/01/09/26G00008/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/01/09/6/sg/pdf
     accessed: 2026-05-05
     sha256: 79e6b58da8e9f30bc662b085d969dba99d39753ac6dc45339272bc5732a2a4a5
     license: public-domain-italian-law
@@ -22,11 +22,11 @@ sources:
   - id: dm-6-9-1994-amianto
     title: "DM 6 settembre 1994 - Normative e metodologie tecniche di applicazione della legge 257/1992 relative alla cessazione dell'impiego dell'amianto"
     type: decreto-ministeriale
-    url: https://www.gazzettaufficiale.it/eli/id/1994/09/20/094A5917/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/1994/09/20/220/sg/pdf
     accessed: 2026-05-05
-    sha256: 3955c8b286e46337ac59a87ea9b1d3daf969428f828a711295c6de654301002c
+    sha256: 8a251d195dfc33912670fb7fc9ae6ca49cfb39269927f30e017d536e561f3c7f
     license: public-domain-italian-law
-    binary_path: not_in_repo/dm-6-9-1994-amianto-allegato.html
+    binary_path: not_in_repo/dm-6-9-1994-amianto.pdf
     excerpt_paths:
       - references/estratti/dm-6-9-1994-amianto.md
     notes: |
