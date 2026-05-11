@@ -20,9 +20,17 @@ name: source-grounding
 # e validare gli hash dichiarati.
 #
 # Job:
-#   - check-no-placeholders: rifiuta sha256 placeholder (REPLACE_*, PENDING_FETCH, vuoti)
+#   - check-no-placeholders:  rifiuta sha256 placeholder (REPLACE_*, PENDING_FETCH, vuoti)
 #   - check-md-fonti-present: per ogni md_path dichiarato non null, verifica file presente e non vuoto
-#   - validate-sources:      scarica i binari pubblici e verifica gli hash
+#   - validate-sources:       scarica i binari e verifica gli hash
+#       * su push/PR: solo le skill con file modificati nel commit/PR
+#       * trigger manuale (workflow_dispatch): tutte le skill, o una specifica
+#         se si compila il campo 'skill' nell'interfaccia "Run workflow"
+#
+# Per lanciare la verifica manuale di tutte le skill (o di una sola):
+#   GitHub UI: Actions -> source-grounding -> Run workflow -> (opzionale: nome skill)
+#   gh CLI:    gh workflow run source-grounding.yml
+#              gh workflow run source-grounding.yml -f skill=nome-skill
 
 on:
   push:
@@ -36,6 +44,13 @@ on:
       - 'scripts/fetch-sources.sh'
       - 'AGENTS.md'
       - 'CLAUDE.md'
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: 'Nome della skill da verificare (vuoto = tutte le skill)'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: read
@@ -140,6 +155,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -149,11 +166,49 @@ jobs:
       - name: Install pyyaml
         run: pip install --quiet pyyaml
 
-      - name: Fetch and verify all declared sources
+      - name: Fetch and verify sources
         run: |
           set -euo pipefail
           mkdir -p not_in_repo
-          python3 .github/workflows/scripts/verify-sources.py
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SKILL="${{ inputs.skill }}"
+            if [ -n "$SKILL" ]; then
+              echo "Trigger manuale: verifica skill '$SKILL'"
+              python3 .github/workflows/scripts/verify-sources.py "$SKILL"
+            else
+              echo "Trigger manuale: verifica tutte le skill"
+              python3 .github/workflows/scripts/verify-sources.py
+            fi
+          else
+            # push o pull_request: verifica solo le skill con file modificati
+            if [ "${{ github.event_name }}" = "pull_request" ]; then
+              BASE_SHA="${{ github.event.pull_request.base.sha }}"
+            else
+              BASE_SHA="${{ github.event.before }}"
+            fi
+
+            if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
+              echo "SHA base non disponibile - verifica tutte le skill"
+              python3 .github/workflows/scripts/verify-sources.py
+            else
+              CHANGED=$(git diff --name-only "$BASE_SHA" HEAD 2>/dev/null \
+                | grep '^skills/' \
+                | sed 's|^skills/\([^/]*\)/.*|\1|' \
+                | sort -u \
+                | tr '\n' ' ' \
+                | sed 's/[[:space:]]*$//')
+
+              if [ -z "$CHANGED" ]; then
+                echo "Nessun file di skill modificato - verifica fonti saltata."
+                exit 0
+              fi
+
+              echo "Skill modificate: $CHANGED"
+              # shellcheck disable=SC2086 - espansione intenzionale su piu' argomenti
+              python3 .github/workflows/scripts/verify-sources.py $CHANGED
+            fi
+          fi
 
   validate-script-runs:
     name: scripts/validate.sh passes

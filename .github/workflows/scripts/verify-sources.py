@@ -3,6 +3,11 @@
 siano effettivamente raggiungibili e che gli SHA256 dichiarati coincidano
 con quelli del binario scaricato.
 
+Uso:
+  python3 verify-sources.py                    # verifica tutte le skill
+  python3 verify-sources.py skill-a            # verifica solo skill-a
+  python3 verify-sources.py skill-a skill-b   # verifica skill-a e skill-b
+
 Eseguito dal workflow .github/workflows/source-grounding.yml. La CI di
 GitHub Actions ha rete libera (no allowlist), quindi puo' fare il fetch
 reale delle fonti normative italiane (Gazzetta Ufficiale, Normattiva,
@@ -229,10 +234,23 @@ def main() -> int:
         print(f"ERRORE: {SKILLS_DIR} non esiste", file=sys.stderr)
         return 1
 
+    skill_names = sys.argv[1:]
+    if skill_names:
+        skill_dirs: list[Path] = []
+        for name in skill_names:
+            d = SKILLS_DIR / name
+            if not d.is_dir():
+                print(f"ERRORE: skill '{name}' non trovata in {SKILLS_DIR}", file=sys.stderr)
+                return 1
+            skill_dirs.append(d)
+    else:
+        skill_dirs = sorted(
+            d for d in SKILLS_DIR.iterdir()
+            if d.is_dir() and not d.name.startswith("_")
+        )
+
     all_errors: list[str] = []
-    for skill_dir in sorted(SKILLS_DIR.iterdir()):
-        if not skill_dir.is_dir():
-            continue
+    for skill_dir in skill_dirs:
         if skill_dir.name.startswith("_"):
             continue  # es. _archived
         errors = verify_skill(skill_dir)
@@ -248,7 +266,8 @@ def main() -> int:
         for e in all_errors:
             print(f"::error::{e}")
         return 1
-    print("OK: tutte le fonti raggiungibili e gli hash combaciano.")
+    scope = ", ".join(skill_names) if skill_names else "tutte le skill"
+    print(f"OK: tutte le fonti raggiungibili e gli hash combaciano ({scope}).")
     return 0
 
 
