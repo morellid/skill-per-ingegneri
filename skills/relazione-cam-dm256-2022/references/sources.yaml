@@ -54,9 +54,9 @@ sources:
   - id: dm-256-2022-allegato
     title: "Allegato al DM 23 giugno 2022 n. 256 - Criteri Ambientali Minimi per edilizia pubblica (testo integrale dei criteri)"
     type: allegato
-    url: https://www.bosettiegatti.eu/info/norme/statali/2022_dm_256_cam_edilizia_allegato.pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2022/08/06/183/sg/pdf
     accessed: 2026-05-01
-    sha256: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5
+    sha256: 9193ce14c37f21431098cdc6ecb79fa626f5c6dcd8f6aa74b43e79e9a700ccd4
     license: public-domain-italian-law
     binary_path: not_in_repo/dm-256-2022-allegato.pdf
     md_path: references/fonti/dm-256-2022-allegato.md
@@ -64,9 +64,9 @@ sources:
       - references/estratti/dm-256-2022-allegato-criteri-2x.md
       - references/estratti/dm-256-2022-allegato-criteri-premianti.md
     notes: |
-      Documento principale della skill (Allegato al DM 256/2022, 66 pagine).
-      Scaricato da bosettiegatti.eu - testo integrale dell'Allegato (GU n. 183 del 6/8/2022).
-      SHA256 verificato: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5.
+      Documento principale della skill (Allegato al DM 256/2022, contenuto incluso
+      nel PDF ufficiale della GU n. 183 del 6/8/2022).
+      SHA256 verificato sul PDF ufficiale GU: 9193ce14c37f21431098cdc6ecb79fa626f5c6dcd8f6aa74b43e79e9a700ccd4.
       Struttura del documento (sezioni rilevanti per la Relazione CAM):
         Sezione 2 - Progettazione:
           2.2.1 Relazione CAM (clausola contrattuale obbligatoria)
