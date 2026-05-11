@@ -60,6 +60,14 @@ sources:
       intervento. La skill la usa come fonte primaria di mapping
       intervento -> regime, integrandola con le modifiche del Salva
       Casa per gli interventi che il DL 69/2024 ha riclassificato.
+      Fonte del PDF consultato il 2026-05-11:
+      https://www.suedi.cloud/Normative/Nazionali/Tabella_A_DLgs_6_DLgs_222-2016.pdf
+      (49 pagine, voci 1-105 lette integralmente). Il PDF contiene il
+      testo dell'allegato Tabella A - Sezione II Edilizia con
+      aggiornamenti successivi all'entrata in vigore (incluse modifiche
+      colorate in rosso relative al DPR 120/2017 per terre e rocce da
+      scavo). Il testo originale pubblicato resta GU n. 277 del
+      26/11/2016 S.O. n. 52.
 
   - id: dl-69-2024-salva-casa
     title: "DL 29 maggio 2024 n. 69 - Disposizioni urgenti in materia di semplificazione edilizia e urbanistica (Salva Casa) - testo originale GU n. 124 del 29/05/2024 (per testo coordinato con L. 105/2024 vedere Normattiva)"
