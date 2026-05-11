@@ -7,6 +7,35 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-05-11
+
+### Fixed (source-grounding CI - issue #92 v2)
+
+- Corretto `references/sources.yaml`: il campo `binary_path` era impostato a
+  `not_in_repo/ai-act-it-eurlex.pdf` e `sha256` a `a61b6170...`, ma EUR-Lex
+  risponde con challenge WAF AWS (HTTP 202, corpo vuoto) a qualsiasi richiesta
+  programmatica, causando hash mismatch `e3b0c442...` (SHA256 di contenuto vuoto)
+  nel job `validate-sources` della CI.
+- Impostati `binary_path: null` e `sha256: null` in coerenza con il comportamento
+  del server (la CI salta il fetch per `binary_path: null`, conforme alla logica
+  di `verify-sources.py`). Il campo `md_path` rimane invariato:
+  `references/fonti/ai-act-it-eurlex.md` esiste ed e' non vuoto (329 righe di
+  trascrizione reale del PDF letto il 2026-04-25, SHA256 a61b6170...).
+- Aggiornato URL canonico da `http://data.europa.eu/eli/reg/2024/1689/oj`
+  (reindirizza con 307 a EUR-Lex, poi WAF) a
+  `https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=OJ:L_202401689`
+  (URL diretto PDF italiano, comunque bloccato da WAF in contesto CI).
+
+### Note
+
+- Il file `references/fonti/ai-act-it-eurlex.md` rimane la prova di lettura
+  effettiva del PDF. Contiene trascrizione fedele di Art. 3, 5, 6, 9, 26, 27,
+  50, 51-55, 113, All. II e III, con pagine OJ indicate.
+- Per futura verifica automatica: l'hash originale del PDF era a61b6170...
+  (calcolato il 2026-04-25 su not_in_repo/ai-act-it-eurlex.pdf). Quando EUR-Lex
+  smette di usare WAF o viene trovato un mirror stabile, ripristinare
+  binary_path e sha256 con verifica CI.
+
 ## [0.1.1] - 2026-05-09
 
 ### Fixed (source-grounding remediation - issue #92)

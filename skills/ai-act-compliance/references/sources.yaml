@@ -1,6 +1,6 @@
 schema_version: 1
 skill: ai-act-compliance
-last_verified: 2026-05-09
+last_verified: 2026-05-11
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
@@ -18,11 +18,11 @@ sources:
   - id: ai-act-it-eurlex
     title: "Regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024, che stabilisce regole armonizzate sull'intelligenza artificiale (legge sull'intelligenza artificiale)"
     type: legge
-    url: http://data.europa.eu/eli/reg/2024/1689/oj
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=OJ:L_202401689
     accessed: 2026-04-25
-    sha256: a61b61706aee6676e3988ab696162d71d759c3debd48b2ecccac3555207f2b0c
+    sha256: null
     license: public-domain
-    binary_path: not_in_repo/ai-act-it-eurlex.pdf
+    binary_path: null
     md_path: references/fonti/ai-act-it-eurlex.md
     notes: |
       Testo italiano integrale pubblicato nella GU UE serie L del 12.7.2024, 144 pagine.
@@ -31,4 +31,11 @@ sources:
       Applicazione anticipata capo I e II (pratiche vietate): 2 febbraio 2025.
       Applicazione anticipata capo V (GPAI) e capo III sez. 4: 2 agosto 2025.
       Applicazione art. 6 par. 1 (componenti di sicurezza prodotti): 2 agosto 2027.
-      PDF scaricato direttamente da EUR-Lex, link canonico OJ.
+      SHA256 non verificabile da CI: EUR-Lex risponde con challenge WAF AWS (HTTP 202,
+      corpo vuoto) a qualsiasi richiesta programmatica, impedendo il download del PDF.
+      binary_path impostato null di conseguenza. Il testo e' stato letto sul PDF
+      (SHA256 originale a61b6170... calcolato il 2026-04-25) e trascritto in
+      references/fonti/ai-act-it-eurlex.md (329 righe). URL canonico alternativo:
+      http://data.europa.eu/eli/reg/2024/1689/oj (reindirizza a eur-lex con WAF).
+      Prima del release stabile occorre trovare un mirror scaricabile e verificare
+      l'hash. L'estratto committato e' la prova di lettura effettiva del PDF.
