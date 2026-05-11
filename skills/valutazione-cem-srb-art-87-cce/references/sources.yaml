@@ -17,6 +17,7 @@ sources:
     sha256: 476b36ffc3bf045cefadb0a6c53e6b3ab58844946c6e05c4ac6487f632c5e9d8
     license: public-domain
     binary_path: not_in_repo/dlgs-259-2003-cce-mimit.pdf
+    md_path: references/fonti/dlgs-259-2003-cce-mimit.md
     excerpt_paths:
       - references/estratti/dlgs-259-2003-art-87.md
     notes: |
@@ -43,6 +44,7 @@ sources:
     sha256: 362144b32d12e0bd473f87b7a47364ed325ef0a8465285b703e38661cd32bb83
     license: public-domain
     binary_path: not_in_repo/dpcm-8-luglio-2003-cem.pdf
+    md_path: references/fonti/dpcm-8-7-2003-cem.md
     excerpt_paths:
       - references/estratti/dpcm-8-7-2003-limiti-cem.md
     notes: |
@@ -65,6 +67,7 @@ sources:
     sha256: 7e705e7fc62b91a4b7296ffd714b2d3df5379615f9bc436337f957744d309f3f
     license: public-domain
     binary_path: not_in_repo/legge-36-2001-quadro-cem.pdf
+    md_path: references/fonti/legge-36-2001-quadro-cem.md
     excerpt_paths: null
     notes: |
       Pubblicata in GU Serie Generale n. 55 del 7 marzo 2001. Nel PDF della

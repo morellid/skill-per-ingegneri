@@ -7,6 +7,22 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Fixed (source-grounding remediation)
+- `references/fonti/dlgs-259-2003-cce-mimit.md`: creato con trascrizione dell'art. 87 commi 1-10
+  e 3-bis letto tramite Normattiva (vigente 2014-01-01), corrispondente al contenuto del PDF MIMIT
+  catalogato in sources.yaml (sha256: 476b36ff...). Aggiunto `md_path` in sources.yaml.
+- `references/fonti/dpcm-8-7-2003-cem.md`: creato con trascrizione degli articoli 1-7 letti
+  tramite endpoint HTML della Gazzetta Ufficiale (codice redazionale 03A09711, GU n. 199 del
+  28/8/2003), corrispondente al PDF della GU catalogato in sources.yaml (sha256: 362144b3...).
+  Le Tabelle 1, 2, 3 dell'Allegato B e le formule dell'Allegato C sono pubblicati come immagine
+  nel PDF della GU e non sono riprodotti. Aggiunto `md_path` in sources.yaml.
+- `references/fonti/legge-36-2001-quadro-cem.md`: creato con trascrizione degli articoli 1, 2,
+  3, 4 c. 1 lett. a), 6 cc. 1-2 e 14 letti tramite Normattiva, corrispondente al PDF della GU n.
+  55 del 7/3/2001 catalogato in sources.yaml (sha256: 7e705e7f...; il PDF della GU contiene il
+  testo in forma di immagine non estraibile). Aggiunto `md_path` in sources.yaml.
+- CI fix: le 3 violazioni "[skill/id] md_path mancante" del workflow source-grounding.yml
+  (job validate-sources e check-md-fonti-present) risolte.
+
 ### Changed (post-review #86)
 - `tasks/check-completezza-istanza.md`: chiarita la regola di pubblicizzazione dell'istanza (art. 87 c. 4) anche per il regime SCIA Modello B; allineata la terminologia "asseverazione" (SCIA, art. 19 L. 241/1990) vs. "documentazione tecnica firmata attestante" (regime ordinario, art. 87 c. 3); aggiunto item 9-bis sul catasto nazionale delle sorgenti elettromagnetiche.
 - `examples/srb-lte-30w-conforme/expected-output.md`: stato dell'item co-siting da `OK (con caveat)` a `DA VERIFICARE` per coerenza con la grammatica della tabella; allineata la voce "asseverazione" Modello A.
