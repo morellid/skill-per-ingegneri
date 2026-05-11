@@ -22,9 +22,9 @@ sources:
     type: portale-istituzionale
     url: https://www.gse.it/servizi-per-te/autoconsumo
     accessed: 2026-05-11
-    sha256: 5abad3443d098c57993e2a7206867cbbb7f585cd3bfbb76aa509b1a0e375a413
+    sha256: null
     license: gse-public-no-redistribution
-    binary_path: not_in_repo/gse-portale-autoconsumo.html
+    binary_path: null
     md_path: references/fonti/gse-portale-autoconsumo.md
     excerpt_paths:
       - references/estratti/gse-regole-operative-cacer.md
@@ -34,9 +34,9 @@ sources:
     type: portale-istituzionale
     url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr
     accessed: 2026-05-11
-    sha256: 97b7e2dcbba6298c8dd170a0e23a9dbde0b0ef7ecb1a982f281a0d65a0d7ad95
+    sha256: null
     license: gse-public-no-redistribution
-    binary_path: not_in_repo/gse-pnrr-cacer.html
+    binary_path: null
     md_path: references/fonti/gse-pnrr-cacer.md
     excerpt_paths:
       - references/estratti/dm-mase-414-2023.md
