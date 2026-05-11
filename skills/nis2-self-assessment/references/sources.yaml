@@ -18,9 +18,9 @@ sources:
   - id: dlgs-138-2024
     title: "Decreto Legislativo 4 settembre 2024, n. 138 - Recepimento della direttiva (UE) 2022/2555 (NIS 2) relativa a misure per un livello comune elevato di cibersicurezza nell'Unione"
     type: decreto
-    url: https://www.gazzettaufficiale.it/eli/id/2024/10/01/24G00155/SG
+    url: https://www.gazzettaufficiale.it/eli/gu/2024/10/01/230/sg/pdf
     accessed: 2026-04-29
-    sha256: a049c6c12f2ff6d875891040fecb610eb6a46eb77b305a1bea5aab9301abf752
+    sha256: 056dfbb1ddd34c163585250ae5631270ed8d27ce16ac5b30576cff4e88169e36
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-138-2024.pdf
     md_path: references/fonti/dlgs-138-2024.md
@@ -88,7 +88,7 @@ sources:
   - id: acn-det-379907-2025
     title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 2511 v3 (protocollo 379907/2025) del 18 dicembre 2025 - Modalita' e specifiche di base per gli adempimenti agli obblighi di cui agli artt. 23, 24, 25, 29 e 32 del decreto legislativo 4 settembre 2024, n. 138"
     type: determinazione
-    url: https://www.acn.gov.it/portale/en/nis/modalita-specifiche-base
+    url: https://www.acn.gov.it/portale/documents/d/guest/detacn_obblighi_2511-v3_signed
     download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_obblighi_2511-v3_signed
     accessed: 2026-04-29
     sha256: dfb9d02bb11de75bc14f913d768eeece1e4f5ca7ef9d72ff939bf445c3979127
