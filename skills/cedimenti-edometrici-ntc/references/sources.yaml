@@ -1,0 +1,26 @@
+schema_version: 1
+skill: cedimenti-edometrici-ntc
+last_verified: 2026-05-11
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "DM 17 gennaio 2018 - NTC 2018"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/id/2018/2/20/18A00716/sg
+    accessed: 2026-05-11
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain-italian-law
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
+    excerpt_path: references/estratti/ntc2018-par-6-2.md
+
+  - id: circ-7-2019-mit
+    title: "Circolare MIT n. 7 del 21/01/2019 - Istruzioni applicative NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/id/2019/02/11/19A00855/sg
+    accessed: 2026-05-11
+    sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/circ-7-2019.pdf
+    md_path: references/fonti/circ-7-2019-mit.md
+    excerpt_path: references/estratti/circ-7-2019-c-6-2.md

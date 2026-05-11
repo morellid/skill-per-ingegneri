@@ -1,0 +1,1 @@
+Caso remediato per mostrare che la skill ora segnala assenza di elementi documentali essenziali invece di tentare un calcolo automatico non source-grounded.

@@ -1,0 +1,1 @@
+Caso remediato: la skill non ricostruisce il calcolo numerico, ma verifica che il progettista abbia documentato metodo, risultato e confronto con il limite prestazionale.
