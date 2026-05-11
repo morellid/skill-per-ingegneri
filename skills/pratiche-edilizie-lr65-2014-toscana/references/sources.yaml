@@ -1,207 +1,52 @@
 schema_version: 1
 skill: pratiche-edilizie-lr65-2014-toscana
-last_verified: 2026-05-02
-
-# Fonti normative per la skill pratiche edilizie LR 65/2014 Toscana.
-#
-# Struttura normativa di riferimento:
-# - LR Toscana 65/2014: disciplina regionale dei titoli abilitativi edilizi
-# - DPR 380/2001: testo unico edilizia (applicabile in Toscana per le materie
-#   non coperte dalla LR 65/2014)
-# - DPGR 64/R/2018: regolamento edilizio tipo regionale toscano
-# - D.Lgs. 42/2004: codice dei beni culturali e del paesaggio (vincoli)
-# - DPR 380/2001 artt. 93-94: zone sismiche e Genio Civile
-#
-# NOTA sugli aggiornamenti: la LR 65/2014 ha subito modifiche nel 2019, 2020,
-# 2021 e 2024. Verificare sempre la versione consolidata sul portale della
-# Regione Toscana (raccolta normativa) prima dell'utilizzo.
+last_verified: 2026-05-11
 
 sources:
   - id: lr-toscana-65-2014
-    title: "LR Toscana 10 novembre 2014 n. 65 - Norme per il governo del territorio (versione vigente)"
+    title: "LR Toscana 10 novembre 2014 n. 65 - Norme per il governo del territorio (testo coordinato consultato sul portale regionale)"
     type: legge-regionale
-    url: https://raccoltanormativa.consiglio.regione.toscana.it/articolo?urndoc=urn%3Anir%3Aregione.toscana%3Alegge%3A2014-11-10%3B65
-    accessed: 2026-05-02
-    sha256: null
+    url: https://raccoltanormativa.consiglio.regione.toscana.it/articolo?urndoc=urn:nir:regione.toscana:legge:2014-11-10;65
+    accessed: 2026-05-11
+    sha256: 061f67d4471e59ee413b74f7a7d6df587466e6b10027cf47b6b10c12cbda13dd
     license: public-domain-italian-law
-    binary_path: null
+    binary_path: not_in_repo/lr-toscana-65-2014-articoli.html
+    md_path: references/fonti/lr-toscana-65-2014.md
     excerpt_paths:
       - references/estratti/lr-65-2014-titoli-abilitativi.md
-    notes: |
-      Legge regionale Toscana sull'assetto del territorio. Sostituisce LR 1/2005.
-      I titoli abilitativi edilizi sono disciplinati nel Titolo VI, Capo I
-      (artt. 134 e seguenti; la numerazione esatta puo' variare con gli
-      aggiornamenti - verificare la versione consolidata vigente).
-      Aggiornamenti rilevanti: LR 11/2020 (semplificazioni), LR 8/2021 (sismica),
-      LR 18/2024 (allineamento Salva Casa).
-      Portale consolidato: verificare alla data di utilizzo.
 
   - id: dpr-380-2001-tue
-    title: "DPR 6 giugno 2001 n. 380 - Testo Unico Edilizia (versione consolidata vigente)"
+    title: "DPR 6 giugno 2001 n. 380 - Testo unico edilizia (testo vigente consultato su Normattiva)"
     type: decreto-presidenziale
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
-    accessed: 2026-05-02
-    sha256: null
+    accessed: 2026-05-11
+    sha256: c2c23a6e2b0ec3081873b7dc1d53c60e33d2946ce069dbbbfda64bcc07c25110
     license: public-domain-italian-law
-    binary_path: null
+    binary_path: not_in_repo/dpr-380-2001.html
+    md_path: references/fonti/dpr-380-2001-tue.md
     excerpt_paths:
       - references/estratti/dpr-380-2001-artt-zona-sismica.md
-    notes: |
-      Applicabile in Toscana per le materie non disciplinate dalla LR 65/2014.
-      Per questa skill rilevano in particolare:
-      - Art. 3: definizione categorie di intervento
-      - Art. 6: attivita' edilizia libera
-      - Art. 6-bis: CILA
-      - Art. 10: interventi subordinati a permesso di costruire
-      - Artt. 22-23: SCIA e SCIA alternativa al PdC
-      - Art. 23-ter: mutamento della destinazione d'uso
-      - Artt. 93-94: zone sismiche (denuncia e autorizzazione Genio Civile)
-      - Art. 16: contributo di costruzione
-      - Art. 24: agibilita'
-      - Modificato da DL 69/2024 conv. L. 105/2024 (Salva Casa) per artt. 6, 9-bis,
-        23-ter, 34-bis, 36, 36-bis.
 
-  - id: dpgr-64r-2018-regolamento-edilizio-tipo-toscana
-    title: "DPGR Toscana 18 dicembre 2018 n. 64/R - Regolamento edilizio tipo regionale"
+  - id: dpgr-1r-2022-sismica-toscana
+    title: "Regolamento Toscana 19 gennaio 2022 n. 1/R - Vigilanza e verifica delle opere in zone sismiche"
     type: decreto-regionale
-    url: https://raccoltanormativa.consiglio.regione.toscana.it/articolo?urndoc=urn%3Anir%3Aregione.toscana%3Aregolamento.giunta%3A2018-12-18%3B64%2FR
-    accessed: 2026-05-02
-    sha256: null
+    url: https://raccoltanormativa.consiglio.regione.toscana.it/articolo?urndoc=urn:nir:regione.toscana:regolamento.giunta:2022-01-19;1/R
+    accessed: 2026-05-11
+    sha256: da785fce80f484b76169e95dbc12db7baad1667adce4c17c17485c905475ef3b
     license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Regolamento edilizio tipo adottato dalla Regione Toscana ai sensi dell'Accordo
-      Conferenza Unificata del 25/10/2016. I Comuni toscani adottano il proprio
-      regolamento edilizio nel rispetto di questo schema tipo. I parametri specifici
-      (soglie, definizioni di pertinenza, requisiti igienico-sanitari) vanno verificati
-      nel regolamento edilizio del Comune di intervento.
+    binary_path: not_in_repo/dpgr-1r-2022.html
+    md_path: references/fonti/dpgr-1r-2022.md
+    excerpt_paths:
+      - references/estratti/dpr-380-2001-artt-zona-sismica.md
 
-  - id: dlgs-42-2004-codice-paesaggio
-    title: "D.Lgs. 22 gennaio 2004 n. 42 - Codice dei beni culturali e del paesaggio (versione consolidata)"
-    type: decreto-legislativo
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2004-01-22;42
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Per questa skill rilevano:
-      - Art. 21: autorizzazioni per beni culturali vincolati (Parte II)
-      - Art. 136: beni paesaggistici (individuali)
-      - Art. 142: aree tutelate per legge (fascia 300 m costiera, 150 m corsi d'acqua,
-        boschi, zone umide, crinali montani oltre 1600 m, parchi nazionali e riserve)
-      - Artt. 146-149: autorizzazione paesaggistica (procedura ordinaria)
-      - DPCM 13/9/2017: elenco interventi di lieve entita' soggetti ad autorizzazione
-        paesaggistica semplificata (Allegato 1 e 2)
-
-  - id: dpr-31-2017-paesaggio-semplificato
-    title: "DPR 13 febbraio 2017 n. 31 - Regolamento recante individuazione degli interventi esclusi dall'autorizzazione paesaggistica o sottoposti a procedura autorizzatoria semplificata"
-    type: decreto-presidenziale
-    url: https://www.gazzettaufficiale.it/eli/id/2017/03/22/17G00036/sg
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Disciplina le procedure semplificate di autorizzazione paesaggistica:
-      - Allegato A: interventi esclusi dall'autorizzazione paesaggistica
-      - Allegato B: interventi soggetti ad autorizzazione paesaggistica semplificata (30 gg)
-      Gli interventi non in Allegato A o B sono soggetti alla procedura ordinaria
-      (artt. 146-149 D.Lgs. 42/2004 - tempi fino a 90 giorni con parere Soprintendenza).
-      ATTENZIONE: citare correttamente DPR 31/2017, non "DPCM 13/9/2017" (atto diverso).
-
-  - id: dgrt-421-2014-classificazione-sismica-toscana
-    title: "Delibera GRT n. 421 del 26/05/2014 - Classificazione sismica dei Comuni della Toscana"
-    type: delibera-regionale
+  - id: regione-toscana-classificazione-sismica
+    title: "Regione Toscana - Classificazione sismica della Toscana"
+    type: portale-istituzionale
     url: https://www.regione.toscana.it/-/classificazione-sismica-della-toscana
-    accessed: 2026-05-02
-    sha256: null
+    accessed: 2026-05-11
+    sha256: e8ff0ab568e994fafe10efc3e90cfe9c71ccaafad6d1b7385c0edf220cb7be2e
     license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Classificazione sismica dei Comuni toscani adottata dalla Regione Toscana.
-      Questa e' la fonte regionale da usare per la Toscana, non il DM nazionale 28/7/2021.
-      Il portale della Regione Toscana mantiene l'elenco aggiornato dei Comuni per zona.
-      Verificare sempre la classificazione di ogni Comune sul portale regionale prima
-      di indicare gli adempimenti sismici applicabili.
-
-  - id: dpgr-1r-2022-norme-sismiche-toscana
-    title: "DPGR Toscana - Regolamento n. 1/R del 2022 - Norme tecniche per le costruzioni in zona sismica in Toscana"
-    type: decreto-regionale
-    url: https://raccoltanormativa.consiglio.regione.toscana.it/
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Regolamento regionale toscano che disciplina la procedura di deposito, preavviso
-      e autorizzazione al Genio Civile per interventi in zone sismiche in Toscana,
-      in attuazione degli artt. 93-94 DPR 380/2001.
-      Definisce il sistema informatico regionale per le istanze sismiche, i termini
-      procedurali e le tipologie di intervento soggetti ad autorizzazione preventiva
-      vs deposito con controllo a campione.
-      Da verificare sul portale normativo della Regione Toscana per la versione vigente.
-
-  - id: ntc-2018-dm-17-01-2018
-    title: "DM 17 gennaio 2018 - Norme Tecniche per le Costruzioni (NTC 2018)"
-    type: decreto-ministeriale
-    url: https://www.gazzettaufficiale.it/eli/id/2018/02/20/18A00716/sg
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Norme tecniche per la progettazione strutturale e sismica. Rilevanti per
-      tutti gli interventi strutturali (progetto strutturale, relazione di calcolo,
-      collaudo) e per la classificazione delle zone sismiche. Da usare in combinazione
-      con la Circolare 21/01/2019 n. 7 CS LL.PP.
-
-  - id: dm-37-2008-impianti
-    title: "DM 22 gennaio 2008 n. 37 - Regolamento impianti negli edifici"
-    type: decreto-ministeriale
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.ministro:2008-01-22;37
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Disciplina la progettazione, installazione, verifica e manutenzione degli impianti
-      negli edifici. Rilevante per qualsiasi pratica edilizia che comporti modifiche
-      impiantistiche (elettrico, idro-termosanitario, gas, riscaldamento/raffrescamento).
-      Obbliga alla dichiarazione di conformita' dell'impresa installatrice.
-
-  - id: regione-toscana-portale-normativo
-    title: "Portale normativo Regione Toscana - Raccolta normativa vigente"
-    type: portale-normativo
-    url: https://raccoltanormativa.consiglio.regione.toscana.it/
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Portale ufficiale della Regione Toscana per la normativa vigente. Usare per
-      verificare la versione consolidata aggiornata della LR 65/2014 e dei DPGR
-      attuativi (incluso il regolamento edilizio tipo e le circolari applicative).
-
-  - id: regione-toscana-suap-aprea
-    title: "Regione Toscana - Portale APREA (SUE/SUAP unificato)"
-    type: portale-normativo
-    url: https://www.regione.toscana.it/pratiche-edilizie
-    accessed: 2026-05-02
-    sha256: null
-    license: public-domain-italian-law
-    binary_path: null
-    excerpt_paths: []
-    notes: |
-      Portale della Regione Toscana per le pratiche edilizie e SUAP. Molti Comuni toscani
-      aderiscono al sistema APREA per la gestione telematica delle pratiche SUE.
-      Verificare se il Comune di intervento usa APREA o un portale proprio.
-      URL esatto e servizi disponibili possono variare: verificare sul sito regionale.
+    binary_path: not_in_repo/regione-toscana-classificazione-sismica.html
+    md_path: references/fonti/regione-toscana-classificazione-sismica.md
+    excerpt_paths:
+      - references/estratti/dpr-380-2001-artt-zona-sismica.md
