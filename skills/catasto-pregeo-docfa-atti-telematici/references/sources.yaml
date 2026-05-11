@@ -88,6 +88,7 @@ sources:
     sha256: 580012be6b445f7f3fa9889593775fa331c3aa23dfefdd1f5ec62a2d9306d15f
     license: public-domain-italian-law
     binary_path: not_in_repo/circolare-3-2009-pregeo10.pdf
+    md_path: references/fonti/ade-circolare-3-2009-pregeo10.md
     excerpt_paths:
       - references/estratti/circolare-3-2009-pregeo10.md
     notes: |
@@ -134,6 +135,7 @@ sources:
     sha256: 8b39d6265029f056dbfe96ee10b165ca9736379d0d2e02deb0e6e0f305315130
     license: public-domain-italian-law
     binary_path: not_in_repo/risoluzione-40-2025-deposito-telematico.pdf
+    md_path: references/fonti/ade-risoluzione-40-2025-deposito-telematico.md
     excerpt_paths:
       - references/estratti/risoluzione-40-2025-deposito-telematico.md
     notes: |
@@ -182,6 +184,7 @@ sources:
     sha256: 7ee7fbe724921d589448bc5d6f3322cc40e284c1d3498a37594162c6c299d6a0
     license: public-domain-italian-law
     binary_path: not_in_repo/vademecum-docfa-ver1.pdf
+    md_path: references/fonti/ade-vademecum-docfa-v1.md
     excerpt_paths:
       - references/estratti/vademecum-docfa-categorie-causali.md
       - references/estratti/vademecum-docfa-elaborato-planimetrico.md

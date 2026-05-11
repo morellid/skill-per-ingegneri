@@ -7,6 +7,45 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.1.1-alpha] - 2026-05-11
+
+### Fixed - source-grounding remediation (issue #95)
+
+- Creati i file `references/fonti/` per le tre fonti con `binary_path` presente
+  e `md_path` mancante:
+  - `references/fonti/ade-circolare-3-2009-pregeo10.md`: trascrizione fedele
+    dei paragrafi rilevanti letti dal PDF (`sha256: 580012be...`).
+    Verificati: par. 2.1-2.9 (indice di affidabilita', estratto di mappa,
+    tipologie atti, dati censuari, deformazione, relazione tecnica strutturata,
+    controlli topo-cartografici, distanze PF, congruenza cartografica),
+    par. 4 (modalita' di presentazione), par. 5 (tipologie escluse
+    dall'approvazione automatica), par. 6 (criteri di approvazione a-d),
+    par. 9.5-9.6 (particelle con superfici reali, F6), par. 10 (decorrenza).
+  - `references/fonti/ade-risoluzione-40-2025-deposito-telematico.md`:
+    trascrizione fedele letta dal PDF (`sha256: 8b39d6...`).
+    Verificati: testo del comma 5-bis art. 30 DPR 380/2001 cosi' come citato
+    nella Risoluzione; ambito oggettivo FR/FM/SC; nota 4 (invalidita' del
+    deposito comunale post 1/7/2025 per FR/FM/SC); nota 5 (respingimento
+    atti con versione Pregeo errata); versione obbligatoria 10.6.5 APAG 2.15;
+    PEC unica depositofrazionamenticatastali@pec.agenziaentrate.it; art. 5
+    DPR 650/1972 sul secondo originale; disciplina residuale per atti non
+    telematici; nota 11 (Provv. 11/3/2015 e Provv. 28/1/2021).
+  - `references/fonti/ade-vademecum-docfa-v1.md`: trascrizione fedele letta
+    dal PDF (`sha256: 7ee7fb...`).
+    Verificati: premessa; cap. 1.1.1 (definizione UIU ex art. 2 DM 28/1998);
+    cap. 1.1.2-1.1.4 (BCC/BCNC, immobili non inventariabili); cap. 1.2.1-1.2.4
+    (quadro generale categorie, prospetti A/B/C/D/E/F con denominazioni
+    ufficiali); destinazioni d'uso codificate Gruppi D ed E (Prospetti 1.6-1.14);
+    cap. 2.2.1.4-2.2.1.5 (causali Quadro A, tipologie documento); cap.
+    2.3.1.5-2.3.1.6 (causali Quadro B, tipologie documento); cap. 2.4.2
+    (Quadro D, formule standardizzate); cap. 3.1.1-3.1.3 (EP, ES, ET); cap.
+    3.2 (planimetria); cap. 3.3.1 (superficie catastale DPR 138/1998).
+- Aggiunto `md_path` in `references/sources.yaml` per i tre ID sopra.
+- Estratti in `references/estratti/` verificati: le affermazioni normative
+  contenute in `circolare-3-2009-pregeo10.md`, `risoluzione-40-2025-deposito-
+  telematico.md`, `vademecum-docfa-categorie-causali.md` e `vademecum-docfa-
+  elaborato-planimetrico.md` corrispondono al testo letto nei PDF.
+
 ## [0.1.0-alpha] - 2026-05-01
 
 ### Added
