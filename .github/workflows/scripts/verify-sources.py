@@ -97,7 +97,13 @@ def verify_skill(skill_dir: Path) -> list[str]:
 
         # Regola zero Step 3: per ogni fonte pubblica con binary_path non null,
         # md_path deve essere dichiarato e il file deve esistere e non essere vuoto.
-        is_free_license = license_type in ("public-domain", "cc-by", "cc-by-nc")
+        is_free_license = license_type in (
+            "public-domain",
+            "public-domain-italian-law",
+            "public-domain-eu-law",
+            "cc-by",
+            "cc-by-nc",
+        )
         has_binary = binary_path and binary_path not in (None, "null")
         if has_binary and is_free_license:
             if not md_path or md_path in (None, "null"):
@@ -124,7 +130,13 @@ def verify_skill(skill_dir: Path) -> list[str]:
             continue
 
         # Caso 2: licenze non libere -> skip fetch automatico
-        if license_type not in ("public-domain", "cc-by", "cc-by-nc"):
+        if license_type not in (
+            "public-domain",
+            "public-domain-italian-law",
+            "public-domain-eu-law",
+            "cc-by",
+            "cc-by-nc",
+        ):
             print(f"[{skill_name}/{sid}] licenza {license_type} non-libera - skip fetch (verifica manuale)")
             continue
 

@@ -56,11 +56,10 @@ validate_skill() {
       grep -nE "sha256:.*(REPLACE_WHEN_DOWNLOADED|REPLACE_WITH_ACTUAL_HASH|PENDING_FETCH|TODO_HASH|XXX_HASH)" "$skill_path/references/sources.yaml" | sed 's/^/    /'
       errors=$((errors + 1))
     fi
-    # 2b. sha256 vuoto e' violazione (deve essere o un hash valido o esplicitamente null)
-    # cattura sia "sha256:" senza valore sia "sha256: \"\"" (stringa vuota)
-    if grep -qE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$skill_path/references/sources.yaml"; then
+    # 2b. sha256 vuoto e' violazione (deve essere hash valido o null esplicito)
+    if grep -qE '^[[:space:]]*sha256:[[:space:]]*(""|\x27\x27)?[[:space:]]*$' "$skill_path/references/sources.yaml"; then
       echo "  ERRORE: sources.yaml contiene sha256 vuoto (deve essere hash valido o null esplicito)"
-      grep -nE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$skill_path/references/sources.yaml" | sed 's/^/    /'
+      grep -nE '^[[:space:]]*sha256:[[:space:]]*(""|\x27\x27)?[[:space:]]*$' "$skill_path/references/sources.yaml" | sed 's/^/    /'
       errors=$((errors + 1))
     fi
     # 2c. Regola zero Step 3 (vedi AGENTS.md): per ogni fonte con md_path dichiarato
@@ -75,6 +74,18 @@ validate_skill() {
         errors=$((errors + 1))
       fi
     done < <(grep -E "^[[:space:]]*md_path:" "$skill_path/references/sources.yaml" 2>/dev/null || true)
+
+    # 2d. Ogni excerpt_path/excerpt_paths dichiarato deve esistere.
+    while IFS= read -r exline; do
+      expath=$(echo "$exline" | sed -E 's/^[[:space:]-]*//; s/^excerpt_path:[[:space:]]*//; s/[[:space:]]*$//; s/^"//; s/"$//')
+      if [ -z "$expath" ] || [ "$expath" = "[]" ] || [ "$expath" = "null" ]; then
+        continue
+      fi
+      if [ ! -s "$skill_path/$expath" ]; then
+        echo "  ERRORE: excerpt path '$expath' dichiarato in sources.yaml ma file mancante o vuoto"
+        errors=$((errors + 1))
+      fi
+    done < <(grep -E "^[[:space:]]*(excerpt_path:|- references/estratti/)" "$skill_path/references/sources.yaml" 2>/dev/null || true)
   fi
 
   # 3. CHANGELOG.md
