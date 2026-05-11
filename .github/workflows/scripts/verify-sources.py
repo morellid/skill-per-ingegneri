@@ -58,6 +58,7 @@ OFFICIAL_HOST_SUFFIXES = (
     "cslp.mit.gov.it",
     "eur-lex.europa.eu",
     "europa.eu",
+    "funzionepubblica.gov.it",
     "garanteprivacy.it",
     "gazzettaufficiale.it",
     "gse.it",
