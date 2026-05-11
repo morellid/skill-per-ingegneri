@@ -67,9 +67,9 @@ Input
 - Coefficienti: alpha_cc = ..., gamma_c = ..., gamma_s = ...
 
 Materiali derivati
-- f_cd = ... MPa                  [eq. 4.1.4 NTC]
-- f_yd = ... MPa                  [par. 4.1.2.1.1.3 NTC]
-- eps_yd = ...                    [par. 4.1.2.1.1.2 NTC]
+- f_cd = ... MPa                  [eq. [4.1.3] NTC par. 4.1.2.1.1.1]
+- f_yd = ... MPa                  [eq. [4.1.5] NTC par. 4.1.2.1.1.3]
+- eps_yd = ...                    [eps_yd = fyd/Es, Es da NTC par. 11.3.2.1]
 
 Geometria interna
 - x = ... mm                       [equilibrio Cc = T, stress-block lambda = 0.8]
@@ -82,7 +82,7 @@ Output
 
 Duttilita'
 - Acciaio snerva: ... (eps_s ... vs eps_yd ...)
-- x/d <= 0.45 raccomandato Circ. 7/2019 C4.1.2: ...
+- x/d <= 0.45 (NTC 2018 par. 4.1.1.1, ridistribuzione momenti travi continue): ...
 - Avvertenze: ...
 ```
 

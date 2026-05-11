@@ -11,7 +11,7 @@ license: MIT
 Usare quando un ingegnere strutturista italiano deve:
 - Pre-dimensionare una sezione rettangolare in c.a. singolarmente armata in flessione semplice SLU, ai sensi di NTC 2018 par. 4.1.2.1 e 4.1.2.3.4.2
 - Calcolare M_Rd di una sezione esistente data l'armatura tesa A_s, per confrontarla con il momento sollecitante M_Ed di una combinazione SLU
-- Determinare profondita' asse neutro x e rapporto x/d per valutare duttilita' della sezione (raccomandazione Circolare 7/2019 C4.1.2: x/d <= 0.45)
+- Determinare profondita' asse neutro x e rapporto x/d per valutare duttilita' della sezione (limite x/d <= 0.45 per fck <= 50 MPa da NTC 2018 par. 4.1.1.1, ridistribuzione momenti travi continue)
 - Verificare valori prodotti da altri software o fogli di calcolo
 
 **Non usare** quando l'utente chiede:

@@ -9,9 +9,9 @@
 
 ## Materiali derivati
 
-- `f_cd = 14.166667 MPa` (eq. 4.1.4 NTC: 0.85 * 25 / 1.5)
-- `f_yd = 391.304348 MPa` (par. 4.1.2.1.1.3 NTC: 450 / 1.15)
-- `eps_yd = 0.001957` (par. 4.1.2.1.1.2 NTC: f_yd / Es = 391.30 / 200000)
+- `f_cd = 14.166667 MPa` (eq. [4.1.3] NTC par. 4.1.2.1.1.1: 0.85 * 25 / 1.5)
+- `f_yd = 391.304348 MPa` (eq. [4.1.5] NTC par. 4.1.2.1.1.3: 450 / 1.15)
+- `eps_yd = 0.001957` (eps_yd = fyd/Es, Es da NTC par. 11.3.2.1: 391.30 / 200000)
 
 ## Geometria interna
 
