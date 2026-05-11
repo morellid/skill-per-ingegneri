@@ -213,6 +213,7 @@ sources:
     sha256: 61eef8569850533a64ac803630a8b508865a338da76f0f0611572823188275a6
     license: public-domain-italian-law
     binary_path: not_in_repo/acn-det-164179-2025-allegato2.pdf
+    md_path: references/fonti/acn-det-164179-2025-allegato2.md
     excerpt_paths: []
     notes: |
       Allegato 2 della Det. 164179/2025 (versione superata, mantenuta

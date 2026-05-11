@@ -7,6 +7,10 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Fixed (source-grounding remediation - PR #154)
+- aggiunto `references/fonti/acn-det-164179-2025-allegato2.md` per la fonte storica `acn-det-164179-2025-allegato2`, cosi' da rispettare la Regola zero Step 3 anche per l'allegato superato mantenuto a catalogo come riferimento storico
+- aggiornato `references/sources.yaml` con `md_path` per `acn-det-164179-2025-allegato2`
+
 ## [0.1.0-alpha+fix.source-grounding] - 2026-05-10
 
 ### Fixed (source-grounding remediation - issue #103)
