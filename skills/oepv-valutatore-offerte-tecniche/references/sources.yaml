@@ -46,7 +46,7 @@ sources:
   - id: dlgs-209-2024-correttivo
     title: "D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo al codice dei contratti pubblici - GU n. 17 del 22/01/2025"
     type: decreto-legislativo
-    url: https://www.gazzettaufficiale.it/eli/id/2025/01/22/25A00154/sg
+    url: https://www.gazzettaufficiale.it/eli/gu/2025/01/22/17/so/3/sg/pdf
     accessed: 2026-05-10
     sha256: null
     license: public-domain-italian-law
