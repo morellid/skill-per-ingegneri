@@ -1,15 +1,21 @@
 # Estratto: D.Lgs. 222/2016 - Tabella A sezione II Edilizia
 
 **Fonte primaria**: `sources.yaml` id `dlgs-222-2016-scia-2-tabella-a`
+**MD di fonte**: `references/fonti/dlgs-222-2016-scia-2-tabella-a.md`
 **Documento**: D.Lgs. 25 novembre 2016 n. 222 - cosiddetto "SCIA 2", attuativo della L. 124/2015 (Riforma Madia) - Allegato Tabella A, sezione II "Edilizia"
-**Data consultazione**: 2026-04-29
+**Data consultazione**: 2026-05-11
+**Fonti lette**: articoli 1 e 2 del D.Lgs. 222/2016 letti su Normattiva
+**AVVISO**: il contenuto della Tabella A sezione II Edilizia (voci numerate) NON e' stato letto direttamente in questa remediation: il PDF della GU suppl. ord. 52/2016 non e' risultato scaricabile, e il portale Normattiva non espone il testo delle voci della Tabella A via WebFetch. Il mapping riportato in questo estratto e' derivato dal combinato tra gli articoli letti del DPR 380/2001 e gli artt. 1-2 del D.Lgs. 222/2016, non da lettura diretta delle singole voci numerate della Tabella A. Necessaria verifica da reviewer con accesso al testo della Tabella A.
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
-> Sintesi strutturata della Tabella A, sezione II Edilizia. La Tabella A
-> mappa puntualmente le tipologie di intervento ai regimi amministrativi
-> del DPR 380/2001. Per il testo vincolante e completo (oltre 100 voci)
-> consultare Normattiva
-> ([uri-res D.Lgs. 222/2016](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016-11-25;222)).
+> NOTA DI REMEDIATION: l'estratto riflette la struttura del mapping previsto
+> dal DPR 380/2001 e dal D.Lgs. 222/2016 (artt. 1-2) ma non trascrive le voci
+> numerate della Tabella A originale, in quanto il PDF della GU e il portale
+> Normattiva non hanno reso accessibile il contenuto della tabella in questa
+> remediation. Il reviewer deve verificare le voci specifiche sulla Tabella A
+> (Normattiva -> D.Lgs. 222/2016 -> Tabella A parte 1-5, sezione Edilizia)
+> prima di chiudere l'issue #102 come "verified".
+> Testo fonte parziale: references/fonti/dlgs-222-2016-scia-2-tabella-a.md
 
 ---
 

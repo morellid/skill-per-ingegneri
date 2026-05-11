@@ -1,16 +1,18 @@
 # Estratto: Modulistica edilizia unificata - aggiornamento Salva Casa 27/3/2025
 
 **Fonte primaria**: `sources.yaml` id `modulistica-unificata-salva-casa-2025`
-**Documento**: Conferenza Unificata - Modulistica edilizia unificata (CILA, SCIA, SCIA alternativa al PdC, PdC, comunicazioni varie) approvata il **27 marzo 2025**, in attuazione delle previsioni del Salva Casa
-**Data consultazione**: 2026-04-29
+**MD di fonte**: `references/fonti/modulistica-unificata-salva-casa-2025.md`
+**Documento**: Conferenza Unificata - Accordo Repertorio n. 35/CU del 27 marzo 2025 - Modifiche alla modulistica edilizia unificata per il Salva Casa
+**Data consultazione**: 2026-05-11
+**Fonti lette**: pagine web statoregioni.it (atto n. 35/CU) e funzionepubblica.gov.it (comunicato stampa)
+**AVVISO**: il file ZIP con i moduli editabili non e' stato scaricato e aperto. Le informazioni sui quadri specifici dei moduli (struttura a quadri 1-10, elenco dettagliato allegati) riportate in questo estratto sono struttura generale della modulistica nazionale confermata dall'accordo n. 35/CU, ma non sono state verificate campo per campo sui moduli aggiornati al 27/3/2025. Necessaria verifica da reviewer con accesso ai moduli .docx/.odt scaricati da SUE comunale.
 **Licenza**: testo amministrativo italiano in pubblico dominio (atti ufficiali della PA)
 
-> Sintesi della struttura dei moduli unificati nazionali e dell'elenco
-> degli allegati richiesti per ciascuno. La fonte autoritativa e' il
-> portale Funzione Pubblica
-> ([Modulistica Salva Casa](https://www.funzionepubblica.gov.it/it/ministro/comunicazione/notizie/approvata-la-modulistica-edilizia-per-l-applicazione-del-salva-casa/)).
-> I moduli sono adottati dai Comuni con eventuali integrazioni locali
-> (es. tasse, oneri, allegati paesaggistici regionali).
+> Sintesi dell'accordo Conferenza Unificata n. 35/CU del 27 marzo 2025 e della
+> struttura dei moduli unificati nazionali, basata sulla lettura delle pagine web
+> di statoregioni.it e funzionepubblica.gov.it.
+> Per i dettagli puntuali di ogni campo consultare i moduli rilasciati dal portale SUE/SUAP.
+> Testo fonte: references/fonti/modulistica-unificata-salva-casa-2025.md
 
 ---
 

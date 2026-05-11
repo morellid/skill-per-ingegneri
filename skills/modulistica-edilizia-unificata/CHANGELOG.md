@@ -7,6 +7,15 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Changed (source-grounding remediation - issue #102)
+- **references/fonti/dl-69-2024-salva-casa.md** (NUOVO): trascrizione fedele dell'art. 1 del DL 69/2024 (lett. a-i) letto dal PDF della Gazzetta Ufficiale n. 124 del 29/05/2024 (SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05). Include il testo letterale delle modifiche a: art. 6 co. 1 lett. b-ter (tende/pergotende), art. 9-bis co. 1-bis (stato legittimo), art. 23-ter co. 1-bis/ter/quater/quinquies (cambio uso), art. 34-bis co. 1-bis/ter/2-bis/3-bis/ter (tolleranze), art. 36 (rubrica e ambito), art. 36-bis (sanatoria semplificata), art. 37.
+- **references/fonti/dpr-380-2001-testo-unico-edilizia.md** (NUOVO): trascrizione degli articoli chiave del DPR 380/2001 vigente (artt. 3, 6, 6-bis, 9-bis, 10, 22, 23, 23-ter, 34-bis, 36, 36-bis) letti su Normattiva, integrata con il testo delle modifiche dal DL 69/2024. Nota: il PDF del testo consolidato non e' stato scaricato; articoli letti via Normattiva singolarmente.
+- **references/fonti/dlgs-222-2016-scia-2-tabella-a.md** (NUOVO): trascrizione degli articoli 1-2 del D.Lgs. 222/2016 letti su Normattiva. LIMITAZIONE: la Tabella A sezione Edilizia (voci numerate) non e' stata letta perche' il PDF della GU 2016 non e' risultato scaricabile e il portale Normattiva non ha esposto il testo delle voci via WebFetch. Il file documenta la limitazione per il reviewer.
+- **references/fonti/modulistica-unificata-salva-casa-2025.md** (NUOVO): trascrizione del contenuto dell'accordo Conferenza Unificata n. 35/CU del 27 marzo 2025 letto da statoregioni.it e funzionepubblica.gov.it. LIMITAZIONE: il file ZIP con i moduli editabili non e' stato aperto.
+- **references/sources.yaml**: aggiornati `accessed`, `md_path` per le 4 fonti principali; aggiornato SHA256 per `dl-69-2024-salva-casa` (hash del PDF GU n. 124/2024 scaricato); aggiornata URL per `dl-69-2024-salva-casa` con URL diretto GU; aggiornato titolo e URL per `modulistica-unificata-salva-casa-2025`.
+- **references/estratti/*.md**: aggiornati gli header di tutti e 4 gli estratti per referenziare i fonti/ creati, con note sulle limitazioni di accesso al testo sorgente.
+- **Nota sulla tolleranza 6% (art. 34-bis co. 1-bis)**: documentato che la soglia SU < 60 mq = 6% e' stata aggiunta dalla L. 105/2024 (conversione) e non era nel DL 69/2024 originale.
+
 ### Planned
 - Esempi aggiuntivi: ristrutturazione "pesante" con SCIA alternativa al PdC, intervento in zona vincolata paesaggistica con DPR 31/2017 All. B.
 - Estensione con scheda specifica per **sanatoria a "doppia conformita' alleggerita"** (art. 36-bis) e differenze procedurali rispetto all'art. 36.
