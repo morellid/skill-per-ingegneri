@@ -62,7 +62,8 @@ jobs:
               fi
             fi
             # rifiuta sha256 con valore vuoto: "sha256:", "sha256: ", "sha256: \"\""
-            if grep -nE "^[[:space:]]*sha256:[[:space:]]*(\"\"|''|)[[:space:]]*$" "$f" > /tmp/empty.txt 2>/dev/null; then
+            EMPTY_SHA_REGEX='^[[:space:]]*sha256:[[:space:]]*$|^[[:space:]]*sha256:[[:space:]]*""[[:space:]]*$|^[[:space:]]*sha256:[[:space:]]*'"''"'[[:space:]]*$'
+            if grep -nE "$EMPTY_SHA_REGEX" "$f" > /tmp/empty.txt 2>/dev/null; then
               if [ -s /tmp/empty.txt ]; then
                 echo "::error file=$f::sha256 vuoto in $f"
                 cat /tmp/empty.txt
