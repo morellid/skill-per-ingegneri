@@ -11,6 +11,7 @@ sources:
     sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain
     binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
     excerpt_path: references/estratti/ntc2018-par-2-5-2-6.md
     notes: |
       Pubblicato in GU Serie Generale n. 42 del 20/02/2018, Suppl. Ord. n. 8.
