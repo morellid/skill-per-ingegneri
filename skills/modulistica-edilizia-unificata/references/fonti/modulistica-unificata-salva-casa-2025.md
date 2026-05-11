@@ -3,10 +3,11 @@
 **Titolo**: Accordo, ai sensi dell'articolo 9, comma 2, lettera c), del decreto legislativo 28 agosto 1997, n. 281, sullo schema relativo alle modifiche alla modulistica edilizia - Repertorio Atto n. 35/CU
 **Approvato in**: Conferenza Unificata Stato-Regioni-Autonomie locali, seduta del 27 marzo 2025
 **Fonte consultata**:
-- https://www.statoregioni.it/it/conferenza-unificata/sedute-2025/seduta-del-27-marzo-2025/atti-del-27-marzo-2025/repertorio-atto-n-35cu/
-- https://www.funzionepubblica.gov.it/it/ministro/comunicazione/notizie/approvata-la-modulistica-edilizia-per-l-applicazione-del-salva-casa/
+- pagina istituzionale dell'atto: https://www.statoregioni.it/it/conferenza-unificata/sedute-2025/seduta-del-27-marzo-2025/atti-del-27-marzo-2025/repertorio-atto-n-35cu/
+- PDF ufficiale dell'Allegato 1: https://www.funzionepubblica.gov.it/media/xnkbxrwv/moduli_clean.pdf
+**Artefatto verificato**: `not_in_repo/modulistica-unificata-salva-casa-2025.pdf` (SHA256: `0330d8015075522c8f41227da07c716e5bd52f9495b27c3e5fa8a98e5459261d`)
 **Data di lettura**: 2026-05-11
-**Nota**: il file ZIP con i moduli editabili (binary_path: not_in_repo/modulistica-unificata-salva-casa-2025.zip) non e' stato scaricato direttamente; le informazioni sono state acquisite via lettura delle pagine web di statoregioni.it e funzionepubblica.gov.it che riportano i contenuti dell'accordo. Il testo letterale dell'allegato tecnico con i moduli compilabili non e' riprodotto in questo file: per leggere il singolo campo del modulo il professionista deve accedere ai moduli dal portale SUE/SUAP del Comune.
+**Nota**: la fonte primaria usata dalla skill e' il PDF ufficiale dell'Allegato 1, letto direttamente. La pagina statoregioni.it resta il riferimento istituzionale dell'atto n. 35/CU.
 **Licenza**: atti delle amministrazioni italiane in pubblico dominio
 
 ---
@@ -70,4 +71,4 @@ La modulistica edilizia unificata nazionale e' un sistema progressivamente costr
 
 ## Limiti di questa fonte
 
-Il file ZIP con i moduli editabili non e' stato aperto e letto. Le informazioni sui quadri specifici dei moduli (quadri 1-10, elenco allegati) riportate nell'estratto estratti/modulistica-unificata-2025.md sono state derivate dalla struttura generale della modulistica nazionale (invariata rispetto alle versioni precedenti per la struttura di base) e dalle informazioni disponibili nelle pagine web consultate. I dettagli puntuali di ogni campo dei moduli aggiornati al 27/3/2025 non sono stati verificati direttamente sul testo dei moduli scaricati.
+Il PDF ufficiale dell'Allegato 1 consente di verificare direttamente i quadri modificati dei moduli nazionali unificati. Restano fuori da questa fonte le sole integrazioni locali eventualmente aggiunte da Regioni e Comuni nei portali SUE/SUAP (diritti, oneri, allegati regionali o comunali, numerazioni interne diverse dei quadri).

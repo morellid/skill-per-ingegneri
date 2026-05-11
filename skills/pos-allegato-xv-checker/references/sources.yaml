@@ -31,16 +31,19 @@ sources:
     title: "D.Lgs. 9 aprile 2008 n. 81 - Testo originale - GU n. 101 del 30/04/2008 Suppl. Ordinario n. 108"
     type: decreto-legislativo
     url: https://www.gazzettaufficiale.it/eli/gu/2008/04/30/101/so/108/sg/pdf
-    accessed: 2026-04-25
+    accessed: 2026-05-11
     sha256: bcc0e075c0db79d2999da82900e7dffc1118a53a3aa1f6e152498c455038db4d
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-81-2008-originale.pdf
+    md_path: references/fonti/dlgs-81-2008-originale-gu-2008.md
     excerpt_paths: []
     notes: |
       Testo originale pubblicato in Gazzetta Ufficiale. Utile come riferimento storico
       e per disambiguazioni, ma la versione consolidata (id: dlgs-81-2008-consolidato-inl-2025-01)
       e' quella da usare per la verifica di conformita' POS in quanto riflette tutte
-      le modifiche apportate dal 2008 al 2025.
+      le modifiche apportate dal 2008 al 2025. Il testo degli allegati nel PDF GU 2008
+      e' in formato immagine scansionata: l'Allegato XV e' leggibile solo dalla fonte
+      consolidata INL.
 
   - id: normattiva-portale-dlgs-81
     title: "Portale Normattiva - D.Lgs. 81/2008 - versione multivigente"

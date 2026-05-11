@@ -4,7 +4,7 @@
 **MD di fonte**: `references/fonti/dlgs-222-2016-scia-2-tabella-a.md`
 **Documento**: D.Lgs. 25 novembre 2016 n. 222 - cosiddetto "SCIA 2", attuativo della L. 124/2015 (Riforma Madia) - Allegato Tabella A, sezione II "Edilizia"
 **Data consultazione**: 2026-05-11
-**Fonte letta**: PDF "Tabella A allegata al D.Lgs. 222/2016 - Sezione II Edilizia" scaricato da https://www.suedi.cloud/Normative/Nazionali/Tabella_A_DLgs_6_DLgs_222-2016.pdf - 49 pagine, lette integralmente voce per voce.
+**Fonte letta**: PDF ufficiale della Gazzetta Ufficiale n. 277 del 26/11/2016, S.O. n. 52 (`https://www.gazzettaufficiale.it/eli/gu/2016/11/26/277/so/52/sg/pdf`), letto voce per voce sull'allegato Tabella A - sezione II Edilizia.
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
 ---

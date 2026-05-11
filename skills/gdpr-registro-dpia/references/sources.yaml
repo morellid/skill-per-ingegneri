@@ -6,7 +6,7 @@ sources:
   - id: gdpr-it-garante-2018
     title: "Reg. UE 2016/679 (GDPR) - Testo italiano arricchito con considerando, aggiornato alle rettifiche pubblicate in GUUE 127 del 23/05/2018"
     type: regolamento-ue
-    url: https://www.garanteprivacy.it/garante/document?ID=6264597
+    url: https://www.garanteprivacy.it/documents/10160/0/Regolamento+UE+2016+679.+Arricchito+con+riferimenti+ai+Considerando+Aggiornato+alle+rettifiche+pubblicate+sulla+Gazzetta+Ufficiale++dell%27Unione+europea+127+del+23+maggio+2018.pdf/1bd9bde0-d074-4ca8-b37d-82a3478fd5d3?version=1.9
     download_url: https://www.garanteprivacy.it/documents/10160/0/Regolamento+UE+2016+679.+Arricchito+con+riferimenti+ai+Considerando+Aggiornato+alle+rettifiche+pubblicate+sulla+Gazzetta+Ufficiale++dell%27Unione+europea+127+del+23+maggio+2018.pdf/1bd9bde0-d074-4ca8-b37d-82a3478fd5d3?version=1.9
     accessed: 2026-05-10
     sha256: 16c0bb358414707b194678bdf80d7e4ba721a0d9cb0e76965569257b75be3e58
@@ -27,7 +27,7 @@ sources:
   - id: garante-prov-467-2018-allegato1
     title: "Provvedimento Garante Privacy n. 467/2018 - Allegato 1 - Elenco delle tipologie di trattamenti soggetti al meccanismo di coerenza, da sottoporre a valutazione d'impatto"
     type: provvedimento-garante
-    url: https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9058979
+    url: https://www.garanteprivacy.it/documents/10160/0/ALLEGATO+1+Elenco+delle+tipologie+di+trattamenti+soggetti+al+meccanismo+di+coerenza+da+sottoporre+a+valutazione+di+impatto
     download_url: https://www.garanteprivacy.it/documents/10160/0/ALLEGATO+1+Elenco+delle+tipologie+di+trattamenti+soggetti+al+meccanismo+di+coerenza+da+sottoporre+a+valutazione+di+impatto
     accessed: 2026-05-10
     sha256: 6ece43c22d072acb58879f8382f72a7f2230893d882e7916f78c553929b5ca10
@@ -46,7 +46,7 @@ sources:
   - id: wp248-rev01-edpb
     title: "WP248 rev. 01 - Linee guida sulla valutazione d'impatto sulla protezione dei dati (DPIA), Article 29 Working Party, endorsed by EDPB"
     type: linee-guida-edpb
-    url: https://ec.europa.eu/newsroom/article29/items/611236
+    url: https://ec.europa.eu/newsroom/just/redirection/document/47711
     download_url: https://ec.europa.eu/newsroom/just/document.cfm?doc_id=47711
     accessed: 2026-05-10
     sha256: 4de1ee2df6bbe9517847b45ba8b0657e7de4c1bd796f107d940df255ca6ded67

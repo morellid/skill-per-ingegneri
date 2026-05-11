@@ -8,23 +8,21 @@ last_verified: 2026-04-29
 # introdotte dal "Salva Casa" (DL 69/2024 conv. L. 105/2024) e dalla
 # modulistica nazionale unificata aggiornata in Conferenza Unificata.
 #
-# Nota operativa: il download diretto dei PDF della Gazzetta Ufficiale o del
-# portale Funzione Pubblica via script automatizzato puo' essere bloccato
-# dalle policy locali. Per popolare i binari e gli hash eseguire
-# manualmente:
-#   curl -Lo not_in_repo/dpr-380-2001-consolidato.pdf "<url>"
-#   shasum -a 256 not_in_repo/dpr-380-2001-consolidato.pdf
-# e aggiornare il campo sha256 corrispondente.
+# Nota operativa: le tre fonti principali sotto riportate sono ora collegate
+# ad artefatti ufficiali verificabili (Normattiva congelata alla data di
+# vigenza, PDF GU, PDF istituzionale Funzione Pubblica). In caso di futuri
+# aggiornamenti normativi, riscaricare l'artefatto ufficiale, ricalcolare lo
+# SHA256 e aggiornare contestualmente i references/fonti/ e gli estratti.
 
 sources:
   - id: dpr-380-2001-testo-unico-edilizia
-    title: "DPR 6 giugno 2001 n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia (versione multivigente)"
+    title: "DPR 6 giugno 2001 n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia (versione multivigente vigente al 2026-05-11)"
     type: decreto-presidente-repubblica
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-05-11
     accessed: 2026-05-11
-    sha256: null
+    sha256: 38823c2626259bf3f098a837cca8a1e957cd3035839eeeed6bff0ef0dd23d672
     license: public-domain-italian-law
-    binary_path: not_in_repo/dpr-380-2001-consolidato.pdf
+    binary_path: not_in_repo/dpr-380-2001-consolidato.html
     md_path: references/fonti/dpr-380-2001-testo-unico-edilizia.md
     excerpt_paths:
       - references/estratti/dpr-380-2001-regimi-edilizi.md
@@ -35,19 +33,21 @@ sources:
       (art. 22), SCIA alternativa al PdC (art. 23), mutamento di
       destinazione d'uso (art. 23-ter). Riferimento strutturale per la
       skill: nessun modulo viene scelto senza prima passare dal regime
-      previsto dal DPR 380. Versione consolidata vigente recepisce le
-      modifiche del Salva Casa (DL 69/2024 conv. L. 105/2024).
+      previsto dal DPR 380. L'artefatto verificato e' la pagina ufficiale
+      Normattiva congelata alla data di vigenza 2026-05-11, salvata in HTML;
+      le modifiche del Salva Casa sono inoltre verificate sul PDF GU della
+      fonte `dl-69-2024-salva-casa`.
       Testo legislativo italiano riproducibile liberamente ai sensi
       dell'art. 5 L. 633/1941 (atti ufficiali dello Stato).
 
   - id: dlgs-222-2016-scia-2-tabella-a
     title: "D.Lgs. 25 novembre 2016 n. 222 - Individuazione di procedimenti oggetto di autorizzazione, segnalazione certificata di inizio di attivita' (SCIA), silenzio assenso e comunicazione - Tabella A"
     type: decreto-legislativo
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016-11-25;222
+    url: https://www.gazzettaufficiale.it/eli/gu/2016/11/26/277/so/52/sg/pdf
     accessed: 2026-05-11
-    sha256: null
+    sha256: fdf29221c1e01801d2f092c63776b65c3ddb150374a22a91cc6218f37933ce37
     license: public-domain-italian-law
-    binary_path: not_in_repo/dlgs-222-2016-consolidato.pdf
+    binary_path: not_in_repo/dlgs-222-2016-gu277-so52.pdf
     md_path: references/fonti/dlgs-222-2016-scia-2-tabella-a.md
     excerpt_paths:
       - references/estratti/dlgs-222-2016-tabella-a.md
@@ -60,14 +60,9 @@ sources:
       intervento. La skill la usa come fonte primaria di mapping
       intervento -> regime, integrandola con le modifiche del Salva
       Casa per gli interventi che il DL 69/2024 ha riclassificato.
-      Fonte del PDF consultato il 2026-05-11:
-      https://www.suedi.cloud/Normative/Nazionali/Tabella_A_DLgs_6_DLgs_222-2016.pdf
-      (49 pagine, voci 1-105 lette integralmente). Il PDF contiene il
-      testo dell'allegato Tabella A - Sezione II Edilizia con
-      aggiornamenti successivi all'entrata in vigore (incluse modifiche
-      colorate in rosso relative al DPR 120/2017 per terre e rocce da
-      scavo). Il testo originale pubblicato resta GU n. 277 del
-      26/11/2016 S.O. n. 52.
+      Artefatto verificato: PDF ufficiale della Gazzetta Ufficiale n. 277
+      del 26/11/2016, S.O. n. 52, che contiene il decreto e l'allegato
+      Tabella A pubblicato originariamente.
 
   - id: dl-69-2024-salva-casa
     title: "DL 29 maggio 2024 n. 69 - Disposizioni urgenti in materia di semplificazione edilizia e urbanistica (Salva Casa) - testo originale GU n. 124 del 29/05/2024 (per testo coordinato con L. 105/2024 vedere Normattiva)"
@@ -100,13 +95,14 @@ sources:
       novita' rispetto alla versione pre-2024.
 
   - id: modulistica-unificata-salva-casa-2025
-    title: "Conferenza Unificata - Accordo Repertorio n. 35/CU del 27 marzo 2025 - Modifiche alla modulistica edilizia unificata per il Salva Casa"
+    title: "Conferenza Unificata - Accordo Repertorio n. 35/CU del 27 marzo 2025 - Allegato 1 Modifiche alla modulistica edilizia"
     type: accordo-conferenza-unificata
     url: https://www.statoregioni.it/it/conferenza-unificata/sedute-2025/seduta-del-27-marzo-2025/atti-del-27-marzo-2025/repertorio-atto-n-35cu/
+    download_url: https://www.funzionepubblica.gov.it/media/xnkbxrwv/moduli_clean.pdf
     accessed: 2026-05-11
-    sha256: null
+    sha256: 0330d8015075522c8f41227da07c716e5bd52f9495b27c3e5fa8a98e5459261d
     license: public-domain-italian-law
-    binary_path: not_in_repo/modulistica-unificata-salva-casa-2025.zip
+    binary_path: not_in_repo/modulistica-unificata-salva-casa-2025.pdf
     md_path: references/fonti/modulistica-unificata-salva-casa-2025.md
     excerpt_paths:
       - references/estratti/modulistica-unificata-2025.md
@@ -114,13 +110,13 @@ sources:
       Modulistica nazionale unificata (CILA, SCIA, SCIA alternativa al
       PdC, PdC, comunicazioni varie) aggiornata per recepire le novita'
       del Salva Casa. Approvata in Conferenza Unificata il 27 marzo 2025.
-      Fonte autoritativa per:
-      - Struttura del modulo (intestazioni, dati anagrafici, dati intervento)
+      Artefatto verificato: PDF ufficiale "moduli_clean.pdf" pubblicato sul
+      sito del Dipartimento della Funzione Pubblica e riferito all'Allegato 1
+      dell'accordo n. 35/CU. Fonte autoritativa per:
+      - Struttura del modulo e dei quadri modificati
       - Quadro di asseverazione del tecnico abilitato
-      - Elenco allegati richiesti per ciascun modulo
-      - Quadro riepilogativo regime (edilizia libera, CILA, SCIA, PdC,
-        SCIA alternativa, sanatoria art. 36, sanatoria semplificata
-        art. 36-bis)
+      - Quadro riepilogativo della documentazione allegata
+      - Inserimento del regime di sanatoria art. 36-bis
       I Comuni adottano la modulistica con possibili integrazioni locali
       (es. tasse, oneri, allegati paesaggistici regionali). La skill cita
       la modulistica nazionale; eventuali varianti comunali sono rinvio

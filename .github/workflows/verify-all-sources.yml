@@ -1,0 +1,52 @@
+name: verify-all-sources
+
+# Verifica manuale di tutte le fonti dichiarate in sources.yaml.
+# Usare dopo una remediation massiva, prima di un rilascio importante,
+# o per controllare una singola skill appena creata o aggiornata.
+#
+# Per lanciare:
+#   GitHub UI: Actions -> verify-all-sources -> Run workflow
+#              (campo 'skill' opzionale: vuoto = tutte le skill)
+#   gh CLI:    gh workflow run verify-all-sources.yml
+#              gh workflow run verify-all-sources.yml -f skill=nome-skill
+
+on:
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: 'Nome della skill da verificare (vuoto = tutte le skill)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify-all-sources:
+    name: Verify declared sources
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pyyaml
+        run: pip install --quiet pyyaml
+
+      - name: Fetch and verify sources
+        run: |
+          set -euo pipefail
+          mkdir -p not_in_repo
+          SKILL="${{ inputs.skill }}"
+          if [ -n "$SKILL" ]; then
+            echo "Verifica skill: $SKILL"
+            python3 .github/workflows/scripts/verify-sources.py "$SKILL"
+          else
+            echo "Verifica tutte le skill"
+            python3 .github/workflows/scripts/verify-sources.py
+          fi

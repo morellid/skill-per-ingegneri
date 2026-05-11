@@ -4,6 +4,9 @@ Il formato e' basato su Keep a Changelog e questa skill aderisce a Semantic Vers
 
 ## [Unreleased]
 
+### Fixed (source-grounding)
+- riclassificate `gse-portale-autoconsumo` e `gse-pnrr-cacer` come riferimenti istituzionali online URL-only: la skill le usa solo per instradamento operativo verso il portale GSE, non come snapshot HTML binary-backed
+
 ## [0.1.1] - 2026-05-11
 
 ### Fixed (source-grounding)

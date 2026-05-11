@@ -3,6 +3,11 @@
 siano effettivamente raggiungibili e che gli SHA256 dichiarati coincidano
 con quelli del binario scaricato.
 
+Uso:
+  python3 verify-sources.py                    # verifica tutte le skill
+  python3 verify-sources.py skill-a            # verifica solo skill-a
+  python3 verify-sources.py skill-a skill-b   # verifica skill-a e skill-b
+
 Eseguito dal workflow .github/workflows/source-grounding.yml. La CI di
 GitHub Actions ha rete libera (no allowlist), quindi puo' fare il fetch
 reale delle fonti normative italiane (Gazzetta Ufficiale, Normattiva,
@@ -10,8 +15,8 @@ eur-lex, MIT, ecc.) e validare la conformita' alla Regola zero
 (vedi AGENTS.md).
 
 Comportamento:
-  - per ogni voce di sources.yaml con `binary_path` non null e licenza
-    libera, scarica il file dall'URL e calcola lo SHA256;
+  - per ogni voce di sources.yaml con `binary_path` non null, host
+    ufficiale e non paywalled, scarica il file dall'URL e calcola lo SHA256;
   - confronta con `sha256:` dichiarato; se mismatch, fail della CI;
   - se `sha256: null` ed e' presente `binary_path`, fail della CI
     (Regola zero: l'hash deve essere reale);
@@ -22,8 +27,8 @@ Eccezioni accettate:
   - `binary_path: null` -> fonte solo URL/online (es. servizio interattivo
     INGV, foglio Excel CSLP). In questo caso `sha256: null` e' coerente
     e il fetch e' saltato.
-  - licenza non libera (es. proprietary-paid per testi a pagamento) ->
-    skip (rinvio a verifica manuale).
+  - testi a pagamento o fonti dichiaratamente non normative/non ufficiali
+    (es. `license: proprietary-paid` o `license: other`) -> skip manuale.
 """
 
 from __future__ import annotations
@@ -34,6 +39,7 @@ import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
@@ -47,6 +53,43 @@ USER_AGENT = (
     "+https://github.com/morellid/skill-per-ingegneri)"
 )
 TIMEOUT_SECONDS = 60
+OFFICIAL_HOST_SUFFIXES = (
+    "acn.gov.it",
+    "agenziaentrate.gov.it",
+    "anticorruzione.it",
+    "arera.it",
+    "cnr.it",
+    "consiglio.regione.toscana.it",
+    "cslp.mit.gov.it",
+    "eur-lex.europa.eu",
+    "europa.eu",
+    "funzionepubblica.gov.it",
+    "garanteprivacy.it",
+    "gazzettaufficiale.it",
+    "gse.it",
+    "ingv.it",
+    "ispettorato.gov.it",
+    "italiadomani.gov.it",
+    "lavoro.gov.it",
+    "mase.gov.it",
+    "mimit.gov.it",
+    "mit.gov.it",
+    "normattiva.it",
+    "regione.toscana.it",
+    "rgs.mef.gov.it",
+    "salute.gov.it",
+    "statoregioni.it",
+)
+SKIP_FETCH_LICENSES = {"proprietary-paid", "other"}
+
+
+def is_official_url(url: str | None) -> bool:
+    if not url:
+        return False
+    host = (urlparse(url).netloc or "").lower()
+    if not host:
+        return False
+    return any(host == suffix or host.endswith(f".{suffix}") for suffix in OFFICIAL_HOST_SUFFIXES)
 
 
 def load_sources(skill_dir: Path) -> dict | None:
@@ -90,22 +133,18 @@ def verify_skill(skill_dir: Path) -> list[str]:
     for src in sources:
         sid = src.get("id", "<unknown>")
         url = src.get("url")
+        download_url = src.get("download_url")
+        artifact_url = download_url or url
         binary_path = src.get("binary_path")
         declared_hash = src.get("sha256")
         license_type = src.get("license", "unknown")
         md_path = src.get("md_path")
 
-        # Regola zero Step 3: per ogni fonte pubblica con binary_path non null,
+        # Regola zero Step 3: per ogni fonte ufficiale con binary_path non null,
         # md_path deve essere dichiarato e il file deve esistere e non essere vuoto.
-        is_free_license = license_type in (
-            "public-domain",
-            "public-domain-italian-law",
-            "public-domain-eu-law",
-            "cc-by",
-            "cc-by-nc",
-        )
         has_binary = binary_path and binary_path not in (None, "null")
-        if has_binary and is_free_license:
+        official_url = is_official_url(artifact_url)
+        if has_binary and official_url and license_type not in SKIP_FETCH_LICENSES:
             if not md_path or md_path in (None, "null"):
                 errors.append(
                     f"[{skill_name}/{sid}] md_path mancante: per fonti pubbliche con binary_path "
@@ -129,15 +168,26 @@ def verify_skill(skill_dir: Path) -> list[str]:
                 )
             continue
 
-        # Caso 2: licenze non libere -> skip fetch automatico
-        if license_type not in (
-            "public-domain",
-            "public-domain-italian-law",
-            "public-domain-eu-law",
-            "cc-by",
-            "cc-by-nc",
-        ):
-            print(f"[{skill_name}/{sid}] licenza {license_type} non-libera - skip fetch (verifica manuale)")
+        if not artifact_url:
+            errors.append(f"[{skill_name}/{sid}] binary_path dichiarato ma URL/download_url mancante")
+            continue
+
+        # Caso 2: fonti non ufficiali o a pagamento -> niente fetch automatico.
+        # La licenza NON e' usata come proxy di autorevolezza: per i binari scaricati
+        # si pretende un host ufficiale, salvo fonti dichiaratamente non normative
+        # (es. esempi) o testi a pagamento.
+        if not official_url:
+            if license_type in SKIP_FETCH_LICENSES:
+                print(f"[{skill_name}/{sid}] host non ufficiale e licenza {license_type} - skip fetch (verifica manuale)")
+                continue
+            errors.append(
+                f"[{skill_name}/{sid}] URL non ufficiale per fonte con binary_path: {artifact_url} "
+                "(usare il sito ufficiale dell'ente, non mirror o portali terzi)"
+            )
+            continue
+
+        if license_type in SKIP_FETCH_LICENSES:
+            print(f"[{skill_name}/{sid}] licenza {license_type} - skip fetch (verifica manuale)")
             continue
 
         # Caso 3: hash placeholder -> already caught dal job check-no-placeholders,
@@ -155,27 +205,23 @@ def verify_skill(skill_dir: Path) -> list[str]:
             )
             continue
 
-        if not url:
-            errors.append(f"[{skill_name}/{sid}] binary_path dichiarato ma URL mancante")
-            continue
-
         # Caso 4: fetch e verifica hash
         local_path = BINARIES_ROOT / Path(binary_path).relative_to(
             "not_in_repo"
         ) if binary_path.startswith("not_in_repo/") else BINARIES_ROOT / Path(binary_path).name
         local_path.parent.mkdir(parents=True, exist_ok=True)
         try:
-            print(f"[{skill_name}/{sid}] fetch {url}", flush=True)
-            fetch(url, local_path)
+            print(f"[{skill_name}/{sid}] fetch {artifact_url}", flush=True)
+            fetch(artifact_url, local_path)
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
-            errors.append(f"[{skill_name}/{sid}] fonte non raggiungibile: {url} ({exc})")
+            errors.append(f"[{skill_name}/{sid}] fonte non raggiungibile: {artifact_url} ({exc})")
             continue
 
         actual = sha256_of(local_path)
         if actual != declared_hash:
             errors.append(
                 f"[{skill_name}/{sid}] HASH MISMATCH: dichiarato={declared_hash[:16]}... "
-                f"calcolato={actual[:16]}... per {url}"
+                f"calcolato={actual[:16]}... per {artifact_url}"
             )
         else:
             print(f"[{skill_name}/{sid}] OK ({actual[:16]}...)")
@@ -188,10 +234,23 @@ def main() -> int:
         print(f"ERRORE: {SKILLS_DIR} non esiste", file=sys.stderr)
         return 1
 
+    skill_names = sys.argv[1:]
+    if skill_names:
+        skill_dirs: list[Path] = []
+        for name in skill_names:
+            d = SKILLS_DIR / name
+            if not d.is_dir():
+                print(f"ERRORE: skill '{name}' non trovata in {SKILLS_DIR}", file=sys.stderr)
+                return 1
+            skill_dirs.append(d)
+    else:
+        skill_dirs = sorted(
+            d for d in SKILLS_DIR.iterdir()
+            if d.is_dir() and not d.name.startswith("_")
+        )
+
     all_errors: list[str] = []
-    for skill_dir in sorted(SKILLS_DIR.iterdir()):
-        if not skill_dir.is_dir():
-            continue
+    for skill_dir in skill_dirs:
         if skill_dir.name.startswith("_"):
             continue  # es. _archived
         errors = verify_skill(skill_dir)
@@ -207,7 +266,8 @@ def main() -> int:
         for e in all_errors:
             print(f"::error::{e}")
         return 1
-    print("OK: tutte le fonti raggiungibili e gli hash combaciano.")
+    scope = ", ".join(skill_names) if skill_names else "tutte le skill"
+    print(f"OK: tutte le fonti raggiungibili e gli hash combaciano ({scope}).")
     return 0
 
 

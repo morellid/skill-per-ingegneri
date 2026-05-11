@@ -49,7 +49,7 @@ sources:
   - id: circolare-rgs-22-2024-dnsh
     title: "Circolare RGS n. 22 del 14 maggio 2024 - Aggiornamento Guida operativa DNSH"
     type: circolare
-    url: https://www.rgs.mef.gov.it/VERSIONE-I/circolari/2024/circolare_n_22_2024/
+    url: https://www.rgs.mef.gov.it/_Documenti/VERSIONE-I/CIRCOLARI/2024/22/Circolare-del-14-maggio-2024-n-22.pdf
     accessed: 2026-05-10
     sha256: 6f3f94e38ba0046250abfbb793ef432c6ab437f7218ec7e6593674c9d8681cb5
     license: public-domain-italian-public-sector
