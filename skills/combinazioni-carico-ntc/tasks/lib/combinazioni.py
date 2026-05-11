@@ -269,10 +269,16 @@ def generate_combinations(data: Dict[str, Any]) -> List[Combination]:
 
     exceptional = data.get("exceptional_action")
     if exceptional is not None:
+        # eq. [2.5.6]: Ad + G1 + G2 + P + psi1 * Qk1 + somma(psi2j * Qkj j>=2)
+        # la variabile principale (primo termine) entra con psi1, le accompagnatrici con psi2
         terms = list(base_sle)
         terms.append(Term("Ad", 1.0, finite_number(exceptional, "exceptional_action"), "Ad"))
-        for var in variables:
-            terms.append(variable_term(var, psi_for(var["category"], "psi2"), "Q_psi2"))
+        for i, var in enumerate(variables):
+            if i == 0:
+                # azione variabile principale: coefficiente psi1 (NTC 2018 eq. [2.5.6])
+                terms.append(variable_term(var, psi_for(var["category"], "psi1"), "Q_principale_psi1"))
+            else:
+                terms.append(variable_term(var, psi_for(var["category"], "psi2"), "Q_accompagnatrice_psi2"))
         combinations.append(Combination("ECC-1", "Eccezionale", "Ad", terms, "NTC 2018 eq. 2.5.6"))
     return combinations
 
