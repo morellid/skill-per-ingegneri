@@ -21,10 +21,11 @@ sources:
     title: "DPR 6 giugno 2001 n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia (versione multivigente)"
     type: decreto-presidente-repubblica
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
-    accessed: 2026-04-29
+    accessed: 2026-05-11
     sha256: null
     license: public-domain-italian-law
     binary_path: not_in_repo/dpr-380-2001-consolidato.pdf
+    md_path: references/fonti/dpr-380-2001-testo-unico-edilizia.md
     excerpt_paths:
       - references/estratti/dpr-380-2001-regimi-edilizi.md
     notes: |
@@ -43,10 +44,11 @@ sources:
     title: "D.Lgs. 25 novembre 2016 n. 222 - Individuazione di procedimenti oggetto di autorizzazione, segnalazione certificata di inizio di attivita' (SCIA), silenzio assenso e comunicazione - Tabella A"
     type: decreto-legislativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016-11-25;222
-    accessed: 2026-04-29
+    accessed: 2026-05-11
     sha256: null
     license: public-domain-italian-law
     binary_path: not_in_repo/dlgs-222-2016-consolidato.pdf
+    md_path: references/fonti/dlgs-222-2016-scia-2-tabella-a.md
     excerpt_paths:
       - references/estratti/dlgs-222-2016-tabella-a.md
     notes: |
@@ -58,15 +60,24 @@ sources:
       intervento. La skill la usa come fonte primaria di mapping
       intervento -> regime, integrandola con le modifiche del Salva
       Casa per gli interventi che il DL 69/2024 ha riclassificato.
+      Fonte del PDF consultato il 2026-05-11:
+      https://www.suedi.cloud/Normative/Nazionali/Tabella_A_DLgs_6_DLgs_222-2016.pdf
+      (49 pagine, voci 1-105 lette integralmente). Il PDF contiene il
+      testo dell'allegato Tabella A - Sezione II Edilizia con
+      aggiornamenti successivi all'entrata in vigore (incluse modifiche
+      colorate in rosso relative al DPR 120/2017 per terre e rocce da
+      scavo). Il testo originale pubblicato resta GU n. 277 del
+      26/11/2016 S.O. n. 52.
 
   - id: dl-69-2024-salva-casa
-    title: "DL 29 maggio 2024 n. 69 - Disposizioni urgenti in materia di semplificazione edilizia e urbanistica (Salva Casa) - convertito con modificazioni dalla L. 24 luglio 2024 n. 105"
+    title: "DL 29 maggio 2024 n. 69 - Disposizioni urgenti in materia di semplificazione edilizia e urbanistica (Salva Casa) - testo originale GU n. 124 del 29/05/2024 (per testo coordinato con L. 105/2024 vedere Normattiva)"
     type: decreto-legge
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-05-29;69
-    accessed: 2026-04-29
-    sha256: null
+    url: https://www.gazzettaufficiale.it/eli/gu/2024/05/29/124/sg/pdf
+    accessed: 2026-05-11
+    sha256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05
     license: public-domain-italian-law
-    binary_path: not_in_repo/dl-69-2024-conv-l-105-2024.pdf
+    binary_path: not_in_repo/dl-69-2024-gu124-originale.pdf
+    md_path: references/fonti/dl-69-2024-salva-casa.md
     excerpt_paths:
       - references/estratti/dl-69-2024-salva-casa.md
     notes: |
@@ -89,13 +100,14 @@ sources:
       novita' rispetto alla versione pre-2024.
 
   - id: modulistica-unificata-salva-casa-2025
-    title: "Conferenza Unificata - Modulistica edilizia unificata aggiornata Salva Casa - approvazione 27 marzo 2025 (Funzione Pubblica)"
+    title: "Conferenza Unificata - Accordo Repertorio n. 35/CU del 27 marzo 2025 - Modifiche alla modulistica edilizia unificata per il Salva Casa"
     type: accordo-conferenza-unificata
-    url: https://www.funzionepubblica.gov.it/it/ministro/comunicazione/notizie/approvata-la-modulistica-edilizia-per-l-applicazione-del-salva-casa/
-    accessed: 2026-04-29
+    url: https://www.statoregioni.it/it/conferenza-unificata/sedute-2025/seduta-del-27-marzo-2025/atti-del-27-marzo-2025/repertorio-atto-n-35cu/
+    accessed: 2026-05-11
     sha256: null
     license: public-domain-italian-law
     binary_path: not_in_repo/modulistica-unificata-salva-casa-2025.zip
+    md_path: references/fonti/modulistica-unificata-salva-casa-2025.md
     excerpt_paths:
       - references/estratti/modulistica-unificata-2025.md
     notes: |

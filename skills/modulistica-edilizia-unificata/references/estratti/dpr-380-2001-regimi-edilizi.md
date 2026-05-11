@@ -1,16 +1,19 @@
 # Estratto: DPR 380/2001 - Regimi edilizi e tipologie di intervento
 
 **Fonte primaria**: `sources.yaml` id `dpr-380-2001-testo-unico-edilizia`
+**MD di fonte**: `references/fonti/dpr-380-2001-testo-unico-edilizia.md`
 **Modifiche rilevanti**: integrato con `sources.yaml` id `dl-69-2024-salva-casa` (Salva Casa, in vigore dal 30/05/2024 e dal 28/07/2024 con la legge di conversione)
 **Documento**: DPR 6 giugno 2001 n. 380 - Testo Unico delle disposizioni legislative e regolamentari in materia edilizia, versione consolidata vigente
-**Data consultazione**: 2026-04-29
+**Data consultazione**: 2026-05-11
+**Fonti lette**: articoli 3, 6, 6-bis, 9-bis, 10, 22, 23, 23-ter, 34-bis, 36 letti su Normattiva; testo delle modifiche introdotte dal DL 69/2024 letto dal PDF GU n. 124/2024 (SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05)
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
-> Sintesi strutturata dei contenuti normativi rilevanti per la skill.
-> Per il testo letterale verificare sempre la versione vigente su Normattiva
-> ([uri-res DPR 380](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380)).
-> La skill si attiene alle classificazioni normative; eventuali interpretazioni
-> al limite tra regimi sono rinviate al tecnico abilitato e allo sportello SUE.
+> Sintesi strutturata dei contenuti normativi rilevanti per la skill, basata sulla
+> lettura degli articoli chiave del DPR 380/2001 vigente via Normattiva e del testo
+> delle modifiche introdotte dal DL 69/2024 via PDF GU n. 124/2024.
+> Vedere references/fonti/dpr-380-2001-testo-unico-edilizia.md per la trascrizione
+> degli articoli letti. La skill si attiene alle classificazioni normative; eventuali
+> interpretazioni al limite tra regimi sono rinviate al tecnico abilitato e allo sportello SUE.
 
 ---
 

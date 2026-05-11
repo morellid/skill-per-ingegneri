@@ -1,14 +1,18 @@
 # Estratto: DL 69/2024 (conv. L. 105/2024) - Salva Casa
 
 **Fonte primaria**: `sources.yaml` id `dl-69-2024-salva-casa`
+**MD di fonte**: `references/fonti/dl-69-2024-salva-casa.md`
 **Documento**: DL 29 maggio 2024 n. 69 - Disposizioni urgenti in materia di semplificazione edilizia e urbanistica - convertito con modificazioni dalla L. 24 luglio 2024 n. 105
-**Data consultazione**: 2026-04-29
+**Fonte PDF letta**: GU n. 124 del 29/05/2024 (SHA256: 2d228d11a11c1bff95ce71baaee04246ea329ef14b12785cf24aba6cd7677a05), file: not_in_repo/dl-69-2024-gu124-originale.pdf
+**Data consultazione**: 2026-05-11
 **Licenza**: testo legislativo italiano in pubblico dominio (art. 5 L. 633/1941)
 
-> Sintesi delle modifiche introdotte dal "Salva Casa" al DPR 380/2001 e
-> ad altre disposizioni edilizie. Per il testo letterale e la versione
-> coordinata vigente consultare Normattiva e il DPR 380 consolidato
-> ([uri-res DL 69/2024](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-05-29;69)).
+> Sintesi delle modifiche introdotte dal "Salva Casa" al DPR 380/2001, basata sulla
+> lettura diretta del PDF della GU n. 124/2024 (art. 1 co. 1 lett. a-i del DL 69/2024).
+> Per le modifiche introdotte dalla legge di conversione L. 105/2024 (in particolare
+> la soglia aggiuntiva del 6% per SU < 60 mq nell'art. 34-bis co. 1-bis) vedere il
+> testo coordinato su Normattiva.
+> Testo fonte: references/fonti/dl-69-2024-salva-casa.md
 
 ---
 
@@ -74,15 +78,15 @@ Principi del nuovo art. 23-ter post Salva Casa:
 
 ### 4. Tolleranze costruttive ampliate (art. 34-bis)
 
-Per gli interventi **realizzati entro il 24 maggio 2024**, soglie variabili per superficie utile (SU), calcolata sulla **superficie assentita** (art. 34-bis co. 1-ter):
+Per gli interventi **realizzati entro il 24 maggio 2024**, soglie variabili per superficie utile (SU), calcolata sulla **superficie assentita** (art. 34-bis co. 1-ter). Tabella vigente post-conversione (L. 105/2024 ha aggiunto la riga SU < 60 mq = 6% non presente nel DL originale):
 
 | Superficie utile (SU) | Tolleranza % |
 |------------------------|--------------|
-| SU < 60 mq | **6%** |
-| SU < 100 mq | **5%** |
-| SU compresa tra 100 e 300 mq | **4%** |
-| SU compresa tra 300 e 500 mq | **3%** |
-| SU > 500 mq | **2%** (regime previgente confermato) |
+| SU < 60 mq | **6%** (aggiunto da L. 105/2024) |
+| SU < 100 mq | **5%** (lett. d del DL 69/2024 originale) |
+| SU compresa tra 100 e 300 mq | **4%** (lett. c DL 69/2024) |
+| SU compresa tra 300 e 500 mq | **3%** (lett. b DL 69/2024) |
+| SU > 500 mq | **2%** (lett. a DL 69/2024, regime previgente confermato) |
 
 **Tolleranze esecutive** (art. 34-bis co. 2): comprendono il minore dimensionamento dell'edificio, la mancata realizzazione di elementi architettonici non strutturali, le irregolarita' geometriche, le modifiche alle finiture, le diverse collocazioni di impianti, e la diversa realizzazione dei vani interni, **purche'** non alterino la volumetria complessiva e non comportino:
 - variazione del numero di unita' immobiliari
