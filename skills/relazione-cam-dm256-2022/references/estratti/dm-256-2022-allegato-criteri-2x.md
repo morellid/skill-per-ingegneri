@@ -41,7 +41,9 @@ Il progetto e' coerente con i valori naturalistici, paesaggistici e storico-cult
 
 ### 2.3.2 Permeabilita' della superficie territoriale
 
-Il progetto di nuova costruzione e ristrutturazione urbanistica prevede che le superfici non edificate abbiano un **coefficiente di deflusso inferiore a 0,50** (superfici permeabili). Le superfici impermeabili confinate su tutti i lati da manufatti impermeabili non sono conteggiate.
+Il progetto di interventi di nuova costruzione prevede una **superficie territoriale permeabile non inferiore al 60%** (ad esempio le superfici a verde e le superfici esterne pavimentate ad uso pedonale o ciclabile). Per superficie permeabile si intendono le superfici con un **coefficiente di deflusso inferiore a 0,50**. Le superfici non edificate permeabili ma confinate da tutti i lati da manufatti impermeabili (che non permettano alle precipitazioni di giungere in falda) non possono essere considerate nel calcolo.
+
+(Fonte: par. 2.3.2, pag. 43 GU n. 183 del 06/08/2022)
 
 *Verifica*: La Relazione CAM illustra come il progetto ha tenuto conto di questo criterio.
 
