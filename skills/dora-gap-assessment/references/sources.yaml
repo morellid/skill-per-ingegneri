@@ -1,0 +1,54 @@
+schema_version: 1
+skill: dora-gap-assessment
+last_verified: 2026-05-13
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: regolamento-ue | legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
+#   url: URL canonico della fonte
+#   accessed: data consultazione
+#   sha256: hash SHA256 del file binario scaricato (REALE, no placeholder)
+#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
+#   binary_path: path del binario in locale (fuori repo, in not_in_repo/), oppure null
+#   md_path: path del markdown della fonte in references/fonti/ (mandatory per fonti pubbliche), oppure null
+#   excerpt_path: path dell'estratto curato in references/estratti/ (parafrasi mirata di md_path)
+#   notes: note libere
+#
+# Workflow obbligato (vedi AGENTS.md "Regola zero"):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path (committato nella skill, transcrizione fedele)
+#   4. USARE il MD per scrivere la skill (estratti, tasks, examples, codice)
+
+sources:
+  - id: reg-ue-2022-2554-dora
+    title: "Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativo alla resilienza operativa digitale per il settore finanziario (DORA) - testo PE-CONS 41/22 (registro pubblico del Consiglio UE)"
+    type: regolamento-ue
+    url: https://data.consilium.europa.eu/doc/document/PE-41-2022-INIT/it/pdf
+    accessed: 2026-05-13
+    sha256: 4d4071b735a6ed3bfce30227a63ea2077d1f7f13a267aecf9ab234c47615e8f4
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2022-2554-dora.pdf
+    md_path: references/fonti/reg-ue-2022-2554-dora.md
+    excerpt_path: references/estratti/reg-ue-2022-2554-dora.md
+    notes: |
+      Documento PE-CONS 41/22 (Bruxelles, 17 novembre 2022, 2020/0266 (COD)), testo trilogue-finale
+      del Regolamento (UE) 2022/2554 adottato dal Parlamento europeo (10/11/2022) e dal Consiglio,
+      poi pubblicato in GU UE L 333 del 27/12/2022 con numero definitivo. Versione PE-CONS e versione
+      GU sono identiche nel contenuto normativo (testi degli articoli, considerando, allegati);
+      differiscono solo nel layout (intestazioni di pagina, footer "PE-CONS 41/22 ECOFIN IT", numero
+      regolamento riempito dopo la firma). Disponibile dal registro pubblico del Consiglio UE
+      (data.consilium.europa.eu, sottodominio europa.eu).
+      Direttamente applicabile in Italia dal 17/01/2025 (art. 64 par. 2 - applicazione dopo 24 mesi
+      dall'entrata in vigore, che e' avvenuta il 16/01/2023 ai sensi dell'art. 64 par. 1).
+      Articolazione macroscopica usata dalla skill:
+        Capo I   - disposizioni generali (artt. 1-4)
+        Capo II  - gestione del rischio ICT (Pillar 1, artt. 5-16)
+        Capo III - gestione, classificazione e segnalazione incidenti ICT (Pillar 2, artt. 17-23)
+        Capo IV  - test di resilienza operativa digitale (Pillar 3, artt. 24-27)
+        Capo V Sez. I  - rischio derivante da terzi ICT (Pillar 4, artt. 28-30)
+        Capo V Sez. II - quadro di sorveglianza dei fornitori ICT critici (artt. 31-44)
+        Capo VI  - accordi sullo scambio di informazioni (Pillar 5, art. 45)
+        Capo VII - autorita' competenti (artt. 46-56)
+        Capo VIII - atti delegati / disposizioni finali (artt. 57-64)

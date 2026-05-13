@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: DORA Gap Assessment
+short_description: Esegue un gap assessment di un'entita' finanziaria rispetto ai 5 pillar del Regolamento (UE) 2022/2554 (DORA) - gestione del rischio TIC, incidenti, test, fornitori terzi, condivisione informazioni. Supporta CISO/ICT risk manager/compliance officer.
+default_prompt: |
+  Aiutami a fare un gap assessment DORA per la mia banca/istituto di pagamento.
+  Iniziamo dal Pillar 1 (gestione del rischio TIC, artt. 5-16): ti descrivo
+  cosa abbiamo gia' in piedi e tu mi mappi cosa manca rispetto al
+  Regolamento (UE) 2022/2554.
