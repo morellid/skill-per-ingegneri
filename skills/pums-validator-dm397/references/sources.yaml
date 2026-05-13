@@ -1,0 +1,72 @@
+schema_version: 1
+skill: pums-validator-dm397
+last_verified: 2026-05-13
+
+# Fonti normative ufficiali su cui poggia la skill PUMS-validator.
+# Workflow obbligato (Regola zero, vedi AGENTS.md root):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path (committato nella skill, transcrizione fedele)
+#   4. USARE il MD per scrivere la skill
+
+sources:
+  - id: dm-4-8-2017-397-pums
+    title: "Decreto Ministero Infrastrutture e Trasporti 4 agosto 2017, n. 397 - Individuazione delle linee guida per i piani urbani di mobilita' sostenibile, ai sensi dell'art. 3, comma 7, del D.Lgs. 16 dicembre 2016, n. 257"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2017/10/05/233/sg/pdf
+    accessed: 2026-05-13
+    sha256: 867acba97777daef4f43648b4e49744d32f07549ef2656b8e3d71d49abb2b053
+    license: public-domain
+    binary_path: not_in_repo/gu-2017-10-05-233-sg.pdf
+    md_path: references/fonti/dm-4-8-2017-397-pums.md
+    excerpt_path: references/estratti/dm-4-8-2017-397-pums.md
+    notes: |
+      Il PDF scaricato e' la Gazzetta Ufficiale Serie Generale n.233 del 05/10/2017
+      (binary_path: gu-2017-10-05-233-sg.pdf). Il decreto DM 397/2017 e' contenuto
+      alle pagine 9-20 della GU (codice atto 17A06675). La transcrizione in
+      references/fonti/dm-4-8-2017-397-pums.md riporta solo il testo del decreto e
+      dei due allegati (Allegato 1: Procedure per la redazione e approvazione del
+      PUMS; Allegato 2: Strategie di riferimento, obiettivi macro e specifici).
+      L'art. 1 c.2 del DM lega l'obbligo PUMS all'accesso a finanziamenti statali
+      per nuovi interventi di trasporto rapido di massa.
+
+  - id: dm-28-8-2019-396-pums
+    title: "Decreto Ministero Infrastrutture e Trasporti 28 agosto 2019, n. 396 - Modifica del DM 397/2017 (Linee guida PUMS)"
+    type: decreto
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2019-10/396.pdf
+    accessed: 2026-05-13
+    sha256: e8be2a96fd957704b4dba507bfe85db4279acaff8e40530815b0a25cfec0e599
+    license: public-domain
+    binary_path: not_in_repo/dm-28-08-2019-396-pums.pdf
+    md_path: references/fonti/dm-28-8-2019-396-pums.md
+    excerpt_path: references/estratti/dm-28-8-2019-396-pums.md
+    notes: |
+      Decreto modificativo del DM 397/2017. Punti rilevanti:
+      art. 2 estende l'obbligo PUMS ai comuni >100.000 ab. non in citta'
+      metropolitane per accesso a finanziamenti TRM; art. 3 esclude enti di
+      area vasta non citta' metropolitane; art. 4 proroga di 12 mesi il termine
+      di adozione; art. 5 sostituisce integralmente la Tabella 1 "Macrobiettivi"
+      dell'Allegato al DM 397/2017 con quella riportata nell'allegato 1 del
+      presente DM. La Tabella 1 vigente per la validazione e' quindi quella
+      del DM 396/2019.
+
+  - id: vademecum-pums-mit-2022
+    title: "Vademecum per la redazione del Piano Urbano di Mobilita' Sostenibile (PUMS) - MIMS, Struttura tecnica di missione + Politecnico di Milano, 27/09/2022"
+    type: linea-guida
+    url: https://www.mit.gov.it/nfsmitgov/files/media/documentazione/2022-11/VademecumPUMS_ver.31122.pdf
+    accessed: 2026-05-13
+    sha256: 9078694ed2ff41c635ff41ccfee80fae1ba7c95471ad7aa98aef1898d9966f6d
+    license: public-domain
+    binary_path: not_in_repo/vademecum-pums-mit-2022.pdf
+    md_path: references/fonti/vademecum-pums-mit-2022.md
+    excerpt_path: references/estratti/vademecum-pums-mit-2022.md
+    notes: |
+      Documento operativo a supporto di comuni e citta' metropolitane per la
+      redazione del PUMS. Predisposto dalla Struttura tecnica di missione del
+      MIMS e Direzione generale TPL in collaborazione con Politecnico di Milano,
+      condiviso col Tavolo Tecnico PUMS (DM n.232/2018). Riprende i passi
+      procedurali dell'Allegato 1 al DM 397/2017 ed esplicita la metodologia di
+      misura degli indicatori della Tabella 1 di cui al DM 396/2019. La nota 1
+      a p.4 chiarisce: "In tutto il documento, con il termine Linee guida
+      italiane ci si riferisce quindi al DM 397/2017 cosi' come modificato dal
+      DM 396/2019".
