@@ -132,7 +132,7 @@ Per ciascuna delle voci di controllo elencate sotto:
 1.43 Attivazione dei sistemi di backup senza compromettere sicurezza/disponibilita'/autenticita'/integrita'/riservatezza, test periodico (par. 2)?
 1.44 Backup ripristinati su sistemi fisicamente e logicamente segregati, protetti contro accesso non autorizzato (par. 3)?
 1.45 Capacita' TIC ridondanti (par. 4, entita' diverse dalle microimprese)?
-1.46 RPO e RTO definiti e riesaminati periodicamente (par. 6)?
+1.46 RPO e RTO definiti tenendo conto del fatto che la funzione sia essenziale/importante e dell'impatto complessivo sull'efficienza del mercato (par. 6)?
 
 **Apprendimento e formazione (art. 13)**:
 1.47 Capacita' di raccogliere informazioni su vulnerabilita' e minacce, analizzarne l'impatto sulla resilienza (par. 1)?
