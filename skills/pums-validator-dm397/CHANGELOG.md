@@ -7,6 +7,19 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+### Changed
+- Estesa la catena normativa alla versione vigente: aggiunte come fonti il DM 26 gennaio 2021 n. 29 (proroga termini PUMS) e il DM 12 novembre 2021 n. 444 (termine unitario 1 gennaio 2023; nuovo art. 1 c.2 DM 397/2017 che estende il gate di adozione alla mobilita' ciclistica; abrogazione dell'art. 7 c.3 DM 396/2019).
+- Riscritto `tasks/check-ambito-obbligo.md` per riflettere il termine unitario 1/1/2023, il gate finanziamenti distinto dalla conformita' generale del PUMS, il criterio premiale 2022 e l'abrogazione del regime transitorio art. 7 c.3 DM 396/2019.
+- Riformulato `tasks/check-indicatori-tabella1.md` distinguendo gli obblighi del decreto (Tabella 1, target di Piano a 10 anni) dagli indirizzi operativi del Vademecum 2022 (triade target a 2/3, 5, 10 anni come "Vademecum alignment", non come NON CONFORMITA' al decreto).
+- Aggiornati gli esempi `examples/conforme/` e `examples/problematico/` separando il gate dell'art. 1 c.2 (adozione) dalla conformita' generale del PUMS.
+- Aggiornati estratti DM 397/2017 e DM 396/2019 con riferimenti incrociati a DM 29/2021 e DM 444/2021 (in particolare: nota di abrogazione su art. 7 c.3 DM 396/2019).
+
+### Added
+- `references/fonti/dm-26-1-2021-29-pums.md`
+- `references/fonti/dm-12-11-2021-444-pums.md`
+- `references/estratti/dm-26-1-2021-29-pums.md`
+- `references/estratti/dm-12-11-2021-444-pums.md`
+
 ## [0.1.0-alpha] - 2026-05-13
 
 ### Added

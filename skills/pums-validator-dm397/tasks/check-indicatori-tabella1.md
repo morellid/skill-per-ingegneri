@@ -2,7 +2,13 @@
 
 ## Obiettivo
 
-Controllare che il PUMS dichiari gli **indicatori di risultato obbligatori** per ciascuno dei 17 macro-obiettivi minimi, conformemente alla Tabella 1 "Macrobiettivi" dell'Allegato 1 al DM 396/2019, e che siano dichiarati i target intermedi (2/3 anni e 5 anni) e di Piano (10 anni) oltre al valore al tempo "0".
+Controllare che il PUMS dichiari gli **indicatori di risultato obbligatori** per ciascuno dei 17 macro-obiettivi minimi, conformemente alla Tabella 1 "Macrobiettivi" dell'Allegato 1 al DM 396/2019, e che siano dichiarati i target dell'orizzonte di Piano (10 anni - obbligo decreto) e, in linea con il Vademecum MIMS 2022, i target intermedi (2/3 anni e 5 anni), oltre al valore al tempo "0".
+
+Distinzione importante:
+- **Obblighi di decreto** (DM 397/2017 + DM 396/2019): presenza dei 17 macro-obiettivi minimi con relativi indicatori, unita' di misura, metodologia di calcolo per a.3 (rete primaria), e target da raggiungere nell'orizzonte di Piano (10 anni).
+- **Indirizzi operativi del Vademecum 2022**: triade target a breve (2/3 anni), medio (5 anni) e Piano (10 anni), valore al tempo "0", fonti dati ritenute coerenti con la Tabella 4 del Vademecum.
+
+Le difformita' devono essere classificate distinguendo i due piani: le prime sono NON CONFORME al decreto e di norma BLOCCANTI; le seconde sono "Vademecum alignment gaps" e di norma NON BLOCCANTI.
 
 ## Input richiesti
 
@@ -20,15 +26,22 @@ Chiedere all'utente:
 
 ## Procedura
 
-Per ciascun macro-obiettivo e relativi indicatori, verificare:
+Per ciascun macro-obiettivo e relativi indicatori, verificare (e classificare l'esito sul piano "decreto" o "Vademecum"):
+
+Piano decreto (DM 397/2017 + DM 396/2019):
 - Presenza dell'indicatore nel PUMS.
 - Coerenza dell'unita' di misura con la Tabella 1 DM 396/2019.
-- Indicazione della fonte dei dati (anche solo metodologica, se la fonte non e' pubblica).
-- Valore al tempo "0" misurato (anno di adozione del PUMS).
+- Indicazione della fonte dei dati (anche solo metodologica, se la fonte non e' pubblica): la Tabella 1 indica per ciascun indicatore una fonte tipica.
+- Target di Piano (10 anni): coerente con l'orizzonte temporale del PUMS dichiarato dall'Allegato 1 al DM 397/2017 ("orizzonte temporale di medio-lungo periodo, 10 anni").
+- Per a.3 "Riduzione della congestione - RETE PRIMARIA": rispetto della metodologia di misura prescritta in Tabella 1 (fascia 7.30-9.30, 10 giorni infrasettimanali ottobre-novembre, almeno 10% della rete; tempo "fluido" in orario notturno alla velocita' max da Codice della Strada).
+
+Piano Vademecum 2022 (indirizzi operativi):
+- Valore al tempo "0" misurato (anno di adozione del PUMS) - nota 7 p.37 Vademecum.
 - Target a breve termine (2/3 anni).
 - Target a medio termine (5 anni).
-- Target di Piano (10 anni).
-- Verifica che i target siano **ambiziosi ma realizzabili** (criterio Linee guida italiane ed europee).
+- Coerenza con la Tabella 4 del Vademecum (fonti dati ritenute idonee).
+- Coerenza tra valore al tempo "0" e target intermedi (progressione monotona quando coerente con macro-obiettivo).
+- Target "ambiziosi ma realizzabili" (criterio Linee guida italiane ed europee come riportato dal Vademecum).
 
 ## Elenco indicatori obbligatori da verificare
 
@@ -107,9 +120,11 @@ Per ciascun macro-obiettivo e relativi indicatori, verificare:
 
 ## Check sui target
 
-Per ogni indicatore con target dichiarati:
-- Coerenza tra valore al tempo "0" e target intermedi (progressione monotona quando coerente con macro-obiettivo).
-- Tempi: 2/3 anni (breve), 5 anni (medio), 10 anni (di Piano). I PUMS senza la triade completa devono essere segnalati come NON CONFORMI rispetto al Vademecum 2022.
+Per ogni indicatore con target dichiarati, distinguere il piano di rilievo:
+
+- **Target di Piano (10 anni)**: obbligatorio per ciascun indicatore in coerenza con l'orizzonte temporale del PUMS (DM 397/2017, Allegato 1, Premessa). La sua assenza e' BLOCCANTE sul piano decreto.
+- **Target a breve (2/3 anni) e medio (5 anni)**: indirizzo operativo del Vademecum MIMS 2022 (Cap. 3.4 e 3.6). La triade completa e' raccomandata, non prescritta dal decreto. PUMS che dichiara solo il target a 10 anni e' formalmente conforme al decreto, ma puo' essere segnalato come **Vademecum alignment gap** (rilievo NON BLOCCANTE) se manca la parte intermedia.
+- Quando il PUMS dichiara target intermedi: verificare coerenza tra valore al tempo "0" e target intermedi (progressione monotona quando coerente con macro-obiettivo).
 
 ## Check sulla fonte dei dati
 
@@ -117,12 +132,13 @@ Per ogni indicatore: la fonte dichiarata deve essere o coincidere con quella ind
 
 ## Output
 
-Tabella esiti per ciascun indicatore con colonne: indicatore | unita' | t=0 dichiarato | target 2-3 anni | target 5 anni | target 10 anni | fonte | ESITO.
+Tabella esiti per ciascun indicatore con colonne: indicatore | unita' | t=0 dichiarato | target 2-3 anni | target 5 anni | target 10 anni | fonte | ESITO decreto | ESITO Vademecum.
 
-Sezione "Indicatori mancanti": elenco esplicito.
-Sezione "Target incompleti": elenco indicatori senza la triade.
-Sezione "Fonti non coerenti": elenco indicatori con fonti non istituzionali o discordanti.
-Rilievi BLOCCANTI / NON BLOCCANTI.
+Sezione "Indicatori mancanti (decreto)": elenco esplicito - BLOCCANTI.
+Sezione "Target di Piano (10 anni) mancanti": elenco - BLOCCANTI.
+Sezione "Triade target intermedi incompleta (Vademecum)": elenco indicatori senza target 2/3 o 5 anni - NON BLOCCANTI, classificati come "Vademecum alignment gap".
+Sezione "Fonti non coerenti con Tabella 4 Vademecum": elenco indicatori con fonti non istituzionali o discordanti rispetto agli indirizzi operativi - NON BLOCCANTI salvo che il decreto stesso prescriva una fonte (es. metodologia a.3 in Tabella 1).
+Rilievi BLOCCANTI / NON BLOCCANTI esplicitamente distinti per piano di rilievo (decreto vs Vademecum).
 Rinvio al professionista per verifica metodologica.
 
 ## Limiti

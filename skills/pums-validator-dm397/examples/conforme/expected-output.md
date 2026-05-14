@@ -2,15 +2,16 @@
 
 ## Report di validazione PUMS - Comune di esempio (220.000 ab.)
 
-Data analisi: 2026-05-13.
-Riferimenti normativi: DM 4 agosto 2017 n. 397 (Linee guida PUMS) come modificato dal DM 28 agosto 2019 n. 396; Vademecum MIMS 27/09/2022.
+Data analisi: 2026-05-14.
+Riferimenti normativi: DM 4 agosto 2017 n. 397 (Linee guida PUMS) come modificato dal DM 28 agosto 2019 n. 396, dal DM 26 gennaio 2021 n. 29 e dal DM 12 novembre 2021 n. 444; Vademecum MIMS 27/09/2022.
 
 ### 1. Ambito di applicazione e obbligo (`check-ambito-obbligo.md`)
 
 - Ente: Comune di esempio, 220.000 abitanti, **non ricompreso** in citta' metropolitana.
 - Obbligo art. 3 c.1 DM 397/2017 s.m.i.: **CONFORME** (comune con popolazione > 100.000 ab.).
-- Condizione finanziamenti TRM (art. 2 DM 396/2019): **CONFORME** - il comune deve adottare il **proprio** PUMS (non vale l'adozione da parte di una citta' metropolitana, poiche' il comune non e' ricompreso).
-- Termine di adozione (art. 3 c.1 DM 397/2017 prorogato di 12 mesi dall'art. 4 DM 396/2019): adozione marzo 2024 oltre il termine ordinario (ottobre 2020 = 24 + 12 mesi dalla entrata in vigore del DM 397/2017). L'art. 7 c.3 secondo periodo del DM 396/2019 e' clausola transitoria riferita ai PUMS adottati **prima** della pubblicazione del DM 397/2017 e non e' applicabile a un PUMS adottato nel 2024; tuttavia il superamento del termine non comporta di per se' inammissibilita' del PUMS, ma puo' aver inciso sulla graduatoria di finanziamenti TRM ai sensi dell'art. 7 c.3 primo periodo (disimpegno risorse). Verifica residua sull'avviso specifico.
+- Gate finanziamenti TRM e mobilita' ciclistica (art. 1 c.2 DM 397/2017 nel testo sostituito dal DM 444/2021 art. 2 c.1): **CONFORME** - il comune deve adottare il **proprio** PUMS (non vale l'adozione da parte di una citta' metropolitana, poiche' il comune non e' ricompreso). Il PUMS risulta adottato (delibera Giunta 15/03/2024) e successivamente approvato dal Consiglio (30/05/2024): il requisito di adozione del gate e' soddisfatto.
+- Termine unitario di adozione (art. 3 c.1 DM 397/2017 nel testo sostituito dal DM 444/2021 art. 1 = 1 gennaio 2023): adozione marzo 2024 = oltre il termine. Il superamento non comporta di per se' inammissibilita' del PUMS ne' fa venir meno il gate dell'art. 1 c.2 (che si misura sull'adozione, non sul rispetto del termine), ma puo' incidere sui meccanismi di ripartizione delle risorse o sui controlli ex post dell'amministrazione erogante; verifica residua sull'avviso specifico.
+- Verifica piattaforma Osservatorio TPL (art. 3 DM 444/2021): CONFORME - il PUMS risulta registrato e i dati di monitoraggio caricati.
 
 ### 2. Procedura di redazione (`check-procedura-redazione-pums.md`)
 
@@ -54,7 +55,7 @@ Metodologia indicatore a.3 (congestione rete primaria) coerente con la specifica
 
 ### Esito complessivo
 
-PUMS **CONFORME** al DM 397/2017 come modificato dal DM 396/2019 e alle indicazioni operative del Vademecum MIMS 2022, ai fini formali della validazione. Idoneo a supportare l'istanza di accesso ai finanziamenti TRM secondo quanto disciplinato dall'avviso specifico (verifica residua sui requisiti dell'avviso).
+PUMS **CONFORME** al DM 397/2017 come modificato dai DM 396/2019, DM 29/2021 e DM 444/2021, e alle indicazioni operative del Vademecum MIMS 2022, ai fini formali della validazione. Idoneo a soddisfare la condizione di adozione richiesta dall'art. 1 c.2 DM 397/2017 (nuovo testo) per l'accesso ai finanziamenti TRM e mobilita' ciclistica, secondo quanto disciplinato dall'avviso specifico (verifica residua sui requisiti dell'avviso).
 
 ### Rilievi
 

@@ -1,6 +1,6 @@
 ---
 name: pums-validator-dm397
-description: Verifica la conformita' di un Piano Urbano di Mobilita' Sostenibile (PUMS) al DM 4 agosto 2017 n. 397 come modificato dal DM 28 agosto 2019 n. 396 e al Vademecum MIMS 2022. Use when the user asks to validate a PUMS document for an Italian municipality, citta' metropolitana, or association of comuni with more than 100.000 inhabitants.
+description: Verifica la conformita' di un Piano Urbano di Mobilita' Sostenibile (PUMS) al DM 4 agosto 2017 n. 397 come modificato dai DM 28 agosto 2019 n. 396, DM 26 gennaio 2021 n. 29 e DM 12 novembre 2021 n. 444, e al Vademecum MIMS 2022. Use when the user asks to validate a PUMS document for an Italian municipality, citta' metropolitana, or association of comuni with more than 100.000 inhabitants.
 license: MIT
 ---
 
@@ -8,7 +8,7 @@ license: MIT
 
 ## Quando usare questa skill
 
-Questa skill supporta il **controllo di conformita' formale e di completezza** di un Piano Urbano di Mobilita' Sostenibile (PUMS) redatto da una citta' metropolitana, da un comune con popolazione superiore a 100.000 abitanti o da un'associazione di comuni che supera tale soglia, rispetto al quadro normativo italiano vigente (DM 397/2017 + DM 396/2019 + Vademecum MIMS 2022).
+Questa skill supporta il **controllo di conformita' formale e di completezza** di un Piano Urbano di Mobilita' Sostenibile (PUMS) redatto da una citta' metropolitana, da un comune con popolazione superiore a 100.000 abitanti o da un'associazione di comuni che supera tale soglia, rispetto al quadro normativo italiano vigente (DM 397/2017 + DM 396/2019 + DM 29/2021 + DM 444/2021 + Vademecum MIMS 2022).
 
 Destinatari tipici: tecnico comunale, mobility manager d'area, consulente di un'amministrazione che sta redigendo o aggiornando un PUMS, o un revisore che deve istruire una pratica di accesso a finanziamenti statali per il trasporto rapido di massa (TRM).
 
@@ -45,9 +45,11 @@ Riferimenti completi e hash SHA256 in `references/sources.yaml`. Trascrizioni fe
 Fonti coperte:
 - DM 4 agosto 2017 n. 397 (Linee guida PUMS - testo originario, GU n.233 del 05/10/2017).
 - DM 28 agosto 2019 n. 396 (modifica DM 397/2017: estensione obbligo TRM ai comuni superiori a 100.000 ab. non in citta' metropolitane, proroga 12 mesi, sostituzione Tabella 1 Macrobiettivi).
+- DM 26 gennaio 2021 n. 29 (sostituisce l'art. 3 c.1 DM 397/2017 fissando i termini al 4 aprile / 4 agosto 2021; modifica il regime transitorio dell'art. 7 c.1 DM 396/2019).
+- DM 12 novembre 2021 n. 444 (termine unitario di adozione al 1 gennaio 2023; sostituisce l'art. 1 c.2 DM 397/2017 estendendolo alla mobilita' ciclistica; abroga l'art. 7 c.3 DM 396/2019; affida le verifiche alla piattaforma dell'Osservatorio nazionale TPL).
 - Vademecum PUMS MIMS-Politecnico di Milano del 27/09/2022 (interpretazione operativa, metodologia indicatori, fonti dati).
 
-Nel testo della skill, il termine **"Linee guida italiane"** indica il DM 397/2017 come modificato dal DM 396/2019 (terminologia adottata dal Vademecum, nota 1 p.4).
+Nel testo della skill, il termine **"Linee guida italiane"** indica il DM 397/2017 come modificato dal DM 396/2019 (terminologia adottata dal Vademecum, nota 1 p.4). Le modifiche posteriori (DM 29/2021 e DM 444/2021) sono trattate come parte della catena vigente.
 
 ## Limiti
 
@@ -56,7 +58,7 @@ Cosa questa skill NON fa:
 - Non interpreta normativa regionale specifica (es. Linee guida regionali integrative).
 - Non simula scenari ne' calcola valori di indicatori partendo da dati grezzi (richiede che il PUMS sia gia' redatto).
 - Non sostituisce la Valutazione Ambientale Strategica (VAS).
-- Non valuta l'ammissibilita' a finanziamenti specifici (es. avvisi TRM): rinvia alle procedure specifiche dell'avviso.
-- Non interpreta il dettato del DM 444/2021 sui finanziamenti alla mobilita' ciclistica oltre il rinvio al Vademecum MIMS 2022.
+- Non valuta l'ammissibilita' a finanziamenti specifici (es. avvisi TRM o mobilita' ciclistica): rinvia alle procedure specifiche dell'avviso e ai controlli della piattaforma dell'Osservatorio nazionale TPL (art. 3 DM 444/2021).
+- Non valuta gli effetti di leggi regionali, piani regionali o linee guida regionali integrative.
 
 Questa skill e' in versione 0.1.0-alpha: la validazione di Livello 2 (revisione da parte di un secondo ingegnere di dominio) non e' ancora stata effettuata.

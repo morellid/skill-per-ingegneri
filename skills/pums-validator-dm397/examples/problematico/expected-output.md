@@ -2,16 +2,18 @@
 
 ## Report di validazione PUMS - Comune di esempio (130.000 ab.)
 
-Data analisi: 2026-05-13.
-Riferimenti normativi: DM 4 agosto 2017 n. 397 (Linee guida PUMS) come modificato dal DM 28 agosto 2019 n. 396; Vademecum MIMS 27/09/2022.
+Data analisi: 2026-05-14.
+Riferimenti normativi: DM 4 agosto 2017 n. 397 (Linee guida PUMS) come modificato dal DM 28 agosto 2019 n. 396, dal DM 26 gennaio 2021 n. 29 e dal DM 12 novembre 2021 n. 444; Vademecum MIMS 27/09/2022.
 
-Premessa: il documento presentato si intitola "Piano della Mobilita' Sostenibile 2023", non "PUMS". L'analisi che segue verifica se il documento, indipendentemente dal nome, sia conforme ai requisiti formali del PUMS ai sensi del DM 397/2017 s.m.i.
+Premessa: il documento presentato si intitola "Piano della Mobilita' Sostenibile 2023", non "PUMS". L'analisi che segue verifica se il documento, indipendentemente dal nome, sia conforme ai requisiti formali del PUMS ai sensi del DM 397/2017 s.m.i. Il giudizio sul gate di accesso ai finanziamenti (art. 1 c.2 DM 397/2017, nuovo testo) e' tenuto distinto dalla conformita' generale del PUMS, in coerenza con la procedura della skill.
 
 ### 1. Ambito di applicazione e obbligo (`check-ambito-obbligo.md`)
 
 - Ente: Comune di esempio, 130.000 abitanti, non ricompreso in citta' metropolitana.
 - Obbligo art. 3 c.1 DM 397/2017 s.m.i.: **CONFORME** (popolazione > 100.000 ab. -> l'ente e' tra i soggetti obbligati a redigere il PUMS).
-- Condizione finanziamenti TRM (art. 2 DM 396/2019): **NON CONFORME** allo stato attuale - il finanziamento richiede un PUMS adottato. Il documento presentato e' adottato solo dalla Giunta e contiene difformita' di merito (vedi sezioni successive) che ne impediscono l'utilizzo ai fini dell'art. 2 DM 396/2019 senza una revisione sostanziale.
+- Gate finanziamenti TRM e mobilita' ciclistica (art. 1 c.2 DM 397/2017 nel testo sostituito dal DM 444/2021 art. 2 c.1): **CONFORME (con riserva di merito)**. L'art. 1 c.2 (nuovo testo) richiede l'**adozione** del PUMS. Il documento risulta adottato dalla Giunta il 12 ottobre 2023: il requisito letterale di adozione e' soddisfatto. Si segnala, tuttavia, che il documento presenta difformita' di merito sostanziali (procedura, obiettivi, indicatori, monitoraggio - vedi sezioni successive) che, pur non incidendo sulla soglia formale del gate, possono produrre rigetto dell'istanza in sede di controllo dell'amministrazione erogante e impongono la revisione del PUMS prima di renderlo affidabilmente idoneo come base di finanziamento.
+- Termine unitario di adozione 1 gennaio 2023 (art. 3 c.1 DM 397/2017 nel testo sostituito dal DM 444/2021 art. 1): superato di circa 9 mesi. Non bloccante sul gate dell'art. 1 c.2; segnalazione per i meccanismi di riparto.
+- Regime transitorio dell'art. 7 c.3 DM 396/2019 (primo rapporto + atto di Giunta): **ABROGATO** dall'art. 4 del DM 444/2021. Non e' invocabile.
 
 ### 2. Procedura di redazione (`check-procedura-redazione-pums.md`)
 
@@ -54,11 +56,16 @@ Esito: **NON CONFORME**. Il documento copre **6 macro-obiettivi su 17** (35%). M
 
 ### 4. Indicatori (`check-indicatori-tabella1.md`)
 
-- Indicatori riferiti alla Tabella 1 originale del DM 397/2017 (8 indicatori): **NON CONFORME**. La Tabella 1 originale e' stata interamente sostituita dall'Allegato 1 del DM 396/2019 (art. 5 DM 396/2019 - Modifica dei "Macrobiettivi").
-- Mancano tutti gli indicatori introdotti dal DM 396/2019 (24+ indicatori dettagliati con metodologie specifiche, es. a.3 congestione rete primaria con fascia 7.30-9.30 e 10 giorni infrasettimanali ottobre-novembre, 10% rete).
-- Non definito il "tempo 0" ne' i target a 2, 5, 10 anni.
+Esito decreto (DM 397/2017 + DM 396/2019):
+- Indicatori riferiti alla Tabella 1 originale del DM 397/2017 (8 indicatori): **NON CONFORME** - BLOCCANTE. La Tabella 1 originale e' stata interamente sostituita dall'Allegato 1 del DM 396/2019 (art. 5 DM 396/2019 - Modifica dei "Macrobiettivi").
+- Mancano tutti gli indicatori introdotti dal DM 396/2019 (24+ indicatori dettagliati con metodologie specifiche, es. a.3 congestione rete primaria con fascia 7.30-9.30 e 10 giorni infrasettimanali ottobre-novembre, 10% rete): **NON CONFORME** - BLOCCANTE.
+- Target di Piano (10 anni): non definito per nessuno degli indicatori: **NON CONFORME** - BLOCCANTE (orizzonte temporale di Piano richiesto dall'Allegato 1, Premessa, DM 397/2017).
 
-Esito: **NON CONFORME** (ricostruzione completa dell'apparato di indicatori richiesta).
+Esito Vademecum 2022 (indirizzi operativi):
+- Valore al tempo "0" non definito: Vademecum alignment gap (nota 7 p.37) - NON BLOCCANTE.
+- Target a breve (2/3 anni) e medio (5 anni) non definiti: Vademecum alignment gap (Cap. 3.4 e 3.6) - NON BLOCCANTE.
+
+Esito complessivo: **NON CONFORME** sul piano decreto (richiesta ricostruzione completa dell'apparato di indicatori).
 
 ### 5. Monitoraggio e aggiornamento (`check-monitoraggio-aggiornamento.md`)
 
@@ -75,7 +82,9 @@ Esito: **NON CONFORME** (ricostruzione completa dell'apparato di indicatori rich
 
 ### Esito complessivo
 
-Documento **NON CONFORME** al DM 397/2017 come modificato dal DM 396/2019. Il documento, denominato "Piano della Mobilita' Sostenibile 2023", non costituisce un PUMS valido ai fini dell'art. 3 DM 397/2017 ne' un titolo idoneo a soddisfare la condizione dell'art. 2 DM 396/2019 per l'accesso ai finanziamenti TRM.
+Documento **NON CONFORME** al DM 397/2017 come modificato dai DM 396/2019, DM 29/2021 e DM 444/2021 sul piano della conformita' generale del PUMS (procedura, obiettivi, indicatori, monitoraggio).
+
+Sul piano del gate dell'art. 1 c.2 DM 397/2017 (nel testo sostituito dal DM 444/2021 art. 2 c.1) il requisito letterale di **adozione** del PUMS e' soddisfatto (delibera di Giunta del 12 ottobre 2023). Le difformita' di merito sopra elencate, pur non bloccanti rispetto al gate, sono **bloccanti** per la conformita' generale del PUMS e devono essere risolte: si rimanda al professionista firmatario e all'amministrazione erogante per ogni valutazione finale sull'effettiva accessibilita' ai finanziamenti.
 
 ### Rilievi
 
@@ -100,7 +109,7 @@ Il documento attuale non e' idoneo. Si raccomanda di **riscrivere il PUMS** segu
 - Tabella 1 sostituita dal DM 396/2019 (17 macro-obiettivi + indicatori);
 - Vademecum MIMS 2022 (indirizzi operativi 3.1-3.6).
 
-Si segnala che l'art. 7 c.3 secondo periodo del DM 396/2019 ("Il requisito si considera soddisfatto anche nel caso di PUMS adottati prima della pubblicazione del D.M. 397/2017, purche' siano aggiornati in linea con i criteri fissati dal D.M. 397/2017") **non e' invocabile** dal Comune in esame: il "Piano della Mobilita' Sostenibile 2023" e' successivo all'entrata in vigore del DM 397/2017 e non rientra nel regime transitorio per i piani preesistenti.
+Si segnala che l'art. 7 c.3 del DM 396/2019 (clausola transitoria sulle istanze TRM con PUMS in redazione) e' stato **abrogato** dall'art. 4 del DM 444/2021: non e' invocabile ne' come argomento di equipollenza per i piani preesistenti ne' per istanze pendenti dopo il 12 novembre 2021.
 
 ### Avvertenza finale
 

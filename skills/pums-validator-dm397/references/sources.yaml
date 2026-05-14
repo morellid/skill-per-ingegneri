@@ -1,6 +1,6 @@
 schema_version: 1
 skill: pums-validator-dm397
-last_verified: 2026-05-13
+last_verified: 2026-05-14
 
 # Fonti normative ufficiali su cui poggia la skill PUMS-validator.
 # Workflow obbligato (Regola zero, vedi AGENTS.md root):
@@ -14,7 +14,7 @@ sources:
     title: "Decreto Ministero Infrastrutture e Trasporti 4 agosto 2017, n. 397 - Individuazione delle linee guida per i piani urbani di mobilita' sostenibile, ai sensi dell'art. 3, comma 7, del D.Lgs. 16 dicembre 2016, n. 257"
     type: decreto
     url: https://www.gazzettaufficiale.it/eli/gu/2017/10/05/233/sg/pdf
-    accessed: 2026-05-13
+    accessed: 2026-05-14
     sha256: 867acba97777daef4f43648b4e49744d32f07549ef2656b8e3d71d49abb2b053
     license: public-domain
     binary_path: not_in_repo/gu-2017-10-05-233-sg.pdf
@@ -34,7 +34,7 @@ sources:
     title: "Decreto Ministero Infrastrutture e Trasporti 28 agosto 2019, n. 396 - Modifica del DM 397/2017 (Linee guida PUMS)"
     type: decreto
     url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2019-10/396.pdf
-    accessed: 2026-05-13
+    accessed: 2026-05-14
     sha256: e8be2a96fd957704b4dba507bfe85db4279acaff8e40530815b0a25cfec0e599
     license: public-domain
     binary_path: not_in_repo/dm-28-08-2019-396-pums.pdf
@@ -50,11 +50,57 @@ sources:
       presente DM. La Tabella 1 vigente per la validazione e' quindi quella
       del DM 396/2019.
 
+  - id: dm-26-1-2021-29-pums
+    title: "Decreto Ministero Infrastrutture e Trasporti 26 gennaio 2021, n. 29 - Proroga dei termini per la predisposizione ed adozione dei Piani urbani di mobilita' sostenibile"
+    type: decreto
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2021-01/DM_29_proroga_termini_PUMS.pdf
+    accessed: 2026-05-14
+    sha256: 2312c2ab1ccec23bf86e2172a723531c0d3792267c8c81041f79a6ed3adabd74
+    license: public-domain
+    binary_path: not_in_repo/dm-26-1-2021-29-pums.pdf
+    md_path: references/fonti/dm-26-1-2021-29-pums.md
+    excerpt_path: references/estratti/dm-26-1-2021-29-pums.md
+    notes: |
+      Decreto del Ministro delle infrastrutture e dei trasporti che modifica
+      l'art. 3 c.1 del DM 397/2017 (a sua volta gia' modificato dal DM 396/2019,
+      art. 4) sostituendolo: i termini per la predisposizione ed adozione dei
+      PUMS sono fissati al 4 aprile 2021 (ordinario) e al 4 agosto 2021 (esteso
+      per amministrazioni con impegni giuridicamente vincolanti). L'art. 2
+      modifica anche l'art. 7 c.1 del DM 396/2019 (regime transitorio TRM),
+      sostituendo "trentaseiesimo mese" con il rinvio al nuovo termine
+      dell'art. 3 c.1 del DM 397/2017. Tutta la disciplina e' a sua volta
+      superata dal successivo DM 444/2021 che fissa un termine unitario al
+      1 gennaio 2023 e abroga l'art. 7 c.3 del DM 396/2019.
+
+  - id: dm-12-11-2021-444-pums
+    title: "Decreto Ministero Infrastrutture e Mobilita' sostenibili 12 novembre 2021, n. 444 - Modifiche al decreto 4 agosto 2017, n. 397 concernenti i Piani urbani di mobilita' sostenibile (PUMS)"
+    type: decreto
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2021-11/M_INFR.GABINETTO.REG_DECRETI_R_.0000444.12-11-2021.pdf
+    accessed: 2026-05-14
+    sha256: 6c8e29e0ef8e846436433cd01ff82769ea732bfba5c182030fefeb78c9f919af
+    license: public-domain
+    binary_path: not_in_repo/dm-12-11-2021-444-pums.pdf
+    md_path: references/fonti/dm-12-11-2021-444-pums.md
+    excerpt_path: references/estratti/dm-12-11-2021-444-pums.md
+    notes: |
+      Decreto del Ministro delle infrastrutture e della mobilita' sostenibili
+      che chiude la catena di modifiche al DM 397/2017. Tre interventi rilevanti
+      per la validazione: (1) art. 1 fissa un termine unitario di adozione dei
+      PUMS al 1 gennaio 2023, superando il regime 4 aprile / 4 agosto 2021
+      del DM 29/2021; (2) art. 2 c.1 sostituisce l'art. 1 c.2 del DM 397/2017,
+      estende la condizione "PUMS adottato per accesso ai finanziamenti" anche
+      alla mobilita' ciclistica e la riferisce alle risorse statali stanziate
+      a decorrere dal 1 gennaio 2023; (3) art. 4 abroga il comma 3 dell'art. 7
+      del DM 396/2019 (regime transitorio TRM con primo rapporto e atto di
+      Giunta/Sindaco). Per istanze post 12/11/2021 la clausola transitoria
+      non e' invocabile. Art. 3 affida le verifiche di ottemperanza alla
+      piattaforma dell'Osservatorio nazionale TPL.
+
   - id: vademecum-pums-mit-2022
     title: "Vademecum per la redazione del Piano Urbano di Mobilita' Sostenibile (PUMS) - MIMS, Struttura tecnica di missione + Politecnico di Milano, 27/09/2022"
     type: linea-guida
     url: https://www.mit.gov.it/nfsmitgov/files/media/documentazione/2022-11/VademecumPUMS_ver.31122.pdf
-    accessed: 2026-05-13
+    accessed: 2026-05-14
     sha256: 9078694ed2ff41c635ff41ccfee80fae1ba7c95471ad7aa98aef1898d9966f6d
     license: public-domain
     binary_path: not_in_repo/vademecum-pums-mit-2022.pdf
