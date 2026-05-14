@@ -1,0 +1,58 @@
+schema_version: 1
+skill: ped-classificazione-conformita
+last_verified: 2026-05-14
+
+# Fonte unica autoritativa: il D.Lgs 26/2016, pubblicato nella Gazzetta
+# Ufficiale Serie Generale n.53 del 04/03/2016, e' il decreto che, modificando
+# il D.Lgs 93/2000, recepisce in Italia la Direttiva 2014/68/UE (PED -
+# Pressure Equipment Directive). E' la norma vincolante nell'ordinamento
+# italiano per la classificazione, valutazione di conformita' e marcatura CE
+# delle attrezzature a pressione. Il decreto modificativo include nei suoi
+# allegati il testo integrale dei nuovi Allegato I (RES), Allegato II
+# (tabelle di valutazione della conformita') e Allegato III (procedure /
+# moduli di valutazione) come sostituiti nel D.Lgs 93/2000.
+#
+# Workflow obbligato (vedi AGENTS.md root, Regola zero):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path (committato nella skill, transcrizione fedele)
+#   4. USARE il MD per scrivere la skill
+
+sources:
+  - id: dlgs-26-2016-ped
+    title: "Decreto Legislativo 15 febbraio 2016, n. 26 - Attuazione della direttiva 2014/68/UE del Parlamento europeo e del Consiglio, del 15 maggio 2014, concernente l'armonizzazione delle legislazioni degli Stati membri relativa alla messa a disposizione sul mercato di attrezzature a pressione (rifusione)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2016/03/04/53/sg/pdf
+    accessed: 2026-05-14
+    sha256: 20e9eb35c39f6f2c51773e58d6864694583ea9b45af5a3d45e6d3540ca1387f5
+    license: public-domain
+    binary_path: not_in_repo/dlgs-26-2016-gu53.pdf
+    md_path: references/fonti/dlgs-26-2016.md
+    excerpt_path: references/estratti/dlgs-26-2016-classificazione-moduli.md
+    notes: |
+      Il PDF scaricato e' la Gazzetta Ufficiale Serie Generale n.53 del
+      04/03/2016 (codice atto 16G00034 per il D.Lgs 26/2016). Il decreto e'
+      contenuto nelle pagine iniziali della GU. Il D.Lgs 26/2016 e' un
+      decreto modificativo del D.Lgs 25 febbraio 2000, n. 93 (originario
+      recepimento della direttiva 97/23/CE): l'art. 1 sostituisce o aggiunge
+      gli articoli 2, 4, 4-bis-4-septies, 5, 7, 8, 8-bis-8-quinquies, 9, 10,
+      11, 12, 13, 14, 14-bis-14-sexies, 15 del D.Lgs 93/2000; l'art. 2
+      apporta ulteriori modifiche (sanzioni in euro, denominazioni ministeri);
+      l'art. 3 fissa la decorrenza al 19 luglio 2016 (con eccezione per
+      l'art. 1, comma 1, lettera t)); l'art. 4 e' clausola di invarianza
+      finanziaria. L'Allegato A del decreto contiene il testo integrale dei
+      nuovi Allegato I (Requisiti essenziali di sicurezza), Allegato II
+      (Tabelle di valutazione della conformita') e Allegato III (Procedure
+      di valutazione della conformita' - moduli) da sostituire nel D.Lgs
+      93/2000. L'Allegato B contiene il nuovo Allegato VII (Dichiarazione UE
+      di conformita' / Esame UE del tipo). Le tabelle 1-9 dell'Allegato II
+      sono diagrammi grafici PS/V o PS/DN con linee di demarcazione fra le
+      categorie I-IV: nel PDF della GU sono immagini, non testo, e quindi
+      la lettura puntuale dei valori soglia richiede consultazione visiva
+      del PDF. La Direttiva 2014/68/UE (CELEX 32014L0068) non e' inclusa
+      come fonte separata: il D.Lgs 26/2016 ne riproduce il contenuto
+      tecnico in lingua italiana e costituisce la norma vincolante
+      nell'ordinamento italiano. Per finalita' di concordanza articolo-per-
+      articolo direttiva-decreto, l'art. 3 c.3 del D.Lgs 26/2016 rinvia
+      esplicitamente alla tavola di concordanza di cui all'allegato VI
+      della direttiva 2014/68/UE.
