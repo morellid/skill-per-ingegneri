@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Validatore PUMS - DM 397/2017
+short_description: Verifica la conformita' formale di un Piano Urbano di Mobilita' Sostenibile (PUMS) al DM 397/2017 come modificato dal DM 396/2019 e al Vademecum MIMS 2022. Controlla ambito di obbligo, procedura di redazione, obiettivi minimi, indicatori della Tabella 1, piano di monitoraggio e disciplina di aggiornamento.
+default_prompt: |
+  Ho il PUMS di un comune italiano (oltre 100.000 abitanti) che vorrei
+  controllare. Mi aiuti a verificare la conformita' al DM 397/2017 come
+  modificato dal DM 396/2019? Iniziamo da: ambito di obbligo, procedura
+  di redazione, macro-obiettivi minimi, indicatori della Tabella 1,
+  piano di monitoraggio e aggiornamento.
