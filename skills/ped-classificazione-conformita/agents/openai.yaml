@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: PED - Classificazione e valutazione conformita'
+short_description: Guida la classificazione PED di un'attrezzatura a pressione (categoria I-IV, gruppo fluido 1 o 2) e la scelta del modulo di valutazione della conformita' (A, A2, B+D, ecc.) ai sensi del D.Lgs 26/2016 (Direttiva 2014/68/UE).
+default_prompt: |
+  Sto progettando un'attrezzatura a pressione (recipiente / tubazione / accessorio / insieme).
+  Aiutami a classificarla secondo il D.Lgs 26/2016 (PED): gruppo del fluido, categoria
+  in base alle tabelle dell'Allegato II, e modulo di valutazione della conformita'
+  ammissibile ex art. 10. Ti fornisco PS, V/DN, fluido contenuto, stato fisico e
+  condizioni di esercizio.
