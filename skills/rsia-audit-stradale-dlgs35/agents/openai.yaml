@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011)
+short_description: Supporta auditor, ingegneri stradali e controllori della sicurezza nelle quattro procedure del D.Lgs 35/2011 modificato dal D.Lgs 213/2021 - VISS, RSA, NSA e ispezioni periodiche/mirate su autostrade, strade principali e rete di interesse nazionale.
+default_prompt: |
+  Devo redigere un controllo di sicurezza stradale (RSA) ai sensi dell'art. 4
+  del D.Lgs 35/2011 sulla fase di Progetto di Fattibilita' Tecnica ed Economica
+  di un'autostrada TEN-T. Aiutami a impostare la struttura del rapporto secondo
+  l'Allegato II e a verificare se sono in possesso dei requisiti di controllore.
