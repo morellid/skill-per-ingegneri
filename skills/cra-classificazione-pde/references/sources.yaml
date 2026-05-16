@@ -1,0 +1,44 @@
+schema_version: 1
+skill: cra-classificazione-pde
+last_verified: 2026-05-16
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | regolamento-ue | altro
+#   url: URL canonico della fonte (pagina ELI / Normattiva / GU)
+#   download_url: URL diretto al binario PDF (opzionale, usato in alternativa a url per il download)
+#   accessed: data consultazione (YYYY-MM-DD)
+#   sha256: hash SHA256 del file binario scaricato (REALE, no placeholder)
+#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
+#   binary_path: path del binario in locale (fuori repo, in not_in_repo/), oppure null
+#   md_path: path del markdown della fonte in references/fonti/, oppure null
+#   excerpt_path: path dell'estratto curato in references/estratti/
+#   notes: note libere
+#
+# Workflow obbligato (vedi AGENTS.md "Regola zero"):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path
+#   4. USARE il MD per scrivere la skill
+
+sources:
+  - id: reg-ue-2024-2847-cra
+    title: "Regolamento (UE) 2024/2847 del Parlamento europeo e del Consiglio del 23 ottobre 2024 relativo a requisiti orizzontali di cibersicurezza per i prodotti con elementi digitali e che modifica i regolamenti (UE) n. 168/2013 e (UE) n. 2019/1020 e la direttiva (UE) 2020/1828 (regolamento sulla cibersicurezza)"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+    download_url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32024R2847
+    accessed: 2026-05-16
+    sha256: 7c9ae1d683e7fbafef4ce5898b33279bb6f5f6746df3c4a08911c1a0d3a31db3
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2024-2847-cra.pdf
+    md_path: references/fonti/reg-ue-2024-2847-cra.md
+    excerpt_path: references/estratti/reg-ue-2024-2847-cra-classificazione.md
+    notes: |
+      Cyber Resilience Act (CRA). Pubblicato in GU UE L del 20/11/2024.
+      Articoli rilevanti per questa skill (classificazione PDE + documentazione tecnica):
+      art. 6 (classi di PDE importanti e critici), art. 7 (PDE critici),
+      art. 13 (obblighi del fabbricante), art. 31 (procedure di valutazione conformita'),
+      Allegato I (requisiti essenziali), Allegato III (PDE importanti classi I e II),
+      Allegato IV (PDE critici), Allegato VII (contenuto documentazione tecnica),
+      Allegato VIII (moduli A, B, C, H).
