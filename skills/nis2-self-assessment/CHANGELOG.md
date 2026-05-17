@@ -11,6 +11,32 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - aggiunto `references/fonti/acn-det-164179-2025-allegato2.md` per la fonte storica `acn-det-164179-2025-allegato2`, cosi' da rispettare la Regola zero Step 3 anche per l'allegato superato mantenuto a catalogo come riferimento storico
 - aggiornato `references/sources.yaml` con `md_path` per `acn-det-164179-2025-allegato2`
 
+## [0.2.0-alpha] - 2026-05-17
+
+### Added (issue #169 - determinazioni ACN del 13 aprile 2026)
+- Nuovo task `tasks/elenco-fornitori-rilevanti.md` per la compilazione dell'elenco dei fornitori rilevanti NIS richiesto dall'art. 18 della Determinazione ACN 127437/2026, comunicato tramite la piattaforma ACN nella finestra annuale 15 aprile - 31 maggio (prima applicazione: 2026). Copre il censimento dei fornitori, l'applicazione dei 2 criteri di rilevanza ex art. 1 lett. ll) (fornitura ICT Allegato I p.8-9 / fornitura non fungibile), la raccolta dei 5 campi obbligatori (denominazione, CF, Paese, codici CPV Reg. CE 2195/2002, criterio applicato) e la trasmissione finale.
+- Nuovi estratti normativi in `references/estratti/`:
+  - `acn-det-127437-2026-art18-fornitori.md` - art. 1 lett. ll), art. 16 co. 1 (finestra), art. 16 co. 3 lett. g), art. 18 (5 informazioni), art. 24 co. 3 (applicazione 15/04/2026)
+  - `acn-det-127434-2026-scadenze-nuovi-soggetti.md` - art. 1 (termini per nuovi soggetti 2026), art. 2 (DNS/registrar), art. 5 (entrata in vigore 30/04/2026)
+- Nuove trascrizioni verbatim PDF in `references/fonti/`:
+  - `acn-det-127437-2026.md` - 19 pagine, 24 articoli (Definizioni + 6 capi), trascrizione integrale
+  - `acn-det-127434-2026.md` - 3 pagine, 5 articoli, trascrizione integrale
+- Nuove voci in `references/sources.yaml`:
+  - `acn-det-127437-2026` con SHA256 `4a12bb3d728ea559ad1627dc5dcd61fc91b23b75f66d674281a8bd9aae8d5e1a`
+  - `acn-det-127434-2026` con SHA256 `84709af41c8e017885d007fffc57d333b77f02d6416552028839ad6b364bd20a`
+
+### Changed
+- `SKILL.md`: aggiornata description del frontmatter per includere l'obbligo fornitori rilevanti e i termini speciali nuovi soggetti 2026; aggiunta nuova sotto-attivita' `elenco-fornitori-rilevanti.md`; aggiornata sezione "Fonti normative" con le 2 nuove determinazioni
+- `AGENTS.md`: aggiornata sezione "Dominio" (5 angoli invece di 4); aggiunte voci per `acn-det-127437-2026` e `acn-det-127434-2026` nella sezione "Fonti autoritative"; aggiunti 2 nuovi bullet nella sezione "Articoli e punti chiave" (art. 1 lett. ll + artt. 16/18 Det. 127437/2026; termini speciali Det. 127434/2026); aggiornato stato attuale (5 task, 12 estratti)
+- `tasks/valuta-perimetro.md`: aggiunta sezione finale "Rinvio a task successivi" che cita esplicitamente il task fornitori rilevanti e la specialita' delle scadenze 2026
+- `tasks/gap-analysis-misure.md`: aggiunta nota sulle scadenze speciali per i soggetti inseriti per la prima volta nel 2026 (31/07/2027 misure + 01/01/2027 notifica)
+- `tasks/verifica-incidente-significativo.md`: aggiunta nota sul differimento dell'obbligo operativo di notifica al 01/01/2027 per i soggetti 2026
+
+### Note
+- Versione: minor (0.1.0 -> 0.2.0) per l'aggiunta di funzionalita' nuova retro-compatibile (nuovo task + estensione description)
+- L'entry `Unreleased` resta aperta per i fix source-grounding precedenti (PR #154) ancora da rilasciare separatamente
+- Det. ACN 155238/2026 (categorizzazione attivita' e servizi - Capo V Det. 127437/2026) **fuori scope** di questa release: la skill non copre ancora il processo di categorizzazione. Da valutare per release successiva
+
 ## [0.1.0-alpha+fix.source-grounding] - 2026-05-10
 
 ### Fixed (source-grounding remediation - issue #103)

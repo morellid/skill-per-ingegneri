@@ -12,6 +12,18 @@ Produrre una **gap analysis strutturata** per le 6 funzioni del Framework Nazion
 
 L'output deve consentire di pianificare un **roadmap** di adeguamento entro le scadenze ACN: 18 mesi dalla **comunicazione di inserimento** ricevuta dal soggetto per le misure di base, 9 mesi per la notifica incidenti (art. 3 Det. ACN 379907/2025). Le scadenze sono personali: ciascun soggetto le calcola dalla propria comunicazione di inserimento.
 
+### Eccezione: soggetti inseriti per la prima volta nell'elenco NIS nel 2026
+
+La **Determinazione ACN 127434/2026** (in vigore dal 30 aprile 2026) fissa termini diversi per i soggetti inseriti nell'elenco NIS nel corso dell'anno solare 2026 ai sensi dell'art. 7 co. 3 lett. a) D.Lgs. 138/2024:
+
+- Adozione misure di base (Allegati 1 e 2 Det. 379907/2025): **31 luglio 2027** (art. 1 co. 1 Det. 127434/2026)
+- Obbligo notifica incidenti significativi (Allegati 3 e 4 Det. 379907/2025): decorre dal **1 gennaio 2027** (art. 1 co. 2 Det. 127434/2026)
+- Per i fornitori DNS/registrar ex art. 4 Det. 379907/2025 inseriti per la prima volta nel 2026: adempimento art. 29 D.Lgs. 138/2024 entro **31 luglio 2027** (art. 2 co. 1 Det. 127434/2026)
+
+Per i soggetti gia' presenti nell'elenco 2025 che permangono nel 2026 (art. 7 co. 3 lett. b D.Lgs. 138/2024) **restano fermi** i termini ordinari di 18 e 9 mesi (art. 1 co. 3 Det. 127434/2026).
+
+Vedi `references/estratti/acn-det-127434-2026-scadenze-nuovi-soggetti.md` per i dettagli.
+
 ## Input richiesti
 
 - **Classificazione del soggetto** (essenziale / importante) - ricavata dal task `valuta-perimetro`.

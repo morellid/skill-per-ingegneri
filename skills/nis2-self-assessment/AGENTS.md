@@ -4,7 +4,7 @@
 
 ## Dominio
 
-Self-assessment di conformita' al **D.Lgs. 4 settembre 2024, n. 138** (recepimento italiano della Direttiva (UE) 2022/2555 - NIS 2) per organizzazioni italiane private e pubbliche. La skill copre quattro angoli: perimetro (essenziale/importante/fuori), gap analysis sulle misure di base ACN (Determinazione 379907/2025 vigente dal 15/01/2026), verifica di significativita' di un incidente (codici IS-1..4 + soglie telco art. 6 co. 2), obblighi di governance dell'organo di amministrazione.
+Self-assessment di conformita' al **D.Lgs. 4 settembre 2024, n. 138** (recepimento italiano della Direttiva (UE) 2022/2555 - NIS 2) per organizzazioni italiane private e pubbliche. La skill copre cinque angoli: perimetro (essenziale/importante/fuori), gap analysis sulle misure di base ACN (Determinazione 379907/2025 vigente dal 15/01/2026), **elenco fornitori rilevanti NIS** ex art. 18 Determinazione ACN 127437/2026 (finestra annuale 15 aprile - 31 maggio), verifica di significativita' di un incidente (codici IS-1..4 + soglie telco art. 6 co. 2), obblighi di governance dell'organo di amministrazione.
 
 Target utente: CISO, IT manager, DPO, ingegneri dell'informazione, consulenti cybersecurity di organizzazioni italiane potenzialmente in ambito NIS. Per le PA centrali gia' incluse nel PSNC (DL 105/2019) la skill resta applicabile in quanto le PA centrali Allegato III lett. a) sono comunque soggetti essenziali NIS2 (art. 6 co. 1 lett. e); cambia il coordinamento delle notifiche (art. 1 co. 8 DL 105/2019 come modificato da art. 44 D.Lgs. 138/2024). Non assumere esclusione automatica del perimetro NIS per i soggetti PSNC.
 
@@ -14,6 +14,8 @@ Target utente: CISO, IT manager, DPO, ingegneri dell'informazione, consulenti cy
 - **Direttiva (UE) 2022/2555 - NIS 2** (id `dir-2022-2555-nis2`) - direttiva madre. Citata solo per concetti strutturali; l'attuazione operativa segue il decreto italiano.
 - **Regolamento di esecuzione (UE) 2024/2690** (id `reg-ese-2024-2690`) - applica direttamente a un sottoinsieme di soggetti (DNS, cloud, data center, social, ecc.). Per gli altri soggetti italiani il riferimento e' la Determinazione ACN.
 - **Determinazione ACN n. 379907 del 18/12/2025** (id `acn-det-379907-2025`, vigente dal 15/01/2026) - misure di base distinte per soggetti importanti (Allegato 1, 37 sottocategorie) ed essenziali (Allegato 2, 43 sottocategorie), strutturate sul Framework Nazionale Cybersecurity ed. 2025; codici di incidente significativo di base IS-1..3 (importanti, Allegato 3) e IS-1..4 (essenziali, Allegato 4); soglie quantitative aggiuntive solo per operatori telco all'art. 6 co. 2.
+- **Determinazione ACN n. 127437 del 13/04/2026** (id `acn-det-127437-2026`, vigente dal 15/04/2026; Capo V dal 01/05/2026) - termini, modalita' e procedimenti di utilizzo della piattaforma digitale ACN; aggiorna e sostituisce la Det. 379887/2025. Articoli chiave: art. 1 lett. ll) definizione "fornitori rilevanti NIS" (2 criteri alternativi); art. 16 finestra aggiornamento annuale 15 aprile - 31 maggio; art. 18 elenco dei fornitori rilevanti NIS con 5 informazioni richieste (denominazione, CF, Paese, codici CPV Reg. CE 2195/2002, criterio di rilevanza).
+- **Determinazione ACN n. 127434 del 13/04/2026** (id `acn-det-127434-2026`, vigente dal 30/04/2026) - termini speciali per i soggetti inseriti per la prima volta nell'elenco NIS nel 2026 (art. 7 co. 3 lett. a D.Lgs. 138/2024): misure di base entro 31/07/2027 (art. 1 co. 1); obbligo notifica incidenti significativi decorrente dal 01/01/2027 (art. 1 co. 2); termini ordinari della Det. 379907/2025 restano fermi per i soggetti gia' inseriti nel 2025 (art. 1 co. 3).
 - **Determinazione ACN n. 164179 del 14/04/2025** (id `acn-det-164179-2025`) - SUPERATA dalla 379907/2025 dal 15/01/2026; mantenuta in catalogo come riferimento storico.
 - **Pagina riepilogativa ACN** (id `acn-portale-normativa`) - indice atti generali, da consultare per nuove determinazioni.
 
@@ -27,6 +29,8 @@ Estratti gia' preparati in `references/estratti/`:
 - `acn-misure-base-importanti.md` - Allegato 1 Det. 379907/2025 (37 sottocategorie)
 - `acn-misure-base-essenziali.md` - Allegato 2 Det. 379907/2025 (43 sottocategorie)
 - `acn-incidenti-significativi.md` - Allegati 3-4 Det. 379907/2025 (codici IS-1..4) + soglie telco art. 6 co. 2
+- `acn-det-127437-2026-art18-fornitori.md` - definizione fornitori rilevanti NIS + finestra annuale + 5 informazioni richieste
+- `acn-det-127434-2026-scadenze-nuovi-soggetti.md` - termini speciali soggetti 2026 (misure 31/07/2027; notifica dal 01/01/2027)
 - `reg-ese-2024-2690-ambito.md` - ambito del Reg. UE 2024/2690
 
 ## Articoli e punti chiave
@@ -66,6 +70,9 @@ Estratti gia' preparati in `references/estratti/`:
 - **Allegato III**: PA italiane (centrali, regionali, locali, altri soggetti pubblici). Le PA centrali (lett. a) sono soggetti essenziali indipendentemente dalle dimensioni (art. 6 co. 1 lett. e).
 - **Allegato IV**: trasporto pubblico locale; istituti di istruzione che svolgono ricerca; soggetti di interesse culturale; societa' in house, partecipate e a controllo pubblico (D.Lgs. 175/2016).
 - **Determinazione ACN 379907/2025 Allegato 1 (importanti, 37 sottocat / 87 requisiti) e Allegato 2 (essenziali, 43 sottocat / 112 requisiti)**: misure di base organizzate per funzioni/categorie/sottocategorie/requisiti del Framework Nazionale Cybersecurity ed. 2025. Tempi di adeguamento (art. 3): **18 mesi** per le misure, **9 mesi** per la notifica incidenti, decorrenti dalla **comunicazione di inserimento** ricevuta da ciascun soggetto.
+- **Art. 1 lett. ll) Det. ACN 127437/2026 - Definizione "fornitori rilevanti NIS"**: soggetto che fornisce servizi/prodotti a un soggetto NIS e soddisfa **almeno uno** dei due criteri **alternativi**: (1) fornitura riconducibile alle attivita' o ai servizi dell'**Allegato I punti 8 e 9 D.Lgs. 138/2024** (fornitura ICT - infrastrutture digitali e gestione servizi TIC B2B); (2) interruzione/compromissione della fornitura che comporta impatto significativo sulla capacita' del soggetto NIS di erogare i servizi NIS, **anche per effetto dell'indisponibilita' di fornitori alternativi** (fornitura non fungibile).
+- **Art. 16 + Art. 18 Det. ACN 127437/2026 - Elenco fornitori rilevanti NIS**: comunicazione tramite il "Servizio NIS/Aggiornamento annuale informazioni" nella finestra annuale **15 aprile - 31 maggio** (art. 16 co. 1). Per ciascun fornitore rilevante (art. 18): a) denominazione; b) codice fiscale; c) Paese sede legale; d) **codici CPV** del Regolamento (CE) n. 2195/2002 per le forniture di cui il soggetto NIS fruisce; e) criterio di rilevanza applicato (1 o 2 dell'art. 1 lett. ll). Obbligo applicabile a tutti i soggetti NIS; esenzione DORA (art. 16 co. 13) non copre la lett. g). La determinazione si applica dal 15/04/2026; prima applicazione operativa nel 2026.
+- **Det. ACN 127434/2026 - Termini speciali nuovi soggetti 2026**: per i soggetti inseriti per la prima volta nell'elenco NIS nel 2026 (art. 7 co. 3 lett. a D.Lgs. 138/2024): misure di base entro **31 luglio 2027** (art. 1 co. 1); obbligo notifica incidenti significativi decorrente dal **1 gennaio 2027** (art. 1 co. 2); DNS/registrar art. 29 D.Lgs. 138/2024 entro 31 luglio 2027 (art. 2 co. 1). Per i soggetti gia' inseriti nel 2025 (art. 7 co. 3 lett. b D.Lgs. 138/2024) restano fermi i termini ordinari di 18/9 mesi della Det. 379907/2025 (art. 1 co. 3).
 
 ## Convenzioni specifiche
 
@@ -90,9 +97,9 @@ Estratti gia' preparati in `references/estratti/`:
 
 ## Stato attuale
 
-- Versione: vedi `CHANGELOG.md` (v0.1.0-alpha)
+- Versione: vedi `CHANGELOG.md` (v0.2.0-alpha)
 - Validazione: Livello 1 (auto-validazione autore) - Livello 2 da pianificare
-- Task files: 4 (`valuta-perimetro`, `gap-analysis-misure`, `verifica-incidente-significativo`, `check-obblighi-governance`)
-- Estratti normativi: 10 estratti preparati
+- Task files: 5 (`valuta-perimetro`, `gap-analysis-misure`, `elenco-fornitori-rilevanti`, `verifica-incidente-significativo`, `check-obblighi-governance`)
+- Estratti normativi: 12 estratti preparati
 - Esempi: 2 (utility energetica essenziale + PMI manifattura importante)
 - Skill non ancora testata su organizzazione reale - validazione Livello 2 prioritaria

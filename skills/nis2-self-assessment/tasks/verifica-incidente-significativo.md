@@ -6,6 +6,8 @@ Determina se un evento di sicurezza informatica costituisce "incidente significa
 
 Il soggetto deve essere in ambito NIS2 (essenziale o importante). Se non lo e', valutare se l'incidente comporta altri obblighi (GDPR, codice comunicazioni elettroniche, PSNC, DORA).
 
+**Per i soggetti inseriti nell'elenco NIS per la prima volta nell'anno solare 2026** (art. 7 co. 3 lett. a D.Lgs. 138/2024): l'obbligo operativo di notifica degli incidenti significativi descritti negli Allegati 3 e 4 della Det. 379907/2025 **decorre dal 1 gennaio 2027** (art. 1 co. 2 Det. ACN 127434/2026). Prima di tale data il soggetto **non e' tenuto** ad eseguire la procedura di notifica ex art. 25 D.Lgs. 138/2024 secondo gli allegati ACN. Per i soggetti gia' presenti nell'elenco 2025 il regime ordinario (9 mesi dalla comunicazione di inserimento ex art. 3 co. 2 Det. 379907/2025) **resta fermo** (art. 1 co. 3 Det. 127434/2026). Vedi `references/estratti/acn-det-127434-2026-scadenze-nuovi-soggetti.md`.
+
 ## Obiettivo
 
 Produrre una valutazione strutturata che concluda con uno dei 4 esiti:
