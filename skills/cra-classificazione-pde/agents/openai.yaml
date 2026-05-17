@@ -1,0 +1,16 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: CRA - Classificazione PDE e valutazione della conformita'
+short_description: |
+  Guida la classificazione di un prodotto con elementi digitali (PDE) ai sensi
+  del Regolamento (UE) 2024/2847 - Cyber Resilience Act, la selezione della
+  procedura di valutazione della conformita' (modulo A, B+C, H o certificazione
+  UE) e l'inquadramento della documentazione tecnica richiesta (Allegato VII).
+default_prompt: |
+  Devo classificare un prodotto con elementi digitali ai sensi del CRA
+  (Regolamento UE 2024/2847). Aiutami a determinare se rientra nell'ambito,
+  se e' "importante" (Allegato III, Classe I o II) o "critico" (Allegato IV),
+  quale modulo di valutazione della conformita' e' ammissibile e quale
+  documentazione tecnica devo preparare. Ti diro' il prodotto e le sue
+  funzionalita' principali.
