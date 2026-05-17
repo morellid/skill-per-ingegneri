@@ -275,3 +275,12 @@ La presente valutazione di perimetro e' di supporto, non sostituisce la decision
 Vedi `examples/`:
 - `essenziale-utility-energia/` - utility energetica grande dimensione
 - `importante-pmi-manifattura/` - media impresa manifatturiera
+
+## Rinvio a task successivi
+
+Se l'esito e' **SOGGETTO ESSENZIALE** o **SOGGETTO IMPORTANTE**, il soggetto e' tenuto a:
+
+- **Registrazione e aggiornamento annuale sulla piattaforma ACN** (artt. 7 D.Lgs. 138/2024 + Det. ACN 127437/2026). Tra gli obblighi dell'aggiornamento annuale (finestra 15 aprile - 31 maggio) c'e' l'**elenco dei fornitori rilevanti NIS** ex art. 18 Det. 127437/2026: vedi task `elenco-fornitori-rilevanti.md`.
+- **Gap analysis delle misure di sicurezza** ex art. 24 + Det. ACN 379907/2025: vedi task `gap-analysis-misure.md`. Per i soggetti inseriti per la prima volta nel 2026 si applicano i termini speciali della Det. ACN 127434/2026 (misure entro 31/07/2027; notifica incidenti dal 01/01/2027).
+- **Verifica obblighi degli organi di amministrazione** (art. 23 D.Lgs. 138/2024): vedi task `check-obblighi-governance.md`.
+- **Verifica di un eventuale incidente significativo** (art. 25 D.Lgs. 138/2024): vedi task `verifica-incidente-significativo.md`.

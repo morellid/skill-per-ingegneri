@@ -1,6 +1,6 @@
 schema_version: 1
 skill: nis2-self-assessment
-last_verified: 2026-05-10
+last_verified: 2026-05-17
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
@@ -188,6 +188,65 @@ sources:
       per gli importanti). Definizioni qualitative; soglie quale-
       quantitative definite dal soggetto ai sensi della misura DE.CM-01
       (Allegato 2).
+
+  - id: acn-det-127437-2026
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 127437 del 13 aprile 2026 - Termini, modalita' e procedimenti di utilizzo e accesso alla piattaforma digitale, ulteriori informazioni dei soggetti NIS (incluso elenco fornitori rilevanti) e designazione dei rappresentanti NIS"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/detacn_piattaformanis_251218-v9_signed
+    download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_piattaformanis_251218-v9_signed
+    accessed: 2026-05-17
+    sha256: 4a12bb3d728ea559ad1627dc5dcd61fc91b23b75f66d674281a8bd9aae8d5e1a
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-127437-2026.pdf
+    md_path: references/fonti/acn-det-127437-2026.md
+    excerpt_paths:
+      - references/estratti/acn-det-127437-2026-art18-fornitori.md
+    notes: |
+      Determinazione adottata dal Direttore Generale ACN Bruno Frattasi
+      il 13/04/2026 ai sensi dell'art. 7 co. 6 e art. 40 co. 5 lett. b)
+      D.Lgs. 138/2024. Aggiorna e sostituisce la Det. ACN 379887/2025
+      (art. 24 co. 1). Si applica dal 15/04/2026; Capo V (categorizzazione
+      attivita' e servizi) differito al 01/05/2026 (art. 24 co. 3). 24
+      articoli + 6 capi: I Definizioni e disposizioni generali (artt. 1-7),
+      II Censimento e associazione utenze (artt. 8-10), III Registrazione
+      ed elaborazione elenco (artt. 11-15), IV Aggiornamento informazioni
+      (artt. 16-19), V Elencazione e categorizzazione attivita' e servizi
+      (artt. 20-21), VI Disposizioni finali (artt. 22-24). Articoli chiave
+      per la skill: art. 1 lett. ll) - definizione "fornitori rilevanti NIS"
+      (2 criteri alternativi); art. 16 co. 1 - finestra aggiornamento
+      annuale 15 aprile - 31 maggio; art. 16 co. 3 lett. g) - elenco
+      fornitori rilevanti come parte dell'aggiornamento annuale; art. 18 -
+      5 informazioni richieste per fornitore (denominazione, CF, Paese,
+      codici CPV Reg. CE 2195/2002, criterio di rilevanza). Esenzione
+      DORA (art. 16 co. 13) NON copre l'obbligo fornitori rilevanti.
+
+  - id: acn-det-127434-2026
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 127434 del 13 aprile 2026 - Termini per l'adempimento agli obblighi degli artt. 23, 24, 25, 29 e 32 D.Lgs. 138/2024 per i soggetti inseriti per la prima volta nell'elenco nell'anno solare 2026"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/detacn_misuresicurezza-v4_post
+    download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_misuresicurezza-v4_post
+    accessed: 2026-05-17
+    sha256: 84709af41c8e017885d007fffc57d333b77f02d6416552028839ad6b364bd20a
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-127434-2026.pdf
+    md_path: references/fonti/acn-det-127434-2026.md
+    excerpt_paths:
+      - references/estratti/acn-det-127434-2026-scadenze-nuovi-soggetti.md
+    notes: |
+      Determinazione adottata dal Direttore Generale ACN Bruno Frattasi
+      il 13/04/2026 ai sensi dell'art. 31 commi 1 e 2 D.Lgs. 138/2024,
+      secondo le modalita' dell'art. 40 co. 5 lett. l). Si applica dal
+      30/04/2026 (art. 5 co. 2). Stabilisce termini graduali per i soggetti
+      inseriti per la prima volta nell'elenco NIS nel corso del 2026
+      (art. 7 co. 3 lett. a D.Lgs. 138/2024). Articoli chiave: art. 1 co. 1
+      - termine misure di sicurezza (Allegati 1 e 2 Det. 379907/2025)
+      = 31 luglio 2027; art. 1 co. 2 - obbligo notifica incidenti
+      significativi (Allegati 3 e 4 Det. 379907/2025) decorre dal
+      1 gennaio 2027; art. 1 co. 3 - per i soggetti gia' inseriti nel
+      2025 restano fermi i termini ordinari dell'art. 3 Det. 379907/2025
+      (18 mesi misure / 9 mesi notifica dalla comunicazione di
+      inserimento); art. 2 - termini analoghi per gestori TLD/registrar
+      ai sensi art. 29 D.Lgs. 138/2024 (entro 31/07/2027).
 
   - id: acn-det-164179-2025
     title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 164179 del 14 aprile 2025 - Modalita' e specifiche di base per gli obblighi degli artt. 23, 24, 25, 29 e 32 del D.Lgs. 138/2024 (versione superata)"
