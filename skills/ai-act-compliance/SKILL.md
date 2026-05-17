@@ -49,14 +49,19 @@ Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' desidera 
 7. Indica sempre le date di applicazione pertinenti (le obbligazioni entrano in vigore in date diverse)
 8. Includi sempre un rinvio alla verifica del professionista legale per i punti critici
 
-## Date di applicazione (art. 113)
+## Date di applicazione (art. 113, come modificato da Digital Omnibus)
 
 | Obblighi | Applicazione |
 |----------|-------------|
 | Pratiche vietate (art. 5), alfabetizzazione (art. 4) | 2 febbraio 2025 - **gia' in vigore** |
 | GPAI (capo V), governance, sanzioni GPAI | 2 agosto 2025 - **gia' in vigore** |
-| Alto rischio Allegato III, trasparenza art. 50, FRIA art. 27 | 2 agosto 2026 |
-| Alto rischio Allegato I (componenti sicurezza prodotti) | 2 agosto 2027 |
+| Obblighi di trasparenza art. 50 (chatbot, deepfake, emozioni, testo informativo) | 2 agosto 2026 |
+| Watermarking art. 50 par. 2 (output sintetici machine-readable) | **2 dicembre 2026** (rinvio Omnibus) |
+| Divieto sistemi generazione CSAM / deepfake sessuali non consensuali | **2 dicembre 2026** (nuovo Omnibus) |
+| Alto rischio Allegato III, FRIA art. 27 | **2 dicembre 2027** (era 2 agosto 2026, rinvio Omnibus) |
+| Alto rischio Allegato I (componenti sicurezza prodotti) | **2 agosto 2028** (era 2 agosto 2027, rinvio Omnibus) |
+
+> **Nota Omnibus (accordo provvisorio 7 maggio 2026)**: l'accordo Parlamento-Consiglio sul Digital Omnibus che rinvia le scadenze sopra **non e' ancora stato pubblicato in GUUE**. Mancano endorsement formale, revisione legale-linguistica e pubblicazione. Le date sopra riflettono l'accordo politico ma vanno riconfermate alla pubblicazione finale. Per casi operativi prima di tale data: pianificare conservativamente sulla data piu' breve fra quella originale del Reg. 2024/1689 e quella Omnibus.
 
 ## Fonti normative
 

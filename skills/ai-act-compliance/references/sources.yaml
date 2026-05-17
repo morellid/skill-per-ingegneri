@@ -1,6 +1,6 @@
 schema_version: 1
 skill: ai-act-compliance
-last_verified: 2026-05-11
+last_verified: 2026-05-17
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
@@ -27,10 +27,17 @@ sources:
     notes: |
       Testo italiano integrale pubblicato nella GU UE serie L del 12.7.2024, 144 pagine.
       Entrata in vigore: 1 agosto 2024 (ventesimo giorno dopo la pubblicazione).
-      Applicazione generale: 2 agosto 2026.
-      Applicazione anticipata capo I e II (pratiche vietate): 2 febbraio 2025.
-      Applicazione anticipata capo V (GPAI) e capo III sez. 4: 2 agosto 2025.
-      Applicazione art. 6 par. 1 (componenti di sicurezza prodotti): 2 agosto 2027.
+      Date di applicazione originali del Reg. 2024/1689 (trascritte dal PDF EUR-Lex):
+        Applicazione generale: 2 agosto 2026.
+        Applicazione anticipata capo I e II (pratiche vietate): 2 febbraio 2025.
+        Applicazione anticipata capo V (GPAI) e capo III sez. 4: 2 agosto 2025.
+        Applicazione art. 6 par. 1 (componenti di sicurezza prodotti): 2 agosto 2027.
+      Aggiornamento Digital Omnibus (accordo provvisorio 7 maggio 2026, NON ANCORA PUBBLICATO IN GUUE):
+        Alto rischio Allegato III + FRIA art. 27: 2 dicembre 2027 (era 2 agosto 2026)
+        Alto rischio Allegato I (art. 6 par. 1): 2 agosto 2028 (era 2 agosto 2027)
+        Watermarking art. 50 par. 2: 2 dicembre 2026 (era 2 agosto 2026)
+        Nuovo divieto sistemi generazione CSAM / deepfake sessuali non consensuali: 2 dicembre 2026
+        Da riconfermare alla pubblicazione del testo definitivo in GUUE.
       SHA256 non verificabile da CI: EUR-Lex risponde con challenge WAF AWS (HTTP 202,
       corpo vuoto) a qualsiasi richiesta programmatica, impedendo il download del PDF.
       binary_path impostato null di conseguenza. Il testo e' stato letto sul PDF

@@ -57,7 +57,7 @@ Se rientra in un'esclusione: documentare e fermarsi.
 
 ### Passo 3 - Verificare se PRATICA VIETATA (art. 5)
 
-Verificare le 8 pratiche vietate. Se rientra anche solo in una -> **VIETATO**, non e' possibile immettere sul mercato/mettere in servizio (sanzione fino a 35M EUR o 7% fatturato).
+Verificare le 8 pratiche vietate (lett. a-h, in vigore dal 02/02/2025) **+ nuovo divieto Omnibus** per sistemi di generazione CSAM / deepfake sessuali non consensuali (provvisorio, adeguamento entro 02/12/2026). Se rientra anche solo in una -> **VIETATO**, non e' possibile immettere sul mercato/mettere in servizio (sanzione fino a 35M EUR o 7% fatturato).
 
 Vedi `ai-act-art-5-pratiche-vietate.md` per dettaglio + esempi.
 
@@ -157,12 +157,15 @@ Attenzione caso art. 25 (rebranding/sostanziale modifica): un deployer/distribut
 
 **Ruolo dell'organizzazione**: [Fornitore / Deployer / Importatore / Distributore]
 
-**Date di applicazione rilevanti**:
-- Pratiche vietate (art. 5): 02/02/2025 ✓
+**Date di applicazione rilevanti** (post accordo Digital Omnibus 7 maggio 2026, **provvisorio - non ancora in GUUE**):
+- Pratiche vietate (art. 5 lett. a-h): 02/02/2025 ✓
 - AI literacy (art. 4): 02/02/2025 ✓
 - GPAI (art. 53-55): 02/08/2025 ✓
-- High-risk Allegato III (maggior parte): 02/08/2026
-- High-risk Allegato I (componenti sicurezza): 02/08/2027
+- Obblighi trasparenza art. 50 (par. 1, 3, 4, 4 bis): 02/08/2026
+- Watermarking art. 50 par. 2 (output sintetici machine-readable): **02/12/2026** (rinvio Omnibus)
+- Nuovo divieto Omnibus per CSAM / deepfake sessuali non consensuali: **02/12/2026**
+- High-risk Allegato III + FRIA art. 27: **02/12/2027** (era 02/08/2026, rinvio Omnibus)
+- High-risk Allegato I (componenti sicurezza prodotti): **02/08/2028** (era 02/08/2027, rinvio Omnibus)
 
 ## Motivazione
 

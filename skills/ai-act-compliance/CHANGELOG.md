@@ -7,6 +7,31 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Da fare
+- Riconfermare date Omnibus dopo pubblicazione in GUUE (testo definitivo + lettera precisa per il nuovo divieto su CSAM/nudifier/deepfake sessuali)
+- Catalogare linee guida Commissione su pratiche vietate, classificazione art. 6, norme armonizzate
+
+## [0.1.3] - 2026-05-17
+
+### Changed - rinvii Digital Omnibus (accordo provvisorio 7 maggio 2026, issue #163)
+
+- Aggiornate date di applicazione AI Act per riflettere accordo provvisorio Digital Omnibus:
+  - Alto rischio Allegato III + FRIA art. 27: rinviato da **02/08/2026** a **02/12/2027**
+  - Alto rischio Allegato I (componenti sicurezza prodotti): rinviato da **02/08/2027** a **02/08/2028**
+  - Watermarking art. 50 par. 2 (output sintetici machine-readable): rinviato da **02/08/2026** a **02/12/2026** (gli altri par. dell'art. 50 restano al 02/08/2026)
+- Tabella date in `SKILL.md` rivista per distinguere paragrafi dell'art. 50
+- File aggiornati: `SKILL.md`, `AGENTS.md`, `tasks/classifica-sistema.md`, `tasks/check-high-risk-provider.md`, `references/estratti/ai-act-art-5-pratiche-vietate.md`, `references/estratti/ai-act-art-50-trasparenza.md`, esempi
+
+### Added
+
+- Nuova pratica vietata Omnibus: sistemi di generazione di CSAM, immagini intime non consensuali, deepfake sessuali espliciti (app "nudifier"). Adeguamento entro **02/12/2026**.
+- Note diffuse sullo stato provvisorio dell'accordo Omnibus (mancano endorsement formale, revisione legale-linguistica e pubblicazione in GUUE - le date sono soggette a riconferma).
+
+### Note
+
+- Fonti citate nell'issue #163: Agendadigitale, Tom's Hardware, AI4Business - consultate il 2026-05-17.
+- Skill resta `0.1.x-alpha` (versione italiana stub); la versione full-feature inglese `ai-act-skill` (repo separato) resta fonte di verita' principale per la skill EU.
+
 ## [0.1.2] - 2026-05-11
 
 ### Fixed (source-grounding CI - issue #92 v2)
@@ -93,8 +118,10 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Skill commercialmente valida sia per uso open via repo (ingegneri italiani) sia per consulenza enterprise (vedi piano boutique business)
 - Sinergica con skill `gdpr-registro-dpia` per casi che intersecano dati personali
 
-### Date di applicazione AI Act (riferimento)
+### Date di applicazione AI Act (riferimento al momento del rilascio 0.1.0-alpha, pre-Omnibus)
 - 02/02/2025: pratiche vietate (art. 5) + AI literacy (art. 4)
 - 02/08/2025: GPAI (art. 53-55) + governance + sanzioni
 - 02/08/2026: high-risk Allegato III (maggior parte degli obblighi)
 - 02/08/2027: high-risk Allegato I (componenti sicurezza prodotti)
+
+> **Aggiornamento 2026-05-17 (v0.1.3)**: queste date sono state riviste dall'accordo provvisorio Digital Omnibus del 7 maggio 2026. Vedi entry 0.1.3 sopra per le nuove date.

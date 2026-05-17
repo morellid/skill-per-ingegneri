@@ -10,7 +10,9 @@
 
 ## Articolo 5 - Pratiche di IA vietate
 
-**Data di applicazione**: 2 febbraio 2025 (gia' in vigore al momento della consultazione)
+**Data di applicazione**: 2 febbraio 2025 (gia' in vigore al momento della consultazione) per le 8 pratiche originarie lett. a-h.
+
+**Nuova pratica vietata da Digital Omnibus (accordo provvisorio 7 maggio 2026)**: sistemi di IA per la generazione di immagini intime non consensuali ("nudifier"), di materiale pedopornografico (CSAM) e di deepfake sessualmente espliciti. **Data di adeguamento: 2 dicembre 2026**. Accordo non ancora pubblicato in GUUE - testo definitivo e lettera (probabile lett. i) da confermare.
 
 **Sanzione**: fino a **35 milioni EUR o 7% del fatturato globale annuo** (art. 99 par. 3) - la piu' severa del regolamento.
 
@@ -51,6 +53,15 @@ Vietato salvo eccezioni strettissime (par. 1 lett. h):
 - Registrazione nella banca dati UE (art. 49)
 - Limitazioni temporali, geografiche, personali
 
+### Nuova pratica vietata da Digital Omnibus (provvisorio, non ancora in GUUE)
+
+**Generazione di immagini intime non consensuali, CSAM, deepfake sessuali espliciti**
+Sistemi di IA progettati o impiegati per generare immagini, video o audio che rappresentano:
+- materiale pedopornografico (CSAM)
+- atti sessuali che coinvolgono persone reali senza il loro consenso (deepfake sessuali non consensuali, app "nudifier")
+
+**Stato**: introdotto dall'accordo provvisorio Digital Omnibus del 7 maggio 2026. Non ancora pubblicato in GUUE. La lettera definitiva (probabile lett. i) e i confini esatti del divieto saranno fissati dal testo finale. **Adeguamento entro 2 dicembre 2026** secondo l'accordo politico.
+
 ---
 
 ## Note interpretative
@@ -76,3 +87,4 @@ La Commissione ha pubblicato linee guida specifiche sulle pratiche vietate (febb
 | App scraping volti per app di "ritrova persone" | e) scraping facciale | **VIETATO** |
 | Sistema sicurezza scuola che rileva aggressivita' studenti (emozioni) | f) emozioni in istruzione | **VIETATO** salvo motivi sicurezza specifici |
 | Categorizzazione foto per "trova persone simili" basato su tratti somatici | g) biometrica sensibile | Borderline - dipende da attributi inferiti |
+| App "nudifier" / generazione deepfake sessuali non consensuali | nuovo divieto Omnibus (provvisorio) | **VIETATO** dal 2 dicembre 2026 (subordinato a pubblicazione GUUE) |
