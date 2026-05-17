@@ -10,7 +10,9 @@
 
 L'art. 50 si applica a sistemi che, pur non essendo high-risk, presentano **rischi specifici di trasparenza** verso le persone fisiche.
 
-**Data di applicazione**: 2 agosto 2026.
+**Date di applicazione**:
+- Par. 1 (chatbot), par. 3 (emozioni/categorizzazione biometrica), par. 4 (deepfake), par. 4 bis (testo informazione pubblica): **2 agosto 2026**.
+- Par. 2 (marcatura machine-readable di output sintetici / watermarking): **2 dicembre 2026** (rinviato di 4 mesi dall'accordo provvisorio Digital Omnibus del 7 maggio 2026; accordo non ancora pubblicato in GUUE).
 
 ### Par. 1 - Sistemi che interagiscono con persone (chatbot, assistenti)
 

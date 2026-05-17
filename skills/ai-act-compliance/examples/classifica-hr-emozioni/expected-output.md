@@ -116,6 +116,6 @@ Il Garante ha emanato provvedimenti specifici sulla privacy nei rapporti di lavo
 1. **STOP allo sviluppo** della componente emozioni
 2. Validare la riprogettazione (Opzione 1) con consulente legale + DPO
 3. Pivot strategico: sistema "compliant" focalizzato su scoring linguistico + competenze tecniche, marketed come AI ethics-first
-4. La compliance high-risk Allegato III sara' obbligatoria entro **02/08/2026** -> tempo limitato per implementare i requisiti
+4. La compliance high-risk Allegato III sara' obbligatoria entro **02/12/2027** (rinvio Digital Omnibus provvisorio, era 02/08/2026) -> piu' tempo per implementare i requisiti, ma riconfermare alla pubblicazione GUUE
 
 **Sanzioni in caso di violazione delle pratiche vietate**: fino a 35M EUR o 7% del fatturato globale.

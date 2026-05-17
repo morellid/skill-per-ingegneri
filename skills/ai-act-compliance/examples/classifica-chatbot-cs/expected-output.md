@@ -17,8 +17,9 @@
 - **Provider del sistema "AssistAI"** (lo sviluppa e mette in servizio sotto proprio nome/marchio - art. 25 par. 1 puo' applicarsi)
 - **Deployer del modello GPAI** GPT-4 (lo usa)
 
-**Date di applicazione rilevanti**:
-- art. 50 (trasparenza): **02/08/2026** - applicabile tra ~3 mesi dalla data di valutazione
+**Date di applicazione rilevanti** (post accordo provvisorio Digital Omnibus 7 maggio 2026):
+- art. 50 par. 1 (disclosure chatbot - obbligo provider): **02/08/2026**
+- art. 50 par. 2 (watermarking output sintetici a carico provider GPAI a monte): **02/12/2026** (rinviato di 4 mesi - Omnibus)
 - art. 4 (AI literacy): **02/02/2025** - gia' applicabile
 
 ## Motivazione

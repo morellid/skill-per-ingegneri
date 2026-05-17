@@ -33,12 +33,16 @@ Stato in skill-per-ingegneri:
 - (Italia) **AGID** - linee guida AI per PA, quando emergeranno
 - (Italia) **Garante** - posizioni su scoring, biometrici, AI nel lavoro
 
-## Calendario di applicazione
+## Calendario di applicazione (post Digital Omnibus - accordo provvisorio 7 maggio 2026, non ancora in GUUE)
 
-- 2 febbraio 2025: prohibitions art. 5, AI literacy art. 4 - **IN VIGORE**
+- 2 febbraio 2025: prohibitions art. 5 lett. a-h, AI literacy art. 4 - **IN VIGORE**
 - 2 agosto 2025: GPAI obligations cap. V, governance, sanzioni - **IN VIGORE**
-- 2 agosto 2026: gran parte degli obblighi (high-risk Annex III, Art. 50 transparency)
-- 2 agosto 2027: high-risk Annex I products
+- 2 agosto 2026: obblighi trasparenza art. 50 par. 1/3/4/4bis
+- **2 dicembre 2026**: watermarking art. 50 par. 2 (output sintetici machine-readable) + nuovo divieto Omnibus per CSAM/nudifier/deepfake sessuali non consensuali
+- **2 dicembre 2027**: high-risk Annex III + FRIA art. 27 (era 2 agosto 2026, rinvio Omnibus)
+- **2 agosto 2028**: high-risk Annex I products (era 2 agosto 2027, rinvio Omnibus)
+
+> Le date Omnibus sono subordinate a endorsement formale, revisione legale-linguistica e pubblicazione in GUUE. Riconfermare alla pubblicazione finale.
 
 ## Convenzioni specifiche (se la skill viene completata)
 

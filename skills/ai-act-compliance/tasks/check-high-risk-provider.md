@@ -201,7 +201,7 @@ Conformita' a tutta la Sezione 2 + responsabilita' attribuibili al provider.
 
 ## Roadmap di compliance suggerita
 
-### Fase 1 (entro 2 agosto 2026 per Allegato III)
+### Fase 1 (entro **2 dicembre 2027** per Allegato III, era 2 agosto 2026 - rinvio Digital Omnibus provvisorio; per Allegato I entro **2 agosto 2028**, era 2 agosto 2027)
 - Documentazione tecnica art. 11 + Allegato IV
 - Sistema gestione rischi art. 9
 - QMS art. 17
