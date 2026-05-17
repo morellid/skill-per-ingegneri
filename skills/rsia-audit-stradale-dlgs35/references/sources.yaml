@@ -1,0 +1,77 @@
+schema_version: 1
+skill: rsia-audit-stradale-dlgs35
+last_verified: 2026-05-15
+
+# Workflow obbligato:
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path (committato nella skill, transcrizione fedele)
+#   4. USARE il MD per scrivere la skill
+
+sources:
+  - id: dlgs-35-2011
+    title: "D.Lgs. 15 marzo 2011, n. 35 - Attuazione della direttiva 2008/96/CE sulla gestione della sicurezza delle infrastrutture stradali"
+    type: decreto
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-12/Attuazione%20della%20direttiva%202008_96_CE%20sulla%20gestione%20della%20sicurezza%20delle%20infrastrutture%20stradali%20%28G.U.%20n.%2081%20del%2008.04.2011%29.pdf
+    accessed: 2026-05-15
+    sha256: 1f8b66d3c2ff5d2dfeb54df09bdde5c02b7d97b65c30a0db94d38b7caaee72fd
+    license: public-domain
+    binary_path: not_in_repo/dlgs-35-2011.pdf
+    md_path: references/fonti/dlgs-35-2011.md
+    excerpt_path: references/estratti/dlgs-35-2011.md
+    notes: |
+      Testo originale del decreto come pubblicato in G.U. n. 81 del 08.04.2011.
+      Reso disponibile dal Ministero delle Infrastrutture (mit.gov.it).
+      12 pagine A4. NOTA: questo testo NON include le modifiche del D.Lgs 213/2021.
+
+  - id: dlgs-213-2021
+    title: "D.Lgs. 15 novembre 2021, n. 213 - Attuazione della direttiva (UE) 2019/1936 che modifica la direttiva 2008/96/CE sulla gestione della sicurezza delle infrastrutture stradali"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2021/12/16/298/sg/pdf
+    accessed: 2026-05-15
+    sha256: 29add9f98e6669b3c439cdb90f8740e7edde80213c274fc2c285bca647b06efc
+    license: public-domain
+    binary_path: not_in_repo/dlgs-213-2021.pdf
+    md_path: references/fonti/dlgs-213-2021.md
+    excerpt_path: references/estratti/dlgs-213-2021.md
+    notes: |
+      Decreto che recepisce la Direttiva (UE) 2019/1936 e modifica il D.Lgs 35/2011.
+      Estende il campo di applicazione oltre la rete TEN-T (autostrade + strade
+      principali extraurbane) e introduce la valutazione di sicurezza a livello
+      di rete (Network Safety Assessment).
+      Pubblicato in G.U. Serie Generale n. 298 del 16.12.2021. Il PDF scaricato
+      contiene l'intera Gazzetta (172 pagine); il decreto si trova all'interno.
+
+  - id: dir-2008-96-ce
+    title: "Direttiva 2008/96/CE del Parlamento europeo e del Consiglio del 19 novembre 2008 sulla gestione della sicurezza delle infrastrutture stradali (testo italiano pubblicato da MIT)"
+    type: altro
+    url: https://www.mit.gov.it/nfsmitgov/files/media/normativa/2017-12/Direttiva%202008_96_CE%20del%20Parlamento%20europeo%20e%20del%20Consiglio%20del%2019%20novembre%202008%20sulla%20gestione%20della%20sicurezza%20delle%20infrastrutture%20stradali.pdf
+    accessed: 2026-05-15
+    sha256: 7a5b6f3e6f58ed7db3c8fd30416e0349dc5276dce14217c27f132a51b06d634e
+    license: public-domain
+    binary_path: not_in_repo/dir-2008-96-ce.pdf
+    md_path: references/fonti/dir-2008-96-ce.md
+    excerpt_path: references/estratti/dir-2008-96-ce.md
+    notes: |
+      Direttiva quadro UE recepita in Italia con D.Lgs 35/2011. Testo italiano
+      reso disponibile dal Ministero delle Infrastrutture (mit.gov.it).
+      Definisce le quattro procedure principali: valutazione di impatto sulla
+      sicurezza stradale (RSIA), controllo della sicurezza stradale (RSA),
+      gestione della sicurezza della rete in esercizio, ispezione di sicurezza.
+
+  - id: dir-2019-1936-ue
+    title: "Direttiva (UE) 2019/1936 del Parlamento europeo e del Consiglio del 23 ottobre 2019 che modifica la direttiva 2008/96/CE sulla gestione della sicurezza delle infrastrutture stradali"
+    type: altro
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32019L1936
+    accessed: 2026-05-15
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: null
+    excerpt_path: null
+    notes: |
+      Riferimento strutturale (binary_path null): la direttiva non e' scaricabile
+      automaticamente dallo script perche' EUR-Lex restituisce contenuto vuoto
+      ai client urllib. Il contenuto sostanziale viene applicato attraverso il
+      D.Lgs 213/2021 (testo dlgs-213-2021 gia' presente). La citazione strutturale
+      e' tracciabile via URN CELEX 32019L1936.
