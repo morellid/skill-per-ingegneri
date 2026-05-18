@@ -1,7 +1,7 @@
 # Fonte: GSE - Allegato 1 Regole Operative CACER
 
 - ID fonte: `gse-regole-operative-cacer`
-- URL: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf
+- URL: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/Allegato%201%20Regole%20Operative%20CACER.pdf
 - SHA256 binario consultato: `bb0efe22316e81d48f0df40dde3ac1afcce2cb5ff1953b7820df9e55562d8641`
 - Data di lettura: 2026-05-11
 - Sezioni lette: Parte I par. 1.1.4 e requisiti impianti; Parte II par. 2.2.1-2.2.3; Parte III requisiti PNRR

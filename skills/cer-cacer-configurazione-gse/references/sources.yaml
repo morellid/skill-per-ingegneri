@@ -1,17 +1,25 @@
 schema_version: 1
 skill: cer-cacer-configurazione-gse
-last_verified: 2026-05-11
+last_verified: 2026-05-18
 
 sources:
   - id: gse-regole-operative-cacer
     title: "GSE - Allegato 1 Regole Operative CACER"
     type: linee-guida
-    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf
-    accessed: 2026-05-11
+    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/Allegato%201%20Regole%20Operative%20CACER.pdf
+    accessed: 2026-05-18
     sha256: bb0efe22316e81d48f0df40dde3ac1afcce2cb5ff1953b7820df9e55562d8641
     license: gse-public-no-redistribution
     binary_path: not_in_repo/gse-regole-operative-cacer.pdf
     md_path: references/fonti/gse-regole-operative-cacer.md
+    # gse.it (CDN Akamai) restituisce HTTP 403 ai runner GitHub Actions sia con
+    # UA bot sia con UA browser realistico + header completi: il blocco e' per
+    # range IP datacenter, verificato su 2026-05-18 (download da IP IT residenziale
+    # = 200 OK; runner CI Azure = 403 sistematico). L'hash dichiarato e' stato
+    # calcolato dall'agent sul PDF scaricato manualmente; il fetch live in CI
+    # e' deliberatamente saltato. Aggiornamento: l'agent dovra' riscaricare
+    # manualmente e ricalcolare SHA256 ad ogni nuova versione delle Regole Operative.
+    ci_fetch_blocked: "gse.it blocca IP datacenter GitHub Actions (Akamai)"
     excerpt_paths:
       - references/estratti/gse-regole-operative-cacer.md
       - references/estratti/dm-mase-414-2023.md
@@ -40,3 +48,25 @@ sources:
     md_path: references/fonti/gse-pnrr-cacer.md
     excerpt_paths:
       - references/estratti/dm-mase-414-2023.md
+
+  - id: gse-news-pnrr-facilities-concessione-cacer-20260512
+    title: "GSE Notizie - Primi atti di concessione PNRR Facilities CACER (12/05/2026) e contatore M.7 I.17 (8-9/05/2026)"
+    type: notizia-istituzionale
+    url: https://www.gse.it/servizi-per-te/news
+    accessed: 2026-05-18
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    md_path: references/fonti/gse-news-pnrr-facilities-concessione-cacer-20260512.md
+    excerpt_paths: []
+
+  - id: gse-pnrr-cer-5000-bando
+    title: "GSE - Pagina PNRR CER Comuni <5000 ab., Bando e Atti di Concessione"
+    type: portale-istituzionale
+    url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr/comunit%C3%A0-energetiche-5000abitanti
+    accessed: 2026-05-18
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    md_path: references/fonti/gse-pnrr-cer-5000-bando.md
+    excerpt_paths: []
