@@ -1,6 +1,6 @@
 schema_version: 1
 skill: cer-cacer-configurazione-gse
-last_verified: 2026-05-11
+last_verified: 2026-05-18
 
 sources:
   - id: gse-regole-operative-cacer
@@ -40,3 +40,25 @@ sources:
     md_path: references/fonti/gse-pnrr-cacer.md
     excerpt_paths:
       - references/estratti/dm-mase-414-2023.md
+
+  - id: gse-news-pnrr-facilities-concessione-cacer-20260512
+    title: "GSE Notizie - Primi atti di concessione PNRR Facilities CACER (12/05/2026) e contatore M.7 I.17 (8-9/05/2026)"
+    type: notizia-istituzionale
+    url: https://www.gse.it/servizi-per-te/news
+    accessed: 2026-05-18
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    md_path: references/fonti/gse-news-pnrr-facilities-concessione-cacer-20260512.md
+    excerpt_paths: []
+
+  - id: gse-pnrr-cer-5000-bando
+    title: "GSE - Pagina PNRR CER Comuni <5000 ab., Bando e Atti di Concessione"
+    type: portale-istituzionale
+    url: https://www.gse.it/servizi-per-te/attuazione-misure-pnrr/comunit%C3%A0-energetiche-5000abitanti
+    accessed: 2026-05-18
+    sha256: null
+    license: gse-public-no-redistribution
+    binary_path: null
+    md_path: references/fonti/gse-pnrr-cer-5000-bando.md
+    excerpt_paths: []
