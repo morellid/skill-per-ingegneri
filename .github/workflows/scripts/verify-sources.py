@@ -52,6 +52,14 @@ USER_AGENT = (
     "Mozilla/5.0 (compatible; skill-per-ingegneri-CI/1.0; "
     "+https://github.com/morellid/skill-per-ingegneri)"
 )
+# Alcuni CDN (es. Akamai davanti a gse.it) bloccano UA che dichiarano "bot"
+# anche per documenti pubblici scaricabili da browser. Su 401/403/429 cadiamo
+# su un UA browser realistico: il documento e' comunque pubblico e l'hash
+# dichiarato non cambia in funzione dello UA.
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+)
 TIMEOUT_SECONDS = 60
 OFFICIAL_HOST_SUFFIXES = (
     "acn.gov.it",
@@ -100,14 +108,29 @@ def load_sources(skill_dir: Path) -> dict | None:
         return yaml.safe_load(fh)
 
 
-def fetch(url: str, dest: Path) -> None:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def _do_fetch(url: str, dest: Path, user_agent: str) -> None:
+    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
     with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as resp, dest.open("wb") as out:
         while True:
             chunk = resp.read(65536)
             if not chunk:
                 break
             out.write(chunk)
+
+
+def fetch(url: str, dest: Path) -> None:
+    try:
+        _do_fetch(url, dest, USER_AGENT)
+    except urllib.error.HTTPError as exc:
+        if exc.code in (401, 403, 429):
+            print(
+                f"  [retry UA] {url} -> HTTP {exc.code} con UA bot, "
+                "riprovo con UA browser",
+                flush=True,
+            )
+            _do_fetch(url, dest, BROWSER_USER_AGENT)
+        else:
+            raise
 
 
 def sha256_of(path: Path) -> str:
