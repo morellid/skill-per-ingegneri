@@ -6,8 +6,8 @@ sources:
   - id: gse-regole-operative-cacer
     title: "GSE - Allegato 1 Regole Operative CACER"
     type: linee-guida
-    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/ALLEGATO%201%20Regole%20Operative%20CACER.pdf
-    accessed: 2026-05-11
+    url: https://www.gse.it/documenti_site/Documenti%20GSE/Servizi%20per%20te/AUTOCONSUMO/Gruppi%20di%20autoconsumatori%20e%20comunita%20di%20energia%20rinnovabile/Regole%20e%20procedure/Allegato%201%20Regole%20Operative%20CACER.pdf
+    accessed: 2026-05-18
     sha256: bb0efe22316e81d48f0df40dde3ac1afcce2cb5ff1953b7820df9e55562d8641
     license: gse-public-no-redistribution
     binary_path: not_in_repo/gse-regole-operative-cacer.pdf
