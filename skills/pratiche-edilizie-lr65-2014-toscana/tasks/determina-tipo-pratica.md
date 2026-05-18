@@ -16,16 +16,18 @@ Produrre un inquadramento preliminare e prudente tra edilizia libera, CILA, SCIA
 
 - `references/estratti/lr-65-2014-titoli-abilitativi.md`
 - `references/estratti/dpr-380-2001-artt-zona-sismica.md`
+- `references/estratti/dl-66-2026-piano-casa-erp.md`
 
 ## Procedura
 
-1. Classifica l'intervento secondo l'art. 3 DPR 380/2001.
-2. Se emerge sola manutenzione ordinaria o opera minore tipizzata, indica edilizia libera come ipotesi da confermare sul regolamento comunale.
-3. Se l'intervento non interessa parti strutturali e non ricade negli artt. 6, 10 o 22 DPR 380/2001, indica la CILA come ipotesi coerente con l'art. 6-bis.
-4. Se l'intervento interessa parti strutturali ma non appare riconducibile a nuova costruzione o ristrutturazione maggiore, orienta verso SCIA richiamando art. 22 DPR 380/2001 e art. 135 LR 65/2014.
-5. Se l'intervento e' nuova costruzione o ristrutturazione piu' incisiva, orienta verso permesso di costruire richiamando art. 10 DPR 380/2001 e art. 134 LR 65/2014.
-6. Se ci sono opere strutturali, aggiungi sempre: "verificare adempimenti sismici ai sensi degli artt. 93-94 DPR 380/2001 e del regolamento regionale 1/R/2022".
-7. Se il comune non e' noto o la zona sismica non e' confermata, non inventarla: rinvia alla pagina regionale sulla classificazione sismica.
+1. Verifica preliminare DL 66/2026: se l'intervento e' demolizione/ricostruzione in contesto ERP (edilizia residenziale pubblica o sociale, soggetto attuatore pubblico o istituzionale), segnala che il DL 66/2026 art. 8 co. 1 prevede la SCIA in luogo del PdC e che si applica la conferenza di servizi semplificata ex art. 8 co. 2. Rinvia all'estratto `dl-66-2026-piano-casa-erp.md` per dettagli.
+2. Classifica l'intervento secondo l'art. 3 DPR 380/2001.
+3. Se emerge sola manutenzione ordinaria o opera minore tipizzata, indica edilizia libera come ipotesi da confermare sul regolamento comunale.
+4. Se l'intervento non interessa parti strutturali e non ricade negli artt. 6, 10 o 22 DPR 380/2001, indica la CILA come ipotesi coerente con l'art. 6-bis.
+5. Se l'intervento interessa parti strutturali ma non appare riconducibile a nuova costruzione o ristrutturazione maggiore, orienta verso SCIA richiamando art. 22 DPR 380/2001 e art. 135 LR 65/2014.
+6. Se l'intervento e' nuova costruzione o ristrutturazione piu' incisiva (edilizia privata ordinaria), orienta verso permesso di costruire richiamando art. 10 DPR 380/2001 e art. 134 LR 65/2014.
+7. Se ci sono opere strutturali, aggiungi sempre: "verificare adempimenti sismici ai sensi degli artt. 93-94 DPR 380/2001 e del regolamento regionale 1/R/2022".
+8. Se il comune non e' noto o la zona sismica non e' confermata, non inventarla: rinvia alla pagina regionale sulla classificazione sismica.
 
 ## Formato output
 
