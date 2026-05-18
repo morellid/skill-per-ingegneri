@@ -28,8 +28,13 @@ Variabili minime da raccogliere all'inizio (chiedere all'utente se non fornite):
 
 4. **Soggezione a VIA / VAS / verifica di assoggettabilita'**: si (VIA dovuta), no, in screening (verifica di assoggettabilita' in corso o conclusa), dubbio. La lett. d (SIA) si attiva solo se l'opera e' effettivamente soggetta a VIA: lo screening con esito "no VIA" non attiva lett. d. La lett. s (monitoraggio ambientale) si attiva solo per opere soggette a VIA o quando la SA lo richieda espressamente.
 
-5. **BIM applicabile** (art. 43 D.Lgs. 36/2023): si / no.
-   - Soglie indicative (DM 312/2021 e successivi aggiornamenti): obbligo per opere sopra soglie variabili nel tempo. Se l'utente non sa, chiedere se la stazione appaltante ha incluso il BIM nel DIP.
+5. **BIM applicabile** (art. 43 D.Lgs. 36/2023 come modificato da D.Lgs. 209/2024): si / no / da-valutare.
+   - **Obbligo BIM dal 1 gennaio 2025**: stima costo lavori > 2 milioni di euro per nuova costruzione e interventi su esistente (soglia innalzata da 1M a 2M dal Correttivo); per beni culturali (art. 10 c.1 D.Lgs. 42/2004): alla soglia europea dell'art. 14 c.1 lett. a D.Lgs. 36/2023.
+   - **Esclusi dall'obbligo**: manutenzione ordinaria e straordinaria, salvo che l'opera interessata sia stata precedentemente eseguita con GID (art. 43 c.1 ultimo periodo).
+   - **Regime transitorio** (art. 225-bis c.2 Correttivo): per opere sopra soglia europea, l'obbligo non si applica se alla data di entrata in vigore del Correttivo era gia' stato redatto il DOCFAP. Per opere >2M fino a soglia europea: escluse se il bando era pubblicato o l'incarico di progettazione affidato prima del 31/12/2024.
+   - **Per gare SIA sopra soglia europea** (Bando Tipo n. 2/2026 ANAC, Delibera 153/2026, in vigore dal 30/05/2026): il BIM e' clausola strutturale del bando; il compenso e' maggiorato del 10% (Allegato I.13, art. 2 c.5); i concorrenti devono presentare l'Offerta di Gestione Informativa; il PFTE deve essere prodotto in ambiente BIM con i relativi elaborati informativi.
+   - **BIM facoltativo** (art. 43 c.2): la SA puo' prevedere punteggio premiale per l'adozione volontaria, subordinata alla preventiva adozione delle misure dell'Allegato I.9.
+   - Se l'utente non sa, chiedere: "Il DIP cita la gestione informativa digitale o l'art. 43 del Codice? L'importo stimato dei lavori supera 2 milioni di euro?"
 
 6. **Modalita' di affidamento prevista**:
    - PFTE come base di gara (appalto integrato) -> elaborati aggiuntivi (art. 21 Allegato I.7)
@@ -43,6 +48,10 @@ Variabili minime da raccogliere all'inizio (chiedere all'utente se non fornite):
 
 8. **Verifica preventiva interesse archeologico applicabile**: si / no / da valutare.
 
+9. **Gara SIA sopra soglia europea** (rilevante per clausola AI e BIM): si / no.
+   - Se si e il bando e' pubblicato dopo il 30/05/2026 (data entrata in vigore Bando Tipo n. 2/2026): il bando deve contenere la clausola AI obbligatoria ex art. 13 L. 132/2025 (par. 15.1 Bando Tipo n. 2/2026), che impone ai concorrenti di dichiarare: (a) se nella predisposizione dell'offerta tecnica si sono avvalsi di sistemi AI, specificando la tipologia e garantendo la prevalenza del lavoro intellettuale e il rispetto del Regolamento UE 2024/1689 e della L. 132/2025; (b) se in caso di aggiudicazione si avvarranno di sistemi AI per l'esecuzione, con le medesime garanzie.
+   - Questa clausola e' strutturalmente diversa dalla conformita' degli elaborati del PFTE: attiene al procedimento di gara, non al contenuto tecnico del progetto.
+
 Se l'utente fornisce solo input parziali, **procedi con la checklist** generando un albero a piu' rami che evidenzi i punti dipendenti dalle variabili mancanti, e segnala in chiaro quali voci possono attivarsi/disattivarsi.
 
 ## Fonti normative
@@ -51,6 +60,8 @@ Leggere prima di procedere:
 - `references/estratti/dlgs-36-art-41.md` - testo strutturato art. 41
 - `references/estratti/allegato-i7-pfte.md` - struttura completa Allegato I.7 + elenco art. 6 co. 7
 - `references/estratti/dlgs-209-2024-modifiche.md` - modifiche del correttivo
+- `references/estratti/mit-gid-2026-bim-pfte.md` - obbligo BIM art. 43, soglie, regime transitorio, elaborati BIM nel PFTE (MIT LG GID 2026)
+- `references/estratti/anac-bando-tipo-n2-2026-bim-ai.md` - clausole BIM e AI per gare SIA sopra soglia (Bando Tipo n. 2/2026)
 
 ## Procedura
 
@@ -93,14 +104,14 @@ Tabella di riferimento (vedi `allegato-i7-pfte.md` per il dettaglio):
 | d | Studio di impatto ambientale (SIA) | 10 | Solo se opera soggetta a VIA (lo screening con esito negativo NON attiva la lett. d) |
 | e | Relazione di sostenibilita' dell'opera | 11 | Sempre |
 | f | Rilievi plano-altimetrici e studio di consistenza | (in art. 6) | Sempre |
-| g | Modelli informativi + relazione specialistica modellazione | 13, 13-bis | Se BIM (art. 43) |
+| g | Modelli informativi + relazione specialistica sulla modellazione informativa | 13, 13-bis | Se BIM obbligatorio o facoltativo adottato (art. 43 D.Lgs. 36/2023). Per PFTE in ambiente BIM: devono comprendere i modelli informativi e la relazione specialistica sulla modellazione informativa (MIT LG GID 2026, Schema 2 - fase redazione PFTE, par. 3, pag. 48-52; All. I.7 artt. 13, 13-bis) |
 | h | Elaborati grafici delle opere | 12 | Sempre |
 | i | Computo estimativo dell'opera (calcolo sommario) | 16 | Sempre |
 | l | Quadro economico di progetto | 5, 17 | Sempre |
 | m | Piano economico-finanziario di massima | (in art. 6) | Solo PPP / concessione / project financing |
 | n | Cronoprogramma | 18 | Sempre |
 | o | Piano di sicurezza e coordinamento (PSC) | 15 | Sempre quando applicabili presupposti D.Lgs. 81/2008 |
-| p | Capitolato informativo | 13-ter | Solo se appalto integrato + BIM |
+| p | Capitolato informativo | 13-ter | Solo se appalto integrato + BIM (art. 6 co. 7 lett. p come modificato dal Correttivo). Per gare SIA sopra soglia con Bando Tipo n. 2/2026: il Capitolato Informativo e' redatto dal BIM Coordinator della SA prima della gara (MIT LG GID 2026, par. 2.4, pag. 23); i concorrenti rispondono con l'Offerta di Gestione Informativa (OGI) |
 | q | Piano preliminare di manutenzione | 19 | Sempre |
 | r | Piano preliminare monitoraggio geotecnico e strutturale | (in art. 8) | Sempre |
 | s | Piano preliminare monitoraggio ambientale | (in art. 8) | Solo per opere soggette a VIA o quando la stazione appaltante lo richieda |
@@ -195,7 +206,8 @@ Produrre il report nel formato:
 - Adeguatezza tecnica del contenuto degli elaborati (giudizio del progettista)
 - Conformita' a norme di settore non incluse nel Codice (NTC, antincendio, accessibilita', acustica, energia)
 - Coerenza con il DIP redatto dal RUP (la skill non legge il DIP)
-- Soglie di obbligo BIM aggiornate al momento del bando
+- Verifica del regime transitorio BIM: dipende dalla data di redazione del DOCFAP o dalla data di pubblicazione del bando / affidamento incarico (art. 225-bis c.2 Correttivo; MIT LG GID 2026, par. 1.2.4)
+- Clausola dichiarazione uso AI (art. 13 L. 132/2025): attiene al procedimento di gara SIA, non al contenuto del PFTE; verificare con bandi-tipo-anac-checker o con il legale della SA
 
 ## 4. Avvertenze e rinvio professionale
 
@@ -215,7 +227,8 @@ Se l'utente dichiara un importo molto vicino alla soglia europea per i lavori (r
 ### BIM non chiaro
 Se l'utente non sa se il BIM e' applicabile, chiedere:
 - "Il DIP cita la gestione informativa digitale o l'art. 43 del Codice?"
-- "L'opera supera le soglie di obbligo BIM previste dai DM attuativi vigenti?"
+- "La stima del costo dei lavori supera 2 milioni di euro?"
+- "L'opera beneficia del regime transitorio (bando pubblicato o progettazione affidata prima del 31/12/2024)?"
 Se rimane incerto, marcare gli elaborati BIM (g, p) come `Da-valutare con RUP` invece di forzare una scelta.
 
 ### Mix manutenzione + adeguamento

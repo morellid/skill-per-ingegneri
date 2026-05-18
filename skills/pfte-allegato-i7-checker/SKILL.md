@@ -20,8 +20,9 @@ Usare quando un ingegnere civile, un RUP o una stazione appaltante chiede di:
 - Valutazione dell'**adeguatezza tecnica** dei contenuti (e' giudizio del progettista firmatario).
 - Verifica della progettazione ai sensi dell'art. 42 del Codice (attivita' del verificatore qualificato, non della skill).
 - Pareri in materia di gara, esclusione, ricorsi TAR (servono skill PR.2 / PR.3 dedicate, non ancora rilasciate).
-- Conformita' con bandi-tipo ANAC (oggetto della futura skill PR.2).
 - Stima del corrispettivo professionale (Allegato I.13): la skill richiama la regola, non calcola.
+
+**Nota BIM e Bando Tipo n. 2/2026**: per le gare di servizi di ingegneria e architettura (SIA) di importo pari o superiore alla soglia europea, il Bando Tipo n. 2/2026 ANAC (Delibera 153/2026, in vigore dal 30 maggio 2026) codifica l'obbligo BIM ex art. 43 D.Lgs. 36/2023 come clausola strutturale del bando (> 2 milioni di euro, o alla soglia art. 14 c.1 lett. a per beni culturali). La skill gestisce il check sugli elaborati BIM del PFTE (voci g e p dell'art. 6 co. 7 Allegato I.7); per la conformita' dell'intero set documentale di gara con il Bando Tipo n. 2/2026 usare la skill `bandi-tipo-anac-checker`.
 
 ## Avvertenza
 
@@ -52,13 +53,17 @@ Se la richiesta non e' chiara, chiedi all'utente quale delle tre sotto-attivita'
 
 Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fonti primarie:
 - D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici, art. 41 e Allegato I.7
-- D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo (modifiche all'art. 41 e all'Allegato I.7)
+- D.Lgs. 31 dicembre 2024 n. 209 - Decreto correttivo (modifiche all'art. 41, Allegato I.7, art. 43 BIM, art. 225-bis regime transitorio)
+- ANAC Bando Tipo n. 2/2026 (Delibera 153/2026, GU n. 111 del 15/05/2026, in vigore dal 30/05/2026) - codificazione obbligo BIM e clausola AI per SIA sopra soglia
+- MIT Linee Guida GID 2026 (20 febbraio 2026) - attuazione art. 43 BIM per stazioni appaltanti, processo PFTE-GID Schema 2, soglie e regime transitorio
 
 Estratti testuali in [`references/estratti/`](references/estratti/):
 - [`dlgs-36-art-41.md`](references/estratti/dlgs-36-art-41.md) - testo strutturato art. 41 (commi 1-15-quater)
 - [`allegato-i7-pfte.md`](references/estratti/allegato-i7-pfte.md) - struttura Allegato I.7 + elenco elaborati PFTE (art. 6 co. 7)
 - [`allegato-i7-esecutivo.md`](references/estratti/allegato-i7-esecutivo.md) - elenco elaborati progetto esecutivo (art. 22 co. 4)
 - [`dlgs-209-2024-modifiche.md`](references/estratti/dlgs-209-2024-modifiche.md) - sintesi modifiche del correttivo
+- [`anac-bando-tipo-n2-2026-bim-ai.md`](references/estratti/anac-bando-tipo-n2-2026-bim-ai.md) - clausole BIM e AI del Bando Tipo n. 2/2026 per gare SIA sopra soglia
+- [`mit-gid-2026-bim-pfte.md`](references/estratti/mit-gid-2026-bim-pfte.md) - MIT Linee Guida GID: obbligo BIM, soglie, regime transitorio, elaborati BIM nel PFTE
 
 ## Limiti
 
@@ -67,7 +72,7 @@ Questa skill NON fa:
 - Non valuta la **adeguatezza tecnica** dei contenuti dei singoli elaborati (qualita' delle scelte progettuali, accuratezza dei calcoli, idoneita' delle soluzioni proposte).
 - Non sostituisce il giudizio del **RUP** sulla congruita' del PFTE rispetto al DIP da lui redatto.
 - Non valuta la **conformita' con norme di settore** (NTC 2018, prevenzione incendi, accessibilita', acustica, energia) - quelle sono oggetto di altre skill o del giudizio del progettista.
-- Non produce **bandi di gara** o documentazione di gara (futura skill PR.2 - bandi-tipo ANAC).
+- Non produce **bandi di gara** o documentazione di gara (usare `bandi-tipo-anac-checker`).
 - Non valuta la **legittimita' delle scelte di affidamento** (procedura aperta, ristretta, negoziata, soglie).
 - Non integra automaticamente le **norme regionali** o speciali (es. opere di interesse strategico, beni culturali ex D.Lgs. 42/2004 - rinvio a normativa specifica).
 - Non aggiorna automaticamente i **prezzari regionali** o le **tabelle del Ministero del Lavoro** per i costi di manodopera (art. 41 co. 13).

@@ -40,6 +40,8 @@ Leggere prima di procedere:
 - `references/estratti/dlgs-36-art-41.md`
 - `references/estratti/allegato-i7-pfte.md`
 - `references/estratti/dlgs-209-2024-modifiche.md`
+- `references/estratti/mit-gid-2026-bim-pfte.md` - elaborati BIM nel PFTE (Schema 2), soglie, regime transitorio
+- `references/estratti/anac-bando-tipo-n2-2026-bim-ai.md` - clausole BIM e AI per gare SIA sopra soglia
 
 ## Procedura
 
@@ -58,7 +60,7 @@ Mappare il contenuto fornito ai 18 elaborati dell'art. 6 co. 7 (lett. a-t, esclu
 | d) Studio impatto ambientale | "SIA", "Studio impatto ambientale", "Quadro di riferimento ambientale" |
 | e) Relazione di sostenibilita' | "Relazione di sostenibilita'", "Sostenibilita' dell'opera" |
 | f) Rilievi plano-altimetrici | "Rilievo topografico", "Rilievi", "Stato di consistenza", "Plani-altimetria" |
-| g) Modelli informativi BIM | "Capitolato informativo", "Relazione BIM", "Modelli IFC", "BEP", "PIM" |
+| g) Modelli informativi + relazione specialistica sulla modellazione | "Modelli informativi", "Modelli IFC", "Relazione specialistica sulla modellazione informativa", "Relazione BIM", "BEP", "PIM" - Per gare SIA in BIM: verificare che siano presenti sia i modelli (IFC) sia la relazione specialistica sulla modellazione, in accordo con All. I.7 artt. 13 e 13-bis e MIT LG GID 2026 Schema 2 |
 | h) Elaborati grafici | "Tavole", "Elaborati grafici", "Planimetrie", "Sezioni", "Prospetti" |
 | i) Computo sommario | "Computo estimativo", "Stima sommaria", "Calcolo sommario" |
 | l) Quadro economico | "Quadro economico", "QE" |
@@ -174,7 +176,13 @@ NON segnalare come "assenti" gli elaborati esclusi dal regime (relazione di sost
 Aspettarsi un PFTE piu' ampio: relazioni urbanistiche e ambientali piu' sviluppate, piano espropri tipicamente presente, sostituzione del progetto preliminare e definitivo per art. 41 co. 7. Segnalare se mancano elementi tipici (analisi vincoli, conformita' urbanistica).
 
 ### Appalto integrato
-Verificare presenza obbligatoria di disciplinare descrittivo e prestazionale (art. 14), capitolato informativo (art. 13-ter) se BIM, e PSC sviluppato per consentire la quantificazione costi sicurezza non ribassabili.
+Verificare presenza obbligatoria di capitolato informativo (art. 13-ter, lett. p art. 6 co. 7) se BIM, e PSC sviluppato per consentire la quantificazione costi sicurezza non ribassabili.
+
+### Gara SIA sopra soglia europea con Bando Tipo n. 2/2026 (in vigore dal 30/05/2026)
+Se la verifica riguarda elaborati prodotti nell'ambito di una gara SIA sopra soglia, segnalare che:
+- La verifica della **completezza documentale del PFTE** (voci g e p) deve tenere conto del Capitolato Informativo emesso dalla SA: i modelli informativi e la relazione specialistica sulla modellazione devono essere redatti in conformita' al Capitolato Informativo (All. I.7 art. 40 c.2 lett. i-bis e i-ter, come citato in MIT LG GID 2026, par. 3, pag. 52).
+- La clausola di dichiarazione uso AI (art. 13 L. 132/2025, par. 15.1 Bando Tipo n. 2/2026) attiene all'offerta di gara del concorrente, non agli elaborati tecnici del PFTE: non e' verificabile dall'analisi del set documentale del progetto.
+- Per i formati dei modelli informativi: devono essere in formato IFC (UNI EN ISO 16739-1) accompagnati da BCF per la gestione delle interferenze; PDF/A per la documentazione (MIT LG GID 2026, par. 2.9.3, pag. 44).
 
 ### Carenza di elaborati per opere sopra soglia europea
 Per opere di importo pari o superiore alla soglia europea per i lavori (rinvio dinamico ad art. 14 D.Lgs. 36/2023), segnalare se manca il DOCFAP (Allegato I.7 art. 2 co. 5): il PFTE post-DOCFAP e' presunto allineato alle alternative valutate, e l'assenza del DOCFAP rende difficoltosa la verifica di coerenza. Per opere fra 150.001 EUR e la soglia europea, il DOCFAP e' facoltativo (co. 6): la sua assenza non e' un problema, ma se la SA lo aveva incluso nel DIP, segnalarne la mancanza.
