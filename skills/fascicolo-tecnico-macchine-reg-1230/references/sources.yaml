@@ -1,0 +1,126 @@
+schema_version: 1
+skill: fascicolo-tecnico-macchine-reg-1230
+last_verified: 2026-05-18
+
+# Fonte unica autoritativa: Regolamento (UE) 2023/1230 del Parlamento europeo
+# e del Consiglio del 14 giugno 2023 relativo alle macchine e che abroga la
+# direttiva 2006/42/CE del Parlamento europeo e del Consiglio e la direttiva
+# 73/361/CEE del Consiglio. Pubblicato nella Gazzetta ufficiale dell'Unione
+# europea L 165 del 29 giugno 2023.
+#
+# Trattandosi di un Regolamento UE, il testo e' direttamente applicabile in
+# Italia senza necessita' di recepimento (art. 288 TFUE). La data generale
+# di applicazione del regolamento e' il 14 gennaio 2027 (art. 54 secondo
+# comma), con eccezioni anticipate per gli articoli relativi alla notifica
+# degli organismi (art. 26-42, dal 14/01/2024), per le sanzioni (art. 50
+# par. 1, dal 14/10/2023), per le disposizioni transitorie e procedurali
+# (art. 6 par. 7, 48 e 52, dal 13/07/2023), e per gli atti delegati e di
+# esecuzione preparatori (art. 6 par. 2-6, 8, 11; art. 47; art. 53 par. 3,
+# dal 14/07/2024). La direttiva 2006/42/CE rimane in vigore fino al
+# 14 gennaio 2027 (art. 51 par. 2).
+#
+# Le norme armonizzate citate dal regolamento (es. UNI EN ISO 12100, UNI
+# EN ISO 13849-1, UNI EN 60204-1) sono norme tecniche a pagamento UNI o
+# CEN/CEI e NON sono incluse come fonti scaricate: la skill ne usa solo
+# rinvii strutturali (numero, titolo, anno), senza riprodurne il testo. La
+# lista delle norme che conferiscono presunzione di conformita' al
+# regolamento (art. 20) e' pubblicata dalla Commissione tramite decisioni
+# di esecuzione successive che evolvono nel tempo; non viene catalogata
+# qui perche' la skill non ne riproduce il contenuto.
+#
+# Workflow obbligato (vedi AGENTS.md root, Regola zero):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path (committato nella skill, transcrizione fedele)
+#   4. USARE il MD per scrivere la skill
+
+sources:
+  - id: reg-ue-2023-1230-macchine
+    title: "Regolamento (UE) 2023/1230 del Parlamento europeo e del Consiglio del 14 giugno 2023 relativo alle macchine e che abroga la direttiva 2006/42/CE del Parlamento europeo e del Consiglio e la direttiva 73/361/CEE del Consiglio"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32023R1230
+    accessed: 2026-05-18
+    sha256: c0675483606c8cc65ec4829129f21859fad5f28d9ceb6ed8f938b0c79a714eec
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2023-1230-macchine.pdf
+    md_path: references/fonti/reg-ue-2023-1230-macchine.md
+    excerpt_path: references/estratti/reg-ue-2023-1230-fascicolo-tecnico.md
+    notes: |
+      Il PDF scaricato e' il testo italiano del regolamento dal portale
+      Eur-Lex (CELEX 32023R1230), pubblicato sulla Gazzetta ufficiale
+      dell'Unione europea L 165 del 29 giugno 2023, pagine 1-102 della
+      stessa GU.
+
+      Articoli rilevanti per la skill (titoli letterali del regolamento):
+        - art. 1 (Oggetto)
+        - art. 2 (Ambito di applicazione)
+        - art. 3 (Definizioni - definisce "macchina", "prodotto correlato",
+          "quasi-macchina", "componente di sicurezza", "fabbricante",
+          "immissione sul mercato", "messa in servizio", ecc.)
+        - art. 6 (Categorie di macchine e prodotti correlati elencati
+          nell'allegato I soggetti a procedure specifiche di valutazione
+          della conformita')
+        - art. 7 (Componenti di sicurezza)
+        - art. 8 (Requisiti essenziali di sicurezza e di tutela della
+          salute dei prodotti)
+        - art. 10 (Obblighi dei fabbricanti di macchine e di prodotti
+          correlati - include redazione documentazione tecnica All. IV,
+          procedura valutazione conformita' art. 25, conservazione 10 anni)
+        - art. 11 (Obblighi dei fabbricanti di quasi-macchine)
+        - art. 20 (Presunzione di conformita' tramite norme armonizzate)
+        - art. 21 (Dichiarazione di conformita' UE per le macchine e i
+          prodotti correlati)
+        - art. 22 (Dichiarazione di incorporazione UE di quasi-macchine)
+        - art. 23 (Principi generali della marcatura CE - rinvio
+          Reg. CE 765/2008 art. 30)
+        - art. 24 (Norme per l'apposizione della marcatura CE)
+        - art. 25 (Procedure di valutazione della conformita' per le
+          macchine e i prodotti correlati - cuore della skill)
+        - art. 51 (Abrogazioni - dir. 73/361/CEE subito, dir. 2006/42/CE
+          dal 14 gennaio 2027)
+        - art. 52 (Disposizioni transitorie - prodotti immessi sul mercato
+          prima del 14/01/2027 secondo dir. 2006/42/CE possono continuare
+          a circolare; certificati esame CE del tipo restano validi fino
+          a scadenza)
+        - art. 54 (Entrata in vigore e applicazione - applicazione generale
+          dal 14 gennaio 2027 con eccezioni anticipate elencate)
+
+      Allegati rilevanti per la skill (titoli letterali):
+        - Allegato I (Categorie di macchine o prodotti correlati per le
+          quali va applicata una delle procedure di cui all'articolo 25
+          paragrafi 2 e 3 - PARTE A: 6 categorie incluse macchine/
+          componenti con apprendimento automatico per funzioni di
+          sicurezza; PARTE B: 19 categorie tipiche del settore legno,
+          metalli, plastica/gomma, lavori sotterranei, sollevamento
+          persone, blocchi logici di sicurezza, ROPS, FOPS - elenco
+          completo nel testo di All. I parte B)
+        - Allegato III (Requisiti essenziali di sicurezza e di tutela
+          della salute relativi alla progettazione e alla costruzione di
+          macchine o prodotti correlati - i RES)
+        - Allegato IV (Documentazione tecnica - PARTE A: documentazione
+          tecnica per macchine e prodotti correlati; PARTE B: per
+          quasi-macchine)
+        - Allegato V (Dichiarazione di conformita' UE e dichiarazione di
+          incorporazione UE - PARTE A: struttura tipo conformita' UE;
+          PARTE B: struttura tipo incorporazione UE per quasi-macchine)
+        - Allegato VI (Controllo interno della produzione - Modulo A)
+        - Allegato VII (Esame UE del tipo - Modulo B)
+        - Allegato VIII (Conformita' al tipo basata sul controllo interno
+          della produzione - Modulo C)
+        - Allegato IX (Conformita' basata sulla garanzia qualita' totale
+          - Modulo H)
+        - Allegato X (Conformita' basata sulla verifica dell'unita' -
+          Modulo G)
+        - Allegato XI (Istruzioni per l'assemblaggio delle quasi-macchine)
+
+      Allegati NON rilevanti per la skill (e quindi non transcritti):
+        - Allegato II (Elenco indicativo di componenti di sicurezza -
+          elenco illustrativo non vincolante)
+        - Allegato XII (Tavola di concordanza con la direttiva 2006/42/CE
+          - utilita' di mapping articolo-per-articolo della disciplina
+          previgente)
+
+      Le norme armonizzate che attivano la presunzione di conformita'
+      (art. 20) sono norme proprietary-paid UNI/CEN/CEI e non vengono
+      catalogate come fonti separate: la skill ne usa solo rinvii
+      strutturali.
