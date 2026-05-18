@@ -58,7 +58,32 @@ Prima di costruire la matrice, verificare:
 
 Proporre una struttura articolata in criteri e sottocriteri. Linee guida generali:
 
-**Per servizi di architettura e ingegneria (tipico):**
+**Per SIA sopra soglia europea - schema Bando tipo n. 2/2026 (gare dal 30/05/2026):**
+
+Lo schema OEPV e' codificato dal Bando tipo n. 2/2026 (Delibera ANAC n. 153/2026). Usarlo come
+riferimento primario per SIA sopra soglia; deviazioni vanno motivate. Fonte: `references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md`.
+
+- Criterio A - Professionalita' ed adeguatezza dell'offerta: [peso a scelta SA, es. 30 punti] (tabellare)
+  - Descrizione di max 3 servizi affini qualificabili (senza limite decennale, a differenza dei requisiti di partecipazione)
+  - Metodo: tabellare (la SA definisce i punteggi per livello di affinita')
+- Criterio B - Caratteristiche metodologiche dell'offerta: [es. 40 punti] (discrezionale)
+  - Relazione tecnico-organizzativa; ogni commissario assegna coefficiente 0-1, poi riproporzionamento
+  - Devono essere previsti descrittori dettagliati per limitare il rischio impugnativa
+- (eventuale) Criterio CAM - Criteri premianti CAM: [es. 5-10 punti] (tabellare on/off)
+- (se previsto BIM) Criterio BIM - Adozione metodologia BIM: [es. 5-10 punti] (tabellare)
+  - Certificazione UNI 11337-7:2018 figure BIM valorizzabile come criterio premiale (para. 6.1 Bando tipo n. 2/2026)
+- Criterio PDG - Parita' di genere (art. 46-bis D.Lgs. 198/2006): 3-5 punti (tabellare on/off) [OBBLIGATORIO art. 108 co. 7]
+- Criterio E - Offerta economica: MAX 30 punti [TETTO OBBLIGATORIO art. 41 c. 15-bis lett. b]
+  - Formula non lineare: PEi = (Ri/Rmed)^alpha se Ri < Rmed; PEi = 1 se Ri >= Rmed (alpha = 0,1-0,3)
+  - Ribasso si applica sul 35% soggetto a ribasso (65% e' prezzo fisso)
+  Totale: 100 punti
+
+**Verifica obbligatoria per SIA con BIM obbligatorio** (progettazione lavori > 2M euro):
+- La matrice tecnica deve prevedere un sottocriterio BIM
+- L'offerta tecnica deve prevedere l'offerta di gestione informativa digitale (capitolato informativo)
+- Le figure BIM (UNI 11337-7: BIM Manager, BIM Coordinator, BIM Specialist, CDE Manager) sono requisiti speciali, non OEPV
+
+**Per servizi di architettura e ingegneria (schema precedente, gare sotto soglia o ante-Bando 2/2026):**
 - Criterio A - Qualita' tecnica dell'offerta / metodologia: 30-40 punti
   - A1 Approccio metodologico e comprensione del progetto: 10-15 punti (discrezionale)
   - A2 Innovazioni e soluzioni tecniche proposte: 5-10 punti (discrezionale)

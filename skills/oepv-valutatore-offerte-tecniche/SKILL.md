@@ -14,7 +14,7 @@ Usare quando un RUP, una commissione di gara o una stazione appaltante chiede di
 - **Verificare una matrice esistente**: controllare che la matrice nel disciplinare di gara rispetti l'art. 108 e individuare criticita' esposte a ricorso TAR/CdS
 
 **Non usare** se l'utente chiede:
-- Redazione dei documenti di gara completi (bando, disciplinare, capitolato): usa skill PR.2 dedicata - bandi-tipo ANAC (non ancora rilasciata)
+- Redazione dei documenti di gara completi (bando, disciplinare, capitolato): usa skill [`bandi-tipo-anac-checker`](../bandi-tipo-anac-checker/SKILL.md) per la verifica di conformita' del disciplinare al Bando tipo n. 2/2026 SIA o n. 1/2023
 - Verifica di un PFTE o degli elaborati progettuali di base: usa skill [`pfte-allegato-i7-checker`](../pfte-allegato-i7-checker/SKILL.md)
 - Calcolo della soglia di anomalia: quella e' disciplinata dall'Allegato II.2 D.Lgs. 36/2023 e non e' oggetto di questa skill
 - Giudizio sulla legittimita' di un provvedimento di aggiudicazione gia' emesso: richiede parere legale
@@ -45,6 +45,52 @@ Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' vuole ese
    - elenco delle **scelte discrezionali non automaticamente verificabili** (adeguatezza dei pesi scelti, pertinenza dei criteri rispetto all'oggetto)
    - rinvio alla **revisione del RUP e della commissione** prima di pubblicare o formalizzare
 
+## Bando Tipo n. 2/2026 per SIA sopra soglia (dal 30 maggio 2026)
+
+Con Delibera ANAC n. 153 del 15 aprile 2026 (GU n. 111 del 15/05/2026, efficace dal 30/05/2026),
+ANAC ha approvato il **Bando tipo n. 2/2026** come schema per procedure di SIA sopra soglia europea.
+
+**Impatto su questa skill per gare SIA sopra soglia:**
+
+### Schema OEPV codificato per SIA (Paragrafo 18)
+
+Articolazione criteri offerta tecnica standard:
+- **A. Professionalita' ed adeguatezza dell'offerta**: max 3 servizi affini (senza limite decennale)
+- **B. Caratteristiche metodologiche dell'offerta**: relazione tecnico-organizzativa
+- (eventuale) **Criteri premianti CAM**
+- (se previsto BIM) **Adozione metodologia BIM** come criterio premiale; certificazione UNI 11337-7 valorizzabile
+- **Parita' di genere** (art. 46-bis D.Lgs. 198/2006): obbligatorio art. 108 co. 7
+
+**Tetto 30% punteggio economico**: imposto dall'art. 41 c. 15-bis lett. b Codice per TUTTI i SIA
+(non solo alta intensita' manodopera).
+
+**Formula punteggio economico non lineare** (Paragrafo 18.3):
+- Se Ri < Rmed: PEi = (Ri/Rmed)^alpha; Se Ri >= Rmed: PEi = 1
+- dove Ri = ribasso, Rmed = media ribassi, alpha = [0,1 - 0,3]
+- Il ribasso si applica al solo **35% soggetto a ribasso** (65% e' prezzo fisso ex art. 41 c. 15-bis)
+
+### BIM come elemento obbligatorio
+
+Quando la progettazione riguarda lavori con costo presunto **> 2.000.000 euro** (o beni culturali sopra soglia art. 14 c. 1 lett. a), il Bando tipo n. 2/2026 codifica:
+- Requisiti speciali obbligatori: BIM Manager, BIM Coordinator, BIM Specialist, CDE Manager (UNI 11337-7) - para. 6.1 lett. h-k
+- La certificazione UNI 11337-7:2018 delle figure BIM e' valorizzabile come criterio premiale OEPV
+- Compenso maggiorato del **10%** (Allegato I.13 art. 2 c. 5)
+
+Per verifica matrice OEPV in gara SIA con BIM obbligatorio: la matrice tecnica deve includere sottocriterio BIM e l'offerta tecnica deve includere l'offerta di gestione informativa digitale.
+
+### Dichiarazione AI nell'offerta tecnica (art. 13 L. 132/2025)
+
+Per SIA sopra soglia (Paragrafi 15.1 e 16 Bando tipo n. 2/2026):
+- In **domanda di partecipazione**: dichiarazione obbligatoria sull'uso AI nell'elaborazione dell'offerta tecnica e sull'uso AI in esecuzione (art. 13 L. 132/2025, versione "servizi intellettuali")
+- In **offerta tecnica**: indicazione delle attivita' strumentali per cui si e' usata AI
+- La commissione verifica la coerenza tra dichiarazione in domanda e indicazioni in offerta
+
+Per il disciplinare nel suo complesso, usare anche: [`bandi-tipo-anac-checker`](../bandi-tipo-anac-checker/SKILL.md).
+
+Estratto normativo: [`references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md`](references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md).
+
+---
+
 ## Quando l'OEPV e' obbligatorio
 
 Ai sensi dell'art. 108 co. 2 D.Lgs. 36/2023 (GU 2023), l'aggiudicazione con criterio qualita'/prezzo e' **obbligatoria** per (le sei fattispecie del co. 2):
@@ -71,10 +117,11 @@ Il co. 7 consente altresi' alla SA di inserire **criteri premiali facoltativi** 
 
 **Nota sul D.Lgs. 209/2024**: il testo del co. 7 potrebbe essere stato modificato dal correttivo. Verificare sul testo consolidato Normattiva prima della pubblicazione di gare successive al 31/12/2024.
 
-## Limiti sul punteggio economico (art. 108 co. 4)
+## Limiti sul punteggio economico
 
-- **Appalti IT in contesti di interesse strategico nazionale**: punteggio economico max **10%** del totale
-- **Contratti ad alta intensita' di manodopera**: punteggio economico max **30%** del totale
+- **SIA sopra soglia europea (Bando tipo n. 2/2026)**: punteggio economico max **30%** del totale (art. 41 c. 15-bis lett. b Codice) - vincolo specifico per SIA, non dipende dall'art. 108 co. 4
+- **Appalti IT in contesti di interesse strategico nazionale**: punteggio economico max **10%** del totale (art. 108 co. 4)
+- **Contratti ad alta intensita' di manodopera (non SIA)**: punteggio economico max **30%** del totale (art. 108 co. 4)
 - Per tutti gli altri contratti OEPV: nessun limite percentuale esplicito nell'art. 108, ma il bilanciamento tecnico/economico deve essere proporzionato e motivato
 
 ## Fonti normative
@@ -82,11 +129,13 @@ Il co. 7 consente altresi' alla SA di inserire **criteri premiali facoltativi** 
 Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fonti primarie:
 - D.Lgs. 31 marzo 2023 n. 36, artt. 93, 107, 108 - Criteri di aggiudicazione e commissione giudicatrice
 - ANAC Linea Guida n. 2, Delibera n. 424 del 2 maggio 2018 - Metodologia valutazione OEPV (non vincolante sotto D.Lgs. 36/2023 ma ancora di riferimento operativo)
+- ANAC Bando tipo n. 2/2026 (Delibera n. 153 del 15 aprile 2026) - Schema OEPV per SIA sopra soglia
 
 Estratti testuali in [`references/estratti/`](references/estratti/):
 - [`dlgs-36-art93.md`](references/estratti/dlgs-36-art93.md) - commissione giudicatrice
 - [`dlgs-36-art107-108.md`](references/estratti/dlgs-36-art107-108.md) - criteri di aggiudicazione, OEPV obbligatorio, limiti punteggio economico
 - [`anac-lg-n2-metodologia-oepv.md`](references/estratti/anac-lg-n2-metodologia-oepv.md) - metodo aggregativo-compensatore, formule, metodi di attribuzione punteggio
+- [`anac-bando-tipo-n2-2026-sia-oepv-bim.md`](references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md) - schema OEPV SIA, BIM obbligatorio, formula economica non lineare, clausole AI
 
 ## Limiti
 
