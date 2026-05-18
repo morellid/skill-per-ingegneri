@@ -1,6 +1,6 @@
 ---
 name: modulistica-edilizia-unificata
-description: Indica il modulo edilizio unificato corretto (Edilizia libera, CILA, SCIA, SCIA alternativa al PdC, Permesso di Costruire) per un intervento, restituisce l'elenco strutturato degli allegati richiesti e applica le modifiche introdotte dal "Salva Casa" (DL 69/2024 conv. L. 105/2024) - nuove tolleranze costruttive (art. 34-bis), sanatoria semplificata (art. 36-bis), cambio destinazione d'uso (art. 23-ter), stato legittimo (art. 9-bis), edilizia libera ampliata (art. 6). Use when an architect, engineer, geometra, or operatore SUE/SUAP needs to determine the correct procedural regime under DPR 380/2001 and D.Lgs. 222/2016 Tabella A for a specific Italian building intervention, identify the attachments required for the unified national module (versione 27/3/2025 Conferenza Unificata), or check whether the Salva Casa changes apply (e.g. existing tolerances, lighter sanatoria, simplified change of use). Target users are ingegneri edili, architetti, geometri italiani, e tecnici degli sportelli SUE/SUAP.
+description: Indica il modulo edilizio unificato corretto (Edilizia libera, CILA, SCIA, SCIA alternativa al PdC, Permesso di Costruire) per un intervento, restituisce l'elenco strutturato degli allegati richiesti e applica le modifiche introdotte dal "Salva Casa" (DL 69/2024 conv. L. 105/2024), dal "Piano Casa" (DL 66/2026, in vigore 8/05/2026) e dal DPR 73/2026 (modifiche DPR 31/2017, in vigore 27/05/2026). Use when an architect, engineer, geometra, or operatore SUE/SUAP needs to determine the correct procedural regime under DPR 380/2001 and D.Lgs. 222/2016 Tabella A for a specific Italian building intervention, identify the attachments required for the unified national module (versione 27/3/2025 Conferenza Unificata), or check whether the Salva Casa or Piano Casa changes apply. Target users are ingegneri edili, architetti, geometri italiani, e tecnici degli sportelli SUE/SUAP.
 license: MIT
 ---
 
@@ -57,12 +57,16 @@ Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fo
 - D.Lgs. 25 novembre 2016 n. 222 - SCIA 2 - Allegato Tabella A sezione II Edilizia
 - DL 29 maggio 2024 n. 69 conv. L. 24 luglio 2024 n. 105 - Salva Casa
 - Conferenza Unificata - Modulistica edilizia unificata, aggiornamento Salva Casa **27/3/2025** (Funzione Pubblica)
+- **DL 7 maggio 2026 n. 66 - Piano Casa** (GU n. 104 del 07/05/2026, in vigore 08/05/2026) - SCIA per demolizione/ricostruzione ERP
+- **DPR 20 febbraio 2026 n. 73** (GU n. 108 del 12/05/2026, in vigore 27/05/2026) - modifica All. A e B del DPR 31/2017
 
 Estratti testuali in [`references/estratti/`](references/estratti/):
 - [`dpr-380-2001-regimi-edilizi.md`](references/estratti/dpr-380-2001-regimi-edilizi.md) - artt. 3, 6, 6-bis, 9-bis, 10, 22, 23, 23-ter, 34-bis, 36, 36-bis
 - [`dlgs-222-2016-tabella-a.md`](references/estratti/dlgs-222-2016-tabella-a.md) - struttura Tabella A sezione II Edilizia
 - [`dl-69-2024-salva-casa.md`](references/estratti/dl-69-2024-salva-casa.md) - sintesi delle modifiche Salva Casa
 - [`modulistica-unificata-2025.md`](references/estratti/modulistica-unificata-2025.md) - struttura dei moduli unificati e allegati ricorrenti
+- [`dl-66-2026-piano-casa.md`](references/estratti/dl-66-2026-piano-casa.md) - SCIA per demolizione/ricostruzione ERP (art. 8 co. 1 DL 66/2026)
+- [`dpr-73-2026-paesaggio.md`](references/estratti/dpr-73-2026-paesaggio.md) - modifiche All. A voce A.27 e All. B voce B.26 del DPR 31/2017
 
 ## Limiti
 
