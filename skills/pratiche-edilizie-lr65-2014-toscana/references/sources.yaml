@@ -1,6 +1,6 @@
 schema_version: 1
 skill: pratiche-edilizie-lr65-2014-toscana
-last_verified: 2026-05-11
+last_verified: 2026-05-18
 
 sources:
   - id: lr-toscana-65-2014
@@ -19,8 +19,8 @@ sources:
     title: "DPR 6 giugno 2001 n. 380 - Testo unico edilizia (testo vigente consultato su Normattiva)"
     type: decreto-presidenziale
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
-    accessed: 2026-05-11
-    sha256: c2c23a6e2b0ec3081873b7dc1d53c60e33d2946ce069dbbbfda64bcc07c25110
+    accessed: 2026-05-18
+    sha256: ee2dad47a4482a4bf7ee7e5b1ad2956c291636463afc432b8ce16cabff6917c6
     license: public-domain-italian-law
     binary_path: not_in_repo/dpr-380-2001.html
     md_path: references/fonti/dpr-380-2001-tue.md
@@ -55,3 +55,26 @@ sources:
       hash non stabile tra richieste successive. Trattata come fonte URL-only (binary_path
       null, sha256 null). Il contenuto rilevante (riferimento a DGRT 421/2014 con allegato
       comuni e mappa) e' documentato in references/fonti/regione-toscana-classificazione-sismica.md.
+
+  - id: dl-66-2026-piano-casa
+    title: "DL 7 maggio 2026 n. 66 - Disposizioni urgenti per il Piano Casa (GU n. 104 del 07/05/2026)"
+    type: decreto-legge
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/05/07/104/sg/pdf
+    accessed: 2026-05-18
+    sha256: be6c7748f4c89740769cc9c39d21c55f5e839dbf340364748cf7b7a1ea1a6d05
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-66-2026-piano-casa-gu104.pdf
+    md_path: references/fonti/dl-66-2026-piano-casa.md
+    excerpt_paths:
+      - references/estratti/dl-66-2026-piano-casa-erp.md
+    notes: |
+      Piano Casa 2026. In vigore dall'8/05/2026. Rilevante per la skill:
+      - Art. 8 co. 1: estende agli interventi ERP del Capo II le disposizioni di cui
+        all'art. 10 co. 7-ter del DL 76/2020 (conv. L. 120/2020), consentendo la SCIA
+        in luogo del PdC per demolizione/ricostruzione in contesti di edilizia residenziale
+        pubblica e sociale.
+      - Art. 8 co. 2: conferenza di servizi semplificata (L. 241/1990 art. 14-bis) per
+        l'approvazione degli interventi, con termine di 30 giorni (40 se tutele art. 14-quinquies).
+      - Art. 9: programmi infrastrutturali di edilizia integrata (Capo III) - disciplina
+        speciale parallela che NON modifica gli artt. 10 o 22 del DPR 380/2001.
+      PDF condiviso con skill modulistica-edilizia-unificata (PR #177). SHA256 verificato.
