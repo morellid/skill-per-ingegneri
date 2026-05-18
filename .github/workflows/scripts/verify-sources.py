@@ -63,6 +63,7 @@ BROWSER_USER_AGENT = (
 TIMEOUT_SECONDS = 60
 OFFICIAL_HOST_SUFFIXES = (
     "acn.gov.it",
+    "adm.gov.it",
     "agenziaentrate.gov.it",
     "anticorruzione.it",
     "arera.it",
