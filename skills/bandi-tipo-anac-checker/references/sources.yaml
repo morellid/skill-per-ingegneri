@@ -128,7 +128,7 @@ sources:
   - id: anac-delibera-148-2026
     title: "ANAC - Delibera n. 148 del 1 aprile 2026 - Aggiornamento Bando tipo n. 1/2023"
     type: delibera-anac
-    url: https://www.anticorruzione.it/documents/91439/396431241/Delibera+n.+148+del+1+aprile+2026.pdf/22c84d6c-30f9-5bb9-ef91-6d9d57e08bdc?t=1777986640306
+    url: https://www.anticorruzione.it/documents/91439/396431241/Delibera+n.+148+del+1+aprile+2026.pdf/c0f63c23-0b89-449c-f722-8f06a38ce3b1?t=1777976757800
     accessed: 2026-05-18
     sha256: 3d95f63152ef611119e2236be57db58ccd71656e0fb8a65e8ad946d6500ab6e9
     license: public-domain-italian-law
@@ -176,7 +176,7 @@ sources:
   - id: anac-bando-tipo-n2-2026-del-153-2026
     title: "ANAC - Bando tipo n. 2/2026 - Schema disciplinare servizi di ingegneria e architettura (SIA) sopra soglia OEPV"
     type: schema-anac
-    url: https://www.anticorruzione.it/documents/91439/396431241/Bando+tipo+n.+2-2026.pdf/c10b2c1f-d97c-aaee-c43c-b0e7f8d72213?t=1777987011453
+    url: https://www.anticorruzione.it/documents/91439/396430602/Bando+tipo+n.+2-2026+-+del.153-15.04.2026.pdf/9806c83d-1aee-fc3a-9ef0-e6b0d22fbec2?t=1777986989937
     accessed: 2026-05-18
     sha256: 3c39962bc041200fc03a2cc20c727c42b22e096e999cc9dcb3ccd28f786c2b49
     license: public-domain-italian-law
