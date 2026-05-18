@@ -7,6 +7,29 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-05-18
+
+### Added - Bandi-tipo ANAC 2026 (issues #164 e #165)
+
+- **Nuovo schema verificato**: Bando tipo n. 2/2026 per Servizi di Ingegneria e Architettura (SIA) sopra soglia OEPV, approvato con Delibera ANAC n. 153 del 15 aprile 2026 (61 pagine, GU n. 111 del 15/05/2026, efficace dal 30/05/2026).
+- **Schema aggiornato**: Bando tipo n. 1/2023 testo consolidato con Delibera ANAC n. 148 del 1 aprile 2026 (52 pagine, stessa GU, stessa efficacia).
+- `references/fonti/anac-delibera-148-2026.md` - trascrizione integrale Delibera 148/2026 con elenco puntuale modifiche al Bando 1 (paragrafi Premesse, 3, 3.2, 4, 5, 7, 9.1, 10, 11, 13, 14, 15.1, 16, 17, 18.4, 20, 23, 25, 28; Domanda di partecipazione paragrafi 9-10 NUOVI per AI). SHA256: 3d95f63152ef611119e2236be57db58ccd71656e0fb8a65e8ad946d6500ab6e9.
+- `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` - trascrizione consolidato Bando 1 con identificazione, indice 30 paragrafi, paragrafo 14 (soccorso istruttorio integrato), paragrafo 15.1 (clausole AI verbatim), paragrafo 28 (accesso atti con clausola inversione procedimentale). SHA256: d7946e3eb39b4147b29e0d8d21589b7ac992a012dad0d8c28bd075c67f050231.
+- `references/fonti/anac-bando-tipo-n2-2026.md` - trascrizione Bando 2/2026 SIA: identificazione, indice 30 paragrafi, Premesse con clausola BIM, paragrafo 3 (importo 65/35 art. 41 c. 15-bis, maggiorazione 10% BIM), paragrafo 6.1 lettere h-k (figure BIM UNI 11337-7: BIM Manager, BIM Coordinator, BIM Specialist, CDE Manager), paragrafo 15.1 (clausola AI art. 13 L. 132/2025), paragrafo 16 (offerta tecnica con offerta gestione informativa digitale e indicazione AI), paragrafo 18 (tetto 30% punteggio economico). SHA256: 3c39962bc041200fc03a2cc20c727c42b22e096e999cc9dcb3ccd28f786c2b49.
+- `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md` - estratto sulle clausole obbligatorie di dichiarazione utilizzo sistemi AI (Reg. UE 2024/1689 + L. 132/2025 + GDPR), con testo verbatim della versione "generica" (Bando 1) e della versione "servizi intellettuali" (art. 13 L. 132/2025 - Bando 2 SIA), checklist operativa e anomalie tipiche.
+- `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` - estratto su importo base 65/35 (art. 41 c. 15-bis), maggiorazione 10% per progettazione BIM (Allegato I.13 art. 2 c. 5), tetto 30% punteggio offerta economica, BIM obbligatorio >2M euro (art. 43 Codice + Allegato I.9), figure professionali UNI 11337-7, requisiti SIA Allegato II.12.
+- `sources.yaml`: aggiunte 3 nuove entries (anac-delibera-148-2026, anac-bando-tipo-n1-2023-agg-del-148-2026, anac-bando-tipo-n2-2026-del-153-2026) con SHA256 reali; entry esistente Delibera 365/2025 marcata superseded_by Delibera 148/2026.
+- `SKILL.md`: tabella schemi aggiornata con Bando 2/2026 SIA confermato; aggiunta sezione "Novita' principali Delibere 148/2026 e 153/2026"; criteri di scelta tra Bando 1 e Bando 2 (discriminante: oggetto SIA vs servizi generici).
+- `tasks/check-conformita-disciplinare.md`: nuovi input richiesti (data indizione, SIA, BIM); tabella schemi aggiornata; passo 4f (soccorso istruttorio) integrato con casi sanabili Delibera 148; nuovo passo 4g (clausole AI) e 4h (verifiche specifiche SIA Bando 2/2026: importo 65/35, BIM, equo compenso, requisiti speciali Allegato II.12).
+- `tasks/identifica-anomalie-clausole.md`: categoria E (anomalie clausole AI dal 30/05/2026) e categoria F (anomalie specifiche SIA Bando 2/2026) con tabella dedicata.
+
+### Note di efficacia
+
+Le clausole AI obbligatorie (paragrafo 15.1) e lo schema SIA Bando 2/2026 entrano in vigore il **30 maggio 2026** (15 giorni dopo pubblicazione GU n. 111 del 15/05/2026). Per procedure indette prima di tale data si applicano le versioni precedenti. La skill segnala automaticamente la versione applicabile in base alla data di indizione fornita dall'utente.
+
+- Closes GitHub issue #164 (recepimento Delibera 148/2026 Bando tipo 1)
+- Closes GitHub issue #165 (nuovo Bando tipo 2/2026 SIA)
+
 ## [0.1.0-alpha+fix.source-grounding] - 2026-05-10
 
 ### Fixed (source-grounding remediation semantica - issue #93)

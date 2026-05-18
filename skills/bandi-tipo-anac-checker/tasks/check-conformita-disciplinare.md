@@ -15,19 +15,23 @@ Produrre un report strutturato che indichi, per ciascuna sezione del disciplinar
 ## Input richiesti
 
 1. **Testo del disciplinare di gara** (o le sezioni rilevanti da verificare)
-2. **Tipo di contratto**: lavori / servizi / forniture
+2. **Tipo di contratto**: lavori / servizi / forniture / **servizi di ingegneria e architettura (SIA)**
 3. **Criterio di aggiudicazione**: prezzo piu' basso (PPB) o OEPV
 4. **Importo a base d'asta** (EUR, IVA esclusa)
 5. **Soglia**: sopra o sotto soglia europea (dal 1/1/2026: lavori >= 5.404.000 EUR;
    servizi/forniture >= 140.000 EUR PA centrali / 216.000 EUR PA sub-centrali / 432.000 EUR settori speciali;
    le soglie sono aggiornate ogni 2 anni dalla Commissione UE: verificare i valori vigenti)
 6. **Contesto PNRR** (si/no): se si', il disciplinare deve rispettare termini accelerati
+7. **Data di indizione**: per stabilire se applicare la versione pre o post 30 maggio 2026 degli schemi ANAC (Delibere 148/2026 e 153/2026)
+8. **Se SIA: BIM richiesto/obbligatorio**: presenza nel disciplinare della clausola BIM; obbligatorio per lavori >2M euro
 
 ## Fonti normative
 
 Leggere prima di procedere:
 - `references/estratti/dlgs-36-artt-clausole-disciplinare.md` (artt. 11, 74, 87, 90, 94-103, 117-120)
 - `references/estratti/anac-bandi-tipo-struttura-2023.md` (struttura schemi ANAC, deroghe ammesse)
+- `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md` (clausole AI obbligatorie da Delibera 148/2026, in vigore dal 30 maggio 2026)
+- Se SIA: `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` (importo 65/35, BIM, figure professionali UNI 11337-7)
 
 ## Procedura
 
@@ -37,10 +41,15 @@ In base agli input dell'utente, determina quale schema ANAC applicare:
 
 | Tipo contratto | Criterio | Schema da usare |
 |---------------|----------|-----------------|
-| Servizi / Forniture | PPB | Schema SF-PPB |
-| Servizi / Forniture | OEPV | Schema SF-OEPV |
+| Servizi / Forniture (generici) | PPB | Schema SF-PPB |
+| Servizi / Forniture (generici) | OEPV | **Bando tipo n. 1/2023** (Delibera 148/2026 dal 30/5/2026) |
+| **SIA** (ingegneria/architettura) | OEPV | **Bando tipo n. 2/2026** (Delibera 153/2026 dal 30/5/2026) |
 | Lavori | PPB | Schema Lavori-PPB |
 | Lavori | OEPV | Schema Lavori-OEPV |
+
+**Discriminante SIA vs servizi generici**: se l'oggetto comprende progettazione (fattibilita', esecutiva), direzione lavori, coordinamento sicurezza, verifica progetto, supporto al RUP per attivita' tecniche -> usare Bando 2/2026 (SIA). Servizi generici di consulenza, IT, manutenzione, ecc. -> Bando 1/2023.
+
+Se la procedura e' indetta **prima del 30 maggio 2026**: applicare la versione pre-Delibera 148/2026 (Delibera 365/2025) per il Bando 1; per i SIA pre-30/5/2026 non esiste schema-tipo ANAC specifico, applicare il Bando 1 con adattamenti.
 
 Se il disciplinare e' sotto soglia europea: applicare lo schema sopra soglia corrispondente
 come riferimento, segnalando che alcune disposizioni possono essere semplificate.
@@ -129,6 +138,47 @@ Verificare il contenuto delle clausole principali contro i requisiti di legge:
 **4f. Soccorso istruttorio (art. 101 D.Lgs. 36/2023)**
 - [ ] Differenziato tra documenti ammissibili e non ammissibili
 - [ ] Non esteso all'offerta tecnica o economica
+- [ ] (Per gare dopo 30/5/2026) Elenco casi sanabili integrato Delibera 148/2026: mancata produzione contratto avvalimento; intestazione garanzia provvisoria non a tutti i componenti del costituendo RTI; erronea indicazione beneficiario garanzia provvisoria.
+
+**4g. Clausole AI obbligatorie (Delibera 148/2026 - in vigore dal 30 maggio 2026)**
+
+Vedi `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md`.
+- [ ] Paragrafo 15.1 / Domanda di partecipazione contiene dichiarazione AI per fase offerta tecnica.
+- [ ] Stesso paragrafo contiene dichiarazione AI per fase esecuzione (impegno se aggiudicato).
+- [ ] Riferimenti normativi citati: Reg. UE 2024/1689 + L. 132/2025 + Reg. UE 2016/679 + D.Lgs. 196/2003.
+- [ ] **Se servizi intellettuali / SIA**: clausola in versione art. 13 L. 132/2025 (specifica tipologia AI, prevalenza lavoro intellettuale, controllo, verifica risultati).
+- [ ] Per disciplinari indetti prima del 30 maggio 2026: clausola AI **non** ancora obbligatoria.
+
+**4h. Solo SIA - Verifiche specifiche Bando 2/2026**
+
+Vedi `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md`.
+
+**Importo base** (paragrafo 3):
+- [ ] Calcolato ai sensi Allegato I.13 (DM 17.06.2016) con schema corrispettivi allegato.
+- [ ] Esplicitato: 65% prezzo fisso non ribassabile + 35% ribassabile (art. 41 c. 15-bis Codice).
+- [ ] Se progettazione >2M euro con BIM: maggiorazione 10% su onorari (Allegato I.13 art. 2 c. 5).
+- [ ] DUVRI assente per servizi puramente intellettuali (costi sicurezza interferenze = 0 euro).
+- [ ] Equo compenso: nessuna richiesta di prestazioni gratuite o ulteriori rispetto all'importo base.
+
+**Aggiudicazione** (paragrafi 17-18):
+- [ ] Tetto **30 punti** per offerta economica (art. 41 c. 15-bis lett. b).
+- [ ] Formula non lineare con alpha tra 0,1 e 0,3; PEi = 1 per ribassi sopra media.
+
+**BIM (se previsto nel disciplinare)**:
+- [ ] Clausola BIM in Premesse, riferimento ad art. 43 Codice + Allegato I.9.
+- [ ] Per progettazione lavori >2M euro: BIM obbligatorio, non facoltativo.
+- [ ] Capitolato informativo allegato al disciplinare (art. 1 c. 8 Allegato I.9).
+- [ ] Paragrafo 6.1 lettere h)-k): figure professionali BIM UNI 11337-7 richieste (BIM Manager, BIM Coordinator, BIM Specialist, CDE Manager) con esperienza pregressa documentabile.
+- [ ] Paragrafo 16: offerta tecnica include documento autonomo "offerta di gestione informativa digitale".
+- [ ] Certificazione UNI 11337-7:2018 richiesta come premio, NON come requisito.
+
+**Offerta tecnica AI (paragrafo 16)**:
+- [ ] Obbligo di indicare le attivita' strumentali svolte con sistemi AI (specifico SIA).
+
+**Requisiti speciali (paragrafo 6.3)**:
+- [ ] Requisiti economico-finanziari alternativi (art. 40 c. 1-bis Allegato II.12): copertura assicurativa 10% importo opere OPPURE fatturato globale 3 dei 5 anni non superiore a valore stimato.
+- [ ] Elenco servizi con importo 1-2 volte importo lavori per categoria/ID (ultimi 10 anni).
+- [ ] Eventuali servizi di punta: 2 servizi per categoria/ID 0,40-0,80 volte importo (oppure 1 servizio unico pari al minimo).
 
 ### Passo 5 - Output
 

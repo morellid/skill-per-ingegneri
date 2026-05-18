@@ -1,6 +1,6 @@
 schema_version: 1
 skill: bandi-tipo-anac-checker
-last_verified: 2026-05-02
+last_verified: 2026-05-18
 
 # Fonti normative per la skill di verifica conformita' disciplinari di gara
 # agli schemi ANAC (bandi-tipo) ai sensi del D.Lgs. 36/2023.
@@ -101,7 +101,7 @@ sources:
       quelle tipologie. Il portale e' gratuito e pubblico.
 
   - id: anac-bando-tipo-n1-2023-delibera-365-2025
-    title: "ANAC - Bando tipo n. 1/2023 (aggiornato con Delibera n. 365 del 16 settembre 2025) - Schema disciplinare servizi e forniture OEPV sopra soglia"
+    title: "ANAC - Bando tipo n. 1/2023 (aggiornato con Delibera n. 365 del 16 settembre 2025) - Schema disciplinare servizi e forniture OEPV sopra soglia [SUPERSEDED da Delibera 148/2026]"
     type: schema-anac
     url: https://www.anticorruzione.it/documents/91439/336190007/Bando+tipo+n.+1.2023+agg.+al+dl+31.12.2024+n.209+-+Schema+disciplinare+gara+-+del.365.2025.pdf/ec669e07-715b-d874-8f8c-f11da8614466?t=1759159831877
     accessed: 2026-05-10
@@ -111,18 +111,100 @@ sources:
     md_path: references/fonti/anac-bando-tipo-n1-2023-delibera-365-2025.md
     excerpt_paths:
       - references/estratti/anac-bandi-tipo-struttura-2023.md
+    superseded_by: anac-bando-tipo-n1-2023-agg-del-148-2026
     notes: |
       Bando tipo n. 1/2023 aggiornato con Delibera ANAC n. 365 del 16/09/2025.
       PDF letto e verificato il 2026-05-10. SHA256 calcolato sul file scaricato.
       Riguarda servizi e forniture sopra soglia con criterio OEPV (offerta economicamente
       piu' vantaggiosa). Recepisce D.Lgs. 36/2023 come modificato da D.Lgs. 209/2024.
-      ATTENZIONE: dalla pagina del portale ANAC risulta che questo bando tipo e' stato
-      ulteriormente aggiornato con Delibera n. 148 del 1 aprile 2026. Verificare sul
-      portale ANAC la versione piu' recente prima di usare la skill per una gara reale.
+      SUPERSEDED: questa versione e' stata sostituita dalla Delibera n. 148 del 1 aprile 2026
+      (id: anac-bando-tipo-n1-2023-agg-del-148-2026), in vigore dal 30 maggio 2026
+      (15 giorni dopo pubblicazione in GU n. 111 del 15-05-2026). Mantenuta per riferimento
+      storico (procedure indette prima dell'efficacia della nuova versione).
       URL pagina portale: https://www.anticorruzione.it/-/del.n.365-16.09.2025.bando.tipo.n.1/2023.agg.dl.31.12.2024.n.209
       Per la sezione criteri di aggiudicazione, usare in combinazione con la skill
       oepv-valutatore-offerte-tecniche (art. 108 D.Lgs. 36/2023).
 
+  - id: anac-delibera-148-2026
+    title: "ANAC - Delibera n. 148 del 1 aprile 2026 - Aggiornamento Bando tipo n. 1/2023"
+    type: delibera-anac
+    url: https://www.anticorruzione.it/documents/91439/396431241/Delibera+n.+148+del+1+aprile+2026.pdf/c0f63c23-0b89-449c-f722-8f06a38ce3b1?t=1777976757800
+    accessed: 2026-05-18
+    sha256: 3d95f63152ef611119e2236be57db58ccd71656e0fb8a65e8ad946d6500ab6e9
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-delibera-148-2026.pdf
+    md_path: references/fonti/anac-delibera-148-2026.md
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md
+    notes: |
+      Delibera ANAC n. 148 del 1 aprile 2026 (Consiglio dell'Autorita').
+      Elenco puntuale delle modifiche apportate al Bando tipo n. 1/2023 (versione Delibera 365/2025).
+      Modifica i paragrafi: Premesse (parere CdS 61/2026), 3, 3.2, 4, 5, 7, 9.1, 10, 11, 13, 14, 15.1,
+      16, 17, 18.4, 20, 23, 25, 28; Domanda di partecipazione (paragrafi 9-10 NUOVI per AI, rinumerati 11/12).
+      Recepisce Legge 132/2025 (norma italiana AI, specie art. 13 per professionisti) e Regolamento UE 2024/1689 (AI Act).
+      Pubblicata in GU Serie Generale n. 111 del 15 maggio 2026. Efficace dal 30 maggio 2026 (15 giorni dopo).
+      PDF scaricato il 2026-05-18, SHA256 calcolato sul file.
+
+  - id: anac-bando-tipo-n1-2023-agg-del-148-2026
+    title: "ANAC - Bando tipo n. 1/2023 (testo consolidato Delibera n. 148/2026) - Schema disciplinare servizi e forniture OEPV sopra soglia"
+    type: schema-anac
+    url: https://www.anticorruzione.it/documents/91439/396431241/Bando+tipo+n.+1-2023+agg.+del.148.2026.pdf/04cd98e4-9386-8f2a-b325-866bbadc5a11?t=1777986740297
+    accessed: 2026-05-18
+    sha256: d7946e3eb39b4147b29e0d8d21589b7ac992a012dad0d8c28bd075c67f050231
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-bando-tipo-n1-2023-agg-del-148-2026.pdf
+    md_path: references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md
+    notes: |
+      Bando tipo n. 1/2023 - testo consolidato (clean) aggiornato a Delibera ANAC n. 148/2026.
+      52 pagine. Riguarda servizi e forniture sopra soglia con criterio OEPV.
+      Recepisce D.Lgs. 36/2023 come modificato da D.Lgs. 209/2024 e il parere del Consiglio di Stato n. 61
+      del 13/01/2026. Approvato dal Consiglio dell'Autorita' con delibera n. 365 del 16 settembre 2025
+      e modificato con delibera n. 148 del 1 aprile 2026.
+      Pubblicato in GU Serie Generale n. 111 del 15 maggio 2026. Efficace dal 30 maggio 2026.
+      PDF scaricato il 2026-05-18, SHA256 calcolato sul file. Per il dettaglio puntuale delle modifiche
+      vedere anac-delibera-148-2026.md.
+      URL pagina portale: https://www.anticorruzione.it/-/bando.tipo.n.1.2023-agg.2026
+      NOVITA' principali rispetto a Delibera 365/2025:
+      - Paragrafo 15.1: clausole obbligatorie di dichiarazione utilizzo sistemi AI (Reg. UE 2024/1689,
+        L. 132/2025) con versione separata per servizi intellettuali (art. 13 L. 132/2025).
+      - Paragrafo 14: integrazione casi sanabili soccorso istruttorio (avvalimento, garanzia provvisoria).
+      - Paragrafo 28: clausola alternativa accesso atti in caso di inversione procedimentale.
+      - Vari aggiustamenti tecnici recepiti dal parere CdS 61/2026.
+
+  - id: anac-bando-tipo-n2-2026-del-153-2026
+    title: "ANAC - Bando tipo n. 2/2026 - Schema disciplinare servizi di ingegneria e architettura (SIA) sopra soglia OEPV"
+    type: schema-anac
+    url: https://www.anticorruzione.it/documents/91439/396430602/Bando+tipo+n.+2-2026+-+del.153-15.04.2026.pdf/9806c83d-1aee-fc3a-9ef0-e6b0d22fbec2?t=1777986989937
+    accessed: 2026-05-18
+    sha256: 3c39962bc041200fc03a2cc20c727c42b22e096e999cc9dcb3ccd28f786c2b49
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-bando-tipo-n2-2026-del-153-2026.pdf
+    md_path: references/fonti/anac-bando-tipo-n2-2026.md
+    excerpt_paths:
+      - references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md
+      - references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md
+    notes: |
+      Bando tipo n. 2/2026 - NUOVO schema specifico per Servizi di Ingegneria e Architettura (SIA).
+      61 pagine. Approvato con Delibera ANAC n. 153 del 15 aprile 2026.
+      Procedura aperta per servizi di architettura e ingegneria sopra soglia europea (art. 14 D.Lgs. 36/2023),
+      criterio offerta economicamente piu' vantaggiosa (miglior rapporto qualita'/prezzo).
+      Pubblicato in GU Serie Generale n. 111 del 15 maggio 2026. Efficace dal 30 maggio 2026.
+      PDF scaricato il 2026-05-18, SHA256 calcolato sul file.
+      URL pagina portale: https://www.anticorruzione.it/-/bando.tipo.n.2.2026
+      NOVITA' caratterizzanti (specifiche SIA, distinte dal Bando 1/2023 per servizi/forniture generici):
+      - Art. 41 c. 15-bis Codice: importo base diviso in 65% prezzo fisso non ribassabile + 35% ribassabile.
+      - Tetto 30% punteggio offerta economica (art. 41 c. 15-bis lett. b).
+      - Maggiorazione 10% compenso per progettazione con BIM (Allegato I.13 art. 2 c. 5).
+      - Calcolo importo base ai sensi Allegato I.13 (DM 17.06.2016).
+      - Clausola BIM obbligatoria per progettazione lavori >2M euro o soglia art. 14 c. 1 lett. a (beni culturali).
+      - Requisiti speciali 6.1 lett. h-k per figure BIM (UNI 11337-7): BIM Manager, BIM Coordinator,
+        BIM Specialist, CDE Manager.
+      - Paragrafo 15.1: clausola AI obbligatoria nella versione "servizi intellettuali" (art. 13 L. 132/2025),
+        perche' i SIA sono strutturalmente servizi intellettuali.
+      - Paragrafo 16: in offerta tecnica obbligo di indicare attivita' strumentali svolte con AI; offerta
+        di gestione informativa digitale (Capitolato informativo) se richiesto BIM.
 
   - id: regolamento-esecuzione-dlgs-36-allegati
     title: "Allegati al D.Lgs. 36/2023 - Allegato I.14 (schema tipo atti concessori)"
