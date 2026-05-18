@@ -12,6 +12,14 @@ sources:
     license: gse-public-no-redistribution
     binary_path: not_in_repo/gse-regole-operative-cacer.pdf
     md_path: references/fonti/gse-regole-operative-cacer.md
+    # gse.it (CDN Akamai) restituisce HTTP 403 ai runner GitHub Actions sia con
+    # UA bot sia con UA browser realistico + header completi: il blocco e' per
+    # range IP datacenter, verificato su 2026-05-18 (download da IP IT residenziale
+    # = 200 OK; runner CI Azure = 403 sistematico). L'hash dichiarato e' stato
+    # calcolato dall'agent sul PDF scaricato manualmente; il fetch live in CI
+    # e' deliberatamente saltato. Aggiornamento: l'agent dovra' riscaricare
+    # manualmente e ricalcolare SHA256 ad ogni nuova versione delle Regole Operative.
+    ci_fetch_blocked: "gse.it blocca IP datacenter GitHub Actions (Akamai)"
     excerpt_paths:
       - references/estratti/gse-regole-operative-cacer.md
       - references/estratti/dm-mase-414-2023.md

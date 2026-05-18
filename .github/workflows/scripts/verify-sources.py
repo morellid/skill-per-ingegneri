@@ -228,6 +228,28 @@ def verify_skill(skill_dir: Path) -> list[str]:
             )
             continue
 
+        # Caso 3.5: fonte deliberatamente non fetchabile dal CI.
+        # Valido SOLO per host che bloccano gli IP datacenter di GitHub Actions
+        # (es. gse.it dietro Akamai blocca i runner Azure). Il campo richiede
+        # una motivazione esplicita (stringa non vuota). Tutti gli altri check
+        # restano attivi: hash reale, md_path presente, binary_path dichiarato.
+        # Limite accettato: niente check di drift automatico per questa entry,
+        # l'aggiornamento e' a cura dell'agent (verifica manuale + nuovo SHA256).
+        ci_fetch_blocked = src.get("ci_fetch_blocked")
+        if ci_fetch_blocked:
+            reason = str(ci_fetch_blocked).strip()
+            if not reason or reason.lower() in ("true", "yes", "1"):
+                errors.append(
+                    f"[{skill_name}/{sid}] ci_fetch_blocked richiede motivazione esplicita "
+                    "(stringa con la ragione del blocco, non un boolean)"
+                )
+                continue
+            print(
+                f"[{skill_name}/{sid}] CI fetch SKIPPED (ci_fetch_blocked): {reason}",
+                flush=True,
+            )
+            continue
+
         # Caso 4: fetch e verifica hash
         local_path = BINARIES_ROOT / Path(binary_path).relative_to(
             "not_in_repo"
