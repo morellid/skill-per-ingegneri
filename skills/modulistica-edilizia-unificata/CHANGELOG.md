@@ -5,6 +5,37 @@ Tutte le modifiche significative alla skill sono documentate qui.
 Il formato e' basato su [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4-alpha] - 2026-05-18
+
+### Changed (recepimento DL 66/2026 Piano Casa e DPR 73/2026 paesaggio - issue #167)
+
+- **references/sources.yaml**: aggiornato `last_verified` a 2026-05-18. Aggiunte due nuove fonti
+  con SHA256 verificato:
+  - `dl-66-2026-piano-casa`: PDF GU n. 104 del 07/05/2026 scaricato
+    (SHA256: be6c7748f4c89740769cc9c39d21c55f5e839dbf340364748cf7b7a1ea1a6d05).
+  - `dpr-73-2026-paesaggio-dpr31-2017`: PDF GU n. 108 del 12/05/2026 scaricato
+    (SHA256: ceca0ebe69b9c4646049eabfa731b951ececaffc29f0b2938bb732cd963392db).
+  - `dpr-31-2017-paesaggistica-semplificata`: aggiunta nota sulle modifiche dal DPR 73/2026.
+- **references/fonti/dl-66-2026-piano-casa.md** (NUOVO): trascrizione di artt. 1, 8, 9 del
+  DL 66/2026 letti dal PDF GU n. 104/2026 via pdftotext. Art. 8 co. 1: rinvio a DL 76/2020
+  art. 10 co. 7-ter per SCIA in luogo di PdC per demolizione/ricostruzione ERP. Art. 9: verifica
+  che NON modifica artt. 10 o 22 DPR 380/2001 ne' Tabella A D.Lgs. 222/2016.
+- **references/fonti/dpr-73-2026-paesaggio-dpr31-2017.md** (NUOVO): trascrizione integrale di
+  art. 1 del DPR 73/2026 letto dal PDF GU n. 108/2026 via pdftotext. Modifiche a lettera A.27
+  Allegato A (esclusione autorizzazione paesaggistica per caravan/case mobili/autocaravan in
+  strutture ricettive all'aperto gia' autorizzate) e B.26 Allegato B (procedura semplificata
+  per infrastrutture a rete in strutture ricettive all'aperto).
+- **references/estratti/dl-66-2026-piano-casa.md** (NUOVO): estratto mirato con matrice di
+  impatto sui regimi edilizi, inclusa la verifica negativa su art. 9 (no modifica TUE).
+- **references/estratti/dpr-73-2026-paesaggio.md** (NUOVO): estratto mirato con sintesi delle
+  modifiche a A.27 e B.26 e impatto per la skill.
+- **tasks/determina-regime-edilizio.md**: aggiunta eccezione Piano Casa a Branch F
+  (ristrutturazione edilizia) e Branch H (ristrutturazione urbanistica) con nota su SCIA per
+  demolizione/ricostruzione ERP. Aggiornato passo 3 (pre-requisiti) con nota su DPR 73/2026
+  per strutture ricettive all'aperto.
+- **SKILL.md**: aggiornata `description` con riferimento a DL 66/2026 e DPR 73/2026;
+  aggiornata sezione "Fonti normative" con le due nuove fonti e i nuovi estratti.
+
 ## [Unreleased]
 
 ### Fixed (source-grounding remediation - PR #154)

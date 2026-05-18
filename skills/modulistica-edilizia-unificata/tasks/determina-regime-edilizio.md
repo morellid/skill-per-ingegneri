@@ -120,6 +120,13 @@ Se l'intervento e' **gia' eseguito senza titolo** o in difformita':
 
 > **Avvertenza**: se l'utente sceglie SCIA alternativa, l'inizio lavori e' dopo 30 gg dalla presentazione (non immediato), e le sanzioni in caso di SCIA errata sono assimilate a quelle del PdC. Segnalalo esplicitamente.
 
+> **Eccezione Piano Casa - demolizione/ricostruzione ERP (DL 66/2026 art. 8 co. 1)**: per
+> demolizione e ricostruzione nell'ambito del programma straordinario ERP di cui al Capo II del
+> DL 66/2026 (in vigore dal 08/05/2026), il titolo e' la **SCIA** (non PdC), per rinvio a DL
+> 76/2020 art. 10 co. 7-ter. Ambito: soggetti attuatori ERP (enti pubblici, societa'
+> controllate). Non si applica a privati ne' a interventi fuori dal programma ERP straordinario.
+> Fonte: art. 8 co. 1 DL 66/2026 (letto da PDF GU n. 104 del 07/05/2026).
+
 #### Branch G - Nuova costruzione (art. 3 lett. e)
 
 1. **Nuova edificazione di edificio**: **PdC** (art. 10 co. 1 lett. a).
@@ -132,6 +139,14 @@ Se l'intervento e' **gia' eseguito senza titolo** o in difformita':
 #### Branch H - Ristrutturazione urbanistica (art. 3 lett. f)
 
 -> **PdC** sempre (art. 10 co. 1 lett. b).
+
+> **Eccezione Piano Casa (DL 66/2026 art. 8 co. 1)**: per interventi di ristrutturazione
+> urbanistica, edilizia o demolizione/ricostruzione realizzati nell'ambito del programma
+> straordinario ERP di cui al Capo II del DL 66/2026 (in vigore dal 08/05/2026), si applica
+> la SCIA in luogo del PdC, per effetto del rinvio all'art. 10, co. 7-ter, DL 76/2020
+> (conv. L. 120/2020). Il regime speciale e' limitato ai soggetti attuatori del programma
+> (enti ERP, societa' controllate da enti pubblici). Fonte: art. 8 co. 1 DL 66/2026
+> (letto da PDF GU n. 104 del 07/05/2026).
 
 #### Branch I - Variante in corso d'opera
 
@@ -147,10 +162,18 @@ Per ogni regime individuato, identifica le autorizzazioni a monte:
 | Vincolo | Pre-requisito | Riferimento |
 |---------|----------------|-------------|
 | Bene culturale (parte II D.Lgs. 42) | Autorizzazione MiC (Soprintendenza) | art. 21 D.Lgs. 42/2004 |
-| Vincolo paesaggistico (parte III) | Autorizzazione paesaggistica (ordinaria o semplificata) | art. 146 D.Lgs. 42/2004 + DPR 31/2017 |
+| Vincolo paesaggistico (parte III) | Autorizzazione paesaggistica (ordinaria o semplificata) | art. 146 D.Lgs. 42/2004 + DPR 31/2017 (come mod. da DPR 73/2026 dal 27/05/2026) |
 | Vincolo idrogeologico | Autorizzazione regionale/forestale | R.D. 3267/1923 |
 | Sismica zona 1/2 (e in zona 3 per opere significative) | Autorizzazione sismica preventiva o deposito sismico | DPR 380 artt. 93-94-bis (rinvio LR per regimi semplificati) |
 | Vincolo idraulico (PAI/PGRA) | Parere/nulla osta Autorita' di bacino | varia per ambito |
+
+> **Nota DPR 73/2026** (in vigore dal 27/05/2026): per interventi su strutture turistico-ricettive
+> all'aperto gia' autorizzate paesaggisticamente, il DPR 73/2026 ha ampliato:
+> (1) l'Allegato A voce A.27 - esclusione da autorizzazione per collocazione di caravan/case
+> mobili/autocaravan (UNI EN 13878:2007) senza collegamento permanente al suolo;
+> (2) l'Allegato B voce B.26 - procedura semplificata per infrastrutture a rete e modifiche
+> delle aree attrezzate senza nuove costruzioni ne' aumento capacita' ricettiva.
+> Fonte: art. 1 DPR 73/2026 (letto da PDF GU n. 108 del 12/05/2026).
 
 ### Passo 4 - Adempimenti accessori al cantiere
 

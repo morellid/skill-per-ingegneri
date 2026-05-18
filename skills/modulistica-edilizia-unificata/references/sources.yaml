@@ -1,6 +1,6 @@
 schema_version: 1
 skill: modulistica-edilizia-unificata
-last_verified: 2026-04-29
+last_verified: 2026-05-18
 
 # Fonti normative principali per la skill di selezione del modulo edilizio
 # unificato (CILA / SCIA / SCIA alternativa al PdC / Permesso di Costruire /
@@ -157,7 +157,7 @@ sources:
       paesaggistico ne' redige la relazione paesaggistica (DPR 31/2017).
 
   - id: dpr-31-2017-paesaggistica-semplificata
-    title: "DPR 13 febbraio 2017 n. 31 - Regolamento autorizzazione paesaggistica semplificata"
+    title: "DPR 13 febbraio 2017 n. 31 - Regolamento autorizzazione paesaggistica semplificata (come modificato da DPR 73/2026 dal 27/05/2026)"
     type: rinvio-normativo
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2017-02-13;31
     accessed: 2026-04-29
@@ -172,6 +172,10 @@ sources:
       richiama l'eventuale obbligo di autorizzazione paesaggistica come
       pre-requisito al deposito del modulo edilizio nei Comuni in
       vincolo, ma non sostituisce la valutazione paesaggistica.
+      AGGIORNAMENTO 2026-05-18: gli Allegati A e B del DPR 31/2017 sono
+      stati modificati dal DPR 73/2026 (GU n. 108 del 12/05/2026, in
+      vigore dal 27/05/2026). Vedi fonte `dpr-73-2026-paesaggio-dpr31-2017`
+      per il testo delle modifiche letto dal PDF ufficiale.
 
   - id: dlgs-81-2008-rinvio-sicurezza-cantiere
     title: "D.Lgs. 9 aprile 2008 n. 81 - Testo unico salute e sicurezza sul lavoro - rinvio strutturale"
@@ -188,6 +192,59 @@ sources:
       per la sicurezza (art. 90), allegati ricorrenti dei moduli quando
       l'intervento e' soggetto a CSE/CSP. Per il merito si rinvia alla
       skill 'pos-allegato-xv-checker' del repo.
+
+  - id: dl-66-2026-piano-casa
+    title: "DL 7 maggio 2026 n. 66 - Disposizioni urgenti per il Piano Casa (GU n. 104 del 07/05/2026)"
+    type: decreto-legge
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/05/07/104/sg/pdf
+    accessed: 2026-05-18
+    sha256: be6c7748f4c89740769cc9c39d21c55f5e839dbf340364748cf7b7a1ea1a6d05
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-66-2026-piano-casa-gu104.pdf
+    md_path: references/fonti/dl-66-2026-piano-casa.md
+    excerpt_paths:
+      - references/estratti/dl-66-2026-piano-casa.md
+    notes: |
+      Piano Casa 2026. In vigore dal 8/05/2026. Rilevante per la skill:
+      - Art. 8 co. 1: estende agli interventi ERP del Capo II le disposizioni di cui
+        all'art. 10 co. 7-ter del DL 76/2020 (conv. L. 120/2020), consentendo la SCIA
+        in luogo del PdC per demolizione/ricostruzione in contesti di edilizia residenziale
+        pubblica e sociale. Modifica il regime ordinario di ristrutturazione pesante
+        (PdC ex art. 10 co. 1 lett. c DPR 380/2001) per questo specifico ambito.
+      - Art. 8 co. 3: mutamento destinazione d'uso per finalita' ERP segue art. 23-ter
+        DPR 380/2001 (gia' coperto dalla skill) con vincolo trentennale.
+      - Art. 9: NON modifica artt. 10 o 22 DPR 380/2001 ne' Tabella A D.Lgs. 222/2016.
+        Disciplina speciale parallela per programmi integrati (70% edilizia convenzionata,
+        riduzione 33% prezzi/canoni di mercato). Verifica eseguita su testo PDF.
+      Il PDF scaricato e' la GU n. 104 integrale (2.557.629 bytes), contiene il DL 66/2026
+      e altri atti dello stesso numero. L'SHA256 e' riferito al file GU integrale.
+
+  - id: dpr-73-2026-paesaggio-dpr31-2017
+    title: "DPR 20 febbraio 2026 n. 73 - Modifica allegati A e B del DPR 31/2017 (GU n. 108 del 12/05/2026)"
+    type: decreto-presidente-repubblica
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/05/12/108/sg/pdf
+    accessed: 2026-05-18
+    sha256: ceca0ebe69b9c4646049eabfa731b951ececaffc29f0b2938bb732cd963392db
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dpr-73-2026-paesaggio-gu108.pdf
+    md_path: references/fonti/dpr-73-2026-paesaggio-dpr31-2017.md
+    excerpt_paths:
+      - references/estratti/dpr-73-2026-paesaggio.md
+    notes: |
+      In vigore dal 27/05/2026 (15 gg dalla pubblicazione in GU del 12/05/2026).
+      Codice redazionale GU: 26G00086.
+      Modifica il DPR 13 febbraio 2017, n. 31 (regolamento autorizzazione paesaggistica):
+      - Lettera A.27 Allegato A: aggiunta esclusione da autorizzazione paesaggistica per
+        collocazione di caravan, case mobili, autocaravan (UNI EN 13878:2007) in strutture
+        turistico-ricettive all'aperto gia' autorizzate paesaggisticamente, a condizione di
+        assenza di collegamento permanente al suolo e rimuovibilita' degli agganci alle reti.
+      - Lettera B.26 Allegato B: aggiunta procedura semplificata per interventi su strutture
+        turistico-ricettive all'aperto per infrastrutture a rete e modifiche delle aree
+        attrezzate (senza nuove costruzioni ne' aumento capacita' ricettiva).
+      Il DPR 31/2017 era gia' citato nella skill come "rinvio strutturale" (senza SHA256).
+      Con questo aggiornamento la fonte viene aggiornata con testo letto dal PDF.
+      Il PDF scaricato e' la GU n. 108 integrale (3.518.879 bytes). L'SHA256 e' riferito
+      al file GU integrale che contiene il DPR 73/2026 e altri atti.
 
 # Fonti secondarie da valutare per estensioni successive
 secondary_sources_to_evaluate:
