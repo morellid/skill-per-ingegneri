@@ -1,6 +1,6 @@
 schema_version: 1
 skill: pfte-allegato-i7-checker
-last_verified: 2026-05-10
+last_verified: 2026-05-18
 
 # Fonti normative principali per la skill di verifica PFTE secondo
 # D.Lgs. 36/2023 art. 41 + Allegato I.7, integrato dal correttivo
@@ -146,15 +146,66 @@ sources:
       variate nel tempo: la skill non riproduce i valori specifici ma rinvia
       alla SA per la verifica delle soglie vigenti al momento del bando.
 
+  - id: anac-bando-tipo-n2-2026-del-153-2026
+    title: "ANAC - Bando tipo n. 2/2026 - Schema di disciplinare di gara per servizi di ingegneria e architettura (SIA) sopra soglia (Delibera n. 153 del 15 aprile 2026)"
+    type: schema-anac
+    url: https://www.anticorruzione.it/documents/91439/396430602/Bando+tipo+n.+2-2026+-+del.153-15.04.2026.pdf/9806c83d-1aee-fc3a-9ef0-e6b0d22fbec2?t=1777986989937
+    accessed: 2026-05-18
+    sha256: 3c39962bc041200fc03a2cc20c727c42b22e096e999cc9dcb3ccd28f786c2b49
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-bando-tipo-n2-2026-del-153-2026.pdf
+    md_path: references/fonti/anac-bando-tipo-n2-2026-del-153-2026.md
+    excerpt_paths:
+      - references/estratti/anac-bando-tipo-n2-2026-bim-ai.md
+    notes: |
+      Bando tipo n. 2/2026 - NUOVO schema specifico per Servizi di Ingegneria e Architettura (SIA).
+      61 pagine. Approvato con Delibera ANAC n. 153 del 15 aprile 2026.
+      Procedura aperta per servizi di architettura e ingegneria sopra soglia europea (art. 14 D.Lgs. 36/2023),
+      criterio offerta economicamente piu' vantaggiosa (miglior rapporto qualita'/prezzo).
+      Pubblicato in GU Serie Generale n. 111 del 15 maggio 2026. Efficace dal 30 maggio 2026.
+      PDF scaricato il 2026-05-18, SHA256 calcolato sul file.
+      URL pagina portale: https://www.anticorruzione.it/-/del.153-15.04.2026-bando.tipo-n.2-2026
+      RILEVANZA per la skill:
+      - Clausola BIM obbligatoria nelle premesse per progettazione lavori >2M euro (o soglia art. 14 c. 1 lett. a).
+      - Requisiti speciali 6.1 lett. h-k per figure BIM (UNI 11337-7): BIM Manager, BIM Coordinator,
+        BIM Specialist, CDE Manager.
+      - Paragrafo 15.1: clausola AI obbligatoria nella versione "servizi intellettuali" (art. 13 L. 132/2025),
+        perche' i SIA sono strutturalmente servizi intellettuali.
+      - Paragrafo 16: in offerta tecnica obbligo di indicare attivita' strumentali svolte con AI; offerta
+        di gestione informativa digitale (Capitolato informativo) se richiesto BIM.
+      - Art. 41 c. 15-bis: importo base 65% prezzo fisso + 35% ribassabile.
+      - Maggiorazione 10% compenso per progettazione con BIM (Allegato I.13 art. 2 c. 5).
+
+  - id: mit-lg-gid-2026-02-20
+    title: "MIT - Linee Guida per la gestione informativa digitale per le stazioni appaltanti e gli enti concedenti (20 febbraio 2026)"
+    type: linee-guida-ministeriali
+    url: https://www.mit.gov.it/nfsmitgov/files/media/notizia/2026-02/2%20-%20Allegato%201_LG_23.02.2026.pdf
+    accessed: 2026-05-18
+    sha256: 7150201b23813c2b39c606e948751927ec75c6c526ad5bbe751ca0016783f7ab
+    license: public-domain-italian-law
+    binary_path: not_in_repo/mit-lg-gid-2026-02-20.pdf
+    md_path: references/fonti/mit-lg-gid-2026-02-20.md
+    excerpt_paths:
+      - references/estratti/mit-gid-2026-bim-pfte.md
+    notes: |
+      Linee Guida MIT 20 febbraio 2026 per la gestione informativa digitale (GID).
+      60 pagine. Emesse dalla Commissione di monitoraggio BIM presso il Consiglio Superiore
+      dei Lavori Pubblici. Adempimento PNRR milestone M1C1-97 ter.
+      PDF scaricato il 2026-05-18, SHA256 calcolato sul file.
+      URL pagina notizia: https://www.mit.gov.it/comunicazione/news/pubblicate-le-linee-guida-per-la-gestione-informativa-digitale-per-le-stazioni-0
+      RILEVANZA per la skill:
+      - Art. 43 D.Lgs. 36/2023: obbligo GID dal 1° gennaio 2025 per lavori >2M euro (par. 1.2.2-1.2.3).
+      - Soglie e regime transitorio: esclusioni manutenzione, clausola DOCFAP (par. 1.2.4-1.2.6).
+      - Schema 2 (PFTE): il PFTE in ambiente BIM include Modelli informativi, Relazione specialistica
+        sulla modellazione e Capitolato Informativo (All. I.7 art. 13, 13-bis, 13-ter) (pag. 52).
+      - Verifica PFTE include verifica Modelli informativi e Relazione specialistica (All. I.7 art. 40
+        c.2 lett. i-bis e i-ter) (pag. 52).
+      - Prevalenza contrattuale dei modelli informativi sull'ACDat (par. 1.2.5, pag. 14).
+      - Figure BIM lato SA: BIM Manager (gestore processi digitali), CDE Manager (gestore ACDat),
+        BIM Coordinator (coordinatore flussi informativi) (par. 2.4, pag. 21-23).
+
 # Fonti secondarie da valutare per estensioni successive
 secondary_sources_to_evaluate:
-  - id: anac-bandi-tipo
-    title: "ANAC - Bandi-tipo e schemi di disciplinare di gara"
-    url: https://www.anticorruzione.it/-/bandi-tipo
-    notes: |
-      Estensione futura (vedi catalog PR.2): integrazione con bandi-tipo ANAC
-      per verifica conformita' della documentazione di gara associata al PFTE.
-
   - id: cni-linee-guida-pfte
     title: "CNI - Linee guida operative redazione PFTE"
     url: https://www.cni.it/
