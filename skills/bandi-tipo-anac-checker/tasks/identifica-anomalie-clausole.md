@@ -25,6 +25,8 @@ Produrre un elenco ordinato per priorita' delle anomalie nel disciplinare, con:
 Leggere prima di procedere:
 - `references/estratti/dlgs-36-artt-clausole-disciplinare.md`
 - `references/estratti/anac-bandi-tipo-struttura-2023.md` (sezione "Indicatori di disciplinare non aggiornato")
+- `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md` (clausole AI obbligatorie dal 30 maggio 2026)
+- Se l'oggetto e' SIA: `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` (importo 65/35, BIM, equo compenso)
 
 ## Procedura
 
@@ -103,6 +105,33 @@ della matrice criteri. Segnalare qui solo le anomalie strutturali:
 - Pesi non indicati per i criteri
 - Formula offerta economica non esplicitata
 - Tre categorie obbligatorie (basse emissioni CO2, welfare, parita' di genere) assenti
+
+**Categoria E - Anomalie clausole AI (per gare dal 30 maggio 2026)**
+
+Dopo l'efficacia della Delibera 148/2026 (Bando 1) e Delibera 153/2026 (Bando 2 SIA), il paragrafo 15.1 / Domanda di partecipazione **deve** contenere le dichiarazioni AI:
+- [ ] Clausola AI assente: **critico** (violazione dello schema-tipo ANAC vincolante).
+- [ ] Riferimenti normativi parziali (solo Reg. UE 2024/1689 oppure solo L. 132/2025): **sostanziale**.
+- [ ] Per servizi intellettuali / SIA: clausola in versione generica anziche' versione art. 13 L. 132/2025 (con specifica tipologia AI + garanzie prevalenza/controllo/verifica): **sostanziale**.
+- [ ] Divieto generalizzato d'uso AI (clausola piu' restrittiva del modello-tipo) senza motivazione: **sostanziale**.
+- [ ] Per SIA: omessa clausola in paragrafo 16 sull'indicazione attivita' AI strumentali in offerta tecnica: **sostanziale**.
+
+**Categoria F - Anomalie specifiche SIA (Bando 2/2026)**
+
+Vedi `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` per la checklist completa. Anomalie tipiche:
+
+| Indicatore | Riferimento | Rischio |
+|-----------|-------------|---------|
+| Importo base senza distinzione 65% non ribassabile / 35% ribassabile | Art. 41 c. 15-bis Codice | Critico |
+| Punteggio offerta economica > 30 punti | Art. 41 c. 15-bis lett. b | Critico |
+| Maggiorazione 10% non applicata su onorari per progettazione >2M euro con BIM | Allegato I.13 art. 2 c. 5 | Sostanziale |
+| Equo compenso violato (richiesta prestazioni gratuite o ulteriori) | Art. 8 L. 49/2023 + Allegato I.13 | Critico |
+| BIM imposto in procedure lavori <2M euro senza riferimento Capitolato informativo | Art. 43 c. 2 Codice, Allegato I.9 | Sostanziale |
+| Figure BIM richieste non corrispondono a UNI 11337-7 (BIM Manager/Coordinator/Specialist/CDE Manager) | Bando 2/2026 par. 6.1 h-k | Sostanziale |
+| Capitolato informativo non allegato al disciplinare | Allegato I.9 c. 8 | Critico (se BIM) |
+| Offerta tecnica BIM senza documento autonomo "offerta di gestione informativa digitale" | Bando 2/2026 par. 16 c) | Sostanziale |
+| Certificazione UNI 11337-7:2018 richiesta come requisito anziche' come premio | Bando 2/2026 par. 6.1 NB | Sostanziale |
+| DUVRI richiesto per SIA puramente intellettuali | Art. 26 c. 3-bis D.Lgs. 81/2008 | Formale |
+| Requisiti tecnici basati su contratti ultimi 5 anni anziche' 10 | Art. 40 c. 1-bis Allegato II.12 | Sostanziale |
 
 ### Passo 3 - Prioritizzazione e output
 

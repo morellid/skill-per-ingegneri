@@ -47,17 +47,42 @@ Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' vuole ese
 
 ## Schemi ANAC applicabili (D.Lgs. 36/2023)
 
-ANAC pubblica schemi di disciplinare per il nuovo codice articolati per tipo di contratto e criterio di aggiudicazione. Il documento verificato e' il **Bando tipo n. 1/2023** (aggiornato Delibera ANAC n. 365/2025) per servizi/forniture OEPV sopra soglia. Per gli altri schemi, verificare sempre il portale ANAC prima dell'utilizzo:
+ANAC pubblica schemi di disciplinare articolati per tipo di contratto e criterio di aggiudicazione. Gli schemi verificati per questa skill sono:
 
 | Tipo contratto | Criterio | Schema ANAC | Stato verifica |
 |---------------|----------|-------------|----------------|
-| Servizi e forniture (sopra soglia) | OEPV | Bando tipo n. 1/2023 | Confermato (Delibera 365/2025) |
+| Servizi e forniture (sopra soglia) | OEPV | **Bando tipo n. 1/2023 (agg. Delibera 148/2026)** | Confermato - efficace dal 30 maggio 2026 |
+| **Servizi di ingegneria e architettura (SIA) (sopra soglia)** | **OEPV** | **Bando tipo n. 2/2026 (Delibera 153/2026)** | **Confermato - efficace dal 30 maggio 2026** |
 | Servizi e forniture (sopra soglia) | Prezzo piu' basso | Da verificare su portale ANAC | - |
 | Lavori (sopra soglia) | Prezzo piu' basso | Da verificare su portale ANAC | - |
 | Lavori (sopra soglia) | OEPV | Da verificare su portale ANAC | - |
 
+**Quale schema applicare**:
+- Se l'oggetto e' un servizio o una fornitura **generici** (sopra soglia, OEPV) -> Bando tipo n. 1/2023.
+- Se l'oggetto e' un **servizio di ingegneria o di architettura** (progettazione, direzione lavori, coordinamento sicurezza, verifica progetto, ecc.) sopra soglia OEPV -> **Bando tipo n. 2/2026** (specifico per SIA, regola importo 65/35 art. 41 c. 15-bis, requisiti BIM, equo compenso).
+
+**Date di efficacia**: entrambi gli schemi attualmente vigenti (Delibere 148/2026 e 153/2026) sono pubblicati in GU Serie Generale n. 111 del 15 maggio 2026 e acquistano efficacia il quindicesimo giorno successivo, ovvero il **30 maggio 2026**. Per procedure indette prima di tale data si applica la versione precedente (Bando 1/2023 Delibera 365/2025); per i SIA sopra soglia bandite prima del 30 maggio 2026 non esisteva uno schema-tipo ANAC specifico.
+
 Per le procedure sotto soglia: gli schemi sopra soglia si applicano come riferimento
 con adattamenti motivati; verificare se ANAC ha pubblicato schemi specifici.
+
+## Novita' principali Delibere 148/2026 e 153/2026
+
+**Bando tipo n. 1/2023 (Delibera 148/2026)** - principali modifiche:
+- **Paragrafo 15.1 / Domanda di partecipazione: clausole obbligatorie AI** (Reg. UE 2024/1689 + L. 132/2025 + GDPR), con versione separata per servizi intellettuali (art. 13 L. 132/2025).
+- **Paragrafo 14 - Soccorso istruttorio**: integrato elenco casi sanabili (contratto di avvalimento, garanzia provvisoria).
+- **Paragrafo 28 - Accesso atti**: clausola alternativa per inversione procedimentale (parere CdS 61/2026).
+- Vari aggiustamenti recepiti dal parere del Consiglio di Stato n. 61 del 13/01/2026.
+
+**Bando tipo n. 2/2026 (Delibera 153/2026)** - schema NUOVO per SIA:
+- **Importo base 65/35** (art. 41 c. 15-bis Codice): 65% prezzo fisso non ribassabile + 35% ribassabile.
+- **Tetto 30%** punteggio offerta economica (art. 41 c. 15-bis lett. b).
+- **Calcolo importo base** ai sensi Allegato I.13 (DM 17.06.2016).
+- **BIM obbligatorio** per progettazione lavori >2M euro (o soglia art. 14 c. 1 lett. a beni culturali).
+- **Maggiorazione 10% compenso** su onorari per progettazione con BIM (Allegato I.13 art. 2 c. 5).
+- **Figure professionali BIM** (UNI 11337-7): BIM Manager, BIM Coordinator, BIM Specialist, CDE Manager (paragrafo 6.1 lett. h-k).
+- **Clausole AI** in versione "servizi intellettuali" + indicazione attivita' AI nell'offerta tecnica.
+- **Offerta di gestione informativa digitale** come documento autonomo dell'offerta tecnica (se BIM).
 
 ## Aree di verifica principali
 
@@ -76,12 +101,16 @@ Le principali aree di controllo in un disciplinare rispetto allo schema ANAC:
 ## Fonti normative
 
 Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fonti primarie:
-- D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici, artt. 11, 87, 90, 91, 94-96, 99-101, 104, 106, 117-119
-- ANAC - Bando tipo n. 1/2023 (Delibera 365/2025), schema disciplinare servizi/forniture OEPV sopra soglia
+- D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici (come modificato da D.Lgs. 209/2024), artt. 11, 41 c. 15-bis (SIA), 43 (BIM), 87, 90, 91, 94-96, 99-101, 104, 106, 117-119; Allegato I.9 (Capitolato informativo BIM); Allegato I.13 (corrispettivi SIA, DM 17.06.2016); Allegato II.12 (requisiti SIA).
+- ANAC - Bando tipo n. 1/2023 testo consolidato (Delibera 148 del 1 aprile 2026), schema disciplinare servizi/forniture OEPV sopra soglia.
+- ANAC - Bando tipo n. 2/2026 (Delibera 153 del 15 aprile 2026), schema disciplinare servizi di ingegneria e architettura sopra soglia OEPV.
+- Regolamento UE 2024/1689 (AI Act); Legge 23 settembre 2025 n. 132 (norma italiana AI, art. 13 per professionisti).
 
 Estratti testuali in [`references/estratti/`](references/estratti/):
-- [`dlgs-36-artt-clausole-disciplinare.md`](references/estratti/dlgs-36-artt-clausole-disciplinare.md) - artt. 74, 87, 90, 94-103, 117-120
-- [`anac-bandi-tipo-struttura-2023.md`](references/estratti/anac-bandi-tipo-struttura-2023.md) - struttura e clausole obbligatorie degli schemi ANAC
+- [`dlgs-36-artt-clausole-disciplinare.md`](references/estratti/dlgs-36-artt-clausole-disciplinare.md) - artt. 74, 87, 90, 94-103, 117-120.
+- [`anac-bandi-tipo-struttura-2023.md`](references/estratti/anac-bandi-tipo-struttura-2023.md) - struttura e clausole obbligatorie degli schemi ANAC.
+- [`anac-bandi-tipo-clausole-ai-l132-2025.md`](references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md) - clausole obbligatorie sull'uso di sistemi di IA (Reg. UE 2024/1689 + L. 132/2025).
+- [`anac-bando-tipo-2-2026-sia-requisiti-bim.md`](references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md) - importo 65/35, maggiorazione BIM, figure professionali BIM e requisiti SIA.
 
 ## Limiti
 
