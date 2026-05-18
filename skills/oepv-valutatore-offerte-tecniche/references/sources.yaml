@@ -1,6 +1,6 @@
 schema_version: 1
 skill: oepv-valutatore-offerte-tecniche
-last_verified: 2026-05-10
+last_verified: 2026-05-18
 
 # Fonti normative per la skill di supporto alla valutazione OEPV (offerta economicamente
 # piu' vantaggiosa) nelle procedure di appalto pubblico ai sensi del D.Lgs. 36/2023.
@@ -116,15 +116,45 @@ sources:
       possibile" alle imprese certificate. Il riferimento e' rinvio strutturale: la
       skill segnala l'obbligo ma non valuta la certificazione specifica.
 
+  - id: anac-bando-tipo-n2-2026-del-153-2026
+    title: "ANAC - Bando tipo n. 2/2026 - Schema disciplinare servizi di ingegneria e architettura (SIA) sopra soglia OEPV - Delibera n. 153 del 15 aprile 2026"
+    type: schema-anac
+    url: https://www.anticorruzione.it/documents/91439/396430602/Bando+tipo+n.+2-2026+-+del.153-15.04.2026.pdf/9806c83d-1aee-fc3a-9ef0-e6b0d22fbec2?t=1777986989937
+    accessed: 2026-05-18
+    sha256: 3c39962bc041200fc03a2cc20c727c42b22e096e999cc9dcb3ccd28f786c2b49
+    license: public-domain-italian-law
+    binary_path: not_in_repo/anac-bando-tipo-n2-2026-del-153-2026.pdf
+    md_path: references/fonti/anac-bando-tipo-n2-2026-del-153-2026.md
+    excerpt_paths:
+      - references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md
+    notes: |
+      Bando tipo n. 2/2026 - nuovo schema specifico per Servizi di Ingegneria e Architettura (SIA).
+      61 pagine. Approvato con Delibera ANAC n. 153 del 15 aprile 2026.
+      Procedura aperta per servizi di architettura e ingegneria sopra soglia europea (art. 14 D.Lgs. 36/2023),
+      criterio offerta economicamente piu' vantaggiosa (miglior rapporto qualita'/prezzo).
+      Pubblicato in GU Serie Generale n. 111 del 15 maggio 2026. Efficace dal 30 maggio 2026.
+      PDF scaricato il 2026-05-18, SHA256 calcolato sul file (coincide con SHA256 verificato in
+      skill bandi-tipo-anac-checker, da cui e' stata copiata la fonte MD gia' letta e convertita).
+      URL pagina portale: https://www.anticorruzione.it/-/bando.tipo.n.2.2026
+      RILEVANZA per questa skill (oepv-valutatore-offerte-tecniche):
+      - Para. 18: schema OEPV codificato per SIA (criteri A-professionalita', B-metodologia, CAM, BIM);
+        tetto massimo 30% punteggio economico (art. 41 c. 15-bis lett. b Codice);
+        formula non lineare per ribasso economico (18.3).
+      - Para. 6.1 lett. h-k: BIM come requisito speciale obbligatorio per procedure con BIM obbligatorio
+        (soglia 2M euro lavori o beni culturali); figure UNI 11337-7 (BIM Manager, Coordinator,
+        Specialist, CDE Manager); certificazione UNI 11337-7 valorizzabile come criterio premiale OEPV.
+      - Para. 15.1: clausola AI obbligatoria nella versione "servizi intellettuali" (art. 13 L. 132/2025);
+        la commissione verifica la coerenza tra dichiarazione in domanda e indicazione in offerta tecnica.
+      - Para. 16: in offerta tecnica obbligo di indicare attivita' strumentali svolte con AI.
+
 secondary_sources_to_evaluate:
   - id: anac-bandi-tipo
     title: "ANAC - Bandi-tipo e schemi di disciplinare di gara"
     url: https://www.anticorruzione.it/-/bandi-tipo
     notes: |
       I bandi-tipo ANAC contengono sezioni standard per la matrice OEPV.
-      Fonte principale per la futura skill PR.2 (bandi-tipo ANAC conformi).
-      Per questa skill, i bandi-tipo sono citati come best practice ma non
-      analizzati sistematicamente.
+      Per questa skill, i bandi-tipo sono ora incorporati: Bando tipo n. 2/2026 (SIA sopra soglia).
+      Per bandi tipo servizi/forniture generici: Bando tipo n. 1/2023 (skill bandi-tipo-anac-checker).
 
   - id: cons-stato-giurisprudenza-oepv
     title: "Consiglio di Stato - giurisprudenza OEPV consolidata"

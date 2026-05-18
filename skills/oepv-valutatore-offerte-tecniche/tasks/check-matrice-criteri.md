@@ -30,9 +30,31 @@ Leggere prima di procedere:
 
 ## Procedura
 
-### Passo 1 - Verifica obblighi formali dell'art. 108
+### Passo 1 - Identificazione tipologia gara e norma applicabile
 
-Controllare sistematicamente:
+Prima di verificare la matrice, identificare se si tratta di:
+- **SIA sopra soglia europea (dal 30/05/2026)**: si applica Bando tipo n. 2/2026 (Delibera ANAC 153/2026) come schema obbligatorio; la matrice va confrontata con lo schema codificato nel Bando tipo
+- **Servizi/forniture generici sopra soglia**: si applica Bando tipo n. 1/2023 (Delibera ANAC 148/2026)
+- **Gara sotto soglia o contratto diverso**: si applicano solo art. 108 D.Lgs. 36/2023 e ANAC LG n. 2/2018
+
+### Passo 1bis - Checklist specifica per SIA sopra soglia (Bando tipo n. 2/2026)
+
+Se la gara e' SIA sopra soglia (art. 14 D.Lgs. 36/2023) con disciplinare pubblicato dal 30/05/2026:
+
+| Requisito SIA | Riferimento | Da verificare |
+|---------------|-------------|---------------|
+| Tetto 30% punteggio economico rispettato | Art. 41 c. 15-bis lett. b Codice + Para. 18 Bando tipo n. 2/2026 | Il punteggio economico e' <= 30? Questo limite vale per TUTTI i SIA sopra soglia, non solo alta intensita' manodopera |
+| Split 65/35 dichiarato | Art. 41 c. 15-bis lett. a/b Codice + Para. 3 Bando tipo n. 2/2026 | Il disciplinare specifica che il 65% e' prezzo fisso e il 35% e' soggetto a ribasso? |
+| Formula economica non lineare con ribasso su 35% | Para. 18.3 Bando tipo n. 2/2026 | La formula usa la forma PEi=(Ri/Rmed)^alpha o comunque i metodi art. 2-bis Allegato I.13? La formula si applica al ribasso sul 35%, non all'importo pieno? |
+| Criteri offerta tecnica conformi allo schema A-B | Para. 18.1 Bando tipo n. 2/2026 | La matrice prevede almeno: (A) professionalita'/servizi affini e (B) caratteristiche metodologiche? |
+| Servizi affini senza limite decennale (criterio A) | Para. 16 Bando tipo n. 2/2026 | Il disciplinare non limita i servizi affini valutabili ai 10 anni antecedenti (limite vale per requisiti, non per OEPV)? |
+| BIM come criterio: se obbligatorio, verifica sottocriterio | Para. 18.1 + Para. 6.1 Bando tipo n. 2/2026 | Se BIM obbligatorio (lavori > 2M euro): la matrice prevede un sottocriterio BIM nell'offerta tecnica? Certificazione UNI 11337-7 valorizzata come premiale? |
+| Clausola AI nella domanda e in offerta tecnica | Para. 15.1 e Para. 16 Bando tipo n. 2/2026 + Art. 13 L. 132/2025 | Il disciplinare prevede la dichiarazione AI obbligatoria in domanda (art. 13 L. 132/2025, versione servizi intellettuali) e l'indicazione AI in offerta tecnica? La commissione verifica la coerenza? |
+| Criterio parita' di genere previsto | Art. 108 co. 7 + D.Lgs. 198/2006 art. 46-bis | Presente come criterio OEPV (obbligatorio)? |
+
+### Passo 2 - Verifica obblighi formali generali (art. 108)
+
+Controllare sistematicamente per tutti i contratti OEPV:
 
 | Requisito | Riferimento | Da verificare |
 |-----------|-------------|---------------|
@@ -49,7 +71,7 @@ Controllare sistematicamente:
 | Criteri collegati all'oggetto del contratto | Art. 108 co. 6 | Tutti i criteri sono pertinenti all'appalto? Nessun criterio soggettivo sull'operatore? |
 | Nessun punto per opere extra rispetto al progetto (lavori) | Art. 108 co. 11 | Per lavori: nessun criterio premia opere aggiuntive non previste nel progetto a base di gara |
 
-### Passo 2 - Verifica qualita' dei criteri discrezionali
+### Passo 3 - Verifica qualita' dei criteri discrezionali
 
 I criteri discrezionali sono la fonte principale di ricorsi TAR. Verificare:
 
@@ -64,9 +86,16 @@ Indicatori di rischio per criteri discrezionali:
 - "Solidita' economica dell'impresa" come criterio tecnico -> **non conforme** (art. 108 co. 6: solo criteri collegati all'oggetto)
 - "Referenze su contratti simili" come criterio tecnico -> **non conforme** se non collegato a caratteristiche dell'offerta (confonde requisiti di partecipazione con valutazione offerta)
 
-### Passo 3 - Verifica della formula offerta economica
+### Passo 4 - Verifica della formula offerta economica
 
-La formula economica deve essere esplicitata nel disciplinare. Formule accettabili:
+La formula economica deve essere esplicitata nel disciplinare.
+
+**Per SIA sopra soglia (Bando tipo n. 2/2026)**: formula non lineare obbligatoria (para. 18.3):
+- PEi = (Ri/Rmed)^alpha se Ri < Rmed; PEi = 1 se Ri >= Rmed; alpha = [0,1 - 0,3]
+- Il ribasso (Ri) si applica al 35% soggetto a ribasso (non all'importo pieno)
+- Se il disciplinare usa formula lineare semplice -> segnalare come NON CONFORME al Bando tipo n. 2/2026
+
+**Per altri contratti OEPV - formule accettabili**:
 
 **Formula lineare** (piu' comune, TAR-stabile):
 - Pe_i = Vmax × (Prezzomin / Prezzo_i)
@@ -81,13 +110,14 @@ La formula economica deve essere esplicitata nel disciplinare. Formule accettabi
 - "Interpolazione lineare" senza esplicitare Rmax o Prezzomin: **rischio medio** (ambiguo)
 - Nessuna formula indicata: **non conforme** (gli offerenti non possono verificare il calcolo)
 
-### Passo 4 - Output
+### Passo 5 - Output
 
 ```markdown
 # Verifica conformita' matrice criteri OEPV
 **Gara**: [oggetto]
-**Tipo contratto**: [lavori/servizi/forniture]
+**Tipo contratto**: [lavori/servizi/forniture - se SIA sopra soglia: specificare "SIA sopra soglia europea"]
 **Importo**: EUR [importo]
+**Schema applicabile**: [Bando tipo n. 2/2026 (SIA sopra soglia, dal 30/05/2026) / Bando tipo n. 1/2023 / Solo art. 108]
 **Data verifica**: [data]
 
 ---

@@ -5,6 +5,35 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-05-18
+
+### feat: recepimento Bando tipo n. 2/2026 ANAC per SIA (issue #166)
+
+**Nuova fonte**: ANAC Bando tipo n. 2/2026 (Delibera n. 153 del 15 aprile 2026), pubblicato in GU
+n. 111 del 15 maggio 2026, efficace dal 30 maggio 2026. PDF scaricato il 2026-05-18;
+SHA256: 3c39962bc041200fc03a2cc20c727c42b22e096e999cc9dcb3ccd28f786c2b49. La fonte MD
+(`references/fonti/anac-bando-tipo-n2-2026-del-153-2026.md`) e' la conversione letta e verificata
+del PDF (riutilizzata dalla skill bandi-tipo-anac-checker che l'ha gia' verificata).
+
+**Estratto creato**: `references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md` con parafrasi citata dei
+paragrafi rilevanti: 3 (split 65/35), 6.1 lett. h-k (requisiti BIM e figure UNI 11337-7), 15.1
+(clausola AI obbligatoria versione servizi intellettuali, art. 13 L. 132/2025), 16 (offerta gestione
+informativa BIM, indicazione AI), 18 (schema OEPV, tetto 30% punteggio economico, formula non
+lineare paragrafo 18.3).
+
+**Aggiornamenti**:
+- `SKILL.md`: aggiunta sezione "Bando tipo n. 2/2026 per SIA sopra soglia" con schema OEPV codificato,
+  BIM come elemento obbligatorio, dichiarazione AI, formula non lineare, collegamento a bandi-tipo-anac-checker;
+  aggiornati limiti punteggio economico (art. 41 c. 15-bis per SIA separato da art. 108 co. 4);
+  aggiornata sezione "Non usare" con riferimento a bandi-tipo-anac-checker; aggiornate fonti normative.
+- `tasks/costruisci-matrice-criteri.md`: aggiunto schema SIA Bando tipo n. 2/2026 come riferimento primario
+  per gare SIA sopra soglia (criteri A-B-CAM-BIM-PDG-economica); aggiunta checklist BIM obbligatorio.
+- `tasks/check-matrice-criteri.md`: aggiunti Passo 1 (identificazione tipologia) e Passo 1bis (checklist
+  specifica SIA con tetto 30%, split 65/35, formula non lineare, criteri BIM, clausola AI); rinumerati
+  i passi esistenti; aggiunta voce "Schema applicabile" nell'output template.
+- `references/sources.yaml`: aggiunta fonte anac-bando-tipo-n2-2026-del-153-2026 con sha256 reale;
+  aggiornato last_verified a 2026-05-18.
+
 ## [0.1.1] - 2026-05-10
 
 ### fix(source-grounding)
