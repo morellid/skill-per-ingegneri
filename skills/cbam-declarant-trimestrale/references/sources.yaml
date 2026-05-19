@@ -1,0 +1,94 @@
+schema_version: 1
+skill: cbam-declarant-trimestrale
+last_verified: 2026-05-18
+
+# Fonti normative ufficiali del CBAM nella sua fase definitiva (dal 1° gennaio 2026).
+# Tutte le fonti sono scaricate da host ufficiali (eur-lex.europa.eu, adm.gov.it),
+# con sha256 verificato; il testo PDF e' stato estratto via pdftotext e i contenuti
+# rilevanti sono trascritti fedelmente nei file references/fonti/<id>.md.
+
+sources:
+  - id: reg-ue-2023-956-cbam-consolidato
+    title: "Regolamento (UE) 2023/956 del Parlamento europeo e del Consiglio del 10 maggio 2023 che istituisce un meccanismo di adeguamento del carbonio alle frontiere - testo consolidato al 20/10/2025 (integrato dal Reg. 2025/2083)"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:02023R0956-20251020
+    download_url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:02023R0956-20251020
+    accessed: 2026-05-18
+    sha256: ca5465e5c73347b290cebc53aff6ae6c7a6ea0c0793efb02b836a9bf89561289
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2023-956-cbam-consolidato.pdf
+    md_path: references/fonti/reg-ue-2023-956-cbam-consolidato.md
+    excerpt_path: references/estratti/reg-ue-2023-956-articoli-fase-definitiva.md
+    # eur-lex.europa.eu restituisce body vuoto agli IP datacenter di GitHub
+    # Actions (Azure westus3) per i download PDF di testi consolidati; il fetch
+    # da browser/postazione operatore funziona regolarmente. Il check di drift
+    # automatico e' deliberatamente saltato; aggiornamento manuale a cura
+    # dell'agent ad ogni nuova versione consolidata.
+    ci_fetch_blocked: "eur-lex.europa.eu restituisce body vuoto agli IP datacenter GitHub Actions per PDF di testi consolidati"
+    notes: |
+      Testo consolidato che incorpora le modifiche introdotte dal Reg. (UE) 2025/2083
+      (Omnibus). Versione 02023R0956 - IT - 20.10.2025 - 001.001, distribuita da EUR-Lex
+      come strumento di documentazione (non fa fede; la versione facente fede e' quella
+      pubblicata in GU UE L 130 del 16.5.2023 e GU UE L del 17.10.2025 per le modifiche).
+      Le citazioni nella skill rinviano sempre al numero di articolo del Reg. 956/2023
+      come consolidato.
+
+  - id: reg-ue-2025-2083-cbam-omnibus
+    title: "Regolamento (UE) 2025/2083 del Parlamento europeo e del Consiglio dell'8 ottobre 2025 che modifica il regolamento (UE) 2023/956 per quanto riguarda la semplificazione e il rafforzamento del meccanismo di adeguamento del carbonio alle frontiere"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=OJ:L_202502083
+    download_url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=OJ:L_202502083
+    accessed: 2026-05-18
+    sha256: ba1a997d5bfb23dbf149ff412fc2c943d4afc3ce6b7d1044c9ea8f81320bc5c5
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2025-2083-cbam-omnibus.pdf
+    md_path: references/fonti/reg-ue-2025-2083-cbam-omnibus.md
+    excerpt_path: references/estratti/reg-ue-2025-2083-considerando-chiave.md
+    # Vedi nota su reg-ue-2023-956-cbam-consolidato: eur-lex.europa.eu blocca
+    # i fetch dai runner GitHub Actions per i PDF di GU UE. Aggiornamento
+    # manuale a cura dell'agent (e' un atto definitivo, non soggetto a drift).
+    ci_fetch_blocked: "eur-lex.europa.eu restituisce body vuoto agli IP datacenter GitHub Actions per PDF di Gazzetta Ufficiale UE"
+    notes: |
+      Atto modificativo (cosiddetto "Omnibus CBAM") pubblicato in GU UE L del 17.10.2025.
+      Introduce in particolare: soglia unica di massa 50 t (Art. 2bis, Allegato VII),
+      deroga transitoria di importazione fino al 31 marzo 2026 con domanda gia' presentata
+      (Art. 17.7bis), sanzioni proporzionate per importatori non autorizzati che superano
+      la soglia (Art. 26.2bis), piattaforma centrale comune per vendita certificati
+      (dal 1° febbraio 2027), spostamento al 30 settembre del termine per la dichiarazione
+      CBAM annuale (prima volta 2027 per anno 2026).
+
+  - id: circ-adm-36-2025-cbam
+    title: "Agenzia delle Dogane e dei Monopoli - Direzione Dogane - Circolare n. 36/2025 del 24/12/2025 - Reg. UE 956/2023 CBAM: avvio della fase definitiva - adempimenti ed istruzioni"
+    type: circolare
+    url: https://www.adm.gov.it/portale/documents/20182/240075633/869339.24-12-2025-Circolare+36+dogane.pdf
+    accessed: 2026-05-18
+    sha256: 807a34cfa89cf3b71ab1bfa2c6ab72f3448c656f14cbce706866ebb67490c930
+    license: public-domain
+    binary_path: not_in_repo/circ-adm-36-2025-cbam.pdf
+    md_path: references/fonti/circ-adm-36-2025-cbam.md
+    excerpt_path: references/estratti/circ-adm-36-2025-codici-taric.md
+    notes: |
+      Circolare operativa di ADM (prot. ADM.ADMUC.REGISTRO UFFICIALE.0869339.24-12-2025.U)
+      che attua a livello nazionale il Reg. CBAM nella fase definitiva. Definisce:
+      codici documento TARIC Y128 (numero conto CBAM), Y134-Y137 (deroghe), Y237, Y238
+      (deroga 31/3/2026); rinvio al MASE come Autorita' nazionale competente; procedure
+      per le articolazioni territoriali in caso di importazione non consentita.
+      Pagina indice di riferimento: https://www.adm.gov.it/portale/cbam-carbon-border-adjustment-mechanism
+
+  - id: avviso-adm-cbam-211025
+    title: "Agenzia delle Dogane e dei Monopoli - Direzione Dogane - Avviso del 21/10/2025 - Avvio del periodo definitivo del CBAM - Reg. (UE) 2023/956 - Obblighi per gli operatori economici"
+    type: avviso-amministrativo
+    url: https://www.adm.gov.it/portale/documents/20182/217032198/Avviso+CBAM-21102025.pdf
+    accessed: 2026-05-18
+    sha256: 90c430f5d416f228a8255cb685d7bd59df493ae5675d45a3a134b4b7587de7e2
+    license: public-domain
+    binary_path: not_in_repo/avviso-adm-cbam-211025.pdf
+    md_path: references/fonti/avviso-adm-cbam-211025.md
+    excerpt_path: references/estratti/avviso-adm-conseguenze-non-conformita.md
+    notes: |
+      Avviso ADM sintetico (1 pagina) pubblicato in concomitanza con la pubblicazione
+      del Reg. 2025/2083, indirizzato a importatori e rappresentanti doganali indiretti.
+      Avverte dell'avvio fase definitiva 1° gennaio 2026 e delle conseguenze in caso di
+      mancata qualifica di dichiarante CBAM autorizzato: blocco merci alla frontiera,
+      rifiuto sdoganamento, sanzioni.
+      Pagina indice di riferimento: https://www.adm.gov.it/portale/cbam-carbon-border-adjustment-mechanism

@@ -42,6 +42,7 @@ skill_name = "$skill_name"
 
 OFFICIAL_HOST_SUFFIXES = (
     "acn.gov.it",
+    "adm.gov.it",
     "agenziaentrate.gov.it",
     "anticorruzione.it",
     "arera.it",

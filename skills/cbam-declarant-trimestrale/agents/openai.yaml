@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: CBAM Declarant Trimestrale
+short_description: Supporta il dichiarante CBAM autorizzato (importatore stabilito UE o rappresentante doganale indiretto) negli adempimenti della fase definitiva del Reg. (UE) 2023/956 dal 1/1/2026 - verifica qualifica + deroghe, obbligo trimestrale 50 % certificati (dal 2027), dichiarazione annuale Art. 6, mappa sanzioni Art. 26.
+default_prompt: |
+  Sono il responsabile dogane di un'azienda importatrice di merci CBAM
+  (ferro/acciaio, alluminio, fertilizzanti, cemento). Aiutami a capire se
+  ho bisogno della qualifica di dichiarante CBAM autorizzato, quali codici
+  TARIC devo usare (Y128 vs Y134-Y137-Y237-Y238) e come pianifico l'obbligo
+  trimestrale del 50 % di certificati CBAM previsto dal 2027 (Art. 22 §2).
