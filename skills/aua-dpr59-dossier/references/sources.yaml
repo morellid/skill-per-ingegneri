@@ -1,0 +1,55 @@
+schema_version: 1
+skill: aua-dpr59-dossier
+last_verified: 2026-05-19
+
+# Fonti normative per la skill aua-dpr59-dossier.
+# Fonte principale: D.P.R. 13 marzo 2013, n. 59 (Regolamento AUA), testo vigente
+# pubblicato su Normattiva. Il D.P.R. e' atto del Governo italiano in pubblico
+# dominio (art. 5 L. 633/1941).
+#
+# Nota sulla riproducibilita' dell'hash:
+# Normattiva non serve un PDF dell'atto: il testo vigente e' renderizzato in HTML
+# tramite chiamate AJAX per ogni articolo. L'SHA256 registrato si riferisce alla
+# concatenazione dei chunk HTML ricevuti per il main + 12 articoli (idGruppo 1-5)
+# fetchata il 2026-05-19. Variazioni successive al testo (es. successivi
+# aggiornamenti normativi) faranno mutare l'hash: per la consultazione
+# operativa fare sempre riferimento all'URL Normattiva e verificare la data di
+# "ultimo aggiornamento" mostrata in pagina.
+#
+# Fonti collegate (citate nel md della fonte ma non scaricate come binario):
+# - D.Lgs. 152/2006 (Codice dell'Ambiente): citato per art. 19, 20, 26, 108, 112, 215, 216, 269, 272.
+# - L. 447/1995 (legge quadro inquinamento acustico): citato per art. 8 co. 4 e 6.
+# - L. 241/1990 (procedimento amministrativo): citato per art. 2, 14-ter, 14-quinquies.
+# - D.P.R. 160/2010 (SUAP): citato per art. 2, 7.
+# - D.L. 5/2012 art. 23 (norma primaria di delega del regolamento AUA).
+# Queste fonti non sono scaricate localmente perche' il regolamento AUA le richiama
+# ma non le riproduce; la skill cita gli articoli del regolamento AUA, non gli atti
+# richiamati. Per il testo letterale degli articoli richiamati l'utente deve
+# consultare Normattiva.
+
+sources:
+  - id: dpr-59-2013-aua
+    title: "D.P.R. 13 marzo 2013, n. 59 - Regolamento recante la disciplina dell'autorizzazione unica ambientale (AUA)"
+    type: dpr
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2013-03-13;59
+    accessed: 2026-05-19
+    sha256: f566907ae45ddccd6f2300ad098779de6a3f13b1df2f072e986496bcca363823
+    license: public-domain
+    binary_path: not_in_repo/dpr-59-2013-completo.html
+    md_path: references/fonti/dpr-59-2013-articoli-1-12.md
+    excerpt_path: references/estratti/dpr-59-2013-aua-perimetro.md
+    notes: |
+      Pubblicato in GU n.124 del 29-05-2013 - Supplemento Ordinario n. 42
+      (codice redazionale 13G00101). Entrata in vigore: 13 giugno 2013.
+      Testo vigente fetchato da Normattiva il 2026-05-19 concatenando il main
+      e le risposte AJAX per ciascuno dei 12 articoli (Capi I-V).
+      L'art. 3 e' stato letto nella "versione 3" (vigente, post aggiornamento
+      D.Lgs. 203/2022 che ha aggiunto lett. g-bis e g-ter relative al D.Lgs.
+      101/2020 - radiazioni ionizzanti); l'art. 4 nella "versione 2" (post
+      D.Lgs. 127/2016 che ha soppresso due periodi nei commi 4 e 5).
+      L'Allegato I (tipologie di impianti soggetti ad autorizzazione di
+      carattere generale ex art. 272 D.Lgs. 152/2006) e' presente solo come
+      riassunto nel md committato: il testo integrale e' su Normattiva ma
+      contiene tabelle pubblicate "in formato grafico" non navigabili come
+      testo, e per la consultazione di una specifica tipologia di impianto
+      l'utente deve riferirsi alla GU.
