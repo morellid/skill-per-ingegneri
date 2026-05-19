@@ -2,7 +2,6 @@
 # Single source of truth della categorizzazione user-facing del catalogo skill.
 
 schema_version: 1
-generated_at: '2026-05-19T14:23:15Z'
 areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri

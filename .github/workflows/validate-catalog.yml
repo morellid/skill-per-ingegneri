@@ -1,0 +1,55 @@
+name: validate-catalog
+
+# Verifica su PR che il frontmatter di tutte le SKILL.md sia conforme alla
+# convenzione del catalogo (vedi AGENTS.md sezione "Regole non negoziabili" #9)
+# e che catalog.yaml sia stato rigenerato e committato.
+#
+# Due step:
+#   1. uv run scripts/build_catalog.py - valida tutti i frontmatter e
+#      rigenera catalog.yaml. Esce diverso da zero se manca un campo
+#      obbligatorio, supera un limite (es. summary > 280 char), ha area
+#      non dichiarata in areas.yaml, tag non kebab-case, ecc.
+#   2. git diff --exit-code catalog.yaml - verifica che il catalog.yaml
+#      committato coincida con quello appena rigenerato. Se differisce,
+#      il contributore ha modificato un SKILL.md o areas.yaml senza
+#      committare il catalog.yaml aggiornato.
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'skills/**/SKILL.md'
+      - 'areas.yaml'
+      - 'catalog.yaml'
+      - 'scripts/build_catalog.py'
+      - '.github/workflows/validate-catalog.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Build e valida catalog.yaml
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Run build_catalog.py
+        run: uv run scripts/build_catalog.py
+
+      - name: Verify catalog.yaml is up-to-date
+        run: |
+          if ! git diff --exit-code catalog.yaml; then
+            echo ""
+            echo "::error::catalog.yaml non e' allineato al frontmatter delle SKILL.md."
+            echo ""
+            echo "Esegui localmente:"
+            echo "  uv run scripts/build_catalog.py"
+            echo "e committa il catalog.yaml aggiornato nella PR."
+            exit 1
+          fi
+          echo "OK: catalog.yaml e' allineato."

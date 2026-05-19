@@ -25,7 +25,6 @@ import re
 import sys
 from collections import Counter
 from dataclasses import dataclass
-from datetime import UTC, datetime
 from pathlib import Path
 
 import semver
@@ -177,7 +176,6 @@ def build_catalog(areas: list[dict]) -> tuple[dict, list[ValidationError]]:
 
     catalog = {
         "schema_version": 1,
-        "generated_at": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "areas": areas_out,
         "skills": sorted(skills_out, key=lambda s: s["id"]),
     }
