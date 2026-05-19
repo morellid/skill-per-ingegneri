@@ -1,0 +1,16 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Fascicolo tecnico macchine (Reg. UE 2023/1230)
+short_description: |
+  Supporta la redazione e la verifica del fascicolo tecnico (Allegato IV)
+  e delle dichiarazioni UE (Allegato V) di macchine, prodotti correlati e
+  quasi-macchine ai sensi del Regolamento (UE) 2023/1230, includendo la
+  scelta della procedura di valutazione della conformita' (art. 25 + All. I).
+default_prompt: |
+  Devo redigere il fascicolo tecnico di una macchina ai sensi del nuovo
+  Regolamento (UE) 2023/1230 (applicabile dal 14 gennaio 2027). Aiutami a:
+  qualificare il prodotto (macchina o quasi-macchina), identificare la
+  procedura di valutazione della conformita' applicabile (Modulo A, B+C,
+  G o H, e se serve l'organismo notificato), e strutturare l'indice del
+  fascicolo secondo l'Allegato IV.
