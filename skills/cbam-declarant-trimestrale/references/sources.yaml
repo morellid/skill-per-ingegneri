@@ -19,6 +19,12 @@ sources:
     binary_path: not_in_repo/reg-ue-2023-956-cbam-consolidato.pdf
     md_path: references/fonti/reg-ue-2023-956-cbam-consolidato.md
     excerpt_path: references/estratti/reg-ue-2023-956-articoli-fase-definitiva.md
+    # eur-lex.europa.eu restituisce body vuoto agli IP datacenter di GitHub
+    # Actions (Azure westus3) per i download PDF di testi consolidati; il fetch
+    # da browser/postazione operatore funziona regolarmente. Il check di drift
+    # automatico e' deliberatamente saltato; aggiornamento manuale a cura
+    # dell'agent ad ogni nuova versione consolidata.
+    ci_fetch_blocked: "eur-lex.europa.eu restituisce body vuoto agli IP datacenter GitHub Actions per PDF di testi consolidati"
     notes: |
       Testo consolidato che incorpora le modifiche introdotte dal Reg. (UE) 2025/2083
       (Omnibus). Versione 02023R0956 - IT - 20.10.2025 - 001.001, distribuita da EUR-Lex
@@ -38,6 +44,10 @@ sources:
     binary_path: not_in_repo/reg-ue-2025-2083-cbam-omnibus.pdf
     md_path: references/fonti/reg-ue-2025-2083-cbam-omnibus.md
     excerpt_path: references/estratti/reg-ue-2025-2083-considerando-chiave.md
+    # Vedi nota su reg-ue-2023-956-cbam-consolidato: eur-lex.europa.eu blocca
+    # i fetch dai runner GitHub Actions per i PDF di GU UE. Aggiornamento
+    # manuale a cura dell'agent (e' un atto definitivo, non soggetto a drift).
+    ci_fetch_blocked: "eur-lex.europa.eu restituisce body vuoto agli IP datacenter GitHub Actions per PDF di Gazzetta Ufficiale UE"
     notes: |
       Atto modificativo (cosiddetto "Omnibus CBAM") pubblicato in GU UE L del 17.10.2025.
       Introduce in particolare: soglia unica di massa 50 t (Art. 2bis, Allegato VII),
