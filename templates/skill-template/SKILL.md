@@ -2,6 +2,17 @@
 name: SKILL_NAME_PLACEHOLDER
 description: Descrizione breve della skill in italiano. Specifica cosa fa, quando usarla, per chi. Esempio "Verifica la completezza e coerenza di un POS rispetto all'Allegato XV D.Lgs. 81/2008. Use when user asks to validate a POS document for Italian construction safety plans."
 license: MIT
+area: AREA_ID_PLACEHOLDER   # vedi /areas.yaml per gli id ammessi (es. sicurezza-lavoro-cantieri)
+title: "Titolo breve user-facing (max 80 char)"
+summary: "Riassunto operativo in italiano, una frase, max 280 char. Cosa fa la skill, su quale norma, per chi. Niente Markdown."
+normative_refs:
+  - "Es. D.Lgs. 81/2008 Allegato XV"
+  - "Es. NTC 2018 par. 7.3"
+version: 0.1.0-alpha
+status: alpha   # alpha | stable
+tags:
+  - tag-kebab-case
+  - max-40-char-ciascuno
 ---
 
 # NOME_LEGGIBILE_SKILL
