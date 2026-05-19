@@ -7,14 +7,26 @@ last_verified: 2026-05-19
 # pubblicato su Normattiva. Il D.P.R. e' atto del Governo italiano in pubblico
 # dominio (art. 5 L. 633/1941).
 #
-# Nota sulla riproducibilita' dell'hash:
-# Normattiva non serve un PDF dell'atto: il testo vigente e' renderizzato in HTML
-# tramite chiamate AJAX per ogni articolo. L'SHA256 registrato si riferisce alla
-# concatenazione dei chunk HTML ricevuti per il main + 12 articoli (idGruppo 1-5)
-# fetchata il 2026-05-19. Variazioni successive al testo (es. successivi
-# aggiornamenti normativi) faranno mutare l'hash: per la consultazione
-# operativa fare sempre riferimento all'URL Normattiva e verificare la data di
-# "ultimo aggiornamento" mostrata in pagina.
+# Nota sulla riproducibilita' dell'hash (URL pinnata con !vig=YYYY-MM-DD):
+# Normattiva ri-genera il testo coordinato ad ogni atto modificativo entrato in
+# vigore, quindi la URL "bare" (senza ?!vig=) drifta in continuazione (l'hash
+# calcolato dalla CI cambia anche solo per timestamp di build della pagina o ELI
+# version_date, indipendentemente da modifiche sostanziali). Pinnando alla data
+# di vigenza congelata `!vig=2026-05-19` il binario serve la pagina indice
+# dell'atto valida a quella data, l'hash diventa stabile e la CI lo verifica
+# byte-per-byte. Lo snapshot 2026-05-19 e' source-grounding valido perche'
+# successivo all'ultimo aggiornamento citato nella pagina ("pubblicato il
+# 03/04/2023", relativo a D.Lgs. 203/2022 che ha aggiunto lett. g-bis e g-ter
+# all'art. 3 co. 2: gia' presenti nel MD committato). Nessuna ulteriore
+# modifica agli artt. 1-12 e' intervenuta tra il 03/04/2023 e il 2026-05-19.
+#
+# Nota: la pagina indice Normattiva non contiene inline il testo degli articoli
+# (caricati via AJAX al click), ma serve come "ancora" verificabile della
+# vigenza dell'atto e dei suoi aggiornamenti. Il testo verbatim degli articoli
+# 1-12 nella forma vigente al 2026-05-19 e' trascritto in
+# references/fonti/dpr-59-2013-articoli-1-12.md (lettura di ciascun articolo
+# via AJAX di Normattiva, idGruppo 1-5, fetchato il 2026-05-19): quello e' il
+# MD non falsificabile che alimenta la skill.
 #
 # Fonti collegate (citate nel md della fonte ma non scaricate come binario):
 # - D.Lgs. 152/2006 (Codice dell'Ambiente): citato per art. 19, 20, 26, 108, 112, 215, 216, 269, 272.
@@ -29,20 +41,25 @@ last_verified: 2026-05-19
 
 sources:
   - id: dpr-59-2013-aua
-    title: "D.P.R. 13 marzo 2013, n. 59 - Regolamento recante la disciplina dell'autorizzazione unica ambientale (AUA)"
+    title: "D.P.R. 13 marzo 2013, n. 59 - Regolamento AUA (versione multivigente vigente al 2026-05-19)"
     type: dpr
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2013-03-13;59
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI:
+    # vedi nota in testa a questo file e fix(sources) #185 per DPR 380/2001.
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2013-03-13;59!vig=2026-05-19
     accessed: 2026-05-19
-    sha256: f566907ae45ddccd6f2300ad098779de6a3f13b1df2f072e986496bcca363823
+    sha256: d033dcb6b927c8c781e29bcc399e5de7800626529c2d0b9abf283eeaa7bf8511
     license: public-domain
-    binary_path: not_in_repo/dpr-59-2013-completo.html
+    binary_path: not_in_repo/dpr-59-2013-vig-2026-05-19.html
     md_path: references/fonti/dpr-59-2013-articoli-1-12.md
     excerpt_path: references/estratti/dpr-59-2013-aua-perimetro.md
     notes: |
       Pubblicato in GU n.124 del 29-05-2013 - Supplemento Ordinario n. 42
       (codice redazionale 13G00101). Entrata in vigore: 13 giugno 2013.
-      Testo vigente fetchato da Normattiva il 2026-05-19 concatenando il main
-      e le risposte AJAX per ciascuno dei 12 articoli (Capi I-V).
+      L'URL e' pinnata a !vig=2026-05-19 per riproducibilita' dell'hash: la
+      pagina indice Normattiva (142267 byte) ha hash stabile a quella data.
+      Il testo degli articoli e' caricato via AJAX nella UI di Normattiva e
+      la trascrizione verbatim degli articoli 1-12 (Capi I-V) e' in
+      references/fonti/dpr-59-2013-articoli-1-12.md.
       L'art. 3 e' stato letto nella "versione 3" (vigente, post aggiornamento
       D.Lgs. 203/2022 che ha aggiunto lett. g-bis e g-ter relative al D.Lgs.
       101/2020 - radiazioni ionizzanti); l'art. 4 nella "versione 2" (post

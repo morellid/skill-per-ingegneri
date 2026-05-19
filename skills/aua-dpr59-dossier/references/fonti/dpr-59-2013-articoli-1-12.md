@@ -4,7 +4,7 @@
 **Pubblicazione**: Gazzetta Ufficiale n. 124 del 29 maggio 2013 - Supplemento Ordinario n. 42 (codice redazionale 13G00101).
 **Entrata in vigore**: 13 giugno 2013.
 **Fonte consultata**: Normattiva - testo vigente HTML.
-**URL**: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2013-03-13;59
+**URL** (pinnata, riproducibile): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2013-03-13;59!vig=2026-05-19
 **Consultato il**: 2026-05-19
 **Licenza**: pubblico dominio (testo legislativo italiano).
 
