@@ -131,6 +131,7 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 7. Scaffold tecnico: `./scripts/new-skill.sh <nome-skill>` (kebab-case). Da eseguire dopo lo Step 4 inizia.
 8. Versione iniziale: `0.1.0-alpha`. Lo stato alpha riguarda solo l'assenza di validazione Livello 2 (vs casi reali / esperti di dominio): le fonti **devono comunque** essere scaricate, hashate e convertite a MD prima di scrivere la skill.
 9. Validazione obbligatoria prima del rilascio: `methodology/validazione.md` (almeno Livello 1, Livello 2 da ingegnere di dominio diverso dall'autore prima di v1.0).
+10. **Aggiorna `README.md` di root**: aggiungi una riga alla tabella "Skill disponibili" con `[`<nome-skill>`](skills/<nome-skill>/) | descrizione 1-2 frasi | riferimenti normativi`. La tabella di root e' la fonte di verita' dell'elenco pubblicato: una PR di nuova skill che non la aggiorna e' incompleta.
 
 ## Quando modifichi una skill esistente
 
@@ -139,7 +140,13 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 - Breaking change o major update normativo -> major (`0.x.y -> 1.0.0`).
 - Aggiorna sempre `skills/<skill>/CHANGELOG.md` (Keep a Changelog).
 - Se cambia una norma: aggiorna `sources.yaml` (URL, `accessed`, `sha256`), gli `estratti/` se servono, e cita il trigger normativo nel changelog. Vedi `methodology/update-cycle.md`.
+- Se la modifica cambia descrizione, scope o riferimenti normativi della skill in modo visibile all'utente finale: aggiorna anche la riga della skill nella tabella "Skill disponibili" di `README.md` di root.
 - Tocca solo cio' che serve: non ristrutturare skill adiacenti, non riformattare codice non tuo.
+
+## Quando rimuovi o deprechi una skill
+
+- Segui il flusso di deprecation di `methodology/update-cycle.md`.
+- Rimuovi la riga corrispondente dalla tabella "Skill disponibili" del `README.md` di root (oppure marca la skill come deprecata con link alla sostitutiva, se esiste). README di root e elenco effettivo di `skills/` non devono mai divergere.
 
 ## Prima di committare
 
@@ -188,6 +195,7 @@ Trailer `Co-authored-by:` per gli AI agent che hanno contribuito.
 - Non rompere il formato dual-agent: senza `license: MIT` nel frontmatter o senza `agents/openai.yaml` la skill e' incompleta.
 - Non duplicare l'`AGENTS.md` di skill rispetto al `SKILL.md`: deve essere lean (~30-80 righe) e aggiungere convenzioni di dominio, non reinstaurare la skill.
 - Non duplicare contenuto tra root `AGENTS.md`, `CLAUDE.md` e `README.md`. Una sola sorgente per ogni informazione.
+- Non aprire/mergere una PR che aggiunge, rinomina, rimuove o deprecca una skill senza aggiornare la tabella "Skill disponibili" del `README.md` di root: e' la fonte di verita' del catalogo pubblicato.
 
 ## Disclaimer
 

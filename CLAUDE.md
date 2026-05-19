@@ -29,6 +29,10 @@ Per installare e usare le skill (utenti finali) vedi [`README.md`](README.md).
 
 Nessuna eccezione. Nessuna deroga "alpha tollerabile". Nessun "lo sistemiamo dopo".
 
+## Catalogo: README di root sempre allineato
+
+Il `README.md` di root contiene la tabella "Skill disponibili" che e' la **fonte di verita' del catalogo pubblicato**. Ogni volta che aggiungi, rinomini, rimuovi o deprechi una skill (o modifichi descrizione/scope/riferimenti normativi in modo visibile all'utente) **devi aggiornare quella tabella nello stesso commit/PR**. README e contenuto effettivo di `skills/` non devono mai divergere. Dettagli in [`AGENTS.md`](AGENTS.md) - sezioni "Quando crei una nuova skill" (step 10), "Quando modifichi una skill esistente", "Quando rimuovi o deprechi una skill", "Cosa NON fare".
+
 ## Anti-pattern: la CI verde non e' source-grounding
 
 Caso reale (maggio 2026, PR #115-#120 chiuse): un agente Sonnet ha interpretato "fai passare la CI" come sinonimo di "sistema la skill". Ha calcolato gli SHA256 reali via GitHub Actions e committato su sources.yaml, ma **non ha riletto i PDF, non ha riscritto gli estratti, non ha verificato le costanti del codice**. Le 6 PR aperte facevano passare il check sintattico ma lasciavano la skill in stato di violazione semantica. Tutte chiuse senza merge.

@@ -170,8 +170,13 @@ jobs:
             echo "SHA base non disponibile - verifica tutte le skill"
             python3 .github/workflows/scripts/verify-sources.py
           else
+            # NB: { grep ... || true; } evita che grep esca 1 (nessun match)
+            # faccia abortire la pipeline sotto `set -euo pipefail`. Una PR
+            # docs-only (es. sync del README, modifiche ad AGENTS.md/CLAUDE.md)
+            # triggera questo workflow ma non tocca skills/: in quel caso
+            # CHANGED deve risultare vuoto e il job uscire pulito.
             CHANGED=$(git diff --name-only "$BASE_SHA" HEAD 2>/dev/null \
-              | grep '^skills/' \
+              | { grep '^skills/' || true; } \
               | sed 's|^skills/\([^/]*\)/.*|\1|' \
               | sort -u \
               | tr '\n' ' ' \
