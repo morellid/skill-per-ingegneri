@@ -1,0 +1,54 @@
+name: regenerate-catalog
+
+# Su push a main che tocca frontmatter o areas.yaml: rigenera catalog.yaml
+# e committa il risultato se differisce dal file gia' presente.
+#
+# Safety net per il caso in cui un merge di squash o un manual commit a main
+# bypassi validate-catalog.yml (che gira solo su PR). In condizioni normali
+# validate-catalog.yml su PR previene la divergenza; questo workflow allinea
+# automaticamente nei casi residui.
+#
+# Niente loop infinito: i commit fatti dal GITHUB_TOKEN di default non
+# triggerano nuovi workflow run.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**/SKILL.md'
+      - 'areas.yaml'
+      - 'scripts/build_catalog.py'
+      - '.github/workflows/regenerate-catalog.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    name: Rigenera e committa catalog.yaml
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Run build_catalog.py
+        run: uv run scripts/build_catalog.py
+
+      - name: Commit catalog.yaml if changed
+        run: |
+          if git diff --quiet catalog.yaml; then
+            echo "catalog.yaml gia' allineato - niente da committare."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.yaml
+          git commit -m "chore(catalog): regenerate catalog.yaml [skip ci]"
+          git push
