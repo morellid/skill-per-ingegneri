@@ -1,0 +1,19 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: AUA - dossier ex D.P.R. 59/2013
+short_description: Supporta tecnici e consulenti ambientali (PMI, impianti non-AIA) nella preparazione e nell'autoverifica del dossier per l'Autorizzazione Unica Ambientale. Aiuta a verificare l'applicabilita', mappare i titoli incorporati, pianificare termini e rinnovo, classificare le modifiche.
+default_prompt: |
+  Devo preparare il dossier per l'Autorizzazione Unica Ambientale (AUA)
+  ex D.P.R. 59/2013 per uno stabilimento [descrivere brevemente: settore
+  ATECO, dimensione PMI, titoli ambientali attivi]. Aiutami a:
+
+  1. Verificare l'applicabilita' dell'AUA (PMI, non-AIA, non-VIA
+     assorbente).
+  2. Mappare quali titoli incorporare ex art. 3 co. 1.
+  3. Stimare i termini procedurali (90/120/150 giorni e conferenza di
+     servizi).
+
+  Cita sempre articolo e comma del D.P.R. 59/2013 e ricordami i limiti
+  della verifica preliminare rispetto al ruolo del SUAP/autorita'
+  competente.
