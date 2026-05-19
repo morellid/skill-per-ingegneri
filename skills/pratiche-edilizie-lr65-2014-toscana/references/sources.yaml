@@ -16,11 +16,19 @@ sources:
       - references/estratti/lr-65-2014-titoli-abilitativi.md
 
   - id: dpr-380-2001-tue
-    title: "DPR 6 giugno 2001 n. 380 - Testo unico edilizia (testo vigente consultato su Normattiva)"
+    title: "DPR 6 giugno 2001 n. 380 - Testo unico edilizia (versione multivigente vigente al 2026-05-11)"
     type: decreto-presidenziale
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380
-    accessed: 2026-05-18
-    sha256: ee2dad47a4482a4bf7ee7e5b1ad2956c291636463afc432b8ce16cabff6917c6
+    # URL pinnata con !vig=YYYY-MM-DD: Normattiva ri-genera il testo
+    # coordinato ad ogni atto modificativo entrato in vigore, quindi la
+    # URL "bare" (senza vig) drifta in continuazione (l'hash calcolato dalla
+    # CI cambia anche solo per timestamp di build della pagina o ELI
+    # version_date, indipendentemente dalle modifiche sostanziali). Pinnando
+    # alla data di vigenza congelata, il binario diventa riproducibile e
+    # l'hash stabile. La stessa data e snapshot sono condivisi con la skill
+    # modulistica-edilizia-unificata (stesso hash 38823c2626259bf3...).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-05-11
+    accessed: 2026-05-11
+    sha256: 38823c2626259bf3f098a837cca8a1e957cd3035839eeeed6bff0ef0dd23d672
     license: public-domain-italian-law
     binary_path: not_in_repo/dpr-380-2001.html
     md_path: references/fonti/dpr-380-2001-tue.md
