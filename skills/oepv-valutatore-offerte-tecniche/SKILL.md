@@ -2,6 +2,17 @@
 name: oepv-valutatore-offerte-tecniche
 description: Supporto alla commissione di gara e al RUP per la costruzione della matrice criteri/sottocriteri OEPV, la valutazione delle offerte tecniche con il metodo aggregativo-compensatore, e la verifica di conformita' della matrice al art. 108 D.Lgs. 36/2023. Use when an Italian RUP, stazione appaltante, or commissione di gara needs to build or verify an OEPV evaluation matrix for a public tender, evaluate technical offers against an existing matrix, or check a criteria matrix for compliance and TAR-appeal risk.
 license: MIT
+area: appalti-opere-pubbliche
+title: "OEPV - Valutatore offerte tecniche"
+summary: "Costruzione della matrice criteri/sottocriteri OEPV, valutazione delle offerte tecniche con metodo aggregativo-compensatore, verifica di conformita' all'art. 108 di una matrice gia' redatta"
+normative_refs:
+  - "D.Lgs. 36/2023 art. 108"
+version: 0.2.0
+status: stable
+tags:
+  - oepv
+  - dlgs-36-2023
+  - offerte
 ---
 
 # OEPV - Valutatore offerte tecniche

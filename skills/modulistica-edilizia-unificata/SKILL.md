@@ -2,6 +2,21 @@
 name: modulistica-edilizia-unificata
 description: Indica il modulo edilizio unificato corretto (Edilizia libera, CILA, SCIA, SCIA alternativa al PdC, Permesso di Costruire) per un intervento, restituisce l'elenco strutturato degli allegati richiesti e applica le modifiche introdotte dal "Salva Casa" (DL 69/2024 conv. L. 105/2024), dal "Piano Casa" (DL 66/2026, in vigore 8/05/2026) e dal DPR 73/2026 (modifiche DPR 31/2017, in vigore 27/05/2026). Use when an architect, engineer, geometra, or operatore SUE/SUAP needs to determine the correct procedural regime under DPR 380/2001 and D.Lgs. 222/2016 Tabella A for a specific Italian building intervention, identify the attachments required for the unified national module (versione 27/3/2025 Conferenza Unificata), or check whether the Salva Casa or Piano Casa changes apply. Target users are ingegneri edili, architetti, geometri italiani, e tecnici degli sportelli SUE/SUAP.
 license: MIT
+area: edilizia-urbanistica-catasto
+title: "Modulistica edilizia unificata + Salva Casa"
+summary: "Determina il modulo edilizio unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria art. 36 / 36-bis) per un intervento e l'elenco degli allegati richiesti, integrato con le modifiche del Salva Casa"
+normative_refs:
+  - "DPR 380/2001"
+  - "D.Lgs. 222/2016 Tabella A"
+  - "DL 69/2024 conv. L. 105/2024"
+  - "Modulistica unificata 27/3/2025"
+version: 0.1.4-alpha
+status: alpha
+tags:
+  - dpr-380-2001
+  - cila
+  - scia
+  - salva-casa
 ---
 
 # Modulistica edilizia unificata + Salva Casa

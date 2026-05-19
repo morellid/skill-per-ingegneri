@@ -2,6 +2,17 @@
 name: ped-classificazione-conformita
 description: Guida la classificazione di un'attrezzatura a pressione secondo il D.Lgs 26/2016 (Direttiva PED 2014/68/UE) e la selezione del modulo di valutazione della conformita'. Use when an Italian mechanical engineer needs to determine PED category, applicable conformity assessment module, and required marking/declaration for pressure equipment.
 license: MIT
+area: impianti-macchine-prodotti
+title: "PED - Classificazione e valutazione conformita'"
+summary: "Classificazione di un'attrezzatura a pressione (recipiente, tubazione, accessorio di sicurezza o a pressione, insieme) nelle categorie I/II/III/IV e selezione del modulo di valutazione della conformita' applicabile, marcatura e dichiarazione richieste"
+normative_refs:
+  - "D.Lgs. 26/2016 (recepimento Direttiva PED 2014/68/UE)"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - ped
+  - dlgs-26-2016
+  - pressione
 ---
 
 # PED - Classificazione e valutazione della conformita'

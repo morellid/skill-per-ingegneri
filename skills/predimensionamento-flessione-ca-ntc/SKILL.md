@@ -2,6 +2,18 @@
 name: predimensionamento-flessione-ca-ntc
 description: Calcola il momento resistente M_Rd di una sezione rettangolare in c.a. singolarmente armata in flessione semplice SLU, ai sensi delle NTC 2018 par. 4.1.2.1 e 4.1.2.3.4.2 + Circolare 7/2019 par. C4.1.2. Dato b, h, d, A_s, fck (<= 50 MPa Classe 1), fyk e i parametri di sicurezza, restituisce f_cd, f_yd, eps_yd, profondita' asse neutro x, rapporto x/d, deformazione acciaio eps_s, braccio leva z = d - 0.4 x e M_Rd in kNm. Usa il diagramma stress-block rettangolare equivalente (eta = 1, lambda = 0.8). Verifica duttilita' (snervamento acciaio + raccomandazione x/d <= 0.45). Implementazione code-driven, deterministica. Use when an Italian structural engineer asks to pre-dimension a singly-reinforced rectangular RC section in bending under NTC 2018, compute the resisting moment, or audit values produced by other software. Target users are structural engineers in pre-design phase; the skill does not replace full software verification.
 license: MIT
+area: strutture-geotecnica
+title: "Pre-dimensionamento flessione c.a. NTC 2018 (par. 4.1.2)"
+summary: "Calcolo code-driven di M_Rd di sezione rettangolare in c.a. singolarmente armata in flessione semplice SLU (stress-block eta=1, lambda=0.8): f_cd, f_yd, x, x/d, eps_s, z, M_Rd in kNm, duttilita' x/d <= 0.45. Solo fck <= 50 MPa (Classe 1)."
+normative_refs:
+  - "NTC 2018 par. 4.1.2.1 e 4.1.2.3.4.2"
+  - "Circolare 7/2019 par. C4.1.2"
+version: 0.1.1-alpha
+status: alpha
+tags:
+  - ntc-2018
+  - cemento-armato
+  - flessione
 ---
 
 # Pre-dimensionamento sezione c.a. SLU flessione semplice (NTC 2018 par. 4.1.2)

@@ -2,6 +2,21 @@
 name: dnsh-pnrr-checker
 description: Verifica e struttura la documentazione DNSH (Do No Significant Harm) per interventi PNRR e, solo se la specifica misura o il relativo atto attuativo lo richiamano espressamente, per interventi PNC. Copre mappatura della misura, scelta delle schede tecniche RGS, checklist ex ante/ex post, piano evidenze e report di conformita'. Use when a RUP, progettista, direttore lavori, supporto al RUP, soggetto attuatore o consulente deve impostare o controllare il rispetto del principio DNSH secondo Reg. UE 2020/852, Reg. UE 2021/241, Guida operativa RGS aggiornata con circolare n. 22/2024 e, per casi PNC, solo su base misura-specifica documentata.
 license: MIT
+area: appalti-opere-pubbliche
+title: "DNSH PNRR - schede e checklist"
+summary: "Verifica documentale DNSH per interventi PNRR e, solo se la misura lo richiama espressamente, per interventi PNC: mappatura misura, schede tecniche RGS, checklist ex ante/ex post, piano evidenze e report per gara/SAL/collaudo/ReGiS"
+normative_refs:
+  - "Reg. UE 2020/852 art. 17"
+  - "Reg. UE 2021/241 art. 5 e 18"
+  - "Circolare RGS 22/2024"
+  - "Guida operativa DNSH RGS 2024"
+  - "DL 77/2021 art. 14"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - dnsh
+  - pnrr
+  - reg-ue-2020-852
 ---
 
 # DNSH PNRR - verifica schede e checklist

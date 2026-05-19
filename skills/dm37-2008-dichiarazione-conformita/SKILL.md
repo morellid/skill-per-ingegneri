@@ -2,6 +2,17 @@
 name: dm37-2008-dichiarazione-conformita
 description: Supporta la compilazione e verifica della Dichiarazione di Conformita' (DdC) degli impianti tecnologici ai sensi del DM 22/01/2008 n. 37. Verifica completezza del modello Allegato I (7 categorie impianti a-g), determina gli allegati obbligatori (relazione materiali sempre; schema impianto sempre; progetto da professionista sopra soglie Art. 5). Use when an Italian installer or engineer needs to compile, check, or review a Dichiarazione di Conformita' for building systems (electrical, heating, gas, plumbing, fire protection, etc.) under DM 37/2008. Target users are installatori abilitati, ingegneri/periti, responsabili tecnici di imprese installatrici, collaudatori.
 license: MIT
+area: impianti-macchine-prodotti
+title: "DM 37/2008 - Dichiarazione Conformita' Impianti"
+summary: "Compilazione e verifica della Dichiarazione di Conformita' (DdC) degli impianti tecnologici (7 categorie a-g modello Allegato I), determinazione degli allegati obbligatori e dell'obbligo di progetto da professionista ex Art. 5"
+normative_refs:
+  - "DM 22/1/2008 n. 37"
+version: 0.1.2-alpha
+status: alpha
+tags:
+  - dm-37-2008
+  - impianti
+  - didc
 ---
 
 # DM 37/2008 - Dichiarazione di Conformita' impianti

@@ -2,6 +2,17 @@
 name: rsia-audit-stradale-dlgs35
 description: Supporta il professionista nelle quattro procedure di gestione della sicurezza delle infrastrutture stradali previste dal D.Lgs 35/2011 (come modificato dal D.Lgs 213/2021 di recepimento della Direttiva UE 2019/1936) - Valutazione di Impatto sulla Sicurezza Stradale (VISS), Controlli di Sicurezza Stradale (RSA), Valutazione di Sicurezza a Livello di Rete (NSA), e ispezioni periodiche/mirate. Use when user asks to draft, audit, or validate any of these procedures on Italian motorways, primary roads, or other roads in the scope of the decree.
 license: MIT
+area: ambiente-territorio-mobilita
+title: "Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011)"
+summary: "Supporto alle quattro procedure di gestione della sicurezza delle infrastrutture stradali: VISS (impatto sui progetti), RSA (controlli sulle fasi progettuali), NSA (valutazione a livello di rete), ispezioni periodiche/mirate sulle strade in esercizio"
+normative_refs:
+  - "D.Lgs. 35/2011 modificato dal D.Lgs. 213/2021 (recepimento Dir. UE 2019/1936)"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - rsia
+  - dlgs-35-2011
+  - strade
 ---
 
 # Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011 modificato D.Lgs 213/2021)

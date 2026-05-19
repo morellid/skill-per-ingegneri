@@ -2,6 +2,19 @@
 name: carichi-atmosferici-ntc
 description: Calcola la pressione del vento p (NTC 2018 par. 3.3) e il carico neve sulla copertura q_s (NTC 2018 par. 3.4) per edifici civili e industriali correnti, dato sito (parametri zonali da Tab. 3.3.I per il vento e classificazione zona/altitudine per la neve), categoria di esposizione I-V, quota di riferimento z, coefficienti di forma c_p / mu_1 e coefficienti dinamici c_d / c_t. Output deterministico tabulato (v_b, c_r, v_r, q_r, c_e, p per il vento; q_sk, mu_1, c_E, q_s per la neve) con citazione esplicita dei paragrafi NTC. Implementazione code-driven, riproducibile. Use when an Italian structural engineer asks to compute NTC 2018 wind pressure or snow load for ordinary buildings, classify exposure category effects, or audit values produced by other software. Target users are structural engineers preparing static design of new and existing buildings under NTC 2018.
 license: MIT
+area: strutture-geotecnica
+title: "Carichi atmosferici NTC 2018 (vento + neve)"
+summary: "Calcolo code-driven di pressione del vento (NTC par. 3.3) e carico neve sulla copertura (par. 3.4) per edifici civili e industriali correnti. Dato sito, categoria di esposizione I-V e geometria, restituisce v_b/c_r/q_r/c_e/p e q_sk/mu_1/c_E/q_s con citazione paragrafi."
+normative_refs:
+  - "NTC 2018 par. 3.3"
+  - "par. 3.4"
+  - "Circ. 7/2019 par. C3.3-C3.4"
+version: 0.1.0-alpha+fix1
+status: alpha
+tags:
+  - ntc-2018
+  - vento
+  - neve
 ---
 
 # Carichi atmosferici NTC 2018 (par. 3.3 vento + par. 3.4 neve)

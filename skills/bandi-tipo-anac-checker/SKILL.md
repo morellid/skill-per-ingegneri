@@ -2,6 +2,18 @@
 name: bandi-tipo-anac-checker
 description: Verifica la conformita' di un disciplinare di gara agli schemi ANAC (bandi-tipo) obbligatori per le stazioni appaltanti ai sensi del D.Lgs. 36/2023; identifica deroghe non giustificate, clausole mancanti e anomalie che espongono la procedura a rischio TAR. Use when an Italian RUP or stazione appaltante needs to check whether a disciplinare di gara is aligned with the applicable ANAC bando-tipo, or wants to identify non-standard clauses and deviations before publication.
 license: MIT
+area: appalti-opere-pubbliche
+title: "Bandi-tipo ANAC - Checker disciplinare di gara"
+summary: "Verifica la conformita' di un disciplinare di gara agli schemi ANAC (bandi-tipo) obbligatori per le stazioni appaltanti; identifica deroghe non giustificate, clausole mancanti, riferimenti obsoleti (D.Lgs. 50/2016) e anomalie a rischio TAR prima della pubblicazione"
+normative_refs:
+  - "D.Lgs. 36/2023"
+  - "Bandi-tipo ANAC (n. 1/2023, n. 2/2026 SIA)"
+version: 0.2.0
+status: stable
+tags:
+  - anac
+  - dlgs-36-2023
+  - bandi-tipo
 ---
 
 # Bandi-tipo ANAC - Checker disciplinare di gara

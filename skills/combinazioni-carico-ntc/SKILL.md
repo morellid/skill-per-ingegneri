@@ -2,6 +2,19 @@
 name: combinazioni-carico-ntc
 description: Genera e verifica matrici di combinazioni delle azioni per edifici civili e industriali correnti ai sensi NTC 2018 par. 2.5.3, con coefficienti psi della Tab. 2.5.I e coefficienti gamma della Tab. 2.6.I per profili EQU/A1/A2. Produce combinazioni SLU fondamentali, SLE rara/frequente/quasi permanente, sismica ed eccezionale a partire da azioni permanenti, precompressione e azioni variabili. Implementazione code-driven, deterministica e riproducibile. Use when an Italian structural engineer asks to build, audit, or export NTC 2018 load combinations for ordinary civil/industrial buildings.
 license: MIT
+area: strutture-geotecnica
+title: "Combinazioni Carico NTC"
+summary: "Generazione/verifica code-driven delle combinazioni delle azioni SLU/SLE/sismiche/eccezionali per edifici civili e industriali correnti"
+normative_refs:
+  - "NTC 2018 par. 2.5.3"
+  - "Tab. 2.5.I"
+  - "Tab. 2.6.I"
+version: 0.1.1-alpha
+status: alpha
+tags:
+  - ntc-2018
+  - slu
+  - sle
 ---
 
 # Combinazioni di carico NTC 2018 (par. 2.5.3)

@@ -1,7 +1,20 @@
 ---
 name: spettro-risposta-ntc
-description: Calcola lo spettro di risposta elastico in accelerazione (componente orizzontale) ai sensi delle NTC 2018 par. 3.2 e Circolare 7/2019, dato il sito (parametri ag, F0, Tc* dal reticolo INGV per i 9 TR di riferimento), la vita nominale, la classe d'uso, la categoria di sottosuolo e la categoria topografica. Output: tempi di ritorno TR per gli stati limite SLO/SLD/SLV/SLC, parametri ag/F0/Tc* interpolati al TR di progetto, parametri costruttivi S, eta, TB, TC, TD e ordinate Se(T) tabulate. Implementazione code-driven, deterministica e riproducibile: la versione 0.1.0-alpha include solo test di consistenza interna delle formule; la validazione di campo (confronto numerico vs foglio Excel CSLP su 10+ casi reali) e' prerequisito del release stabile e non e' ancora stata eseguita. Use when an Italian structural engineer asks to compute the NTC 2018 elastic response spectrum, look up site seismic parameters interpolated on the return period, build the response spectrum table for a limit state, or verify spectrum values produced by other software. Target users are structural engineers preparing seismic design or assessment of new and existing buildings under NTC 2018.
+description: |-
+  Calcola lo spettro di risposta elastico in accelerazione (componente orizzontale) ai sensi delle NTC 2018 par. 3.2 e Circolare 7/2019, dato il sito (parametri ag, F0, Tc* dal reticolo INGV per i 9 TR di riferimento), la vita nominale, la classe d'uso, la categoria di sottosuolo e la categoria topografica. Output: tempi di ritorno TR per gli stati limite SLO/SLD/SLV/SLC, parametri ag/F0/Tc* interpolati al TR di progetto, parametri costruttivi S, eta, TB, TC, TD e ordinate Se(T) tabulate. Implementazione code-driven, deterministica e riproducibile: la versione 0.1.0-alpha include solo test di consistenza interna delle formule; la validazione di campo (confronto numerico vs foglio Excel CSLP su 10+ casi reali) e' prerequisito del release stabile e non e' ancora stata eseguita. Use when an Italian structural engineer asks to compute the NTC 2018 elastic response spectrum, look up site seismic parameters interpolated on the return period, build the response spectrum table for a limit state, or verify spectrum values produced by other software. Target users are structural engineers preparing seismic design or assessment of new and existing buildings under NTC 2018.
 license: MIT
+area: strutture-geotecnica
+title: "Spettro di risposta NTC 2018 (par. 3.2)"
+summary: "Calcolo code-driven dello spettro di risposta elastico orizzontale (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)) per SLO/SLD/SLV/SLC"
+normative_refs:
+  - "NTC 2018 par. 3.2"
+  - "Circ. 7/2019"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - ntc-2018
+  - sismica
+  - spettro
 ---
 
 # Spettro di risposta elastico NTC 2018 (par. 3.2)

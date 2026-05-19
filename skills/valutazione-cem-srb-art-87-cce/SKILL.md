@@ -2,6 +2,20 @@
 name: valutazione-cem-srb-art-87-cce
 description: Supporto al professionista per la pratica di autorizzazione SRB (stazioni radio base, ripetitori, ponti radio) ex art. 87 D.Lgs. 259/2003 - check completezza istanza/SCIA, mapping iter (Ente locale + parere ARPA art. 14 L. 36/2001), verifica strutturale dei limiti CEM del DPCM 8/7/2003, redazione checklist per la relazione predittiva CEM (modelli CEI 211-7). Use when user is preparing or reviewing an art. 87 CCE application for a radioelectric installation in Italy.
 license: MIT
+area: ambiente-territorio-mobilita
+title: "Valutazione CEM SRB - art. 87 CCE"
+summary: "Pratica di autorizzazione SRB (stazioni radio base, ripetitori, ponti radio) ex art. 87 CCE: check completezza istanza/SCIA, mapping iter (Ente locale + parere ARPA), checklist per la relazione predittiva CEM secondo CEI 211-7"
+normative_refs:
+  - "D.Lgs. 259/2003 art. 87"
+  - "DPCM 8/7/2003"
+  - "L. 36/2001 art. 14"
+  - "CEI 211-7"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - cem
+  - srb
+  - dlgs-259-2003
 ---
 
 # Valutazione CEM SRB - art. 87 CCE

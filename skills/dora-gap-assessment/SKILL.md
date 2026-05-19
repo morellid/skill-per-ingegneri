@@ -2,6 +2,17 @@
 name: dora-gap-assessment
 description: Esegue un gap assessment di un'entita' finanziaria rispetto ai 5 pillar del Regolamento (UE) 2022/2554 (DORA). Use when user asks to verify DORA compliance for a bank, payment institution, electronic money institution, investment firm, insurance undertaking or other financial entity covered by Reg. (UE) 2022/2554, or to map current ICT risk-management practices against artt. 5-30 and art. 45 of DORA.
 license: MIT
+area: software-dati-cybersecurity
+title: "DORA Gap Assessment"
+summary: "Gap assessment di un'entita' finanziaria (banca, IMEL, IP, SIM, assicurazione, MiCA CASP, ecc.) rispetto ai 5 pillar DORA, applicabile dal 17/1/2025"
+normative_refs:
+  - "Reg. UE 2022/2554 (DORA) artt. 5-30, 45"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - dora
+  - reg-ue-2022-2554
+  - finanza
 ---
 
 # DORA Gap Assessment - Reg. (UE) 2022/2554

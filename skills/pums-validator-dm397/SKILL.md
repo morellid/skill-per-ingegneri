@@ -2,6 +2,21 @@
 name: pums-validator-dm397
 description: Verifica la conformita' di un Piano Urbano di Mobilita' Sostenibile (PUMS) al DM 4 agosto 2017 n. 397 come modificato dai DM 28 agosto 2019 n. 396, DM 26 gennaio 2021 n. 29 e DM 12 novembre 2021 n. 444, e al Vademecum MIMS 2022. Use when the user asks to validate a PUMS document for an Italian municipality, citta' metropolitana, or association of comuni with more than 100.000 inhabitants.
 license: MIT
+area: ambiente-territorio-mobilita
+title: "Validatore PUMS - DM 397/2017"
+summary: "Verifica della conformita' formale e di completezza di un Piano Urbano di Mobilita' Sostenibile (PUMS) per comuni > 100.000 ab., citta' metropolitane o associazioni di comuni che superano la soglia"
+normative_refs:
+  - "DM 397/2017"
+  - "DM 396/2019"
+  - "DM 29/2021"
+  - "DM 444/2021"
+  - "Vademecum MIMS 2022"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - pums
+  - dm-397-2017
+  - mobilita
 ---
 
 # Validatore PUMS (DM 397/2017 e s.m.i.)

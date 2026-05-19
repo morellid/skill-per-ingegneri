@@ -2,6 +2,22 @@
 name: cer-cacer-configurazione-gse
 description: Supporta un pre-check operativo per configurazioni CACER usando esclusivamente contenuti verificati sulle Regole Operative GSE e sui portali istituzionali GSE. Aiuta a verificare cabina primaria, soglia 1 MW, ruolo del referente, checklist di qualifica e stime parametriche prudenti dei flussi, senza sostituire il calcolo ufficiale o la domanda al GSE.
 license: MIT
+area: energia-incentivi
+title: "Configurazione CER/CACER e Qualifica GSE"
+summary: "Configurazione di CER (art. 31), GAC (art. 30 c. 2) o AID (art. 30 c. 1 lett. a n. 2): perimetro cabina primaria, statuto, simulazione energia condivisa/TIP/tariffa, contributo PNRR per Comuni <50k ab., checklist qualifica portale GSE."
+normative_refs:
+  - "D.Lgs. 199/2021 artt. 30-31-32"
+  - "DM MASE 7/12/2023 n. 414"
+  - "DM MASE 16/5/2025 n. 127"
+  - "DL 19/2/2026 n. 19 art. 27"
+  - "Delibera ARERA 727/2022/R/eel (TIAD)"
+  - "Regole Operative CACER del GSE"
+version: 0.2.0
+status: stable
+tags:
+  - cer
+  - gse
+  - dlgs-199-2021
 ---
 
 # Configurazione CACER - pre-check operativo GSE

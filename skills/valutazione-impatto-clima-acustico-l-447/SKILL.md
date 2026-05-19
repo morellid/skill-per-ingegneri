@@ -2,6 +2,19 @@
 name: valutazione-impatto-clima-acustico-l-447
 description: Supporto al tecnico competente in acustica ambientale (TCAA) e al progettista per la documentazione previsionale di impatto acustico (L. 447/1995 art. 8 c. 2 e c. 4) e per la valutazione previsionale di clima acustico (L. 447/1995 art. 8 c. 3) da allegare a SCIA, PdC, autorizzazione/licenza ex L. 447/1995 - mappa applicabilita' (impatto, clima, entrambi, nulla-osta), check completezza dei contenuti minimi della relazione, riferimenti puntuali a DPCM 14/11/1997 (valori limite) e DM 16/03/1998 (tecniche di misurazione). Use when user is preparing or reviewing a noise impact / noise climate assessment under Italian L. 447/1995 art. 8.
 license: MIT
+area: ambiente-territorio-mobilita
+title: "Valutazione di impatto e clima acustico (L. 447/1995 art. 8)"
+summary: "Documentazione previsionale di impatto acustico (art. 8 c. 2 e c. 4) e valutazione previsionale di clima acustico (art. 8 c. 3) da allegare a SCIA/PdC/autorizzazione: mapping applicabilita', check contenuti minimi della relazione, riferimenti puntuali ai valori limite"
+normative_refs:
+  - "L. 447/1995 art. 8"
+  - "DPCM 14/11/1997"
+  - "DM 16/3/1998"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - acustica
+  - l-447-1995
+  - dpcm-1997
 ---
 
 # Valutazione di impatto e clima acustico - L. 447/1995 art. 8
