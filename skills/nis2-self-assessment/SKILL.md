@@ -2,6 +2,18 @@
 name: nis2-self-assessment
 description: Supporta la self-assessment NIS2 per soggetti italiani ai sensi del D.Lgs. 138/2024. Aiuta a determinare se l'organizzazione rientra nel perimetro come "soggetto essenziale" o "soggetto importante", a impostare la gap analysis rispetto alle misure di base ACN (Determinazione 379907/2025, vigente dal 15/01/2026), a preparare l'elenco dei fornitori rilevanti NIS richiesto dall'art. 18 Det. ACN 127437/2026 (finestra annuale 15 aprile - 31 maggio), a verificare gli obblighi di notifica di incidenti significativi al CSIRT Italia e gli obblighi di governance dell'organo di amministrazione. Per i soggetti inseriti nell'elenco per la prima volta nel 2026 si applicano i termini speciali della Det. ACN 127434/2026 (misure entro 31/07/2027; notifica incidenti dal 01/01/2027). Use when an Italian organization (private or public) asks whether and how NIS2 applies to it, needs a structured self-assessment of perimeter and minimum measures, must prepare the annual list of "fornitori rilevanti NIS" for the ACN platform, or wants to plan the path to compliance. Target users are CISO, IT manager, DPO, ingegneri dell'informazione e consulenti cybersecurity di organizzazioni italiane potenzialmente in ambito NIS.
 license: MIT
+area: software-dati-cybersecurity
+title: "NIS2 self-assessment (D.Lgs. 138/2024)"
+summary: "Self-assessment NIS2 (perimetro, gap analysis misure ACN, notifica incidenti, governance)"
+normative_refs:
+  - "D.Lgs. 138/2024"
+  - "Det. ACN 379907/2025"
+version: 0.2.0-alpha
+status: alpha
+tags:
+  - nis2
+  - dlgs-138-2024
+  - acn
 ---
 
 # NIS2 self-assessment (D.Lgs. 138/2024)

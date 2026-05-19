@@ -1,0 +1,32 @@
+# Registro delle macro-aree user-facing del catalogo skill.
+# Single source of truth per il filtro della landing (ADR-0001, ADR-0004 nel repo landing).
+# Ogni skills/<id>/SKILL.md deve dichiarare un campo `area` che corrisponde a un `id` qui.
+# La promozione di una nicchia a area autonoma richiede almeno 3 skill in repo.
+
+schema_version: 1
+
+areas:
+  - id: sicurezza-lavoro-cantieri
+    name: Sicurezza sul lavoro & cantieri
+    order: 1
+  - id: strutture-geotecnica
+    name: Strutture & geotecnica
+    order: 2
+  - id: edilizia-urbanistica-catasto
+    name: Edilizia, urbanistica & catasto
+    order: 3
+  - id: appalti-opere-pubbliche
+    name: Appalti & opere pubbliche
+    order: 4
+  - id: energia-incentivi
+    name: Energia & incentivi
+    order: 5
+  - id: ambiente-territorio-mobilita
+    name: Ambiente, territorio & mobilita'
+    order: 6
+  - id: impianti-macchine-prodotti
+    name: Impianti, macchine & prodotti
+    order: 7
+  - id: software-dati-cybersecurity
+    name: Software, dati & cybersecurity
+    order: 8

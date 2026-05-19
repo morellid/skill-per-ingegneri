@@ -2,6 +2,18 @@
 name: relazione-cam-dm256-2022
 description: Supporta la redazione e la verifica della Relazione Tecnica dei Requisiti Ambientali CAM ai sensi del DM 23/06/2022 n. 256 (Criteri Ambientali Minimi per l'affidamento di servizi di progettazione di interventi edilizi e per lavori di nuova costruzione, ristrutturazione e manutenzione di edifici pubblici). Identifica i criteri CAM applicabili alla tipologia di intervento (NC/R1/R2/MS), genera la struttura della relazione capitolo per capitolo e guida il progettista a fornire i dati tecnici per ciascun criterio, oppure verifica una relazione esistente. Use when an architect, civil engineer or technical consultant must draft or review the CAM environmental requirements report for a public works tender under Italian DM 256/2022.
 license: MIT
+area: appalti-opere-pubbliche
+title: "Relazione CAM DM 256/2022"
+summary: "Redazione e verifica della Relazione Tecnica dei Requisiti Ambientali CAM per servizi di progettazione e lavori su edifici pubblici (NC / R1 / R2 / MS): identificazione criteri applicabili, struttura capitolare, check completezza di una relazione esistente"
+normative_refs:
+  - "DM 23/6/2022 n. 256 (CAM edilizia)"
+  - "D.Lgs. 36/2023 art. 57"
+version: 0.1.2-alpha
+status: alpha
+tags:
+  - cam
+  - dm-256-2022
+  - appalti-verdi
 ---
 
 # Relazione CAM DM 256/2022 - redazione e verifica

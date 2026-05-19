@@ -2,6 +2,18 @@
 name: cedimenti-edometrici-ntc
 description: Supporta il controllo di completezza di una verifica dei cedimenti in ambito NTC 2018/Circolare 7-2019. Aiuta a verificare che il progettista abbia esplicitato prestazioni attese, spostamenti compatibili, metodo di interazione terreno-struttura e confronto SLE, senza sostituire il calcolo geotecnico con formule non presenti nelle fonti ufficiali lette.
 license: MIT
+area: strutture-geotecnica
+title: "Cedimenti edometrici - SLE NTC 2018 par. 6.2.4"
+summary: "Controllo di completezza di una verifica dei cedimenti geotecnici (prestazioni attese, spostamenti compatibili, metodo di interazione terreno-struttura, confronto SLE) - skill di supporto documentale che non sostituisce il calcolo geotecnico"
+normative_refs:
+  - "NTC 2018"
+  - "Circolare 7/2019"
+version: 0.1.1
+status: stable
+tags:
+  - ntc-2018
+  - geotecnica
+  - cedimenti
 ---
 
 # Verifica documentale dei cedimenti geotecnici - NTC 2018

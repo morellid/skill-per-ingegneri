@@ -2,6 +2,21 @@
 name: pratiche-edilizie-lr65-2014-toscana
 description: Supporta l'inquadramento preliminare del titolo edilizio in Toscana coordinando LR 65/2014, DPR 380/2001 e quadro sismico regionale. Aiuta a distinguere edilizia libera, CILA, SCIA e permesso di costruire e a costruire una checklist documentale prudente, senza sostituire la verifica sul testo vigente, sul regolamento regionale e sulle prescrizioni del Comune.
 license: MIT
+area: edilizia-urbanistica-catasto
+title: "Pratiche edilizie LR 65/2014 Toscana - Document checker"
+summary: "Determina il titolo abilitativo edilizio (Edilizia libera / CILA / SCIA / SCIA-PdC / PdC) per interventi in Toscana e genera la checklist documenti richiesti, con specificita' regionali (sismica DGRT 421/2014, DPGR 1/R/2022, vincolo paesaggistico, Piano Operativo)."
+normative_refs:
+  - "LR Toscana 65/2014"
+  - "DPR 380/2001"
+  - "DPGR 1/R/2022"
+  - "DPR 31/2017 (paesaggio)"
+version: 0.1.2
+status: stable
+tags:
+  - toscana
+  - lr-65-2014
+  - cila
+  - scia
 ---
 
 # Pratiche edilizie Toscana - inquadramento preliminare

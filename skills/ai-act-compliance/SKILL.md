@@ -2,6 +2,17 @@
 name: ai-act-compliance
 description: Verifica la conformita' di un sistema di IA al Reg. UE 2024/1689 (AI Act). Classifica il sistema (vietato / alto rischio / rischio limitato / GPAI), identifica gli obblighi applicabili per fornitore e deployer, e guida la redazione dei documenti richiesti. Use when user asks to assess an AI system for EU AI Act compliance, identify applicable obligations, or classify a system under the regulation.
 license: MIT
+area: software-dati-cybersecurity
+title: "AI Act Compliance (IT)"
+summary: "Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza"
+normative_refs:
+  - "Reg. UE 2024/1689 (AI Act)"
+version: 0.1.3
+status: stable
+tags:
+  - ai-act
+  - reg-ue-2024-1689
+  - gpai
 ---
 
 # AI Act Compliance (Reg. UE 2024/1689)

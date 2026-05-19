@@ -18,13 +18,15 @@ skill-per-ingegneri/
 ├── CLAUDE.md                  # rinvia ad AGENTS.md
 ├── README.md                  # doc utenti finali (install/uso)
 ├── CONTRIBUTING.md            # processo per contributori umani
+├── areas.yaml                 # registry delle 8 macro-aree user-facing (ADR-0004)
+├── catalog.yaml               # AUTO-GENERATO da scripts/build_catalog.py - non editare a mano
 ├── methodology/               # SOP dettagliate (leggi prima di operare)
 │   ├── criteri-selezione.md   # quando una skill ha senso
 │   ├── generazione-skill.md   # workflow nuova skill
 │   ├── validazione.md         # 3 livelli di validazione
 │   └── update-cycle.md        # mantenimento post-release
 ├── templates/skill-template/  # scaffold per scripts/new-skill.sh
-├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh
+├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh, build_catalog.py
 └── skills/<nome>/             # le skill
     ├── SKILL.md               # entry point + frontmatter (name, description, license: MIT)
     ├── agents/openai.yaml     # UI metadata Codex
@@ -119,6 +121,16 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
    - Resto del contenuto identico per i due agent.
 7. **Progressive disclosure**. `SKILL.md` e' un router leggero: rinvia a `tasks/<task>.md` solo quando il task e' richiesto.
 8. **Caratteri ASCII standard**. Niente trattini lunghi, virgolette tipografiche, apostrofi tipografici.
+9. **Metadati catalogo (frontmatter SKILL.md, obbligatori in aggiunta a `name`/`description`/`license`)**. Sono consumati da `scripts/build_catalog.py` per generare `catalog.yaml` (single source of truth della landing). I campi sono:
+   - `area`: id di una macro-area dichiarata in `/areas.yaml` (es. `strutture-geotecnica`). Una skill, una sola area, sempre quella piu' vicina al dominio operativo prevalente. Le macro-aree user-facing sono 8 (ADR-0004); le categorie interne di README sono altra cosa.
+   - `title`: titolo breve user-facing, max 80 char, in italiano.
+   - `summary`: riassunto operativo in italiano, una frase, max 280 char, senza Markdown. Cosa fa la skill, su quale norma, per chi.
+   - `normative_refs`: lista di stringhe (max 200 char ciascuna) con i riferimenti normativi principali della skill. Self-contained: ogni voce deve essere leggibile da sola (preferire `"NTC 2018 par. 3.3"` a `"par. 3.3"`).
+   - `version`: semver (`X.Y.Z` con suffissi pre-release ammessi, es. `0.1.0-alpha`).
+   - `status`: `alpha` o `stable` (allineato con `version`: `0.x` o pre-release => `alpha`; `>= 1.0.0` senza pre-release => `stable`).
+   - `tags`: lista di stringhe in kebab-case `[a-z0-9][a-z0-9-]*`, max 40 char ciascuna. Tag liberi (norme, settori, sigle): non c'e' tassonomia chiusa.
+
+   Per descrizioni multi-paragrafo o contenenti `:`, usa il block scalar YAML (`description: |-` con corpo indentato) - mai stringhe non quotate con `:` letterali.
 
 ## Quando crei una nuova skill
 
@@ -154,6 +166,7 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 ./scripts/fetch-sources.sh <nome-skill>     # PRIMA: scarica fonti, calcola SHA256, sostituisci ogni REPLACE_WHEN_DOWNLOADED
 ./scripts/validate.sh --all                 # check strutturale di tutto il catalogo
 ./scripts/validate.sh <nome-skill>          # check di una skill sola
+uv run scripts/build_catalog.py             # valida frontmatter catalogo e rigenera catalog.yaml (committalo)
 grep -r "REPLACE_WHEN_DOWNLOADED" skills/<nome-skill>/   # DEVE non trovare nulla
 ```
 

@@ -1,7 +1,24 @@
 ---
 name: sismabonus-classificazione-rischio-pam
-description: Calcolo code-driven della classe di rischio sismico di un edificio ai sensi del DM 58/2017 Allegato A (sostituito dal DM 65/2017 - testo coordinato vigente per la procedura di classificazione; DM 329/2020 modifica art. 3 e Allegato B, non l'Allegato A), con il metodo convenzionale: PAM (Perdita Annua Media) come area trapezoidale della Curva di Individuazione su SLID/SLO/SLD/SLV/SLC + termine di coda SLR, capping prescritto al passo 3 (TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV))), IS-V (Indice di Sicurezza per la Vita) come PGA_C(SLV)/PGA_D(SLV), classe finale come la peggiore tra classe PAM (8 classi A+..G) e classe IS-V (7 classi A+..F), salto classi tra stato di fatto e stato di progetto. Implementazione deterministica e riproducibile: la versione 0.1.0-alpha include solo test di consistenza interna delle formule; la validazione di campo (confronto numerico vs software certificati ClaSS / CDM Win / EdiSis / MasterSap-SismiClass su 10+ edifici reali) e' prerequisito del release stabile e non e' ancora stata eseguita. Skill solo per il METODO CONVENZIONALE su edifici esistenti; il metodo semplificato per edifici in muratura e la generazione dei modelli di asseverazione (Allegato B / B-bis) sono fuori scope di questa versione. Use when an Italian structural engineer asks to compute the seismic risk class of an existing building under DM 58/2017 (sismabonus), check whether an intervention produces a class jump, or verify PAM/IS-V values produced by other software. Target users are structural engineers preparing sismabonus asseverations or vulnerability studies under NTC 2018 cap. 8.
+description: |-
+  Calcolo code-driven della classe di rischio sismico di un edificio ai sensi del DM 58/2017 Allegato A (sostituito dal DM 65/2017 - testo coordinato vigente per la procedura di classificazione; DM 329/2020 modifica art. 3 e Allegato B, non l'Allegato A), con il metodo convenzionale: PAM (Perdita Annua Media) come area trapezoidale della Curva di Individuazione su SLID/SLO/SLD/SLV/SLC + termine di coda SLR, capping prescritto al passo 3 (TR_C(SLO/SLD) := min(TR_C(SLO/SLD), TR_C(SLV))), IS-V (Indice di Sicurezza per la Vita) come PGA_C(SLV)/PGA_D(SLV), classe finale come la peggiore tra classe PAM (8 classi A+..G) e classe IS-V (7 classi A+..F), salto classi tra stato di fatto e stato di progetto. Implementazione deterministica e riproducibile: la versione 0.1.0-alpha include solo test di consistenza interna delle formule; la validazione di campo (confronto numerico vs software certificati ClaSS / CDM Win / EdiSis / MasterSap-SismiClass su 10+ edifici reali) e' prerequisito del release stabile e non e' ancora stata eseguita. Skill solo per il METODO CONVENZIONALE su edifici esistenti; il metodo semplificato per edifici in muratura e la generazione dei modelli di asseverazione (Allegato B / B-bis) sono fuori scope di questa versione. Use when an Italian structural engineer asks to compute the seismic risk class of an existing building under DM 58/2017 (sismabonus), check whether an intervention produces a class jump, or verify PAM/IS-V values produced by other software. Target users are structural engineers preparing sismabonus asseverations or vulnerability studies under NTC 2018 cap. 8.
 license: MIT
+area: strutture-geotecnica
+title: "Sismabonus - Classificazione rischio (DM 58/2017)"
+summary: "Calcolo code-driven della classe di rischio sismico DM 58/2017 (sismabonus, metodo convenzionale): PAM come area su SLID/SLO/SLD/SLV/SLC + coda SLR, IS-V = PGA_C/PGA_D(SLV), classe finale = peggiore tra PAM e IS-V, salto classi stato di fatto vs progetto."
+normative_refs:
+  - "DM 58/2017"
+  - "DM 65/2017"
+  - "DM 24/2020"
+  - "DM 329/2020 (Allegato A)"
+  - "NTC 2018 cap. 3.2 e cap. 8"
+  - "Circ. 7/2019"
+version: 0.1.1-alpha
+status: alpha
+tags:
+  - sismabonus
+  - dm-58-2017
+  - rischio-sismico
 ---
 
 # Classificazione rischio sismico DM 58/2017 - PAM + IS-V (sismabonus)

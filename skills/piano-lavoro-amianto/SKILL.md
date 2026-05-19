@@ -2,6 +2,19 @@
 name: piano-lavoro-amianto
 description: Supporta il precheck, la redazione guidata e la verifica del piano di lavoro per demolizione o rimozione di amianto ai sensi dell'art. 256 del D.Lgs. 81/2008, nel testo aggiornato dal D.Lgs. 31 dicembre 2025 n. 213, con uso operativo del DM 6 settembre 1994 per misure tecniche, DPI, decontaminazione e bonifica. Use when an Italian datore di lavoro, RSPP, CSP/CSE, consulente HSE, tecnico amianto, or impresa specializzata needs to decide whether an art. 256 piano di lavoro is required, prepare a structured draft before transmission to ASL/ATS/SPSAL, or review an existing plan for completeness and consistency.
 license: MIT
+area: sicurezza-lavoro-cantieri
+title: "Piano di Lavoro Amianto"
+summary: "Precheck, redazione guidata e verifica del piano di lavoro per demolizione o rimozione di amianto, nel testo vigente dell'art. 256 D.Lgs. 81/2008 aggiornato dal D.Lgs. 213/2025"
+normative_refs:
+  - "D.Lgs. 81/2008 art. 251, 256, 258, 259"
+  - "D.Lgs. 213/2025"
+  - "DM 6/9/1994"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - amianto
+  - dlgs-81-2008
+  - art-256
 ---
 
 # Piano di Lavoro Amianto (art. 256 D.Lgs. 81/2008 + DM 6 settembre 1994)

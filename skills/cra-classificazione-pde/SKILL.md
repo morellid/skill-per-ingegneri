@@ -2,6 +2,17 @@
 name: cra-classificazione-pde
 description: Guida la classificazione di un prodotto con elementi digitali (PDE) ai sensi del Regolamento (UE) 2024/2847 (Cyber Resilience Act) e la selezione della procedura di valutazione della conformita' e della documentazione tecnica. Use when an engineer or product compliance manager needs to determine whether a product is in scope of CRA, whether it is "important" (Annex III Class I/II) or "critical" (Annex IV), which conformity assessment module (A, B+C, H, or European cybersecurity certification) applies, and which technical documentation (Annex VII) is required.
 license: MIT
+area: software-dati-cybersecurity
+title: "CRA - Classificazione PDE e valutazione della conformita'"
+summary: "Classificazione di un prodotto con elementi digitali (PDE) ai sensi del CRA (default / importante Classe I / Classe II / critico) e selezione del modulo di valutazione della conformita' (A, B+C, H, certificazione europea) + struttura documentazione tecnica Allegato VII"
+normative_refs:
+  - "Reg. UE 2024/2847 (Cyber Resilience Act)"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - cra
+  - reg-ue-2024-2847
+  - cyber
 ---
 
 # CRA - Classificazione PDE e valutazione della conformita'

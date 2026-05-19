@@ -2,6 +2,18 @@
 name: gdpr-registro-dpia
 description: Supporta la stesura e verifica del Registro delle attivita' di trattamento (art. 30 GDPR) e della Valutazione d'Impatto sulla protezione dei dati - DPIA (art. 35 GDPR). Use when the user needs to draft a GDPR processing register, verify its completeness, decide whether a DPIA is required for a specific processing activity, or structure a DPIA. Target users are Italian data controllers, processors, DPO, and IT engineers building systems that process personal data, with reference to the Italian Garante Privacy provisions.
 license: MIT
+area: software-dati-cybersecurity
+title: "GDPR Registro + DPIA"
+summary: "Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA)"
+normative_refs:
+  - "GDPR art. 30, 35, 36"
+  - "provv. Garante"
+version: 0.1.1
+status: stable
+tags:
+  - gdpr
+  - dpia
+  - garante-privacy
 ---
 
 # GDPR Registro trattamenti + DPIA

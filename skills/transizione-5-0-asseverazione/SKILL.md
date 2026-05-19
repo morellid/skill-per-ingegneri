@@ -2,6 +2,19 @@
 name: transizione-5-0-asseverazione
 description: Supporta la redazione e la verifica delle certificazioni tecniche (ex ante ed ex post) richieste dal Piano Transizione 5.0 ai sensi dell'art. 38 DL 19/2024 (convertito da L. 56/2024) e del DM MIMIT-MEF 24 luglio 2024. Fornisce inquadramento dell'ammissibilita' del progetto, calcolo strutturato della riduzione dei consumi energetici (soglie >=3% struttura produttiva o >=5% processo interessato) con conversione in tep, generazione delle bozze testuali della Certificazione Ex Ante (Allegato VIII) e Certificazione Ex Post (Allegato X) e delle relative Relazioni Tecniche (Allegati IX e XI), verifica della coerenza ex ante / ex post per i controlli GSE. Use when an EGE (UNI CEI 11339), an ESCo (UNI CEI 11352), an ingegnere iscritto all'albo (sez. A o B) o un perito industriale qualificato deve predisporre o verificare l'asseverazione tecnica per il credito d'imposta Transizione 5.0, sia in fase di prenotazione (comunicazione preventiva) sia in fase di completamento (entro 28 febbraio 2026).
 license: MIT
+area: energia-incentivi
+title: "Transizione 5.0 - Asseverazione tecnica"
+summary: "Asseverazione tecnica ex ante / ex post per il credito d'imposta Piano Transizione 5.0 (calcolo riduzione consumi >=3% struttura o >=5% processo, conversione tep, modelli MIMIT)"
+normative_refs:
+  - "DL 19/2024 art. 38"
+  - "DM MIMIT-MEF 24/7/2024"
+  - "Circolare MIMIT 25877/2024"
+version: 0.2.0
+status: stable
+tags:
+  - transizione-5-0
+  - credito-imposta
+  - mimit
 ---
 
 # Transizione 5.0 - Asseverazione tecnica EGE/ESCO/ingegnere/perito

@@ -2,6 +2,18 @@
 name: pos-allegato-xv-checker
 description: Guida la compilazione assistita e verifica la completezza e coerenza di un Piano Operativo di Sicurezza (POS) italiano rispetto ai contenuti minimi previsti dall'Allegato XV del D.Lgs. 9 aprile 2008 n. 81 e, se richiesto, secondo l'impostazione dei modelli semplificati del Decreto Interministeriale 9 settembre 2014. Use when the user needs to structure a POS draft, identify missing input data, validate a POS document for Italian construction safety compliance, check for missing mandatory sections, verify consistency between risk analysis and mitigation measures, or review safety cost computation. Target users are Italian civil engineers, coordinatori per la sicurezza (CSE/CSP), datori di lavoro di imprese esecutrici, and safety professionals.
 license: MIT
+area: sicurezza-lavoro-cantieri
+title: "POS Allegato XV Assistant"
+summary: "Guida la compilazione assistita e verifica completezza e coerenza di un Piano Operativo di Sicurezza (POS) di cantiere"
+normative_refs:
+  - "D.Lgs. 81/2008 art. 96-97, Allegato XV"
+  - "DI 9/9/2014 modelli semplificati"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - pos
+  - dlgs-81-2008
+  - cantieri
 ---
 
 # POS Allegato XV Checker

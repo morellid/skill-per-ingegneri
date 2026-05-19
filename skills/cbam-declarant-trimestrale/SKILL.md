@@ -2,6 +2,17 @@
 name: cbam-declarant-trimestrale
 description: Supporta il dichiarante CBAM autorizzato negli adempimenti della fase definitiva (Reg. UE 2023/956 dal 1/1/2026, modificato dal Reg. UE 2025/2083) - verifica della qualifica e applicabilita' delle deroghe, pianificazione dell'obbligo trimestrale 50 % sui certificati CBAM (Art. 22 §2 dal 2027), redazione della dichiarazione CBAM annuale (Art. 6, entro 30/9 - prima volta 2027 per anno 2026), valutazione dell'esposizione sanzionatoria (Art. 26). Use when user asks about CBAM authorized declarant obligations, quarterly 50% balance, annual CBAM declaration, soglia 50 t, deroga 31/3/2026, Y128/Y134-Y238 TARIC codes, or CBAM sanctions.
 license: MIT
+area: ambiente-territorio-mobilita
+title: "CBAM Declarant Trimestrale"
+summary: "Adempimenti del dichiarante CBAM autorizzato nella fase definitiva (dal 1/1/2026): qualifica e deroghe (soglia 50 t, TARIC Y238), pianificazione obbligo trimestrale 50% certificati (Art. 22 §2 dal 2027), dichiarazione annuale Art. 6, esposizione sanzionatoria Art. 26."
+normative_refs:
+  - "Reg. UE 2023/956 (CBAM) modificato da Reg. UE 2025/2083"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - cbam
+  - reg-ue-2023-956
+  - import
 ---
 
 # CBAM Declarant Trimestrale - Reg. (UE) 2023/956 fase definitiva

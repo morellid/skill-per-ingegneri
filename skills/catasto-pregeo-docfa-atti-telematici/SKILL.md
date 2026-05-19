@@ -2,6 +2,21 @@
 name: catasto-pregeo-docfa-atti-telematici
 description: Assiste geometri, ingegneri, architetti, dottori agronomi e periti edili nella redazione e nella verifica pre-trasmissione degli atti telematici di aggiornamento del Catasto Terreni (procedura Pregeo 10) e del Catasto Fabbricati (procedura Docfa 4). Guida la scelta della tipologia di atto in riga 9 del libretto Pregeo (Tipo Mappale, Tipo Frazionamento, Atto Misto FM, Tipo Mappale con Stralcio di Corte SC, Tipo Particellare), la coerenza del modello censuario, la nuova disciplina del deposito telematico dei frazionamenti dal 1/7/2025 (art. 30 co. 5-bis DPR 380/2001 - Risoluzione AdE 40/E del 9/6/2025), la corretta scelta della causale Docfa (Quadro A o B), della categoria catastale (Gruppi A, B, C, D, E, F) e delle relative dichiarazioni nel Quadro D, la completezza di Elaborato Planimetrico, Elenco Subalterni, Entita' Tipologiche e planimetrie, fino al check pre-invio Sister per ridurre i rifiuti telematici. Use when an Italian land surveyor, civil engineer or architect must prepare or review a Pregeo or Docfa filing before sending it to Agenzia delle Entrate via Sister.
 license: MIT
+area: edilizia-urbanistica-catasto
+title: "Catasto - Atti telematici Pregeo 10 + Docfa 4"
+summary: "Assistente alla redazione e check pre-trasmissione degli atti telematici Catasto Terreni (Pregeo 10) e Fabbricati (Docfa 4): scelta tipologia atto, causale, categoria, quadri EP/ES/ET/D, deposito telematico frazionamenti, diagnosi rifiuti via Sister."
+normative_refs:
+  - "DPR 380/2001 art. 30"
+  - "DM 28/1998"
+  - "Circ. AdE 3/2009"
+  - "Vademecum Docfa v1.0 (7/2022)"
+  - "Risoluzione AdE 40/E del 9/6/2025"
+version: 0.1.1-alpha
+status: alpha
+tags:
+  - catasto
+  - pregeo
+  - docfa
 ---
 
 # Catasto - Atti telematici Pregeo 10 + Docfa 4

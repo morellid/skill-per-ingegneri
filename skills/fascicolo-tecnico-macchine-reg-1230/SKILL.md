@@ -2,6 +2,17 @@
 name: fascicolo-tecnico-macchine-reg-1230
 description: Supporta la redazione e la verifica del fascicolo tecnico di una macchina, di un prodotto correlato o di una quasi-macchina ai sensi del Regolamento (UE) 2023/1230, inclusa la qualificazione del prodotto, la scelta della procedura di valutazione della conformita' (art. 25, Allegato I, moduli A/B/C/G/H), la checklist dei contenuti dell'Allegato IV parti A e B, e la struttura delle dichiarazioni UE (Allegato V parti A e B). Use when the user asks to draft, audit or check the technical file (fascicolo tecnico) of a machine, partly completed machinery (quasi-macchina) or related product under the new EU Machinery Regulation 2023/1230 (replacing Directive 2006/42/EC from 14 January 2027).
 license: MIT
+area: impianti-macchine-prodotti
+title: "Fascicolo tecnico macchine (Reg. UE 2023/1230)"
+summary: "Redazione e verifica del fascicolo tecnico di macchina, prodotto correlato o quasi-macchina (Reg. UE 2023/1230): qualificazione, procedura di conformita' (moduli A/B/C/G/H), contenuti All. IV, dichiarazioni UE All. V. Sostituisce Dir. 2006/42/CE dal 14/1/2027."
+normative_refs:
+  - "Reg. UE 2023/1230 (Regolamento Macchine)"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - reg-ue-2023-1230
+  - macchine
+  - marcatura-ce
 ---
 
 # Fascicolo tecnico macchine - Reg. UE 2023/1230

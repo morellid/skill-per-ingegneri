@@ -2,6 +2,19 @@
 name: pfte-allegato-i7-checker
 description: Genera la checklist degli elaborati obbligatori e verifica la completezza di un Progetto di Fattibilita' Tecnico-Economica (PFTE) e di un progetto esecutivo ai sensi dell'art. 41 e dell'Allegato I.7 del D.Lgs. 31 marzo 2023 n. 36 (Codice dei contratti pubblici), come integrato dal correttivo D.Lgs. 209/2024. Use when the user needs to know which documents are mandatory for a PFTE given the type of intervention (new construction, ordinary or extraordinary maintenance, restauro, ristrutturazione, lavori su beni culturali), check that a submitted PFTE folder contains all required elaborati, or validate consistency between a PFTE and the related progetto esecutivo for Italian public works tendering. Target users are Italian civil engineers, RUP (Responsabili Unici del Procedimento), stazioni appaltanti, and consulting professionals working on opere pubbliche under the new Codice 2023.
 license: MIT
+area: appalti-opere-pubbliche
+title: "PFTE Allegato I.7 Checker"
+summary: "Checklist e verifica completezza degli elaborati di un PFTE / progetto esecutivo di lavori pubblici, integrato dal correttivo 2024"
+normative_refs:
+  - "D.Lgs. 36/2023 art. 41"
+  - "Allegato I.7"
+  - "D.Lgs. 209/2024"
+version: 0.2.0
+status: stable
+tags:
+  - pfte
+  - dlgs-36-2023
+  - lavori-pubblici
 ---
 
 # PFTE Allegato I.7 Checker

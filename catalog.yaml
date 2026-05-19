@@ -1,0 +1,516 @@
+# AUTO-GENERATED da scripts/build_catalog.py. NON modificare a mano.
+# Single source of truth della categorizzazione user-facing del catalogo skill.
+
+schema_version: 1
+generated_at: '2026-05-19T14:23:15Z'
+areas:
+- id: sicurezza-lavoro-cantieri
+  name: Sicurezza sul lavoro & cantieri
+  order: 1
+  count: 3
+- id: strutture-geotecnica
+  name: Strutture & geotecnica
+  order: 2
+  count: 6
+- id: edilizia-urbanistica-catasto
+  name: Edilizia, urbanistica & catasto
+  order: 3
+  count: 3
+- id: appalti-opere-pubbliche
+  name: Appalti & opere pubbliche
+  order: 4
+  count: 5
+- id: energia-incentivi
+  name: Energia & incentivi
+  order: 5
+  count: 2
+- id: ambiente-territorio-mobilita
+  name: Ambiente, territorio & mobilita'
+  order: 6
+  count: 5
+- id: impianti-macchine-prodotti
+  name: Impianti, macchine & prodotti
+  order: 7
+  count: 3
+- id: software-dati-cybersecurity
+  name: Software, dati & cybersecurity
+  order: 8
+  count: 5
+skills:
+- id: ai-act-compliance
+  area: software-dati-cybersecurity
+  title: AI Act Compliance (IT)
+  summary: Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza
+  normative_refs:
+  - Reg. UE 2024/1689 (AI Act)
+  version: 0.1.3
+  status: stable
+  tags:
+  - ai-act
+  - reg-ue-2024-1689
+  - gpai
+- id: bandi-tipo-anac-checker
+  area: appalti-opere-pubbliche
+  title: Bandi-tipo ANAC - Checker disciplinare di gara
+  summary: Verifica la conformita' di un disciplinare di gara agli schemi ANAC (bandi-tipo) obbligatori per le stazioni appaltanti;
+    identifica deroghe non giustificate, clausole mancanti, riferimenti obsoleti (D.Lgs. 50/2016) e anomalie a rischio TAR
+    prima della pubblicazione
+  normative_refs:
+  - D.Lgs. 36/2023
+  - Bandi-tipo ANAC (n. 1/2023, n. 2/2026 SIA)
+  version: 0.2.0
+  status: stable
+  tags:
+  - anac
+  - dlgs-36-2023
+  - bandi-tipo
+- id: carichi-atmosferici-ntc
+  area: strutture-geotecnica
+  title: Carichi atmosferici NTC 2018 (vento + neve)
+  summary: Calcolo code-driven di pressione del vento (NTC par. 3.3) e carico neve sulla copertura (par. 3.4) per edifici
+    civili e industriali correnti. Dato sito, categoria di esposizione I-V e geometria, restituisce v_b/c_r/q_r/c_e/p e q_sk/mu_1/c_E/q_s
+    con citazione paragrafi.
+  normative_refs:
+  - NTC 2018 par. 3.3
+  - par. 3.4
+  - Circ. 7/2019 par. C3.3-C3.4
+  version: 0.1.0-alpha+fix1
+  status: alpha
+  tags:
+  - ntc-2018
+  - vento
+  - neve
+- id: catasto-pregeo-docfa-atti-telematici
+  area: edilizia-urbanistica-catasto
+  title: Catasto - Atti telematici Pregeo 10 + Docfa 4
+  summary: 'Assistente alla redazione e check pre-trasmissione degli atti telematici Catasto Terreni (Pregeo 10) e Fabbricati
+    (Docfa 4): scelta tipologia atto, causale, categoria, quadri EP/ES/ET/D, deposito telematico frazionamenti, diagnosi rifiuti
+    via Sister.'
+  normative_refs:
+  - DPR 380/2001 art. 30
+  - DM 28/1998
+  - Circ. AdE 3/2009
+  - Vademecum Docfa v1.0 (7/2022)
+  - Risoluzione AdE 40/E del 9/6/2025
+  version: 0.1.1-alpha
+  status: alpha
+  tags:
+  - catasto
+  - pregeo
+  - docfa
+- id: cbam-declarant-trimestrale
+  area: ambiente-territorio-mobilita
+  title: CBAM Declarant Trimestrale
+  summary: 'Adempimenti del dichiarante CBAM autorizzato nella fase definitiva (dal 1/1/2026): qualifica e deroghe (soglia
+    50 t, TARIC Y238), pianificazione obbligo trimestrale 50% certificati (Art. 22 §2 dal 2027), dichiarazione annuale Art.
+    6, esposizione sanzionatoria Art. 26.'
+  normative_refs:
+  - Reg. UE 2023/956 (CBAM) modificato da Reg. UE 2025/2083
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cbam
+  - reg-ue-2023-956
+  - import
+- id: cedimenti-edometrici-ntc
+  area: strutture-geotecnica
+  title: Cedimenti edometrici - SLE NTC 2018 par. 6.2.4
+  summary: Controllo di completezza di una verifica dei cedimenti geotecnici (prestazioni attese, spostamenti compatibili,
+    metodo di interazione terreno-struttura, confronto SLE) - skill di supporto documentale che non sostituisce il calcolo
+    geotecnico
+  normative_refs:
+  - NTC 2018
+  - Circolare 7/2019
+  version: 0.1.1
+  status: stable
+  tags:
+  - ntc-2018
+  - geotecnica
+  - cedimenti
+- id: cer-cacer-configurazione-gse
+  area: energia-incentivi
+  title: Configurazione CER/CACER e Qualifica GSE
+  summary: 'Configurazione di CER (art. 31), GAC (art. 30 c. 2) o AID (art. 30 c. 1 lett. a n. 2): perimetro cabina primaria,
+    statuto, simulazione energia condivisa/TIP/tariffa, contributo PNRR per Comuni <50k ab., checklist qualifica portale GSE.'
+  normative_refs:
+  - D.Lgs. 199/2021 artt. 30-31-32
+  - DM MASE 7/12/2023 n. 414
+  - DM MASE 16/5/2025 n. 127
+  - DL 19/2/2026 n. 19 art. 27
+  - Delibera ARERA 727/2022/R/eel (TIAD)
+  - Regole Operative CACER del GSE
+  version: 0.2.0
+  status: stable
+  tags:
+  - cer
+  - gse
+  - dlgs-199-2021
+- id: combinazioni-carico-ntc
+  area: strutture-geotecnica
+  title: Combinazioni Carico NTC
+  summary: Generazione/verifica code-driven delle combinazioni delle azioni SLU/SLE/sismiche/eccezionali per edifici civili
+    e industriali correnti
+  normative_refs:
+  - NTC 2018 par. 2.5.3
+  - Tab. 2.5.I
+  - Tab. 2.6.I
+  version: 0.1.1-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - slu
+  - sle
+- id: cra-classificazione-pde
+  area: software-dati-cybersecurity
+  title: CRA - Classificazione PDE e valutazione della conformita'
+  summary: Classificazione di un prodotto con elementi digitali (PDE) ai sensi del CRA (default / importante Classe I / Classe
+    II / critico) e selezione del modulo di valutazione della conformita' (A, B+C, H, certificazione europea) + struttura
+    documentazione tecnica Allegato VII
+  normative_refs:
+  - Reg. UE 2024/2847 (Cyber Resilience Act)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cra
+  - reg-ue-2024-2847
+  - cyber
+- id: dm37-2008-dichiarazione-conformita
+  area: impianti-macchine-prodotti
+  title: DM 37/2008 - Dichiarazione Conformita' Impianti
+  summary: Compilazione e verifica della Dichiarazione di Conformita' (DdC) degli impianti tecnologici (7 categorie a-g modello
+    Allegato I), determinazione degli allegati obbligatori e dell'obbligo di progetto da professionista ex Art. 5
+  normative_refs:
+  - DM 22/1/2008 n. 37
+  version: 0.1.2-alpha
+  status: alpha
+  tags:
+  - dm-37-2008
+  - impianti
+  - didc
+- id: dnsh-pnrr-checker
+  area: appalti-opere-pubbliche
+  title: DNSH PNRR - schede e checklist
+  summary: 'Verifica documentale DNSH per interventi PNRR e, solo se la misura lo richiama espressamente, per interventi PNC:
+    mappatura misura, schede tecniche RGS, checklist ex ante/ex post, piano evidenze e report per gara/SAL/collaudo/ReGiS'
+  normative_refs:
+  - Reg. UE 2020/852 art. 17
+  - Reg. UE 2021/241 art. 5 e 18
+  - Circolare RGS 22/2024
+  - Guida operativa DNSH RGS 2024
+  - DL 77/2021 art. 14
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dnsh
+  - pnrr
+  - reg-ue-2020-852
+- id: dora-gap-assessment
+  area: software-dati-cybersecurity
+  title: DORA Gap Assessment
+  summary: Gap assessment di un'entita' finanziaria (banca, IMEL, IP, SIM, assicurazione, MiCA CASP, ecc.) rispetto ai 5 pillar
+    DORA, applicabile dal 17/1/2025
+  normative_refs:
+  - Reg. UE 2022/2554 (DORA) artt. 5-30, 45
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dora
+  - reg-ue-2022-2554
+  - finanza
+- id: dvr-generico
+  area: sicurezza-lavoro-cantieri
+  title: DVR Generico (D.Lgs. 81/2008)
+  summary: Stesura, verifica e aggiornamento del Documento di Valutazione dei Rischi (DVR) cross-settoriale
+  normative_refs:
+  - D.Lgs. 81/2008 art. 17, 28, 29
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dvr
+  - dlgs-81-2008
+  - salute-sicurezza
+- id: fascicolo-tecnico-macchine-reg-1230
+  area: impianti-macchine-prodotti
+  title: Fascicolo tecnico macchine (Reg. UE 2023/1230)
+  summary: 'Redazione e verifica del fascicolo tecnico di macchina, prodotto correlato o quasi-macchina (Reg. UE 2023/1230):
+    qualificazione, procedura di conformita'' (moduli A/B/C/G/H), contenuti All. IV, dichiarazioni UE All. V. Sostituisce
+    Dir. 2006/42/CE dal 14/1/2027.'
+  normative_refs:
+  - Reg. UE 2023/1230 (Regolamento Macchine)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - reg-ue-2023-1230
+  - macchine
+  - marcatura-ce
+- id: gdpr-registro-dpia
+  area: software-dati-cybersecurity
+  title: GDPR Registro + DPIA
+  summary: Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA)
+  normative_refs:
+  - GDPR art. 30, 35, 36
+  - provv. Garante
+  version: 0.1.1
+  status: stable
+  tags:
+  - gdpr
+  - dpia
+  - garante-privacy
+- id: modulistica-edilizia-unificata
+  area: edilizia-urbanistica-catasto
+  title: Modulistica edilizia unificata + Salva Casa
+  summary: Determina il modulo edilizio unificato (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC / Sanatoria
+    art. 36 / 36-bis) per un intervento e l'elenco degli allegati richiesti, integrato con le modifiche del Salva Casa
+  normative_refs:
+  - DPR 380/2001
+  - D.Lgs. 222/2016 Tabella A
+  - DL 69/2024 conv. L. 105/2024
+  - Modulistica unificata 27/3/2025
+  version: 0.1.4-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - cila
+  - scia
+  - salva-casa
+- id: nis2-self-assessment
+  area: software-dati-cybersecurity
+  title: NIS2 self-assessment (D.Lgs. 138/2024)
+  summary: Self-assessment NIS2 (perimetro, gap analysis misure ACN, notifica incidenti, governance)
+  normative_refs:
+  - D.Lgs. 138/2024
+  - Det. ACN 379907/2025
+  version: 0.2.0-alpha
+  status: alpha
+  tags:
+  - nis2
+  - dlgs-138-2024
+  - acn
+- id: oepv-valutatore-offerte-tecniche
+  area: appalti-opere-pubbliche
+  title: OEPV - Valutatore offerte tecniche
+  summary: Costruzione della matrice criteri/sottocriteri OEPV, valutazione delle offerte tecniche con metodo aggregativo-compensatore,
+    verifica di conformita' all'art. 108 di una matrice gia' redatta
+  normative_refs:
+  - D.Lgs. 36/2023 art. 108
+  version: 0.2.0
+  status: stable
+  tags:
+  - oepv
+  - dlgs-36-2023
+  - offerte
+- id: ped-classificazione-conformita
+  area: impianti-macchine-prodotti
+  title: PED - Classificazione e valutazione conformita'
+  summary: Classificazione di un'attrezzatura a pressione (recipiente, tubazione, accessorio di sicurezza o a pressione, insieme)
+    nelle categorie I/II/III/IV e selezione del modulo di valutazione della conformita' applicabile, marcatura e dichiarazione
+    richieste
+  normative_refs:
+  - D.Lgs. 26/2016 (recepimento Direttiva PED 2014/68/UE)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ped
+  - dlgs-26-2016
+  - pressione
+- id: pfte-allegato-i7-checker
+  area: appalti-opere-pubbliche
+  title: PFTE Allegato I.7 Checker
+  summary: Checklist e verifica completezza degli elaborati di un PFTE / progetto esecutivo di lavori pubblici, integrato
+    dal correttivo 2024
+  normative_refs:
+  - D.Lgs. 36/2023 art. 41
+  - Allegato I.7
+  - D.Lgs. 209/2024
+  version: 0.2.0
+  status: stable
+  tags:
+  - pfte
+  - dlgs-36-2023
+  - lavori-pubblici
+- id: piano-lavoro-amianto
+  area: sicurezza-lavoro-cantieri
+  title: Piano di Lavoro Amianto
+  summary: Precheck, redazione guidata e verifica del piano di lavoro per demolizione o rimozione di amianto, nel testo vigente
+    dell'art. 256 D.Lgs. 81/2008 aggiornato dal D.Lgs. 213/2025
+  normative_refs:
+  - D.Lgs. 81/2008 art. 251, 256, 258, 259
+  - D.Lgs. 213/2025
+  - DM 6/9/1994
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - amianto
+  - dlgs-81-2008
+  - art-256
+- id: pos-allegato-xv-checker
+  area: sicurezza-lavoro-cantieri
+  title: POS Allegato XV Assistant
+  summary: Guida la compilazione assistita e verifica completezza e coerenza di un Piano Operativo di Sicurezza (POS) di cantiere
+  normative_refs:
+  - D.Lgs. 81/2008 art. 96-97, Allegato XV
+  - DI 9/9/2014 modelli semplificati
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - pos
+  - dlgs-81-2008
+  - cantieri
+- id: pratiche-edilizie-lr65-2014-toscana
+  area: edilizia-urbanistica-catasto
+  title: Pratiche edilizie LR 65/2014 Toscana - Document checker
+  summary: Determina il titolo abilitativo edilizio (Edilizia libera / CILA / SCIA / SCIA-PdC / PdC) per interventi in Toscana
+    e genera la checklist documenti richiesti, con specificita' regionali (sismica DGRT 421/2014, DPGR 1/R/2022, vincolo paesaggistico,
+    Piano Operativo).
+  normative_refs:
+  - LR Toscana 65/2014
+  - DPR 380/2001
+  - DPGR 1/R/2022
+  - DPR 31/2017 (paesaggio)
+  version: 0.1.2
+  status: stable
+  tags:
+  - toscana
+  - lr-65-2014
+  - cila
+  - scia
+- id: predimensionamento-flessione-ca-ntc
+  area: strutture-geotecnica
+  title: Pre-dimensionamento flessione c.a. NTC 2018 (par. 4.1.2)
+  summary: 'Calcolo code-driven di M_Rd di sezione rettangolare in c.a. singolarmente armata in flessione semplice SLU (stress-block
+    eta=1, lambda=0.8): f_cd, f_yd, x, x/d, eps_s, z, M_Rd in kNm, duttilita'' x/d <= 0.45. Solo fck <= 50 MPa (Classe 1).'
+  normative_refs:
+  - NTC 2018 par. 4.1.2.1 e 4.1.2.3.4.2
+  - Circolare 7/2019 par. C4.1.2
+  version: 0.1.1-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - cemento-armato
+  - flessione
+- id: pums-validator-dm397
+  area: ambiente-territorio-mobilita
+  title: Validatore PUMS - DM 397/2017
+  summary: Verifica della conformita' formale e di completezza di un Piano Urbano di Mobilita' Sostenibile (PUMS) per comuni
+    > 100.000 ab., citta' metropolitane o associazioni di comuni che superano la soglia
+  normative_refs:
+  - DM 397/2017
+  - DM 396/2019
+  - DM 29/2021
+  - DM 444/2021
+  - Vademecum MIMS 2022
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - pums
+  - dm-397-2017
+  - mobilita
+- id: relazione-cam-dm256-2022
+  area: appalti-opere-pubbliche
+  title: Relazione CAM DM 256/2022
+  summary: 'Redazione e verifica della Relazione Tecnica dei Requisiti Ambientali CAM per servizi di progettazione e lavori
+    su edifici pubblici (NC / R1 / R2 / MS): identificazione criteri applicabili, struttura capitolare, check completezza
+    di una relazione esistente'
+  normative_refs:
+  - DM 23/6/2022 n. 256 (CAM edilizia)
+  - D.Lgs. 36/2023 art. 57
+  version: 0.1.2-alpha
+  status: alpha
+  tags:
+  - cam
+  - dm-256-2022
+  - appalti-verdi
+- id: rsia-audit-stradale-dlgs35
+  area: ambiente-territorio-mobilita
+  title: Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011)
+  summary: 'Supporto alle quattro procedure di gestione della sicurezza delle infrastrutture stradali: VISS (impatto sui progetti),
+    RSA (controlli sulle fasi progettuali), NSA (valutazione a livello di rete), ispezioni periodiche/mirate sulle strade
+    in esercizio'
+  normative_refs:
+  - D.Lgs. 35/2011 modificato dal D.Lgs. 213/2021 (recepimento Dir. UE 2019/1936)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - rsia
+  - dlgs-35-2011
+  - strade
+- id: sismabonus-classificazione-rischio-pam
+  area: strutture-geotecnica
+  title: Sismabonus - Classificazione rischio (DM 58/2017)
+  summary: 'Calcolo code-driven della classe di rischio sismico DM 58/2017 (sismabonus, metodo convenzionale): PAM come area
+    su SLID/SLO/SLD/SLV/SLC + coda SLR, IS-V = PGA_C/PGA_D(SLV), classe finale = peggiore tra PAM e IS-V, salto classi stato
+    di fatto vs progetto.'
+  normative_refs:
+  - DM 58/2017
+  - DM 65/2017
+  - DM 24/2020
+  - DM 329/2020 (Allegato A)
+  - NTC 2018 cap. 3.2 e cap. 8
+  - Circ. 7/2019
+  version: 0.1.1-alpha
+  status: alpha
+  tags:
+  - sismabonus
+  - dm-58-2017
+  - rischio-sismico
+- id: spettro-risposta-ntc
+  area: strutture-geotecnica
+  title: Spettro di risposta NTC 2018 (par. 3.2)
+  summary: Calcolo code-driven dello spettro di risposta elastico orizzontale (TR, ag/F0/Tc*, S, eta, TB/TC/TD, Se(T)) per
+    SLO/SLD/SLV/SLC
+  normative_refs:
+  - NTC 2018 par. 3.2
+  - Circ. 7/2019
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - sismica
+  - spettro
+- id: transizione-5-0-asseverazione
+  area: energia-incentivi
+  title: Transizione 5.0 - Asseverazione tecnica
+  summary: Asseverazione tecnica ex ante / ex post per il credito d'imposta Piano Transizione 5.0 (calcolo riduzione consumi
+    >=3% struttura o >=5% processo, conversione tep, modelli MIMIT)
+  normative_refs:
+  - DL 19/2024 art. 38
+  - DM MIMIT-MEF 24/7/2024
+  - Circolare MIMIT 25877/2024
+  version: 0.2.0
+  status: stable
+  tags:
+  - transizione-5-0
+  - credito-imposta
+  - mimit
+- id: valutazione-cem-srb-art-87-cce
+  area: ambiente-territorio-mobilita
+  title: Valutazione CEM SRB - art. 87 CCE
+  summary: 'Pratica di autorizzazione SRB (stazioni radio base, ripetitori, ponti radio) ex art. 87 CCE: check completezza
+    istanza/SCIA, mapping iter (Ente locale + parere ARPA), checklist per la relazione predittiva CEM secondo CEI 211-7'
+  normative_refs:
+  - D.Lgs. 259/2003 art. 87
+  - DPCM 8/7/2003
+  - L. 36/2001 art. 14
+  - CEI 211-7
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cem
+  - srb
+  - dlgs-259-2003
+- id: valutazione-impatto-clima-acustico-l-447
+  area: ambiente-territorio-mobilita
+  title: Valutazione di impatto e clima acustico (L. 447/1995 art. 8)
+  summary: 'Documentazione previsionale di impatto acustico (art. 8 c. 2 e c. 4) e valutazione previsionale di clima acustico
+    (art. 8 c. 3) da allegare a SCIA/PdC/autorizzazione: mapping applicabilita'', check contenuti minimi della relazione,
+    riferimenti puntuali ai valori limite'
+  normative_refs:
+  - L. 447/1995 art. 8
+  - DPCM 14/11/1997
+  - DM 16/3/1998
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - acustica
+  - l-447-1995
+  - dpcm-1997
