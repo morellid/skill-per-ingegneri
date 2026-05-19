@@ -34,6 +34,13 @@ sources:
     binary_path: not_in_repo/reg-ue-2024-2847-cra.pdf
     md_path: references/fonti/reg-ue-2024-2847-cra.md
     excerpt_path: references/estratti/reg-ue-2024-2847-cra-classificazione.md
+    # L'endpoint EUR-Lex CELEX PDF risponde con HTTP 202 + body vuoto a
+    # client non-browser (curl, urllib, runner GitHub Actions): pattern di
+    # generazione asincrona protetta da anti-bot, riproducibile anche da
+    # localhost. Il fetch da postazione operatore con browser funziona
+    # regolarmente. Hash dichiarato calcolato da fetch operatore (PR
+    # originale). Stesso precedente in skills/cbam-declarant-trimestrale.
+    ci_fetch_blocked: "eur-lex.europa.eu CELEX PDF endpoint risponde con HTTP 202 + body vuoto a client non-browser (curl/urllib/GitHub Actions); fetch da operatore con browser regolare"
     notes: |
       Cyber Resilience Act (CRA). Pubblicato in GU UE L del 20/11/2024.
       Articoli rilevanti per questa skill (classificazione PDE + documentazione tecnica):
