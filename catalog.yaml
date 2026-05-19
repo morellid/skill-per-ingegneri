@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 5
+  count: 6
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -48,6 +48,24 @@ skills:
   - ai-act
   - reg-ue-2024-1689
   - gpai
+- id: aua-dpr59-dossier
+  area: ambiente-territorio-mobilita
+  title: AUA - dossier ex D.P.R. 59/2013
+  summary: 'Preparazione e autoverifica del dossier AUA (D.P.R. 59/2013) per PMI e impianti non-AIA: perimetro art. 3 (9 titoli
+    inclusi g-bis/g-ter), termini 90/120/150 gg + conferenza di servizi, rinnovo 15 anni, triage modifica sostanziale art.
+    6.'
+  normative_refs:
+  - D.P.R. 13 marzo 2013, n. 59 (Regolamento AUA)
+  - D.Lgs. 152/2006 (artt. 19, 20, 26, 108, 112, 215, 216, 269, 272)
+  - L. 241/1990 (artt. 14-ter, 14-quinquies)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - aua
+  - dpr-59-2013
+  - autorizzazione-ambientale
+  - pmi
+  - suap
 - id: bandi-tipo-anac-checker
   area: appalti-opere-pubbliche
   title: Bandi-tipo ANAC - Checker disciplinare di gara

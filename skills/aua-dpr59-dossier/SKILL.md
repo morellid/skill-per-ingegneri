@@ -2,6 +2,21 @@
 name: aua-dpr59-dossier
 description: Supporta la preparazione e l'autoverifica del dossier per l'Autorizzazione Unica Ambientale (AUA) ai sensi del D.P.R. 13 marzo 2013, n. 59. Use when l'utente prepara una nuova istanza AUA, un rinnovo o una comunicazione di modifica per impianti non soggetti ad AIA, oppure deve verificare quali titoli ambientali confluiscono nell'AUA e con quali termini procedurali.
 license: MIT
+area: ambiente-territorio-mobilita
+title: "AUA - dossier ex D.P.R. 59/2013"
+summary: "Preparazione e autoverifica del dossier AUA (D.P.R. 59/2013) per PMI e impianti non-AIA: perimetro art. 3 (9 titoli inclusi g-bis/g-ter), termini 90/120/150 gg + conferenza di servizi, rinnovo 15 anni, triage modifica sostanziale art. 6."
+normative_refs:
+  - "D.P.R. 13 marzo 2013, n. 59 (Regolamento AUA)"
+  - "D.Lgs. 152/2006 (artt. 19, 20, 26, 108, 112, 215, 216, 269, 272)"
+  - "L. 241/1990 (artt. 14-ter, 14-quinquies)"
+version: 0.1.0-alpha
+status: alpha
+tags:
+  - aua
+  - dpr-59-2013
+  - autorizzazione-ambientale
+  - pmi
+  - suap
 ---
 
 # AUA - dossier ex D.P.R. 59/2013
