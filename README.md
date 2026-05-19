@@ -34,6 +34,21 @@ Contiene anche:
 | [`pratiche-edilizie-lr65-2014-toscana`](skills/pratiche-edilizie-lr65-2014-toscana/) | Determina il titolo abilitativo edilizio (Edilizia libera / CILA / SCIA / SCIA alternativa al PdC / PdC) per interventi in Toscana e genera la checklist documenti richiesti, con specificita' regionali (sismica DGRT 421/2014, DPGR 1/R/2022 Genio Civile, vincolo paesaggistico, Piano Operativo) | LR Toscana 65/2014 + DPR 380/2001 + DPGR 1/R/2022 + DPR 31/2017 (paesaggio) |
 | [`cer-cacer-configurazione-gse`](skills/cer-cacer-configurazione-gse/) | Configurazione di CER (art. 31), GAC (art. 30 c. 2) o AID (art. 30 c. 1 lett. a) n. 2) con verifica perimetro cabina primaria, redazione guidata dello statuto, simulazione semplificata di energia condivisa, TIP, tariffa di restituzione e contributo PNRR per Comuni < 50.000 ab. (regime vigente al 2026-05-07: DM 414/2023 + DM 127/2025 + DL 19/2026 art. 27), e checklist documentale per la qualifica al portale GSE | D.Lgs. 199/2021 artt. 30-31-32 + DM MASE 7/12/2023 n. 414 + DM MASE 16/5/2025 n. 127 + DL 19/2/2026 n. 19 art. 27 + Delibera ARERA 727/2022/R/eel (TIAD) + Regole Operative CACER del GSE |
 | [`sismabonus-classificazione-rischio-pam`](skills/sismabonus-classificazione-rischio-pam/) | Calcolo code-driven della classe di rischio sismico DM 58/2017 (sismabonus, metodo convenzionale): PAM come area trapezoidale della Curva di Individuazione su SLID/SLO/SLD/SLV/SLC + coda SLR, IS-V = PGA_C(SLV)/PGA_D(SLV), classe finale = peggiore tra classe PAM (8 classi A+..G) e classe IS-V (7 classi A+..F), salto classi tra stato di fatto e stato di progetto | DM 58/2017 + DM 65/2017 + DM 24/2020 + DM 329/2020 (Allegato A) + NTC 2018 cap. 3.2 e cap. 8 + Circ. 7/2019 |
+| [`bandi-tipo-anac-checker`](skills/bandi-tipo-anac-checker/) | Verifica la conformita' di un disciplinare di gara agli schemi ANAC (bandi-tipo) obbligatori per le stazioni appaltanti; identifica deroghe non giustificate, clausole mancanti, riferimenti obsoleti (D.Lgs. 50/2016) e anomalie a rischio TAR prima della pubblicazione | D.Lgs. 36/2023 + Bandi-tipo ANAC (n. 1/2023, n. 2/2026 SIA) |
+| [`oepv-valutatore-offerte-tecniche`](skills/oepv-valutatore-offerte-tecniche/) | Costruzione della matrice criteri/sottocriteri OEPV, valutazione delle offerte tecniche con metodo aggregativo-compensatore, verifica di conformita' all'art. 108 di una matrice gia' redatta | D.Lgs. 36/2023 art. 108 |
+| [`cra-classificazione-pde`](skills/cra-classificazione-pde/) | Classificazione di un prodotto con elementi digitali (PDE) ai sensi del CRA (default / importante Classe I / Classe II / critico) e selezione del modulo di valutazione della conformita' (A, B+C, H, certificazione europea) + struttura documentazione tecnica Allegato VII | Reg. UE 2024/2847 (Cyber Resilience Act) |
+| [`dora-gap-assessment`](skills/dora-gap-assessment/) | Gap assessment di un'entita' finanziaria (banca, IMEL, IP, SIM, assicurazione, MiCA CASP, ecc.) rispetto ai 5 pillar DORA, applicabile dal 17/1/2025 | Reg. UE 2022/2554 (DORA) artt. 5-30, 45 |
+| [`ped-classificazione-conformita`](skills/ped-classificazione-conformita/) | Classificazione di un'attrezzatura a pressione (recipiente, tubazione, accessorio di sicurezza o a pressione, insieme) nelle categorie I/II/III/IV e selezione del modulo di valutazione della conformita' applicabile, marcatura e dichiarazione richieste | D.Lgs. 26/2016 (recepimento Direttiva PED 2014/68/UE) |
+| [`dm37-2008-dichiarazione-conformita`](skills/dm37-2008-dichiarazione-conformita/) | Compilazione e verifica della Dichiarazione di Conformita' (DdC) degli impianti tecnologici (7 categorie a-g modello Allegato I), determinazione degli allegati obbligatori e dell'obbligo di progetto da professionista ex Art. 5 | DM 22/1/2008 n. 37 |
+| [`relazione-cam-dm256-2022`](skills/relazione-cam-dm256-2022/) | Redazione e verifica della Relazione Tecnica dei Requisiti Ambientali CAM per servizi di progettazione e lavori su edifici pubblici (NC / R1 / R2 / MS): identificazione criteri applicabili, struttura capitolare, check completezza di una relazione esistente | DM 23/6/2022 n. 256 (CAM edilizia) + D.Lgs. 36/2023 art. 57 |
+| [`rsia-audit-stradale-dlgs35`](skills/rsia-audit-stradale-dlgs35/) | Supporto alle quattro procedure di gestione della sicurezza delle infrastrutture stradali: VISS (impatto sui progetti), RSA (controlli sulle fasi progettuali), NSA (valutazione a livello di rete), ispezioni periodiche/mirate sulle strade in esercizio | D.Lgs. 35/2011 modificato dal D.Lgs. 213/2021 (recepimento Dir. UE 2019/1936) |
+| [`pums-validator-dm397`](skills/pums-validator-dm397/) | Verifica della conformita' formale e di completezza di un Piano Urbano di Mobilita' Sostenibile (PUMS) per comuni > 100.000 ab., citta' metropolitane o associazioni di comuni che superano la soglia | DM 397/2017 + DM 396/2019 + DM 29/2021 + DM 444/2021 + Vademecum MIMS 2022 |
+| [`valutazione-impatto-clima-acustico-l-447`](skills/valutazione-impatto-clima-acustico-l-447/) | Documentazione previsionale di impatto acustico (art. 8 c. 2 e c. 4) e valutazione previsionale di clima acustico (art. 8 c. 3) da allegare a SCIA/PdC/autorizzazione: mapping applicabilita', check contenuti minimi della relazione, riferimenti puntuali ai valori limite | L. 447/1995 art. 8 + DPCM 14/11/1997 + DM 16/3/1998 |
+| [`valutazione-cem-srb-art-87-cce`](skills/valutazione-cem-srb-art-87-cce/) | Pratica di autorizzazione SRB (stazioni radio base, ripetitori, ponti radio) ex art. 87 CCE: check completezza istanza/SCIA, mapping iter (Ente locale + parere ARPA), checklist per la relazione predittiva CEM secondo CEI 211-7 | D.Lgs. 259/2003 art. 87 + DPCM 8/7/2003 + L. 36/2001 art. 14 + CEI 211-7 |
+| [`cbam-declarant-trimestrale`](skills/cbam-declarant-trimestrale/) | Adempimenti del dichiarante CBAM autorizzato nella fase definitiva (dal 1/1/2026): verifica qualifica e applicabilita' deroghe (soglia 50 t, art. 17 §7bis con TARIC Y238 fino al 27/9/2026), pianificazione obbligo trimestrale 50% sui certificati CBAM (Art. 22 §2 dal 2027), dichiarazione annuale Art. 6 (prima volta 30/9/2027 per anno 2026), esposizione sanzionatoria Art. 26 | Reg. UE 2023/956 (CBAM) modificato da Reg. UE 2025/2083 |
+| [`cedimenti-edometrici-ntc`](skills/cedimenti-edometrici-ntc/) | Controllo di completezza di una verifica dei cedimenti geotecnici (prestazioni attese, spostamenti compatibili, metodo di interazione terreno-struttura, confronto SLE) - skill di supporto documentale che non sostituisce il calcolo geotecnico | NTC 2018 + Circolare 7/2019 |
+| [`predimensionamento-flessione-ca-ntc`](skills/predimensionamento-flessione-ca-ntc/) | Calcolo code-driven di M_Rd di sezione rettangolare in c.a. singolarmente armata in flessione semplice SLU (stress-block rettangolare equivalente eta=1, lambda=0.8): f_cd, f_yd, eps_yd, profondita' asse neutro x, x/d, eps_s, braccio z, M_Rd in kNm, verifica duttilita' x/d <= 0.45. Solo fck <= 50 MPa (Classe 1) e sezioni singolarmente armate | NTC 2018 par. 4.1.2.1 e 4.1.2.3.4.2 + Circolare 7/2019 par. C4.1.2 |
+| [`fascicolo-tecnico-macchine-reg-1230`](skills/fascicolo-tecnico-macchine-reg-1230/) | Redazione e verifica del fascicolo tecnico di una macchina, prodotto correlato o quasi-macchina ai sensi del nuovo Regolamento Macchine UE: qualificazione del prodotto, scelta procedura di valutazione conformita' (art. 25, Allegato I, moduli A/B/C/G/H), checklist contenuti Allegato IV parti A e B, struttura dichiarazioni UE Allegato V parti A e B (sostituisce Dir. 2006/42/CE dal 14/1/2027) | Reg. UE 2023/1230 (Regolamento Macchine) |
 
 Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
 
@@ -42,7 +57,7 @@ Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e lim
 ```
 skill-per-ingegneri/
 ├── AGENTS.md                    # guida cross-agent (Codex, Cursor, Copilot, ...)
-├── skills/                      # le skill pubblicate
+├── skills/                      # le skill pubblicate (elenco completo: tabella sopra)
 │   ├── pos-allegato-xv-checker/
 │   │   ├── SKILL.md             # punto d'ingresso + routing (license: MIT in frontmatter)
 │   │   ├── agents/
@@ -51,21 +66,7 @@ skill-per-ingegneri/
 │   │   ├── references/          # metadata fonti + estratti normativi
 │   │   ├── examples/            # casi d'uso validi e problematici
 │   │   └── CHANGELOG.md
-│   ├── dvr-generico/
-│   ├── gdpr-registro-dpia/
-│   ├── nis2-self-assessment/
-│   ├── ai-act-compliance/
-│   ├── spettro-risposta-ntc/
-│   ├── combinazioni-carico-ntc/
-│   ├── carichi-atmosferici-ntc/
-│   ├── pfte-allegato-i7-checker/
-│   ├── modulistica-edilizia-unificata/
-│   ├── transizione-5-0-asseverazione/
-│   ├── dnsh-pnrr-checker/
-│   ├── catasto-pregeo-docfa-atti-telematici/
-│   ├── pratiche-edilizie-lr65-2014-toscana/
-│   ├── cer-cacer-configurazione-gse/
-│   └── sismabonus-classificazione-rischio-pam/
+│   └── <altre-skill>/           # stessa struttura per ciascuna skill
 ├── methodology/                 # come si genera e mantiene una skill
 ├── templates/                   # scaffold dual-agent per nuove skill
 └── scripts/                     # utility CLI (new-skill, validate, fetch-sources)
