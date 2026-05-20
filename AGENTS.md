@@ -20,6 +20,8 @@ skill-per-ingegneri/
 ├── CONTRIBUTING.md            # processo per contributori umani
 ├── areas.yaml                 # registry delle 8 macro-aree user-facing (ADR-0004)
 ├── catalog.yaml               # AUTO-GENERATO da scripts/build_catalog.py - non editare a mano
+├── .claude-plugin/
+│   └── marketplace.json       # AUTO-GENERATO da scripts/build_catalog.py - non editare a mano
 ├── methodology/               # SOP dettagliate (leggi prima di operare)
 │   ├── criteri-selezione.md   # quando una skill ha senso
 │   ├── generazione-skill.md   # workflow nuova skill
@@ -166,7 +168,7 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 ./scripts/fetch-sources.sh <nome-skill>     # PRIMA: scarica fonti, calcola SHA256, sostituisci ogni REPLACE_WHEN_DOWNLOADED
 ./scripts/validate.sh --all                 # check strutturale di tutto il catalogo
 ./scripts/validate.sh <nome-skill>          # check di una skill sola
-uv run scripts/build_catalog.py             # valida frontmatter catalogo e rigenera catalog.yaml (committalo)
+uv run scripts/build_catalog.py             # valida frontmatter e rigenera catalog.yaml + .claude-plugin/marketplace.json (committali entrambi)
 grep -r "REPLACE_WHEN_DOWNLOADED" skills/<nome-skill>/   # DEVE non trovare nulla
 ```
 
