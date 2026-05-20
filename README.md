@@ -129,6 +129,16 @@ npx skills@latest add morellid/skill-per-ingegneri
 
 Il manifest e' in `.claude-plugin/marketplace.json`, **rigenerato automaticamente** da `scripts/build_catalog.py`.
 
+### Installazione drag-and-drop su Claude.ai
+
+Ogni skill e' distribuita anche come `.zip` autonomo nelle [GitHub Releases](https://github.com/morellid/skill-per-ingegneri/releases). Utile se usi Claude solo via web (claude.ai) e non hai installato Claude Code.
+
+1. Apri l'ultima release: https://github.com/morellid/skill-per-ingegneri/releases/latest
+2. Scarica il file `<skill-id>.zip` della skill che ti interessa (es. `pos-allegato-xv-checker.zip`).
+3. Vai su https://claude.ai/customize/skills e fai upload (o drag-and-drop) del file `.zip`.
+
+Lo zip contiene la skill completa (`SKILL.md`, `tasks/`, `examples/`, `references/`, `LICENSE`) in una singola directory top-level. Non serve estrarlo prima dell'upload.
+
 ### Codex `$skill-installer`
 
 Da una sessione Codex (per skill singole):

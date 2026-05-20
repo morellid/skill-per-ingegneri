@@ -28,7 +28,7 @@ skill-per-ingegneri/
 │   ├── validazione.md         # 3 livelli di validazione
 │   └── update-cycle.md        # mantenimento post-release
 ├── templates/skill-template/  # scaffold per scripts/new-skill.sh
-├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh, build_catalog.py
+├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh, build_catalog.py, build_releases.sh
 └── skills/<nome>/             # le skill
     ├── SKILL.md               # entry point + frontmatter (name, description, license: MIT)
     ├── agents/openai.yaml     # UI metadata Codex
@@ -183,6 +183,22 @@ Il workflow `.github/workflows/source-grounding.yml` implementa il gate lato ser
 - `validate-script-runs`: esegue `scripts/validate.sh --all`.
 
 Lo stesso check anti-placeholder e' baked in `scripts/validate.sh`, quindi `./scripts/validate.sh <skill>` localmente fallisce se ci sono placeholder.
+
+## Rilascio degli zip (GitHub Releases per drag-and-drop su Claude.ai)
+
+Ogni skill viene distribuita come `.zip` autonomo allegato a una GitHub Release. Schema di versionamento: incrementale semplice (`v1`, `v2`, `v3`, ...). Il versionamento per-skill resta separato e vive nei frontmatter SKILL.md (`version: x.y.z`).
+
+Per rilasciare:
+
+```bash
+./scripts/build_releases.sh                # opzionale: verifica locale (dist/<id>.zip)
+git tag v<N>                               # es. v1, v2
+git push origin v<N>                       # triggera .github/workflows/release.yml
+```
+
+In alternativa, da UI GitHub: crea la release con tag `v<N>`; il workflow rebuilda gli zip e li ricarica con `--clobber` (idempotente).
+
+Il workflow `.github/workflows/release.yml` esegue `scripts/build_releases.sh` su ubuntu-latest, produce 33 zip (uno per skill, top-level dir con SKILL.md + LICENSE) e li allega alla release con `gh release upload`.
 
 ## Commit style
 

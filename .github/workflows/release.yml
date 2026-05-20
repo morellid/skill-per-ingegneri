@@ -1,0 +1,71 @@
+name: release
+
+# Costruisce un .zip per ogni skill e li allega a una GitHub Release.
+# Pronti per drag-and-drop su claude.ai/customize/skills.
+#
+# Trigger:
+#   - push: tag che inizia per "v" (es. v1, v2, v3...) -> release automatica
+#   - workflow_dispatch: trigger manuale, richiede il tag come input
+#   - release: published -> rebuilda e ricarica gli zip sulla release appena
+#     creata (utile quando la release viene creata dalla UI di GitHub)
+#
+# Idempotente: se la release esiste gia', gli asset vengono ricaricati con
+# --clobber.
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag da rilasciare (deve esistere gia', es. v1)"
+        required: true
+        type: string
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build zip e upload su GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve tag
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            TAG="${GITHUB_REF#refs/tags/}"
+          elif [ "${{ github.event_name }}" = "release" ]; then
+            TAG="${{ github.event.release.tag_name }}"
+          else
+            TAG="${{ inputs.tag }}"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Rilascio per tag: $TAG"
+
+      - name: Checkout tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.resolve.outputs.tag }}
+
+      - name: Build zip per skill
+        run: ./scripts/build_releases.sh
+
+      - name: Crea o aggiorna release e carica zip
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.resolve.outputs.tag }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG esiste: upload con --clobber"
+            gh release upload "$TAG" dist/*.zip --clobber
+          else
+            echo "Release $TAG non esiste: la creo"
+            gh release create "$TAG" \
+              --title "$TAG" \
+              --notes "Skill verticali per ingegneri italiani. Scarica il .zip della skill che ti interessa e caricalo su https://claude.ai/customize/skills (drag-and-drop)." \
+              dist/*.zip
+          fi
