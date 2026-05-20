@@ -110,6 +110,25 @@ done
 
 I symlink permettono di aggiornare tutte le skill installate con `git pull` nel repo.
 
+### Installazione via Claude Code plugin marketplace
+
+Le skill sono distribuite anche come marketplace nativo Claude Code: un plugin per ogni area del catalogo. Dentro Claude Code:
+
+```
+/plugin marketplace add morellid/skill-per-ingegneri
+/plugin install <area-id>@skill-per-ingegneri
+```
+
+Dove `<area-id>` e' uno tra: `sicurezza-lavoro-cantieri`, `strutture-geotecnica`, `edilizia-urbanistica-catasto`, `appalti-opere-pubbliche`, `energia-incentivi`, `ambiente-territorio-mobilita`, `impianti-macchine-prodotti`, `software-dati-cybersecurity`. Le skill installate sono namespacciate (es. `/strutture-geotecnica:spettro-risposta-ntc`).
+
+In alternativa, da terminale via il CLI [`vercel-labs/skills`](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills@latest add morellid/skill-per-ingegneri
+```
+
+Il manifest e' in `.claude-plugin/marketplace.json`, **rigenerato automaticamente** da `scripts/build_catalog.py`.
+
 ### Codex `$skill-installer`
 
 Da una sessione Codex (per skill singole):

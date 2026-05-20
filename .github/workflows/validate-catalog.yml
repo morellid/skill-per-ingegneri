@@ -2,17 +2,19 @@ name: validate-catalog
 
 # Verifica su PR che il frontmatter di tutte le SKILL.md sia conforme alla
 # convenzione del catalogo (vedi AGENTS.md sezione "Regole non negoziabili" #9)
-# e che catalog.yaml sia stato rigenerato e committato.
+# e che i file generati (catalog.yaml + .claude-plugin/marketplace.json)
+# siano stati rigenerati e committati.
 #
 # Due step:
 #   1. uv run scripts/build_catalog.py - valida tutti i frontmatter e
-#      rigenera catalog.yaml. Esce diverso da zero se manca un campo
-#      obbligatorio, supera un limite (es. summary > 280 char), ha area
-#      non dichiarata in areas.yaml, tag non kebab-case, ecc.
-#   2. git diff --exit-code catalog.yaml - verifica che il catalog.yaml
-#      committato coincida con quello appena rigenerato. Se differisce,
+#      rigenera catalog.yaml + .claude-plugin/marketplace.json. Esce
+#      diverso da zero se manca un campo obbligatorio, supera un limite
+#      (es. summary > 280 char), ha area non dichiarata in areas.yaml,
+#      tag non kebab-case, ecc.
+#   2. git diff --exit-code sui file generati - verifica che i file
+#      committati coincidano con quelli appena rigenerati. Se differiscono,
 #      il contributore ha modificato un SKILL.md o areas.yaml senza
-#      committare il catalog.yaml aggiornato.
+#      committare i file generati aggiornati.
 
 on:
   pull_request:
@@ -21,6 +23,7 @@ on:
       - 'skills/**/SKILL.md'
       - 'areas.yaml'
       - 'catalog.yaml'
+      - '.claude-plugin/marketplace.json'
       - 'scripts/build_catalog.py'
       - '.github/workflows/validate-catalog.yml'
 
@@ -41,15 +44,15 @@ jobs:
       - name: Run build_catalog.py
         run: uv run scripts/build_catalog.py
 
-      - name: Verify catalog.yaml is up-to-date
+      - name: Verify generated files are up-to-date
         run: |
-          if ! git diff --exit-code catalog.yaml; then
+          if ! git diff --exit-code catalog.yaml .claude-plugin/marketplace.json; then
             echo ""
-            echo "::error::catalog.yaml non e' allineato al frontmatter delle SKILL.md."
+            echo "::error::catalog.yaml o .claude-plugin/marketplace.json non sono allineati al frontmatter delle SKILL.md."
             echo ""
             echo "Esegui localmente:"
             echo "  uv run scripts/build_catalog.py"
-            echo "e committa il catalog.yaml aggiornato nella PR."
+            echo "e committa entrambi i file aggiornati nella PR."
             exit 1
           fi
-          echo "OK: catalog.yaml e' allineato."
+          echo "OK: catalog.yaml e .claude-plugin/marketplace.json sono allineati."

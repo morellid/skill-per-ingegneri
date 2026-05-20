@@ -11,16 +11,22 @@
 Single source of truth della categorizzazione user-facing del catalogo skill.
 Letto al build time dalla landing (ai-ingegneri.davidemorelli.it).
 
+Emette anche .claude-plugin/marketplace.json, derivato dagli stessi
+frontmatter: un plugin per area, con dentro le skill di quell'area.
+Consumato dal CLI `npx skills` (vercel-labs) e dal marketplace plugin
+nativo di Claude Code (/plugin marketplace add ...).
+
 Usage:
     uv run scripts/build_catalog.py [--check]
 
-Senza flag: scrive catalog.yaml.
+Senza flag: scrive catalog.yaml e .claude-plugin/marketplace.json.
 --check:    valida senza scrivere, exit 1 su errore.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from collections import Counter
@@ -34,6 +40,15 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 AREAS_PATH = REPO_ROOT / "areas.yaml"
 SKILLS_DIR = REPO_ROOT / "skills"
 CATALOG_PATH = REPO_ROOT / "catalog.yaml"
+MARKETPLACE_PATH = REPO_ROOT / ".claude-plugin" / "marketplace.json"
+
+MARKETPLACE_NAME = "skill-per-ingegneri"
+MARKETPLACE_OWNER_NAME = "Davide Morelli"
+MARKETPLACE_HOMEPAGE = "https://github.com/morellid/skill-per-ingegneri"
+MARKETPLACE_DESCRIPTION = (
+    "Skill verticali per ingegneri italiani su normative tecniche "
+    "(NTC, sicurezza lavoro, appalti, energia, ambiente, AI Act)."
+)
 
 REQUIRED_FIELDS = ("name", "description", "license", "area", "title", "summary", "version", "status")
 OPTIONAL_FIELDS = ("normative_refs", "tags")
@@ -182,6 +197,43 @@ def build_catalog(areas: list[dict]) -> tuple[dict, list[ValidationError]]:
     return catalog, errors
 
 
+def build_marketplace(catalog: dict) -> dict:
+    """Costruisce il contenuto di .claude-plugin/marketplace.json.
+
+    Mappatura: una entry plugin per area (areas.yaml), source = "./skills"
+    cosi' la skill dir e' il plugin root e le skills[] sono path "./<id>".
+    Il `category` del plugin coincide con l'area id, per coerenza con la
+    categorizzazione del catalog.yaml.
+    """
+    skills_by_area: dict[str, list[dict]] = {}
+    for s in catalog["skills"]:
+        skills_by_area.setdefault(s["area"], []).append(s)
+
+    plugins: list[dict] = []
+    for area in catalog["areas"]:
+        members = sorted(skills_by_area.get(area["id"], []), key=lambda s: s["id"])
+        if not members:
+            continue
+        plugins.append({
+            "name": area["id"],
+            "source": "./skills",
+            "description": f"{area['name']} - {len(members)} skill verticali su normative italiane.",
+            "license": "MIT",
+            "author": {"name": MARKETPLACE_OWNER_NAME},
+            "homepage": MARKETPLACE_HOMEPAGE,
+            "repository": MARKETPLACE_HOMEPAGE,
+            "category": area["id"],
+            "skills": [f"./{s['id']}" for s in members],
+        })
+
+    return {
+        "name": MARKETPLACE_NAME,
+        "owner": {"name": MARKETPLACE_OWNER_NAME},
+        "metadata": {"description": MARKETPLACE_DESCRIPTION},
+        "plugins": plugins,
+    }
+
+
 def dump_yaml(data: dict) -> str:
     return yaml.safe_dump(
         data,
@@ -190,6 +242,10 @@ def dump_yaml(data: dict) -> str:
         default_flow_style=False,
         width=120,
     )
+
+
+def dump_json(data: dict) -> str:
+    return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
 
 
 def main() -> int:
@@ -206,8 +262,13 @@ def main() -> int:
             print(err, file=sys.stderr)
         return 1
 
+    marketplace = build_marketplace(catalog)
+
     if args.check:
-        print(f"OK: {len(catalog['skills'])} skill, {len(catalog['areas'])} aree.")
+        print(
+            f"OK: {len(catalog['skills'])} skill, {len(catalog['areas'])} aree, "
+            f"{len(marketplace['plugins'])} plugin nel marketplace."
+        )
         return 0
 
     CATALOG_PATH.write_text(
@@ -217,6 +278,13 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"Scritto {CATALOG_PATH.relative_to(REPO_ROOT)}: {len(catalog['skills'])} skill, {len(catalog['areas'])} aree.")
+
+    MARKETPLACE_PATH.parent.mkdir(exist_ok=True)
+    MARKETPLACE_PATH.write_text(dump_json(marketplace), encoding="utf-8")
+    print(
+        f"Scritto {MARKETPLACE_PATH.relative_to(REPO_ROOT)}: "
+        f"{len(marketplace['plugins'])} plugin (uno per area)."
+    )
     return 0
 
 

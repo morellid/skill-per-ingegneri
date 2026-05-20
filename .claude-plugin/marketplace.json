@@ -1,0 +1,156 @@
+{
+  "name": "skill-per-ingegneri",
+  "owner": {
+    "name": "Davide Morelli"
+  },
+  "metadata": {
+    "description": "Skill verticali per ingegneri italiani su normative tecniche (NTC, sicurezza lavoro, appalti, energia, ambiente, AI Act)."
+  },
+  "plugins": [
+    {
+      "name": "sicurezza-lavoro-cantieri",
+      "source": "./skills",
+      "description": "Sicurezza sul lavoro & cantieri - 3 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "sicurezza-lavoro-cantieri",
+      "skills": [
+        "./dvr-generico",
+        "./piano-lavoro-amianto",
+        "./pos-allegato-xv-checker"
+      ]
+    },
+    {
+      "name": "strutture-geotecnica",
+      "source": "./skills",
+      "description": "Strutture & geotecnica - 6 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "strutture-geotecnica",
+      "skills": [
+        "./carichi-atmosferici-ntc",
+        "./cedimenti-edometrici-ntc",
+        "./combinazioni-carico-ntc",
+        "./predimensionamento-flessione-ca-ntc",
+        "./sismabonus-classificazione-rischio-pam",
+        "./spettro-risposta-ntc"
+      ]
+    },
+    {
+      "name": "edilizia-urbanistica-catasto",
+      "source": "./skills",
+      "description": "Edilizia, urbanistica & catasto - 3 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "edilizia-urbanistica-catasto",
+      "skills": [
+        "./catasto-pregeo-docfa-atti-telematici",
+        "./modulistica-edilizia-unificata",
+        "./pratiche-edilizie-lr65-2014-toscana"
+      ]
+    },
+    {
+      "name": "appalti-opere-pubbliche",
+      "source": "./skills",
+      "description": "Appalti & opere pubbliche - 5 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "appalti-opere-pubbliche",
+      "skills": [
+        "./bandi-tipo-anac-checker",
+        "./dnsh-pnrr-checker",
+        "./oepv-valutatore-offerte-tecniche",
+        "./pfte-allegato-i7-checker",
+        "./relazione-cam-dm256-2022"
+      ]
+    },
+    {
+      "name": "energia-incentivi",
+      "source": "./skills",
+      "description": "Energia & incentivi - 2 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "energia-incentivi",
+      "skills": [
+        "./cer-cacer-configurazione-gse",
+        "./transizione-5-0-asseverazione"
+      ]
+    },
+    {
+      "name": "ambiente-territorio-mobilita",
+      "source": "./skills",
+      "description": "Ambiente, territorio & mobilita' - 6 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "ambiente-territorio-mobilita",
+      "skills": [
+        "./aua-dpr59-dossier",
+        "./cbam-declarant-trimestrale",
+        "./pums-validator-dm397",
+        "./rsia-audit-stradale-dlgs35",
+        "./valutazione-cem-srb-art-87-cce",
+        "./valutazione-impatto-clima-acustico-l-447"
+      ]
+    },
+    {
+      "name": "impianti-macchine-prodotti",
+      "source": "./skills",
+      "description": "Impianti, macchine & prodotti - 3 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "impianti-macchine-prodotti",
+      "skills": [
+        "./dm37-2008-dichiarazione-conformita",
+        "./fascicolo-tecnico-macchine-reg-1230",
+        "./ped-classificazione-conformita"
+      ]
+    },
+    {
+      "name": "software-dati-cybersecurity",
+      "source": "./skills",
+      "description": "Software, dati & cybersecurity - 5 skill verticali su normative italiane.",
+      "license": "MIT",
+      "author": {
+        "name": "Davide Morelli"
+      },
+      "homepage": "https://github.com/morellid/skill-per-ingegneri",
+      "repository": "https://github.com/morellid/skill-per-ingegneri",
+      "category": "software-dati-cybersecurity",
+      "skills": [
+        "./ai-act-compliance",
+        "./cra-classificazione-pde",
+        "./dora-gap-assessment",
+        "./gdpr-registro-dpia",
+        "./nis2-self-assessment"
+      ]
+    }
+  ]
+}

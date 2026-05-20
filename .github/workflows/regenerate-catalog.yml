@@ -1,7 +1,8 @@
 name: regenerate-catalog
 
 # Su push a main che tocca frontmatter o areas.yaml: rigenera catalog.yaml
-# e committa il risultato se differisce dal file gia' presente.
+# + .claude-plugin/marketplace.json e committa il risultato se differisce
+# dai file gia' presenti.
 #
 # Safety net per il caso in cui un merge di squash o un manual commit a main
 # bypassi validate-catalog.yml (che gira solo su PR). In condizioni normali
@@ -26,7 +27,7 @@ permissions:
 
 jobs:
   regenerate:
-    name: Rigenera e committa catalog.yaml
+    name: Rigenera e committa file generati del catalogo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,15 +41,15 @@ jobs:
       - name: Run build_catalog.py
         run: uv run scripts/build_catalog.py
 
-      - name: Commit catalog.yaml if changed
+      - name: Commit generated files if changed
         run: |
-          if git diff --quiet catalog.yaml; then
-            echo "catalog.yaml gia' allineato - niente da committare."
+          if git diff --quiet catalog.yaml .claude-plugin/marketplace.json; then
+            echo "catalog.yaml e marketplace.json gia' allineati - niente da committare."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.yaml
-          git commit -m "chore(catalog): regenerate catalog.yaml [skip ci]"
+          git add catalog.yaml .claude-plugin/marketplace.json
+          git commit -m "chore(catalog): regenerate catalog.yaml + marketplace.json [skip ci]"
           git push
