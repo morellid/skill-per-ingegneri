@@ -10,7 +10,7 @@ normative_refs:
   - "Allegato I.7"
   - "D.Lgs. 209/2024"
 version: 0.2.0
-status: stable
+status: alpha
 tags:
   - pfte
   - dlgs-36-2023

@@ -9,7 +9,7 @@ normative_refs:
   - "D.Lgs. 36/2023"
   - "Bandi-tipo ANAC (n. 1/2023, n. 2/2026 SIA)"
 version: 0.2.0
-status: stable
+status: alpha
 tags:
   - anac
   - dlgs-36-2023
