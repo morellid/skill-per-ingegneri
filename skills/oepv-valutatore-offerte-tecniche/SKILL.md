@@ -8,7 +8,7 @@ summary: "Costruzione della matrice criteri/sottocriteri OEPV, valutazione delle
 normative_refs:
   - "D.Lgs. 36/2023 art. 108"
 version: 0.2.0
-status: stable
+status: alpha
 tags:
   - oepv
   - dlgs-36-2023

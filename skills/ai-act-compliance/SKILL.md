@@ -8,7 +8,7 @@ summary: "Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparen
 normative_refs:
   - "Reg. UE 2024/1689 (AI Act)"
 version: 0.1.3
-status: stable
+status: alpha
 tags:
   - ai-act
   - reg-ue-2024-1689

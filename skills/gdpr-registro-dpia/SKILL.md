@@ -9,7 +9,7 @@ normative_refs:
   - "GDPR art. 30, 35, 36"
   - "provv. Garante"
 version: 0.1.1
-status: stable
+status: alpha
 tags:
   - gdpr
   - dpia

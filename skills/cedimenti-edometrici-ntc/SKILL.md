@@ -9,7 +9,7 @@ normative_refs:
   - "NTC 2018"
   - "Circolare 7/2019"
 version: 0.1.1
-status: stable
+status: alpha
 tags:
   - ntc-2018
   - geotecnica

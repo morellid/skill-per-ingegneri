@@ -13,7 +13,7 @@ normative_refs:
   - "Delibera ARERA 727/2022/R/eel (TIAD)"
   - "Regole Operative CACER del GSE"
 version: 0.2.0
-status: stable
+status: alpha
 tags:
   - cer
   - gse

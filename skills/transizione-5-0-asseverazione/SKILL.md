@@ -10,7 +10,7 @@ normative_refs:
   - "DM MIMIT-MEF 24/7/2024"
   - "Circolare MIMIT 25877/2024"
 version: 0.2.0
-status: stable
+status: alpha
 tags:
   - transizione-5-0
   - credito-imposta

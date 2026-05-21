@@ -11,7 +11,7 @@ normative_refs:
   - "DPGR 1/R/2022"
   - "DPR 31/2017 (paesaggio)"
 version: 0.1.2
-status: stable
+status: alpha
 tags:
   - toscana
   - lr-65-2014
