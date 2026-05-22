@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Denuncia opere strutturali e autorizzazione sismica (DPR 380)
+short_description: Stabilisce quali adempimenti strutturali e sismici del DPR 380/2001 si applicano a un intervento (denuncia c.a./c.a.p./metalliche art. 65, collaudo art. 67, preavviso e autorizzazione zona sismica artt. 93-94-94bis) e quali documenti allegare.
+default_prompt: |
+  Devo capire quali pratiche devo presentare per un intervento edilizio in Italia
+  rispetto al DPR 380/2001: serve la denuncia delle opere in cemento armato
+  (art. 65)? Serve il preavviso in zona sismica (art. 93)? L'autorizzazione
+  preventiva dell'ufficio tecnico regionale (art. 94)? Aiutami con la diagnosi
+  e dimmi cosa devo allegare e a chi.
