@@ -24,11 +24,15 @@ sources:
   - id: dpr-380-2001-testo-unico-edilizia
     title: "DPR 6 giugno 2001 n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia (versione multivigente vigente al 2026-05-22)"
     type: decreto-presidente-repubblica
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI:
+    # restituisce la pagina consolidata (indice + albero degli articoli) del DPR 380/2001
+    # alla data di vigenza indicata. Pattern coerente con altre skill del repo
+    # (es. aua-dpr59-dossier, modulistica-edilizia-unificata).
     url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-05-22
     accessed: 2026-05-22
-    sha256: 6ab58aead12307a5fa6d4da6cafaf0c0976c7ec3470a9ff4eedab81b60d1224c
+    sha256: d0fa63c7af872542a8dc25cf6729d6bf77ddd248bc6230989bcb07116c794337
     license: public-domain-italian-law
-    binary_path: not_in_repo/dpr-380-2001-consolidato.html
+    binary_path: not_in_repo/dpr-380-2001-vig-2026-05-22.html
     md_path: references/fonti/dpr-380-2001-testo-unico-edilizia.md
     excerpt_paths:
       - references/estratti/dpr-380-art-65-denuncia-ca.md
@@ -51,13 +55,12 @@ sources:
           elevato rischio sismico)
         - art. 94-bis (varianti, classificazione "interventi rilevanti", "di minore
           rilevanza" e "privi di rilevanza"; introdotto da DL 32/2019 conv. L. 55/2019)
-      Artefatto verificato: pagina ufficiale Normattiva versione multivigente congelata
-      alla data di vigenza 2026-05-22, concatenata in sequenza con i 6 frammenti
-      HTML autoritativi delle singole pagine "caricaArticolo" per artt. 65, 67, 83, 93,
-      94 e 94-bis (URL di tipo /atto/caricaArticolo?...codiceRedazionale=001G0429&...
-      &dataPubblicazioneGazzetta=2001-10-20 - i parametri esatti di ogni frammento sono
-      consultabili nel sorgente HTML dell'indice consolidato Normattiva referenziato dal
-      campo url). Lo SHA256 si riferisce a tale concatenazione. Il file md_path
-      contiene la trascrizione fedele dei sei articoli a partire da questi frammenti.
-      Testo legislativo italiano riproducibile liberamente ai sensi dell'art. 5
-      L. 633/1941 (atti ufficiali dello Stato).
+      Artefatto verificato: pagina ufficiale Normattiva versione multivigente del DPR
+      380/2001 congelata alla data di vigenza 2026-05-22 (indice + albero degli articoli
+      con link alle singole pagine "caricaArticolo"). Lo SHA256 si riferisce al body
+      HTTP restituito da quella URL pinnata. Il file md_path contiene la trascrizione
+      fedele dei sei articoli rilevanti (65, 67, 83, 93, 94, 94-bis) ottenuta seguendo
+      i link alle pagine "caricaArticolo" della stessa pagina consolidata, secondo
+      la stessa prassi di altre skill di questo repo che citano testi multivigenti
+      Normattiva. Testo legislativo italiano riproducibile liberamente ai sensi
+      dell'art. 5 L. 633/1941 (atti ufficiali dello Stato).

@@ -14,7 +14,7 @@ preventiva e classificazione interventi in zona sismica (artt. 83, 93, 94,
 
 - **DPR 6 giugno 2001 n. 380** (testo multivigente Normattiva al 2026-05-22) -
   id `dpr-380-2001-testo-unico-edilizia` in `references/sources.yaml`,
-  sha256 `6ab58aead12307a5fa6d4da6cafaf0c0976c7ec3470a9ff4eedab81b60d1224c`.
+  sha256 `d0fa63c7af872542a8dc25cf6729d6bf77ddd248bc6230989bcb07116c794337`.
 
 Trascrizione fedele: `references/fonti/dpr-380-2001-testo-unico-edilizia.md`.
 
