@@ -1,0 +1,66 @@
+schema_version: 1
+skill: denuncia-opere-strutturali-l1086
+last_verified: 2026-05-22
+
+# Fonti normative per la skill "denuncia opere strutturali / autorizzazione sismica".
+#
+# Inquadramento: il DPR 380/2001 (Testo unico edilizia) consolidato Normattiva e' la
+# fonte primaria. Le L. 1086/1971 (opere in conglomerato cementizio armato e metalliche)
+# e L. 64/1974 (provvedimenti per le costruzioni in zone sismiche) sono state abrogate
+# o assorbite: i loro contenuti sono ora codificati negli artt. 64-76 (Parte II Capo II)
+# e artt. 83-106 (Parte II Capo IV) del DPR 380/2001 (art. 137 DPR 380 - L. norme
+# abrogate). Per questa ragione la skill cita direttamente il testo vigente del DPR 380
+# e non i testi storici delle due leggi.
+#
+# Nota su art. 94-bis DPR 380: introdotto dal DL 32/2019 (cd. Sblocca Cantieri) conv.
+# L. 55/2019, fissa al livello nazionale la cornice della classificazione delle opere
+# in zona sismica (rilevante / minore rilevanza / privi di rilevanza) ma rinvia ad
+# atti regionali per la classificazione puntuale. La skill copre il quadro statale.
+# Il dettaglio per ciascuna regione richiede l'esame della delibera regionale (es.
+# per la Toscana LR 65/2014 art. 170-bis, gia' coperto dalla skill
+# `pratiche-edilizie-lr65-2014-toscana`).
+
+sources:
+  - id: dpr-380-2001-testo-unico-edilizia
+    title: "DPR 6 giugno 2001 n. 380 - Testo unico delle disposizioni legislative e regolamentari in materia edilizia (versione multivigente vigente al 2026-05-22)"
+    type: decreto-presidente-repubblica
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI:
+    # restituisce la pagina consolidata (indice + albero degli articoli) del DPR 380/2001
+    # alla data di vigenza indicata. Pattern coerente con altre skill del repo
+    # (es. aua-dpr59-dossier, modulistica-edilizia-unificata).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-05-22
+    accessed: 2026-05-22
+    sha256: d0fa63c7af872542a8dc25cf6729d6bf77ddd248bc6230989bcb07116c794337
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dpr-380-2001-vig-2026-05-22.html
+    md_path: references/fonti/dpr-380-2001-testo-unico-edilizia.md
+    excerpt_paths:
+      - references/estratti/dpr-380-art-65-denuncia-ca.md
+      - references/estratti/dpr-380-art-67-collaudo.md
+      - references/estratti/dpr-380-artt-93-94-94bis-zone-sismiche.md
+    notes: |
+      Testo Unico Edilizia. Per questa skill rilevano:
+      - Parte II Capo II "Normativa tecnica per l'edilizia" (artt. 52-76), in particolare:
+        - art. 52 (tipologie di interventi e materiali ricompresi)
+        - art. 53 (definizioni)
+        - art. 64 (progettazione, direzione lavori, esecuzione - obblighi soggetti)
+        - art. 65 (denuncia dei lavori in opere in conglomerato cementizio armato,
+          normale e precompresso, e a struttura metallica; deposito relazione strutture)
+        - art. 67 (collaudo statico)
+      - Parte II Capo IV "Provvedimenti per le costruzioni con particolari prescrizioni
+        per le zone sismiche" (artt. 83-106), in particolare:
+        - art. 83 (oggetto e ambito; classificazione sismica del territorio nazionale)
+        - art. 93 (denuncia dei lavori e presentazione progetti)
+        - art. 94 (autorizzazione preventiva all'inizio dei lavori nelle zone a piu'
+          elevato rischio sismico)
+        - art. 94-bis (varianti, classificazione "interventi rilevanti", "di minore
+          rilevanza" e "privi di rilevanza"; introdotto da DL 32/2019 conv. L. 55/2019)
+      Artefatto verificato: pagina ufficiale Normattiva versione multivigente del DPR
+      380/2001 congelata alla data di vigenza 2026-05-22 (indice + albero degli articoli
+      con link alle singole pagine "caricaArticolo"). Lo SHA256 si riferisce al body
+      HTTP restituito da quella URL pinnata. Il file md_path contiene la trascrizione
+      fedele dei sei articoli rilevanti (65, 67, 83, 93, 94, 94-bis) ottenuta seguendo
+      i link alle pagine "caricaArticolo" della stessa pagina consolidata, secondo
+      la stessa prassi di altre skill di questo repo che citano testi multivigenti
+      Normattiva. Testo legislativo italiano riproducibile liberamente ai sensi
+      dell'art. 5 L. 633/1941 (atti ufficiali dello Stato).

@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 3
+  count: 4
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -191,6 +191,24 @@ skills:
   - cra
   - reg-ue-2024-2847
   - cyber
+- id: denuncia-opere-strutturali-l1086
+  area: edilizia-urbanistica-catasto
+  title: Denuncia opere strutturali e autorizzazione sismica - DPR 380/2001
+  summary: 'Decision tree statale per stabilire quali adempimenti DPR 380/2001 si applicano a un intervento: art. 65 c.a./c.a.p./metalliche,
+    art. 67 collaudo, artt. 93-94-94bis zona sismica. Per ingegneri, direttori dei lavori, costruttori.'
+  normative_refs:
+  - DPR 6 giugno 2001 n. 380 - art. 65 (denuncia opere c.a./c.a.p./metalliche)
+  - DPR 6 giugno 2001 n. 380 - art. 67 (collaudo statico)
+  - DPR 6 giugno 2001 n. 380 - artt. 83, 93, 94, 94-bis (zona sismica)
+  - DL 18 aprile 2019 n. 32 conv. L. 14 giugno 2019 n. 55 (introduzione art. 94-bis)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380
+  - denuncia-strutture
+  - zona-sismica
+  - collaudo-statico
+  - sportello-unico-edilizia
 - id: dm37-2008-dichiarazione-conformita
   area: impianti-macchine-prodotti
   title: DM 37/2008 - Dichiarazione Conformita' Impianti

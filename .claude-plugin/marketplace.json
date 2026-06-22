@@ -47,7 +47,7 @@
     {
       "name": "edilizia-urbanistica-catasto",
       "source": "./skills",
-      "description": "Edilizia, urbanistica & catasto - 3 skill verticali su normative italiane.",
+      "description": "Edilizia, urbanistica & catasto - 4 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -57,6 +57,7 @@
       "category": "edilizia-urbanistica-catasto",
       "skills": [
         "./catasto-pregeo-docfa-atti-telematici",
+        "./denuncia-opere-strutturali-l1086",
         "./modulistica-edilizia-unificata",
         "./pratiche-edilizie-lr65-2014-toscana"
       ]
