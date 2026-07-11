@@ -64,6 +64,7 @@ Leggere prima di procedere:
 - `references/estratti/dm-24-07-2024-articoli-chiave.md` - articoli chiave del decreto attuativo (art. 4, 5, 6, 7, 8, 15, 18)
 - `references/estratti/faq-mimit-soggetti-certificatori.md` - FAQ chiave MIMIT
 - `references/estratti/circolare-mimit-criteri-risparmio.md` - sezione DNSH (cap. 4)
+- `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md` - fase post-chiusura: credito 89,77% per le pratiche tecnicamente ammissibili
 
 ## Procedura
 
@@ -109,6 +110,8 @@ Tabella di verifica:
 | Comunicazione preventiva al GSE prima dell'investimento (per prenotazione del credito) | art. 12 co. 1 DM | [...] |
 | Comunicazione di avanzamento (con pagamento >=20% acconto) entro 30 giorni dalla conferma del credito prenotato | art. 12 co. 4 DM + FAQ MIMIT 2.11 | [...] |
 | Comunicazione di completamento entro 28 febbraio 2026 | art. 12 + cap. 7 circolare MIMIT | [...] |
+
+> **Nota vigenza (2026)**: le finestre temporali di questa tabella sono chiuse (completamento 31/12/2025, comunicazione di completamento 28/2/2026). Il task resta utilizzabile per verifiche retrospettive e in sede di controllo. Per le pratiche "tecnicamente ammissibili" rimaste senza copertura per esaurimento delle risorse, il credito e' riconosciuto nella misura dell'89,77% ex art. 8 DL 38/2026 (conv. L. 88/2026): vedi il caso limite dedicato e `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md`.
 
 ### Passo 5 - Verifica preliminare sulla soglia di risparmio (art. 9 DM)
 
@@ -243,6 +246,9 @@ Se l'impresa rientra nell'ETS UE, applicare il **filtro analitico** dell'art. 5 
 
 ### Cumulo con Industria 4.0 (4.0 vs 5.0)
 Il Piano Transizione 5.0 non si cumula con il **credito d'imposta Industria 4.0** sul medesimo investimento (rinvio a chiarimenti MEF/Agenzia Entrate). Se l'impresa ha gia' beneficiato di Transizione 4.0 sui medesimi beni, segnalare **incompatibilita'** salvo verifica del consulente fiscale.
+
+### Pratica "tecnicamente ammissibile" rimasta senza copertura (art. 8 DL 38/2026)
+Se l'impresa ha presentato la comunicazione di completamento ex art. 38 co. 10 DL 19/2024 e ha ricevuto dal GSE la comunicazione che l'investimento risponde tecnicamente ai requisiti del DM 24/7/2024, nonche' dell'esaurimento delle risorse, non si tratta di inammissibilita': l'art. 8 DL 38/2026 (conv. con mod. L. 88/2026) riconosce un credito d'imposta pari all'**89,77%** del richiesto, riferito agli investimenti allegati A/B L. 232/2016 e alle spese di formazione (plafond 1.302,3 mln per il 2026), compensabile in F24 con **codice tributo 7079 entro il 31/12/2026**. Le spese di certificazione sono rimborsate pro quota tramite il **contributo del comma 3-bis** (decreto attuativo MIMIT non ancora pubblicato alla data di `last_verified`). I requisiti verificati da questo task restano rilevanti: l'art. 8 co. 3 richiama il DM 24/7/2024 "anche ai fini delle attivita' di controllo". Dettagli: `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md`.
 
 ## Limiti di questo task
 

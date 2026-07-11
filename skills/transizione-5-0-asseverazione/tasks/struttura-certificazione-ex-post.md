@@ -2,6 +2,8 @@
 
 Produce la **bozza testuale** della Certificazione Ex Post (Allegato X della circolare MIMIT 25877/2024) e della relativa **Relazione Tecnica** (Allegato XI), conforme al modello vincolante per la comunicazione di completamento sul portale TR5 GSE entro il 28 febbraio 2026.
 
+> **Nota vigenza (2026)**: il termine del 28/2/2026 e' decorso. Il task resta rilevante per: (a) i controlli GSE ex art. 20 DM 24/7/2024, che verificano la coerenza fra certificazione ex ante ed ex post; (b) le pratiche "tecnicamente ammissibili" pagate con il credito dell'89,77% ex art. 8 DL 38/2026 (conv. L. 88/2026), per le quali il comma 3 richiama il DM 24/7/2024 "anche ai fini delle attivita' di controllo". Vedi `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md`.
+
 ## Obiettivo
 
 Restituire all'utente:
@@ -67,6 +69,7 @@ Leggere prima di procedere:
 - `references/estratti/circolare-mimit-modelli-certificazioni.md` - Allegati X (Certificazione Ex Post) e XI (Relazione Tecnica)
 - `references/estratti/dm-24-07-2024-articoli-chiave.md` - art. 12 (procedura di completamento), art. 15 (certificazioni), art. 20 (controlli)
 - `references/estratti/faq-mimit-soggetti-certificatori.md` - FAQ 2.7 (documentazione comunicazione completamento), 2.10 (modifiche)
+- `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md` - fase post-chiusura: credito 89,77%, contributo comma 3-bis, obblighi documentali
 
 ## Procedura
 
@@ -412,6 +415,9 @@ La comunicazione di completamento ha **scadenza fissa al 28/2/2026** (art. 12 DM
 
 ### Strumenti di misura non MID-conformi nel periodo ex post
 Inammissibile. Il certificatore deve richiedere all'impresa la sostituzione/ricalibrazione e ripetere la misurazione. Se cio' non e' possibile, segnalare la non conformita' e non procedere con la ex post (art. 9 co. 4 DM).
+
+### Pratica "tecnicamente ammissibile" pagata con il credito ex art. 8 DL 38/2026
+Se l'impresa ha ricevuto dal GSE la comunicazione di ammissibilita' tecnica con esaurimento delle risorse e la successiva ricevuta di conferma del credito 89,77% (piattaforma Transizione 5.0, dal 29/4/2026 - Avviso MIMIT), la certificazione ex post gia' rilasciata resta pienamente rilevante: l'art. 8 co. 3 richiama l'art. 38 DL 19/2024 e il DM 24/7/2024 "anche ai fini delle attivita' di controllo". Il certificatore deve segnalare al beneficiario gli obblighi dell'Avviso MIMIT 29/4/2026: conservare certificazioni, perizie, fatture e documenti di trasporto; comunicare al GSE variazioni societarie e perdita dei requisiti nel quinquennio, cessioni dei beni, destinazioni estranee, mancato riscatto dei leasing. Le spese di certificazione (contabile, riduzione consumi, DNSH) risultanti dalle comunicazioni sono rimborsabili pro quota tramite il contributo del comma 3-bis (57,7/80/60 mln per il 2026/2027/2028), secondo modalita' rimesse a un decreto MIMIT non ancora pubblicato. Dettagli: `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md`.
 
 ## Limiti di questo task
 

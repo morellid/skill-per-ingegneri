@@ -4,7 +4,7 @@
 
 ## Dominio
 
-La skill copre la **redazione e verifica della certificazione tecnica ex ante ed ex post** del **Piano Transizione 5.0**, credito d'imposta per investimenti delle imprese in beni 4.0 (Allegati A/B L. 232/2016), autoproduzione FER per autoconsumo e formazione, condizionati al raggiungimento di soglie minime di riduzione dei consumi energetici (>=3% sulla struttura produttiva o >=5% sul processo interessato dall'investimento). Riferimento normativo principale: **art. 38 DL 19/2024 + DM MIMIT-MEF 24/7/2024 + circolare MIMIT 25877/2024**. Target utente: **valutatori indipendenti** ammessi al rilascio delle certificazioni ai sensi dell'art. 15 co. 6 DM (EGE UNI CEI 11339, ESCo UNI CEI 11352, ingegneri sez. A/B, periti industriali con esperienza in efficienza energetica processi produttivi).
+La skill copre la **redazione e verifica della certificazione tecnica ex ante ed ex post** del **Piano Transizione 5.0**, credito d'imposta per investimenti delle imprese in beni 4.0 (Allegati A/B L. 232/2016), autoproduzione FER per autoconsumo e formazione, condizionati al raggiungimento di soglie minime di riduzione dei consumi energetici (>=3% sulla struttura produttiva o >=5% sul processo interessato dall'investimento). Riferimento normativo principale: **art. 38 DL 19/2024 + DM MIMIT-MEF 24/7/2024 + circolare MIMIT 25877/2024**. Dal 2026 la skill copre anche la **fase post-chiusura**: pratiche "tecnicamente ammissibili" rimaste senza copertura e pagate con il credito d'imposta dell'89,77% ex **art. 8 DL 38/2026 (conv. L. 88/2026)**. Target utente: **valutatori indipendenti** ammessi al rilascio delle certificazioni ai sensi dell'art. 15 co. 6 DM (EGE UNI CEI 11339, ESCo UNI CEI 11352, ingegneri sez. A/B, periti industriali con esperienza in efficienza energetica processi produttivi).
 
 ## Fonti autoritative
 
@@ -16,6 +16,10 @@ Catalogate in `references/sources.yaml`:
 - **FAQ MIMIT 10/4/2025** (id `faq-mimit-transizione50`) - documento di aggiornamento periodico
 - **Circolare MISE 18/12/2014** (id `circolare-mise-18-12-2014-tep`) - coefficienti tep
 - **GSE Portale Transizione 5.0** (id `gse-portale-transizione50`) - portale operativo
+- **DL 38/2026 art. 8** (id `dl-38-2026-art-8`) - GU n. 72 del 27/03/2026, codice 26G00057; testo originale (35%, 537 mln)
+- **DL 42/2026 art. 1** (id `dl-42-2026`) - GU n. 78 del 03/04/2026, codice 26G00061; abrogato dalla L. 88/2026 con salvezza degli effetti
+- **L. 88/2026** (id `legge-88-2026-conversione`) - GU n. 117 del 22/05/2026, codici 26G00109 (legge) e 26A02590 (testo coordinato); fonte del testo vigente dell'art. 8
+- **Avviso MIMIT 29/04/2026** (id `avviso-mimit-29-04-2026`) - ricevute di conferma, codice tributo 7079, obblighi dei beneficiari
 
 Norme proprietarie (rinvio strutturale, no embed):
 - **UNI CEI 11339:2009** (id `uni-cei-11339-ege`)
@@ -34,6 +38,9 @@ Estratti pertinenti in `references/estratti/`:
 - `circolare-mimit-modelli-certificazioni.md` - modelli Allegati VIII, IX, X, XI
 - `faq-mimit-soggetti-certificatori.md` - FAQ MIMIT chiave
 - `circolare-mise-2014-tep.md` - coefficienti di conversione tep
+- `dl-38-2026-credito-pratiche-ammissibili.md` - credito 89,77% pratiche tecnicamente ammissibili, contributo comma 3-bis
+
+Trascrizioni verbatim delle fonti 2026 in `references/fonti/`: `dl-38-2026-art-8.md`, `dl-42-2026.md`, `legge-88-2026-conversione.md`, `avviso-mimit-29-04-2026.md`. Per il testo vigente dell'art. 8 usare sempre il testo coordinato trascritto in `legge-88-2026-conversione.md`.
 
 ## Articoli e punti chiave
 
@@ -75,6 +82,13 @@ Quando l'agent produce output, **cita sempre l'articolo preciso**. Riferimenti p
 - **Allegato IX**: modello Relazione Tecnica Ex Ante
 - **Allegato X**: modello Certificazione Ex Post
 - **Allegato XI**: modello Relazione Tecnica Ex Post
+
+### DL 38/2026 art. 8 (conv. L. 88/2026) - fase post-chiusura
+- **Art. 8 co. 1**: credito d'imposta 89,77% per le pratiche "tecnicamente ammissibili" rimaste senza copertura (base: allegati A/B L. 232/2016 + spese di formazione; plafond 1.302,3 mln per il 2026)
+- **Art. 8 co. 2**: comunicazione GSE del credito utilizzabile entro il 30/4/2026 (attuata con ricevute su piattaforma Transizione 5.0 dal 29/4/2026 - Avviso MIMIT)
+- **Art. 8 co. 3**: compensazione esclusiva F24 (codice tributo 7079) entro il 31/12/2026, decorsi 5 giorni dalla comunicazione GSE; nessun limite di compensazione; irrilevanza reddito/IRAP; rinvio all'art. 38 DL 19/2024 e al DM 24/7/2024 "anche ai fini delle attivita' di controllo"
+- **Art. 8 co. 3-bis**: contributo separato per FER autoconsumo, sistemi di accumulo (DNSH) e spese di certificazione (57,7/80/60 mln per 2026/2027/2028); erogazione MIMIT con decreto attuativo non ancora pubblicato; il contributo non concorre alla formazione del reddito ne' della base IRAP (clausola aggiunta in sede di conversione, assente nel DL 42/2026)
+- **L. 88/2026 art. 1 co. 2**: abrogazione del DL 42/2026 con salvezza di atti, provvedimenti, effetti e rapporti giuridici
 
 ### Riferimenti penali
 - **DPR 445/2000 art. 76**: sanzioni penali per false dichiarazioni in DSAN

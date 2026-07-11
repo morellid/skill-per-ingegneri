@@ -1,9 +1,9 @@
 # Transizione 5.0 - Asseverazione tecnica EGE/ESCO/ingegnere/perito
 
-> Versione: 0.1.0-alpha
+> Versione: 0.3.0
 > Stato: in sviluppo (Livello 1 - autore-driven, fonti pubbliche)
 
-Skill AI di supporto alla redazione e verifica della **certificazione tecnica ex ante ed ex post** richiesta dal Piano Transizione 5.0 (DL 19/2024 art. 38, DM MIMIT-MEF 24 luglio 2024, circolare operativa MIMIT 25877/2024).
+Skill AI di supporto alla redazione e verifica della **certificazione tecnica ex ante ed ex post** richiesta dal Piano Transizione 5.0 (DL 19/2024 art. 38, DM MIMIT-MEF 24 luglio 2024, circolare operativa MIMIT 25877/2024). Dal 2026 copre anche la **fase post-chiusura dello sportello**: pratiche "tecnicamente ammissibili" rimaste senza copertura e pagate con il credito d'imposta dell'89,77% ex art. 8 DL 38/2026 (conv. L. 88/2026).
 
 ## Target
 
@@ -22,6 +22,8 @@ Quattro sotto-attivita' (per il dettaglio tecnico vedi `SKILL.md`):
 2. **`tasks/calcola-riduzione-consumi.md`** - Calcolo strutturato della riduzione dei consumi energetici (>=3% struttura produttiva o >=5% processo interessato), con baseline ex ante, indicatori di prestazione, normalizzazione, scenario controfattuale, conversione in tep secondo circolare MISE 18/12/2014.
 3. **`tasks/struttura-certificazione-ex-ante.md`** - Bozza testuale della Certificazione Ex Ante (Allegato VIII della circolare MIMIT) e della Relazione Tecnica Ex Ante (Allegato IX), con dichiarazione di terzieta' (Allegato III).
 4. **`tasks/struttura-certificazione-ex-post.md`** - Bozza testuale della Certificazione Ex Post (Allegato X) e della Relazione Tecnica Ex Post (Allegato XI), con confronto sui dati misurati ex post e gestione di eventuali scostamenti / modifiche al progetto (FAQ MIMIT 2.10).
+
+Per la **fase post-chiusura** (credito 89,77% ex art. 8 DL 38/2026 conv. L. 88/2026: F24 codice tributo 7079 entro il 31/12/2026, contributo comma 3-bis per FER/accumuli/spese di certificazione, obblighi documentali per i controlli GSE) vedi la sezione dedicata in `SKILL.md` e l'estratto `references/estratti/dl-38-2026-credito-pratiche-ammissibili.md`.
 
 ## Installazione
 
@@ -49,6 +51,10 @@ Dettaglio in [`references/sources.yaml`](references/sources.yaml). Fonti primari
 - **Circolare operativa MIMIT 16 agosto 2024 prot. 25877** - chiarimenti tecnici e modelli vincolanti delle certificazioni
 - **FAQ MIMIT** - aggiornamento 10 aprile 2025 (versione vigente al `last_verified`)
 - **Circolare MISE 18 dicembre 2014** - coefficienti di conversione in tep ex art. 19 L. 10/1991
+- **DL 27 marzo 2026 n. 38, art. 8** (GU n. 72 del 27/03/2026) - credito d'imposta per le pratiche tecnicamente ammissibili
+- **DL 3 aprile 2026 n. 42, art. 1** (GU n. 78 del 03/04/2026) - eleva il credito all'89,77%; abrogato dalla L. 88/2026 con salvezza degli effetti
+- **L. 22 maggio 2026 n. 88** (GU n. 117 del 22/05/2026) - conversione del DL 38/2026 e testo coordinato vigente
+- **Avviso MIMIT 29 aprile 2026** - ricevute di conferma, codice tributo 7079, obblighi dei beneficiari
 
 Fonti di rinvio:
 
@@ -67,6 +73,8 @@ Fonti di rinvio:
 - La skill **non valida l'indipendenza** del certificatore (verifica del MIMIT/GSE in sede di vigilanza).
 - La skill **non interagisce con il portale TR5 GSE**: il caricamento e' adempimento separato.
 - La skill **non aggiorna automaticamente** coefficienti tep, aliquote, soglie a fronte di modifiche normative successive (es. L. 207/2024 e successivi DM correttivi). Verificare `last_verified` di `sources.yaml`.
+- La skill **non copre il "Nuovo Piano Transizione 5.0" / iperammortamento 2026** annunciato dal MIMIT: misura distinta dal credito ex art. 8 DL 38/2026, il cui decreto attuativo non risulta pubblicato in GU alla data di `last_verified`.
+- La skill **non calcola il contributo del comma 3-bis** (FER, accumuli, spese di certificazione): le modalita' di erogazione sono rimesse a un decreto MIMIT non ancora pubblicato.
 
 **Ogni output e' supporto al valutatore indipendente, non sostituzione.** Il rischio penale (artt. 359, 481 c.p. + art. 76 DPR 445/2000) e civile resta in capo al certificatore firmatario.
 
