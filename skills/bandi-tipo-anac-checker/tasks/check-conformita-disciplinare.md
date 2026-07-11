@@ -31,6 +31,7 @@ Leggere prima di procedere:
 - `references/estratti/dlgs-36-artt-clausole-disciplinare.md` (artt. 11, 74, 87, 90, 94-103, 117-120)
 - `references/estratti/anac-bandi-tipo-struttura-2023.md` (struttura schemi ANAC, deroghe ammesse)
 - `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md` (clausole AI obbligatorie da Delibera 148/2026, in vigore dal 30 maggio 2026)
+- `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (paragrafo 28 accesso agli atti: clausola alternativa per inversione procedimentale, Parere CdS n. 61/2026)
 - Se SIA: `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` (importo 65/35, BIM, figure professionali UNI 11337-7)
 
 ## Procedura
@@ -179,6 +180,15 @@ Vedi `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md`.
 - [ ] Requisiti economico-finanziari alternativi (art. 40 c. 1-bis Allegato II.12): copertura assicurativa 10% importo opere OPPURE fatturato globale 3 dei 5 anni non superiore a valore stimato.
 - [ ] Elenco servizi con importo 1-2 volte importo lavori per categoria/ID (ultimi 10 anni).
 - [ ] Eventuali servizi di punta: 2 servizi per categoria/ID 0,40-0,80 volte importo (oppure 1 servizio unico pari al minimo).
+
+**4i. Accesso agli atti e inversione procedimentale (paragrafo 28, Delibera 148/2026 - gare indette dal 30 maggio 2026)**
+
+Vedi `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (sezione "Paragrafo 28").
+- [ ] Il paragrafo Accesso agli atti e' allineato al testo aggiornato dalla Delibera 148/2026 (che recepisce il Parere del Consiglio di Stato n. 61 del 13/01/2026).
+- [ ] **Se la SA si avvale dell'inversione procedimentale**: presente la clausola alternativa del paragrafo 28: ai partecipanti collocatisi nei primi cinque posti della graduatoria sono rese reciprocamente disponibili le offerte presentate, **ad eccezione della documentazione amministrativa degli offerenti dal secondo al quinto posto che non sia stata verificata dalla stazione appaltante**.
+- [ ] Indicata la modalita' con cui la SA garantisce la disponibilita' dei documenti.
+- [ ] Per i partecipanti collocatisi oltre il quinto posto: prevista la stessa modalita' di accesso ai sensi degli artt. 3-bis e 22 della L. 241/1990.
+- [ ] Per gare indette prima del 30/05/2026: si applica la versione precedente dello schema (Delibera 365/2025), che conteneva il box N.B. in attesa del parere CdS: la clausola alternativa **non** e' esigibile.
 
 ### Passo 5 - Output
 

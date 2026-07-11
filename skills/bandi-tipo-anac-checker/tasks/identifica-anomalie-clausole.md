@@ -26,6 +26,7 @@ Leggere prima di procedere:
 - `references/estratti/dlgs-36-artt-clausole-disciplinare.md`
 - `references/estratti/anac-bandi-tipo-struttura-2023.md` (sezione "Indicatori di disciplinare non aggiornato")
 - `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md` (clausole AI obbligatorie dal 30 maggio 2026)
+- `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (sezione "Paragrafo 28": clausola alternativa accesso agli atti per inversione procedimentale, Parere CdS n. 61/2026)
 - Se l'oggetto e' SIA: `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` (importo 65/35, BIM, equo compenso)
 
 ## Procedura
@@ -132,6 +133,15 @@ Vedi `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` per la ch
 | Certificazione UNI 11337-7:2018 richiesta come requisito anziche' come premio | Bando 2/2026 par. 6.1 NB | Sostanziale |
 | DUVRI richiesto per SIA puramente intellettuali | Art. 26 c. 3-bis D.Lgs. 81/2008 | Formale |
 | Requisiti tecnici basati su contratti ultimi 5 anni anziche' 10 | Art. 40 c. 1-bis Allegato II.12 | Sostanziale |
+
+**Categoria G - Anomalie accesso agli atti / inversione procedimentale (paragrafo 28, Delibera 148/2026 - gare indette dal 30 maggio 2026)**
+
+Vedi `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (sezione "Paragrafo 28").
+- [ ] Gara con inversione procedimentale ma paragrafo Accesso agli atti senza la clausola alternativa (offerte rese reciprocamente disponibili ai primi cinque classificati, ad eccezione della documentazione amministrativa degli offerenti dal secondo al quinto posto non verificata dalla SA): **sostanziale** (deroga allo schema-tipo aggiornato).
+- [ ] Paragrafo Accesso agli atti che riporta ancora il box N.B. "in attesa del parere del Consiglio di Stato": **formale** (disciplinare non aggiornato: il parere n. 61 del 13/01/2026 e' stato emesso e recepito dalla Delibera 148/2026, che ha eliminato il box).
+- [ ] Modalita' con cui la SA garantisce la disponibilita' dei documenti non indicata: **formale**.
+- [ ] Nessuna previsione di accesso per i partecipanti collocatisi oltre il quinto posto (artt. 3-bis e 22 L. 241/1990): **sostanziale**.
+- Nota: per gare indette prima del 30/05/2026 si applica la versione precedente dello schema (Delibera 365/2025): la clausola alternativa non e' esigibile e la sua assenza non e' un'anomalia.
 
 ### Passo 3 - Prioritizzazione e output
 

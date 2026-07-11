@@ -7,6 +7,40 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-11
+
+### Added (paragrafo 28 accesso agli atti / inversione procedimentale - issue #192)
+
+Verifica puntuale della issue #192 (aggiornamento normativo Delibere 148/2026 e 153/2026): le
+clausole AI (paragrafo 15.1, art. 13 L. 132/2025) e le verifiche SIA Bando 2/2026 erano gia'
+coperte dalla release 0.2.0 (issues #164 e #165). Il gap residuo era il **paragrafo 28 (accesso
+agli atti)** aggiornato dalla Delibera 148/2026 con la clausola alternativa per l'inversione
+procedimentale, che recepisce il Parere del Consiglio di Stato n. 61 del 13/01/2026. Fonte:
+`references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (sezione "Paragrafo 28"), gia'
+trascritta e verificata in 0.2.0.
+
+- `tasks/check-conformita-disciplinare.md`: nuovo passo 4i "Accesso agli atti e inversione
+  procedimentale" - verifica che il paragrafo 28 sia allineato al testo Delibera 148/2026;
+  per gare con inversione procedimentale, presenza della clausola alternativa (offerte rese
+  reciprocamente disponibili ai primi cinque classificati, esclusa la documentazione
+  amministrativa non verificata degli offerenti dal secondo al quinto posto); modalita' di
+  messa a disposizione dei documenti; accesso oltre il quinto posto ex artt. 3-bis e 22
+  L. 241/1990; nota di efficacia per gare indette prima del 30/05/2026 (si applica la versione
+  Delibera 365/2025). Aggiunta la fonte consolidata all'elenco "Fonti normative" del task.
+- `tasks/identifica-anomalie-clausole.md`: nuova categoria G "Anomalie accesso agli atti /
+  inversione procedimentale" con classificazione dei rischi (clausola alternativa assente con
+  inversione procedimentale: sostanziale; box N.B. pre-parere CdS ancora presente: formale;
+  modalita' di disponibilita' documenti non indicata: formale; accesso oltre il quinto posto
+  non previsto: sostanziale). Aggiunta la fonte consolidata all'elenco "Fonti normative" del task.
+
+### Changed
+
+- `SKILL.md`: `normative_refs` esplicitano le Delibere ANAC 148/2026 (Bando 1 consolidato) e
+  153/2026 (Bando 2/2026 SIA); version 0.2.0 -> 0.3.0.
+- README di root: riga di catalogo allineata ai nuovi normative_refs.
+
+- Closes GitHub issue #192
+
 ## [0.2.0] - 2026-05-18
 
 ### Added - Bandi-tipo ANAC 2026 (issues #164 e #165)
