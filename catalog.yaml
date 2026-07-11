@@ -329,10 +329,13 @@ skills:
   area: appalti-opere-pubbliche
   title: OEPV - Valutatore offerte tecniche
   summary: Costruzione della matrice criteri/sottocriteri OEPV, valutazione delle offerte tecniche con metodo aggregativo-compensatore,
-    verifica di conformita' all'art. 108 di una matrice gia' redatta
+    verifica di conformita' all'art. 108 di una matrice gia' redatta, con schema dedicato per i SIA sopra soglia (Bando tipo
+    ANAC n. 2/2026)
   normative_refs:
   - D.Lgs. 36/2023 art. 108
-  version: 0.2.0
+  - D.Lgs. 209/2024 (correttivo)
+  - ANAC Bando tipo n. 2/2026 (Delibera n. 153/2026)
+  version: 0.2.1
   status: alpha
   tags:
   - oepv
