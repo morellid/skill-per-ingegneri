@@ -1,6 +1,6 @@
 schema_version: 1
 skill: gdpr-registro-dpia
-last_verified: 2026-05-10
+last_verified: 2026-07-11
 
 sources:
   - id: gdpr-it-garante-2018
@@ -62,6 +62,29 @@ sources:
       per identificare trattamenti "ad alto rischio" che richiedono DPIA.
       Adottato il 4 aprile 2017, rivisto il 4 ottobre 2017 (rev. 01).
       SHA256 calcolato in data 2026-05-10 scaricando da download_url.
+
+  - id: garante-prov-284-2026-tracking-pixel
+    title: "Provvedimento Garante Privacy n. 284 del 17 aprile 2026 - Linee guida in materia di utilizzo di tracking pixel nelle comunicazioni di posta elettronica"
+    type: provvedimento-garante
+    url: https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10241943
+    download_url: https://www.gazzettaufficiale.it/eli/gu/2026/04/29/98/sg/pdf
+    accessed: 2026-07-11
+    sha256: df04bc934ff408a65e7845f5797425afcff1bf053768e64d8ca44811a0f1f544
+    license: public-domain-italian-law
+    binary_path: not_in_repo/gu-2026-04-29-serie-generale-n98.pdf
+    md_path: references/fonti/garante-prov284-2026-tracking-pixel.md
+    excerpt_paths:
+      - references/estratti/garante-prov284-2026-tracking-pixel.md
+    notes: |
+      Linee guida adottate ai sensi dell'art. 154-bis, comma 1, lett. a) del
+      Codice Privacy [doc. web n. 10241943]. Pubblicate sulla Gazzetta Ufficiale
+      Serie Generale n. 98 del 29 aprile 2026 (codice redazionale 26A02030,
+      pagg. 95-101 del fascicolo). Termine di adeguamento: sei mesi dalla
+      pubblicazione in GU, quindi 29 ottobre 2026.
+      Il binario hashato e' il PDF ufficiale dell'intero fascicolo GU n. 98
+      (download byte-stabile, verificato con doppio fetch in data 2026-07-11):
+      la pagina docweb del Garante (url) pubblica lo stesso testo ma e' HTML
+      dinamico Liferay con token di sessione e non produce hash riproducibili.
 
   - id: dlgs-196-2003-101-2018
     title: "D.Lgs. 196/2003 - Codice in materia di protezione dei dati personali, come modificato dal D.Lgs. 101/2018"

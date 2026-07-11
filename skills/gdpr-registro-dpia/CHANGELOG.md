@@ -15,6 +15,46 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Catalogare e citare il Codice di Deontologia sistemi informativi creditizi (Allegato A.5 Cod. Privacy) per casi fintech
 - Aggiungere riferimenti a linee guida EDPB tematiche (videosorveglianza, AI, biometria, lavoro)
 
+## [0.2.0] - 2026-07-11
+
+### Aggiornamento normativo: Linee guida Garante tracking pixel (closes #198)
+
+Trigger normativo: **Provvedimento Garante Privacy n. 284 del 17 aprile 2026** -
+"Linee guida in materia di utilizzo di tracking pixel nelle comunicazioni di posta
+elettronica" [doc. web n. 10241943], pubblicato sulla GU Serie Generale n. 98 del
+29 aprile 2026 (codice 26A02030). Termine di adeguamento: sei mesi dalla pubblicazione
+in GU, quindi 29 ottobre 2026.
+
+### Added
+
+- Nuova fonte `garante-prov-284-2026-tracking-pixel` in `sources.yaml`: hash SHA256
+  `df04bc93...` calcolato sul PDF ufficiale del fascicolo GU n. 98/2026 (byte-stabile,
+  verificato con doppio download; la pagina docweb del Garante e' HTML dinamico e non
+  produce hash riproducibili).
+- `references/fonti/garante-prov284-2026-tracking-pixel.md`: transcrizione integrale
+  del provvedimento dalle pagg. 95-101 del fascicolo GU, con marker di pagina.
+- `references/estratti/garante-prov284-2026-tracking-pixel.md`: estratto curato con
+  citazioni paragrafo + pagina GU (qualificazione art. 122 Codice, dati generati dal
+  pixel, deroghe al consenso, consenso unico e revoca granulare, privacy by design,
+  dispositivo e termine di adeguamento). Include nota di perimetro: il provvedimento
+  non menziona art. 30/35 GDPR; il collegamento a Registro e DPIA passa dalle fonti
+  generali gia' catalogate.
+- `tasks/tracking-pixel-email.md`: nuovo task con (1) classificazione delle finalita'
+  del pixel rispetto alle deroghe art. 122 (par. 5-6 Linee guida), (2) scheda di
+  Registro art. 30 per il trattamento tramite tracking pixel, (3) istruttoria di
+  soglia DPIA via Allegato 1 Provv. 467/2018 + criteri WP248, (4) checklist di 13
+  adempimenti con scadenza 29/10/2026.
+- `examples/registro-tracking-pixel-newsletter/`: newsletter PMI con pixel univoco per
+  destinatario e profilazione: scheda registro + DPIA obbligatoria + checklist GAP.
+
+### Changed
+
+- `SKILL.md`: routing alla quinta sotto-attivita', `normative_refs` e tags aggiornati,
+  versione 0.2.0.
+- `AGENTS.md` (skill): nuova fonte autoritativa e punti chiave art. 122 / termine
+  29/10/2026.
+- `references/sources.yaml`: `last_verified` 2026-07-11.
+
 ## [0.1.1] - 2026-05-10
 
 ### fix(source-grounding): remediation semantica (closes #101)
