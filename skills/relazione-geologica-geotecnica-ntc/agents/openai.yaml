@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Relazione geologica e geotecnica - NTC 2018
+short_description: Verifica completezza e coerenza di relazione geologica e relazione geotecnica secondo NTC 2018 cap. 6 e Circolare 7/2019, e prepara l'indice commentato di una relazione geotecnica.
+default_prompt: |
+  Ho una relazione geotecnica da controllare rispetto alle NTC 2018 e alla
+  Circolare 7/2019: verifica che contenga tutti gli elementi richiesti
+  (contenuti del par. C6.2.2.5, valori caratteristici, certificati di
+  laboratorio ex art. 59 DPR 380/2001) e segnala cosa manca, citando i
+  paragrafi normativi.

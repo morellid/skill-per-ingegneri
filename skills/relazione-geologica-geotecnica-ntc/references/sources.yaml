@@ -1,0 +1,47 @@
+schema_version: 1
+skill: relazione-geologica-geotecnica-ntc
+last_verified: 2026-07-11
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "DM 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-11
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain-italian-law
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
+    excerpt_path: references/estratti/ntc2018-cap6-relazioni.md
+    notes: |
+      Pubblicato in GU Serie Generale n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      PDF scaricato da: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+      SHA256 verificato il 2026-07-11 con shasum -a 256 sul file locale;
+      coincide con l'hash gia' registrato dalle altre skill NTC del repo
+      (stessa edizione GU). Sezioni lette per questa skill: capitolo 6,
+      par. 6.1-6.2.6 (pagg. GU 183-188).
+
+  - id: circ-7-2019-mit
+    title: "Circolare C.S.LL.PP. 21 gennaio 2019 n. 7 - Istruzioni per l'applicazione dell'Aggiornamento delle Norme tecniche per le costruzioni di cui al DM 17 gennaio 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+    accessed: 2026-07-11
+    sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/circ-7-2019.pdf
+    md_path: references/fonti/circ-7-2019-mit.md
+    excerpt_paths:
+      - references/estratti/circ-7-2019-c6-relazioni.md
+      - references/estratti/circ-7-2019-c9-c10-ruoli-elaborati.md
+    notes: |
+      Suppl. Ord. n. 5 alla GU Serie Generale n. 35 dell'11/02/2019.
+      PDF scaricato da: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+      SHA256 verificato il 2026-07-11 con shasum -a 256 sul file locale;
+      coincide con l'hash gia' registrato dalle altre skill NTC del repo.
+      Sezioni lette per questa skill: C6 intro, C6.2, C6.2.1 (con nota 1),
+      C6.2.2-C6.2.2.5, C6.2.3, C6.2.4-C6.2.4.3 (pagg. GU 173-179);
+      C9.1 lett. g (pagg. GU 301-302); C10.1 (pagg. GU 306-308).
+      Nota tecnica: le pagg. GU 173-174 (frontespizio C6, intro del capitolo
+      e C6.2.1 con nota 1) sono scansioni immagine nel PDF GU e non
+      estraibili via pdftotext; sono state lette visivamente dalle pagine
+      PDF 177-178 del file scaricato.

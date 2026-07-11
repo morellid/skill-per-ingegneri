@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 6
+  count: 7
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -459,6 +459,23 @@ skills:
   - cam
   - dm-256-2022
   - appalti-verdi
+- id: relazione-geologica-geotecnica-ntc
+  area: strutture-geotecnica
+  title: Relazione geologica e geotecnica - NTC 2018 cap. 6
+  summary: Checklist di completezza e coerenza per relazione geologica e relazione geotecnica secondo NTC 2018 parr. 6.1.2-6.2.6
+    e Circolare 7/2019 cap. C6, con bozza di struttura della relazione geotecnica - supporto documentale che non sostituisce
+    il professionista firmatario
+  normative_refs:
+  - NTC 2018 (DM 17/01/2018) parr. 6.1-6.2.6
+  - Circolare C.S.LL.PP. 21/01/2019 n. 7 parr. C6.2, C9.1 lett. g, C10.1
+  - DPR 380/2001 art. 59 (laboratori prove, per rinvio dalle NTC)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - geotecnica
+  - relazione-geologica
+  - relazione-geotecnica
 - id: rsia-audit-stradale-dlgs35
   area: ambiente-territorio-mobilita
   title: Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011)
