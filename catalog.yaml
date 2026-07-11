@@ -281,16 +281,20 @@ skills:
 - id: gdpr-registro-dpia
   area: software-dati-cybersecurity
   title: GDPR Registro + DPIA
-  summary: Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA)
+  summary: Registro delle attivita' di trattamento e Valutazione d'Impatto (DPIA), con modulo tracking pixel e-mail (Linee
+    guida Garante provv. 284/2026)
   normative_refs:
   - GDPR art. 30, 35, 36
   - provv. Garante
-  version: 0.1.1
+  - Linee guida Garante tracking pixel e-mail (provv. n. 284/2026, GU n. 98 del 29/04/2026)
+  version: 0.2.0
   status: alpha
   tags:
   - gdpr
   - dpia
   - garante-privacy
+  - tracking-pixel
+  - email-marketing
 - id: modulistica-edilizia-unificata
   area: edilizia-urbanistica-catasto
   title: Modulistica edilizia unificata + Salva Casa
