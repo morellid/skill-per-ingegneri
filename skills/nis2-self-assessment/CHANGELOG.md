@@ -7,6 +7,24 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.2.1-alpha] - 2026-07-11
+
+### Fixed (allineamento metadata - issue #194)
+- `SKILL.md`: aggiunte "Det. ACN 127437/2026" e "Det. ACN 127434/2026" a
+  `normative_refs`: erano gia' coperte dai contenuti della 0.2.0-alpha
+  (task `elenco-fornitori-rilevanti.md`, estratti, sources.yaml) ma non
+  dichiarate nel frontmatter; `summary` aggiornata con l'elenco fornitori
+  rilevanti
+- `README.md` di root: riga della skill allineata (descrizione e colonna
+  riferimenti normativi)
+- Verifica punto per punto della issue #194: i tre punti segnalati
+  (istruzioni operative per la piattaforma ACN "NIS/Aggiornamento annuale
+  informazioni", ricorrenza annuale della finestra 15 aprile - 31 maggio,
+  criteri di rilevanza ex art. 1 co. 1 lett. ll) Det. ACN 127437/2026)
+  risultano gia' coperti da `tasks/elenco-fornitori-rilevanti.md` e
+  `references/estratti/acn-det-127437-2026-art18-fornitori.md` introdotti
+  in 0.2.0-alpha (issue #169); nessuna modifica di contenuto necessaria
+
 ### Fixed (source-grounding remediation - PR #154)
 - aggiunto `references/fonti/acn-det-164179-2025-allegato2.md` per la fonte storica `acn-det-164179-2025-allegato2`, cosi' da rispettare la Regola zero Step 3 anche per l'allegato superato mantenuto a catalogo come riferimento storico
 - aggiornato `references/sources.yaml` con `md_path` per `acn-det-164179-2025-allegato2`
