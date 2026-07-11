@@ -1,6 +1,6 @@
 schema_version: 1
 skill: nis2-self-assessment
-last_verified: 2026-05-17
+last_verified: 2026-07-11
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
@@ -201,6 +201,7 @@ sources:
     md_path: references/fonti/acn-det-127437-2026.md
     excerpt_paths:
       - references/estratti/acn-det-127437-2026-art18-fornitori.md
+      - references/estratti/acn-det-155238-2026-categorizzazione.md
     notes: |
       Determinazione adottata dal Direttore Generale ACN Bruno Frattasi
       il 13/04/2026 ai sensi dell'art. 7 co. 6 e art. 40 co. 5 lett. b)
@@ -247,6 +248,108 @@ sources:
       (18 mesi misure / 9 mesi notifica dalla comunicazione di
       inserimento); art. 2 - termini analoghi per gestori TLD/registrar
       ai sensi art. 29 D.Lgs. 138/2024 (entro 31/07/2027).
+
+  - id: acn-det-155238-2026
+    title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 155238 del 20 aprile 2026 - Modello per la categorizzazione delle attivita' e dei servizi dei soggetti NIS (art. 40 co. 5 lett. i D.Lgs. 138/2024)"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/detacn_categorizzazione_260409-v8_signed
+    download_url: https://www.acn.gov.it/portale/documents/d/guest/detacn_categorizzazione_260409-v8_signed
+    accessed: 2026-07-11
+    sha256: 7db5fd25e9020f68a8417eed2035d9cfa89f4a7f2b5b97b2ed978392c2dc4d2d
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-155238-2026.pdf
+    md_path: references/fonti/acn-det-155238-2026.md
+    excerpt_paths:
+      - references/estratti/acn-det-155238-2026-categorizzazione.md
+    notes: |
+      Determinazione firmata digitalmente dal Direttore Generale ACN
+      Bruno Frattasi il 13/04/2026 (protocollo n. 155238 del 20/04/2026),
+      adottata ai sensi dell'art. 30 co. 2 D.Lgs. 138/2024 secondo le
+      modalita' dell'art. 40 co. 5, sentito il Tavolo NIS nella riunione
+      del 09/04/2026. Si applica dal 01/05/2026 (art. 8 co. 2). PDF di 4
+      pagine, 8 articoli. Adotta il modello di categorizzazione (allegati
+      1 e 2): 10 macro-aree con denominazione, descrizione e categoria di
+      rilevanza pre-assegnata; 4 categorie di rilevanza (impatto alto,
+      medio, basso, minimo) (art. 2). Allegato 1 per i soggetti delle
+      tipologie nn. 1, 2, 5, 6, 7, 10 all. I, nn. 1-5 all. II e n. 1
+      all. IV del decreto NIS; allegato 2 per tutti gli altri (art. 2
+      co. 2-3). Art. 3: elencazione e categorizzazione di tutte le
+      attivita'/servizi via piattaforma digitale; deroga alla categoria
+      pre-assegnata ammessa con valutazione d'impatto documentata e
+      conservata (co. 3). Art. 4: chi ha classificato dati/servizi ex
+      art. 3 DD ACN 21007/24 (Regolamento Cloud PA) usa quel modello.
+      Art. 5: attivita'/servizi con obblighi PSNC (DL 105/2019) =
+      impatto alto, fuori dall'art. 3.
+
+  - id: acn-det-155238-2026-allegato-1
+    title: "ACN - Determinazione 155238/2026 - Allegato 1 - Modello per la categorizzazione delle attivita' e dei servizi"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/allegato_1_modello260409-v1
+    accessed: 2026-07-11
+    sha256: 3d8c9965b8c02e98c15f05bc7e5cc62d4d3d9542f2dfa94d9d4b28f5da3c55eb
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-155238-2026-allegato-1.pdf
+    md_path: references/fonti/acn-det-155238-2026-allegato-1.md
+    excerpt_paths:
+      - references/estratti/acn-det-155238-2026-categorizzazione.md
+    notes: |
+      Modello di categorizzazione per i soggetti di cui all'art. 2 co. 2
+      della determinazione (tipologie nn. 1, 2, 5, 6, 7, 10 dell'all. I,
+      nn. 1-5 dell'all. II, n. 1 dell'all. IV del decreto NIS). Tabella
+      con 10 macro-aree e categorie pre-assegnate: Monitoraggio e
+      controllo = alto; Produzione di beni e servizi = medio; Ricerca,
+      sviluppo e progettazione = medio; Gestione finanziaria, Gestione
+      dei clienti, Gestione delle risorse umane, Logistica = basso;
+      Comunicazione e marketing, Gestione amministrativa, Altri servizi
+      e attivita' = minimo. Differisce dall'allegato 2 solo per
+      Logistica (basso anziche' minimo).
+
+  - id: acn-det-155238-2026-allegato-2
+    title: "ACN - Determinazione 155238/2026 - Allegato 2 - Modello per la categorizzazione delle attivita' e dei servizi"
+    type: determinazione
+    url: https://www.acn.gov.it/portale/documents/d/guest/allegato_2_modello260409-v1
+    accessed: 2026-07-11
+    sha256: 071fe9a5b012114b3828c60bb3bbb69a6d27ce95b19dcd5e8c151ed1c3a750bc
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-det-155238-2026-allegato-2.pdf
+    md_path: references/fonti/acn-det-155238-2026-allegato-2.md
+    excerpt_paths:
+      - references/estratti/acn-det-155238-2026-categorizzazione.md
+    notes: |
+      Modello di categorizzazione per i soggetti di cui all'art. 2 co. 3
+      della determinazione (tutti i soggetti NIS non riconducibili alle
+      tipologie dell'allegato 1). Stesse 10 macro-aree e categorie
+      pre-assegnate dell'allegato 1, con l'unica differenza della
+      macro-area Logistica = impatto minimo (anziche' basso).
+
+  - id: acn-modello-categorizzazione-guida
+    title: "ACN - Linee guida NIS - Modello di categorizzazione - Guida alla lettura"
+    type: linea-guida
+    url: https://www.acn.gov.it/portale/documents/d/guest/modello-di-categorizzazione-nis-guida-alla-lettura
+    accessed: 2026-07-11
+    sha256: c2ccc470a07ce0bd01f94276667f18e82a79de13bd498d5861b5a8f1ba72bd1b
+    license: public-domain-italian-law
+    binary_path: not_in_repo/acn-modello-categorizzazione-guida.pdf
+    md_path: references/fonti/acn-modello-categorizzazione-guida.md
+    excerpt_paths:
+      - references/estratti/acn-det-155238-2026-categorizzazione.md
+    notes: |
+      "Linee Guida NIS - Modello di categorizzazione - Guida alla
+      lettura", versione 1.0, aprile 2026. PDF con copertina + pagine
+      numerate 1-13. Documento esplicativo (non normativo) della Det.
+      155238/2026. Contenuti chiave: processo facoltativo in 3 fasi
+      (identificazione attivita'/servizi; mappatura in macro-aree, una
+      sola macro-area per attivita'; attribuzione categoria di
+      rilevanza); metodologie top-down/bottom-up/combinata; granularita'
+      (al piu' un numero di attivita'/servizi per macro-area pari al
+      numero di categorie di rilevanza); l'attribuzione e' una Business
+      Impact Analysis (BIA) semplificata sulle tre dimensioni della
+      sicurezza informatica (riservatezza, integrita', disponibilita',
+      esplicitate in Appendice B); finalita' = misure di sicurezza a
+      lungo termine differenziate per categoria (art. 31 co. 2 lett. a
+      decreto NIS); coordinamento PA/Regolamento Cloud (classi ordinari/
+      critici/strategici); Appendice B con motivazioni delle
+      pre-assegnazioni e 5 criteri di attribuzione.
 
   - id: acn-det-164179-2025
     title: "Agenzia per la Cybersicurezza Nazionale - Determinazione n. 164179 del 14 aprile 2025 - Modalita' e specifiche di base per gli obblighi degli artt. 23, 24, 25, 29 e 32 del D.Lgs. 138/2024 (versione superata)"

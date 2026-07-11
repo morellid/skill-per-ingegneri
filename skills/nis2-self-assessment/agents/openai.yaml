@@ -2,7 +2,7 @@
 # Used by Codex CLI / IDE for the skill picker (UI display).
 # Not used by Claude Code (which reads SKILL.md frontmatter directly).
 display_name: NIS2 self-assessment (D.Lgs. 138/2024)
-short_description: Self-assessment NIS2 per soggetti italiani. Valuta il perimetro (essenziale/importante/fuori), imposta la gap analysis sulle misure di base ACN (Det. 379907/2025), verifica gli obblighi di notifica incidenti al CSIRT Italia e gli obblighi dell'organo di amministrazione (artt. 23-25 D.Lgs. 138/2024).
+short_description: Self-assessment NIS2 per soggetti italiani. Valuta il perimetro (essenziale/importante/fuori), imposta la gap analysis sulle misure di base ACN (Det. 379907/2025), prepara l'elenco fornitori rilevanti NIS (art. 18 Det. ACN 127437/2026) e l'elenco categorizzato delle attivita' e dei servizi (art. 30 D.Lgs. 138/2024, Det. ACN 155238/2026), verifica gli obblighi di notifica incidenti al CSIRT Italia e gli obblighi dell'organo di amministrazione (artt. 23-25 D.Lgs. 138/2024).
 default_prompt: |
   Aiutami con la self-assessment NIS2 della mia organizzazione.
   Per prima cosa stabilisci se rientriamo nel perimetro come soggetto

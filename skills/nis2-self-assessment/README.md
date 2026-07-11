@@ -1,6 +1,6 @@
 # NIS2 self-assessment (D.Lgs. 138/2024)
 
-> Versione: 0.1.0-alpha
+> Versione: 0.3.0-alpha
 > Stato: in sviluppo - validazione Livello 1 (auto-validazione autore). Validazione Livello 2 con consulente cybersecurity da pianificare.
 
 Skill di supporto alla self-assessment NIS2 per organizzazioni italiane (private e pubbliche) ai sensi del **D.Lgs. 4 settembre 2024, n. 138** (recepimento della Direttiva (UE) 2022/2555) e dei provvedimenti attuativi dell'**Agenzia per la Cybersicurezza Nazionale (ACN)**.
@@ -15,12 +15,14 @@ CISO, IT manager, DPO, ingegneri dell'informazione, consulenti cybersecurity di 
 
 ## Cosa fa
 
-La skill articola la self-assessment in 4 sotto-attivita':
+La skill articola la self-assessment in 6 sotto-attivita':
 
 1. **Valutazione del perimetro** - "siamo soggetti NIS2? essenziali o importanti?" (art. 3, 6 D.Lgs. 138/2024 + Allegati I-IV)
 2. **Gap analysis misure di base** - confronto fra le misure adottate e i requisiti del Framework Nazionale Cybersecurity richiamati dalla Determinazione ACN 379907/2025 vigente dal 15/01/2026 (Allegato 1 importanti, 37 sottocat / Allegato 2 essenziali, 43 sottocat) + 10 elementi minimi art. 24 co. 2
-3. **Verifica incidente significativo** - "questo incidente va notificato? in quanto tempo?" (art. 25: 24h pre-notifica / 72h notifica / 1 mese report finale)
-4. **Obblighi governance** - "cosa deve fare il CdA?" (art. 23: approvazione misure, formazione, responsabilita' personale)
+3. **Elenco fornitori rilevanti NIS** - censimento fornitori, criteri di rilevanza ex art. 1 co. 1 lett. ll) Det. ACN 127437/2026, 5 campi obbligatori ex art. 18, trasmissione nella finestra annuale 15 aprile - 31 maggio
+4. **Categorizzazione attivita' e servizi** - elenco categorizzato ex art. 30 D.Lgs. 138/2024 secondo il modello della Det. ACN 155238/2026 (10 macro-aree, 4 categorie di rilevanza alto/medio/basso/minimo), trasmissione nella finestra annuale 1 maggio - 30 giugno (Capo V Det. ACN 127437/2026)
+5. **Verifica incidente significativo** - "questo incidente va notificato? in quanto tempo?" (art. 25: 24h pre-notifica / 72h notifica / 1 mese report finale)
+6. **Obblighi governance** - "cosa deve fare il CdA?" (art. 23: approvazione misure, formazione, responsabilita' personale)
 
 Per il dettaglio tecnico vedi [`SKILL.md`](SKILL.md). Routing fra task da `SKILL.md`.
 
@@ -50,6 +52,9 @@ Fonti primarie (testo verbatim catalogato e analizzato):
 - **Regolamento di esecuzione (UE) 2024/2690** del 17/10/2024 (per sottoinsieme di soggetti)
 - **Determinazione ACN n. 164179 del 14/04/2025** (sostituita)
 - **Determinazione ACN n. 379907 del 18/12/2025** (in vigore dal 15/01/2026; sostitutiva della 164179/2025; cataloga il documento principale + 4 Allegati: misure importanti, misure essenziali, incidenti importanti, incidenti essenziali). I termini di adeguamento (18 mesi misure / 9 mesi notifica incidenti) decorrono dalla **comunicazione di inserimento** personale ricevuta dal soggetto.
+- **Determinazione ACN n. 127437 del 13/04/2026** (vigente dal 15/04/2026, Capo V dal 01/05/2026) - piattaforma digitale ACN: art. 18 elenco fornitori rilevanti, artt. 20-21 trasmissione e verifica dell'elenco categorizzato
+- **Determinazione ACN n. 127434 del 13/04/2026** (vigente dal 30/04/2026) - termini speciali per i soggetti inseriti per la prima volta nel 2026
+- **Determinazione ACN n. 155238 del 20/04/2026** (si applica dal 01/05/2026) - modello di categorizzazione delle attivita' e dei servizi ex art. 30 D.Lgs. 138/2024 + Allegati 1-2 (macro-aree e categorie di rilevanza) + Guida alla categorizzazione ACN v1.0 (aprile 2026, documento di supporto)
 
 Dettaglio completo in [`references/sources.yaml`](references/sources.yaml). Estratti testuali in [`references/estratti/`](references/estratti/).
 
