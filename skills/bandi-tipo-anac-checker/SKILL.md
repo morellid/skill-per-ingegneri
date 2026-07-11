@@ -7,8 +7,8 @@ title: "Bandi-tipo ANAC - Checker disciplinare di gara"
 summary: "Verifica la conformita' di un disciplinare di gara agli schemi ANAC (bandi-tipo) obbligatori per le stazioni appaltanti; identifica deroghe non giustificate, clausole mancanti, riferimenti obsoleti (D.Lgs. 50/2016) e anomalie a rischio TAR prima della pubblicazione"
 normative_refs:
   - "D.Lgs. 36/2023"
-  - "Bandi-tipo ANAC (n. 1/2023, n. 2/2026 SIA)"
-version: 0.2.0
+  - "Bandi-tipo ANAC (n. 1/2023 agg. Delibera 148/2026, n. 2/2026 SIA Delibera 153/2026)"
+version: 0.3.0
 status: alpha
 tags:
   - anac
