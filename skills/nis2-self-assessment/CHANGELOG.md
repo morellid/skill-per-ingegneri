@@ -7,6 +7,62 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.3.0-alpha] - 2026-07-11
+
+### Added (issue #197 - Det. ACN 155238/2026, categorizzazione attivita' e servizi)
+- Nuovo task `tasks/categorizza-attivita-servizi.md` per la preparazione
+  dell'elenco categorizzato delle attivita' e dei servizi ex art. 30
+  D.Lgs. 138/2024 secondo il modello della Det. ACN 155238/2026: selezione
+  allegato 1 vs allegato 2, identificazione delle attivita'/servizi
+  (top-down / bottom-up / combinato), mappatura 1:1 nelle 10 macro-aree,
+  attribuzione della categoria di rilevanza (default pre-assegnata, deroga
+  ex art. 3 co. 3 con valutazione documentata, criteri Appendice B della
+  Guida), casi speciali (Regolamento Cloud PA, PSNC, esenzione DORA),
+  trasmissione nella finestra annuale 1 maggio - 30 giugno tramite il
+  "Servizio NIS/Categorizzazione" e verifiche a campione ex art. 21
+  Det. 127437/2026
+- Nuovo estratto `references/estratti/acn-det-155238-2026-categorizzazione.md`
+  che copre Det. 155238/2026 + allegati 1-2 + Guida alla categorizzazione
+  v1.0 + Capo V (artt. 20-21) Det. 127437/2026
+- Nuove trascrizioni verbatim PDF in `references/fonti/`:
+  - `acn-det-155238-2026.md` - determinazione firmata 13/04/2026,
+    prot. 155238 del 20/04/2026, premesse + artt. 1-8
+  - `acn-det-155238-2026-allegato-1.md` e `acn-det-155238-2026-allegato-2.md` -
+    tabelle delle 10 macro-aree con categorie pre-assegnate (unica
+    differenza: Logistica, impatto basso vs minimo)
+  - `acn-modello-categorizzazione-guida.md` - Guida alla lettura v1.0
+    (aprile 2026), capp. 1-2 + Appendici A-B
+- Nuove voci in `references/sources.yaml` completate con note di contenuto:
+  - `acn-det-155238-2026` con SHA256 `7db5fd25e9020f68a8417eed2035d9cfa89f4a7f2b5b97b2ed978392c2dc4d2d`
+  - `acn-det-155238-2026-allegato-1` con SHA256 `3d8c9965b8c02e98c15f05bc7e5cc62d4d3d9542f2dfa94d9d4b28f5da3c55eb`
+  - `acn-det-155238-2026-allegato-2` con SHA256 `071fe9a5b012114b3828c60bb3bbb69a6d27ce95b19dcd5e8c151ed1c3a750bc`
+  - `acn-modello-categorizzazione-guida` con SHA256 `c2ccc470a07ce0bd01f94276667f18e82a79de13bd498d5861b5a8f1ba72bd1b`
+
+### Changed
+- `SKILL.md`: description e summary del frontmatter estese con l'elenco
+  categorizzato ex art. 30; aggiunta "Det. ACN 155238/2026" a
+  `normative_refs`; nuova sotto-attivita' `categorizza-attivita-servizi.md`
+  nel routing (sei azioni); sezione "Fonti normative" aggiornata
+- `AGENTS.md`: dominio a sei angoli; nuove voci "Fonti autoritative"
+  (Det. 155238/2026 + allegati, Guida); nuovi bullet "Articoli e punti
+  chiave" (art. 30 + modello di categorizzazione; Capo V Det. 127437/2026);
+  stato attuale aggiornato (6 task, 13 estratti)
+- `README.md` di skill: allineato allo stato corrente (6 sotto-attivita',
+  fonti consultate aggiornate, versione)
+- `references/sources.yaml`: aggiunto `excerpt_paths` per le 4 nuove fonti
+  e per `acn-det-127437-2026`; `last_verified` aggiornato a 2026-07-11
+- `README.md` di root: riga della skill aggiornata con la
+  Det. ACN 155238/2026
+- `agents/openai.yaml`: short_description allineata alle sei
+  sotto-attivita' (era ferma a quattro, non aggiornata in 0.2.0-alpha)
+
+### Note
+- Versione: minor (0.2.1 -> 0.3.0) per aggiunta di funzionalita' nuova
+  retro-compatibile (nuovo task + nuove fonti), secondo
+  `methodology/update-cycle.md`
+- Chiude la voce "fuori scope" annotata nella release 0.2.0-alpha
+  (GitHub issue #197)
+
 ## [0.2.1-alpha] - 2026-07-11
 
 ### Fixed (allineamento metadata - issue #194)
