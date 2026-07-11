@@ -5,7 +5,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [0.2.0] - 2026-05-18
+## [0.2.1] - 2026-07-11
+
+### Fixed (allineamento metadata - issue #193)
+- `SKILL.md`: `normative_refs` ora dichiara anche "D.Lgs. 209/2024
+  (correttivo)" e "ANAC Bando tipo n. 2/2026 (Delibera n. 153/2026)",
+  entrambi gia' recepiti nei contenuti dalla 0.2.0 (issue #166) ma non
+  dichiarati nel frontmatter; `summary` estesa con lo schema SIA
+- `README.md` di root: riga della skill allineata (descrizione e colonna
+  riferimenti normativi)
+- Verifica punto per punto della issue #193: i quattro punti richiesti
+  (schema OEPV standard SIA del Bando tipo n. 2/2026, verifica del
+  disciplinare A&I, clausole AI nelle checklist, recepimento D.Lgs.
+  209/2024) risultano gia' coperti dalla 0.2.0 in `SKILL.md`,
+  `tasks/costruisci-matrice-criteri.md` (Passo 2 schema SIA),
+  `tasks/check-matrice-criteri.md` (Passi 1 e 1bis) e
+  `references/estratti/anac-bando-tipo-n2-2026-sia-oepv-bim.md`;
+  nessuna modifica di contenuto necessaria
 
 ### feat: recepimento Bando tipo n. 2/2026 ANAC per SIA (issue #166)
 
