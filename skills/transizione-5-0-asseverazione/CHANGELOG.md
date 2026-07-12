@@ -7,6 +7,30 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-11
+
+### Added (aggiornamento normativo DL 38/2026 - closes #196)
+- Fase post-chiusura dello sportello: credito d'imposta 89,77% per le pratiche "tecnicamente ammissibili" ex art. 8 DL 38/2026 (conv. con mod. L. 88/2026)
+  - nuova sezione "Fase post-chiusura" in SKILL.md, con F24 codice tributo 7079 entro il 31/12/2026 e contributo comma 3-bis (FER, accumuli, spese di certificazione)
+  - nuovo caso limite in tasks/verifica-ammissibilita.md (pratica tecnicamente ammissibile senza copertura) e in tasks/struttura-certificazione-ex-post.md (obblighi post-ricevuta ex Avviso MIMIT 29/4/2026)
+- 4 nuove fonti in references/sources.yaml, scaricate, lette e trascritte verbatim in references/fonti/:
+  - DL 38/2026 (GU n. 72 del 27/03/2026) SHA256: 1453625e5dcff27685791d0637d303863543996c04f86da354d90c1c06b4a80c
+  - DL 42/2026 (GU n. 78 del 03/04/2026) SHA256: 9f512d7a8025066d6b1682090178b9f4bfff4c72e116c82a6b1cb58d33b6e051
+  - L. 88/2026 (GU n. 117 del 22/05/2026, legge + testo coordinato) SHA256: 3c313567b4b93297da2d78414efbbfd6a68f18cdf71dea3c49feeedb1464e97c
+  - Avviso MIMIT 29/04/2026 (HTML dinamico, hash non riproducibile fra download: voce catalogata senza hash, trascrizione verbatim committata)
+- Nuovo estratto operativo references/estratti/dl-38-2026-credito-pratiche-ammissibili.md (catena normativa DL 38 -> DL 42 -> L. 88, profili per comma, obblighi dei beneficiari)
+- Fonte secondaria decreto-attuativo-iperammortamento-2026 catalogata in sources.yaml come fuori scope (non pubblicato in GU alla data di verifica)
+
+### Changed
+- SKILL.md: description e blocco "ATTENZIONE - vigenza normativa" riscritti con la catena normativa 2026; normative_refs esteso con "DL 38/2026 art. 8 (conv. L. 88/2026)"; nuovi limiti (iperammortamento 2026 e calcolo contributo 3-bis fuori scope)
+- tasks/verifica-ammissibilita.md e tasks/struttura-certificazione-ex-post.md: note di vigenza sul termine 28/2/2026 ormai decorso (i task restano rilevanti per verifiche retrospettive e controlli)
+- AGENTS.md: nuova sezione "DL 38/2026 art. 8 (conv. L. 88/2026) - fase post-chiusura" in "Articoli e punti chiave"; fonti ed estratti aggiornati
+- README.md (skill) e README.md di root: fonti e descrizione allineate
+- references/sources.yaml: last_verified 2026-07-11
+
+### Note di sviluppo
+- Da verificare al prossimo aggiornamento: pubblicazione del decreto MIMIT attuativo del contributo comma 3-bis; pubblicazione in GU del decreto attuativo del "Nuovo Piano Transizione 5.0" / iperammortamento 2026 (misura distinta, richiedera' skill o aggiornamento dedicato)
+
 ## [0.2.0] - 2026-05-10
 
 ### Fixed (source-grounding remediation - closes #112)

@@ -1,6 +1,6 @@
 schema_version: 1
 skill: transizione-5-0-asseverazione
-last_verified: 2026-05-10
+last_verified: 2026-07-11
 
 # Fonti normative principali per la skill di asseverazione tecnica
 # del Piano Transizione 5.0 (credito d'imposta).
@@ -261,6 +261,102 @@ sources:
       5.0 + FAQ MIMIT 2.4): documento distinto dalla certificazione tecnica
       EGE/ESCO oggetto di questa skill.
 
+  - id: dl-38-2026-art-8
+    title: "DL 27 marzo 2026, n. 38 - art. 8 - credito d'imposta Transizione 5.0 per le pratiche tecnicamente ammissibili (GU n. 72 del 27/03/2026, convertito con modificazioni dalla L. 22 maggio 2026, n. 88)"
+    type: decreto-legge
+    url: https://www.gazzettaufficiale.it/eli/id/2026/03/27/26G00057/SG
+    download_url: https://www.gazzettaufficiale.it/eli/gu/2026/03/27/72/sg/pdf
+    accessed: 2026-07-11
+    sha256: 1453625e5dcff27685791d0637d303863543996c04f86da354d90c1c06b4a80c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-38-2026-gu-72.pdf
+    md_path: references/fonti/dl-38-2026-art-8.md
+    excerpt_paths:
+      - references/estratti/dl-38-2026-credito-pratiche-ammissibili.md
+    notes: |
+      Codice redazionale 26G00057, in vigore dal 28/03/2026. L'art. 8
+      (testo originale: aliquota 35%, plafond 537 milioni per il 2026)
+      istituisce il credito d'imposta per le imprese che hanno presentato
+      la comunicazione di completamento ex art. 38 co. 10 DL 19/2024 e
+      hanno ricevuto dal GSE la comunicazione di ammissibilita' tecnica
+      ex DM 24/7/2024 senza copertura per esaurimento risorse. Il testo
+      vigente dell'art. 8 e' quello coordinato con la L. 88/2026 (aliquota
+      89,77%, plafond 1.302,3 milioni): vedi legge-88-2026-conversione.
+
+  - id: dl-42-2026
+    title: "DL 3 aprile 2026, n. 42 - Disposizioni urgenti in materia di prezzi petroliferi, nonche' in favore delle imprese (GU n. 78 del 03/04/2026, abrogato dalla L. 88/2026 con salvezza degli effetti)"
+    type: decreto-legge
+    url: https://www.gazzettaufficiale.it/eli/id/2026/04/03/26G00061/SG
+    download_url: https://www.gazzettaufficiale.it/eli/gu/2026/04/03/78/sg/pdf
+    accessed: 2026-07-11
+    sha256: 9f512d7a8025066d6b1682090178b9f4bfff4c72e116c82a6b1cb58d33b6e051
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dl-42-2026-gu-78.pdf
+    md_path: references/fonti/dl-42-2026.md
+    excerpt_paths:
+      - references/estratti/dl-38-2026-credito-pratiche-ammissibili.md
+    notes: |
+      Codice redazionale 26G00061, in vigore dal 04/04/2026. L'art. 1
+      co. 1 lett. a) sostituisce il comma 1 dell'art. 8 DL 38/2026
+      (aliquota da 35% a 89,77%, plafond da 537 a 1.302,3 milioni,
+      inclusione spese di formazione del personale) e inserisce il comma
+      3-bis (contributo per spese FER/accumulo e certificazioni, 57,7/80/60
+      milioni per 2026/2027/2028). ABROGATO dall'art. 1 co. 2 L. 88/2026
+      con salvezza di atti, provvedimenti, effetti e rapporti giuridici;
+      contenuto trasfuso nell'allegato alla legge di conversione. E' la
+      base normativa citata dall'Avviso MIMIT 29/04/2026.
+
+  - id: legge-88-2026-conversione
+    title: "L. 22 maggio 2026, n. 88 - Conversione in legge, con modificazioni, del DL 38/2026 (GU n. 117 del 22/05/2026)"
+    type: legge
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/05/22/117/sg
+    download_url: https://www.gazzettaufficiale.it/eli/gu/2026/05/22/117/sg/pdf
+    accessed: 2026-07-11
+    sha256: 3c313567b4b93297da2d78414efbbfd6a68f18cdf71dea3c49feeedb1464e97c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/legge-88-2026-gu-117.pdf
+    md_path: references/fonti/legge-88-2026-conversione.md
+    excerpt_paths:
+      - references/estratti/dl-38-2026-credito-pratiche-ammissibili.md
+    notes: |
+      Codice redazionale 26G00109, in vigore dal 23/05/2026. Converte il
+      DL 38/2026 con modificazioni (allegato: art. 8 co. 1 sostituito con
+      aliquota 89,77% e plafond 1.302,3 milioni; comma 3-bis inserito con
+      la precisazione sulla non concorrenza del contributo al reddito e
+      alla base IRAP; refusi del testo originale corretti). L'art. 1 co. 2
+      abroga il DL 42/2026 facendo salvi atti, provvedimenti, effetti e
+      rapporti giuridici. La GU n. 117 contiene anche il testo del DL
+      38/2026 coordinato con la legge di conversione (codice 26A02590,
+      da pag. 40; art. 8 coordinato a pagg. 52-53): e' il testo VIGENTE
+      di riferimento per la skill.
+
+  - id: avviso-mimit-29-04-2026
+    title: "Avviso MIMIT 29 aprile 2026 - Piano Transizione 5.0. Pratiche tecnicamente ammissibili"
+    type: avviso-ministeriale
+    url: https://www.mimit.gov.it/it/normativa/notifiche-e-avvisi/avviso-29-aprile-2026-piano-transizione-5-0-tecnicamente-ammissibili
+    accessed: 2026-07-11
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    md_path: references/fonti/avviso-mimit-29-04-2026.md
+    excerpt_paths:
+      - references/estratti/dl-38-2026-credito-pratiche-ammissibili.md
+    notes: |
+      Avviso operativo MIMIT (Divisione II - Politiche per la
+      digitalizzazione delle imprese): dal 29/04/2026 le imprese con
+      pratica tecnicamente ammissibile ricevono la ricevuta di conferma
+      del credito d'imposta (89,77%) sulla piattaforma informatica
+      Transizione 5.0 del GSE, con notifica via PEC/e-mail. Utilizzo in
+      compensazione F24 entro il 31/12/2026 con codice tributo 7079.
+      Elenca gli obblighi dei beneficiari (comunicazione variazioni al
+      GSE nel quinquennio, conservazione documentale, comunicazione
+      cessioni/delocalizzazioni e mancato riscatto leasing). Pagina HTML
+      istituzionale con markup dinamico: lo SHA256 del file scaricato non
+      e' riproducibile fra download successivi, quindi la voce e'
+      catalogata senza hash e senza binary_path (come le altre pagine di
+      portale). Il corpo testuale dell'avviso e' trascritto integralmente
+      nel md_path; verificare la versione online.
+
   - id: dl-181-2023-art-12
     title: "DL 9 dicembre 2023 n. 181 - art. 12 co. 1 - Caratteristiche dei moduli fotovoltaici per autoconsumo"
     type: decreto-legge
@@ -304,3 +400,17 @@ secondary_sources_to_evaluate:
     notes: |
       Il GSE pubblica nel proprio sito istituzionale il documento "Regole
       operative". Catalogarlo come fonte secondaria al prossimo aggiornamento.
+
+  - id: decreto-attuativo-iperammortamento-2026
+    title: "DM attuativo del nuovo regime di iperammortamento (misura successiva al Piano Transizione 5.0, orizzonte triennale)"
+    url: null
+    notes: |
+      Il MIMIT ha annunciato (news istituzionale) la trasmissione al MEF
+      del decreto attuativo del nuovo regime di iperammortamento previsto
+      dalla legge di bilancio 2026, misura DISTINTA dal credito d'imposta
+      Transizione 5.0 oggetto di questa skill. Alla data di last_verified
+      il decreto non risulta pubblicato in Gazzetta Ufficiale: non e'
+      catalogabile come fonte primaria ne' utilizzabile per contenuto
+      skill. Rivalutare quando pubblicato in GU; l'eventuale copertura
+      dell'iperammortamento richiederebbe comunque una skill dedicata
+      (fuori scope di questa).

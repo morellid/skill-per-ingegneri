@@ -9,7 +9,9 @@ short_description: |
   5.0 (DL 19/2024 art. 38 + DM MIMIT-MEF 24/7/2024). Calcola la riduzione
   dei consumi energetici (>=3% struttura produttiva o >=5% processo),
   imposta lo scenario controfattuale e produce le bozze testuali degli
-  Allegati VIII / IX / X / XI della circolare MIMIT 25877/2024.
+  Allegati VIII / IX / X / XI della circolare MIMIT 25877/2024. Copre
+  anche la fase post-chiusura: pratiche tecnicamente ammissibili pagate
+  con il credito 89,77% ex art. 8 DL 38/2026 (conv. L. 88/2026).
 default_prompt: |
   Devo predisporre la certificazione ex ante per un progetto di
   innovazione Transizione 5.0. L'impresa investe 3,2 milioni di EUR
