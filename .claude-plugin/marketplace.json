@@ -27,7 +27,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 7 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 8 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -39,6 +39,7 @@
         "./carichi-atmosferici-ntc",
         "./cedimenti-edometrici-ntc",
         "./combinazioni-carico-ntc",
+        "./periodo-proprio-t1-ntc",
         "./predimensionamento-flessione-ca-ntc",
         "./relazione-geologica-geotecnica-ntc",
         "./sismabonus-classificazione-rischio-pam",

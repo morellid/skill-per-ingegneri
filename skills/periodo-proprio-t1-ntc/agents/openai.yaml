@@ -1,0 +1,7 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Periodo proprio T1 approssimato (NTC 2018)
+short_description: Stima code-driven del periodo del modo di vibrare principale T1 con la [7.3.6] NTC 2018 (T1 = 2*sqrt(d)) o la [C7.3.2] Circ. 7/2019 (T1 = C1*H^(3/4)), con check dei limiti della stima, condizione T1 <= 2,5*TC per l'analisi lineare statica e coefficiente lambda della [7.3.7].
+default_prompt: |
+  Edificio a telaio in c.a. di 5 piani, altezza 16 m dal piano di fondazione, massa regolare. TC = 0,4 s. Stimami T1 e dimmi se posso usare l'analisi lineare statica.

@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 7
+  count: 8
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -359,6 +359,22 @@ skills:
   - ped
   - dlgs-26-2016
   - pressione
+- id: periodo-proprio-t1-ntc
+  area: strutture-geotecnica
+  title: Periodo proprio T1 approssimato (NTC 2018 par. 7.3.3.2)
+  summary: 'Stima code-driven di T1: formula [7.3.6] T1 = 2*sqrt(d) delle NTC 2018 e formula [C7.3.2] T1 = C1*H^(3/4) della
+    Circ. 7/2019 (C1 = 0,085/0,075/0,050), con check dei limiti (H <= 40 m, massa uniforme), condizione T1 <= 2,5*TC e lambda
+    per le forze [7.3.7]'
+  normative_refs:
+  - NTC 2018 par. 7.3.3.2
+  - Circolare 7/2019 par. C7.3.3.2
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - sismica
+  - periodo-proprio
+  - code-driven
 - id: pfte-allegato-i7-checker
   area: appalti-opere-pubbliche
   title: PFTE Allegato I.7 Checker
