@@ -1,0 +1,233 @@
+schema_version: 1
+skill: relazione-cam-dm-24-11-2025
+last_verified: 2026-07-12
+
+# Fonti normative principali per la skill di redazione/verifica della
+# Relazione CAM di progetto (criterio 2.1.1 DM MASE 24/11/2025).
+#
+# Architettura normativa:
+#   - DM MASE 24/11/2025 (GU n. 281 del 3/12/2025, in vigore dal 2/2/2026):
+#     articolato (artt. 1-4: ambito, transitorio, definizioni, abrogazione
+#     del DM 256/2022 e del correttivo DM 5/8/2024)
+#   - Allegato 1 al DM 24/11/2025 (PDF sul sito MASE "CAM vigenti"):
+#     testo integrale dei criteri (clausole contrattuali, specifiche
+#     tecniche, criteri premianti); il criterio 2.1.1 istituisce la
+#     Relazione CAM di progetto
+#   - Circolare MASE 10/4/2026: chiarimenti su ambito temporale (art. 1
+#     co. 2) e regime transitorio (art. 2)
+#   - Modello MASE di Relazione CAM di progetto (versione 02/02/2026)
+#   - D.Lgs. 36/2023 art. 57: obbligo di applicazione dei CAM
+#   - DM 23/6/2022 n. 256 + DM correttivo 5/8/2024: ABROGATI dal 2/2/2026,
+#     applicabili solo nel regime transitorio art. 2 DM 24/11/2025
+#
+# Verificare last_verified prima di applicare su una gara reale: il MASE
+# aggiorna periodicamente i CAM e la modulistica.
+
+sources:
+  - id: dm-cam-24-11-2025
+    title: "DM MASE 24 novembre 2025 - Adozione dei criteri ambientali minimi per l'affidamento di servizi di progettazione e affidamento di lavori per interventi edilizi (GU n. 281 del 03/12/2025) - articolato"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/gu/2025/12/03/281/sg/pdf
+    accessed: 2026-07-12
+    sha256: d7372a1e2e6e06c5418fcbfc5251dbd64f0b63e82216b15fbbb9366434aeecad
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-cam-24-11-2025-gu281.pdf
+    md_path: references/fonti/dm-cam-24-11-2025-articolato.md
+    excerpt_paths:
+      - references/estratti/dm-cam-2025-ambito-transitorio.md
+    notes: |
+      Codice redazionale 25A06516, pubblicato a Pag. 84 e segg. della GU
+      n. 281. In vigore dal 2/2/2026 (art. 4 co. 3: sessanta giorni dalla
+      pubblicazione; data confermata dalla circolare MASE 10/4/2026).
+      Art. 1: oggetto e ambito (co. 2: regime temporale per progettazione/
+      DL, manutenzione e lavori, progettazione interna). Art. 2:
+      transitorio (ultrattivita' del DM 256/2022 con doppia condizione).
+      Art. 3: definizioni (DPR 380/2001 art. 3; Reg. UE 2024/3110; SRI).
+      Art. 4: abroga DM 256/2022 e DM correttivo 5/8/2024.
+      Il PDF e' l'intera GU n. 281; l'Allegato 1 NON e' pubblicato in GU
+      (avvertenza in calce: consultabile sul sito MASE, vedi source
+      dm-cam-24-11-2025-allegato-1).
+
+  - id: dm-cam-24-11-2025-allegato-1
+    title: "Allegato 1 al DM MASE 24 novembre 2025 - CAM per l'affidamento del servizio di progettazione e direzione lavori di interventi edilizi e opere di ingegneria civile, esecuzione di lavori (testo integrale dei criteri)"
+    type: allegato
+    url: https://www.mase.gov.it/portale/documents/d/guest/allegato_1_cam_edilizia_30_10_25-def-pdf
+    accessed: 2026-07-12
+    sha256: 24b50d2b277d55afb75b10564c80fbeedd82b0f0c29742775110c50622a6265c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/allegato-1-cam-edilizia-dm-24-11-2025.pdf
+    md_path: references/fonti/dm-cam-24-11-2025-allegato-1.md
+    excerpt_paths:
+      - references/estratti/dm-cam-2025-relazione-cam-struttura.md
+      - references/estratti/dm-cam-2025-ambito-transitorio.md
+    notes: |
+      Documento principale della skill (123 pagine), linkato dalla pagina
+      MASE "CAM vigenti" (https://www.mase.gov.it/portale/cam-vigenti)
+      richiamata dall'avvertenza in GU. Struttura:
+        Cap. 1 Premessa (1.1 ambito; 1.3.2 studi LCA/LCC; 1.3.3 DIP;
+          1.3.5 verifica criteri e mezzi di prova; 1.3.6 catena di
+          approvvigionamento)
+        Cap. 2 Progettazione: 2.1 clausole contrattuali (2.1.1 Relazione
+          CAM di progetto; 2.1.2 capitolato; 2.1.3 BIM); 2.2 specifiche
+          territoriale-urbanistiche (2.2.1-2.2.9); 2.3 edifici e altre
+          opere (2.3.1-2.3.17); 2.4 prodotti da costruzione
+          (2.4.1-2.4.18); 2.5 cantiere (2.5.1-2.5.4); 2.6 premianti
+          progettazione (2.6.1-2.6.10)
+        Cap. 3 Lavori: 3.1 clausole contrattuali (3.1.1 Relazione CAM
+          dell'impresa appaltatrice; 3.1.2-3.1.4); 3.2 premianti lavori
+          (3.2.1-3.2.13)
+        Cap. 4 Congiunto: 4.1/4.2 rinvii; 4.3 premianti aggiuntivi
+          (4.3.1-4.3.4)
+      Il md_path trascrive i paragrafi citati dalla skill (2.1.1 e 3.1.1
+      integrali, intestazioni di capitolo con regole di applicabilita',
+      elenco completo dei criteri): per i requisiti puntuali dei singoli
+      criteri consultare il PDF ufficiale.
+
+  - id: circolare-mase-10-04-2026
+    title: "Circolare MASE 10 aprile 2026 - DM CAM Edilizia 2025: chiarimenti applicativi sugli articoli 1 (ambito) e 2 (disposizioni transitorie)"
+    type: circolare
+    url: https://www.mase.gov.it/portale/documents/d/guest/2026_04_10_cam_circolare-pdf
+    accessed: 2026-07-12
+    sha256: ef651b7a38083e35ccdcf05492af9aa96dbc92daa39967dde17e83e1b837bff5
+    license: public-domain-italian-law
+    binary_path: not_in_repo/circolare-mase-cam-10-04-2026.pdf
+    md_path: references/fonti/circolare-mase-10-04-2026.md
+    excerpt_paths:
+      - references/estratti/dm-cam-2025-ambito-transitorio.md
+    notes: |
+      Direzione generale sostenibilita' dei prodotti e dei consumi, ID
+      SPC-02-24266_2026-0010, firmata digitalmente il 10/4/2026.
+      Chiarisce: entrata in vigore 2/2/2026; per la lett. a) rileva il
+      momento di indizione; per la lett. b) "progetto validato in vigenza"
+      significa redatto/verificato/validato in conformita' al DM
+      24/11/2025; per la lett. c) la progettazione interna non validata al
+      2/2/2026 va adeguata ai nuovi criteri; transitorio art. 2 con doppia
+      condizione (validazione conforme al DM 256/2022 + bando entro tre
+      mesi dalla validazione), qualificato deroga eccezionale al tempus
+      regit actum.
+
+  - id: modello-relazione-cam-2026
+    title: "MASE - Modello di Relazione CAM di Progetto di cui al criterio 2.1.1 del DM 24.11.2025 (versione del 02/02/2026)"
+    type: modulistica-ministeriale
+    url: https://www.mase.gov.it/portale/documents/d/guest/modello-di-relazione-cam-di-progetto-vers-_02-02-2026-pdf
+    accessed: 2026-07-12
+    sha256: 405a928522ee75ce0f535070aa5d978f285fa2f0cb2fd05bb65f9396299c2d11
+    license: public-domain-italian-law
+    binary_path: not_in_repo/modello-relazione-cam-02-02-2026.pdf
+    md_path: references/fonti/modello-relazione-cam-2026.md
+    excerpt_paths:
+      - references/estratti/dm-cam-2025-relazione-cam-struttura.md
+    notes: |
+      Modello ufficiale di riferimento per la Relazione CAM di progetto.
+      Struttura minima: normativa; progetto (strategia ambientale con LCA e
+      GWPtotal, descrizione, Tabella 1 di applicabilita' dei criteri,
+      protocollo di sostenibilita', gruppo di lavoro, Scheda Tipo per ogni
+      criterio applicato, criteri premianti proposti); allegati (rapporto
+      LCA, rapporto stato ambiente, piano ambientale di cantiere, piano di
+      manutenzione, piano di decostruzione, piano rifiuti C&D, protocollo
+      M&V). La skill genera bozze conformi a questa struttura.
+
+  - id: dlgs-36-2023-art57
+    title: "D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici - art. 57 (Criteri ambientali minimi)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dlgs-36-2023-art57.md
+    notes: |
+      Art. 57 co. 2: nella documentazione progettuale e di gara sono
+      inseriti almeno i criteri ambientali minimi relativi alle specifiche
+      tecniche e alle clausole contrattuali (base dell'obbligatorieta' dei
+      CAM). Richiamato come fondamento dal DM 24/11/2025 (premesse e art. 1
+      co. 1) e dall'Allegato 1 (premessa, che cita anche il correttivo
+      D.Lgs. 209/2024).
+
+  - id: dm-256-2022
+    title: "[ABROGATO dal 2/2/2026 - regime transitorio] DM 23 giugno 2022 n. 256 - CAM edilizia 2022 (GU n. 183 del 06/08/2022) - articoli 1-3"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/2022/08/06/22A04478/SG
+    accessed: 2026-05-01
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths:
+      - references/estratti/dm-256-2022-articoli-chiave.md
+    notes: |
+      ABROGATO dall'art. 4 co. 1 DM 24/11/2025 a decorrere dal 2/2/2026.
+      Resta applicabile SOLO nel regime transitorio dell'art. 2 DM
+      24/11/2025 (PFTE o progetto esecutivo validato in conformita' al DM
+      256/2022 + bando/avviso entro tre mesi dalla validazione; circolare
+      MASE 10/4/2026 par. C). Estratti mantenuti come [STORICO].
+
+  - id: dm-256-2022-allegato
+    title: "[ABROGATO dal 2/2/2026 - regime transitorio] Allegato al DM 23 giugno 2022 n. 256 - criteri CAM edilizia 2022"
+    type: allegato
+    url: https://www.gazzettaufficiale.it/eli/gu/2022/08/06/183/sg/pdf
+    accessed: 2026-05-01
+    sha256: 9193ce14c37f21431098cdc6ecb79fa626f5c6dcd8f6aa74b43e79e9a700ccd4
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-256-2022-allegato.pdf
+    md_path: references/fonti/dm-256-2022-allegato.md
+    excerpt_paths:
+      - references/estratti/dm-256-2022-allegato-criteri-2x.md
+      - references/estratti/dm-256-2022-allegato-criteri-premianti.md
+    notes: |
+      ABROGATO dal 2/2/2026 (art. 4 DM 24/11/2025), mantenuto per il regime
+      transitorio art. 2 DM 24/11/2025: sezioni 2 (progettazione), 3
+      (lavori), 4 (congiunto) del vecchio allegato, con la vecchia
+      classificazione NC/R1/R2/MS non piu' presente nel nuovo DM.
+      SHA256 verificato sul PDF ufficiale GU n. 183 del 6/8/2022.
+
+  - id: dm-correttivo-05-08-2024
+    title: "[ABROGATO dal 2/2/2026] DM MASE 5 agosto 2024 - Modificazioni al DM 256/2022 (GU n. 196 del 22/08/2024)"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/2024/08/22/24A04475/sg
+    accessed: 2026-07-12
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Rinvio strutturale: decreto correttivo del DM 256/2022, citato dalle
+      premesse e abrogato dall'art. 4 co. 2 del DM 24/11/2025. Nel regime
+      transitorio art. 2 il DM 256/2022 si applica "come modificato dal
+      decreto 5 agosto 2024". La skill lo cita esclusivamente nei termini
+      in cui e' richiamato dal DM 24/11/2025 e dalla circolare MASE
+      10/4/2026: il testo non e' stato scaricato ne' trascritto.
+
+  - id: mase-cam-vigenti
+    title: "MASE - pagina 'CAM vigenti' (decreto con allegati, modulistica, circolare)"
+    type: portale-ente
+    url: https://www.mase.gov.it/portale/cam-vigenti
+    accessed: 2026-07-12
+    sha256: null
+    license: public-domain-italian-law
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Pagina istituzionale richiamata dall'avvertenza in GU: pubblica il
+      decreto con gli allegati, il modello di Relazione CAM e la circolare.
+      Pagina HTML dinamica: nessun hash. Verificare periodicamente per
+      aggiornamenti di modulistica ed eventuali chiarimenti successivi.
+
+# Fonti secondarie da valutare per estensioni successive
+secondary_sources_to_evaluate:
+  - id: reg-ue-2024-3110
+    title: "Regolamento (UE) 2024/3110 - prodotti da costruzione (abroga Reg. 305/2011)"
+    url: https://eur-lex.europa.eu/eli/reg/2024/3110/oj
+    notes: |
+      Richiamato dall'art. 3 DM 24/11/2025 per la definizione di prodotto
+      da costruzione e dal cap. 2.4 dell'Allegato 1. Da scaricare e
+      trascrivere se la skill dovra' entrare nel merito delle dichiarazioni
+      di prodotto.
+  - id: allegato-i7-dlgs-36-2023
+    title: "Allegato I.7 al D.Lgs. 36/2023 - contenuti della progettazione (art. 22 co. 4 lett. o; art. 11 relazione di sostenibilita')"
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36
+    notes: |
+      Il criterio 2.1.1 collega la Relazione CAM alla Relazione di cui
+      all'art. 22 co. 4 lett. o) dell'allegato I.7; il modello MASE richiama
+      l'art. 11 (obiettivi climatici / relazione di sostenibilita'). Da
+      trascrivere se la skill dovra' generare anche quei documenti.

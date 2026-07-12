@@ -451,21 +451,24 @@ skills:
   - pums
   - dm-397-2017
   - mobilita
-- id: relazione-cam-dm256-2022
+- id: relazione-cam-dm-24-11-2025
   area: appalti-opere-pubbliche
-  title: Relazione CAM DM 256/2022
-  summary: 'Redazione e verifica della Relazione Tecnica dei Requisiti Ambientali CAM per servizi di progettazione e lavori
-    su edifici pubblici (NC / R1 / R2 / MS): identificazione criteri applicabili, struttura capitolare, check completezza
-    di una relazione esistente'
+  title: Relazione CAM di progetto (DM 24.11.2025)
+  summary: 'Redazione e verifica della Relazione CAM di progetto ex criterio 2.1.1 DM MASE 24/11/2025 (CAM edilizia in vigore
+    dal 2/2/2026): regime applicabile (nuovo DM vs transitorio), tabella di applicabilita'' e Schede Tipo del modello MASE,
+    check di relazioni esistenti'
   normative_refs:
-  - DM 23/6/2022 n. 256 (CAM edilizia)
+  - DM MASE 24/11/2025 (CAM edilizia, GU n. 281/2025)
+  - Circolare MASE 10/4/2026
+  - Modello MASE Relazione CAM 2/2/2026
   - D.Lgs. 36/2023 art. 57
-  version: 0.1.2-alpha
+  version: 1.0.0-alpha
   status: alpha
   tags:
   - cam
-  - dm-256-2022
+  - dm-24-11-2025
   - appalti-verdi
+  - gpp
 - id: relazione-geologica-geotecnica-ntc
   area: strutture-geotecnica
   title: Relazione geologica e geotecnica - NTC 2018 cap. 6

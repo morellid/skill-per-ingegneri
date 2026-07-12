@@ -1,0 +1,7 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Relazione CAM di progetto (DM 24.11.2025)
+short_description: Redazione e verifica della Relazione CAM di progetto ex criterio 2.1.1 DM MASE 24/11/2025 (nuovi CAM edilizia in vigore dal 2/2/2026, abrogano il DM 256/2022). Determina il regime applicabile, produce la tabella di applicabilita' e le Schede Tipo secondo il modello MASE, o verifica una relazione esistente.
+default_prompt: |
+  Devo preparare la Relazione CAM di progetto per una gara di lavori pubblici ai sensi del DM 24 novembre 2025. L'intervento e' una nuova costruzione di uffici comunali, bando previsto dopo il 2/2/2026. Guidami: prima verifica il regime applicabile, poi costruiamo la tabella di applicabilita' dei criteri e le schede.

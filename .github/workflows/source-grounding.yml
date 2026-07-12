@@ -182,6 +182,19 @@ jobs:
               | tr '\n' ' ' \
               | sed 's/[[:space:]]*$//')
 
+            # Una skill rinominata o rimossa compare nel diff con il vecchio
+            # nome ma la sua directory non esiste piu' nel checkout: va esclusa
+            # dalla verifica (le fonti vivono nella skill di destinazione).
+            EXISTING=""
+            for s in $CHANGED; do
+              if [ -d "skills/$s" ]; then
+                EXISTING="$EXISTING $s"
+              else
+                echo "Skill '$s' non piu' presente (rinominata o rimossa) - saltata."
+              fi
+            done
+            CHANGED=$(echo "$EXISTING" | sed 's/^[[:space:]]*//')
+
             if [ -z "$CHANGED" ]; then
               echo "Nessun file di skill modificato - verifica fonti saltata."
               exit 0
