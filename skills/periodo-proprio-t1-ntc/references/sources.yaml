@@ -1,0 +1,60 @@
+schema_version: 1
+skill: periodo-proprio-t1-ntc
+last_verified: 2026-07-12
+
+# Fonti normative per la stima del periodo proprio T1 (NTC 2018 par. 7.3.3.2
+# + Circolare 7/2019 par. C7.3.3.2).
+#
+# SHA256 calcolati localmente su PDF scaricati in not_in_repo/:
+#   sha256sum not_in_repo/ntc2018-gu42.pdf  -> dda1e397...
+#   sha256sum not_in_repo/circ-7-2019.pdf   -> f7c3b8d1...
+# (stessi file e stessi hash gia' censiti dalle skill spettro-risposta-ntc,
+#  predimensionamento-flessione-ca-ntc, cedimenti-edometrici-ntc)
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-12
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
+    excerpt_path: references/estratti/t1-formule-e-limiti.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8. File 372
+      pagine. Paragrafi rilevanti per questa skill (letti dal PDF,
+      trascritti in md_path):
+      - par. 7.3.3.2 (GU pagg. 219-220): analisi lineare statica;
+        condizioni T1 <= 2,5*TC o TD + regolarita' in altezza; stima
+        T1 = 2*sqrt(d) [7.3.6] per costruzioni <= 40 m con massa
+        approssimativamente uniforme; forze [7.3.7] con
+        Fh = Sd(T1)*W*lambda/g e lambda = 0,85/1,0
+      - par. 2.5.3: combinazione delle masse gravitazionali [2.5.7]
+        (G1 + G2 + somma psi_2j*Qkj), richiamata dalla [7.3.6]
+      NOTA: il par. 7.3.3.2 delle NTC 2018 NON contiene la formula
+      C1*H^(3/4) (presente nella previgente NTC 2008): quella formula e'
+      oggi nella Circolare 7/2019 come [C7.3.2].
+
+  - id: circ-7-2019-mit
+    title: "Circolare 21 gennaio 2019 n. 7 C.S.LL.PP. - Istruzioni per l'applicazione delle NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+    accessed: 2026-07-12
+    sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
+    license: public-domain
+    binary_path: not_in_repo/circ-7-2019.pdf
+    md_path: references/fonti/circ-7-2019-mit.md
+    excerpt_path: references/estratti/t1-formule-e-limiti.md
+    notes: |
+      Suppl. Ord. n. 5 alla GU n. 35 dell'11/02/2019. File 348 pagine.
+      Sezione rilevante per questa skill: par. C7.3.3.2 (GU pag. 204) con
+      la formula semplificata T1 = C1*H^(3/4) [C7.3.2], i coefficienti
+      C1 = 0,085 (telaio acciaio o legno), 0,075 (telaio c.a.), 0,050
+      (muratura o qualsiasi altro tipo), la gerarchia rispetto alla
+      [7.3.6] ("piu' affidabile") e la nota 9 (analisi lineare statica
+      come dinamica semplificata; aliquota lambda di massa partecipante).
+      ATTENZIONE: le pagine del capitolo C7 nel PDF della GU sono
+      scansioni senza layer testuale; la trascrizione in md_path e' stata
+      effettuata dalla lettura visiva della pagina 204 (pag. 208 del file).
