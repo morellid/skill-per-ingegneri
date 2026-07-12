@@ -1,9 +1,36 @@
-# Changelog - relazione-cam-dm256-2022
+# Changelog - relazione-cam-dm-24-11-2025 (gia' relazione-cam-dm256-2022)
 
 Il formato e' basato su [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.0-alpha] - 2026-07-12
+
+### Aggiornamento normativo maggiore (closes #195)
+
+**Trigger**: il DM MASE 24 novembre 2025 (GU n. 281 del 3/12/2025, in vigore dal 2/2/2026) ha abrogato e sostituito il DM 23/6/2022 n. 256 e il correttivo DM 5/8/2024 (art. 4). Skill rinominata da `relazione-cam-dm256-2022` a `relazione-cam-dm-24-11-2025`.
+
+### Added
+- Nuove fonti scaricate, hashate e trascritte (Regola zero):
+  - GU n. 281/2025 con articolato DM 24/11/2025 SHA256: d7372a1e2e6e06c5418fcbfc5251dbd64f0b63e82216b15fbbb9366434aeecad -> `references/fonti/dm-cam-24-11-2025-articolato.md` (artt. 1-4 integrali + avvertenza)
+  - Allegato 1 (PDF MASE, 123 pp.) SHA256: 24b50d2b277d55afb75b10564c80fbeedd82b0f0c29742775110c50622a6265c -> `references/fonti/dm-cam-24-11-2025-allegato-1.md` (criteri 2.1.1 e 3.1.1 integrali, par. 1.3.5, intestazioni capitoli con regole di applicabilita', elenco completo criteri)
+  - Circolare MASE 10/4/2026 SHA256: ef651b7a38083e35ccdcf05492af9aa96dbc92daa39967dde17e83e1b837bff5 -> `references/fonti/circolare-mase-10-04-2026.md` (trascrizione parr. A-C)
+  - Modello MASE Relazione CAM vers. 02/02/2026 SHA256: 405a928522ee75ce0f535070aa5d978f285fa2f0cb2fd05bb65f9396299c2d11 -> `references/fonti/modello-relazione-cam-2026.md`
+- Nuovi estratti: `dm-cam-2025-ambito-transitorio.md` (entrata in vigore, ambito, transitorio art. 2 + circolare), `dm-cam-2025-relazione-cam-struttura.md` (criterio 2.1.1, modello MASE, applicabilita' per capitolo/criterio)
+
+### Changed
+- SKILL.md riscritto sul DM 24/11/2025: nuovo name/title/summary/normative_refs; routing e processo aggiornati (verifica del regime come primo passo)
+- `tasks/identifica-criteri-applicabili.md`: eliminata la classificazione NC/R1/R2/MS (non esiste piu' nel nuovo DM); nuovo flusso regime -> tipologia ex art. 3 DPR 380/2001 -> applicabilita' per capitolo -> applicabilita' per criterio -> Tabella 1 del modello MASE
+- `tasks/draft-relazione-cam.md`: riscritto sulla struttura del modello MASE (normativa/progetto/allegati, strategia ambientale con LCA e GWPtotal, Tabella 1, Scheda Tipo per criterio)
+- `tasks/check-relazione-cam.md`: riscritto (verifica del regime, check strutturale contro il modello, criteri, ammissibilita' dei mezzi di prova con divieto "certificati CAM" ex par. 1.3.5)
+- Esempi riscritti sul nuovo DM (conforme: appalto integrato nuova costruzione; non conforme: relazione generica con mezzo di prova vietato)
+- Estratti e fonte del DM 256/2022 marcati [STORICO - REGIME TRANSITORIO], mantenuti per il transitorio art. 2
+- `sources.yaml`: nuove fonti primarie con hash reali; voci DM 256/2022 marcate ABROGATO; `last_verified: 2026-07-12`
+- AGENTS.md, README.md, agents/openai.yaml aggiornati
+
+### Nota di conformita' (Regola zero)
+Tutto il contenuto normativo e' stato riscritto dopo la lettura dei PDF scaricati; i requisiti prestazionali puntuali dei singoli criteri NON sono riprodotti nella skill (non trascritti): i task rinviano esplicitamente al testo integrale del criterio nel PDF ufficiale con segnaposto, senza inventare soglie.
 
 ## [0.1.2-alpha] - 2026-05-11
 

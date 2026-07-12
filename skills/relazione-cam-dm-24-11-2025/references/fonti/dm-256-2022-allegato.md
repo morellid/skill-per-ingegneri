@@ -1,5 +1,14 @@
 # Fonte: Allegato al DM 23 giugno 2022 n. 256 - CAM Edilizia
 
+> [STORICO - REGIME TRANSITORIO] Il DM 23/6/2022 n. 256 (come modificato dal
+> DM correttivo 5/8/2024) e' ABROGATO dal 2 febbraio 2026 dall'art. 4 del DM
+> MASE 24 novembre 2025 (GU n. 281 del 3/12/2025). Resta applicabile solo nel
+> regime transitorio dell'art. 2 DM 24/11/2025 (PFTE o progetto esecutivo
+> validato in conformita' al DM 256/2022, con bando/avviso entro tre mesi
+> dalla validazione - vedi estratto `dm-cam-2025-ambito-transitorio.md` e
+> circolare MASE 10/4/2026). Per tutte le altre procedure usare i criteri del
+> DM 24/11/2025.
+
 **Titolo**: Criteri Ambientali Minimi per l'affidamento del servizio di progettazione ed esecuzione dei lavori di interventi edilizi (Allegato al DM 23/06/2022 n. 256, GU n. 183 del 06/08/2022)
 **SHA256 PDF**: 5b1dd184996add6ba529e360ac868a3a73023576feca5764a106d6e7f11e92a5
 **File**: not_in_repo/dm-256-2022-allegato.pdf
