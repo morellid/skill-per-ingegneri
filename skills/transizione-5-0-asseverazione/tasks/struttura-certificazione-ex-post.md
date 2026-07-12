@@ -2,6 +2,8 @@
 
 Produce la **bozza testuale** della Certificazione Ex Post (Allegato X della circolare MIMIT 25877/2024) e della relativa **Relazione Tecnica** (Allegato XI), conforme al modello vincolante per la comunicazione di completamento sul portale TR5 GSE entro il 28 febbraio 2026.
 
+> **NOTA quadro 2026**: il termine del 28/2/2026 e' decorso. Per le pratiche gia' trasmesse e giudicate tecnicamente ammissibili, il credito riconosciuto e' quello dell'art. 8 DL 38/2026 come modificato dal DL 42/2026 (89,77% del richiesto, limite 1.302,3 mln EUR; ricevute GSE dal 29/4/2026, F24 codice tributo 7079 entro il 31/12/2026 - avviso MIMIT 29/4/2026). La certificazione ex post e la Relazione Tecnica restano la **base documentale dei controlli** (art. 8 co. 3 DL 38/2026) e vanno conservate con perizie, fatture e DDT; le variazioni rilevanti nel quinquennio vanno comunicate al GSE. Questo task resta quindi utile per verifiche di coerenza, integrazioni richieste dal GSE e difesa in sede di controllo. Vedi [`../references/estratti/dl-38-42-2026-quadro-credito.md`](../references/estratti/dl-38-42-2026-quadro-credito.md).
+
 ## Obiettivo
 
 Restituire all'utente:

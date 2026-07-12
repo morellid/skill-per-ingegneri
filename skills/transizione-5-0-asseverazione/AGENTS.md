@@ -63,6 +63,12 @@ Quando l'agent produce output, **cita sempre l'articolo preciso**. Riferimenti p
 - **Art. 18 DM**: DNSH come condizione di accesso
 - **Art. 19-20 DM**: vigilanza e controlli (5 anni di conservazione)
 
+### DL 38/2026 art. 8 (mod. DL 42/2026) + avviso MIMIT 29/4/2026
+- **Art. 8 co. 1 DL 38/2026 (testo sostituito dal DL 42/2026)**: credito riconosciuto = 89,77% del richiesto (beni A/B + formazione), limite 1.302,3 mln EUR 2026
+- **Art. 8 co. 3 DL 38/2026**: F24 entro 31/12/2026 (codice tributo 7079 da avviso MIMIT); art. 38 DL 19/2024 e DM 24/7/2024 applicabili in quanto compatibili anche ai fini dei controlli
+- **Art. 8 co. 3-bis DL 38/2026**: contributo separato FER/accumulo/spese di certificazione (decreto MIMIT attuativo non ancora pubblicato)
+- Estratto di riferimento: `references/estratti/dl-38-42-2026-quadro-credito.md`
+
 ### Circolare MIMIT 25877/2024
 - **Cap. 1**: tabella aliquote (con esempi)
 - **Cap. 2.1**: definizioni operative struttura produttiva e processo interessato (esempi 1-4 con figure 1-17)

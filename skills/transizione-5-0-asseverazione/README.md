@@ -1,9 +1,9 @@
 # Transizione 5.0 - Asseverazione tecnica EGE/ESCO/ingegnere/perito
 
-> Versione: 0.1.0-alpha
+> Versione: 0.3.0
 > Stato: in sviluppo (Livello 1 - autore-driven, fonti pubbliche)
 
-Skill AI di supporto alla redazione e verifica della **certificazione tecnica ex ante ed ex post** richiesta dal Piano Transizione 5.0 (DL 19/2024 art. 38, DM MIMIT-MEF 24 luglio 2024, circolare operativa MIMIT 25877/2024).
+Skill AI di supporto alla redazione e verifica della **certificazione tecnica ex ante ed ex post** richiesta dal Piano Transizione 5.0 (DL 19/2024 art. 38, DM MIMIT-MEF 24 luglio 2024, circolare operativa MIMIT 25877/2024), aggiornata al **quadro 2026 del riconoscimento del credito**: DL 38/2026 art. 8 come modificato dal DL 42/2026 (credito pari all'89,77% del richiesto nel limite di 1.302,3 mln EUR, compensazione F24 entro il 31/12/2026 con codice tributo 7079) e avviso MIMIT 29/4/2026.
 
 ## Target
 
@@ -48,6 +48,8 @@ Dettaglio in [`references/sources.yaml`](references/sources.yaml). Fonti primari
 - **DM MIMIT-MEF 24 luglio 2024** - decreto attuativo (GU n. 183 del 06/08/2024, codice 24A04160)
 - **Circolare operativa MIMIT 16 agosto 2024 prot. 25877** - chiarimenti tecnici e modelli vincolanti delle certificazioni
 - **FAQ MIMIT** - aggiornamento 10 aprile 2025 (versione vigente al `last_verified`)
+- **DL 27 marzo 2026 n. 38** art. 8 (GU n. 72 del 27/3/2026) come modificato dal **DL 3 aprile 2026 n. 42** art. 1 (GU n. 78 del 3/4/2026) - riconoscimento del credito alle pratiche tecnicamente ammissibili
+- **Avviso MIMIT 29 aprile 2026** - ricevute di conferma, codice tributo 7079, obblighi dei beneficiari
 - **Circolare MISE 18 dicembre 2014** - coefficienti di conversione in tep ex art. 19 L. 10/1991
 
 Fonti di rinvio:
@@ -66,7 +68,8 @@ Fonti di rinvio:
 - La skill **non sostituisce il sopralluogo** presso la struttura produttiva (espressamente richiesto dai modelli Allegati VIII / X).
 - La skill **non valida l'indipendenza** del certificatore (verifica del MIMIT/GSE in sede di vigilanza).
 - La skill **non interagisce con il portale TR5 GSE**: il caricamento e' adempimento separato.
-- La skill **non aggiorna automaticamente** coefficienti tep, aliquote, soglie a fronte di modifiche normative successive (es. L. 207/2024 e successivi DM correttivi). Verificare `last_verified` di `sources.yaml`.
+- La skill **non aggiorna automaticamente** coefficienti tep, aliquote, soglie a fronte di modifiche normative successive (es. leggi di conversione dei DL 38/2026 e 42/2026, decreto MIMIT sul contributo art. 8 co. 3-bis, decreto attuativo del "Nuovo Piano Transizione 5.0"). Verificare `last_verified` di `sources.yaml`.
+- La skill **non calcola il credito riconosciuto** ex art. 8 DL 38/2026 (89,77% del richiesto): fa fede la ricevuta di conferma GSE (avviso MIMIT 29/4/2026); la compensazione F24 e' adempimento del consulente fiscale.
 
 **Ogni output e' supporto al valutatore indipendente, non sostituzione.** Il rischio penale (artt. 359, 481 c.p. + art. 76 DPR 445/2000) e civile resta in capo al certificatore firmatario.
 

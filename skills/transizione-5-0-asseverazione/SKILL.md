@@ -1,6 +1,6 @@
 ---
 name: transizione-5-0-asseverazione
-description: Supporta la redazione e la verifica delle certificazioni tecniche (ex ante ed ex post) richieste dal Piano Transizione 5.0 ai sensi dell'art. 38 DL 19/2024 (convertito da L. 56/2024) e del DM MIMIT-MEF 24 luglio 2024. Fornisce inquadramento dell'ammissibilita' del progetto, calcolo strutturato della riduzione dei consumi energetici (soglie >=3% struttura produttiva o >=5% processo interessato) con conversione in tep, generazione delle bozze testuali della Certificazione Ex Ante (Allegato VIII) e Certificazione Ex Post (Allegato X) e delle relative Relazioni Tecniche (Allegati IX e XI), verifica della coerenza ex ante / ex post per i controlli GSE. Use when an EGE (UNI CEI 11339), an ESCo (UNI CEI 11352), an ingegnere iscritto all'albo (sez. A o B) o un perito industriale qualificato deve predisporre o verificare l'asseverazione tecnica per il credito d'imposta Transizione 5.0, sia in fase di prenotazione (comunicazione preventiva) sia in fase di completamento (entro 28 febbraio 2026).
+description: Supporta la redazione e la verifica delle certificazioni tecniche (ex ante ed ex post) richieste dal Piano Transizione 5.0 ai sensi dell'art. 38 DL 19/2024 (convertito da L. 56/2024) e del DM MIMIT-MEF 24 luglio 2024, aggiornata al quadro 2026 del riconoscimento del credito (DL 38/2026 art. 8 come modificato dal DL 42/2026 - credito pari all'89,77% del richiesto nel limite di 1.302,3 mln EUR, F24 entro 31/12/2026, codice tributo 7079 - e avviso MIMIT 29/4/2026). Fornisce inquadramento dell'ammissibilita' del progetto, calcolo strutturato della riduzione dei consumi energetici (soglie >=3% struttura produttiva o >=5% processo interessato) con conversione in tep, generazione delle bozze testuali della Certificazione Ex Ante (Allegato VIII) e Certificazione Ex Post (Allegato X) e delle relative Relazioni Tecniche (Allegati IX e XI), verifica della coerenza ex ante / ex post per i controlli GSE. Use when an EGE (UNI CEI 11339), an ESCo (UNI CEI 11352), an ingegnere iscritto all'albo (sez. A o B) o un perito industriale qualificato deve predisporre, verificare o difendere in sede di controllo l'asseverazione tecnica per il credito d'imposta Transizione 5.0.
 license: MIT
 area: energia-incentivi
 title: "Transizione 5.0 - Asseverazione tecnica"
@@ -9,7 +9,8 @@ normative_refs:
   - "DL 19/2024 art. 38"
   - "DM MIMIT-MEF 24/7/2024"
   - "Circolare MIMIT 25877/2024"
-version: 0.2.0
+  - "DL 38/2026 art. 8 (mod. DL 42/2026)"
+version: 0.3.0
 status: alpha
 tags:
   - transizione-5-0
@@ -26,7 +27,7 @@ Usare quando un soggetto qualificato per il rilascio della certificazione tecnic
 - **Verificare l'ammissibilita'** di un progetto di innovazione al credito d'imposta Transizione 5.0 (ambito soggettivo, oggettivo, DNSH, attivita' escluse, scadenze).
 - **Strutturare il calcolo della riduzione dei consumi energetici** della struttura produttiva (soglia minima 3%) o del processo interessato (soglia minima 5%), con baseline ex ante, normalizzazione, scenario controfattuale dove richiesto, conversione in tep secondo la circolare MISE 18/12/2014.
 - **Predisporre la bozza della Certificazione Ex Ante** (Allegato VIII della circolare MIMIT 25877/2024) per la comunicazione preventiva al GSE.
-- **Predisporre la bozza della Certificazione Ex Post** (Allegato X della circolare MIMIT 25877/2024) per la comunicazione di completamento al GSE entro il 28 febbraio 2026.
+- **Predisporre la bozza della Certificazione Ex Post** (Allegato X della circolare MIMIT 25877/2024) per la comunicazione di completamento al GSE (termine ordinario 28 febbraio 2026, ormai decorso: per le pratiche gia' trasmesse la certificazione resta la base documentale dei controlli).
 - **Strutturare la Relazione Tecnica** (Allegati IX ed XI) con dati registrati, variabili operative, indicatori di prestazione, algoritmo di calcolo dei risparmi, scenario controfattuale, DNSH.
 - **Verificare la coerenza fra ex ante e ex post** in vista dei controlli GSE (art. 20 co. 2 lett. b DM 24/7/2024).
 
@@ -44,7 +45,7 @@ Usare quando un soggetto qualificato per il rilascio della certificazione tecnic
 
 Questa skill e' uno strumento di supporto alla **redazione e verifica della certificazione tecnica** ex ante/ex post del Piano Transizione 5.0. **Non sostituisce il giudizio professionale del valutatore indipendente firmatario.** L'utilizzo improprio degli output e' responsabilita' esclusiva dell'utente.
 
-> **ATTENZIONE - vigenza normativa**: la versione 0.1.0-alpha della skill e' costruita sul testo del DL 19/2024 + DM 24/7/2024 + circolare MIMIT 25877/2024 + FAQ MIMIT 10/4/2025. La **L. 207/2024 (Bilancio 2025) art. 1 co. 427-429** ha modificato il Piano Transizione 5.0 (semplificazioni procedurali, perimetro temporale, **possibili modifiche ad aliquote e fasce**). Eventuali DM correttivi successivi e FAQ MIMIT post 10/4/2025 possono ulteriormente modificare aliquote, soglie, perimetro. **Prima di applicare la skill su un caso reale verificare la vigenza** del set normativo consultato (`last_verified` di `references/sources.yaml`). In caso di disallineamento, **prevale il testo vigente** alla data dell'asseverazione.
+> **ATTENZIONE - quadro 2026 del riconoscimento del credito**: le finestre operative del Piano (completamento investimenti entro il 31/12/2025, comunicazione di completamento entro il 28/2/2026) sono **chiuse**. Il **DL 27/3/2026 n. 38 art. 8**, come sostituito dal **DL 3/4/2026 n. 42 art. 1**, riconosce alle imprese con pratiche giudicate **tecnicamente ammissibili dal GSE** un credito d'imposta pari all'**89,77%** dell'ammontare richiesto (beni allegati A/B L. 232/2016 + spese di formazione), nel limite complessivo di **1.302,3 milioni di euro** per il 2026, utilizzabile in compensazione **F24 entro il 31/12/2026** (codice tributo **7079**, avviso MIMIT 29/4/2026). Il **co. 3-bis** introduce un contributo separato per l'autoproduzione FER con accumulo e per le **spese di certificazione** (modalita' di erogazione demandate a decreto MIMIT non ancora pubblicato). Per tutto quanto non previsto dall'art. 8 restano applicabili, in quanto compatibili, l'art. 38 DL 19/2024 e il DM 24/7/2024 **anche ai fini dei controlli** (art. 8 co. 3): le certificazioni ex ante/ex post restano quindi la base documentale della vigilanza GSE/MIMIT. I due DL sono in corso di conversione in legge e il decreto attuativo dell'annunciato "Nuovo Piano Transizione 5.0" non risulta pubblicato in GU: **prima di applicare la skill su un caso reale verificare la vigenza** del set normativo (`last_verified` di `references/sources.yaml`). In caso di disallineamento, **prevale il testo vigente** alla data dell'asseverazione. Dettaglio in [`references/estratti/dl-38-42-2026-quadro-credito.md`](references/estratti/dl-38-42-2026-quadro-credito.md).
 
 La certificazione tecnica del Piano Transizione 5.0 e' resa ai sensi degli **artt. 46 e segg. del DPR 445/2000** e degli **artt. 359 e 481 del codice penale**. Il certificatore agisce in qualita' di **persona esercente un servizio di pubblica necessita'**: false attestazioni o mendaci dichiarazioni espongono a **responsabilita' penale aggravata** (art. 76 DPR 445/2000) oltre che a responsabilita' civile verso lo Stato e l'impresa beneficiaria, perdita dell'abilitazione al rilascio (art. 19 DM 24/7/2024) e revoca del beneficio.
 
@@ -82,6 +83,8 @@ Riferimenti completi in [`references/sources.yaml`](references/sources.yaml). Fo
 - **DM MIMIT-MEF 24 luglio 2024** - decreto attuativo (GU n. 183 del 06/08/2024, codice 24A04160)
 - **Circolare operativa MIMIT 16 agosto 2024 prot. 25877** - chiarimenti tecnici e modelli vincolanti delle certificazioni (Allegati VIII, IX, X, XI)
 - **FAQ MIMIT** - aggiornamento 10 aprile 2025 (versione vigente)
+- **DL 27 marzo 2026 n. 38** art. 8 (GU n. 72 del 27/3/2026), come modificato dal **DL 3 aprile 2026 n. 42** art. 1 (GU n. 78 del 3/4/2026) - riconoscimento del credito alle pratiche tecnicamente ammissibili (89,77%, limite 1.302,3 mln EUR, contributo co. 3-bis)
+- **Avviso MIMIT 29 aprile 2026** - ricevute di conferma del credito, codice tributo 7079, obblighi dei beneficiari
 - **GSE - Portale Transizione 5.0** - Regole operative + Manuale utente
 - **Circolare MISE 18 dicembre 2014** - coefficienti di conversione in tep ex art. 19 L. 10/1991
 
@@ -100,6 +103,7 @@ Estratti testuali in [`references/estratti/`](references/estratti/):
 - [`circolare-mimit-modelli-certificazioni.md`](references/estratti/circolare-mimit-modelli-certificazioni.md) - modelli Allegati VIII, IX, X, XI
 - [`faq-mimit-soggetti-certificatori.md`](references/estratti/faq-mimit-soggetti-certificatori.md) - FAQ MIMIT chiave
 - [`circolare-mise-2014-tep.md`](references/estratti/circolare-mise-2014-tep.md) - coefficienti di conversione in tep
+- [`dl-38-42-2026-quadro-credito.md`](references/estratti/dl-38-42-2026-quadro-credito.md) - quadro 2026 del riconoscimento del credito (DL 38/2026 + DL 42/2026 + avviso MIMIT 29/4/2026)
 
 ## Limiti
 
@@ -111,7 +115,9 @@ Cosa questa skill NON fa:
 - Non sostituisce il **sopralluogo fisico** presso la struttura produttiva, espressamente richiesto dai modelli di certificazione (Allegato VIII e X).
 - Non valuta l'**adeguatezza tecnica** delle scelte progettuali, dell'idoneita' delle macchine 4.0 alle specifiche dell'allegato A/B L. 232/2016 (requisito di interconnessione, capacita' di scambio dati con ERP, etc.).
 - Non riproduce il **testo completo** delle norme UNI CEI 11339 e 11352 (proprietarie a pagamento). Cita solo l'inquadramento normativo che richiede tali certificazioni.
-- Non aggiorna automaticamente i **coefficienti di conversione tep**, le aliquote, le soglie a fronte di modifiche normative successive (es. L. 207/2024 Bilancio 2025 ed eventuali DM correttivi). Verificare `last_verified` di `sources.yaml`.
+- Non aggiorna automaticamente i **coefficienti di conversione tep**, le aliquote, le soglie a fronte di modifiche normative successive (es. leggi di conversione dei DL 38/2026 e 42/2026, decreto MIMIT sul contributo co. 3-bis, decreto attuativo del "Nuovo Piano Transizione 5.0"). Verificare `last_verified` di `sources.yaml`.
+- Non calcola il **credito d'imposta riconosciuto** ai sensi dell'art. 8 DL 38/2026 (89,77% del richiesto): l'importo effettivo e' quello comunicato dal GSE con la ricevuta di conferma (avviso MIMIT 29/4/2026); la compensazione F24 (codice tributo 7079, entro 31/12/2026) e' adempimento del consulente fiscale.
+- Non gestisce l'istanza per il **contributo art. 8 co. 3-bis DL 38/2026** (autoproduzione FER e spese di certificazione): le modalita' di erogazione sono demandate a un decreto MIMIT non ancora pubblicato alla data di `last_verified`.
 - Non gestisce le **interazioni operative con il portale TR5 GSE** (registrazione, SPID, upload documenti, codice TR5-XXXXX): rinvio al Manuale Utente GSE.
 - Non valuta il **cumulo con altre agevolazioni** (es. Industria 4.0, ZES, contributi regionali): adempimento del consulente fiscale.
 - Non interpreta le **modifiche sostanziali al progetto** (FAQ MIMIT 2.10): in tal caso l'impresa deve rinunciare e ripresentare. La skill segnala l'incompatibilita' ma non rinegozia il progetto.

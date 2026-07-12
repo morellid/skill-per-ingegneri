@@ -2,6 +2,8 @@
 
 Inquadra il progetto di innovazione rispetto ai requisiti di ammissibilita' del Piano Transizione 5.0 (art. 38 DL 19/2024, DM 24/7/2024, circolare MIMIT 25877/2024). Restituisce un report strutturato di **conformita' / non conformita' / da-valutare** per ciascun requisito, con citazione precisa di articolo e comma e rinvio al certificatore.
 
+> **NOTA quadro 2026**: le finestre del Piano (completamento entro 31/12/2025, comunicazione di completamento entro 28/2/2026) sono chiuse. Questo task resta utile per: (a) ricostruire l'ammissibilita' di una pratica gia' trasmessa, in vista dei controlli GSE/MIMIT (art. 8 co. 3 DL 38/2026: art. 38 DL 19/2024 e DM 24/7/2024 restano applicabili "anche ai fini delle attivita' di controllo"); (b) verificare i presupposti del credito riconosciuto ex art. 8 DL 38/2026 (89,77% del richiesto, avviso MIMIT 29/4/2026). Non usarlo per prospettare nuove domande: l'eventuale "Nuovo Piano Transizione 5.0" non risulta pubblicato in GU alla data di `last_verified`. Vedi [`../references/estratti/dl-38-42-2026-quadro-credito.md`](../references/estratti/dl-38-42-2026-quadro-credito.md).
+
 ## Obiettivo
 
 Restituire all'utente:

@@ -7,6 +7,21 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-12
+
+### Aggiornamento normativo (closes #196)
+- **Trigger**: DL 27/3/2026 n. 38 art. 8 (GU n. 72 del 27/3/2026) come modificato dal DL 3/4/2026 n. 42 art. 1 (GU n. 78 del 3/4/2026) + avviso MIMIT 29/4/2026 "Pratiche tecnicamente ammissibili".
+- Scaricate, hashate e lette le nuove fonti:
+  - GU n. 72/2026 con DL 38/2026 SHA256: 1453625e5dcff27685791d0637d303863543996c04f86da354d90c1c06b4a80c
+  - GU n. 78/2026 con DL 42/2026 SHA256: 9f512d7a8025066d6b1682090178b9f4bfff4c72e116c82a6b1cb58d33b6e051
+  - Avviso MIMIT 29/4/2026 (HTML dinamico, hash non riproducibile: trascrizione committata, voce senza hash come le altre pagine di portale)
+- Nuove trascrizioni in `references/fonti/`: `dl-38-2026-art-8.md` (art. 8 testo originario + artt. 18-19), `dl-42-2026-art-1-modifiche-dl-38.md` (testo vigente art. 8 co. 1, co. 3-bis, co. 4, co. 4-bis), `avviso-mimit-29-04-2026.md`
+- Nuovo estratto `references/estratti/dl-38-42-2026-quadro-credito.md`: credito riconosciuto pari all'89,77% del richiesto nel limite di 1.302,3 mln EUR per il 2026, ricevute GSE dal 29/4/2026, compensazione F24 entro 31/12/2026 con codice tributo 7079, contributo co. 3-bis per FER e spese di certificazione, obblighi di conservazione quinquennale
+- SKILL.md: descrizione, blocco vigenza normativa, fonti, limiti aggiornati al quadro 2026; nuova normative_ref "DL 38/2026 art. 8 (mod. DL 42/2026)"
+- `tasks/verifica-ammissibilita.md` e `tasks/struttura-certificazione-ex-post.md`: nota sul quadro 2026 (finestre chiuse, uso del task per controlli e coerenza documentale)
+- `sources.yaml`: aggiunte 3 fonti primarie + rinvio strutturale a L. 199/2025 art. 1 co. 770; fonti secondarie da monitorare (decreto MIMIT contributo co. 3-bis, decreto attuativo "Nuovo Piano Transizione 5.0", leggi di conversione); `last_verified: 2026-07-12`
+- Il contenuto tecnico del calcolo dei risparmi (DM 24/7/2024 + circolare 25877/2024) resta invariato: l'art. 8 co. 3 DL 38/2026 lo richiama espressamente "anche ai fini delle attivita' di controllo"
+
 ## [0.2.0] - 2026-05-10
 
 ### Fixed (source-grounding remediation - closes #112)
