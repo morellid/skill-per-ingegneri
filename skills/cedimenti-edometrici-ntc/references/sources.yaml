@@ -1,18 +1,53 @@
 schema_version: 1
 skill: cedimenti-edometrici-ntc
-last_verified: 2026-05-11
+last_verified: 2026-07-12
 
 sources:
   - id: ntc2018-dm-17-01-2018
     title: "DM 17 gennaio 2018 - NTC 2018"
     type: decreto
     url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
-    accessed: 2026-05-11
+    accessed: 2026-07-12
     sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
     license: public-domain-italian-law
     binary_path: not_in_repo/ntc2018-gu42.pdf
     md_path: references/fonti/ntc2018-dm-17-01-2018.md
     excerpt_path: references/estratti/ntc2018-par-6-2.md
+    notes: |
+      Sezioni trascritte nel md_path: par. 6.2.4.3 (verifiche SLE,
+      Ed <= Cd [6.2.7]) e cap. 12 "Riferimenti tecnici" (GU pag. 371:
+      "possono essere utilizzati anche altri codici internazionali; e'
+      responsabilita' del progettista garantire espressamente livelli di
+      sicurezza coerenti"). Il cap. 12 e' l'aggancio normativo per l'uso
+      della fonte fhwa-nhi-06-088 come formulazione di calcolo.
+
+  - id: fhwa-nhi-06-088
+    title: "FHWA NHI-06-088 - Soils and Foundations, Reference Manual Volume I (U.S. DOT - Federal Highway Administration, dicembre 2006)"
+    type: manuale-tecnico-governativo
+    url: https://www.fhwa.dot.gov/engineering/geotech/pubs/nhi06088.pdf
+    accessed: 2026-07-12
+    sha256: f970902490ea97b07225f0eea51402dfe4c4988229aab8a0f0336429357340b4
+    license: public-domain-us-government
+    binary_path: not_in_repo/fhwa-nhi-06-088.pdf
+    md_path: references/fonti/fhwa-nhi-06-088.md
+    excerpt_path: references/estratti/fhwa-consolidazione-primaria.md
+    notes: |
+      Manuale del corso NHI 132012, 462 pagine, testo selezionabile.
+      Opera del Governo federale USA: la Technical Report Documentation
+      Page riporta "No restrictions" alla voce distribuzione. SHA256
+      riproducibile (verificato con doppio download dall'URL ufficiale).
+      Sezioni trascritte nel md_path:
+        - par. 7.5.2 (pagg. 7-24/7-28): classificazione NC/OC/UC via
+          OCR = pc/po; eq. 7-2/7-3 (NC), 7-4/7-5 (OC con pf > pc),
+          7-6/7-7 (sottoconsolidato); indicazioni sui sublayer e sulla
+          combinazione delle equazioni per profili misti
+        - par. 5.4.6.1 (pag. 5-33): correlazioni per Cc (Table 5-5) con
+          l'avvertenza "should not be used for final design"
+      Ruolo: "altro codice internazionale" ex cap. 12 NTC 2018 per la
+      formulazione del cedimento di consolidazione primaria, che NTC e
+      Circolare non forniscono in forma chiusa. Il modulo
+      tasks/lib/cedimento_edometrico.py implementa le sole equazioni
+      trascritte (7-2, 7-4, 7-6) e rifiuta i casi non coperti.
 
   - id: circ-7-2019-mit
     title: "Circolare MIT n. 7 del 21/01/2019 - Istruzioni applicative NTC 2018"

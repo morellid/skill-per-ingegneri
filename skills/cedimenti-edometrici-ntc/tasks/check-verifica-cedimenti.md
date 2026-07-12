@@ -39,4 +39,4 @@ Controllare se la relazione o nota di calcolo esplicita gli elementi richiesti d
 
 ## Regola importante
 
-Se l'utente chiede di "calcolare" il cedimento con una formula non contenuta nelle fonti ufficiali lette, spiega che la skill remediata non lo fa e si limita al controllo documentale.
+Se l'utente chiede di "calcolare" il cedimento di consolidazione primaria, usa il task [`calcola-cedimento-edometrico.md`](calcola-cedimento-edometrico.md): il calcolo e' implementato con le equazioni del FHWA NHI-06-088 par. 7.5.2, fonte pubblica trascritta in `references/fonti/fhwa-nhi-06-088.md` e citata come "altro codice internazionale" ai sensi del cap. 12 NTC 2018. Formule diverse da quelle trascritte restano fuori ambito.

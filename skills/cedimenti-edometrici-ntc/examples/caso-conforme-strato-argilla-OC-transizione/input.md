@@ -29,8 +29,8 @@ Il calcolo strutturale per la fondazione fornisce un incremento medio di tension
 
 ## Cosa ci si attende
 
-Tensione finale sigma_f' = sigma_0' + Delta sigma' = 300 kPa: supera sigma_p' = 150 kPa, quindi il carico attraversa la preconsolidazione e si entra nel ramo NC. Il calcolo deve attivare il **ramo transizione** con due contributi:
-- ramo OC da 100 a 150 kPa (con Cr)
-- ramo NC da 150 a 300 kPa (con Cc)
+Tensione finale sigma_f' = sigma_0' + Delta sigma' = 300 kPa: supera sigma_p' = 150 kPa, quindi il carico attraversa la preconsolidazione. Il calcolo deve applicare l'**eq. [7-4] FHWA** (caso OC con pf > pc) con due contributi:
+- ramo di ricompressione da 100 a 150 kPa (con Cr)
+- ramo vergine da 150 a 300 kPa (con Cc)
 
-Cedimento atteso: dell'ordine di 100 mm, dominato dal contributo NC. epsilon medio ~ 5%, sotto la soglia di avvertenza del 10%.
+Cedimento atteso: 110,1 mm, dominato dal ramo vergine; epsilon medio ~ 5,5%.
