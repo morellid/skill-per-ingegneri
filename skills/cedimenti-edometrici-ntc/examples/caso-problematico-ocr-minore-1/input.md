@@ -8,14 +8,14 @@ Progettista presenta uno strato di argilla con i seguenti parametri (presumibilm
 - sigma_p' = 100 kPa (preconsolidazione dichiarata)
 - Delta sigma' = 50 kPa
 
-OCR = sigma_p / sigma_0 = 100/200 = **0.5 < 1**: **non fisicamente ammissibile**.
+OCR = sigma_p / sigma_0 = 100/200 = **0.5 < 1**: dato **sospetto**, da chiarire prima di calcolare.
 
-La preconsolidazione di un terreno e' la massima tensione che il terreno ha sopportato nella sua storia geologica. Non puo' essere inferiore alla tensione efficace attuale: se cosi' fosse, significherebbe che il terreno e' meno consolidato di quanto la storia tensionale richiede, condizione fisicamente impossibile per un terreno in equilibrio.
+La preconsolidazione e' la massima tensione efficace passata: un OCR < 1 significa o un errore nei dati, oppure un terreno **sottoconsolidato** (consolidazione ancora in corso sotto il carico esistente - FHWA 7.5.2.3), condizione reale ma da riconoscere e giustificare esplicitamente.
 
 Possibili cause dell'errore:
 - determinazione errata di sigma_p' dalla curva edometrica (metodo Casagrande / Janbu mal applicato);
 - errore di unita' di misura;
-- terreno sottoconsolidato (sigma_0' apparente > sigma_p' a causa di consolidazione ancora in corso, ma allora non e' valida la formulazione classica);
+- terreno sottoconsolidato (consolidazione ancora in corso: in tal caso serve la dichiarazione esplicita e si applica l'eq. [7-6] FHWA);
 - scambio fra colonne nello spreadsheet.
 
 ## Parametri (input modulo)
@@ -34,4 +34,4 @@ Possibili cause dell'errore:
 
 ## Cosa ci si attende
 
-La skill deve **rifiutare** il calcolo. Il modulo Python solleva `ValueError` con messaggio esplicito che cita "OCR < 1 non e' fisicamente ammissibile" e suggerisce di "verificare i dati edometrici". L'agent deve riportare il messaggio bloccante senza aggirarlo.
+La skill deve **rifiutare il calcolo di default**. Il modulo solleva `ValueError` citando "OCR < 1" con le due letture (dati errati / sottoconsolidazione reale) e indicando che solo la dichiarazione esplicita `--sottoconsolidato` abilita l'eq. [7-6]. L'agent deve riportare il messaggio bloccante senza aggirarlo e rimettere la decisione al progettista.

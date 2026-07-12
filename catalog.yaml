@@ -132,18 +132,20 @@ skills:
 - id: cedimenti-edometrici-ntc
   area: strutture-geotecnica
   title: Cedimenti edometrici - SLE NTC 2018 par. 6.2.4
-  summary: Controllo di completezza di una verifica dei cedimenti geotecnici (prestazioni attese, spostamenti compatibili,
-    metodo di interazione terreno-struttura, confronto SLE) - skill di supporto documentale che non sostituisce il calcolo
-    geotecnico
+  summary: 'Calcolo code-driven del cedimento di consolidazione primaria (FHWA NHI-06-088 par. 7.5.2, eq. 7-2/7-4/7-6, codice
+    internazionale ex cap. 12 NTC 2018) + verifica documentale della verifica SLE cedimenti (NTC 6.2.4.3): OCR, caso NC/OC/UC,
+    S in mm, casi non coperti rifiutati'
   normative_refs:
-  - NTC 2018
+  - NTC 2018 par. 6.2.4.3 + cap. 12
   - Circolare 7/2019
-  version: 0.1.1
+  - FHWA NHI-06-088 (2006) par. 7.5.2
+  version: 0.2.0
   status: alpha
   tags:
   - ntc-2018
   - geotecnica
   - cedimenti
+  - code-driven
 - id: cer-cacer-configurazione-gse
   area: energia-incentivi
   title: Configurazione CER/CACER e Qualifica GSE

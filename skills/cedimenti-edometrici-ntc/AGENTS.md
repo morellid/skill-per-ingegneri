@@ -4,63 +4,54 @@
 
 ## Dominio
 
-Skill code-driven per la stima del cedimento edometrico (compressione monodimensionale) di singolo strato omogeneo, ai fini delle verifiche agli stati limite di esercizio (SLE) di NTC 2018 par. 6.2.4. Riferimenti normativi: DM 17/01/2018 (NTC 2018) e Circolare MIT 21/01/2019 n. 7. Riferimento didattico/tecnico: meccanica dei terreni classica (Terzaghi 1925, Skempton 1944, Lancellotta "Geotecnica"). Target: ingegneri strutturisti e geotecnici italiani in fase di pre-dimensionamento.
+Calcolo code-driven del **cedimento di consolidazione primaria** (compressione monodimensionale, per strati/sublayer) e **verifica documentale** delle verifiche SLE sui cedimenti. Quadro normativo: NTC 2018 § 6.2.4.3 (Ed <= Cd [6.2.7]) + Circ. 7/2019 C6.2. Formulazione di calcolo: **FHWA NHI-06-088 par. 7.5.2**, usata come "altro codice internazionale" ai sensi del **cap. 12 NTC 2018**. Target: ingegneri geotecnici e strutturisti in fase preliminare.
 
 ## Fonti autoritative
 
-Catalogate in `references/sources.yaml`. Sintesi:
+Catalogate in `references/sources.yaml`:
 
-- **NTC 2018** (DM 17/01/2018) - id `ntc2018-dm-17-01-2018`, hash da calcolare al fetch
-- **Circ. 7/2019 MIT** (21/01/2019) - id `circ-7-2019-mit`, hash da calcolare al fetch
-- **Lancellotta R., "Geotecnica"** - id `lancellotta-geotecnica`, riferimento didattico (non incorporato; testo a pagamento)
+- **ntc2018-dm-17-01-2018**: NTC 2018 (hash reale) - trascrizioni § 6.2.4.3 + cap. 12 in `references/fonti/ntc2018-dm-17-01-2018.md`
+- **circ-7-2019-mit**: Circ. 7/2019 (hash reale) - `references/fonti/circ-7-2019-mit.md`
+- **fhwa-nhi-06-088**: FHWA NHI-06-088 (U.S. DOT 2006, pubblico dominio, "No restrictions", hash riproducibile) - trascrizioni parr. 7.5.2 e 5.4.6.1 in `references/fonti/fhwa-nhi-06-088.md`
 
-Estratti pertinenti in `references/estratti/`:
-- `ntc2018-par-6-2.md` - par. 6.2.2 e 6.2.4 (interazione terreno-fondazione, verifiche SLE - cedimenti)
-- `circ-7-2019-c-6-2.md` - C6.2 commento applicativo
-- `formulazione-edometrica-classica.md` - formulazione Terzaghi/Skempton (dominio pubblico tecnico)
+Estratti: `fhwa-consolidazione-primaria.md` (equazioni e limiti), `ntc2018-par-6-2.md`, `circ-7-2019-c-6-2.md`.
 
-## Articoli e punti chiave
+## Punti chiave (verificati sul testo)
 
-- **NTC par. 6.2.2** - analisi dell'interazione terreno-fondazione: il progettista sceglie il metodo di calcolo idoneo
-- **NTC par. 6.2.4** - verifiche SLE: cedimento ammissibile dichiarato dal progettista, confronto con cedimento calcolato
-- **Circ. 7/2019 par. C6.2** - commento applicativo, rinvio a metodi consolidati di letteratura
-- **Formulazione classica** - cedimento edometrico per singolo strato omogeneo:
-  - ramo OC (sigma_f' <= sigma_p'): Delta h = h0/(1+e0) * Cr * log10(sigma_f'/sigma_0')
-  - ramo NC (sigma_0' >= sigma_p'): Delta h = h0/(1+e0) * Cc * log10(sigma_f'/sigma_0')
-  - transizione (sigma_0' < sigma_p' < sigma_f'): Delta h = h0/(1+e0) * [Cr * log10(sigma_p'/sigma_0') + Cc * log10(sigma_f'/sigma_p')]
+- **OCR = pc/po** (FHWA 7.5.2): = 1 NC; > 1 OC; < 1 sottoconsolidato (condizione reale: consolidazione ancora in corso; se ignorata il cedimento totale e' sottostimato - 7.5.2.3)
+- **Eq. [7-2]** NC: Sc = somma( Cc/(1+e0) * H0 * log10(pf/p0) )
+- **Eq. [7-4]** OC, valida per **pf > pc**: termine Cr (ricompressione pc/p0) + termine Cc (vergine pf/pc)
+- **Eq. [7-6]** UC: entrambi i termini su Cc (consolidazione in corso p0/pc + incremento pf/p0)
+- **Sublayer** con tensioni al centro, spessori tipici 1,5-3 m; S totale = somma dei contributi (7.5.2.2)
+- **Correlazioni Cc** (Table 5-5): variabilita' fino a un fattore 5, "should not be used for final design" (5.4.6.1)
+- **Cap. 12 NTC**: "altri codici internazionali" ammessi per quanto non trattato dalla norma; responsabilita' del progettista sui livelli di sicurezza
 
 ## Convenzioni specifiche
 
 ### Cosa NON fare
 
-- **Non calcolare numeri "a mano" leggendo le formule dagli estratti.** Gli estratti sono materiale di citazione: ti servono per spiegare i passaggi, NON per riprodurre sigma_f, OCR, Delta h, epsilon in chat. L'unica fonte legittima dei numeri e' lo stdout di `tasks/lib/cedimenti.py`. Calcolare a mano introduce errore stocastico LLM e annulla la ragion d'essere code-driven della skill.
-- **Non inventare i parametri edometrici** (Cc, Cr, e0, sigma_p'): devono provenire dalla relazione geotecnica o da prove edometriche su campioni indisturbati. La skill non ha database di valori "tipici" perche' la dispersione tra terreni e' troppo elevata; suggerirli a memoria induce in errore il progettista.
-- **Non confondere sigma_p' (preconsolidazione, parametro del terreno) con sigma_f' (tensione finale dopo carico)**: sono concetti diversi. sigma_p' viene da prova edometrica (metodo Casagrande / Janbu); sigma_f' = sigma_0' + Delta sigma'.
-- **Non eseguire il calcolo per scarico** (Delta sigma' < 0): il modulo solleva ValueError. Per scarichi (rebound) la formula non si applica nello stesso modo; rinviare a metodo specifico.
-- **Non eseguire il calcolo per OCR < 1** (sigma_p' < sigma_0'): non e' fisicamente ammissibile (la preconsolidazione non puo' essere inferiore alla tensione attuale). Il modulo solleva ValueError; verificare con il progettista i parametri edometrici dichiarati.
-- **Non sommare cedimenti di strati diversi internamente**: la skill calcola SINGOLO strato. Per stratigrafie multilayer il progettista deve ripetere il calcolo per ogni strato e sommare i contributi.
-- **Non confondere cedimento totale con cedimento differenziale**: la skill stima il cedimento medio dello strato sotto carico. Differenziali e distorsioni angolari richiedono Delta sigma' puntuale (Boussinesq) e calcoli separati.
-- **Non confondere cedimento primario con cedimento secondario** (compressione secondaria, creep): la skill calcola solo il primario di consolidazione. Per il secondario serve Calpha e tempo, fuori scope.
-- **Non usare path relativi tipo `tasks/lib/cedimenti.py`** nei comandi Bash: usa sempre `${CLAUDE_SKILL_DIR}/tasks/lib/cedimenti.py` (Claude Code) o il path assoluto della skill installata.
+- **Non calcolare numeri "a mano"**: l'unica fonte legittima dei numeri e' lo stdout di `tasks/lib/cedimento_edometrico.py`.
+- **Non attribuire la formulazione alle NTC**: le NTC non contengono la formula; citarla sempre come FHWA NHI-06-088 par. 7.5.2, usata ex cap. 12 NTC 2018.
+- **Non calcolare il caso OC con sigma_f <= sigma_p**: le eq. 7-4/7-5 trascritte valgono per pf > pc; riportare il rifiuto del modulo, non inventare il ramo di sola ricompressione.
+- **Non aggirare il rifiuto su OCR < 1**: l'eq. [7-6] si applica solo dietro dichiarazione esplicita (`--sottoconsolidato`) di sottoconsolidazione reale, giustificata dal progettista.
+- **Non inventare i parametri edometrici** (Cc, Cr, e0, sigma_p'): vengono dalla relazione geotecnica / prove edometriche; le correlazioni Table 5-5 servono solo da sanity check ("should not be used for final design").
+- **Non confondere sigma_p' (preconsolidazione) con sigma_f' (= sigma_0' + delta_sigma')**.
+- **Non calcolare** delta_sigma' (diffusione tensioni), sigma_p' dalla curva (Table 7-6a), tempi di consolidazione (7.5.3), compressione secondaria (7.5.4), cedimenti differenziali.
 
 ### Cosa fare
 
-- **Citare sempre il riferimento normativo o didattico** per ogni passaggio (es. "ramo OC (sigma_f <= sigma_p) - formulazione classica Terzaghi/Skempton, applicabile per verifiche SLE NTC par. 6.2.4").
-- **Eseguire il modulo Python** per il calcolo, non riprodurre i numeri "a mano".
-- **Mostrare la struttura completa**: input (h0, e0, Cc, Cr, sigma_0', sigma_p', Delta sigma'), derivati (sigma_f', OCR, ramo), contributi (Delta h OC, Delta h NC), output (Delta h totale m e mm, epsilon), avvertenze.
-- **Concludere con rinvio al progettista geotecnico**: la skill stima il cedimento medio di un singolo strato. Per stratigrafie reali, cedimenti differenziali, tempi di consolidazione (Cv), il progettista deve usare metodi specifici. Il confronto con il cedimento ammissibile resta a carico del firmatario.
-- **Quando l'utente non e' sicuro su Cc / Cr / sigma_p'**: rinviare alla relazione geotecnica o a prove edometriche, NON suggerire valori a memoria.
-- **Quando epsilon > 10%**: la skill produce un'avvertenza. Comunicarla esplicitamente: per deformazioni elevate il metodo edometrico e' approssimato e va validato con prove specifiche.
+- **Eseguire sempre il modulo** e riportare integralmente le sue avvertenze.
+- **Citare per ogni strato l'equazione FHWA applicata** ([7-2]/[7-4]/[7-6], par. 7.5.2) e l'aggancio normativo (cap. 12 + § 6.2.4.3, confronto con Cd del progetto).
+- **Mostrare la struttura completa**: input per strato, OCR, caso, contributi dei termini, S in m e mm, epsilon media.
+- Per la verifica documentale usare `tasks/check-verifica-cedimenti.md`.
+- **Concludere con il rinvio al progettista firmatario** (il confronto col cedimento ammissibile Cd resta a suo carico).
 
 ## Validatori
 
-- (Da identificare) Validatore Livello 2: ingegnere geotecnico che esegua confronto vs casi pubblicati (Lancellotta esempi, Cestari, Holtz & Kovacs) o vs software geotecnico certificato (es. Plaxis, GeoStudio Sigma/W, Settle3D) su almeno 5 casi reali con copertura: terreni argillosi e limosi, OCR da 1 a 5, h0 da 1 a 10 m, Delta sigma' da 50 a 500 kPa.
+- (Da identificare) Validatore Livello 2: ingegnere geotecnico, confronto vs casi pubblicati o software geotecnico certificato su casi con copertura NC/OC/UC.
 
 ## Stato attuale
 
-- Versione: 0.1.0-alpha (vedi `CHANGELOG.md`)
-- Validazione: Livello 1 self-check OK (`./scripts/validate.sh cedimenti-edometrici-ntc`); test suite Python: 29/29 pass (5 classi: OCR, cedimento OC, cedimento NC, end-to-end con copertura ramo OC / NC / transizione + raccordo a sigma_p + avvertenza epsilon > 10%, monotonia in delta_sigma e h0, riproducibilita' valori expected-output.md del caso conforme, validazione input fuori dominio Cr > Cc / sigma_p < sigma_0 / scarichi / negativi / NaN; CLI con error handling). Livello 2 (vs casi pubblicati e software geotecnico) da completare prima del release stabile.
-- Task files:
-  - `tasks/calcola-cedimento.md`
-- Modulo di calcolo: `tasks/lib/cedimenti.py` + `tasks/lib/test_cedimenti.py`
-- Esempi: 1 conforme (`caso-conforme-strato-argilla-OC-transizione`) + 1 problematico (`caso-problematico-ocr-minore-1`)
+- Versione: 0.2.0 (reintroduzione del calcolatore su fonte pubblica FHWA - closes #32; vedi `CHANGELOG.md`)
+- Task files: `tasks/calcola-cedimento-edometrico.md` (+ modulo `tasks/lib/cedimento_edometrico.py`, 15 test verdi) e `tasks/check-verifica-cedimenti.md` (verifica documentale)
+- Esempi: 1 conforme (OC con transizione, 110,1 mm) + 1 problematico (OCR < 1 rifiutato di default)
