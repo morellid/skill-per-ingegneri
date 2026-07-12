@@ -17,7 +17,7 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
   - DL 38/2026 (GU n. 72 del 27/03/2026) SHA256: 1453625e5dcff27685791d0637d303863543996c04f86da354d90c1c06b4a80c
   - DL 42/2026 (GU n. 78 del 03/04/2026) SHA256: 9f512d7a8025066d6b1682090178b9f4bfff4c72e116c82a6b1cb58d33b6e051
   - L. 88/2026 (GU n. 117 del 22/05/2026, legge + testo coordinato) SHA256: 3c313567b4b93297da2d78414efbbfd6a68f18cdf71dea3c49feeedb1464e97c
-  - Avviso MIMIT 29/04/2026 (HTML) SHA256: 5998162c7cd8b868f5c5164295ca596da66bd5c25f249cca25ff1de96b735a62
+  - Avviso MIMIT 29/04/2026 (HTML dinamico, hash non riproducibile fra download: voce catalogata senza hash, trascrizione verbatim committata)
 - Nuovo estratto operativo references/estratti/dl-38-2026-credito-pratiche-ammissibili.md (catena normativa DL 38 -> DL 42 -> L. 88, profili per comma, obblighi dei beneficiari)
 - Fonte secondaria decreto-attuativo-iperammortamento-2026 catalogata in sources.yaml come fuori scope (non pubblicato in GU alla data di verifica)
 

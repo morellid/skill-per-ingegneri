@@ -335,9 +335,9 @@ sources:
     type: avviso-ministeriale
     url: https://www.mimit.gov.it/it/normativa/notifiche-e-avvisi/avviso-29-aprile-2026-piano-transizione-5-0-tecnicamente-ammissibili
     accessed: 2026-07-11
-    sha256: 5998162c7cd8b868f5c5164295ca596da66bd5c25f249cca25ff1de96b735a62
+    sha256: null
     license: public-domain-italian-law
-    binary_path: not_in_repo/avviso-mimit-29-04-2026.html
+    binary_path: null
     md_path: references/fonti/avviso-mimit-29-04-2026.md
     excerpt_paths:
       - references/estratti/dl-38-2026-credito-pratiche-ammissibili.md
@@ -350,9 +350,12 @@ sources:
       compensazione F24 entro il 31/12/2026 con codice tributo 7079.
       Elenca gli obblighi dei beneficiari (comunicazione variazioni al
       GSE nel quinquennio, conservazione documentale, comunicazione
-      cessioni/delocalizzazioni e mancato riscatto leasing). L'hash e'
-      calcolato sulla pagina HTML scaricata: pagina web soggetta a
-      possibili modifiche, verificare la versione online.
+      cessioni/delocalizzazioni e mancato riscatto leasing). Pagina HTML
+      istituzionale con markup dinamico: lo SHA256 del file scaricato non
+      e' riproducibile fra download successivi, quindi la voce e'
+      catalogata senza hash e senza binary_path (come le altre pagine di
+      portale). Il corpo testuale dell'avviso e' trascritto integralmente
+      nel md_path; verificare la versione online.
 
   - id: dl-181-2023-art-12
     title: "DL 9 dicembre 2023 n. 181 - art. 12 co. 1 - Caratteristiche dei moduli fotovoltaici per autoconsumo"

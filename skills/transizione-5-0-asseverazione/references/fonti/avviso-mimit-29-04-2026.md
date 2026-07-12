@@ -3,7 +3,9 @@
 > Fonte: sito istituzionale del Ministero delle imprese e del made in Italy (mimit.gov.it), sezione Normativa > Notifiche e avvisi.
 > Titolo: "Avviso 29 aprile 2026 - Piano Transizione 5.0. Pratiche tecnicamente ammissibili".
 > Ufficio competente: Divisione II. Politiche per la digitalizzazione delle imprese, l'innovazione e l'analisi dei settori produttivi.
-> SHA256 (pagina HTML scaricata): 5998162c7cd8b868f5c5164295ca596da66bd5c25f249cca25ff1de96b735a62
+> Pagina HTML istituzionale con markup dinamico: lo SHA256 del file scaricato non e' riproducibile
+> fra download successivi, quindi in `sources.yaml` la voce e' catalogata senza hash
+> (`sha256: null`, `binary_path: null`), come le altre pagine di portale.
 > URL: https://www.mimit.gov.it/it/normativa/notifiche-e-avvisi/avviso-29-aprile-2026-piano-transizione-5-0-tecnicamente-ammissibili
 > Data lettura fonte: 2026-07-11
 
