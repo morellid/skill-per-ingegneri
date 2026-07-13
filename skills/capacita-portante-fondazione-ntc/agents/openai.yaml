@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Capacita' portante fondazioni superficiali (NTC 6.4.2)
+short_description: Calcolo code-driven del carico limite di fondazioni superficiali (FHWA NHI-06-089 par. 8.4, codice internazionale ex cap. 12 NTC 2018) e verifica GEO NTC 6.4.2.1 in Approccio 2 (gamma_R = 2,3). Condizioni drenate/non drenate, fattori di forma, falda, eccentricita' con dimensioni efficaci; output qult, q_Rd, R_d e confronto Ed <= Rd; casi fuori ambito rifiutati.
+default_prompt: |
+  Verifica a carico limite NTC di un plinto 2 x 3 m con piano di posa a -1,0 m.
+  Sabbia limosa omogenea: phi' = 30 gradi, c' = 5 kPa, gamma = 18 kN/m3
+  (valori caratteristici dalla relazione geotecnica). Falda a -1,5 m dal
+  piano campagna. Carico verticale centrato, Ed = 900 kN (combinazione A1).
+  Dammi qult, q_Rd, R_d e l'esito Ed <= Rd con i fattori usati.

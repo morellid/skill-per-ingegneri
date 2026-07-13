@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 8
+  count: 9
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -81,6 +81,24 @@ skills:
   - anac
   - dlgs-36-2023
   - bandi-tipo
+- id: capacita-portante-fondazione-ntc
+  area: strutture-geotecnica
+  title: Capacita' portante fondazioni superficiali (NTC 6.4.2)
+  summary: 'Calcolo code-driven del carico limite di fondazioni superficiali (FHWA NHI-06-089 par. 8.4, eq. 8-1..8-6, codice
+    internazionale ex cap. 12 NTC 2018) e verifica GEO NTC 6.4.2.1 (Approccio 2, gamma_R = 2,3): qult, q_Rd, R_d, Ed <= Rd;
+    casi fuori ambito rifiutati'
+  normative_refs:
+  - NTC 2018 par. 6.4.2.1 + Tab. 6.4.I + cap. 12
+  - Circolare 7/2019 par. C6.4.2.1
+  - FHWA NHI-06-089 (2006) par. 8.4
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - geotecnica
+  - fondazioni
+  - carico-limite
+  - code-driven
 - id: carichi-atmosferici-ntc
   area: strutture-geotecnica
   title: Carichi atmosferici NTC 2018 (vento + neve)
