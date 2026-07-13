@@ -1,0 +1,82 @@
+schema_version: 1
+skill: capacita-portante-fondazione-ntc
+last_verified: 2026-07-12
+
+# Fonti per il calcolo della capacita' portante di fondazioni superficiali.
+#
+# Architettura:
+#   - NTC 2018 par. 6.4.2.1 + Tab. 6.2.I/6.2.II/6.4.I: quadro della verifica
+#     GEO a carico limite (Ed <= Rd, Approccio 2 A1+M1+R3, gamma_R = 2,3)
+#   - Circ. 7/2019 par. C6.4.2.1: effetto dell'azione e resistenza come
+#     forze normali al piano di posa; fattori che influenzano la resistenza
+#   - FHWA NHI-06-089 par. 8.4: formulazione del carico limite (eq. 8-1..8-9,
+#     Table 8-4/8-5/8-6), usata come "altro codice internazionale" ai sensi
+#     del cap. 12 NTC 2018 (le NTC non forniscono la formula in forma chiusa)
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-12
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
+    excerpt_path: references/estratti/fhwa-capacita-portante-ntc.md
+    notes: |
+      Stesso PDF e stesso hash gia' censiti dalle altre skill NTC del repo.
+      Sezioni trascritte nel md_path: par. 6.2.4.1.1 (Tab. 6.2.I,
+      coefficienti A1), 6.2.4.1.2 (Tab. 6.2.II, M1 = 1,0), 6.4.2 e 6.4.2.1
+      (verifiche SLU fondazioni superficiali, Approccio 2, Tab. 6.4.I:
+      gamma_R = 2,3 carico limite / 1,1 scorrimento), cap. 12 ("altri
+      codici internazionali", aggancio per la fonte FHWA).
+
+  - id: circ-7-2019-mit
+    title: "Circolare 21 gennaio 2019 n. 7 C.S.LL.PP. - Istruzioni per l'applicazione delle NTC 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+    accessed: 2026-07-12
+    sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
+    license: public-domain
+    binary_path: not_in_repo/circ-7-2019.pdf
+    md_path: references/fonti/circ-7-2019-mit.md
+    excerpt_path: references/estratti/fhwa-capacita-portante-ntc.md
+    notes: |
+      Stesso PDF e stesso hash gia' censiti dalle altre skill NTC del repo.
+      Sezione trascritta nel md_path: par. C6.4.2.1 (collasso per carico
+      limite: azione e resistenza come forze normali al piano di posa;
+      dipendenza della resistenza da drenaggio, falda, geometria,
+      eccentricita', meccanismo).
+
+  - id: fhwa-nhi-06-089
+    title: "FHWA NHI-06-089 - Soils and Foundations, Reference Manual Volume II (U.S. DOT - Federal Highway Administration, dicembre 2006)"
+    type: manuale-tecnico-governativo
+    url: https://www.fhwa.dot.gov/engineering/geotech/pubs/nhi06089.pdf
+    accessed: 2026-07-12
+    sha256: 181a02c8c1ba7310d4c299f8bfb4f154d441d77f136f93879a0fd53ae2d64ccb
+    license: public-domain-us-government
+    binary_path: not_in_repo/fhwa-nhi-06-089.pdf
+    md_path: references/fonti/fhwa-nhi-06-089.md
+    excerpt_path: references/estratti/fhwa-capacita-portante-ntc.md
+    notes: |
+      Volume II della stessa pubblicazione FHWA gia' usata (Volume I) dalla
+      skill cedimenti-edometrici-ntc; opera del Governo federale USA
+      (pubblico dominio). SHA256 riproducibile (doppio download verificato).
+      Sezioni trascritte nel md_path:
+        - 8.4.2 (eq. 8-1 carico limite; eq. 8-2/8-3/8-4/8-5 fattori
+          Nc/Nq/Ngamma, espressioni AASHTO 2004 with 2006 Interims; prime
+          righe della Table 8-2 per cross-check)
+        - 8.4.3 (eq. 8-6 forma generale con fattori correttivi e nota sul
+          termine di sovraccarico)
+        - 8.4.3.1 (eq. 8-7/8-8/8-9 dimensioni efficaci; limiti di
+          eccentricita' 1/6 terreno - 1/4 roccia; Table 8-4 fattori di
+          forma con nota di non cumulabilita' con l'inclinazione del carico)
+        - 8.4.3.2 (Table 8-5 fattori di falda con interpolazione)
+        - 8.4.3.3 (Table 8-6 dq, con condizioni e omissione conservativa)
+      Ruolo: "altro codice internazionale" ex cap. 12 NTC 2018 per la
+      formulazione del carico limite. Il modulo
+      tasks/lib/capacita_portante.py implementa le sole equazioni/tabelle
+      trascritte e rifiuta i casi non coperti (carico inclinato, base
+      inclinata, pendio, stratificazione, rottura locale, eccentricita'
+      oltre 1/6).
