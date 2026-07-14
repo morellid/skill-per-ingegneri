@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 10
+  count: 11
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -262,6 +262,22 @@ skills:
   - ntc-2018
   - slu
   - sle
+- id: consulente-adr-dlgs40
+  area: ambiente-territorio-mobilita
+  title: Consulente sicurezza trasporti merci pericolose (DGSA) - D.Lgs. 40/2000
+  summary: 'Obblighi del consulente sicurezza trasporti merci pericolose - DGSA (D.Lgs. 40/2000): chi deve nominarlo ed esenzioni
+    (artt. 2, 3), obblighi del capo dell''impresa (art. 3) e del consulente (relazione annuale e d''incidente, art. 4), qualificazione
+    (art. 5), sanzioni (art. 6)'
+  normative_refs:
+  - D.Lgs. 4/2/2000 n. 40 (testo vigente) - artt. 2, 3, 4, 5, 6 (attuazione dir. 96/35/CE; quadro ADR 1.8.3)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-40-2000
+  - merci-pericolose
+  - consulente-adr
+  - dgsa
+  - trasporti
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
