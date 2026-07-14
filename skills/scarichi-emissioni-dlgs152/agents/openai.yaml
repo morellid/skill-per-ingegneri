@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Autorizzazione scarichi ed emissioni (D.Lgs. 152/2006, artt. 124 e 269)
+short_description: Supporto documentale alle autorizzazioni ambientali singole (residuali rispetto ad AUA e AIA) per lo scarico di acque reflue industriali (art. 124 D.Lgs. 152/2006) e per le emissioni in atmosfera degli stabilimenti (art. 269). Determina quando serve l'autorizzazione, l'autorita' competente (provincia/ente d'ambito per gli scarichi; autorita' competente per le emissioni), i contenuti della domanda (progetto e relazione tecnica per le emissioni), la durata e il rinnovo (scarichi 4 anni, emissioni 15 anni; rinnovo un anno prima), i casi di nuova autorizzazione o comunicazione per modifiche, e le sanzioni (artt. 137 e 279). Non legge i valori limite degli allegati, non redige le domande, non decide l'inquadramento AUA/AIA.
+default_prompt: |
+  Realizzo un nuovo scarico di acque reflue industriali (o un nuovo stabilimento
+  con emissioni in atmosfera) che non rientra nell'AUA. Serve un'autorizzazione?
+  A chi va la domanda, quanto dura, quando si rinnova e cosa rischio senza
+  autorizzazione? Cita gli articoli del D.Lgs. 152/2006.

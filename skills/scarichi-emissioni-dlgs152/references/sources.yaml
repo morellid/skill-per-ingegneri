@@ -1,0 +1,34 @@
+schema_version: 1
+skill: scarichi-emissioni-dlgs152
+last_verified: 2026-07-14
+
+# Fonte per l'autorizzazione allo scarico di acque reflue industriali (art. 124)
+# e l'autorizzazione alle emissioni in atmosfera (art. 269), autorizzazioni
+# ambientali singole residuali rispetto all'AUA, con le relative sanzioni
+# (artt. 137 e 279).
+
+sources:
+  - id: dlgs-152-2006
+    title: "D.Lgs. 3 aprile 2006, n. 152 - Norme in materia ambientale (Testo Unico Ambientale), testo vigente al 2026-07-14 - artt. 124, 137 (Parte terza) e 269, 279 (Parte quinta)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: af54f5e0c6fa3d0a6d3dc5cf6d33ece0be7969be086dd93a24980e11b053b9fe
+    license: public-domain
+    binary_path: not_in_repo/dlgs-152-2006-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-152-2006.md
+    excerpt_path: references/estratti/scarichi-emissioni-checklist.md
+    notes: |
+      Codice redazionale 006G0171, GU n. 88 del 14/4/2006 - S.O. n. 96. Il
+      binario e' la pagina indice Normattiva pinnata a !vig=2026-07-14 (hash
+      stabile, doppio download: af54f5e0...). Gli articoli 124 (versione 3,
+      criteri generali per l'autorizzazione allo scarico), 137 (sanzioni penali
+      scarichi), 269 (versione 7, autorizzazione alle emissioni in atmosfera) e
+      279 (sanzioni emissioni) sono caricati via AJAX (caricaArticolo) e
+      trascritti verbatim in references/fonti/dlgs-152-2006.md. Gli allegati
+      (Allegato 5 alla parte terza - tabelle 3, 3/A, 4, 5 valori limite scarichi;
+      Allegati I-V alla parte quinta - valori limite emissioni) e i richiami
+      all'AUA (DPR 59/2013), all'AIA (art. 29-quattuordecies) e alla disciplina
+      regionale sono citati come riferimento e NON riprodotti.
