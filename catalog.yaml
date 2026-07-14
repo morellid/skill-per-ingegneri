@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 7
+  count: 8
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -570,6 +570,22 @@ skills:
   - rsia
   - dlgs-35-2011
   - strade
+- id: scarichi-emissioni-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Autorizzazione scarichi ed emissioni - D.Lgs. 152/2006 (artt. 124, 269)
+  summary: 'Autorizzazioni ambientali singole residuali rispetto ad AUA/AIA: scarico di acque reflue industriali (art. 124
+    D.Lgs. 152/2006, durata 4 anni) ed emissioni in atmosfera (art. 269, durata 15 anni), con nuova autorizzazione/comunicazione
+    per modifiche e sanzioni (artt. 137, 279)'
+  normative_refs:
+  - D.Lgs. 3/4/2006 n. 152 (testo vigente) - artt. 124, 137 (Parte terza - scarichi) e 269, 279 (Parte quinta - emissioni)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-152-2006
+  - scarichi-idrici
+  - emissioni-atmosfera
+  - autorizzazioni-ambientali
+  - testo-unico-ambientale
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
