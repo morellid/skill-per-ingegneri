@@ -1,0 +1,29 @@
+schema_version: 1
+skill: verifiche-periodiche-ascensori-dpr162
+last_verified: 2026-07-14
+
+# Fonte per l'iter procedurale di esercizio, verifiche periodiche/straordinarie
+# e manutenzione degli ascensori, montacarichi e apparecchi assimilati.
+
+sources:
+  - id: dpr-162-1999
+    title: "D.P.R. 30 aprile 1999, n. 162 - Regolamento ascensori (esercizio, verifiche, manutenzione) - testo vigente al 2026-07-14"
+    type: dpr
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-04-30;162!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: ad0fc818fb19458dba3133a7db828d1b57a4581b94a4163b23ca2eb922982d9b
+    license: public-domain
+    binary_path: not_in_repo/dpr-162-1999-vig-2026-07-14.html
+    md_path: references/fonti/dpr-162-1999.md
+    excerpt_path: references/estratti/verifiche-ascensori-checklist.md
+    notes: |
+      Codice redazionale 099G0244 (aggiornato dal DPR 8/2015, dir. 2014/33/UE).
+      Il binario e' la pagina indice Normattiva pinnata a !vig=2026-07-14 (hash
+      stabile, doppio download: ad0fc818...). Gli articoli 12-16 (esercizio,
+      verifiche periodiche/straordinarie, manutenzione, libretto e targa) sono
+      caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dpr-162-1999.md (testo in vigore dal 16-3-2017 /
+      12-12-2017). Gli artt. 1-11 (immissione sul mercato / valutazione di
+      conformita' CE dei componenti) sono fuori scope e non trascritti.

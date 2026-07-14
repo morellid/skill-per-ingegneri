@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Esercizio e verifiche periodiche ascensori (DPR 162/1999)
+short_description: Supporto documentale all'iter di esercizio, verifiche periodiche/straordinarie e manutenzione di ascensori, montacarichi e assimilati (DPR 162/1999, artt. 12-16). Messa in esercizio (comunicazione al comune entro 60 giorni, numero di matricola entro 30 giorni), verifica periodica ogni 2 anni e soggetti che la eseguono (ASL/ARPA, ITL, MIT, organismi notificati, organismi di ispezione di tipo A accreditati), verifiche straordinarie (esito negativo, incidenti, modifiche), manutenzione con controlli almeno semestrali su dispositivi di sicurezza, libretto e targa. Non copre la marcatura CE dei componenti, non definisce regole tecniche UNI EN, non calcola le date delle scadenze.
+default_prompt: |
+  Ho fatto installare un nuovo ascensore condominiale e ho la dichiarazione di
+  conformita' dell'installatore. Quali comunicazioni devo fare e in quali tempi,
+  ogni quanto va fatta la verifica periodica e chi la esegue in un condominio?
+  Cita gli articoli del DPR 162/1999.
