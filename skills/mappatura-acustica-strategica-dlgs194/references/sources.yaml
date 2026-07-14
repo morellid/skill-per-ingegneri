@@ -1,0 +1,30 @@
+schema_version: 1
+skill: mappatura-acustica-strategica-dlgs194
+last_verified: 2026-07-14
+
+# Fonte per gli obblighi di mappatura acustica strategica e piani d'azione
+# contro il rumore ambientale (recepimento della direttiva 2002/49/CE).
+
+sources:
+  - id: dlgs-194-2005
+    title: "D.Lgs. 19 agosto 2005, n. 194 - Attuazione della direttiva 2002/49/CE (rumore ambientale) - testo vigente al 2026-07-14"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-08-19;194!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: 02f5432f6230df6c97d71204746b4cc571c05c53da342f5920d83f86dfa88f98
+    license: public-domain
+    binary_path: not_in_repo/dlgs-194-2005-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-194-2005.md
+    excerpt_path: references/estratti/mappatura-acustica-checklist.md
+    notes: |
+      Codice redazionale 005G0216. Il binario e' la pagina indice Normattiva
+      pinnata a !vig=2026-07-14 (hash stabile, doppio download: 02f5432f...).
+      Gli articoli 1-11 sono caricati via AJAX (caricaArticolo) e trascritti
+      verbatim in references/fonti/dlgs-194-2005.md. Gli allegati 1-6
+      (descrittori, metodi, dose-effetto, requisiti minimi di mappe e piani,
+      dati da trasmettere) non sono trascritti integralmente (contenuto tecnico
+      esteso, in parte immagini): citati come esistenza e oggetto. I metodi
+      comuni UE di determinazione (CNOSSOS-EU, dir. (UE) 2015/996) sono citati
+      come riferimento, non riprodotti.

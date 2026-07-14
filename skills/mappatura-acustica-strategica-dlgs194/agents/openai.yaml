@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Mappatura acustica strategica e piani d'azione (D.Lgs. 194/2005)
+short_description: Supporto documentale agli obblighi di mappatura acustica strategica e piani d'azione contro il rumore ambientale (D.Lgs. 194/2005, dir. 2002/49/CE). Determina l'applicabilita' in base alle soglie (agglomerati oltre 100.000 abitanti, aeroporti oltre 50.000 movimenti/anno, assi ferroviari oltre 30.000 treni/anno, assi stradali oltre 3.000.000 di veicoli/anno), il soggetto obbligato (autorita' regionale per gli agglomerati, gestori per le infrastrutture), i due deliverable (mappe acustiche strategiche art. 3, piani d'azione art. 4), le scadenze quinquennali, i descrittori Lden/Lnight, l'informazione del pubblico (osservazioni entro 45 giorni) e le sanzioni. Non produce mappe o piani ne' esegue la modellazione acustica.
+default_prompt: |
+  Il mio Comune fa parte di un agglomerato urbano di circa 150.000 abitanti.
+  Siamo soggetti agli obblighi del D.Lgs. 194/2005? Chi deve elaborare la
+  mappatura acustica e i piani d'azione, e con quali scadenze? Cita gli articoli.
