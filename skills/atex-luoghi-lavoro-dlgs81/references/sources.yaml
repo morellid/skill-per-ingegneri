@@ -1,0 +1,36 @@
+schema_version: 1
+skill: atex-luoghi-lavoro-dlgs81
+last_verified: 2026-07-14
+
+# Fonte per la protezione dei lavoratori dai rischi da atmosfere esplosive
+# (ATEX luoghi di lavoro): campo di applicazione, definizioni, obblighi del
+# datore di lavoro, valutazione del rischio di esplosione, classificazione
+# delle zone e documento sulla protezione contro le esplosioni.
+
+sources:
+  - id: dlgs-81-2008
+    title: "D.Lgs. 9 aprile 2008, n. 81 - Testo unico salute e sicurezza sul lavoro, Titolo XI (protezione da atmosfere esplosive), testo vigente al 2026-07-14 - artt. 287-290, 293, 294, 296, 297"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: 0664b393a7d1debc136cc11ebf837b3eda18d5394d6573b8a9dd739094b493e2
+    license: public-domain
+    binary_path: not_in_repo/dlgs-81-2008-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-81-2008.md
+    excerpt_path: references/estratti/atex-checklist.md
+    notes: |
+      Codice redazionale 008G0104, GU n. 101 del 30/4/2008 - S.O. n. 108. Il
+      binario e' la pagina indice Normattiva pinnata a !vig=2026-07-14 (hash
+      stabile, doppio download: 0664b393...). Gli articoli 287 (campo di
+      applicazione), 288 (definizioni: atmosfera esplosiva), 289 (prevenzione e
+      protezione), 290 (valutazione dei rischi di esplosione), 293 (aree/zone,
+      allegati XLIX e L), 294 (documento sulla protezione contro le esplosioni),
+      296 (verifiche installazioni elettriche, DPR 462/2001) e 297 (sanzioni)
+      sono caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dlgs-81-2008.md. Gli allegati XLIX (classificazione
+      zone), L (prescrizioni minime) e LI (segnaletica) e la direttiva
+      1999/92/CE (recepita) sono citati come riferimento e NON riprodotti. La
+      direttiva prodotti 2014/34/UE (marcatura degli apparecchi, eur-lex) NON e'
+      oggetto di questa skill: qui si tratta la protezione dei lavoratori.

@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 4 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 5 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -20,6 +20,7 @@
       "category": "sicurezza-lavoro-cantieri",
       "skills": [
         "./ambienti-confinati-dpr177",
+        "./atex-luoghi-lavoro-dlgs81",
         "./dvr-generico",
         "./piano-lavoro-amianto",
         "./pos-allegato-xv-checker"
