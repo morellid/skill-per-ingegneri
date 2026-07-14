@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: VIA - screening (art. 19) e SIA (Allegato VII) D.Lgs. 152/2006
+short_description: Supporto documentale alla Valutazione di Impatto Ambientale (VIA) ex Parte Seconda D.Lgs. 152/2006 (testo vigente) e DM 30/03/2015. Verifica di assoggettabilita' (screening, art. 19) con procedura e termini perentori, checklist dello Studio Preliminare Ambientale (All. IV-bis) e dei criteri (All. V), meccanismi di adeguamento regionale delle soglie (DM 30/03/2015). Struttura e checklist di completezza dello Studio di Impatto Ambientale - SIA (12 punti dell'Allegato VII, art. 22). Non decide l'assoggettabilita' ne' sostituisce l'autorita' competente e i tecnici firmatari.
+default_prompt: |
+  Devo avviare la verifica di assoggettabilita' a VIA per un progetto di
+  competenza regionale (allegato IV alla Parte Seconda del D.Lgs. 152/2006).
+  Dammi il cronoprogramma del procedimento ex art. 19 con i termini perentori,
+  dimmi quale documento devo presentare e come le soglie possono essere state
+  adeguate a livello regionale (DM 30/03/2015). Cita gli articoli e gli allegati.

@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 6
+  count: 7
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -650,3 +650,20 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: via-screening-sia-dlgs152
+  area: ambiente-territorio-mobilita
+  title: VIA - screening (art. 19) e SIA (Allegato VII) D.Lgs. 152/2006
+  summary: 'Supporto documentale VIA (D.Lgs. 152/2006 + DM 30/03/2015): procedura e termini della verifica di assoggettabilita''
+    (art. 19), checklist dello Studio Preliminare Ambientale (All. IV-bis) e dei criteri (All. V), struttura/checklist del
+    SIA (All. VII); non decide l''esito'
+  normative_refs:
+  - D.Lgs. 3/4/2006 n. 152 Parte Seconda - artt. 19, 22 + Allegati IV-bis, V, VII (testo vigente)
+  - DM 30/03/2015 (linee guida verifica assoggettabilita' competenza regionale)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - via
+  - dlgs-152-2006
+  - valutazione-impatto-ambientale
+  - screening-assoggettabilita
+  - studio-impatto-ambientale
