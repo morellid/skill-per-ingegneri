@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 8
+  count: 9
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
