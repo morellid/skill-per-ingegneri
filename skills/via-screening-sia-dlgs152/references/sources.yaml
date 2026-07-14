@@ -1,0 +1,52 @@
+schema_version: 1
+skill: via-screening-sia-dlgs152
+last_verified: 2026-07-14
+
+# Fonti per la skill sulla Valutazione di Impatto Ambientale (VIA):
+#   - verifica di assoggettabilita' (screening, art. 19 D.Lgs. 152/2006)
+#   - contenuti dello Studio Preliminare Ambientale (Allegato IV-bis)
+#   - criteri di verifica (Allegato V)
+#   - contenuti dello Studio di Impatto Ambientale - SIA (Allegato VII)
+#   - linee guida per lo screening di competenza regionale (DM 30/03/2015)
+
+sources:
+  - id: dlgs-152-2006-via
+    title: "D.Lgs. 3 aprile 2006, n. 152 - Norme in materia ambientale, Parte Seconda (VIA) - testo multivigente al 2026-07-14"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier): la pagina indice Normattiva
+    # ha hash stabile alla data di vigenza congelata.
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: af54f5e0c6fa3d0a6d3dc5cf6d33ece0be7969be086dd93a24980e11b053b9fe
+    license: public-domain
+    binary_path: not_in_repo/dlgs-152-2006-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-152-2006-via.md
+    excerpt_path: references/estratti/via-screening-sia-checklist.md
+    notes: |
+      Codice redazionale 006G0171, GU n. 88 del 14/04/2006 - S.O. n. 96.
+      Il binario e' la pagina indice Normattiva pinnata a !vig=2026-07-14
+      (hash stabile, doppio download verificato: af54f5e0...). Il testo dei
+      singoli articoli/allegati e' caricato via AJAX (caricaArticolo) e
+      trascritto verbatim in references/fonti/dlgs-152-2006-via.md:
+      art. 19 (versione 10, in vigore dal 17-12-2024), Allegato IV-bis, V, VII
+      (in vigore dal 21-7-2017). Gli allegati II-bis e IV (elenchi dei progetti
+      con soglie) non sono trascritti integralmente (elenchi estesi): citati.
+
+  - id: dm-30-03-2015-via
+    title: "DM 30 marzo 2015 - Linee guida per la verifica di assoggettabilita' a VIA dei progetti di competenza delle regioni e province autonome"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2015/04/11/84/sg/pdf
+    accessed: 2026-07-14
+    sha256: a315fb08a203de3f5b4c0391f561d77e65bdfb9c7bb289ef9bc137a5807345e1
+    license: public-domain-italian-law
+    binary_path: not_in_repo/gu84-2015-dm-30-03-2015-via.pdf
+    md_path: references/fonti/dm-30-03-2015-via.md
+    excerpt_path: references/estratti/via-screening-sia-checklist.md
+    notes: |
+      Codice redazionale 15A02720, GU Serie Generale n. 84 dell'11/04/2015.
+      Il PDF e' l'intero fascicolo GU 84 (48 pagg.); la trascrizione riguarda
+      il solo DM 30/03/2015 (scopo, base giuridica, meccanismi di adeguamento
+      regionale di criteri e soglie: riduzione, incremento max 30%, esclusione).
+      SHA256 verificato con doppio download (a315fb08...). Le tabelle di
+      dettaglio delle linee guida allegate non sono trascritte integralmente.
