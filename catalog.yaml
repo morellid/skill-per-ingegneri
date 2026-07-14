@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 4
+  count: 5
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -666,6 +666,22 @@ skills:
   - sicurezza-elettrica
   - verifiche-periodiche
   - luoghi-di-lavoro
+- id: verifiche-periodiche-ascensori-dpr162
+  area: impianti-macchine-prodotti
+  title: Esercizio e verifiche periodiche ascensori - DPR 162/1999
+  summary: 'Iter di esercizio ascensori (DPR 162/1999, artt. 12-16): messa in esercizio (comunicazione al comune entro 60
+    gg, matricola entro 30 gg), verifica periodica ogni 2 anni e soggetti abilitati, verifiche straordinarie, manutenzione,
+    libretto e targa; supporto documentale'
+  normative_refs:
+  - D.P.R. 30/4/1999 n. 162 (testo vigente) - artt. 12-16
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-162-1999
+  - ascensori
+  - verifiche-periodiche
+  - manutenzione
+  - sicurezza-impianti
 - id: via-screening-sia-dlgs152
   area: ambiente-territorio-mobilita
   title: VIA - screening (art. 19) e SIA (Allegato VII) D.Lgs. 152/2006
