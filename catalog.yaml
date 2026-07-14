@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 9
+  count: 10
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -197,6 +197,23 @@ skills:
   - ntc-2018
   - slu
   - sle
+- id: costruzioni-esistenti-ntc-cap8
+  area: strutture-geotecnica
+  title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
+  summary: 'Consultazione NTC 2018 cap. 8 + Circolare C8: classificazione interventi (locale/miglioramento/adeguamento, par.
+    8.4), soglie zeta_E, livelli di conoscenza LC1/LC2/LC3 e fattori di confidenza FC 1,35/1,2/1,0 (Tab. C8.5.IV) - non calcola,
+    non sostituisce il progettista'
+  normative_refs:
+  - NTC 2018 (DM 17/01/2018) cap. 8 (parr. 8.3, 8.4, 8.5.4)
+  - Circolare C.S.LL.PP. 21/01/2019 n. 7 cap. C8 (parr. C8.3, C8.4, C8.5.4, Tab. C8.5.IV)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ntc-2018
+  - strutture
+  - costruzioni-esistenti
+  - vulnerabilita-sismica
+  - consultazione-norma
 - id: cra-classificazione-pde
   area: software-dati-cybersecurity
   title: CRA - Classificazione PDE e valutazione della conformita'

@@ -1,0 +1,53 @@
+schema_version: 1
+skill: costruzioni-esistenti-ntc-cap8
+last_verified: 2026-07-13
+
+# Fonti per la consultazione del capitolo 8 delle NTC 2018 (costruzioni
+# esistenti): classificazione degli interventi (riparazione/locale,
+# miglioramento, adeguamento), soglie del rapporto zeta_E, livelli di
+# conoscenza (LC1/LC2/LC3) e fattori di confidenza (FC).
+#
+# Architettura:
+#   - NTC 2018 cap. 8: definizioni e prescrizioni cogenti (categorie di
+#     intervento, casi di adeguamento obbligatorio a-e, soglie zeta_E,
+#     obbligo di valutazione della sicurezza e verifica del sistema di
+#     fondazione, LC1/LC2/LC3)
+#   - Circolare 7/2019 cap. C8: valori numerici dei fattori di confidenza
+#     (FC = 1,35/1,2/1,0), Tabella C8.5.IV, definizione di zeta_E (= ag*S),
+#     esempi di intervento locale/miglioramento/adeguamento
+
+sources:
+  - id: ntc2018-dm-17-01-2018
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-13
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain-italian-law
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-dm-17-01-2018.md
+    excerpt_path: references/estratti/ntc2018-cap8-costruzioni-esistenti.md
+    notes: |
+      GU Serie Generale n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 verificato il 2026-07-13 sul file scaricato (doppio download);
+      coincide con l'hash gia' registrato dalle altre skill NTC del repo
+      (stessa edizione GU). Sezioni lette per questa skill: capitolo 8
+      integrale (par. 8.1-8.7.5, pagg. GU 289-294), estraibile via pdftotext.
+
+  - id: circ-7-2019-mit
+    title: "Circolare 21 gennaio 2019 n. 7 C.S.LL.PP. - Istruzioni per l'applicazione dell'Aggiornamento delle NTC di cui al DM 17 gennaio 2018"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/gu/2019/02/11/35/so/5/sg/pdf
+    accessed: 2026-07-13
+    sha256: f7c3b8d1f443aadb6b3e020b6b6c19813683492ecaadd2c15bf6bf1939aaed7c
+    license: public-domain-italian-law
+    binary_path: not_in_repo/circ-7-2019.pdf
+    md_path: references/fonti/circ-7-2019-mit.md
+    excerpt_path: references/estratti/ntc2018-cap8-costruzioni-esistenti.md
+    notes: |
+      Suppl. Ord. n. 5 alla GU Serie Generale n. 35 dell'11/02/2019.
+      SHA256 verificato il 2026-07-13 sul file scaricato (doppio download);
+      coincide con l'hash gia' registrato dalle altre skill NTC del repo.
+      Sezioni lette per questa skill: C8.3, C8.4 (C8.4.1/C8.4.2/C8.4.3),
+      C8.5.4 (C8.5.4.1/C8.5.4.2/C8.5.4.3) con Tabella C8.5.IV (pagg. GU
+      250-264). Il capitolo C8 e' estraibile via pdftotext.

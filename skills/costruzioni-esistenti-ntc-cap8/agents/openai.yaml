@@ -1,0 +1,12 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
+short_description: Consultazione del cap. 8 NTC 2018 e del cap. C8 della Circolare 7/2019: classificazione degli interventi (riparazione/locale, miglioramento, adeguamento - par. 8.4), casi di adeguamento obbligatorio a-e e soglie del rapporto zeta_E (a,b,d -> 1,0; c,e -> 0,80), soglie zeta_E per il miglioramento per classe d'uso (III scolastica e IV -> 0,6; restanti III e II -> +0,1), livelli di conoscenza LC1/LC2/LC3 e fattori di confidenza FC 1,35/1,2/1,0 (Tab. C8.5.IV). Supporto alla consultazione, non sostituisce la valutazione della sicurezza ne' il progettista.
+default_prompt: |
+  Edificio esistente in c.a. degli anni '70, oggi uffici (classe II). Lo si vuole
+  trasformare in scuola primaria (classe III uso scolastico), senza sopraelevazioni
+  ne' ampliamenti. In quale categoria di intervento ricade e quale soglia di zeta_E
+  si applica? Con disegni di carpenteria originali, indagini limitate sui dettagli e
+  prove limitate in situ, quale livello di conoscenza e fattore di confidenza posso
+  raggiungere? Cita i paragrafi di NTC 2018 e Circolare 7/2019.
