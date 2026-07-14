@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Accessibilita' siti web e app - Legge Stanca (L. 4/2004)
+short_description: Supporto documentale agli obblighi di accessibilita' dei siti web e delle applicazioni mobili ai sensi della Legge Stanca (L. 4/2004, testo vigente aggiornato dal D.Lgs. 106/2018 di recepimento della dir. UE 2016/2102). Determina se un soggetto e' obbligato (soggetti pubblici e assimilati dell'art. 3 c. 1; grandi privati dell'art. 3 c. 1-bis con fatturato medio oltre 500 milioni), le esclusioni (art. 3 c. 2), gli obblighi negli appalti IT e la nullita' dei contratti per siti e app non accessibili (art. 4), il rinvio ai requisiti tecnici delle linee guida AgID (art. 11, che recepiscono EN 301 549 e WCAG), la vigilanza e il monitoraggio AgID (art. 7) e le responsabilita' e sanzioni (art. 9: responsabilita' dirigenziale per il pubblico, sanzione AgID fino al 5% del fatturato per i grandi privati). Non esegue l'audit tecnico WCAG, non redige la dichiarazione di accessibilita' ne' riproduce le linee guida AgID.
+default_prompt: |
+  Un comune deve affidare il rifacimento del proprio sito web e di un'app per i
+  servizi al cittadino. E' soggetto alla Legge Stanca (L. 4/2004)? Cosa deve
+  prevedere nell'appalto e nel contratto, e cosa succede se il contratto non
+  richiama i requisiti di accessibilita'? Cita gli articoli.

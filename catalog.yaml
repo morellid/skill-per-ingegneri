@@ -34,8 +34,24 @@ areas:
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
-  count: 5
+  count: 6
 skills:
+- id: accessibilita-siti-app-l4-2004
+  area: software-dati-cybersecurity
+  title: Accessibilita' siti web e app - Legge Stanca (L. 4/2004)
+  summary: 'Obblighi di accessibilita'' di siti web e app (Legge Stanca, L. 4/2004): chi e'' obbligato (soggetti pubblici
+    art. 3 c. 1; grandi privati > 500 mln art. 3 c. 1-bis), obblighi negli appalti e nullita'' dei contratti (art. 4), requisiti
+    tecnici AgID (art. 11), sanzioni (art. 9)'
+  normative_refs:
+  - L. 9/1/2004 n. 4 (Legge Stanca, testo vigente) - artt. 2, 3, 4, 7, 9, 11 (agg. D.Lgs. 106/2018, dir. UE 2016/2102)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - legge-4-2004
+  - accessibilita
+  - siti-web
+  - applicazioni-mobili
+  - agid
 - id: ai-act-compliance
   area: software-dati-cybersecurity
   title: AI Act Compliance (IT)

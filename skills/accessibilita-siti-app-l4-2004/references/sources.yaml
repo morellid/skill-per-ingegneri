@@ -1,0 +1,35 @@
+schema_version: 1
+skill: accessibilita-siti-app-l4-2004
+last_verified: 2026-07-14
+
+# Fonte per gli obblighi di accessibilita' dei siti web e delle applicazioni
+# mobili (Legge Stanca, L. 4/2004): ambito soggettivo, obblighi negli appalti e
+# nei contratti (nullita'), requisiti tecnici (linee guida AgID), vigilanza e
+# responsabilita'/sanzioni.
+
+sources:
+  - id: legge-4-2004
+    title: "Legge 9 gennaio 2004, n. 4 - Disposizioni per favorire e semplificare l'accesso degli utenti e, in particolare, delle persone con disabilita' agli strumenti informatici (Legge Stanca), testo vigente al 2026-07-14"
+    type: legge
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-01-09;4!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: 1cbf3409031e4cf1a0599c3e1a9c7243c5e7bbe01cd5deecc29cafa566324ec2
+    license: public-domain
+    binary_path: not_in_repo/legge-4-2004-vig-2026-07-14.html
+    md_path: references/fonti/legge-4-2004.md
+    excerpt_path: references/estratti/accessibilita-checklist.md
+    notes: |
+      GU n. 13 del 17/1/2004. Il binario e' la pagina indice Normattiva pinnata
+      a !vig=2026-07-14 (hash stabile, doppio download: 1cbf3409...). Gli
+      articoli 2 (definizioni: accessibilita', siti web, applicazioni mobili,
+      soggetti erogatori, tecnologie assistive), 3 (soggetti erogatori/ambito),
+      4 (obblighi per l'accessibilita' - appalti e nullita' dei contratti), 7
+      (compiti amministrativi AgID - monitoraggio/vigilanza), 9 (responsabilita'
+      e sanzioni) e 11 (requisiti tecnici - linee guida AgID) sono caricati via
+      AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/legge-4-2004.md. Il testo vigente incorpora le modifiche
+      del D.Lgs. 106/2018 (recepimento dir. (UE) 2016/2102). Le linee guida AgID
+      sull'accessibilita', le norme tecniche (EN 301 549) e le WCAG 2.1 (W3C)
+      sono citate come riferimento e NON riprodotte.
