@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Ambienti confinati - qualificazione e procedure (DPR 177/2011)
+short_description: Supporto documentale alla qualificazione delle imprese/lavoratori autonomi e alle procedure di sicurezza per i lavori in ambienti sospetti di inquinamento o confinati (DPR 177/2011, artt. 1-4 + D.Lgs. 81/2008 artt. 66, 121, all. IV punto 3). Requisiti dell'art. 2 (almeno il 30% della forza lavoro con esperienza triennale, preposti esperti, formazione con verifica di apprendimento, DPI e addestramento, DURC, CCNL, divieto di subappalto non autorizzato) e procedure dell'art. 3 in caso di appalto (informazione preventiva del committente di almeno un giorno, rappresentante del committente, procedura di lavoro con fase di soccorso e coordinamento con SSN e Vigili del Fuoco). Non redige la valutazione dei rischi ne' definisce le misure tecniche.
+default_prompt: |
+  La mia azienda deve far pulire internamente un serbatoio (ambiente confinato) e
+  affida i lavori a un'impresa esterna. Che requisiti deve avere l'impresa
+  appaltatrice ai sensi del DPR 177/2011, cosa devo fare come committente prima e
+  durante i lavori, e l'impresa puo' subappaltare? Cita gli articoli.

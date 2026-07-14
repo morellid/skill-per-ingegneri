@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 3
+  count: 4
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -48,6 +48,23 @@ skills:
   - ai-act
   - reg-ue-2024-1689
   - gpai
+- id: ambienti-confinati-dpr177
+  area: sicurezza-lavoro-cantieri
+  title: Ambienti confinati - qualificazione e procedure DPR 177/2011
+  summary: 'Qualificazione imprese/autonomi e procedure di sicurezza per ambienti confinati (DPR 177/2011, artt. 1-4): requisiti
+    art. 2 (30% esperti, formazione, DPI, DURC, no subappalto non autorizzato), procedure art. 3 in appalto (informazione
+    >=1 gg, rappresentante, soccorso/VVF)'
+  normative_refs:
+  - D.P.R. 14/9/2011 n. 177 (testo vigente) - artt. 1-4
+  - D.Lgs. 81/2008 artt. 26, 66, 121 + Allegato IV punto 3 (richiamati)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-177-2011
+  - ambienti-confinati
+  - sicurezza-lavoro
+  - qualificazione-imprese
+  - dlgs-81-2008
 - id: aua-dpr59-dossier
   area: ambiente-territorio-mobilita
   title: AUA - dossier ex D.P.R. 59/2013

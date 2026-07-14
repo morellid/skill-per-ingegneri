@@ -1,0 +1,28 @@
+schema_version: 1
+skill: ambienti-confinati-dpr177
+last_verified: 2026-07-14
+
+# Fonte per la qualificazione delle imprese/lavoratori autonomi e le procedure
+# di sicurezza per i lavori in ambienti sospetti di inquinamento o confinati.
+
+sources:
+  - id: dpr-177-2011
+    title: "D.P.R. 14 settembre 2011, n. 177 - Qualificazione imprese e procedure di sicurezza per ambienti sospetti di inquinamento o confinati (testo vigente al 2026-07-14)"
+    type: dpr
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2011-11-14;177!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: f2163e0860182df00ebf74ce6df356f24a2089e0b66c3829cddb4638229f1b8b
+    license: public-domain
+    binary_path: not_in_repo/dpr-177-2011-vig-2026-07-14.html
+    md_path: references/fonti/dpr-177-2011.md
+    excerpt_path: references/estratti/ambienti-confinati-checklist.md
+    notes: |
+      Codice redazionale 011G0219, GU n. 260 dell'8/11/2011 (in vigore dal
+      23/11/2011). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-14 (hash stabile, doppio download: f2163e08...). Gli
+      articoli 1-4 sono caricati via AJAX (caricaArticolo) e trascritti
+      verbatim in references/fonti/dpr-177-2011.md. I richiami al D.Lgs.
+      81/2008 (artt. 26, 66, 121, allegato IV punto 3, art. 21 c. 2) e al
+      D.Lgs. 276/2003 sono citati, non riprodotti.
