@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Notifica e adempimenti Seveso III (D.Lgs. 105/2015)
+short_description: Supporto documentale agli obblighi di uno stabilimento a rischio di incidente rilevante (Seveso III, D.Lgs. 105/2015). Determina se lo stabilimento e' soggetto (sostanze pericolose dell'allegato 1 sopra soglia, esclusioni art. 2), lo classifica come stabilimento di soglia inferiore o superiore (colonne 2/3 allegato 1, regola della sommatoria) e imposta gli adempimenti: notifica al CTR/Regione/ISPRA/Prefettura/Comune/VVF (art. 13, modulo allegato 5), politica di prevenzione e SGS (art. 14), rapporto di sicurezza per la soglia superiore (art. 15), con le sanzioni dell'art. 28. Non legge le soglie sostanza-specifiche, non applica la sommatoria, non redige il rapporto di sicurezza ne' i piani di emergenza.
+default_prompt: |
+  Il mio stabilimento detiene sostanze pericolose classificate CLP e, per una
+  categoria dell'allegato 1, supero la colonna 3. Sono soggetto al D.Lgs.
+  105/2015 (Seveso)? Di che tipo di stabilimento si tratta e quali adempimenti
+  devo fare, a chi e in quali tempi? Cita gli articoli.

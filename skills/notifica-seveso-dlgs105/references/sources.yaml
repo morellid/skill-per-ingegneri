@@ -1,0 +1,35 @@
+schema_version: 1
+skill: notifica-seveso-dlgs105
+last_verified: 2026-07-14
+
+# Fonte per gli obblighi di notifica, la determinazione dell'assoggettabilita'
+# (stabilimento di soglia inferiore / superiore) e gli adempimenti del gestore
+# di uno stabilimento a rischio di incidente rilevante (Seveso III).
+
+sources:
+  - id: dlgs-105-2015
+    title: "D.Lgs. 26 giugno 2015, n. 105 - Attuazione della direttiva 2012/18/UE (Seveso III), controllo del pericolo di incidenti rilevanti connessi con sostanze pericolose (testo vigente al 2026-07-14)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-06-26;105!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: f117b2995baaace98640eff3e6cf59463875b19bf18646ce6f5b853184ca2406
+    license: public-domain
+    binary_path: not_in_repo/dlgs-105-2015-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-105-2015.md
+    excerpt_path: references/estratti/notifica-seveso-checklist.md
+    notes: |
+      Codice redazionale 15G00121, GU n. 161 del 14/7/2015 - S.O. n. 38 (in
+      vigore dal 29/7/2015). Il binario e' la pagina indice Normattiva pinnata
+      a !vig=2026-07-14 (hash stabile, doppio download: f117b299...). Gli
+      articoli 2 (ambito), 3 (definizioni: stabilimento di soglia inferiore /
+      superiore, gestore, sostanza pericolosa, incidente rilevante), 13
+      (notifica), 14 (politica di prevenzione - PPIR), 15 (rapporto di
+      sicurezza) e 28 (sanzioni) sono caricati via AJAX (caricaArticolo) e
+      trascritti verbatim in references/fonti/dlgs-105-2015.md. Gli allegati 1
+      (soglie e regola della sommatoria, nota 4), 2, 3, 5 (modulo di notifica) e
+      B (linee guida PPIR/SGS) e i richiami al Reg. CLP 1272/2008 sono citati
+      come riferimento e NON riprodotti (le soglie sostanza-specifiche vanno
+      lette sull'allegato 1). La direttiva 2012/18/UE (eur-lex) e' citata, non
+      riprodotta.
