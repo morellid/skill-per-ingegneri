@@ -1,0 +1,36 @@
+schema_version: 1
+skill: trasmittanza-termica-opache-dm2015
+last_verified: 2026-07-14
+
+# Fonte per la verifica della trasmittanza termica U delle strutture opache
+# secondo i limiti per zona climatica del DM 26/06/2015 "requisiti minimi".
+#
+# Architettura:
+#   - DM 26/06/2015 (requisiti minimi): fornisce i VALORI LIMITE di U per zona
+#     climatica (Appendice A per l'edificio di riferimento; Appendice B per gli
+#     edifici esistenti sottoposti a riqualificazione energetica) e l'obbligo di
+#     verifica U <= U_limite (Allegato 1 par. 5.2).
+#   - Il METODO di calcolo di U (U = 1/R_tot, legge di Fourier) e' fisica tecnica
+#     di pubblico dominio; i valori di lambda dei materiali e delle resistenze
+#     superficiali R_si/R_se provengono da norme UNI a pagamento (UNI/TS 11300,
+#     UNI EN ISO 6946/10456) e NON sono riprodotti: sono input dell'utente.
+
+sources:
+  - id: dm-26-06-2015-requisiti-minimi
+    title: "Decreto 26 giugno 2015 (MiSE) - Applicazione delle metodologie di calcolo delle prestazioni energetiche e definizione delle prescrizioni e dei requisiti minimi degli edifici"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2015/07/15/162/so/39/sg/pdf
+    accessed: 2026-07-14
+    sha256: b69e130fd335b013e3ab817d03f8d93b9c36c547edf03155669d3bc33b10bb03
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dm-26-06-2015-requisiti-minimi.pdf
+    md_path: references/fonti/dm-26-06-2015-requisiti-minimi.md
+    excerpt_path: references/estratti/dm-2015-limiti-trasmittanza.md
+    notes: |
+      GU Serie Generale n. 162 del 15/07/2015 - Supplemento Ordinario n. 39
+      (codice redazionale 15A05198; il SO contiene i tre DM 26/06/2015, questa
+      fonte e' il decreto "requisiti minimi"). SHA256 verificato il 2026-07-14
+      con doppio download (riproducibile). Testo estraibile via pdftotext.
+      Sezioni lette: Allegato 1 par. 5.2 e Cap. 5; Appendice A cap. 1.1
+      Tabelle 1-5; Appendice B cap. 1.1 Tabelle 1-4. Decreto tuttora in vigore;
+      i limiti della colonna 2021 sono quelli correnti.

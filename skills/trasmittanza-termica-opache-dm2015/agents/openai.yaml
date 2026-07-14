@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Trasmittanza U strutture opache (DM 26/06/2015)
+short_description: Calcolo code-driven della trasmittanza termica U di pareti/coperture/pavimenti opachi stratificati (U = 1/R_tot) e verifica dei limiti per zona climatica del DM 26/06/2015 (Appendice B riqualificazione / Appendice A edificio di riferimento), con incremento +30% per isolamento interno o in intercapedine. lambda dei materiali e resistenze superficiali R_si/R_se sono input dell'utente (schede tecniche, UNI EN ISO 6946): non stimati, norme UNI non riprodotte. Verifica 1D preliminare (i limiti includono i ponti termici). Non sostituisce la relazione tecnica.
+default_prompt: |
+  Parete di edificio residenziale a Bologna (zona E) in riqualificazione con
+  cappotto: intonaco int 1,5 cm (lambda 0,70), muratura in laterizio 25 cm
+  (0,40), EPS grafitato 12 cm (0,031), rasante 1 cm (0,90). R_si = 0,13,
+  R_se = 0,04. Calcola la trasmittanza U e dimmi se rispetta il limite del
+  DM 26/06/2015 (2021) per la zona E, citando la tabella.

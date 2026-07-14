@@ -22,7 +22,7 @@ areas:
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 2
+  count: 3
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
@@ -602,6 +602,22 @@ skills:
   - transizione-5-0
   - credito-imposta
   - mimit
+- id: trasmittanza-termica-opache-dm2015
+  area: energia-incentivi
+  title: Trasmittanza U strutture opache - verifica DM 26/06/2015
+  summary: Calcolo code-driven della trasmittanza U di strutture opache stratificate (U = 1/R_tot) e verifica dei limiti per
+    zona climatica del DM 26/06/2015 (App. B riqualificazione / App. A edificio di riferimento), con +30% per isolamento interno;
+    lambda e R_si/R_se input utente
+  normative_refs:
+  - DM 26/06/2015 (MiSE, requisiti minimi) Allegato 1 par. 5.2 + Appendici A e B
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - efficienza-energetica
+  - trasmittanza
+  - dm-requisiti-minimi
+  - ecobonus
+  - code-driven
 - id: valutazione-cem-srb-art-87-cce
   area: ambiente-territorio-mobilita
   title: Valutazione CEM SRB - art. 87 CCE

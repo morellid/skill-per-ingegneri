@@ -88,7 +88,7 @@
     {
       "name": "energia-incentivi",
       "source": "./skills",
-      "description": "Energia & incentivi - 2 skill verticali su normative italiane.",
+      "description": "Energia & incentivi - 3 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -98,7 +98,8 @@
       "category": "energia-incentivi",
       "skills": [
         "./cer-cacer-configurazione-gse",
-        "./transizione-5-0-asseverazione"
+        "./transizione-5-0-asseverazione",
+        "./trasmittanza-termica-opache-dm2015"
       ]
     },
     {
