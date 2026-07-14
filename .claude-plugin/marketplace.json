@@ -147,7 +147,7 @@
     {
       "name": "software-dati-cybersecurity",
       "source": "./skills",
-      "description": "Software, dati & cybersecurity - 5 skill verticali su normative italiane.",
+      "description": "Software, dati & cybersecurity - 6 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -156,6 +156,7 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "software-dati-cybersecurity",
       "skills": [
+        "./accessibilita-siti-app-l4-2004",
         "./ai-act-compliance",
         "./cra-classificazione-pde",
         "./dora-gap-assessment",
