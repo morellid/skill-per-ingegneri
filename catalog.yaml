@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 7
+  count: 8
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -349,6 +349,22 @@ skills:
   - garante-privacy
   - tracking-pixel
   - email-marketing
+- id: mappatura-acustica-strategica-dlgs194
+  area: ambiente-territorio-mobilita
+  title: Mappatura acustica strategica e piani d'azione - D.Lgs. 194/2005
+  summary: 'Obblighi di mappatura acustica strategica e piani d''azione contro il rumore ambientale (D.Lgs. 194/2005, dir.
+    2002/49/CE): soglie (agglomerati >100k, assi/aeroporti principali), soggetti obbligati, deliverable art. 3/4, scadenze
+    quinquennali, sanzioni; supporto documentale'
+  normative_refs:
+  - D.Lgs. 19/8/2005 n. 194 (testo vigente) - artt. 1-11 (attuazione dir. 2002/49/CE)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-194-2005
+  - rumore-ambientale
+  - mappatura-acustica-strategica
+  - piani-azione
+  - direttiva-2002-49-ce
 - id: modulistica-edilizia-unificata
   area: edilizia-urbanistica-catasto
   title: Modulistica edilizia unificata + Salva Casa
