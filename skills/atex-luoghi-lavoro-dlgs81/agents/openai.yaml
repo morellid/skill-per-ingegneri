@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: ATEX luoghi di lavoro (D.Lgs. 81/2008 Titolo XI)
+short_description: Supporto documentale alla protezione dei lavoratori dai rischi da atmosfere esplosive (ATEX luoghi di lavoro, Titolo XI del D.Lgs. 81/2008, recepimento dir. 1999/92/CE). Determina quando si applica (definizione di atmosfera esplosiva, esclusioni art. 287), gli obblighi del datore di lavoro (prevenire la formazione, evitare l'accensione, attenuare gli effetti, art. 289), la valutazione del rischio di esplosione (art. 290), la classificazione delle aree in zone (art. 293, allegato XLIX) con prescrizioni minime (allegato L) e segnaletica (allegato LI), il documento sulla protezione contro le esplosioni (DPCE, art. 294), le verifiche delle installazioni elettriche nelle zone (art. 296, DPR 462/2001) e le sanzioni (art. 297). Non classifica le zone, non redige il DPCE e non copre la marcatura ATEX degli apparecchi (2014/34/UE).
+default_prompt: |
+  Nel mio reparto si movimentano polveri combustibili con possibile formazione di
+  nubi. Si applica il Titolo XI ATEX del D.Lgs. 81/2008? Quali obblighi ho, quale
+  documento devo redigere e cosa rischio se non lo faccio? Cita gli articoli.

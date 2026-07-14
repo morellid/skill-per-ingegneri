@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 4
+  count: 5
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -65,6 +65,22 @@ skills:
   - sicurezza-lavoro
   - qualificazione-imprese
   - dlgs-81-2008
+- id: atex-luoghi-lavoro-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: ATEX luoghi di lavoro - D.Lgs. 81/2008 Titolo XI
+  summary: 'Protezione dei lavoratori dalle atmosfere esplosive (ATEX luoghi di lavoro, D.Lgs. 81/2008 Titolo XI): ambito
+    (art. 287), obblighi del datore (art. 289), valutazione del rischio (art. 290), zone (art. 293), documento protezione
+    dalle esplosioni (art. 294), sanzioni (art. 297)'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 (testo vigente) - Titolo XI, artt. 287-290, 293, 294, 296, 297 (recepimento dir. 1999/92/CE)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - atex
+  - atmosfere-esplosive
+  - sicurezza-lavoro
+  - classificazione-zone
 - id: aua-dpr59-dossier
   area: ambiente-territorio-mobilita
   title: AUA - dossier ex D.P.R. 59/2013
