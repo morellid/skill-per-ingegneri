@@ -126,7 +126,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 3 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 4 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -137,7 +137,8 @@
       "skills": [
         "./dm37-2008-dichiarazione-conformita",
         "./fascicolo-tecnico-macchine-reg-1230",
-        "./ped-classificazione-conformita"
+        "./ped-classificazione-conformita",
+        "./verifiche-messa-a-terra-dpr462"
       ]
     },
     {

@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 3
+  count: 4
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -650,6 +650,22 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: verifiche-messa-a-terra-dpr462
+  area: impianti-macchine-prodotti
+  title: Verifiche impianti di messa a terra e luoghi pericolosi - DPR 462/2001
+  summary: 'Adempimenti DPR 462/2001 (messa a terra, scariche atmosferiche, luoghi con pericolo di esplosione nei luoghi di
+    lavoro): periodicita'' delle verifiche periodiche (5 anni / 2 anni), soggetti abilitati (ASL/ARPA/organismi), denuncia
+    entro 30 gg, banca dati INAIL; documentale'
+  normative_refs:
+  - D.P.R. 22/10/2001 n. 462 (testo vigente) - artt. 1-8
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-462-2001
+  - messa-a-terra
+  - sicurezza-elettrica
+  - verifiche-periodiche
+  - luoghi-di-lavoro
 - id: via-screening-sia-dlgs152
   area: ambiente-territorio-mobilita
   title: VIA - screening (art. 19) e SIA (Allegato VII) D.Lgs. 152/2006

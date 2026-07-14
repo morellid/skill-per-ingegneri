@@ -1,0 +1,29 @@
+schema_version: 1
+skill: verifiche-messa-a-terra-dpr462
+last_verified: 2026-07-14
+
+# Fonte per gli adempimenti di denuncia e verifica periodica degli impianti
+# elettrici di messa a terra, dei dispositivi contro le scariche atmosferiche e
+# degli impianti in luoghi con pericolo di esplosione nei luoghi di lavoro.
+
+sources:
+  - id: dpr-462-2001
+    title: "D.P.R. 22 ottobre 2001, n. 462 - Regolamento denuncia e verifica impianti di messa a terra, protezione scariche atmosferiche e impianti elettrici pericolosi (testo vigente al 2026-07-14)"
+    type: dpr
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-10-22;462!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: 08a5a8c683081472f94f24a3f7fe63d57b904bbc8e011df28182d10f529c8810
+    license: public-domain
+    binary_path: not_in_repo/dpr-462-2001-vig-2026-07-14.html
+    md_path: references/fonti/dpr-462-2001.md
+    excerpt_path: references/estratti/verifiche-messa-a-terra-checklist.md
+    notes: |
+      Codice redazionale 001G0521, GU n. 6 dell'8/1/2002 (in vigore dal
+      23/1/2002). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-14 (hash stabile, doppio download: 08a5a8c...). Il testo
+      degli articoli 1-10 e' caricato via AJAX (caricaArticolo) e trascritto
+      verbatim in references/fonti/dpr-462-2001.md; l'art. 7-bis (banca dati
+      INAIL) e' nel testo in vigore dal 1-3-2020. Nota storica: l'ISPESL citato
+      nel testo e' confluito nell'INAIL (art. 7 DL 78/2010).

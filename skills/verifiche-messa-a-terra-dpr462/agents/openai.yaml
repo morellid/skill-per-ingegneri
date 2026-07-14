@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Verifiche impianti di messa a terra e luoghi pericolosi (DPR 462/2001)
+short_description: Supporto documentale agli adempimenti del DPR 462/2001 per impianti di messa a terra, dispositivi contro le scariche atmosferiche e impianti in luoghi con pericolo di esplosione nei luoghi di lavoro. Determina la periodicita' della verifica periodica (5 anni ordinari; 2 anni per cantieri, locali ad uso medico, ambienti a maggior rischio incendio e luoghi con pericolo di esplosione), i soggetti abilitati (ASL/ARPA o organismi), gli adempimenti di messa in esercizio (dichiarazione di conformita' = omologazione, denuncia entro 30 gg a INAIL e ASL/ARPA), la prima verifica a campione e la comunicazione del nominativo dell'organismo alla banca dati INAIL (art. 7-bis). Non definisce regole tecniche CEI, non calcola, non sostituisce datore di lavoro, installatore e organismo verificatore.
+default_prompt: |
+  Ho un capannone con officina e un'area a maggior rischio in caso di incendio;
+  l'impianto di messa a terra e' stato messo in esercizio da poco. Ogni quanto va
+  fatta la verifica periodica ai sensi del DPR 462/2001, chi la esegue e quali
+  adempimenti ho alla messa in esercizio? Cita gli articoli.
