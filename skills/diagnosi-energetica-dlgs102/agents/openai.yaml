@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Diagnosi energetica obbligatoria (D.Lgs. 102/2014 art. 8)
+short_description: Supporto documentale all'obbligo di diagnosi energetica delle grandi imprese e delle imprese a forte consumo di energia (art. 8 D.Lgs. 102/2014). Determina se un'impresa e' obbligata (grande impresa: oltre 250 occupati e fatturato oltre 50 milioni, oppure bilancio oltre 43 milioni; energivore a prescindere dalla dimensione), le esenzioni (consumi sotto 50 tep, ISO 50001 con diagnosi conforme), la periodicita' quadriennale, i soggetti esecutori (ESCo/EGE certificati UNI CEI 11352/11339), la comunicazione all'ENEA, i controlli e le sanzioni (artt. 2, 8, 16). Non esegue la diagnosi, non calcola consumi/risparmi, non riproduce l'allegato 2 ne' le norme UNI CEI/ISO a pagamento.
+default_prompt: |
+  La mia azienda ha 400 dipendenti, 90 milioni di fatturato e consuma circa 800
+  tep all'anno. E' obbligata a fare la diagnosi energetica ai sensi del D.Lgs.
+  102/2014? Ogni quanto va rifatta, chi puo' eseguirla e a chi vanno comunicati i
+  risultati? Cita gli articoli.

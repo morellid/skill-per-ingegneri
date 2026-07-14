@@ -22,7 +22,7 @@ areas:
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 3
+  count: 4
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
@@ -263,6 +263,22 @@ skills:
   - zona-sismica
   - collaudo-statico
   - sportello-unico-edilizia
+- id: diagnosi-energetica-dlgs102
+  area: energia-incentivi
+  title: Diagnosi energetica obbligatoria - D.Lgs. 102/2014 art. 8
+  summary: 'Obbligo di diagnosi energetica delle grandi imprese ed energivore (D.Lgs. 102/2014 art. 8): chi e'' obbligato,
+    esenzioni (< 50 tep, ISO 50001), periodicita'' quadriennale, ESCo/EGE certificati, comunicazione ENEA e sanzioni. Supporto
+    documentale, non esegue la diagnosi'
+  normative_refs:
+  - D.Lgs. 4/7/2014 n. 102 (testo vigente) - artt. 2, 8, 16 (attuazione dir. 2012/27/UE)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-102-2014
+  - diagnosi-energetica
+  - efficienza-energetica
+  - grandi-imprese
+  - enea
 - id: dm37-2008-dichiarazione-conformita
   area: impianti-macchine-prodotti
   title: DM 37/2008 - Dichiarazione Conformita' Impianti
