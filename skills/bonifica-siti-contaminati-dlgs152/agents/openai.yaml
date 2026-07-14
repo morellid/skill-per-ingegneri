@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Bonifica siti contaminati (D.Lgs. 152/2006 Titolo V)
+short_description: Supporto documentale alla procedura di bonifica dei siti contaminati (Parte quarta Titolo V del D.Lgs. 152/2006). Orienta tra le definizioni (CSC dell'Allegato 5, CSR dall'analisi di rischio, sito potenzialmente contaminato/contaminato/non contaminato, MISE, MISO, messa in sicurezza permanente, bonifica, ripristino, art. 240), la procedura del responsabile (art. 242: prevenzione entro 24 ore, autocertificazione entro 48 ore se sotto CSC, piano di caratterizzazione entro 30 giorni, analisi di rischio entro 6 mesi, conferenza di servizi), il procedimento su iniziativa della PA con ordinanza (art. 244), le aree di ridotte dimensioni (art. 249) e le sanzioni penali (art. 257). Non legge i valori CSC, non esegue l'analisi di rischio, non redige il piano di caratterizzazione.
+default_prompt: |
+  In un sito e' stato rilevato il superamento delle CSC. Qual e' l'iter di
+  bonifica ai sensi del D.Lgs. 152/2006, con quali documenti, termini e attori?
+  Quando il sito e' considerato "contaminato" e cosa si rischia se non si procede?
+  Cita gli articoli.
