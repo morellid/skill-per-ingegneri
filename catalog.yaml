@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 11
+  count: 13
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -262,6 +262,22 @@ skills:
   - ntc-2018
   - slu
   - sle
+- id: consulente-adr-dlgs40
+  area: ambiente-territorio-mobilita
+  title: Consulente sicurezza trasporti merci pericolose (DGSA) - D.Lgs. 40/2000
+  summary: 'Obblighi del consulente sicurezza trasporti merci pericolose - DGSA (D.Lgs. 40/2000): chi deve nominarlo ed esenzioni
+    (artt. 2, 3), obblighi del capo dell''impresa (art. 3) e del consulente (relazione annuale e d''incidente, art. 4), qualificazione
+    (art. 5), sanzioni (art. 6)'
+  normative_refs:
+  - D.Lgs. 4/2/2000 n. 40 (testo vigente) - artt. 2, 3, 4, 5, 6 (attuazione dir. 96/35/CE; quadro ADR 1.8.3)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-40-2000
+  - merci-pericolose
+  - consulente-adr
+  - dgsa
+  - trasporti
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
@@ -463,6 +479,22 @@ skills:
   - nis2
   - dlgs-138-2024
   - acn
+- id: notifica-seveso-dlgs105
+  area: ambiente-territorio-mobilita
+  title: Notifica e adempimenti Seveso III - D.Lgs. 105/2015
+  summary: 'Obblighi degli stabilimenti a rischio di incidente rilevante (Seveso III, D.Lgs. 105/2015): assoggettabilita''
+    (art. 2), soglia inferiore/superiore (allegato 1), notifica (art. 13), PPIR/SGS (art. 14), rapporto di sicurezza soglia
+    superiore (art. 15), sanzioni (art. 28)'
+  normative_refs:
+  - D.Lgs. 26/6/2015 n. 105 (testo vigente) - artt. 2, 3, 13, 14, 15, 28 (attuazione dir. 2012/18/UE Seveso III)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-105-2015
+  - seveso-iii
+  - incidente-rilevante
+  - notifica
+  - sostanze-pericolose
 - id: oepv-valutatore-offerte-tecniche
   area: appalti-opere-pubbliche
   title: OEPV - Valutatore offerte tecniche
@@ -747,6 +779,22 @@ skills:
   - formulario-fir
   - albo-gestori-ambientali
   - trasporti
+- id: trasporti-eccezionali-cds-art10
+  area: ambiente-territorio-mobilita
+  title: Veicoli e trasporti eccezionali - art. 10 Codice della Strada
+  summary: 'Regime dei veicoli e trasporti eccezionali (art. 10 Codice della Strada, D.Lgs. 285/1992): inquadramento (eccedenza
+    sagoma art. 61 / massa art. 62), obbligo di autorizzazione ed ente competente (c. 6), tipi singola/multipla/periodica
+    (c. 9), prescrizioni, sanzioni (c. 18-25)'
+  normative_refs:
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada, testo vigente) - art. 10
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-285-1992
+  - codice-della-strada
+  - trasporti-eccezionali
+  - autorizzazione-circolazione
+  - mobilita
 - id: valutazione-cem-srb-art-87-cce
   area: ambiente-territorio-mobilita
   title: Valutazione CEM SRB - art. 87 CCE

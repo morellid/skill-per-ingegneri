@@ -1,0 +1,32 @@
+schema_version: 1
+skill: consulente-adr-dlgs40
+last_verified: 2026-07-14
+
+# Fonte per gli obblighi relativi al consulente per la sicurezza dei trasporti
+# di merci pericolose (nomina, relazione annuale, relazione d'incidente,
+# qualificazione, sanzioni).
+
+sources:
+  - id: dlgs-40-2000
+    title: "D.Lgs. 4 febbraio 2000, n. 40 - Consulente per la sicurezza dei trasporti di merci pericolose su strada, per ferrovia o per via navigabile interna (attuazione dir. 96/35/CE), testo vigente al 2026-07-14"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-02-04;40!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: 369d13494a52b29b29c9f96794a9ed08b94579e8529767dc09c348c035c894f4
+    license: public-domain
+    binary_path: not_in_repo/dlgs-40-2000-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-40-2000.md
+    excerpt_path: references/estratti/consulente-adr-checklist.md
+    notes: |
+      GU n. 52 del 3/3/2000. Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-14 (hash stabile, doppio download: 369d1349...). Gli articoli
+      2 (campo di applicazione), 3 (obblighi del capo dell'impresa: nomina,
+      comunicazione, conservazione, esenzioni), 4 (obblighi del consulente:
+      relazione annuale, relazione d'incidente), 5 (qualificazione) e 6
+      (sanzioni) sono caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dlgs-40-2000.md. Gli allegati I e II (compiti e materie
+      d'esame) e il quadro internazionale ADR 1.8.3 (UNECE) e il D.Lgs. 35/2010
+      (dir. 2008/68/CE) sono citati come riferimento e NON riprodotti. Le
+      sanzioni dell'art. 6 sono nel testo espresse in lire (importi originari).

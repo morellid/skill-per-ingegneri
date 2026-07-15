@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Consulente sicurezza trasporti merci pericolose - DGSA (D.Lgs. 40/2000)
+short_description: Supporto documentale agli obblighi relativi al consulente per la sicurezza dei trasporti di merci pericolose (DGSA) ai sensi del D.Lgs. 40/2000. Determina se un'impresa deve nominare il consulente (ambito - trasporto o carico/scarico di merci pericolose su strada, ferrovia o via navigabile interna, art. 2; esenzioni per quantitativi limitati o trasporti occasionali, art. 3 c. 6), gli obblighi del capo dell'impresa (nomina, comunicazione alla motorizzazione civile, conservazione della relazione per cinque anni, art. 3), gli obblighi del consulente (relazione annuale e a ogni evento modificativo, relazione d'incidente al Ministero dei trasporti, art. 4), la qualificazione con certificato di formazione professionale (art. 5) e le sanzioni e la vigilanza (art. 6). Non redige la relazione annuale ne' la relazione d'incidente, non riproduce gli allegati e non tratta le regole tecniche dell'ADR.
+default_prompt: |
+  La mia impresa trasporta su strada merci pericolose come attivita' principale.
+  Devo nominare il consulente per la sicurezza dei trasporti di merci pericolose?
+  Quali adempimenti ho io e quali il consulente, e cosa rischio se non lo nomino?
+  Cita gli articoli del D.Lgs. 40/2000.
