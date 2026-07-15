@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 14
+  count: 15
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -478,6 +478,23 @@ skills:
   - cila
   - scia
   - salva-casa
+- id: mog-231-reati-ambientali
+  area: ambiente-territorio-mobilita
+  title: MOG 231 - Reati ambientali (art. 25-undecies D.Lgs 231/2001)
+  summary: 'Parte speciale ambientale del Modello 231: mappa i reati presupposto ambientali dell''art. 25-undecies D.Lgs 231/2001
+    (ecoreati c.p., D.Lgs 152/2006 su scarichi/rifiuti/bonifica/emissioni, CITES, ozono, navi) con sanzioni a quote/interdittive
+    e i controlli del MOG (artt. 6-7).'
+  normative_refs:
+  - D.Lgs. 8/6/2001 n. 231 - art. 25-undecies (reati ambientali), artt. 6-7 (modelli di organizzazione) e art. 9 (sanzioni
+    interdittive)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-231-2001
+  - reati-ambientali
+  - mog-231
+  - art-25-undecies
+  - compliance-ambientale
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)
