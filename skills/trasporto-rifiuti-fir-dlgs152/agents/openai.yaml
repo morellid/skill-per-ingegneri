@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Trasporto rifiuti - formulario (FIR) e Albo gestori (D.Lgs. 152/2006)
+short_description: Supporto documentale agli obblighi del trasporto dei rifiuti ai sensi del D.Lgs. 152/2006. Imposta il formulario di identificazione dei rifiuti (FIR, art. 193 - obbligo, quattro copie, firme di produttore/detentore, trasportatore e destinatario, modello e digitalizzazione via RENTRI dell'art. 188-bis, imballaggio/etichettatura dei pericolosi, esclusioni per rifiuti urbani ai centri di raccolta e spedizioni transfrontaliere), verifica l'obbligo di iscrizione all'Albo nazionale gestori ambientali (art. 212 - requisito per raccolta/trasporto, con la semplificazione per i produttori iniziali che trasportano i propri rifiuti non pericolosi o pericolosi fino a 30 kg/30 litri al giorno) e le sanzioni (art. 258 - da 1.600 a 10.000 euro senza formulario o con dati inesatti, reclusione da uno a tre anni per rifiuti pericolosi senza formulario). Non classifica il rifiuto, non redige il formulario, non riproduce il modello del FIR ne' le regole dell'Albo.
+default_prompt: |
+  La mia impresa trasporta rifiuti (anche pericolosi) per conto terzi. Devo
+  iscrivermi all'Albo gestori ambientali? Come gestisco il formulario (FIR) e cosa
+  rischio trasportando senza formulario, soprattutto per i rifiuti pericolosi?
+  Cita gli articoli del D.Lgs. 152/2006.

@@ -1,0 +1,32 @@
+schema_version: 1
+skill: trasporto-rifiuti-fir-dlgs152
+last_verified: 2026-07-14
+
+# Fonte per gli obblighi documentali del trasporto dei rifiuti: formulario di
+# identificazione (FIR, art. 193), iscrizione all'Albo nazionale gestori
+# ambientali (art. 212, incluse le semplificazioni per il trasporto dei propri
+# rifiuti) e sanzioni (art. 258).
+
+sources:
+  - id: dlgs-152-2006
+    title: "D.Lgs. 3 aprile 2006, n. 152 - Norme in materia ambientale (Testo Unico Ambientale), Parte quarta - artt. 193 (formulario), 212 (Albo gestori ambientali), 258 (sanzioni), testo vigente al 2026-07-14"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: af54f5e0c6fa3d0a6d3dc5cf6d33ece0be7969be086dd93a24980e11b053b9fe
+    license: public-domain
+    binary_path: not_in_repo/dlgs-152-2006-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-152-2006.md
+    excerpt_path: references/estratti/trasporto-rifiuti-checklist.md
+    notes: |
+      Codice redazionale 006G0171, GU n. 88 del 14/4/2006 - S.O. n. 96. Il
+      binario e' la pagina indice Normattiva pinnata a !vig=2026-07-14 (hash
+      stabile, doppio download: af54f5e0...). Gli articoli 193 (trasporto rifiuti
+      - formulario FIR), 212 (Albo nazionale gestori ambientali) e 258 (sanzioni)
+      sono caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dlgs-152-2006.md. Il modello del formulario e il RENTRI
+      (art. 188-bis) e i decreti attuativi, le categorie/classi dell'Albo e le
+      regole del Comitato nazionale, e la disciplina ADR sono citati come
+      riferimento e NON riprodotti.
