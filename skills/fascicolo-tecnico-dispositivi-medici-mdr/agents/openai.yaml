@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Fascicolo tecnico dispositivi medici (MDR Reg. UE 2017/745) - Classe I/IIa
+short_description: Supporto documentale alla struttura del fascicolo tecnico (documentazione tecnica, allegato II + sorveglianza post-commercializzazione allegato III) di un dispositivo medico di classe I o IIa e all'individuazione del percorso di valutazione della conformita' (art. 52) ai sensi del Reg. (UE) 2017/745 (MDR): classe I in autodichiarazione con dichiarazione UE (art. 19); classe I sterile/con funzione di misura/strumenti chirurgici riutilizzabili con organismo notificato dal ruolo limitato; classe IIa con allegato IX (capi I e III) oppure documentazione tecnica con allegato XI. Non classifica il dispositivo (allegato VIII), non redige la valutazione clinica e non individua le norme armonizzate.
+default_prompt: |
+  Devo predisporre il fascicolo tecnico di un dispositivo medico di classe IIa:
+  come struttura la documentazione tecnica secondo l'allegato II del Reg. (UE)
+  2017/745 (MDR) e quale percorso di valutazione della conformita' devo seguire
+  (art. 52)? Cita gli allegati.
