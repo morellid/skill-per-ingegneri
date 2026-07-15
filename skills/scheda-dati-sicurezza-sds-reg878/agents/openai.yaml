@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Scheda di Dati di Sicurezza (SDS) - allegato II REACH / Reg. (UE) 2020/878
+short_description: Supporto documentale alla compilazione e alla verifica di completezza della Scheda di Dati di Sicurezza (SDS) secondo l'allegato II del REACH quale sostituito dal Reg. (UE) 2020/878 (formato a 16 sezioni). Struttura le 16 sezioni obbligatorie con le rispettive sotto-sezioni e verifica le prescrizioni generali della Parte A (compilazione da persona competente, divieto di indicazioni minimizzanti non coerenti con la classificazione, datazione e gestione delle revisioni). Non classifica la sostanza/miscela ai sensi del CLP, non compie la valutazione della sicurezza chimica e non ricava i valori di esposizione/tossicologici/di trasporto.
+default_prompt: |
+  Devo verificare la completezza di una Scheda di Dati di Sicurezza (SDS) di una
+  miscela: quali sono le 16 sezioni obbligatorie e le sotto-sezioni previste
+  dall'allegato II del REACH (Reg. UE 2020/878), e come vanno gestite datazione e
+  revisioni? Cita le sezioni.

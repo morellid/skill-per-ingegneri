@@ -110,7 +110,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 14 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 15 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -124,6 +124,7 @@
         "./cbam-declarant-trimestrale",
         "./consulente-adr-dlgs40",
         "./mappatura-acustica-strategica-dlgs194",
+        "./mog-231-reati-ambientali",
         "./notifica-seveso-dlgs105",
         "./pums-validator-dm397",
         "./rsia-audit-stradale-dlgs35",
@@ -138,7 +139,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 6 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 8 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -149,8 +150,10 @@
       "skills": [
         "./dm37-2008-dichiarazione-conformita",
         "./fascicolo-tecnico-macchine-reg-1230",
+        "./istruzioni-uso-macchine-reg-1230",
         "./marcatura-ce-elettrici-lvd-emc-red",
         "./ped-classificazione-conformita",
+        "./scheda-dati-sicurezza-sds-reg878",
         "./verifiche-messa-a-terra-dpr462",
         "./verifiche-periodiche-ascensori-dpr162"
       ]

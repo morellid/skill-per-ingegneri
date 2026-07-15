@@ -26,11 +26,11 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 14
+  count: 15
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 6
+  count: 8
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -445,6 +445,22 @@ skills:
   - garante-privacy
   - tracking-pixel
   - email-marketing
+- id: istruzioni-uso-macchine-reg-1230
+  area: impianti-macchine-prodotti
+  title: Istruzioni per l'uso delle macchine (Reg. UE 2023/1230, All. III 1.7.4)
+  summary: 'Redazione e verifica di completezza delle istruzioni per l''uso (manuale) di macchina o prodotto correlato ex
+    allegato III punto 1.7.4 Reg. (UE) 2023/1230: principi generali (uso previsto e uso scorretto prevedibile) e contenuto
+    minimo a-u, lingua e formato.'
+  normative_refs:
+  - Reg. (UE) 2023/1230 (Regolamento Macchine) - allegato III punto 1.7.4 e art. 10 §7-8
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - reg-ue-2023-1230
+  - macchine
+  - istruzioni-per-uso
+  - manuale-uso-manutenzione
+  - marcatura-ce
 - id: mappatura-acustica-strategica-dlgs194
   area: ambiente-territorio-mobilita
   title: Mappatura acustica strategica e piani d'azione - D.Lgs. 194/2005
@@ -496,6 +512,23 @@ skills:
   - cila
   - scia
   - salva-casa
+- id: mog-231-reati-ambientali
+  area: ambiente-territorio-mobilita
+  title: MOG 231 - Reati ambientali (art. 25-undecies D.Lgs 231/2001)
+  summary: 'Parte speciale ambientale del Modello 231: mappa i reati presupposto ambientali dell''art. 25-undecies D.Lgs 231/2001
+    (ecoreati c.p., D.Lgs 152/2006 su scarichi/rifiuti/bonifica/emissioni, CITES, ozono, navi) con sanzioni a quote/interdittive
+    e i controlli del MOG (artt. 6-7).'
+  normative_refs:
+  - D.Lgs. 8/6/2001 n. 231 - art. 25-undecies (reati ambientali), artt. 6-7 (modelli di organizzazione) e art. 9 (sanzioni
+    interdittive)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-231-2001
+  - reati-ambientali
+  - mog-231
+  - art-25-undecies
+  - compliance-ambientale
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)
@@ -732,6 +765,23 @@ skills:
   - emissioni-atmosfera
   - autorizzazioni-ambientali
   - testo-unico-ambientale
+- id: scheda-dati-sicurezza-sds-reg878
+  area: impianti-macchine-prodotti
+  title: Scheda di Dati di Sicurezza (SDS) - allegato II REACH / Reg. (UE) 2020/878
+  summary: 'Compilazione e verifica di completezza della Scheda di Dati di Sicurezza (SDS) secondo l''allegato II REACH sostituito
+    dal Reg. (UE) 2020/878: le 16 sezioni obbligatorie con le sotto-sezioni e le prescrizioni generali della Parte A (persona
+    competente, datazione/revisioni).'
+  normative_refs:
+  - Regolamento (UE) 2020/878 - allegato II REACH (formato SDS a 16 sezioni)
+  - Reg. (CE) 1907/2006 (REACH) art. 31 (obbligo SDS - citato) e Reg. (CE) 1272/2008 (CLP - citato)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - reg-ue-2020-878
+  - sds
+  - scheda-dati-sicurezza
+  - reach
+  - clp
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
