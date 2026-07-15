@@ -72,7 +72,7 @@
     {
       "name": "appalti-opere-pubbliche",
       "source": "./skills",
-      "description": "Appalti & opere pubbliche - 5 skill verticali su normative italiane.",
+      "description": "Appalti & opere pubbliche - 6 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -85,7 +85,8 @@
         "./dnsh-pnrr-checker",
         "./oepv-valutatore-offerte-tecniche",
         "./pfte-allegato-i7-checker",
-        "./relazione-cam-dm-24-11-2025"
+        "./relazione-cam-dm-24-11-2025",
+        "./specifiche-tecniche-ict-appalti-dlgs36"
       ]
     },
     {

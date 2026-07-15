@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 5
+  count: 6
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -733,6 +733,24 @@ skills:
   - sismabonus
   - dm-58-2017
   - rischio-sismico
+- id: specifiche-tecniche-ict-appalti-dlgs36
+  area: appalti-opere-pubbliche
+  title: Specifiche tecniche ed acquisizione ICT negli appalti PA - D.Lgs. 36/2023 + CAD
+  summary: 'Specifiche tecniche ed etichettature negli appalti ICT della PA (art. 79-80 e all. II.5 D.Lgs. 36/2023): modalita''
+    di formulazione, clausola ''o equivalente'', divieto di marchi; analisi comparativa delle soluzioni software e riuso/titolarita''
+    del codice (artt. 68-69 CAD).'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - artt. 79, 80 e allegato II.5 (specifiche tecniche ed etichettature)
+  - D.Lgs. 7/3/2005 n. 82 (CAD) - artt. 68 (analisi comparativa) e 69 (riuso e standard aperti)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - codice-contratti-pubblici
+  - cad-dlgs-82-2005
+  - specifiche-tecniche
+  - appalti-ict
+  - riuso-software
 - id: spettro-risposta-ntc
   area: strutture-geotecnica
   title: Spettro di risposta NTC 2018 (par. 3.2)
