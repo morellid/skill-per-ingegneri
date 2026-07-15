@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 5
+  count: 6
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -445,6 +445,22 @@ skills:
   - garante-privacy
   - tracking-pixel
   - email-marketing
+- id: istruzioni-uso-macchine-reg-1230
+  area: impianti-macchine-prodotti
+  title: Istruzioni per l'uso delle macchine (Reg. UE 2023/1230, All. III 1.7.4)
+  summary: 'Redazione e verifica di completezza delle istruzioni per l''uso (manuale) di macchina o prodotto correlato ex
+    allegato III punto 1.7.4 Reg. (UE) 2023/1230: principi generali (uso previsto e uso scorretto prevedibile) e contenuto
+    minimo a-u, lingua e formato.'
+  normative_refs:
+  - Reg. (UE) 2023/1230 (Regolamento Macchine) - allegato III punto 1.7.4 e art. 10 §7-8
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - reg-ue-2023-1230
+  - macchine
+  - istruzioni-per-uso
+  - manuale-uso-manutenzione
+  - marcatura-ce
 - id: mappatura-acustica-strategica-dlgs194
   area: ambiente-territorio-mobilita
   title: Mappatura acustica strategica e piani d'azione - D.Lgs. 194/2005
