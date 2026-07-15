@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 8
+  count: 9
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -398,6 +398,22 @@ skills:
   - dvr
   - dlgs-81-2008
   - salute-sicurezza
+- id: fascicolo-tecnico-dispositivi-medici-mdr
+  area: impianti-macchine-prodotti
+  title: Fascicolo tecnico dispositivi medici (MDR Reg. UE 2017/745) - Classe I/IIa
+  summary: 'Struttura del fascicolo tecnico (allegato II + PMS allegato III) di un dispositivo medico di classe I o IIa e
+    percorso di valutazione della conformita'' (art. 52: classe I autodichiarazione; Is/Im/Ir; classe IIa allegato IX o XI)
+    - Reg. (UE) 2017/745 (MDR).'
+  normative_refs:
+  - Regolamento (UE) 2017/745 (MDR) - art. 52, allegati II, III, VIII (classi I e IIa)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - reg-ue-2017-745
+  - mdr
+  - dispositivi-medici
+  - fascicolo-tecnico
+  - marcatura-ce
 - id: fascicolo-tecnico-macchine-reg-1230
   area: impianti-macchine-prodotti
   title: Fascicolo tecnico macchine (Reg. UE 2023/1230)

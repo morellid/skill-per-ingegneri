@@ -1,0 +1,35 @@
+schema_version: 1
+skill: fascicolo-tecnico-dispositivi-medici-mdr
+last_verified: 2026-07-15
+
+# Fonte per la struttura del fascicolo tecnico (documentazione tecnica) dei
+# dispositivi medici e per i percorsi di valutazione della conformita' delle
+# classi I e IIa: il regolamento (UE) 2017/745 (MDR).
+
+sources:
+  - id: reg-ue-2017-745-mdr
+    title: "Regolamento (UE) 2017/745 (dispositivi medici, MDR) - art. 52, allegati II, III e VIII (testo consolidato)"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02017R0745-20240709
+    accessed: 2026-07-15
+    # eur-lex non e' riproducibile con hash stabile e blocca gli IP datacenter di
+    # GitHub Actions: fonte online-only (binary_path null, sha256 null), testo
+    # trascritto verbatim nel MD (stesso approccio della skill ai-act-compliance).
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/reg-ue-2017-745-mdr.md
+    excerpt_path: references/estratti/fascicolo-tecnico-mdr-checklist.md
+    notes: |
+      Testo consolidato (CELEX 02017R0745-20240709). Letti e trascritti verbatim in
+      references/fonti/reg-ue-2017-745-mdr.md: la struttura dell'allegato II
+      (documentazione tecnica, 6 capitoli), l'allegato III (documentazione tecnica
+      sulla sorveglianza post-commercializzazione), l'art. 52 (procedure di
+      valutazione della conformita' per le classi I e IIa, incluse le
+      sottocategorie sterile/con funzione di misura/strumenti chirurgici
+      riutilizzabili) e l'intestazione delle regole di classificazione (allegato
+      VIII, definizioni di durata e dispositivi invasivi/attivi). Le 22 regole di
+      classificazione dell'allegato VIII e i requisiti generali di sicurezza e
+      prestazione (allegato I) sono citati come rinvio e NON riprodotti
+      integralmente. Le norme armonizzate (a pagamento) e gli MDCG guidance sono
+      citati, non riprodotti.
