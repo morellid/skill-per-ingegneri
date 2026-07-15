@@ -138,7 +138,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 6 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 7 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"

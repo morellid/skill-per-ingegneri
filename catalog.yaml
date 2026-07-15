@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 6
+  count: 7
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
