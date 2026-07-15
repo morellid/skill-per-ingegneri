@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: MOG 231 - Reati ambientali (art. 25-undecies D.Lgs 231/2001)
+short_description: Supporto documentale alla parte speciale ambientale del Modello di Organizzazione, Gestione e Controllo (MOG) ex D.Lgs 231/2001. Mappa i reati presupposto ambientali dell'art. 25-undecies (ecoreati del codice penale 452-bis ss.; reati del D.Lgs 152/2006 su scarichi, rifiuti, bonifica, emissioni; L. 150/1992 CITES; L. 549/1993 ozono; D.Lgs 202/2007 navi) con le sanzioni pecuniarie a quote e interdittive, e collega ciascun reato alle aree di compliance ambientale e ai controlli della parte speciale (attivita' a rischio, protocolli, flussi verso l'OdV, sistema disciplinare) ai sensi degli artt. 6-7. Non redige il Modello, non riproduce i singoli reati, non effettua la valutazione legale.
+default_prompt: |
+  Un'azienda con scarichi idrici, emissioni e gestione di rifiuti deve impostare la
+  parte speciale ambientale del Modello 231: quali reati presupposto dell'art.
+  25-undecies rilevano, quali sanzioni prevede e quali controlli inserire ai sensi
+  degli artt. 6-7? Cita gli articoli.

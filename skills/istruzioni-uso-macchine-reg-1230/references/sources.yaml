@@ -1,0 +1,38 @@
+schema_version: 1
+skill: istruzioni-uso-macchine-reg-1230
+last_verified: 2026-07-15
+
+# Fonte per il contenuto obbligatorio delle istruzioni per l'uso (manuale di uso
+# e manutenzione) di una macchina o prodotto correlato: allegato III, punto 1.7.4
+# del regolamento (UE) 2023/1230 (Regolamento Macchine).
+
+sources:
+  - id: reg-ue-2023-1230-istruzioni
+    title: "Regolamento (UE) 2023/1230 del Parlamento europeo e del Consiglio del 14 giugno 2023 relativo alle macchine - allegato III (RES), punto 1.7.4 'Istruzioni per l'uso' e art. 10 §7-8"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32023R1230
+    accessed: 2026-07-15
+    # eur-lex non e' riproducibile con hash stabile (la pagina HTML varia a ogni
+    # richiesta) e restituisce body vuoto agli IP datacenter di GitHub Actions:
+    # come per la skill ai-act-compliance la fonte e' trattata come online-only
+    # (binary_path null, sha256 null) e il testo e' trascritto verbatim nel MD.
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/reg-ue-2023-1230-istruzioni.md
+    excerpt_path: references/estratti/istruzioni-uso-checklist.md
+    notes: |
+      Reg. (UE) 2023/1230 (Regolamento Macchine, sostituisce la dir. 2006/42/CE
+      dal 14/1/2027). Letti e trascritti verbatim in
+      references/fonti/reg-ue-2023-1230-istruzioni.md il punto 1.7.4 dell'allegato
+      III (RES): 1.7.4.1 principi generali di redazione (uso previsto e uso
+      scorretto ragionevolmente prevedibile; operatori non professionali) e
+      1.7.4.2 contenuto delle istruzioni (elenco a-u, comprese le informazioni
+      sull'emissione di rumore aereo, punto u.i-iii), oltre alla deroga
+      linguistica per la manutenzione destinata a personale specializzato. Gli
+      obblighi generali dell'art. 10 §7-8 (fornitura delle istruzioni, formato
+      digitale con diritto alla copia cartacea gratuita su richiesta, accesso
+      alla dichiarazione UE di conformita') sono citati come rinvio. Gli altri
+      RES dell'allegato III, le norme armonizzate UNI/CEN (a pagamento) e il
+      fascicolo tecnico (allegato IV, coperto dalla skill
+      fascicolo-tecnico-macchine-reg-1230) NON sono riprodotti.

@@ -1,0 +1,35 @@
+schema_version: 1
+skill: mog-231-reati-ambientali
+last_verified: 2026-07-15
+
+# Fonte per la mappatura dei reati presupposto ambientali della responsabilita'
+# amministrativa degli enti (art. 25-undecies D.Lgs 231/2001) e per la funzione
+# esimente del Modello di Organizzazione, Gestione e Controllo (artt. 6-7).
+
+sources:
+  - id: dlgs-231-2001
+    title: "D.Lgs. 8 giugno 2001, n. 231 - Responsabilita' amministrativa degli enti - artt. 6, 7, 9 e 25-undecies (reati ambientali) (testo vigente al 2026-07-15)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern delle altre skill Normattiva del repo).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-06-08;231!vig=2026-07-15
+    accessed: 2026-07-15
+    sha256: 73e26d0e0cd6289659b198c153eda69ef124417c3a7cac2d94ed655b5f4df76b
+    license: public-domain
+    binary_path: not_in_repo/dlgs-231-2001-vig-2026-07-15.html
+    md_path: references/fonti/dlgs-231-2001.md
+    excerpt_path: references/estratti/reati-ambientali-231-mappa.md
+    notes: |
+      Codice redazionale 001G0293, GU n. 140 del 19/6/2001. Il binario e' la
+      pagina indice Normattiva pinnata a !vig=2026-07-15 (hash stabile, doppio
+      download: 73e26d0e...). Caricati via AJAX (caricaArticolo) e trascritti
+      verbatim in references/fonti/dlgs-231-2001.md: art. 6 (modelli di
+      organizzazione dell'ente - funzione esimente, OdV, esigenze del modello),
+      art. 7 (soggetti sottoposti all'altrui direzione), art. 25-undecies (reati
+      ambientali: sanzioni pecuniarie e interdittive per i reati del codice penale
+      - ecoreati 452-bis ss. -, del D.Lgs 152/2006, della L. 150/1992 - CITES -,
+      della L. 549/1993 - ozono - e del D.Lgs 202/2007 - inquinamento da navi).
+      Il testo dei singoli reati richiamati (art. 452-bis ss. c.p.; artt. 137,
+      256, 257, 258, 259, 260-bis, 279 ecc. del D.Lgs 152/2006) e' citato per
+      numero e NON riprodotto (va letto nelle rispettive fonti). Le Linee guida
+      confindustriali e le norme UNI ISO 37301/14001 sono citate, non riprodotte.
