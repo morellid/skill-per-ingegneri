@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Veicoli e trasporti eccezionali (art. 10 Codice della Strada)
+short_description: Supporto documentale al regime dei veicoli e dei trasporti eccezionali ai sensi dell'art. 10 del Codice della Strada (D.Lgs. 285/1992). Inquadra quando un veicolo o un trasporto e' eccezionale (eccedenza dei limiti di sagoma art. 61 o massa art. 62; cose indivisibili; generi tipizzati con massa complessiva fino a 38/48/86/108 t), se serve l'autorizzazione alla circolazione e chi la rilascia (ente proprietario o concessionario, regioni), i tipi (singola volta per volta, multipla per piu' transiti, periodica), le prescrizioni (percorsi, periodi, scorta), i presupposti (compatibilita' con strade, manufatti e sicurezza) e le sanzioni (art. 10 c. 18-25, da 794 a 3.206 euro senza autorizzazione, con sospensione della patente). Non calcola i limiti di sagoma/massa, non individua nel merito l'ente/il percorso, non redige la domanda ne' riproduce le Linee guida MIT.
+default_prompt: |
+  Devo trasportare una trave prefabbricata indivisibile lunga 30 m, fuori sagoma
+  ma entro i limiti di massa, su strade statali e un tratto autostradale. E' un
+  trasporto eccezionale? Serve l'autorizzazione, di che tipo e chi la rilascia?
+  Cosa rischio senza? Cita i commi dell'art. 10 del Codice della Strada.
