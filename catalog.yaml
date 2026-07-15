@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 4
+  count: 5
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -412,6 +412,22 @@ skills:
   - reg-ue-2023-1230
   - macchine
   - marcatura-ce
+- id: fattibilita-idraulica-toscana-lr41
+  area: edilizia-urbanistica-catasto
+  title: Fattibilita' idraulica delle trasformazioni in Toscana - L.R. 41/2018
+  summary: 'Fattibilita'' delle trasformazioni nelle aree a pericolosita'' per alluvioni in Toscana (L.R. 41/2018): magnitudo
+    idraulica moderata/severa/molto severa (art. 2), opere per il rischio medio R2 (art. 8), limitazioni (art. 10), condizioni
+    per nuova costruzione (art. 11) ed esistente'
+  normative_refs:
+  - L.R. Toscana 24/7/2018 n. 41 - artt. 2, 7, 8, 10, 11, 12 (attuazione d.lgs. 49/2010, dir. 2007/60/CE)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - lr-toscana-41-2018
+  - rischio-alluvioni
+  - pericolosita-idraulica
+  - toscana
+  - fattibilita-idraulica
 - id: gdpr-registro-dpia
   area: software-dati-cybersecurity
   title: GDPR Registro + DPIA

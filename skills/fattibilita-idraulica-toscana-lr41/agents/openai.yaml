@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Fattibilita' idraulica delle trasformazioni in Toscana (L.R. 41/2018)
+short_description: Supporto documentale alla fattibilita' delle trasformazioni nelle aree a pericolosita' per alluvioni in Toscana (L.R. 41/2018). Inquadra il sito (aree a pericolosita' per alluvioni frequenti o poco frequenti) e la magnitudo idraulica (moderata, severa, molto severa, in funzione di battente e velocita' della corrente, art. 2), individua le opere per la gestione del rischio necessarie a raggiungere il rischio medio R2 (opere idrauliche per l'assenza o la riduzione degli allagamenti, opere di sopraelevazione, difesa locale, art. 8), le limitazioni assolute nelle aree a pericolosita' frequente (ospedali, strutture strategiche, impianti AIA, art. 10) e le condizioni per la nuova costruzione (art. 11) e per il patrimonio edilizio esistente (art. 12). Non legge le mappe di pericolosita', non misura battente/velocita' ne' dimensiona le opere.
+default_prompt: |
+  In Toscana devo realizzare un nuovo edificio in un lotto che il PGRA classifica
+  come area a pericolosita' per alluvioni frequenti; la relazione idraulica indica
+  battente 0,7 m e velocita' 1,2 m/s. L'intervento e' ammissibile e quali opere di
+  messa in sicurezza servono ai sensi della L.R. Toscana 41/2018? Cita gli articoli.
