@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 5
+  count: 6
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -461,6 +461,24 @@ skills:
   - mappatura-acustica-strategica
   - piani-azione
   - direttiva-2002-49-ce
+- id: marcatura-ce-elettrici-lvd-emc-red
+  area: impianti-macchine-prodotti
+  title: Marcatura CE prodotti elettrici - LVD 2014/35, EMC 2014/30, RED 2014/53
+  summary: 'Marcatura CE dei prodotti elettrici: quale direttiva si applica (LVD 2014/35 bassa tensione, EMC 2014/30, RED
+    2014/53 radio), procedura di conformita'' e moduli (A; esame UE del tipo B+C; qualita'' totale H), quando serve l''organismo
+    notificato, documentazione e dichiarazione UE.'
+  normative_refs:
+  - Direttiva 2014/35/UE (LVD - bassa tensione) - art. 1, all. I, III, IV
+  - Direttiva 2014/30/UE (EMC) - all. I, art. 14, all. II-III
+  - Direttiva 2014/53/UE (RED - apparecchiature radio) - art. 3, 17, all. II-VII
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - marcatura-ce
+  - lvd-2014-35
+  - emc-2014-30
+  - red-2014-53
+  - valutazione-conformita
 - id: modulistica-edilizia-unificata
   area: edilizia-urbanistica-catasto
   title: Modulistica edilizia unificata + Salva Casa

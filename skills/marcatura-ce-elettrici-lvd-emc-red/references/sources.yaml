@@ -1,0 +1,71 @@
+schema_version: 1
+skill: marcatura-ce-elettrici-lvd-emc-red
+last_verified: 2026-07-15
+
+# Fonti per la marcatura CE dei prodotti elettrici/elettronici: le tre direttive
+# di prodotto rilevanti (bassa tensione LVD, compatibilita' elettromagnetica EMC,
+# apparecchiature radio RED), con procedure di valutazione della conformita',
+# documentazione tecnica, dichiarazione UE di conformita' e marcatura CE.
+
+sources:
+  - id: dir-2014-35-lvd
+    title: "Direttiva 2014/35/UE (bassa tensione, LVD) - materiale elettrico entro 50-1000 V ca / 75-1500 V cc"
+    type: direttiva-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32014L0035
+    accessed: 2026-07-15
+    # eur-lex non e' riproducibile con hash stabile e blocca gli IP datacenter di
+    # GitHub Actions: fonte online-only (binary_path null, sha256 null), testo
+    # trascritto verbatim nel MD (stesso approccio della skill ai-act-compliance).
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/dir-2014-35-lvd.md
+    excerpt_path: references/estratti/marcatura-ce-elettrici-checklist.md
+    notes: |
+      Campo di applicazione (art. 1: 50-1000 V ca / 75-1500 V cc, esclusioni
+      allegato II), obiettivi di sicurezza (allegato I), procedura di valutazione
+      della conformita' = Modulo A - controllo interno della produzione (allegato
+      III, senza organismo notificato), dichiarazione UE di conformita' (allegato
+      IV). Trascritti verbatim in references/fonti/dir-2014-35-lvd.md. Le norme
+      armonizzate (a pagamento) sono citate, non riprodotte.
+
+  - id: dir-2014-30-emc
+    title: "Direttiva 2014/30/UE (compatibilita' elettromagnetica, EMC)"
+    type: direttiva-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32014L0030
+    accessed: 2026-07-15
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/dir-2014-30-emc.md
+    excerpt_path: references/estratti/marcatura-ce-elettrici-checklist.md
+    notes: |
+      Requisiti essenziali (allegato I: emissione e immunita'; impianti fissi) e
+      procedure di valutazione della conformita' (art. 14): Modulo A - controllo
+      interno della produzione (allegato II) oppure esame UE del tipo (Modulo B)
+      seguito dalla conformita' al tipo basata sul controllo interno della
+      produzione (Modulo C, allegato III). Trascritti verbatim in
+      references/fonti/dir-2014-30-emc.md. Norme armonizzate citate, non riprodotte.
+
+  - id: dir-2014-53-red
+    title: "Direttiva 2014/53/UE (apparecchiature radio, RED)"
+    type: direttiva-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32014L0053
+    accessed: 2026-07-15
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/dir-2014-53-red.md
+    excerpt_path: references/estratti/marcatura-ce-elettrici-checklist.md
+    notes: |
+      Requisiti essenziali (art. 3: 3.1 salute/sicurezza incl. obiettivi LVD e
+      compatibilita' EMC; 3.2 uso efficiente dello spettro radio; 3.3
+      interoperabilita'/privacy per categorie determinate) e procedure di
+      valutazione della conformita' (art. 17): Modulo A - controllo interno
+      (allegato II), esame UE del tipo + conformita' al tipo Moduli B+C (allegato
+      III), garanzia di qualita' totale Modulo H (allegato IV); se non sono
+      applicate norme armonizzate per i requisiti dell'art. 3.1, non e' ammesso il
+      solo Modulo A. Documentazione tecnica (allegato V), dichiarazione UE di
+      conformita' (allegato VI) e dichiarazione UE semplificata (allegato VII).
+      Trascritti verbatim in references/fonti/dir-2014-53-red.md. Norme armonizzate
+      citate, non riprodotte.

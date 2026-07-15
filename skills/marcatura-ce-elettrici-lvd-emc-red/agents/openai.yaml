@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Marcatura CE prodotti elettrici - LVD 2014/35, EMC 2014/30, RED 2014/53
+short_description: Supporto documentale alla marcatura CE dei prodotti elettrici/elettronici secondo le tre direttive di prodotto (bassa tensione LVD 2014/35, compatibilita' elettromagnetica EMC 2014/30, apparecchiature radio RED 2014/53). Individua quale/i direttiva/e si applica/applicano, la procedura di valutazione della conformita' e i moduli ammessi (A controllo interno; esame UE del tipo B + conformita' al tipo C; garanzia di qualita' totale H), quando serve un organismo notificato (RED se non si applicano le norme armonizzate per l'art. 3.1), e struttura documentazione tecnica, dichiarazione UE di conformita' (anche semplificata RED) e marcatura CE. Non individua le norme armonizzate, non esegue le prove, non redige la dichiarazione finale.
+default_prompt: |
+  Devo marcare CE un apparecchio elettronico alimentato a 230 V con un modulo
+  radio: quali direttive si applicano (LVD, EMC, RED), quale procedura di
+  valutazione della conformita' devo seguire e quando serve un organismo
+  notificato? Cita le direttive e i moduli.
