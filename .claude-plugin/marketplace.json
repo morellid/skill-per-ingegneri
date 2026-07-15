@@ -108,7 +108,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 13 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 14 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -126,8 +126,8 @@
         "./pums-validator-dm397",
         "./rsia-audit-stradale-dlgs35",
         "./scarichi-emissioni-dlgs152",
-        "./trasporto-rifiuti-fir-dlgs152",
         "./trasporti-eccezionali-cds-art10",
+        "./trasporto-rifiuti-fir-dlgs152",
         "./valutazione-cem-srb-art-87-cce",
         "./valutazione-impatto-clima-acustico-l-447",
         "./via-screening-sia-dlgs152"
