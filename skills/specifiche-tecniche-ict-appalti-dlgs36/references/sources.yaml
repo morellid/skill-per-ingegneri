@@ -1,0 +1,60 @@
+schema_version: 1
+skill: specifiche-tecniche-ict-appalti-dlgs36
+last_verified: 2026-07-15
+
+# Fonti per la redazione delle specifiche tecniche e delle etichettature negli
+# appalti pubblici (art. 79-80 e allegato II.5 del Codice dei contratti pubblici)
+# e per l'analisi comparativa obbligatoria e il riuso nelle acquisizioni di
+# software da parte delle pubbliche amministrazioni (artt. 68-69 CAD).
+
+sources:
+  - id: dlgs-36-2023
+    title: "D.Lgs. 31 marzo 2023, n. 36 - Codice dei contratti pubblici - artt. 79 (specifiche tecniche), 80 (etichettature) e allegato II.5 (testo vigente al 2026-07-15)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern delle altre skill Normattiva: notifica-seveso, aua-dpr59).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36!vig=2026-07-15
+    accessed: 2026-07-15
+    sha256: 992ae62296b09154497fe37c8d5913723875006758692a5b3d23b66f7d1a211a
+    license: public-domain
+    binary_path: not_in_repo/dlgs-36-2023-vig-2026-07-15.html
+    md_path: references/fonti/dlgs-36-2023.md
+    excerpt_path: references/estratti/specifiche-tecniche-ict-checklist.md
+    notes: |
+      Codice redazionale 23G00044, GU n. 77 del 31/3/2023 - S.O. n. 12 (in vigore
+      dal 1/4/2023). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-15 (hash stabile, doppio download: 992ae622...). Gli articoli
+      79 (Specifiche tecniche) e 80 (Etichettature) rinviano entrambi all'allegato
+      II.5; l'operativo e' l'art. 70, comma 3. L'allegato II.5 (definizioni di
+      specifica tecnica, norma, specifica tecnica comune nel settore TIC; Parte II
+      A - modalita' di formulazione delle specifiche tecniche, clausola "o
+      equivalente", divieto di riferimento a marchi/brevetti; B - etichettature)
+      e' caricato via AJAX (caricaArticolo, idGruppo=54) e trascritto verbatim in
+      references/fonti/dlgs-36-2023.md. L'art. 108 (criteri di aggiudicazione /
+      OEPV) e' citato come rinvio ma NON riprodotto: e' coperto dalla skill
+      oepv-valutatore-offerte-tecniche. I regolamenti UE 305/2011 e 1025/2012
+      richiamati nell'allegato II.5 sono citati, non riprodotti (eur-lex).
+
+  - id: dlgs-82-2005-cad
+    title: "D.Lgs. 7 marzo 2005, n. 82 - Codice dell'amministrazione digitale (CAD) - artt. 68 (analisi comparativa delle soluzioni) e 69 (riuso e standard aperti) (testo vigente al 2026-07-15)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-03-07;82!vig=2026-07-15
+    accessed: 2026-07-15
+    sha256: 2eebfb960aaa6500fd04ebde4544fcf8c7c612977ec1a443615e2790af6460c5
+    license: public-domain
+    binary_path: not_in_repo/dlgs-82-2005-cad-vig-2026-07-15.html
+    md_path: references/fonti/dlgs-82-2005-cad.md
+    excerpt_path: references/estratti/specifiche-tecniche-ict-checklist.md
+    notes: |
+      Codice redazionale 005G0104, GU n. 112 del 16/5/2005 - S.O. n. 93. Il
+      binario e' la pagina indice Normattiva pinnata a !vig=2026-07-15 (hash
+      stabile, doppio download: 2eebfb96...). Gli articoli 68 (Analisi comparativa
+      delle soluzioni - obbligo di valutazione comparativa tecnico-economica prima
+      dell'acquisto di software, soluzioni a-f, criteri c. 1-bis, ricorso al
+      proprietario solo motivato ex c. 1-ter) e 69 (Riuso delle soluzioni e
+      standard aperti - obbligo di rilascio del codice sorgente sotto licenza
+      aperta; nei capitolati/specifiche di progetto titolarita' dei diritti in
+      capo all'amministrazione committente) sono caricati via AJAX (caricaArticolo)
+      e trascritti verbatim in references/fonti/dlgs-82-2005-cad.md. Le Linee guida
+      AgID richiamate dagli artt. 68 c. 1-ter e 69 c. 2-bis sono citate come rinvio
+      e NON riprodotte (fonte AgID, aggiornata separatamente).

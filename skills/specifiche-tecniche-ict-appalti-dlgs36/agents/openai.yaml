@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Specifiche tecniche ed acquisizione ICT negli appalti PA (D.Lgs. 36/2023 + CAD)
+short_description: Supporto documentale alla redazione delle specifiche tecniche di una procedura d'appalto ICT della PA (D.Lgs. 36/2023 artt. 79-80 e allegato II.5) e alla fase preliminare di analisi comparativa delle soluzioni software e riuso (CAD, artt. 68-69). Imposta le modalita' di formulazione delle specifiche (prestazioni/requisiti funzionali, riferimento a norme con "o equivalente", divieto di marchi/brevetti), le etichettature, i criteri della valutazione comparativa (costo complessivo, formati/standard aperti, sicurezza) e la titolarita' dei diritti sul codice. Non redige il capitolato, non sceglie la soluzione, non valuta le offerte, non calcola gli importi.
+default_prompt: |
+  In un comune devo redigere le specifiche tecniche del capitolato per l'acquisto
+  di un gestionale ICT. Prima dell'acquisto quali soluzioni devo mettere a
+  confronto e con quali criteri (art. 68 CAD)? E come devo formulare le specifiche
+  tecniche per non violare il divieto di marchi (allegato II.5 D.Lgs. 36/2023)?
+  Cita gli articoli.
