@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 10
+  count: 11
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -463,6 +463,22 @@ skills:
   - nis2
   - dlgs-138-2024
   - acn
+- id: notifica-seveso-dlgs105
+  area: ambiente-territorio-mobilita
+  title: Notifica e adempimenti Seveso III - D.Lgs. 105/2015
+  summary: 'Obblighi degli stabilimenti a rischio di incidente rilevante (Seveso III, D.Lgs. 105/2015): assoggettabilita''
+    (art. 2), soglia inferiore/superiore (allegato 1), notifica (art. 13), PPIR/SGS (art. 14), rapporto di sicurezza soglia
+    superiore (art. 15), sanzioni (art. 28)'
+  normative_refs:
+  - D.Lgs. 26/6/2015 n. 105 (testo vigente) - artt. 2, 3, 13, 14, 15, 28 (attuazione dir. 2012/18/UE Seveso III)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-105-2015
+  - seveso-iii
+  - incidente-rilevante
+  - notifica
+  - sostanze-pericolose
 - id: oepv-valutatore-offerte-tecniche
   area: appalti-opere-pubbliche
   title: OEPV - Valutatore offerte tecniche
