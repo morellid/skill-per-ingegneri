@@ -108,7 +108,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 12 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 13 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
