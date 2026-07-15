@@ -1,0 +1,41 @@
+schema_version: 1
+skill: fattibilita-idraulica-toscana-lr41
+last_verified: 2026-07-14
+
+# Fonte per la fattibilita' delle trasformazioni nelle aree a pericolosita' per
+# alluvioni in Toscana: magnitudo idraulica, opere per la gestione del rischio,
+# limitazioni e condizioni per la nuova costruzione e per il patrimonio esistente.
+
+sources:
+  - id: lr-toscana-41-2018
+    title: "Legge regionale Toscana 24 luglio 2018, n. 41 - Disposizioni in materia di rischio di alluvioni e di tutela dei corsi d'acqua (attuazione d.lgs. 49/2010, dir. 2007/60/CE), testo vigente al 2026-07-14"
+    type: legge-regionale
+    # URL della Raccolta Normativa del Consiglio regionale toscano, con il
+    # parametro pr=idx,0;artic,1 che restituisce l'ARTICOLATO COMPLETO (il link
+    # base senza parametri restituisce solo l'indice). Stesso host della skill
+    # pratiche-edilizie-lr65-2014-toscana. Hash riproducibile (doppio download).
+    url: "https://raccoltanormativa.consiglio.regione.toscana.it/articolo?urndoc=urn:nir:regione.toscana:legge:2018-07-24;41&pr=idx,0;artic,1;articparziale,0"
+    accessed: 2026-07-14
+    sha256: 4b75a5008ccef7ce46ad99e3638fdb2d2a588372deedfc753e03f232713ca481
+    license: public-domain
+    binary_path: not_in_repo/lr-toscana-41-2018-vig-2026-07-14.html
+    md_path: references/fonti/lr-toscana-41-2018.md
+    excerpt_path: references/estratti/fattibilita-idraulica-checklist.md
+    notes: |
+      B.U.R.T. n. 39, parte prima, del 30/7/2018. Il binario e' la pagina a testo
+      completo (pr=idx,0;artic,1) della Raccolta Normativa toscana (hash stabile,
+      doppio download: 4b75a500...). Articoli 1, 2 (definizioni: magnitudo
+      idraulica h1/h2/h3, battente, aree a pericolosita', opere idrauliche/
+      sopraelevazione/difesa locale), 7, 8 (opere per la gestione del rischio),
+      10 (limitazioni), 11 (nuova costruzione), 12 (patrimonio esistente), 23, 25
+      letti e trascritti verbatim in references/fonti/lr-toscana-41-2018.md. Le
+      mappe di pericolosita' dei Piani di gestione del rischio di alluvioni
+      (PGRA) / Piani di bacino, il DPGR 5/R/2020 (indagini geologiche, idrauliche
+      e sismiche) e le DGR attuative sono citati come riferimento e NON riprodotti.
+    correzione_scheda: |
+      La issue #49 cita come fonte il DPGR Toscana 5/R/2020, che in realta'
+      disciplina il deposito e il controllo delle indagini geologiche, idrauliche
+      e sismiche (attuazione art. 104 l.r. 65/2014), NON l'invarianza/rischio
+      idraulico. La disciplina della fattibilita' idraulica delle trasformazioni
+      (classi di magnitudo, opere di messa in sicurezza) e' invece nella L.R.
+      41/2018, usata qui come fonte corretta.
