@@ -1,0 +1,29 @@
+schema_version: 1
+skill: trasporti-eccezionali-cds-art10
+last_verified: 2026-07-14
+
+# Fonte per l'inquadramento dei veicoli e trasporti eccezionali, il regime
+# autorizzatorio (art. 10 del Codice della Strada) e le relative sanzioni.
+
+sources:
+  - id: dlgs-285-1992
+    title: "D.Lgs. 30 aprile 1992, n. 285 - Nuovo Codice della Strada, art. 10 (Veicoli eccezionali e trasporti in condizioni di eccezionalita'), testo vigente al 2026-07-14"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern della skill aua-dpr59-dossier e delle altre skill Normattiva).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285!vig=2026-07-14
+    accessed: 2026-07-14
+    sha256: fbc10b72e4f07b603f1a2f915dd6a14317932c8643909e7d33b243115539870f
+    license: public-domain
+    binary_path: not_in_repo/dlgs-285-1992-vig-2026-07-14.html
+    md_path: references/fonti/dlgs-285-1992.md
+    excerpt_path: references/estratti/trasporti-eccezionali-checklist.md
+    notes: |
+      Codice redazionale 092G0306, GU n. 114 del 18/5/1992 - S.O. n. 74. Il
+      binario e' la pagina indice Normattiva pinnata a !vig=2026-07-14 (hash
+      stabile, doppio download: fbc10b72...). L'articolo 10 (versione 37) e'
+      caricato via AJAX (caricaArticolo) e trascritto verbatim in
+      references/fonti/dlgs-285-1992.md. Gli articoli richiamati (61 sagoma, 62
+      massa, 13 autorizzazioni, 54 categorie, 167 sanzioni per eccedenza di
+      massa) e le Linee guida MIT sui trasporti eccezionali (2022) e il decreto
+      attuativo del comma 10-bis sono citati come riferimento e NON riprodotti.

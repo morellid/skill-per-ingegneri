@@ -747,6 +747,22 @@ skills:
   - dm-requisiti-minimi
   - ecobonus
   - code-driven
+- id: trasporti-eccezionali-cds-art10
+  area: ambiente-territorio-mobilita
+  title: Veicoli e trasporti eccezionali - art. 10 Codice della Strada
+  summary: 'Regime dei veicoli e trasporti eccezionali (art. 10 Codice della Strada, D.Lgs. 285/1992): inquadramento (eccedenza
+    sagoma art. 61 / massa art. 62), obbligo di autorizzazione ed ente competente (c. 6), tipi singola/multipla/periodica
+    (c. 9), prescrizioni, sanzioni (c. 18-25)'
+  normative_refs:
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada, testo vigente) - art. 10
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-285-1992
+  - codice-della-strada
+  - trasporti-eccezionali
+  - autorizzazione-circolazione
+  - mobilita
 - id: valutazione-cem-srb-art-87-cce
   area: ambiente-territorio-mobilita
   title: Valutazione CEM SRB - art. 87 CCE
