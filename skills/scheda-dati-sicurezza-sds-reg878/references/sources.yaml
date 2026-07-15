@@ -1,0 +1,36 @@
+schema_version: 1
+skill: scheda-dati-sicurezza-sds-reg878
+last_verified: 2026-07-15
+
+# Fonte per la struttura e i contenuti obbligatori della Scheda di Dati di
+# Sicurezza (SDS): l'allegato II del regolamento REACH, quale sostituito dal
+# regolamento (UE) 2020/878 (formato a 16 sezioni).
+
+sources:
+  - id: reg-ue-2020-878-sds
+    title: "Regolamento (UE) 2020/878 della Commissione del 18 giugno 2020 che modifica l'allegato II del regolamento (CE) n. 1907/2006 (REACH) - prescrizioni per la compilazione delle schede di dati di sicurezza"
+    type: regolamento-ue
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32020R0878
+    accessed: 2026-07-15
+    # eur-lex non e' riproducibile con hash stabile (la pagina HTML varia a ogni
+    # richiesta) e restituisce body vuoto agli IP datacenter di GitHub Actions:
+    # come per la skill ai-act-compliance la fonte e' trattata come online-only
+    # (binary_path null, sha256 null) e il testo e' trascritto verbatim nel MD.
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/reg-ue-2020-878-sds.md
+    excerpt_path: references/estratti/sds-16-sezioni-checklist.md
+    notes: |
+      Il regolamento (UE) 2020/878 sostituisce integralmente l'allegato II del
+      REACH (Reg. CE 1907/2006). Letta e trascritta verbatim in
+      references/fonti/reg-ue-2020-878-sds.md la Parte A (prescrizioni generali
+      0.1-0.3: scopo, compilazione da persona competente, divieto di indicazioni
+      minimizzanti, datazione/revisione, formato) e la struttura completa delle
+      16 SEZIONI con le rispettive sotto-sezioni (1.1-16). L'obbligo e le
+      condizioni di fornitura della SDS (art. 31 REACH: sostanze/miscele
+      classificate pericolose, PBT/vPvB, SVHC in Candidate List, casi su
+      richiesta) sono citati come rinvio e NON riprodotti (articolo non
+      trascritto). La classificazione CLP (Reg. 1272/2008), i sistemi di
+      trasporto (ADR/RID/IMDG/IATA) e la dir. 98/24/CE richiamati nell'allegato
+      sono citati, non riprodotti.
