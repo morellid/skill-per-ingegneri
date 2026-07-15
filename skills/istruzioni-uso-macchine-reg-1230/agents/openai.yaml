@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Istruzioni per l'uso delle macchine (Reg. UE 2023/1230, All. III 1.7.4)
+short_description: Supporto documentale alla redazione e alla verifica di completezza delle istruzioni per l'uso (manuale di uso e manutenzione) di una macchina o prodotto correlato ai sensi dell'allegato III punto 1.7.4 del Reg. (UE) 2023/1230. Applica i principi generali (uso previsto e uso scorretto ragionevolmente prevedibile; operatori non professionali) e copre il contenuto minimo obbligatorio (lettere a-u, incluse le informazioni sull'emissione di rumore aereo), con le prescrizioni su lingua e formato digitale/cartaceo. Complementare al fascicolo tecnico; non esegue la valutazione dei rischi, non seleziona norme armonizzate e non misura i valori.
+default_prompt: |
+  Devo verificare la completezza del manuale di uso e manutenzione di una macchina
+  industriale: quali voci deve contenere ai sensi dell'allegato III punto 1.7.4 del
+  Reg. (UE) 2023/1230, e quali regole valgono per lingua e formato (digitale/
+  cartaceo)? Cita le lettere a-u.
