@@ -182,7 +182,7 @@
     {
       "name": "forense",
       "source": "./skills",
-      "description": "CTU & ingegneria forense - 1 skill verticali su normative italiane.",
+      "description": "CTU & ingegneria forense - 2 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -191,7 +191,8 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "forense",
       "skills": [
-        "./compensi-ctu-dpr115"
+        "./compensi-ctu-dpr115",
+        "./relazione-peritale-ctu-cpc"
       ]
     }
   ]

@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 1
+  count: 2
 skills:
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
@@ -772,6 +772,23 @@ skills:
   - geotecnica
   - relazione-geologica
   - relazione-geotecnica
+- id: relazione-peritale-ctu-cpc
+  area: forense
+  title: Struttura della relazione peritale del CTU (c.p.c. artt. 191-201)
+  summary: 'Struttura della relazione peritale e delle operazioni del CTU nel processo civile (c.p.c. 191-201): quesiti, giuramento,
+    verbale, trasmissione alle parti e osservazioni, deposito e termini. Inquadra il CTU nell''albo (categorie/settori, DM
+    109/2023). Non entra nel merito tecnico.'
+  normative_refs:
+  - Codice di procedura civile (R.D. 1443/1940) - artt. 191-201 (del consulente tecnico)
+  - 'D.M. Giustizia 4/8/2023 n. 109 (albo CTU: categorie, settori, requisiti di iscrizione)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ctu
+  - relazione-peritale
+  - codice-procedura-civile
+  - ingegneria-forense
+  - dm-109-2023
 - id: rsia-audit-stradale-dlgs35
   area: ambiente-territorio-mobilita
   title: Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011)

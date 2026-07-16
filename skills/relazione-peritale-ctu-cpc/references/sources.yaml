@@ -1,0 +1,64 @@
+schema_version: 1
+skill: relazione-peritale-ctu-cpc
+last_verified: 2026-07-16
+
+# Fonti per la struttura della relazione peritale del CTU e per lo svolgimento
+# delle operazioni peritali nel processo civile:
+#  1) Codice di procedura civile, artt. 191-201 (nomina, quesiti, giuramento,
+#     operazioni, processo verbale, relazione, termini, osservazioni delle parti);
+#  2) D.M. Giustizia 4/8/2023 n. 109 (albo CTU: categorie, settori, requisiti di
+#     iscrizione) - per l'inquadramento del CTU, NON per la struttura della relazione.
+
+sources:
+  - id: cpc-191-201
+    title: "Codice di procedura civile (R.D. 28/10/1940 n. 1443), artt. 191-201 - Del consulente tecnico (testo vigente al 2026-07-16)"
+    type: regio-decreto
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill del repo).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 7a53e745448ed3657d629b49a9f4c2e18eb08bfaa19f55e815e046793788c655
+    license: public-domain
+    binary_path: not_in_repo/cpc-vig-2026-07-16.html
+    md_path: references/fonti/codice-procedura-civile-artt-191-201.md
+    excerpt_path: references/estratti/struttura-relazione-checklist.md
+    notes: |
+      Codice redazionale 040U1443. Il binario e' la pagina indice Normattiva
+      pinnata a !vig=2026-07-16 (hash stabile, doppio download: 7a53e745...).
+      Caricati via AJAX (caricaArticolo, idGruppo=28) e trascritti verbatim in
+      references/fonti/codice-procedura-civile-artt-191-201.md gli artt. 191
+      (nomina del consulente e formulazione dei quesiti), 192 (astensione e
+      ricusazione), 193 (giuramento, anche con dichiarazione a firma digitale;
+      fissazione dei termini ex art. 195 c. 3), 194 (attivita' del consulente,
+      indagini, intervento delle parti e dei CTP), 195 (processo verbale e
+      relazione: trasmissione alle parti, osservazioni, deposito con sintetica
+      valutazione), 196 (rinnovazione e sostituzione), 197 (assistenza all'udienza
+      e camera di consiglio), 198-200 (esame contabile, conciliazione, relazione),
+      201 (consulente tecnico di parte). Testo aggiornato dalla riforma Cartabia
+      (D.Lgs. 149/2022) e dal D.Lgs. 164/2024.
+
+  - id: dm-109-2023
+    title: "D.M. Giustizia 4/8/2023 n. 109 - Regolamento albo CTU (categorie, settori di specializzazione, requisiti di iscrizione, tenuta ed elenco nazionale)"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/2023/08/11/23G00121/sg
+    accessed: 2026-07-16
+    # Pagina ELI di Gazzetta Ufficiale: riferimento solo-online (come altre voci
+    # /eli/id/.../sg del repo). Il testo degli articoli e' letto via l'endpoint
+    # AJAX caricaArticolo dell'atto e trascritto verbatim; nessun binario hashato.
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/dm-109-2023.md
+    notes: |
+      Codice redazionale 23G00121, GU Serie Generale n. 187 dell'11/8/2023, in
+      vigore dal 26/8/2023. Attua la riforma Cartabia (D.Lgs. 149/2022; artt. 13,
+      15, 16, 24-bis disp. att. c.p.c.). Trascritti verbatim in
+      references/fonti/dm-109-2023.md gli artt. 1-12 (definizioni, oggetto,
+      contenuto dell'albo, requisiti e domanda di iscrizione, mantenimento,
+      sospensione/cancellazione, tenuta informatica, dati personali, transitorie,
+      monitoraggio, invarianza) e i settori della categoria "INGEGNERIA"
+      (Allegato A). SCOPE: il D.M. disciplina l'ALBO/ELENCO del CTU (categoria,
+      settore, requisiti), NON la struttura della relazione peritale (artt.
+      191-201 c.p.c.). L'Allegato A e' una tabella con celle a capo multi-riga:
+      trascritti verbatim solo i settori della categoria "INGEGNERIA"; per le
+      altre categorie ingegneristiche si rinvia all'Allegato A.
