@@ -38,8 +38,25 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 2
+  count: 3
 skills:
+- id: accertamento-tecnico-preventivo-cpc
+  area: forense
+  title: Accertamento tecnico preventivo e ATP conciliativo (c.p.c. 696, 696-bis)
+  summary: 'Inquadra l''istruzione preventiva nel processo civile (c.p.c. artt. 696, 696-bis): accertamento tecnico preventivo
+    (urgenza, cause e danni, sospensione 6 mesi) e consulenza tecnica preventiva conciliativa (verbale con efficacia di titolo
+    esecutivo). Non instaura il procedimento.'
+  normative_refs:
+  - Codice di procedura civile (R.D. 1443/1940) - artt. 696 e 696-bis
+  - 'Articoli richiamati: 692-695 (procedimento), 191-197 (disciplina CTU) (richiamati)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - accertamento-tecnico-preventivo
+  - atp
+  - consulenza-tecnica-preventiva
+  - codice-procedura-civile
+  - ctu
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
   title: Accessibilita' siti web e app - Legge Stanca (L. 4/2004)
