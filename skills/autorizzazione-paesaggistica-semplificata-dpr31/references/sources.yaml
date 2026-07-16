@@ -1,0 +1,36 @@
+schema_version: 1
+skill: autorizzazione-paesaggistica-semplificata-dpr31
+last_verified: 2026-07-16
+
+# Fonte per la qualificazione dell'intervento in area vincolata rispetto all'autorizzazione
+# paesaggistica: esclusa (Allegato A), soggetta a procedimento SEMPLIFICATO (interventi di
+# lieve entita', Allegato B) o soggetta al procedimento ORDINARIO (art. 146 del Codice).
+# Il D.P.R. 31/2017 e' il regolamento attuativo dell'art. 12 DL 83/2014 e dell'art. 146 c. 9
+# del Codice dei beni culturali e del paesaggio (D.Lgs. 42/2004).
+
+sources:
+  - id: dpr-31-2017
+    title: "D.P.R. 13 febbraio 2017, n. 31 - Regolamento su interventi esclusi dall'autorizzazione paesaggistica o soggetti a procedura semplificata (Allegati A e B) (testo vigente al 2026-07-16)"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2017-02-13;31!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: e71de17b153daddcd22a4eacc47200d7bd7d22f9e8a278772f663d9fa3e7cc49
+    license: public-domain
+    binary_path: not_in_repo/dpr31-2017-vig.html
+    md_path: references/fonti/dpr-31-2017.md
+    excerpt_path: references/estratti/autorizzazione-paesaggistica-checklist.md
+    notes: |
+      Codice redazionale 17G00042 (GU S.G. n. 68 del 22/3/2017). Pagina indice Normattiva
+      pinnata a !vig=2026-07-16 (hash stabile, doppio download: e71de17b...). Articoli e
+      Allegati caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dpr-31-2017.md: art. 2 (interventi non soggetti ad autorizzazione ->
+      Allegato A), art. 3 (interventi di lieve entita' -> Allegato B, procedimento
+      semplificato Capo II), art. 4 (esonero per particolari categorie), art. 7 (rinnovo
+      semplificato), art. 9 (presentazione istanza a SUE/SUAP/amministrazione procedente),
+      art. 11 (semplificazioni procedimentali: verifica preliminare escluso/ordinario/
+      semplificato e conferenza di servizi). Trascritti verbatim per intero l'Allegato A
+      (31 voci A.1-A.31, interventi esclusi) e l'Allegato B (42 voci B.1-B.42, interventi
+      di lieve entita').
+      LIMITE DI RESA: la qualificazione esatta di ciascun intervento va letta sulle voci
+      degli Allegati A e B dell'atto (con i richiami all'art. 136 del Codice); la skill
+      copre il quadro, la classificazione e il metodo di lettura, non ogni caso puntuale.

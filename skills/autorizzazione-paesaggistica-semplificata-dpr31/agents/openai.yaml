@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Autorizzazione paesaggistica: esclusa/semplificata/ordinaria (DPR 31/2017)
+short_description: Supporto documentale alla qualificazione di un intervento in area a vincolo paesaggistico rispetto all'autorizzazione paesaggistica, secondo il D.P.R. 13 febbraio 2017, n. 31. Stabilisce se l'intervento e' escluso dall'autorizzazione (art. 2 e Allegato A, voci A.1-A.31), soggetto al procedimento semplificato in quanto intervento di lieve entita' (art. 3 e Allegato B, voci B.1-B.42) o soggetto al procedimento ordinario (art. 146 del Codice dei beni culturali); verifica condizioni e limiti delle voci (art. 136 del Codice), i casi di esonero (art. 4), la presentazione dell'istanza a SUE/SUAP (art. 9), le semplificazioni procedimentali con conferenza di servizi e termini dimezzati (art. 11) e il rinnovo semplificato (art. 7). NON riproduce la classificazione puntuale di ogni intervento, non rilascia l'autorizzazione, non redige la relazione paesaggistica e non sostituisce l'ente procedente ne' il soprintendente.
+default_prompt: |
+  Ho un intervento su un immobile in area sottoposta a vincolo paesaggistico: come stabilisco
+  se serve l'autorizzazione paesaggistica e se e' esclusa, semplificata (intervento di lieve
+  entita') o ordinaria secondo il DPR 31/2017? Dove presento l'istanza? Cita gli articoli e le
+  voci degli Allegati A/B.
