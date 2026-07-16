@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Coordinatori sicurezza cantieri Titolo IV (D.Lgs. 81/2008 artt. 89-92)"
+short_description: Supporto documentale al regime dei cantieri temporanei o mobili e al ruolo dei coordinatori per la sicurezza secondo il D.Lgs. 9 aprile 2008, n. 81, Titolo IV, artt. 89-92. Inquadra le definizioni (cantiere, committente, responsabile dei lavori, CSP, CSE con incompatibilita' - art. 89), gli obblighi del committente/responsabile dei lavori (nomina del CSP e del CSE quando e' prevista la presenza di piu' imprese esecutrici anche non contemporanea; verifica dell'idoneita' tecnico-professionale, DURC e patente a crediti; notifica preliminare ex art. 99; sospensione dell'efficacia del titolo abilitativo in assenza di PSC/fascicolo/notifica/DURC; esonero per lavori privati non soggetti a permesso e sotto 100.000 euro - art. 90), gli obblighi del CSP (PSC ex art. 100/allegato XV e fascicolo ex allegato XVI - art. 91) e del CSE (verifica del PSC e dei POS, coordinamento, contestazione e proposta di sospensione, sospensione diretta in caso di pericolo grave e imminente - art. 92). NON nomina i coordinatori, non redige PSC/POS/fascicolo e non sostituisce committente, CSP, CSE ne' l'organo di vigilanza.
+default_prompt: |
+  Sto per avviare un cantiere edile con più imprese: devo nominare il coordinatore per la
+  progettazione e per l'esecuzione secondo il D.Lgs. 81/2008 (Titolo IV)? Quali verifiche fa il
+  committente, quando si sospende il titolo abilitativo e cosa fa il CSE se rileva un pericolo
+  grave? Cita gli articoli 89-92.
