@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 9
+  count: 10
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -990,6 +990,22 @@ skills:
   - sismabonus
   - dm-58-2017
   - rischio-sismico
+- id: sorveglianza-sanitaria-medico-competente-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Sorveglianza sanitaria e medico competente (D.Lgs 81/2008)
+  summary: 'Inquadra la sorveglianza sanitaria (D.Lgs 81/2008, art. 41): quando e'' dovuta, i tipi di visita (preventiva,
+    periodica, cambio mansione, cessazione, ripresa >60 gg), i quattro giudizi di idoneita'' e il ricorso all''ASL entro 30
+    gg. Non esprime giudizi sanitari.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (T.U. sicurezza) - artt. 25, 38, 39, 40, 41
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - sorveglianza-sanitaria
+  - medico-competente
+  - dlgs-81-2008
+  - idoneita-alla-mansione
+  - visite-mediche
 - id: specifiche-tecniche-ict-appalti-dlgs36
   area: appalti-opere-pubbliche
   title: Specifiche tecniche ed acquisizione ICT negli appalti PA - D.Lgs. 36/2023 + CAD

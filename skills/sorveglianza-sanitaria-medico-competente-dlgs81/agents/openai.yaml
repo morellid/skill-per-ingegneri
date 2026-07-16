@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Sorveglianza sanitaria e medico competente (D.Lgs 81/2008)
+short_description: Supporto documentale alla sorveglianza sanitaria dei lavoratori e agli obblighi del medico competente, secondo il D.Lgs. 81/2008 (T.U. sicurezza), artt. 25 e 38-41. Stabilisce quando la sorveglianza e' dovuta (casi di legge + valutazione dei rischi/DVR, o richiesta del lavoratore - art. 41 c.1), riconosce i tipi di visita medica (preventiva/preassuntiva, periodica di norma annuale, su richiesta, cambio mansione, cessazione, ripresa dopo assenza > 60 giorni, alcol/sostanze - c.2), i divieti (no gravidanza - c.3) e le spese a carico del datore (c.4), inquadra i quattro giudizi di idoneita' alla mansione (idoneita'; idoneita' parziale con prescrizioni/limitazioni; inidoneita' temporanea; inidoneita' permanente - c.6), la forma scritta (c.6-bis) e il ricorso all'ASL entro 30 giorni (c.9), oltre agli obblighi e ai requisiti del medico competente (artt. 25, 38-40). NON esprime giudizi sanitari, non riproduce gli Allegati 3A/3B e non sostituisce il medico competente, l'RSPP ne' il datore di lavoro.
+default_prompt: |
+  Nella mia azienda: quando è obbligatoria la sorveglianza sanitaria e quali visite mediche deve
+  fare il medico competente secondo il D.Lgs 81/2008? Quali sono i giudizi di idoneità possibili e
+  come si contesta un giudizio (a chi e in quanti giorni)? Cita gli articoli.
