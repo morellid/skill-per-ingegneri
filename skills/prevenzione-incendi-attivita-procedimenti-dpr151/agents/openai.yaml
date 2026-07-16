@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Attivita' e procedimenti di prevenzione incendi (DPR 151/2011)
+short_description: Supporto documentale per stabilire se un'attivita' e' soggetta ai controlli di prevenzione incendi e in quale categoria (A, B, C) dell'Allegato I, e per impostare il procedimento presso il Comando dei Vigili del fuoco, secondo il D.P.R. 1 agosto 2011, n. 151. Copre la valutazione del progetto per le categorie B e C (art. 3, pronuncia entro 60 giorni), l'avvio dell'attivita' tramite SCIA prima dell'esercizio e i controlli con visite tecniche entro 60 giorni (art. 4), il certificato di prevenzione incendi entro 15 giorni per la categoria C, il rinnovo periodico ogni 5 anni (10 per alcune attivita' - art. 5), gli obblighi in esercizio (art. 6) e le deroghe (art. 7). NON riproduce la classificazione puntuale di ogni attivita' (la categoria esatta va letta sull'Allegato I), non redige il progetto/la SCIA/le asseverazioni, non riproduce le regole tecniche (DM 3/8/2015) e non sostituisce il professionista antincendio ne' il Comando VV.F.
+default_prompt: |
+  La mia attivita' e' soggetta ai controlli di prevenzione incendi secondo il DPR 151/2011?
+  In quale categoria A/B/C rientra e quale iter devo seguire (esame del progetto, SCIA,
+  visite tecniche, certificato di prevenzione incendi, rinnovo)? Cita gli articoli e la voce
+  dell'Allegato I.

@@ -1,0 +1,38 @@
+schema_version: 1
+skill: prevenzione-incendi-attivita-procedimenti-dpr151
+last_verified: 2026-07-16
+
+# Fonte per stabilire se un'attivita' e' soggetta ai controlli di prevenzione incendi
+# (Allegato I) e in quale categoria (A, B, C), e quale procedimento del Comando dei Vigili
+# del fuoco si applica: valutazione del progetto (art. 3), SCIA e controlli (art. 4),
+# certificato di prevenzione incendi, rinnovo periodico (art. 5), deroghe (art. 7).
+# Il D.P.R. 151/2011 e' il regolamento di semplificazione della disciplina dei procedimenti
+# di prevenzione incendi (art. 49 DL 78/2010; D.Lgs. 139/2006).
+
+sources:
+  - id: dpr-151-2011
+    title: "D.P.R. 1 agosto 2011, n. 151 - Regolamento sui procedimenti di prevenzione incendi (attivita' soggette, categorie A/B/C, Allegato I) (testo vigente al 2026-07-16)"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2011-08-01;151!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: a254e20396c8b21a044979fc70fec7280421d5596418f99dc0a7acb37b23f0a6
+    license: public-domain
+    binary_path: not_in_repo/dpr151-2011-vig.html
+    md_path: references/fonti/dpr-151-2011.md
+    excerpt_path: references/estratti/prevenzione-incendi-checklist.md
+    notes: |
+      Codice redazionale 011G0193 (GU S.G. n. 221 del 22/9/2011). Pagina indice Normattiva
+      pinnata a !vig=2026-07-16 (hash stabile, doppio download: a254e203...). Articoli e
+      Allegato I caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dpr-151-2011.md: art. 2 (finalita', attivita' soggette e categorie
+      A/B/C - Allegato I), art. 3 (valutazione dei progetti per B e C: pronuncia entro 60
+      gg), art. 4 (controlli: SCIA prima dell'esercizio; cat. A/B visite tecniche entro 60
+      gg anche a campione; cat. C visite tecniche entro 60 gg + rilascio del certificato di
+      prevenzione incendi entro 15 gg dall'esito positivo), art. 5 (rinnovo periodico ogni 5
+      anni, elevato a 10 per le attivita' 6, 7, 8, 64, 71, 72, 77), art. 6 (obblighi in
+      esercizio), art. 7 (deroghe).
+      LIMITE DI RESA: l'Allegato I e' una tabella grafica (attivita' x categoria A/B/C): la
+      resa testuale non conserva l'allineamento delle colonne, quindi la CATEGORIA esatta di
+      ciascuna attivita' va letta sulla tabella dell'atto. Trascritti verbatim l'intestazione/
+      legenda e un estratto rappresentativo. La skill copre ambito, categorie, procedimenti e
+      metodo di lettura, non la classificazione puntuale di ogni attivita'.
