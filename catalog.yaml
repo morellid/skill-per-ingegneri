@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 15
+  count: 16
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -951,6 +951,24 @@ skills:
   - formulario-fir
   - albo-gestori-ambientali
   - trasporti
+- id: valutazione-cem-elettrodotti-dpcm2003
+  area: ambiente-territorio-mobilita
+  title: Verifica limiti CEM elettrodotti 50 Hz (D.P.C.M. 8/7/2003)
+  summary: 'Verifica dei limiti CEM a 50 Hz degli elettrodotti (DPCM 8/7/2003): limite 100 uT / 5 kV/m, valore di attenzione
+    10 uT, obiettivo di qualita'' 3 uT, tecniche di misura (CEI 211-6) e quadro fasce di rispetto. Non calcola la DPA (metodologia
+    DM 29/5/2008).'
+  normative_refs:
+  - D.P.C.M. 8 luglio 2003 (elettrodotti 50 Hz) - artt. 1-8 e Allegato A
+  - Legge 22 febbraio 2001, n. 36 (legge quadro protezione da esposizioni a CEM)
+  - DM Ambiente 29/5/2008 (metodologia fasce di rispetto/DPA - citato, non riprodotto)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cem
+  - elettrodotti
+  - dpcm-8-7-2003
+  - campi-elettromagnetici
+  - fasce-di-rispetto
 - id: valutazione-cem-srb-art-87-cce
   area: ambiente-territorio-mobilita
   title: Valutazione CEM SRB - art. 87 CCE

@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Verifica limiti CEM elettrodotti 50 Hz (D.P.C.M. 8/7/2003)
+short_description: Supporto alla verifica del rispetto dei limiti di esposizione della popolazione ai campi elettrici e magnetici a frequenza di rete (50 Hz) generati dagli elettrodotti (D.P.C.M. 8/7/2003). Distingue limite di esposizione (100 microtesla e 5 kV/m, valori efficaci), valore di attenzione (10 microtesla, mediana 24 h, per aree gioco/abitativi/scolastici e permanenze >= 4 ore) e obiettivo di qualita' (3 microtesla, mediana 24 h, per nuovi elettrodotti/nuove aree), inquadra le tecniche di misura (CEI 211-6) e il quadro delle fasce di rispetto. NON calcola la DPA (metodologia delegata al DM 29/5/2008, non riprodotta), non esegue le misure (ARPA) e non copre le alte frequenze (SRB/RF).
+default_prompt: |
+  Devo valutare un edificio/area vicino a una linea elettrica a 50 Hz: quale valore del
+  D.P.C.M. 8/7/2003 si applica (limite 100 microtesla, attenzione 10 microtesla,
+  obiettivo di qualita' 3 microtesla), come si distinguono e come imposto la verifica
+  delle fasce di rispetto? Cita gli articoli.
