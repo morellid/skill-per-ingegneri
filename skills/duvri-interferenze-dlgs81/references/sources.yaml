@@ -1,0 +1,32 @@
+schema_version: 1
+skill: duvri-interferenze-dlgs81
+last_verified: 2026-07-16
+
+# Fonte per gli obblighi negli appalti/contratti d'opera e per il Documento Unico di
+# Valutazione dei Rischi da Interferenze (DUVRI): l'art. 26 del D.Lgs. 81/2008.
+
+sources:
+  - id: dlgs-81-2008-art26
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. salute e sicurezza sul lavoro) - art. 26 (obblighi negli appalti e DUVRI) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: d89919850537a55286cc55ce7d2bff1aaa316b670d0072a475370176de830831
+    license: public-domain
+    binary_path: not_in_repo/dlgs-81-2008-vig.html
+    md_path: references/fonti/dlgs-81-art-26.md
+    excerpt_path: references/estratti/duvri-checklist.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16
+      (hash stabile, doppio download: d8991985...). Articolo 26 caricato via AJAX
+      (caricaArticolo, idGruppo=3) e trascritto verbatim in references/fonti/. Contenuti:
+      c.1 (verifica idoneita' tecnico-professionale delle imprese appaltatrici/lavoratori
+      autonomi; informazione sui rischi specifici); c.2 (cooperazione e coordinamento tra
+      datori di lavoro); c.3 (elaborazione del documento unico di valutazione dei rischi
+      da interferenze - DUVRI - da allegare al contratto d'appalto; casi di esclusione per
+      servizi di natura intellettuale, mere forniture, lavori < 2 giorni salvo rischi
+      particolari); c.3-bis/3-ter (DUVRI nei contratti pubblici e con piu' committenti);
+      c.5 (indicazione dei costi delle misure di sicurezza da interferenze, non soggetti a
+      ribasso); c.8 (tessera di riconoscimento); responsabilita' solidale committente/
+      appaltatore. NB: art. 26 NON si applica ai cantieri edili del Titolo IV (per cui
+      valgono PSC/POS, cfr. skill pos-allegato-xv-checker).
