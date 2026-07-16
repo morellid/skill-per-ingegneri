@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 6
+  count: 7
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -119,6 +119,23 @@ skills:
   - autorizzazione-ambientale
   - pmi
   - suap
+- id: autorizzazione-paesaggistica-semplificata-dpr31
+  area: edilizia-urbanistica-catasto
+  title: 'Autorizzazione paesaggistica: esclusa/semplificata/ordinaria (DPR 31/2017)'
+  summary: 'Qualifica un intervento in area vincolata rispetto all''autorizzazione paesaggistica (DPR 31/2017): escluso (Allegato
+    A), semplificato per interventi di lieve entita'' (Allegato B) o ordinario (art. 146 Codice). Inquadra condizioni ed esonero;
+    non rilascia l''autorizzazione.'
+  normative_refs:
+  - D.P.R. 13 febbraio 2017, n. 31 - artt. 2, 3, 4, 7, 9, 11 e Allegati A e B
+  - D.Lgs. 42/2004 (Codice dei beni culturali e del paesaggio) artt. 136, 142, 146, 149 (richiamati)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - autorizzazione-paesaggistica
+  - dpr-31-2017
+  - vincolo-paesaggistico
+  - interventi-lieve-entita
+  - codice-beni-culturali
 - id: bandi-tipo-anac-checker
   area: appalti-opere-pubbliche
   title: Bandi-tipo ANAC - Checker disciplinare di gara
