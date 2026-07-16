@@ -1,0 +1,35 @@
+schema_version: 1
+skill: regimi-suap-attivita-produttive-dlgs222
+last_verified: 2026-07-16
+
+# Fonte per l'individuazione del regime amministrativo (comunicazione, SCIA, SCIA unica,
+# SCIA condizionata, silenzio-assenso, autorizzazione) applicabile all'avvio/modifica di
+# un'attivita' privata (produttiva/commerciale) presso il SUAP: il D.Lgs 222/2016 e la
+# sua Tabella A. La parte EDILIZIA (art. 3, Tabella A sez. edilizia) e' coperta dalla
+# skill modulistica-edilizia-unificata: questa skill copre le ATTIVITA' PRODUTTIVE.
+
+sources:
+  - id: dlgs-222-2016
+    title: "D.Lgs. 25 novembre 2016, n. 222 (SCIA 2) - artt. 1, 2, 5 e Tabella A (regimi amministrativi delle attivita' private) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016-11-25;222!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 7169e0b71d554d6aee1d2d7144dbc23570e671cf60a9ad96ddce3f40904b90a2
+    license: public-domain
+    binary_path: not_in_repo/dlgs-222-2016-vig.html
+    md_path: references/fonti/dlgs-222-2016.md
+    excerpt_path: references/estratti/regimi-suap-checklist.md
+    notes: |
+      Codice redazionale 16G00237. Pagina indice Normattiva pinnata a !vig=2026-07-16
+      (hash stabile, doppio download: 7169e0b7...). Caricati via AJAX (caricaArticolo) e
+      trascritti verbatim: art. 1 (oggetto), art. 2 (regimi amministrativi delle attivita'
+      private - rinvio alla Tabella A; effetti di comunicazione, SCIA, SCIA unica art.
+      19-bis c.2, SCIA condizionata art. 19-bis c.3, autorizzazione/silenzio-assenso;
+      possibilita' di ricondurre attivita' non elencate), art. 5 (livelli ulteriori di
+      semplificazione di regioni/enti locali). Trascritti verbatim anche la LEGENDA dei
+      regimi della Tabella A (con i tempi: SCIA controlli entro 60 gg, 30 nell'edilizia)
+      e un ESTRATTO rappresentativo di righe della Tabella A.
+      LIMITE DI RESA: la Tabella A completa (elenco attivita' x regime, ~245 KB di testo)
+      NON e' riprodotta integralmente: il regime esatto di ciascuna attivita' va letto
+      sulla Tabella A dell'atto. La skill copre il quadro e il metodo di lettura, non la
+      classificazione puntuale di ogni singola attivita'.

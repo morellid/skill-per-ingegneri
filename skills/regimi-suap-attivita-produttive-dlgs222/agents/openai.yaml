@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Regime amministrativo SUAP per attivita' produttive (D.Lgs 222/2016)
+short_description: Supporto documentale all'individuazione del regime amministrativo (comunicazione, SCIA, SCIA unica, SCIA condizionata, silenzio-assenso, autorizzazione) applicabile all'avvio, modifica, subingresso o cessazione di un'attivita' privata produttiva/commerciale presso lo Sportello unico (SUAP), sulla base del D.Lgs. 222/2016 ("SCIA 2") e della sua Tabella A. Imposta la lettura della Tabella A (a ciascuna attivita' si applica il regime ivi indicato - art. 2 c. 1), inquadra effetti e tempi di ciascun regime (SCIA con avvio immediato e controlli entro 60/30 giorni; SCIA unica; SCIA condizionata con Conferenza di servizi entro 5 giorni; autorizzazione con silenzio-assenso), gestisce le attivita' non elencate (art. 2 c. 6) e i livelli ulteriori di semplificazione (art. 5). NON riproduce la Tabella A attivita' per attivita', non sostituisce il SUAP e non copre la parte edilizia.
+default_prompt: |
+  Devo avviare un'attivita' produttiva/commerciale: come individuo il regime amministrativo
+  applicabile (comunicazione, SCIA, SCIA unica, SCIA condizionata, autorizzazione) sulla
+  Tabella A del D.Lgs. 222/2016? Cosa cambia tra SCIA unica e SCIA condizionata e in quali
+  tempi si avvia l'attivita'? Cita gli articoli.
