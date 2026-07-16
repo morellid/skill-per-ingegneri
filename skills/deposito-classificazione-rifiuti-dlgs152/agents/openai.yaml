@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Classificazione e deposito temporaneo dei rifiuti (D.Lgs. 152/2006)"
+short_description: Supporto documentale alla classificazione dei rifiuti e al deposito temporaneo prima della raccolta secondo il D.Lgs. 3 aprile 2006, n. 152 (Parte quarta), artt. 183, 184, 185-bis. Inquadra le definizioni (rifiuto, produttore, detentore, deposito temporaneo, sottoprodotto - art. 183), classifica i rifiuti secondo l'origine (urbani/speciali) e la pericolosita' (pericolosi/non pericolosi) con l'elenco europeo dei rifiuti (allegato D vincolante), l'attribuzione dei codici a cura del produttore e il divieto di declassificazione per diluizione/miscelazione (art. 184), e imposta il deposito temporaneo nel luogo di produzione con i limiti (cadenza almeno trimestrale, oppure 30 metri cubi di cui max 10 di pericolosi; durata massima 1 anno) e l'esonero dall'autorizzazione (art. 185-bis). NON attribuisce i codici EER, non riproduce l'elenco europeo dei rifiuti, non redige registri o FIR e non sostituisce il produttore/detentore ne' il consulente.
+default_prompt: |
+  Ho dei rifiuti prodotti da un'attività (es. cantiere): come li classifico secondo il D.Lgs.
+  152/2006 (urbani/speciali, pericolosi/non pericolosi) e come organizzo il deposito temporaneo
+  prima della raccolta? Quali sono i limiti di quantità e di tempo, e serve un'autorizzazione?
+  Cita gli articoli 183, 184 e 185-bis.
