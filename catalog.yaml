@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 5
+  count: 6
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -566,6 +566,23 @@ skills:
   - mog-231
   - art-25-undecies
   - compliance-ambientale
+- id: mog-231-sicurezza-lavoro
+  area: sicurezza-lavoro-cantieri
+  title: MOG 231 salute e sicurezza sul lavoro (art. 30 D.Lgs 81/2008 + art. 25-septies)
+  summary: 'MOG 231 per la sicurezza sul lavoro: responsabilita'' dell''ente ed esimente (artt. 5-7 D.Lgs 231/2001), reato
+    art. 25-septies (omicidio/lesioni colpose sul lavoro) e requisiti del modello esimente (art. 30 D.Lgs 81/2008). Non redige
+    il modello ne'' ne certifica l''idoneita''.'
+  normative_refs:
+  - D.Lgs. 231/2001 artt. 5, 6, 7 (responsabilita' ed esimente) e 25-septies (reato presupposto)
+  - D.Lgs. 81/2008 art. 30 (requisiti del MOG con efficacia esimente)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - mog-231
+  - sicurezza-lavoro
+  - art-25-septies
+  - art-30-dlgs81
+  - responsabilita-enti
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)

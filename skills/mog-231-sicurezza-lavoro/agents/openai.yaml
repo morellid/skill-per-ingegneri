@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: MOG 231 salute e sicurezza sul lavoro (art. 30 D.Lgs 81/2008 + art. 25-septies)
+short_description: Supporto documentale al Modello di Organizzazione e Gestione (MOG) 231 in materia di salute e sicurezza sul lavoro, con efficacia esimente della responsabilita' amministrativa dell'ente per omicidio colposo e lesioni gravi/gravissime commessi con violazione delle norme antinfortunistiche. Inquadra la responsabilita' dell'ente (art. 5 D.Lgs 231/2001), l'esimente per apicali e sottoposti (artt. 6-7), il reato presupposto (art. 25-septies, sanzioni in quote e interdittive) e i requisiti del MOG dell'art. 30 D.Lgs 81/2008 (obblighi a-h, registrazione, funzioni e sistema disciplinare, controllo/riesame, presunzione di conformita' UNI-INAIL SGSL / UNI EN ISO 45001, semplificazioni PMI). NON redige il modello, non ne certifica l'idoneita' (valutazione del giudice) e non copre gli altri reati presupposto 231.
+default_prompt: |
+  Devo impostare un MOG 231 per la sicurezza sul lavoro nella mia azienda: quando risponde
+  l'ente per un infortunio (art. 25-septies), cosa serve perche' il modello abbia efficacia
+  esimente (artt. 6-7 D.Lgs 231/2001) e quali requisiti deve avere secondo l'art. 30 del
+  D.Lgs 81/2008? Cita gli articoli.

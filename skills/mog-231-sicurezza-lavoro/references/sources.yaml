@@ -1,0 +1,52 @@
+schema_version: 1
+skill: mog-231-sicurezza-lavoro
+last_verified: 2026-07-16
+
+# Fonti per il Modello di Organizzazione e Gestione (MOG) con efficacia esimente della
+# responsabilita' amministrativa dell'ente per i reati di omicidio colposo e lesioni
+# gravi/gravissime commessi con violazione delle norme antinfortunistiche:
+#  1) D.Lgs. 231/2001 (artt. 5, 6, 7 - responsabilita' ed esimente; 25-septies - reato);
+#  2) D.Lgs. 81/2008 art. 30 (requisiti del MOG con efficacia esimente).
+
+sources:
+  - id: dlgs-231-2001
+    title: "D.Lgs. 8 giugno 2001, n. 231 - Responsabilita' amministrativa degli enti - artt. 5, 6, 7 (esimente) e 25-septies (omicidio/lesioni colpose sul lavoro) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-06-08;231!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: f6025f504910c6bd3f0e49a5f50e94a93b33e5124e50ea6f5fc9b394d7b66eb6
+    license: public-domain
+    binary_path: not_in_repo/dlgs-231-2001-vig.html
+    md_path: references/fonti/mog-231-sicurezza-lavoro.md
+    excerpt_path: references/estratti/mog-231-sicurezza-checklist.md
+    notes: |
+      Codice redazionale 001G0293. Pagina indice Normattiva pinnata a !vig=2026-07-16
+      (hash stabile, doppio download: f6025f50...). Caricati via AJAX (caricaArticolo,
+      idGruppo 1 e 3) e trascritti verbatim in references/fonti/ gli artt. 5
+      (responsabilita' dell'ente per reati commessi nel suo interesse/vantaggio da
+      apicali o sottoposti), 6 (esimente per gli apicali: adozione ed efficace
+      attuazione del modello idoneo, organismo di vigilanza, elusione fraudolenta, non
+      omessa vigilanza), 7 (sottoposti; contenuti ed efficace attuazione del modello) e
+      25-septies (idSottoArticolo=7: omicidio colposo e lesioni gravi/gravissime con
+      violazione delle norme sulla salute e sicurezza sul lavoro; sanzioni pecuniarie e
+      interdittive).
+
+  - id: dlgs-81-2008-art30
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. salute e sicurezza sul lavoro) - art. 30 (Modelli di organizzazione e di gestione) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: d89919850537a55286cc55ce7d2bff1aaa316b670d0072a475370176de830831
+    license: public-domain
+    binary_path: not_in_repo/dlgs-81-2008-vig.html
+    md_path: references/fonti/mog-231-sicurezza-lavoro.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16
+      (hash stabile, doppio download: d8991985...). Caricato via AJAX (caricaArticolo)
+      e trascritto verbatim l'art. 30: requisiti del MOG con efficacia esimente della
+      responsabilita' 231 (sistema aziendale per gli obblighi giuridici lett. a-h;
+      sistemi di registrazione c.2; articolazione di funzioni e sistema disciplinare
+      c.3; controllo, riesame e aggiornamento c.4; presunzione di conformita' per i
+      modelli conformi alle Linee guida UNI-INAIL SGSL 28/9/2001 o alla UNI EN ISO
+      45001:2023+A1:2024 c.5; procedure semplificate PMI c.5-bis; modelli semplificati
+      microimprese/PMI c.5-ter agg. L. 34/2026; finanziabilita' fino a 50 lavoratori c.6).
