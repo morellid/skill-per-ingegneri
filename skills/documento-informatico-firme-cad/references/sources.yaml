@@ -1,0 +1,38 @@
+schema_version: 1
+skill: documento-informatico-firme-cad
+last_verified: 2026-07-16
+
+# Fonte per il valore giuridico del DOCUMENTO INFORMATICO e delle FIRME ELETTRONICHE:
+# quando il documento informatico soddisfa la forma scritta e ha l'efficacia dell'art. 2702
+# c.c. (art. 20), gli atti che a pena di nullita' richiedono firma qualificata/digitale
+# (art. 21), i requisiti della firma digitale e del certificato qualificato (art. 24).
+# Fonte: Codice dell'amministrazione digitale (D.Lgs. 82/2005).
+
+sources:
+  - id: cad-artt-20-21-24
+    title: "D.Lgs. 7 marzo 2005, n. 82 (CAD) - artt. 20, 21, 24 (documento informatico e firme elettroniche) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-03-07;82!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 5e75c6b9215888cba2dd5d118c6aa3baf6b3d26eee09d54af7c2f84e20f28222
+    license: public-domain
+    binary_path: not_in_repo/cad.html
+    md_path: references/fonti/cad-artt-20-21-24.md
+    excerpt_path: references/estratti/documento-informatico-checklist.md
+    notes: |
+      Codice redazionale 005G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16 (hash
+      stabile, doppio download: 5e75c6b9...). Stesso atto usato da riuso-software-pa-cad69
+      (artt. 68-69); qui gli artt. 20 (idGruppo 4, versione 5), 21 (idGruppo 4, versione 6),
+      24 (idGruppo 5, versione 3), caricati via AJAX (caricaArticolo) e trascritti verbatim
+      in references/fonti/cad-artt-20-21-24.md: art. 20 (il documento informatico soddisfa la
+      forma scritta e ha l'efficacia dell'art. 2702 c.c. con firma digitale/qualificata/
+      avanzata o processo con requisiti AgID; altrimenti liberamente valutabile in giudizio;
+      presunzione di riconducibilita' al titolare - c. 1-ter), art. 21 (scritture private ex
+      art. 1350 nn. 1-12 c.c. a pena di nullita' con firma qualificata/digitale; atto pubblico
+      informatico - c. 2-bis/2-ter), art. 24 (firma digitale: riferimento univoco al soggetto
+      e al documento, sostituzione di sigilli/timbri, certificato qualificato non scaduto/
+      revocato/sospeso; firma su certificato revocato = mancata sottoscrizione - c. 4-bis).
+      LIMITE DI RESA (Regola zero): le regole tecniche su formazione, firme, validazione
+      temporale e conservazione sono demandate alle Linee guida AgID (art. 71) e al quadro
+      eIDAS (Reg. UE 910/2014): citati, non riprodotti. La skill inquadra il valore giuridico
+      e i tipi di firma; non sostituisce il professionista, il notaio ne' il giudice.
