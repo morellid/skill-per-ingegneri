@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 7
+  count: 8
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -316,6 +316,22 @@ skills:
   - consulente-adr
   - dgsa
   - trasporti
+- id: contributo-costruzione-dpr380
+  area: edilizia-urbanistica-catasto
+  title: 'Contributo di costruzione: oneri e costo di costruzione (DPR 380/2001)'
+  summary: 'Inquadra il contributo di costruzione del permesso di costruire (DPR 380/2001, artt. 16-19): oneri di urbanizzazione
+    + costo di costruzione, rateizzazione e scomputo, riduzioni ed esoneri, convenzione-tipo, opere non residenziali. Non
+    calcola gli importi (regionali/comunali).'
+  normative_refs:
+  - D.P.R. 6 giugno 2001, n. 380 (T.U. Edilizia) - artt. 16, 17, 18, 19
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - contributo-di-costruzione
+  - oneri-di-urbanizzazione
+  - costo-di-costruzione
+  - dpr-380-2001
+  - permesso-di-costruire
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
