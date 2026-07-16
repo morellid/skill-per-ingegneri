@@ -98,7 +98,7 @@
     {
       "name": "energia-incentivi",
       "source": "./skills",
-      "description": "Energia & incentivi - 4 skill verticali su normative italiane.",
+      "description": "Energia & incentivi - 5 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -107,6 +107,7 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "energia-incentivi",
       "skills": [
+        "./attestato-prestazione-energetica-dlgs192",
         "./cer-cacer-configurazione-gse",
         "./diagnosi-energetica-dlgs102",
         "./transizione-5-0-asseverazione",
