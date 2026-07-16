@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 6
+  count: 7
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -582,6 +582,23 @@ skills:
   - emc-2014-30
   - red-2014-53
   - valutazione-conformita
+- id: modifiche-varianti-contratti-pubblici-dlgs36
+  area: appalti-opere-pubbliche
+  title: Modifiche del contratto e varianti in corso d'opera (D.Lgs. 36/2023 art. 120)
+  summary: 'Inquadra le modifiche dei contratti pubblici e le varianti in corso d''opera (D.Lgs. 36/2023 art. 120): casi ammessi
+    senza nuova procedura, limiti (50%, 10%/15%), modifica sostanziale, quinto d''obbligo, autorizzazione del RUP e oneri
+    ANAC. Non approva le varianti.'
+  normative_refs:
+  - D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 120 (Modifica dei contratti in corso di esecuzione)
+  - 'Articoli/allegati richiamati: art. 60 (revisione prezzi), art. 14 (soglie), art. 222 (ANAC), allegati II.14 e II.16 (richiamati)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - varianti-in-corso-d-opera
+  - modifica-contratto
+  - dlgs-36-2023
+  - contratti-pubblici
+  - quinto-d-obbligo
 - id: modulistica-edilizia-unificata
   area: edilizia-urbanistica-catasto
   title: Modulistica edilizia unificata + Salva Casa
