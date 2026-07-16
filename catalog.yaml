@@ -34,7 +34,7 @@ areas:
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
-  count: 7
+  count: 8
 - id: forense
   name: CTU & ingegneria forense
   order: 9
@@ -823,6 +823,23 @@ skills:
   - codice-procedura-civile
   - ingegneria-forense
   - dm-109-2023
+- id: riuso-software-pa-cad69
+  area: software-dati-cybersecurity
+  title: Riuso e rilascio open source del software PA (C.A.D. artt. 68-69)
+  summary: 'Obbligo di riuso e rilascio open source del software PA: analisi comparativa (art. 68 C.A.D.), rilascio del codice
+    sotto licenza aperta (art. 69), documentazione AgID (README, tempi 15gg, publiccode.yml su Developers Italia). Non sceglie
+    la licenza ne'' compila i campi.'
+  normative_refs:
+  - D.Lgs. 82/2005 (C.A.D.) artt. 68 (analisi comparativa) e 69 (riuso e standard aperti)
+  - AgID - Linee guida su acquisizione e riuso di software per le PA (Allegato A)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - riuso-software-pa
+  - cad-art-69
+  - open-source-pa
+  - publiccode-yml
+  - developers-italia
 - id: rsia-audit-stradale-dlgs35
   area: ambiente-territorio-mobilita
   title: Audit RSIA / RSA sicurezza stradale (D.Lgs 35/2011)
