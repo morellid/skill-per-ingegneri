@@ -1,0 +1,41 @@
+schema_version: 1
+skill: terre-rocce-scavo-dpr120
+last_verified: 2026-07-16
+
+# Fonte per la gestione delle terre e rocce da scavo: qualificazione come sottoprodotto
+# (anziche' rifiuto), gestione nei cantieri di piccole e grandi dimensioni (dichiarazione /
+# piano di utilizzo), utilizzo nel sito di produzione (escluse dalla disciplina rifiuti).
+# D.P.R. 120/2017, coordinato con la Parte IV del D.Lgs. 152/2006.
+
+sources:
+  - id: dpr-120-2017
+    title: "D.P.R. 13 giugno 2017, n. 120 - Regolamento sulla disciplina semplificata della gestione delle terre e rocce da scavo (testo vigente al 2026-07-16)"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2017-06-13;120!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 67cee768741ac257c39fe8955d9428211b3d3c9cb28f15d2610d9bf0b4ef9336
+    license: public-domain
+    binary_path: not_in_repo/dpr120-2017-vig.html
+    md_path: references/fonti/dpr-120-2017.md
+    excerpt_path: references/estratti/terre-rocce-scavo-checklist.md
+    notes: |
+      Codice redazionale 17G00135 (GU n. 183 del 7/8/2017). Pagina indice Normattiva pinnata a
+      !vig=2026-07-16 (hash stabile, doppio download: 67cee768...). Articoli caricati via AJAX
+      (caricaArticolo, testo vigente) e trascritti verbatim in
+      references/fonti/dpr-120-2017.md: art. 1 (oggetto e finalita'), art. 2 (definizioni:
+      cantiere di piccole dimensioni <= 6000 mc, cantiere di grandi dimensioni, sottoprodotto,
+      sito di produzione/destinazione/deposito intermedio, dichiarazione di avvenuto utilizzo),
+      art. 4 (quattro requisiti per qualificare le terre come sottoprodotto ex art. 184-bis
+      D.Lgs. 152/2006: generate nella realizzazione di un'opera; utilizzo conforme a piano di
+      utilizzo/dichiarazione per reinterri/riempimenti/rilevati; idoneita' all'utilizzo senza
+      trattamenti diversi dalla normale pratica industriale; rispetto dei requisiti ambientali),
+      art. 20 (cantieri di piccole dimensioni: requisiti ambientali - CSC colonne A/B, Tab. 1,
+      Allegato 5, Titolo V, Parte IV, D.Lgs. 152/2006), art. 21 (dichiarazione di utilizzo:
+      autocertificazione ex art. 47 DPR 445/2000, modulo allegato 6, trasmessa almeno 15 giorni
+      prima dell'inizio scavi al Comune e all'ARPA, utilizzo entro 1 anno), art. 24 (utilizzo
+      nel sito di produzione: terre escluse dalla disciplina rifiuti ex art. 185 c.1 lett. c
+      D.Lgs. 152/2006, non contaminazione verificata ai sensi dell'allegato 4).
+      LIMITE DI RESA: i valori delle CSC (Tab. 1, Allegato 5, Parte IV, D.Lgs. 152/2006) e gli
+      Allegati tecnici del regolamento (campionamento/analisi, modulistica) sono tabellari: NON
+      riprodotti, da leggere sull'atto e sul D.Lgs. 152/2006. La skill copre il quadro, la
+      qualificazione e le procedure, non i valori analitici puntuali.
