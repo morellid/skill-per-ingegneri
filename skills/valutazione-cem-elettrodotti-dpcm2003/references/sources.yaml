@@ -1,0 +1,42 @@
+schema_version: 1
+skill: valutazione-cem-elettrodotti-dpcm2003
+last_verified: 2026-07-16
+
+# Fonte per la protezione della popolazione dai campi elettrici e magnetici a
+# frequenza di rete (50 Hz) generati dagli elettrodotti: il D.P.C.M. 8/7/2003, che
+# fissa limite di esposizione, valore di attenzione, obiettivo di qualita' e il
+# quadro delle fasce di rispetto. La METODOLOGIA DI CALCOLO delle fasce/DPA e'
+# delegata dall'art. 6 c.2 all'APAT (poi ISPRA) e approvata con DM 29/5/2008: NON e'
+# riprodotta (la skill copre il quadro e la verifica dei limiti, non il calcolo DPA).
+
+sources:
+  - id: dpcm-8-7-2003
+    title: "D.P.C.M. 8 luglio 2003 - Limiti di esposizione, valori di attenzione e obiettivi di qualita' per i campi elettrici e magnetici a 50 Hz degli elettrodotti"
+    type: decreto-del-presidente-del-consiglio-dei-ministri
+    url: https://www.gazzettaufficiale.it/eli/id/2003/08/29/03A09749/sg
+    accessed: 2026-07-16
+    # Pagina ELI di Gazzetta Ufficiale: riferimento solo-online (come altre voci
+    # /eli/id/.../sg del repo). Testo letto via l'endpoint AJAX caricaArticolo e
+    # trascritto verbatim; nessun binario hashato.
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/dpcm-8-7-2003.md
+    excerpt_path: references/estratti/limiti-cem-checklist.md
+    notes: |
+      Codice redazionale 03A09749, GU Serie Generale n. 200 del 29/8/2003. Attua la
+      legge quadro 22/2/2001 n. 36 (art. 4 c.1 lett. a). Trascritti verbatim in
+      references/fonti/dpcm-8-7-2003.md gli artt. 1 (campo di applicazione), 2
+      (definizioni, rinvio all'Allegato A), 3 (limite di esposizione 100 microtesla
+      per l'induzione magnetica e 5 kV/m per il campo elettrico; valore di attenzione
+      10 microtesla come mediana 24h in aree gioco, ambienti abitativi/scolastici e
+      luoghi con permanenza >= 4 ore), 4 (obiettivo di qualita' 3 microtesla, mediana
+      24h, per nuovi elettrodotti e nuove aree), 5 (tecniche di misura: norma CEI
+      211-6; APAT-ARPA per le procedure), 6 (fasce di rispetto: riferimento
+      all'obiettivo di qualita' e alla portata in corrente CEI 11-60; metodologia di
+      calcolo DELEGATA all'APAT con approvazione del Ministero dell'ambiente), 7
+      (aggiornamento conoscenze), 8 (abrogazioni) e l'Allegato A (definizioni).
+      LIMITE DI FONTE: la metodologia di calcolo delle fasce di rispetto e delle
+      Distanze di Prima Approssimazione (DPA), delegata dall'art. 6 c.2, e' stata
+      approvata con DM Ambiente 29/5/2008 (non trascritto qui): la skill copre il
+      quadro dei limiti e la loro verifica, NON il calcolo numerico della DPA.
