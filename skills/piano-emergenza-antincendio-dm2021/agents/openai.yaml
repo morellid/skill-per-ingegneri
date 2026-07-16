@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Piano di emergenza ed evacuazione (art. 46 D.Lgs 81/2008 + DM 2/9/2021)
+short_description: Supporto documentale all'obbligo e alla struttura del piano di emergenza ed evacuazione nei luoghi di lavoro (art. 46 D.Lgs 81/2008 + DM 2 settembre 2021). Stabilisce quando il piano e' obbligatorio (luoghi con almeno 10 lavoratori; luoghi aperti al pubblico con piu' di 50 persone contemporanee; attivita' soggette a controllo VV.F. ex Allegato I DPR 151/2011 - art. 2 c.2) e cosa fare quando non lo e' (misure nel DVR - art. 2 c.4), inquadra i contenuti del piano (misure di gestione dell'emergenza, nominativi addetti), la designazione degli addetti al servizio antincendio (art. 4) e la loro formazione/aggiornamento (art. 5, allegato III). NON esegue la valutazione del rischio incendio, non riproduce integralmente gli allegati e non certifica il piano.
+default_prompt: |
+  Devo capire se la mia attivita' deve avere un piano di emergenza ed evacuazione secondo il
+  DM 2/9/2021: quali sono le soglie che lo rendono obbligatorio (numero di lavoratori,
+  presenza di pubblico, attivita' soggette ai VV.F.), cosa devo fare se non e' obbligatorio e
+  come designo e formo gli addetti antincendio? Cita gli articoli.

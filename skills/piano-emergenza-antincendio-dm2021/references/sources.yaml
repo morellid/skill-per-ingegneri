@@ -1,0 +1,50 @@
+schema_version: 1
+skill: piano-emergenza-antincendio-dm2021
+last_verified: 2026-07-16
+
+# Fonti per l'obbligo e la struttura del piano di emergenza ed evacuazione nei luoghi di
+# lavoro: art. 46 D.Lgs 81/2008 (prevenzione incendi e gestione emergenze) + DM 2/9/2021
+# (criteri per la gestione della sicurezza antincendio in esercizio ed in emergenza).
+
+sources:
+  - id: dlgs-81-2008-art46
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. salute e sicurezza sul lavoro) - art. 46 (prevenzione incendi e gestione delle emergenze) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: d89919850537a55286cc55ce7d2bff1aaa316b670d0072a475370176de830831
+    license: public-domain
+    binary_path: not_in_repo/dlgs-81-2008-vig.html
+    md_path: references/fonti/piano-emergenza.md
+    excerpt_path: references/estratti/piano-emergenza-checklist.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16
+      (hash stabile, doppio download: d8991985...). Art. 46 caricato via AJAX
+      (caricaArticolo, idGruppo=8) e trascritto verbatim: prevenzione incendi come
+      funzione statuale (c.1), obbligo di misure nei luoghi di lavoro (c.2), delega ai
+      decreti interministeriali per i criteri di gestione delle emergenze e per il
+      servizio antincendio (c.3), regime transitorio DM 10/3/1998 (c.4).
+
+  - id: dm-2-9-2021
+    title: "D.M. 2 settembre 2021 (Min. Interno) - Criteri per la gestione dei luoghi di lavoro in esercizio ed in emergenza (antincendio)"
+    type: decreto-ministeriale
+    url: https://www.gazzettaufficiale.it/eli/id/2021/10/04/21A05748/sg
+    accessed: 2026-07-16
+    # Pagina ELI di Gazzetta Ufficiale: riferimento solo-online (come altre voci
+    # /eli/id/.../sg del repo). Articoli letti via caricaArticolo e trascritti verbatim.
+    sha256: null
+    license: public-domain
+    binary_path: null
+    md_path: references/fonti/piano-emergenza.md
+    notes: |
+      Codice redazionale 21A05748, GU Serie Generale n. 237 del 4/10/2021, in vigore dal
+      4/10/2022. Attua l'art. 46 c.3 lett. a) n.4 e lett. b) del D.Lgs 81/2008 (sostituisce
+      per la gestione emergenze/formazione il DM 10/3/1998). Trascritti verbatim gli artt.
+      1-8: campo di applicazione (art. 1), gestione della sicurezza antincendio in esercizio
+      ed in emergenza con i CASI IN CUI E' OBBLIGATORIO IL PIANO DI EMERGENZA - luoghi con
+      >= 10 lavoratori; luoghi aperti al pubblico con > 50 persone contemporanee; attivita'
+      dell'Allegato I al DPR 151/2011 (art. 2 c.2); informazione e formazione (art. 3);
+      designazione addetti antincendio (art. 4); formazione/aggiornamento addetti (art. 5);
+      requisiti docenti (art. 6); disposizioni transitorie (art. 7); entrata in vigore
+      (art. 8). I criteri operativi di dettaglio (contenuti del piano di emergenza, livelli)
+      sono negli Allegati I-II-III, richiamati e non riprodotti integralmente.
