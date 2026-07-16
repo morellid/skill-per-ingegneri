@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 5
+  count: 6
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -787,6 +787,23 @@ skills:
   - pums
   - dm-397-2017
   - mobilita
+- id: regimi-suap-attivita-produttive-dlgs222
+  area: edilizia-urbanistica-catasto
+  title: Regime amministrativo SUAP per attivita' produttive (D.Lgs 222/2016)
+  summary: Individua il regime amministrativo (comunicazione, SCIA, SCIA unica, SCIA condizionata, autorizzazione) di un'attivita'
+    produttiva/commerciale al SUAP tramite la Tabella A del D.Lgs 222/2016. Inquadra effetti e tempi; non riproduce la Tabella
+    A per ogni attivita'.
+  normative_refs:
+  - D.Lgs. 25 novembre 2016, n. 222 ("SCIA 2") - artt. 1, 2, 5 e Tabella A
+  - L. 241/1990 - artt. 19 (SCIA), 19-bis (SCIA unica/condizionata), 20 (silenzio-assenso)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-222-2016
+  - suap
+  - scia
+  - tabella-a
+  - attivita-produttive
 - id: relazione-cam-dm-24-11-2025
   area: appalti-opere-pubbliche
   title: Relazione CAM di progetto (DM 24.11.2025)
