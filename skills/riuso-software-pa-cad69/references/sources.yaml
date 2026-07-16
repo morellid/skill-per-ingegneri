@@ -1,0 +1,52 @@
+schema_version: 1
+skill: riuso-software-pa-cad69
+last_verified: 2026-07-16
+
+# Fonti per l'obbligo di analisi comparativa nell'acquisizione del software (art. 68
+# C.A.D.) e per l'obbligo di rilascio in riuso sotto licenza aperta del software della
+# PA (art. 69 C.A.D.), con la documentazione operativa (README, documentazione tecnica,
+# publiccode.yml, tempi di rilascio, registrazione su Developers Italia) delle Linee
+# guida AgID su acquisizione e riuso di software per le PA.
+
+sources:
+  - id: cad-68-69
+    title: "D.Lgs. 7 marzo 2005, n. 82 (C.A.D.) - artt. 68 (analisi comparativa) e 69 (riuso e standard aperti) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-03-07;82!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 5e75c6b9215888cba2dd5d118c6aa3baf6b3d26eee09d54af7c2f84e20f28222
+    license: public-domain
+    binary_path: not_in_repo/cad-vig.html
+    md_path: references/fonti/riuso-software-pa.md
+    excerpt_path: references/estratti/riuso-software-checklist.md
+    notes: |
+      Codice redazionale 005G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16
+      (hash stabile, doppio download: 5e75c6b9...). Caricati via AJAX (caricaArticolo,
+      idGruppo=14) e trascritti verbatim in references/fonti/ gli artt. 68 (analisi
+      comparativa: la PA acquisisce software previa valutazione comparativa tecnico-
+      economica tra software sviluppato ad hoc, riuso, open source, cloud, proprietario)
+      e 69 (Riuso: obbligo di rendere disponibile il codice sorgente completo di
+      documentazione, in repertorio pubblico sotto licenza aperta, in uso gratuito ad
+      altre PA, salvo motivate ragioni di sicurezza/ordine pubblico/difesa/elezioni).
+
+  - id: linee-guida-riuso-agid
+    title: "AgID - Linee guida su acquisizione e riuso di software per le pubbliche amministrazioni (versione pubblicata)"
+    type: linee-guida
+    url: https://www.agid.gov.it/sites/default/files/repository_files/lg-acquisizione-e-riuso-software-per-pa-docs_pubblicata.pdf
+    accessed: 2026-07-16
+    sha256: 41925c4dae94c5a8b7ab5b39be03563dc80e033705b503710792d297cd225a43
+    license: public-domain
+    binary_path: not_in_repo/lg-riuso-agid.pdf
+    md_path: references/fonti/riuso-software-pa.md
+    notes: |
+      Linee guida AgID (Agenzia per l'Italia Digitale) adottate ai sensi dell'art. 71
+      C.A.D., attuative degli artt. 68-69. PDF ufficiale su host istituzionale agid.gov.it
+      (101 pagine; hash stabile, doppio download: 41925c4d...). Trascritti verbatim gli
+      estratti operativi dell'Allegato A "Guida alla pubblicazione di software come open
+      source": A.7 (contenuti obbligatori del file README.md), A.8 (documentazione tecnica
+      da allegare, formati ammessi), A.9 (tempi di rilascio: entro 15 giorni se non si
+      adotta il modello di sviluppo aperto) e A.11 (registrazione su Developers Italia
+      tramite pubblicazione del file publiccode.yml nella root del repository; formato
+      documentato su https://github.com/italia/publiccode.yml). Il formato di dettaglio
+      del file publiccode.yml e' standard tecnico di Developers Italia/AgID, richiamato
+      dalle Linee guida e non riprodotto campo per campo.

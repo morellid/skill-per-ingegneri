@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Riuso e rilascio open source del software PA (art. 68-69 C.A.D. + Linee guida AgID)
+short_description: Supporto documentale agli obblighi di acquisizione, riuso e rilascio in open source del software delle PA (C.A.D. artt. 68-69). Imposta l'analisi comparativa tra le soluzioni (sviluppo ad hoc, riuso, open source, cloud, proprietario - art. 68) e struttura il rilascio del codice sorgente sotto licenza aperta in repertorio pubblico (art. 69), con la documentazione a corredo delle Linee guida AgID: file README con i contenuti obbligatori, documentazione tecnica in formato versionabile riga per riga (no PDF/DOCX), tempi di rilascio (entro 15 giorni se non si adotta lo sviluppo aperto) e registrazione su Developers Italia tramite il file publiccode.yml nella root del repository. NON sceglie la licenza, non riproduce il formato campo-per-campo del publiccode.yml e non esegue la valutazione comparativa tecnica.
+default_prompt: |
+  La mia pubblica amministrazione ha fatto sviluppare del software su proprie specifiche:
+  siamo obbligati a rilasciarlo in open source? Come imposto l'analisi comparativa (art. 68
+  C.A.D.), cosa devo pubblicare (licenza, README, documentazione, publiccode.yml) e in
+  quali tempi secondo le Linee guida AgID? Cita gli articoli.
