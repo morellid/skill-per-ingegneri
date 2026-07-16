@@ -770,6 +770,23 @@ skills:
   - ntc-2018
   - cemento-armato
   - flessione
+- id: prevenzione-incendi-attivita-procedimenti-dpr151
+  area: sicurezza-lavoro-cantieri
+  title: Attivita' e procedimenti di prevenzione incendi (DPR 151/2011)
+  summary: 'Stabilisce se un''attivita'' e'' soggetta ai controlli di prevenzione incendi e la categoria A/B/C (Allegato I)
+    secondo il DPR 151/2011, e imposta l''iter VV.F.: valutazione progetto (B/C), SCIA, visite 60 gg, CPI (C), rinnovo, deroghe.
+    Non classifica ogni attivita''.'
+  normative_refs:
+  - D.P.R. 1 agosto 2011, n. 151 - artt. 2, 3, 4, 5, 6, 7 e Allegato I (categorie A/B/C)
+  - D.Lgs. 139/2006 art. 16 + art. 49 DL 78/2010 (conv. L. 122/2010) (richiamati)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - prevenzione-incendi
+  - dpr-151-2011
+  - scia-antincendio
+  - certificato-prevenzione-incendi
+  - vigili-del-fuoco
 - id: pums-validator-dm397
   area: ambiente-territorio-mobilita
   title: Validatore PUMS - DM 397/2017
