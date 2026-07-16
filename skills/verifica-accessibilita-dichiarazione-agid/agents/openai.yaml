@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Verifica di accessibilita' e dichiarazione (Linee guida AgID)
+short_description: Supporto documentale al metodo di verifica dell'accessibilita' (verifica tecnica + verifica soggettiva) e alla dichiarazione di accessibilita' degli strumenti informatici (siti web, app mobili, software, documenti), secondo le Linee guida AgID sull'accessibilita' degli strumenti informatici (ex art. 11 L. 4/2004, versione 21/12/2022). Imposta la verifica tecnica (punti 9-11 e Prospetti/Appendici della UNI CEI EN 301549, requisito minimo WCAG 2.1 AA per il web) e la verifica soggettiva a 4 fasi (esperti di fattori umani con scala 1-5, gruppo di valutazione con persone con disabilita', esecuzione task, rapporto sul livello di qualita'), obbligatoria sopra soglia comunitaria (art. 35 D.Lgs 50/2016); struttura la dichiarazione di accessibilita' sulla piattaforma AgID (modello, link nel footer, riesame 23 settembre), gli obiettivi annuali delle PA (31 marzo), le deroghe per onere sproporzionato (art. 3-ter L. 4/2004) e il meccanismo di feedback / Difensore civico digitale. NON esegue l'audit tecnico, non riproduce la EN 301549 (a pagamento) ne' le WCAG, non compila la dichiarazione e non copre gli obblighi/sanzioni della Legge Stanca.
+default_prompt: |
+  Devo verificare l'accessibilita' di un sito web della mia PA e pubblicare la dichiarazione
+  di accessibilita': quale verifica serve (tecnica e soggettiva), quale livello WCAG, entro
+  quando riesamino la dichiarazione e dove la pubblico secondo le Linee guida AgID? Cita i
+  riferimenti.

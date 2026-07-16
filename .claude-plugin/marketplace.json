@@ -164,7 +164,7 @@
     {
       "name": "software-dati-cybersecurity",
       "source": "./skills",
-      "description": "Software, dati & cybersecurity - 8 skill verticali su normative italiane.",
+      "description": "Software, dati & cybersecurity - 9 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -180,7 +180,8 @@
         "./gap-analysis-misure-minime-ict-agid",
         "./gdpr-registro-dpia",
         "./nis2-self-assessment",
-        "./riuso-software-pa-cad69"
+        "./riuso-software-pa-cad69",
+        "./verifica-accessibilita-dichiarazione-agid"
       ]
     },
     {

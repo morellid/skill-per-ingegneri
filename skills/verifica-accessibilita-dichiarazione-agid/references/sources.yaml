@@ -1,0 +1,40 @@
+schema_version: 1
+skill: verifica-accessibilita-dichiarazione-agid
+last_verified: 2026-07-16
+
+# Fonte per il METODO di verifica dell'accessibilita' (verifica tecnica + verifica
+# soggettiva) e per la DICHIARAZIONE di accessibilita' degli strumenti informatici: le
+# Linee guida AgID sull'accessibilita' degli strumenti informatici (adottate ex art. 11
+# L. 4/2004). Complementare a accessibilita-siti-app-l4-2004 (obblighi/soggetti/sanzioni
+# della Legge Stanca): questa copre il metodo operativo e la dichiarazione.
+#
+# La norma tecnica UNI CEI EN 301549 e le WCAG sono RICHIAMATE dalle Linee guida ma NON
+# riprodotte (la UNI EN 301549 e' a pagamento): la skill rinvia ai punti 9-11 e ai
+# Prospetti/Appendici della EN 301549, senza riprodurne il testo.
+
+sources:
+  - id: linee-guida-accessibilita-agid
+    title: "AgID - Linee Guida sull'accessibilita' degli strumenti informatici (versione rettifica del 21/12/2022)"
+    type: linee-guida
+    url: https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_accessibilita_versione_rettifica_del_21_dic_2022_rev_rscc.pdf
+    accessed: 2026-07-16
+    sha256: 9043373eef2c585a9ffc09739fa4a156603d27e4abe189b8399eaf7d150f95e8
+    license: public-domain
+    binary_path: not_in_repo/linee-guida-accessibilita-agid-2022.pdf
+    md_path: references/fonti/linee-guida-accessibilita-agid.md
+    excerpt_path: references/estratti/accessibilita-verifica-checklist.md
+    notes: |
+      PDF ufficiale su agid.gov.it (host istituzionale gia' in allowlist della CI del
+      repo), 39 pagine, testo nativo. SHA256 riproducibile (doppio download:
+      9043373e...). Adottate ex art. 11 L. 4/2004. Trascritti verbatim in
+      references/fonti/: tempi di attuazione (1.6, art. 2 D.Lgs 106/2018); requisiti
+      tecnici Web con rinvio a UNI CEI EN 301549 e WCAG 2.0/2.1 AA (2.2); verifica tecnica
+      (3.2.1) e verifica soggettiva a 4 fasi con scala 1-5 e livelli di qualita' (3.2.2),
+      obbligatoria sopra soglia comunitaria (art. 35 D.Lgs 50/2016); 12 criteri essenziali
+      (3.2.2.2); dichiarazione di accessibilita' su piattaforma AgID (cap. 4: modello
+      Allegato 1, link nel footer, fonti di analisi, riesame 23 settembre, validita'
+      24 sett-23 sett, art. 9 L.4/2004), obiettivi annuali PA entro il 31 marzo (4.2);
+      onere sproporzionato / deroghe (cap. 6, art. 3-ter L.4/2004 + casi a-h); feedback e
+      Difensore civico digitale (cap. 7, artt. 3-bis e 3-quinquies).
+      LIMITE DI RESA: la norma UNI CEI EN 301549 (a pagamento) e le WCAG NON sono
+      riprodotte: la skill rinvia ai punti/Prospetti/Appendici della EN 301549 e alle WCAG.
