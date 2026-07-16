@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Struttura della relazione peritale del CTU (c.p.c. 191-201)
+short_description: Supporto alla strutturazione della relazione peritale e allo svolgimento delle operazioni del consulente tecnico d'ufficio (CTU) nel processo civile (c.p.c. artt. 191-201). Aiuta a leggere/riformulare i quesiti (art. 191), gestire astensione/ricusazione e giuramento anche a firma digitale (artt. 192-193), condurre le operazioni con l'intervento di parti e CTP (art. 194), redigere processo verbale e relazione con la scansione dei termini (bozza alle parti, osservazioni, deposito con sintetica valutazione - art. 195) e gestire conciliazione, rinnovazione e sostituzione (artt. 196-201). Inquadra il CTU nell'albo (categorie/settori, requisiti) secondo il D.M. 109/2023. NON fornisce il contenuto tecnico/di merito della perizia, non copre la perizia penale ne' la liquidazione del compenso.
+default_prompt: |
+  Sono un ingegnere nominato CTU in una causa civile: come imposto la struttura
+  della relazione peritale e la sequenza dei termini dell'art. 195 (bozza alle parti,
+  osservazioni, deposito con sintetica valutazione), e come verbalizzo le operazioni
+  garantendo il contraddittorio con le parti e i CTP? Cita gli articoli del c.p.c.

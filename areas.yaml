@@ -30,3 +30,10 @@ areas:
   - id: software-dati-cybersecurity
     name: Software, dati & cybersecurity
     order: 8
+  # Nicchia CTU / ingegneria forense. Aggiunta su indicazione esplicita del
+  # maintainer per ospitare le skill #42 (compensi CTU) e #41 (relazione peritale);
+  # parte con 2 skill (< 3), in deroga consapevole alla soglia sopra, con l'intento
+  # di crescere (es. ulteriori adempimenti CTU/CTP).
+  - id: forense
+    name: CTU & ingegneria forense
+    order: 9
