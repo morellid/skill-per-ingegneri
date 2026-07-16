@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 8
+  count: 9
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -710,6 +710,23 @@ skills:
   - pfte
   - dlgs-36-2023
   - lavori-pubblici
+- id: piano-emergenza-antincendio-dm2021
+  area: sicurezza-lavoro-cantieri
+  title: Piano di emergenza ed evacuazione (art. 46 D.Lgs 81/2008 + DM 2/9/2021)
+  summary: 'Obbligo e struttura del piano di emergenza nei luoghi di lavoro (art. 46 D.Lgs 81/2008 + DM 2/9/2021): quando
+    e'' obbligatorio (>=10 lavoratori, >50 persone al pubblico, attivita'' DPR 151/2011), designazione e formazione addetti.
+    Non esegue la valutazione del rischio incendio.'
+  normative_refs:
+  - D.Lgs. 81/2008 art. 46 (prevenzione incendi e gestione delle emergenze)
+  - D.M. 2 settembre 2021 (gestione sicurezza antincendio in esercizio ed emergenza)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - piano-emergenza
+  - antincendio
+  - dm-2-9-2021
+  - art-46-dlgs81
+  - sicurezza-lavoro
 - id: piano-lavoro-amianto
   area: sicurezza-lavoro-cantieri
   title: Piano di Lavoro Amianto
