@@ -35,6 +35,10 @@ areas:
   name: Software, dati & cybersecurity
   order: 8
   count: 6
+- id: forense
+  name: CTU & ingegneria forense
+  order: 9
+  count: 1
 skills:
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
@@ -262,6 +266,23 @@ skills:
   - ntc-2018
   - slu
   - sle
+- id: compensi-ctu-dpr115
+  area: forense
+  title: Compensi del CTU / ausiliario del magistrato (D.P.R. 115/2002)
+  summary: 'Liquidazione dei compensi del CTU/ausiliario del magistrato (DPR 115/2002): spettanze, tipo di onorario (fisso/variabile/a
+    tempo), aumenti (urgenza 20%, fino al doppio, collegiale +40%), indennita''/spese, decreto di pagamento. Non calcola gli
+    importi (tabelle DM 30/5/2002).'
+  normative_refs:
+  - D.P.R. 30/5/2002 n. 115 (T.U. spese di giustizia) - artt. 49-58, 168, 170
+  - DM 30/5/2002 (tabelle tariffarie, delegato ex art. 50 - citato, non riprodotto)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-115-2002
+  - ctu
+  - compensi-ausiliari
+  - ingegneria-forense
+  - liquidazione
 - id: consulente-adr-dlgs40
   area: ambiente-territorio-mobilita
   title: Consulente sicurezza trasporti merci pericolose (DGSA) - D.Lgs. 40/2000
