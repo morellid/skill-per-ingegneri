@@ -1,0 +1,39 @@
+schema_version: 1
+skill: verifiche-periodiche-attrezzature-dlgs81
+last_verified: 2026-07-16
+
+# Fonte per il regime dei CONTROLLI e delle VERIFICHE PERIODICHE delle attrezzature di lavoro:
+# obblighi del datore di lavoro (art. 71), controlli iniziali/periodici/straordinari da persona
+# competente (commi 8-10) e verifiche periodiche delle attrezzature dell'Allegato VII (prima
+# verifica INAIL, successive ASL/ARPA/soggetti abilitati - commi 11-14). Fonte: D.Lgs. 81/2008.
+
+sources:
+  - id: dlgs-81-2008-art71-allegatoVII
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. sicurezza) - art. 71 e Allegato VII (verifiche periodiche attrezzature) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: d89919850537a55286cc55ce7d2bff1aaa316b670d0072a475370176de830831
+    license: public-domain
+    binary_path: not_in_repo/dlgs81.html
+    md_path: references/fonti/dlgs-81-2008-art71-allegatoVII.md
+    excerpt_path: references/estratti/verifiche-attrezzature-checklist.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16 (hash
+      stabile: d8991985...). Art. 71 (versione 6, idGruppo 15) caricato via AJAX
+      (caricaArticolo) e trascritto verbatim in
+      references/fonti/dlgs-81-2008-art71-allegatoVII.md: obblighi generali (commi 1-7),
+      controlli iniziali/periodici/straordinari da persona competente con verbali conservati
+      almeno tre anni (commi 8-10), verifiche periodiche delle attrezzature dell'Allegato VII
+      (comma 11: prima verifica INAIL entro 45 giorni, poi soggetti abilitati; successive
+      ASL/ARPA/soggetti abilitati; oneri a carico del datore), qualifica dei soggetti privati
+      abilitati (comma 12), decreto sulle modalita' - DM 11/4/2011 (comma 13), VVF (comma
+      13-bis), modifiche all'elenco (comma 14).
+      LIMITE DI RESA (Regola zero): l'Allegato VII (elenco delle attrezzature soggette e
+      periodicita' delle verifiche) e' su Normattiva "Parte di provvedimento in formato
+      grafico": l'elenco/le frequenze puntuali NON sono nel testo. E' trascritta la sola
+      parte testuale disponibile (nota di aggiornamento L. 34/2026, che cita "Ponti mobili
+      sviluppabili su carro ad azionamento motorizzato - Verifica annuale" e l'inserimento di
+      "Piattaforme di lavoro mobili elevabili e piattaforme di lavoro fuori strada per
+      operazioni in frutteto - Verifica triennale"). Le frequenze complete vanno lette
+      sull'atto (formato grafico) e le modalita' sul DM 11 aprile 2011: citati, non riprodotti.

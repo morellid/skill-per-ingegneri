@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 9
+  count: 10
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -1185,6 +1185,23 @@ skills:
   - verifiche-periodiche
   - manutenzione
   - sicurezza-impianti
+- id: verifiche-periodiche-attrezzature-dlgs81
+  area: impianti-macchine-prodotti
+  title: Verifiche periodiche attrezzature di lavoro (D.Lgs. 81/2008 art. 71)
+  summary: 'Inquadra controlli e verifiche periodiche delle attrezzature di lavoro (D.Lgs. 81/2008 art. 71 e Allegato VII):
+    controlli da persona competente (verbali 3 anni), prima verifica INAIL entro 45 giorni, successive ASL/ARPA o soggetti
+    abilitati. Non esegue le verifiche.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (T.U. sicurezza) - art. 71 e Allegato VII
+  - DM 11 aprile 2011 (modalita' delle verifiche periodiche e abilitazione dei soggetti) (richiamato)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - verifiche-periodiche
+  - attrezzature-di-lavoro
+  - dlgs-81-2008
+  - allegato-vii
+  - inail-asl
 - id: via-screening-sia-dlgs152
   area: ambiente-territorio-mobilita
   title: VIA - screening (art. 19) e SIA (Allegato VII) D.Lgs. 152/2006
