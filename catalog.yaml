@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 7
+  count: 8
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -151,6 +151,23 @@ skills:
   - anac
   - dlgs-36-2023
   - bandi-tipo
+- id: barriere-architettoniche-edifici-privati-dm236
+  area: edilizia-urbanistica-catasto
+  title: Barriere architettoniche negli edifici privati (L. 13/1989 + DM 236/1989)
+  summary: Determina l'obbligo e il livello (accessibilita'/visitabilita'/adattabilita') di un edificio privato o ERP secondo
+    la L. 13/1989 e il DM 236/1989, per categoria di edificio, con i criteri di progettazione. Non riproduce i valori dimensionali
+    (art. 8, in formato grafico).
+  normative_refs:
+  - Legge 9 gennaio 1989, n. 13 - artt. 1 e 7
+  - D.M. LL.PP. 14 giugno 1989, n. 236 - artt. 2, 3, 4, 8
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - barriere-architettoniche
+  - legge-13-1989
+  - dm-236-1989
+  - accessibilita-visitabilita-adattabilita
+  - edilizia
 - id: bonifica-siti-contaminati-dlgs152
   area: ambiente-territorio-mobilita
   title: Bonifica siti contaminati - D.Lgs. 152/2006 Titolo V

@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Barriere architettoniche negli edifici privati (L. 13/1989 + DM 236/1989)
+short_description: Supporto documentale al superamento delle barriere architettoniche negli edifici privati e di edilizia residenziale pubblica, secondo la L. 9 gennaio 1989, n. 13 e il D.M. 14 giugno 1989, n. 236. Stabilisce quando scatta l'obbligo di progettazione conforme (nuovi edifici e ristrutturazioni di interi edifici - art. 1 L. 13/1989), individua il livello richiesto tra accessibilita', visitabilita' e adattabilita' e la sua applicazione per categoria di edificio (art. 2-3 DM 236/1989: accessibilita' di spazi esterni/parti comuni, 5% alloggi ERP, attivita' sociali, sedi a collocamento obbligatorio; visitabilita' di ogni unita' immobiliare con precisazioni per residenziale/spettacoli/ristorazione; adattabilita' differita; deroga ascensore per edifici fino a 3 livelli fuori terra), imposta i criteri di progettazione (porte, servizi igienici, scale, rampe, ascensore, corridoi, spazi di manovra - art. 4) e il regime abilitativo delle opere di adattamento (art. 7). NON riproduce i valori dimensionali (art. 8, in formato grafico: pendenza rampe, luce porte, cabina ascensore, spazi di manovra), non redige l'asseverazione e non copre gli edifici pubblici (DPR 503/1996) ne' l'accessibilita' digitale.
+default_prompt: |
+  Ho un progetto edilizio (edificio privato/residenziale): quali obblighi di accessibilita' devo
+  rispettare secondo la L. 13/1989 e il DM 236/1989? Quale livello (accessibilita', visitabilita',
+  adattabilita') si applica alle parti comuni e alle unita' immobiliari, e quando serve l'ascensore?
+  Cita gli articoli.
