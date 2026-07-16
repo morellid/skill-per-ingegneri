@@ -34,7 +34,7 @@ areas:
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
-  count: 8
+  count: 9
 - id: forense
   name: CTU & ingegneria forense
   order: 9
@@ -1085,6 +1085,23 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: verifica-accessibilita-dichiarazione-agid
+  area: software-dati-cybersecurity
+  title: Verifica di accessibilita' e dichiarazione (Linee guida AgID)
+  summary: Metodo di verifica dell'accessibilita' (verifica tecnica su EN 301549/WCAG 2.1 AA + verifica soggettiva a 4 fasi)
+    e dichiarazione di accessibilita' sulla piattaforma AgID, con obiettivi annuali, deroghe e feedback. Non esegue l'audit
+    ne' compila la dichiarazione.
+  normative_refs:
+  - AgID - Linee guida sull'accessibilita' degli strumenti informatici (21/12/2022, ex art. 11 L. 4/2004)
+  - L. 4/2004 (Legge Stanca) artt. 3-bis, 3-ter, 3-quater, 3-quinquies, 9, 11 + UNI CEI EN 301549 / WCAG 2.1 (richiamate)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - accessibilita
+  - linee-guida-agid
+  - dichiarazione-accessibilita
+  - en-301549
+  - wcag
 - id: verifiche-messa-a-terra-dpr462
   area: impianti-macchine-prodotti
   title: Verifiche impianti di messa a terra e luoghi pericolosi - DPR 462/2001
