@@ -163,7 +163,7 @@
     {
       "name": "software-dati-cybersecurity",
       "source": "./skills",
-      "description": "Software, dati & cybersecurity - 6 skill verticali su normative italiane.",
+      "description": "Software, dati & cybersecurity - 7 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -176,6 +176,7 @@
         "./ai-act-compliance",
         "./cra-classificazione-pde",
         "./dora-gap-assessment",
+        "./gap-analysis-misure-minime-ict-agid",
         "./gdpr-registro-dpia",
         "./nis2-self-assessment"
       ]

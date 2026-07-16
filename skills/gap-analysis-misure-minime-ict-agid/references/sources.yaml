@@ -1,0 +1,39 @@
+schema_version: 1
+skill: gap-analysis-misure-minime-ict-agid
+last_verified: 2026-07-16
+
+# Fonte per la gap analysis delle Misure Minime di Sicurezza ICT per le PA (MMS-PA),
+# basate sugli AgID Basic Security Control(s) (ABSC) su tre livelli (Minimo, Standard,
+# Alto): la Circolare AgID 18/4/2017 n. 2/2017, pubblicata in Gazzetta Ufficiale.
+# Il PDF ufficiale della G.U. n. 103/2017 e' scaricabile e hashato (host allowlisted).
+
+sources:
+  - id: circolare-agid-2-2017
+    title: "Circolare AgID 18 aprile 2017, n. 2/2017 - Misure minime di sicurezza ICT per le pubbliche amministrazioni (ABSC)"
+    type: circolare
+    url: https://www.gazzettaufficiale.it/eli/gu/2017/05/05/103/sg/pdf
+    accessed: 2026-07-16
+    sha256: 24e4956ef483426bb9ebbdc425d941c150830436bdc4ba7fa71e558dc7986725
+    license: public-domain
+    binary_path: not_in_repo/gu-103-2017.pdf
+    md_path: references/fonti/circolare-agid-2-2017.md
+    excerpt_path: references/estratti/absc-gap-analysis-checklist.md
+    notes: |
+      Codice redazionale 17A03060, GU Serie Generale n. 103 del 5/5/2017 (10 pagine;
+      la circolare e i suoi allegati sono alle pagg. ~65-73 del PDF). Emanata ex art.
+      14-bis C.A.D. (D.Lgs. 82/2005) e direttiva PCM 1/8/2015; sostituisce la circolare
+      AgID 1/2017. Il PDF ufficiale e' scaricabile da gazzettaufficiale.it e ha hash
+      stabile (doppio download: 24e4956e...). Il testo della circolare (Premessa, art.
+      1 Scopo, art. 2 destinatari - soggetti art. 2 c.2 C.A.D., art. 3 responsabile
+      dell'attuazione, art. 4 modulo di implementazione - allegato 2, art. 5 tempi -
+      entro 31/12/2017) e' letto anche via caricaArticolo; le TABELLE degli ABSC
+      (Allegato 1) e il MODULO di implementazione (Allegato 2) sono in formato grafico
+      nel PDF. Trascritti verbatim in references/fonti/circolare-agid-2-2017.md gli
+      articoli, la sezione "Generalita'/Scopo", la spiegazione della struttura ABSC
+      (identificatore gerarchico x.y.z) e dei tre livelli (Minimo = soglia obbligatoria
+      per tutte le PA; Standard = base di riferimento; Alto = obiettivo), e i titoli +
+      descrizioni delle 8 famiglie ABSC (1, 2, 3, 4, 5, 8, 10, 13).
+      LIMITE DI RESA: la matrice completa dei singoli controlli (ABSC_ID x.y.z) con le
+      colonne booleane Minimo/Standard/Alto e' una tabella in formato grafico: la sua
+      resa testuale dal PDF non conserva in modo affidabile l'allineamento delle X, per
+      cui il LIVELLO ESATTO di ciascun controllo va letto sulle colonne del PDF citato.

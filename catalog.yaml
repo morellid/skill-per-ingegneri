@@ -34,7 +34,7 @@ areas:
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
-  count: 6
+  count: 7
 - id: forense
   name: CTU & ingegneria forense
   order: 9
@@ -465,6 +465,23 @@ skills:
   - pericolosita-idraulica
   - toscana
   - fattibilita-idraulica
+- id: gap-analysis-misure-minime-ict-agid
+  area: software-dati-cybersecurity
+  title: Gap analysis Misure Minime ICT AgID (ABSC - Circ. 2/2017)
+  summary: 'Gap analysis delle Misure Minime ICT per le PA (ABSC, Circ. AgID 2/2017): ambito, responsabile, modulo di implementazione
+    (artt. 2-4), 8 gruppi di controlli (ABSC 1,2,3,4,5,8,10,13) e 3 livelli (Minimo obbligatorio, Standard, Alto). Non riproduce
+    la matrice grafica dei controlli.'
+  normative_refs:
+  - Circolare AgID 18/4/2017 n. 2/2017 (Misure minime di sicurezza ICT per le PA - ABSC)
+  - D.Lgs. 82/2005 (C.A.D.) art. 14-bis e art. 2 c.2 (ambito) + direttiva PCM 1/8/2015
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - abscagid
+  - misure-minime-ict
+  - cybersecurity-pa
+  - circolare-agid-2-2017
+  - gap-analysis
 - id: gdpr-registro-dpia
   area: software-dati-cybersecurity
   title: GDPR Registro + DPIA
