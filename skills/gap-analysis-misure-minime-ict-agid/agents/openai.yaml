@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Gap analysis Misure Minime ICT AgID (ABSC - Circ. 2/2017)
+short_description: Supporto alla gap analysis delle Misure Minime di Sicurezza ICT per le pubbliche amministrazioni (ABSC), Circolare AgID 18/4/2017 n. 2/2017. Inquadra ambito (soggetti art. 2 c.2 C.A.D.), responsabile dell'attuazione (art. 3), modulo di implementazione con firma digitale e marcatura temporale e trasmissione al CERT-PA (art. 4), tempi (art. 5), gli 8 gruppi di controlli ABSC (1 inventario dispositivi, 2 inventario software, 3 configurazioni, 4 vulnerabilita', 5 privilegi admin, 8 malware, 10 backup, 13 protezione dati) e i tre livelli (Minimo obbligatorio, Standard, Alto). NON riproduce la matrice grafica dei singoli controlli, non esegue l'assessment tecnico e non sostituisce il responsabile ne' obblighi piu' recenti (NIS2).
+default_prompt: |
+  La mia pubblica amministrazione deve fare la gap analysis delle misure minime di
+  sicurezza ICT (ABSC, Circolare AgID 2/2017): come imposto la valutazione sugli 8
+  gruppi di controlli, come distinguo i livelli Minimo/Standard/Alto e come compilo il
+  modulo di implementazione (firme, conservazione, CERT-PA)? Cita gli articoli.
