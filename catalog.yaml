@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 7
+  count: 8
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -381,6 +381,23 @@ skills:
   - efficienza-energetica
   - grandi-imprese
   - enea
+- id: distanze-legali-costruzioni-cc
+  area: edilizia-urbanistica-catasto
+  title: Distanze legali nelle costruzioni, luci e vedute (Codice civile)
+  summary: 'Inquadra le distanze legali del Codice civile (artt. 873-907): 3 m tra costruzioni (salvo regolamenti locali),
+    pozzi 2 m e tubi 1 m, alberi (3/1,5/0,5 m), luci e vedute (veduta diretta 1,5 m, obliqua 0,75 m, costruzioni a 3 m). Non
+    risolve il caso ne'' sostituisce il legale.'
+  normative_refs:
+  - Codice civile (R.D. 262/1942) - artt. 873, 877, 878, 879, 889, 890, 892, 905, 906, 907
+  - DM 1444/1968 art. 9 (distanze urbanistiche tra pareti finestrate) - richiamato
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - distanze-legali
+  - codice-civile
+  - luci-e-vedute
+  - distanze-costruzioni
+  - edilizia
 - id: dm37-2008-dichiarazione-conformita
   area: impianti-macchine-prodotti
   title: DM 37/2008 - Dichiarazione Conformita' Impianti
