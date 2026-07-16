@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: DUVRI e obblighi negli appalti (art. 26 D.Lgs 81/2008)
+short_description: Supporto documentale agli obblighi del committente nei contratti d'appalto/d'opera/somministrazione e alla redazione del DUVRI (Documento Unico di Valutazione dei Rischi da Interferenze) ai sensi dell'art. 26 D.Lgs 81/2008. Imposta la verifica dell'idoneita' tecnico-professionale (certificato camerale + autocertificazione), l'informazione sui rischi specifici e sulle misure di emergenza, la cooperazione e il coordinamento tra datori di lavoro, l'elaborazione del DUVRI con le esclusioni (servizi intellettuali, mere forniture, lavori <= 5 uomini-giorno salvo rischi particolari) e l'indicazione dei costi della sicurezza da interferenze non soggetti a ribasso. NON valuta i rischi specifici dell'appaltatore, non quantifica i costi e non copre i cantieri edili del Titolo IV (PSC/POS).
+default_prompt: |
+  La mia azienda affida un servizio in appalto da svolgere nei nostri locali durante
+  l'attivita': dobbiamo fare il DUVRI (art. 26 D.Lgs 81/2008)? Cosa dobbiamo verificare
+  (idoneita' tecnico-professionale, informazione sui rischi), quali interferenze e misure
+  vanno nel documento e come gestiamo i costi non ribassabili? Cita i commi.

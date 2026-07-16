@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 6
+  count: 7
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -407,6 +407,22 @@ skills:
   - dora
   - reg-ue-2022-2554
   - finanza
+- id: duvri-interferenze-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: DUVRI e obblighi negli appalti (art. 26 D.Lgs 81/2008)
+  summary: 'Obblighi del committente negli appalti e DUVRI (art. 26 D.Lgs 81/2008): idoneita'' tecnico-professionale, informazione
+    sui rischi, cooperazione/coordinamento, documento unico rischi da interferenze, costi non ribassabili. Non copre i cantieri
+    Titolo IV (PSC/POS).'
+  normative_refs:
+  - D.Lgs. 81/2008 art. 26 (obblighi negli appalti e DUVRI)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - duvri
+  - interferenze
+  - appalti
+  - art-26-dlgs81
+  - sicurezza-lavoro
 - id: dvr-generico
   area: sicurezza-lavoro-cantieri
   title: DVR Generico (D.Lgs. 81/2008)
