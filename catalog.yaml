@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 11
+  count: 12
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -908,6 +908,23 @@ skills:
   - incidente-rilevante
   - notifica
   - sostanze-pericolose
+- id: obblighi-datore-preposto-formazione-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Obblighi di datore, dirigente e preposto e formazione (D.Lgs 81/2008)
+  summary: Inquadra la ripartizione degli obblighi di sicurezza tra datore di lavoro/dirigente (art. 18), preposto (art. 19)
+    e la formazione dei lavoratori (art. 37) del D.Lgs 81/2008, con gli obblighi non delegabili dell'art. 17 (DVR, RSPP).
+    Non redige il DVR né i verbali di formazione.
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 - artt. 18, 19, 37 (obblighi e formazione)
+  - 'Richiamati: art. 17 (obblighi non delegabili: DVR, RSPP), artt. 26, 28, 36, 41; Accordo Stato-Regioni (formazione)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - sicurezza-lavoro
+  - obblighi-datore-lavoro
+  - preposto
+  - formazione
+  - dlgs-81-2008
 - id: oepv-valutatore-offerte-tecniche
   area: appalti-opere-pubbliche
   title: OEPV - Valutatore offerte tecniche
