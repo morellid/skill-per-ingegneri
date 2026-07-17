@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 7
+  count: 8
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -347,6 +347,24 @@ skills:
   - cra
   - reg-ue-2024-2847
   - cyber
+- id: definizioni-interventi-edilizi-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Definizioni degli interventi edilizi - DPR 380/2001 art. 3
+  summary: 'Qualificazione dell''intervento edilizio (art. 3 DPR 380/2001): manutenzione ordinaria (a) e straordinaria (b),
+    restauro e risanamento conservativo (c), ristrutturazione edilizia (d, anche demo-ricostruzione), nuova costruzione (e,
+    casi e.1-e.7) e ristrutturazione urbanistica (f).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - art. 3 (definizioni degli interventi edilizi, lett. a-f)
+  - D.P.R. 6/6/2001 n. 380 - art. 3 c. 2 (prevalenza delle definizioni sugli strumenti urbanistici)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - testo-unico-edilizia
+  - interventi-edilizi
+  - ristrutturazione
+  - manutenzione-straordinaria
+  - nuova-costruzione
 - id: denuncia-opere-strutturali-l1086
   area: edilizia-urbanistica-catasto
   title: Denuncia opere strutturali e autorizzazione sismica - DPR 380/2001
