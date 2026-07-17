@@ -1,0 +1,51 @@
+schema_version: 1
+skill: attrezzature-pressione-esercizio-dm329
+last_verified: 2026-07-16
+
+# Fonte per la MESSA IN SERVIZIO e le VERIFICHE (di riqualificazione periodica e di funzionamento)
+# delle ATTREZZATURE e INSIEMI A PRESSIONE in esercizio (fase post-marcatura CE): verifica di primo
+# impianto, esclusioni, dichiarazione di messa in servizio, riqualificazione periodica, esenzioni,
+# verifica di funzionamento. Fonte: D.M. 1 dicembre 2004, n. 329.
+
+sources:
+  - id: dm-329-2004-artt-1-4-5-6-10-11-13
+    title: "D.M. 1 dicembre 2004, n. 329 - artt. 1, 4, 5, 6, 10, 11, 13 (messa in servizio e riqualificazione periodica attrezzature a pressione) (testo vigente al 2026-07-16)"
+    type: decreto-ministeriale
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.ministeriale:2004-12-01;329!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 5ee937bbc215f3a35f6e585e8eff0aad8d0dd1790adae26bc979a860542c93eb
+    license: public-domain
+    binary_path: not_in_repo/dm329.html
+    md_path: references/fonti/dm-329-2004-artt-1-4-5-6-10-11-13.md
+    excerpt_path: references/estratti/attrezzature-pressione-checklist.md
+    notes: |
+      Codice redazionale 005G0017 (G.U. 28 gennaio 2005). Pagina indice Normattiva pinnata a
+      !vig=2026-07-16 (hash stabile, doppio download: 5ee937bb...). Artt. 1, 4, 5, 6, 10, 11, 13
+      (idGruppo 0) caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dm-329-2004-artt-1-4-5-6-10-11-13.md.
+      - Art. 1: campo di applicazione (attrezzature/insiemi ex D.Lgs. 93/2000; preesistenti al
+        29/5/2002; recipienti semplici D.Lgs. 311/1991) e tipi di verifica (primo impianto/messa in
+        servizio, periodiche, riqualificazione periodica, riparazione/modifica).
+      - Art. 4: verifica obbligatoria di primo impianto/messa in servizio (solo se installati e
+        assemblati dall'utilizzatore; su richiesta; attestazione; divieto di messa in servizio se
+        esito negativo; temporanea messa in funzione ai soli fini della verifica).
+      - Art. 5: esclusioni dal controllo della messa in servizio.
+      - Art. 6: dichiarazione di messa in servizio all'ISPESL (oggi INAIL) e alla USL/ASL, con
+        elenco attrezzature, relazione tecnica/schema, dichiarazione di conformità al manuale d'uso,
+        verbale della verifica art. 4, elenco componenti in scorrimento viscoso/fatica oligociclica;
+        dichiarazione cumulativa per serie (GPL <= 13 m3; criogenici <= 35 m3); accessori seguono
+        l'attrezzatura protetta; attivazione degli esclusi ex art. 5.
+      - Art. 10: riqualificazione periodica (classificazione per categorie All. II D.Lgs. 93/2000;
+        verifiche di integrità - art. 12 e di funzionamento - art. 13; periodicità nelle tabelle
+        allegati A e B, riducibile per indicazione del fabbricante; deroghe autorizzate dal MAP/MIMIT).
+      - Art. 11: esenzioni dalla riqualificazione periodica (soglie PS/PS*V per fluidi gruppo 2,
+        recipienti frigoriferi, vapore autoproduttori/non, generatori di acetilene, estintori, ecc.).
+      - Art. 13: verifica di funzionamento (rispondenza uso reale a dichiarazione/istruzioni;
+        funzionalità degli accessori di sicurezza; per le valvole di sicurezza, taratura entro i
+        limiti del fabbricante e delle periodicità di riqualificazione).
+      LIMITE DI RESA (Regola zero): le tabelle degli ALLEGATI A e B (periodicità per categoria/
+      tipologia) sono contenuto tabellare non riprodotto: la skill inquadra il quadro procedurale e
+      rinvia agli allegati. ISPESL è soppresso e le sue funzioni sono attribuite all'INAIL (D.L.
+      78/2010): il testo storico cita ISPESL/USL/Ministero delle attività produttive. Fase di
+      esercizio complementare e distinta dalla marcatura CE (cfr. ped-classificazione-conformita,
+      che dichiara DM 329/2004 fuori dal proprio scope).

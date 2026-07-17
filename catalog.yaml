@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 10
+  count: 11
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -135,6 +135,24 @@ skills:
   - dlgs-192-2005
   - certificazione-energetica
   - compravendita-locazione
+- id: attrezzature-pressione-esercizio-dm329
+  area: impianti-macchine-prodotti
+  title: 'Attrezzature a pressione: messa in servizio e verifiche (DM 329/2004)'
+  summary: 'Messa in servizio e verifiche delle attrezzature/insiemi a pressione in esercizio (DM 329/2004): verifica di primo
+    impianto (art. 4), dichiarazione a INAIL/ASL (art. 6), riqualificazione periodica ed esenzioni (artt. 10-11), verifica
+    di funzionamento. Non esegue le verifiche.'
+  normative_refs:
+  - D.M. 1 dicembre 2004, n. 329 - artt. 1, 4, 5, 6, 10, 11, 13
+  - 'Richiamati: D.Lgs. 25 febbraio 2000, n. 93 (PED, allegato II); D.Lgs. 311/1991; allegati A e B (periodicità); DM 11 aprile
+    2011 (verifiche periodiche attrezzature ex D.Lgs. 81/2008 art. 71)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - attrezzature-a-pressione
+  - messa-in-servizio
+  - riqualificazione-periodica
+  - dm-329-2004
+  - inail
 - id: aua-dpr59-dossier
   area: ambiente-territorio-mobilita
   title: AUA - dossier ex D.P.R. 59/2013

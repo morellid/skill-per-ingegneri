@@ -158,7 +158,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 10 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 11 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -167,6 +167,7 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "impianti-macchine-prodotti",
       "skills": [
+        "./attrezzature-pressione-esercizio-dm329",
         "./dm37-2008-dichiarazione-conformita",
         "./fascicolo-tecnico-dispositivi-medici-mdr",
         "./fascicolo-tecnico-macchine-reg-1230",
