@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 6
+  count: 7
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -441,6 +441,24 @@ skills:
   - compensi-ausiliari
   - ingegneria-forense
   - liquidazione
+- id: comunione-ordinaria-cc
+  area: forense
+  title: Comunione e divisione di beni immobili per il tecnico/CTU (c.c. artt. 1100-1116)
+  summary: 'Supporta l''ingegnere/geometra/CTU sulla comunione ordinaria (c.c. artt. 1100-1116): comoda divisibilità e progetto
+    di divisione in natura (art. 1114), scioglimento, maggioranze per innovazioni/opere sulla cosa comune (2/3), ripartizione
+    spese per quote. Non redige atti legali.'
+  normative_refs:
+  - Codice civile (R.D. 16 marzo 1942, n. 262) - Libro III, Titolo VII, Capo I (Della comunione in generale), artt. 1100-1116
+  - 'Rinvio (non riprodotti): artt. 1117 ss. c.c. (condominio, skill dedicata), artt. 177 ss. (comunione legale coniugi),
+    artt. 713 ss. (divisione ereditaria, richiamata dall''art. 1116)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - comunione
+  - comproprieta
+  - codice-civile
+  - divisione
+  - amministrazione
 - id: condominio-parti-comuni-assemblea-cc
   area: forense
   title: 'Condominio: parti comuni, innovazioni e assemblea (c.c. 1117-1136)'
