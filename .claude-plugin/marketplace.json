@@ -114,7 +114,7 @@
     {
       "name": "energia-incentivi",
       "source": "./skills",
-      "description": "Energia & incentivi - 7 skill verticali su normative italiane.",
+      "description": "Energia & incentivi - 8 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -128,6 +128,7 @@
         "./contabilizzazione-calore-dlgs102",
         "./diagnosi-energetica-dlgs102",
         "./esercizio-controllo-impianti-termici-dpr74",
+        "./relazione-tecnica-requisiti-minimi-dlgs192",
         "./transizione-5-0-asseverazione",
         "./trasmittanza-termica-opache-dm2015"
       ]
