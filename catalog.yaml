@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 9
+  count: 10
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1136,6 +1136,24 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: valutazione-rischio-vibrazioni-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Rischio vibrazioni sul lavoro - D.Lgs. 81/2008 Titolo VIII Capo III
+  summary: 'Rischio vibrazioni meccaniche sul lavoro (D.Lgs. 81/2008 Titolo VIII Capo III): definizioni A(8) (art. 200), valori
+    limite/azione mano-braccio 5/2,5 e corpo intero 1,0/0,5 m/s2 (art. 201), valutazione (art. 202), misure (art. 203), sorveglianza
+    (art. 204), deroghe (art. 205).'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 200-201 (definizioni, valori limite e d'azione delle vibrazioni)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 202, 203, 204, 205 (valutazione, misure, sorveglianza sanitaria, deroghe)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - rischio-vibrazioni
+  - agenti-fisici
+  - mano-braccio
+  - corpo-intero
 - id: verifica-accessibilita-dichiarazione-agid
   area: software-dati-cybersecurity
   title: Verifica di accessibilita' e dichiarazione (Linee guida AgID)

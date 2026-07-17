@@ -1,0 +1,38 @@
+schema_version: 1
+skill: valutazione-rischio-vibrazioni-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della valutazione del rischio da vibrazioni meccaniche
+# (mano-braccio e corpo intero): definizioni, valori limite ed azione, valutazione
+# dei rischi, misure di prevenzione, sorveglianza sanitaria e deroghe (Titolo VIII,
+# Capo III del Testo unico sicurezza).
+
+sources:
+  - id: dlgs-81-2008-vibrazioni
+    title: "D.Lgs. 9 aprile 2008, n. 81 - Testo unico sicurezza sul lavoro - Titolo VIII, Capo III (Vibrazioni), artt. 200-205 (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill D.Lgs. 81: valutazione-rischio-
+    # rumore, duvri-interferenze, atex-luoghi-lavoro).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/dlgs81_idx.html
+    md_path: references/fonti/dlgs-81-2008-vibrazioni.md
+    excerpt_path: references/estratti/rischio-vibrazioni-checklist.md
+    notes: |
+      Codice redazionale 008G0104, GU n. 101 del 30/4/2008 - S.O. n. 108 (in vigore
+      dal 15/5/2008). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...; e' lo stesso
+      indice usato dalla skill valutazione-rischio-rumore-dlgs81, atto identico). Gli
+      articoli del Capo III "Vibrazioni" del Titolo VIII - 200 (definizioni), 201
+      (valori limite ed azione), 202 (valutazione dei rischi), 203 (misure), 204
+      (sorveglianza sanitaria), 205 (deroghe) - sono caricati via AJAX
+      (caricaArticolo: idGruppo 37, flagTipoArticolo 0, codiceRedazionale 008G0104,
+      dataPubblicazioneGazzetta 2008-04-30) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-vibrazioni.md. Articoli citati come rinvio e NON
+      trascritti perche' fuori scope: 181 (valutazione dei rischi da agenti fisici),
+      182 (disposizioni miranti a eliminare o ridurre i rischi), l'allegato XXXV
+      (parti A e B, metodi di valutazione/misura) e le norme tecniche (UNI, ISO)
+      sono citati, non riprodotti.
