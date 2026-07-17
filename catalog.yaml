@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 5
+  count: 6
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -387,6 +387,23 @@ skills:
   - compensi-ausiliari
   - ingegneria-forense
   - liquidazione
+- id: condominio-parti-comuni-assemblea-cc
+  area: forense
+  title: 'Condominio: parti comuni, innovazioni e assemblea (c.c. 1117-1136)'
+  summary: 'Condominio negli edifici (c.c. artt. 1117, 1120, 1136): parti comuni (art. 1117), innovazioni ordinarie e agevolate
+    con le relative maggioranze e i divieti (art. 1120), costituzione dell''assemblea e quorum/maggioranze delle deliberazioni
+    (art. 1136). Non redige verbali.'
+  normative_refs:
+  - Codice civile (R.D. 262/1942) - artt. 1117, 1120, 1136 (condominio negli edifici)
+  - 'Richiamati (non trascritti): artt. 1118, 1122-bis/ter, 1123-1126, 1130-1135, 1137 (impugnazione delibere); tabelle millesimali'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - condominio
+  - parti-comuni
+  - assemblea-condominiale
+  - innovazioni
+  - forense
 - id: consulente-adr-dlgs40
   area: ambiente-territorio-mobilita
   title: Consulente sicurezza trasporti merci pericolose (DGSA) - D.Lgs. 40/2000

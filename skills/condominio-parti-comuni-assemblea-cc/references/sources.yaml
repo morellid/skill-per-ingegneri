@@ -1,0 +1,45 @@
+schema_version: 1
+skill: condominio-parti-comuni-assemblea-cc
+last_verified: 2026-07-17
+
+# Fonte per le PARTI COMUNI dell'edificio, le INNOVAZIONI (ordinarie e agevolate) e la COSTITUZIONE
+# DELL'ASSEMBLEA e la validità delle DELIBERAZIONI (quorum e maggioranze). Fonte: Codice civile,
+# artt. 1117, 1120, 1136 (condominio negli edifici).
+
+sources:
+  - id: cc-artt-1117-1120-1136
+    title: "Codice civile (R.D. 262/1942) - artt. 1117, 1120, 1136 (condominio: parti comuni, innovazioni, assemblea) (testo vigente al 2026-07-17)"
+    type: codice
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: f817bc32707124081b048e6d34882a4256b7e107de3c4a018fcd83a936dce325
+    license: public-domain
+    binary_path: not_in_repo/cc17.html
+    md_path: references/fonti/cc-artt-1117-1120-1136.md
+    excerpt_path: references/estratti/condominio-checklist.md
+    notes: |
+      Codice redazionale 042U0262. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile,
+      doppio download: f817bc32...). Artt. 1117 (v2), 1120 (v4), 1136 (v4), idGruppo 140,
+      flagTipoArticolo 2, dataPubblicazioneGazzetta 1942-04-04, caricati via AJAX (caricaArticolo) e
+      trascritti verbatim in references/fonti/cc-artt-1117-1120-1136.md:
+      - Art. 1117: parti comuni dell'edificio (strutture, suolo, fondazioni, muri maestri, tetti,
+        scale, portoni, cortili, facciate - n. 1; aree a parcheggio e locali servizi - n. 2; impianti
+        e installazioni centralizzati fino al punto di diramazione/utenza - n. 3), salvo titolo
+        contrario.
+      - Art. 1120: innovazioni; ordinarie (maggioranza 5° comma art. 1136); agevolate (2° comma art.
+        1136) per sicurezza/salubrità, barriere architettoniche, risparmio energetico/rinnovabili,
+        parcheggi, ricezione TV; convocazione dell'assemblea entro 30 gg su richiesta di un condomino;
+        divieto di innovazioni pregiudizievoli per stabilità/sicurezza/decoro o che rendano inservibili
+        parti comuni.
+      - Art. 1136: costituzione dell'assemblea e validità delle deliberazioni (prima convocazione: 2/3
+        del valore e maggioranza dei partecipanti; delibera valida con maggioranza degli intervenuti e
+        almeno metà del valore; seconda convocazione entro 10 gg, quorum 1/3 valore e 1/3 partecipanti,
+        delibera con maggioranza intervenuti e 1/3 del valore; maggioranze qualificate del 2° comma per
+        nomina/revoca amministratore, liti, ricostruzione, innovazioni art. 1120 c. 2, ecc.; art. 1120
+        c. 1 richiede maggioranza intervenuti e 2/3 del valore; convocazione di tutti gli aventi
+        diritto; verbale nel registro).
+      LIMITE DI RESA (Regola zero): gli altri articoli del Capo (1118 quote, 1123-1126 spese, 1130-1135
+      amministratore, 1137 impugnazione delle delibere) sono citati e non trascritti; le tabelle
+      millesimali e la valutazione del caso concreto (validità/impugnazione della delibera) non sono
+      oggetto della skill. La skill inquadra parti comuni, tipi di innovazione e maggioranze; non redige
+      verbali/delibere né sostituisce l'amministratore, il legale o il giudice.
