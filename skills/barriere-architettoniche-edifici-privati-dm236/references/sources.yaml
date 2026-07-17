@@ -1,0 +1,53 @@
+schema_version: 1
+skill: barriere-architettoniche-edifici-privati-dm236
+last_verified: 2026-07-16
+
+# Fonti per il superamento delle barriere architettoniche negli edifici privati e di edilizia
+# residenziale pubblica: l'obbligo di progettazione (L. 13/1989) e le prescrizioni tecniche -
+# livelli di accessibilita', visitabilita', adattabilita' e criteri di progettazione (DM 236/1989).
+
+sources:
+  - id: legge-13-1989
+    title: "Legge 9 gennaio 1989, n. 13 - Disposizioni per favorire il superamento e l'eliminazione delle barriere architettoniche negli edifici privati (testo vigente al 2026-07-16)"
+    type: legge
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1989-01-09;13!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: b95aa2b54dbc897c74238ce940d138861bc382a505cc1a6e6ab20bf6e72e4ff6
+    license: public-domain
+    binary_path: not_in_repo/l13-1989-vig.html
+    md_path: references/fonti/l13-dm236-1989.md
+    excerpt_path: references/estratti/barriere-architettoniche-checklist.md
+    notes: |
+      Codice redazionale 089G0031 (GU n. 21 del 26/1/1989). Indice Normattiva pinnato a
+      !vig=2026-07-16 (hash stabile, doppio download: b95aa2b5...). Articoli via caricaArticolo,
+      trascritti verbatim: art. 1 (obbligo di progettazione conforme alle prescrizioni tecniche
+      per nuovi edifici e ristrutturazioni di interi edifici, privati ed ERP; delega al DM;
+      accorgimenti minimi di progettazione), art. 7 (regime abilitativo semplificato per le opere
+      di adattamento). La disciplina abilitativa e' oggi coordinata con il DPR 380/2001.
+
+  - id: dm-236-1989
+    title: "D.M. Lavori pubblici 14 giugno 1989, n. 236 - Prescrizioni tecniche per garantire l'accessibilita', l'adattabilita' e la visitabilita' degli edifici privati e di edilizia residenziale pubblica (testo vigente al 2026-07-16)"
+    type: decreto-ministeriale
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.lavori.pubblici:decreto:1989-06-14;236!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: f72a56a40612c1da1a6b5d2056e9a4219ce97aa26622b30bb2f63b44e4a9cef8
+    license: public-domain
+    binary_path: not_in_repo/dm236-1989-vig.html
+    md_path: references/fonti/l13-dm236-1989.md
+    excerpt_path: references/estratti/barriere-architettoniche-checklist.md
+    notes: |
+      Codice redazionale 089G0298 (GU n. 145 del 23/6/1989, S.O.). Indice Normattiva pinnato a
+      !vig=2026-07-16 (hash stabile, doppio download: f72a56a4...). Articoli via caricaArticolo,
+      trascritti verbatim: art. 2 (definizioni: barriere architettoniche, accessibilita',
+      visitabilita', adattabilita'), art. 3 (tre livelli di qualita' e loro applicazione per
+      categoria di edificio: accessibilita' di spazi esterni/parti comuni, 5% alloggi ERP,
+      ambienti per attivita' sociali, sedi soggette a collocamento obbligatorio; visitabilita' di
+      ogni unita' immobiliare con precisazioni per residenziale/spettacoli/ristorazione;
+      adattabilita' come livello differito; deroga ascensore per edifici <= 3 livelli fuori terra),
+      art. 4 (criteri di progettazione: porte, servizi igienici, scale, ascensore, corridoi -
+      testo qualitativo), art. 8.0 (modalita' di misura).
+      LIMITE DI RESA: l'art. 8 (SPECIFICHE FUNZIONALI E DIMENSIONALI) contiene i valori numerici
+      (pendenza delle rampe, luce netta delle porte, dimensioni della cabina dell'ascensore, spazi
+      di manovra, altezze) come "Parte di provvedimento in formato grafico": tali valori NON sono
+      nel testo Normattiva e vanno letti sull'atto (schemi grafici dell'art. 8). La skill copre il
+      quadro, i livelli e i criteri, non i valori dimensionali puntuali.
