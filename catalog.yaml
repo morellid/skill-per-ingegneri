@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 14
+  count: 15
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1707,6 +1707,24 @@ skills:
   - valutazione-impatto-ambientale
   - screening-assoggettabilita
   - studio-impatto-ambientale
+- id: videoterminali-vdt-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Uso di videoterminali (VDT) - D.Lgs. 81/2008 Titolo VII (artt. 172-177)
+  summary: 'Obblighi sull''uso di videoterminali - VDT (D.Lgs. 81/2008 Titolo VII): campo ed esclusioni (172), videoterminalista
+    20 ore/settimana (173), obblighi del datore e allegato XXXIV (174), pause 15 min/120 (175), sorveglianza sanitaria (176),
+    informazione e formazione (177).'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 172-174 (campo, definizioni, obblighi del datore, allegato XXXIV)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 175-177 (pause, sorveglianza sanitaria, informazione e formazione)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - videoterminali
+  - videoterminalista
+  - sorveglianza-sanitaria
+  - ergonomia
 - id: vigilanza-sanzioni-abusi-edilizi-dpr380
   area: edilizia-urbanistica-catasto
   title: Vigilanza e sanzioni per abusi edilizi (DPR 380/2001, Titolo IV)
