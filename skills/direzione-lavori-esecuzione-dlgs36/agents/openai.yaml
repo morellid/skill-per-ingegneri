@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Direzione lavori ed esecuzione dei contratti (D.Lgs. 36/2023 art. 114)"
+short_description: Supporto documentale all'inquadramento della direzione dei lavori (DL) e della direzione dell'esecuzione del contratto (DEC) nella fase esecutiva dei contratti pubblici secondo l'art. 114 del D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici). Chiarisce che l'esecuzione e' diretta dal RUP, che si avvale di DEC/DL, coordinatore sicurezza in esecuzione e collaudatore/verificatore (comma 1); per i lavori, la nomina del DL prima dell'avvio della procedura su proposta del RUP e l'ufficio di direzione lavori (comma 2), i compiti di controllo tecnico/contabile/amministrativo (comma 3), il DL come coordinatore sicurezza sotto 1 milione di euro (comma 4), l'affidamento a dipendenti PA o esterno (comma 6); per servizi e forniture, il DEC di norma dal RUP (comma 7), i contratti con DEC diverso dal RUP dell'allegato II.14 (comma 8) e gli assistenti (comma 10). NON nomina il DL/DEC, non redige gli atti della direzione lavori/esecuzione e non sostituisce la stazione appaltante ne' il RUP.
+default_prompt: |
+  Ho un contratto pubblico in fase di esecuzione: come inquadro la direzione dei lavori e la
+  direzione dell'esecuzione secondo l'art. 114 del D.Lgs. 36/2023? Chi nomina il direttore dei
+  lavori e quando, quando il DL puo' fare anche da coordinatore per la sicurezza in esecuzione,
+  e per i servizi e le forniture quando il DEC deve essere diverso dal RUP? Cita i commi.

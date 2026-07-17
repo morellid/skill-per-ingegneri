@@ -1,0 +1,44 @@
+schema_version: 1
+skill: dpi-protezione-individuale-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento degli obblighi in materia di DISPOSITIVI DI PROTEZIONE INDIVIDUALE
+# (DPI): definizioni, obbligo d'uso, requisiti, obblighi del datore di lavoro e dei lavoratori,
+# criteri per l'individuazione e l'uso. Fonte: Testo unico sicurezza (D.Lgs. 81/2008), Titolo III,
+# Capo II, artt. 74-79.
+
+sources:
+  - id: dlgs-81-2008-dpi-74-79
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 74-79 (Uso dei dispositivi di protezione individuale) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: MMC, VDT, rumore, vibrazioni, ecc.).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-dpi-idx.html
+    md_path: references/fonti/dlgs-81-2008-dpi-74-79.md
+    excerpt_path: references/estratti/dpi-checklist.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile,
+      doppio download: 18fbc542...; e' lo stesso indice usato dalle altre skill D.Lgs. 81/2008).
+      Articoli 74-79 (idGruppo 16; versioni: art. 74 v3, 75 v1, 76 v2, 77 v2, 78 v1, 79 v3) caricati
+      via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-81-2008-dpi-74-79.md: definizione di DPI ed esclusioni (art. 74); obbligo
+      d'uso subordinato all'impossibilita' di ridurre i rischi con protezione collettiva (art. 75);
+      requisiti - conformita' al regolamento (UE) 2016/425, adeguatezza/ergonomia/compatibilita'
+      (art. 76); obblighi del datore di lavoro - valutazione dei rischi e scelta, condizioni d'uso,
+      fornitura, manutenzione/igiene, informazione, formazione e addestramento (art. 77), con
+      addestramento indispensabile per i DPI di terza categoria e i protettori dell'udito (c. 5);
+      obblighi dei lavoratori (art. 78); criteri per l'individuazione e l'uso, allegato VIII e
+      decreto ministeriale (art. 79). Il testo tra doppi tondi (( )) e' quello introdotto/modificato
+      dai decreti successivi (es. adeguamento al reg. UE 2016/425), riportato come da fonte. Due
+      microartefatti di estrazione (una spaziatura e un a-capo interni al testo AKN) sono stati
+      normalizzati senza alterare il contenuto.
+      LIMITE DI RESA: la skill inquadra gli obblighi sui DPI; NON redige il DVR ne' la valutazione
+      dei rischi, NON seleziona/classifica in concreto il DPI, NON riproduce l'allegato VIII (elenco
+      indicativo DPI/attivita'), il regolamento (UE) 2016/425 (requisiti e categorie di
+      certificazione), il D.Lgs. 475/1992 (categorie) ne' il DM 2 maggio 2001, citati come rinvio;
+      per la marcatura CE dei DPI si rinvia alla normativa di prodotto. Non sostituisce il datore di
+      lavoro, l'RSPP ne' il medico competente.

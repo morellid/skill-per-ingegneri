@@ -1,0 +1,45 @@
+schema_version: 1
+skill: comunione-ordinaria-cc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della COMUNIONE ORDINARIA (comproprietà di beni): norme regolatrici,
+# quote, uso e disposizione, obblighi/spese, amministrazione, regolamento, innovazioni,
+# impugnazioni, scioglimento e divisione. Fonte: Codice civile (R.D. 262/1942), artt. 1100-1116.
+
+sources:
+  - id: cc-comunione-1100-1116
+    title: "Codice civile (R.D. 16 marzo 1942, n. 262) - artt. 1100-1116 (Della comunione in generale) (testo vigente al 2026-07-17)"
+    type: regio-decreto
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # Codice civile usato dalle altre skill c.c.: distanze, condominio, servitu' coattive,
+    # usucapione, contratto d'appalto, rovina d'edificio).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: f817bc32707124081b048e6d34882a4256b7e107de3c4a018fcd83a936dce325
+    license: public-domain
+    binary_path: not_in_repo/cc-comunione-idx.html
+    md_path: references/fonti/cc-comunione-1100-1116.md
+    excerpt_path: references/estratti/comunione-ordinaria-checklist.md
+    notes: |
+      Codice redazionale 042U0262. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: f817bc32...; e' lo stesso indice usato dalle altre skill c.c.).
+      Articoli 1100-1116 (versione 1, idGruppo 139) caricati via AJAX (caricaArticolo) e
+      trascritti verbatim in references/fonti/cc-comunione-1100-1116.md: norme regolatrici (1100);
+      quote presunte eguali e concorso in vantaggi/pesi (1101); uso della cosa comune senza
+      alterare la destinazione ne' impedire il pari uso (1102); disposizione della quota (1103);
+      obblighi/spese con rinunzia liberatoria e solidarieta' del cessionario (1104);
+      amministrazione a maggioranza per valore delle quote con preventiva informazione e ricorso
+      al giudice (1105); regolamento e nomina di amministratore anche estraneo (1106);
+      impugnazione del regolamento a 30 giorni (1107); innovazioni e atti eccedenti con
+      maggioranza dei due terzi del valore e consenso unanime per alienazioni/diritti reali/
+      locazioni ultra-novennali (1108); impugnazione delle deliberazioni a 30 giorni a pena di
+      decadenza (1109); rimborso di spese necessarie (1110); scioglimento sempre domandabile e
+      patto di indivisione max 10 anni (1111); cose non soggette a divisione (1112); intervento
+      dei creditori nella divisione (1113); divisione in natura (1114); obbligazioni solidali
+      (1115); rinvio alle norme sulla divisione ereditaria (1116).
+      LIMITE DI RESA: la skill inquadra la disciplina della comunione ordinaria; NON redige atti
+      (regolamento, delibere, domanda di divisione), NON quantifica quote/spese/conguagli, NON
+      tratta il condominio negli edifici (artt. 1117 ss., skill condominio-parti-comuni-assemblea-
+      cc) ne' la comunione legale tra coniugi (artt. 177 ss.); le norme sulla divisione ereditaria
+      (artt. 713 ss., richiamate dall'art. 1116) sono citate come rinvio, non riprodotte. Non
+      sostituisce l'avvocato/CTU.
