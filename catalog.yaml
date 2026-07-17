@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 10
+  count: 11
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -383,6 +383,24 @@ skills:
   - costo-di-costruzione
   - dpr-380-2001
   - permesso-di-costruire
+- id: coordinatori-sicurezza-cantieri-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Coordinatori sicurezza cantieri Titolo IV (D.Lgs. 81/2008 artt. 89-92)
+  summary: 'Inquadra i cantieri Titolo IV (D.Lgs. 81/2008 artt. 89-92): quando nominare CSP e CSE (piu'' imprese), obblighi
+    del committente (idoneita'', notifica preliminare, sospensione del titolo), PSC e fascicolo del CSP, vigilanza e sospensione
+    del CSE. Non nomina i coordinatori.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (T.U. sicurezza) - Titolo IV, artt. 89, 90, 91, 92
+  - 'Articoli/allegati richiamati: art. 98 (requisiti coordinatori), art. 99 (notifica), art. 100 (PSC), allegati X, XV, XVI,
+    XVII (richiamati)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cantieri-temporanei-mobili
+  - coordinatore-sicurezza
+  - csp-cse
+  - dlgs-81-2008
+  - psc-fascicolo
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)

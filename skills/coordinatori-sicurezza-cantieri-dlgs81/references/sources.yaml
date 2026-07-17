@@ -1,0 +1,42 @@
+schema_version: 1
+skill: coordinatori-sicurezza-cantieri-dlgs81
+last_verified: 2026-07-16
+
+# Fonte per il regime dei CANTIERI TEMPORANEI O MOBILI (Titolo IV): definizioni, obblighi del
+# committente/responsabile dei lavori (designazione CSP/CSE quando piu' imprese, verifica
+# idoneita' tecnico-professionale, notifica preliminare, sospensione del titolo), obblighi del
+# coordinatore per la progettazione (PSC + fascicolo) e per l'esecuzione (vigilanza, sospensione
+# delle lavorazioni). Fonte: D.Lgs. 81/2008, artt. 89-92.
+
+sources:
+  - id: dlgs-81-2008-titolo4-artt-89-92
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. sicurezza) - Titolo IV, artt. 89, 90, 91, 92 (cantieri temporanei o mobili) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: d89919850537a55286cc55ce7d2bff1aaa316b670d0072a475370176de830831
+    license: public-domain
+    binary_path: not_in_repo/dlgs81idx.html
+    md_path: references/fonti/dlgs-81-2008-titolo4-artt-89-92.md
+    excerpt_path: references/estratti/coordinatori-cantieri-checklist.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-16 (hash
+      stabile: d8991985...; stesso atto usato da verifiche-periodiche-attrezzature-dlgs81,
+      sorveglianza-sanitaria, duvri, pos, dvr, atex, ecc.). Artt. 89 (v2), 90 (v5), 91 (v5),
+      92 (v2), idGruppo 18, caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-titolo4-artt-89-92.md: art. 89 (definizioni: cantiere,
+      committente, responsabile dei lavori, CSP, CSE, uomini-giorno, POS, impresa affidataria/
+      esecutrice, idoneita' tecnico-professionale), art. 90 (obblighi del committente/
+      responsabile dei lavori: designazione CSP contestuale alla progettazione e CSE prima
+      dell'affidamento quando piu' imprese anche non contemporanee - c. 3-5; verifica idoneita'
+      tecnico-professionale allegato XVII, DURC, patente ex art. 27 - c. 9; notifica preliminare
+      ex art. 99 - c. 9 lett. c; sospensione del titolo abilitativo in assenza di PSC/fascicolo/
+      notifica/DURC - c. 10; esonero lavori privati non soggetti a permesso e < 100.000 euro -
+      c. 11), art. 91 (obblighi CSP: PSC ex art. 100/allegato XV e fascicolo ex allegato XVI),
+      art. 92 (obblighi CSE: verifica applicazione PSC e idoneita' POS, coordinamento,
+      contestazione e proposta di sospensione, sospensione diretta in pericolo grave e imminente).
+      LIMITE DI RESA (Regola zero): i contenuti di dettaglio del PSC (allegato XV), del fascicolo
+      (allegato XVI), dell'elenco cantieri (allegato X) e dell'idoneita' tecnico-professionale
+      (allegato XVII), e i requisiti dei coordinatori (art. 98), non sono riprodotti: la skill
+      rinvia agli allegati/articoli e a pos-allegato-xv-checker. Non nomina i coordinatori, non
+      redige PSC/POS e non sostituisce committente, CSP, CSE ne' organo di vigilanza.
