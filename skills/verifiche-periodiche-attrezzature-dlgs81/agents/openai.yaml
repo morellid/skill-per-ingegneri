@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Verifiche periodiche attrezzature di lavoro (D.Lgs. 81/2008 art. 71)"
+short_description: Supporto documentale al regime dei controlli e delle verifiche periodiche delle attrezzature di lavoro secondo l'art. 71 e l'Allegato VII del D.Lgs. 9 aprile 2008, n. 81. Distingue i controlli (iniziale, periodico, straordinario, da persona competente, verbali conservati almeno 3 anni - commi 8-10) dalle verifiche periodiche delle sole attrezzature dell'Allegato VII (apparecchi di sollevamento, gru, generatori di vapore, recipienti a pressione): prima verifica INAIL entro 45 giorni, successive ASL/ARPA o soggetti abilitati, oneri e verbali a carico del datore (comma 11), soggetti privati abilitati incaricati di pubblico servizio (comma 12), rinvio al DM 11/4/2011 (comma 13). NON esegue le verifiche, non redige i verbali, non riproduce l'Allegato VII (formato grafico) e non sostituisce INAIL, ASL/ARPA, i soggetti abilitati ne' il datore di lavoro.
+default_prompt: |
+  Ho un'attrezzatura di lavoro (es. una gru a torre): e' soggetta a verifiche periodiche
+  secondo l'art. 71 e l'Allegato VII del D.Lgs. 81/2008? Chi fa la prima verifica e con quali
+  tempi, chi le successive, e a carico di chi sono gli oneri e i verbali? Cita i commi.
