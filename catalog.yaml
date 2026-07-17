@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 15
+  count: 16
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
