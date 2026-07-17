@@ -1,0 +1,39 @@
+schema_version: 1
+skill: permesso-costruire-dpr380
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento del regime del permesso di costruire: caratteristiche
+# del titolo, presupposti per il rilascio, efficacia temporale e decadenza,
+# procedimento e termini (Testo unico edilizia).
+
+sources:
+  - id: dpr-380-2001-permesso
+    title: "D.P.R. 6 giugno 2001, n. 380 - Testo unico edilizia - artt. 11, 12, 15, 20 (permesso di costruire) (testo vigente al 2026-07-17)"
+    type: decreto-presidente-repubblica
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill DPR 380: modulistica-edilizia,
+    # segnalazione-agibilita, vigilanza-sanzioni-abusi-edilizi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2001-06-06;380!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: bac3f7b170cfd122936873c835b3f728e7880d058bd98ad45f55b94ba89a632f
+    license: public-domain
+    binary_path: not_in_repo/dpr380_idx.html
+    md_path: references/fonti/dpr-380-2001-permesso.md
+    excerpt_path: references/estratti/permesso-costruire-checklist.md
+    notes: |
+      Codice redazionale 001G0429, GU n. 245 del 20/10/2001 - S.O. n. 239. Il
+      binario e' la pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: bac3f7b1...). Gli articoli 11 (caratteristiche), 12
+      (presupposti), 15 (efficacia temporale e decadenza) e 20 (procedimento) sono
+      caricati via AJAX (caricaArticolo: idGruppo 3 per 11/12/15, idGruppo 5 per 20;
+      flagTipoArticolo 0; codiceRedazionale 001G0429; dataPubblicazioneGazzetta
+      2001-10-20) e trascritti verbatim in
+      references/fonti/dpr-380-2001-permesso.md. Le porzioni tra (( )) sono le
+      modifiche successive gia' consolidate nel testo vigente. Articoli citati come
+      rinvio e NON trascritti perche' fuori scope o coperti da altre skill: art. 10
+      (interventi subordinati a permesso di costruire) e la scelta del titolo
+      SCIA/CILA (coperti da modulistica-edilizia-unificata), art. 13 (competenza),
+      art. 16 (contributo di costruzione, coperto da altra skill DPR 380), art. 22
+      (SCIA), art. 24 (agibilita'). La legge 241/1990 (procedimento, conferenza di
+      servizi, silenzio) e le leggi regionali di semplificazione sono richiamate,
+      non riprodotte.
