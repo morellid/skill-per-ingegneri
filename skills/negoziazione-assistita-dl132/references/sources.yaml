@@ -1,0 +1,38 @@
+schema_version: 1
+skill: negoziazione-assistita-dl132
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento del procedimento di negoziazione assistita da avvocati:
+# convenzione, condizione di procedibilita', invito e mancato accordo, esecutivita'
+# dell'accordo.
+
+sources:
+  - id: dl-132-2014-negoziazione
+    title: "D.L. 12 settembre 2014, n. 132 (conv. L. 162/2014) - Negoziazione assistita - artt. 2, 3, 4, 5 (testo vigente al 2026-07-17)"
+    type: decreto-legge
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill forensi: relazione-peritale-ctu,
+    # compensi-ctu).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-09-12;132!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 9642e055b2868ebfa983741ab9857a3fd84bc29cf65c2705d78cd3d369f0452c
+    license: public-domain
+    binary_path: not_in_repo/dl132_idx.html
+    md_path: references/fonti/dl-132-2014-negoziazione.md
+    excerpt_path: references/estratti/negoziazione-assistita-checklist.md
+    notes: |
+      Codice redazionale 14G00147, GU n. 212 del 12/9/2014; convertito con
+      modificazioni dalla L. 10 novembre 2014, n. 162. Il binario e' la pagina indice
+      Normattiva pinnata a !vig=2026-07-17 (hash stabile, doppio download:
+      9642e055...). Gli articoli del Capo II "Procedura di negoziazione assistita da
+      uno o piu' avvocati" usati dalla skill - 2 (convenzione), 3 (improcedibilita' /
+      condizione di procedibilita'), 4 (non accettazione dell'invito e mancato
+      accordo), 5 (esecutivita' dell'accordo e trascrizione) - sono caricati via AJAX
+      (caricaArticolo: idGruppo 2, flagTipoArticolo 0, codiceRedazionale 14G00147,
+      dataPubblicazioneGazzetta 2014-09-12) e trascritti verbatim in
+      references/fonti/dl-132-2014-negoziazione.md. Le porzioni tra (( )) sono le
+      modifiche successive gia' consolidate (es. riforma Cartabia, D.Lgs. 149/2022).
+      Articoli citati come rinvio e NON trascritti perche' fuori scope o coperti da
+      altre skill: art. 6 (soluzione consensuale di separazione/divorzio), artt. 9-11
+      (obblighi, antiriciclaggio, raccolta dati), il D.Lgs. 28/2010 (mediazione
+      civile) e gli artt. 96, 480, 642, 696-bis c.p.c. richiamati.
