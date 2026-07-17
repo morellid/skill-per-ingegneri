@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Valutazione del rischio rumore sul lavoro (D.Lgs. 81/2008 Titolo VIII Capo II, artt. 188-196)"
+short_description: Supporto documentale alla valutazione del rischio rumore negli ambienti di lavoro secondo il D.Lgs. 81/2008, Titolo VIII, Capo II. Inquadra le definizioni (ppeak, LEX,8h, LEX,w - art. 188), colloca l'esposizione rispetto ai valori limite di esposizione (LEX 87 dB(A) / ppeak 140 dB(C)), ai valori superiori di azione (85 / 137) e inferiori di azione (80 / 135) (art. 189), imposta i contenuti della valutazione e l'obbligo di misurazione oltre i valori inferiori di azione (art. 190), le misure di prevenzione, la segnaletica e la delimitazione delle aree (art. 192), la messa a disposizione e l'obbligo d'uso dei DPI uditivi in funzione delle soglie (art. 193) e la sorveglianza sanitaria (art. 196). NON misura ne' calcola i livelli di esposizione (LEX,8h), non redige il DVR-rumore ne' la relazione fonometrica, non sostituisce il tecnico competente in acustica, il medico competente o il datore di lavoro.
+default_prompt: |
+  In un ambiente di lavoro: in quale fascia dei valori dell'art. 189 D.Lgs. 81/2008 si colloca
+  un'esposizione LEX,8h data e scatta l'obbligo di misurazione (art. 190)? Quali misure di prevenzione
+  (art. 192), quale regime di DPI uditivi (art. 193, messa a disposizione/obbligo d'uso) e quale
+  sorveglianza sanitaria (art. 196) si applicano?
