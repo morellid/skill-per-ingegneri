@@ -1,0 +1,38 @@
+schema_version: 1
+skill: videoterminali-vdt-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento degli obblighi in materia di uso di attrezzature munite di
+# videoterminali (VDT): campo di applicazione, definizioni (videoterminalista),
+# obblighi del datore, pause, sorveglianza sanitaria, informazione e formazione
+# (Titolo VII del Testo unico sicurezza).
+
+sources:
+  - id: dlgs-81-2008-vdt
+    title: "D.Lgs. 9 aprile 2008, n. 81 - Testo unico sicurezza sul lavoro - Titolo VII (Attrezzature munite di videoterminali), artt. 172-177 (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill D.Lgs. 81: valutazione-rischio-rumore,
+    # valutazione-rischio-vibrazioni, movimentazione-manuale-carichi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81idx.html
+    md_path: references/fonti/dlgs-81-2008-vdt.md
+    excerpt_path: references/estratti/vdt-checklist.md
+    notes: |
+      Codice redazionale 008G0104, GU n. 101 del 30/4/2008 - S.O. n. 108 (in vigore
+      dal 15/5/2008). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...; e' lo stesso indice
+      usato dalle altre skill D.Lgs. 81). Gli articoli del Titolo VII "Attrezzature
+      munite di videoterminali" - 172 (campo di applicazione), 173 (definizioni), 174
+      (obblighi del datore), 175 (svolgimento quotidiano - pause), 176 (sorveglianza
+      sanitaria), 177 (informazione e formazione) - sono caricati via AJAX
+      (caricaArticolo: idGruppo 32 per 172-173, idGruppo 33 per 174-177,
+      flagTipoArticolo 0, codiceRedazionale 008G0104, dataPubblicazioneGazzetta
+      2008-04-30) e trascritti verbatim in references/fonti/dlgs-81-2008-vdt.md.
+      L'Allegato XXXIV (requisiti minimi tecnici del posto: schermo, tastiera, piano di
+      lavoro, sedile, ambiente, interfaccia elaboratore/uomo) richiamato dagli artt.
+      174 c. 3 / 173 e' citato come rinvio e NON riprodotto. Gli artt. 41 (sorveglianza
+      sanitaria), 28 (valutazione dei rischi) e 18 (obblighi del datore) sono citati.

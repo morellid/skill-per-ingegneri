@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Dispositivi di protezione individuale - DPI (D.Lgs. 81/2008 artt. 74-79)"
+short_description: Supporto documentale all'inquadramento degli obblighi in materia di dispositivi di protezione individuale (DPI) ai sensi del Testo unico sicurezza sul lavoro (D.Lgs. 9 aprile 2008, n. 81), Titolo III, Capo II, artt. 74-79. Inquadra la definizione di DPI ed esclusioni (art. 74), l'obbligo d'uso quando i rischi non possono essere evitati o ridotti dalla protezione collettiva (art. 75), i requisiti con conformità al regolamento (UE) 2016/425, adeguatezza, ergonomia e compatibilità in uso simultaneo (art. 76), gli obblighi del datore di lavoro nella scelta (valutazione dei rischi), condizioni d'uso, fornitura, manutenzione/igiene, informazione, formazione e addestramento - indispensabile per i DPI di terza categoria e i protettori dell'udito (art. 77), gli obblighi dei lavoratori di uso conforme, cura, non modifica, riconsegna e segnalazione dei difetti (art. 78) e i criteri per l'individuazione e l'uso con rinvio all'allegato VIII e al decreto ministeriale (art. 79). NON redige il DVR, non seleziona/classifica il DPI, non riproduce l'allegato VIII, il regolamento (UE) 2016/425 o il DM 2 maggio 2001 e non sostituisce il datore di lavoro, l'RSPP né il medico competente.
+default_prompt: |
+  Devo gestire i dispositivi di protezione individuale (DPI) in azienda: come inquadro gli obblighi
+  secondo il D.Lgs. 81/2008? Quando è obbligatorio il DPI rispetto alla protezione collettiva, quali
+  requisiti deve avere, cosa deve fare il datore di lavoro per sceglierli e fornirli, quando serve
+  l'addestramento e quali sono gli obblighi dei lavoratori? Cita gli articoli.
