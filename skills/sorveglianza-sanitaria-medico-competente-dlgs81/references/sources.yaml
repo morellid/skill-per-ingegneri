@@ -1,0 +1,37 @@
+schema_version: 1
+skill: sorveglianza-sanitaria-medico-competente-dlgs81
+last_verified: 2026-07-16
+
+# Fonte per gli obblighi del medico competente e la sorveglianza sanitaria dei lavoratori
+# (visite mediche, giudizio di idoneita' alla mansione, ricorso): D.Lgs. 81/2008, artt. 25,
+# 38-41. La sorveglianza sanitaria e' obbligatoria nei casi previsti dalla normativa e in base
+# alla valutazione dei rischi (DVR).
+
+sources:
+  - id: dlgs-81-2008-sorveglianza
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. sicurezza) - artt. 25, 38, 39, 40, 41 (medico competente e sorveglianza sanitaria) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: d89919850537a55286cc55ce7d2bff1aaa316b670d0072a475370176de830831
+    license: public-domain
+    binary_path: not_in_repo/dlgs81-2008-vig.html
+    md_path: references/fonti/dlgs-81-2008-sorveglianza.md
+    excerpt_path: references/estratti/sorveglianza-sanitaria-checklist.md
+    notes: |
+      Codice redazionale 008G0104 (GU n. 101 del 30/4/2008, S.O.). Pagina indice Normattiva
+      pinnata a !vig=2026-07-16 (hash stabile, doppio download: d8991985...; indice completo del
+      T.U.). Articoli caricati via AJAX (caricaArticolo, testo vigente) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-sorveglianza.md: art. 25 (obblighi del medico competente:
+      collaborazione al DVR e alla programmazione della sorveglianza, cartella sanitaria e di
+      rischio, informazione ai lavoratori, sopralluoghi negli ambienti di lavoro, ecc.), art. 38
+      (titoli e requisiti del medico competente), art. 39 (svolgimento dell'attivita' - dipendenza
+      tecnica e responsabilita'), art. 40 (rapporti con il SSN - trasmissione dei dati aggregati,
+      allegato 3B), art. 41 (sorveglianza sanitaria: casi - c.1; tipi di visita - c.2: preventiva/
+      preassuntiva, periodica di norma annuale, su richiesta, cambio mansione, cessazione, ripresa
+      dopo 60 gg, alcol/stupefacenti; divieti - c.3, no gravidanza; a spese del datore - c.4;
+      quattro giudizi di idoneita' - c.6: idoneita', idoneita' parziale temporanea/permanente con
+      prescrizioni/limitazioni, inidoneita' temporanea, inidoneita' permanente; forma scritta al
+      lavoratore e al datore - c.6-bis; ricorso all'ASL entro 30 giorni - c.9).
+      NOTA: gli Allegati 3A/3B (cartella sanitaria e di rischio) sono richiamati, non riprodotti.
+      La sorveglianza e' obbligatoria nei casi di legge e in base alla valutazione dei rischi (DVR).
