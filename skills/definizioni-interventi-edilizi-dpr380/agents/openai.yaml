@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Definizioni degli interventi edilizi (DPR 380/2001 art. 3)"
+short_description: Supporto documentale alla qualificazione dell'intervento edilizio secondo le definizioni dell'art. 3 del D.P.R. 380/2001 (Testo unico edilizia). Inquadra l'intervento in una categoria: manutenzione ordinaria (finiture e impianti - lett. a), manutenzione straordinaria (opere anche strutturali, frazionamento/accorpamento senza modifica di volumetria e destinazione d'uso, modifiche ai prospetti per agibilita'/accesso - lett. b), restauro e risanamento conservativo (lett. c), ristrutturazione edilizia (trasformazione, anche demolizione e ricostruzione con diversa sagoma/sedime salvo vincoli e zone A - lett. d), nuova costruzione (trasformazione non riconducibile alle altre categorie, sottocasi e.1-e.7: manufatti, urbanizzazioni, infrastrutture, torri/tralicci, manufatti leggeri/roulotte, pertinenze oltre il 20%, depositi - lett. e) e ristrutturazione urbanistica (lett. f), con prevalenza delle definizioni sugli strumenti urbanistici. NON seleziona il titolo edilizio (CILA/SCIA/permesso), non redige la pratica, non applica il Salva Casa, non sostituisce il progettista ne' il Comune.
+default_prompt: |
+  Come si qualifica un intervento edilizio secondo l'art. 3 del DPR 380/2001? Un frazionamento senza
+  modifica di volumetria e' manutenzione straordinaria o ristrutturazione? Una demolizione e
+  ricostruzione con diversa sagoma? Una pertinenza con volume superiore al 20% e' nuova costruzione
+  (lett. e.6)?
