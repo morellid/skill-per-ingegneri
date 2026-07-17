@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 10
+  count: 11
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -573,6 +573,24 @@ skills:
   - efficienza-energetica
   - grandi-imprese
   - enea
+- id: direzione-lavori-esecuzione-dlgs36
+  area: appalti-opere-pubbliche
+  title: Direzione lavori ed esecuzione dei contratti (D.Lgs. 36/2023 art. 114)
+  summary: 'Inquadra la direzione dei lavori (DL) e dell''esecuzione (DEC) nei contratti pubblici (D.Lgs. 36/2023 art. 114):
+    esecuzione diretta dal RUP, nomina e compiti del DL, ufficio di direzione lavori, DL come CSE sotto 1 milione, DEC per
+    servizi/forniture. Non nomina il DL/DEC.'
+  normative_refs:
+  - D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 114 (Direzione dei lavori e dell'esecuzione dei contratti)
+  - 'Richiamati dall''art. 114 (non riprodotti): allegato II.14 (attivita''/compiti), allegato I.9 (BIM), D.Lgs. 81/2008 (coordinatore
+    sicurezza), art. 15 L. 241/1990, art. 30 D.Lgs. 267/2000 (accordi PA)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - direzione-lavori
+  - direzione-esecuzione
+  - dlgs-36-2023
+  - contratti-pubblici
+  - codice-appalti
 - id: distanze-legali-costruzioni-cc
   area: edilizia-urbanistica-catasto
   title: Distanze legali nelle costruzioni, luci e vedute (Codice civile)
