@@ -1,0 +1,43 @@
+schema_version: 1
+skill: contratto-appalto-cc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento del CONTRATTO DI APPALTO nel Codice civile (Libro IV, Titolo III,
+# Capo VII): nozione, subappalto, corrispettivo, fornitura della materia, variazioni del
+# progetto, verifica in corso d'opera, difetti della materia, onerosita'/difficolta'
+# dell'esecuzione, verifica e pagamento, recesso unilaterale. Fonte: Codice civile (R.D.
+# 262/1942), artt. 1655-1666 e 1671.
+
+sources:
+  - id: cc-appalto-1655-1671
+    title: "Codice civile (R.D. 16 marzo 1942, n. 262) - artt. 1655-1666, 1671 (Dell'appalto) (testo vigente al 2026-07-17)"
+    type: regio-decreto
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # Codice civile usato dalle altre skill c.c.: distanze, condominio, servitu' coattive,
+    # usucapione, rovina d'edificio).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: f817bc32707124081b048e6d34882a4256b7e107de3c4a018fcd83a936dce325
+    license: public-domain
+    binary_path: not_in_repo/cc-appalto-idx.html
+    md_path: references/fonti/cc-appalto-1655-1671.md
+    excerpt_path: references/estratti/contratto-appalto-checklist.md
+    notes: |
+      Codice redazionale 042U0262. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: f817bc32...; e' lo stesso indice usato dalle altre skill c.c.).
+      Articoli 1655-1666 e 1671 (versione 1, idGruppo 208) caricati via AJAX (caricaArticolo) e
+      trascritti verbatim in references/fonti/cc-appalto-1655-1671.md: nozione - organizzazione
+      dei mezzi e gestione a proprio rischio (1655); subappalto previa autorizzazione (1656);
+      determinazione del corrispettivo (1657); fornitura della materia (1658); variazioni
+      concordate (1659), necessarie con soglia del sesto (1660), ordinate dal committente entro
+      il sesto (1661); verifica in corso d'opera e risoluzione (1662); denuncia dei difetti della
+      materia (1663); onerosita'/difficolta' dell'esecuzione, revisione oltre il decimo ed equo
+      compenso per difficolta' geologiche/idriche (1664); verifica e pagamento con accettazione
+      anche tacita (1665); verifica e pagamento per singole partite (1666); recesso unilaterale
+      del committente con indennizzo (1671).
+      LIMITE DI RESA: la skill inquadra la disciplina civilistica dell'appalto; NON redige il
+      contratto ne' gli atti (autorizzazioni, riserve, verbali di verifica), NON quantifica
+      corrispettivi/indennita', NON tratta la responsabilita' per difformita'/vizi/rovina (artt.
+      1667-1669, coperti dalla skill responsabilita-appaltatore-rovina-cc) ne' l'appalto pubblico
+      (D.Lgs. 36/2023). Gli artt. 1668, 1670, 1672-1677 (estinzione del contratto, morte
+      dell'appaltatore) e il contratto d'opera (art. 2222) sono citati come rinvio, non riprodotti.

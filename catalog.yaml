@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 7
+  count: 8
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -438,6 +438,24 @@ skills:
   - condominio
   - efficienza-energetica
   - teleriscaldamento
+- id: contratto-appalto-cc
+  area: forense
+  title: Contratto di appalto nel Codice civile (c.c. artt. 1655-1666, 1671)
+  summary: 'Inquadra il contratto di appalto nel Codice civile (artt. 1655-1666, 1671): nozione, subappalto, corrispettivo,
+    variazioni (soglia del sesto), onerosita'' sopravvenuta (soglia del decimo), verifica e pagamento con accettazione, recesso
+    del committente. Non redige il contratto.'
+  normative_refs:
+  - Codice civile (R.D. 16 marzo 1942, n. 262) - Libro IV, Titolo III, Capo VII (Dell'appalto), artt. 1655-1666 e 1671
+  - 'Rinvio (non riprodotti): artt. 1667-1669 c.c. (difformita'', vizi, rovina - skill responsabilita-appaltatore-rovina-cc),
+    art. 2222 c.c. (contratto d''opera), D.Lgs. 36/2023 (appalto pubblico)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - appalto
+  - codice-civile
+  - contratto-appalto
+  - variazioni
+  - recesso
 - id: contributo-costruzione-dpr380
   area: edilizia-urbanistica-catasto
   title: 'Contributo di costruzione: oneri e costo di costruzione (DPR 380/2001)'

@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Contratto di appalto nel Codice civile (c.c. artt. 1655-1666, 1671)"
+short_description: Supporto documentale all'inquadramento del contratto di appalto di diritto privato nel Codice civile (R.D. 262/1942, Capo VII), artt. 1655-1666 e 1671. Inquadra la nozione (organizzazione dei mezzi e gestione a proprio rischio, art. 1655), il subappalto previa autorizzazione (art. 1656), il corrispettivo (art. 1657), la fornitura della materia (art. 1658), le variazioni del progetto - concordate (art. 1659), necessarie con soglia del sesto (art. 1660), ordinate dal committente entro il sesto (art. 1661), la verifica in corso d'opera (art. 1662), i difetti della materia (art. 1663), l'onerosita'/difficolta' con revisione oltre il decimo (art. 1664), la verifica e il pagamento con accettazione anche tacita (art. 1665), le singole partite (art. 1666) e il recesso unilaterale del committente con indennizzo (art. 1671). NON redige il contratto ne' gli atti, non quantifica importi, non tratta la responsabilita' per difformita'/vizi/rovina (artt. 1667-1669) ne' l'appalto pubblico (D.Lgs. 36/2023) e non sostituisce l'avvocato/CTU.
+default_prompt: |
+  Ho un contratto di appalto privato (opere o servizi): come lo inquadro nel Codice civile? Come
+  distinguo l'appalto dal contratto d'opera, quando serve l'autorizzazione al subappalto, quali sono
+  i limiti alle variazioni (la soglia del sesto), quando spetta la revisione del prezzo (la soglia
+  del decimo), da quando ho diritto al pagamento e cosa deve il committente in caso di recesso? Cita
+  gli articoli.
