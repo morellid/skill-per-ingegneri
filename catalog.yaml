@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 16
+  count: 17
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -758,6 +758,25 @@ skills:
   - dora
   - reg-ue-2022-2554
   - finanza
+- id: dpi-protezione-individuale-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Dispositivi di protezione individuale - DPI (D.Lgs. 81/2008 artt. 74-79)
+  summary: 'Inquadra gli obblighi sui DPI (D.Lgs. 81/2008 artt. 74-79): definizione ed esclusioni, uso residuale rispetto
+    alla protezione collettiva, requisiti (reg. UE 2016/425), obblighi del datore (scelta, fornitura, formazione, addestramento)
+    e dei lavoratori. Non redige il DVR.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza sul lavoro) - Titolo III, Capo II, artt. 74-79 (Uso dei dispositivi
+    di protezione individuale)
+  - 'Rinvio (non riprodotti): allegato VIII D.Lgs. 81/2008 (elenco DPI/attività), regolamento (UE) 2016/425 (requisiti e categorie),
+    D.Lgs. 475/1992 (categorie), DM 2 maggio 2001'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpi
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - protezione-individuale
+  - formazione-addestramento
 - id: duvri-interferenze-dlgs81
   area: sicurezza-lavoro-cantieri
   title: DUVRI e obblighi negli appalti (art. 26 D.Lgs 81/2008)
