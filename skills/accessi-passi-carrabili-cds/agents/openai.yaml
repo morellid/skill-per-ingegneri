@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Accessi, diramazioni e passi carrabili (Codice della Strada art. 22)"
+short_description: Supporto documentale all'inquadramento di accessi, diramazioni e passi carrabili dalla strada ai fondi/fabbricati laterali secondo l'art. 22 del Codice della Strada (D.Lgs. 30 aprile 1992, n. 285). Chiarisce che senza la preventiva autorizzazione dell'ente proprietario non possono essere stabiliti nuovi accessi, diramazioni o innesti (c. 1), che gli accessi esistenti autorizzati vanno regolarizzati (c. 2), che i passi carrabili sono individuati con apposito segnale previa autorizzazione (c. 3), che sono vietate trasformazioni/variazioni d'uso senza autorizzazione (c. 4); inquadra il diniego rinviato al regolamento (c. 5), le opere sui fossi laterali (c. 6), i parcheggi per accessi a insediamenti (c. 8), le opere particolari e i consorzi obbligatori (c. 9), le caratteristiche tecniche con decreto MIT e il divieto di accessi su rampe di intersezione e corsie di accelerazione/decelerazione (c. 10), le sanzioni (cc. 11-12). NON rilascia l'autorizzazione, non redige l'istanza/progetto, non riproduce il Regolamento (DPR 495/1992) ne' i decreti MIT e non sostituisce l'ente proprietario della strada.
+default_prompt: |
+  Devo aprire (o regolarizzare) un accesso carrabile o un passo carrabile su una strada pubblica:
+  come lo inquadro secondo l'art. 22 del Codice della Strada? Serve l'autorizzazione e a chi va
+  chiesta, quali obblighi ci sono (opere sui fossi, parcheggi per insediamenti), dove è vietato
+  aprire l'accesso e quali sanzioni rischio se procedo senza autorizzazione? Cita i commi.
