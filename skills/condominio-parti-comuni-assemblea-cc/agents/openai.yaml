@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Condominio: parti comuni, innovazioni e assemblea (c.c. 1117-1136)"
+short_description: Supporto documentale al condominio negli edifici secondo il Codice civile, artt. 1117, 1120, 1136. Individua le parti comuni dell'edificio in proprietà comune salvo titolo contrario (strutture, facciate, scale, cortili; aree a parcheggio e locali per i servizi; impianti centralizzati fino al punto di diramazione o di utenza - art. 1117), distingue le innovazioni ordinarie (maggioranza degli intervenuti e 2/3 del valore) da quelle agevolate per sicurezza, barriere architettoniche, risparmio energetico e rinnovabili (maggioranza degli intervenuti e metà del valore), con convocazione dell'assemblea entro 30 giorni su richiesta di un solo condomino e i divieti di innovazioni pregiudizievoli per stabilità, sicurezza o decoro (art. 1120), e verifica la costituzione dell'assemblea e la validità delle deliberazioni con i quorum in prima e seconda convocazione e le maggioranze qualificate per nomina e revoca dell'amministratore, liti, ricostruzione e innovazioni (art. 1136). NON redige verbali o delibere, non valuta la validità o l'impugnazione della delibera (art. 1137), non tratta le tabelle millesimali e non sostituisce l'amministratore, il legale o il giudice.
+default_prompt: |
+  In un condominio: quali sono le parti comuni dell'edificio (art. 1117)? Che maggioranza serve in
+  assemblea per un'innovazione come il cappotto termico o il fotovoltaico (art. 1120)? E quali sono i
+  quorum costitutivi e deliberativi in prima e seconda convocazione, ad esempio per nominare
+  l'amministratore (art. 1136)?
