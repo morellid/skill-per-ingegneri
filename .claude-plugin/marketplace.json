@@ -217,7 +217,7 @@
     {
       "name": "forense",
       "source": "./skills",
-      "description": "CTU & ingegneria forense - 7 skill verticali su normative italiane.",
+      "description": "CTU & ingegneria forense - 5 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -229,8 +229,6 @@
         "./accertamento-tecnico-preventivo-cpc",
         "./compensi-ctu-dpr115",
         "./condominio-parti-comuni-assemblea-cc",
-        "./mediazione-civile-conciliazione-dlgs28",
-        "./negoziazione-assistita-dl132",
         "./relazione-peritale-ctu-cpc",
         "./responsabilita-appaltatore-rovina-cc"
       ]
