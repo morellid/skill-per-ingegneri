@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Attrezzature a pressione: messa in servizio e verifiche (DM 329/2004)"
+short_description: Supporto documentale alla messa in servizio e alle verifiche delle attrezzature e insiemi a pressione in esercizio (fase post-marcatura CE) secondo il D.M. 1 dicembre 2004, n. 329. Inquadra il campo di applicazione e i tipi di verifica (art. 1), la verifica obbligatoria di primo impianto/messa in servizio quando l'attrezzatura è installata e assemblata dall'utilizzatore, con attestazione ed eventuale divieto (art. 4), le esclusioni (art. 5), la dichiarazione di messa in servizio da inviare all'ISPESL (oggi INAIL) e alla ASL con i suoi contenuti e la dichiarazione cumulativa per le serie GPL e criogeniche (art. 6), la riqualificazione periodica con verifiche di integrità e funzionamento e periodicità delle tabelle degli allegati A e B (art. 10), le esenzioni per soglie di pressione e prodotto pressione-volume (art. 11) e la verifica di funzionamento con controllo degli accessori di sicurezza e taratura delle valvole (art. 13). NON esegue le verifiche, non redige la dichiarazione di messa in servizio, non riproduce le tabelle degli allegati A e B e non sostituisce l'utilizzatore, il soggetto verificatore (INAIL/ASL/soggetti abilitati) né il fabbricante.
+default_prompt: |
+  Ho un'attrezzatura a pressione (es. serbatoio o recipiente) da mettere in esercizio: secondo il
+  D.M. 329/2004 serve una verifica di messa in servizio? A chi va inviata la dichiarazione di messa
+  in servizio e cosa deve contenere? L'attrezzatura è soggetta a riqualificazione periodica o è
+  esente, e con quale periodicità?
