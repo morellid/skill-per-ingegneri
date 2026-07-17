@@ -1,0 +1,37 @@
+schema_version: 1
+skill: deposito-classificazione-rifiuti-dlgs152
+last_verified: 2026-07-16
+
+# Fonte per la CLASSIFICAZIONE dei rifiuti (urbani/speciali, pericolosi/non pericolosi) e per il
+# DEPOSITO TEMPORANEO prima della raccolta (condizioni, limiti quantitativi e temporali, esonero
+# da autorizzazione). Fonte: D.Lgs. 3 aprile 2006, n. 152, Parte quarta, artt. 183, 184, 185-bis.
+
+sources:
+  - id: dlgs-152-2006-artt-183-184-185bis
+    title: "D.Lgs. 3 aprile 2006, n. 152 - Parte quarta, artt. 183 (definizioni), 184 (classificazione), 185-bis (deposito temporaneo) (testo vigente al 2026-07-16)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: fac1fb98fa463fc91ac96e641197c5628729cd62699a6d4ae5761d4873631e40
+    license: public-domain
+    binary_path: not_in_repo/dlgs152.html
+    md_path: references/fonti/dlgs-152-2006-artt-183-184-185bis.md
+    excerpt_path: references/estratti/rifiuti-checklist.md
+    notes: |
+      Codice redazionale 006G0171. Pagina indice Normattiva pinnata a !vig=2026-07-16 (hash
+      stabile, doppio download: fac1fb98...). Artt. 183 (v17), 184 (v9), 185-bis (idSottoArticolo
+      2, v2), idGruppo 34, caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/dlgs-152-2006-artt-183-184-185bis.md: art. 183 (definizioni: rifiuto,
+      produttore, detentore, gestione, raccolta, deposito temporaneo, sottoprodotto, rifiuto
+      urbano - lett. b-ter, ecc.), art. 184 (classificazione: urbani/speciali secondo l'origine,
+      pericolosi/non pericolosi secondo l'allegato I; elenco EER allegato D vincolante per i
+      pericolosi; attribuzione dei codici a cura del produttore; divieto di declassificazione
+      per diluizione/miscelazione - c. 5-ter), art. 185-bis (deposito temporaneo prima della
+      raccolta: nel luogo di produzione; avvio a recupero/smaltimento con cadenza almeno
+      trimestrale oppure al raggiungimento di 30 mc di cui max 10 mc di pericolosi; se sotto il
+      limite/anno durata max 1 anno; categorie omogenee; non necessita di autorizzazione).
+      LIMITE DI RESA (Regola zero): l'elenco europeo dei rifiuti (EER, allegato D) e le
+      caratteristiche di pericolo (HP, allegato I / Reg. UE) non sono riprodotti: la skill
+      inquadra classificazione e deposito temporaneo e rinvia agli allegati per codici e criteri.
+      Non attribuisce i codici EER, non redige registri/FIR (cfr. trasporto-rifiuti-fir-dlgs152)
+      e non sostituisce il produttore/detentore ne' il consulente.
