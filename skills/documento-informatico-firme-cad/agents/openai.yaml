@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Documento informatico e firme elettroniche (CAD artt. 20, 21, 24)"
+short_description: Supporto documentale al valore giuridico del documento informatico e delle firme elettroniche secondo il Codice dell'amministrazione digitale (D.Lgs. 82/2005), artt. 20, 21, 24. Stabilisce quando il documento informatico soddisfa la forma scritta e ha l'efficacia dell'art. 2702 c.c. (firma digitale, qualificata o avanzata, o processo con requisiti AgID ex art. 71) e quando e' liberamente valutabile in giudizio (art. 20), con presunzione di riconducibilita' al titolare (c. 1-ter); individua gli atti che a pena di nullita' richiedono firma qualificata/digitale (scritture private art. 1350 c.c.; atto pubblico informatico - art. 21) e i requisiti della firma digitale e del certificato qualificato (art. 24). NON riproduce le Linee guida AgID ne' l'eIDAS, non appone/verifica firme e non sostituisce il professionista, il notaio ne' il giudice.
+default_prompt: |
+  Ho un documento informatico (es. una relazione tecnica in PDF firmata digitalmente): che
+  valore giuridico ha secondo il CAD (D.Lgs. 82/2005)? Quando soddisfa la forma scritta e
+  l'efficacia dell'art. 2702 c.c., e cosa succede se il certificato di firma è scaduto o
+  revocato? Cita gli articoli 20, 21 e 24.

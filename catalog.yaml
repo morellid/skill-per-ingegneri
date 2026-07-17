@@ -34,7 +34,7 @@ areas:
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
-  count: 9
+  count: 10
 - id: forense
   name: CTU & ingegneria forense
   order: 9
@@ -478,6 +478,23 @@ skills:
   - dnsh
   - pnrr
   - reg-ue-2020-852
+- id: documento-informatico-firme-cad
+  area: software-dati-cybersecurity
+  title: Documento informatico e firme elettroniche (CAD artt. 20, 21, 24)
+  summary: 'Inquadra il valore giuridico del documento informatico e delle firme elettroniche (CAD, D.Lgs. 82/2005 artt. 20,
+    21, 24): forma scritta ed efficacia ex art. 2702 c.c., atti nulli senza firma qualificata/digitale, requisiti della firma
+    digitale. Non appone ne'' verifica firme.'
+  normative_refs:
+  - D.Lgs. 7 marzo 2005, n. 82 (CAD) - artt. 20, 21, 24
+  - Linee guida AgID (art. 71 CAD) e Reg. UE 910/2014 (eIDAS) - regole tecniche (richiamati)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - documento-informatico
+  - firma-digitale
+  - firma-elettronica
+  - cad-dlgs-82-2005
+  - valore-probatorio
 - id: dora-gap-assessment
   area: software-dati-cybersecurity
   title: DORA Gap Assessment
