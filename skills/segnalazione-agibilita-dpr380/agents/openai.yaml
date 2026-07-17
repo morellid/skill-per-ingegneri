@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Segnalazione certificata di agibilità (D.P.R. 380/2001, art. 24)"
+short_description: Supporto documentale alla segnalazione certificata di agibilità (SCA) secondo l'art. 24 del D.P.R. 6 giugno 2001, n. 380 (art. 25 abrogato dal D.Lgs. 222/2016). Inquadra cosa attesta l'agibilità (sicurezza, igiene, salubrità, risparmio energetico, infrastrutturazione digitale e conformità al progetto - c. 1), chi e quando presenta la segnalazione (titolare del permesso o della SCIA o aventi causa, entro 15 giorni dall'ultimazione delle finiture, allo sportello unico per l'edilizia - c. 2), per quali interventi, la sanzione per mancata presentazione (77-464 euro - c. 3), l'agibilità parziale (c. 4), la documentazione allegata (attestazione del direttore dei lavori, collaudo statico art. 67, conformità barriere artt. 77/82, aggiornamento catastale, dichiarazione impianti, banda ultra larga - c. 5), le deroghe igienico-sanitarie asseverabili (altezza fino a 2,40 m, monostanza fino a 20/28 mq - c. 5-bis/ter) e l'utilizzo dalla presentazione e i controlli (c. 6-7). NON redige o presenta la SCA, non esegue collaudi o certificazioni, non riproduce la modulistica regionale/comunale e non sostituisce il direttore dei lavori né il professionista abilitato.
+default_prompt: |
+  Ho ultimato i lavori di una costruzione: come presento l'agibilità secondo l'art. 24 del D.P.R.
+  380/2001? Chi la presenta, entro quanto tempo e a chi, per quali interventi, quali documenti vanno
+  allegati e da quando posso utilizzare l'immobile? È possibile un'agibilità parziale?

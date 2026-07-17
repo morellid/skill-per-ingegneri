@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 10
+  count: 11
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -1142,6 +1142,24 @@ skills:
   - scheda-dati-sicurezza
   - reach
   - clp
+- id: segnalazione-agibilita-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Segnalazione certificata di agibilità (D.P.R. 380/2001, art. 24)
+  summary: 'Inquadra la segnalazione certificata di agibilità (SCA - art. 24 D.P.R. 380/2001): cosa attesta, termine di 15
+    giorni al SUE, interventi soggetti, sanzione 77-464 euro, agibilità parziale, documentazione allegata e deroghe igienico-sanitarie.
+    Non redige la SCA; art. 25 abrogato.'
+  normative_refs:
+  - D.P.R. 6 giugno 2001, n. 380 - art. 24 (agibilità); art. 25 abrogato dal D.Lgs. 222/2016
+  - 'Richiamati: art. 67 (collaudo statico), artt. 77/82 (barriere architettoniche), art. 19 c. 3 e 6-bis L. 241/1990, DM
+    236/1989, DM 37/2008'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - agibilita
+  - sca
+  - dpr-380-2001
+  - sportello-unico-edilizia
+  - edilizia
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
