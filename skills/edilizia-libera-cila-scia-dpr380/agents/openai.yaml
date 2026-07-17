@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Edilizia libera, CILA e SCIA (DPR 380/2001 artt. 6, 6-bis, 22, 23)"
+short_description: Supporto documentale ai regimi del titolo edilizio diversi dal permesso di costruire secondo il DPR 380/2001 (Testo unico edilizia), Titolo II. Inquadra l'attivita' edilizia libera (art. 6: interventi senza alcun titolo - manutenzione ordinaria, barriere architettoniche, VEPA, tende/pergole, opere temporanee, movimenti di terra agricoli, serre mobili, opere stagionali fino a 180 giorni, pavimentazioni esterne, aree ludiche, vasche per acque meteoriche), la CILA (art. 6-bis: comunicazione di inizio lavori asseverata da un tecnico abilitato per gli interventi residuali non riconducibili agli articoli 6, 10 e 22, senza interessamento delle parti strutturali, con sanzione di 1.000 euro ridotta di due terzi se spontanea), la SCIA (art. 22: segnalazione certificata di inizio attivita' ex art. 19 legge 241/1990 per manutenzione straordinaria e restauro su parti strutturali, ristrutturazione non pesante, varianti a permessi) e la SCIA in alternativa al permesso di costruire (art. 23: ristrutturazione pesante e nuova costruzione/ristrutturazione urbanistica in attuazione di piani, con relazione del progettista, termine di 30 giorni prima dell'inizio lavori, contributo di costruzione ed efficacia triennale). NON qualifica in concreto l'intervento (art. 3), non redige la CILA/SCIA, non tratta il permesso di costruire, non sostituisce il tecnico abilitato o il SUE/Comune.
+default_prompt: |
+  Per spostare tramezzi interni non portanti serve CILA o SCIA (DPR 380/2001)? E se apro una porta su un
+  muro portante (art. 22)? Una serra mobile agricola e' edilizia libera (art. 6)? Posso costruire un nuovo
+  edificio con SCIA in alternativa al permesso di costruire se c'e' un piano attuativo (art. 23), e con
+  quali termini?

@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 14
+  count: 15
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -678,6 +678,24 @@ skills:
   - dvr
   - dlgs-81-2008
   - salute-sicurezza
+- id: edilizia-libera-cila-scia-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Edilizia libera, CILA e SCIA (DPR 380/2001 artt. 6, 6-bis, 22, 23)
+  summary: 'Inquadra i regimi del titolo edilizio diversi dal permesso di costruire (DPR 380/2001): edilizia libera senza
+    titolo (art. 6), CILA asseverata residuale (art. 6-bis), SCIA ex art. 19 L. 241/1990 (art. 22), SCIA in alternativa al
+    PdC con preavviso di 30 giorni (art. 23).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 6 (attivita' edilizia libera) e 6-bis (CILA)
+  - D.P.R. 6/6/2001 n. 380 - artt. 22 (SCIA) e 23 (SCIA in alternativa al permesso di costruire)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - edilizia
+  - titolo-edilizio
+  - cila
+  - scia
+  - edilizia-libera
 - id: esercizio-controllo-impianti-termici-dpr74
   area: energia-incentivi
   title: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
