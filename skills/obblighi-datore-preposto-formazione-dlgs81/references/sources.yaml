@@ -1,0 +1,42 @@
+schema_version: 1
+skill: obblighi-datore-preposto-formazione-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per gli OBBLIGHI del datore di lavoro e del dirigente (art. 18), del PREPOSTO (art. 19) e per
+# la FORMAZIONE dei lavoratori e dei loro rappresentanti (art. 37). Fonte: D.Lgs. 9 aprile 2008, n.
+# 81 (Testo unico salute e sicurezza sul lavoro).
+
+sources:
+  - id: dlgs-81-2008-artt-18-19-37
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 18 (obblighi datore/dirigente), 19 (preposto), 37 (formazione) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/dlgs81_17.html
+    md_path: references/fonti/dlgs-81-2008-artt-18-19-37.md
+    excerpt_path: references/estratti/obblighi-formazione-checklist.md
+    notes: |
+      Codice redazionale 008G0104 (G.U. 30 aprile 2008). Pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...). Artt. caricati via AJAX
+      (caricaArticolo, dataPubblicazioneGazzetta 2008-04-30) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-artt-18-19-37.md:
+      - Art. 18 (idGruppo 3, v12): obblighi del datore di lavoro e del dirigente (nomina del medico
+        competente, designazione addetti emergenza, individuazione del preposto - lett. b-bis, DPI,
+        informazione/formazione/addestramento art. 36-37, sorveglianza sanitaria, DUVRI, consegna
+        DVR al RLS, comunicazione INAIL infortuni entro 48 ore - lett. r, e altri obblighi
+        documentali). Non delegabili quelli dell'art. 17 (DVR e RSPP).
+      - Art. 19 (idGruppo 3, v2): obblighi del preposto (sovrintendere e vigilare, intervenire sui
+        comportamenti non conformi e interrompere l'attività in caso di persistenza - lett. a;
+        interrompere in caso di deficienze/pericolo - lett. f-bis; segnalare; frequentare i corsi di
+        formazione art. 37).
+      - Art. 37 (idGruppo 6, v9): formazione sufficiente e adeguata dei lavoratori (concetti di
+        rischio, misure, ecc.), formazione dei preposti e dei dirigenti, addestramento all'uso di
+        attrezzature/DPI, aggiornamento periodico; rinvio all'Accordo Stato-Regioni per durate e
+        contenuti; formazione durante l'orario di lavoro e senza oneri per i lavoratori.
+      LIMITE DI RESA (Regola zero): le DURATE e i CONTENUTI puntuali della formazione sono definiti
+      dall'ACCORDO STATO-REGIONI (esterno, tabellare) e non sono riprodotti; gli obblighi settoriali
+      specifici (Titoli successivi) sono richiamati ma non trascritti. La skill inquadra la
+      ripartizione degli obblighi e la formazione, non redige il DVR/verbali né sostituisce datore,
+      RSPP, medico competente o formatore.

@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Obblighi di datore, dirigente e preposto e formazione (D.Lgs 81/2008)"
+short_description: Supporto documentale alla ripartizione degli obblighi di sicurezza tra datore di lavoro, dirigente e preposto e alla formazione dei lavoratori, secondo il D.Lgs. 9 aprile 2008, n. 81, artt. 18, 19, 37. Inquadra gli obblighi del datore di lavoro e del dirigente (nomina del medico competente, designazione degli addetti alle emergenze, individuazione del preposto, fornitura dei DPI, sorveglianza sanitaria, informazione/formazione/addestramento, consegna del DVR e del DUVRI al rappresentante dei lavoratori, comunicazione all'INAIL degli infortuni entro 48 ore - art. 18), tenendo conto che gli obblighi dell'art. 17 (valutazione dei rischi con il DVR e designazione dell'RSPP) sono non delegabili, gli obblighi del preposto (sovrintendere e vigilare, intervenire e interrompere l'attività in caso di comportamenti non conformi o pericolo, segnalare, frequentare i corsi - art. 19) e la formazione dei lavoratori e dei rappresentanti (formazione sufficiente e adeguata, formazione e aggiornamento di preposti e dirigenti, addestramento, formazione durante l'orario di lavoro e senza oneri, con rinvio all'Accordo Stato-Regioni per durate e contenuti - art. 37). NON redige il DVR o i verbali di formazione, non riproduce le durate dell'Accordo Stato-Regioni e non sostituisce il datore di lavoro, l'RSPP, il medico competente o il formatore.
+default_prompt: |
+  Nella mia azienda: quali obblighi di sicurezza competono al datore di lavoro e al dirigente e quali
+  al preposto secondo il D.Lgs. 81/2008 (artt. 18-19)? Cosa non è delegabile (art. 17)? E quale
+  formazione e addestramento devo garantire ai lavoratori e al preposto, con quali modalità (art. 37)?
