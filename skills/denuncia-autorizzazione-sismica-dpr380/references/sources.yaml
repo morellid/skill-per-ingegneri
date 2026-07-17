@@ -1,0 +1,47 @@
+schema_version: 1
+skill: denuncia-autorizzazione-sismica-dpr380
+last_verified: 2026-07-17
+
+# Fonte per gli adempimenti per le COSTRUZIONI IN ZONE SISMICHE: denuncia dei lavori e
+# deposito del progetto (art. 93), autorizzazione preventiva all'inizio dei lavori (art.
+# 94) e classificazione degli interventi strutturali rilevanti/di minore rilevanza/privi
+# di rilevanza (art. 94-bis). Fonte: Testo unico dell'edilizia (DPR 380/2001), Capo IV.
+
+sources:
+  - id: dpr-380-2001-93-94-94bis
+    title: "D.P.R. 6 giugno 2001, n. 380 (Testo unico edilizia) - artt. 93 (denuncia lavori), 94 (autorizzazione sismica) e 94-bis (disciplina interventi strutturali in zone sismiche) (testo vigente al 2026-07-17)"
+    type: decreto-presidente-repubblica
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del DPR 380 usato dalle altre skill edilizia).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2001-06-06;380!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: bac3f7b170cfd122936873c835b3f728e7880d058bd98ad45f55b94ba89a632f
+    license: public-domain
+    binary_path: not_in_repo/dpr380-sism-idx.html
+    md_path: references/fonti/dpr-380-2001-93-94-94bis.md
+    excerpt_path: references/estratti/sismica-checklist.md
+    notes: |
+      Codice redazionale 001G0429. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: bac3f7b1...; stesso indice usato dalle altre skill DPR 380).
+      Articoli caricati via AJAX (caricaArticolo, flagTipoArticolo 0, idGruppo 18,
+      dataPubblicazioneGazzetta 2001-10-20) e trascritti verbatim in
+      references/fonti/dpr-380-2001-93-94-94bis.md: art. 93 "Denuncia dei lavori e
+      presentazione dei progetti" (idSottoArticolo 1, versione 2: preavviso scritto allo
+      sportello unico e trasmissione all'ufficio tecnico regionale c. 1, deposito del progetto
+      firmato c. 2, contenuto minimo e asseverazione del progettista cc. 3-4, validita' come
+      denuncia ex art. 65 c. 5, registro comunale cc. 6-7), art. 94 "Autorizzazione per
+      l'inizio dei lavori" (idSottoArticolo 1, versione 3: preventiva autorizzazione
+      dell'ufficio tecnico regionale nelle localita' sismiche escluse quelle a bassa sismicita'
+      c. 1, rilascio entro 30 giorni c. 2, silenzio assenso c. 2-bis, ricorso al presidente
+      della giunta regionale c. 3, direzione lavori c. 4), art. 94-bis "Disciplina degli
+      interventi strutturali in zone sismiche" (idSottoArticolo 2, versione 3: classificazione
+      in interventi rilevanti/di minore rilevanza/privi di rilevanza per zona sismica 1/2/3/4
+      c. 1, linee guida MIT/regioni c. 2, autorizzazione per i rilevanti c. 3, deroga per
+      minore/privi di rilevanza cc. 4-5, artt. 65 e 67 c. 6). Il testo tra doppi tondi (( ))
+      e le sigle (R)/(L) sono riportati come da fonte.
+      LIMITE DI RESA: la skill inquadra gli adempimenti e la classificazione; NON redige la
+      denuncia/istanza ne' il progetto strutturale, NON esegue calcoli (NTC), NON riproduce le
+      linee guida MIT (DM 30/4/2018) ne' le elencazioni/procedure regionali di dettaglio,
+      citate come rinvio; gli artt. 52, 65, 67, 83 (classificazione sismica) e il DM 17/1/2018
+      (NTC) sono citati. Distinta da denuncia-opere-strutturali-l1086 (art. 65, opere in c.a./
+      acciaio) e dalle skill NTC (calcolo).
