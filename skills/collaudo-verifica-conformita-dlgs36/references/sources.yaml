@@ -1,0 +1,36 @@
+schema_version: 1
+skill: collaudo-verifica-conformita-dlgs36
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento del collaudo dei lavori e della verifica di conformita'
+# di servizi e forniture nei contratti pubblici (fase di chiusura del contratto).
+
+sources:
+  - id: dlgs-36-2023-art-116
+    title: "D.Lgs. 31 marzo 2023, n. 36 - Codice dei contratti pubblici - art. 116 (Collaudo e verifica di conformita') (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill appalti: garanzie-appalti-pubblici,
+    # subappalto, modifiche-varianti, specifiche-tecniche-ict).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 0e9a193836e379cb33cb6daf1a5a988c608eb9559d84b91a841d9ed9791a62af
+    license: public-domain
+    binary_path: not_in_repo/d36idx.html
+    md_path: references/fonti/dlgs-36-2023-art-116.md
+    excerpt_path: references/estratti/collaudo-verifica-checklist.md
+    notes: |
+      Codice redazionale 23G00044, GU n. 77 del 31/3/2023 - S.O. n. 12 (in vigore dal
+      1/4/2023). Il binario e' la pagina indice Normattiva pinnata a !vig=2026-07-17
+      (hash stabile, doppio download: 0e9a1938...; e' lo stesso indice usato dalle
+      altre skill D.Lgs. 36). L'articolo 116 (Collaudo e verifica di conformita') e'
+      caricato via AJAX (caricaArticolo: versione 2, idGruppo 18, flagTipoArticolo 0,
+      codiceRedazionale 23G00044, dataPubblicazioneGazzetta 2023-03-31) e trascritto
+      verbatim in references/fonti/dlgs-36-2023-art-116.md. Le porzioni tra (( )) sono
+      le modifiche successive gia' consolidate nel testo vigente (es. correttivo
+      D.Lgs. 31 dicembre 2024, n. 209). Riferimenti citati come rinvio e NON riprodotti:
+      l'allegato II.14 (modalita' tecniche/tempi del collaudo, casi di certificato di
+      regolare esecuzione - CRE, compensi), l'allegato II.15 (costi degli accertamenti
+      di laboratorio), gli artt. 29/45 (incentivi/compensi), l'art. 16 (conflitto di
+      interesse), l'art. 43 (BIM) e l'art. 1669 del codice civile. Il collaudo statico
+      strutturale (DPR 380 art. 67) e' coperto da altra skill (denuncia-opere-strutturali-l1086).

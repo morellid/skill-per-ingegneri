@@ -1,0 +1,37 @@
+schema_version: 1
+skill: movimentazione-manuale-carichi-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento degli obblighi in materia di movimentazione manuale dei
+# carichi (MMC): campo di applicazione e definizioni, obblighi del datore di lavoro,
+# informazione/formazione/addestramento (Titolo VI del Testo unico sicurezza).
+
+sources:
+  - id: dlgs-81-2008-mmc
+    title: "D.Lgs. 9 aprile 2008, n. 81 - Testo unico sicurezza sul lavoro - Titolo VI (Movimentazione manuale dei carichi), artt. 167-169 (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill D.Lgs. 81: valutazione-rischio-rumore,
+    # valutazione-rischio-vibrazioni, duvri-interferenze).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81idx.html
+    md_path: references/fonti/dlgs-81-2008-mmc.md
+    excerpt_path: references/estratti/mmc-checklist.md
+    notes: |
+      Codice redazionale 008G0104, GU n. 101 del 30/4/2008 - S.O. n. 108 (in vigore
+      dal 15/5/2008). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...; e' lo stesso indice
+      usato dalle altre skill D.Lgs. 81). Gli articoli del Titolo VI "Movimentazione
+      manuale dei carichi" - 167 (campo di applicazione e definizioni), 168 (obblighi
+      del datore di lavoro), 169 (informazione, formazione e addestramento) - sono
+      caricati via AJAX (caricaArticolo: idGruppo 30, flagTipoArticolo 0,
+      codiceRedazionale 008G0104, dataPubblicazioneGazzetta 2008-04-30) e trascritti
+      verbatim in references/fonti/dlgs-81-2008-mmc.md. L'Allegato XXXIII (elementi di
+      riferimento: caratteristiche del carico, sforzo fisico, ambiente di lavoro,
+      esigenze dell'attivita', fattori individuali di rischio) e le norme tecniche
+      ISO 11228-1/2/3 richiamate dagli artt. 168-169 sono citate come rinvio e NON
+      riprodotte (allegato = elenco di elementi; ISO a pagamento). L'art. 41
+      (sorveglianza sanitaria) richiamato dall'art. 168 c. 2 lett. d e' citato.
