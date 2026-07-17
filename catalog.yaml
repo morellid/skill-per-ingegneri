@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 20
+  count: 21
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -254,6 +254,24 @@ skills:
   - siti-contaminati
   - analisi-di-rischio
   - testo-unico-ambientale
+- id: cantieri-stradali-occupazione-cds
+  area: ambiente-territorio-mobilita
+  title: Cantieri stradali e occupazione della sede stradale (CdS artt. 20, 21)
+  summary: 'Inquadra l''occupazione della sede stradale e i cantieri stradali (CdS, D.Lgs. 285/1992): divieto/ammissibilita''
+    per tipo di strada, chioschi e marciapiedi (art. 20); apertura di opere/depositi/cantieri con preventiva autorizzazione,
+    sicurezza e segnalazione (art. 21).'
+  normative_refs:
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada) - art. 20 (occupazione della sede stradale)
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada) - art. 21 (opere, depositi e cantieri stradali)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-della-strada
+  - dlgs-285-1992
+  - cantieri-stradali
+  - occupazione-suolo
+  - segnaletica-temporanea
+  - mobilita
 - id: capacita-portante-fondazione-ntc
   area: strutture-geotecnica
   title: Capacita' portante fondazioni superficiali (NTC 6.4.2)
