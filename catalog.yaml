@@ -6,19 +6,19 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 14
+  count: 16
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 10
+  count: 11
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 14
+  count: 15
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 11
+  count: 13
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 19
+  count: 21
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 7
+  count: 6
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -254,6 +254,24 @@ skills:
   - siti-contaminati
   - analisi-di-rischio
   - testo-unico-ambientale
+- id: cantieri-stradali-occupazione-cds
+  area: ambiente-territorio-mobilita
+  title: Cantieri stradali e occupazione della sede stradale (CdS artt. 20, 21)
+  summary: 'Inquadra l''occupazione della sede stradale e i cantieri stradali (CdS, D.Lgs. 285/1992): divieto/ammissibilita''
+    per tipo di strada, chioschi e marciapiedi (art. 20); apertura di opere/depositi/cantieri con preventiva autorizzazione,
+    sicurezza e segnalazione (art. 21).'
+  normative_refs:
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada) - art. 20 (occupazione della sede stradale)
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada) - art. 21 (opere, depositi e cantieri stradali)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-della-strada
+  - dlgs-285-1992
+  - cantieri-stradali
+  - occupazione-suolo
+  - segnaletica-temporanea
+  - mobilita
 - id: capacita-portante-fondazione-ntc
   area: strutture-geotecnica
   title: Capacita' portante fondazioni superficiali (NTC 6.4.2)
@@ -355,6 +373,24 @@ skills:
   - cer
   - gse
   - dlgs-199-2021
+- id: collaudo-verifica-conformita-dlgs36
+  area: appalti-opere-pubbliche
+  title: Collaudo e verifica di conformita' - D.Lgs. 36/2023 art. 116
+  summary: 'Collaudo lavori e verifica di conformita'' servizi/forniture (D.Lgs. 36/2023 art. 116): funzione, termini 6 mesi/1
+    anno e certificato provvisorio->definitivo a 2 anni (cc.1-2), collaudatori 1-3 e incompatibilita'' (cc.4-6), verifica
+    del RUP/DEC (c.5), CRE allegato II.14 (c.7).'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - art. 116 cc. 1-3 (collaudo/verifica di conformita', termini, responsabilita')
+  - D.Lgs. 31/3/2023 n. 36 - art. 116 cc. 4-11 (collaudatori, incompatibilita', RUP/DEC, CRE allegato II.14)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - codice-contratti-pubblici
+  - collaudo
+  - verifica-conformita
+  - certificato-regolare-esecuzione
+  - esecuzione-contratto
 - id: combinazioni-carico-ntc
   area: strutture-geotecnica
   title: Combinazioni Carico NTC
@@ -521,6 +557,24 @@ skills:
   - ristrutturazione
   - manutenzione-straordinaria
   - nuova-costruzione
+- id: denuncia-autorizzazione-sismica-dpr380
+  area: strutture-geotecnica
+  title: Denuncia lavori e autorizzazione sismica (DPR 380/2001 artt. 93, 94, 94-bis)
+  summary: 'Inquadra gli adempimenti per le costruzioni in zone sismiche (DPR 380/2001): denuncia lavori e deposito del progetto
+    asseverato (art. 93), autorizzazione preventiva dell''ufficio regionale (art. 94), classificazione degli interventi per
+    rilevanza e zona sismica (art. 94-bis).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 93 (denuncia lavori e deposito progetto) e 94 (autorizzazione per l'inizio dei lavori)
+  - D.P.R. 6/6/2001 n. 380 - art. 94-bis (disciplina degli interventi strutturali in zone sismiche)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - zone-sismiche
+  - denuncia-lavori
+  - autorizzazione-sismica
+  - interventi-strutturali
+  - strutture
 - id: denuncia-opere-strutturali-l1086
   area: edilizia-urbanistica-catasto
   title: Denuncia opere strutturali e autorizzazione sismica - DPR 380/2001
@@ -696,6 +750,24 @@ skills:
   - dvr
   - dlgs-81-2008
   - salute-sicurezza
+- id: edilizia-libera-cila-scia-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Edilizia libera, CILA e SCIA (DPR 380/2001 artt. 6, 6-bis, 22, 23)
+  summary: 'Inquadra i regimi del titolo edilizio diversi dal permesso di costruire (DPR 380/2001): edilizia libera senza
+    titolo (art. 6), CILA asseverata residuale (art. 6-bis), SCIA ex art. 19 L. 241/1990 (art. 22), SCIA in alternativa al
+    PdC con preavviso di 30 giorni (art. 23).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 6 (attivita' edilizia libera) e 6-bis (CILA)
+  - D.P.R. 6/6/2001 n. 380 - artt. 22 (SCIA) e 23 (SCIA in alternativa al permesso di costruire)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - edilizia
+  - titolo-edilizio
+  - cila
+  - scia
+  - edilizia-libera
 - id: esercizio-controllo-impianti-termici-dpr74
   area: energia-incentivi
   title: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
@@ -879,23 +951,6 @@ skills:
   - emc-2014-30
   - red-2014-53
   - valutazione-conformita
-- id: mediazione-civile-conciliazione-dlgs28
-  area: forense
-  title: 'Mediazione civile e commerciale: procedibilità e procedimento (D.Lgs 28/2010)'
-  summary: 'Mediazione civile e commerciale (D.Lgs 28/2010): materie a condizione di procedibilità ed esclusioni (art. 5),
-    procedimento (art. 8), conclusione con verbale, accordo e proposta (art. 11), efficacia esecutiva dell''accordo (art.
-    12). Non svolge la mediazione.'
-  normative_refs:
-  - D.Lgs. 4 marzo 2010, n. 28 - artt. 5, 8, 11, 12 (testo vigente post riforma Cartabia)
-  - 'Richiamati: artt. 2, 5-bis/5-ter/5-quater, 6, 8-bis, 13, 17; c.p.c. artt. 480, 696-bis; art. 2643 c.c.'
-  version: 0.1.0-alpha
-  status: alpha
-  tags:
-  - mediazione-civile
-  - conciliazione
-  - dlgs-28-2010
-  - condizione-di-procedibilita
-  - forense
 - id: modifiche-varianti-contratti-pubblici-dlgs36
   area: appalti-opere-pubbliche
   title: Modifiche del contratto e varianti in corso d'opera (D.Lgs. 36/2023 art. 120)
@@ -964,24 +1019,24 @@ skills:
   - art-25-septies
   - art-30-dlgs81
   - responsabilita-enti
-- id: negoziazione-assistita-dl132
-  area: forense
-  title: Negoziazione assistita da avvocati - D.L. 132/2014 (artt. 2-5)
-  summary: 'Negoziazione assistita da avvocati (D.L. 132/2014): convenzione - termine 1-3 mesi, forma scritta (art. 2), condizione
-    di procedibilita'' per danni da circolazione e pagamenti <= 50.000 euro (art. 3), invito e mancato accordo (art. 4), esecutivita''
-    dell''accordo (art. 5).'
+- id: movimentazione-manuale-carichi-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Movimentazione manuale dei carichi (MMC) - D.Lgs. 81/2008 Titolo VI
+  summary: 'Obblighi sulla movimentazione manuale dei carichi (D.Lgs. 81/2008 Titolo VI, artt. 167-169): campo e definizioni
+    (art. 167), obblighi del datore - evitare/ridurre, valutazione, sorveglianza sanitaria (art. 168), informazione/formazione/addestramento
+    (art. 169).'
   normative_refs:
-  - D.L. 12/9/2014 n. 132 (conv. L. 162/2014) - artt. 2 (convenzione) e 3 (condizione di procedibilita')
-  - D.L. 12/9/2014 n. 132 (conv. L. 162/2014) - artt. 4 (invito e mancato accordo) e 5 (esecutivita' dell'accordo)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 167 (campo di applicazione e definizioni) e 168 (obblighi del datore di lavoro)
+  - D.Lgs. 9/4/2008 n. 81 - art. 169 (informazione, formazione e addestramento) + Allegato XXXIII (rinvio)
   version: 0.1.0-alpha
   status: alpha
   tags:
-  - dl-132-2014
-  - negoziazione-assistita
-  - adr
-  - condizione-procedibilita
-  - avvocati
-  - forense
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - movimentazione-manuale-carichi
+  - sovraccarico-biomeccanico
+  - sorveglianza-sanitaria
+  - ergonomia
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)
@@ -1339,6 +1394,24 @@ skills:
   - rsia
   - dlgs-35-2011
   - strade
+- id: rup-responsabile-unico-progetto-dlgs36
+  area: appalti-opere-pubbliche
+  title: Responsabile unico del progetto (RUP) - D.Lgs. 36/2023 art. 15
+  summary: 'Inquadra il Responsabile unico del progetto - RUP (D.Lgs. 36/2023 art. 15): nomina e requisiti allegato I.2 (c.1-2),
+    nominativo nel bando (c.3), unicita'' e modelli organizzativi (c.4), compiti e supporto (c.5-6), formazione (c.7), incompatibilita''
+    contraente generale/PPP (c.8).'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - art. 15 c. 1-4 (nomina, requisiti, indicazione nel bando, unicita' e modelli organizzativi)
+  - D.Lgs. 31/3/2023 n. 36 - art. 15 c. 5-9 (compiti, struttura di supporto, formazione, incompatibilita', centrali di committenza)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - contratti-pubblici
+  - rup
+  - stazione-appaltante
+  - responsabile-procedimento
+  - allegato-i2
 - id: scarichi-emissioni-dlgs152
   area: ambiente-territorio-mobilita
   title: Autorizzazione scarichi ed emissioni - D.Lgs. 152/2006 (artt. 124, 269)
@@ -1390,6 +1463,25 @@ skills:
   - dpr-380-2001
   - sportello-unico-edilizia
   - edilizia
+- id: servitu-coattive-prediali-cc
+  area: forense
+  title: Servitù coattive - passaggio, acquedotto, elettrodotto (c.c. artt. 1027-1057)
+  summary: 'Supporta l''ingegnere/geometra/CTU sulle servitù coattive (c.c.): localizzazione dell''accesso del fondo intercluso
+    (1051-1052), acquedotto (1033) ed elettrodotto (1056) coattivi, nozione e costituzione con indennità (1027-1032). Non
+    redige atti né esegue la stima.'
+  normative_refs:
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1027, 1031, 1032, 1033 (nozione, costituzione, acquedotto coattivo)
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1051, 1052, 1053, 1055, 1056, 1057 (passaggio, indennità, cessazione, elettrodotto,
+    vie funicolari)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-civile
+  - servitu-prediali
+  - passaggio-coattivo
+  - elettrodotto
+  - acquedotto-coattivo
+  - forense
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
@@ -1425,6 +1517,25 @@ skills:
   - dlgs-81-2008
   - idoneita-alla-mansione
   - visite-mediche
+- id: sottoprodotti-end-of-waste-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Sottoprodotti ed End of Waste (D.Lgs. 152/2006 artt. 184-bis, 184-ter)
+  summary: 'Inquadra sottoprodotto (art. 184-bis D.Lgs. 152/2006) ed End of Waste (art. 184-ter): le 4 condizioni del sottoprodotto,
+    la cessazione della qualifica di rifiuto dopo recupero, i criteri UE/DM, le autorizzazioni 208/209/211 con parere ISPRA/ARPA,
+    registro RECER e Nucleo NEW.'
+  normative_refs:
+  - 'D.Lgs. 3/4/2006 n. 152 - art. 184-bis (Sottoprodotto: quattro condizioni cumulative, criteri con DM)'
+  - 'D.Lgs. 3/4/2006 n. 152 - art. 184-ter (Cessazione della qualifica di rifiuto/End of Waste: condizioni, criteri, autorizzazioni,
+    RECER, NEW)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-152-2006
+  - rifiuti
+  - sottoprodotto
+  - end-of-waste
+  - economia-circolare
+  - ambiente
 - id: specifiche-tecniche-ict-appalti-dlgs36
   area: appalti-opere-pubbliche
   title: Specifiche tecniche ed acquisizione ICT negli appalti PA - D.Lgs. 36/2023 + CAD
@@ -1725,6 +1836,24 @@ skills:
   - valutazione-impatto-ambientale
   - screening-assoggettabilita
   - studio-impatto-ambientale
+- id: videoterminali-vdt-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Uso di videoterminali (VDT) - D.Lgs. 81/2008 Titolo VII (artt. 172-177)
+  summary: 'Obblighi sull''uso di videoterminali - VDT (D.Lgs. 81/2008 Titolo VII): campo ed esclusioni (172), videoterminalista
+    20 ore/settimana (173), obblighi del datore e allegato XXXIV (174), pause 15 min/120 (175), sorveglianza sanitaria (176),
+    informazione e formazione (177).'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 172-174 (campo, definizioni, obblighi del datore, allegato XXXIV)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 175-177 (pause, sorveglianza sanitaria, informazione e formazione)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - videoterminali
+  - videoterminalista
+  - sorveglianza-sanitaria
+  - ergonomia
 - id: vigilanza-sanzioni-abusi-edilizi-dpr380
   area: edilizia-urbanistica-catasto
   title: Vigilanza e sanzioni per abusi edilizi (DPR 380/2001, Titolo IV)

@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Movimentazione manuale dei carichi (D.Lgs. 81/2008 Titolo VI, artt. 167-169)"
+short_description: Supporto documentale all'inquadramento degli obblighi in materia di movimentazione manuale dei carichi (MMC) secondo il D.Lgs. 81/2008, Titolo VI. Stabilisce il campo di applicazione e le definizioni (MMC come trasporto/sostegno di un carico - sollevare, deporre, spingere, tirare, portare, spostare - con rischi di patologie da sovraccarico biomeccanico dorso-lombari; art. 167), gli obblighi del datore di lavoro (evitare la MMC con attrezzature meccaniche; se non evitabile, misure organizzative e mezzi adeguati tenendo conto dell'allegato XXXIII: organizzazione dei posti, valutazione anche in progettazione, riduzione dei rischi in base ai fattori individuali/ambiente/esigenze, sorveglianza sanitaria ex art. 41; norme tecniche come criteri; art. 168) e l'informazione, la formazione e l'addestramento (art. 169). NON calcola l'indice di sollevamento ne' la massa di riferimento (Allegato XXXIII, ISO 11228), non redige il DVR-MMC, non sostituisce il datore di lavoro, l'RSPP o il medico competente.
+default_prompt: |
+  Un'attivita' lavorativa rientra nella movimentazione manuale dei carichi (art. 167 D.Lgs. 81/2008)?
+  Quali obblighi ha il datore di lavoro - evitare con mezzi meccanici, valutare, ridurre, sorveglianza
+  sanitaria (art. 168)? Quali informazione, formazione e addestramento per i lavoratori (art. 169)?

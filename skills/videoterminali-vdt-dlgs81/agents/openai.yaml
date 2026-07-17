@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Uso di videoterminali - VDT (D.Lgs. 81/2008 Titolo VII, artt. 172-177)"
+short_description: Supporto documentale agli obblighi in materia di uso di attrezzature munite di videoterminali (VDT) secondo il D.Lgs. 81/2008, Titolo VII. Stabilisce il campo di applicazione e le esclusioni (posti di guida, sistemi a bordo, uso prioritario del pubblico, calcolatrici/registratori di cassa, videoscrittura senza schermo separato - art. 172), le definizioni (videoterminale, posto di lavoro, e il lavoratore/videoterminalista come chi usa il VDT in modo sistematico o abituale per 20 ore settimanali dedotte le interruzioni - art. 173), gli obblighi del datore (analisi dei posti per rischi vista/occhi, postura/affaticamento, ergonomia/igiene; misure; requisiti minimi dell'allegato XXXIV - art. 174), le pause (in assenza di contrattazione, 15 minuti ogni 120 minuti di applicazione continuativa, non cumulabili a inizio/fine turno, la pausa e' parte dell'orario - art. 175), la sorveglianza sanitaria per rischi vista/occhi e muscolo-scheletrico con periodicita' biennale o quinquennale e i dispositivi di correzione visiva a carico del datore (art. 176) e l'informazione e formazione (art. 177). NON redige il DVR-VDT, non riproduce l'allegato XXXIV, non esprime giudizi di sorveglianza sanitaria, non sostituisce il datore di lavoro, l'RSPP o il medico competente.
+default_prompt: |
+  Un lavoratore che usa il computer molte ore a settimana e' un "videoterminalista" (art. 173 D.Lgs.
+  81/2008)? Che pause gli spettano (art. 175, 15 min ogni 120)? Quali obblighi ha il datore (art. 174,
+  allegato XXXIV) e con quale periodicita' va la sorveglianza sanitaria (art. 176)?
