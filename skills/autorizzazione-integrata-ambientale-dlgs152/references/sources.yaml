@@ -1,0 +1,44 @@
+schema_version: 1
+skill: autorizzazione-integrata-ambientale-dlgs152
+last_verified: 2026-07-17
+
+# Fonte per l'AUTORIZZAZIONE INTEGRATA AMBIENTALE (AIA/IPPC): domanda, procedura di rilascio,
+# contenuto e condizioni (VLE su BAT, monitoraggio), rinnovo e riesame, rispetto delle condizioni
+# e controlli/ispezioni. Fonte: D.Lgs. 3 aprile 2006, n. 152, Parte II, Titolo III-bis.
+
+sources:
+  - id: dlgs-152-2006-aia-titolo3bis
+    title: "D.Lgs. 3 aprile 2006, n. 152 - Parte II, Titolo III-bis, artt. 29-ter, 29-quater, 29-sexies, 29-octies, 29-decies (AIA) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: c2175fe5c9313db1087d444b07e71d727154140d579ffcf6357ababa5d57b45c
+    license: public-domain
+    binary_path: not_in_repo/dlgs152_17.html
+    md_path: references/fonti/dlgs-152-2006-aia-titolo3bis.md
+    excerpt_path: references/estratti/aia-checklist.md
+    notes: |
+      Codice redazionale 006G0171 (G.U. 14 aprile 2006). Pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: c2175fe5...). Articoli caricati via AJAX
+      (caricaArticolo, idGruppo 9, dataPubblicazioneGazzetta 2006-04-14) e trascritti verbatim in
+      references/fonti/dlgs-152-2006-aia-titolo3bis.md:
+      - Art. 29-ter (idSottoArticolo 3, v3): domanda di AIA (contenuti a-m: descrizione
+        installazione/attività, materie prime, emissioni, BAT proposte, relazione di riferimento per
+        sostanze pericolose; verifica di completezza entro 30 gg, integrazioni).
+      - Art. 29-quater (idSottoArticolo 4, v4): procedura per il rilascio (autorità competente,
+        pubblicazione/deposito, osservazioni del pubblico, conferenza di servizi, coordinamento con
+        VIA, termini, coordinamento con altre autorizzazioni assorbite).
+      - Art. 29-sexies (idSottoArticolo 6, v5): contenuto e condizioni dell'AIA (VLE basati sulle
+        BAT/conclusioni sulle BAT senza prescrivere tecniche, monitoraggio e autocontrollo, deroghe
+        motivate, riferimento alle norme di qualità ambientale).
+      - Art. 29-octies (idSottoArticolo 8, v2): rinnovo e riesame (riesame periodico; riesame entro 4
+        anni dalla pubblicazione delle nuove conclusioni sulle BAT; casi di riesame).
+      - Art. 29-decies (idSottoArticolo 10, v5): rispetto delle condizioni (comunicazione di
+        attuazione; autocontrolli del gestore; accertamenti ISPRA/ARPA; ispezioni ordinarie con
+        periodicità basata sul rischio - max 1/3 anni, 6 mesi dopo grave inosservanza; inosservanze:
+        diffida, diffida con sospensione, revoca e chiusura).
+      LIMITE DI RESA (Regola zero): gli Allegati VIII e XII (elenco delle attività IPPC e soglie) e i
+      BREF/conclusioni sulle BAT sono tabellari/esterni e non riprodotti; artt. 5 (definizioni:
+      installazione, gestore, modifica sostanziale), 6 c. 12-16, 29-bis, 29-quinquies, 29-septies,
+      29-novies, 29-undecies, 29-quattuordecies (sanzioni) citati e non trascritti. La skill inquadra
+      procedura/contenuto/controlli e non redige la domanda/AIA né individua le BAT applicabili.

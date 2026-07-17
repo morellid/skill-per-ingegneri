@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 16
+  count: 17
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -119,6 +119,24 @@ skills:
   - autorizzazione-ambientale
   - pmi
   - suap
+- id: autorizzazione-integrata-ambientale-dlgs152
+  area: ambiente-territorio-mobilita
+  title: 'Autorizzazione Integrata Ambientale: procedura e controlli (D.Lgs 152/2006)'
+  summary: 'Autorizzazione Integrata Ambientale (AIA/IPPC - D.Lgs 152/2006, Titolo III-bis): domanda (art. 29-ter), procedura
+    (art. 29-quater), contenuto e VLE su BAT (art. 29-sexies), rinnovo e riesame (art. 29-octies), controlli e ispezioni ISPRA/ARPA
+    (art. 29-decies). Non redige l''AIA.'
+  normative_refs:
+  - D.Lgs. 3 aprile 2006, n. 152 - Parte II, Titolo III-bis, artt. 29-ter, 29-quater, 29-sexies, 29-octies, 29-decies
+  - 'Richiamati: Allegati VIII/XII (attività IPPC), conclusioni sulle BAT/BREF, artt. 5, 6, 29-septies, 29-quattuordecies
+    (sanzioni)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - aia
+  - ippc
+  - dlgs-152-2006
+  - autorizzazione-ambientale
+  - bat
 - id: autorizzazione-paesaggistica-semplificata-dpr31
   area: edilizia-urbanistica-catasto
   title: 'Autorizzazione paesaggistica: esclusa/semplificata/ordinaria (DPR 31/2017)'

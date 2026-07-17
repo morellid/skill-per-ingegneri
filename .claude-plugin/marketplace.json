@@ -116,7 +116,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 16 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 17 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -126,6 +126,7 @@
       "category": "ambiente-territorio-mobilita",
       "skills": [
         "./aua-dpr59-dossier",
+        "./autorizzazione-integrata-ambientale-dlgs152",
         "./bonifica-siti-contaminati-dlgs152",
         "./cbam-declarant-trimestrale",
         "./consulente-adr-dlgs40",

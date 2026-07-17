@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Autorizzazione Integrata Ambientale (AIA): procedura e controlli (D.Lgs 152/2006)"
+short_description: Supporto documentale all'Autorizzazione Integrata Ambientale (AIA/IPPC) secondo il D.Lgs. 3 aprile 2006, n. 152, Parte II, Titolo III-bis. Inquadra la domanda di AIA e i suoi contenuti (descrizione di installazione e attività, emissioni, tecniche, rifiuti, relazione di riferimento per le sostanze pericolose, completezza entro 30 giorni - art. 29-ter), la procedura per il rilascio (avvio entro 30 giorni, pubblicazione entro 15 giorni, osservazioni entro 30 giorni, conferenza di servizi, integrazioni entro 90 giorni, determinazione entro 150 giorni, coordinamento con la VIA - art. 29-quater), il contenuto e le condizioni (valori limite di emissione basati sulle migliori tecniche disponibili senza obbligo di una tecnica specifica, entro i livelli associati alle BAT, monitoraggio, deroghe motivate - art. 29-sexies), il rinnovo e riesame (nuove conclusioni sulle BAT, riesame decennale - art. 29-octies) e il rispetto delle condizioni con controlli e ispezioni di ISPRA e ARPA e provvedimenti in caso di inosservanza (diffida, sospensione, revoca e chiusura - art. 29-decies). NON redige la domanda o l'AIA, non individua le BAT applicabili, non riproduce gli Allegati VIII/XII o i BREF e non sostituisce il gestore, l'autorità competente o ISPRA/ARPA.
+default_prompt: |
+  Gestisco un'installazione industriale (attività IPPC): devo chiedere l'Autorizzazione Integrata
+  Ambientale (AIA) secondo il D.Lgs. 152/2006? Cosa deve contenere la domanda, quali sono i tempi
+  della procedura, come sono fissati i valori limite di emissione (BAT), ogni quanto avvengono i
+  controlli e cosa succede in caso di inosservanza?
