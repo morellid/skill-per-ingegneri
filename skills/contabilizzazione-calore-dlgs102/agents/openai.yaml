@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Contabilizzazione del calore e ripartizione delle spese (D.Lgs. 102/2014 art. 9 c. 5)"
+short_description: Supporto documentale all'inquadramento degli obblighi di contabilizzazione del calore e di ripartizione delle spese negli edifici/condomini con impianto centralizzato o teleriscaldamento, ai sensi del D.Lgs. 102/2014, art. 9, comma 5. Individua il contatore di fornitura allo scambiatore/punto di fornitura (lett. a), i sotto-contatori per unita' immobiliare ove tecnicamente possibile ed efficiente in termini di costi con la metodologia UNI EN 15459 e con esenzioni in relazione tecnica (lett. b), in alternativa i sistemi di termoregolazione e contabilizzazione individuali per corpo scaldante (lett. c) e la ripartizione delle spese con quota di almeno il 50% ai prelievi volontari e quota residua per millesimi/superfici/volumi/potenze (UNI 10200) (lett. d), oltre alla lettura da remoto entro il 1 gennaio 2027 (c. 5-bis), al divieto di deroga per le nuove costruzioni (c. 5-ter) e alla guida ENEA per differenze di fabbisogno > 50% (c. 5-quater). NON calcola i millesimi termici ne' le quote (UNI 10200/EN 15459), non redige la relazione tecnica di esenzione ne' la tabella di ripartizione, non sostituisce il progettista/termotecnico ne' l'amministratore.
+default_prompt: |
+  In un condominio con riscaldamento centralizzato: quali obblighi di contabilizzazione del calore si
+  applicano (contatore di fornitura, sotto-contatori o ripartitori; art. 9 c. 5 D.Lgs. 102/2014)? Come
+  si ripartiscono le spese (quota >= 50% ai prelievi volontari e quota residua, UNI 10200)? Cosa fare se
+  i sotto-contatori non sono installabili?

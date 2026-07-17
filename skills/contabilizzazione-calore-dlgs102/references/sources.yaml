@@ -1,0 +1,34 @@
+schema_version: 1
+skill: contabilizzazione-calore-dlgs102
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento degli obblighi di contabilizzazione del calore e di
+# ripartizione delle spese negli edifici/condomini con impianto centralizzato o
+# teleriscaldamento (art. 9, comma 5, del decreto di efficienza energetica).
+
+sources:
+  - id: dlgs-102-2014-art-9
+    title: "D.Lgs. 4 luglio 2014, n. 102 - art. 9 (Misurazione e fatturazione dei consumi energetici) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill energia: diagnosi-energetica-dlgs102).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2014-07-04;102!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: a98de115bcdf02e510241c305ff1903e64b83f2e76b62580cdc8857ef1b3c925
+    license: public-domain
+    binary_path: not_in_repo/dlgs102_idx.html
+    md_path: references/fonti/dlgs-102-2014-art-9.md
+    excerpt_path: references/estratti/contabilizzazione-calore-checklist.md
+    notes: |
+      Codice redazionale 14G00113, GU n. 165 del 18/7/2014 (attuazione della
+      direttiva 2012/27/UE). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download). L'articolo 9 (Misurazione e
+      fatturazione dei consumi energetici) e' caricato via AJAX (caricaArticolo:
+      versione 8, idGruppo 2, flagTipoArticolo 0, codiceRedazionale 14G00113,
+      dataPubblicazioneGazzetta 2014-07-18) e trascritto verbatim in
+      references/fonti/dlgs-102-2014-art-9.md. Il nucleo operativo della skill e' il
+      comma 5 (contabilizzazione del calore e ripartizione delle spese) e i commi
+      5-bis/5-ter/5-quater; i commi 1-4 (sistemi di misurazione intelligenti) sono
+      riprodotti ma demandati a provvedimenti ARERA. Le norme tecniche UNI 10200
+      (ripartizione) e UNI EN 15459 (efficienza in termini di costi) sono citate come
+      rinvio e NON riprodotte (standard a pagamento).

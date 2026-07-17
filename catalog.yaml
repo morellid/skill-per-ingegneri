@@ -22,7 +22,7 @@ areas:
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 6
+  count: 7
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
@@ -420,6 +420,24 @@ skills:
   - consulente-adr
   - dgsa
   - trasporti
+- id: contabilizzazione-calore-dlgs102
+  area: energia-incentivi
+  title: Contabilizzazione del calore e ripartizione delle spese - D.Lgs. 102/2014 art. 9
+  summary: 'Contabilizzazione del calore e ripartizione spese in condomini centralizzati/teleriscaldati (D.Lgs. 102/2014 art.
+    9 c. 5): contatore di fornitura, sotto-contatori (UNI EN 15459) o ripartitori, quota >= 50% ai prelievi volontari e residua
+    UNI 10200; lettura da remoto.'
+  normative_refs:
+  - D.Lgs. 4/7/2014 n. 102 - art. 9 c. 5 (contabilizzazione del calore e ripartizione delle spese)
+  - D.Lgs. 4/7/2014 n. 102 - art. 9 cc. 5-bis, 5-ter, 5-quater (lettura da remoto, nuove costruzioni, guida ENEA)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-102-2014
+  - contabilizzazione-calore
+  - ripartizione-spese
+  - condominio
+  - efficienza-energetica
+  - teleriscaldamento
 - id: contributo-costruzione-dpr380
   area: edilizia-urbanistica-catasto
   title: 'Contributo di costruzione: oneri e costo di costruzione (DPR 380/2001)'
