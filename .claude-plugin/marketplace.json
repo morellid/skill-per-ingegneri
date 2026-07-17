@@ -64,7 +64,7 @@
     {
       "name": "edilizia-urbanistica-catasto",
       "source": "./skills",
-      "description": "Edilizia, urbanistica & catasto - 14 skill verticali su normative italiane.",
+      "description": "Edilizia, urbanistica & catasto - 15 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -80,6 +80,7 @@
         "./definizioni-interventi-edilizi-dpr380",
         "./denuncia-opere-strutturali-l1086",
         "./distanze-legali-costruzioni-cc",
+        "./edilizia-libera-cila-scia-dpr380",
         "./fattibilita-idraulica-toscana-lr41",
         "./modulistica-edilizia-unificata",
         "./permesso-costruire-dpr380",
