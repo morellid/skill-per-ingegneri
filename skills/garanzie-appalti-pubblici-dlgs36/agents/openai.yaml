@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Garanzie negli appalti pubblici: provvisoria e definitiva (D.Lgs. 36/2023, artt. 106, 117)"
+short_description: Supporto documentale all'inquadramento delle garanzie negli appalti pubblici secondo il D.Lgs. 36/2023, artt. 106 e 117. Distingue la garanzia provvisoria a corredo dell'offerta (art. 106 - 2% del valore, riducibile all'1% o incrementabile al 4%, forme cauzione/fideiussione, requisiti di rinuncia alla preventiva escussione e all'eccezione ex art. 1957 c.c., operativita' 15 giorni ed efficacia >= 180 giorni, cosa copre, riduzioni per qualita', PMI, fideiussione digitale e certificazioni all. II.13, svincolo automatico) dalla garanzia definitiva (art. 117 - 10% dell'importo contrattuale, maggiorazione per ribassi > 10% e > 20%, oggetto e durata fino al collaudo/CRE, svincolo progressivo fino all'80%, sostituzione con ritenuta nei lavori, escussione, coperture assicurative CAR e RCT, polizza decennale postuma e schemi tipo). NON calcola gli importi del caso concreto, non redige le fideiussioni/polizze ne' gli schemi tipo (DM), non sostituisce la stazione appaltante, il RUP, il garante o l'operatore economico.
+default_prompt: |
+  In un appalto pubblico: qual e' l'importo e quali riduzioni si applicano alla garanzia provvisoria
+  (art. 106 D.Lgs. 36/2023)? E per la garanzia definitiva (art. 117), come incide il ribasso sull'importo,
+  fino a che punto si svincola durante l'esecuzione e quali coperture assicurative servono per i lavori?

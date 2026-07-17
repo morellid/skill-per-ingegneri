@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 6
+  count: 7
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -515,6 +515,24 @@ skills:
   - cybersecurity-pa
   - circolare-agid-2-2017
   - gap-analysis
+- id: garanzie-appalti-pubblici-dlgs36
+  area: appalti-opere-pubbliche
+  title: 'Garanzie negli appalti pubblici: provvisoria e definitiva - D.Lgs. 36/2023'
+  summary: 'Garanzia provvisoria (art. 106: 2%, riducibile all''1% o al 4%; forme, requisiti, riduzioni, svincolo) e garanzia
+    definitiva (art. 117: 10%, maggiorazione per ribassi, svincolo progressivo all''80%, polizze CAR/RCT/decennale) negli
+    appalti pubblici, D.Lgs. 36/2023.'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - art. 106 (garanzia provvisoria - garanzie per la partecipazione alla procedura)
+  - D.Lgs. 31/3/2023 n. 36 - art. 117 (garanzie definitive e coperture assicurative)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - codice-contratti-pubblici
+  - garanzia-provvisoria
+  - garanzia-definitiva
+  - fideiussione
+  - polizze-assicurative
 - id: gdpr-registro-dpia
   area: software-dati-cybersecurity
   title: GDPR Registro + DPIA
