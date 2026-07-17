@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Vigilanza e sanzioni per abusi edilizi (DPR 380/2001, Titolo IV)"
+short_description: Supporto documentale al regime repressivo degli abusi edilizi secondo il D.P.R. 6 giugno 2001, n. 380 (T.U. Edilizia), Titolo IV, artt. 27, 31, 33, 34, 44. Inquadra la vigilanza sull'attività urbanistico-edilizia con l'ordine di sospensione dei lavori, i provvedimenti definitivi entro 45 giorni, il sequestro del cantiere entro 15 giorni e la demolizione d'ufficio in aree vincolate (art. 27), gli interventi in assenza di permesso, in totale difformità o con variazioni essenziali con ingiunzione a demolire, termine di 90 giorni prorogabile a 240, acquisizione gratuita al patrimonio del Comune, sanzione da 2.000 a 20.000 euro e demolizione a spese dei responsabili (art. 31), la ristrutturazione edilizia abusiva con rimozione o sanzione pari al doppio dell'aumento di valore (art. 33), gli interventi in parziale difformità con demolizione o sanzione pari al triplo del costo di produzione o del valore venale (art. 34) e le sanzioni penali con ammenda e arresto (art. 44). NON adotta i provvedimenti, non quantifica le sanzioni, non tratta la sanatoria/accertamento di conformità (artt. 36/36-bis) e non sostituisce il Comune/SUE, il tecnico o il legale.
+default_prompt: |
+  È stato realizzato un intervento edilizio senza titolo o in difformità dal permesso: qual è il regime
+  sanzionatorio del D.P.R. 380/2001 (Titolo IV)? Che ordini emette il Comune, con quali termini per la
+  demolizione, quando scatta l'acquisizione gratuita e quali sono le sanzioni amministrative e penali?

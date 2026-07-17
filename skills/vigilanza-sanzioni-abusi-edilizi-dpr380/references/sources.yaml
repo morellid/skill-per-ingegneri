@@ -1,0 +1,47 @@
+schema_version: 1
+skill: vigilanza-sanzioni-abusi-edilizi-dpr380
+last_verified: 2026-07-17
+
+# Fonte per il regime REPRESSIVO degli abusi edilizi: vigilanza, ordine di demolizione e acquisizione
+# gratuita, ristrutturazione abusiva, parziale difformità, sanzioni penali. Fonte: D.P.R. 6 giugno
+# 2001, n. 380, Titolo IV, artt. 27, 31, 33, 34, 44. NON copre la sanatoria (artt. 36/36-bis).
+
+sources:
+  - id: dpr-380-2001-artt-27-31-33-34-44
+    title: "D.P.R. 6 giugno 2001, n. 380 - artt. 27, 31, 33, 34, 44 (vigilanza e sanzioni per abusi edilizi) (testo vigente al 2026-07-17)"
+    type: dpr
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: bac3f7b170cfd122936873c835b3f728e7880d058bd98ad45f55b94ba89a632f
+    license: public-domain
+    binary_path: not_in_repo/dpr380_17.html
+    md_path: references/fonti/dpr-380-2001-artt-27-31-33-34-44.md
+    excerpt_path: references/estratti/abusi-edilizi-checklist.md
+    notes: |
+      Codice redazionale 001G0429 (G.U. 20 ottobre 2001). Pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: bac3f7b1...). Articoli caricati via AJAX
+      (caricaArticolo, dataPubblicazioneGazzetta 2001-10-20) e trascritti verbatim in
+      references/fonti/dpr-380-2001-artt-27-31-33-34-44.md:
+      - Art. 27 (idGruppo 8, v3): vigilanza sull'attività urbanistico-edilizia; sospensione dei lavori
+        con provvedimenti definitivi entro 45 gg e possibile sequestro del cantiere entro 15 gg su
+        ordinanza del sindaco; demolizione/ripristino d'ufficio in aree vincolate (Soprintendente
+        decorsi 180 gg).
+      - Art. 31 (idGruppo 9, v8): interventi in assenza/totale difformità/variazioni essenziali;
+        ingiunzione a demolire, termine 90 gg (proroga fino a 240 gg in casi tassativi), acquisizione
+        gratuita al patrimonio comunale (area non oltre 10 volte la superficie utile abusiva),
+        sanzione amministrativa 2.000-20.000 euro (c. 4-bis, sempre massima nelle aree del c. 2 art.
+        27 e a rischio idrogeologico), demolizione a spese dei responsabili, ordine di demolizione del
+        giudice con la condanna ex art. 44.
+      - Art. 33 (idGruppo 9, v4): ristrutturazione edilizia (art. 10) in assenza/totale difformità:
+        rimozione/demolizione o, se il ripristino non è possibile, sanzione pari al doppio dell'aumento
+        di valore; contributo di costruzione comunque dovuto; regimi per immobili vincolati/zone A.
+      - Art. 34 (idGruppo 9, v8): parziale difformità: rimozione/demolizione o, quando non possibile
+        senza pregiudizio della parte conforme, sanzione pari al triplo del costo di produzione (uso
+        residenziale) o del valore venale (usi diversi).
+      - Art. 44 (idGruppo 9, v5): sanzioni penali (ammenda fino a 10.329 euro; arresto fino a 2 anni e
+        ammenda 5.164-51.645 euro per totale difformità/assenza; lottizzazione abusiva e confisca).
+      LIMITE DI RESA (Regola zero): la SANATORIA / accertamento di conformità (artt. 36, 36-bis) e le
+      tolleranze (art. 34-bis) NON sono trattate (cfr. modulistica-edilizia-unificata, Salva Casa); gli
+      artt. 30 (lottizzazione), 32 (variazioni essenziali) e la disciplina regionale sono citati e non
+      trascritti. La skill inquadra il regime e i termini, non adotta i provvedimenti né quantifica le
+      sanzioni.

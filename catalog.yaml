@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 11
+  count: 12
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -1564,3 +1564,21 @@ skills:
   - valutazione-impatto-ambientale
   - screening-assoggettabilita
   - studio-impatto-ambientale
+- id: vigilanza-sanzioni-abusi-edilizi-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Vigilanza e sanzioni per abusi edilizi (DPR 380/2001, Titolo IV)
+  summary: 'Regime repressivo degli abusi edilizi (DPR 380/2001, Titolo IV): vigilanza (art. 27), assenza/totale difformità
+    con demolizione e acquisizione (art. 31), ristrutturazione abusiva (art. 33), parziale difformità (art. 34), sanzioni
+    penali (art. 44). Non tratta la sanatoria.'
+  normative_refs:
+  - D.P.R. 6 giugno 2001, n. 380 - Titolo IV, artt. 27, 31, 33, 34, 44
+  - 'Richiamati: artt. 30 (lottizzazione), 32 (variazioni essenziali), 36/36-bis (sanatoria, NON trattata), 44; disciplina
+    regionale'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - abusi-edilizi
+  - demolizione
+  - vigilanza-edilizia
+  - dpr-380-2001
+  - edilizia
