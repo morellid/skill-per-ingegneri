@@ -1,10 +1,10 @@
 ---
 name: comunione-ordinaria-cc
-description: "Supporto documentale all'inquadramento della comunione ordinaria (comproprietà di beni: terreni, immobili, cose comuni) nel Codice civile (R.D. 262/1942, Libro III, Titolo VII, Capo I), artt. 1100-1116. Aiuta a inquadrare le norme regolatrici applicabili se titolo o legge non dispongono diversamente (art. 1100); le quote presunte eguali e il concorso in vantaggi e pesi in proporzione (art. 1101); l'uso della cosa comune da parte di ciascun partecipante purché non ne alteri la destinazione né impedisca agli altri il pari uso (art. 1102); la disposizione della quota (art. 1103); gli obblighi di contribuzione alle spese di conservazione e godimento, con facoltà di rinunzia liberatoria e solidarietà del cessionario (art. 1104); l'amministrazione con deliberazioni della maggioranza calcolata per valore delle quote, la preventiva informazione e il ricorso all'autorità giudiziaria (art. 1105); il regolamento della comunione e la nomina di un amministratore anche estraneo (art. 1106); l'impugnazione del regolamento entro trenta giorni (art. 1107); le innovazioni e gli atti eccedenti l'ordinaria amministrazione con maggioranza dei due terzi del valore e il consenso unanime per alienazioni, diritti reali e locazioni ultra-novennali (art. 1108); l'impugnazione delle deliberazioni entro trenta giorni a pena di decadenza (art. 1109); il rimborso delle spese necessarie (art. 1110); lo scioglimento della comunione sempre domandabile e il patto di indivisione entro dieci anni (art. 1111); le cose non soggette a divisione, l'intervento dei creditori, la divisione in natura, le obbligazioni solidali e il rinvio alle norme sulla divisione ereditaria (artt. 1112-1116). Use when an engineer, co-owner, or administrator must frame the rights, decisions, expenses, majorities, or dissolution/division of jointly owned property under the Italian Civil Code; it is a documentary aid and does NOT draft acts, does NOT quantify shares or expenses, does NOT cover condominium (artt. 1117 ss.) nor marital communion, and does NOT replace a lawyer or CTU."
+description: "Supporto documentale all'ingegnere, al geometra e al tecnico incaricato (CTU/CTP o tecnico di parte) nei compiti tecnici che ruotano attorno alla comunione ordinaria di beni immobili (terreni, fabbricati, cose comuni) disciplinata dal Codice civile (R.D. 262/1942, Libro III, Titolo VII, Capo I), artt. 1100-1116. Il fulcro tecnico è la DIVISIONE: valutare se il bene è comodamente divisibile in parti corrispondenti alle quote (art. 1114), impostare il progetto di divisione in natura e, quando non è comodamente divisibile, inquadrare l'attribuzione con conguaglio o la vendita (rinvio alla divisione ereditaria, art. 1116). Inquadra inoltre il contesto in cui il tecnico opera: quote presunte eguali e concorso in vantaggi e pesi (art. 1101); uso della cosa comune senza alterarne la destinazione né impedire il pari uso (art. 1102); ripartizione delle spese di conservazione e godimento in proporzione alle quote (art. 1104); le maggioranze per l'amministrazione, per valore delle quote (art. 1105), per le innovazioni migliorative sulla cosa comune (opere, impianti) con i due terzi del valore e il consenso unanime per alienazioni, diritti reali e locazioni ultra-novennali (art. 1108); il rimborso delle spese necessarie di conservazione (art. 1110); lo scioglimento sempre domandabile e il patto di indivisione entro dieci anni (art. 1111); le cose non soggette a divisione (art. 1112) e l'intervento dei creditori (art. 1113). Use when an engineer, geometra, or court-appointed/party technical expert (CTU/CTP) must support the technical side of a jointly owned property matter under the Italian Civil Code - above all assessing comoda divisibilità and drafting the division project, or framing the majorities/expenses for works on the common asset; it is a documentary aid and does NOT draft legal acts, does NOT give legal advice, does NOT quantify the actual valuations or conguagli (that is the appraisal work itself), does NOT cover condominium (artt. 1117 ss.) nor marital communion, and does NOT replace the lawyer or the judge."
 license: MIT
 area: forense
-title: "Comunione ordinaria nel Codice civile (c.c. artt. 1100-1116)"
-summary: "Inquadra la comunione ordinaria (comproprietà) nel Codice civile (artt. 1100-1116): quote, uso della cosa comune, spese, amministrazione a maggioranza per valore, innovazioni (2/3) e consenso unanime, impugnazioni a 30 giorni, scioglimento e divisione. Non redige atti."
+title: "Comunione e divisione di beni immobili per il tecnico/CTU (c.c. artt. 1100-1116)"
+summary: "Supporta l'ingegnere/geometra/CTU sulla comunione ordinaria (c.c. artt. 1100-1116): comoda divisibilità e progetto di divisione in natura (art. 1114), scioglimento, maggioranze per innovazioni/opere sulla cosa comune (2/3), ripartizione spese per quote. Non redige atti legali."
 normative_refs:
   - "Codice civile (R.D. 16 marzo 1942, n. 262) - Libro III, Titolo VII, Capo I (Della comunione in generale), artt. 1100-1116"
   - "Rinvio (non riprodotti): artt. 1117 ss. c.c. (condominio, skill dedicata), artt. 177 ss. (comunione legale coniugi), artt. 713 ss. (divisione ereditaria, richiamata dall'art. 1116)"
@@ -18,22 +18,37 @@ tags:
   - amministrazione
 ---
 
-# Comunione ordinaria nel Codice civile (c.c. artt. 1100-1116)
+# Comunione e divisione di beni immobili per il tecnico/CTU (c.c. artt. 1100-1116)
 
 ## Quando usare questa skill
 
-Usala quando un **ingegnere, comproprietario o amministratore** deve **inquadrare** i diritti,
-le decisioni, le spese, le maggioranze o lo scioglimento di un **bene in comunione ordinaria**
-(comproprietà di terreni, immobili, cose comuni) secondo il **Codice civile** (R.D. 16 marzo
-1942, n. 262), Libro III, Titolo VII, **Capo I (Della comunione in generale)**, artt. 1100-1116:
+Usala quando un **ingegnere, geometra o tecnico incaricato** (CTU nominato dal giudice, CTP di
+parte, o professionista che redige una relazione di stima/divisione) deve **inquadrare il quadro
+civilistico** entro cui svolge i propri **compiti tecnici** su un **bene immobile in comunione
+ordinaria** (comproprietà di terreni, fabbricati, cose comuni), secondo il **Codice civile** (R.D.
+16 marzo 1942, n. 262), Libro III, Titolo VII, **Capo I (Della comunione in generale)**, artt.
+1100-1116.
 
-- **quote**, **uso** della cosa comune e **disposizione** della quota (artt. 1101-1103);
-- **spese**, **amministrazione**, **regolamento** e **innovazioni** (artt. 1104-1108);
-- **impugnazioni**, **scioglimento** e **divisione** (artt. 1107, 1109, 1111-1116).
+Il **compito tecnico** tipico e' la **divisione**:
+
+- valutare la **comoda divisibilita'** del bene in parti corrispondenti alle quote (art. 1114);
+- impostare il **progetto di divisione in natura** (lotti, quote, eventuali servitu' e accessi);
+- quando il bene **non e' comodamente divisibile**, inquadrare l'**attribuzione con conguaglio** o
+  la **vendita** (rinvio alle norme sulla divisione ereditaria, art. 1116).
+
+A supporto, la skill inquadra anche il **contesto** in cui il tecnico opera: **uso** e **spese**
+sulla cosa comune (artt. 1102, 1104), le **maggioranze** per le **innovazioni/opere e impianti**
+sulla cosa comune (art. 1108), lo **scioglimento** e i **diritti dei creditori** (artt. 1111-1113).
 
 Per la comunione **negli edifici** (**condominio**, parti comuni, assemblea, tabelle millesimali,
-artt. 1117 ss.) usa `condominio-parti-comuni-assemblea-cc`. Questa copre la **comunione ordinaria**
-(non condominiale) degli artt. 1100-1116.
+artt. 1117 ss.) usa `condominio-parti-comuni-assemblea-cc`; per la **relazione peritale** e
+l'**ATP** usa `relazione-peritale-ctu-cpc` e `accertamento-tecnico-preventivo-cpc`. Questa copre
+il quadro civilistico della **comunione ordinaria** (non condominiale) a supporto del tecnico.
+
+> **Nota di ruolo**: la skill **non da' consulenza legale** e **non redige atti** (l'atto di
+> divisione, la domanda giudiziale e le valutazioni di diritto restano dell'avvocato e del giudice).
+> Serve al **tecnico** per collocare correttamente la propria relazione (comoda divisibilita',
+> progetto di divisione, stima di lotti e conguagli) nel quadro degli artt. 1100-1116.
 
 ## Quote, uso e disposizione (artt. 1100-1103)
 
@@ -122,8 +137,10 @@ Dettaglio in `references/sources.yaml`, `references/fonti/cc-comunione-1100-1116
 
 ## Avvertenza
 
-Skill di **supporto documentale**: la redazione degli atti, la determinazione delle quote e delle
-spese, la valutazione dei beni e la gestione del contenzioso restano responsabilita' dei
-**partecipanti** e dei loro **consulenti legali/tecnici**, sul testo vigente degli artt. 1100 ss.
-La skill **non sostituisce** l'avvocato, il CTU ne' la lettura degli articoli del Codice civile e
-del titolo/regolamento della comunione.
+Skill di **supporto documentale** per il **tecnico** (ingegnere/geometra, CTU/CTP): inquadra il
+quadro civilistico entro cui redigere la relazione tecnica (comoda divisibilita', progetto di
+divisione, stima dei lotti e dei conguagli). La **consulenza legale**, la redazione dell'**atto di
+divisione**/della domanda giudiziale e le valutazioni di **diritto** restano dell'**avvocato** e
+del **giudice**; la **stima** in concreto e' l'oggetto della perizia stessa. La skill **non
+sostituisce** il tecnico incaricato, l'avvocato ne' la lettura degli artt. 1100 ss. e del titolo/
+regolamento della comunione.

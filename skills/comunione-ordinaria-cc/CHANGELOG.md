@@ -5,6 +5,13 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+- Riformulazione dell'inquadramento per **centrare il ruolo dell'ingegnere/geometra/CTU** (area
+  *CTU & ingegneria forense*): il fulcro e' il **compito tecnico della divisione** (comoda
+  divisibilità e progetto di divisione in natura, art. 1114; attribuzione/vendita se non
+  divisibile, art. 1116). Aggiornati `description`, `summary`, `title`, README, AGENTS, openai.yaml
+  per esplicitare che la skill serve al **tecnico** e non da' consulenza legale.
+
 ## [0.1.0-alpha] - 2026-07-17
 
 ### Added (closes #341)

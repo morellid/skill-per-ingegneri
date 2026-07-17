@@ -5,14 +5,18 @@
 
 ## Dominio
 
-Supporto documentale all'inquadramento della **comunione ordinaria** (comproprietà di beni:
-terreni, immobili, cose comuni) nel **Codice civile** (R.D. 262/1942), Libro III, Titolo VII,
-**Capo I (Della comunione in generale)**, artt. 1100-1116: quote, uso e disposizione, obblighi/
-spese, amministrazione, regolamento, innovazioni, impugnazioni, scioglimento e divisione. Target:
-ingegneri, comproprietari, amministratori.
+Supporto documentale per il **tecnico** (ingegnere/geometra, **CTU/CTP**) che opera su beni immobili
+in **comunione ordinaria** (comproprietà di terreni, fabbricati, cose comuni), disciplinata dal
+**Codice civile** (R.D. 262/1942), Libro III, Titolo VII, **Capo I (Della comunione in generale)**,
+artt. 1100-1116. **Fulcro tecnico**: la **divisione** - comoda divisibilità e progetto di divisione
+in natura (art. 1114), attribuzione con conguaglio/vendita se non divisibile (art. 1116). A supporto:
+uso, spese e maggioranze per le opere/innovazioni sulla cosa comune, scioglimento. Target: ingegneri,
+geometri, tecnici incaricati (CTU/CTP).
 
-**E' una skill documentale**: inquadra la disciplina; **non redige** atti, **non quantifica** quote/
-spese, non sostituisce l'avvocato/CTU.
+**E' una skill documentale per il tecnico**: inquadra il quadro civilistico entro cui redigere la
+relazione (comoda divisibilità, progetto di divisione, stima dei lotti); **non da' consulenza
+legale**, **non redige** atti (atto di divisione, domanda giudiziale) e **non sostituisce**
+l'avvocato/il giudice. La **stima** in concreto e' l'oggetto della perizia stessa.
 
 ## Nota sull'area e sulla complementarita'
 

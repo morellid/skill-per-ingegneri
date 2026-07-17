@@ -2,18 +2,23 @@
 
 > Versione: 0.1.0-alpha | Stato: in sviluppo (validazione Livello 1; Livello 2 con avvocato civilista / esperto di diritti reali da completare)
 
-Skill di **supporto documentale** all'inquadramento della **comunione ordinaria** (comproprietà di
-beni: terreni, immobili, cose comuni) nel **Codice civile (R.D. 262/1942)**, Libro III, Titolo VII,
-**Capo I (Della comunione in generale)**, artt. 1100-1116: quote, uso, spese, amministrazione,
-innovazioni, impugnazioni, scioglimento e divisione.
+Skill di **supporto documentale** per il **tecnico** (ingegnere, geometra, CTU/CTP) che opera su un
+**bene immobile in comunione ordinaria** (comproprietà di terreni, fabbricati, cose comuni),
+disciplinata dal **Codice civile (R.D. 262/1942)**, Libro III, Titolo VII, **Capo I (Della
+comunione in generale)**, artt. 1100-1116. Il fulcro è il **compito tecnico della divisione**:
+**comoda divisibilità** e **progetto di divisione in natura** (art. 1114), attribuzione con
+conguaglio o vendita quando il bene non è divisibile (art. 1116); a supporto, uso, spese e
+maggioranze per le opere sulla cosa comune, scioglimento.
 
-**Non redige atti** né quantifica quote/spese e **non sostituisce** l'avvocato né il CTU: inquadra
-la disciplina della comunione ordinaria.
+**Non dà consulenza legale**, **non redige atti** (atto di divisione, domanda giudiziale) e **non
+sostituisce** l'avvocato né il giudice: inquadra il quadro civilistico entro cui il tecnico redige
+la propria relazione.
 
 ## Target
 
-Ingegneri, comproprietari e amministratori che devono inquadrare diritti, decisioni, spese,
-maggioranze o lo scioglimento di un bene in comunione ordinaria.
+Ingegneri, geometri e tecnici incaricati (CTU nominati dal giudice, CTP di parte, professionisti che
+redigono relazioni di stima/divisione) che devono collocare la propria perizia (comoda divisibilità,
+progetto di divisione, stima dei lotti) nel quadro della comunione ordinaria.
 
 ## Cosa fa
 
