@@ -1,0 +1,45 @@
+schema_version: 1
+skill: autorizzazione-paesaggistica-ordinaria-dlgs42
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dell'AUTORIZZAZIONE PAESAGGISTICA (ordinaria) e della RELAZIONE
+# PAESAGGISTICA su immobili/aree tutelati: obbligo di autorizzazione preventiva, documentazione,
+# parere del soprintendente, procedura e termini, efficacia; accertamento di compatibilita'
+# paesaggistica postumo per interventi minori. Fonte: D.Lgs. 42/2004, artt. 146 e 167.
+
+sources:
+  - id: dlgs-42-2004-146-167
+    title: "D.Lgs. 22 gennaio 2004, n. 42 (Codice dei beni culturali e del paesaggio) - artt. 146, 167 (autorizzazione paesaggistica; accertamento di compatibilita') (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI. Codice dei beni
+    # culturali e del paesaggio (Codice Urbani). L'indice e' distinto da quello del DPR 31/2017
+    # (procedura semplificata) usato dalla skill autorizzazione-paesaggistica-semplificata-dpr31.
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2004-01-22;42!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 3693219b8efd59011035c112a0558a8cb5f2f4d2ec61a27cef03347a71b6a230
+    license: public-domain
+    binary_path: not_in_repo/d42-paesaggio-idx.html
+    md_path: references/fonti/dlgs-42-2004-146-167.md
+    excerpt_path: references/estratti/autorizzazione-paesaggistica-checklist.md
+    notes: |
+      Codice redazionale 004G0066. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile,
+      doppio download: 3693219b...). Art. 146 (versione 8, idGruppo 26) e art. 167 (versione 4,
+      idGruppo 29) caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-42-2004-146-167.md: obbligo di autorizzazione preventiva e astensione
+      dai lavori (art. 146 cc. 1-2); documentazione/relazione paesaggistica per la verifica di
+      compatibilita', schemi con DPCM (c. 3); atto autonomo e presupposto al permesso di costruire,
+      divieto di sanatoria salvo art. 167 cc. 4-5, efficacia 5 anni + 1 (c. 4); parere del
+      soprintendente vincolante/obbligatorio, termine 45 giorni (cc. 5, 8); competenza regione e
+      delega ai comuni (c. 6); procedura con verifica in 40 giorni, relazione tecnica illustrativa e
+      proposta (c. 7); silenzio del soprintendente a 60 giorni e potere sostitutivo (cc. 9-10);
+      trasmissione, impugnazione, elenco delle autorizzazioni (cc. 11-13); accertamento di
+      compatibilita' paesaggistica postumo per interventi minori (nessun volume/superficie utile,
+      materiali difformi, manutenzione), decisione in 180 giorni con parere vincolante della
+      soprintendenza in 90 giorni, sanzione pecuniaria o rimessione in pristino (art. 167 cc. 4-5).
+      Il testo tra doppi tondi (( )) e le indicazioni di periodo/comma soppresso o abrogato (D.L.
+      133/2014, D.L. 70/2011) sono riportati come da fonte.
+      LIMITE DI RESA: la skill inquadra la procedura e i contenuti dell'adempimento; NON redige la
+      relazione paesaggistica ne' il progetto, NON rilascia l'autorizzazione ne' il parere, NON
+      riproduce gli schemi della documentazione (DPCM 12 dicembre 2005), la procedura semplificata
+      (DPR 31/2017, skill autorizzazione-paesaggistica-semplificata-dpr31) ne' la disciplina penale
+      (art. 181). Non sostituisce il progettista, la Soprintendenza, la regione ne' il comune.

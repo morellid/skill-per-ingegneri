@@ -67,7 +67,7 @@
     {
       "name": "edilizia-urbanistica-catasto",
       "source": "./skills",
-      "description": "Edilizia, urbanistica & catasto - 15 skill verticali su normative italiane.",
+      "description": "Edilizia, urbanistica & catasto - 16 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -76,6 +76,7 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "edilizia-urbanistica-catasto",
       "skills": [
+        "./autorizzazione-paesaggistica-ordinaria-dlgs42",
         "./autorizzazione-paesaggistica-semplificata-dpr31",
         "./barriere-architettoniche-edifici-privati-dm236",
         "./catasto-pregeo-docfa-atti-telematici",
