@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Valutazione del rischio vibrazioni sul lavoro (D.Lgs. 81/2008 Titolo VIII Capo III, artt. 200-205)"
+short_description: Supporto documentale alla valutazione del rischio da vibrazioni meccaniche (mano-braccio e corpo intero) negli ambienti di lavoro secondo il D.Lgs. 81/2008, Titolo VIII, Capo III. Inquadra le definizioni (A(8), mano-braccio e corpo intero - art. 200), colloca l'esposizione rispetto ai valori limite e d'azione (mano-braccio: limite 5 m/s2, azione 2,5; corpo intero: limite 1,0 m/s2, azione 0,5 - art. 201), imposta la valutazione dei rischi e la valutazione/misurazione con l'allegato XXXV (art. 202), le misure di prevenzione e il programma oltre i valori d'azione con l'obbligo di riportare l'esposizione sotto il limite se superato (art. 203), la sorveglianza sanitaria (art. 204) e le deroghe per navigazione marittima/aerea ed esposizioni occasionali (art. 205). NON misura ne' calcola i livelli di esposizione A(8), non redige il DVR-vibrazioni ne' la relazione tecnica, non sostituisce il tecnico competente, il medico competente o il datore di lavoro.
+default_prompt: |
+  In un ambiente di lavoro: in quale fascia dei valori dell'art. 201 D.Lgs. 81/2008 si colloca
+  un'esposizione a vibrazioni mano-braccio o corpo intero data (A(8))? Quali misure di prevenzione e
+  programma (art. 203), quale sorveglianza sanitaria (art. 204) e quali eventuali deroghe (art. 205)
+  si applicano?
