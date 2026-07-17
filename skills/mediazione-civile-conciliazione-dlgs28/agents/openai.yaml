@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Mediazione civile e commerciale: procedibilità e procedimento (D.Lgs 28/2010)"
+short_description: Supporto documentale alla mediazione civile e commerciale finalizzata alla conciliazione secondo il D.Lgs. 4 marzo 2010, n. 28 (testo vigente post riforma Cartabia). Aiuta a stabilire se la materia è a condizione di procedibilità della domanda (condominio, diritti reali, divisione, successioni, patti di famiglia, locazione, comodato, affitto d'azienda, responsabilità medica, diffamazione a mezzo stampa, contratti assicurativi/bancari/finanziari, ecc. - art. 5), inquadra esclusioni e rapporti con il processo (improcedibilità entro la prima udienza, condizione avverata col primo incontro senza accordo, cautelari non preclusi), il procedimento (domanda, designazione del mediatore e primo incontro tra 20 e 40 giorni, effetti su prescrizione e decadenza, assistenza degli avvocati, esperti - art. 8), la conclusione (verbale con accordo allegato, proposta e accettazione/rifiuto entro 7 giorni, valore, deposito, conservazione triennale, autentica per atti soggetti a trascrizione - art. 11) e l'efficacia esecutiva dell'accordo (titolo esecutivo se le parti sono assistite dagli avvocati, altrimenti omologazione con decreto del presidente del tribunale - art. 12). NON svolge la mediazione, non redige il verbale/accordo, non fornisce il merito tecnico né la valutazione legale e non sostituisce il mediatore, l'organismo, l'avvocato o il giudice.
+default_prompt: |
+  Ho una controversia civile (es. condominio, locazione, diritti reali): devo passare dalla
+  mediazione prima della causa secondo il D.Lgs. 28/2010? Come funziona il procedimento (primo
+  incontro, assistenza dell'avvocato), come si conclude (verbale, accordo, proposta) e l'accordo
+  raggiunto è direttamente esecutivo?
