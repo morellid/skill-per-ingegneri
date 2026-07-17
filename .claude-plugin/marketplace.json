@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 15 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 16 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -33,7 +33,8 @@
         "./prevenzione-incendi-attivita-procedimenti-dpr151",
         "./sorveglianza-sanitaria-medico-competente-dlgs81",
         "./valutazione-rischio-rumore-dlgs81",
-        "./valutazione-rischio-vibrazioni-dlgs81"
+        "./valutazione-rischio-vibrazioni-dlgs81",
+        "./videoterminali-vdt-dlgs81"
       ]
     },
     {
