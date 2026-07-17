@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 11
+  count: 12
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -630,6 +630,25 @@ skills:
   - autorizzazione-sismica
   - interventi-strutturali
   - strutture
+- id: denuncia-collaudo-statico-ca-dpr380
+  area: strutture-geotecnica
+  title: Denuncia dei lavori e collaudo statico opere in c.a. (DPR 380/2001)
+  summary: 'Inquadra gli adempimenti su opere c.a./c.a.p. e acciaio (DPR 380/2001 artt. 64-67): denuncia dei lavori allo sportello
+    unico via PEC (65), documenti in cantiere (66), relazione a struttura ultimata e collaudo statico da ingegnere/architetto
+    iscritto da 10 anni (67). Non redige.'
+  normative_refs:
+  - 'D.P.R. 6 giugno 2001, n. 380 (Testo unico edilizia) - Parte II, Capo I, artt. 64-67: responsabilita'' (64), denuncia
+    dei lavori (65), documenti in cantiere (66), collaudo statico (67)'
+  - 'Rinvio (non riprodotti): artt. 53 (opere soggette), 59 (laboratori prove), 62 (rispondenza NTC), 94-bis (interventi)
+    DPR 380/2001; NTC 2018 (D.M. 17/1/2018)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - collaudo-statico
+  - denuncia-lavori-strutture
+  - cemento-armato
+  - dpr-380-2001
+  - direttore-lavori
 - id: denuncia-opere-strutturali-l1086
   area: edilizia-urbanistica-catasto
   title: Denuncia opere strutturali e autorizzazione sismica - DPR 380/2001
