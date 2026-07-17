@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Servitù coattive - passaggio, acquedotto, elettrodotto (c.c. artt. 1027-1057)"
+short_description: Supporto documentale all'inquadramento delle servitù prediali coattive di interesse tecnico secondo il Codice civile (R.D. 262/1942), Libro III, Titolo VI. Inquadra la nozione di servitù prediale come peso su un fondo per l'utilità di un altro fondo di diverso proprietario (art. 1027), i modi di costituzione - coattiva, volontaria, per usucapione o destinazione del padre di famiglia (art. 1031) e la costituzione coattiva con sentenza o atto amministrativo, con modalità, indennità e opposizione prima del pagamento (art. 1032), l'acquedotto coattivo ossia l'obbligo di dare passaggio alle acque con le esenzioni (art. 1033), il passaggio coattivo del fondo intercluso con i criteri di localizzazione - accesso più breve, minor danno, sottopassaggio, veicoli (art. 1051), il passaggio coattivo del fondo non intercluso con accesso inadatto/insufficiente e l'estensione della Corte costituzionale per l'accessibilità dei portatori di handicap (art. 1052), l'indennità proporzionata al danno (art. 1053), la cessazione dell'interclusione (art. 1055), l'elettrodotto coattivo (art. 1056) e le vie funicolari/teleferiche (art. 1057). NON redige atti o domande giudiziali, non quantifica l'indennità, non riproduce le leggi speciali su acque ed elettrodotti, non sostituisce l'avvocato o il CTU.
+default_prompt: |
+  Un fondo agricolo è senza uscita sulla via pubblica: ha diritto al passaggio coattivo sul fondo vicino
+  (art. 1051 c.c.)? Dove si stabilisce e può includere i veicoli? Come si costituisce se non c'è accordo
+  (art. 1032) e che indennità spetta al vicino (art. 1053)? E per far passare acqua (1033) o una linea
+  elettrica (1056)?

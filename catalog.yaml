@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 7
+  count: 8
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -1372,6 +1372,25 @@ skills:
   - dpr-380-2001
   - sportello-unico-edilizia
   - edilizia
+- id: servitu-coattive-prediali-cc
+  area: forense
+  title: Servitù coattive - passaggio, acquedotto, elettrodotto (c.c. artt. 1027-1057)
+  summary: 'Inquadra le servitù coattive (Codice civile): nozione (1027), costituzione con sentenza e indennità (1031-1032),
+    acquedotto coattivo (1033), passaggio del fondo intercluso/non intercluso (1051-1052), indennità e cessazione (1053, 1055),
+    elettrodotto (1056), vie funicolari (1057).'
+  normative_refs:
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1027, 1031, 1032, 1033 (nozione, costituzione, acquedotto coattivo)
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1051, 1052, 1053, 1055, 1056, 1057 (passaggio, indennità, cessazione, elettrodotto,
+    vie funicolari)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-civile
+  - servitu-prediali
+  - passaggio-coattivo
+  - elettrodotto
+  - acquedotto-coattivo
+  - forense
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
