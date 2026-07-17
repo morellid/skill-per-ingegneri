@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Denuncia lavori e autorizzazione sismica (DPR 380/2001 artt. 93, 94, 94-bis)"
+short_description: Supporto documentale agli adempimenti per le costruzioni in zone sismiche secondo il DPR 380/2001 (Testo unico edilizia), Parte II Capo IV. Inquadra la denuncia dei lavori e la presentazione del progetto (art. 93: preavviso scritto allo sportello unico che trasmette copia al competente ufficio tecnico della regione, deposito del progetto in doppio esemplare firmato, contenuto minimo e dichiarazione asseverata del progettista sul rispetto delle norme tecniche e la coerenza strutture/architettonico, validita' anche come denuncia ex art. 65, registro comunale), l'autorizzazione per l'inizio dei lavori (art. 94: nelle localita' sismiche escluse quelle a bassa sismicita', preventiva autorizzazione del competente ufficio tecnico regionale, rilascio entro 30 giorni, silenzio assenso, ricorso al presidente della giunta regionale, direzione lavori da tecnico abilitato) e la disciplina degli interventi strutturali (art. 94-bis: classificazione in rilevanti, di minore rilevanza e privi di rilevanza per la pubblica incolumita' in funzione della zona sismica 1/2/3/4, con autorizzazione preventiva per i soli rilevanti e deroga per gli altri salvo controlli a campione regionali). NON redige la denuncia o il progetto strutturale, non esegue calcoli, non riproduce le linee guida MIT ne' le procedure regionali, non sostituisce l'ufficio tecnico regionale o il SUE.
+default_prompt: |
+  Per una nuova costruzione in zona sismica quali adempimenti servono (denuncia/deposito ex art. 93 DPR
+  380/2001)? Serve l'autorizzazione preventiva dell'ufficio tecnico regionale (art. 94) o basta il
+  deposito? Come si classifica l'intervento tra rilevante, di minore rilevanza o privo di rilevanza (art.
+  94-bis) e cosa cambia nel regime?

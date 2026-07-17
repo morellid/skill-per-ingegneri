@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 10
+  count: 11
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -557,6 +557,24 @@ skills:
   - ristrutturazione
   - manutenzione-straordinaria
   - nuova-costruzione
+- id: denuncia-autorizzazione-sismica-dpr380
+  area: strutture-geotecnica
+  title: Denuncia lavori e autorizzazione sismica (DPR 380/2001 artt. 93, 94, 94-bis)
+  summary: 'Inquadra gli adempimenti per le costruzioni in zone sismiche (DPR 380/2001): denuncia lavori e deposito del progetto
+    asseverato (art. 93), autorizzazione preventiva dell''ufficio regionale (art. 94), classificazione degli interventi per
+    rilevanza e zona sismica (art. 94-bis).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 93 (denuncia lavori e deposito progetto) e 94 (autorizzazione per l'inizio dei lavori)
+  - D.P.R. 6/6/2001 n. 380 - art. 94-bis (disciplina degli interventi strutturali in zone sismiche)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - zone-sismiche
+  - denuncia-lavori
+  - autorizzazione-sismica
+  - interventi-strutturali
+  - strutture
 - id: denuncia-opere-strutturali-l1086
   area: edilizia-urbanistica-catasto
   title: Denuncia opere strutturali e autorizzazione sismica - DPR 380/2001
