@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 2
+  count: 3
 skills:
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
@@ -582,6 +582,23 @@ skills:
   - emc-2014-30
   - red-2014-53
   - valutazione-conformita
+- id: mediazione-civile-conciliazione-dlgs28
+  area: forense
+  title: 'Mediazione civile e commerciale: procedibilità e procedimento (D.Lgs 28/2010)'
+  summary: 'Mediazione civile e commerciale (D.Lgs 28/2010): materie a condizione di procedibilità ed esclusioni (art. 5),
+    procedimento (art. 8), conclusione con verbale, accordo e proposta (art. 11), efficacia esecutiva dell''accordo (art.
+    12). Non svolge la mediazione.'
+  normative_refs:
+  - D.Lgs. 4 marzo 2010, n. 28 - artt. 5, 8, 11, 12 (testo vigente post riforma Cartabia)
+  - 'Richiamati: artt. 2, 5-bis/5-ter/5-quater, 6, 8-bis, 13, 17; c.p.c. artt. 480, 696-bis; art. 2643 c.c.'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - mediazione-civile
+  - conciliazione
+  - dlgs-28-2010
+  - condizione-di-procedibilita
+  - forense
 - id: modulistica-edilizia-unificata
   area: edilizia-urbanistica-catasto
   title: Modulistica edilizia unificata + Salva Casa
