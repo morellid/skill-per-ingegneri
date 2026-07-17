@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 7
+  count: 8
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -712,6 +712,24 @@ skills:
   - sismica
   - periodo-proprio
   - code-driven
+- id: permesso-costruire-dpr380
+  area: edilizia-urbanistica-catasto
+  title: 'Permesso di costruire: presupposti, procedimento e decadenza - DPR 380/2001'
+  summary: 'Regime del permesso di costruire (DPR 380/2001): caratteristiche e soggetti (art. 11), presupposti - conformita''
+    urbanistica e urbanizzazioni (art. 12), efficacia e decadenza - inizio 1 anno/fine 3 anni (art. 15), procedimento, termini
+    e silenzio-assenso (art. 20).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 11 (caratteristiche) e 12 (presupposti per il rilascio)
+  - D.P.R. 6/6/2001 n. 380 - artt. 15 (efficacia temporale e decadenza) e 20 (procedimento)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - testo-unico-edilizia
+  - permesso-di-costruire
+  - titolo-edilizio
+  - silenzio-assenso
+  - decadenza
 - id: pfte-allegato-i7-checker
   area: appalti-opere-pubbliche
   title: PFTE Allegato I.7 Checker
