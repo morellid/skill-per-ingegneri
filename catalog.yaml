@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 14
+  count: 15
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1372,6 +1372,25 @@ skills:
   - dpr-380-2001
   - sportello-unico-edilizia
   - edilizia
+- id: segnaletica-salute-sicurezza-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Segnaletica di salute e sicurezza sul lavoro (D.Lgs. 81/2008 artt. 161-165)
+  summary: 'Inquadra la segnaletica di salute e sicurezza sul lavoro (D.Lgs. 81/2008 artt. 161-165): tipi di segnali (cartelli,
+    colori, luminosi/acustici, verbali, gestuali), obbligo residuale dopo la protezione collettiva, informazione e formazione,
+    sanzioni. Non progetta il piano.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza sul lavoro) - Titolo V, artt. 161-165 (segnaletica di salute e sicurezza
+    sul luogo di lavoro)
+  - 'Rinvio (non riprodotti): allegati XXIV-XXXII D.Lgs. 81/2008 (requisiti di cartelli, colori, segnali), art. 28 (valutazione
+    dei rischi/DVR); art. 166 abrogato dal D.Lgs. 106/2009'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - segnaletica-sicurezza
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - cartelli
+  - segnali-gestuali
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
