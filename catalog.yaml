@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 14
+  count: 15
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -189,6 +189,25 @@ skills:
   - dlgs-152-2006
   - autorizzazione-ambientale
   - bat
+- id: autorizzazione-paesaggistica-ordinaria-dlgs42
+  area: edilizia-urbanistica-catasto
+  title: Autorizzazione paesaggistica ordinaria (D.Lgs. 42/2004 art. 146)
+  summary: 'Inquadra l''autorizzazione paesaggistica ordinaria (D.Lgs. 42/2004 art. 146): relazione paesaggistica, atto presupposto
+    al permesso di costruire, parere del soprintendente a 45 giorni, efficacia 5 anni, accertamento di compatibilità postumo
+    (art. 167). Non la redige.'
+  normative_refs:
+  - D.Lgs. 22 gennaio 2004, n. 42 (Codice dei beni culturali e del paesaggio) - art. 146 (autorizzazione) e art. 167 (accertamento
+    di compatibilita' paesaggistica)
+  - 'Rinvio (non riprodotti): DPCM 12/12/2005 (schemi relazione paesaggistica), DPR 31/2017 (procedura semplificata), art.
+    181 D.Lgs. 42/2004 (sanzioni penali), art. 149 (interventi non soggetti)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - autorizzazione-paesaggistica
+  - relazione-paesaggistica
+  - dlgs-42-2004
+  - vincolo-paesaggistico
+  - beni-culturali
 - id: autorizzazione-paesaggistica-semplificata-dpr31
   area: edilizia-urbanistica-catasto
   title: 'Autorizzazione paesaggistica: esclusa/semplificata/ordinaria (DPR 31/2017)'

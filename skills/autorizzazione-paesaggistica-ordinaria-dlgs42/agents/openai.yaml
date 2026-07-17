@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Autorizzazione paesaggistica ordinaria (D.Lgs. 42/2004 art. 146)"
+short_description: Supporto documentale al progettista (architetto/ingegnere/geometra) per l'autorizzazione paesaggistica ordinaria e la relazione paesaggistica su immobili e aree tutelati, ai sensi del Codice dei beni culturali e del paesaggio (D.Lgs. 22 gennaio 2004, n. 42), art. 146, con l'accertamento di compatibilità dell'art. 167. Inquadra l'obbligo di autorizzazione preventiva e di astensione dai lavori (146 cc. 1-2), la documentazione/relazione paesaggistica preordinata alla verifica di compatibilità, con schemi definiti da DPCM (c. 3), l'autorizzazione come atto autonomo e presupposto al permesso di costruire, non sanabile postuma salvo art. 167 cc. 4-5 ed efficace 5 anni (c. 4), il parere del soprintendente vincolante/obbligatorio entro 45 giorni (cc. 5, 8), la competenza della regione e la delega ai comuni (c. 6), la procedura con verifica in 40 giorni, relazione tecnica illustrativa e proposta (c. 7), il silenzio a 60 giorni e il potere sostitutivo (cc. 9-10), e l'accertamento di compatibilità paesaggistica postumo per interventi minori (senza volumi/superfici, materiali difformi, manutenzione), deciso in 180 giorni con parere vincolante della soprintendenza in 90 giorni e sanzione pecuniaria o rimessione in pristino (167 cc. 4-5). NON redige la relazione/progetto, non rilascia l'autorizzazione/parere, non riproduce gli schemi (DPCM 12/12/2005), la procedura semplificata (DPR 31/2017) o la disciplina penale (art. 181) e non sostituisce il progettista o gli enti competenti.
+default_prompt: |
+  Devo progettare un intervento su un immobile in area vincolata: come inquadro l'autorizzazione
+  paesaggistica ordinaria secondo il D.Lgs. 42/2004? Quando serve e in che rapporto sta col permesso
+  di costruire, cosa contiene la relazione paesaggistica, quanto pesa e in quanti giorni arriva il
+  parere del soprintendente, per quanto è valida e cosa posso fare se ho già realizzato opere (art.
+  167)? Cita gli articoli.
