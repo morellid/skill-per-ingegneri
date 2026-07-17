@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 14 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 15 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -25,6 +25,7 @@
         "./duvri-interferenze-dlgs81",
         "./dvr-generico",
         "./mog-231-sicurezza-lavoro",
+        "./movimentazione-manuale-carichi-dlgs81",
         "./obblighi-datore-preposto-formazione-dlgs81",
         "./piano-emergenza-antincendio-dm2021",
         "./piano-lavoro-amianto",
@@ -218,7 +219,7 @@
     {
       "name": "forense",
       "source": "./skills",
-      "description": "CTU & ingegneria forense - 7 skill verticali su normative italiane.",
+      "description": "CTU & ingegneria forense - 5 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -230,8 +231,6 @@
         "./accertamento-tecnico-preventivo-cpc",
         "./compensi-ctu-dpr115",
         "./condominio-parti-comuni-assemblea-cc",
-        "./mediazione-civile-conciliazione-dlgs28",
-        "./negoziazione-assistita-dl132",
         "./relazione-peritale-ctu-cpc",
         "./responsabilita-appaltatore-rovina-cc"
       ]
