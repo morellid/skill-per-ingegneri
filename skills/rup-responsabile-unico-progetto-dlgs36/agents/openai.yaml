@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Responsabile unico del progetto - RUP (D.Lgs. 36/2023 art. 15)"
+short_description: Supporto documentale all'inquadramento del Responsabile unico del progetto (RUP) nei contratti pubblici secondo l'art. 15 del D.Lgs. 36/2023 (Codice dei contratti pubblici). Inquadra la nomina nel primo atto di avvio dell'intervento per le fasi di programmazione, progettazione, affidamento ed esecuzione (c. 1), la nomina tra i dipendenti in possesso dei requisiti dell'allegato I.2 con le regole per gli enti non pubbliche amministrazioni, la carenza di organico, l'obbligatorieta' e non rifiutabilita' dell'ufficio e il subentro ex lege in caso di mancata nomina (c. 2), l'indicazione del nominativo nel bando/avviso/invito/affidamento diretto (c. 3), l'unicita' del RUP e i modelli organizzativi con responsabili di procedimento per fase sotto supervisione, indirizzo e coordinamento del RUP (c. 4), i compiti del RUP e il completamento dell'intervento (c. 5), la struttura di supporto e le risorse fino all'1 per cento della base di gara (c. 6), il piano di formazione (c. 7), il divieto di cumulo degli incarichi di RUP, responsabile dei lavori, direttore dei lavori e collaudatore nel contraente generale e nel partenariato pubblico-privato (c. 8) e il RUP delle centrali di committenza e aggregazioni (c. 9). NON nomina il RUP, non redige gli atti di gara, non riproduce l'allegato I.2, non verifica in concreto i requisiti, non sostituisce la stazione appaltante o l'ente concedente.
+default_prompt: |
+  Chi nomina il RUP e in quale atto (art. 15 D.Lgs. 36/2023)? Tra chi si sceglie e con quali requisiti
+  (c. 2, allegato I.2)? Il RUP e' unico o posso avere responsabili di procedimento per fase (c. 4)?
+  Nel contraente generale il direttore dei lavori puo' essere del contraente stesso (c. 8)?
