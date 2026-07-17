@@ -25,6 +25,7 @@
         "./duvri-interferenze-dlgs81",
         "./dvr-generico",
         "./mog-231-sicurezza-lavoro",
+        "./movimentazione-manuale-carichi-dlgs81",
         "./obblighi-datore-preposto-formazione-dlgs81",
         "./piano-emergenza-antincendio-dm2021",
         "./piano-lavoro-amianto",
@@ -91,7 +92,7 @@
     {
       "name": "appalti-opere-pubbliche",
       "source": "./skills",
-      "description": "Appalti & opere pubbliche - 10 skill verticali su normative italiane.",
+      "description": "Appalti & opere pubbliche - 11 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -101,6 +102,7 @@
       "category": "appalti-opere-pubbliche",
       "skills": [
         "./bandi-tipo-anac-checker",
+        "./collaudo-verifica-conformita-dlgs36",
         "./dnsh-pnrr-checker",
         "./espropriazione-pubblica-utilita-dpr327",
         "./garanzie-appalti-pubblici-dlgs36",
@@ -218,7 +220,7 @@
     {
       "name": "forense",
       "source": "./skills",
-      "description": "CTU & ingegneria forense - 7 skill verticali su normative italiane.",
+      "description": "CTU & ingegneria forense - 5 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -230,8 +232,6 @@
         "./accertamento-tecnico-preventivo-cpc",
         "./compensi-ctu-dpr115",
         "./condominio-parti-comuni-assemblea-cc",
-        "./mediazione-civile-conciliazione-dlgs28",
-        "./negoziazione-assistita-dl132",
         "./relazione-peritale-ctu-cpc",
         "./responsabilita-appaltatore-rovina-cc"
       ]
