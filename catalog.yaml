@@ -22,7 +22,7 @@ areas:
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 4
+  count: 5
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
@@ -469,6 +469,23 @@ skills:
   - dvr
   - dlgs-81-2008
   - salute-sicurezza
+- id: esercizio-controllo-impianti-termici-dpr74
+  area: energia-incentivi
+  title: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
+  summary: 'Applica i criteri del DPR 74/2013 per esercizio, controllo e manutenzione degli impianti termici: temperature
+    massime (20/18 C +2), periodi e orari per zona climatica A-F, responsabile/terzo responsabile, controllo di efficienza
+    energetica e RCEE (>10/12 kW). Non redige il RCEE.'
+  normative_refs:
+  - D.P.R. 16 aprile 2013, n. 74 - artt. 3, 4, 5, 6, 7, 8 e Allegato A
+  - D.Lgs. 192/2005 (attuazione dir. 2002/91/CE) + DM 10 febbraio 2014 (libretto di impianto) - richiamati
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - impianti-termici
+  - dpr-74-2013
+  - efficienza-energetica
+  - terzo-responsabile
+  - rcee
 - id: fascicolo-tecnico-dispositivi-medici-mdr
   area: impianti-macchine-prodotti
   title: Fascicolo tecnico dispositivi medici (MDR Reg. UE 2017/745) - Classe I/IIa

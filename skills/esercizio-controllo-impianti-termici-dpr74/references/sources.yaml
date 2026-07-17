@@ -1,0 +1,37 @@
+schema_version: 1
+skill: esercizio-controllo-impianti-termici-dpr74
+last_verified: 2026-07-16
+
+# Fonte per i criteri di esercizio, conduzione, controllo e manutenzione degli impianti
+# termici per la climatizzazione: valori massimi di temperatura, periodi e orari di esercizio
+# per zona climatica, responsabile e terzo responsabile dell'impianto, controllo e
+# manutenzione, controllo di efficienza energetica (RCEE). Il D.P.R. 74/2013 e' attuativo
+# dell'art. 4, comma 1, lettera c) del D.Lgs. 192/2005.
+
+sources:
+  - id: dpr-74-2013
+    title: "D.P.R. 16 aprile 2013, n. 74 - Regolamento su esercizio, conduzione, controllo, manutenzione e ispezione degli impianti termici per la climatizzazione (testo vigente al 2026-07-16)"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2013-04-16;74!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 13aa0ad0fb0edbe235455d2b79f2173ec2dc3dff8c28abc5b606e9d4cb8e32f5
+    license: public-domain
+    binary_path: not_in_repo/dpr74-2013-vig.html
+    md_path: references/fonti/dpr-74-2013.md
+    excerpt_path: references/estratti/impianti-termici-checklist.md
+    notes: |
+      Codice redazionale 13G00114 (GU n. 149 del 27/6/2013). Indice Normattiva pinnato a
+      !vig=2026-07-16 (hash stabile, doppio download: 13aa0ad0...). Articoli via caricaArticolo,
+      trascritti verbatim: art. 3 (valori massimi di temperatura ambiente: 18C+2 industriale /
+      20C+2 altri edifici; estiva >= 26C-2), art. 4 (limiti di esercizio: periodi e ore
+      giornaliere per zona climatica A-F), art. 5 (ordinanze del sindaco in deroga), art. 6
+      (responsabile dell'impianto e terzo responsabile: delega e limiti), art. 7 (controllo e
+      manutenzione da ditte abilitate DM 37/2008, con la periodicita' delle istruzioni
+      dell'installatore/fabbricante), art. 8 (controllo di efficienza energetica per impianti
+      invernali > 10 kW ed estivi > 12 kW, con rapporto di controllo di efficienza energetica -
+      RCEE - Allegato A; casi: prima messa in esercizio, sostituzione del generatore, ecc.).
+      LIMITE DI RESA: l'Allegato A (modelli RCEE) e' costituito da moduli in formato
+      tabellare/grafico: i campi puntuali dei modelli NON sono riprodotti e vanno letti
+      sull'atto. Il modello di LIBRETTO DI IMPIANTO e i modelli RCEE aggiornati sono nel DM
+      attuativo 10 febbraio 2014 (citato, non riprodotto). La skill copre il quadro e i criteri,
+      non i campi dei moduli.

@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
+short_description: Supporto documentale ai criteri di esercizio, conduzione, controllo e manutenzione degli impianti termici per la climatizzazione invernale ed estiva, secondo il D.P.R. 16 aprile 2013, n. 74 (attuativo del D.Lgs. 192/2005). Aiuta a rispettare i valori massimi di temperatura (18 C +2 industriale, 20 C +2 altri edifici in inverno; non meno di 26 C -2 in estate - art. 3), i limiti di esercizio per zona climatica A-F con periodi e orari e le deroghe comunali (artt. 4-5), a individuare responsabile e terzo responsabile dell'impianto con i limiti alla delega (art. 6), a impostare controllo e manutenzione da ditte abilitate (DM 37/2008 - art. 7) e il controllo di efficienza energetica con rapporto RCEE per impianti invernali oltre 10 kW ed estivi oltre 12 kW (art. 8), e a tenere il libretto di impianto (DM 10/2/2014). NON riproduce i modelli RCEE (Allegato A) ne' il libretto, non esegue il controllo/manutenzione, non redige il RCEE e non sostituisce il manutentore abilitato ne' la disciplina regionale.
+default_prompt: |
+  Per il mio impianto termico (climatizzazione): quali temperature massime e quali periodi/orari
+  di accensione devo rispettare secondo il DPR 74/2013 nella mia zona climatica? Chi e' il
+  responsabile e posso nominare un terzo responsabile? Quando serve il controllo di efficienza
+  energetica (RCEE)? Cita gli articoli.
