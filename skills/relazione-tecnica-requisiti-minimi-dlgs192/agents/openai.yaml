@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Relazione tecnica requisiti minimi energetici - ex legge 10 (D.Lgs. 192/2005 art. 8)"
+short_description: Supporto documentale al progettista e al direttore dei lavori per la relazione tecnica di progetto attestante la rispondenza ai requisiti minimi di contenimento dei consumi energetici (la "relazione ex legge 10"), ai sensi del D.Lgs. 19 agosto 2005, n. 192, art. 8 (con le sanzioni dell'art. 15). Inquadra chi la redige - i progettisti nelle rispettive competenze, inserendo calcoli e verifiche - e come si deposita in doppia copia con la DIA/domanda di titolo abilitativo (art. 8 c. 1), le esclusioni (pompa di calore fino a 15 kW; sostituzione generatore sotto la soglia del DM 37/2008), la valutazione dei sistemi alternativi ad alta efficienza per nuove costruzioni e ristrutturazioni importanti (c. 1-bis), l'asseverazione di conformità e l'attestato di qualificazione energetica che il direttore dei lavori presenta con la fine lavori, pena l'inefficacia della dichiarazione (c. 2), la conservazione e i controlli/ispezioni del Comune in corso d'opera o entro 5 anni (cc. 3-5), il regime di dichiarazione sostitutiva di atto notorio (art. 15 c. 1) e le sanzioni al professionista (700-4200 euro, c. 3) e al direttore dei lavori (1000-6000 euro, c. 4). NON redige la relazione né esegue i calcoli/verifiche (DM 26/6/2015), non riproduce gli schemi del decreto MiSE, non copre l'APE (art. 6) e non sostituisce il progettista o il direttore dei lavori.
+default_prompt: |
+  Sto progettando/dirigendo un intervento edilizio: come inquadro la relazione tecnica "ex legge 10"
+  secondo il D.Lgs. 192/2005? È dovuta nel mio caso, chi la firma e dove/quando si deposita, cosa
+  deve contenere per una nuova costruzione (sistemi alternativi), cosa devo asseverare a fine lavori
+  e quali sanzioni rischio io o il direttore dei lavori? Cita gli articoli.

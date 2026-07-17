@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Cantieri stradali e occupazione della sede stradale (CdS artt. 20, 21)"
+short_description: Supporto documentale all'occupazione della sede stradale e all'apertura di opere, depositi e cantieri stradali secondo il Codice della Strada (D.Lgs. 285/1992), artt. 20 e 21. Inquadra l'occupazione della sede stradale (art. 20: divieto di ogni occupazione sulle strade di tipo A, B, C e D incluse fiere e mercati; ammissibilita' condizionata su strade E ed F con itinerario alternativo o nelle zone di rilevanza storico-ambientale; limiti per chioschi, edicole e installazioni e per l'occupazione dei marciapiedi con almeno 2 metri liberi per i pedoni; sanzione e obbligo di rimozione) e le opere, depositi e cantieri stradali (art. 21: divieto di aprire cantieri anche temporanei senza preventiva autorizzazione o concessione dell'ente competente ex art. 26; obbligo di adottare gli accorgimenti per la sicurezza e la fluidita' della circolazione e di rendere visibile giorno e notte il personale addetto; rinvio al regolamento per delimitazione e segnalazione; sanzione e rimozione). NON rilascia autorizzazioni/concessioni, non redige il piano di segnaletica temporanea, non riproduce il Regolamento DPR 495/1992 ne' il disciplinare DM 10/7/2002, non tratta la sicurezza dei lavoratori nei cantieri.
+default_prompt: |
+  Devo aprire un cantiere stradale temporaneo con scavo su una strada urbana: serve un'autorizzazione e
+  chi la rilascia (art. 21 e 26 CdS)? Che obblighi ho per sicurezza e segnaletica? Un dehors puo' occupare
+  il marciapiede (art. 20, min 2 m liberi)? E un mercato su una strada extraurbana di tipo C e' ammesso?

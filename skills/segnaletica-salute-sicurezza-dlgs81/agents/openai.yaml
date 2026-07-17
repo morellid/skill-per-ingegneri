@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Segnaletica di salute e sicurezza sul lavoro (D.Lgs. 81/2008 artt. 161-165)"
+short_description: Supporto documentale al datore di lavoro, all'RSPP e al tecnico della sicurezza per la segnaletica di salute e sicurezza sul luogo di lavoro ai sensi del Testo unico sicurezza (D.Lgs. 9 aprile 2008, n. 81), Titolo V, artt. 161-165. Inquadra il campo di applicazione (esclusa la segnaletica del traffico, salvo il regolamento per attivita' lavorative con traffico veicolare, art. 161), le definizioni dei tipi di segnaletica e di segnale - segnali di divieto, avvertimento, prescrizione, salvataggio/soccorso e informazione, cartello, colore di sicurezza, simbolo/pittogramma, segnale luminoso, acustico, comunicazione verbale e segnale gestuale (art. 162), gli obblighi del datore di lavoro che ricorre alla segnaletica quando i rischi non sono evitabili/limitabili con la protezione collettiva, conformemente agli allegati XXIV-XXXII (art. 163), l'informazione di RLS e lavoratori e la formazione sul significato della segnaletica, specie con gesti o parole (art. 164) e le sanzioni a datore di lavoro e dirigente per la violazione degli artt. 163 e 164 (art. 165). NON progetta il piano di segnaletica, non redige il DVR, non riproduce gli allegati XXIV-XXXII e non sostituisce il datore di lavoro, l'RSPP ne' il coordinatore per la sicurezza.
+default_prompt: |
+  Devo impostare la segnaletica di sicurezza in un luogo di lavoro/cantiere: come la inquadro secondo
+  il Titolo V del D.Lgs. 81/2008? Quando è obbligatoria (rispetto alla protezione collettiva), quali
+  tipi di segnale/mezzo posso usare (cartelli, colori, segnali gestuali), che informazione e
+  formazione devo garantire e quali sanzioni rischia il datore di lavoro? Cita gli articoli.

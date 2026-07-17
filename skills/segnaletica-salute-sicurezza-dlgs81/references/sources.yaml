@@ -1,0 +1,43 @@
+schema_version: 1
+skill: segnaletica-salute-sicurezza-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della SEGNALETICA DI SALUTE E SICUREZZA sul luogo di lavoro: campo di
+# applicazione, definizioni (cartelli, colori, segnali luminosi/acustici, comunicazioni verbali,
+# segnali gestuali), obblighi del datore di lavoro, informazione e formazione, sanzioni. Fonte:
+# Testo unico sicurezza (D.Lgs. 81/2008), Titolo V, artt. 161-165.
+
+sources:
+  - id: dlgs-81-2008-segnaletica-161-165
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 161-165 (segnaletica di salute e sicurezza sul lavoro) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: DPI, MMC, VDT, rumore, vibrazioni).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-segnaletica-idx.html
+    md_path: references/fonti/dlgs-81-2008-segnaletica-161-165.md
+    excerpt_path: references/estratti/segnaletica-checklist.md
+    notes: |
+      Codice redazionale 008G0104. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile,
+      doppio download: 18fbc542...; e' lo stesso indice usato dalle altre skill D.Lgs. 81/2008).
+      Articoli 161-165 (artt. 161-164 idGruppo 28, art. 165 idGruppo 29; versioni 161 v2, 162 v1, 163
+      v1, 164 v1, 165 v2) caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-81-2008-segnaletica-161-165.md: campo di applicazione ed esclusione della
+      segnaletica del traffico, con rinvio al regolamento per attivita' lavorative con traffico
+      veicolare (art. 161); definizioni di segnaletica di sicurezza, segnali di divieto/avvertimento/
+      prescrizione/salvataggio/informazione, cartello, colore di sicurezza, simbolo/pittogramma,
+      segnale luminoso/acustico, comunicazione verbale, segnale gestuale (art. 162); obblighi del
+      datore di lavoro - ricorso alla segnaletica quando i rischi non sono evitabili/limitabili con
+      misure organizzative o protezione collettiva, conformemente agli allegati XXIV-XXXII (art.
+      163); informazione (RLS/lavoratori) e formazione sul significato della segnaletica (art. 164);
+      sanzioni a datore di lavoro e dirigente - arresto 3-6 mesi o ammenda 2.500-6.400 euro per l'art.
+      163 e arresto 2-4 mesi o ammenda 750-4.000 euro per l'art. 164 (art. 165). Il testo tra doppi
+      tondi (( )) segnala le modifiche del D.Lgs. 106/2009. L'art. 166 e' ABROGATO dal D.Lgs.
+      106/2009 (riportato solo come nota).
+      LIMITE DI RESA: la skill inquadra la disciplina e gli obblighi; NON progetta il piano di
+      segnaletica, NON redige il DVR (art. 28), NON riproduce gli allegati XXIV-XXXII (requisiti
+      specifici di cartelli, colori, pittogrammi, segnali luminosi/acustici/gestuali) citati come
+      rinvio, e NON sostituisce il datore di lavoro, l'RSPP ne' il coordinatore per la sicurezza.
