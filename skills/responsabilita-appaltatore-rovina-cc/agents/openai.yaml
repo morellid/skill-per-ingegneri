@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Responsabilità dell'appaltatore: vizi e rovina d'edificio (c.c. 1667-1669)"
+short_description: Supporto documentale alla responsabilità dell'appaltatore per difformità e vizi dell'opera e per la rovina e i gravi difetti degli edifici, secondo il Codice civile artt. 1667, 1668, 1669. Inquadra la garanzia per difformità e vizi e la sua esclusione quando il committente ha accettato l'opera e i vizi erano conosciuti o riconoscibili (salvo mala fede), la denuncia a pena di decadenza entro sessanta giorni dalla scoperta e la prescrizione dell'azione in due anni dalla consegna (art. 1667), il contenuto della garanzia con eliminazione dei vizi a spese dell'appaltatore, riduzione del prezzo, risarcimento in caso di colpa e risoluzione se l'opera è inadatta (art. 1668) e la responsabilità per rovina e gravi difetti di immobili destinati a lunga durata, per la quale l'appaltatore risponde per dieci anni dal compimento verso committente e aventi causa, con denuncia entro un anno dalla scoperta e prescrizione in un anno dalla denuncia (art. 1669). NON accerta i vizi o la rovina, il nesso causale o il quantum, non fornisce l'interpretazione giurisprudenziale dell'art. 1669 e non sostituisce il legale, il CTU o il giudice.
+default_prompt: |
+  Ho riscontrato difetti in un'opera edilizia realizzata da un'impresa: quali sono i termini per
+  denunciarli e agire (art. 1667) e cosa posso chiedere (art. 1668)? Se si tratta di gravi difetti o
+  pericolo di rovina di un edificio, fino a quando risponde il costruttore e chi è legittimato ad
+  agire (art. 1669 del Codice civile)?

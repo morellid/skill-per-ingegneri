@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 4
+  count: 5
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -1149,6 +1149,23 @@ skills:
   - codice-procedura-civile
   - ingegneria-forense
   - dm-109-2023
+- id: responsabilita-appaltatore-rovina-cc
+  area: forense
+  title: 'Responsabilità dell''appaltatore: vizi e rovina d''edificio (c.c. 1667-1669)'
+  summary: 'Responsabilità dell''appaltatore: garanzia per difformità e vizi, denuncia entro 60 giorni e prescrizione biennale
+    (art. 1667), rimedi e risoluzione (art. 1668), rovina e gravi difetti di edifici con responsabilità decennale, denuncia
+    e prescrizione annuale (art. 1669).'
+  normative_refs:
+  - Codice civile (R.D. 262/1942) - artt. 1667, 1668, 1669 (appalto)
+  - 'Richiamati (non trascritti): artt. 1655, 1660-1666, 1670-1676; interpretazione giurisprudenziale dell''art. 1669'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - responsabilita-appaltatore
+  - rovina-edificio
+  - vizi-opera
+  - codice-civile
+  - forense
 - id: riuso-software-pa-cad69
   area: software-dati-cybersecurity
   title: Riuso e rilascio open source del software PA (C.A.D. artt. 68-69)
