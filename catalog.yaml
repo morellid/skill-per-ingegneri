@@ -22,7 +22,7 @@ areas:
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 7
+  count: 8
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
@@ -1401,6 +1401,24 @@ skills:
   - codice-procedura-civile
   - ingegneria-forense
   - dm-109-2023
+- id: relazione-tecnica-requisiti-minimi-dlgs192
+  area: energia-incentivi
+  title: Relazione tecnica requisiti minimi energetici (D.Lgs. 192/2005 art. 8)
+  summary: 'Inquadra la relazione tecnica di progetto sui requisiti minimi energetici (''ex legge 10'') - D.Lgs. 192/2005
+    art. 8: chi la redige e quando si deposita, esclusioni, sistemi alternativi, asseverazione del DL a fine lavori, controlli
+    e sanzioni (art. 15 c. 3-4). Non la redige.'
+  normative_refs:
+  - D.Lgs. 19 agosto 2005, n. 192 - art. 8 (relazione tecnica, accertamenti e ispezioni) e art. 15, commi 1, 3, 4 (sanzioni)
+  - 'Rinvio (non riprodotti): DM 26/6/2015 (requisiti minimi), decreto MiSE con gli schemi di relazione, DM 37/2008 (soglia
+    generatore), D.Lgs. 192/2005 art. 6 (APE) e art. 7 (esercizio impianti)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - relazione-tecnica
+  - legge-10
+  - dlgs-192-2005
+  - requisiti-minimi
+  - efficienza-energetica
 - id: responsabilita-appaltatore-rovina-cc
   area: forense
   title: 'Responsabilità dell''appaltatore: vizi e rovina d''edificio (c.c. 1667-1669)'
