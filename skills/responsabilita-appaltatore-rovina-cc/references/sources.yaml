@@ -1,0 +1,41 @@
+schema_version: 1
+skill: responsabilita-appaltatore-rovina-cc
+last_verified: 2026-07-17
+
+# Fonte per la RESPONSABILITÀ DELL'APPALTATORE per difformità e vizi dell'opera e per la ROVINA e i
+# gravi difetti degli edifici: garanzia, termini (denuncia, prescrizione), rimedi, responsabilità
+# decennale. Fonte: Codice civile, artt. 1667, 1668, 1669.
+
+sources:
+  - id: cc-artt-1667-1668-1669
+    title: "Codice civile (R.D. 262/1942) - artt. 1667, 1668, 1669 (appalto: difformità/vizi e rovina d'edificio) (testo vigente al 2026-07-17)"
+    type: codice
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: f817bc32707124081b048e6d34882a4256b7e107de3c4a018fcd83a936dce325
+    license: public-domain
+    binary_path: not_in_repo/cc17.html
+    md_path: references/fonti/cc-artt-1667-1668-1669.md
+    excerpt_path: references/estratti/responsabilita-appaltatore-checklist.md
+    notes: |
+      Codice redazionale 042U0262. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile,
+      doppio download: f817bc32...). Artt. 1667, 1668, 1669 (idGruppo 208, flagTipoArticolo 2,
+      dataPubblicazioneGazzetta 1942-04-04) caricati via AJAX (caricaArticolo) e trascritti verbatim in
+      references/fonti/cc-artt-1667-1668-1669.md:
+      - Art. 1667: garanzia per difformità e vizi dell'opera; esclusione se il committente ha accettato
+        e i vizi erano noti/riconoscibili (salvo mala fede); denuncia a pena di decadenza entro 60
+        giorni dalla scoperta (non necessaria se riconosciuti od occultati); prescrizione dell'azione
+        in 2 anni dalla consegna; eccezione del committente convenuto per il pagamento.
+      - Art. 1668: contenuto della garanzia - eliminazione dei vizi a spese dell'appaltatore o
+        riduzione del prezzo, salvo risarcimento in caso di colpa; risoluzione se l'opera è del tutto
+        inadatta alla destinazione.
+      - Art. 1669: rovina e gravi difetti di immobili destinati a lunga durata - responsabilità
+        dell'appaltatore per 10 anni dal compimento se, per vizio del suolo o difetto di costruzione,
+        l'opera rovina in tutto/in parte o presenta evidente pericolo di rovina o gravi difetti, verso
+        committente e aventi causa; denuncia entro 1 anno dalla scoperta; prescrizione in 1 anno dalla
+        denuncia.
+      LIMITE DI RESA (Regola zero): gli altri articoli del Capo VII (appalto: 1655, 1660-1666,
+      1670-1676) sono citati e non trascritti. La natura (extracontrattuale/ordine pubblico) e
+      l'ambito applicativo dell'art. 1669 sono definiti dalla giurisprudenza (non riprodotta): la
+      skill inquadra presupposti e termini di legge, non fornisce interpretazione giurisprudenziale
+      né valutazione del caso concreto (accertamento tecnico, nesso causale, quantum).
