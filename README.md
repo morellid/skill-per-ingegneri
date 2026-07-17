@@ -123,6 +123,8 @@ Contiene anche:
 
 Ogni skill ha un proprio `README.md` con dettaglio target, sotto-attivita' e limiti noti.
 
+| [`rup-responsabile-unico-progetto-dlgs36`](skills/rup-responsabile-unico-progetto-dlgs36/) | Supporto documentale all'inquadramento del Responsabile unico del progetto - RUP (D.Lgs. 36/2023 art. 15): nomina nel primo atto di avvio dell'intervento per le fasi di programmazione, progettazione, affidamento ed esecuzione (c. 1), nomina tra i dipendenti con i requisiti dell'allegato I.2, regole per enti non-PA, carenza di organico, obbligatorieta' e non rifiutabilita' dell'ufficio e subentro ex lege in caso di mancata nomina (c. 2), indicazione del nominativo nel bando/avviso/invito/affidamento diretto (c. 3), unicita' del RUP e modelli organizzativi con responsabili di procedimento per fase sotto supervisione, indirizzo e coordinamento del RUP (c. 4), compiti e completamento dell'intervento (c. 5), struttura di supporto e risorse fino all'1% della base di gara (c. 6), piano di formazione (c. 7), divieto di cumulo degli incarichi di RUP, responsabile dei lavori, direttore dei lavori e collaudatore nel contraente generale e nel PPP (c. 8), RUP delle centrali di committenza (c. 9). Non nomina il RUP, non redige gli atti di gara, non riproduce l'allegato I.2 | D.Lgs. 36/2023 art. 15 |
+
 ## Struttura
 
 ```

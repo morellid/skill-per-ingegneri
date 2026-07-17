@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 11
+  count: 12
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -1322,6 +1322,24 @@ skills:
   - rsia
   - dlgs-35-2011
   - strade
+- id: rup-responsabile-unico-progetto-dlgs36
+  area: appalti-opere-pubbliche
+  title: Responsabile unico del progetto (RUP) - D.Lgs. 36/2023 art. 15
+  summary: 'Inquadra il Responsabile unico del progetto - RUP (D.Lgs. 36/2023 art. 15): nomina e requisiti allegato I.2 (c.1-2),
+    nominativo nel bando (c.3), unicita'' e modelli organizzativi (c.4), compiti e supporto (c.5-6), formazione (c.7), incompatibilita''
+    contraente generale/PPP (c.8).'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - art. 15 c. 1-4 (nomina, requisiti, indicazione nel bando, unicita' e modelli organizzativi)
+  - D.Lgs. 31/3/2023 n. 36 - art. 15 c. 5-9 (compiti, struttura di supporto, formazione, incompatibilita', centrali di committenza)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - contratti-pubblici
+  - rup
+  - stazione-appaltante
+  - responsabile-procedimento
+  - allegato-i2
 - id: scarichi-emissioni-dlgs152
   area: ambiente-territorio-mobilita
   title: Autorizzazione scarichi ed emissioni - D.Lgs. 152/2006 (artt. 124, 269)
