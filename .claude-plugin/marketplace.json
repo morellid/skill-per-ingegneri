@@ -84,7 +84,7 @@
     {
       "name": "appalti-opere-pubbliche",
       "source": "./skills",
-      "description": "Appalti & opere pubbliche - 8 skill verticali su normative italiane.",
+      "description": "Appalti & opere pubbliche - 9 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -95,6 +95,7 @@
       "skills": [
         "./bandi-tipo-anac-checker",
         "./dnsh-pnrr-checker",
+        "./espropriazione-pubblica-utilita-dpr327",
         "./modifiche-varianti-contratti-pubblici-dlgs36",
         "./oepv-valutatore-offerte-tecniche",
         "./pfte-allegato-i7-checker",

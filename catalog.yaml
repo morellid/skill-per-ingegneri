@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 8
+  count: 9
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -624,6 +624,24 @@ skills:
   - efficienza-energetica
   - terzo-responsabile
   - rcee
+- id: espropriazione-pubblica-utilita-dpr327
+  area: appalti-opere-pubbliche
+  title: 'Espropriazione per pubblica utilità: fasi, indennità, decreto (DPR 327/2001)'
+  summary: 'Espropriazione per pubblica utilità (DPR 327/2001): fasi (art. 8), dichiarazione di pubblica utilità (art. 12),
+    indennità provvisoria e urgente (artt. 20, 22), occupazione d''urgenza (art. 22-bis), decreto di esproprio (art. 23).
+    Non calcola l''indennità.'
+  normative_refs:
+  - D.P.R. 8 giugno 2001, n. 327 - artt. 8, 12, 20, 22, 22-bis, 23, 42-bis (T.U. espropriazione)
+  - 'Richiamati: artt. 9-11 (vincolo), 13 (termine decreto), 21 (nomina tecnici), 24 (immissione in possesso), 37/40/45 (stima
+    indennità)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - espropriazione
+  - pubblica-utilita
+  - dpr-327-2001
+  - opere-pubbliche
+  - indennita-esproprio
 - id: fascicolo-tecnico-dispositivi-medici-mdr
   area: impianti-macchine-prodotti
   title: Fascicolo tecnico dispositivi medici (MDR Reg. UE 2017/745) - Classe I/IIa
