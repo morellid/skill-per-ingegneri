@@ -135,7 +135,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 19 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 20 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -144,6 +144,7 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "ambiente-territorio-mobilita",
       "skills": [
+        "./accessi-passi-carrabili-cds",
         "./aua-dpr59-dossier",
         "./autorizzazione-integrata-ambientale-dlgs152",
         "./bonifica-siti-contaminati-dlgs152",
