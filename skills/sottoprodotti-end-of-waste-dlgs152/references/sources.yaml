@@ -1,0 +1,46 @@
+schema_version: 1
+skill: sottoprodotti-end-of-waste-dlgs152
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento del SOTTOPRODOTTO (art. 184-bis) e della CESSAZIONE DELLA
+# QUALIFICA DI RIFIUTO - End of Waste (art. 184-ter) del D.Lgs. 152/2006 (Codice
+# dell'ambiente), Parte IV (Rifiuti).
+
+sources:
+  - id: dlgs-152-2006-184bis-184ter
+    title: "D.Lgs. 3 aprile 2006, n. 152 (Norme in materia ambientale) - artt. 184-bis (Sottoprodotto) e 184-ter (Cessazione della qualifica di rifiuto / End of Waste) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del D.Lgs. 152/2006 usato dalle altre skill ambientali: deposito-classificazione-rifiuti,
+    # trasporto-rifiuti-fir, scarichi-emissioni, AIA, bonifica, VIA).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: c2175fe5c9313db1087d444b07e71d727154140d579ffcf6357ababa5d57b45c
+    license: public-domain
+    binary_path: not_in_repo/dlgs152-eow-idx.html
+    md_path: references/fonti/dlgs-152-2006-184bis-184ter.md
+    excerpt_path: references/estratti/sottoprodotti-eow-checklist.md
+    notes: |
+      Codice redazionale 006G0171. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: c2175fe5...; stesso indice usato dalle altre skill D.Lgs. 152).
+      Articoli caricati via AJAX (caricaArticolo, idGruppo 34, dataPubblicazioneGazzetta
+      2006-04-14) e trascritti verbatim in references/fonti/dlgs-152-2006-184bis-184ter.md:
+      art. 184-bis "Sottoprodotto" (idArticolo 184, idSottoArticolo 2, versione 4) con le
+      quattro condizioni cumulative del c. 1 (a: origine da processo di produzione non come
+      scopo primario; b: certezza dell'utilizzo; c: utilizzo diretto senza trattamento diverso
+      dalla normale pratica industriale; d: utilizzo legale con requisiti di prodotto/salute/
+      ambiente), criteri con DM (c. 2), c. 2-bis abrogato; art. 184-ter "Cessazione della
+      qualifica di rifiuto - End of Waste" (idArticolo 184, idSottoArticolo 3, versione 8) con
+      le condizioni del c. 1 (a-d: scopi specifici, mercato/domanda, requisiti tecnici e
+      standard di prodotto, nessun impatto negativo), criteri UE o caso per caso con DM (c. 2),
+      autorizzazioni artt. 208/209/211 e Titolo III-bis con parere ISPRA/ARPA in mancanza di
+      criteri (c. 3), comunicazioni e controlli a campione (cc. 3-bis, 3-ter), registro RECER
+      (c. 3-septies), computo per obiettivi di recupero/riciclaggio (c. 4), disciplina rifiuti
+      fino alla cessazione (c. 5), requisiti REACH per il primo utilizzatore (c. 5-bis), Nucleo
+      End of Waste - NEW dal 1/1/2026 (c. 5-ter). Il testo tra doppi tondi (( )) e le note
+      "COMMA/PERIODO ABROGATO/SOPPRESSO" e "AGGIORNAMENTO (127)" sono riportati come da fonte.
+      LIMITE DI RESA: la skill inquadra gli istituti e le condizioni di legge; NON classifica
+      in concreto un materiale, NON riproduce i decreti ministeriali di criterio (rinvio del c. 2,
+      es. DM 264/2016 sui sottoprodotti; regolamenti UE e DM EoW per tipologia), ne' l'art. 183
+      c. 1 (definizioni di rifiuto/produttore) e gli artt. 208/209/211 (autorizzazioni), citati
+      come rinvio. Non redige la dichiarazione di conformita' ne' l'istanza autorizzativa.

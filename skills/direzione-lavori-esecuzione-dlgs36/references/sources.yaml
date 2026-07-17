@@ -1,0 +1,46 @@
+schema_version: 1
+skill: direzione-lavori-esecuzione-dlgs36
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della DIREZIONE DEI LAVORI (DL) e della DIREZIONE
+# DELL'ESECUZIONE DEL CONTRATTO (DEC) nella fase esecutiva dei contratti pubblici: ruolo
+# del RUP, nomina e compiti del DL, ufficio di direzione lavori, coordinatore sicurezza,
+# DEC per servizi e forniture, affidamento. Fonte: Codice dei contratti pubblici (D.Lgs.
+# 36/2023), art. 114.
+
+sources:
+  - id: dlgs-36-2023-art114
+    title: "D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 114 (Direzione dei lavori e dell'esecuzione dei contratti) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del D.Lgs. 36 usato dalle altre skill: RUP art. 15, collaudo art. 116, subappalto art.
+    # 119, varianti art. 120, garanzie, OEPV, specifiche ICT).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 0e9a193836e379cb33cb6daf1a5a988c608eb9559d84b91a841d9ed9791a62af
+    license: public-domain
+    binary_path: not_in_repo/d36-dl-idx.html
+    md_path: references/fonti/dlgs-36-2023-art114.md
+    excerpt_path: references/estratti/direzione-lavori-checklist.md
+    notes: |
+      Codice redazionale 23G00044. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: 0e9a1938...; e' lo stesso indice usato dalle altre skill D.Lgs.
+      36). Art. 114 (versione 2, idGruppo 18) caricato via AJAX (caricaArticolo) e trascritto
+      verbatim in references/fonti/dlgs-36-2023-art114.md: esecuzione diretta dal RUP che si
+      avvale di DEC/DL, coordinatore sicurezza e collaudatore/verificatore (c. 1); nomina del
+      direttore dei lavori prima dell'avvio della procedura su proposta del RUP e ufficio di
+      direzione lavori (c. 2); controllo tecnico/contabile/amministrativo (c. 3); DL come
+      coordinatore per la sicurezza in esecuzione per contratti <= 1 milione senza lavori
+      complessi/interferenze (c. 4); rinvio all'allegato II.14 per attivita' e compiti (c. 5,
+      con periodo soppresso dal D.Lgs. 209/2024); affidamento della direzione lavori ai
+      dipendenti della PA o esterno (c. 6); direzione dell'esecuzione dei contratti di servizi/
+      forniture di norma dal RUP (c. 7); contratti per cui il DEC deve essere diverso dal RUP
+      (c. 8, allegato II.14); rinvio al comma 6 (c. 9); assistenti con funzioni di direttore
+      operativo (c. 10). Il testo tra doppi tondi (( )) e' quello introdotto/modificato dai
+      decreti correttivi, riportato come da fonte.
+      LIMITE DI RESA: la skill inquadra le figure e i compiti del DL/DEC; NON nomina il DL/DEC,
+      NON redige gli atti della direzione lavori/esecuzione, NON riproduce l'allegato II.14
+      (attivita' e compiti di dettaglio) ne' l'allegato I.9 (gestione informativa digitale/BIM
+      e figure di supporto), citati come rinvio; gli artt. 15 (RUP), 116 (collaudo), il D.Lgs.
+      81/2008 (coordinatore sicurezza) sono citati. Distinta da rup-responsabile-unico-progetto-
+      dlgs36 e collaudo-verifica-conformita-dlgs36.

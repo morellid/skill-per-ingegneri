@@ -1,0 +1,42 @@
+schema_version: 1
+skill: cantieri-stradali-occupazione-cds
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dell'OCCUPAZIONE DELLA SEDE STRADALE (art. 20) e delle OPERE,
+# DEPOSITI E CANTIERI STRADALI (art. 21) del Codice della Strada (D.Lgs. 285/1992):
+# autorizzazione/concessione, sicurezza e segnalazione del cantiere, sanzioni.
+
+sources:
+  - id: cds-285-1992-20-21
+    title: "D.Lgs. 30 aprile 1992, n. 285 (Codice della Strada) - artt. 20 (occupazione della sede stradale) e 21 (opere, depositi e cantieri stradali) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del CdS usato dalla skill trasporti-eccezionali-cds-art10).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: e541dc1a2a210a4ffbc9edb9fb8c5bb21ee41241638dffbb0cee783cadb84918
+    license: public-domain
+    binary_path: not_in_repo/cds-idx.html
+    md_path: references/fonti/cds-285-1992-20-21.md
+    excerpt_path: references/estratti/cantieri-stradali-checklist.md
+    notes: |
+      Codice redazionale 092G0306. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: e541dc1a...; stesso indice usato dalla skill
+      trasporti-eccezionali-cds-art10). Articoli caricati via AJAX (caricaArticolo,
+      flagTipoArticolo 0, idGruppo 2, dataPubblicazioneGazzetta 1992-05-18) e trascritti
+      verbatim in references/fonti/cds-285-1992-20-21.md: art. 20 "Occupazione della sede
+      stradale" (versione 19: divieto su strade A/B/C/D e ammissibilita' condizionata su E/F
+      c. 1; chioschi/edicole e occupazione dei marciapiedi c. 2-3; sanzione da 173 a 694 euro
+      e rimozione c. 4-5), art. 21 "Opere, depositi e cantieri stradali" (versione 16:
+      preventiva autorizzazione/concessione dell'ente competente ex art. 26 c. 1; accorgimenti
+      per sicurezza/fluidita' e visibilita' del personale c. 2; rinvio al regolamento per
+      delimitazione/segnalazione dei cantieri c. 3; sanzione da 866 a 3.464 euro e rimozione
+      c. 4-5). Gli importi delle sanzioni sono quelli vigenti al 2026-07-17 (adeguamenti
+      biennali ex art. 195 c. 3 CdS; le note AGGIORNAMENTO 19/29/43/52/64/80/89/101/114/124/
+      133/145/163 sono di identico tenore e riportate in coda in forma compatta).
+      LIMITE DI RESA: la skill inquadra il regime autorizzatorio e gli obblighi; NON rilascia
+      autorizzazioni/concessioni, NON redige il piano di segnaletica temporanea, NON riproduce
+      il Regolamento (DPR 495/1992, artt. 30-43) ne' il disciplinare tecnico DM 10/7/2002
+      (schemi segnaletici), citati come rinvio; gli artt. 2 (classificazione strade), 18
+      (fasce/visibilita') e 26 (autorizzazioni/concessioni) sono citati. Il coordinamento con
+      la sicurezza dei lavoratori nei cantieri (D.Lgs. 81/2008) e' fuori perimetro.

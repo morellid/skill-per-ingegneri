@@ -1,0 +1,42 @@
+schema_version: 1
+skill: servitu-coattive-prediali-cc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento delle SERVITU' PREDIALI COATTIVE di piu' diretto interesse
+# tecnico: nozione e costituzione, passaggio coattivo (fondo intercluso e non intercluso),
+# acquedotto coattivo, elettrodotto coattivo e vie funicolari. Fonte: Codice civile
+# (R.D. 262/1942), Libro III, Titolo VI (Delle servitu' prediali).
+
+sources:
+  - id: codice-civile-servitu-coattive
+    title: "Codice civile (R.D. 16 marzo 1942, n. 262) - artt. 1027, 1031, 1032, 1033, 1051, 1052, 1053, 1055, 1056, 1057 (servitu' prediali coattive: passaggio, acquedotto, elettrodotto, vie funicolari) (testo vigente al 2026-07-17)"
+    type: regio-decreto
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del Codice civile usato da distanze-legali-costruzioni-cc e condominio-parti-comuni).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: f817bc32707124081b048e6d34882a4256b7e107de3c4a018fcd83a936dce325
+    license: public-domain
+    binary_path: not_in_repo/codice-civile-servitu-idx.html
+    md_path: references/fonti/cc-servitu-coattive.md
+    excerpt_path: references/estratti/servitu-coattive-checklist.md
+    notes: |
+      Codice redazionale 042U0262 (GU n. 79 del 4/4/1942). Pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: f817bc32...; indice completo del codice,
+      circa 1,6 MB; stesso indice usato dalle altre skill sul Codice civile). Articoli caricati
+      via AJAX (caricaArticolo, flagTipoArticolo 2, dataPubblicazioneGazzetta 1942-04-04) e
+      trascritti verbatim in references/fonti/cc-servitu-coattive.md: art. 1027 (contenuto del
+      diritto, idGruppo 125), art. 1031 (costituzione, idGruppo 125), art. 1032 (modi di
+      costituzione: sentenza/atto amministrativo, modalita' e indennita', idGruppo 126), art.
+      1033 (acquedotto coattivo - obbligo di dare passaggio alle acque, idGruppo 127), art. 1051
+      (passaggio coattivo del fondo intercluso, idGruppo 130), art. 1052 (passaggio coattivo del
+      fondo non intercluso, idGruppo 130; con nota Corte cost. 167/1999 su accessibilita'
+      portatori di handicap), art. 1053 (indennita', idGruppo 130), art. 1055 (cessazione
+      dell'interclusione, idGruppo 130), art. 1056 (elettrodotto coattivo, idGruppo 131), art.
+      1057 (vie funicolari/teleferiche, idGruppo 131).
+      LIMITE DI RESA: la skill inquadra le servitu' coattive civilistiche e i loro presupposti;
+      NON riproduce le LEGGI SPECIALI richiamate dagli artt. 1033/1056/1057 (T.U. acque R.D.
+      1775/1933, norme sugli elettrodotti), citate come rinvio, ne' quantifica l'indennita' (art.
+      1038, richiamato dall'art. 1053) o redige atti/domande giudiziali. Distinta dalla servitu'
+      di elettrodotto amministrativa (espropriazione, DPR 327/2001) e dalle distanze legali
+      (artt. 873 ss., skill distanze-legali-costruzioni-cc).
