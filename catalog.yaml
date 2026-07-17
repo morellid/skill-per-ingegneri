@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 15
+  count: 16
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
