@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 6
+  count: 7
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -1105,6 +1105,24 @@ skills:
   - ntc-2018
   - sismica
   - spettro
+- id: subappalto-contratti-pubblici-dlgs36
+  area: appalti-opere-pubbliche
+  title: Subappalto nei contratti pubblici (D.Lgs. 36/2023 art. 119)
+  summary: 'Inquadra il subappalto nei contratti pubblici (D.Lgs. 36/2023 art. 119): nozione e soglie (2% / 100.000 euro /
+    manodopera 50%), condizioni, trasmissione 20 giorni prima, pagamento diretto, autorizzazione a 30 giorni. Non rilascia
+    l''autorizzazione.'
+  normative_refs:
+  - D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 119 (Subappalto)
+  - 'Articoli richiamati dall''art. 119: 100 e 103 (qualificazione), 11 (CCNL), 120 (modifiche), allegato II.2-bis (revisione
+    prezzi), Capo II Titolo IV Parte V Libro II (cause di esclusione) (richiamati)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - subappalto
+  - dlgs-36-2023
+  - contratti-pubblici
+  - codice-appalti
+  - pagamento-diretto
 - id: terre-rocce-scavo-dpr120
   area: ambiente-territorio-mobilita
   title: 'Terre e rocce da scavo: sottoprodotto e riutilizzo (DPR 120/2017)'
