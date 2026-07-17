@@ -2,18 +2,21 @@
 
 > Versione: 0.1.0-alpha | Stato: in sviluppo (validazione Livello 1; Livello 2 con avvocato civilista / CTU da completare)
 
-Skill di **supporto documentale** all'inquadramento delle **servitù prediali coattive**
-(legali) di più diretto interesse tecnico: nozione e costituzione, passaggio coattivo
-(fondo intercluso e non intercluso), acquedotto coattivo, elettrodotto coattivo e vie
-funicolari, secondo il **Codice civile (R.D. 262/1942), Libro III, Titolo VI**.
+Skill di **supporto documentale** per il **tecnico** (ingegnere, geometra, **CTU/CTP**) nei
+compiti tecnici legati alle **servitù prediali coattive** (passaggio, acquedotto, elettrodotto):
+verificare l'**interclusione**, individuare il **tracciato/la localizzazione** dell'accesso o della
+conduttura con i criteri di legge (accesso più breve e minor danno, sottopassaggio, veicoli) e
+fornire la **base tecnica dell'indennità**, secondo il **Codice civile (R.D. 262/1942), Libro III,
+Titolo VI**.
 
-**Non redige** atti o domande giudiziali, **non quantifica** l'indennità, **non riproduce**
-le leggi speciali su acque ed elettrodotti e **non sostituisce** l'avvocato o il CTU:
-inquadra presupposti, modalità e indennità.
+**Non dà consulenza legale**, **non redige** atti o domande giudiziali, **non quantifica**
+l'indennità (è l'oggetto della stima) e **non sostituisce** l'avvocato o il giudice: inquadra
+presupposti, criteri di localizzazione e base dell'indennità a supporto del tecnico.
 
 ## Target
 
-Tecnici, geometri, ingegneri, avvocati, CTU.
+Ingegneri, geometri e tecnici incaricati (CTU nominati dal giudice, CTP di parte) chiamati a
+localizzare l'accesso/la conduttura o a fornire la base tecnica dell'indennità.
 
 ## Cosa fa
 

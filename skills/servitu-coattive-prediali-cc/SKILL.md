@@ -1,10 +1,10 @@
 ---
 name: servitu-coattive-prediali-cc
-description: "Supporto documentale all'inquadramento delle servitù prediali coattive di più diretto interesse tecnico secondo il Codice civile (R.D. 262/1942), Libro III, Titolo VI. Aiuta a inquadrare la nozione di servitù prediale come peso imposto su un fondo per l'utilità di un altro fondo di diverso proprietario (art. 1027), i modi di costituzione (coattiva, volontaria, per usucapione o destinazione del padre di famiglia; art. 1031) e la costituzione coattiva con sentenza o atto amministrativo, con determinazione di modalità e indennità e opposizione prima del pagamento (art. 1032), l'acquedotto coattivo ossia l'obbligo di dare passaggio alle acque per i bisogni della vita o usi agrari/industriali con le esenzioni (art. 1033), il passaggio coattivo a favore del fondo intercluso con i criteri di localizzazione - accesso più breve e minor danno, sottopassaggio, ampliamento per i veicoli (art. 1051), il passaggio coattivo a favore del fondo non intercluso con accesso inadatto o insufficiente e i presupposti, inclusa l'estensione della Corte costituzionale per l'accessibilità dei portatori di handicap (art. 1052), l'indennità proporzionata al danno (art. 1053), la cessazione dell'interclusione (art. 1055), l'elettrodotto coattivo (art. 1056) e le vie funicolari/teleferiche (art. 1057). Use when a technician, surveyor, engineer, lawyer or CTU must frame a compulsory predial easement (right of way, water conduit, power line) under the Italian Civil Code; it is a documentary aid, does not draft deeds or judicial claims, does not quantify the indemnity and does not replace the lawyer or the court-appointed expert."
+description: "Supporto documentale all'ingegnere, al geometra e al tecnico incaricato (CTU/CTP) nei compiti tecnici legati alle servitù prediali coattive di interesse tecnico - passaggio, acquedotto, elettrodotto - secondo il Codice civile (R.D. 262/1942), Libro III, Titolo VI. Il fulcro tecnico è la definizione sul terreno della servitù: verificare l'interclusione del fondo, individuare il TRACCIATO/LA LOCALIZZAZIONE dell'accesso o della conduttura con i criteri di legge (accesso più breve e minor danno al fondo servente, sottopassaggio, ampliamento per i veicoli), e fornire gli elementi tecnici a base della stima dell'indennità (superfici occupate, danno). Ancora questi compiti alla norma: nozione di servitù prediale come peso su un fondo per l'utilità di un altro fondo di diverso proprietario (art. 1027), modi di costituzione (art. 1031) e costituzione coattiva con sentenza o atto amministrativo che fissa modalità e indennità (art. 1032), acquedotto coattivo con le esenzioni (art. 1033), passaggio coattivo del fondo intercluso e criteri di localizzazione (art. 1051), passaggio del fondo non intercluso con accesso inadatto o insufficiente, inclusa l'estensione della Corte costituzionale per l'accessibilità dei portatori di handicap (art. 1052), indennità proporzionata al danno (art. 1053), cessazione dell'interclusione (art. 1055), elettrodotto coattivo (art. 1056) e vie funicolari/teleferiche (art. 1057). Use when an engineer, surveyor, or court-appointed/party technical expert (CTU/CTP) must frame the technical side of a compulsory predial easement (right of way, water conduit, power line) under the Italian Civil Code - above all locating the access route and supplying the technical basis for the indemnity; it is a documentary aid, does not draft deeds or judicial claims, does not give legal advice, does not quantify the indemnity itself (that is the appraisal), and does not replace the lawyer or the judge."
 license: MIT
 area: forense
 title: "Servitù coattive - passaggio, acquedotto, elettrodotto (c.c. artt. 1027-1057)"
-summary: "Inquadra le servitù coattive (Codice civile): nozione (1027), costituzione con sentenza e indennità (1031-1032), acquedotto coattivo (1033), passaggio del fondo intercluso/non intercluso (1051-1052), indennità e cessazione (1053, 1055), elettrodotto (1056), vie funicolari (1057)."
+summary: "Supporta l'ingegnere/geometra/CTU sulle servitù coattive (c.c.): localizzazione dell'accesso del fondo intercluso (1051-1052), acquedotto (1033) ed elettrodotto (1056) coattivi, nozione e costituzione con indennità (1027-1032). Non redige atti né esegue la stima."
 normative_refs:
   - "Codice civile (R.D. 16/3/1942 n. 262) - artt. 1027, 1031, 1032, 1033 (nozione, costituzione, acquedotto coattivo)"
   - "Codice civile (R.D. 16/3/1942 n. 262) - artt. 1051, 1052, 1053, 1055, 1056, 1057 (passaggio, indennità, cessazione, elettrodotto, vie funicolari)"
@@ -23,8 +23,19 @@ tags:
 
 ## Quando usare questa skill
 
-Usala quando devi **inquadrare una servitù prediale coattiva** (legale) di interesse
-tecnico e ancorarla al **Codice civile, Libro III, Titolo VI**:
+Usala quando un **ingegnere, geometra o tecnico incaricato** (CTU nominato dal giudice, CTP di
+parte, professionista che redige un rilievo/relazione) deve svolgere i **compiti tecnici** legati a
+una **servitù prediale coattiva** (passaggio, acquedotto, elettrodotto) e collocarli nel quadro del
+**Codice civile, Libro III, Titolo VI**. Il **compito tecnico** tipico e':
+
+- verificare l'**interclusione** del fondo (assenza/inidoneita' di accesso alla via pubblica);
+- individuare il **tracciato/la localizzazione** dell'accesso o della conduttura con i **criteri di
+  legge** (accesso piu' breve e **minor danno** al fondo servente, sottopassaggio, ampliamento per i
+  veicoli);
+- fornire gli **elementi tecnici a base dell'indennita'** (superfici occupate, danno al fondo
+  servente).
+
+A supporto, la skill ancora questi compiti alla norma:
 
 - **nozione** - **art. 1027**: la servitù prediale è il **peso imposto sopra un fondo**
   per l'**utilità di un altro fondo** appartenente a diverso proprietario (fondo

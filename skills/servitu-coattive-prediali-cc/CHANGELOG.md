@@ -5,6 +5,14 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+- Riformulazione dell'inquadramento per **centrare il ruolo dell'ingegnere/geometra/CTU** (area
+  *CTU & ingegneria forense*): il fulcro e' il **compito tecnico** - verifica dell'interclusione,
+  **localizzazione del tracciato** dell'accesso/conduttura coi criteri di legge e **base tecnica
+  dell'indennita'**. Aggiornati `description`, `summary`, README e la riga del catalogo per
+  esplicitare che la skill serve al tecnico e non da' consulenza legale. Contenuto normativo e
+  fonte verbatim invariati.
+
 ## [0.1.0-alpha] - 2026-07-17
 
 ### Added (closes #321)
