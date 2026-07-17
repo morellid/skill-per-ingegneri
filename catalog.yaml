@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 19
+  count: 20
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -1407,6 +1407,25 @@ skills:
   - dlgs-81-2008
   - idoneita-alla-mansione
   - visite-mediche
+- id: sottoprodotti-end-of-waste-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Sottoprodotti ed End of Waste (D.Lgs. 152/2006 artt. 184-bis, 184-ter)
+  summary: 'Inquadra sottoprodotto (art. 184-bis D.Lgs. 152/2006) ed End of Waste (art. 184-ter): le 4 condizioni del sottoprodotto,
+    la cessazione della qualifica di rifiuto dopo recupero, i criteri UE/DM, le autorizzazioni 208/209/211 con parere ISPRA/ARPA,
+    registro RECER e Nucleo NEW.'
+  normative_refs:
+  - 'D.Lgs. 3/4/2006 n. 152 - art. 184-bis (Sottoprodotto: quattro condizioni cumulative, criteri con DM)'
+  - 'D.Lgs. 3/4/2006 n. 152 - art. 184-ter (Cessazione della qualifica di rifiuto/End of Waste: condizioni, criteri, autorizzazioni,
+    RECER, NEW)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-152-2006
+  - rifiuti
+  - sottoprodotto
+  - end-of-waste
+  - economia-circolare
+  - ambiente
 - id: specifiche-tecniche-ict-appalti-dlgs36
   area: appalti-opere-pubbliche
   title: Specifiche tecniche ed acquisizione ICT negli appalti PA - D.Lgs. 36/2023 + CAD
