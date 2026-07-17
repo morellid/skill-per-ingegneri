@@ -1,0 +1,38 @@
+schema_version: 1
+skill: garanzie-appalti-pubblici-dlgs36
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento delle garanzie negli appalti pubblici: garanzia
+# provvisoria per la partecipazione alla procedura (art. 106) e garanzia
+# definitiva con le relative coperture assicurative (art. 117) del Codice dei
+# contratti pubblici.
+
+sources:
+  - id: dlgs-36-2023-artt-106-117
+    title: "D.Lgs. 31 marzo 2023, n. 36 - Codice dei contratti pubblici - artt. 106 (garanzia provvisoria) e 117 (garanzia definitiva) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill appalti: specifiche-tecniche-ict,
+    # subappalto, modifiche-varianti).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 0e9a193836e379cb33cb6daf1a5a988c608eb9559d84b91a841d9ed9791a62af
+    license: public-domain
+    binary_path: not_in_repo/dlgs36_17.html
+    md_path: references/fonti/dlgs-36-2023-artt-106-117.md
+    excerpt_path: references/estratti/garanzie-appalti-checklist.md
+    notes: |
+      Codice redazionale 23G00044, GU n. 77 del 31/3/2023 - S.O. n. 12 (in vigore
+      dal 1/4/2023). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: 0e9a1938...). Gli articoli
+      106 (Garanzie per la partecipazione alla procedura - garanzia provvisoria) e
+      117 (Garanzie definitive) sono caricati via AJAX (caricaArticolo: art. 106
+      versione 2, idGruppo 16; art. 117 versione 1, idGruppo 18; flagTipoArticolo
+      2; dataPubblicazioneGazzetta 2023-03-31) e trascritti verbatim in
+      references/fonti/dlgs-36-2023-artt-106-117.md. Le porzioni tra (( )) sono le
+      modifiche successive gia' consolidate nel testo vigente (es. correttivo
+      D.Lgs. 31 dicembre 2024, n. 209). Rinvii NON riprodotti perche' fuori scope o
+      coperti da altre fonti/skill: l'allegato II.13 (certificazioni/marchi per la
+      riduzione fino al 20%), gli schemi tipo di garanzia (DM ex art. 117 c. 12,
+      fonte separata), l'art. 1957 c.c. e il codice antimafia (D.Lgs. 159/2011)
+      sono citati come rinvio e non trascritti.
