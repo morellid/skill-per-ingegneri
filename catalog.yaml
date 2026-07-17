@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 7
+  count: 8
 skills:
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
@@ -1538,6 +1538,26 @@ skills:
   - formulario-fir
   - albo-gestori-ambientali
   - trasporti
+- id: usucapione-cc
+  area: forense
+  title: Usucapione - acquisto della proprietà per possesso (c.c. artt. 1158-1167)
+  summary: 'Inquadra l''usucapione (c.c. artt. 1158-1167): ordinaria di immobili 20 anni (1158) e abbreviata decennale (1159),
+    piccola proprietà rurale (1159-bis), universalità e beni mobili/registrati (1160-1162), vizi e interversione (1163-1164),
+    prescrizione e interruzione (1165-1167).'
+  normative_refs:
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1158, 1159, 1159-bis, 1160, 1161, 1162 (usucapione di immobili, universalità,
+    mobili)
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1163, 1164, 1165, 1166, 1167 (vizi/interversione del possesso, prescrizione,
+    interruzione)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-civile
+  - usucapione
+  - possesso
+  - diritti-reali
+  - prescrizione
+  - forense
 - id: valutazione-cem-elettrodotti-dpcm2003
   area: ambiente-territorio-mobilita
   title: Verifica limiti CEM elettrodotti 50 Hz (D.P.C.M. 8/7/2003)

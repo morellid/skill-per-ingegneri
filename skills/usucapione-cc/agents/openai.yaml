@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Usucapione - acquisto della proprietà per possesso (c.c. artt. 1158-1167)"
+short_description: Supporto documentale all'inquadramento dell'usucapione (acquisto della proprieta' e dei diritti reali di godimento per possesso continuato) secondo il Codice civile (R.D. 262/1942), Libro III, Titolo VIII. Distingue l'usucapione ordinaria dei beni immobili in venti anni (art. 1158), l'usucapione decennale abbreviata con buona fede, titolo idoneo e trascrizione (art. 1159), l'usucapione speciale per la piccola proprieta' rurale in quindici o cinque anni (art. 1159-bis), l'usucapione delle universalita' di mobili (art. 1160), dei beni mobili in dieci o venti anni (art. 1161) e dei mobili iscritti in pubblici registri in tre o dieci anni (art. 1162), i vizi del possesso violento o clandestino (art. 1163), l'interversione del possesso del detentore (art. 1164), l'applicazione delle norme sulla prescrizione (art. 1165), l'inefficacia delle cause di impedimento/sospensione rispetto al terzo possessore (art. 1166) e l'interruzione per perdita del possesso oltre un anno (art. 1167). NON redige atti o domande giudiziali, non gestisce la mediazione, non valuta il possesso in concreto, non sostituisce l'avvocato o il CTU.
+default_prompt: |
+  Ho posseduto un terreno altrui per oltre 20 anni senza titolo: ho usucapito (art. 1158 c.c.)? Se invece
+  ho acquistato in buona fede con atto trascritto da chi non era proprietario, quanti anni servono (art.
+  1159)? Un comodatario (detentore) puo' usucapire, o serve l'interversione del possesso (art. 1164)?

@@ -1,0 +1,45 @@
+schema_version: 1
+skill: usucapione-cc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dell'USUCAPIONE (acquisto della proprieta' e dei diritti reali
+# di godimento per possesso continuato): usucapione ordinaria e abbreviata di immobili,
+# universalita' di mobili, beni mobili e mobili registrati, piccola proprieta' rurale,
+# vizi/interversione del possesso, applicazione delle norme sulla prescrizione,
+# interruzione. Fonte: Codice civile (R.D. 262/1942), Libro III, Titolo VIII.
+
+sources:
+  - id: cc-usucapione-1158-1167
+    title: "Codice civile (R.D. 16 marzo 1942, n. 262) - artt. 1158, 1159, 1159-bis, 1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167 (usucapione) (testo vigente al 2026-07-17)"
+    type: regio-decreto
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del Codice civile usato da servitu-coattive-prediali-cc, distanze-legali-costruzioni-cc,
+    # condominio-parti-comuni-assemblea-cc).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: f817bc32707124081b048e6d34882a4256b7e107de3c4a018fcd83a936dce325
+    license: public-domain
+    binary_path: not_in_repo/cc-usuc-idx.html
+    md_path: references/fonti/cc-usucapione-1158-1167.md
+    excerpt_path: references/estratti/usucapione-checklist.md
+    notes: |
+      Codice redazionale 042U0262 (GU n. 79 del 4/4/1942). Pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: f817bc32...; indice completo del codice,
+      circa 1,6 MB; stesso indice usato dalle altre skill sul Codice civile). Articoli caricati
+      via AJAX (caricaArticolo, idGruppo 144, flagTipoArticolo 2, dataPubblicazioneGazzetta
+      1942-04-04) e trascritti verbatim in references/fonti/cc-usucapione-1158-1167.md:
+      art. 1158 (immobili, 20 anni), art. 1159 (usucapione decennale abbreviata immobili),
+      art. 1159-bis (idArticolo 1159 idSottoArticolo 2, versione 2; piccola proprieta' rurale,
+      15/5 anni), art. 1160 (universalita' di mobili, 20/10 anni), art. 1161 (beni mobili,
+      10 anni buona fede / 20 anni mala fede), art. 1162 (mobili registrati, 3/10 anni),
+      art. 1163 (vizi del possesso), art. 1164 (interversione del possesso), art. 1165 (rinvio
+      alle norme sulla prescrizione), art. 1166 (inefficacia impedimento/sospensione rispetto
+      al terzo possessore, art. 2942), art. 1167 (interruzione per perdita di possesso oltre un
+      anno).
+      LIMITE DI RESA: la skill inquadra i presupposti e i termini dell'usucapione; NON redige
+      atti o domande giudiziali di accertamento dell'usucapione, NON gestisce la mediazione ex
+      art. 5 D.Lgs. 28/2010 (condizione di procedibilita' per l'usucapione), NON valuta in
+      concreto il possesso ad usucapionem; le norme generali sulla prescrizione (artt. 2934 ss.,
+      2942, richiamate dagli artt. 1165-1166) e la legge speciale sulla piccola proprieta'
+      rurale sono citate come rinvio. Distinta da servitu-coattive-prediali-cc (costituzione
+      delle servitu', anche per usucapione ex art. 1031).
