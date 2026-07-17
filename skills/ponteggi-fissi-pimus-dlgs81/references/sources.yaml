@@ -1,0 +1,44 @@
+schema_version: 1
+skill: ponteggi-fissi-pimus-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dei PONTEGGI FISSI a elementi portanti prefabbricati e del Pi.M.U.S.:
+# autorizzazione ministeriale e relazione tecnica del fabbricante, progetto firmato da ingegnere/
+# architetto, documentazione di cantiere, piano di montaggio/uso/smontaggio, sorveglianza del preposto
+# e formazione, manutenzione e norme particolari. Fonte: Testo unico sicurezza (D.Lgs. 81/2008),
+# Titolo IV, Capo II, Sezione V, artt. 131-138.
+
+sources:
+  - id: dlgs-81-2008-131-138
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 131-138 (ponteggi fissi e Pi.M.U.S.) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: DPI, MMC, VDT, segnaletica, rumore, vibrazioni).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-ponteggi-idx.html
+    md_path: references/fonti/dlgs-81-2008-131-138.md
+    excerpt_path: references/estratti/ponteggi-checklist.md
+    notes: |
+      Codice redazionale 008G0104, idGruppo 23 (Sezione V - Ponteggi fissi). Pagina indice Normattiva
+      pinnata a !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...; e' lo stesso indice usato
+      dalle altre skill D.Lgs. 81/2008). Articoli 131 (v2), 132 (v1), 133 (v1), 134 (v1), 135 (v1), 136
+      (v2), 137 (v2), 138 (v2) caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-81-2008-131-138.md: autorizzazione alla costruzione ed all'impiego chiesta
+      dal fabbricante e rinnovo decennale (131); contenuti della relazione tecnica, schemi-tipo (132);
+      progetto - calcolo di resistenza e stabilita' e disegno esecutivo firmati da ingegnere o
+      architetto abilitato - per ponteggi oltre 20 m, configurazioni fuori schema o opere provvisionali
+      complesse (133); documentazione in cantiere, Pi.M.U.S. per lavori in quota (Allegato XXII),
+      modifiche sul disegno entro schema-tipo (134); marchio del fabbricante (135); Pi.M.U.S. redatto
+      dal datore di lavoro a mezzo di persona competente, obblighi del datore di lavoro, sorveglianza
+      del preposto e formazione teorico-pratica (Allegato XXI) (136); manutenzione e revisione del
+      preposto (137); norme particolari - parapetto 95 cm, fermapiede 15 cm, distacco tavole 20 cm
+      (138). Il testo tra doppi tondi (( )) segnala le modifiche del D.Lgs. 106/2009 (artt. 131, 136,
+      137, 138).
+      LIMITE DI RESA: la skill inquadra obblighi, soggetti e contenuti; NON redige il progetto, la
+      relazione tecnica o il Pi.M.U.S., NON esegue il calcolo di resistenza e stabilita', NON rilascia
+      l'autorizzazione ministeriale, NON riproduce gli allegati XVIII/XIX/XXI/XXII ne' le norme UNI EN
+      12810/12811/74, e NON sostituisce il professionista abilitato, il datore di lavoro, il preposto
+      ne' gli organi di vigilanza.
