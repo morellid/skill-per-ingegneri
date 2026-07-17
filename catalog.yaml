@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 14
+  count: 15
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -929,6 +929,24 @@ skills:
   - art-25-septies
   - art-30-dlgs81
   - responsabilita-enti
+- id: movimentazione-manuale-carichi-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Movimentazione manuale dei carichi (MMC) - D.Lgs. 81/2008 Titolo VI
+  summary: 'Obblighi sulla movimentazione manuale dei carichi (D.Lgs. 81/2008 Titolo VI, artt. 167-169): campo e definizioni
+    (art. 167), obblighi del datore - evitare/ridurre, valutazione, sorveglianza sanitaria (art. 168), informazione/formazione/addestramento
+    (art. 169).'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 167 (campo di applicazione e definizioni) e 168 (obblighi del datore di lavoro)
+  - D.Lgs. 9/4/2008 n. 81 - art. 169 (informazione, formazione e addestramento) + Allegato XXXIII (rinvio)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - movimentazione-manuale-carichi
+  - sovraccarico-biomeccanico
+  - sorveglianza-sanitaria
+  - ergonomia
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)
