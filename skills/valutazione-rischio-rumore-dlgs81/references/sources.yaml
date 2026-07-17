@@ -1,0 +1,41 @@
+schema_version: 1
+skill: valutazione-rischio-rumore-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della valutazione del rischio rumore negli ambienti
+# di lavoro: definizioni, valori limite ed azione, valutazione del rischio, misure
+# di prevenzione, DPI uditivi e sorveglianza sanitaria (Titolo VIII, Capo II del
+# Testo unico sicurezza).
+
+sources:
+  - id: dlgs-81-2008-rumore
+    title: "D.Lgs. 9 aprile 2008, n. 81 - Testo unico sicurezza sul lavoro - Titolo VIII, Capo II (Rumore), artt. 188-196 (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI
+    # (stesso pattern Normattiva delle altre skill D.Lgs. 81: duvri-interferenze,
+    # atex-luoghi-lavoro, mog-231-sicurezza-lavoro).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/dlgs81_idx.html
+    md_path: references/fonti/dlgs-81-2008-rumore.md
+    excerpt_path: references/estratti/rischio-rumore-checklist.md
+    notes: |
+      Codice redazionale 008G0104, GU n. 101 del 30/4/2008 - S.O. n. 108 (in vigore
+      dal 15/5/2008). Il binario e' la pagina indice Normattiva pinnata a
+      !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...). Gli articoli del
+      Capo II "Rumore" del Titolo VIII usati dalla skill - 188 (definizioni), 189
+      (valori limite ed azione), 190 (valutazione del rischio), 192 (misure), 193
+      (DPI uditivi), 196 (sorveglianza sanitaria) - sono caricati via AJAX
+      (caricaArticolo: idGruppo 36, flagTipoArticolo 0, codiceRedazionale 008G0104,
+      dataPubblicazioneGazzetta 2008-04-30) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-rumore.md. Nel testo Normattiva il simbolo del
+      micro (micro) e' reso come "\mu" (es. "20 \muPa"): riprodotto verbatim.
+      Articoli citati come rinvio e NON trascritti perche' fuori scope o coperti da
+      altre disposizioni/skill: 181 (valutazione dei rischi da agenti fisici), 182
+      (disposizioni miranti a eliminare o ridurre i rischi), 187 (campo di
+      applicazione), 191 (rischi elevati), 194 (misure per la limitazione
+      dell'esposizione), 195 (informazione e formazione), 197 (deroghe), 198
+      (linee guida). Le norme tecniche (ISO 1999:1990, UNI) e le banche dati sul
+      rumore richiamate sono citate, non riprodotte.

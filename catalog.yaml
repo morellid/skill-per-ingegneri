@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 9
+  count: 10
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1136,6 +1136,24 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: valutazione-rischio-rumore-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Valutazione del rischio rumore sul lavoro - D.Lgs. 81/2008 Titolo VIII Capo II
+  summary: 'Rischio rumore sul lavoro (D.Lgs. 81/2008 Titolo VIII Capo II): definizioni (ppeak, LEX,8h), valori limite (87
+    dB(A)) e di azione superiori (85)/inferiori (80 dB(A)), valutazione e misurazione, misure di prevenzione, DPI uditivi
+    e sorveglianza sanitaria (artt. 188-196).'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 188-189 (definizioni, valori limite e di azione del rumore)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 190, 192, 193, 196 (valutazione, misure, DPI uditivi, sorveglianza sanitaria)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - rischio-rumore
+  - agenti-fisici
+  - dpi-uditivi
+  - sorveglianza-sanitaria
 - id: verifica-accessibilita-dichiarazione-agid
   area: software-dati-cybersecurity
   title: Verifica di accessibilita' e dichiarazione (Linee guida AgID)
