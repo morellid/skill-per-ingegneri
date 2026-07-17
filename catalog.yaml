@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 21
+  count: 22
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -57,6 +57,24 @@ skills:
   - consulenza-tecnica-preventiva
   - codice-procedura-civile
   - ctu
+- id: accessi-passi-carrabili-cds
+  area: ambiente-territorio-mobilita
+  title: Accessi, diramazioni e passi carrabili (Codice della Strada art. 22)
+  summary: 'Inquadra accessi, diramazioni e passi carrabili (CdS art. 22): preventiva autorizzazione dell''ente proprietario,
+    regolarizzazione, trasformazioni, parcheggi per insediamenti, opere e consorzi, condizioni tecniche, sanzioni. Non rilascia
+    l''autorizzazione.'
+  normative_refs:
+  - D.Lgs. 30 aprile 1992, n. 285 (Codice della Strada) - art. 22 (Accessi e diramazioni)
+  - 'Rinvio (non riprodotti): Reg. esecuzione DPR 495/1992 (accessi/passi carrabili), decreti MIT (caratteristiche tecniche),
+    art. 26 (competenza), art. 195 c. 3 (adeguamento sanzioni)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - accessi
+  - passi-carrabili
+  - codice-strada
+  - cds-art-22
+  - autorizzazione-stradale
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
   title: Accessibilita' siti web e app - Legge Stanca (L. 4/2004)
