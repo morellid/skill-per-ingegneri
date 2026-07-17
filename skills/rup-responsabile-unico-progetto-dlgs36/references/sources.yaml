@@ -1,0 +1,44 @@
+schema_version: 1
+skill: rup-responsabile-unico-progetto-dlgs36
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento del RESPONSABILE UNICO DEL PROGETTO (RUP) nei contratti
+# pubblici: nomina, requisiti, unicita', modelli organizzativi, compiti, struttura di
+# supporto, formazione, incompatibilita' e RUP delle centrali di committenza.
+# Fonte: Codice dei contratti pubblici (D.Lgs. 36/2023), art. 15.
+
+sources:
+  - id: dlgs-36-2023-art15
+    title: "D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 15 (Responsabile unico del progetto - RUP) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso
+    # pattern Normattiva delle altre skill D.Lgs. 36: subappalto, garanzie, specifiche ICT).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 0e9a193836e379cb33cb6daf1a5a988c608eb9559d84b91a841d9ed9791a62af
+    license: public-domain
+    binary_path: not_in_repo/dlgs36-rup-idx.html
+    md_path: references/fonti/dlgs-36-2023-art15.md
+    excerpt_path: references/estratti/rup-checklist.md
+    notes: |
+      Codice redazionale 23G00044. Pagina indice Normattiva pinnata a !vig=2026-07-17
+      (hash stabile, doppio download: 0e9a1938...; e' lo stesso indice usato dalle altre
+      skill D.Lgs. 36). Art. 15 (versione 2, idGruppo 2) caricato via AJAX (caricaArticolo)
+      e trascritto verbatim in references/fonti/dlgs-36-2023-art15.md: nomina nel primo
+      atto di avvio per le fasi programmazione/progettazione/affidamento/esecuzione (c. 1);
+      nomina tra dipendenti con requisiti allegato I.2, enti non-PA, carenza di organico,
+      obbligatorieta'/non rifiutabilita' e subentro ex lege in caso di mancata nomina (c. 2);
+      indicazione del nominativo nel bando/avviso/invito/affidamento diretto (c. 3);
+      unicita' del RUP e modelli organizzativi con responsabili di procedimento per fase
+      (c. 4); compiti del RUP e completamento dell'intervento (c. 5, con periodo soppresso
+      dal D.Lgs. 209/2024); struttura di supporto e risorse fino all'1% della base di gara
+      (c. 6); piano di formazione (c. 7); incompatibilita' nel contraente generale e nel
+      PPP (c. 8); RUP delle centrali di committenza/aggregazioni (c. 9). Il testo tra doppi
+      tondi (( )) e' quello introdotto/modificato dai decreti correttivi, riportato come
+      da fonte.
+      LIMITE DI RESA: la skill inquadra la figura del RUP e i suoi adempimenti; i REQUISITI
+      e l'elenco dettagliato dei COMPITI sono demandati all'allegato I.2 (richiamato dai
+      commi 2 e 5), citato come rinvio e NON riprodotto. Sono citati gli artt. 37
+      (programmazione) e i richiami alle norme sul partenariato pubblico-privato. La skill
+      non nomina il RUP ne' redige gli atti: rinvia alla determinazione della stazione
+      appaltante/ente concedente.

@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Sottoprodotti ed End of Waste (D.Lgs. 152/2006 artt. 184-bis, 184-ter)"
+short_description: Supporto documentale all'inquadramento del sottoprodotto (art. 184-bis) e della cessazione della qualifica di rifiuto - End of Waste (art. 184-ter) del D.Lgs. 152/2006 (Codice dell'ambiente), Parte IV. Distingue quando una sostanza od oggetto e' un sottoprodotto e non un rifiuto verificando le quattro condizioni cumulative dell'art. 184-bis (origine da un processo di produzione di cui e' parte integrante e non scopo primario; certezza dell'utilizzo; utilizzo diretto senza trattamento diverso dalla normale pratica industriale; utilizzo legale con requisiti di prodotto, salute e ambiente) e quando un rifiuto cessa di essere tale dopo un'operazione di recupero soddisfacendo le condizioni dell'art. 184-ter (scopi specifici, mercato/domanda, requisiti tecnici e standard di prodotto, nessun impatto negativo), con i criteri fissati da regolamenti UE o caso per caso con DM, le autorizzazioni degli artt. 208/209/211 e del Titolo III-bis con parere ISPRA/ARPA in mancanza di criteri, il registro RECER e il Nucleo End of Waste (NEW). NON classifica in concreto il materiale, non riproduce i decreti ministeriali di criterio, non redige la dichiarazione di conformita' o l'istanza, non sostituisce l'autorita' competente o ISPRA/ARPA.
+default_prompt: |
+  La segatura della mia segheria e' un sottoprodotto o un rifiuto (art. 184-bis D.Lgs. 152/2006)? Quali
+  sono le quattro condizioni e devono ricorrere tutte? E un aggregato riciclato da rifiuti inerti puo'
+  cessare di essere rifiuto - End of Waste (art. 184-ter)? Chi fissa i criteri e cosa succede se non
+  esiste un decreto per quella tipologia?

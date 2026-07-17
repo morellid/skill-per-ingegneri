@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 14 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 16 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -25,6 +25,7 @@
         "./duvri-interferenze-dlgs81",
         "./dvr-generico",
         "./mog-231-sicurezza-lavoro",
+        "./movimentazione-manuale-carichi-dlgs81",
         "./obblighi-datore-preposto-formazione-dlgs81",
         "./piano-emergenza-antincendio-dm2021",
         "./piano-lavoro-amianto",
@@ -32,13 +33,14 @@
         "./prevenzione-incendi-attivita-procedimenti-dpr151",
         "./sorveglianza-sanitaria-medico-competente-dlgs81",
         "./valutazione-rischio-rumore-dlgs81",
-        "./valutazione-rischio-vibrazioni-dlgs81"
+        "./valutazione-rischio-vibrazioni-dlgs81",
+        "./videoterminali-vdt-dlgs81"
       ]
     },
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 10 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 11 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -52,6 +54,7 @@
         "./cedimenti-edometrici-ntc",
         "./combinazioni-carico-ntc",
         "./costruzioni-esistenti-ntc-cap8",
+        "./denuncia-autorizzazione-sismica-dpr380",
         "./periodo-proprio-t1-ntc",
         "./predimensionamento-flessione-ca-ntc",
         "./relazione-geologica-geotecnica-ntc",
@@ -62,7 +65,7 @@
     {
       "name": "edilizia-urbanistica-catasto",
       "source": "./skills",
-      "description": "Edilizia, urbanistica & catasto - 14 skill verticali su normative italiane.",
+      "description": "Edilizia, urbanistica & catasto - 15 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -78,6 +81,7 @@
         "./definizioni-interventi-edilizi-dpr380",
         "./denuncia-opere-strutturali-l1086",
         "./distanze-legali-costruzioni-cc",
+        "./edilizia-libera-cila-scia-dpr380",
         "./fattibilita-idraulica-toscana-lr41",
         "./modulistica-edilizia-unificata",
         "./permesso-costruire-dpr380",
@@ -90,7 +94,7 @@
     {
       "name": "appalti-opere-pubbliche",
       "source": "./skills",
-      "description": "Appalti & opere pubbliche - 10 skill verticali su normative italiane.",
+      "description": "Appalti & opere pubbliche - 13 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -100,6 +104,8 @@
       "category": "appalti-opere-pubbliche",
       "skills": [
         "./bandi-tipo-anac-checker",
+        "./collaudo-verifica-conformita-dlgs36",
+        "./direzione-lavori-esecuzione-dlgs36",
         "./dnsh-pnrr-checker",
         "./espropriazione-pubblica-utilita-dpr327",
         "./garanzie-appalti-pubblici-dlgs36",
@@ -107,6 +113,7 @@
         "./oepv-valutatore-offerte-tecniche",
         "./pfte-allegato-i7-checker",
         "./relazione-cam-dm-24-11-2025",
+        "./rup-responsabile-unico-progetto-dlgs36",
         "./specifiche-tecniche-ict-appalti-dlgs36",
         "./subappalto-contratti-pubblici-dlgs36"
       ]
@@ -135,7 +142,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 20 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 22 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -148,6 +155,7 @@
         "./aua-dpr59-dossier",
         "./autorizzazione-integrata-ambientale-dlgs152",
         "./bonifica-siti-contaminati-dlgs152",
+        "./cantieri-stradali-occupazione-cds",
         "./cbam-declarant-trimestrale",
         "./consulente-adr-dlgs40",
         "./deposito-classificazione-rifiuti-dlgs152",
@@ -157,6 +165,7 @@
         "./pums-validator-dm397",
         "./rsia-audit-stradale-dlgs35",
         "./scarichi-emissioni-dlgs152",
+        "./sottoprodotti-end-of-waste-dlgs152",
         "./terre-rocce-scavo-dpr120",
         "./trasporti-eccezionali-cds-art10",
         "./trasporto-rifiuti-fir-dlgs152",
@@ -218,7 +227,7 @@
     {
       "name": "forense",
       "source": "./skills",
-      "description": "CTU & ingegneria forense - 7 skill verticali su normative italiane.",
+      "description": "CTU & ingegneria forense - 6 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -230,10 +239,9 @@
         "./accertamento-tecnico-preventivo-cpc",
         "./compensi-ctu-dpr115",
         "./condominio-parti-comuni-assemblea-cc",
-        "./mediazione-civile-conciliazione-dlgs28",
-        "./negoziazione-assistita-dl132",
         "./relazione-peritale-ctu-cpc",
-        "./responsabilita-appaltatore-rovina-cc"
+        "./responsabilita-appaltatore-rovina-cc",
+        "./servitu-coattive-prediali-cc"
       ]
     }
   ]
