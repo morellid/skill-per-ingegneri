@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Terre e rocce da scavo - sottoprodotto e riutilizzo (DPR 120/2017)
+short_description: Supporto documentale alla gestione delle terre e rocce da scavo secondo il D.P.R. 13 giugno 2017, n. 120 (coordinato con la Parte IV del D.Lgs. 152/2006). Aiuta a qualificare le terre come sottoprodotto anziche' rifiuto (art. 4, ex art. 184-bis: generazione in un'opera; utilizzo conforme a piano/dichiarazione per reinterri/riempimenti/rilevati; idoneita' senza trattamenti; requisiti ambientali), a distinguere la dimensione del cantiere (piccole <= 6.000 mc / grandi, con o senza VIA-AIA - art. 2), a gestire per i piccoli cantieri i requisiti ambientali (CSC colonne A/B, Tab. 1, Allegato 5, Parte IV, D.Lgs. 152/2006 - art. 20) e la dichiarazione di utilizzo (autocertificazione ex art. 47 DPR 445/2000, modulo allegato 6, 15 giorni prima dell'inizio scavi a Comune e ARPA, utilizzo entro 1 anno - art. 21), e l'utilizzo nel sito di produzione delle terre escluse dalla disciplina rifiuti (art. 24, ex art. 185). NON riproduce i valori CSC ne' gli allegati tecnici, non esegue campionamento/analisi, non redige piano/dichiarazione e non sostituisce l'ARPA.
+default_prompt: |
+  Nel mio cantiere produco terre e rocce da scavo: sono sottoprodotto, escluse dai rifiuti
+  (riutilizzo nel sito) o rifiuto secondo il DPR 120/2017? Il cantiere e' di piccole o grandi
+  dimensioni e quale procedura devo seguire (dichiarazione di utilizzo o piano di utilizzo)? Cita
+  gli articoli.
