@@ -1,0 +1,40 @@
+schema_version: 1
+skill: contributo-costruzione-dpr380
+last_verified: 2026-07-16
+
+# Fonte per l'inquadramento del contributo di costruzione dovuto per il permesso di costruire
+# (e per gli altri titoli onerosi): oneri di urbanizzazione + costo di costruzione, riduzione
+# ed esonero, convenzione-tipo, contributo per opere non residenziali. T.U. Edilizia
+# (D.P.R. 380/2001), artt. 16-19.
+
+sources:
+  - id: dpr-380-2001-contributo
+    title: "D.P.R. 6 giugno 2001, n. 380 (T.U. Edilizia) - artt. 16-19 (contributo di costruzione: oneri di urbanizzazione, costo di costruzione, riduzione/esonero, convenzione-tipo, opere non residenziali) (testo vigente al 2026-07-16)"
+    type: decreto-presidente-repubblica
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2001-06-06;380!vig=2026-07-16
+    accessed: 2026-07-16
+    sha256: 98a209dab2743964d5eddeca5321261f5b12225c140367e17c53705e5b95acb2
+    license: public-domain
+    binary_path: not_in_repo/dpr380-2001-vig.html
+    md_path: references/fonti/dpr-380-2001-artt16-19.md
+    excerpt_path: references/estratti/contributo-costruzione-checklist.md
+    notes: |
+      Codice redazionale 001G0429 (GU n. 245 del 20/10/2001, S.O.). Pagina indice Normattiva
+      pinnata a !vig=2026-07-16 (hash stabile, doppio download: 98a209da...). Articoli caricati
+      via AJAX (caricaArticolo, testo vigente) e trascritti verbatim in
+      references/fonti/dpr-380-2001-artt16-19.md: art. 16 (contributo = oneri di urbanizzazione
+      + costo di costruzione; rateizzazione e scomputo con esecuzione diretta delle opere di
+      urbanizzazione - c.2; costo di costruzione corrisposto in corso d'opera entro 60 gg
+      dall'ultimazione - c.3; tabelle parametriche regionali e deliberazione comunale - cc.4-6;
+      costo di costruzione per la residenza - c.9), art. 17 (riduzione per edilizia
+      convenzionata - c.1; prima abitazione - c.2; casi di esonero - c.3: zone agricole,
+      ristrutturazione/ampliamento <= 20% di edifici unifamiliari, opere pubbliche/di interesse
+      generale e di urbanizzazione, calamita', fonti rinnovabili/risparmio energetico; immobili
+      dello Stato e manutenzione straordinaria con aumento del carico urbanistico - c.4),
+      art. 18 (convenzione-tipo regionale), art. 19 (contributo per opere non destinate alla
+      residenza: industriali/artigianali; turistiche/commerciali/direzionali con quota <= 10%
+      del costo di costruzione).
+      LIMITE DI RESA: gli IMPORTI (tabelle parametriche degli oneri e valori del costo di
+      costruzione) sono demandati a regioni e comuni (deliberazioni comunali su tabelle
+      regionali): NON sono nel T.U. e la skill NON li calcola. La disciplina di dettaglio e'
+      anche regionale/comunale.

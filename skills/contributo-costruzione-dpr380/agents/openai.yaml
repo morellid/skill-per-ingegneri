@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Contributo di costruzione - oneri e costo di costruzione (DPR 380/2001)
+short_description: Supporto documentale all'inquadramento del contributo di costruzione dovuto per il permesso di costruire (e gli altri titoli edilizi onerosi), secondo il T.U. Edilizia (D.P.R. 380/2001), artt. 16-19. Stabilisce se e in che misura e' dovuto il contributo (oneri di urbanizzazione primaria/secondaria + costo di costruzione - art. 16), gestisce la rateizzazione e lo scomputo con esecuzione diretta delle opere di urbanizzazione, i tempi di corresponsione (oneri al rilascio; costo di costruzione in corso d'opera entro 60 giorni dall'ultimazione), le riduzioni (edilizia convenzionata, prima abitazione) e gli esoneri (zone agricole, ristrutturazione/ampliamento <= 20% di edifici unifamiliari, opere pubbliche, calamita', fonti rinnovabili - art. 17), la convenzione-tipo (art. 18) e il contributo per opere non residenziali (industriali/artigianali; turistiche/commerciali/direzionali con quota <= 10% del costo di costruzione - art. 19). NON calcola gli importi (tabelle parametriche regionali e deliberazioni comunali), non sostituisce l'ufficio tecnico comunale e non copre la disciplina regionale/comunale di dettaglio.
+default_prompt: |
+  Per il mio intervento edilizio (permesso di costruire): e' dovuto il contributo di costruzione e
+  da quali componenti e' composto (oneri di urbanizzazione, costo di costruzione)? Ci sono riduzioni
+  o esoneri applicabili e posso rateizzare o scomputare le opere di urbanizzazione secondo il DPR
+  380/2001? Cita gli articoli.
