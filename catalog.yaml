@@ -34,7 +34,7 @@ areas:
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
-  count: 10
+  count: 11
 - id: forense
   name: CTU & ingegneria forense
   order: 9
@@ -637,6 +637,24 @@ skills:
   - firma-elettronica
   - cad-dlgs-82-2005
   - valore-probatorio
+- id: domicilio-digitale-pec-cad
+  area: software-dati-cybersecurity
+  title: Domicilio digitale e indici PEC - INAD, INI-PEC, IPA (CAD, D.Lgs. 82/2005)
+  summary: 'Inquadra il domicilio digitale e gli indici PEC del CAD (D.Lgs. 82/2005): obbligo/facolta'' (art. 3-bis), effetti
+    delle comunicazioni - raccomandata A/R e notificazione (art. 6), INI-PEC imprese/professionisti (6-bis), IPA PA (6-ter),
+    INAD persone fisiche (6-quater).'
+  normative_refs:
+  - D.Lgs. 7/3/2005 n. 82 (CAD) - artt. 3-bis (identita' e domicilio digitale) e 6 (utilizzo ed effetti giuridici)
+  - D.Lgs. 7/3/2005 n. 82 (CAD) - artt. 6-bis (INI-PEC), 6-ter (IPA), 6-quater (INAD)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-82-2005
+  - cad
+  - domicilio-digitale
+  - pec
+  - inad-inipec-ipa
+  - amministrazione-digitale
 - id: dora-gap-assessment
   area: software-dati-cybersecurity
   title: DORA Gap Assessment

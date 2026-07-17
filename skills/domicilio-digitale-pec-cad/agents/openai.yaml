@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Domicilio digitale e indici PEC - INAD, INI-PEC, IPA (CAD, D.Lgs. 82/2005)"
+short_description: Supporto documentale al domicilio digitale e ai pubblici elenchi dei domicili digitali (PEC) secondo il Codice dell'amministrazione digitale (D.Lgs. 82/2005). Inquadra l'identita' digitale e il domicilio digitale (art. 3-bis: obbligo per pubbliche amministrazioni, professionisti iscritti in albi/elenchi e imprese di dotarsi di un domicilio digitale in INI-PEC o IPA; facolta' per chiunque di eleggerlo in INAD; domicilio digitale speciale per determinati atti o affari), l'utilizzo e gli effetti giuridici (art. 6: le comunicazioni ai domicili digitali producono, quanto a spedizione e ricevimento, gli stessi effetti della raccomandata con ricevuta di ritorno ed equivalgono alla notificazione a mezzo posta; notifica diretta degli atti, comprese sanzioni amministrative e atti impositivi), l'Indice nazionale dei domicili digitali di imprese e professionisti - INI-PEC (art. 6-bis, presso il MIMIT), l'Indice dei domicili digitali delle pubbliche amministrazioni e dei gestori di pubblici servizi - IPA (art. 6-ter, AgID) e l'Indice nazionale dei domicili digitali delle persone fisiche e degli altri enti - INAD (art. 6-quater, AgID). NON elegge o registra il domicilio digitale, non effettua notifiche, non riproduce le Linee guida AgID, non sostituisce i gestori degli indici o la PA.
+default_prompt: |
+  Un ingegnere iscritto all'Ordine deve avere un domicilio digitale (art. 3-bis CAD) e in quale indice -
+  INI-PEC, IPA o INAD? Un cittadino puo' eleggerne uno (INAD, art. 6-quater)? Una PEC del Comune inviata al
+  mio domicilio digitale che valore ha (art. 6)? Se non la leggo, la notifica si e' perfezionata?
