@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 18
+  count: 19
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1272,6 +1272,25 @@ skills:
   - amianto
   - dlgs-81-2008
   - art-256
+- id: ponteggi-fissi-pimus-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: 'Ponteggi fissi: progetto, documentazione e Pi.M.U.S. (D.Lgs. 81/2008)'
+  summary: 'Inquadra gli adempimenti sui ponteggi fissi (D.Lgs. 81/2008 artt. 131-138): quando serve il progetto firmato da
+    ingegnere/architetto (>20 m o fuori schema-tipo, art. 133), la documentazione in cantiere e il Pi.M.U.S. con sorveglianza
+    del preposto (art. 136). Non li redige.'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza) - Titolo IV, Capo II, Sezione V (Ponteggi fissi), artt. 131-138:
+    progetto firmato (art. 133), documentazione (art. 134), Pi.M.U.S. (art. 136)'
+  - 'Rinvio (non riprodotti): Allegati XVIII/XIX (ponteggi), XXI (formazione), XXII (contenuti Pi.M.U.S.); UNI EN 12810/12811/74;
+    D.Lgs. 106/2009 (modifiche ad artt. 131, 136, 137, 138)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ponteggi-fissi
+  - pimus
+  - dlgs-81-2008
+  - lavori-in-quota
+  - sicurezza-cantieri
 - id: pos-allegato-xv-checker
   area: sicurezza-lavoro-cantieri
   title: POS Allegato XV Assistant

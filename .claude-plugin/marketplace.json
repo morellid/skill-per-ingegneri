@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 18 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 19 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -30,6 +30,7 @@
         "./obblighi-datore-preposto-formazione-dlgs81",
         "./piano-emergenza-antincendio-dm2021",
         "./piano-lavoro-amianto",
+        "./ponteggi-fissi-pimus-dlgs81",
         "./pos-allegato-xv-checker",
         "./prevenzione-incendi-attivita-procedimenti-dpr151",
         "./segnaletica-salute-sicurezza-dlgs81",
