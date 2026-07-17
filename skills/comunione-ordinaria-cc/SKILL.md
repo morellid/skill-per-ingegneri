@@ -141,6 +141,6 @@ Skill di **supporto documentale** per il **tecnico** (ingegnere/geometra, CTU/CT
 quadro civilistico entro cui redigere la relazione tecnica (comoda divisibilita', progetto di
 divisione, stima dei lotti e dei conguagli). La **consulenza legale**, la redazione dell'**atto di
 divisione**/della domanda giudiziale e le valutazioni di **diritto** restano dell'**avvocato** e
-del **giudice**; la **stima** in concreto e' l'oggetto della perizia stessa. La skill **non
-sostituisce** il tecnico incaricato, l'avvocato ne' la lettura degli artt. 1100 ss. e del titolo/
+del **giudice**; la **stima** in concreto e' l'oggetto della perizia stessa. La skill
+**non sostituisce** il tecnico incaricato, l'avvocato ne' la lettura degli artt. 1100 ss. e del titolo/
 regolamento della comunione.
