@@ -38,7 +38,7 @@ areas:
 - id: forense
   name: CTU & ingegneria forense
   order: 9
-  count: 2
+  count: 3
 skills:
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
@@ -633,6 +633,24 @@ skills:
   - art-25-septies
   - art-30-dlgs81
   - responsabilita-enti
+- id: negoziazione-assistita-dl132
+  area: forense
+  title: Negoziazione assistita da avvocati - D.L. 132/2014 (artt. 2-5)
+  summary: 'Negoziazione assistita da avvocati (D.L. 132/2014): convenzione - termine 1-3 mesi, forma scritta (art. 2), condizione
+    di procedibilita'' per danni da circolazione e pagamenti <= 50.000 euro (art. 3), invito e mancato accordo (art. 4), esecutivita''
+    dell''accordo (art. 5).'
+  normative_refs:
+  - D.L. 12/9/2014 n. 132 (conv. L. 162/2014) - artt. 2 (convenzione) e 3 (condizione di procedibilita')
+  - D.L. 12/9/2014 n. 132 (conv. L. 162/2014) - artt. 4 (invito e mancato accordo) e 5 (esecutivita' dell'accordo)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dl-132-2014
+  - negoziazione-assistita
+  - adr
+  - condizione-procedibilita
+  - avvocati
+  - forense
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)
