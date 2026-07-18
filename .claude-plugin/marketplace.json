@@ -101,7 +101,7 @@
     {
       "name": "appalti-opere-pubbliche",
       "source": "./skills",
-      "description": "Appalti & opere pubbliche - 13 skill verticali su normative italiane.",
+      "description": "Appalti & opere pubbliche - 14 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -122,7 +122,8 @@
         "./relazione-cam-dm-24-11-2025",
         "./rup-responsabile-unico-progetto-dlgs36",
         "./specifiche-tecniche-ict-appalti-dlgs36",
-        "./subappalto-contratti-pubblici-dlgs36"
+        "./subappalto-contratti-pubblici-dlgs36",
+        "./verifica-progettazione-dlgs36"
       ]
     },
     {
