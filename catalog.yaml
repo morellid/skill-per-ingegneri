@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 13
+  count: 14
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -1976,6 +1976,25 @@ skills:
   - dichiarazione-accessibilita
   - en-301549
   - wcag
+- id: verifica-progettazione-dlgs36
+  area: appalti-opere-pubbliche
+  title: Verifica della progettazione e validazione del progetto (D.Lgs. 36/2023 art. 42)
+  summary: 'Inquadra la verifica della progettazione e la validazione del progetto a base di gara (D.Lgs. 36/2023 art. 42):
+    oggetto e tempi per livello (1), RUP e incompatibilita'' (2), effetti - deposito sismico e denuncia al genio civile assolti
+    (3), validazione (4), Allegato I.7 (5).'
+  normative_refs:
+  - 'D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 42 (Verifica della progettazione): oggetto e tempi,
+    RUP e incompatibilita'', effetti, validazione, rinvio all''Allegato I.7'
+  - 'Rinvio (non riprodotti): Allegato I.7 D.Lgs. 36/2023 (contenuti, modalita'' e soggetti della verifica); art. 41 (livelli
+    di progettazione); DPR 380/2001 artt. 65, 93-94 (deposito sismico)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - verifica-progettazione
+  - validazione-progetto
+  - dlgs-36-2023
+  - contratti-pubblici
+  - rup
 - id: verifiche-messa-a-terra-dpr462
   area: impianti-macchine-prodotti
   title: Verifiche impianti di messa a terra e luoghi pericolosi - DPR 462/2001
