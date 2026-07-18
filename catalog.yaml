@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 12
+  count: 13
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1253,6 +1253,25 @@ skills:
   - oepv
   - dlgs-36-2023
   - offerte
+- id: opere-sostegno-ntc
+  area: strutture-geotecnica
+  title: 'Opere di sostegno: muri e paratie - verifiche NTC 2018 (par. 6.5)'
+  summary: 'Inquadra le verifiche delle opere di sostegno (NTC 2018 par. 6.5): tipologie e criteri (6.5.1), azioni e modello
+    geometrico (6.5.2), verifiche SLU dei muri con Approccio 2 (A1+M1+R3) e Tab. 6.5.I e stabilita'' globale con Approccio
+    1 (A2+M2+R2), paratie e SLE (6.5.3).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.5 Opere di sostegno: criteri di progetto (6.5.1), azioni e modello geometrico
+    (6.5.2), verifiche SLU/SLE di muri e paratie e Tab. 6.5.I (6.5.3)'
+  - 'Rinvio (non riprodotti): Tabelle 6.2.I/6.2.II (azioni e parametri), Tab. 6.8.I (stabilita'' globale), par. 6.2.4.2, 6.8
+    e 7.11.6 (sismico) NTC 2018; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - opere-di-sostegno
+  - muri-e-paratie
+  - ntc-2018
+  - stati-limite-geotecnici
+  - coefficienti-parziali
 - id: ped-classificazione-conformita
   area: impianti-macchine-prodotti
   title: PED - Classificazione e valutazione conformita'
