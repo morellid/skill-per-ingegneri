@@ -1,0 +1,40 @@
+schema_version: 1
+skill: classificazione-rifiuti-dlgs152
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della CLASSIFICAZIONE DEI RIFIUTI: definizioni essenziali (rifiuto, rifiuti
+# urbani, produttore, detentore, deposito temporaneo) e classificazione secondo origine (urbani/speciali)
+# e pericolosita' (pericolosi/non pericolosi) con l'elenco europeo dei codici (EER). Fonte: Codice
+# dell'ambiente (D.Lgs. 152/2006), Parte IV, artt. 183 e 184.
+
+sources:
+  - id: dlgs-152-2006-183-184
+    title: "D.Lgs. 3 aprile 2006, n. 152 (Norme in materia ambientale) - artt. 183 (definizioni, estratto) e 184 (classificazione dei rifiuti) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del D.Lgs.
+    # 152/2006 usato dalle altre skill ambiente: VIA, AIA, sottoprodotti/EoW).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: c2175fe5c9313db1087d444b07e71d727154140d579ffcf6357ababa5d57b45c
+    license: public-domain
+    binary_path: not_in_repo/dlgs152-rifiuti-idx.html
+    md_path: references/fonti/dlgs-152-2006-183-184.md
+    excerpt_path: references/estratti/classificazione-rifiuti-checklist.md
+    notes: |
+      Codice redazionale 006G0171, idGruppo 34, dataPubblicazioneGazzetta 2006-04-14. Pagina indice
+      Normattiva pinnata a !vig=2026-07-17 (hash stabile, doppio download: c2175fe5...; e' lo stesso
+      indice usato dalle altre skill D.Lgs. 152/2006). Articoli 183 (versione 17) e 184 (versione 9)
+      caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-152-2006-183-184.md. Dell'art. 183 (Definizioni) sono trascritte solo le
+      lettere rilevanti per la classificazione (a rifiuto, b-ter rifiuti urbani, f produttore, h
+      detentore, bb deposito temporaneo prima della raccolta con rinvio all'art. 185-bis). Dell'art. 184
+      (Classificazione) sono trascritti i commi 1-5 per intero (urbani/speciali secondo l'origine,
+      pericolosi/non pericolosi secondo le caratteristiche dell'Allegato I, elenco europeo dei rifiuti -
+      Allegato D - vincolante per i pericolosi, attribuzione dei codici e delle caratteristiche di
+      pericolo a cura del produttore sulla base delle Linee guida SNPA); il comma 5-bis (ambito
+      militare) e' richiamato in sintesi. Il testo tra doppi tondi (( )) segnala le modifiche successive
+      (es. D.Lgs. 116/2020, recepimento dir. 2018/851).
+      LIMITE DI RESA: la skill inquadra criteri e definizioni della classificazione; NON attribuisce il
+      codice EER ne' la classe di pericolo del singolo rifiuto, NON redige l'analisi di caratterizzazione
+      ne' compila registri/FIR/MUD, NON riproduce gli Allegati D/I/L-quater/L-quinquies ne' le Linee
+      guida SNPA, e NON sostituisce il produttore, il tecnico ambientale ne' il laboratorio.
