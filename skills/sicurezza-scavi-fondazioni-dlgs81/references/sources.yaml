@@ -1,0 +1,43 @@
+schema_version: 1
+skill: sicurezza-scavi-fondazioni-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della SICUREZZA DEGLI SCAVI E DELLE FONDAZIONI in cantiere: splateamenti e
+# sbancamenti, armature/sbadacchiature di pozzi, trincee e cunicoli, deposito di materiali sul ciglio,
+# presenza di gas negli scavi. Fonte: Testo unico sicurezza (D.Lgs. 81/2008), Titolo IV, Capo II,
+# Sezione III, artt. 118-121.
+
+sources:
+  - id: dlgs-81-2008-118-121
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 118-121 (scavi e fondazioni: splateamenti, armature, gas negli scavi) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: DPI, MMC, VDT, segnaletica, ponteggi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-scavi-idx.html
+    md_path: references/fonti/dlgs-81-2008-118-121.md
+    excerpt_path: references/estratti/sicurezza-scavi-checklist.md
+    notes: |
+      Codice redazionale 008G0104, idGruppo 21 (Titolo IV, Capo II, Sezione III - Scavi e fondazioni).
+      Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...; e'
+      lo stesso indice usato dalle altre skill D.Lgs. 81/2008). Articoli 118 (v2), 119 (v2), 120 (v1),
+      121 (v1) caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-81-2008-118-121.md: splateamento e sbancamento - inclinazione/tracciato
+      delle fronti contro i franamenti, divieto di scavo manuale per scalzamento alla base oltre m 1,50,
+      armatura/consolidamento, divieti nel campo d'azione dell'escavatore, protezione del posto di
+      manovra, delimitazione della zona di pericolo (118); pozzi, scavi e cunicoli - armature di
+      sostegno oltre m 1,50, tavole di rivestimento sporgenti almeno 30 cm, armature dei cunicoli e
+      nelle sottomurazioni, infissione pali, impalcato di protezione nei pozzi oltre 3 metri, assistenza
+      esterna e dimensioni per il recupero dell'infortunato, sollevamento materiale (Allegato XVIII,
+      punto 3.4) (119); divieto di depositi di materiali presso il ciglio degli scavi salvo puntellature
+      (120); presenza di gas negli scavi - misure contro gas tossici/asfissianti/infiammabili/esplosivi,
+      DPI delle vie respiratorie e sistema di salvataggio con sorveglianza esterna, bonifica con
+      ventilazione, divieto di fiamme, lavoro in coppia (121). Il testo tra doppi tondi (( )) segnala le
+      modifiche del D.Lgs. 106/2009.
+      LIMITE DI RESA: la skill inquadra obblighi, presidi e soglie; NON redige il POS/PSC ne' la
+      relazione geotecnica, NON dimensiona armature/sbadacchiature, NON esegue il calcolo di stabilita'
+      delle pareti dello scavo, NON riproduce l'Allegato XVIII, e NON sostituisce il coordinatore, il
+      direttore dei lavori, il progettista ne' il preposto.
