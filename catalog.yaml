@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 16
+  count: 17
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -40,6 +40,25 @@ areas:
   order: 9
   count: 7
 skills:
+- id: accertamento-conformita-sanatoria-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Accertamento di conformita' / sanatoria edilizia - salva-casa (DPR 380/2001)
+  summary: 'Inquadra l''accertamento di conformita'' (sanatoria edilizia) del DPR 380/2001 dopo il salva-casa: doppia conformita''
+    piena per assenza titolo/totale difformita'' (36), attenuata per parziale difformita''/variazioni essenziali con silenzio-assenso
+    45 gg (36-bis), sanzione SCIA (37).'
+  normative_refs:
+  - D.P.R. 6 giugno 2001, n. 380 (Testo unico edilizia) - artt. 36 (assenza titolo/totale difformita'), 36-bis (parziale difformita'/variazioni
+    essenziali - salva-casa) e 37 (assenza/difformita' SCIA)
+  - 'Rinvio: D.L. 69/2024 conv. L. 105/2024 (salva-casa, introduce l''art. 36-bis); artt. 31-34, 34-bis, 9-bis, 44 DPR 380;
+    art. 167 D.Lgs. 42/2004; leggi condono (non trattate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - accertamento-conformita
+  - sanatoria-edilizia
+  - salva-casa
+  - dpr-380-2001
+  - doppia-conformita
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
   title: Accertamento tecnico preventivo e ATP conciliativo (c.p.c. 696, 696-bis)
