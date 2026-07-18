@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 19
+  count: 20
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1631,6 +1631,25 @@ skills:
   - elettrodotto
   - acquedotto-coattivo
   - forense
+- id: sicurezza-scavi-fondazioni-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Sicurezza degli scavi e delle fondazioni in cantiere (D.Lgs. 81/2008)
+  summary: 'Inquadra la sicurezza degli scavi (D.Lgs. 81/2008 artt. 118-121): inclinazione/armatura delle fronti e divieto
+    scalzamento oltre 1,50 m (118), armature di pozzi/trincee e tavole sporgenti 30 cm (119), divieto di deposito sul ciglio
+    (120), gas negli scavi (121). Non redige il POS.'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza) - Titolo IV, Capo II, Sezione III (Scavi e fondazioni), artt. 118-121:
+    splateamenti, pozzi e cunicoli, deposito sul ciglio, gas negli scavi'
+  - 'Rinvio (non riprodotti): Allegato XVIII punto 3.4 (sollevamento materiale) D.Lgs. 81/2008; D.Lgs. 106/2009 (modifiche
+    artt. 118-119); PSC/POS (artt. 96, 100)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - scavi
+  - splateamenti-sbadacchiature
+  - dlgs-81-2008
+  - sicurezza-cantieri
+  - fondazioni
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
