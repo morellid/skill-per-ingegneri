@@ -152,7 +152,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 23 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 24 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -164,6 +164,7 @@
         "./accessi-passi-carrabili-cds",
         "./aua-dpr59-dossier",
         "./autorizzazione-integrata-ambientale-dlgs152",
+        "./autorizzazione-scarico-acque-reflue-dlgs152",
         "./bonifica-siti-contaminati-dlgs152",
         "./cantieri-stradali-occupazione-cds",
         "./cbam-declarant-trimestrale",
