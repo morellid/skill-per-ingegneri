@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Classificazione dei rifiuti (D.Lgs. 152/2006 artt. 183-184)"
+short_description: Supporto documentale al tecnico ambientale, all'RSGA e al produttore/detentore per la classificazione dei rifiuti e l'attribuzione dei codici dell'elenco europeo (EER), ai sensi del D.Lgs. 3 aprile 2006, n. 152 (Codice dell'ambiente), Parte IV, artt. 183 e 184. Inquadra le definizioni essenziali - rifiuto, produttore iniziale e nuovo produttore, detentore, deposito temporaneo prima della raccolta (art. 185-bis) - e i due assi della classificazione: secondo l'origine in rifiuti urbani (domestici e simili per natura e composizione prodotti dalle attivita' degli allegati L-quater e L-quinquies) e rifiuti speciali (agricoli, da costruzione e demolizione e scavo, industriali, artigianali, commerciali, di servizio, da trattamento rifiuti e depurazione, sanitari, veicoli fuori uso), e secondo la pericolosita' in rifiuti pericolosi (caratteristiche dell'Allegato I) e non pericolosi; l'elenco europeo dei rifiuti dell'Allegato D, vincolante per i pericolosi e con voci a specchio, e l'attribuzione dei codici e delle caratteristiche di pericolo a cura del produttore sulla base delle Linee guida SNPA. NON attribuisce il codice EER ne' la classe di pericolo del singolo rifiuto, non redige l'analisi di caratterizzazione ne' compila registri/FIR/MUD, non riproduce gli Allegati D/I/L-quater/L-quinquies ne' le Linee guida SNPA e non sostituisce il produttore, il tecnico ambientale o il laboratorio.
+default_prompt: |
+  Devo classificare un rifiuto prodotto dalla mia attivita' secondo il D.Lgs. 152/2006: come stabilisco
+  se e' urbano o speciale, pericoloso o non pericoloso, e chi attribuisce il codice EER? Come si trattano
+  le voci "a specchio"? Cita gli articoli.
