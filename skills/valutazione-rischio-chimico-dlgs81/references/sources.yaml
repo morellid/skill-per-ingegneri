@@ -1,0 +1,44 @@
+schema_version: 1
+skill: valutazione-rischio-chimico-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della VALUTAZIONE DEL RISCHIO CHIMICO da agenti chimici pericolosi:
+# definizioni, valutazione dei rischi (nel DVR), misure generali e specifiche di prevenzione/protezione,
+# incidenti ed emergenze, informazione e formazione. Fonte: Testo unico sicurezza (D.Lgs. 81/2008),
+# Titolo IX, Capo I, artt. 222-227.
+
+sources:
+  - id: dlgs-81-2008-222-227
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 222-227 (protezione da agenti chimici: valutazione del rischio e misure) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: DPI, MMC, VDT, segnaletica, ponteggi, scavi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-chimico-idx.html
+    md_path: references/fonti/dlgs-81-2008-222-227.md
+    excerpt_path: references/estratti/rischio-chimico-checklist.md
+    notes: |
+      Codice redazionale 008G0104, idGruppo 41 (Titolo IX, Capo I - Protezione da agenti chimici).
+      Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile, doppio download: 18fbc542...; e'
+      lo stesso indice usato dalle altre skill D.Lgs. 81/2008). Articoli 222 (v4), 223 (v4), 224 (v1),
+      225 (v2), 226 (v1), 227 (v2) caricati via AJAX (caricaArticolo), formato AKN, e trascritti
+      verbatim in references/fonti/dlgs-81-2008-222-227.md: definizioni di agenti chimici e agenti
+      chimici pericolosi (classificazione CLP Reg. CE 1272/2008), valore limite di esposizione
+      professionale (Allegato XXXVIII), pericolo/rischio (222); valutazione dei rischi nel DVR (art. 28)
+      con proprieta' pericolose, schede di sicurezza REACH (Reg. CE 1907/2006), livello/modo/durata
+      dell'esposizione, VLEP e valori limite biologici, effetto combinato, attivita' nuove preventive,
+      aggiornamento (223); misure e principi generali di prevenzione con deroga per rischio basso e
+      irrilevante che esclude gli artt. 225, 226, 229, 230 (224); misure specifiche - sostituzione e
+      gerarchia (controlli tecnici, misure collettive, DPI, sorveglianza sanitaria), misurazioni
+      (Allegato XLI), superamento del VLEP, sostanze infiammabili/instabili, comunicazione all'organo di
+      vigilanza (225); incidenti ed emergenze - procedure, esercitazioni, DPI, sistemi d'allarme, piano
+      (226); informazione e formazione - dati della valutazione, schede di sicurezza, etichettatura di
+      contenitori e condutture (227). Il testo tra doppi tondi (( )) segnala le modifiche successive
+      (es. D.Lgs. 39/2016 di adeguamento al CLP).
+      LIMITE DI RESA: la skill inquadra obblighi, contenuti e gerarchia delle misure; NON redige il DVR
+      ne' la valutazione del rischio chimico, NON esegue misurazioni ne' applica algoritmi di stima del
+      rischio, NON riproduce gli Allegati XXXVIII/XLI ne' i regolamenti CLP/REACH, e NON sostituisce il
+      datore di lavoro, l'RSPP, il medico competente ne' il chimico.
