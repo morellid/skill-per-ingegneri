@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 20
+  count: 21
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1885,6 +1885,25 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: valutazione-rischio-chimico-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Valutazione del rischio chimico - agenti chimici pericolosi (D.Lgs. 81/2008)
+  summary: 'Inquadra la valutazione del rischio chimico (D.Lgs. 81/2008 artt. 222-227): definizioni e VLEP (222), valutazione
+    nel DVR ex art. 28 (223), misure generali con deroga rischio basso (224), misure specifiche con gerarchia e misurazioni
+    (225), emergenze (226), formazione (227).'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza) - Titolo IX, Capo I, artt. 222-227: definizioni, valutazione dei
+    rischi, misure generali e specifiche, emergenze, informazione e formazione'
+  - 'Rinvio (non riprodotti): Allegati XXXVIII (VLEP) e XLI (misurazioni) D.Lgs. 81/2008; Reg. (CE) 1272/2008 (CLP) e 1907/2006
+    (REACH); artt. 28 (DVR), 229-230 (sorveglianza sanitaria)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - rischio-chimico
+  - agenti-chimici-pericolosi
+  - dlgs-81-2008
+  - dvr
+  - sicurezza-lavoro
 - id: valutazione-rischio-rumore-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Valutazione del rischio rumore sul lavoro - D.Lgs. 81/2008 Titolo VIII Capo II
