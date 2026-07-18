@@ -1,0 +1,45 @@
+schema_version: 1
+skill: opere-sostegno-ntc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento delle VERIFICHE DELLE OPERE DI SOSTEGNO (muri, paratie, strutture miste)
+# secondo le NTC 2018: criteri di progetto, azioni e modello geometrico, verifiche agli stati limite
+# ultimi e di esercizio, approcci progettuali e coefficienti parziali. Fonte: DM 17 gennaio 2018
+# (NTC 2018), par. 6.5.
+
+sources:
+  - id: ntc2018-par-6-5
+    title: "NTC 2018 - DM 17 gennaio 2018 (Aggiornamento delle Norme tecniche per le costruzioni) - par. 6.5 Opere di sostegno"
+    type: decreto
+    # PDF del Supplemento Ordinario n. 8 alla G.U. n. 42 del 20 febbraio 2018 (stessa fonte usata dalle
+    # altre skill NTC: spettro, combinazioni, capacita' portante, cedimenti, carichi atmosferici).
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-17
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-5.md
+    excerpt_path: references/estratti/opere-sostegno-checklist.md
+    notes: |
+      Decreto Ministeriale 17 gennaio 2018, "Aggiornamento delle Norme tecniche per le costruzioni"
+      (NTC 2018), pubblicato nel Supplemento Ordinario n. 8 alla Gazzetta Ufficiale n. 42 del 20 febbraio
+      2018. PDF scaricato dalla Gazzetta Ufficiale (hash stabile, doppio download: dda1e397...; e' la
+      stessa fonte usata dalle altre skill NTC del repo). Il par. 6.5 (Opere di sostegno) e' stato
+      estratto con pdftotext -layout (pp. 194-197) e trascritto verbatim in
+      references/fonti/ntc2018-par-6-5.md, con i simboli greci resi in modo corretto (gamma_R, delta,
+      phi') laddove l'estrazione automatica li aveva alterati e le costanti numeriche riportate come nel
+      testo. Contenuto: tipologie di opere di sostegno (muri, paratie, strutture miste) e rinvio al par.
+      7.11.6 per il sismico; criteri di progetto (drenaggio e riempimento, dispositivi complementari,
+      effetti su costruzioni preesistenti, indagini geotecniche) (6.5.1); azioni, sovraccarichi e modello
+      geometrico con la riduzione della quota di valle (minore tra 10% dell'altezza, 10% della differenza
+      di quota, 0,5 m) e il livello di falda negli SLU (6.5.2); verifiche agli stati limite (6.5.3); per i
+      muri, SLU GEO (scorrimento, carico limite, ribaltamento, stabilita' globale) e STR, con stabilita'
+      globale in Approccio 1 Combinazione 2 (A2+M2+R2) e rimanenti verifiche in Approccio 2 (A1+M1+R3) e
+      Tab. 6.5.I (gamma_R: capacita' portante 1,4; scorrimento 1,1; ribaltamento 1,15; resistenza a valle
+      1,4) (6.5.3.1.1); per le paratie, SLU GEO/UPL/HYD/STR con Approccio 1 (6.5.3.1.2); verifiche di
+      esercizio sugli spostamenti (6.5.3.2).
+      LIMITE DI RESA: la skill inquadra tipologie, azioni, stati limite, approcci e coefficienti; NON
+      esegue il calcolo delle spinte, delle verifiche o dei coefficienti, NON dimensiona il muro o la
+      paratia, NON riproduce le Tabelle 6.2.I/6.2.II/6.8.I ne' la Circolare 21/1/2019 n. 7, NON tratta il
+      sismico (par. 7.11.6), e NON sostituisce il progettista strutturale/geotecnico ne' la relazione
+      geotecnica.
