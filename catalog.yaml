@@ -26,7 +26,7 @@ areas:
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 23
+  count: 24
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
@@ -262,6 +262,25 @@ skills:
   - vincolo-paesaggistico
   - interventi-lieve-entita
   - codice-beni-culturali
+- id: autorizzazione-scarico-acque-reflue-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Autorizzazione allo scarico di acque reflue (D.Lgs. 152/2006 artt. 124-125)
+  summary: 'Inquadra l''autorizzazione allo scarico di acque reflue (D.Lgs. 152/2006 artt. 124-125): obbligo preventivo e
+    titolare, competenza e 90 giorni, validita'' 4 anni e rinnovo, prescrizioni e spese (124), contenuto della domanda per
+    gli scarichi industriali (125).'
+  normative_refs:
+  - D.Lgs. 3 aprile 2006, n. 152 (Codice dell'ambiente) - Parte III, artt. 124 (criteri generali) e 125 (domanda di autorizzazione
+    agli scarichi di acque reflue industriali)
+  - 'Rinvio (non riprodotti): Allegato 5 Parte III (valori limite di emissione, Tab. 1/2/3/3-A/4), artt. 74 (definizioni),
+    101 e 108 D.Lgs. 152/2006; AUA (DPR 59/2013); AIA'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - scarichi-idrici
+  - acque-reflue
+  - autorizzazione-allo-scarico
+  - dlgs-152-2006
+  - tutela-acque
 - id: bandi-tipo-anac-checker
   area: appalti-opere-pubbliche
   title: Bandi-tipo ANAC - Checker disciplinare di gara
