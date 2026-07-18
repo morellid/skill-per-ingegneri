@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 21
+  count: 22
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1961,6 +1961,25 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: valutazione-rischio-cancerogeni-mutageni-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Rischio cancerogeni e mutageni sul lavoro (D.Lgs 81/2008 Titolo IX Capo II)
+  summary: 'Inquadra il rischio da agenti cancerogeni, mutageni e sostanze tossiche per la riproduzione (D.Lgs 81/2008 Titolo
+    IX Capo II, artt. 233-243, agg. D.Lgs 135/2024): definizioni, sostituzione/riduzione, integrazione del DVR, misure, sorveglianza
+    sanitaria e registro esposti.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 - Titolo IX, Capo II, artt. 233-243 (agenti cancerogeni, mutageni e sostanze tossiche per
+    la riproduzione), testo vigente aggiornato dal D.Lgs. 4 settembre 2024, n. 135
+  - 'Richiamati (non riprodotti): Allegati XLI/XLII/XLIII/XLIII-bis D.Lgs 81/2008; artt. 17, 18, 25, 28, 29, 42; Reg. CE 1272/2008
+    (CLP); D.M. 12/7/2007 n. 155'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cancerogeni-mutageni
+  - sostanze-tossiche-riproduzione
+  - dlgs-81-2008
+  - valutazione-rischio
+  - sorveglianza-sanitaria
 - id: valutazione-rischio-chimico-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Valutazione del rischio chimico - agenti chimici pericolosi (D.Lgs. 81/2008)
