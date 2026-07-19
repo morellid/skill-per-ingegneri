@@ -1,0 +1,53 @@
+schema_version: 1
+skill: fondazioni-pali-ntc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento delle VERIFICHE DELLE FONDAZIONI SU PALI (e delle fondazioni miste a platea
+# su pali) secondo le NTC 2018: stati limite ultimi e di esercizio, approcci progettuali, coefficienti
+# parziali e fattori di correlazione, controlli d'integrita' e prove di carico. Fonte: DM 17 gennaio 2018
+# (NTC 2018), par. 6.4.3.
+
+sources:
+  - id: ntc2018-par-6-4-3
+    title: "NTC 2018 - DM 17 gennaio 2018 (Aggiornamento delle Norme tecniche per le costruzioni) - par. 6.4.3 Fondazioni su pali"
+    type: decreto
+    # PDF del Supplemento Ordinario n. 8 alla G.U. n. 42 del 20 febbraio 2018 (stessa fonte usata dalle
+    # altre skill NTC: spettro, combinazioni, capacita' portante, cedimenti, carichi atmosferici, opere
+    # di sostegno).
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-17
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-4-3.md
+    excerpt_path: references/estratti/fondazioni-pali-checklist.md
+    notes: |
+      Decreto Ministeriale 17 gennaio 2018, "Aggiornamento delle Norme tecniche per le costruzioni"
+      (NTC 2018), pubblicato nel Supplemento Ordinario n. 8 alla Gazzetta Ufficiale n. 42 del 20 febbraio
+      2018. PDF scaricato dalla Gazzetta Ufficiale (hash stabile, doppio download: dda1e397...; e' la
+      stessa fonte usata dalle altre skill NTC del repo). Il par. 6.4.3 (Fondazioni su pali) e' stato
+      estratto con pdftotext -layout (pp. 190-194) e trascritto verbatim in
+      references/fonti/ntc2018-par-6-4-3.md, con i simboli greci resi in modo corretto (gamma_R, gamma_T,
+      gamma_M, xi) laddove l'estrazione automatica li aveva alterati (pdftotext rende gamma come "·" e xi
+      come "Beta") e le costanti numeriche riportate come nel testo. Contenuto: progetto della fondazione
+      su pali con effetti di gruppo e attrito negativo (M1 Tab. 6.2.II) e rinvio al par. 7.11.5.3.2 per il
+      sismico; verifiche SLU (6.4.3.1) di tipo GEO (carico limite assiale, carico limite trasversale,
+      sfilamento in trazione, stabilita' globale) e STR, con stabilita' globale in Approccio 1
+      Combinazione 2 (A2+M2+R2) e rimanenti verifiche in Approccio 2 (A1+M1+R3) e coefficiente gamma_R non
+      portato in conto negli SLU strutturali; resistenze a carico assiale (6.4.3.1.1) con Tab. 6.4.II
+      (gamma_R base/laterale/totale/trazione per pali infissi, trivellati e ad elica continua) e valore
+      caratteristico dedotto da prove di carico statico (Tab. 6.4.III, fattori xi1/xi2), metodi analitici
+      o prove in sito (Tab. 6.4.IV, xi3/xi4) o prove dinamiche (Tab. 6.4.V, xi5/xi6); resistenza a carico
+      assiale della palificata con effetto di gruppo (6.4.3.1.1.1); resistenze a carichi trasversali con
+      Tab. 6.4.VI (gamma_T = 1,3) (6.4.3.1.2); verifiche SLE su cedimenti/sollevamenti e spostamenti
+      trasversali (6.4.3.2); verifiche SLU/SLE delle fondazioni miste a platea su pali (6.4.3.3-6.4.3.4);
+      aspetti costruttivi (6.4.3.5); controlli d'integrita' su almeno il 5% dei pali con minimo 2, e su
+      tutti i pali dei gruppi di grande diametro d>=80 cm se in numero <=4 (6.4.3.6); prove di carico di
+      progetto su pali pilota con carico non inferiore a 2,5 volte l'azione SLE e resistenza a cedimento
+      del 10% del diametro (d<80 cm) o non inferiore al 5% (d>=80 cm), e prove in corso d'opera a 1,5 volte
+      (o 1,2 volte se strumentati) l'azione SLE con numero minimo di prove per numero di pali (6.4.3.7).
+      LIMITE DI RESA: la skill inquadra stati limite, approcci, coefficienti e fattori di correlazione,
+      controlli d'integrita' e prove di carico; NON esegue il calcolo delle resistenze, delle verifiche o
+      dei coefficienti, NON dimensiona i pali o la palificata, NON riproduce le Tabelle 6.2.I/6.2.II/6.8.I
+      ne' la Circolare 21/1/2019 n. 7, NON tratta il sismico (par. 7.11.5.3.2), e NON sostituisce il
+      progettista strutturale/geotecnico ne' la relazione geotecnica.
