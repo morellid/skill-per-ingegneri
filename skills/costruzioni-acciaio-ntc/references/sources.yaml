@@ -1,0 +1,56 @@
+schema_version: 1
+skill: costruzioni-acciaio-ntc
+last_verified: 2026-07-19
+
+# Fonte per l'inquadramento della PROGETTAZIONE DELLE COSTRUZIONI DI ACCIAIO secondo le NTC 2018: materiali
+# (gradi S235-S460, fyk/ftk), classificazione delle sezioni in classi 1-4, coefficienti parziali gamma_M,
+# resistenze di progetto e verifiche agli stati limite ultimi (resistenza e stabilita' delle membrature).
+# Fonte: DM 17 gennaio 2018 (NTC 2018), par. 4.2.
+
+sources:
+  - id: ntc2018-par-4-2
+    title: "NTC 2018 - DM 17 gennaio 2018 (Aggiornamento delle Norme tecniche per le costruzioni) - par. 4.2 Costruzioni di acciaio"
+    type: decreto
+    # PDF del Supplemento Ordinario n. 8 alla G.U. n. 42 del 20 febbraio 2018 (stessa fonte usata dalle
+    # altre skill NTC: carichi, combinazioni, capacita' portante, cedimenti, opere di sostegno, fondazioni
+    # su pali, costruzioni di muratura, costruzioni di legno).
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-19
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-4-2.md
+    excerpt_path: references/estratti/costruzioni-acciaio-checklist.md
+    notes: |
+      Decreto Ministeriale 17 gennaio 2018, "Aggiornamento delle Norme tecniche per le costruzioni"
+      (NTC 2018), pubblicato nel Supplemento Ordinario n. 8 alla Gazzetta Ufficiale n. 42 del 20 febbraio
+      2018. PDF scaricato dalla Gazzetta Ufficiale (hash stabile, doppio download riproducibile:
+      dda1e397...; e' la stessa fonte usata dalle altre skill NTC del repo). Il par. 4.2 (Costruzioni di
+      acciaio) e' stato estratto con pdftotext -layout (pp. 91-103) e trascritto verbatim in
+      references/fonti/ntc2018-par-4-2.md, con i simboli resi in modo corretto (gamma_M, sigma, tau, chi,
+      lambda, lambda normalizzata, Phi, alpha) e le costanti numeriche e le tabelle testuali riportate come
+      nel testo. Contenuto: materiali con i gradi da S235 a S460 e le tensioni caratteristiche fyk/ftk
+      (Tab. 4.2.I laminati a sezione aperta, Tab. 4.2.II a sezione cava) (4.2.1); valutazione della
+      sicurezza e stati limite (4.2.2); classificazione delle sezioni in classi 1 duttili (Ctheta >= 3),
+      2 compatte (Ctheta >= 1,5), 3 semi-compatte, 4 snelle (sezione efficace), metodi di calcolo della
+      capacita' elastico/plastico/elasto-plastico (Tab. 4.2.VI) ed effetti del secondo ordine
+      (alpha_cr >= 10 elastica / >= 15 plastica) e delle imperfezioni (4.2.3); verifiche agli stati limite
+      ultimi con Rd = Rk / gamma_M e la Tab. 4.2.VII dei coefficienti (gamma_M0 = 1,05 resistenza sezioni,
+      gamma_M1 = 1,05 stabilita' / 1,10 ponti, gamma_M2 = 1,25 frattura sezioni tese forate), le resistenze
+      di progetto a trazione (Npl,Rd = A fyk / gamma_M0, Nu,Rd = 0,9 Anet ftk / gamma_M2), compressione
+      (Nc,Rd), flessione (Mc,Rd con Wpl/Wel/Weff per classe 1-2/3/4), taglio (Vc,Rd = Av fyk /
+      (radice 3 gamma_M0)) e presso/tenso-flessione, e le verifiche di stabilita' delle membrature
+      (Nb,Rd = chi A fyk / gamma_M1, chi da [4.2.44], snellezza normalizzata, con instabilita' trascurabile
+      per lambda normalizzata < 0,2 o NEd < 0,04 Ncr, snellezza limite 200 principali / 250 secondarie;
+      svergolamento chi_LT con alpha_LT 0,21/0,34/0,49/0,76 per le curve a/b/c/d) e lo stato limite di
+      fatica (4.2.4.1); verifiche agli stati limite di esercizio (spostamenti, vibrazioni, plasticizzazioni
+      locali) (4.2.4.2).
+      NOTA SULLE TABELLE-IMMAGINE: le Tab. 4.2.III/IV/V (rapporti larghezza/spessore per la classificazione
+      delle sezioni) e la Tab. 4.2.VIII (curve di instabilita') sono nel PDF figure/immagini non estraibili
+      come testo: NON sono state trascritte e la skill rinvia alla norma o all'Eurocodice 3 (UNI EN 1993).
+      LIMITE DI RESA: la skill inquadra materiali, classi di sezione, coefficienti, resistenze di progetto
+      e criteri di verifica; NON calcola le resistenze ne' esegue le verifiche, NON dimensiona membrature e
+      collegamenti, NON riproduce le tabelle b/t di classificazione (Tab. 4.2.III-V) ne' le curve di
+      instabilita' (Tab. 4.2.VIII), NON riproduce i materiali del par. 11.3.4 ne' gli Eurocodici
+      (UNI EN 1993), NON tratta la progettazione sismica (par. 7.5), e NON sostituisce il progettista
+      strutturale ne' la Circolare 21/1/2019 n. 7.
