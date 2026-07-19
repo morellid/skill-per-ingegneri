@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 15
+  count: 16
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -656,6 +656,25 @@ skills:
   - costruzioni-esistenti
   - vulnerabilita-sismica
   - consultazione-norma
+- id: costruzioni-muratura-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni in muratura: materiali, verifiche e coefficienti (NTC 2018 par. 4.5)'
+  summary: 'Inquadra la progettazione delle costruzioni in muratura (NTC 2018 par. 4.5): categorie degli elementi (Tab. 4.5.I),
+    spessori minimi e snellezza, resistenze di progetto fd=fk/gamma_M (Tab. 4.5.II), verifiche SLU, verifiche semplificate
+    (gamma_M=4,2) e muratura armata.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.5 Costruzioni di muratura: materiali/categorie (Tab. 4.5.I), snellezza, resistenze
+    di progetto e Tab. 4.5.II (gamma_M), verifiche SLU e semplificate'
+  - 'Rinvio (non riprodotti): par. 7.8 (sismica) e Tab. 7.8.II, par. 4.5.11 (fuoco), cap. 11.10 (materiali), par. 4.6 (Eurocodici)
+    NTC 2018; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-in-muratura
+  - muratura-portante
+  - ntc-2018
+  - resistenze-di-progetto
+  - coefficienti-parziali
 - id: cra-classificazione-pde
   area: software-dati-cybersecurity
   title: CRA - Classificazione PDE e valutazione della conformita'
