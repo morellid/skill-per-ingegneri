@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 14
+  count: 15
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -381,6 +381,25 @@ skills:
   - ntc-2018
   - vento
   - neve
+- id: carichi-permanenti-sovraccarichi-ntc
+  area: strutture-geotecnica
+  title: Carichi permanenti e sovraccarichi variabili (NTC 2018 par. 3.1)
+  summary: 'Inquadra i carichi permanenti e i sovraccarichi variabili per categoria d''uso (NTC 2018 par. 3.1): pesi propri
+    (Tab. 3.1.I), carico equivalente g2 dei divisori, sovraccarichi qk/Qk/Hk per categoria (Tab. 3.1.II), riduzioni per area
+    di influenza e per numero di piani.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.1: pesi propri (Tab. 3.1.I), carichi permanenti non strutturali e g2, sovraccarichi
+    per categoria d''uso (Tab. 3.1.II), riduzioni alpha_A/alpha_n, carichi Qk/Hk'
+  - 'Rinvio (non riprodotti): Tab. 2.5.I (coefficienti psi) NTC 2018; parr. 3.2 (sismica), 3.3/3.4 (vento/neve), cap. 5 (ponti);
+    Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - carichi-permanenti
+  - sovraccarichi-variabili
+  - ntc-2018
+  - categorie-uso
+  - analisi-dei-carichi
 - id: catasto-pregeo-docfa-atti-telematici
   area: edilizia-urbanistica-catasto
   title: Catasto - Atti telematici Pregeo 10 + Docfa 4

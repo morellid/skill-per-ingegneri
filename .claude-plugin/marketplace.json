@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 14 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 15 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -58,6 +58,7 @@
       "skills": [
         "./capacita-portante-fondazione-ntc",
         "./carichi-atmosferici-ntc",
+        "./carichi-permanenti-sovraccarichi-ntc",
         "./cedimenti-edometrici-ntc",
         "./combinazioni-carico-ntc",
         "./costruzioni-esistenti-ntc-cap8",
