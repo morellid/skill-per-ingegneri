@@ -1,0 +1,47 @@
+schema_version: 1
+skill: offerte-anomale-congruita-dlgs36
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della VERIFICA DELLE OFFERTE ANORMALMENTE BASSE (giudizio di congruita') e
+# dell'ESCLUSIONE AUTOMATICA delle offerte anomale nei contratti pubblici: valutazione, richiesta di
+# spiegazioni, giustificazioni non ammesse, casi di esclusione, esclusione automatica sotto soglia e
+# indicazione dei costi della manodopera e degli oneri di sicurezza. Fonte: Codice dei contratti pubblici
+# (D.Lgs. 36/2023), artt. 110, 54 e 108 (comma 9).
+
+sources:
+  - id: dlgs-36-2023-110-54-108
+    title: "D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - artt. 110, 54 e 108 c.9 (offerte anormalmente basse ed esclusione automatica) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del D.Lgs.
+    # 36/2023 usato dalle altre skill appalti: RUP, subappalto, direzione lavori, collaudo, varianti,
+    # verifica della progettazione, garanzie).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 0e9a193836e379cb33cb6daf1a5a988c608eb9559d84b91a841d9ed9791a62af
+    license: public-domain
+    binary_path: not_in_repo/d36-anomalia-idx.html
+    md_path: references/fonti/dlgs-36-2023-110-54-108.md
+    excerpt_path: references/estratti/offerte-anomale-checklist.md
+    notes: |
+      Codice redazionale 23G00044, idGruppo 6 (art. 54) e 17 (artt. 108, 110). Pagina indice Normattiva
+      pinnata a !vig=2026-07-17 (hash stabile, doppio download: 0e9a1938...; e' lo stesso indice usato
+      dalle altre skill D.Lgs. 36/2023). Articoli 54 (v2), 108 (v6, riprodotto il comma 9) e 110 (v2)
+      caricati via AJAX (caricaArticolo, header X-Requested-With, formato AKN) e trascritti verbatim in
+      references/fonti/dlgs-36-2023-110-54-108.md (testo vigente: art. 54 e 110 dal 31-12-2024, art. 108
+      dal 6-11-2025). Art. 110 (offerte anormalmente basse): valutazione di congruita'/serieta'/
+      sostenibilita'/realizzabilita' della migliore offerta e indicazione degli elementi specifici nel
+      bando (c. 1); richiesta scritta di spiegazioni con termine non superiore a 15 giorni (c. 2); oggetto
+      ammissibile delle spiegazioni (c. 3); giustificazioni non ammesse su minimi salariali e costi di
+      sicurezza (c. 4); casi di esclusione - obblighi ambientali/sociali/lavoro (allegato X dir.
+      2014/24/UE), art. 119, oneri di sicurezza incongrui, costo del personale sotto le tabelle dell'art.
+      41 c. 13 (c. 5); aiuti di Stato (c. 6). Art. 54 (esclusione automatica): sotto soglia UE, prezzo piu'
+      basso, senza interesse transfrontaliero, se offerte ammesse >= 5, in deroga all'art. 110, con il
+      metodo dell'allegato II.2 scelto o sorteggiato; esclusi gli affidamenti dell'art. 50 c. 1 lett. a) e
+      b) (c. 1-2; comma 3 abrogato dal D.Lgs. 209/2024). Art. 108 c. 9: indicazione a pena di esclusione
+      dei costi della manodopera e degli oneri aziendali di sicurezza (salvo forniture senza posa e servizi
+      intellettuali). Il testo tra doppi tondi (( )) segnala le modifiche successive (correttivo D.Lgs.
+      209/2024).
+      LIMITE DI RESA: la skill inquadra il procedimento, i termini, le giustificazioni ammesse/non ammesse
+      e i casi di esclusione; NON calcola la soglia di anomalia ne' applica i metodi dell'Allegato II.2,
+      NON redige la richiesta di spiegazioni ne' il verbale di congruita', NON valuta nel merito le
+      giustificazioni, e NON sostituisce il RUP ne' la stazione appaltante.
