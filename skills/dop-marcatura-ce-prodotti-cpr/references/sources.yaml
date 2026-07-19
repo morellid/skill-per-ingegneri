@@ -1,0 +1,53 @@
+schema_version: 1
+skill: dop-marcatura-ce-prodotti-cpr
+last_verified: 2026-07-19
+
+# Fonte per l'inquadramento della REDAZIONE DELLA DICHIARAZIONE DI PRESTAZIONE (DoP) E DELLA MARCATURA CE
+# dei prodotti da costruzione secondo il Regolamento (UE) n. 305/2011 (CPR): obbligo e deroghe alla DoP,
+# contenuto della DoP e caratteristiche essenziali, regole della marcatura CE, obblighi degli operatori
+# economici, modello di DoP (Allegato III) e sistemi di valutazione e verifica della costanza della
+# prestazione (VVCP, Allegato V).
+
+sources:
+  - id: reg-ue-305-2011-cpr
+    title: "Regolamento (UE) n. 305/2011 (CPR) - condizioni armonizzate per la commercializzazione dei prodotti da costruzione"
+    type: regolamento-ue
+    # PDF ufficiale del testo pubblicato nella Gazzetta ufficiale dell'Unione europea L 88 del 4.4.2011,
+    # scaricato da EUR-Lex (CELEX 32011R0305).
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32011R0305
+    accessed: 2026-07-19
+    sha256: 2e98d2f0db29719ba516ca4e1fe2e6a99a4665c402c1049e0b8d382a9657e966
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-305-2011-cpr.pdf
+    md_path: references/fonti/reg-ue-305-2011-cpr.md
+    excerpt_path: references/estratti/dop-marcatura-ce-checklist.md
+    notes: |
+      Regolamento (UE) n. 305/2011 del Parlamento europeo e del Consiglio, del 9 marzo 2011, che fissa
+      condizioni armonizzate per la commercializzazione dei prodotti da costruzione e che abroga la
+      direttiva 89/106/CEE ("CPR" - Construction Products Regulation). Pubblicato nella Gazzetta ufficiale
+      dell'Unione europea L 88 del 4 aprile 2011. PDF scaricato da EUR-Lex (CELEX 32011R0305, hash stabile
+      con doppio download riproducibile: 2e98d2f0...). Gli articoli e gli allegati rilevanti sono stati
+      estratti con pdftotext -layout e trascritti/parafrasati fedelmente in
+      references/fonti/reg-ue-305-2011-cpr.md. Contenuto: obbligo di redigere la dichiarazione di
+      prestazione (DoP) quando il prodotto rientra in una norma armonizzata o ha una valutazione tecnica
+      europea, e le deroghe (esemplare unico o su ordinazione non in serie, fabbricazione in cantiere,
+      metodi tradizionali/conservazione del patrimonio) (artt. 4-5); il contenuto della DoP (prodotto-tipo,
+      sistema/i VVCP dell'Allegato V, norma armonizzata/ETA, uso previsto, caratteristiche essenziali,
+      prestazione in livelli/classi/descrizione, sigla NPD per le caratteristiche non dichiarate) e la
+      fornitura (cartacea/elettronica/sito web) (artt. 6-7); i principi e le regole di apposizione della
+      marcatura CE (CE solo se redatta la DoP; CE unica marcatura di conformita'; contenuto della marcatura:
+      anno, fabbricante, codice prodotto-tipo, numero DoP, livello/classe, specifica tecnica armonizzata,
+      numero organismo notificato, uso previsto) (artt. 8-9); gli obblighi degli operatori economici
+      (fabbricante con DoP e documentazione tecnica conservate 10 anni; mandatario che non redige la
+      documentazione tecnica; importatore; distributore; art. 15 secondo cui chi immette col proprio nome/
+      marchio o modifica il prodotto assume gli obblighi del fabbricante) (artt. 11-16); il modello di DoP
+      (Allegato III); i sistemi di valutazione e verifica della costanza della prestazione VVCP 1+/1/2+/3/4
+      con i compiti del fabbricante e dell'organismo notificato (Allegato V).
+      Il modello di DoP dell'Allegato III e' stato successivamente aggiornato dal Reg. delegato (UE) n.
+      574/2014 (segnalato come rinvio, non riprodotto).
+      LIMITE DI RESA: la skill inquadra la procedura documentale (obbligo/deroghe DoP, contenuto,
+      marcatura CE, sistemi VVCP, obblighi operatori); NON redige la DoP al posto dell'operatore, NON
+      individua la norma armonizzata applicabile ne' il sistema VVCP del singolo prodotto (dipendono dalla
+      hEN o dalla decisione della Commissione), NON esegue prove ne' valutazioni, NON tratta in dettaglio la
+      valutazione tecnica europea (ETA, artt. 19-27) ne' gli organismi notificati (artt. 39-56), e NON
+      sostituisce la norma armonizzata di prodotto ne' il fabbricante.

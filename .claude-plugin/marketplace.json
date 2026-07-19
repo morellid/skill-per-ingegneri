@@ -199,7 +199,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 11 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 12 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -210,6 +210,7 @@
       "skills": [
         "./attrezzature-pressione-esercizio-dm329",
         "./dm37-2008-dichiarazione-conformita",
+        "./dop-marcatura-ce-prodotti-cpr",
         "./fascicolo-tecnico-dispositivi-medici-mdr",
         "./fascicolo-tecnico-macchine-reg-1230",
         "./istruzioni-uso-macchine-reg-1230",

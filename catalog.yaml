@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 11
+  count: 12
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -916,6 +916,25 @@ skills:
   - firma-elettronica
   - cad-dlgs-82-2005
   - valore-probatorio
+- id: dop-marcatura-ce-prodotti-cpr
+  area: impianti-macchine-prodotti
+  title: DoP e marcatura CE dei prodotti da costruzione (Reg. UE 305/2011)
+  summary: 'Inquadra la redazione della Dichiarazione di Prestazione (DoP) e la marcatura CE dei prodotti da costruzione (Reg.
+    UE 305/2011): obbligo e deroghe (artt. 4-5), contenuto DoP (art. 6, NPD), marcatura CE (artt. 8-9), sistemi VVCP (All.
+    V) e obblighi degli operatori (artt. 11-16).'
+  normative_refs:
+  - Reg. (UE) n. 305/2011 (CPR) - artt. 4-9 (DoP e marcatura CE), artt. 11-16 (obblighi operatori economici), Allegato III
+    (modello DoP), Allegato V (sistemi VVCP 1+/1/2+/3/4)
+  - 'Rinvio (non riprodotti): Reg. delegato (UE) 574/2014 (modello DoP aggiornato); artt. 19-27 (ETA/EAD) e 39-56 (organismi
+    notificati) CPR; norme armonizzate hEN; Reg. 765/2008 e 1907/2006 (REACH)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - marcatura-ce
+  - dichiarazione-di-prestazione
+  - prodotti-da-costruzione
+  - cpr-305-2011
+  - vvcp
 - id: dora-gap-assessment
   area: software-dati-cybersecurity
   title: DORA Gap Assessment
