@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 22
+  count: 23
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1999,6 +1999,25 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: valutazione-rischio-biologico-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Rischio da agenti biologici sul lavoro (D.Lgs 81/2008 Titolo X)
+  summary: 'Inquadra il rischio da agenti biologici (D.Lgs 81/2008 Titolo X, artt. 266-280): definizioni e classificazione
+    nei 4 gruppi, valutazione del rischio e integrazione del DVR, misure tecniche e igieniche, sorveglianza sanitaria e registro
+    degli esposti dei gruppi 3 e 4.'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 - Titolo X, artt. 266-280 (esposizione ad agenti biologici: definizioni, classificazione
+    in 4 gruppi, valutazione, misure, sorveglianza, registro esposti)'
+  - 'Richiamati (non riprodotti): Allegati XLIV/XLV/XLVI D.Lgs 81/2008; artt. 17, 41, 42; D.Lgs. 106/2009; ISPESL ora INAIL
+    (L. 122/2010)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - agenti-biologici
+  - rischio-biologico
+  - dlgs-81-2008
+  - valutazione-rischio
+  - sorveglianza-sanitaria
 - id: valutazione-rischio-cancerogeni-mutageni-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Rischio cancerogeni e mutageni sul lavoro (D.Lgs 81/2008 Titolo IX Capo II)

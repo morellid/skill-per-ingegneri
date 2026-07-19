@@ -1,0 +1,49 @@
+schema_version: 1
+skill: valutazione-rischio-biologico-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della VALUTAZIONE E GESTIONE DEL RISCHIO DA ESPOSIZIONE AD AGENTI BIOLOGICI:
+# definizioni e classificazione degli agenti in quattro gruppi, valutazione del rischio (integrazione del
+# DVR), misure tecniche/organizzative/procedurali e igieniche, sorveglianza sanitaria e registro degli
+# esposti. Fonte: Testo unico sicurezza (D.Lgs. 81/2008), Titolo X, artt. 266-280.
+
+sources:
+  - id: dlgs-81-2008-266-280
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 266-280 (esposizione ad agenti biologici: classificazione, valutazione, misure, sorveglianza) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: chimico, cancerogeni, DPI, MMC, VDT, segnaletica,
+    # ponteggi, scavi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-biologico-idx.html
+    md_path: references/fonti/dlgs-81-2008-266-280.md
+    excerpt_path: references/estratti/rischio-biologico-checklist.md
+    notes: |
+      Codice redazionale 008G0104, idGruppo 48 (artt. 266-268), 49 (artt. 271-273), 50 (artt. 279-280) -
+      Titolo X (Esposizione ad agenti biologici). Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: 18fbc542...; e' lo stesso indice usato dalle altre skill D.Lgs. 81/2008).
+      Articoli 266 (v1), 267 (v1), 268 (v1), 271 (v1), 272 (v2), 273 (v2), 279 (v2), 280 (v2) caricati via
+      AJAX (caricaArticolo, header X-Requested-With, formato AKN) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-266-280.md, testo vigente (dal 15-5-2008; artt. 272/273/279/280 dal
+      20-8-2009 per il correttivo D.Lgs. 106/2009): campo di applicazione (266); definizioni di agente
+      biologico, microrganismo e coltura cellulare (267); classificazione degli agenti biologici nei
+      quattro gruppi a seconda del rischio di infezione, con l'allegato XLVI per i gruppi 2, 3 e 4 (268);
+      valutazione del rischio integrata nel documento dell'art. 17, con la classificazione, le malattie e
+      gli effetti allergici/tossici, la buona prassi microbiologica, la rivalutazione almeno triennale, le
+      attivita' dell'allegato XLIV e il programma di emergenza per i gruppi 3 e 4 (271); misure tecniche,
+      organizzative e procedurali - limitazione degli esposti, segnale di rischio biologico dell'allegato
+      XLV, procedure di emergenza, raccolta e smaltimento dei rifiuti (272); misure igieniche - servizi con
+      docce, indumenti protettivi separati, DPI disinfettati, divieti nelle aree a rischio (273);
+      prevenzione e controllo con sorveglianza sanitaria dell'art. 41, vaccini e allontanamento dell'art.
+      42 (279); registri degli esposti per i gruppi 3 e 4 e degli eventi accidentali, tenuti tramite l'RSPP
+      con accesso del medico competente e del rappresentante per la sicurezza, comunicazioni all'organo di
+      vigilanza e conservazione fino a 10 anni, ovvero 40 anni per gli agenti con infezioni latenti o gravi
+      sequele (280). Il testo cita ancora l'ISPESL, le cui funzioni sono ora dell'INAIL (art. 7 D.L.
+      78/2010 conv. L. 122/2010). Il testo tra doppi tondi (( )) segnala le modifiche successive.
+      LIMITE DI RESA: la skill inquadra definizioni, classificazione, obblighi e adempimenti; NON redige
+      il DVR ne' la valutazione del rischio, NON classifica i singoli agenti, NON riproduce gli Allegati
+      XLIV/XLV/XLVI ne' definisce i livelli di contenimento, e NON sostituisce il datore di lavoro, l'RSPP
+      ne' il medico competente.
