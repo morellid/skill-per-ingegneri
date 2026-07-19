@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 13
+  count: 14
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -999,6 +999,25 @@ skills:
   - pericolosita-idraulica
   - toscana
   - fattibilita-idraulica
+- id: fondazioni-pali-ntc
+  area: strutture-geotecnica
+  title: 'Fondazioni su pali: verifiche SLU/SLE e coefficienti NTC 2018 (par. 6.4.3)'
+  summary: 'Inquadra le verifiche delle fondazioni su pali (NTC 2018 par. 6.4.3): SLU GEO/STR con stabilita'' globale in Approccio
+    1 (A2+M2+R2) e rimanenti in Approccio 2 (A1+M1+R3), Tab. 6.4.II e 6.4.VI, fattori di correlazione, fondazioni miste, controlli
+    d''integrita'' e prove di carico.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.4.3 Fondazioni su pali: verifiche SLU/SLE, Tab. 6.4.II (gamma_R), Tab. 6.4.III/IV/V
+    (correlazione), Tab. 6.4.VI, controlli d''integrita'' e prove di carico'
+  - 'Rinvio (non riprodotti): Tabelle 6.2.I/6.2.II (azioni e parametri), Tab. 6.8.I (stabilita'' globale), Tab. 6.4.I, par.
+    6.4.2/6.8/7.11.5.3.2 (sismico) NTC 2018; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - fondazioni-su-pali
+  - pali-e-palificate
+  - ntc-2018
+  - stati-limite-geotecnici
+  - coefficienti-parziali
 - id: gap-analysis-misure-minime-ict-agid
   area: software-dati-cybersecurity
   title: Gap analysis Misure Minime ICT AgID (ABSC - Circ. 2/2017)
