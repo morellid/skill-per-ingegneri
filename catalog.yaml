@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 17
+  count: 18
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -639,6 +639,25 @@ skills:
   - csp-cse
   - dlgs-81-2008
   - psc-fascicolo
+- id: costruzioni-acciaio-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni di acciaio: materiali, classi e verifiche (NTC 2018 par. 4.2)'
+  summary: 'Inquadra la progettazione delle costruzioni di acciaio (NTC 2018 par. 4.2): materiali S235-S460 (fyk/ftk, Tab.
+    4.2.I/II), classi di sezione 1-4, coefficienti gamma_M (Tab. 4.2.VII: 1,05/1,05/1,25), resistenze di progetto Rd=Rk/gamma_M
+    e verifiche di stabilita'' (Nb,Rd, chi).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.2 Costruzioni di acciaio: materiali S235-S460 (Tab. 4.2.I/II), classi di sezione
+    1-4, gamma_M (Tab. 4.2.VII), Rd=Rk/gamma_M, resistenze SLU e stabilita'''
+  - 'Rinvio (non riprodotti): par. 11.3.4 (materiali, bulloni), par. 7.5 (sismica), Tab. 4.2.III-V (b/t) e 4.2.VIII (curve)
+    come figure, UNI EN 1993 (EC3) e 1090-2; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-di-acciaio
+  - carpenteria-metallica
+  - ntc-2018
+  - classi-di-sezione
+  - coefficienti-parziali
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
