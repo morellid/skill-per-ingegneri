@@ -18,7 +18,7 @@ areas:
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 14
+  count: 15
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
@@ -1272,6 +1272,25 @@ skills:
   - oepv
   - dlgs-36-2023
   - offerte
+- id: offerte-anomale-congruita-dlgs36
+  area: appalti-opere-pubbliche
+  title: Offerte anomale e verifica di congruita' (D.Lgs 36/2023 artt. 110, 54)
+  summary: 'Inquadra la verifica delle offerte anormalmente basse (D.Lgs 36/2023 art. 110): presupposto, spiegazioni (termine
+    15 gg), giustificazioni non ammesse ed esclusione; l''esclusione automatica sotto soglia (art. 54, Allegato II.2) e i
+    costi di manodopera/sicurezza (art. 108 c. 9).'
+  normative_refs:
+  - D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 110 (offerte anormalmente basse), art. 54 (esclusione
+    automatica sotto soglia, All. II.2), art. 108 c. 9 (costi manodopera/sicurezza)
+  - 'Richiamati (non riprodotti): Allegato II.2 e Allegato X dir. 2014/24/UE; artt. 41 c. 13, 50 c. 1, 108, 119 D.Lgs 36/2023;
+    art. 107 TFUE; correttivo D.Lgs. 209/2024'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - offerte-anomale
+  - verifica-congruita
+  - contratti-pubblici
+  - dlgs-36-2023
+  - rup-commissione
 - id: opere-sostegno-ntc
   area: strutture-geotecnica
   title: 'Opere di sostegno: muri e paratie - verifiche NTC 2018 (par. 6.5)'
