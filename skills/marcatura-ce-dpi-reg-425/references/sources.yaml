@@ -1,0 +1,49 @@
+schema_version: 1
+skill: marcatura-ce-dpi-reg-425
+last_verified: 2026-07-19
+
+# Fonte per l'inquadramento della CLASSIFICAZIONE, VALUTAZIONE DELLA CONFORMITA' E MARCATURA CE dei
+# dispositivi di protezione individuale (DPI) come prodotti secondo il Regolamento (UE) 2016/425:
+# categorie di rischio I/II/III, procedure di valutazione della conformita' (moduli A, B, C, C2, D),
+# obblighi del fabbricante, dichiarazione di conformita' UE e marcatura CE.
+
+sources:
+  - id: reg-ue-2016-425-dpi
+    title: "Regolamento (UE) 2016/425 sui dispositivi di protezione individuale (DPI)"
+    type: regolamento-ue
+    # PDF ufficiale del testo pubblicato nella Gazzetta ufficiale dell'Unione europea L 81 del 31.3.2016,
+    # scaricato da EUR-Lex (CELEX 32016R0425).
+    url: https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32016R0425
+    accessed: 2026-07-19
+    sha256: 8b4c61bb477557b572b4794f58702d4523ed72058e94311e3e7158aaad95f67d
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2016-425-dpi.pdf
+    md_path: references/fonti/reg-ue-2016-425-dpi.md
+    excerpt_path: references/estratti/marcatura-ce-dpi-checklist.md
+    notes: |
+      Regolamento (UE) 2016/425 del Parlamento europeo e del Consiglio, del 9 marzo 2016, sui dispositivi di
+      protezione individuale e che abroga la direttiva 89/686/CEE. Pubblicato nella Gazzetta ufficiale
+      dell'Unione europea L 81 del 31 marzo 2016. PDF scaricato da EUR-Lex (CELEX 32016R0425, hash stabile
+      con doppio download riproducibile: 8b4c61bb...). Gli articoli e gli allegati rilevanti sono stati
+      estratti con pdftotext -layout e trascritti/parafrasati fedelmente in
+      references/fonti/reg-ue-2016-425-dpi.md. Contenuto: obblighi del fabbricante (progettazione secondo i
+      requisiti essenziali di salute e sicurezza dell'Allegato II, documentazione tecnica dell'Allegato III,
+      procedura di conformita' dell'articolo 19, dichiarazione UE, marcatura CE, conservazione decennale,
+      identificazione e istruzioni) e del mandatario (artt. 8-9); dichiarazione di conformita' UE con la
+      struttura tipo dell'Allegato IX (art. 15); principi e regole di apposizione della marcatura CE, con il
+      numero dell'organismo notificato per la categoria III (artt. 16-17); classificazione dei DPI nelle
+      categorie di rischio I (rischi minimi), II (rischi diversi da I e III) e III (rischi gravissimi:
+      sostanze/miscele pericolose, carenza di ossigeno, agenti biologici, radiazioni ionizzanti, alta
+      temperatura >= 100 gradi, bassa temperatura <= -50 gradi, cadute dall'alto, scosse elettriche/lavoro
+      sotto tensione, annegamento, tagli da seghe a catena, getti ad alta pressione, ferite da proiettile/
+      coltello, rumore nocivo) dell'Allegato I (art. 18); procedure di valutazione della conformita' per
+      categoria (art. 19): categoria I modulo A (controllo interno, Allegato IV); categoria II modulo B
+      (esame UE del tipo, Allegato V) piu' modulo C (Allegato VI); categoria III modulo B piu' modulo C2
+      (Allegato VII) o modulo D (Allegato VIII), con deroga per i DPI su misura di categoria III.
+      LIMITE DI RESA: la skill inquadra la classificazione in categorie di rischio, la procedura di
+      conformita' applicabile, gli obblighi documentali e la marcatura CE; NON progetta ne' certifica il
+      DPI, NON esegue le prove ne' l'esame UE del tipo, NON riproduce in dettaglio i requisiti essenziali
+      dell'Allegato II ne' i moduli degli Allegati IV-VIII, NON individua le norme armonizzate applicabili,
+      NON tratta gli organismi notificati (artt. 20 e seguenti), e NON sostituisce l'organismo notificato ne'
+      il fabbricante. E' distinta dalla skill dpi-protezione-individuale-dlgs81, che riguarda l'uso e la
+      scelta dei DPI da parte del datore di lavoro (D.Lgs 81/2008, artt. 74-79).

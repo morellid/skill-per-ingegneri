@@ -199,7 +199,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 12 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 13 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -214,6 +214,7 @@
         "./fascicolo-tecnico-dispositivi-medici-mdr",
         "./fascicolo-tecnico-macchine-reg-1230",
         "./istruzioni-uso-macchine-reg-1230",
+        "./marcatura-ce-dpi-reg-425",
         "./marcatura-ce-elettrici-lvd-emc-red",
         "./ped-classificazione-conformita",
         "./scheda-dati-sicurezza-sds-reg878",
