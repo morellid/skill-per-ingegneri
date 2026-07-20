@@ -1,0 +1,54 @@
+schema_version: 1
+skill: costruzioni-composte-acciaio-cls-ntc
+last_verified: 2026-07-20
+
+# Fonte per l'inquadramento della PROGETTAZIONE DELLE COSTRUZIONI COMPOSTE DI ACCIAIO-CALCESTRUZZO (travi
+# con soletta collaborante, colonne composte) secondo le NTC 2018: materiali e coefficienti parziali,
+# classificazione delle sezioni, resistenza delle sezioni composte, sistema di connessione a taglio
+# (connettori a piolo) e colonne composte. Fonte: DM 17 gennaio 2018 (NTC 2018), par. 4.3.
+
+sources:
+  - id: ntc2018-par-4-3
+    title: "NTC 2018 - DM 17 gennaio 2018 (Aggiornamento delle Norme tecniche per le costruzioni) - par. 4.3 Costruzioni composte di acciaio-calcestruzzo"
+    type: decreto
+    # PDF del Supplemento Ordinario n. 8 alla G.U. n. 42 del 20 febbraio 2018 (stessa fonte usata dalle
+    # altre skill NTC: carichi, combinazioni, capacita' portante, cedimenti, opere di sostegno, fondazioni
+    # su pali, costruzioni di muratura, di legno, di acciaio e di calcestruzzo).
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-4-3.md
+    excerpt_path: references/estratti/costruzioni-composte-checklist.md
+    notes: |
+      Decreto Ministeriale 17 gennaio 2018, "Aggiornamento delle Norme tecniche per le costruzioni"
+      (NTC 2018), pubblicato nel Supplemento Ordinario n. 8 alla Gazzetta Ufficiale n. 42 del 20 febbraio
+      2018. PDF scaricato dalla Gazzetta Ufficiale (hash stabile, doppio download riproducibile:
+      dda1e397...; e' la stessa fonte usata dalle altre skill NTC del repo). Il par. 4.3 (Costruzioni
+      composte di acciaio-calcestruzzo) e' stato estratto con pdftotext -layout (pp. 114-127) e trascritto
+      verbatim in references/fonti/ntc2018-par-4-3.md, con i simboli resi in modo corretto (gamma_M, gamma_C,
+      gamma_A, gamma_S, gamma_V, alpha, Ecm, ftk, fck) e le costanti numeriche e le formule riportate come nel
+      testo. Contenuto: stati limite aggiuntivi della connessione acciaio-calcestruzzo (resistenza ed
+      esercizio) e fasi costruttive (4.3.1); analisi con la classificazione delle sezioni composte secondo lo
+      schema dell'acciaio (par. 4.2.3, distribuzioni plastiche/elastiche per classi 1-2 ed elastiche per 3-4),
+      l'armatura B450C in classe 1-2 con la condizione [4.3.1], l'omogeneizzazione per la viscosita' e
+      l'analisi fessurata (EJ1/EJ2) e la larghezza collaborante bei = min(Le/8, bi) (4.3.2); resistenze di
+      progetto fd = fk / gamma_M [4.3.6] con gamma_C = 1,5, gamma_A = 1,05, gamma_S = 1,15 e gamma_V = 1,25
+      allo SLU (gamma_M = 1 allo SLE e nelle situazioni eccezionali) e la classe del calcestruzzo tra C20/25
+      e C60/75 (leggeri LC20/22-LC55/60) (4.3.3); travi con soletta collaborante con il momento resistente
+      elastico (limiti fcd/fyd/fsd), plastico (compressione del calcestruzzo 0,85 fcd) ed elasto-plastico, la
+      resistenza a taglio verticale affidata alla trave metallica, e il sistema di connessione a taglio con il
+      grado di connessione K = N/Nf e la resistenza dei pioli con testa pari al minore fra
+      PRd,a = 0,8 ftk (pi d^2/4) / gamma_V [4.3.9] e PRd,c = 0,29 alpha d^2 sqrt(fck Ecm) / gamma_V [4.3.10]
+      (ftk <= 500 MPa, d tra 16 e 25 mm, alpha = 0,2 (hsc/d + 1) per 3 <= hsc/d <= 4 e 1,0 per hsc/d > 4),
+      con le riduzioni per lamiera grecata kl [4.3.13] e kt [4.3.14] (4.3.4); le colonne composte (4.3.5).
+      NOTA SULLE FIGURE/TABELLE-IMMAGINE: le Fig. 4.3.3 (tipologie di sezione composta), 4.3.4 (lamiera
+      grecata) e la Tab. 4.3.II (limiti superiori di kt) sono nel PDF figure/tabella figurata non estraibili
+      come testo: NON sono state trascritte e la skill rinvia alla norma o all'Eurocodice 4 (UNI EN 1994).
+      LIMITE DI RESA: la skill inquadra materiali, coefficienti, classificazione, resistenze delle sezioni,
+      sistema di connessione e colonne composte; NON calcola le resistenze ne' esegue le verifiche, NON
+      dimensiona la sezione ne' la connessione, NON riproduce le figure/tabelle-immagine (Fig. 4.3.3/4.3.4,
+      Tab. 4.3.II) ne' i materiali dei par. 11.2/11.3 ne' gli Eurocodici (UNI EN 1994), NON tratta la
+      progettazione sismica (par. 7.6), e NON sostituisce il progettista strutturale ne' la Circolare
+      21/1/2019 n. 7.

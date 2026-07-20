@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 19
+  count: 20
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -676,6 +676,25 @@ skills:
   - cemento-armato
   - ntc-2018
   - resistenze-di-progetto
+  - coefficienti-parziali
+- id: costruzioni-composte-acciaio-cls-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni composte acciaio-cls: connettori e verifiche (NTC 2018 par. 4.3)'
+  summary: 'Inquadra la progettazione delle costruzioni composte acciaio-calcestruzzo (NTC 2018 par. 4.3): coefficienti fd=fk/gamma_M
+    (gamma_C=1,5, gamma_A=1,05, gamma_S=1,15, gamma_V=1,25), classi delle sezioni, resistenza a flessione e connessione a
+    taglio (pioli PRd,a/PRd,c).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.3 Costruzioni composte acciaio-cls: fd=fk/gamma_M (gamma_C=1,5, gamma_A=1,05,
+    gamma_S=1,15, gamma_V=1,25), sezioni, connettori a piolo PRd,a/PRd,c'
+  - 'Rinvio (non riprodotti): par. 4.1/4.2 e 11.2/11.3, par. 7.6 (sismica), Fig. 4.3.3/4.3.4 e Tab. 4.3.II (figure), UNI EN
+    1994 (EC4); Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-composte
+  - acciaio-calcestruzzo
+  - ntc-2018
+  - connettori-a-taglio
   - coefficienti-parziali
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
