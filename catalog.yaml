@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 24
+  count: 25
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -300,6 +300,25 @@ skills:
   - ntc-2018
   - schemi-di-carico
   - corsie-convenzionali
+- id: azioni-urto-eccezionali-ntc
+  area: strutture-geotecnica
+  title: Azioni eccezionali da urto (NTC 2018 par. 3.6.3)
+  summary: 'Inquadra le azioni eccezionali da urto (NTC 2018 par. 3.6.3): classificazione (Tab. 3.6.II), forze statiche equivalenti
+    sotto i ponti (Tab. 3.6.III, Fd,y=0,50 Fd,x, F=r Fd,x, carrelli F=5W), sopra i ponti (100 kN) e da traffico ferroviario
+    (per distanza d).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.6.3 Urti: forze equivalenti sotto ponti (Tab. 3.6.III), Fd,y=0,50 Fd,x [3.6.7],
+    F=r Fd,x [3.6.8], carrelli F=5W [3.6.9], sopra ponti 100 kN, classi Tab. 3.6.II'
+  - NTC 2018 - par. 3.6.3.4 urti da traffico ferroviario (4000/1500 kN per d<=5 m; 2000/750 kN per 5<d<=15 m; 0 oltre; a 1,80
+    m dal ferro); par. 3.6.3.5 imbarcazioni/aeromobili (rinvio Cap. 12)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - azioni-da-urto
+  - azioni-eccezionali
+  - ntc-2018
+  - ponti
+  - collisioni
 - id: bandi-tipo-anac-checker
   area: appalti-opere-pubbliche
   title: Bandi-tipo ANAC - Checker disciplinare di gara
