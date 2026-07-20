@@ -1,0 +1,45 @@
+schema_version: 1
+skill: resistenza-fuoco-strutture-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento della resistenza al fuoco delle strutture
+# ai sensi delle NTC 2018 (DM 17/01/2018), par. 3.6.1. La skill inquadra
+# definizioni, prestazioni, classi, curve nominali e verifiche; non calcola il
+# carico d'incendio (rinvio DM 9/3/2007) ne' esegue le analisi termomeccaniche.
+
+sources:
+  - id: ntc2018-par-3-6-1
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 3.6.1 Incendio"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-3-6-1.md
+    excerpt_path: references/estratti/resistenza-fuoco-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 3.6.1 estratto con `pdftotext -layout` (pagine GU 62-64) e trascritto
+      verbatim in references/fonti/ntc2018-par-3-6-1.md. Contenuti rilevanti:
+      - par. 3.6.1.1 definizioni: capacita' portante (R), tenuta (E), isolamento
+        (I); resistenza al fuoco; compartimento; carico d'incendio; carico
+        d'incendio specifico di progetto qf,d = qf*dq1*dq2*dn [3.6.1] con
+        dq1 >= 1,00, dq2 >= 0,80, dn = prod. delle 10 misure >= 0,20; calcolo di
+        dettaglio nel DM 9 marzo 2007.
+      - par. 3.6.1.2 richieste di prestazione (Tab. 3.5.IV, Livelli I-V); classi
+        stabilite dalle disposizioni VVF ai sensi del D.Lgs. 139/2006.
+      - par. 3.6.1.3 classi di resistenza al fuoco: 15, 20, 30, 45, 60, 90, 120,
+        180, 240, 360 minuti (riferite alle curve nominali).
+      - par. 3.6.1.4 criteri di progettazione.
+      - par. 3.6.1.5 procedura di analisi: incendio di progetto (curva nominale/
+        naturale); curva nominale standard theta_g = 20 + 345 log10(8t+1) [3.6.2];
+        curva idrocarburi [3.6.3]; curva esterna [3.6.4]; analisi dell'evoluzione
+        della temperatura (3.6.1.5.2); analisi del comportamento meccanico in
+        combinazione eccezionale (3.6.1.5.3); verifiche di sicurezza (3.6.1.5.4).
+      Restano fuori scope: il calcolo del carico d'incendio (DM 9/3/2007), le
+      classi/livelli specifici delle regole tecniche VVF (D.Lgs 139/2006, DM
+      3/8/2015), le proprieta' dei materiali ad alta temperatura (Eurocodici
+      parte 1-2) e le analisi termiche/meccaniche di dettaglio.

@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 23
+  count: 24
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1780,6 +1780,24 @@ skills:
   - dlgs-192-2005
   - requisiti-minimi
   - efficienza-energetica
+- id: resistenza-fuoco-strutture-ntc
+  area: strutture-geotecnica
+  title: Resistenza al fuoco delle strutture (NTC 2018 par. 3.6.1)
+  summary: 'Inquadra la resistenza al fuoco delle strutture (NTC 2018 par. 3.6.1): definizioni R/E/I, carico d''incendio qf,d=qf*dq1*dq2*dn,
+    livelli di prestazione I-V (Tab. 3.5.IV), classi 15-360 min, curve nominali e verifiche in combinazione eccezionale.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.6.1: qf,d=qf*dq1*dq2*dn [3.6.1], livelli I-V (Tab. 3.5.IV), classi 15-360 min,
+    curve nominali [3.6.2]-[3.6.4], verifiche in comb. eccezionale'
+  - 'Rinvio (fuori scope): DM 9 marzo 2007 (calcolo carico d''incendio), D.Lgs 139/2006 e regole tecniche VVF (classi/livelli),
+    Eurocodici parte 1-2 (materiali ad alta temperatura), Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - resistenza-al-fuoco
+  - incendio
+  - ntc-2018
+  - classi-rei
+  - combinazione-eccezionale
 - id: responsabilita-appaltatore-rovina-cc
   area: forense
   title: 'Responsabilità dell''appaltatore: vizi e rovina d''edificio (c.c. 1667-1669)'
