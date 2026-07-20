@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 18
+  count: 19
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -657,6 +657,25 @@ skills:
   - carpenteria-metallica
   - ntc-2018
   - classi-di-sezione
+  - coefficienti-parziali
+- id: costruzioni-calcestruzzo-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni di calcestruzzo: materiali e verifiche (NTC 2018 par. 4.1)'
+  summary: 'Inquadra la progettazione delle costruzioni di calcestruzzo (NTC 2018 par. 4.1): classi di resistenza, resistenze
+    di progetto fcd=alpha_cc*fck/gamma_c e fyd=fyk/gamma_s (gamma_c=1,5, gamma_s=1,15), diagrammi di calcolo, verifiche SLU
+    e SLE (fessurazione, tensioni).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.1 Costruzioni di calcestruzzo: classi (Tab. 4.1.I), fcd=alpha_cc*fck/gamma_c,
+    fyd=fyk/gamma_s (gamma_c=1,5, gamma_s=1,15), diagrammi, SLU e SLE'
+  - 'Rinvio (non riprodotti): par. 11.2/11.3 (materiali, fck/fyk), par. 7.4 (sismica), par. 4.1.12 (leggeri) e 11.2.12 (FRC),
+    UNI EN 1992 (EC2); Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-di-calcestruzzo
+  - cemento-armato
+  - ntc-2018
+  - resistenze-di-progetto
   - coefficienti-parziali
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica

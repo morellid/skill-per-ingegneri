@@ -1,0 +1,54 @@
+schema_version: 1
+skill: costruzioni-calcestruzzo-ntc
+last_verified: 2026-07-20
+
+# Fonte per l'inquadramento della PROGETTAZIONE DELLE COSTRUZIONI DI CALCESTRUZZO (c.a., c.a.p., non armato)
+# secondo le NTC 2018: classi di resistenza, resistenze di progetto e coefficienti parziali, diagrammi di
+# calcolo, verifiche agli stati limite ultimi (pressoflessione, taglio, torsione) e di esercizio
+# (fessurazione, limitazione delle tensioni). Fonte: DM 17 gennaio 2018 (NTC 2018), par. 4.1.
+
+sources:
+  - id: ntc2018-par-4-1
+    title: "NTC 2018 - DM 17 gennaio 2018 (Aggiornamento delle Norme tecniche per le costruzioni) - par. 4.1 Costruzioni di calcestruzzo"
+    type: decreto
+    # PDF del Supplemento Ordinario n. 8 alla G.U. n. 42 del 20 febbraio 2018 (stessa fonte usata dalle
+    # altre skill NTC: carichi, combinazioni, capacita' portante, cedimenti, opere di sostegno, fondazioni
+    # su pali, costruzioni di muratura, di legno e di acciaio).
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-4-1.md
+    excerpt_path: references/estratti/costruzioni-calcestruzzo-checklist.md
+    notes: |
+      Decreto Ministeriale 17 gennaio 2018, "Aggiornamento delle Norme tecniche per le costruzioni"
+      (NTC 2018), pubblicato nel Supplemento Ordinario n. 8 alla Gazzetta Ufficiale n. 42 del 20 febbraio
+      2018. PDF scaricato dalla Gazzetta Ufficiale (hash stabile, doppio download riproducibile:
+      dda1e397...; e' la stessa fonte usata dalle altre skill NTC del repo). Il par. 4.1 (Costruzioni di
+      calcestruzzo) e' stato estratto con pdftotext -layout (pp. 71-90) e trascritto verbatim in
+      references/fonti/ntc2018-par-4-1.md, con i simboli resi in modo corretto (gamma_c, gamma_s, alpha_cc,
+      sigma_c, sigma_s, epsilon_c2, epsilon_cu, eta_1, eta_2) e le costanti numeriche riportate come nel
+      testo. Contenuto: classi di resistenza (Tab. 4.1.I, da C8/10 a C90/105) e metodi di analisi (elastica
+      lineare, plastica, non lineare) con il limite dell'asse neutro x/d <= 0,45 per fck <= 50 MPa e <= 0,35
+      per fck > 50 MPa (4.1.1); resistenze di progetto dei materiali: calcestruzzo a compressione
+      fcd = alpha_cc fck / gamma_c con alpha_cc = 0,85 e gamma_c = 1,5 (riducibile a 1,4 per produzione
+      continuativa controllata con coefficiente di variazione <= 10%; ridotta a 0,80 fcd per elementi piani
+      gettati in opera con spessore < 50 mm) [4.1.3], a trazione fctd = fctk / gamma_c [4.1.4], acciaio
+      fyd = fyk / gamma_s con gamma_s = 1,15 sempre per tutti i tipi di acciaio [4.1.5], e l'aderenza
+      acciaio-calcestruzzo [4.1.7] (4.1.2.1.1); diagrammi di calcolo tensione-deformazione del calcestruzzo
+      (parabola-rettangolo, triangolo-rettangolo, rettangolo/stress block; epsilon_c2 = 0,20%,
+      epsilon_cu = 0,35% per classi <= C50/60) e dell'acciaio, con il modello del calcestruzzo confinato
+      (4.1.2.1.2); stati limite di esercizio con la fessurazione (stati limite di decompressione,
+      formazione e apertura delle fessure con i valori limite w1 = 0,2 mm, w2 = 0,3 mm, w3 = 0,4 mm secondo
+      le condizioni ambientali e la sensibilita' delle armature) e la limitazione delle tensioni
+      (sigma_c <= 0,60 fck in combinazione caratteristica [4.1.15], sigma_c <= 0,45 fck in combinazione
+      quasi permanente [4.1.16], sigma_s <= 0,8 fyk [4.1.17]) (4.1.2.2); stati limite ultimi di
+      pressoflessione, taglio (traliccio con 1 <= ctg theta <= 2,5 [4.1.25]), torsione [4.1.38] e
+      punzonamento (4.1.2.3).
+      LIMITE DI RESA: la skill inquadra classi, coefficienti, resistenze di progetto, diagrammi e criteri di
+      verifica; NON calcola le resistenze ne' esegue le verifiche, NON dimensiona ne' arma gli elementi, NON
+      riproduce le proprieta' dei materiali (fck, fctk, fyk, moduli) dei par. 11.2/11.3 ne' gli Eurocodici
+      (UNI EN 1992), NON tratta la progettazione sismica (par. 7.4) ne' i calcestruzzi speciali (leggeri
+      4.1.12, fibrorinforzati 11.2.12), e NON sostituisce il progettista strutturale ne' la Circolare
+      21/1/2019 n. 7.
