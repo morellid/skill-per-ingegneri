@@ -1,0 +1,55 @@
+schema_version: 1
+skill: controlli-accettazione-cls-acciaio-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento dei controlli di accettazione in cantiere
+# del calcestruzzo (par. 11.2.4-11.2.5) e dell'acciaio da c.a. (par. 11.3.2.12)
+# ai sensi delle NTC 2018 (DM 17/01/2018). La skill inquadra prelievi, numero
+# minimo e criteri di accettazione; non esegue le prove (laboratorio art. 59
+# DPR 380/2001) ne' sostituisce il Direttore dei Lavori.
+
+sources:
+  - id: ntc2018-cap-11-controlli
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - Cap. 11 (par. 11.2.4-11.2.5 e 11.3.2.12)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-cap-11-controlli.md
+    excerpt_path: references/estratti/controlli-accettazione-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 11.2 e 11.3 estratti con `pdftotext -layout` (pagine GU 307-309 e
+      326-327) e trascritti verbatim in references/fonti/ntc2018-cap-11-controlli.md.
+      Contenuti rilevanti:
+      - par. 11.2.2 controlli di qualita' del cls (valutazione preliminare,
+        controllo di produzione, controllo di accettazione, prove complementari;
+        laboratorio art. 59 DPR 380/2001; responsabilita' del Direttore dei Lavori).
+      - par. 11.2.4 prelievo: 2 provini per prelievo, resistenza di prelievo =
+        media; prelievo non accettato se lo scarto tra i due provini supera il
+        20% del valore inferiore.
+      - par. 11.2.5 controllo di accettazione (Tab. 11.2.I): tipo A (3 prelievi)
+        Rcm28 >= Rck + 3,5 e Rc,min >= Rck - 3,5; tipo B (>=15 prelievi)
+        Rcm28 >= Rck + 1,48*s e Rc,min >= Rck - 3,5.
+        11.2.5.1 tipo A: quantitativo <= 300 m3, 3 prelievi (max 100 m3 ciascuno),
+        >= 1 prelievo/giorno.
+        11.2.5.2 tipo B: obbligatorio per opere > 1500 m3; >= 1 controllo ogni
+        1500 m3; >= 15 prelievi; coeff. di variazione s/Rm non > 0,3 (> 0,15
+        controlli piu' accurati).
+        11.2.5.3 prescrizioni comuni: verbale di prelievo, laboratorio art. 59
+        DPR 380, prove tra 28 e 30 giorni (entro 45 gg); non conformita';
+        obbligo del collaudatore di verificarne la validita'.
+      - par. 11.3.2.12 controlli di accettazione in cantiere dell'acciaio da c.a.:
+        obbligatori entro 30 gg dalla consegna, laboratorio art. 59 DPR 380;
+        3 campioni ogni 30 t della stessa classe/stabilimento; Tab. 11.3.VII a)
+        barre e b) reti/tralicci (fy min 425, fy max 572 N/mm2; Agt min 6,0%
+        B450C / 2,0% B450A; ft/fy 1,13-1,37 B450C / >= 1,03 B450A; piegamento
+        assenza cricche; distacco nodo per reti). Non conformita': ripetizione
+        su 6 campioni, poi estensione a 25 campioni; inidoneita' della partita.
+      Restano fuori scope: controlli in stabilimento e qualificazione
+      (11.3.2.10-11), carotaggi e resistenza in opera (11.2.6-11.2.7), aggregati,
+      acciaio da carpenteria (11.3.4), legno (11.7), muratura (11.10).

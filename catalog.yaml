@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 21
+  count: 22
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -640,6 +640,25 @@ skills:
   - costo-di-costruzione
   - dpr-380-2001
   - permesso-di-costruire
+- id: controlli-accettazione-cls-acciaio-ntc
+  area: strutture-geotecnica
+  title: 'Controlli di accettazione in cantiere: cls e acciaio (NTC 2018)'
+  summary: 'Inquadra i controlli di accettazione in cantiere del calcestruzzo (prelievo, tipo A/B, Tab. 11.2.I: Rcm28 >= Rck+3,5
+    / Rck+1,48s, Rc,min >= Rck-3,5) e dell''acciaio da c.a. (3 campioni ogni 30 t, Tab. 11.3.VII: fy 425-572 N/mm2) secondo
+    le NTC 2018 par. 11.2.5 e 11.3.2.12.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 11.2.4-11.2.5 (prelievo, controllo tipo A/B, Tab. 11.2.I: Rcm28 >= Rck+3,5 o Rck+1,48s;
+    Rc,min >= Rck-3,5; A <= 300 m3, B > 1500 m3)'
+  - 'NTC 2018 - par. 11.3.2.12 acciaio da c.a. (3 campioni/30 t, entro 30 gg, laboratorio art. 59 DPR 380/2001; Tab. 11.3.VII:
+    fy 425-572 N/mm2, Agt, ft/fy, non conformita'' 6->25 campioni)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - controlli-accettazione
+  - calcestruzzo
+  - acciaio-cemento-armato
+  - ntc-2018
+  - direttore-lavori
 - id: coordinatori-sicurezza-cantieri-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Coordinatori sicurezza cantieri Titolo IV (D.Lgs. 81/2008 artt. 89-92)
