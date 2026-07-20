@@ -30,7 +30,7 @@ areas:
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 12
+  count: 13
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -1197,6 +1197,25 @@ skills:
   - mappatura-acustica-strategica
   - piani-azione
   - direttiva-2002-49-ce
+- id: marcatura-ce-dpi-reg-425
+  area: impianti-macchine-prodotti
+  title: Marcatura CE dei dispositivi di protezione individuale - DPI (Reg. UE 2016/425)
+  summary: 'Inquadra classificazione, valutazione della conformita'' e marcatura CE dei DPI (Reg. UE 2016/425): categorie
+    di rischio I/II/III (All. I), procedure per categoria (art. 19: modulo A; B+C; B+C2 o D), obblighi del fabbricante (art.
+    8) e marcatura CE (artt. 16-17).'
+  normative_refs:
+  - Reg. (UE) 2016/425 (DPI) - art. 8 (obblighi fabbricante), art. 15 (dichiarazione UE), artt. 16-17 (marcatura CE), art.
+    18 e All. I (categorie di rischio I/II/III), art. 19 (moduli A/B/C/C2/D)
+  - 'Rinvio (non riprodotti): Allegato II (requisiti essenziali), Allegato III (documentazione tecnica), Allegati IV-VIII
+    (moduli), Allegato IX (dichiarazione UE); norme armonizzate EN; Reg. (CE) 765/2008'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - marcatura-ce
+  - dpi
+  - reg-ue-2016-425
+  - categorie-di-rischio
+  - valutazione-conformita
 - id: marcatura-ce-elettrici-lvd-emc-red
   area: impianti-macchine-prodotti
   title: Marcatura CE prodotti elettrici - LVD 2014/35, EMC 2014/30, RED 2014/53
