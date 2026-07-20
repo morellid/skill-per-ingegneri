@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 22
+  count: 23
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -2075,6 +2075,25 @@ skills:
   - sottoprodotto
   - rifiuti
   - cantieri
+- id: tiranti-ancoraggio-ntc
+  area: strutture-geotecnica
+  title: 'Tiranti di ancoraggio: progetto e verifica (NTC 2018 par. 6.6)'
+  summary: 'Inquadra progetto e verifica dei tiranti di ancoraggio (NTC 2018 par. 6.6): verifica SLU a sfilamento Ed<=Rad
+    con Rad=Rak/gamma_R (Tab. 6.6.I: 1,1 temporanei / 1,2 permanenti), Rak da prove (Tab. 6.6.II) o calcolo (Tab. 6.6.III),
+    combinazione A1+M1+R3, e prove di carico.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.6: verifica SLU a sfilamento Ed<=Rad, Rad=Rak/gamma_R (Tab. 6.6.I: 1,1/1,2),
+    Rak da prove o calcolo [6.6.1-2] con xi (Tab. 6.6.II/III), comb. A1+M1+R3'
+  - 'NTC 2018 - par. 6.6.4 prove di carico: prove di progetto (numero minimo per numero di ancoraggi) e prove in corso d''opera
+    su tutti a 1,2 Pd; rinvio par. 6.5, 11.5.2 e Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - tiranti-di-ancoraggio
+  - geotecnica
+  - ntc-2018
+  - verifica-slu
+  - prove-di-carico
 - id: transizione-5-0-asseverazione
   area: energia-incentivi
   title: Transizione 5.0 - Asseverazione tecnica

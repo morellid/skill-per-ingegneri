@@ -1,0 +1,50 @@
+schema_version: 1
+skill: tiranti-ancoraggio-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento del progetto e della verifica dei tiranti
+# di ancoraggio ai sensi delle NTC 2018 (DM 17/01/2018), par. 6.6. La skill
+# inquadra criteri, verifica SLU a sfilamento, fattori di correlazione e prove
+# di carico; non calcola la resistenza ne' dimensiona il tirante.
+
+sources:
+  - id: ntc2018-par-6-6
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 6.6 Tiranti di ancoraggio"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-6.md
+    excerpt_path: references/estratti/tiranti-ancoraggio-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 6.6 estratto con `pdftotext -layout` (pagine GU 197-199) e trascritto
+      verbatim in references/fonti/ntc2018-par-6-6.md. Contenuti rilevanti:
+      - par. 6.6 definizione: tiranti = elementi strutturali collegati al terreno
+        che sostengono trazione.
+      - par. 6.6.1 criteri di progetto: ancoraggi provvisori/permanenti,
+        attivi (presollecitati)/passivi; nel progetto indicare orientazione,
+        lunghezza, numero, resistenza di progetto Rad, programma di tesatura;
+        conferma sperimentale con prove di trazione sempre necessaria.
+      - par. 6.6.2 verifiche SLU: condizione [6.2.1] Ed <= Rad; combinazione
+        A1+M1+R3; Rad = Rak / gamma_R con Tab. 6.6.I (gamma_R = 1,1 temporanei,
+        1,2 permanenti). Rak da prove (a) [6.6.1] con xi_a1/xi_a2 (Tab. 6.6.II)
+        o da calcolo (b) [6.6.2] con xi_a3/xi_a4 (Tab. 6.6.III); nella
+        valutazione analitica non si applicano gamma sui parametri (M1).
+        Tab. 6.6.II: xi_a1 = 1,5/1,4/1,3 e xi_a2 = 1,5/1,3/1,2 per n = 1/2/>2
+        ancoraggi di prova. Tab. 6.6.III: xi_a3 = 1,80/1,75/1,70/1,65/1,60 e
+        xi_a4 = 1,80/1,70/1,65/1,60/1,55 per n = 1/2/3/4/>=5 profili di indagine.
+      - par. 6.6.3 aspetti costruttivi: sistemi qualificati (par. 11.5.2),
+        diametro fori >= nominale, tesatura dopo presa/indurimento.
+      - par. 6.6.4 prove di carico: 6.6.4.1 prove di progetto su ancoraggi
+        preliminari (numero minimo: 1 se ancoraggi < 30; 2 se 31-50; 3 se
+        51-100; 7 se 101-200; 8 se 201-500; 10 se > 500); 6.6.4.2 prove in
+        corso d'opera su tutti gli ancoraggi (ciclo carico/scarico a 1,2 Pd,
+        azione SLE).
+      Restano fuori scope: i sistemi di ancoraggio come prodotti (par. 11.5.2),
+      la progettazione strutturale dell'armatura, le paratie/muri (par. 6.5,
+      skill opere-sostegno-ntc) e le procedure di dettaglio delle prove.

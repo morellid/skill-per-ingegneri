@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 22 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 23 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -77,7 +77,8 @@
         "./predimensionamento-flessione-ca-ntc",
         "./relazione-geologica-geotecnica-ntc",
         "./sismabonus-classificazione-rischio-pam",
-        "./spettro-risposta-ntc"
+        "./spettro-risposta-ntc",
+        "./tiranti-ancoraggio-ntc"
       ]
     },
     {
