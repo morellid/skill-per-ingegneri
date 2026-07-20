@@ -1,0 +1,52 @@
+schema_version: 1
+skill: azioni-urto-eccezionali-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento delle azioni eccezionali da urto ai sensi
+# delle NTC 2018 (DM 17/01/2018), par. 3.6.3. La skill inquadra classificazione,
+# forze statiche equivalenti e punti di applicazione; non calcola le
+# sollecitazioni ne' dimensiona/verifica gli elementi.
+
+sources:
+  - id: ntc2018-par-3-6-3
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 3.6.3 Urti"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-3-6-3.md
+    excerpt_path: references/estratti/azioni-urto-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 3.6.3 estratto con `pdftotext -layout` (pagine GU 65-66) e trascritto
+      verbatim in references/fonti/ntc2018-par-3-6-3.md. Contenuti rilevanti:
+      - par. 3.6.3.1 generalita' (urti da traffico veicolare, ferroviario,
+        imbarcazioni/aeromobili; esclusi i fenomeni naturali).
+      - par. 3.6.3.2 classificazione (Tab. 3.6.II): categoria 1 effetti
+        trascurabili, 2 localizzati, 3 generalizzati; le azioni si applicano
+        agli elementi con conseguenze di categoria 2 e 3.
+      - par. 3.6.3.3.1 urti da traffico veicolare sotto ponti/strutture:
+        Fd,y = 0,50*Fd,x [3.6.7], non simultanee; forze statiche equivalenti
+        Tab. 3.6.III (autostrade/extraurbane 1000 kN, strade locali 750, urbane
+        500, parcheggi/autorimesse automobili 50, veicoli merci > 3,5 t 150);
+        punti di applicazione 0,5 m (automobili) o 1,25 m sopra la superficie di
+        marcia; elementi orizzontali F = r*Fd,x [3.6.8] con r = 1,0 fino a 5 m,
+        decrescente da 1,0 a 0 tra 5 e 6 m, 0 oltre 6 m (intradosso a 10 gradi
+        verso l'alto, area 0,25x0,25 m); carrelli elevatori F = 5*W [3.6.9] a
+        0,75 m dal piano di calpestio.
+      - par. 3.6.3.3.2 sopra i ponti: forza orizzontale equivalente 100 kN sugli
+        elementi di sicurezza (100 mm sotto la sommita' o 1,0 m sopra il piano
+        di marcia; rinvio par. 5.1.3.10 per l'impalcato).
+      - par. 3.6.3.4 urti da traffico ferroviario: analisi di rischio; in
+        mancanza, azioni statiche equivalenti per distanza d (d <= 5 m:
+        4000/1500 kN; 5 < d <= 15 m: 2000/750 kN; d > 15 m: 0), a 1,80 m dal
+        piano del ferro, non simultanee.
+      - par. 3.6.3.5 imbarcazioni/aeromobili: rinvio a documenti Cap. 12.
+      Restano fuori scope: il calcolo delle sollecitazioni e le verifiche/
+      dimensionamento, le analisi di rischio (ferrovia), le procedure per
+      imbarcazioni/aeromobili, le esplosioni (par. 3.6.2) e l'incendio (par.
+      3.6.1, skill resistenza-fuoco-strutture-ntc).
