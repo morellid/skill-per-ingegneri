@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 27
+  count: 28
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -2114,6 +2114,25 @@ skills:
   - ntc-2018
   - sismica
   - spettro
+- id: stabilita-pendii-naturali-ntc
+  area: strutture-geotecnica
+  title: Stabilità dei pendii naturali (NTC 2018 par. 6.3)
+  summary: 'Inquadra lo studio e la verifica di stabilita'' dei pendii naturali (NTC 2018 par. 6.3): modellazione geologica/geotecnica,
+    coefficiente di sicurezza F = tau_f/tau su valori caratteristici (senza coefficienti parziali), superficie critica/di
+    frana, interventi e monitoraggio.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.3: F = tau_f/tau su valori caratteristici (no coefficienti parziali A1/A2/M/R),
+    superficie critica o accertata (frana), margine dal progettista'
+  - NTC 2018 - par. 6.3.1-6.3.3 (indagini, modellazione geologica/geotecnica, modello 6.2.2), 6.3.5-6.3.6 (interventi, monitoraggio
+    con soglie di attenzione/allarme); rinvio par. 7.11.3.5 (sismico)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - stabilita-dei-pendii
+  - geotecnica
+  - ntc-2018
+  - coefficiente-di-sicurezza
+  - frane
 - id: subappalto-contratti-pubblici-dlgs36
   area: appalti-opere-pubbliche
   title: Subappalto nei contratti pubblici (D.Lgs. 36/2023 art. 119)
