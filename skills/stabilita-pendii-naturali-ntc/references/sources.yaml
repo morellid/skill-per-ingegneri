@@ -1,0 +1,53 @@
+schema_version: 1
+skill: stabilita-pendii-naturali-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento della verifica di stabilita' dei pendii
+# naturali ai sensi delle NTC 2018 (DM 17/01/2018), par. 6.3. La skill inquadra
+# criteri, modellazione e verifica (F = tau_f/tau su valori caratteristici); non
+# calcola il coefficiente di sicurezza ne' esegue le verifiche.
+
+sources:
+  - id: ntc2018-par-6-3
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 6.3 Stabilita' dei pendii naturali"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-3.md
+    excerpt_path: references/estratti/stabilita-pendii-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 6.3 estratto con `pdftotext -layout` (pagine GU 187-188) e trascritto
+      verbatim in references/fonti/ntc2018-par-6-3.md. Contenuti rilevanti:
+      - par. 6.3 ambito: pendii naturali, anche sismici (rinvio par. 7.11.3.5);
+        progetto/esecuzione/controllo degli interventi di stabilizzazione.
+      - par. 6.3.1 prescrizioni generali: osservazioni e rilievi di superficie,
+        notizie storiche, movimenti in atto, dati idrogeologici/pluviometrici,
+        verifiche basate su specifiche indagini geotecniche.
+      - par. 6.3.2 modellazione geologica del pendio (modello geologico,
+        criticita' geologiche).
+      - par. 6.3.3 modellazione geotecnica: rilievo plano-altimetrico,
+        successione stratigrafica, pressioni interstiziali, superficie/i di
+        scorrimento, numero minimo di verticali, modello geotecnico (par. 6.2.2).
+      - par. 6.3.4 verifiche di sicurezza: coefficiente di sicurezza F = tau_f/tau
+        (resistenza al taglio disponibile / tensione di taglio agente) lungo la
+        superficie di scorrimento, con parametri geotecnici e azioni al VALORE
+        CARATTERISTICO (non con i coefficienti parziali A1/A2, M, R degli altri
+        interventi geotecnici); pendii in frana lungo le superfici accertate,
+        altrimenti ricerca della superficie critica (grado di sicurezza piu'
+        basso); pressioni interstiziali nelle condizioni piu' sfavorevoli;
+        margine di sicurezza accettabile giustificato dal progettista (livello di
+        conoscenze, affidabilita' dei dati, modello di calcolo, conseguenze).
+      - par. 6.3.5 interventi di stabilizzazione (piano di monitoraggio, entita'
+        del miglioramento, altri meccanismi di collasso).
+      - par. 6.3.6 controlli e monitoraggio (spostamenti, pressioni interstiziali,
+        soglie di attenzione e di allarme).
+      Restano fuori scope: il calcolo del coefficiente di sicurezza e le verifiche
+      (metodi dell'equilibrio limite/numerici), la definizione del modello
+      geologico/geotecnico, il progetto degli interventi, la stabilita' sismica
+      (par. 7.11.3.5) e le opere in materiali sciolti/fronti di scavo (par. 6.8).
