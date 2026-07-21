@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 28
+  count: 29
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1537,6 +1537,25 @@ skills:
   - contratti-pubblici
   - dlgs-36-2023
   - rup-commissione
+- id: opere-materiali-sciolti-scavi-ntc
+  area: strutture-geotecnica
+  title: Opere di materiali sciolti e fronti di scavo (NTC 2018 par. 6.8)
+  summary: 'Inquadra progetto e verifica delle opere di materiali sciolti (rilevati, argini, terrapieni) e dei fronti di scavo
+    (NTC 2018 par. 6.8): SLU in Combinazione 2 (A2+M2+R2), Tab. 6.8.I gamma_R = 1,1, stabilita'' globale, sostegno per fronti
+    verticali oltre 2 m con personale.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.8: verifiche SLU in Combinazione 2 (A2+M2+R2), Tab. 6.2.I/6.2.II/6.8.I (gamma_R
+    = 1,1 per R2), stabilita'' globale manufatto-terreno nelle diverse fasi'
+  - 'NTC 2018 - par. 6.8.6 fronti di scavo: struttura di sostegno per trincee a fronte verticale > 2 m con personale o vicino
+    a manufatti (verifiche SLU/SLE); rinvio par. 6.2.2/6.2.4'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - materiali-sciolti
+  - fronti-di-scavo
+  - geotecnica
+  - ntc-2018
+  - rilevati
 - id: opere-sostegno-ntc
   area: strutture-geotecnica
   title: 'Opere di sostegno: muri e paratie - verifiche NTC 2018 (par. 6.5)'
