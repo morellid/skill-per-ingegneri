@@ -1,0 +1,62 @@
+schema_version: 1
+skill: regolarita-strutturale-sismica-ntc
+last_verified: 2026-07-21
+
+# Fonte normativa per l'inquadramento della regolarita' strutturale in pianta e
+# in altezza ai fini della progettazione sismica secondo le NTC 2018 (DM
+# 17/01/2018), par. 7.2.1, e delle sue conseguenze sul metodo di analisi e sul
+# fattore di comportamento (par. 7.3.1, 7.3.3.1). La skill inquadra i criteri;
+# non calcola la struttura ne' esegue l'analisi.
+
+sources:
+  - id: ntc2018-par-7-2-1
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.2.1 (regolarita') e par. 7.3.1/7.3.3.1 (conseguenze)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-21
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-2-1-regolarita.md
+    excerpt_path: references/estratti/regolarita-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-21 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 7.2.1 (sezione REGOLARITA') estratto con `pdftotext -layout` (pagine
+      PDF 212-213, p. GU 208) e trascritto verbatim in
+      references/fonti/ntc2018-par-7-2-1-regolarita.md, insieme ai richiami dei
+      par. 7.3.1 (fattore KR) e 7.3.3.1 (analisi lineare statica). Contenuti
+      rilevanti:
+      - regolare in PIANTA (tutte le condizioni a-c): (a) masse/rigidezze
+        approssimativamente simmetriche rispetto a due direzioni ortogonali e
+        forma compatta (contorno convesso; rientranze ammesse se l'area tra
+        perimetro e linea convessa circoscritta non supera il 5%
+        dell'orizzontamento); (b) rapporto tra i lati del rettangolo circoscritto
+        inferiore a 4; (c) orizzontamento rigido nel proprio piano (diaframma
+        rigido) con resistenza sufficiente.
+      - regolare in ALTEZZA (tutte le condizioni d-g): (d) sistemi resistenti
+        alle azioni orizzontali estesi per tutta l'altezza; (e) massa e rigidezza
+        costanti o graduali (variazioni di massa <= 25%, rigidezza che non si
+        riduce piu' del 30% ne' aumenta piu' del 10% da un piano al sovrastante;
+        per la rigidezza si considerano regolari strutture con pareti/nuclei in
+        c.a. o muratura o telai controventati in acciaio cui sia affidato almeno
+        il 50% dell'azione sismica alla base); (f) rapporto capacita'/domanda SLV
+        che non differisce piu' del 30% tra orizzontamenti adiacenti (eccezione
+        ultimo orizzontamento di strutture intelaiate di almeno tre piani); (g)
+        restringimenti con continuita' (rientro <= 10% della dimensione
+        sottostante, ne' > 30% della dimensione al primo orizzontamento;
+        eccezione ultimo piano di costruzioni di almeno quattro orizzontamenti).
+      - struttura scatolare rigida alla base: i controlli di regolarita' in
+        altezza possono riferirsi alla sola struttura soprastante. Ponti: par.
+        7.9.2.1.
+      - conseguenze: par. 7.3.1 fattore KR del fattore di comportamento (q_lim =
+        q0 * KR), con KR = 1 per costruzioni regolari in altezza e KR = 0,8 per
+        costruzioni non regolari in altezza; par. 7.3.3.1 l'analisi lineare
+        statica e' applicabile a condizione che T1 non superi 2,5 TC o TD e che
+        la costruzione sia regolare in altezza.
+      Restano fuori scope: il calcolo della struttura e l'esecuzione delle
+      analisi, la determinazione di q0 (Tab. 7.3.II) e delle classi di duttilita'
+      (par. 7.2.2), la stima/limiti di T1 (par. 7.3.3.2, skill
+      periodo-proprio-t1-ntc) e la regolarita' dei ponti (par. 7.9.2.1).

@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 31
+  count: 32
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1823,6 +1823,25 @@ skills:
   - scia
   - tabella-a
   - attivita-produttive
+- id: regolarita-strutturale-sismica-ntc
+  area: strutture-geotecnica
+  title: Regolarità strutturale in pianta e in altezza (NTC 2018 par. 7.2.1)
+  summary: 'Inquadra la regolarita'' strutturale in pianta e in altezza (NTC 2018 par. 7.2.1): criteri a-c (pianta) e d-g
+    (altezza) con le soglie, e conseguenze su fattore di comportamento (KR = 1 o 0,8) e metodo di analisi (analisi statica
+    solo se regolare in altezza e T1 <= 2,5 TC o TD).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.2.1: regolarita'' in pianta (a-c) e in altezza (d-g) con le soglie (rientranze
+    5%, lati < 4, massa 25%, rigidezza 30/10, capacita''/domanda 30, rientri 10/30)'
+  - NTC 2018 - par. 7.3.1 (KR = 1 regolare / 0,8 non regolare in altezza, q_lim = q0 x KR) e par. 7.3.3.1 (analisi lineare
+    statica se T1 <= 2,5 TC o TD e regolare in altezza)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - regolarita-strutturale
+  - progettazione-sismica
+  - fattore-di-comportamento
+  - ntc-2018
+  - metodo-di-analisi
 - id: relazione-cam-dm-24-11-2025
   area: appalti-opere-pubbliche
   title: Relazione CAM di progetto (DM 24.11.2025)
