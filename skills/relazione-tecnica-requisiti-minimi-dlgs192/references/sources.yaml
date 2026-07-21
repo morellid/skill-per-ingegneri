@@ -1,0 +1,45 @@
+schema_version: 1
+skill: relazione-tecnica-requisiti-minimi-dlgs192
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della RELAZIONE TECNICA DI PROGETTO attestante la rispondenza ai
+# requisiti minimi di contenimento dei consumi energetici (la "relazione ex legge 10"): contenuto,
+# deposito, asseverazione del direttore dei lavori a fine lavori, accertamenti/ispezioni, sanzioni.
+# Fonte: D.Lgs. 192/2005, artt. 8 e 15 (cc. 1, 3, 4).
+
+sources:
+  - id: dlgs-192-2005-art8-15
+    title: "D.Lgs. 19 agosto 2005, n. 192 - artt. 8 e 15 (relazione tecnica, accertamenti, sanzioni) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 192/2005 usato dalla skill attestato-prestazione-energetica-dlgs192).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-08-19;192!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: bfaa533634a0bcd106b0a5d52d07b1a6f841b7c85960a8de069eeef0c952741d
+    license: public-domain
+    binary_path: not_in_repo/d192-rt-idx.html
+    md_path: references/fonti/dlgs-192-2005-art8-15.md
+    excerpt_path: references/estratti/relazione-tecnica-checklist.md
+    notes: |
+      Codice redazionale 005G0219. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile,
+      doppio download: bfaa5336...; e' lo stesso indice usato da attestato-prestazione-energetica-
+      dlgs192, ripinnato a oggi). Art. 8 (versione 5, idGruppo 1) e art. 15 (versione 4, idGruppo 3)
+      caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-192-2005-art8-15.md: relazione tecnica di progetto attestante la
+      rispondenza, redatta dai progettisti e depositata dal proprietario in doppia copia
+      contestualmente alla DIA/titolo abilitativo, con esclusioni per pompa di calore <= 15 kW e
+      sostituzione generatore sotto soglia DM 37/2008 (art. 8 c. 1); valutazione di fattibilita' dei
+      sistemi alternativi ad alta efficienza (c. 1-bis); asseverazione di conformita' e attestato di
+      qualificazione energetica del direttore dei lavori a fine lavori, pena l'inefficacia della fine
+      lavori (c. 2); conservazione, accertamenti e ispezioni del Comune in corso d'opera o entro 5
+      anni (cc. 3-5); dichiarazione sostitutiva di atto notorio (art. 15 c. 1); sanzione al
+      professionista 700-4200 euro per relazione non conforme (art. 15 c. 3) e al direttore dei
+      lavori 1000-6000 euro per omessa asseverazione (art. 15 c. 4). Il testo tra doppi tondi (( )),
+      le indicazioni di periodo abrogato (D.Lgs. 48/2020) e i richiami numerici sono riportati come
+      da fonte.
+      LIMITE DI RESA: la skill inquadra l'adempimento e la sua collocazione; NON redige la relazione
+      tecnica ne' esegue i calcoli/verifiche (rinvio a trasmittanza-termica-opache-dm2015 e al DM
+      26/6/2015 sui requisiti minimi), NON riproduce gli schemi di relazione del decreto attuativo
+      MiSE, NON copre l'APE (art. 6, skill attestato-prestazione-energetica-dlgs192, riprodotto per
+      rinvio) ne' i commi 2 e 5-10 dell'art. 15 (controlli e sanzioni APE/impianti). Non sostituisce
+      il progettista/direttore dei lavori.

@@ -6,31 +6,31 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 14
+  count: 23
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 10
+  count: 30
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 14
+  count: 17
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
-  count: 10
+  count: 15
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 7
+  count: 8
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
-  count: 19
+  count: 24
 - id: impianti-macchine-prodotti
   name: Impianti, macchine & prodotti
   order: 7
-  count: 11
+  count: 13
 - id: software-dati-cybersecurity
   name: Software, dati & cybersecurity
   order: 8
@@ -40,6 +40,25 @@ areas:
   order: 9
   count: 7
 skills:
+- id: accertamento-conformita-sanatoria-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Accertamento di conformita' / sanatoria edilizia - salva-casa (DPR 380/2001)
+  summary: 'Inquadra l''accertamento di conformita'' (sanatoria edilizia) del DPR 380/2001 dopo il salva-casa: doppia conformita''
+    piena per assenza titolo/totale difformita'' (36), attenuata per parziale difformita''/variazioni essenziali con silenzio-assenso
+    45 gg (36-bis), sanzione SCIA (37).'
+  normative_refs:
+  - D.P.R. 6 giugno 2001, n. 380 (Testo unico edilizia) - artt. 36 (assenza titolo/totale difformita'), 36-bis (parziale difformita'/variazioni
+    essenziali - salva-casa) e 37 (assenza/difformita' SCIA)
+  - 'Rinvio: D.L. 69/2024 conv. L. 105/2024 (salva-casa, introduce l''art. 36-bis); artt. 31-34, 34-bis, 9-bis, 44 DPR 380;
+    art. 167 D.Lgs. 42/2004; leggi condono (non trattate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - accertamento-conformita
+  - sanatoria-edilizia
+  - salva-casa
+  - dpr-380-2001
+  - doppia-conformita
 - id: accertamento-tecnico-preventivo-cpc
   area: forense
   title: Accertamento tecnico preventivo e ATP conciliativo (c.p.c. 696, 696-bis)
@@ -57,6 +76,24 @@ skills:
   - consulenza-tecnica-preventiva
   - codice-procedura-civile
   - ctu
+- id: accessi-passi-carrabili-cds
+  area: ambiente-territorio-mobilita
+  title: Accessi, diramazioni e passi carrabili (Codice della Strada art. 22)
+  summary: 'Inquadra accessi, diramazioni e passi carrabili (CdS art. 22): preventiva autorizzazione dell''ente proprietario,
+    regolarizzazione, trasformazioni, parcheggi per insediamenti, opere e consorzi, condizioni tecniche, sanzioni. Non rilascia
+    l''autorizzazione.'
+  normative_refs:
+  - D.Lgs. 30 aprile 1992, n. 285 (Codice della Strada) - art. 22 (Accessi e diramazioni)
+  - 'Rinvio (non riprodotti): Reg. esecuzione DPR 495/1992 (accessi/passi carrabili), decreti MIT (caratteristiche tecniche),
+    art. 26 (competenza), art. 195 c. 3 (adeguamento sanzioni)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - accessi
+  - passi-carrabili
+  - codice-strada
+  - cds-art-22
+  - autorizzazione-stradale
 - id: accessibilita-siti-app-l4-2004
   area: software-dati-cybersecurity
   title: Accessibilita' siti web e app - Legge Stanca (L. 4/2004)
@@ -189,6 +226,25 @@ skills:
   - dlgs-152-2006
   - autorizzazione-ambientale
   - bat
+- id: autorizzazione-paesaggistica-ordinaria-dlgs42
+  area: edilizia-urbanistica-catasto
+  title: Autorizzazione paesaggistica ordinaria (D.Lgs. 42/2004 art. 146)
+  summary: 'Inquadra l''autorizzazione paesaggistica ordinaria (D.Lgs. 42/2004 art. 146): relazione paesaggistica, atto presupposto
+    al permesso di costruire, parere del soprintendente a 45 giorni, efficacia 5 anni, accertamento di compatibilità postumo
+    (art. 167). Non la redige.'
+  normative_refs:
+  - D.Lgs. 22 gennaio 2004, n. 42 (Codice dei beni culturali e del paesaggio) - art. 146 (autorizzazione) e art. 167 (accertamento
+    di compatibilita' paesaggistica)
+  - 'Rinvio (non riprodotti): DPCM 12/12/2005 (schemi relazione paesaggistica), DPR 31/2017 (procedura semplificata), art.
+    181 D.Lgs. 42/2004 (sanzioni penali), art. 149 (interventi non soggetti)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - autorizzazione-paesaggistica
+  - relazione-paesaggistica
+  - dlgs-42-2004
+  - vincolo-paesaggistico
+  - beni-culturali
 - id: autorizzazione-paesaggistica-semplificata-dpr31
   area: edilizia-urbanistica-catasto
   title: 'Autorizzazione paesaggistica: esclusa/semplificata/ordinaria (DPR 31/2017)'
@@ -206,6 +262,100 @@ skills:
   - vincolo-paesaggistico
   - interventi-lieve-entita
   - codice-beni-culturali
+- id: autorizzazione-scarico-acque-reflue-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Autorizzazione allo scarico di acque reflue (D.Lgs. 152/2006 artt. 124-125)
+  summary: 'Inquadra l''autorizzazione allo scarico di acque reflue (D.Lgs. 152/2006 artt. 124-125): obbligo preventivo e
+    titolare, competenza e 90 giorni, validita'' 4 anni e rinnovo, prescrizioni e spese (124), contenuto della domanda per
+    gli scarichi industriali (125).'
+  normative_refs:
+  - D.Lgs. 3 aprile 2006, n. 152 (Codice dell'ambiente) - Parte III, artt. 124 (criteri generali) e 125 (domanda di autorizzazione
+    agli scarichi di acque reflue industriali)
+  - 'Rinvio (non riprodotti): Allegato 5 Parte III (valori limite di emissione, Tab. 1/2/3/3-A/4), artt. 74 (definizioni),
+    101 e 108 D.Lgs. 152/2006; AUA (DPR 59/2013); AIA'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - scarichi-idrici
+  - acque-reflue
+  - autorizzazione-allo-scarico
+  - dlgs-152-2006
+  - tutela-acque
+- id: azioni-esplosione-eccezionali-ntc
+  area: strutture-geotecnica
+  title: Azioni eccezionali da esplosione (NTC 2018 par. 3.6.2)
+  summary: 'Inquadra le azioni eccezionali da esplosione (NTC 2018 par. 3.6.2): classificazione (Tab. 3.6.I), Cat. 2 con pannelli
+    di sfogo pd=max(3+pv; 3+pv/2+0,04/(Av/V)^2), vincolo 0,05<=Av/V<=0,15, elementi chiave 20 kN/m^2 e criteri di progettazione.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.6.2: Cat. 2 pd=max(3+pv [3.6.5a]; 3+pv/2+0,04/(Av/V)^2 [3.6.5b]), vincolo 0,05<=Av/V<=0,15
+    [3.6.6], V<=1000 m3, elementi chiave 20 kN/m2, classi Tab. 3.6.I'
+  - 'NTC 2018 - par. 3.6.2.4 criteri: danni localizzati accettabili; superfici collassabili, giunti strutturali, prevenzione
+    crolli; rinvio par. 2.2.5 (robustezza) e 2.5.3 (comb. eccezionale)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - azioni-da-esplosione
+  - azioni-eccezionali
+  - ntc-2018
+  - robustezza
+  - pannelli-di-sfogo
+- id: azioni-temperatura-ntc
+  area: strutture-geotecnica
+  title: Azioni della temperatura (NTC 2018 par. 3.5)
+  summary: 'Inquadra le azioni della temperatura (NTC 2018 par. 3.5): Tmax/Tmin esterna per zone I-IV, Tint=20 gradi, componente
+    uniforme Delta_Tu=T-T0 (T0=15 gradi), Delta_Tu edifici (Tab. 3.5.II: c.a. +-15, acciaio +-25) e coefficienti di dilatazione
+    alpha_T (Tab. 3.5.III).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.5: Tmax/Tmin esterna per zone I-IV [3.5.1]-[3.5.8] (TR 50/10/5 anni), Tint=20
+    gradi, Delta_Tu=T-T0 (T0=15 gradi), irraggiamento Tab. 3.5.I'
+  - NTC 2018 - par. 3.5.5 Delta_Tu edifici Tab. 3.5.II (c.a. +-15/+-10, acciaio +-25/+-15 gradi); par. 3.5.7 coefficienti
+    di dilatazione termica alpha_T Tab. 3.5.III (acciaio 12, cls 10, in 10^-6/grado)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - azioni-della-temperatura
+  - variazioni-termiche
+  - ntc-2018
+  - dilatazione-termica
+  - azioni
+- id: azioni-traffico-ponti-stradali-ntc
+  area: strutture-geotecnica
+  title: Azioni da traffico sui ponti stradali (NTC 2018 par. 5.1.3)
+  summary: 'Inquadra le azioni da traffico sui ponti stradali (NTC 2018 par. 5.1.3): corsie convenzionali (Tab. 5.1.I), Schemi
+    di Carico 1-5, intensita'' Qik/qik (Tab. 5.1.II), frenamento q3 [5.1.4] e centrifuga q4, con i gruppi di azioni e i coefficienti
+    delle combinazioni.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 5.1.3: corsie convenzionali (Tab. 5.1.I), Schemi di Carico 1-5 e Qik/qik (Tab.
+    5.1.II), frenamento q3 [5.1.4], centrifuga q4, combinazioni (Tab. 5.1.IV/V/VI)'
+  - 'Rinvio (non riprodotti): Fig. 5.1.1/5.1.2/5.1.3 (geometrie), par. 5.2 (ponti ferroviari), par. 5.1.4 (fatica), par. 7.9
+    (sismica ponti), UNI EN 1991-2 (EC1); Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ponti-stradali
+  - azioni-da-traffico
+  - ntc-2018
+  - schemi-di-carico
+  - corsie-convenzionali
+- id: azioni-urto-eccezionali-ntc
+  area: strutture-geotecnica
+  title: Azioni eccezionali da urto (NTC 2018 par. 3.6.3)
+  summary: 'Inquadra le azioni eccezionali da urto (NTC 2018 par. 3.6.3): classificazione (Tab. 3.6.II), forze statiche equivalenti
+    sotto i ponti (Tab. 3.6.III, Fd,y=0,50 Fd,x, F=r Fd,x, carrelli F=5W), sopra i ponti (100 kN) e da traffico ferroviario
+    (per distanza d).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.6.3 Urti: forze equivalenti sotto ponti (Tab. 3.6.III), Fd,y=0,50 Fd,x [3.6.7],
+    F=r Fd,x [3.6.8], carrelli F=5W [3.6.9], sopra ponti 100 kN, classi Tab. 3.6.II'
+  - NTC 2018 - par. 3.6.3.4 urti da traffico ferroviario (4000/1500 kN per d<=5 m; 2000/750 kN per 5<d<=15 m; 0 oltre; a 1,80
+    m dal ferro); par. 3.6.3.5 imbarcazioni/aeromobili (rinvio Cap. 12)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - azioni-da-urto
+  - azioni-eccezionali
+  - ntc-2018
+  - ponti
+  - collisioni
 - id: bandi-tipo-anac-checker
   area: appalti-opere-pubbliche
   title: Bandi-tipo ANAC - Checker disciplinare di gara
@@ -254,6 +404,24 @@ skills:
   - siti-contaminati
   - analisi-di-rischio
   - testo-unico-ambientale
+- id: cantieri-stradali-occupazione-cds
+  area: ambiente-territorio-mobilita
+  title: Cantieri stradali e occupazione della sede stradale (CdS artt. 20, 21)
+  summary: 'Inquadra l''occupazione della sede stradale e i cantieri stradali (CdS, D.Lgs. 285/1992): divieto/ammissibilita''
+    per tipo di strada, chioschi e marciapiedi (art. 20); apertura di opere/depositi/cantieri con preventiva autorizzazione,
+    sicurezza e segnalazione (art. 21).'
+  normative_refs:
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada) - art. 20 (occupazione della sede stradale)
+  - D.Lgs. 30/4/1992 n. 285 (Codice della Strada) - art. 21 (opere, depositi e cantieri stradali)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-della-strada
+  - dlgs-285-1992
+  - cantieri-stradali
+  - occupazione-suolo
+  - segnaletica-temporanea
+  - mobilita
 - id: capacita-portante-fondazione-ntc
   area: strutture-geotecnica
   title: Capacita' portante fondazioni superficiali (NTC 6.4.2)
@@ -288,6 +456,25 @@ skills:
   - ntc-2018
   - vento
   - neve
+- id: carichi-permanenti-sovraccarichi-ntc
+  area: strutture-geotecnica
+  title: Carichi permanenti e sovraccarichi variabili (NTC 2018 par. 3.1)
+  summary: 'Inquadra i carichi permanenti e i sovraccarichi variabili per categoria d''uso (NTC 2018 par. 3.1): pesi propri
+    (Tab. 3.1.I), carico equivalente g2 dei divisori, sovraccarichi qk/Qk/Hk per categoria (Tab. 3.1.II), riduzioni per area
+    di influenza e per numero di piani.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.1: pesi propri (Tab. 3.1.I), carichi permanenti non strutturali e g2, sovraccarichi
+    per categoria d''uso (Tab. 3.1.II), riduzioni alpha_A/alpha_n, carichi Qk/Hk'
+  - 'Rinvio (non riprodotti): Tab. 2.5.I (coefficienti psi) NTC 2018; parr. 3.2 (sismica), 3.3/3.4 (vento/neve), cap. 5 (ponti);
+    Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - carichi-permanenti
+  - sovraccarichi-variabili
+  - ntc-2018
+  - categorie-uso
+  - analisi-dei-carichi
 - id: catasto-pregeo-docfa-atti-telematici
   area: edilizia-urbanistica-catasto
   title: Catasto - Atti telematici Pregeo 10 + Docfa 4
@@ -355,6 +542,43 @@ skills:
   - cer
   - gse
   - dlgs-199-2021
+- id: classificazione-rifiuti-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Classificazione dei rifiuti (D.Lgs. 152/2006 artt. 183-184)
+  summary: 'Inquadra la classificazione dei rifiuti (D.Lgs. 152/2006 artt. 183-184): definizioni di rifiuto/produttore/detentore
+    (183), classificazione per origine (urbani/speciali) e pericolosita'' (Allegato I), elenco europeo EER (Allegato D) con
+    codice attribuito dal produttore (184).'
+  normative_refs:
+  - 'D.Lgs. 3 aprile 2006, n. 152 (Codice dell''ambiente) - Parte IV, artt. 183 (definizioni) e 184 (classificazione: urbani/speciali,
+    pericolosi/non pericolosi, elenco EER)'
+  - 'Rinvio (non riprodotti): Allegati D (elenco EER), I (caratteristiche HP), L-quater/L-quinquies D.Lgs. 152/2006; artt.
+    184-bis/ter e 185-bis; Linee guida SNPA'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - classificazione-rifiuti
+  - codici-eer
+  - rifiuti-pericolosi
+  - dlgs-152-2006
+  - gestione-rifiuti
+- id: collaudo-verifica-conformita-dlgs36
+  area: appalti-opere-pubbliche
+  title: Collaudo e verifica di conformita' - D.Lgs. 36/2023 art. 116
+  summary: 'Collaudo lavori e verifica di conformita'' servizi/forniture (D.Lgs. 36/2023 art. 116): funzione, termini 6 mesi/1
+    anno e certificato provvisorio->definitivo a 2 anni (cc.1-2), collaudatori 1-3 e incompatibilita'' (cc.4-6), verifica
+    del RUP/DEC (c.5), CRE allegato II.14 (c.7).'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - art. 116 cc. 1-3 (collaudo/verifica di conformita', termini, responsabilita')
+  - D.Lgs. 31/3/2023 n. 36 - art. 116 cc. 4-11 (collaudatori, incompatibilita', RUP/DEC, CRE allegato II.14)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - codice-contratti-pubblici
+  - collaudo
+  - verifica-conformita
+  - certificato-regolare-esecuzione
+  - esecuzione-contratto
 - id: combinazioni-carico-ntc
   area: strutture-geotecnica
   title: Combinazioni Carico NTC
@@ -387,6 +611,24 @@ skills:
   - compensi-ausiliari
   - ingegneria-forense
   - liquidazione
+- id: comunione-ordinaria-cc
+  area: forense
+  title: Comunione e divisione di beni immobili per il tecnico/CTU (c.c. artt. 1100-1116)
+  summary: 'Supporta l''ingegnere/geometra/CTU sulla comunione ordinaria (c.c. artt. 1100-1116): comoda divisibilità e progetto
+    di divisione in natura (art. 1114), scioglimento, maggioranze per innovazioni/opere sulla cosa comune (2/3), ripartizione
+    spese per quote. Non redige atti legali.'
+  normative_refs:
+  - Codice civile (R.D. 16 marzo 1942, n. 262) - Libro III, Titolo VII, Capo I (Della comunione in generale), artt. 1100-1116
+  - 'Rinvio (non riprodotti): artt. 1117 ss. c.c. (condominio, skill dedicata), artt. 177 ss. (comunione legale coniugi),
+    artt. 713 ss. (divisione ereditaria, richiamata dall''art. 1116)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - comunione
+  - comproprieta
+  - codice-civile
+  - divisione
+  - amministrazione
 - id: condominio-parti-comuni-assemblea-cc
   area: forense
   title: 'Condominio: parti comuni, innovazioni e assemblea (c.c. 1117-1136)'
@@ -454,6 +696,25 @@ skills:
   - costo-di-costruzione
   - dpr-380-2001
   - permesso-di-costruire
+- id: controlli-accettazione-cls-acciaio-ntc
+  area: strutture-geotecnica
+  title: 'Controlli di accettazione in cantiere: cls e acciaio (NTC 2018)'
+  summary: 'Inquadra i controlli di accettazione in cantiere del calcestruzzo (prelievo, tipo A/B, Tab. 11.2.I: Rcm28 >= Rck+3,5
+    / Rck+1,48s, Rc,min >= Rck-3,5) e dell''acciaio da c.a. (3 campioni ogni 30 t, Tab. 11.3.VII: fy 425-572 N/mm2) secondo
+    le NTC 2018 par. 11.2.5 e 11.3.2.12.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 11.2.4-11.2.5 (prelievo, controllo tipo A/B, Tab. 11.2.I: Rcm28 >= Rck+3,5 o Rck+1,48s;
+    Rc,min >= Rck-3,5; A <= 300 m3, B > 1500 m3)'
+  - 'NTC 2018 - par. 11.3.2.12 acciaio da c.a. (3 campioni/30 t, entro 30 gg, laboratorio art. 59 DPR 380/2001; Tab. 11.3.VII:
+    fy 425-572 N/mm2, Agt, ft/fy, non conformita'' 6->25 campioni)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - controlli-accettazione
+  - calcestruzzo
+  - acciaio-cemento-armato
+  - ntc-2018
+  - direttore-lavori
 - id: coordinatori-sicurezza-cantieri-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Coordinatori sicurezza cantieri Titolo IV (D.Lgs. 81/2008 artt. 89-92)
@@ -472,6 +733,63 @@ skills:
   - csp-cse
   - dlgs-81-2008
   - psc-fascicolo
+- id: costruzioni-acciaio-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni di acciaio: materiali, classi e verifiche (NTC 2018 par. 4.2)'
+  summary: 'Inquadra la progettazione delle costruzioni di acciaio (NTC 2018 par. 4.2): materiali S235-S460 (fyk/ftk, Tab.
+    4.2.I/II), classi di sezione 1-4, coefficienti gamma_M (Tab. 4.2.VII: 1,05/1,05/1,25), resistenze di progetto Rd=Rk/gamma_M
+    e verifiche di stabilita'' (Nb,Rd, chi).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.2 Costruzioni di acciaio: materiali S235-S460 (Tab. 4.2.I/II), classi di sezione
+    1-4, gamma_M (Tab. 4.2.VII), Rd=Rk/gamma_M, resistenze SLU e stabilita'''
+  - 'Rinvio (non riprodotti): par. 11.3.4 (materiali, bulloni), par. 7.5 (sismica), Tab. 4.2.III-V (b/t) e 4.2.VIII (curve)
+    come figure, UNI EN 1993 (EC3) e 1090-2; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-di-acciaio
+  - carpenteria-metallica
+  - ntc-2018
+  - classi-di-sezione
+  - coefficienti-parziali
+- id: costruzioni-calcestruzzo-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni di calcestruzzo: materiali e verifiche (NTC 2018 par. 4.1)'
+  summary: 'Inquadra la progettazione delle costruzioni di calcestruzzo (NTC 2018 par. 4.1): classi di resistenza, resistenze
+    di progetto fcd=alpha_cc*fck/gamma_c e fyd=fyk/gamma_s (gamma_c=1,5, gamma_s=1,15), diagrammi di calcolo, verifiche SLU
+    e SLE (fessurazione, tensioni).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.1 Costruzioni di calcestruzzo: classi (Tab. 4.1.I), fcd=alpha_cc*fck/gamma_c,
+    fyd=fyk/gamma_s (gamma_c=1,5, gamma_s=1,15), diagrammi, SLU e SLE'
+  - 'Rinvio (non riprodotti): par. 11.2/11.3 (materiali, fck/fyk), par. 7.4 (sismica), par. 4.1.12 (leggeri) e 11.2.12 (FRC),
+    UNI EN 1992 (EC2); Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-di-calcestruzzo
+  - cemento-armato
+  - ntc-2018
+  - resistenze-di-progetto
+  - coefficienti-parziali
+- id: costruzioni-composte-acciaio-cls-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni composte acciaio-cls: connettori e verifiche (NTC 2018 par. 4.3)'
+  summary: 'Inquadra la progettazione delle costruzioni composte acciaio-calcestruzzo (NTC 2018 par. 4.3): coefficienti fd=fk/gamma_M
+    (gamma_C=1,5, gamma_A=1,05, gamma_S=1,15, gamma_V=1,25), classi delle sezioni, resistenza a flessione e connessione a
+    taglio (pioli PRd,a/PRd,c).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.3 Costruzioni composte acciaio-cls: fd=fk/gamma_M (gamma_C=1,5, gamma_A=1,05,
+    gamma_S=1,15, gamma_V=1,25), sezioni, connettori a piolo PRd,a/PRd,c'
+  - 'Rinvio (non riprodotti): par. 4.1/4.2 e 11.2/11.3, par. 7.6 (sismica), Fig. 4.3.3/4.3.4 e Tab. 4.3.II (figure), UNI EN
+    1994 (EC4); Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-composte
+  - acciaio-calcestruzzo
+  - ntc-2018
+  - connettori-a-taglio
+  - coefficienti-parziali
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)
@@ -489,6 +807,44 @@ skills:
   - costruzioni-esistenti
   - vulnerabilita-sismica
   - consultazione-norma
+- id: costruzioni-legno-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni di legno: classi, resistenze e verifiche (NTC 2018 par. 4.4)'
+  summary: 'Inquadra la progettazione delle costruzioni di legno (NTC 2018 par. 4.4): classi di durata (Tab. 4.4.I) e di servizio
+    (Tab. 4.4.II), resistenze di progetto Xd=kmod*Xk/gamma_M (Tab. 4.4.III/IV), SLE con kdef e frecce (L/300, L/200), verifiche
+    SLU di resistenza e stabilita''.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.4 Costruzioni di legno: classi di durata (Tab. 4.4.I) e di servizio (Tab. 4.4.II),
+    Xd=kmod*Xk/gamma_M (Tab. 4.4.III/IV), kdef, verifiche SLU/SLE e stabilita'''
+  - 'Rinvio (non riprodotti): par. 11.7 (materiali, fk, moduli, kh), par. 7.7 (sismica), UNI EN 1995 (Eurocodice 5) e UNI
+    EN di prodotto; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-di-legno
+  - legno-strutturale
+  - ntc-2018
+  - kmod-kdef
+  - coefficienti-parziali
+- id: costruzioni-muratura-ntc
+  area: strutture-geotecnica
+  title: 'Costruzioni in muratura: materiali, verifiche e coefficienti (NTC 2018 par. 4.5)'
+  summary: 'Inquadra la progettazione delle costruzioni in muratura (NTC 2018 par. 4.5): categorie degli elementi (Tab. 4.5.I),
+    spessori minimi e snellezza, resistenze di progetto fd=fk/gamma_M (Tab. 4.5.II), verifiche SLU, verifiche semplificate
+    (gamma_M=4,2) e muratura armata.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 4.5 Costruzioni di muratura: materiali/categorie (Tab. 4.5.I), snellezza, resistenze
+    di progetto e Tab. 4.5.II (gamma_M), verifiche SLU e semplificate'
+  - 'Rinvio (non riprodotti): par. 7.8 (sismica) e Tab. 7.8.II, par. 4.5.11 (fuoco), cap. 11.10 (materiali), par. 4.6 (Eurocodici)
+    NTC 2018; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - costruzioni-in-muratura
+  - muratura-portante
+  - ntc-2018
+  - resistenze-di-progetto
+  - coefficienti-parziali
 - id: cra-classificazione-pde
   area: software-dati-cybersecurity
   title: CRA - Classificazione PDE e valutazione della conformita'
@@ -521,6 +877,43 @@ skills:
   - ristrutturazione
   - manutenzione-straordinaria
   - nuova-costruzione
+- id: denuncia-autorizzazione-sismica-dpr380
+  area: strutture-geotecnica
+  title: Denuncia lavori e autorizzazione sismica (DPR 380/2001 artt. 93, 94, 94-bis)
+  summary: 'Inquadra gli adempimenti per le costruzioni in zone sismiche (DPR 380/2001): denuncia lavori e deposito del progetto
+    asseverato (art. 93), autorizzazione preventiva dell''ufficio regionale (art. 94), classificazione degli interventi per
+    rilevanza e zona sismica (art. 94-bis).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 93 (denuncia lavori e deposito progetto) e 94 (autorizzazione per l'inizio dei lavori)
+  - D.P.R. 6/6/2001 n. 380 - art. 94-bis (disciplina degli interventi strutturali in zone sismiche)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - zone-sismiche
+  - denuncia-lavori
+  - autorizzazione-sismica
+  - interventi-strutturali
+  - strutture
+- id: denuncia-collaudo-statico-ca-dpr380
+  area: strutture-geotecnica
+  title: Denuncia dei lavori e collaudo statico opere in c.a. (DPR 380/2001)
+  summary: 'Inquadra gli adempimenti su opere c.a./c.a.p. e acciaio (DPR 380/2001 artt. 64-67): denuncia dei lavori allo sportello
+    unico via PEC (65), documenti in cantiere (66), relazione a struttura ultimata e collaudo statico da ingegnere/architetto
+    iscritto da 10 anni (67). Non redige.'
+  normative_refs:
+  - 'D.P.R. 6 giugno 2001, n. 380 (Testo unico edilizia) - Parte II, Capo I, artt. 64-67: responsabilita'' (64), denuncia
+    dei lavori (65), documenti in cantiere (66), collaudo statico (67)'
+  - 'Rinvio (non riprodotti): artt. 53 (opere soggette), 59 (laboratori prove), 62 (rispondenza NTC), 94-bis (interventi)
+    DPR 380/2001; NTC 2018 (D.M. 17/1/2018)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - collaudo-statico
+  - denuncia-lavori-strutture
+  - cemento-armato
+  - dpr-380-2001
+  - direttore-lavori
 - id: denuncia-opere-strutturali-l1086
   area: edilizia-urbanistica-catasto
   title: Denuncia opere strutturali e autorizzazione sismica - DPR 380/2001
@@ -573,6 +966,24 @@ skills:
   - efficienza-energetica
   - grandi-imprese
   - enea
+- id: direzione-lavori-esecuzione-dlgs36
+  area: appalti-opere-pubbliche
+  title: Direzione lavori ed esecuzione dei contratti (D.Lgs. 36/2023 art. 114)
+  summary: 'Inquadra la direzione dei lavori (DL) e dell''esecuzione (DEC) nei contratti pubblici (D.Lgs. 36/2023 art. 114):
+    esecuzione diretta dal RUP, nomina e compiti del DL, ufficio di direzione lavori, DL come CSE sotto 1 milione, DEC per
+    servizi/forniture. Non nomina il DL/DEC.'
+  normative_refs:
+  - D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 114 (Direzione dei lavori e dell'esecuzione dei contratti)
+  - 'Richiamati dall''art. 114 (non riprodotti): allegato II.14 (attivita''/compiti), allegato I.9 (BIM), D.Lgs. 81/2008 (coordinatore
+    sicurezza), art. 15 L. 241/1990, art. 30 D.Lgs. 267/2000 (accordi PA)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - direzione-lavori
+  - direzione-esecuzione
+  - dlgs-36-2023
+  - contratti-pubblici
+  - codice-appalti
 - id: distanze-legali-costruzioni-cc
   area: edilizia-urbanistica-catasto
   title: Distanze legali nelle costruzioni, luci e vedute (Codice civile)
@@ -637,6 +1048,25 @@ skills:
   - firma-elettronica
   - cad-dlgs-82-2005
   - valore-probatorio
+- id: dop-marcatura-ce-prodotti-cpr
+  area: impianti-macchine-prodotti
+  title: DoP e marcatura CE dei prodotti da costruzione (Reg. UE 305/2011)
+  summary: 'Inquadra la redazione della Dichiarazione di Prestazione (DoP) e la marcatura CE dei prodotti da costruzione (Reg.
+    UE 305/2011): obbligo e deroghe (artt. 4-5), contenuto DoP (art. 6, NPD), marcatura CE (artt. 8-9), sistemi VVCP (All.
+    V) e obblighi degli operatori (artt. 11-16).'
+  normative_refs:
+  - Reg. (UE) n. 305/2011 (CPR) - artt. 4-9 (DoP e marcatura CE), artt. 11-16 (obblighi operatori economici), Allegato III
+    (modello DoP), Allegato V (sistemi VVCP 1+/1/2+/3/4)
+  - 'Rinvio (non riprodotti): Reg. delegato (UE) 574/2014 (modello DoP aggiornato); artt. 19-27 (ETA/EAD) e 39-56 (organismi
+    notificati) CPR; norme armonizzate hEN; Reg. 765/2008 e 1907/2006 (REACH)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - marcatura-ce
+  - dichiarazione-di-prestazione
+  - prodotti-da-costruzione
+  - cpr-305-2011
+  - vvcp
 - id: dora-gap-assessment
   area: software-dati-cybersecurity
   title: DORA Gap Assessment
@@ -650,6 +1080,25 @@ skills:
   - dora
   - reg-ue-2022-2554
   - finanza
+- id: dpi-protezione-individuale-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Dispositivi di protezione individuale - DPI (D.Lgs. 81/2008 artt. 74-79)
+  summary: 'Inquadra gli obblighi sui DPI (D.Lgs. 81/2008 artt. 74-79): definizione ed esclusioni, uso residuale rispetto
+    alla protezione collettiva, requisiti (reg. UE 2016/425), obblighi del datore (scelta, fornitura, formazione, addestramento)
+    e dei lavoratori. Non redige il DVR.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza sul lavoro) - Titolo III, Capo II, artt. 74-79 (Uso dei dispositivi
+    di protezione individuale)
+  - 'Rinvio (non riprodotti): allegato VIII D.Lgs. 81/2008 (elenco DPI/attività), regolamento (UE) 2016/425 (requisiti e categorie),
+    D.Lgs. 475/1992 (categorie), DM 2 maggio 2001'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpi
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - protezione-individuale
+  - formazione-addestramento
 - id: duvri-interferenze-dlgs81
   area: sicurezza-lavoro-cantieri
   title: DUVRI e obblighi negli appalti (art. 26 D.Lgs 81/2008)
@@ -678,6 +1127,24 @@ skills:
   - dvr
   - dlgs-81-2008
   - salute-sicurezza
+- id: edilizia-libera-cila-scia-dpr380
+  area: edilizia-urbanistica-catasto
+  title: Edilizia libera, CILA e SCIA (DPR 380/2001 artt. 6, 6-bis, 22, 23)
+  summary: 'Inquadra i regimi del titolo edilizio diversi dal permesso di costruire (DPR 380/2001): edilizia libera senza
+    titolo (art. 6), CILA asseverata residuale (art. 6-bis), SCIA ex art. 19 L. 241/1990 (art. 22), SCIA in alternativa al
+    PdC con preavviso di 30 giorni (art. 23).'
+  normative_refs:
+  - D.P.R. 6/6/2001 n. 380 - artt. 6 (attivita' edilizia libera) e 6-bis (CILA)
+  - D.P.R. 6/6/2001 n. 380 - artt. 22 (SCIA) e 23 (SCIA in alternativa al permesso di costruire)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dpr-380-2001
+  - edilizia
+  - titolo-edilizio
+  - cila
+  - scia
+  - edilizia-libera
 - id: esercizio-controllo-impianti-termici-dpr74
   area: energia-incentivi
   title: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
@@ -759,6 +1226,25 @@ skills:
   - pericolosita-idraulica
   - toscana
   - fattibilita-idraulica
+- id: fondazioni-pali-ntc
+  area: strutture-geotecnica
+  title: 'Fondazioni su pali: verifiche SLU/SLE e coefficienti NTC 2018 (par. 6.4.3)'
+  summary: 'Inquadra le verifiche delle fondazioni su pali (NTC 2018 par. 6.4.3): SLU GEO/STR con stabilita'' globale in Approccio
+    1 (A2+M2+R2) e rimanenti in Approccio 2 (A1+M1+R3), Tab. 6.4.II e 6.4.VI, fattori di correlazione, fondazioni miste, controlli
+    d''integrita'' e prove di carico.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.4.3 Fondazioni su pali: verifiche SLU/SLE, Tab. 6.4.II (gamma_R), Tab. 6.4.III/IV/V
+    (correlazione), Tab. 6.4.VI, controlli d''integrita'' e prove di carico'
+  - 'Rinvio (non riprodotti): Tabelle 6.2.I/6.2.II (azioni e parametri), Tab. 6.8.I (stabilita'' globale), Tab. 6.4.I, par.
+    6.4.2/6.8/7.11.5.3.2 (sismico) NTC 2018; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - fondazioni-su-pali
+  - pali-e-palificate
+  - ntc-2018
+  - stati-limite-geotecnici
+  - coefficienti-parziali
 - id: gap-analysis-misure-minime-ict-agid
   area: software-dati-cybersecurity
   title: Gap analysis Misure Minime ICT AgID (ABSC - Circ. 2/2017)
@@ -843,6 +1329,25 @@ skills:
   - mappatura-acustica-strategica
   - piani-azione
   - direttiva-2002-49-ce
+- id: marcatura-ce-dpi-reg-425
+  area: impianti-macchine-prodotti
+  title: Marcatura CE dei dispositivi di protezione individuale - DPI (Reg. UE 2016/425)
+  summary: 'Inquadra classificazione, valutazione della conformita'' e marcatura CE dei DPI (Reg. UE 2016/425): categorie
+    di rischio I/II/III (All. I), procedure per categoria (art. 19: modulo A; B+C; B+C2 o D), obblighi del fabbricante (art.
+    8) e marcatura CE (artt. 16-17).'
+  normative_refs:
+  - Reg. (UE) 2016/425 (DPI) - art. 8 (obblighi fabbricante), art. 15 (dichiarazione UE), artt. 16-17 (marcatura CE), art.
+    18 e All. I (categorie di rischio I/II/III), art. 19 (moduli A/B/C/C2/D)
+  - 'Rinvio (non riprodotti): Allegato II (requisiti essenziali), Allegato III (documentazione tecnica), Allegati IV-VIII
+    (moduli), Allegato IX (dichiarazione UE); norme armonizzate EN; Reg. (CE) 765/2008'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - marcatura-ce
+  - dpi
+  - reg-ue-2016-425
+  - categorie-di-rischio
+  - valutazione-conformita
 - id: marcatura-ce-elettrici-lvd-emc-red
   area: impianti-macchine-prodotti
   title: Marcatura CE prodotti elettrici - LVD 2014/35, EMC 2014/30, RED 2014/53
@@ -861,23 +1366,6 @@ skills:
   - emc-2014-30
   - red-2014-53
   - valutazione-conformita
-- id: mediazione-civile-conciliazione-dlgs28
-  area: forense
-  title: 'Mediazione civile e commerciale: procedibilità e procedimento (D.Lgs 28/2010)'
-  summary: 'Mediazione civile e commerciale (D.Lgs 28/2010): materie a condizione di procedibilità ed esclusioni (art. 5),
-    procedimento (art. 8), conclusione con verbale, accordo e proposta (art. 11), efficacia esecutiva dell''accordo (art.
-    12). Non svolge la mediazione.'
-  normative_refs:
-  - D.Lgs. 4 marzo 2010, n. 28 - artt. 5, 8, 11, 12 (testo vigente post riforma Cartabia)
-  - 'Richiamati: artt. 2, 5-bis/5-ter/5-quater, 6, 8-bis, 13, 17; c.p.c. artt. 480, 696-bis; art. 2643 c.c.'
-  version: 0.1.0-alpha
-  status: alpha
-  tags:
-  - mediazione-civile
-  - conciliazione
-  - dlgs-28-2010
-  - condizione-di-procedibilita
-  - forense
 - id: modifiche-varianti-contratti-pubblici-dlgs36
   area: appalti-opere-pubbliche
   title: Modifiche del contratto e varianti in corso d'opera (D.Lgs. 36/2023 art. 120)
@@ -946,24 +1434,24 @@ skills:
   - art-25-septies
   - art-30-dlgs81
   - responsabilita-enti
-- id: negoziazione-assistita-dl132
-  area: forense
-  title: Negoziazione assistita da avvocati - D.L. 132/2014 (artt. 2-5)
-  summary: 'Negoziazione assistita da avvocati (D.L. 132/2014): convenzione - termine 1-3 mesi, forma scritta (art. 2), condizione
-    di procedibilita'' per danni da circolazione e pagamenti <= 50.000 euro (art. 3), invito e mancato accordo (art. 4), esecutivita''
-    dell''accordo (art. 5).'
+- id: movimentazione-manuale-carichi-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Movimentazione manuale dei carichi (MMC) - D.Lgs. 81/2008 Titolo VI
+  summary: 'Obblighi sulla movimentazione manuale dei carichi (D.Lgs. 81/2008 Titolo VI, artt. 167-169): campo e definizioni
+    (art. 167), obblighi del datore - evitare/ridurre, valutazione, sorveglianza sanitaria (art. 168), informazione/formazione/addestramento
+    (art. 169).'
   normative_refs:
-  - D.L. 12/9/2014 n. 132 (conv. L. 162/2014) - artt. 2 (convenzione) e 3 (condizione di procedibilita')
-  - D.L. 12/9/2014 n. 132 (conv. L. 162/2014) - artt. 4 (invito e mancato accordo) e 5 (esecutivita' dell'accordo)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 167 (campo di applicazione e definizioni) e 168 (obblighi del datore di lavoro)
+  - D.Lgs. 9/4/2008 n. 81 - art. 169 (informazione, formazione e addestramento) + Allegato XXXIII (rinvio)
   version: 0.1.0-alpha
   status: alpha
   tags:
-  - dl-132-2014
-  - negoziazione-assistita
-  - adr
-  - condizione-procedibilita
-  - avvocati
-  - forense
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - movimentazione-manuale-carichi
+  - sovraccarico-biomeccanico
+  - sorveglianza-sanitaria
+  - ergonomia
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)
@@ -1030,6 +1518,82 @@ skills:
   - oepv
   - dlgs-36-2023
   - offerte
+- id: offerte-anomale-congruita-dlgs36
+  area: appalti-opere-pubbliche
+  title: Offerte anomale e verifica di congruita' (D.Lgs 36/2023 artt. 110, 54)
+  summary: 'Inquadra la verifica delle offerte anormalmente basse (D.Lgs 36/2023 art. 110): presupposto, spiegazioni (termine
+    15 gg), giustificazioni non ammesse ed esclusione; l''esclusione automatica sotto soglia (art. 54, Allegato II.2) e i
+    costi di manodopera/sicurezza (art. 108 c. 9).'
+  normative_refs:
+  - D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 110 (offerte anormalmente basse), art. 54 (esclusione
+    automatica sotto soglia, All. II.2), art. 108 c. 9 (costi manodopera/sicurezza)
+  - 'Richiamati (non riprodotti): Allegato II.2 e Allegato X dir. 2014/24/UE; artt. 41 c. 13, 50 c. 1, 108, 119 D.Lgs 36/2023;
+    art. 107 TFUE; correttivo D.Lgs. 209/2024'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - offerte-anomale
+  - verifica-congruita
+  - contratti-pubblici
+  - dlgs-36-2023
+  - rup-commissione
+- id: opere-materiali-sciolti-scavi-ntc
+  area: strutture-geotecnica
+  title: Opere di materiali sciolti e fronti di scavo (NTC 2018 par. 6.8)
+  summary: 'Inquadra progetto e verifica delle opere di materiali sciolti (rilevati, argini, terrapieni) e dei fronti di scavo
+    (NTC 2018 par. 6.8): SLU in Combinazione 2 (A2+M2+R2), Tab. 6.8.I gamma_R = 1,1, stabilita'' globale, sostegno per fronti
+    verticali oltre 2 m con personale.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.8: verifiche SLU in Combinazione 2 (A2+M2+R2), Tab. 6.2.I/6.2.II/6.8.I (gamma_R
+    = 1,1 per R2), stabilita'' globale manufatto-terreno nelle diverse fasi'
+  - 'NTC 2018 - par. 6.8.6 fronti di scavo: struttura di sostegno per trincee a fronte verticale > 2 m con personale o vicino
+    a manufatti (verifiche SLU/SLE); rinvio par. 6.2.2/6.2.4'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - materiali-sciolti
+  - fronti-di-scavo
+  - geotecnica
+  - ntc-2018
+  - rilevati
+- id: opere-sostegno-ntc
+  area: strutture-geotecnica
+  title: 'Opere di sostegno: muri e paratie - verifiche NTC 2018 (par. 6.5)'
+  summary: 'Inquadra le verifiche delle opere di sostegno (NTC 2018 par. 6.5): tipologie e criteri (6.5.1), azioni e modello
+    geometrico (6.5.2), verifiche SLU dei muri con Approccio 2 (A1+M1+R3) e Tab. 6.5.I e stabilita'' globale con Approccio
+    1 (A2+M2+R2), paratie e SLE (6.5.3).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.5 Opere di sostegno: criteri di progetto (6.5.1), azioni e modello geometrico
+    (6.5.2), verifiche SLU/SLE di muri e paratie e Tab. 6.5.I (6.5.3)'
+  - 'Rinvio (non riprodotti): Tabelle 6.2.I/6.2.II (azioni e parametri), Tab. 6.8.I (stabilita'' globale), par. 6.2.4.2, 6.8
+    e 7.11.6 (sismico) NTC 2018; Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - opere-di-sostegno
+  - muri-e-paratie
+  - ntc-2018
+  - stati-limite-geotecnici
+  - coefficienti-parziali
+- id: opere-sotterraneo-gallerie-ntc
+  area: strutture-geotecnica
+  title: 'Opere in sotterraneo: gallerie, caverne, pozzi (NTC 2018 par. 6.7)'
+  summary: 'Inquadra progetto e verifica delle opere in sotterraneo (gallerie, caverne, pozzi) - NTC 2018 par. 6.7: caratterizzazione
+    geologica/geotecnica, criteri di progetto, verifiche SLU GEO/STR/UPL/HYD in Approccio 1 (Comb. 1 e 2, gamma_R = 1,0 per
+    R1/R2), metodo osservazionale.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.7: verifiche SLU GEO/STR/UPL/HYD in Approccio 1 con Comb. 1 (A1+M1+R1) e Comb.
+    2 (A2+M2+R2), gamma_R dei gruppi R1 e R2 pari all''unita'' (Tab. 6.2.I/6.2.II)'
+  - 'NTC 2018 - par. 6.7.1-6.7.4/6.7.6: modello geologico/geotecnico, criteri di progetto, rivestimenti, monitoraggio; metodo
+    osservazionale (convergenza radiale, deformazione fronte); rinvio par. 6.3/6.8'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - opere-in-sotterraneo
+  - gallerie
+  - geotecnica
+  - ntc-2018
+  - metodo-osservazionale
 - id: ped-classificazione-conformita
   area: impianti-macchine-prodotti
   title: PED - Classificazione e valutazione conformita'
@@ -1125,6 +1689,25 @@ skills:
   - amianto
   - dlgs-81-2008
   - art-256
+- id: ponteggi-fissi-pimus-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: 'Ponteggi fissi: progetto, documentazione e Pi.M.U.S. (D.Lgs. 81/2008)'
+  summary: 'Inquadra gli adempimenti sui ponteggi fissi (D.Lgs. 81/2008 artt. 131-138): quando serve il progetto firmato da
+    ingegnere/architetto (>20 m o fuori schema-tipo, art. 133), la documentazione in cantiere e il Pi.M.U.S. con sorveglianza
+    del preposto (art. 136). Non li redige.'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza) - Titolo IV, Capo II, Sezione V (Ponteggi fissi), artt. 131-138:
+    progetto firmato (art. 133), documentazione (art. 134), Pi.M.U.S. (art. 136)'
+  - 'Rinvio (non riprodotti): Allegati XVIII/XIX (ponteggi), XXI (formazione), XXII (contenuti Pi.M.U.S.); UNI EN 12810/12811/74;
+    D.Lgs. 106/2009 (modifiche ad artt. 131, 136, 137, 138)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ponteggi-fissi
+  - pimus
+  - dlgs-81-2008
+  - lavori-in-quota
+  - sicurezza-cantieri
 - id: pos-allegato-xv-checker
   area: sicurezza-lavoro-cantieri
   title: POS Allegato XV Assistant
@@ -1273,6 +1856,42 @@ skills:
   - codice-procedura-civile
   - ingegneria-forense
   - dm-109-2023
+- id: relazione-tecnica-requisiti-minimi-dlgs192
+  area: energia-incentivi
+  title: Relazione tecnica requisiti minimi energetici (D.Lgs. 192/2005 art. 8)
+  summary: 'Inquadra la relazione tecnica di progetto sui requisiti minimi energetici (''ex legge 10'') - D.Lgs. 192/2005
+    art. 8: chi la redige e quando si deposita, esclusioni, sistemi alternativi, asseverazione del DL a fine lavori, controlli
+    e sanzioni (art. 15 c. 3-4). Non la redige.'
+  normative_refs:
+  - D.Lgs. 19 agosto 2005, n. 192 - art. 8 (relazione tecnica, accertamenti e ispezioni) e art. 15, commi 1, 3, 4 (sanzioni)
+  - 'Rinvio (non riprodotti): DM 26/6/2015 (requisiti minimi), decreto MiSE con gli schemi di relazione, DM 37/2008 (soglia
+    generatore), D.Lgs. 192/2005 art. 6 (APE) e art. 7 (esercizio impianti)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - relazione-tecnica
+  - legge-10
+  - dlgs-192-2005
+  - requisiti-minimi
+  - efficienza-energetica
+- id: resistenza-fuoco-strutture-ntc
+  area: strutture-geotecnica
+  title: Resistenza al fuoco delle strutture (NTC 2018 par. 3.6.1)
+  summary: 'Inquadra la resistenza al fuoco delle strutture (NTC 2018 par. 3.6.1): definizioni R/E/I, carico d''incendio qf,d=qf*dq1*dq2*dn,
+    livelli di prestazione I-V (Tab. 3.5.IV), classi 15-360 min, curve nominali e verifiche in combinazione eccezionale.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.6.1: qf,d=qf*dq1*dq2*dn [3.6.1], livelli I-V (Tab. 3.5.IV), classi 15-360 min,
+    curve nominali [3.6.2]-[3.6.4], verifiche in comb. eccezionale'
+  - 'Rinvio (fuori scope): DM 9 marzo 2007 (calcolo carico d''incendio), D.Lgs 139/2006 e regole tecniche VVF (classi/livelli),
+    Eurocodici parte 1-2 (materiali ad alta temperatura), Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - resistenza-al-fuoco
+  - incendio
+  - ntc-2018
+  - classi-rei
+  - combinazione-eccezionale
 - id: responsabilita-appaltatore-rovina-cc
   area: forense
   title: 'Responsabilità dell''appaltatore: vizi e rovina d''edificio (c.c. 1667-1669)'
@@ -1321,6 +1940,24 @@ skills:
   - rsia
   - dlgs-35-2011
   - strade
+- id: rup-responsabile-unico-progetto-dlgs36
+  area: appalti-opere-pubbliche
+  title: Responsabile unico del progetto (RUP) - D.Lgs. 36/2023 art. 15
+  summary: 'Inquadra il Responsabile unico del progetto - RUP (D.Lgs. 36/2023 art. 15): nomina e requisiti allegato I.2 (c.1-2),
+    nominativo nel bando (c.3), unicita'' e modelli organizzativi (c.4), compiti e supporto (c.5-6), formazione (c.7), incompatibilita''
+    contraente generale/PPP (c.8).'
+  normative_refs:
+  - D.Lgs. 31/3/2023 n. 36 - art. 15 c. 1-4 (nomina, requisiti, indicazione nel bando, unicita' e modelli organizzativi)
+  - D.Lgs. 31/3/2023 n. 36 - art. 15 c. 5-9 (compiti, struttura di supporto, formazione, incompatibilita', centrali di committenza)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-36-2023
+  - contratti-pubblici
+  - rup
+  - stazione-appaltante
+  - responsabile-procedimento
+  - allegato-i2
 - id: scarichi-emissioni-dlgs152
   area: ambiente-territorio-mobilita
   title: Autorizzazione scarichi ed emissioni - D.Lgs. 152/2006 (artt. 124, 269)
@@ -1372,6 +2009,63 @@ skills:
   - dpr-380-2001
   - sportello-unico-edilizia
   - edilizia
+- id: segnaletica-salute-sicurezza-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Segnaletica di salute e sicurezza sul lavoro (D.Lgs. 81/2008 artt. 161-165)
+  summary: 'Inquadra la segnaletica di salute e sicurezza sul lavoro (D.Lgs. 81/2008 artt. 161-165): tipi di segnali (cartelli,
+    colori, luminosi/acustici, verbali, gestuali), obbligo residuale dopo la protezione collettiva, informazione e formazione,
+    sanzioni. Non progetta il piano.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza sul lavoro) - Titolo V, artt. 161-165 (segnaletica di salute e sicurezza
+    sul luogo di lavoro)
+  - 'Rinvio (non riprodotti): allegati XXIV-XXXII D.Lgs. 81/2008 (requisiti di cartelli, colori, segnali), art. 28 (valutazione
+    dei rischi/DVR); art. 166 abrogato dal D.Lgs. 106/2009'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - segnaletica-sicurezza
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - cartelli
+  - segnali-gestuali
+- id: servitu-coattive-prediali-cc
+  area: forense
+  title: Servitù coattive - passaggio, acquedotto, elettrodotto (c.c. artt. 1027-1057)
+  summary: 'Supporta l''ingegnere/geometra/CTU sulle servitù coattive (c.c.): localizzazione dell''accesso del fondo intercluso
+    (1051-1052), acquedotto (1033) ed elettrodotto (1056) coattivi, nozione e costituzione con indennità (1027-1032). Non
+    redige atti né esegue la stima.'
+  normative_refs:
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1027, 1031, 1032, 1033 (nozione, costituzione, acquedotto coattivo)
+  - Codice civile (R.D. 16/3/1942 n. 262) - artt. 1051, 1052, 1053, 1055, 1056, 1057 (passaggio, indennità, cessazione, elettrodotto,
+    vie funicolari)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - codice-civile
+  - servitu-prediali
+  - passaggio-coattivo
+  - elettrodotto
+  - acquedotto-coattivo
+  - forense
+- id: sicurezza-scavi-fondazioni-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Sicurezza degli scavi e delle fondazioni in cantiere (D.Lgs. 81/2008)
+  summary: 'Inquadra la sicurezza degli scavi (D.Lgs. 81/2008 artt. 118-121): inclinazione/armatura delle fronti e divieto
+    scalzamento oltre 1,50 m (118), armature di pozzi/trincee e tavole sporgenti 30 cm (119), divieto di deposito sul ciglio
+    (120), gas negli scavi (121). Non redige il POS.'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza) - Titolo IV, Capo II, Sezione III (Scavi e fondazioni), artt. 118-121:
+    splateamenti, pozzi e cunicoli, deposito sul ciglio, gas negli scavi'
+  - 'Rinvio (non riprodotti): Allegato XVIII punto 3.4 (sollevamento materiale) D.Lgs. 81/2008; D.Lgs. 106/2009 (modifiche
+    artt. 118-119); PSC/POS (artt. 96, 100)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - scavi
+  - splateamenti-sbadacchiature
+  - dlgs-81-2008
+  - sicurezza-cantieri
+  - fondazioni
 - id: sismabonus-classificazione-rischio-pam
   area: strutture-geotecnica
   title: Sismabonus - Classificazione rischio (DM 58/2017)
@@ -1407,6 +2101,25 @@ skills:
   - dlgs-81-2008
   - idoneita-alla-mansione
   - visite-mediche
+- id: sottoprodotti-end-of-waste-dlgs152
+  area: ambiente-territorio-mobilita
+  title: Sottoprodotti ed End of Waste (D.Lgs. 152/2006 artt. 184-bis, 184-ter)
+  summary: 'Inquadra sottoprodotto (art. 184-bis D.Lgs. 152/2006) ed End of Waste (art. 184-ter): le 4 condizioni del sottoprodotto,
+    la cessazione della qualifica di rifiuto dopo recupero, i criteri UE/DM, le autorizzazioni 208/209/211 con parere ISPRA/ARPA,
+    registro RECER e Nucleo NEW.'
+  normative_refs:
+  - 'D.Lgs. 3/4/2006 n. 152 - art. 184-bis (Sottoprodotto: quattro condizioni cumulative, criteri con DM)'
+  - 'D.Lgs. 3/4/2006 n. 152 - art. 184-ter (Cessazione della qualifica di rifiuto/End of Waste: condizioni, criteri, autorizzazioni,
+    RECER, NEW)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-152-2006
+  - rifiuti
+  - sottoprodotto
+  - end-of-waste
+  - economia-circolare
+  - ambiente
 - id: specifiche-tecniche-ict-appalti-dlgs36
   area: appalti-opere-pubbliche
   title: Specifiche tecniche ed acquisizione ICT negli appalti PA - D.Lgs. 36/2023 + CAD
@@ -1439,6 +2152,25 @@ skills:
   - ntc-2018
   - sismica
   - spettro
+- id: stabilita-pendii-naturali-ntc
+  area: strutture-geotecnica
+  title: Stabilità dei pendii naturali (NTC 2018 par. 6.3)
+  summary: 'Inquadra lo studio e la verifica di stabilita'' dei pendii naturali (NTC 2018 par. 6.3): modellazione geologica/geotecnica,
+    coefficiente di sicurezza F = tau_f/tau su valori caratteristici (senza coefficienti parziali), superficie critica/di
+    frana, interventi e monitoraggio.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.3: F = tau_f/tau su valori caratteristici (no coefficienti parziali A1/A2/M/R),
+    superficie critica o accertata (frana), margine dal progettista'
+  - NTC 2018 - par. 6.3.1-6.3.3 (indagini, modellazione geologica/geotecnica, modello 6.2.2), 6.3.5-6.3.6 (interventi, monitoraggio
+    con soglie di attenzione/allarme); rinvio par. 7.11.3.5 (sismico)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - stabilita-dei-pendii
+  - geotecnica
+  - ntc-2018
+  - coefficiente-di-sicurezza
+  - frane
 - id: subappalto-contratti-pubblici-dlgs36
   area: appalti-opere-pubbliche
   title: Subappalto nei contratti pubblici (D.Lgs. 36/2023 art. 119)
@@ -1474,6 +2206,25 @@ skills:
   - sottoprodotto
   - rifiuti
   - cantieri
+- id: tiranti-ancoraggio-ntc
+  area: strutture-geotecnica
+  title: 'Tiranti di ancoraggio: progetto e verifica (NTC 2018 par. 6.6)'
+  summary: 'Inquadra progetto e verifica dei tiranti di ancoraggio (NTC 2018 par. 6.6): verifica SLU a sfilamento Ed<=Rad
+    con Rad=Rak/gamma_R (Tab. 6.6.I: 1,1 temporanei / 1,2 permanenti), Rak da prove (Tab. 6.6.II) o calcolo (Tab. 6.6.III),
+    combinazione A1+M1+R3, e prove di carico.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.6: verifica SLU a sfilamento Ed<=Rad, Rad=Rak/gamma_R (Tab. 6.6.I: 1,1/1,2),
+    Rak da prove o calcolo [6.6.1-2] con xi (Tab. 6.6.II/III), comb. A1+M1+R3'
+  - 'NTC 2018 - par. 6.6.4 prove di carico: prove di progetto (numero minimo per numero di ancoraggi) e prove in corso d''opera
+    su tutti a 1,2 Pd; rinvio par. 6.5, 11.5.2 e Circolare 21/1/2019 n. 7'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - tiranti-di-ancoraggio
+  - geotecnica
+  - ntc-2018
+  - verifica-slu
+  - prove-di-carico
 - id: transizione-5-0-asseverazione
   area: energia-incentivi
   title: Transizione 5.0 - Asseverazione tecnica
@@ -1588,6 +2339,63 @@ skills:
   - acustica
   - l-447-1995
   - dpcm-1997
+- id: valutazione-rischio-biologico-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Rischio da agenti biologici sul lavoro (D.Lgs 81/2008 Titolo X)
+  summary: 'Inquadra il rischio da agenti biologici (D.Lgs 81/2008 Titolo X, artt. 266-280): definizioni e classificazione
+    nei 4 gruppi, valutazione del rischio e integrazione del DVR, misure tecniche e igieniche, sorveglianza sanitaria e registro
+    degli esposti dei gruppi 3 e 4.'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 - Titolo X, artt. 266-280 (esposizione ad agenti biologici: definizioni, classificazione
+    in 4 gruppi, valutazione, misure, sorveglianza, registro esposti)'
+  - 'Richiamati (non riprodotti): Allegati XLIV/XLV/XLVI D.Lgs 81/2008; artt. 17, 41, 42; D.Lgs. 106/2009; ISPESL ora INAIL
+    (L. 122/2010)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - agenti-biologici
+  - rischio-biologico
+  - dlgs-81-2008
+  - valutazione-rischio
+  - sorveglianza-sanitaria
+- id: valutazione-rischio-cancerogeni-mutageni-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Rischio cancerogeni e mutageni sul lavoro (D.Lgs 81/2008 Titolo IX Capo II)
+  summary: 'Inquadra il rischio da agenti cancerogeni, mutageni e sostanze tossiche per la riproduzione (D.Lgs 81/2008 Titolo
+    IX Capo II, artt. 233-243, agg. D.Lgs 135/2024): definizioni, sostituzione/riduzione, integrazione del DVR, misure, sorveglianza
+    sanitaria e registro esposti.'
+  normative_refs:
+  - D.Lgs. 9 aprile 2008, n. 81 - Titolo IX, Capo II, artt. 233-243 (agenti cancerogeni, mutageni e sostanze tossiche per
+    la riproduzione), testo vigente aggiornato dal D.Lgs. 4 settembre 2024, n. 135
+  - 'Richiamati (non riprodotti): Allegati XLI/XLII/XLIII/XLIII-bis D.Lgs 81/2008; artt. 17, 18, 25, 28, 29, 42; Reg. CE 1272/2008
+    (CLP); D.M. 12/7/2007 n. 155'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - cancerogeni-mutageni
+  - sostanze-tossiche-riproduzione
+  - dlgs-81-2008
+  - valutazione-rischio
+  - sorveglianza-sanitaria
+- id: valutazione-rischio-chimico-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Valutazione del rischio chimico - agenti chimici pericolosi (D.Lgs. 81/2008)
+  summary: 'Inquadra la valutazione del rischio chimico (D.Lgs. 81/2008 artt. 222-227): definizioni e VLEP (222), valutazione
+    nel DVR ex art. 28 (223), misure generali con deroga rischio basso (224), misure specifiche con gerarchia e misurazioni
+    (225), emergenze (226), formazione (227).'
+  normative_refs:
+  - 'D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza) - Titolo IX, Capo I, artt. 222-227: definizioni, valutazione dei
+    rischi, misure generali e specifiche, emergenze, informazione e formazione'
+  - 'Rinvio (non riprodotti): Allegati XXXVIII (VLEP) e XLI (misurazioni) D.Lgs. 81/2008; Reg. (CE) 1272/2008 (CLP) e 1907/2006
+    (REACH); artt. 28 (DVR), 229-230 (sorveglianza sanitaria)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - rischio-chimico
+  - agenti-chimici-pericolosi
+  - dlgs-81-2008
+  - dvr
+  - sicurezza-lavoro
 - id: valutazione-rischio-rumore-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Valutazione del rischio rumore sul lavoro - D.Lgs. 81/2008 Titolo VIII Capo II
@@ -1641,6 +2449,25 @@ skills:
   - dichiarazione-accessibilita
   - en-301549
   - wcag
+- id: verifica-progettazione-dlgs36
+  area: appalti-opere-pubbliche
+  title: Verifica della progettazione e validazione del progetto (D.Lgs. 36/2023 art. 42)
+  summary: 'Inquadra la verifica della progettazione e la validazione del progetto a base di gara (D.Lgs. 36/2023 art. 42):
+    oggetto e tempi per livello (1), RUP e incompatibilita'' (2), effetti - deposito sismico e denuncia al genio civile assolti
+    (3), validazione (4), Allegato I.7 (5).'
+  normative_refs:
+  - 'D.Lgs. 31 marzo 2023, n. 36 (Codice dei contratti pubblici) - art. 42 (Verifica della progettazione): oggetto e tempi,
+    RUP e incompatibilita'', effetti, validazione, rinvio all''Allegato I.7'
+  - 'Rinvio (non riprodotti): Allegato I.7 D.Lgs. 36/2023 (contenuti, modalita'' e soggetti della verifica); art. 41 (livelli
+    di progettazione); DPR 380/2001 artt. 65, 93-94 (deposito sismico)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - verifica-progettazione
+  - validazione-progetto
+  - dlgs-36-2023
+  - contratti-pubblici
+  - rup
 - id: verifiche-messa-a-terra-dpr462
   area: impianti-macchine-prodotti
   title: Verifiche impianti di messa a terra e luoghi pericolosi - DPR 462/2001
@@ -1707,6 +2534,24 @@ skills:
   - valutazione-impatto-ambientale
   - screening-assoggettabilita
   - studio-impatto-ambientale
+- id: videoterminali-vdt-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Uso di videoterminali (VDT) - D.Lgs. 81/2008 Titolo VII (artt. 172-177)
+  summary: 'Obblighi sull''uso di videoterminali - VDT (D.Lgs. 81/2008 Titolo VII): campo ed esclusioni (172), videoterminalista
+    20 ore/settimana (173), obblighi del datore e allegato XXXIV (174), pause 15 min/120 (175), sorveglianza sanitaria (176),
+    informazione e formazione (177).'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 172-174 (campo, definizioni, obblighi del datore, allegato XXXIV)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 175-177 (pause, sorveglianza sanitaria, informazione e formazione)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - videoterminali
+  - videoterminalista
+  - sorveglianza-sanitaria
+  - ergonomia
 - id: vigilanza-sanzioni-abusi-edilizi-dpr380
   area: edilizia-urbanistica-catasto
   title: Vigilanza e sanzioni per abusi edilizi (DPR 380/2001, Titolo IV)

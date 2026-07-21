@@ -1,0 +1,47 @@
+schema_version: 1
+skill: edilizia-libera-cila-scia-dpr380
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dei REGIMI DEL TITOLO EDILIZIO diversi dal permesso di
+# costruire: attivita' edilizia libera (art. 6), CILA (art. 6-bis), SCIA (art. 22) e SCIA
+# in alternativa al permesso di costruire (art. 23). Fonte: Testo unico dell'edilizia
+# (DPR 380/2001), Titolo II.
+
+sources:
+  - id: dpr-380-2001-6-6bis-22-23
+    title: "D.P.R. 6 giugno 2001, n. 380 (Testo unico edilizia) - artt. 6 (edilizia libera), 6-bis (CILA), 22 (SCIA), 23 (SCIA in alternativa al permesso di costruire) (testo vigente al 2026-07-17)"
+    type: decreto-presidente-repubblica
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice
+    # del DPR 380 usato dalle altre skill edilizia: permesso-costruire, definizioni-interventi,
+    # contributo-costruzione, segnalazione-agibilita, vigilanza-sanzioni-abusi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.presidente.repubblica:2001-06-06;380!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: bac3f7b170cfd122936873c835b3f728e7880d058bd98ad45f55b94ba89a632f
+    license: public-domain
+    binary_path: not_in_repo/dpr380-idx.html
+    md_path: references/fonti/dpr-380-2001-6-6bis-22-23.md
+    excerpt_path: references/estratti/titoli-edilizi-checklist.md
+    notes: |
+      Codice redazionale 001G0429. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: bac3f7b1...; stesso indice usato dalle altre skill DPR 380).
+      Articoli caricati via AJAX (caricaArticolo, flagTipoArticolo 0, dataPubblicazioneGazzetta
+      2001-10-20) e trascritti verbatim in references/fonti/dpr-380-2001-6-6bis-22-23.md:
+      art. 6 "Attivita' edilizia libera" (idGruppo 2, idSottoArticolo 1, versione 19; interventi
+      senza titolo lett. a-e-sexies, con lettere/commi abrogati riportati come da fonte, e
+      aggiornamenti 66 e 69), art. 6-bis "CILA" (idGruppo 2, idSottoArticolo 2, versione 1;
+      comunicazione asseverata per interventi residuali non in artt. 6/10/22, sanzione 1.000
+      euro ridotta di due terzi se spontanea), art. 22 "SCIA" (idGruppo 6, versione 7; ex art.
+      19 L. 241/1990: manutenzione straordinaria strutturale, restauro/risanamento strutturale,
+      ristrutturazione diversa dall'art. 10 c. 1 lett. c, varianti a permessi), art. 23 "SCIA in
+      alternativa al permesso di costruire" (idGruppo 6, versione 7; ristrutturazione art. 10 c.
+      1 lett. c e nuova costruzione/ristrutturazione urbanistica in attuazione di piani, termine
+      30 giorni prima dell'inizio lavori, relazione del progettista, contributo di costruzione
+      art. 16). Il testo tra doppi tondi (( )) e le note di abrogazione sono riportati come da
+      fonte.
+      LIMITE DI RESA: la skill inquadra i regimi e i loro presupposti; NON qualifica in concreto
+      l'intervento (rinvio all'art. 3, skill definizioni-interventi-edilizi-dpr380), NON tratta
+      il permesso di costruire (skill permesso-costruire-dpr380), NON riproduce il glossario
+      dell'edilizia libera (DM 2/3/2018) ne' la modulistica edilizia unificata (skill
+      modulistica-edilizia-unificata); gli artt. 3, 10, 16, 37, 44 e l'art. 19 L. 241/1990 sono
+      citati come rinvio. Restano ferme le discipline regionali e le normative di settore
+      (sismica, paesaggio, vincoli).

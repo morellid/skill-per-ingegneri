@@ -1,0 +1,60 @@
+schema_version: 1
+skill: azioni-traffico-ponti-stradali-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento delle azioni da traffico (e delle altre
+# azioni) sui ponti stradali ai sensi delle NTC 2018 (DM 17/01/2018), par. 5.1.
+# La skill non riproduce le figure (Fig. 5.1.1/5.1.2/5.1.3) che definiscono la
+# geometria degli Schemi di Carico e delle impronte: rinvia al testo/EC1.
+
+sources:
+  - id: ntc2018-par-5-1
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 5.1 Ponti stradali"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-5-1.md
+    excerpt_path: references/estratti/azioni-traffico-ponti-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 5.1 estratto con `pdftotext -layout` (pagine GU 150-157) e trascritto
+      verbatim in references/fonti/ntc2018-par-5-1.md. Contenuti rilevanti:
+      - par. 5.1.1 oggetto (definizione di "ponti": viadotti, cavalcavia, ecc.).
+      - par. 5.1.2 prescrizioni generali: geometria sede stradale/superficie
+        carrabile (5.1.2.1); altezza libera >= 5 m (4 m / 3,20 m in deroga; 2,50 m
+        sottopassi pedonali) (5.1.2.2); compatibilita' idraulica Tr = 200 anni,
+        luce netta >= 40 m, franco idraulico >= 1,50 m (5.1.2.3).
+      - par. 5.1.3 azioni sui ponti stradali (elenco); permanenti g1/g2/g3
+        (5.1.3.1); distorsioni e deformazioni impresse eps1-eps4 (5.1.3.2).
+      - par. 5.1.3.3 carichi verticali da traffico q1:
+        corsie convenzionali Tab. 5.1.I (w<5,40 -> nl=1, 3,00 m; 5,4<=w<6,0 ->
+        nl=2, w/2; 6,0<=w -> nl=Int(w/3), 3,00 m);
+        Schemi di Carico 1-5 (5.1.3.3.3) + Schemi 6.a/b/c per luce > 300 m
+        (formule [5.1.1]-[5.1.3]); categorie stradali (carichi interi / pedonali
+        Schema 5) (5.1.3.3.4); larghezza ingombro 3,00 m, minimo 2 corsie
+        (5.1.3.3.5); intensita' Qik/qik Tab. 5.1.II (corsia 1: 300 kN / 9,00
+        kN/m2; corsia 2: 200 / 2,50; corsia 3: 100 / 2,50; altre: 0 / 2,50);
+        diffusione carichi concentrati a 45 gradi (5.1.3.3.6).
+      - par. 5.1.3.4 incremento dinamico addizionale q2 (giunti).
+      - par. 5.1.3.5 frenamento/accelerazione q3: 180 kN <= q3 = 0,6*(2*Q1k) +
+        0,10*q1k*w1*L <= 900 kN [5.1.4].
+      - par. 5.1.3.6 azione centrifuga q4 Tab. 5.1.III (R<200: 0,2*Qv;
+        200<=R<=1500: 40*Qv/R; R>=1500: 0), Qv = somma 2*Qik.
+      - par. 5.1.3.7 neve e vento q5 (parete 3 m; neve non concomitante col
+        traffico salvo ponti coperti); 5.1.3.8 idrodinamiche q6; 5.1.3.9
+        temperatura q7; 5.1.3.10 parapetti (h>=1,10 m, 1,5 kN/m) e urto veicolo
+        in svio q8 (fattore 1,50; gamma unitario per l'urto); 5.1.3.11 resistenze
+        passive q9; 5.1.3.12 sismiche (psi2j = 0,0 di regola, 0,2 zona urbana);
+        5.1.3.13 eccezionali (protezione piedritti <= 5 m).
+      - par. 5.1.3.14 combinazioni: gruppi di azioni Tab. 5.1.IV; coefficienti
+        parziali SLU Tab. 5.1.V (colonne EQU/A1/A2: gamma_G1 0,90-1,10/1,00-1,35/
+        1,00; gamma_Q traffico 1,35/1,35/1,15); coefficienti psi Tab. 5.1.VI.
+      Le figure (Fig. 5.1.1 numerazione corsie, Fig. 5.1.2 Schemi di carico 1-5
+      con le geometrie/interassi, Fig. 5.1.3 diffusione dei carichi) sono
+      immagini e NON sono riprodotte: la skill rinvia al testo NTC e all'EC1
+      (UNI EN 1991-2) per le geometrie di dettaglio.

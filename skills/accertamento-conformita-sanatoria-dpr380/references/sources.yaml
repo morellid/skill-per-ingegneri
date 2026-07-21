@@ -1,0 +1,44 @@
+schema_version: 1
+skill: accertamento-conformita-sanatoria-dpr380
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dell'ACCERTAMENTO DI CONFORMITA' (permesso/SCIA in sanatoria) degli abusi
+# edilizi: assenza di titolo o totale difformita' (art. 36), parziale difformita' e variazioni
+# essenziali con la sanatoria semplificata "salva-casa" (art. 36-bis), interventi in assenza/difformita'
+# dalla SCIA (art. 37). Fonte: Testo unico edilizia (DPR 380/2001), Titolo IV.
+
+sources:
+  - id: dpr-380-2001-36-36bis-37
+    title: "D.P.R. 6 giugno 2001, n. 380 - artt. 36, 36-bis, 37 (accertamento di conformita' / sanatoria edilizia, incl. salva-casa DL 69/2024) (testo vigente al 2026-07-17)"
+    type: decreto-del-presidente-della-repubblica
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del DPR
+    # 380/2001 usato dalle altre skill edilizia: permesso di costruire, agibilita', abusi, sismica, c.a.).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: bac3f7b170cfd122936873c835b3f728e7880d058bd98ad45f55b94ba89a632f
+    license: public-domain
+    binary_path: not_in_repo/dpr380-sanatoria-idx.html
+    md_path: references/fonti/dpr-380-2001-36-36bis-37.md
+    excerpt_path: references/estratti/accertamento-conformita-checklist.md
+    notes: |
+      Codice redazionale 001G0429, idGruppo 9. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: bac3f7b1...; e' lo stesso indice usato dalle altre skill DPR 380/2001).
+      Articoli caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dpr-380-2001-36-36bis-37.md: art. 36 (idSottoArticolo 1, versione 6) -
+      accertamento di conformita' per assenza di titolo o totale difformita', con doppia conformita'
+      piena, oblazione pari al contributo di costruzione in misura doppia e decisione in 60 giorni
+      (silenzio-rifiuto); art. 36-bis (idSottoArticolo 2, versione 2), introdotto dal DL 69/2024
+      "salva-casa" - accertamento per parziale difformita' e variazioni essenziali con doppia conformita'
+      attenuata (conformita' urbanistica al momento della domanda e requisiti edilizi al momento della
+      realizzazione), dichiarazione del professionista abilitato, prova dell'epoca (art. 9-bis c. 1-bis),
+      profili sismici (comma 3-bis) e paesaggistici (commi 4 e 5-bis, art. 167 D.Lgs. 42/2004), oblazione
+      (comma 5) e decisione in 45 giorni con silenzio-assenso (comma 6); art. 37 (versione 5) -
+      interventi in assenza o difformita' dalla SCIA con sanzione pecuniaria pari al triplo dell'aumento
+      del valore venale (minimo 1.032 euro), restauro su immobili vincolati e richiamo all'accertamento
+      dell'art. 36-bis. Il testo tra doppi tondi (( )) segnala le modifiche del DL 69/2024 conv. L.
+      105/2024.
+      LIMITE DI RESA: la skill inquadra presupposti, doppia conformita', oblazione, termini ed effetti;
+      NON redige la domanda ne' la dichiarazione di conformita', NON qualifica in concreto l'abuso
+      (assenza/totale/parziale difformita'/variazione essenziale) al posto del tecnico, NON calcola
+      l'oblazione ne' il valore venale, NON tratta il condono (leggi speciali) e NON sostituisce il
+      progettista, lo sportello unico per l'edilizia ne' gli enti competenti.

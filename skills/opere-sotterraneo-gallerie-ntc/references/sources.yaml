@@ -1,0 +1,68 @@
+schema_version: 1
+skill: opere-sotterraneo-gallerie-ntc
+last_verified: 2026-07-21
+
+# Fonte normativa per l'inquadramento della progettazione e verifica delle opere
+# in sotterraneo (gallerie, caverne, pozzi) ai sensi delle NTC 2018 (DM
+# 17/01/2018), par. 6.7. La skill inquadra caratterizzazione, criteri, verifiche
+# SLU/SLE e monitoraggio; non calcola le verifiche ne' dimensiona l'opera o i
+# rivestimenti.
+
+sources:
+  - id: ntc2018-par-6-7
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 6.7 Opere in sotterraneo"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-21
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-7.md
+    excerpt_path: references/estratti/opere-sotterraneo-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-21 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 6.7 estratto con `pdftotext -layout` (pagine PDF 204-205, pp. GU
+      200-201) e trascritto verbatim in references/fonti/ntc2018-par-6-7.md.
+      Contenuti rilevanti:
+      - par. 6.7 ambito: gallerie, caverne e pozzi costruiti nel sottosuolo
+        (asportazione del terreno/roccia, stabilizzazione della cavita' a breve
+        e lungo termine, rivestimento finale).
+      - par. 6.7.1 prescrizioni generali: modello geologico e geotecnico;
+        elementi da specificare e giustificare (geometria/ubicazione/tracciato;
+        metodi e tecniche di scavo tradizionale o meccanizzato; interventi di
+        stabilizzazione e rivestimenti; intercettazione acque e pressioni
+        interstiziali; provvedimenti antifrana; sicurezza per gas/cavita'/venute
+        d'acqua; materiali di risulta).
+      - par. 6.7.2 caratterizzazione geologica: modello geologico, litotipi,
+        faglie e discontinuita', sismotettonica, franosita', cavita' carsiche,
+        idrogeologia, gas.
+      - par. 6.7.3 caratterizzazione e modellazione geotecnica: indagini in sito
+        e laboratorio; potenzialita' spingenti/rigonfianti; pressioni
+        interstiziali; modello geotecnico per le analisi del par. 6.7.5; metodo
+        osservazionale.
+      - par. 6.7.4 criteri di progetto: previsione quantitativa degli effetti
+        indotti al contorno e in superficie (gallerie poco profonde in ambienti
+        urbanizzati); dimensionamento dei rivestimenti (prima fase e definitivi);
+        opere di protezione agli imbocchi; stabilita' globale dei pendii in zona
+        di versante.
+      - par. 6.7.5 analisi e verifiche di sicurezza: SLU GEO (resistenza del
+        terreno/ammasso) e STR (elementi di stabilizzazione/rivestimento);
+        effetti sui manufatti esistenti; SLU idraulici UPL e HYD; stabilita' di
+        versanti e fronti agli imbocchi con i criteri dei par. 6.3 e 6.8;
+        Approccio 1 con Combinazione 1 (A1+M1+R1) e Combinazione 2 (A2+M2+R2),
+        coefficienti Tab. 6.2.I/6.2.II e gamma_R dei gruppi R1 e R2 pari
+        all'unita' (1,0); verifiche strutturali con valori caratteristici (par.
+        6.2.4.1.3); verifiche idrauliche (par. 6.2.4.2); metodo osservazionale
+        (par. 6.2.5) con convergenza radiale, deformazione longitudinale del
+        fronte, spostamenti di superficie.
+      - par. 6.7.6 controllo e monitoraggio: validita' delle previsioni;
+        comportamento del terreno/ammasso, dei rivestimenti e dei manufatti
+        esistenti; fenomeni franosi (tensioni, spostamenti, pressioni
+        interstiziali).
+      Restano fuori scope: il calcolo delle verifiche e il dimensionamento
+      dell'opera/rivestimenti, la definizione del modello geologico/geotecnico,
+      la sicurezza dei lavoratori in sotterraneo, le macchine di scavo (TBM)
+      come prodotti e la progettazione sismica.

@@ -1,0 +1,45 @@
+schema_version: 1
+skill: autorizzazione-scarico-acque-reflue-dlgs152
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento dell'AUTORIZZAZIONE ALLO SCARICO DI ACQUE REFLUE: criteri generali
+# (obbligo di autorizzazione preventiva, titolare, competenze, termini e validita', rinnovo,
+# prescrizioni, spese) e contenuto della domanda per gli scarichi industriali. Fonte: Codice
+# dell'ambiente (D.Lgs. 152/2006), Parte III, artt. 124 e 125.
+
+sources:
+  - id: dlgs-152-2006-124-125
+    title: "D.Lgs. 3 aprile 2006, n. 152 (Norme in materia ambientale) - artt. 124 (criteri generali) e 125 (domanda di autorizzazione agli scarichi di acque reflue industriali) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del D.Lgs.
+    # 152/2006 usato dalle altre skill ambiente: VIA, AIA, sottoprodotti/EoW, classificazione rifiuti).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006-04-03;152!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: c2175fe5c9313db1087d444b07e71d727154140d579ffcf6357ababa5d57b45c
+    license: public-domain
+    binary_path: not_in_repo/dlgs152-scarico-idx.html
+    md_path: references/fonti/dlgs-152-2006-124-125.md
+    excerpt_path: references/estratti/autorizzazione-scarico-checklist.md
+    notes: |
+      Codice redazionale 006G0171, idGruppo 25, dataPubblicazioneGazzetta 2006-04-14. Pagina indice
+      Normattiva pinnata a !vig=2026-07-17 (hash stabile, doppio download: c2175fe5...; e' lo stesso
+      indice usato dalle altre skill D.Lgs. 152/2006). Articoli 124 (versione 3) e 125 (versione 1)
+      caricati via AJAX (caricaArticolo), formato AKN, e trascritti verbatim in
+      references/fonti/dlgs-152-2006-124-125.md. Art. 124 (criteri generali): obbligo di autorizzazione
+      preventiva di tutti gli scarichi (c. 1); titolare/scarico finale/consorzio (c. 2); regime delle
+      reflue domestiche/reti fognarie e termali definito dalle regioni (cc. 3-5); autorizzazione
+      provvisoria degli impianti di depurazione (c. 6); competenza (provincia o ente di governo
+      dell'ambito se in pubblica fognatura) e termine di 90 giorni (c. 7); validita' 4 anni, rinnovo un
+      anno prima, mantenimento provvisorio, sostanze pericolose art. 108 e rinnovo tacito per le
+      domestiche (c. 8); scarichi in corsi a portata nulla (c. 9); prescrizioni tecniche per
+      localizzazione/ambiente (c. 10); spese di istruttoria a carico del richiedente con deposito (c.
+      11); nuova autorizzazione per trasferimento/cambio d'uso/ampliamento/ristrutturazione con scarico
+      diverso, comunicazione se invariato (c. 12). Art. 125 (domanda scarichi industriali): contenuto -
+      caratteristiche quantitative/qualitative, volume annuo, ricettore, punto di prelievo di controllo,
+      sistema di scarico e operazioni connesse, misurazione del flusso, apparecchiature e sistemi di
+      depurazione (c. 1); per le sostanze della tabella 3/A dell'Allegato 5, capacita' di produzione e
+      fabbisogno orario d'acqua (c. 2). Il testo tra doppi tondi (( )) segnala le modifiche successive.
+      LIMITE DI RESA: la skill inquadra obblighi, competenze, termini e contenuto della domanda; NON
+      redige la domanda ne' progetta l'impianto di depurazione, NON applica i valori limite di emissione
+      dell'Allegato 5 alla Parte III (Tabelle 1/2/3/3-A/4), NON tratta l'AUA/AIA come procedura, e NON
+      sostituisce il tecnico, il gestore del servizio idrico integrato ne' l'autorita' competente.

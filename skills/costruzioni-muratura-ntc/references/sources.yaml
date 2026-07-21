@@ -1,0 +1,51 @@
+schema_version: 1
+skill: costruzioni-muratura-ntc
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della PROGETTAZIONE DELLE COSTRUZIONI IN MURATURA (non sismica) secondo le NTC
+# 2018: materiali e categorie degli elementi, organizzazione strutturale, resistenze di progetto e
+# coefficienti parziali, verifiche agli stati limite e verifiche semplificate, muratura armata. Fonte: DM
+# 17 gennaio 2018 (NTC 2018), par. 4.5.
+
+sources:
+  - id: ntc2018-par-4-5
+    title: "NTC 2018 - DM 17 gennaio 2018 (Aggiornamento delle Norme tecniche per le costruzioni) - par. 4.5 Costruzioni di muratura"
+    type: decreto
+    # PDF del Supplemento Ordinario n. 8 alla G.U. n. 42 del 20 febbraio 2018 (stessa fonte usata dalle
+    # altre skill NTC: carichi, combinazioni, capacita' portante, cedimenti, opere di sostegno, fondazioni
+    # su pali).
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-17
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-4-5.md
+    excerpt_path: references/estratti/costruzioni-muratura-checklist.md
+    notes: |
+      Decreto Ministeriale 17 gennaio 2018, "Aggiornamento delle Norme tecniche per le costruzioni"
+      (NTC 2018), pubblicato nel Supplemento Ordinario n. 8 alla Gazzetta Ufficiale n. 42 del 20 febbraio
+      2018. PDF scaricato dalla Gazzetta Ufficiale (hash stabile, doppio download: dda1e397...; e' la
+      stessa fonte usata dalle altre skill NTC del repo). Il par. 4.5 (Costruzioni di muratura) e' stato
+      estratto con pdftotext -layout (pp. 141-146) e trascritto verbatim in
+      references/fonti/ntc2018-par-4-5.md, con i simboli resi in modo corretto (gamma_M, gamma_s, lambda,
+      Pi, Phi, rho) e le costanti numeriche e le tabelle riportate come nel testo. Contenuto: definizioni
+      (4.5.1); materiali e caratteristiche tipologiche con la classificazione degli elementi resistenti in
+      base alla percentuale di foratura Pi (Tab. 4.5.Ia laterizio, 4.5.Ib calcestruzzo: pieni, semipieni,
+      forati) e i tipi di muratura (4.5.2); caratteristiche meccaniche fk/fvk0/E/G con il controllo
+      sperimentale per fk >= 8 MPa (4.5.3); organizzazione strutturale con il comportamento scatolare,
+      cordoli e incatenamenti, gli spessori minimi dei muri portanti (150/200/240/240/400/500 mm) e la
+      snellezza convenzionale lambda = h0/t <= 20 (4.5.4); analisi strutturale (4.5.5); verifiche con le
+      resistenze di progetto fd = fk/gamma_M e fvd = fvk/gamma_M e la Tab. 4.5.II del coefficiente gamma_M
+      (da 2,0 a 3,0 in funzione della classe di esecuzione 1/2 e della categoria degli elementi I/II),
+      gli stati limite ultimi e il metodo semplificato per i carichi laterali con il coefficiente Phi
+      (Tab. 4.5.III) e il fattore di vincolo rho (Tab. 4.5.IV) e le eccentricita' (4.5.6.1-4.5.6.2); le
+      verifiche semplificate per edifici semplici con gamma_M = 4,2, i limiti (fino a 3 piani per la
+      muratura ordinaria e 4 per l'armata, interpiano <= 3,5 m, snellezza <= 12, carico variabile <= 3,00
+      kN/m2, rapporto fra i lati >= 1/3) e la verifica sigma = N/(0,65 A) <= fk/gamma_M (4.5.6.4); la
+      muratura armata con le armature minime (diametro 5 mm, percentuali di armatura), la malta >= 10 MPa,
+      il conglomerato >= C12/15 e gamma_s = 1,15 (4.5.7).
+      LIMITE DI RESA: la skill inquadra materiali, categorie, organizzazione, resistenze di progetto,
+      verifiche e coefficienti; NON calcola le resistenze ne' esegue le verifiche, NON dimensiona la
+      muratura, NON tratta la progettazione sismica (par. 7.8), la resistenza al fuoco (4.5.11), il cap.
+      11.10 (materiali) ne' gli Eurocodici, e NON sostituisce il progettista strutturale ne' la Circolare
+      21/1/2019 n. 7.

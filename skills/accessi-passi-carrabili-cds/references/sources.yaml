@@ -1,0 +1,46 @@
+schema_version: 1
+skill: accessi-passi-carrabili-cds
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento di ACCESSI, DIRAMAZIONI e PASSI CARRABILI dalla strada ai fondi/
+# fabbricati laterali: autorizzazione preventiva dell'ente proprietario, regolarizzazione,
+# divieti, opere e parcheggi, condizioni tecniche, sanzioni. Fonte: Codice della Strada (D.Lgs.
+# 285/1992), art. 22.
+
+sources:
+  - id: cds-285-1992-art22
+    title: "D.Lgs. 30 aprile 1992, n. 285 (Codice della Strada) - art. 22 (Accessi e diramazioni) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # CdS usato dalle skill trasporti-eccezionali-cds-art10 e cantieri-stradali-occupazione-cds).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: e541dc1a2a210a4ffbc9edb9fb8c5bb21ee41241638dffbb0cee783cadb84918
+    license: public-domain
+    binary_path: not_in_repo/cds-art22-idx.html
+    md_path: references/fonti/cds-285-1992-art22.md
+    excerpt_path: references/estratti/accessi-passi-carrabili-checklist.md
+    notes: |
+      Codice redazionale 092G0306. Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash
+      stabile, doppio download: e541dc1a...; e' lo stesso indice usato da trasporti-eccezionali-
+      cds-art10 e cantieri-stradali-occupazione-cds). Art. 22 (versione 17, idGruppo 2) caricato
+      via AJAX (caricaArticolo) e trascritto verbatim in references/fonti/cds-285-1992-art22.md,
+      formato AKN (12 commi): preventiva autorizzazione dell'ente proprietario per nuovi accessi/
+      diramazioni/innesti (c. 1); regolarizzazione degli accessi esistenti autorizzati (c. 2);
+      passi carrabili individuati con segnale previa autorizzazione (c. 3); divieto di
+      trasformazioni/variazioni d'uso senza autorizzazione (c. 4); casi di diniego rinviati al
+      regolamento (c. 5); opere sui fossi laterali e caratteristiche plano-altimetriche (c. 6);
+      modalita' di costruzione/manutenzione nel regolamento (c. 7); parcheggi per accessi a
+      insediamenti (c. 8); opere particolari (innesti attrezzati, intersezioni a livelli diversi,
+      strade parallele) e consorzi obbligatori per proprieta' intercluse/forte densita'/carenze
+      di sicurezza (c. 9); caratteristiche tecniche fissate con decreto MIT e divieto di accessi
+      su rampe/corsie di accelerazione-decelerazione (c. 10); sanzioni da 173 a 694 euro per
+      accessi non autorizzati o abusivi (c. 11) e da 42 a 173 euro per altre violazioni (c. 12).
+      Gli importi tra doppi tondi e i riferimenti numerici in coda al comma 12 segnalano gli
+      adeguamenti biennali delle sanzioni ex art. 195, c. 3, riportati come da fonte.
+      LIMITE DI RESA: la skill inquadra il regime autorizzatorio di accessi/diramazioni/passi
+      carrabili; NON rilascia l'autorizzazione, NON redige l'istanza ne' il progetto dell'accesso,
+      NON riproduce il Regolamento di esecuzione (DPR 495/1992, artt. 44-46 su accessi e passi
+      carrabili) ne' i decreti MIT sulle caratteristiche tecniche, citati come rinvio; rinvia
+      all'ente proprietario/gestore della strada. Distinta da trasporti-eccezionali-cds-art10 (art.
+      10) e cantieri-stradali-occupazione-cds (artt. 20-21).

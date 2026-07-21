@@ -1,0 +1,59 @@
+schema_version: 1
+skill: valutazione-rischio-cancerogeni-mutageni-dlgs81
+last_verified: 2026-07-17
+
+# Fonte per l'inquadramento della VALUTAZIONE E GESTIONE DEL RISCHIO DA AGENTI CANCEROGENI, MUTAGENI E
+# DA SOSTANZE TOSSICHE PER LA RIPRODUZIONE: campo di applicazione, definizioni, sostituzione/riduzione,
+# valutazione del rischio (integrazione del DVR), misure tecniche/organizzative/procedurali e igieniche,
+# informazione e formazione, sorveglianza sanitaria, registro di esposizione e cartelle sanitarie. Fonte:
+# Testo unico sicurezza (D.Lgs. 81/2008), Titolo IX, Capo II, artt. 233-243 (testo vigente agg. D.Lgs.
+# 135/2024).
+
+sources:
+  - id: dlgs-81-2008-233-243
+    title: "D.Lgs. 9 aprile 2008, n. 81 - artt. 233-243 (protezione da agenti cancerogeni, mutageni o da sostanze tossiche per la riproduzione) (testo vigente al 2026-07-17)"
+    type: decreto-legislativo
+    # URL pinnata con !vig=YYYY-MM-DD per riproducibilita' dell'hash sotto CI (stesso indice del
+    # D.Lgs. 81/2008 usato dalle altre skill sicurezza: chimico, DPI, MMC, VDT, segnaletica, ponteggi,
+    # scavi).
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81!vig=2026-07-17
+    accessed: 2026-07-17
+    sha256: 18fbc5426cc39a513e68c7ae1c6f7a3c09eb4cfc0c4b07a591626259c793bd0e
+    license: public-domain
+    binary_path: not_in_repo/d81-cancerogeni-idx.html
+    md_path: references/fonti/dlgs-81-2008-233-243.md
+    excerpt_path: references/estratti/rischio-cancerogeni-checklist.md
+    notes: |
+      Codice redazionale 008G0104, idGruppo 42 (artt. 233-234), 43 (artt. 235-239), 44 (artt. 242-243) -
+      Titolo IX, Capo II (Protezione da agenti cancerogeni, mutageni o da sostanze tossiche per la
+      riproduzione). Pagina indice Normattiva pinnata a !vig=2026-07-17 (hash stabile, doppio download:
+      18fbc542...; e' lo stesso indice usato dalle altre skill D.Lgs. 81/2008). Articoli 233 (v2), 234
+      (v3), 235 (v3), 236 (v3), 237 (v2), 238 (v1), 239 (v2), 242 (v4), 243 (v3) caricati via AJAX
+      (caricaArticolo, header X-Requested-With, formato AKN) e trascritti verbatim in
+      references/fonti/dlgs-81-2008-233-243.md, testo in vigore dal 11-10-2024 (art. 238 dal 15-5-2008):
+      campo di applicazione, salvo il Capo III amianto e le radiazioni Euratom (233); definizioni di
+      agente cancerogeno e mutageno (categorie 1A/1B del regolamento CE 1272/2008 - CLP - e allegato
+      XLII), sostanza tossica per la riproduzione (priva di soglia / con valore soglia, allegato XLIII),
+      valore limite, valore limite biologico e sorveglianza sanitaria (234); sostituzione e riduzione con
+      la gerarchia sostituzione / sistema chiuso / riduzione al piu' basso valore tecnicamente possibile e
+      il rispetto del valore limite dell'allegato XLIII (235); valutazione del rischio riportata nel
+      documento dell'art. 17 e integrazione del DVR (art. 28 c. 2 / art. 29 c. 5) con attivita',
+      quantitativi, numero e grado di esposizione dei lavoratori, misure e indagini di sostituzione (236);
+      misure tecniche, organizzative e procedurali - quantitativi minimi, limitazione del numero di
+      esposti e aree segnalate con divieto di fumo, assenza di emissione / aspirazione localizzata (art.
+      18 c. 1 lett. q), misurazione (allegato XLI), pulizia, procedure di emergenza, conservazione/
+      trasporto/smaltimento in sicurezza (237); misure igieniche - servizi igienici, indumenti protettivi
+      separati, custodia dei DPI, divieti nelle zone di lavoro (238); informazione e formazione prima
+      dell'adibizione e con ripetizione almeno quinquennale, etichettatura CLP e obbligo di sorveglianza
+      per i valori limite biologici dell'allegato XLIII-bis (239); accertamenti sanitari e sorveglianza
+      sanitaria, allontanamento (art. 42), ruolo del medico competente e prosecuzione dopo la cessazione
+      dell'esposizione (242); registro di esposizione tenuto tramite il medico competente con accesso di
+      RSPP e RLS, cartelle sanitarie e di rischio (art. 25), invio all'INAIL a cessazione del rapporto /
+      dell'attivita', conservazione fino a 40 anni per cancerogeni/mutageni e almeno 5 anni per le
+      sostanze tossiche per la riproduzione, comunicazione all'organo di vigilanza (243). Il testo tra
+      doppi tondi (( )) segnala le modifiche successive, in particolare il D.Lgs. 4 settembre 2024, n. 135
+      che ha esteso il Capo II alle sostanze tossiche per la riproduzione.
+      LIMITE DI RESA: la skill inquadra obblighi, contenuti, gerarchia delle misure e adempimenti; NON
+      redige il DVR ne' la valutazione del rischio, NON esegue misurazioni ne' campionamenti, NON applica
+      i valori limite di esposizione, NON riproduce gli Allegati XLI/XLII/XLIII/XLIII-bis ne' i
+      regolamenti CLP/REACH, e NON sostituisce il datore di lavoro, l'RSPP ne' il medico competente.

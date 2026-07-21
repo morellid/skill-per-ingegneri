@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 14 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 23 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -22,23 +22,32 @@
         "./ambienti-confinati-dpr177",
         "./atex-luoghi-lavoro-dlgs81",
         "./coordinatori-sicurezza-cantieri-dlgs81",
+        "./dpi-protezione-individuale-dlgs81",
         "./duvri-interferenze-dlgs81",
         "./dvr-generico",
         "./mog-231-sicurezza-lavoro",
+        "./movimentazione-manuale-carichi-dlgs81",
         "./obblighi-datore-preposto-formazione-dlgs81",
         "./piano-emergenza-antincendio-dm2021",
         "./piano-lavoro-amianto",
+        "./ponteggi-fissi-pimus-dlgs81",
         "./pos-allegato-xv-checker",
         "./prevenzione-incendi-attivita-procedimenti-dpr151",
+        "./segnaletica-salute-sicurezza-dlgs81",
+        "./sicurezza-scavi-fondazioni-dlgs81",
         "./sorveglianza-sanitaria-medico-competente-dlgs81",
+        "./valutazione-rischio-biologico-dlgs81",
+        "./valutazione-rischio-cancerogeni-mutageni-dlgs81",
+        "./valutazione-rischio-chimico-dlgs81",
         "./valutazione-rischio-rumore-dlgs81",
-        "./valutazione-rischio-vibrazioni-dlgs81"
+        "./valutazione-rischio-vibrazioni-dlgs81",
+        "./videoterminali-vdt-dlgs81"
       ]
     },
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 10 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 30 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -47,22 +56,42 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "strutture-geotecnica",
       "skills": [
+        "./azioni-esplosione-eccezionali-ntc",
+        "./azioni-temperatura-ntc",
+        "./azioni-traffico-ponti-stradali-ntc",
+        "./azioni-urto-eccezionali-ntc",
         "./capacita-portante-fondazione-ntc",
         "./carichi-atmosferici-ntc",
+        "./carichi-permanenti-sovraccarichi-ntc",
         "./cedimenti-edometrici-ntc",
         "./combinazioni-carico-ntc",
+        "./controlli-accettazione-cls-acciaio-ntc",
+        "./costruzioni-acciaio-ntc",
+        "./costruzioni-calcestruzzo-ntc",
+        "./costruzioni-composte-acciaio-cls-ntc",
         "./costruzioni-esistenti-ntc-cap8",
+        "./costruzioni-legno-ntc",
+        "./costruzioni-muratura-ntc",
+        "./denuncia-autorizzazione-sismica-dpr380",
+        "./denuncia-collaudo-statico-ca-dpr380",
+        "./fondazioni-pali-ntc",
+        "./opere-materiali-sciolti-scavi-ntc",
+        "./opere-sostegno-ntc",
+        "./opere-sotterraneo-gallerie-ntc",
         "./periodo-proprio-t1-ntc",
         "./predimensionamento-flessione-ca-ntc",
         "./relazione-geologica-geotecnica-ntc",
+        "./resistenza-fuoco-strutture-ntc",
         "./sismabonus-classificazione-rischio-pam",
-        "./spettro-risposta-ntc"
+        "./spettro-risposta-ntc",
+        "./stabilita-pendii-naturali-ntc",
+        "./tiranti-ancoraggio-ntc"
       ]
     },
     {
       "name": "edilizia-urbanistica-catasto",
       "source": "./skills",
-      "description": "Edilizia, urbanistica & catasto - 14 skill verticali su normative italiane.",
+      "description": "Edilizia, urbanistica & catasto - 17 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -71,6 +100,8 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "edilizia-urbanistica-catasto",
       "skills": [
+        "./accertamento-conformita-sanatoria-dpr380",
+        "./autorizzazione-paesaggistica-ordinaria-dlgs42",
         "./autorizzazione-paesaggistica-semplificata-dpr31",
         "./barriere-architettoniche-edifici-privati-dm236",
         "./catasto-pregeo-docfa-atti-telematici",
@@ -78,6 +109,7 @@
         "./definizioni-interventi-edilizi-dpr380",
         "./denuncia-opere-strutturali-l1086",
         "./distanze-legali-costruzioni-cc",
+        "./edilizia-libera-cila-scia-dpr380",
         "./fattibilita-idraulica-toscana-lr41",
         "./modulistica-edilizia-unificata",
         "./permesso-costruire-dpr380",
@@ -90,7 +122,7 @@
     {
       "name": "appalti-opere-pubbliche",
       "source": "./skills",
-      "description": "Appalti & opere pubbliche - 10 skill verticali su normative italiane.",
+      "description": "Appalti & opere pubbliche - 15 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -100,21 +132,26 @@
       "category": "appalti-opere-pubbliche",
       "skills": [
         "./bandi-tipo-anac-checker",
+        "./collaudo-verifica-conformita-dlgs36",
+        "./direzione-lavori-esecuzione-dlgs36",
         "./dnsh-pnrr-checker",
         "./espropriazione-pubblica-utilita-dpr327",
         "./garanzie-appalti-pubblici-dlgs36",
         "./modifiche-varianti-contratti-pubblici-dlgs36",
         "./oepv-valutatore-offerte-tecniche",
+        "./offerte-anomale-congruita-dlgs36",
         "./pfte-allegato-i7-checker",
         "./relazione-cam-dm-24-11-2025",
+        "./rup-responsabile-unico-progetto-dlgs36",
         "./specifiche-tecniche-ict-appalti-dlgs36",
-        "./subappalto-contratti-pubblici-dlgs36"
+        "./subappalto-contratti-pubblici-dlgs36",
+        "./verifica-progettazione-dlgs36"
       ]
     },
     {
       "name": "energia-incentivi",
       "source": "./skills",
-      "description": "Energia & incentivi - 7 skill verticali su normative italiane.",
+      "description": "Energia & incentivi - 8 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -128,6 +165,7 @@
         "./contabilizzazione-calore-dlgs102",
         "./diagnosi-energetica-dlgs102",
         "./esercizio-controllo-impianti-termici-dpr74",
+        "./relazione-tecnica-requisiti-minimi-dlgs192",
         "./transizione-5-0-asseverazione",
         "./trasmittanza-termica-opache-dm2015"
       ]
@@ -135,7 +173,7 @@
     {
       "name": "ambiente-territorio-mobilita",
       "source": "./skills",
-      "description": "Ambiente, territorio & mobilita' - 19 skill verticali su normative italiane.",
+      "description": "Ambiente, territorio & mobilita' - 24 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -144,10 +182,14 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "ambiente-territorio-mobilita",
       "skills": [
+        "./accessi-passi-carrabili-cds",
         "./aua-dpr59-dossier",
         "./autorizzazione-integrata-ambientale-dlgs152",
+        "./autorizzazione-scarico-acque-reflue-dlgs152",
         "./bonifica-siti-contaminati-dlgs152",
+        "./cantieri-stradali-occupazione-cds",
         "./cbam-declarant-trimestrale",
+        "./classificazione-rifiuti-dlgs152",
         "./consulente-adr-dlgs40",
         "./deposito-classificazione-rifiuti-dlgs152",
         "./mappatura-acustica-strategica-dlgs194",
@@ -156,6 +198,7 @@
         "./pums-validator-dm397",
         "./rsia-audit-stradale-dlgs35",
         "./scarichi-emissioni-dlgs152",
+        "./sottoprodotti-end-of-waste-dlgs152",
         "./terre-rocce-scavo-dpr120",
         "./trasporti-eccezionali-cds-art10",
         "./trasporto-rifiuti-fir-dlgs152",
@@ -168,7 +211,7 @@
     {
       "name": "impianti-macchine-prodotti",
       "source": "./skills",
-      "description": "Impianti, macchine & prodotti - 11 skill verticali su normative italiane.",
+      "description": "Impianti, macchine & prodotti - 13 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -179,9 +222,11 @@
       "skills": [
         "./attrezzature-pressione-esercizio-dm329",
         "./dm37-2008-dichiarazione-conformita",
+        "./dop-marcatura-ce-prodotti-cpr",
         "./fascicolo-tecnico-dispositivi-medici-mdr",
         "./fascicolo-tecnico-macchine-reg-1230",
         "./istruzioni-uso-macchine-reg-1230",
+        "./marcatura-ce-dpi-reg-425",
         "./marcatura-ce-elettrici-lvd-emc-red",
         "./ped-classificazione-conformita",
         "./scheda-dati-sicurezza-sds-reg878",
@@ -228,11 +273,11 @@
       "skills": [
         "./accertamento-tecnico-preventivo-cpc",
         "./compensi-ctu-dpr115",
+        "./comunione-ordinaria-cc",
         "./condominio-parti-comuni-assemblea-cc",
-        "./mediazione-civile-conciliazione-dlgs28",
-        "./negoziazione-assistita-dl132",
         "./relazione-peritale-ctu-cpc",
-        "./responsabilita-appaltatore-rovina-cc"
+        "./responsabilita-appaltatore-rovina-cc",
+        "./servitu-coattive-prediali-cc"
       ]
     }
   ]

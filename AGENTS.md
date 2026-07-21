@@ -136,6 +136,22 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 
 ## Quando crei una nuova skill
 
+0. **Test di pertinenza ingegneristica (STOP rule, prima di ogni altra cosa)**. Questo repo e'
+   *skill **per ingegneri***: ogni skill deve servire un **compito che un ingegnere/geometra/tecnico
+   svolge davvero** (progettazione, calcolo, verifica, direzione lavori, collaudo, perizia/CTU,
+   adempimenti tecnico-amministrativi, sicurezza, ambiente, appalti dal lato tecnico, ecc.). Prima di
+   scrivere, dichiara **quale task tecnico** la skill supporta e **chi** e' l'utente-ingegnere.
+   - Se il tema e' una **norma giuridica** (Codice civile, procedura, ADR, ecc.), la skill e' ammessa
+     **solo** se e' inquadrata attorno al **compito del tecnico** (es. area `forense` = *CTU &
+     ingegneria forense*: comoda divisibilita' e progetto di divisione, localizzazione di un accesso/
+     servitu', accertamento tecnico, stima, contratto d'appalto dal lato tecnico). Front-load il ruolo
+     dell'ingegnere/CTU in `description`, `summary`, "Quando usare" e `Target`.
+   - **Rifiuta** (non creare la skill) se il compito e' sostanzialmente **da avvocato** e il ruolo
+     tecnico e' marginale o assente: analisi puramente giuridica, procedibilita'/procedimento di ADR
+     guidati da avvocati (mediazione, negoziazione assistita), qualificazione di istituti (es.
+     usucapione) senza un accertamento/elaborato tecnico a valle. In questi casi scegli un altro tema.
+   - Lezione appresa (luglio 2026): skill come *usucapione* (ritirata) e *mediazione/negoziazione
+     assistita* (rimosse) NON corrispondono a un compito dell'ingegnere. Non ripetere l'errore.
 1. Verifica idoneita' del task secondo `methodology/criteri-selezione.md`.
 2. **Mapping fonti FIRST**. Identifica la lista esatta delle fonti ufficiali (decreti, regolamenti, circolari, linee guida pubbliche) necessarie alla skill. Verifica che siano scaricabili dal tuo ambiente.
 3. **Step 1 - SCARICA le fonti**. Predisponi `sources.yaml` con URL, `accessed`, `binary_path` (in `not_in_repo/`), licenza. Esegui `./scripts/fetch-sources.sh <nome-skill>`. Se anche **una sola** fonte non e' scaricabile, **fermati**: applica il protocollo di rifiuto della Regola zero.
@@ -215,6 +231,7 @@ Trailer `Co-authored-by:` per gli AI agent che hanno contribuito.
 
 ## Cosa NON fare
 
+- **Mai** creare una skill che non serve un **compito dell'ingegnere/geometra/tecnico** (vedi "Quando crei una nuova skill", Test di pertinenza ingegneristica). Niente skill "da avvocato": analisi puramente giuridica, ADR guidati da avvocati (mediazione, negoziazione assistita), qualificazione di istituti senza accertamento/elaborato tecnico a valle. Una norma giuridica e' ammessa solo se inquadrata attorno al compito tecnico (es. `forense` = CTU / ingegneria forense).
 - **Mai e poi mai** creare una skill senza fonti ufficiali scaricate, hashate e referenziate. La skill che non rispetta la Regola zero non esiste come skill di questo repo.
 - **Mai e poi mai** committare PR con `sha256: REPLACE_WHEN_DOWNLOADED` o placeholder equivalenti. Il `sources.yaml` con placeholder e' uno stato intermedio durante lo scaffolding, non uno stato di rilascio.
 - **Mai e poi mai** scrivere estratti normativi attingendo dai training data dell'agent. Solo dal file scaricato e verificato via SHA256.
