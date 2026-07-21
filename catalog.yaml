@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 32
+  count: 33
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -2190,6 +2190,25 @@ skills:
   - ntc-2018
   - sismica
   - spettro
+- id: spostamenti-interpiano-sld-ntc
+  area: strutture-geotecnica
+  title: Spostamenti di interpiano allo SLD (NTC 2018 par. 7.3.6.1)
+  summary: 'Inquadra la verifica di deformabilita'' allo SLD (NTC 2018 par. 7.3.6.1): limiti di spostamento di interpiano
+    q*dr/h per tipo di tamponatura/struttura (0,0050/0,0075/0,0100/0,0020/0,0030/0,0025 h), SLD per CU I-II e SLO (2/3) per
+    CU III-IV, dr su modello senza tamponature.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.3.6.1: q*dr <= 0,0050 h (fragili), 0,0075 h (duttili), 0,0100 h (b), 0,0020
+    h (mur. ordinaria), 0,0030 h (armata), < 0,0025 h (confinata); dr senza tampon.'
+  - 'NTC 2018 - par. 7.3.6 (Tab. 7.3.III): verifica di rigidezza allo SLD per CU I-II, allo SLO per CU III-IV (limiti ai 2/3);
+    coesistenza -> limite piu'' restrittivo; dr > 0,005 h -> verifiche estese'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - spostamenti-di-interpiano
+  - stato-limite-di-danno
+  - progettazione-sismica
+  - ntc-2018
+  - deformabilita
 - id: stabilita-pendii-naturali-ntc
   area: strutture-geotecnica
   title: Stabilità dei pendii naturali (NTC 2018 par. 6.3)
