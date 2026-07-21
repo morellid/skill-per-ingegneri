@@ -1,0 +1,48 @@
+schema_version: 1
+skill: azioni-esplosione-eccezionali-ntc
+last_verified: 2026-07-20
+
+# Fonte normativa per l'inquadramento delle azioni eccezionali da esplosione ai
+# sensi delle NTC 2018 (DM 17/01/2018), par. 3.6.2. La skill inquadra
+# classificazione, modellazione (pressioni statiche equivalenti) e criteri; non
+# calcola le sollecitazioni ne' dimensiona/verifica gli elementi.
+
+sources:
+  - id: ntc2018-par-3-6-2
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 3.6.2 Esplosioni"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-20
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-3-6-2.md
+    excerpt_path: references/estratti/azioni-esplosione-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-20 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo).
+      Par. 3.6.2 estratto con `pdftotext -layout` (pagina GU 65) e trascritto
+      verbatim in references/fonti/ntc2018-par-3-6-2.md. Gli OPERATORI "+" delle
+      formule [3.6.5a]/[3.6.5b] e i segni della [3.6.6] sono stati VERIFICATI
+      sull'immagine del PDF (pdftoppm della pagina), perche' pdftotext li rende
+      come spazi. Contenuti rilevanti:
+      - par. 3.6.2.1 generalita' (miscele esplosive di polveri/gas in aria o
+        materiali esplosivi; escluse le esplosioni esterne alla costruzione).
+      - par. 3.6.2.2 classificazione (Tab. 3.6.I): categoria 1 effetti
+        trascurabili, 2 localizzati, 3 generalizzati.
+      - par. 3.6.2.3 modellazione: onde di pressione ricondotte a pressioni
+        statiche equivalenti. Cat. 1: nessuna verifica. Cat. 2 (con pannelli di
+        sfogo): pressione statica equivalente nominale pd = valore maggiore fra
+        pd = 3 + pv [3.6.5a] e pd = 3 + pv/2 + 0,04/(Av/V)^2 [3.6.5b], in kN/m^2
+        (pv pressione di cedimento delle aperture in kN/m^2, Av area aperture in
+        m^2, V volume in m^3); vincolo 0,05 m^-1 <= Av/V <= 0,15 m^-1 [3.6.6];
+        valide per volume <= 1000 m^3; pressione simultanea su tutte le pareti;
+        elementi chiave e connessioni pd = 20 kN/m^2 da ogni direzione. Cat. 3:
+        studi piu' approfonditi.
+      - par. 3.6.2.4 criteri di progettazione: danneggiamenti localizzati
+        accettabili; misure (superfici collassabili, giunti strutturali,
+        prevenzione di crolli significativi).
+      Restano fuori scope: il calcolo delle sollecitazioni e le verifiche, i
+      modelli teorici delle onde di pressione, gli studi di Categoria 3, le
+      esplosioni esterne, l'incendio (par. 3.6.1) e gli urti (par. 3.6.3).

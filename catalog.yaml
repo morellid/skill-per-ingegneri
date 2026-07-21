@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 26
+  count: 27
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -281,6 +281,24 @@ skills:
   - autorizzazione-allo-scarico
   - dlgs-152-2006
   - tutela-acque
+- id: azioni-esplosione-eccezionali-ntc
+  area: strutture-geotecnica
+  title: Azioni eccezionali da esplosione (NTC 2018 par. 3.6.2)
+  summary: 'Inquadra le azioni eccezionali da esplosione (NTC 2018 par. 3.6.2): classificazione (Tab. 3.6.I), Cat. 2 con pannelli
+    di sfogo pd=max(3+pv; 3+pv/2+0,04/(Av/V)^2), vincolo 0,05<=Av/V<=0,15, elementi chiave 20 kN/m^2 e criteri di progettazione.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.6.2: Cat. 2 pd=max(3+pv [3.6.5a]; 3+pv/2+0,04/(Av/V)^2 [3.6.5b]), vincolo 0,05<=Av/V<=0,15
+    [3.6.6], V<=1000 m3, elementi chiave 20 kN/m2, classi Tab. 3.6.I'
+  - 'NTC 2018 - par. 3.6.2.4 criteri: danni localizzati accettabili; superfici collassabili, giunti strutturali, prevenzione
+    crolli; rinvio par. 2.2.5 (robustezza) e 2.5.3 (comb. eccezionale)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - azioni-da-esplosione
+  - azioni-eccezionali
+  - ntc-2018
+  - robustezza
+  - pannelli-di-sfogo
 - id: azioni-temperatura-ntc
   area: strutture-geotecnica
   title: Azioni della temperatura (NTC 2018 par. 3.5)
