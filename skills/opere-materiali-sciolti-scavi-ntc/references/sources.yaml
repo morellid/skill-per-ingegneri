@@ -1,0 +1,65 @@
+schema_version: 1
+skill: opere-materiali-sciolti-scavi-ntc
+last_verified: 2026-07-21
+
+# Fonte normativa per l'inquadramento della progettazione e verifica delle opere
+# di materiali sciolti (rilevati, argini, terrapieni, colmate) e dei fronti di
+# scavo ai sensi delle NTC 2018 (DM 17/01/2018), par. 6.8. La skill inquadra
+# criteri, verifiche SLU/SLE e aspetti costruttivi; non calcola le verifiche ne'
+# dimensiona il manufatto o il fronte di scavo.
+
+sources:
+  - id: ntc2018-par-6-8
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 6.8 Opere di materiali sciolti e fronti di scavo"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-21
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-8.md
+    excerpt_path: references/estratti/materiali-sciolti-scavi-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-21 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 6.8 estratto con `pdftotext -layout` (pagine PDF 205-207, pp. GU
+      201-202) e trascritto verbatim in references/fonti/ntc2018-par-6-8.md.
+      Tab. 6.8.I (gamma_R = 1,1 per R2) e la soglia dei 2 m per i fronti di scavo
+      verticali verificate anche sull'immagine renderizzata della pagina PDF 206
+      (pdftoppm -r 150 -png). Contenuti rilevanti:
+      - par. 6.8 ambito: manufatti di materiali sciolti (rilevati, argini di
+        difesa per fiumi/canali/litorali, rinfianchi, rinterri, terrapieni,
+        colmate, scavi per piazzali/trincee) e opere con funzioni di
+        drenaggio/filtro/transizione/fondazione/tenuta/protezione; esclusi gli
+        sbarramenti di ritenuta idraulica (normativa specifica).
+      - par. 6.8.1 criteri generali: requisiti prestazionali, terreni di
+        fondazione, scelta e qualificazione dei materiali (naturali o di
+        provenienza diversa), posa in opera (spessore max strati, compattazione,
+        deformabilita', limiti di accettabilita').
+      - par. 6.8.2 verifiche SLU: condizione [6.2.1] con valori di progetto;
+        Combinazione 2 (A2+M2+R2) dell'Approccio 1, coefficienti Tab. 6.2.I,
+        6.2.II e 6.8.I (gamma_R = 1,1); stabilita' globale manufatto-terreno
+        nelle diverse fasi costruttive/fine costruzione/esercizio; verifiche
+        locali sugli elementi di rinforzo; manufatti su pendii -> influenza
+        sulla stabilita' del pendio; opere di ritenuta idraulica -> stabilita'
+        dei paramenti, sifonamento ed erosione (par. 6.2.4.2).
+      - par. 6.8.3 verifiche SLE: spostamenti del manufatto e del terreno
+        circostante, compatibilita' con funzionalita' e manufatti adiacenti.
+      - par. 6.8.4 aspetti costruttivi: posa in strati; geosintetici e
+        componenti artificiali certificati per norme europee armonizzate.
+      - par. 6.8.5 controlli e monitoraggio: prove di controllo durante la
+        costruzione; monitoraggio di spostamenti e pressioni interstiziali.
+      - par. 6.8.6 fronti di scavo: 6.8.6.1 indagini geotecniche (profondita',
+        ampiezza, destinazione, carattere permanente/provvisorio, oltre al par.
+        6.2.2); 6.8.6.2 profilo di scavo con par. 6.2.4, verifica analoga ai
+        materiali sciolti, influenza su pendio/pressioni interstiziali/
+        costruzioni preesistenti; scavi in trincea a fronte verticale > 2 m con
+        permanenza di personale, o in prossimita' di manufatti -> struttura di
+        sostegno delle pareti (verifiche SLU e SLE); azioni di terreno, acqua e
+        sovraccarichi transitori nelle condizioni piu' sfavorevoli.
+      Restano fuori scope: il calcolo delle verifiche e il dimensionamento del
+      manufatto/fronte, la definizione del modello geotecnico, gli sbarramenti
+      di ritenuta idraulica (dighe in terra), la sicurezza dei lavoratori negli
+      scavi (D.Lgs 81/2008 Titolo IV) e la progettazione sismica.
