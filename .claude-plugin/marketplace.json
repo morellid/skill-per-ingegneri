@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 30 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 31 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -65,6 +65,7 @@
         "./carichi-permanenti-sovraccarichi-ntc",
         "./cedimenti-edometrici-ntc",
         "./combinazioni-carico-ntc",
+        "./consolidamento-geotecnico-opere-esistenti-ntc",
         "./controlli-accettazione-cls-acciaio-ntc",
         "./costruzioni-acciaio-ntc",
         "./costruzioni-calcestruzzo-ntc",

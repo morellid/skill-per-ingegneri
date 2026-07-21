@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 30
+  count: 31
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -646,6 +646,25 @@ skills:
   - assemblea-condominiale
   - innovazioni
   - forense
+- id: consolidamento-geotecnico-opere-esistenti-ntc
+  area: strutture-geotecnica
+  title: Consolidamento geotecnico di opere esistenti (NTC 2018 par. 6.10)
+  summary: 'Inquadra il consolidamento geotecnico di opere esistenti (sottofondazioni, rinforzo fondazioni) - NTC 2018 par.
+    6.10: cause, progetto unitario geotecnico-strutturale, sei tipi di consolidamento, cautele (iniezioni), controllo obbligatorio
+    con ridistribuzione sollecitazioni.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.10: consolidamento geotecnico di opere esistenti; sei tipi (6.10.3), progetto
+    unitario con lo strutturale (6.10.1), cautele per iniezioni e congelamento'
+  - 'NTC 2018 - par. 6.10.2/6.10.4: indagini su manufatto e terreno, grandezze cinematiche e pressioni interstiziali; controllo
+    obbligatorio se ridistribuzione delle sollecitazioni terreno-manufatto'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - consolidamento-geotecnico
+  - opere-esistenti
+  - sottofondazioni
+  - geotecnica
+  - ntc-2018
 - id: consulente-adr-dlgs40
   area: ambiente-territorio-mobilita
   title: Consulente sicurezza trasporti merci pericolose (DGSA) - D.Lgs. 40/2000
