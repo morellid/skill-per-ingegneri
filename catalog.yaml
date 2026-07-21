@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 29
+  count: 30
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1575,6 +1575,25 @@ skills:
   - ntc-2018
   - stati-limite-geotecnici
   - coefficienti-parziali
+- id: opere-sotterraneo-gallerie-ntc
+  area: strutture-geotecnica
+  title: 'Opere in sotterraneo: gallerie, caverne, pozzi (NTC 2018 par. 6.7)'
+  summary: 'Inquadra progetto e verifica delle opere in sotterraneo (gallerie, caverne, pozzi) - NTC 2018 par. 6.7: caratterizzazione
+    geologica/geotecnica, criteri di progetto, verifiche SLU GEO/STR/UPL/HYD in Approccio 1 (Comb. 1 e 2, gamma_R = 1,0 per
+    R1/R2), metodo osservazionale.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.7: verifiche SLU GEO/STR/UPL/HYD in Approccio 1 con Comb. 1 (A1+M1+R1) e Comb.
+    2 (A2+M2+R2), gamma_R dei gruppi R1 e R2 pari all''unita'' (Tab. 6.2.I/6.2.II)'
+  - 'NTC 2018 - par. 6.7.1-6.7.4/6.7.6: modello geologico/geotecnico, criteri di progetto, rivestimenti, monitoraggio; metodo
+    osservazionale (convergenza radiale, deformazione fronte); rinvio par. 6.3/6.8'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - opere-in-sotterraneo
+  - gallerie
+  - geotecnica
+  - ntc-2018
+  - metodo-osservazionale
 - id: ped-classificazione-conformita
   area: impianti-macchine-prodotti
   title: PED - Classificazione e valutazione conformita'
