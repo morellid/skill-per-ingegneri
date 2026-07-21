@@ -1,0 +1,61 @@
+schema_version: 1
+skill: consolidamento-geotecnico-opere-esistenti-ntc
+last_verified: 2026-07-21
+
+# Fonte normativa per l'inquadramento della progettazione degli interventi di
+# consolidamento geotecnico di opere esistenti ai sensi delle NTC 2018 (DM
+# 17/01/2018), par. 6.10. La skill inquadra criteri, indagini, tipi di
+# consolidamento e controlli/monitoraggio; non calcola ne' dimensiona gli
+# interventi.
+
+sources:
+  - id: ntc2018-par-6-10
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 6.10 Consolidamento geotecnico di opere esistenti"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-21
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-6-10.md
+    excerpt_path: references/estratti/consolidamento-geotecnico-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-21 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 6.10 estratto con `pdftotext -layout` (pagine PDF 207-208, pp. GU
+      203-204) e trascritto verbatim in references/fonti/ntc2018-par-6-10.md.
+      Contenuti rilevanti:
+      - par. 6.10 ambito: provvedimenti sul sistema manufatto-terreno per
+        eliminare o mitigare difetti di comportamento di un'opera esistente.
+      - par. 6.10.1 criteri generali: individuazione delle cause del
+        comportamento anomalo (sovrastruttura, fondazioni, terreno; anomali
+        spostamenti del terreno da modifiche del manufatto, variazioni delle
+        pressioni interstiziali, manufatti adiacenti, modifiche topografiche,
+        movimenti di massa, deterioramento dei materiali); progetto sviluppato
+        UNITARIAMENTE con quello strutturale; modalita' esecutive e opere
+        provvisionali parte integrante del progetto; metodo osservazionale
+        ammesso se la complessita' del sottosuolo e' documentata.
+      - par. 6.10.2 indagini geotecniche: basate su documentazione del manufatto
+        e del terreno; cautele per manufatti sensibili agli spostamenti; misura
+        di grandezze cinematiche dei movimenti in atto, pressioni interstiziali
+        e spostamenti nel volume significativo, protratte nel tempo per fenomeni
+        stagionali.
+      - par. 6.10.3 tipi di consolidamento (sei metodi): miglioramento/rinforzo
+        dei terreni di fondazione; miglioramento/rinforzo dei materiali della
+        fondazione; ampliamento della base della fondazione (se superficiale);
+        trasferimento del carico a strati piu' profondi; introduzione di
+        sostegni laterali; rettifica degli spostamenti del piano di posa.
+        Cautele per interventi con variazioni di volume (congelamento,
+        iniezioni, gettiniezione) e modifiche delle pressioni interstiziali.
+      - par. 6.10.4 controlli e monitoraggio: controllo dell'efficacia
+        OBBLIGATORIO quando l'intervento comporta una ridistribuzione delle
+        sollecitazioni al contatto terreno-manufatto; monitoraggio previsto in
+        progetto (grandezze, strumenti, cadenza) nel caso di metodo
+        osservazionale; esiti come elemento di collaudo dei singoli interventi.
+      Restano fuori scope: il calcolo e il dimensionamento degli interventi, la
+      definizione del modello geotecnico, il progetto del risanamento
+      strutturale, il miglioramento/rinforzo dei terreni in generale (par. 6.9),
+      la classificazione sismica dell'esistente (Cap. 8) e la progettazione
+      sismica.
