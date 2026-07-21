@@ -29,9 +29,9 @@ Per installare e usare le skill (utenti finali) vedi [`README.md`](README.md).
 
 Nessuna eccezione. Nessuna deroga "alpha tollerabile". Nessun "lo sistemiamo dopo".
 
-## Catalogo: README di root sempre allineato
+## Catalogo: `catalog.yaml` sempre allineato al frontmatter
 
-Il `README.md` di root contiene la tabella "Skill disponibili" che e' la **fonte di verita' del catalogo pubblicato**. Ogni volta che aggiungi, rinomini, rimuovi o deprechi una skill (o modifichi descrizione/scope/riferimenti normativi in modo visibile all'utente) **devi aggiornare quella tabella nello stesso commit/PR**. README e contenuto effettivo di `skills/` non devono mai divergere. Dettagli in [`AGENTS.md`](AGENTS.md) - sezioni "Quando crei una nuova skill" (step 10), "Quando modifichi una skill esistente", "Quando rimuovi o deprechi una skill", "Cosa NON fare".
+Il catalogo pubblicato (tabella filtrabile su [www.ingegneri.ai](https://www.ingegneri.ai/)) e' generato da [`catalog.yaml`](catalog.yaml), a sua volta **rigenerato dai metadati (`title`, `summary`, `area`, `normative_refs`) del frontmatter di ogni `skills/<nome>/SKILL.md`** tramite `scripts/build_catalog.py`. `catalog.yaml` e' la **fonte di verita' dell'elenco pubblicato**: ogni volta che aggiungi, rinomini, rimuovi o deprechi una skill (o modifichi descrizione/scope/riferimenti normativi in modo visibile all'utente) **devi rigenerarlo con `uv run scripts/build_catalog.py` nello stesso commit/PR**. Catalogo e contenuto effettivo di `skills/` non devono mai divergere (la CI `validate-catalog.yml` lo verifica). Dettagli in [`AGENTS.md`](AGENTS.md) - sezioni "Quando crei una nuova skill" (step 10), "Quando modifichi una skill esistente", "Quando rimuovi o deprechi una skill", "Cosa NON fare".
 
 ## Anti-pattern: la CI verde non e' source-grounding
 
