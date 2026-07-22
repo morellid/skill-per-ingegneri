@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 38
+  count: 39
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -493,6 +493,27 @@ skills:
   - catasto
   - pregeo
   - docfa
+- id: categorie-sottosuolo-topografiche-ntc
+  area: strutture-geotecnica
+  title: Categorie di sottosuolo e condizioni topografiche (NTC 2018 par. 3.2.2)
+  summary: 'Inquadra la classificazione sismica del sito (NTC 2018 par. 3.2.2): categorie di sottosuolo A-E (Tab. 3.2.II)
+    via Vs,eq = H/somma(hi/Vs,i) [3.2.1] (substrato Vs>=800, regola dei 30 m) e categorie topografiche T1-T4 (Tab. 3.2.III)
+    per altezze > 30 m.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 3.2.2: categorie di sottosuolo A-E (Tab. 3.2.II) con approccio semplificato su
+    Vs,eq = H/somma(hi/Vs,i) [3.2.1]; substrato Vs>=800 m/s; regola dei 30 m (Vs,30)'
+  - 'NTC 2018 - par. 3.2.2: piani di riferimento del substrato (fondazioni superficiali/pali/opere di sostegno); sottosuoli
+    non classificabili -> analisi di risposta locale (par. 7.11.3)'
+  - 'NTC 2018 - par. 3.2.2 Tab. 3.2.III: categorie topografiche T1 (i<=15°), T2 (i>15°), T3 (15°<=i<=30°), T4 (i>30°), da
+    considerare se altezza > 30 m'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - categorie-sottosuolo
+  - categorie-topografiche
+  - vs30
+  - azione-sismica
+  - ntc-2018
 - id: cbam-declarant-trimestrale
   area: ambiente-territorio-mobilita
   title: CBAM Declarant Trimestrale
