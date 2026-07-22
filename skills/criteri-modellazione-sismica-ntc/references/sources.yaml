@@ -1,0 +1,52 @@
+schema_version: 1
+skill: criteri-modellazione-sismica-ntc
+last_verified: 2026-07-21
+
+# Fonte normativa per l'inquadramento dei criteri di modellazione della
+# struttura e dell'azione sismica ai fini della progettazione sismica secondo
+# le NTC 2018 (DM 17/01/2018), par. 7.2.6. La skill inquadra i criteri; non
+# costruisce il modello ne' esegue l'analisi.
+
+sources:
+  - id: ntc2018-par-7-2-6
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.2.6 Criteri di modellazione della struttura e dell'azione sismica"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-21
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-2-6.md
+    excerpt_path: references/estratti/modellazione-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-21 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 7.2.6 estratto con `pdftotext -layout` (pagine PDF 218-219, pp. GU
+      214-215) e trascritto verbatim in references/fonti/ntc2018-par-7-2-6.md.
+      Contenuti rilevanti:
+      - modellazione della struttura: modello tridimensionale (attenzione a
+        forze d'inerzia verticali su travi di grande luce/sbalzi); leggi
+        costitutive elastiche per comportamento non dissipativo o dissipativo
+        con q; rigidezza fessurata: in assenza di analisi specifiche, la
+        rigidezza flessionale e a taglio di elementi in muratura, c.a. e
+        acciaio-cls puo' essere ridotta sino al 50% di quella dei corrispondenti
+        elementi non fessurati; orizzontamenti infinitamente rigidi nel piano se
+        in c.a., oppure latero-cemento con soletta c.a. >= 40 mm, o mista con
+        soletta c.a. >= 50 mm con connettori a taglio; elementi non strutturali
+        non collaboranti (tamponature, tramezzi) rappresentati solo in termini
+        di massa (rigidezza/resistenza solo se effetti negativi sulla sicurezza).
+      - modellazione dell'azione sismica: forze statiche equivalenti, spettri di
+        risposta o storie temporali; con risposta sismica locale / interazione
+        terreno-struttura lo spettro (5% di smorzamento) deve essere >= 70% di
+        quello per sottosuolo A e la risultante di taglio/normale alla fondazione
+        >= 70% di quella a base fissa (sottosuolo A); divieto di storie temporali
+        artificiali per RSL e ITS con legami isteretici (par. 3.2.3.6);
+        eccentricita' accidentale del centro di massa >= 0,05 volte la dimensione
+        media dell'edificio misurata perpendicolarmente alla direzione
+        dell'azione sismica, costante per entita' e direzione su tutti gli
+        orizzontamenti.
+      Restano fuori scope: la costruzione del modello e l'esecuzione delle
+      analisi (metodi al par. 7.3), la determinazione di q, la risposta sismica
+      locale (par. 3.2.3.6) e le fondazioni miste (par. 6.4.3).

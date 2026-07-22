@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 33
+  count: 34
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -878,6 +878,25 @@ skills:
   - cra
   - reg-ue-2024-2847
   - cyber
+- id: criteri-modellazione-sismica-ntc
+  area: strutture-geotecnica
+  title: Criteri di modellazione sismica della struttura (NTC 2018 par. 7.2.6)
+  summary: 'Inquadra i criteri di modellazione sismica (NTC 2018 par. 7.2.6): modello 3D, rigidezza fessurata sino al 50%,
+    orizzontamenti rigidi (soletta c.a. 40/50 mm), elementi non strutturali come massa, eccentricita'' accidentale >= 0,05
+    della dimensione media perpendicolare.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.2.6: modello 3D, rigidezza fessurata sino al 50%, orizzontamenti rigidi (c.a.,
+    soletta 40/50 mm), elementi non strutturali come massa'
+  - 'NTC 2018 - par. 7.2.6: azione sismica (forze/spettri/storie), risposta sismica locale e ITS >= 70% (5% smorzamento),
+    eccentricita'' accidentale >= 0,05 della dimensione media perpendicolare'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - modellazione-strutturale
+  - progettazione-sismica
+  - eccentricita-accidentale
+  - ntc-2018
+  - rigidezza-fessurata
 - id: definizioni-interventi-edilizi-dpr380
   area: edilizia-urbanistica-catasto
   title: Definizioni degli interventi edilizi - DPR 380/2001 art. 3
