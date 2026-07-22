@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 39
+  count: 40
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -2624,6 +2624,27 @@ skills:
   - dlgs-36-2023
   - contratti-pubblici
   - rup
+- id: verifiche-geotecniche-slu-ntc
+  area: strutture-geotecnica
+  title: 'Verifiche geotecniche SLU: approcci e coefficienti (NTC 2018 par. 6.2.4)'
+  summary: 'Inquadra il framework delle verifiche geotecniche agli SLU (NTC 2018 par. 6.2.4): SLU EQU/STR/GEO, approcci progettuali
+    1 e 2, default (A1+M1+R1)+(A2+M2+R2), coefficienti azioni Tab. 6.2.I e parametri M1/M2 Tab. 6.2.II (tan phi''/c'' 1,25,
+    cu 1,4).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 6.2.4.1: SLU geotecnici EQU (Einst<=Estb), STR/GEO (Ed<=Rd [6.2.1]); approcci
+    1 e 2; default Approccio 1 con (A1+M1+R1) e (A2+M2+R2), R1 unitari, R2>=1'
+  - 'NTC 2018 - par. 6.2.4.1.1 Tab. 6.2.I: coefficienti parziali azioni EQU/A1/A2 (G1 sfav 1,1/1,3/1,0; G2 sfav 1,5/1,5/1,3;
+    Q sfav 1,5/1,5/1,3)'
+  - 'NTC 2018 - par. 6.2.4.1.2 Tab. 6.2.II (M1/M2): tan phi'' 1,0/1,25; c'' 1,0/1,25; cu 1,0/1,4; peso 1,0/1,0; valore caratteristico
+    par. 6.2.2 (stima ragionata e cautelativa)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - verifiche-geotecniche
+  - approcci-progettuali
+  - coefficienti-parziali
+  - stati-limite-ultimi
+  - ntc-2018
 - id: verifiche-messa-a-terra-dpr462
   area: impianti-macchine-prodotti
   title: Verifiche impianti di messa a terra e luoghi pericolosi - DPR 462/2001

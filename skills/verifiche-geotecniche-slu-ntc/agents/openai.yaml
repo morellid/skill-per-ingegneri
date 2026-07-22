@@ -1,0 +1,12 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Verifiche geotecniche SLU: approcci e coefficienti (NTC 2018 par. 6.2.4)"
+short_description: Supporto documentale al progettista geotecnico o strutturista per l'inquadramento del framework semiprobabilistico delle verifiche geotecniche agli stati limite ultimi - approcci progettuali e coefficienti parziali - secondo le NTC 2018 (D.M. 17 gennaio 2018), paragrafo 6.2.4 (con il valore caratteristico del par. 6.2.2). Aiuta a impostare le verifiche SLU geotecniche: stati limite di perdita di equilibrio EQU (azione instabilizzante non maggiore della stabilizzante), di resistenza dell'elemento strutturale STR e del terreno GEO (effetto delle azioni di progetto non maggiore della resistenza di progetto, formula 6.2.1); i due approcci progettuali alternativi (Approccio 1 con due combinazioni, Approccio 2 con una), con il default per gli stati limite non trattati nei paragrafi 6.3-6.11 (Approccio 1 con le combinazioni A1+M1+R1 e A2+M2+R2, gruppo R1 sempre unitario e R2 maggiore o uguale all'unita'); i coefficienti parziali sulle azioni A1/A2 (Tab. 6.2.I) e sui parametri geotecnici M1/M2 (Tab. 6.2.II: tangente dell'angolo di resistenza al taglio e coesione efficace 1,0 in M1 e 1,25 in M2, resistenza non drenata 1,0 e 1,4, peso dell'unita' di volume 1,0); e la definizione di valore caratteristico come stima ragionata e cautelativa del parametro per ogni stato limite. NON esegue le verifiche, non riproduce i coefficienti di resistenza R specifici di ciascuna opera (par. 6.3-6.11), non tratta in dettaglio le SLE (par. 6.2.4.2) e non sostituisce il progettista. E' il framework generale applicato dalle skill d'opera (muri/paratie, fondazioni, pali, pendii, scavi, gallerie, tiranti).
+default_prompt: |
+  Devo impostare una verifica geotecnica agli stati limite ultimi secondo le NTC 2018 (par. 6.2.4): come
+  distinguo gli stati limite EQU, STR e GEO e quali condizioni si applicano (Einst <= Estb; Ed <= Rd)? Cosa
+  cambia tra Approccio 1 e Approccio 2, e quali combinazioni uso per uno stato limite non trattato specificamente
+  (A1+M1+R1 e A2+M2+R2)? Quali coefficienti parziali applico alle azioni (Tab. 6.2.I) e ai parametri del terreno
+  (Tab. 6.2.II: tan phi' e c' 1,25, cu 1,4 nel gruppo M2)? Cosa si intende per valore caratteristico? Cita
+  paragrafi e tabelle.
