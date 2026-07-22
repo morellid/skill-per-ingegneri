@@ -1,0 +1,57 @@
+schema_version: 1
+skill: relazione-calcolo-codici-ntc
+last_verified: 2026-07-22
+
+# Fonte normativa per l'inquadramento della redazione dei progetti strutturali
+# esecutivi e delle relazioni di calcolo, e in particolare delle analisi svolte
+# con l'ausilio di codici di calcolo automatico (affidabilita' dei codici,
+# attendibilita' e giudizio di accettabilita' dei risultati, valutazione
+# indipendente), secondo le NTC 2018 (DM 17/01/2018), Capitolo 10 (par. 10.1 e
+# 10.2). La skill inquadra elaborati e contenuti; non esegue l'analisi ne'
+# redige la relazione al posto del progettista.
+
+sources:
+  - id: ntc2018-par-10
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - Capitolo 10 (redazione dei progetti strutturali esecutivi e relazioni di calcolo; analisi con codici di calcolo)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-22
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-10.md
+    excerpt_path: references/estratti/relazione-calcolo-codici-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-22 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Capitolo 10 (par. 10.1, 10.2, 10.2.1, 10.2.2; p. GU 301-303, pagine PDF
+      305-307) estratto con `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-10.md. Il capitolo e' interamente descrittivo
+      (procedurale/documentale): non contiene formule ne' costanti numeriche, per
+      cui non e' stata necessaria la verifica su immagine. Contenuti rilevanti:
+      - par. 10.1 caratteristiche generali: elaborati del progetto strutturale
+        esecutivo (relazione di calcolo, relazione sui materiali, elaborati
+        grafici e particolari costruttivi, piano di manutenzione, relazione sui
+        risultati sperimentali); relazioni di calcolo redatte per consentire
+        interpretazione, verifica ed elaborazioni indipendenti; il progettista
+        resta responsabile dell'intera progettazione strutturale.
+      - par. 10.2 analisi con codici di calcolo: il progettista controlla
+        l'affidabilita' dei codici e l'attendibilita' dei risultati ed esamina
+        preliminarmente la documentazione del software (basi teoriche, algoritmi,
+        campi d'impiego, casi prova con file di input).
+      - par. 10.2.1 relazione di calcolo: leggibilita', interpretazione,
+        riproducibilita'; tipo di analisi (statica/dinamica, lineare/non
+        lineare), metodo, combinazioni/percorsi di carico; origine e
+        caratteristiche dei codici (titolo, autore, produttore, versione,
+        licenza); modalita' di presentazione dei risultati (elenco contenuti
+        minimi, disegni/schemi, tabulati in allegato); informazioni generali
+        sull'elaborazione; giudizio motivato di accettabilita' dei risultati
+        (confronto con calcoli semplici, equilibrio reazioni/carichi).
+      - par. 10.2.2 valutazione indipendente: per opere di particolare importanza,
+        ricalcolo dei calcoli piu' importanti da soggetto diverso con programmi
+        diversi (controllo incrociato).
+      Restano fuori scope: l'esecuzione dell'analisi e delle verifiche, la
+      redazione materiale della relazione e la valutazione di uno specifico
+      software.
