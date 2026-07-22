@@ -1,0 +1,11 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Categorie di sottosuolo e condizioni topografiche (NTC 2018 par. 3.2.2)"
+short_description: Supporto documentale al geologo, geotecnico o strutturista per l'inquadramento della classificazione sismica del sito - categorie di sottosuolo e condizioni topografiche - secondo le NTC 2018 (D.M. 17 gennaio 2018), paragrafo 3.2.2. Aiuta a classificare la categoria di sottosuolo con l'approccio semplificato basato sulla velocita' equivalente delle onde di taglio Vs,eq = H / somma(hi/Vs,i) (formula 3.2.1), con substrato definito da Vs almeno 800 m/s e, per substrato oltre 30 m, la Vs,30 (H = 30 m); le cinque categorie della Tab. 3.2.II (A ammassi rocciosi Vs > 800 m/s, B tra 360 e 800 m/s, C tra 180 e 360 m/s con substrato oltre 30 m, D tra 100 e 180 m/s con substrato oltre 30 m, E riconducibile a C o D con substrato non oltre 30 m); e a classificare la categoria topografica della Tab. 3.2.III (T1 superficie pianeggiante o pendii con inclinazione media non oltre 15 gradi, T2 pendii oltre 15 gradi, T3 rilievi con cresta stretta tra 15 e 30 gradi, T4 rilievi con cresta stretta oltre 30 gradi), da considerare per altezze superiori a 30 m. NON calcola lo spettro ne' i coefficienti di amplificazione SS/CC/ST (par. 3.2.3), non esegue analisi di risposta sismica locale (par. 7.11.3) e non sostituisce il geologo/geotecnico o il progettista. E' a monte della skill sullo spettro di risposta (par. 3.2).
+default_prompt: |
+  Devo classificare il sito ai fini dell'azione sismica secondo le NTC 2018 (par. 3.2.2): dato un profilo
+  stratigrafico con le velocita' delle onde di taglio Vs dei vari strati, come determino la velocita' equivalente
+  Vs,eq (= H / somma(hi/Vs,i)) e quale categoria di sottosuolo A-E attribuisco (Tab. 3.2.II)? Da dove misuro la
+  profondita' del substrato e quando si usa la Vs,30? E come classifico la categoria topografica T1-T4 (Tab.
+  3.2.III) in base all'inclinazione media del pendio e all'altezza del rilievo? Cita paragrafi, tabelle e formula.

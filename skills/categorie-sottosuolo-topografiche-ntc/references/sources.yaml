@@ -1,0 +1,49 @@
+schema_version: 1
+skill: categorie-sottosuolo-topografiche-ntc
+last_verified: 2026-07-22
+
+# Fonte normativa per l'inquadramento della classificazione sismica del sito -
+# categorie di sottosuolo A-E (approccio semplificato basato su Vs,eq) e
+# categorie topografiche T1-T4 - secondo le NTC 2018 (DM 17/01/2018), par.
+# 3.2.2. La skill inquadra i criteri di classificazione; non calcola lo spettro
+# ne' i coefficienti di amplificazione (par. 3.2.3), ne' esegue analisi di
+# risposta sismica locale (par. 7.11.3).
+
+sources:
+  - id: ntc2018-par-3-2-2
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 3.2.2 (categorie di sottosuolo e condizioni topografiche)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-22
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-3-2-2.md
+    excerpt_path: references/estratti/categorie-sottosuolo-topografiche-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-22 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 3.2.2 (p. GU 46-47, pagine PDF 50-51) estratto con `pdftotext -layout`
+      e trascritto verbatim in references/fonti/ntc2018-par-3-2-2.md. La formula
+      [3.2.1] e le Tab. 3.2.II/3.2.III sono state verificate sull'immagine
+      renderizzata delle pagine PDF 50-51 (pdftoppm -r 150 -png), perche'
+      pdftotext perde la frazione, la sommatoria e gli operatori <=, >.
+      Contenuti rilevanti:
+      - categorie di sottosuolo: approccio semplificato basato sulla velocita'
+        equivalente Vs,eq = H / somma(hi/Vs,i) [3.2.1]; substrato con Vs >= 800
+        m/s; per H > 30 m si usa Vs,30 (H = 30 m); piani di riferimento (fond.
+        superficiali: piano di imposta; pali: testa pali; opere di sostegno di
+        terreni naturali: testa opera; muri di terrapieni: piano di imposta
+        fondazione); Tab. 3.2.II: A (Vs > 800, copertura scadente <= 3 m), B
+        (360-800), C (180-360, substrato > 30 m), D (100-180, substrato > 30 m),
+        E (riconducibile a C/D, substrato <= 30 m); sottosuoli non classificabili
+        -> analisi di risposta locale.
+      - condizioni topografiche: Tab. 3.2.III: T1 (i <= 15°), T2 (i > 15°), T3
+        (rilievi cresta stretta, 15° <= i <= 30°), T4 (rilievi cresta stretta,
+        i > 30°); configurazioni bidimensionali; da considerare se altezza > 30 m.
+      Restano fuori scope: le analisi di risposta sismica locale (par. 7.11.3),
+      il calcolo dello spettro e dei coefficienti di amplificazione
+      stratigrafica SS/CC e topografica ST (par. 3.2.3.2), la caratterizzazione
+      geotecnica del volume significativo (par. 6.2.2).
