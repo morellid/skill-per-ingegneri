@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 35
+  count: 36
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1202,6 +1202,25 @@ skills:
   - cila
   - scia
   - edilizia-libera
+- id: elementi-non-strutturali-sismica-ntc
+  area: strutture-geotecnica
+  title: Elementi non strutturali e impianti in zona sismica (NTC 2018 par. 7.2.3-7.2.4)
+  summary: 'Inquadra la progettazione sismica di elementi secondari, elementi non strutturali e impianti (NTC 2018 par. 7.2.3-7.2.4):
+    forza Fa = Sa*Wa/qa [7.2.1], limite 15% per gli elementi secondari, incrementi 2 (pianta) e 1,4 (altezza), soglie impianti
+    30%/10% per lo studio specifico.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.2.3: elementi secondari (contributo <= 15% dei primari, SLC); elementi non strutturali
+    Fa = Sa*Wa/qa [7.2.1]; irregolarita'' in pianta x2, in altezza x1,4'
+  - 'NTC 2018 - par. 7.2.4: impianti, capacita'' > domanda sismica (7.3.6); responsabilita'' produttore/installatore/progettista;
+    studio specifico se impianto > 30% del solaio o > 10% della struttura'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - elementi-non-strutturali
+  - impianti-sismica
+  - progettazione-sismica
+  - ntc-2018
+  - elementi-secondari
 - id: esercizio-controllo-impianti-termici-dpr74
   area: energia-incentivi
   title: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
