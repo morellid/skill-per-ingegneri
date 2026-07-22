@@ -1,0 +1,50 @@
+schema_version: 1
+skill: vita-nominale-classi-uso-ntc
+last_verified: 2026-07-22
+
+# Fonte normativa per l'inquadramento della vita nominale di progetto (VN),
+# delle classi d'uso (CU) e del periodo di riferimento per l'azione sismica
+# (VR = VN x CU) secondo le NTC 2018 (DM 17/01/2018), par. 2.4.1, 2.4.2 e
+# 2.4.3. La skill inquadra la scelta dei tre parametri e ne richiama i valori
+# tabellari; non definisce lo spettro ne' i periodi di ritorno degli stati
+# limite (par. 3.2).
+
+sources:
+  - id: ntc2018-par-2-4
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 2.4 (vita nominale VN, classi d'uso CU, periodo di riferimento VR)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-22
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-2-4.md
+    excerpt_path: references/estratti/vita-nominale-classi-uso-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-22 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 2.4.1-2.4.3 estratti con `pdftotext -layout` (pagine PDF 40-41, p. GU
+      36-37) e trascritti verbatim in references/fonti/ntc2018-par-2-4.md.
+      La formula [2.4.1] e la Tab. 2.4.II sono state verificate sull'immagine
+      renderizzata della pagina PDF 41 (pdftoppm -r 150 -png), perche' pdftotext
+      perde l'operatore di moltiplicazione. Contenuti rilevanti:
+      - par. 2.4.1 vita nominale di progetto VN: numero di anni in cui l'opera,
+        soggetta a manutenzione, mantiene i livelli prestazionali; valori minimi
+        (Tab. 2.4.I): tipo 1 costruzioni temporanee/provvisorie 10 anni, tipo 2
+        prestazioni ordinarie 50 anni, tipo 3 prestazioni elevate 100 anni; per
+        la fase di costruzione di durata PN, VN non inferiore a PN e comunque
+        non inferiore a 5 anni; verifiche sismiche omettibili per opere di tipo 1
+        o in fase di costruzione se la condizione permane per meno di 2 anni.
+      - par. 2.4.2 classi d'uso: Classe I (presenza occasionale, edifici
+        agricoli), Classe II (normali affollamenti), Classe III (affollamenti
+        significativi), Classe IV (funzioni pubbliche/strategiche importanti),
+        con esempi (industrie, ponti, reti viarie/ferroviarie, dighe).
+      - par. 2.4.3 periodo di riferimento per l'azione sismica: VR = VN x CU
+        [2.4.1]; coefficiente d'uso CU (Tab. 2.4.II) per classe I/II/III/IV =
+        0,7 / 1,0 / 1,5 / 2,0; per attivita' a rischio di incidente rilevante CU
+        anche superiore a 2.
+      Restano fuori scope: la definizione dello spettro di risposta e dei periodi
+      di ritorno TR degli stati limite (par. 3.2), la valutazione delle opere
+      esistenti e le combinazioni delle azioni (par. 2.5).

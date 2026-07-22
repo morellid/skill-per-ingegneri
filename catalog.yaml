@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 36
+  count: 37
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -2684,3 +2684,23 @@ skills:
   - vigilanza-edilizia
   - dpr-380-2001
   - edilizia
+- id: vita-nominale-classi-uso-ntc
+  area: strutture-geotecnica
+  title: Vita nominale, classi d'uso e periodo di riferimento (NTC 2018 par. 2.4)
+  summary: 'Inquadra i tre parametri di base di ogni progetto strutturale (NTC 2018 par. 2.4): vita nominale VN (Tab. 2.4.I:
+    10/50/100 anni), classi d''uso I-IV, periodo di riferimento sismico VR = VN*CU [2.4.1] con CU (Tab. 2.4.II) = 0,7/1,0/1,5/2,0.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 2.4.1: vita nominale di progetto VN, valori minimi Tab. 2.4.I (10 anni temporanee,
+    50 ordinarie, 100 elevate); fase di costruzione VN >= PN e >= 5 anni'
+  - 'NTC 2018 - par. 2.4.2: classi d''uso I-IV (presenza occasionale / normali affollamenti / affollamenti significativi /
+    funzioni pubbliche o strategiche)'
+  - 'NTC 2018 - par. 2.4.3: periodo di riferimento VR = VN*CU [2.4.1]; coefficiente d''uso CU Tab. 2.4.II = 0,7/1,0/1,5/2,0
+    (I/II/III/IV), >2 per rischio incidente rilevante'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - vita-nominale
+  - classi-uso
+  - periodo-riferimento
+  - azione-sismica
+  - ntc-2018
