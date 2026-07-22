@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 37
+  count: 38
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1302,6 +1302,27 @@ skills:
   - pericolosita-idraulica
   - toscana
   - fattibilita-idraulica
+- id: fattore-comportamento-q-sismica-ntc
+  area: strutture-geotecnica
+  title: Comportamento strutturale e fattore q (NTC 2018 par. 7.2.2-7.3.1)
+  summary: 'Inquadra la scelta del comportamento strutturale (dissipativo/non dissipativo, duttilita'' CD"A"/CD"B") e il fattore
+    q (NTC 2018 par. 7.2.2-7.3.1): qlim = q0*KR [7.3.1] (KR 1/0,8), non dissipativo 1<=qND=(2/3)qCD"B"<=1,5 [7.3.2], verticale
+    q=1,5 (ponti 1).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.2.2: comportamento non dissipativo/dissipativo, classi di duttilita'' CD"A"/CD"B",
+    progettazione in capacita'', sovraresistenza globale >= 1,25'
+  - 'NTC 2018 - par. 7.3.1: fattore di comportamento q, qlim = q0*KR [7.3.1] con KR 1 (regolare in altezza)/0,8 (non regolare);
+    q0 Tab. 7.3.II; kw per pareti c.a.; verticale q=1,5 (ponti 1)'
+  - 'NTC 2018 - par. 7.3.1: comportamento non dissipativo qND, 1 <= qND = (2/3) qCD"B" <= 1,5 [7.3.2]; spettro di progetto
+    par. 3.2.3.4-3.2.3.5'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - fattore-comportamento
+  - comportamento-dissipativo
+  - classi-duttilita
+  - progettazione-sismica
+  - ntc-2018
 - id: fondazioni-pali-ntc
   area: strutture-geotecnica
   title: 'Fondazioni su pali: verifiche SLU/SLE e coefficienti NTC 2018 (par. 6.4.3)'
