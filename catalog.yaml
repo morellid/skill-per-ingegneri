@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 40
+  count: 41
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1941,6 +1941,27 @@ skills:
   - fattore-di-comportamento
   - ntc-2018
   - metodo-di-analisi
+- id: relazione-calcolo-codici-ntc
+  area: strutture-geotecnica
+  title: Relazione di calcolo e codici di calcolo automatico (NTC 2018 cap. 10)
+  summary: 'Inquadra la redazione dei progetti strutturali esecutivi e delle relazioni di calcolo (NTC 2018 par. 10.1-10.2):
+    elaborati del progetto, uso dei codici di calcolo, contenuti della relazione, giudizio motivato di accettabilita'' e valutazione
+    indipendente.'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 10.1: elaborati del progetto esecutivo (relazione di calcolo, materiali, grafici,
+    piano di manutenzione, risultati sperimentali); responsabilita'' progettista'
+  - 'NTC 2018 - par. 10.2 e 10.2.1: analisi con codici di calcolo (affidabilita'' dei codici, attendibilita'' dei risultati,
+    documentazione software); relazione di calcolo e giudizio di accettabilita'''
+  - 'NTC 2018 - par. 10.2.2: valutazione indipendente del calcolo per opere di particolare importanza (ricalcolo da soggetto
+    diverso con programmi diversi)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - relazione-di-calcolo
+  - codici-di-calcolo
+  - software-strutturale
+  - progetto-esecutivo
+  - ntc-2018
 - id: relazione-cam-dm-24-11-2025
   area: appalti-opere-pubbliche
   title: Relazione CAM di progetto (DM 24.11.2025)
