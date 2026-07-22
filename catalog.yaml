@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 34
+  count: 35
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -579,6 +579,25 @@ skills:
   - verifica-conformita
   - certificato-regolare-esecuzione
   - esecuzione-contratto
+- id: combinazione-componenti-sismiche-ntc
+  area: strutture-geotecnica
+  title: Combinazione delle componenti dell'azione sismica (NTC 2018 par. 7.3.5)
+  summary: 'Inquadra la combinazione delle componenti sismiche (NTC 2018 par. 7.3.5): 1,00 Ex + 0,30 Ey + 0,30 Ez [7.3.10]
+    con permutazione circolare, componente verticale solo nei casi 7.2.2, SRSS per la variabilita'' spaziale, storie temporali
+    3 (valori piu'' sfavorevoli) o 7 (media).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.3.5: combinazione 1,00 Ex + 0,30 Ey + 0,30 Ez [7.3.10], effetti piu'' gravosi
+    per permutazione circolare; componente verticale solo nei casi del par. 7.2.2'
+  - 'NTC 2018 - par. 7.3.5: variabilita'' spaziale del moto con SRSS (casi par. 3.2.4.1); integrazione al passo con >= 3 storie
+    temporali (valori piu'' sfavorevoli) o >= 7 storie (media)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - combinazione-sismica
+  - componenti-azione-sismica
+  - progettazione-sismica
+  - ntc-2018
+  - storie-temporali
 - id: combinazioni-carico-ntc
   area: strutture-geotecnica
   title: Combinazioni Carico NTC
