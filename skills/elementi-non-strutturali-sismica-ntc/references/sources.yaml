@@ -1,0 +1,57 @@
+schema_version: 1
+skill: elementi-non-strutturali-sismica-ntc
+last_verified: 2026-07-22
+
+# Fonte normativa per l'inquadramento della progettazione sismica degli elementi
+# strutturali secondari, degli elementi costruttivi non strutturali e degli
+# impianti secondo le NTC 2018 (DM 17/01/2018), par. 7.2.3 e 7.2.4. La skill
+# inquadra i criteri e la forza Fa; non calcola Fa ne' esegue le verifiche.
+
+sources:
+  - id: ntc2018-par-7-2-3-7-2-4
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.2.3 (elementi secondari e non strutturali) e 7.2.4 (impianti)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-22
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-2-3-7-2-4.md
+    excerpt_path: references/estratti/elementi-non-strutturali-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-22 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 7.2.3 e 7.2.4 estratti con `pdftotext -layout` (pagina PDF 216, p. GU
+      212) e trascritti verbatim in references/fonti/ntc2018-par-7-2-3-7-2-4.md.
+      La formula [7.2.1] e le costanti (15%, 2, 1,4, 30%, 10%) sono state
+      verificate sull'immagine renderizzata della pagina PDF 216 (pdftoppm -r
+      150 -png), perche' pdftotext perde gli operatori =, x, /. Contenuti
+      rilevanti:
+      - par. 7.2.3 elementi secondari: rigidezza/resistenza alle azioni
+        orizzontali trascurabili; progettati per i soli carichi verticali e per
+        seguire gli spostamenti (SLC, par. 7.3.3.3/7.3.4); la scelta non puo'
+        trasformare una struttura irregolare in regolare (par. 7.2.1); contributo
+        totale a rigidezza/resistenza orizzontale <= 15% dell'analogo contributo
+        degli elementi primari.
+      - par. 7.2.3 elementi costruttivi non strutturali: definizione; capacita' >
+        domanda sismica per ogni SL (par. 7.3.6); ripartizione responsabilita'
+        (progettista struttura / direttore lavori / fornitore-installatore, per
+        elementi costruiti o assemblati in cantiere); irregolarita' in pianta ->
+        eccentricita' accidentale (par. 7.2.6) incrementata di un fattore 2;
+        irregolarita' in altezza -> domanda sismica sugli elementi verticali dei
+        livelli con riduzione incrementata di un fattore 1,4; forza orizzontale
+        Fa = (Sa x Wa) / qa [7.2.1], con Sa accelerazione massima
+        adimensionalizzata (par. 3.2.1), Wa peso dell'elemento, qa fattore di
+        comportamento dell'elemento (Sa e qa da documenti di comprovata validita'
+        in assenza di specifiche determinazioni).
+      - par. 7.2.4 impianti: capacita' > domanda sismica; responsabilita'
+        (produttore / installatore / progettista strutturale); richiedono uno
+        studio specifico gli impianti che eccedano il 30% del carico permanente
+        del campo di solaio (o del pannello di tamponatura/tramezzatura a cui
+        sono appesi) o il 10% del carico permanente totale della struttura.
+      Restano fuori scope: il calcolo di Fa e l'esecuzione delle verifiche, la
+      determinazione di Sa e qa (documenti di comprovata validita'), il calcolo
+      degli spostamenti/domanda (par. 7.3.3.3/7.3.4/7.3.6) e lo spettro (par.
+      3.2).
