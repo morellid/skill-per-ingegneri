@@ -1,0 +1,12 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Comportamento strutturale e fattore q (NTC 2018 par. 7.2.2-7.3.1)"
+short_description: Supporto documentale al progettista strutturale per l'inquadramento del comportamento strutturale (dissipativo o non dissipativo) e del fattore di comportamento q secondo le NTC 2018 (D.M. 17 gennaio 2018), paragrafi 7.2.2 e 7.3.1. Aiuta a scegliere il comportamento strutturale (non dissipativo: membrature e collegamenti in campo elastico, modello elastico; dissipativo: plasticizzazioni diffuse con capacita' dissipativa in conto implicitamente tramite q o esplicitamente con legge costitutiva), le classi di duttilita' CD alta e CD media e la progettazione in capacita' con il fattore di sovraresistenza (globale almeno 1,25); e a determinare il fattore di comportamento q allo SLV: limite superiore qlim uguale al prodotto tra il valore base q0 e il fattore KR (1 per costruzioni regolari in altezza, 0,8 per non regolari), formula 7.3.1, con q0 dalla Tabella 7.3.II in funzione di classe di duttilita', tipologia strutturale e rapporto alfa-u su alfa-1; riduzione kw per pareti in calcestruzzo armato; componente verticale q uguale a 1,5 (ponti q uguale a 1); comportamento non dissipativo con q tra 1 e 1,5 pari a due terzi del q della CD media, formula 7.3.2. NON calcola q ne' la domanda sismica, non definisce lo spettro di progetto (par. 3.2.3), non riproduce il set completo delle tabelle q0 material-specifiche (par. 7.4-7.9) e non sostituisce il progettista. E' a valle della skill sulla regolarita' strutturale (par. 7.2.1, che fissa KR) e a monte della skill sullo spettro di risposta (par. 3.2).
+default_prompt: |
+  Devo impostare un progetto sismico secondo le NTC 2018 (par. 7.2.2 e 7.3.1): conviene un comportamento
+  strutturale dissipativo o non dissipativo, e con quale differenza nel calcolo della domanda? Se dissipativo,
+  cosa distingue le classi di duttilita' CD"A" e CD"B" e cos'e' la progettazione in capacita' (fattore di
+  sovraresistenza)? Come si determina il fattore di comportamento q allo SLV (qlim = q0 x KR, con KR = 1 o 0,8) e
+  da cosa dipende q0? Cosa cambia per la componente verticale (q = 1,5, ponti q = 1) e per il comportamento non
+  dissipativo (qND)? Cita i paragrafi, le tabelle e le formule.

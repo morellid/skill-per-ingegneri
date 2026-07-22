@@ -1,0 +1,52 @@
+schema_version: 1
+skill: fattore-comportamento-q-sismica-ntc
+last_verified: 2026-07-22
+
+# Fonte normativa per l'inquadramento del comportamento strutturale
+# (dissipativo / non dissipativo, classi di duttilita' CD"A"/CD"B",
+# progettazione in capacita') e del fattore di comportamento q (qlim = q0 x KR)
+# secondo le NTC 2018 (DM 17/01/2018), par. 7.2.2 e 7.3.1. La skill inquadra i
+# criteri e la formula; non calcola q ne' la domanda sismica, e non riproduce il
+# set completo delle tabelle q0 material-specifiche (par. 7.4-7.9).
+
+sources:
+  - id: ntc2018-par-7-2-2-7-3-1
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.2.2 (comportamento strutturale) e 7.3.1 (fattore di comportamento q)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-22
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-2-2-7-3-1.md
+    excerpt_path: references/estratti/fattore-comportamento-q-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-22 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 7.2.2 (p. GU 210, pagina PDF 214) e 7.3.1 (p. GU 216-217, pagine PDF
+      220-221) estratti con `pdftotext -layout` e trascritti verbatim in
+      references/fonti/ntc2018-par-7-2-2-7-3-1.md. Le formule [7.3.1] e [7.3.2] e
+      la Tab. 7.3.II sono state verificate sull'immagine renderizzata delle
+      pagine PDF 220-221 (pdftoppm -r 150 -png), perche' pdftotext perde gli
+      operatori ·, =, <=, /. Contenuti rilevanti:
+      - par. 7.2.2 comportamento strutturale: non dissipativo (membrature in
+        campo elastico, modello elastico) vs dissipativo (plasticizzazioni,
+        capacita' dissipativa in conto implicitamente via q o esplicitamente via
+        legge costitutiva); classi di duttilita' CD"A" (alta) e CD"B" (media);
+        progettazione in capacita' (elementi duttili/fragili, dissipazioni nelle
+        zone duttili), fattore di sovraresistenza γRd, globale almeno 1,25.
+      - par. 7.3.1 fattore di comportamento q: analisi lineare riferita allo
+        spettro di progetto (par. 3.2.3.4-3.2.3.5) con q dai limiti Tab. 7.3.I e
+        base q0 Tab. 7.3.II; limite superiore qlim = q0 x KR [7.3.1], con KR = 1
+        (regolare in altezza) / 0,8 (non regolare); q0 dipende da CD, tipologia,
+        Ω e rapporto αu/α1 (regolari in pianta: valori dei paragrafi successivi;
+        non regolari in pianta: media tra 1,0 e tali valori); riduzione kw per
+        pareti in c.a. (1,00 telai; (1+α0)/3 con 0,5<=kw<=1 pareti); componente
+        verticale q = 1,5 (ponti q = 1); comportamento non dissipativo qND con
+        1 <= qND = (2/3) x qCD"B" <= 1,5 [7.3.2].
+      Restano fuori scope: il set completo delle Tab. 7.3.II per ogni
+      tipologia/materiale (par. 7.4-7.9), i metodi di analisi in dettaglio (par.
+      7.3.3-7.3.5), la definizione dello spettro di progetto (par. 3.2.3) e il
+      calcolo effettivo di q e della domanda.
