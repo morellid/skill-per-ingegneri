@@ -1,0 +1,51 @@
+schema_version: 1
+skill: combinazione-componenti-sismiche-ntc
+last_verified: 2026-07-22
+
+# Fonte normativa per l'inquadramento della combinazione delle componenti
+# dell'azione sismica e della risposta alla variabilita' spaziale del moto
+# secondo le NTC 2018 (DM 17/01/2018), par. 7.3.5. La skill inquadra la regola;
+# non esegue l'analisi ne' calcola gli effetti.
+
+sources:
+  - id: ntc2018-par-7-3-5
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.3.5 Risposta alle diverse componenti dell'azione sismica ed alla variabilita' spaziale del moto"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-22
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-3-5.md
+    excerpt_path: references/estratti/combinazione-componenti-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-22 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 7.3.5 estratto con `pdftotext -layout` (pagina PDF 225, p. GU 221) e
+      trascritto verbatim in references/fonti/ntc2018-par-7-3-5.md. La formula
+      [7.3.10] e' stata verificata sull'immagine renderizzata della pagina PDF
+      225 (pdftoppm -r 150 -png), perche' pdftotext perde i segni "+": il testo
+      corretto e' 1,00 x Ex + 0,30 x Ey + 0,30 x Ez. Contenuti rilevanti:
+      - combinazione delle tre componenti (analisi dinamica o statica, lineare o
+        non lineare): 1,00 x Ex + 0,30 x Ey + 0,30 x Ez [7.3.10]; effetti piu'
+        gravosi dal confronto tra le tre combinazioni ottenute permutando
+        circolarmente i coefficienti moltiplicativi (coefficiente 1,00 assegnato
+        a turno a ciascuna componente, 0,30 alle altre due).
+      - componente verticale: tenuta in conto solo nei casi previsti al par.
+        7.2.2.
+      - variabilita' spaziale del moto: la risposta va combinata con gli effetti
+        pseudo-statici degli spostamenti relativi solo nei casi del par. 3.2.4.1,
+        con la radice quadrata della somma dei quadrati (SRSS), salvo par. 7.2.2
+        per gli appoggi mobili.
+      - analisi dinamica con integrazione al passo: due componenti orizzontali
+        applicate simultaneamente (piu' la verticale ove necessario); con almeno
+        3 storie temporali si usano i valori piu' sfavorevoli, con almeno 7
+        storie temporali gli effetti sono la media dei valori piu' sfavorevoli;
+        per la variabilita' spaziale, storie differenziate coerenti per ciascun
+        vincolo oppure moto sincrono con effetti pseudo-statici (par. 3.2.4).
+      Restano fuori scope: l'esecuzione dell'analisi e il calcolo degli effetti,
+      la generazione/selezione delle storie temporali, i casi che richiedono la
+      componente verticale (par. 7.2.2) e la variabilita' spaziale del moto (par.
+      3.2.4/3.2.4.1).
