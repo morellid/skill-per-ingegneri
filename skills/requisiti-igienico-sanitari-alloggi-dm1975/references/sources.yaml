@@ -1,0 +1,60 @@
+schema_version: 1
+skill: requisiti-igienico-sanitari-alloggi-dm1975
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento dei requisiti igienico-sanitari minimi
+# dei locali di abitazione (altezze minime, superfici minime, aeroilluminazione,
+# riscaldamento, ventilazione, servizi, protezione acustica) secondo il DM 5
+# luglio 1975. La skill inquadra i requisiti minimi nazionali; non redige il
+# progetto ne' sostituisce il progettista, e non riproduce i regolamenti edilizi
+# regionali/comunali.
+
+sources:
+  - id: dm-5-7-1975
+    title: "Decreto del Ministro per la sanita' 5 luglio 1975 - Modificazioni alle istruzioni ministeriali 20 giugno 1896 relativamente all'altezza minima ed ai requisiti igienico-sanitari principali dei locali d'abitazione (G.U. Serie Generale n. 190 del 18/7/1975)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/1975/07/18/190/sg/pdf
+    accessed: 2026-07-23
+    sha256: 3fd9f3552dadfd2f791910d4813f593f57422cd802831a084f64eff51cd178d1
+    license: public-domain
+    binary_path: not_in_repo/dm-5-7-1975.pdf
+    md_path: references/fonti/dm-5-7-1975.md
+    excerpt_path: references/estratti/requisiti-igienico-sanitari-checklist.md
+    notes: |
+      Pubblicato in G.U. Serie Generale n. 190 del 18/07/1975; il decreto occupa
+      le pagine GU 4892-4893 (pagine PDF 12-13). SHA256 calcolato su
+      not_in_repo/dm-5-7-1975.pdf il 2026-07-23 con doppio download riproducibile
+      dallo stesso URL eli della Gazzetta Ufficiale; hash verificabile live dalla
+      CI del repo su ogni PR.
+      Il PDF e' una scansione GURITEL (immagine): `pdftotext` non estrae testo
+      utile, per cui gli articoli 1-9 sono stati letti renderizzando le pagine in
+      immagine (pdftoppm -r 150 -png, pagine PDF 12-13) e trascritti verbatim in
+      references/fonti/dm-5-7-1975.md. Contenuti rilevanti:
+      - art. 1 altezza minima interna utile 2,70 m (2,40 m per corridoi,
+        disimpegni, bagni, gabinetti, ripostigli); comuni montani > 1000 m
+        s.l.m.: 2,55 m.
+      - art. 2 superficie abitabile >= 14 mq/abitante (primi 4) e 10 mq per i
+        successivi; stanze da letto 9 mq (1 persona) / 14 mq (2 persone);
+        soggiorno >= 14 mq; letto/soggiorno/cucina con finestra apribile.
+      - art. 3 alloggio monostanza: >= 28 mq (1 persona) / 38 mq (2 persone),
+        comprensivo dei servizi.
+      - art. 4 riscaldamento ove necessario; temperatura di progetto 18-20 gradi
+        C, uguale in tutti gli ambienti abitati e nei servizi (esclusi
+        ripostigli); no condensazione permanente sulle pareti opache.
+      - art. 5 illuminazione naturale diretta (esclusi servizi/disimpegni/
+        corridoi/vani-scala/ripostigli); fattore luce diurna medio >= 2%;
+        superficie finestrata apribile >= 1/8 della superficie del pavimento;
+        edilizia pubblica residenziale: dimensioni unificate finestre/infissi.
+      - art. 6 ventilazione meccanica centralizzata ove manchi la naturale;
+        aspirazione fumi/vapori/esalazioni nei punti di produzione; posto di
+        cottura annesso al soggiorno con aspirazione forzata sui fornelli.
+      - art. 7 stanza da bagno con apertura all'esterno o aspirazione meccanica
+        (vietata fiamma libera se senza apertura); almeno una dotata di vaso,
+        bidet, vasca da bagno o doccia, lavabo.
+      - art. 8 protezione acustica (calpestio, traffico, impianti, aerei da
+        alloggi contigui e servizi comuni); rinvio agli standards del Min. LLPP.
+      - art. 9 abrogazione della parte incompatibile delle istruzioni 20/6/1896.
+      Restano fuori scope: la redazione del progetto, i regolamenti edilizi
+      regionali/comunali e il Regolamento Edilizio Tipo, le deroghe per il
+      recupero dei sottotetti/locali esistenti e la normativa acustica di
+      dettaglio (DPCM 5/12/1997, skill dedicata).
