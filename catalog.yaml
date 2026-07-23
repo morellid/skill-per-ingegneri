@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 42
+  count: 43
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -475,6 +475,25 @@ skills:
   - ntc-2018
   - categorie-uso
   - analisi-dei-carichi
+- id: carico-incendio-classe-resistenza-dm
+  area: strutture-geotecnica
+  title: Carico d'incendio e classe di resistenza al fuoco (DM 9 marzo 2007)
+  summary: 'Determina il carico d''incendio specifico di progetto qf,d=dq1*dq2*dn*qf (Tab.1/2/3) e la classe di resistenza
+    al fuoco richiesta secondo il DM 9 marzo 2007: livelli di prestazione I-V, classe 30/60 (liv. II), Tab. 4 (liv. III) e
+    Tab. 5 (curve naturali), classi 15-360 min.'
+  normative_refs:
+  - DM 9 marzo 2007 (Prestazioni di resistenza al fuoco, CNVVF) - qf=somma(gi*Hi*mi*psi)/A; qf,d=dq1*dq2*dn*qf (Tab.1/2/3);
+    livelli I-V; Tab.4 (liv.III) e Tab.5 (curve naturali); classi 15-360 min
+  - 'Rinvio (fuori scope): NTC 2018 par. 3.6.1 (skill resistenza-fuoco-strutture-ntc), DM 14/9/2005 (livelli IV-V), regole
+    tecniche verticali VVF, Eurocodici parte 1-2, UNI EN ISO 1716'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - carico-incendio
+  - resistenza-al-fuoco
+  - dm-9-marzo-2007
+  - classi-rei
+  - prevenzione-incendi
 - id: catasto-pregeo-docfa-atti-telematici
   area: edilizia-urbanistica-catasto
   title: Catasto - Atti telematici Pregeo 10 + Docfa 4
