@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 44 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 45 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -58,6 +58,7 @@
       "skills": [
         "./azioni-esplosione-eccezionali-ntc",
         "./azioni-temperatura-ntc",
+        "./azioni-traffico-ponti-ferroviari-ntc",
         "./azioni-traffico-ponti-stradali-ntc",
         "./azioni-urto-eccezionali-ntc",
         "./capacita-portante-fondazione-ntc",

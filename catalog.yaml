@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 44
+  count: 45
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -318,6 +318,25 @@ skills:
   - ntc-2018
   - dilatazione-termica
   - azioni
+- id: azioni-traffico-ponti-ferroviari-ntc
+  area: strutture-geotecnica
+  title: Azioni da traffico sui ponti ferroviari (NTC 2018 par. 5.2.2)
+  summary: 'Inquadra le azioni da traffico sui ponti ferroviari (NTC 2018 par. 5.2.2): modelli di carico verticali (LM71,
+    SW/0, SW/2, treno scarico), coeff. di adattamento alpha, effetti dinamici Phi2/Phi3 (con L_phi) e azioni orizzontali (centrifuga,
+    serpeggio, avviamento/frenatura).'
+  normative_refs:
+  - 'NTC 2018 - par. 5.2.2: LM71 (4x250 kN + 80 kN/m), SW/0 133/SW2 150 kN/m, treno scarico 10 kN/m, alpha; dinamici Phi2/Phi3
+    (con Lphi); orizzontali: centrifuga, serpeggio 100 kN, avviamento/frenatura'
+  - 'Rinvio (fuori scope): §5.2.1 criteri progettuali; combinazioni; analisi dinamica con treni reali (V>200 km/h); Tab. 5.2.II
+    completa (Lphi); verifiche SLU/SLE, fatica, interazione binario-struttura'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ponti-ferroviari
+  - azioni-da-traffico
+  - ntc-2018
+  - lm71-sw
+  - coefficiente-dinamico
 - id: azioni-traffico-ponti-stradali-ntc
   area: strutture-geotecnica
   title: Azioni da traffico sui ponti stradali (NTC 2018 par. 5.1.3)

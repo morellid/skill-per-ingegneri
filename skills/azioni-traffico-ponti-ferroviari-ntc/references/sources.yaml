@@ -1,0 +1,58 @@
+schema_version: 1
+skill: azioni-traffico-ponti-ferroviari-ntc
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento delle azioni da traffico sui ponti
+# ferroviari (modelli di carico verticali LM71/SW, treno scarico, marciapiedi;
+# coefficiente di adattamento alpha; effetti dinamici Phi; azioni orizzontali:
+# centrifuga, serpeggio, avviamento/frenatura) secondo le NTC 2018 (DM
+# 17/01/2018), par. 5.2.2. La skill inquadra i carichi; non esegue combinazioni,
+# analisi dinamiche con treni reali ne' verifiche.
+
+sources:
+  - id: ntc2018-par-5-2
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 5.2.2 (azioni sui ponti ferroviari)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-23
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-5-2.md
+    excerpt_path: references/estratti/azioni-ferroviari-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 5.2.2 (Cap. 5 «Ponti», par. 5.2 «Ponti ferroviari»), pagine GU
+      163-170 = pagine PDF 167-174, estratto con `pdftotext -layout` e
+      trascritto verbatim in references/fonti/ntc2018-par-5-2.md. I valori dei
+      carichi e la formula del coefficiente dinamico sono stati verificati
+      sull'immagine renderizzata delle pagine PDF 168 (GU 164, LM71) e 171
+      (GU 167, Phi) con pdftoppm -r 150 -png, perche' pdftotext altera pedici,
+      radici e simboli. Contenuti rilevanti:
+      - 5.2.2.2.1 modelli di carico verticali: LM71 (4 assi da 250 kN a
+        interasse 1,60 m + 80 kN/m distribuito da 0,8 m; eccentricita' s/18,
+        s=1435 mm; alpha=1,1); SW/0 (qvk 133 kN/m, a 15,0, c 5,3; alpha 1,1) e
+        SW/2 (qvk 150 kN/m, a 25,0, c 7,0; alpha 1,0) - Tab. 5.2.I; treno
+        scarico 10 kN/m; marciapiedi 10 kN/m2. Ripartizione locale 25/50/25 su
+        tre traverse; solette a 45 gradi. Rilevati a tergo spalle: 3,0 m.
+      - 5.2.2.2.3 effetti dinamici: per V<=200 km/h e frequenza nel fuso
+        (Fig. 5.2.7) si usano Phi; fuso n0=94,76*L^-0,748 [5.2.2], n0=80/L
+        [5.2.3] (4-20 m), n0=23,58*L^-0,592 [5.2.4] (20-100 m); trave
+        appoggiata n0=17,75/sqrt(delta0) [5.2.5]. Phi2=1,44/(sqrt(Lphi)-0,2)
+        +0,82 con 1,00<=Phi2<=1,67 [5.2.6] (elevato standard manutentivo);
+        Phi3=2,16/(sqrt(Lphi)-0,2)+0,73 con 1,00<=Phi3<=2,00 [5.2.7] (ridotto).
+        Lphi lunghezza caratteristica (Tab. 5.2.II). Phi non su treno scarico
+        e treni reali; per V>200 km/h o tipologie non convenzionali: analisi
+        dinamica con convogli reali.
+      - 5.2.2.3 azioni orizzontali: forza centrifuga [5.2.9]/[5.2.10] (applicata
+        a 1,80 m sul P.F.; con SW a V=100 km/h; non incrementata da Phi);
+        serpeggio Qsk=100 kN (x alpha se >1, non x Phi); avviamento
+        Qla,k=33 kN/m*L<=1000 kN (LM71/SW0/SW2); frenatura Qlb,k=20 kN/m*L
+        <=6000 kN (LM71/SW0), 35 kN/m*L (SW2); x alpha, non x Phi.
+      Restano fuori scope: i criteri progettuali/manutentivi (§5.2.1), le
+      combinazioni delle azioni, l'analisi dinamica con treni reali, la Tab.
+      5.2.II completa (Lphi per ogni elemento) e le verifiche (SLU/SLE, fatica,
+      interazione statica binario-struttura).
