@@ -1,0 +1,57 @@
+schema_version: 1
+skill: requisiti-acustici-passivi-edifici-dpcm
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento dei requisiti acustici passivi degli
+# edifici (classificazione degli ambienti abitativi, grandezze e indici di
+# valutazione, valori limite) secondo il DPCM 5 dicembre 1997. La skill inquadra
+# classificazione e valori limite; non esegue misure/calcoli acustici ne' il
+# collaudo, e non sostituisce il tecnico competente in acustica.
+
+sources:
+  - id: dpcm-5-12-1997
+    title: "Decreto del Presidente del Consiglio dei Ministri 5 dicembre 1997 - Determinazione dei requisiti acustici passivi degli edifici (G.U. Serie Generale n. 297 del 22/12/1997)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/1997/12/22/297/sg/pdf
+    accessed: 2026-07-23
+    sha256: 5a8ae1f4cadb54d2b630ee3001b83f1ab736008d06dacf78226d001a15ed1f51
+    license: public-domain
+    binary_path: not_in_repo/dpcm-5-12-1997-gu297.pdf
+    md_path: references/fonti/dpcm-5-12-1997.md
+    excerpt_path: references/estratti/requisiti-acustici-passivi-checklist.md
+    notes: |
+      Pubblicato in G.U. Serie Generale n. 297 del 22/12/1997 (il DPCM occupa le
+      pagine 4-7 della G.U.). SHA256 calcolato su not_in_repo/dpcm-5-12-1997-gu297.pdf
+      il 2026-07-23 con doppio download riproducibile dallo stesso URL eli della
+      Gazzetta Ufficiale; hash verificabile live dalla CI del repo su ogni PR.
+      Il PDF e' una scansione GURITEL (immagine): `pdftotext` non estrae testo
+      utile, per cui articoli, Allegato A, Tab. A e Tab. B sono stati letti
+      renderizzando le pagine in immagine (pdftoppm -r 150/160 -png) e trascritti
+      verbatim in references/fonti/dpcm-5-12-1997.md. Contenuti rilevanti:
+      - Art. 1 campo di applicazione: requisiti acustici delle sorgenti sonore
+        interne e requisiti acustici passivi degli edifici e componenti in opera
+        (attuazione art. 3 c.1 lett. e L. 447/1995), per ridurre l'esposizione
+        umana al rumore.
+      - Art. 2 definizioni: ambienti abitativi distinti in categorie (Tab. A);
+        componenti = partizioni orizzontali/verticali; servizi a funzionamento
+        discontinuo (ascensori, scarichi idraulici, bagni, servizi igienici,
+        rubinetteria) e continuo (riscaldamento, aerazione, condizionamento);
+        grandezze nell'Allegato A.
+      - Art. 3 valori limite (Tab. B); Art. 4 entrata in vigore dopo 60 giorni.
+      - Allegato A grandezze/indici: T (ISO 3382:1975); R (EN ISO 140-5:1996);
+        D2m,nT = D2m + 10 log(T/T0) con T0 = 0,5 s; L'n (EN ISO 140-6:1996);
+        LASmax (slow); LAeq; indici R'w, D2m,nT,w, L'n,w (UNI 8270:1987 Parte 7,
+        para. 5.1 e 5.2). Impianti tecnologici: 35 dB(A) LASmax (discontinuo),
+        25 dB(A) LAeq (continuo); misure nell'ambiente piu' rumoroso, diverso da
+        quello di origine.
+      - Tab. A: A residenza, B uffici, C alberghi/pensioni, D ospedali/cliniche/
+        case di cura, E scolastiche, F ricreative/culto, G commerciali.
+      - Tab. B (R'w / D2m,nT,w / L'n,w / LASmax / LAeq): D 55/45/58/35/25; A,C
+        50/40/63/35/35; E 50/48/58/35/25; B,F,G 50/42/55/35/35. R'w riferiti a
+        elementi di separazione tra due distinte unita' immobiliari. R'w e
+        D2m,nT,w sono valori minimi (>=), L'n,w/LASmax/LAeq sono massimi (<=).
+      - Nota edilizia scolastica: tempo di riverberazione da circolare MLLPP
+        n. 3150 del 22/5/1967.
+      Restano fuori scope: l'esecuzione di misure/calcoli acustici e collaudo in
+      opera, le procedure di calcolo degli indici (UNI 8270:1987 Parte 7; UNI EN
+      ISO 717), e la figura del tecnico competente in acustica (L. 447/1995).

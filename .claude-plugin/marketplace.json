@@ -102,7 +102,7 @@
     {
       "name": "edilizia-urbanistica-catasto",
       "source": "./skills",
-      "description": "Edilizia, urbanistica & catasto - 17 skill verticali su normative italiane.",
+      "description": "Edilizia, urbanistica & catasto - 18 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -126,6 +126,7 @@
         "./permesso-costruire-dpr380",
         "./pratiche-edilizie-lr65-2014-toscana",
         "./regimi-suap-attivita-produttive-dlgs222",
+        "./requisiti-acustici-passivi-edifici-dpcm",
         "./segnalazione-agibilita-dpr380",
         "./vigilanza-sanzioni-abusi-edilizi-dpr380"
       ]

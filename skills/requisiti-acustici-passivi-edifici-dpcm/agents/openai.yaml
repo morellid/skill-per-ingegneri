@@ -1,0 +1,12 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: "Requisiti acustici passivi degli edifici (DPCM 5 dicembre 1997)"
+short_description: Supporto documentale al progettista edile o al tecnico per l'inquadramento dei requisiti acustici passivi degli edifici secondo il DPCM 5 dicembre 1997 (attuazione della legge quadro sull'inquinamento acustico 447/1995). Aiuta a classificare l'ambiente abitativo nelle categorie della Tabella A (A residenza, B uffici, C alberghi e pensioni, D ospedali cliniche e case di cura, E attivita' scolastiche, F attivita' ricreative o di culto, G attivita' commerciali); a individuare le grandezze e gli indici di valutazione (potere fonoisolante apparente di partizioni R'w, isolamento acustico di facciata D2m,nT,w con D2m,nT uguale a D2m piu' dieci volte il logaritmo del rapporto tra il tempo di riverberazione e quello di riferimento pari a 0,5 secondi, livello di calpestio normalizzato L'n,w, livello massimo LASmax e livello continuo equivalente LAeq); e ad applicare i valori limite della Tabella B per categoria (D con 55, 45, 58, 35, 25; A e C con 50, 40, 63, 35, 35; E con 50, 48, 58, 35, 25; B, F, G con 50, 42, 55, 35, 35), ricordando che gli indici di isolamento R'w e D2m,nT,w sono valori minimi mentre i livelli di rumore L'n,w, LASmax e LAeq sono valori massimi, e dei limiti del rumore degli impianti tecnologici (35 dB(A) LASmax per i servizi a funzionamento discontinuo e 25 dB(A) LAeq per quelli a funzionamento continuo). NON esegue misure o calcoli acustici ne' il collaudo in opera, non riproduce le norme UNI/ISO citate e non sostituisce il tecnico competente in acustica (L. 447/1995). Tratta l'acustica edilizia, distinta dal rumore ambientale e dal rumore sul lavoro.
+default_prompt: |
+  Devo verificare i requisiti acustici passivi di un edificio secondo il DPCM 5 dicembre 1997: in quale categoria
+  della Tabella A ricade la mia costruzione (per esempio residenza, uffici, scuola, ospedale) e quali valori
+  limite della Tabella B si applicano (R'w, D2m,nT,w, L'n,w, LASmax, LAeq)? Quali sono minimi e quali massimi?
+  Come si definisce l'isolamento di facciata D2m,nT (con T0 = 0,5 s) e quali sono i limiti del rumore degli
+  impianti tecnologici (35 dB(A) per i servizi a funzionamento discontinuo e 25 dB(A) per quelli a funzionamento
+  continuo)? Cita gli articoli, l'Allegato A e le tabelle.

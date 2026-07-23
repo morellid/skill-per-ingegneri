@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 17
+  count: 18
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -2032,6 +2032,27 @@ skills:
   - dlgs-192-2005
   - requisiti-minimi
   - efficienza-energetica
+- id: requisiti-acustici-passivi-edifici-dpcm
+  area: edilizia-urbanistica-catasto
+  title: Requisiti acustici passivi degli edifici (DPCM 5 dicembre 1997)
+  summary: 'Inquadra i requisiti acustici passivi degli edifici (DPCM 5/12/1997): categorie di ambiente (Tab. A, A-G), grandezze
+    e indici (R''w, D2m,nT,w, L''n,w, LASmax, LAeq) e valori limite per categoria (Tab. B), piu'' i limiti del rumore degli
+    impianti tecnologici (35 dB(A)/25 dB(A)).'
+  normative_refs:
+  - 'DPCM 5 dicembre 1997 (G.U. n. 297 del 22/12/1997) - art. 1-2: requisiti acustici passivi degli edifici e componenti in
+    opera; categorie di ambiente Tab. A (A-G); attuazione L. 447/1995'
+  - 'DPCM 5/12/1997 - Allegato A: grandezze e indici R''w, D2m,nT,w (D2m,nT = D2m + 10 log(T/T0), T0=0,5 s), L''n,w, LASmax,
+    LAeq; impianti 35 dB(A) LASmax (discontinuo) / 25 dB(A) LAeq (continuo)'
+  - 'DPCM 5/12/1997 - Tab. B valori limite per categoria: D 55/45/58/35/25; A,C 50/40/63/35/35; E 50/48/58/35/25; B,F,G 50/42/55/35/35
+    (R''w e D2m,nT,w minimi; L''n,w/LASmax/LAeq massimi)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - acustica-edilizia
+  - requisiti-acustici-passivi
+  - isolamento-acustico
+  - dpcm-5-12-1997
+  - collaudo-acustico
 - id: resistenza-fuoco-strutture-ntc
   area: strutture-geotecnica
   title: Resistenza al fuoco delle strutture (NTC 2018 par. 3.6.1)
