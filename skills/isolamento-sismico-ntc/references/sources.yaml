@@ -1,0 +1,60 @@
+schema_version: 1
+skill: isolamento-sismico-ntc
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento delle costruzioni con isolamento sismico
+# (scopo e strategie, requisiti, dispositivi, indicazioni progettuali,
+# modellazione e analisi, verifiche SLE/SLV/SLC) secondo le NTC 2018 (DM
+# 17/01/2018), par. 7.10. La skill inquadra il framework; non esegue l'analisi
+# ne' progetta i dispositivi, e non riproduce le prescrizioni del par. 11.9.
+
+sources:
+  - id: ntc2018-par-7-10
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.10 (costruzioni con isolamento e/o dissipazione)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-23
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-10.md
+    excerpt_path: references/estratti/isolamento-sismico-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf il 2026-07-23 con doppio
+      download riproducibile (stessa fonte GU delle altre skill NTC del repo);
+      hash validato live dalla CI del repo su ogni PR.
+      Par. 7.10 (p. GU 273-278, pagine PDF 277-282) estratto con `pdftotext
+      -layout` e trascritto verbatim in references/fonti/ntc2018-par-7-10.md. Le
+      soglie numeriche e le formule sono state verificate sull'immagine
+      renderizzata delle pagine PDF 279 e 281 (pdftoppm -r 150 -png), perche'
+      pdftotext altera operatori, pedici e radici. Contenuti rilevanti:
+      - 7.10.1 scopo: sistema d'isolamento sotto la costruzione; strategie (a)
+        allungare il periodo, (b) limitare la forza; dissipazione.
+      - 7.10.2-7.10.3 requisiti: sovra/sottostruttura in campo sostanzialmente
+        elastico (particolari come per agS <= 0,075g); affidabilita' superiore
+        del sistema (par. 11.9); interfaccia d'isolamento, sotto/sovrastruttura;
+        dispositivi solo se conformi al par. 11.9.
+      - 7.10.4 indicazioni progettuali: ispezionabilita'/sostituibilita';
+        ricentraggio; V >= 0 (se V < 0 trazione < min(2G, 1 MPa) elastomerici);
+        diaframma rigido sopra e sotto; elementi verticali con spostamento < 1/20
+        dello spostamento relativo; spazio libero attorno.
+      - 7.10.5 modellazione/analisi: sovra/sottostruttura elastiche lineari;
+        sistema visco-elastico lineare o non lineare; deformabilita' verticale se
+        KV/Kesi < 800; iterazione < 5%; valori medi se estremi entro 20%;
+        velocita' ±30%; modello lineare equivalente se rigidezza >= 50% della
+        secante al 20%, smorzamento < 30%, variazione forza-spostamento < 10%,
+        incremento forza >= 2,5% del peso; NO analisi statica non lineare;
+        analisi statica lineare se Tis in [3·Tbf, 3,0 s], KV >= 800·Kesi,
+        TV = 2π√(M/KV) < 0,1 s, no trazione, regolare in pianta, edifici <= 20 m
+        e <= 5 piani, sottostruttura T <= 0,05 s, pianta < 50 m, eccentricita'
+        <= 3%; dinamica lineare con spettro ridotto per T >= 0,8·Tis.
+      - 7.10.6 verifiche: SLD sovrastruttura con interpiano < 2/3 dei limiti del
+        par. 7.3.6.1; SLV con γM non isolate, sottostruttura rigida se T < 0,05 s
+        (M × agS), q <= 1,50 (edifici) / q = 1 (ponti), parti non dissipative con
+        coefficiente di sicurezza >= 1,5; SLC dispositivi che sostengono gli
+        spostamenti d2 (+ maggiore tra residuo SLD e 50% per sistemi non lineari).
+      - 7.10.7-7.10.8: piano di manutenzione, sostituibilita' (martinetti),
+        accessibilita', collaudo.
+      Restano fuori scope: le prescrizioni e prove sui dispositivi (par. 11.9),
+      le formule di dettaglio [7.10.1]-[7.10.5] e il calcolo effettivo.

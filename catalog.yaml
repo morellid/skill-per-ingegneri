@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 41
+  count: 42
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1415,6 +1415,27 @@ skills:
   - garante-privacy
   - tracking-pixel
   - email-marketing
+- id: isolamento-sismico-ntc
+  area: strutture-geotecnica
+  title: Costruzioni con isolamento sismico (NTC 2018 par. 7.10)
+  summary: 'Inquadra il progetto delle costruzioni con isolamento sismico (NTC 2018 par. 7.10): scopo e strategie, requisiti,
+    dispositivi (par. 11.9), modellazione e analisi (modello lineare equivalente, statica lineare, no push-over) e verifiche
+    SLD/SLV/SLC (q<=1,50 edifici, q=1 ponti).'
+  normative_refs:
+  - 'NTC 2018 (D.M. 17 gennaio 2018) - par. 7.10.1-7.10.4: isolamento alla base (allungare il periodo o limitare la forza);
+    sovra/sottostruttura in campo elastico; dispositivi conformi al par. 11.9'
+  - 'NTC 2018 - par. 7.10.5: modellazione/analisi; deformabilita'' verticale se KV/Kesi<800; modello lineare equivalente;
+    no push-over; statica lineare se Tis in [3*Tbf, 3s], KV>=800*Kesi, TV<0,1s'
+  - 'NTC 2018 - par. 7.10.6: verifiche; SLD sovrastruttura interpiano < 2/3 dei limiti par. 7.3.6.1; SLV q<=1,50 (edifici)/q=1
+    (ponti), coeff. sicurezza >=1,5; SLC dispositivi che sostengono d2'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - isolamento-sismico
+  - dissipazione-energia
+  - progettazione-sismica
+  - isolatori
+  - ntc-2018
 - id: istruzioni-uso-macchine-reg-1230
   area: impianti-macchine-prodotti
   title: Istruzioni per l'uso delle macchine (Reg. UE 2023/1230, All. III 1.7.4)
