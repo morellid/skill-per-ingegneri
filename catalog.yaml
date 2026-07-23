@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 19
+  count: 20
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -2112,6 +2112,25 @@ skills:
   - isolamento-acustico
   - dpcm-5-12-1997
   - collaudo-acustico
+- id: requisiti-igienico-sanitari-alloggi-dm1975
+  area: edilizia-urbanistica-catasto
+  title: Requisiti igienico-sanitari minimi degli alloggi (DM 5 luglio 1975)
+  summary: 'Inquadra i requisiti igienico-sanitari minimi degli alloggi (DM 5 luglio 1975): altezza minima 2,70 m (art. 1),
+    superfici minime e monostanza 28/38 mq (artt. 2-3), riscaldamento 18-20 gradi (art. 4), aeroilluminazione (art. 5), ventilazione
+    e bagno (artt. 6-7).'
+  normative_refs:
+  - 'DM 5 luglio 1975: altezza 2,70 m / 2,40 servizi (art. 1); superfici 14+10 mq/ab, letto 9/14 (art. 2); monostanza 28/38
+    mq (art. 3); 18-20 gradi (art. 4); finestra >= 1/8 pavimento (art. 5)'
+  - 'Rinvio (fuori scope): regolamenti edilizi regionali/comunali e Reg. Edilizio Tipo; deroghe recupero sottotetti; requisiti
+    acustici DPCM 5/12/1997; accessibilita'' DM 236/1989 (skill dedicate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - requisiti-igienico-sanitari
+  - altezza-minima
+  - aeroilluminazione
+  - dm-5-luglio-1975
+  - agibilita
 - id: resistenza-fuoco-strutture-ntc
   area: strutture-geotecnica
   title: Resistenza al fuoco delle strutture (NTC 2018 par. 3.6.1)
