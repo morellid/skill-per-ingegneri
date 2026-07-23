@@ -14,7 +14,7 @@ areas:
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
-  count: 18
+  count: 19
 - id: appalti-opere-pubbliche
   name: Appalti & opere pubbliche
   order: 4
@@ -2428,6 +2428,25 @@ skills:
   - ntc-2018
   - coefficiente-di-sicurezza
   - frane
+- id: standard-urbanistici-distanze-dm1444
+  area: edilizia-urbanistica-catasto
+  title: Standard urbanistici, zone omogenee e distanze (DM 1444/1968)
+  summary: 'Inquadra i limiti inderogabili del DM 1444/1968: zone omogenee A-F (art. 2), standard urbanistici 18 mq/abitante
+    (art. 3), quantita'' per zona e produttivi (artt. 4-5), densita'' edilizia (art. 7), altezze (art. 8), distanze 10 m tra
+    pareti finestrate (art. 9).'
+  normative_refs:
+  - 'DM 1444/1968: zone A-F (art. 2); standard 18 mq/ab (art. 3); quantita'' per zona (art. 4); produttivi (art. 5); densita''
+    (art. 7); altezze (art. 8); distanze 10 m fra pareti finestrate (art. 9)'
+  - 'Rinvio (fuori scope): redazione strumenti urbanistici; articolazioni regionali/comunali; modifiche successive; distanze
+    del codice civile artt. 873-907 (skill distanze-legali-costruzioni-cc)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - standard-urbanistici
+  - zone-omogenee
+  - distanze-fabbricati
+  - dm-1444-1968
+  - urbanistica
 - id: subappalto-contratti-pubblici-dlgs36
   area: appalti-opere-pubbliche
   title: Subappalto nei contratti pubblici (D.Lgs. 36/2023 art. 119)

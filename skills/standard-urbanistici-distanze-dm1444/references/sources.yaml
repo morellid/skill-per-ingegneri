@@ -1,0 +1,59 @@
+schema_version: 1
+skill: standard-urbanistici-distanze-dm1444
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento delle zone territoriali omogenee, degli
+# standard urbanistici, dei limiti di densita' edilizia, di altezza e di
+# distanza fra i fabbricati secondo il DM 2 aprile 1968 n. 1444. La skill
+# inquadra i limiti inderogabili del testo originario; non redige lo strumento
+# urbanistico ne' sostituisce il pianificatore/progettista.
+
+sources:
+  - id: dm-1444-1968
+    title: "Decreto del Ministro per i lavori pubblici 2 aprile 1968, n. 1444 - Limiti inderogabili di densita' edilizia, di altezza, di distanza fra i fabbricati e rapporti massimi tra spazi per insediamenti e spazi pubblici (G.U. Serie Generale n. 97 del 16/4/1968)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/1968/04/16/97/sg/pdf
+    accessed: 2026-07-23
+    sha256: 418cbdf7a24fa96bc77992f0504feb0c0defaec1593518d9e8aa3e62091562c8
+    license: public-domain
+    binary_path: not_in_repo/dm-1444-1968.pdf
+    md_path: references/fonti/dm-1444-1968.md
+    excerpt_path: references/estratti/standard-urbanistici-checklist.md
+    notes: |
+      Pubblicato in G.U. Serie Generale n. 97 del 16/04/1968; il decreto occupa
+      le pagine GU 2340-2342 (pagine PDF 24-26). SHA256 calcolato su
+      not_in_repo/dm-1444-1968.pdf il 2026-07-23 con doppio download
+      riproducibile dallo stesso URL eli della Gazzetta Ufficiale; hash
+      verificabile live dalla CI del repo su ogni PR.
+      Il PDF e' una scansione GURITEL (immagine): `pdftotext` non estrae testo
+      utile, per cui gli articoli 1-10 sono stati letti renderizzando le pagine
+      in immagine (pdftoppm -r 150 -png, pagine PDF 24-26) e trascritti verbatim
+      in references/fonti/dm-1444-1968.md. Trascrizione del TESTO ORIGINARIO del
+      1968. Contenuti rilevanti:
+      - art. 1 campo di applicazione: nuovi PRG/piani particolareggiati/
+        lottizzazioni, nuovi regolamenti edilizi, revisioni strumenti esistenti.
+      - art. 2 zone territoriali omogenee A (storiche), B (edificate; parziali
+        se coperto >=12,5% e densita' >1,5 mc/mq), C (nuovi complessi), D
+        (produttive), E (agricole), F (attrezzature interesse generale).
+      - art. 3 standard residenziali: 18 mq/ab (a 4,50 istruzione, b 2,00
+        interesse comune, c 9,00 verde/sport, d 2,50 parcheggi); 25 mq/ab
+        superficie lorda abitabile.
+      - art. 4 quantita' per zone: A/B doppio computo; C 18 mq (o 12 mq, di cui
+        4 scuole, per comuni <=10.000 ab); C contigue a connotati naturali 15
+        mq; E 6 mq; F 1,5+1+15 mq/ab.
+      - art. 5 insediamenti produttivi: D spazi >=10%; commerciale/direzionale
+        80 mq ogni 100 mq (meta' a parcheggi; A/B ridotto a meta').
+      - art. 6 mancanza di aree disponibili (obbligo di dimostrazione).
+      - art. 7 densita' edilizia: A <=50% densita' media e <=5 mc/mq; B 7/6/5
+        mc/mq (comuni >200.000 / 200.000-50.000 / <50.000 ab), densita'
+        superiori se <=70% preesistenti; E 0,03 mc/mq.
+      - art. 8 altezze per zone (A/B <= preesistenti/circostanti; C <=
+        compatibili con A; altre da strumenti).
+      - art. 9 distanze: 10 m tra pareti finestrate (nuovi edifici); C >=
+        altezza fabbricato piu' alto (anche una parete finestrata se sviluppo
+        >12 m); strade interposte: larghezza sede + 5 / 7,50 / 10 m per lato
+        (strade <7 / 7-15 / >15 m); maggiorazione fino all'altezza.
+      - art. 10 pubblicazione (Mancini/Taviani).
+      Restano fuori scope: la redazione dello strumento urbanistico, le
+      articolazioni regionali/comunali, le modifiche normative successive e
+      l'interpretazione giurisprudenziale.
