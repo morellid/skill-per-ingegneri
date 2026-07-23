@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 45
+  count: 46
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -942,6 +942,25 @@ skills:
   - ntc-2018
   - resistenze-di-progetto
   - coefficienti-parziali
+- id: costruzioni-muratura-zona-sismica-ntc
+  area: strutture-geotecnica
+  title: 'Muratura in zona sismica: regole generali (NTC 2018 par. 7.8.1)'
+  summary: 'Inquadra le regole generali della muratura in zona sismica (NTC 2018 par. 7.8.1): CD"B" (7.8.1.1), requisiti dei
+    materiali (fbk>=5 MPa, malta>=5, vuoti<=45%; 7.8.1.2), fattori alpha_u/alpha_1 1,7/1,5/1,6 (7.8.1.3) e requisiti geometrici
+    Tab. 7.8.I (7.8.1.4).'
+  normative_refs:
+  - 'NTC 2018 - par. 7.8.1: muratura CD"B" (7.8.1.1); materiali fbk>=5 MPa, malta>=5, vuoti<=45% (7.8.1.2); alpha_u/alpha_1
+    1,7/1,5/1,6 (7.8.1.3); Tab. 7.8.I tmin/(h0/t)max/(l/h'')min (7.8.1.4)'
+  - 'Rinvio (fuori scope): verifiche pannelli (7.8.2-7.8.4) e analisi (7.8.1.5); muratura statica par. 4.5 e fattore q par.
+    7.3.1 (skill dedicate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - muratura
+  - zona-sismica
+  - ntc-2018
+  - requisiti-geometrici
+  - fattore-comportamento
 - id: cra-classificazione-pde
   area: software-dati-cybersecurity
   title: CRA - Classificazione PDE e valutazione della conformita'
