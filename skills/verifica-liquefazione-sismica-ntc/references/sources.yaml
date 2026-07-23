@@ -1,0 +1,63 @@
+schema_version: 1
+skill: verifica-liquefazione-sismica-ntc
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento della verifica di stabilita' nei confronti
+# della liquefazione del terreno in condizioni sismiche secondo le NTC 2018 (DM
+# 17/01/2018), par. 7.11.3.4: generalita', condizioni di esclusione della
+# verifica, metodi di analisi (coefficiente di sicurezza). La skill inquadra i
+# criteri; non calcola il coefficiente di sicurezza ne' progetta gli interventi.
+
+sources:
+  - id: ntc2018-par-7-11-3-4
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.11.3.4 (stabilita' nei confronti della liquefazione)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-23
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-11-3-4.md
+    excerpt_path: references/estratti/verifica-liquefazione-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.11.3.4 (Cap. 7 «Progettazione per azioni sismiche», par. 7.11
+      «Opere e sistemi geotecnici»), pagine GU 280-281 = pagine PDF 284-285,
+      estratto con `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-7-11-3-4.md. Le costanti, i pedici e le
+      disuguaglianze sono stati verificati sull'immagine renderizzata delle
+      pagine PDF 284 e 285 (pdftoppm -r 150 -png), perche' pdftotext altera
+      pedici (es. (N1)60, qc1N, SS, ST) e simboli di disuguaglianza.
+      Contenuti rilevanti:
+      - 7.11.3.4.1 generalita': definizione della liquefazione (perdita di
+        resistenza al taglio / accumulo di deformazioni plastiche in terreni
+        saturi prevalentemente sabbiosi, azioni cicliche/dinamiche in
+        condizioni non drenate); se suscettibile e rilevante -> interventi di
+        consolidamento o trasferimento del carico a strati non suscettibili;
+        fondazioni profonde -> valutare riduzione capacita' portante e
+        incrementi nei pali.
+      - 7.11.3.4.2 esclusione della verifica (basta UNA circostanza):
+        (1) a_max al piano campagna in campo libero < 0,1 g;
+        (2) falda media stagionale > 15 m (piano campagna sub-orizzontale,
+            fondazioni superficiali);
+        (3) sabbie pulite con (N1)60 > 30 oppure qc1N > 180 (SPT/CPT
+            normalizzate a tensione efficace verticale di 100 kPa);
+        (4) granulometria esterna ai fusi di Fig. 7.11.1(a) per Uc < 3,5 e
+            Fig. 7.11.1(b) per Uc > 3,5.
+        Se la condizione 1 non e' soddisfatta, le indagini devono determinare
+        i parametri per le condizioni 2, 3 e 4.
+      - 7.11.3.4.3 metodi di analisi: se nessuna condizione e' soddisfatta e
+        vi sono strati estesi/lenti spesse di sabbie sciolte sotto falda ->
+        valutare il coefficiente di sicurezza alla liquefazione alle profondita'
+        dei terreni liquefacibili; metodologie storico-empiriche (coeff. di
+        sicurezza = resistenza disponibile / sollecitazione indotta dal
+        terremoto di progetto); resistenza da prove in sito o cicliche di
+        laboratorio; sollecitazione da a_max alla profondita' d'interesse;
+        adeguatezza del margine valutata e motivata dal progettista.
+      Restano fuori scope: il calcolo del coefficiente di sicurezza (CRR/CSR,
+      correlazioni con (N1)60/qc1N, magnitudo) con metodi di letteratura/prove,
+      la progettazione degli interventi di consolidamento, la stabilita' dei
+      pendii sismica (§ 7.11.3.5) e statica (§ 6.3).
