@@ -1,0 +1,61 @@
+schema_version: 1
+skill: costruzioni-muratura-zona-sismica-ntc
+last_verified: 2026-07-23
+
+# Fonte normativa per l'inquadramento delle regole generali per le costruzioni
+# di muratura in zona sismica (premessa/CD"B", requisiti dei materiali,
+# modalita' costruttive e fattori di comportamento alpha_u/alpha_1, criteri di
+# progetto e requisiti geometrici Tab. 7.8.I) secondo le NTC 2018 (DM
+# 17/01/2018), par. 7.8.1. La skill inquadra le regole generali; non esegue le
+# verifiche ne' progetta l'armatura.
+
+sources:
+  - id: ntc2018-par-7-8-1
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.8.1 (costruzioni di muratura in zona sismica, regole generali)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-23
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-8-1.md
+    excerpt_path: references/estratti/muratura-sismica-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.8.1 (Cap. 7 «Progettazione per azioni sismiche», par. 7.8
+      «Costruzioni di muratura»), pagine GU 257-258 = pagine PDF 261-262,
+      estratto con `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-7-8-1.md. I valori numerici, i pedici e la
+      Tab. 7.8.I sono stati verificati sull'immagine renderizzata delle pagine
+      PDF 261 e 262 (pdftoppm -r 150 -png), perche' pdftotext altera pedici,
+      disuguaglianze e struttura tabellare. Contenuti rilevanti:
+      - 7.8.1.1 premessa: muratura moderatamente dissipativa -> CD"B";
+        coefficienti parziali del Cap. 4 riducibili del 20% e comunque >= 2.
+      - 7.8.1.2 materiali (oltre §4.5.2, per agS > 0,075g): vuoti <= 45%; setti
+        paralleli continui/rettilinei; fbk (direzione portante, area lorda)
+        >= 5 MPa oppure fb (media normalizzata) >= 6 MPa; fbk perpendicolare
+        >= 1,5 MPa; malta di allettamento (ordinaria) >= 5 MPa. Giunti sottili
+        (0,5-3 mm) solo agS <= 0,15g (h max 10,5/7 m; piani <=3/<=2); giunti
+        verticali non riempiti solo agS <= 0,075g (<=2 piani, h <= 7 m); setti
+        interni >= 7 mm, esterni >= 10 mm, foratura <= 55%; pietra non squadrata/
+        listata solo agS <= 0,075g.
+      - 7.8.1.3 fattori di comportamento: q = q0*KR (q0 Tab. 7.3.II); alpha_u/
+        alpha_1 <= 2,5 (da pushover). In assenza di analisi non lineare:
+        ordinaria 1,7; armata 1,5 (1,3 con capacity design); confinata 1,6
+        (1,3 con capacity design).
+      - 7.8.1.4 criteri di progetto e requisiti geometrici: piante compatte/
+        simmetriche; pareti continue in elevazione (no pareti in falso); solai
+        non spingenti, distanza max tra due solai <= 5 m. Tab. 7.8.I (tmin,
+        (h0/t)max, (l/h')min): ordinaria pietra squadrata 300 mm/10/0,5;
+        ordinaria artificiali 240/12/0,4; armata artificiali 240/15/qualsiasi;
+        confinata 240/15/0,3; ordinaria pietra squadrata agS<=0,15g 240/12/0,3;
+        artificiali semipieni agS<=0,075g 200/20/0,3; artificiali pieni
+        agS<=0,075g 150/20/0,3.
+      Restano fuori scope: le verifiche (pressoflessione/taglio dei pannelli,
+      §§ 7.8.2-7.8.4), i metodi di analisi (§ 7.8.1.5), i dettagli/cordoli e la
+      muratura armata (§§ 7.8.1.7-7.8.5); i requisiti statici (§ 4.5, skill
+      costruzioni-muratura-ntc) e il framework del fattore q (§ 7.3.1, skill
+      fattore-comportamento-q-sismica-ntc).
