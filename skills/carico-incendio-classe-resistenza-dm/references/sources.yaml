@@ -1,0 +1,62 @@
+schema_version: 1
+skill: carico-incendio-classe-resistenza-dm
+last_verified: 2026-07-23
+
+# Fonte normativa per la determinazione del carico d'incendio specifico di
+# progetto (q_f,d) e della conseguente classe di resistenza al fuoco richiesta
+# agli elementi costruttivi, secondo il DM 9 marzo 2007 (Prestazioni di
+# resistenza al fuoco delle costruzioni nelle attivita' soggette al controllo
+# del CNVVF). La skill inquadra formula, coefficienti tabellari e classi; non
+# esegue il progetto prestazionale con curve naturali ne' sostituisce il
+# professionista antincendio.
+
+sources:
+  - id: dm-9-3-2007
+    title: "Decreto del Ministro dell'interno 9 marzo 2007 - Prestazioni di resistenza al fuoco delle costruzioni nelle attivita' soggette al controllo del Corpo nazionale dei vigili del fuoco (G.U. Serie Generale n. 74 del 29/3/2007 - Suppl. Ord. n. 87)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2007/03/29/74/so/87/sg/pdf
+    accessed: 2026-07-23
+    sha256: c7003438fcf4142cd87534a4588ba3c66adee81ec9fb06f328c8a7310ab4b0bc
+    license: public-domain
+    binary_path: not_in_repo/dm-9-3-2007-prestazioni-fuoco.pdf
+    md_path: references/fonti/dm-9-3-2007.md
+    excerpt_path: references/estratti/carico-incendio-checklist.md
+    notes: |
+      Pubblicato in G.U. Serie Generale n. 74 del 29/03/2007 - Supplemento
+      Ordinario n. 87. SHA256 calcolato su
+      not_in_repo/dm-9-3-2007-prestazioni-fuoco.pdf il 2026-07-23 con doppio
+      download riproducibile dallo stesso URL eli della Gazzetta Ufficiale;
+      hash verificabile live dalla CI del repo su ogni PR.
+      Il PDF e' una scansione GURITEL (immagine): `pdftotext` non estrae testo
+      utile, per cui formula, tabelle e curve sono state lette renderizzando le
+      pagine in immagine (pdftoppm -r 135/150 -png) e trascritte verbatim in
+      references/fonti/dm-9-3-2007.md. Il file contiene, prima di questo DM,
+      anche il DM 16 febbraio 2007 (classificazione); la fonte usata e' solo il
+      DM 9 marzo 2007. Contenuti rilevanti:
+      - punto 1 carico d'incendio specifico: q = somma(g_i*H_i*m_i*psi_i) [MJ],
+        H_i potere calorifico inferiore (UNI EN ISO 1716:2002), m_i = 0,80
+        legno/cellulosici / 1,00 altri, psi_i = 0 / 0,85 / 1; q_f = q/A [MJ/m2].
+      - punto 2 carico d'incendio specifico di progetto:
+        q_f,d = dq1*dq2*dn*qf; Tabella 1 (dq1 per superficie: 1,00..2,00);
+        Tabella 2 (dq2 per classe di rischio I/II/III: 0,80/1,00/1,20);
+        Tabella 3 (dn = prodotto dei dni per le misure di protezione:
+        estinzione ad acqua 0,60, altro 0,80, evac. fumo/calore 0,90,
+        rivelazione 0,85, squadra 0,90, rete interna 0,90, interna+esterna
+        0,80, percorsi protetti 0,90, accessibilita' VVF 0,90).
+      - punto 3 livelli di prestazione I-V; livello I non ammesso nel campo di
+        applicazione; livello II classe 30 (1 piano f.t. senza interrati) / 60
+        (fino a 2 piani f.t. e 1 interrato) alle condizioni a-f; livello III
+        classi in Tabella 4 (q_f,d: <=100->0, <=200->15, <=300->20, <=450->30,
+        <=600->45, <=900->60, <=1200->90, <=1800->120, <=2400->180,
+        >2400->240); livelli IV e V su richiesta (DM 14/9/2005). Classi: 15,
+        20, 30, 45, 60, 90, 120, 180, 240, 360 minuti.
+      - punto 4 incendio di progetto: curve nominali (standard
+        theta_g=20+345*log10(8t+1); idrocarburi; esterna) e curve naturali;
+        Tabella 5 (q_f,d: <=300->0, <=450->15, <=600->20, <=900->30,
+        <=1200->45, <=1800->60, <=2400->90, >2400->120).
+      - punto 5 criteri di progettazione elementi strutturali: capacita'
+        portante in combinazione eccezionale; elementi secondari classe 30
+        (livello III) a condizioni.
+      Restano fuori scope: il progetto prestazionale di dettaglio con curve
+      naturali, le regole tecniche verticali VVF e gli Eurocodici parte 1-2
+      (proprieta' dei materiali ad alta temperatura).
