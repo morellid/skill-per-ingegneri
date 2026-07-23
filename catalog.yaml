@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 43
+  count: 44
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -2687,6 +2687,25 @@ skills:
   - dichiarazione-accessibilita
   - en-301549
   - wcag
+- id: verifica-liquefazione-sismica-ntc
+  area: strutture-geotecnica
+  title: Verifica alla liquefazione sismica del terreno (NTC 2018 par. 7.11.3.4)
+  summary: 'Inquadra la verifica di liquefazione del terreno (NTC 2018 par. 7.11.3.4): definizione, condizioni di esclusione
+    (a_max<0,1g; falda>15 m; (N1)60>30 o qc1N>180; granulometria fuori Fig. 7.11.1) e metodi di analisi (coeff. di sicurezza
+    = resistenza/sollecitazione).'
+  normative_refs:
+  - 'NTC 2018 - par. 7.11.3.4: liquefazione; esclusione se a_max<0,1g / falda>15 m / (N1)60>30 o qc1N>180 / granulometria
+    fuori Fig. 7.11.1; coeff. sicurezza = resistenza/sollecitazione'
+  - 'Rinvio (fuori scope): calcolo CRR/CSR con metodi di letteratura e prove in sito/laboratorio; § 7.11.3.5 (pendii sismica)
+    e § 6.3 (pendii statica); § 3.2.2-3.2.3 (sottosuolo e azione sismica)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - liquefazione
+  - geotecnica-sismica
+  - ntc-2018
+  - relazione-geotecnica
+  - fondazioni
 - id: verifica-progettazione-dlgs36
   area: appalti-opere-pubbliche
   title: Verifica della progettazione e validazione del progetto (D.Lgs. 36/2023 art. 42)
