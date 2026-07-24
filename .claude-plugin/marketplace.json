@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 48 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 49 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -91,6 +91,7 @@
         "./opere-sostegno-ntc",
         "./opere-sotterraneo-gallerie-ntc",
         "./periodo-proprio-t1-ntc",
+        "./ponti-zona-sismica-ntc",
         "./predimensionamento-flessione-ca-ntc",
         "./regolarita-strutturale-sismica-ntc",
         "./relazione-calcolo-codici-ntc",

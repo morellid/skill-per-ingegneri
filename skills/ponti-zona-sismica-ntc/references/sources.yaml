@@ -1,0 +1,64 @@
+schema_version: 1
+skill: ponti-zona-sismica-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per l'inquadramento delle regole generali dei ponti in zona
+# sismica (campo di applicazione, criteri generali di progettazione dissipativo/
+# non dissipativo con dissipazione limitata alle pile, valori del fattore di
+# comportamento q0/nu_k/lambda(alfa) e regolarita' KR, modello strutturale e
+# requisiti dell'analisi statica lineare) secondo le NTC 2018 (DM 17/01/2018),
+# par. 7.9. La skill inquadra le regole generali; non esegue le verifiche di
+# duttilita'/resistenza ne' i dettagli costruttivi.
+
+sources:
+  - id: ntc2018-par-7-9
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.9 (ponti in zona sismica)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-9.md
+    excerpt_path: references/estratti/ponti-sismica-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.9 (Cap. 7 «Progettazione per azioni sismiche», par. 7.9 «Ponti»),
+      pagine GU 265-267 = pagine PDF 269-271, estratto con `pdftotext -layout` e
+      trascritto verbatim in references/fonti/ntc2018-par-7-9.md. I valori
+      numerici e le formule sono stati verificati sull'immagine renderizzata
+      delle pagine PDF 269/270 (pdftoppm -r 150 -png), perche' pdftotext altera
+      pedici (q0, nu_k, NEd, Ac fck), esponenti e disuguaglianze. Contenuti
+      rilevanti (§7.9.1-7.9.4.1):
+      - 7.9.1 campo di applicazione: ponti a pile e travate (continue o
+        appoggiate); pile a fusto unico; tipologie diverse documentate, fermi i
+        q0 di Tab. 7.3.II.
+      - 7.9.2 criteri generali: non dissipativo (Cap. 4, no sezioni oltre la
+        curvatura di prima plasticizzazione / la deformazione di snervamento);
+        dissipativo (meccanismo dissipativo stabile, dissipazione limitata alle
+        pile, comportamento inelastico flessionale, esclusa rottura per taglio).
+        Pali: sollecitazioni sismiche divise per 1,5, dettagli CD"B" per 10
+        diametri. Confinamento con perdita copriferri a 0,35%. Elementi sempre
+        elastici: impalcato, appoggi, fondazioni, spalle (progettazione in
+        capacita').
+      - 7.9.2.1 fattore di comportamento: non dissipativo q0 = 1,0; dissipativo
+        q0 max Tab. 7.3.II con lambda(alfa) = 1 se alfa>=3, (alfa/3)^0,5 se
+        3>alfa>=1 (alfa=L/H); per c.a. duttili q0 valido solo se nu_k =
+        NEd/(Ac fck) <= 0,3 e comunque nu_k <= 0,6; per 0,3<nu_k<0,6
+        q0(nu_k)=q0-[(nu_k/0,3)-1](q0-1) [7.9.1]. Regolarita': ri=q0 MEd,i/MRd,i;
+        KR=1 se r~=rmax/rmin<2, altrimenti KR=2/r~ [7.9.2], sempre q=q0 KR>=1.
+        Ponti a geometria irregolare (obliquita' >45°, raggio ridotto) q=1,5,
+        fino a 3,5 solo con analisi non lineare.
+      - 7.9.3-7.9.4.1 modello/analisi: eccentricita' accidentale 0,03 volte la
+        dimensione dell'impalcato; attenzione ai moti rigidi per obliquita'
+        phi>20° o B/L>2,0; incremento flettente DM=dEd NEd [7.9.3]; analisi
+        statica lineare ammessa con massa efficace pila <= 1/5 massa impalcato
+        ed eccentricita' <= 5%.
+      Restano fuori scope: le verifiche di duttilita'/resistenza delle pile e
+      dei dispositivi, i metodi di analisi non lineare e i dettagli costruttivi
+      (§§ 7.9.4-7.9.6); i carichi da traffico statici (§§ 5.1.3, 5.2.2, skill
+      dedicate) e il framework del fattore q per gli edifici (§ 7.3.1, skill
+      fattore-comportamento-q-sismica-ntc).
