@@ -1,0 +1,56 @@
+schema_version: 1
+skill: costruzioni-acciaio-zona-sismica-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per l'inquadramento delle regole generali per le costruzioni
+# di acciaio in zona sismica (comportamento dissipativo/non dissipativo,
+# caratteristiche dei materiali e fattore di sovraresistenza gamma_ov, tipologie
+# strutturali, fattori di comportamento q0 e alpha_u/alpha_1, regole generali
+# per elementi dissipativi e Tab. 7.5.I classe della sezione) secondo le NTC
+# 2018 (DM 17/01/2018), par. 7.5. La skill inquadra le regole generali; non
+# esegue le verifiche di resistenza/duttilita' ne' progetta i collegamenti.
+
+sources:
+  - id: ntc2018-par-7-5
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.5 (costruzioni di acciaio in zona sismica)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-5.md
+    excerpt_path: references/estratti/acciaio-sismica-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.5 (Cap. 7 «Progettazione per azioni sismiche», par. 7.5
+      «Costruzioni di acciaio»), pagine GU 239-242 = pagine PDF 243-246,
+      estratto con `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-7-5.md. I valori numerici sono stati
+      verificati sull'immagine renderizzata delle pagine PDF 243/245/246
+      (pdftoppm -r 150 -png), perche' pdftotext altera pedici, simboli e
+      struttura (in particolare gamma_ov, reso come «Jov»/«·ov»). Contenuti
+      rilevanti (§7.5.1-7.5.3):
+      - 7.5.1 materiali: acciaio conforme §11.3.4.9; fattore di sovraresistenza
+        del materiale gamma_ov = 1,25 per S235/S275/S355 e 1,15 per S420/S460.
+      - 7.5.2.1 tipologie: a) intelaiate; b) controventi concentrici
+        (b1 diagonale tesa attiva, b2 a V, b3 a K NON dissipativa); c)
+        controventi eccentrici; d) a mensola/pendolo inverso (>=50% massa nel
+        terzo superiore o dissipazione alla base; a un piano con carico assiale
+        normalizzato <= 0,3 -> telaio); e) intelaiate con controventi
+        concentrici; f) intelaiate con tamponature.
+      - 7.5.2.2 fattori: q0 max in Tab. 7.3.II; alpha_u/alpha_1 = 1,1 (un piano),
+        1,2 (telaio piu' piani 1 campata), 1,3 (telaio piu' piani piu' campate),
+        1,2 (controventi eccentrici piu' piani), 1,0 (mensola/pendolo inverso).
+      - 7.5.3 regole generali dissipativi: zone dissipative nelle membrature;
+        capacity design collegamenti Rj,d >= 1,1*gamma_ov*Rpl,Rd [7.5.1];
+        duttilita' locale mu = theta_u/theta_y (theta_u al -15% della resistenza
+        max). Tab. 7.5.I: CD"B" 2<q0<=4 -> Classe 1 o 2; CD"A" q0>4 -> Classe 1.
+        Colonne primarie dissipative dei telai: NEd/Npl,Rd <= 0,3 [7.5.3].
+      Restano fuori scope: le verifiche di resistenza/duttilita' di membrature e
+      collegamenti e le regole specifiche per tipologia (§§ 7.5.3.1-7.5.3.2,
+      7.5.4-7.5.6); i requisiti statici (§ 4.2, skill costruzioni-acciaio-ntc) e
+      il framework del fattore q (§ 7.3.1, skill fattore-comportamento-q-sismica-ntc).

@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 47
+  count: 48
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -849,6 +849,25 @@ skills:
   - ntc-2018
   - classi-di-sezione
   - coefficienti-parziali
+- id: costruzioni-acciaio-zona-sismica-ntc
+  area: strutture-geotecnica
+  title: 'Acciaio in zona sismica: regole generali (NTC 2018 par. 7.5)'
+  summary: 'Inquadra le regole generali dell''acciaio in zona sismica (NTC 2018 par. 7.5): materiali e sovraresistenza gamma_ov
+    1,25/1,15 (7.5.1), tipologie strutturali (7.5.2.1), fattori q0 e alpha_u/alpha_1 1,1-1,3 (7.5.2.2), classe della sezione
+    Tab. 7.5.I e NEd/Npl,Rd<=0,3 (7.5.3).'
+  normative_refs:
+  - 'NTC 2018 - par. 7.5: acciaio sismico, gamma_ov 1,25/1,15 (7.5.1); tipologie strutturali (7.5.2.1); q0 e alpha_u/alpha_1
+    1,1-1,3 (7.5.2.2); Tab. 7.5.I classe sezione, NEd/Npl,Rd<=0,3 (7.5.3)'
+  - 'Rinvio (fuori scope): verifiche RES/DUT di membrature e collegamenti (7.5.3.1-7.5.6); acciaio statico par. 4.2 e fattore
+    q par. 7.3.1 (skill dedicate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - acciaio
+  - zona-sismica
+  - ntc-2018
+  - fattore-comportamento
+  - tipologie-strutturali
 - id: costruzioni-calcestruzzo-ntc
   area: strutture-geotecnica
   title: 'Costruzioni di calcestruzzo: materiali e verifiche (NTC 2018 par. 4.1)'
