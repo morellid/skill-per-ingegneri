@@ -1,0 +1,59 @@
+schema_version: 1
+skill: materiali-legno-strutturale-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per la qualificazione e le proprieta' dei materiali e prodotti
+# a base di legno per uso strutturale (generalita' e casi di qualificazione,
+# valori caratteristici e profilo resistente, coefficiente kh, tipi di prodotto
+# e norme di riferimento, accettazione in cantiere) secondo le NTC 2018 (DM
+# 17/01/2018), par. 11.7 (Cap. 11 «Materiali e prodotti per uso strutturale»).
+# La skill inquadra la qualificazione e le proprieta'; non esegue le verifiche di
+# progetto (fd = kmod fk/gamma_M).
+
+sources:
+  - id: ntc2018-par-11-7
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 11.7 (materiali e prodotti a base di legno)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-11-7.md
+    excerpt_path: references/estratti/legno-materiali-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 11.7 (Cap. 11 «Materiali e prodotti per uso strutturale», par. 11.7
+      «Materiali e prodotti a base di legno»), pagine GU 345 e seguenti = pagine
+      PDF 349 e seguenti, estratto con `pdftotext -layout` e trascritto verbatim
+      in references/fonti/ntc2018-par-11-7.md. Le formule e i valori numerici
+      sono stati verificati sull'immagine renderizzata delle pagine PDF 349/350
+      (pdftoppm -r 150 -png), perche' pdftotext altera pedici, esponenti e
+      struttura tabellare. Contenuti rilevanti (§11.7.1-11.7.6 + cenni 11.7.10):
+      - 11.7.1 generalita': qualificazione secondo §11.1 (casi A marcatura CE / B
+        qualificazione / C Linee Guida CSLP); sistema qualita' e rintracciabilita';
+        il Direttore dei Lavori rifiuta le forniture non conformi ed effettua i
+        controlli di accettazione (§11.7.10.2); laboratori art. 59 DPR 380/2001 o
+        notificati D.Lgs 106/2017 + Reg. UE 305/2011.
+      - 11.7.1.1 proprieta': valori caratteristici = frattile 5%; prove di durata
+        300 s a 20+-2 gradi C e UR 65+-5%; profilo resistente Tab. 11.7.I (fm,k,
+        ft,0,k, ft,90,k, fc,0,k, fc,90,k, fv,k; E0,mean, E0,05, E90,mean, Gmean;
+        rho_k, rho_mean). Coefficiente kh: legno massiccio (dim. 150 mm)
+        kh = min[(150/h)^0,2; 1,3] [11.7.1]; legno lamellare (dim. 600 mm)
+        kh = min[(600/h)^0,1; 1,1] [11.7.2].
+      - 11.7.2-11.7.6 tipi di prodotto: legno massiccio (UNI EN 14081-1, CE;
+        classi UNI EN 338; profili UNI 11035; prove UNI EN 384); giunti a dita
+        (caso C, UNI EN 14081-1, ISO 9001); lamellare/massiccio incollato (UNI EN
+        14080, CE; tavole UNI EN 14081-1; classi > C30 solo classificazione a
+        macchina); pannelli (UNI EN 13986; valori UNI EN 12369-1/2/3); altri
+        prodotti derivati (caso C).
+      - 11.7.10 identificazione, qualificazione e accettazione in cantiere a cura
+        del Direttore dei Lavori.
+      Restano fuori scope: adesivi (§11.7.7), collegamenti (§11.7.8), durabilita'
+      (§11.7.9); le verifiche di progetto (§ 4.4, skill costruzioni-legno-ntc),
+      i requisiti sismici (§ 7.7, skill costruzioni-legno-zona-sismica-ntc) e
+      l'accettazione di muratura/cls/acciaio (§§ 11.10 / 11.2 / 11.3, skill
+      dedicate).
