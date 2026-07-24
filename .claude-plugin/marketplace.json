@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 53 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 54 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -85,6 +85,7 @@
         "./criteri-modellazione-sismica-ntc",
         "./denuncia-autorizzazione-sismica-dpr380",
         "./denuncia-collaudo-statico-ca-dpr380",
+        "./dispositivi-antisismici-qualificazione-ntc",
         "./elementi-non-strutturali-sismica-ntc",
         "./fattore-comportamento-q-sismica-ntc",
         "./fondazioni-pali-ntc",

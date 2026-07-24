@@ -1,0 +1,88 @@
+schema_version: 1
+skill: dispositivi-antisismici-qualificazione-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per la qualificazione e i controlli di accettazione in
+# cantiere dei dispositivi antisismici e di controllo delle vibrazioni
+# (isolatori elastomerici/a scorrimento, dissipatori lineari/non lineari/
+# viscosi, dispositivi di vincolo a fusibile/provvisorio) secondo le NTC 2018
+# (DM 17/01/2018), par. 11.9 (Cap. 11). La skill inquadra qualificazione e
+# accettazione (UNI EN 15129 + Marcatura CE, prove di accettazione demandate
+# al Direttore dei Lavori); non esegue il progetto delle costruzioni isolate
+# (par. 7.10) ne' dimensiona i dispositivi.
+
+sources:
+  - id: ntc2018-par-11-9
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 11.9 (dispositivi antisismici e di controllo di vibrazioni)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-11-9.md
+    excerpt_path: references/estratti/dispositivi-antisismici-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 11.9 (Cap. 11 «Materiali e prodotti per uso strutturale», par. 11.9
+      «Dispositivi antisismici e di controllo di vibrazioni»), pagine GU
+      354-360 = pagine PDF 358-364, estratto con `pdftotext -layout` e
+      trascritto verbatim in references/fonti/ntc2018-par-11-9.md. TUTTI i
+      valori numerici sono stati verificati sull'immagine renderizzata delle
+      pagine PDF 358/360/361/362/363/364 (pdftoppm -r 150 -png) perche'
+      pdftotext corrompe pedici, simboli greci e disuguaglianze. Contenuti
+      rilevanti (§11.9-11.9.10):
+      - 11.9 generalita': vita di servizio > 10 anni; campo di temperatura di
+        riferimento in assenza di indicazioni almeno -15 C / +45 C; piani di
+        manutenzione/sostituzione; UNI EN 15129 (dbd = spostamento SLV;
+        gamma_x*dbd = SLC).
+      - 11.9.1 tipologie: vincolo temporaneo (a fusibile / provvisorio);
+        dipendenti dallo spostamento (lineari / non lineari); viscosi;
+        isolatori (elastomerici / a scorrimento); combinazioni.
+      - 11.9.2 qualificazione: punto A) del §11.1 -> UNI EN 15129 + Marcatura
+        CE, sistema VVCP per applicazioni critiche; se non ricadenti -> caso C)
+        del §11.1; manuale di posa/manutenzione con ogni fornitura.
+      - 11.9.3 accettazione: obbligatoria per tutte le tipologie, demandata al
+        Direttore dei Lavori (campionamento sui lotti del cantiere, verifica
+        geometrica/tolleranze, rifiuto forniture non conformi); prove eseguite
+        e certificate da laboratorio art. 59 DPR 380/2001; FPC tests.
+      - 11.9.4 lineari: xi_e < 15% [11.9.1]; |Ke-Kin|/Kin < 20% [11.9.2];
+        stabilita' ciclica <= 10% [11.9.3/11.9.4]; Tab. 11.9.I (Ke
+        15/20/40/10 %, xi_e 15/15/15/10 %). 11.9.4.1: prove su >= 20% (comunque
+        >= 4); prova quasi statica >= 5 cicli +/- d2 su >= 1 dispositivo.
+      - 11.9.5 non lineari: del = d2/20; K1=F1/d1, K2=(F2-F1)/(d2-d1),
+        Ksec=F2/d2, xi_e=Ed/(2*pi*F2*d2); stabilita' <= 10% [11.9.5/11.9.6];
+        Tab. 11.9.II; K2/K1 <= 0,05 -> variazione K2/K1 < 0,01. 11.9.5.1 come
+        11.9.4.1.
+      - 11.9.6 viscosi: forza ~ v^alpha; |Ed(i)-Ed(3)|/Ed(3) <= 10% [11.9.7];
+        Tab. 11.9.III (Fmax 15/5/5/10 %, Ed -15/-5/-5/10 %); gamma_v =
+        (1+td)*(1,5)^alpha [11.9.8]; rotazione cerniere >= 2 gradi; forza
+        trasversale >= 2x peso proprio. 11.9.6.1: >= 20% (>= 4).
+      - 11.9.7 isolatori elastomerici: piastre allungamento a rottura 18%,
+        spessore min 2 mm interne / 20 mm esterne; S1=A'/L, S2=D/te;
+        Ke=F/d=Gdin*A/te, xi_e=Ed/(2*pi*F*d), Kv=Fv/dv; Tab. 11.9.IV
+        (Ke 20/20/20/20 %, Kv -30 %, xi_e 20/20/20/20 %); frequenze 0,1/0,5 Hz;
+        variazione per carico verticale <= 15%. 11.9.7.1: >= 20% (>= 4).
+      - 11.9.8 isolatori a scorrimento: sotto d2 almeno 5 cicli; attrito
+        |f(i)-f(3)|/f(3) <= 0,25 [11.9.9]; se incremento forza tra 0,5 ddc e
+        ddc < 1,25% peso sovrastruttura -> appoggio fino a 1,25 d2. 11.9.8.1:
+        >= 20% (>= 4); prova quasi statica >= 5 cicli +/- d2 su parti
+        supplementari.
+      - 11.9.9 a fusibile (meccanico/idraulico). 11.9.9.1: risultati entro
+        +/-10% dalla qualificazione; geometria +/-10% spessori / +/-5%
+        lunghezze; >= 3 cicli monotonici a carico di servizio (+10%); forza di
+        rilascio tolleranza +/-15% se non definita dal progettista; >= 20%
+        (>= 4).
+      - 11.9.10 vincolo provvisorio: corsa >= +/-50 mm ponti / +/-25 mm
+        edifici; rotazione cerniere >= 2 gradi; forza trasversale >= 2x peso;
+        fattore di sicurezza sovrappressioni SLC = 1,5 (o >= 1,1 con protezione
+        incorporata, attivazione < 110% forza progetto); velocita' attivazione
+        0,5-5 mm/s. 11.9.10.1: >= 20% (>= 4); prova sovrappressione a) carico
+        progetto < 0,5 s mantenuto >= 5 s; b) inversione < 1 s mantenuta >= 5 s.
+      Restano fuori scope: il progetto delle costruzioni con isolamento/
+      dissipazione (§ 7.10, skill isolamento-sismico-ntc, che rinvia al §11.9);
+      il dimensionamento dei dispositivi; la qualificazione dei materiali del
+      Cap. 11 (cls/acciaio §§ 11.2/11.3, skill dedicate).

@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 53
+  count: 54
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1195,6 +1195,25 @@ skills:
   - dlgs-36-2023
   - contratti-pubblici
   - codice-appalti
+- id: dispositivi-antisismici-qualificazione-ntc
+  area: strutture-geotecnica
+  title: 'Dispositivi antisismici: qualificazione e accettazione (NTC 2018 par. 11.9)'
+  summary: 'Inquadra qualificazione e accettazione dei dispositivi antisismici (isolatori, dissipatori) secondo le NTC 2018
+    par. 11.9: UNI EN 15129 + CE (11.9.2), accettazione del Direttore dei Lavori con prove art. 59 (11.9.3), prove per tipo
+    >=20% e >=4 e limiti Tab. 11.9.I-IV (11.9.4-10).'
+  normative_refs:
+  - 'NTC 2018 - par. 11.9: vita servizio >10 anni, temperatura -15/+45 C (11.9); UNI EN 15129 + CE o caso C par. 11.1 (11.9.2);
+    accettazione del Direttore dei Lavori, laboratorio art. 59 DPR 380 (11.9.3)'
+  - 'NTC 2018 - par. 11.9.4-11.9.10: prove accettazione >=20% e >=4 per tipo; limiti Tab. 11.9.I-IV; isolatori, dissipatori
+    viscosi (gamma_v), fusibile, vincolo provvisorio (corsa >=+/-50/25 mm)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dispositivi-antisismici
+  - isolatori
+  - dissipatori
+  - ntc-2018
+  - accettazione
 - id: distanze-legali-costruzioni-cc
   area: edilizia-urbanistica-catasto
   title: Distanze legali nelle costruzioni, luci e vedute (Codice civile)
