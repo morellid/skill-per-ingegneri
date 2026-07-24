@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 52
+  count: 53
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -689,6 +689,25 @@ skills:
   - compensi-ausiliari
   - ingegneria-forense
   - liquidazione
+- id: componenti-prefabbricati-ca-cap-ntc
+  area: strutture-geotecnica
+  title: 'Prefabbricati c.a./c.a.p.: qualificazione e accettazione (NTC 2018 par. 11.8)'
+  summary: 'Inquadra qualificazione, controllo di produzione e accettazione dei prefabbricati in c.a./c.a.p. (NTC 2018 par.
+    11.8): metodi 1/2/3 (11.8.1), controllo cls/acciaio e marchiatura >8 kN (11.8.3), serie dichiarata/controllata quinquennale
+    (11.8.4), documenti e accettazione (11.8.5).'
+  normative_refs:
+  - 'NTC 2018 - par. 11.8: metodi 1/2/3 (11.8.1); controllo produzione cls e acciaio, marchiatura >8 kN (11.8.3); serie dichiarata/controllata
+    quinquennale (11.8.4); documenti e accettazione (11.8.5)'
+  - 'Rinvio (fuori scope): progetto/verifiche par. 4.1; accettazione generale cls/acciaio par. 11.2/11.3; denuncia/collaudo
+    statico DPR 380 (skill dedicate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - prefabbricati
+  - calcestruzzo
+  - ntc-2018
+  - qualificazione
+  - accettazione
 - id: comunione-ordinaria-cc
   area: forense
   title: Comunione e divisione di beni immobili per il tecnico/CTU (c.c. artt. 1100-1116)

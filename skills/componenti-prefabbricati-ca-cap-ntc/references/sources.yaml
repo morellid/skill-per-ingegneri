@@ -1,0 +1,61 @@
+schema_version: 1
+skill: componenti-prefabbricati-ca-cap-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per la qualificazione, il controllo di produzione e
+# l'accettazione dei componenti prefabbricati in c.a. e c.a.p. (generalita' e
+# metodi di dichiarazione, requisiti degli stabilimenti, controllo di produzione
+# e sui materiali di serie, procedure di qualificazione serie dichiarata/
+# controllata, marchiatura e documenti di accompagnamento) secondo le NTC 2018
+# (DM 17/01/2018), par. 11.8 (Cap. 11). La skill inquadra qualificazione e
+# accettazione; non esegue il progetto ne' le verifiche degli elementi.
+
+sources:
+  - id: ntc2018-par-11-8
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 11.8 (componenti prefabbricati in c.a. e c.a.p.)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-11-8.md
+    excerpt_path: references/estratti/prefabbricati-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 11.8 (Cap. 11 «Materiali e prodotti per uso strutturale», par. 11.8
+      «Componenti prefabbricati in c.a. e c.a.p.»), pagine GU 351-353 = pagine
+      PDF 355-357, estratto con `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-11-8.md. I valori numerici sono stati
+      verificati sull'immagine renderizzata delle pagine PDF 356/357
+      (pdftoppm -r 150 -png). Contenuti rilevanti (§11.8.1-11.8.6):
+      - 11.8.1 generalita': processo industrializzato + controllo produzione in
+        stabilimento; per elementi qualificati punti A/C del §11.1 assolti i
+        requisiti procedurali del deposito art. 58 DPR 380/2001; Metodi 1/2/3 di
+        dichiarazione delle prestazioni; materiali base qualificati §11.1.
+      - 11.8.2 requisiti stabilimenti: sili/contenitori, dosaggio a peso dei
+        solidi, sequenza di controllo, sistema documentato.
+      - 11.8.3 controllo produzione: sistema qualita' UNI EN ISO 9001. Materiali
+        di serie: cls controllo continuo §11.2, apparecchiature tarate
+        annualmente, registri conservati 10 anni, prove a 28 giorni, resistenza
+        caratteristica controllo tipo B in stabilimento, controlli esterni >= 1
+        prelievo ogni 5 giorni con controllo tipo A su 3 prelievi. Acciaio:
+        piegatura 3 campioni ogni 90 t e min 1 volta/mese (UNI EN ISO 15630-1),
+        trazione 3 campioni ogni 10 rotoli. Solo per prodotti privi di marcatura
+        CE.
+      - 11.8.3.4 marchiatura: fissa/indelebile per rintracciabilita'; per manufatti
+        di peso > 8 kN indicazione del peso.
+      - 11.8.4 qualificazione: STC art. 58 DPR 380/2001; serie dichiarata
+        (§4.1.10.2.1) attestato quinquennale rinnovabile; serie controllata
+        (§4.1.10.2.2) Certificato di Valutazione Tecnica quinquennale + prove a
+        rottura su prototipo; sospensioni/revoche.
+      - 11.8.5 documenti di accompagnamento: il Direttore dei Lavori rifiuta le
+        forniture non conformi; istruzioni trasporto/montaggio, disegni d'assieme,
+        certificato d'origine, prove a compressione, verifica marchiatura.
+      Restano fuori scope: il progetto e le verifiche degli elementi (§ 4.1,
+      skill costruzioni-calcestruzzo-ntc); i controlli di accettazione generali
+      di cls/acciaio (§§ 11.2/11.3, skill controlli-accettazione-cls-acciaio-ntc);
+      la denuncia/collaudo statico (DPR 380, skill denuncia-collaudo-statico-ca-dpr380).
