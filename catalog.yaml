@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 49
+  count: 50
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -906,6 +906,25 @@ skills:
   - ntc-2018
   - connettori-a-taglio
   - coefficienti-parziali
+- id: costruzioni-composte-zona-sismica-ntc
+  area: strutture-geotecnica
+  title: 'Composte acciaio-cls in zona sismica: regole generali (NTC 2018 par. 7.6)'
+  summary: 'Inquadra le regole generali delle composte acciaio-cls in zona sismica (NTC 2018 par. 7.6): comportamenti a/b/c,
+    materiali (cls C20/25-C40/50, acciaio B450C; 7.6.1), tipologie e q0 (7.6.2), rigidezza n=Ea/Ecm=7 (7.6.3), capacity design
+    EU,Rd e NEd/Npl,Rd<=0,3 (7.6.4).'
+  normative_refs:
+  - 'NTC 2018 - par. 7.6: composte sismiche, materiali cls C20/25-C40/50, B450C (7.6.1); tipologie e q0 (7.6.2); rigidezza
+    n=7 (7.6.3); EU,Rd=1,1 gamma_ov Epl,Rd, NEd/Npl,Rd<=0,3 (7.6.4)'
+  - 'Rinvio (fuori scope): verifiche RES/DUT e dettagli (7.6.4-7.6.8); composte statiche par. 4.3, acciaio sismico par. 7.5,
+    fattore q par. 7.3.1 (skill dedicate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - strutture-composte
+  - zona-sismica
+  - ntc-2018
+  - fattore-comportamento
+  - acciaio-calcestruzzo
 - id: costruzioni-esistenti-ntc-cap8
   area: strutture-geotecnica
   title: Costruzioni esistenti - NTC 2018 cap. 8 (interventi, LC/FC, zeta_E)

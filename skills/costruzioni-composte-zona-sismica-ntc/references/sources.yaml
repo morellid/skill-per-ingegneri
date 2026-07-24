@@ -1,0 +1,59 @@
+schema_version: 1
+skill: costruzioni-composte-zona-sismica-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per l'inquadramento delle regole generali per le costruzioni
+# composte di acciaio-calcestruzzo in zona sismica (comportamenti dissipativo/
+# non dissipativo, caratteristiche dei materiali, tipologie strutturali e
+# fattori di comportamento q0, rigidezza della sezione composta e capisaldi del
+# capacity design) secondo le NTC 2018 (DM 17/01/2018), par. 7.6. La skill
+# inquadra le regole generali; non esegue le verifiche di resistenza/duttilita'
+# ne' progetta i collegamenti.
+
+sources:
+  - id: ntc2018-par-7-6
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.6 (costruzioni composte di acciaio-calcestruzzo in zona sismica)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-6.md
+    excerpt_path: references/estratti/composte-sismica-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.6 (Cap. 7 «Progettazione per azioni sismiche», par. 7.6
+      «Costruzioni composte di acciaio-calcestruzzo»), pagine GU 247-249 =
+      pagine PDF 251-253, estratto con `pdftotext -layout` e trascritto verbatim
+      in references/fonti/ntc2018-par-7-6.md. I valori numerici e le formule sono
+      stati verificati sull'immagine renderizzata delle pagine PDF 252/253
+      (pdftoppm -r 150 -png), perche' pdftotext altera pedici, il coefficiente
+      gamma_ov (reso «·ov») e la struttura. Contenuti rilevanti (§7.6-7.6.4.3):
+      - 7.6 comportamenti: a) non dissipativo (-> §4.3); b) dissipativo con zone
+        dissipative in membrature composte; c) dissipativo con zone dissipative
+        in acciaio (integrita' del cls compresso).
+      - 7.6.1 materiali: cls non inferiore a C20/25 o LC20/22 e non superiore a
+        C40/50 o LC40/44; acciaio per c.a. B450C (B450A solo casi §7.4.2.2);
+        acciaio strutturale secondo §7.5 e §11.3.4.
+      - 7.6.2 tipologie e fattori: tipologie a) intelaiate, b) controventi
+        concentrici in acciaio, c) controventi eccentrici (connessioni in
+        acciaio), d) mensola/pendolo inverso, e) intelaiate controventate;
+        pareti/nuclei in c.a. -> §7.4; q0 max Tab. 7.3.II (prescrizioni §7.5.2).
+      - 7.6.3 rigidezza: coefficiente di omogeneizzazione n = Ea/Ecm = 7 (cls
+        compresso); I1 non fessurato, I2 fessurato (cls non reagente).
+      - 7.6.4 criteri: capacity design EU,Rd = 1,1 gamma_ov Epl,Rd (gamma_ov
+        §7.5.1); Rj,d >= RU,Rd [7.6.1]; pannello d'anima Vwp,Rd = 0,8(Vwp,s,Rd +
+        Vwp,c,Rd) [7.6.2] se differenza altezze <= 40%; duttilita' locale
+        mu = theta_u/theta_y (theta_u al -15%); colonne primarie dissipative dei
+        telai NEd/Npl,Rd <= 0,3 [7.6.3]; rapporti larghezza/spessore solo acciaio
+        §7.5.6, rivestite in cls Tab. 7.6.I.
+      Restano fuori scope: le verifiche di dettaglio RES/DUT, le regole
+      specifiche per tipologia/elemento e i dettagli costruttivi (§§ 7.6.4-7.6.8,
+      Tab. 7.6.I-IV, Fig. 7.6.1-7.6.2); i requisiti statici (§ 4.3, skill
+      costruzioni-composte-acciaio-cls-ntc), le regole sismiche dell'acciaio
+      (§ 7.5, skill costruzioni-acciaio-zona-sismica-ntc) e il framework del
+      fattore q (§ 7.3.1, skill fattore-comportamento-q-sismica-ntc).
