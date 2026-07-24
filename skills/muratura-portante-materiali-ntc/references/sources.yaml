@@ -1,0 +1,59 @@
+schema_version: 1
+skill: muratura-portante-materiali-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per la qualificazione dei materiali (elementi resistenti e
+# malte) e la determinazione dei parametri meccanici (resistenza a compressione
+# fk e a taglio fvk0) della muratura portante secondo le NTC 2018 (DM
+# 17/01/2018), par. 11.10 (Cap. 11 «Materiali e prodotti per uso strutturale»).
+# La skill inquadra la qualificazione dei materiali e la determinazione dei
+# parametri; non esegue le verifiche di progetto (fd = fk/gamma_M).
+
+sources:
+  - id: ntc2018-par-11-10
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 11.10 (muratura portante: elementi, malte, parametri meccanici)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-11-10.md
+    excerpt_path: references/estratti/muratura-materiali-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 11.10 (Cap. 11 «Materiali e prodotti per uso strutturale», par. 11.10
+      «Muratura portante»), pagine GU 361-364 = pagine PDF 365-368, estratto con
+      `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-11-10.md. Le tabelle e le formule sono state
+      verificate sull'immagine renderizzata delle pagine PDF 365/366/367/368
+      (pdftoppm -r 150 -png), perche' pdftotext altera pedici, disuguaglianze e
+      struttura tabellare. Contenuti rilevanti (§11.10.1-11.10.3.2):
+      - 11.10.1 elementi: conformi UNI EN 771, Marcatura CE; Tab. 11.10.I
+        Categoria I -> sistema 2+, Categoria II -> sistema 4; Cat. I con
+        probabilita' di insuccesso <= 5%; coefficiente gamma_M al §4.5.6.
+      - 11.10.1.1 accettazione: laboratorio art. 59 DPR 380/2001; obbligatorie
+        per muratura portante; 1 campione ogni 350 m3 (Cat. II) / 650 m3 (Cat. I),
+        n elementi n>=6; media >= fbm [11.10.1] e f1 >= 0,80 fbm [11.10.2];
+        oppure f1 >= fbk.
+      - 11.10.2 malte: classe M (fm in N/mm2), Tab. 11.10.II M2,5-M20/Md; per
+        muratura portante non ammesse fm < 2,5; a prestazione garantita (sistema
+        2+) / a composizione prescritta (sistema 4, Tab. 11.10.V) / prodotte in
+        cantiere; accettazione 3 provini 40x40x160 ogni 350 m3 o 700 m3.
+      - 11.10.3 parametri meccanici: fk sperimentale su n muretti (n>=6, UNI EN
+        1052-1) o stimata da Tab. 11.10.VI (artificiali) e 11.10.VII (naturali),
+        con fbk = 0,8 fbm (artificiali) o fbk = 0,75 fbm (naturali) [11.10.3],
+        validita' giunti 5-15 mm, interpolazione lineare ammessa e mai
+        estrapolazione; fvk0 in assenza di tensioni normali sperimentale (n>=6,
+        UNI EN 1052-3) o stimata da Tab. 11.10.VIII (laterizio 0,30/0,20/0,10;
+        silicato di calcio e cls 0,20/0,15/0,10; malta strati sottili e
+        alleggerita).
+      Restano fuori scope: la resistenza a taglio fvk con tensioni normali
+      (§11.10.3.3) e i moduli di elasticita' secanti (§11.10.3.5); le resistenze
+      di progetto e le verifiche (§ 4.5, skill costruzioni-muratura-ntc), i
+      requisiti sismici (§ 7.8, skill costruzioni-muratura-zona-sismica-ntc) e i
+      controlli di accettazione di cls e acciaio (§§ 11.2/11.3, skill
+      controlli-accettazione-cls-acciaio-ntc).
