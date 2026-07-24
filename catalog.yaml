@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 50
+  count: 51
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -1705,6 +1705,25 @@ skills:
   - sovraccarico-biomeccanico
   - sorveglianza-sanitaria
   - ergonomia
+- id: muratura-portante-materiali-ntc
+  area: strutture-geotecnica
+  title: 'Muratura portante: qualificazione materiali e parametri (NTC 2018 par. 11.10)'
+  summary: 'Inquadra la qualificazione dei materiali e i parametri meccanici della muratura portante (NTC 2018 par. 11.10):
+    elementi Cat. I/II e accettazione (11.10.1), malte classi M2,5-M20 (11.10.2), fk (Tab. 11.10.VI-VII, fbk=0,8/0,75 fbm)
+    e fvk0 (Tab. 11.10.VIII) (11.10.3).'
+  normative_refs:
+  - 'NTC 2018 - par. 11.10: elementi Cat. I (2+)/II (4), accettazione 350/650 mc (11.10.1); malte M2,5-M20, fm>=2,5 (11.10.2);
+    fk Tab. 11.10.VI-VII (fbk=0,8/0,75 fbm) e fvk0 Tab. 11.10.VIII (11.10.3)'
+  - 'Rinvio (fuori scope): resistenze di progetto fd=fk/gamma_M e verifiche par. 4.5; muratura sismica par. 7.8; accettazione
+    cls/acciaio par. 11.2/11.3 (skill dedicate)'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - muratura-portante
+  - materiali
+  - ntc-2018
+  - accettazione
+  - prove-cantiere
 - id: nis2-self-assessment
   area: software-dati-cybersecurity
   title: NIS2 self-assessment (D.Lgs. 138/2024)

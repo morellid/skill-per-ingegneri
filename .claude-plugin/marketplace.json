@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 50 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 51 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -88,6 +88,7 @@
         "./fattore-comportamento-q-sismica-ntc",
         "./fondazioni-pali-ntc",
         "./isolamento-sismico-ntc",
+        "./muratura-portante-materiali-ntc",
         "./opere-materiali-sciolti-scavi-ntc",
         "./opere-sostegno-ntc",
         "./opere-sotterraneo-gallerie-ntc",
