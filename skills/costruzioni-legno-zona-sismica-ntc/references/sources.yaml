@@ -1,0 +1,61 @@
+schema_version: 1
+skill: costruzioni-legno-zona-sismica-ntc
+last_verified: 2026-07-24
+
+# Fonte normativa per l'inquadramento delle regole generali per le costruzioni
+# di legno in zona sismica (aspetti concettuali/CD, materiali e proprieta' delle
+# zone dissipative, pannelli di rivestimento, tipologie e fattori di
+# comportamento q0, precisazioni sulla duttilita' dei mezzi di unione,
+# disposizioni costruttive e verifiche) secondo le NTC 2018 (DM 17/01/2018),
+# par. 7.7. La skill inquadra le regole generali; non esegue le verifiche di
+# resistenza/duttilita' ne' progetta i collegamenti.
+
+sources:
+  - id: ntc2018-par-7-7
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.7 (costruzioni di legno in zona sismica)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-24
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-7.md
+    excerpt_path: references/estratti/legno-sismica-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.7 (Cap. 7 «Progettazione per azioni sismiche», par. 7.7
+      «Costruzioni di legno»), pagine GU 254-256 = pagine PDF 258-260,
+      estratto con `pdftotext -layout` e trascritto verbatim in
+      references/fonti/ntc2018-par-7-7.md. I valori numerici sono stati
+      verificati sull'immagine renderizzata delle pagine PDF 258/259/260
+      (pdftoppm -r 150 -png), perche' pdftotext altera pedici, disuguaglianze
+      e struttura. Contenuti rilevanti:
+      - 7.7.1 aspetti concettuali: comportamento dissipativo -> CD"A"/CD"B"
+        oppure non dissipativo (-> §4.4); zone dissipative nei collegamenti,
+        membrature lignee elastiche; sovraresistenza etaRd (Tab. 7.2.I),
+        comunque >= 1,3 (CD"A") e >= 1,1 (CD"B").
+      - 7.7.2 materiali: si applica il §4.4; unioni incollate in generale non
+        dissipative; nodi di carpenteria solo se dissipativi; pannelli di
+        rivestimento: particelle >= 13 mm, compensato >= 9 mm, OSB >= 12 mm se
+        a coppia o >= 15 mm se singoli; connettori a gambo cilindrico conformi
+        al §11.7.8.
+      - 7.7.3 tipologie e fattori di comportamento: q0 dalla Tab. 7.3.II; per
+        le strutture dissipative il Progettista deve giustificare q0.
+      - 7.7.3.1 precisazioni: >= 3 cicli, duttilita' statica >= 4 (CD"B") /
+        >= 6 (CD"A"), riduzione resistenza <= 20%; a) legno-legno/legno-acciaio
+        con perni/chiodi d <= 12 mm e membrature >= 10d; b) pareti/diaframmi a
+        telaio con chiodi d <= 3,1 mm e rivestimento >= 4d; alternative
+        8d/3d -> CD"B".
+      - 7.7.5-7.7.7 disposizioni/verifiche/dettagli: vincoli impalcato-pareti
+        bilateri; giunti di carpenteria con coefficiente parziale aggiuntivo
+        1,3; per le dissipative RES §7.3.6.1 con resistenza ridotta del 20%;
+        perni/bulloni d > 16 mm non usati nei collegamenti legno-legno/
+        legno-acciaio.
+      Restano fuori scope: le verifiche di resistenza/duttilita' di elementi e
+      collegamenti, il q0 numerico per tipologia (Tab. 7.3.II) e il dettaglio
+      completo dei collegamenti (§7.7.7); i requisiti statici (§ 4.4, skill
+      costruzioni-legno-ntc) e il framework del fattore q (§ 7.3.1, skill
+      fattore-comportamento-q-sismica-ntc).
