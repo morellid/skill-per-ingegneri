@@ -1,0 +1,68 @@
+schema_version: 1
+skill: metodi-analisi-sismica-ntc
+last_verified: 2026-07-25
+
+# Fonte normativa per la scelta e l'impostazione del metodo di analisi
+# sismica (analisi lineare dinamica/modale, analisi lineare statica/forze
+# laterali, analisi non lineare dinamica e statica/pushover) secondo le NTC
+# 2018 (DM 17/01/2018), parr. 7.3.2-7.3.4 (Cap. 7). La skill inquadra la
+# scelta del metodo e le sue condizioni di applicabilita'; non esegue
+# l'analisi ne' le verifiche.
+
+sources:
+  - id: ntc2018-par-7-3-2-7-3-4
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - parr. 7.3.2-7.3.4 (metodi di analisi sismica)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-25
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-3-2-7-3-4.md
+    excerpt_path: references/estratti/metodi-analisi-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Parr. 7.3.2-7.3.4 (Cap. 7 «Progettazione per azioni sismiche»), pagine GU
+      218-220 = pagine PDF 222-224, estratto con `pdftotext -layout` e
+      trascritto in references/fonti/ntc2018-par-7-3-2-7-3-4.md. Tutti i valori
+      numerici e le formule sono stati verificati sull'immagine renderizzata
+      delle pagine PDF 222/223/224 (pdftoppm -r 150 -png) perche' pdftotext
+      corrompe pedici, simboli greci (lambda, xi, beta, mu, theta) e
+      disuguaglianze. Contenuti rilevanti (§7.3.2-7.3.4):
+      - fine 7.3.1: fattore theta (P-Delta) [7.3.3]; effetti trascurabili se
+        theta < 0,1; incremento 1/(1-theta) se 0,1<=theta<=0,2; analisi non
+        lineare se 0,2<=theta<=0,3; theta <= 0,3.
+      - 7.3.2 scelta dinamica/statica: metodo di riferimento = analisi modale
+        con spettro (analisi lineare dinamica); analisi lineare statica (forze
+        laterali) solo se la risposta non dipende dai modi superiori; non
+        lineare dinamica (storie temporali) / statica (forze crescenti
+        monotone).
+      - 7.3.3.1 lineare dinamica (modale): tutti i modi con massa partecipante
+        > 5%, totale >= 85%; combinazione CQC [7.3.4] con rho_ij [7.3.5a/b];
+        eccentricita' accidentale.
+      - 7.3.3.2 lineare statica: applicabilita' T1 <= 2,5 TC (o TD) e regolare
+        in altezza; <= 40 m, T1 = 2 sqrt(d) [7.3.6]; Fi = Fh zi Wi / somma(zj
+        Wj) [7.3.7]; Fh = Sd(T1) W lambda / g; lambda = 0,85 se T1 < 2 TC e >=3
+        orizzontamenti, altrimenti 1,0.
+      - 7.3.3.3 spostamenti: dE = mu_d dEe [7.3.8]; mu_d = q (T1>=TC) o 1 +
+        (q-1) TC/T1 (T1<TC) [7.3.9]; mu_d <= 5q - 4; SLC = 1,25 SLV.
+      - 7.3.4 non lineare: scopi (spostamenti, duttilita' SLC, domanda
+        inelastica, alpha_u/alpha_1, progetto nuovi, capacita' esistenti).
+      - 7.3.4.1 non lineare dinamica: integrazione al passo, storie temporali;
+        confronto con analisi modale; obbligatoria per isolamento non lineare
+        (§7.10.5.2).
+      - 7.3.4.2 non lineare statica (pushover): sistema equivalente, forze
+        orizzontali risultante Fb, punto di controllo al centro di massa
+        dell'ultimo livello, curva di capacita' Fb-dc; almeno 2 distribuzioni
+        (Gruppo 1 principali: modo fondamentale >= 75%, o distribuzione modale
+        con modi >= 85% obbligatoria se T1 > 1,3 TC; Gruppo 2 secondarie:
+        uniforme, adattiva, multimodale con almeno 6 modi).
+      Restano fuori scope: la scelta lineare/non lineare e il fattore q (§
+      7.3.1, skill fattore-comportamento-q-sismica-ntc); la formula di T1 (skill
+      periodo-proprio-t1-ntc); i criteri di modellazione (§ 7.2.6, skill
+      criteri-modellazione-sismica-ntc); la combinazione delle componenti (§
+      7.3.5, skill combinazione-componenti-sismiche-ntc); lo spettro di progetto
+      (§ 3.2.3.5) e le verifiche SLU/SLE.
