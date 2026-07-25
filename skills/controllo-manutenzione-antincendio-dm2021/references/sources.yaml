@@ -1,0 +1,19 @@
+schema_version: 1
+skill: controllo-manutenzione-antincendio-dm2021
+last_verified: 2026-07-25
+sources:
+  - id: dm-1-9-2021-gu230
+    title: "D.M. 1° settembre 2021 (Min. interno / Min. lavoro) - Criteri generali per il controllo e la manutenzione degli impianti, attrezzature ed altri sistemi di sicurezza antincendio (art. 46 c.3 D.Lgs 81/2008) - GU Serie Generale n. 230 del 25/09/2021"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2021/09/25/230/sg/pdf
+    accessed: 2026-07-25
+    sha256: 560643c7e75e6c459159f15dfbfceba055269f2bd6907149d28516b4d47eb749
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu230-2021.pdf
+    md_path: references/fonti/dm-1-9-2021-controllo-manutenzione-antincendio.md
+    excerpt_path: references/estratti/controllo-manutenzione-checklist.md
+    notes: >-
+      PDF ufficiale della Gazzetta Ufficiale n. 230/2021 (10 pagine; il decreto occupa le pp. 1-7). Hash verificato con
+      doppio download riproducibile. Il decreto e gli Allegati I e II sono trascritti nel md_path. Le periodicita'
+      puntuali dei controlli sono rinviate alle norme UNI di prodotto (Tabella 1, All. I), non riprodotte per diritto
+      d'autore.
