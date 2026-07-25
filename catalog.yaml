@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 23
+  count: 24
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -2174,6 +2174,25 @@ skills:
   - scia-antincendio
   - certificato-prevenzione-incendi
   - vigili-del-fuoco
+- id: psc-piano-sicurezza-coordinamento-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: PSC - Piano di Sicurezza e Coordinamento (D.Lgs 81/2008 art. 100 + Allegato XV)
+  summary: 'Inquadra la redazione e la verifica del PSC (D.Lgs 81/2008 art. 100 + Allegato XV): titolarita'' CSP/CSE, contenuti
+    minimi 2.1.2 (opera, valutazione rischi, misure, interferenze, cronoprogramma, uomini-giorno) e stima dei costi non soggetti
+    a ribasso (punto 4.1).'
+  normative_refs:
+  - 'D.Lgs 81/2008 - art. 100 + Allegato XV punto 2: PSC redatto dal CSP (artt. 90-92); contenuti minimi 2.1.2 (opera, soggetti,
+    valutazione rischi, misure, interferenze, cronoprogramma, uomini-giorno)'
+  - 'D.Lgs 81/2008 - Allegato XV punto 4.1: stima costi sicurezza (apprestamenti, DPI, impianti, protezione collettiva, procedure);
+    congrua e analitica; non soggetta a ribasso; liquidata dal DL'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - psc
+  - sicurezza-cantieri
+  - coordinatore-sicurezza
+  - dlgs-81-2008
+  - costi-sicurezza
 - id: pums-validator-dm397
   area: ambiente-territorio-mobilita
   title: Validatore PUMS - DM 397/2017
