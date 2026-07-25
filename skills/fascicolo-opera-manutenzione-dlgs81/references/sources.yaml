@@ -1,0 +1,60 @@
+schema_version: 1
+skill: fascicolo-opera-manutenzione-dlgs81
+last_verified: 2026-07-25
+
+# Fonte normativa per la predisposizione, l'aggiornamento e la verifica di
+# completezza del Fascicolo con le caratteristiche dell'opera (documento per la
+# sicurezza degli interventi di manutenzione successivi) secondo il D.Lgs
+# 81/2008, art. 91 comma 1 lett. b), art. 92 e Allegato XVI. La skill inquadra
+# la struttura e i contenuti del fascicolo; non lo redige al posto del
+# coordinatore ne' progetta le misure (linee vita, ganci, ecc.).
+
+sources:
+  - id: dlgs-81-2008-consolidato-inl-2025-01
+    title: "D.Lgs. 9 aprile 2008 n. 81 - Testo coordinato - Edizione gennaio 2025 (INL) - art. 91-92 e Allegato XVI"
+    type: decreto-legislativo-coordinato
+    url: https://www.ispettorato.gov.it/files/2025/01/TU-81-08-Ed.-Gennaio-2025-1.pdf
+    accessed: 2026-07-25
+    sha256: f593e1806de920dc16def37920c5623cda2450075ed56051852f2caf6045899a
+    license: public-domain-italian-law
+    binary_path: not_in_repo/dlgs81-inl.pdf
+    md_path: references/fonti/dlgs-81-2008-art-91-92-allegato-xvi.md
+    excerpt_path: references/estratti/fascicolo-checklist.md
+    notes: |
+      Testo coordinato del D.Lgs. 81/2008 aggiornato a gennaio 2025, edizione a
+      cura di INL (Ispettorato Nazionale del Lavoro). SHA256 calcolato su
+      not_in_repo/dlgs81-inl.pdf con doppio download riproducibile (stesso file
+      usato dalle skill pos-allegato-xv-checker e
+      psc-piano-sicurezza-coordinamento-dlgs81). L'edizione coordinata INL non
+      e' ufficiale: per uso autoritativo cross-checkare su Normattiva
+      (www.normattiva.it) o Gazzetta Ufficiale. Il testo del decreto e degli
+      allegati e' riproducibile liberamente (art. 5 L. 633/1941). Estratti artt.
+      91-92 e Allegato XVI con `pdftotext -layout` (testo legale in prosa; le
+      schede tabellari sono moduli, se ne riporta la struttura). Contenuti
+      rilevanti:
+      - art. 91 c.1 lett. b): il CSP predispone il fascicolo adattato alle
+        caratteristiche dell'opera (contenuti Allegato XVI); non e' predisposto
+        per la manutenzione ordinaria (art. 3 c.1 lett. a DPR 380).
+      - art. 92 c.1 lett. b): il CSE adegua il fascicolo all'evoluzione dei
+        lavori.
+      - Allegato XVI - Introduzione: predisposto la prima volta dal CSP,
+        modificato in fase esecutiva, aggiornato dal committente durante la vita
+        dell'opera; accompagna l'opera per tutta la sua durata di vita.
+      - Allegato XVI - Contenuti: 3 capitoli. Cap. I descrizione opera e
+        soggetti (scheda I). Cap. II individuazione rischi e misure preventive/
+        protettive in dotazione dell'opera (incorporate) e ausiliarie (richieste
+        ai datori dei lavori successivi) per gli interventi successivi
+        prevedibili (manutenzioni), schede II-1/II-2/II-3; sette elementi da
+        considerare (accessi; sicurezza luoghi; impianti alimentazione/scarico;
+        approvvigionamento/movimentazione materiali; approvvigionamento/
+        movimentazione attrezzature; igiene; interferenze e protezione terzi);
+        informazioni per utilizzare le misure in sicurezza e mantenerle nel
+        tempo (verifiche, interventi manutentivi, periodicita'). Cap. III
+        riferimenti alla documentazione di supporto (schede III-1/III-2/III-3).
+      Restano fuori scope: il PSC (art. 100 + Allegato XV, skill
+      psc-piano-sicurezza-coordinamento-dlgs81); il POS (Allegato XV punto 3.2,
+      skill pos-allegato-xv-checker); i ruoli/obblighi CSP/CSE (artt. 89-92,
+      skill coordinatori-sicurezza-cantieri-dlgs81); la notifica preliminare
+      (art. 99), l'idoneita' tecnico-professionale (Allegato XVII); la
+      progettazione delle misure concrete (linee vita/ganci, norme di buona
+      tecnica UNI).

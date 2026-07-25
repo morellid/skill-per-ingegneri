@@ -10,7 +10,7 @@
     {
       "name": "sicurezza-lavoro-cantieri",
       "source": "./skills",
-      "description": "Sicurezza sul lavoro & cantieri - 24 skill verticali su normative italiane.",
+      "description": "Sicurezza sul lavoro & cantieri - 25 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -25,6 +25,7 @@
         "./dpi-protezione-individuale-dlgs81",
         "./duvri-interferenze-dlgs81",
         "./dvr-generico",
+        "./fascicolo-opera-manutenzione-dlgs81",
         "./mog-231-sicurezza-lavoro",
         "./movimentazione-manuale-carichi-dlgs81",
         "./obblighi-datore-preposto-formazione-dlgs81",

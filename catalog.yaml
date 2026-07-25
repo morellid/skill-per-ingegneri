@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 24
+  count: 25
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -1467,6 +1467,25 @@ skills:
   - dpr-327-2001
   - opere-pubbliche
   - indennita-esproprio
+- id: fascicolo-opera-manutenzione-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Fascicolo dell'opera (D.Lgs 81/2008 art. 91 + Allegato XVI)
+  summary: 'Inquadra la predisposizione e verifica del Fascicolo dell''opera (D.Lgs 81/2008 art. 91 + Allegato XVI): titolarita''
+    (CSP/CSE/committente), struttura in 3 capitoli (opera e soggetti; rischi e misure in dotazione/ausiliarie per interventi
+    successivi; documentazione) e 7 elementi.'
+  normative_refs:
+  - 'D.Lgs 81/2008 - art. 91 c.1 lett. b) e Allegato XVI: il CSP predispone il fascicolo, il CSE lo adegua (art. 92), il committente
+    lo aggiorna; non per manutenzione ordinaria (art. 3 DPR 380)'
+  - 'D.Lgs 81/2008 - Allegato XVI: 3 capitoli (opera/soggetti scheda I; rischi e misure in dotazione/ausiliarie per interventi
+    successivi schede II; documentazione schede III); 7 elementi'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - fascicolo-opera
+  - sicurezza-cantieri
+  - coordinatore-sicurezza
+  - dlgs-81-2008
+  - manutenzione
 - id: fascicolo-tecnico-dispositivi-medici-mdr
   area: impianti-macchine-prodotti
   title: Fascicolo tecnico dispositivi medici (MDR Reg. UE 2017/745) - Classe I/IIa
