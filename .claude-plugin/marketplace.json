@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 55 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 56 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -76,6 +76,7 @@
         "./costruzioni-acciaio-ntc",
         "./costruzioni-acciaio-zona-sismica-ntc",
         "./costruzioni-calcestruzzo-ntc",
+        "./costruzioni-calcestruzzo-zona-sismica-ntc",
         "./costruzioni-composte-acciaio-cls-ntc",
         "./costruzioni-composte-zona-sismica-ntc",
         "./costruzioni-esistenti-ntc-cap8",

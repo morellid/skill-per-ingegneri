@@ -1,0 +1,59 @@
+schema_version: 1
+skill: costruzioni-calcestruzzo-zona-sismica-ntc
+last_verified: 2026-07-25
+
+# Fonte normativa per la progettazione sismica delle costruzioni di
+# calcestruzzo armato (tipologie strutturali, fattori di comportamento,
+# gerarchia delle resistenze e dettagli costruttivi CD"A"/CD"B") secondo le
+# NTC 2018 (DM 17/01/2018), par. 7.4 (Cap. 7). La skill inquadra il quadro
+# progettuale sismico del c.a.; non esegue il progetto ne' le verifiche di
+# dettaglio.
+
+sources:
+  - id: ntc2018-par-7-4
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 7.4 (costruzioni di calcestruzzo in zona sismica)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-25
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-7-4.md
+    excerpt_path: references/estratti/ca-sismica-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 7.4 (Cap. 7 «Progettazione per azioni sismiche», par. 7.4
+      «Costruzioni di calcestruzzo»), pagine GU 223-232 = pagine PDF 227-236,
+      estratto con `pdftotext -layout` e trascritto in
+      references/fonti/ntc2018-par-7-4.md. I valori numerici e le formule sono
+      stati verificati sull'immagine renderizzata delle pagine PDF 228/229/230
+      (pdftoppm -r 150 -png) perche' pdftotext corrompe pedici, simboli greci e
+      disuguaglianze. Contenuti rilevanti (§7.4.2-7.4.4):
+      - 7.4.2 materiali: acciaio B450C; B450A solo diametri 5-10 mm per reti/
+        tralicci o armatura trasversale se plasticizzazione impedita
+        (gerarchia)/elementi secondari/comportamento non dissipativo.
+      - 7.4.3.1 tipologie: telaio (taglio base >= 65%), pareti (>= 65%,
+        semplici/composte, singole/accoppiate), miste (> 50% telai -> equiv.
+        telai), pendolo inverso (>= 50% massa terzo superiore), pendolo inverso
+        monopiano (N <= 30% resistenza cls), deformabili torsionalmente
+        (r^2/ls^2 >= 1, ls^2 = (L^2+B^2)/12), pareti estese debolmente armate
+        (periodo <= TC, solo CD"B").
+      - 7.4.3.2 fattori di comportamento: q per §7.3.1/Tab. 7.3.II; pareti
+        accoppiate se momento base equilibrato >= 20% dalla coppia; alpha_u/
+        alpha_1 telai 1,1/1,2/1,3, pareti 1,0/1,1/1,2; telai a travi a spessore
+        -> CD"B"; q > 1,5 per altre tipologie -> analisi non lineari.
+      - 7.4.4 gerarchia delle resistenze: gamma_Rd da Tab. 7.2.I; verifiche RES
+        + DUT (§7.3.6.1). Travi taglio: domanda da equilibrio trave incernierata
+        + capacita' flessionale amplificata di gamma_Rd; CD"A" ctg(theta)=1,
+        VR1 [7.4.1], armature +/-45 gradi VEd,max <= As*fyd/sqrt(2) [7.4.2];
+        travi DUT mu_phi [7.4.3], mu_phi = 2*mu_d - 1. Pilastri pressoflessione:
+        N <= 55% (CD"A") / 65% (CD"B") capacita' a compressione del solo cls;
+        nodo pilastro forte-trave debole sum(Mc,Rd) >= gamma_Rd * sum(Mb,Rd)
+        [7.4.4] (escluso sommita' ultimo orizzontamento).
+      Restano fuori scope: il progetto ordinario non sismico (§ 4.1, skill
+      costruzioni-calcestruzzo-ntc); la macchina generale del q (§ 7.3.1, skill
+      fattore-comportamento-q-sismica-ntc); il dettaglio numerico delle
+      verifiche e dei dettagli costruttivi (§ 7.4.4/7.4.6), che resta nella norma.
