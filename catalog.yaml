@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 25
+  count: 26
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -850,6 +850,24 @@ skills:
   - acciaio-cemento-armato
   - ntc-2018
   - direttore-lavori
+- id: controllo-manutenzione-antincendio-dm2021
+  area: sicurezza-lavoro-cantieri
+  title: Controllo e manutenzione antincendio (D.M. 1 settembre 2021)
+  summary: 'Controllo e manutenzione dei sistemi di sicurezza antincendio nei luoghi di lavoro (D.M. 1/9/2021, art. 46 D.Lgs
+    81/2008): registro dei controlli, sorveglianza/controllo periodico/manutenzione, norme UNI (Tab. 1), tecnici manutentori
+    qualificati. Non fissa periodicita'' puntuali.'
+  normative_refs:
+  - D.M. 1 settembre 2021 (controllo e manutenzione sistemi di sicurezza antincendio) - artt. 1-6 e Allegati I-II
+  - D.Lgs. 81/2008 art. 46 c.3 lett. a) punto 3 (prevenzione incendi e gestione emergenze)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - antincendio
+  - manutenzione
+  - registro-controlli
+  - dm-1-9-2021
+  - tecnico-manutentore-qualificato
+  - sicurezza-lavoro
 - id: coordinatori-sicurezza-cantieri-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Coordinatori sicurezza cantieri Titolo IV (D.Lgs. 81/2008 artt. 89-92)
