@@ -47,7 +47,7 @@
     {
       "name": "strutture-geotecnica",
       "source": "./skills",
-      "description": "Strutture & geotecnica - 54 skill verticali su normative italiane.",
+      "description": "Strutture & geotecnica - 55 skill verticali su normative italiane.",
       "license": "MIT",
       "author": {
         "name": "Davide Morelli"
@@ -56,6 +56,7 @@
       "repository": "https://github.com/morellid/skill-per-ingegneri",
       "category": "strutture-geotecnica",
       "skills": [
+        "./ancoraggi-precompressione-appoggi-qualificazione-ntc",
         "./azioni-esplosione-eccezionali-ntc",
         "./azioni-temperatura-ntc",
         "./azioni-traffico-ponti-ferroviari-ntc",
