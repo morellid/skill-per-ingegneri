@@ -1,0 +1,58 @@
+schema_version: 1
+skill: ancoraggi-precompressione-appoggi-qualificazione-ntc
+last_verified: 2026-07-25
+
+# Fonte normativa per la qualificazione e i controlli di accettazione in
+# cantiere di ancoranti per uso strutturale, giunti di dilatazione stradale,
+# sistemi di precompressione a cavi post-tesi, tiranti di ancoraggio per uso
+# geotecnico e appoggi strutturali secondo le NTC 2018 (DM 17/01/2018), par.
+# 11.4, 11.5 e 11.6 (Cap. 11). La skill inquadra il percorso di qualificazione
+# (punti A/C del par. 11.1, ETA/ETAG/CVT, UNI EN 1337) e la verifica del
+# Direttore dei Lavori; non esegue il progetto ne' le verifiche dei prodotti.
+
+sources:
+  - id: ntc2018-par-11-4-11-6
+    title: "Decreto Ministeriale 17 gennaio 2018 - Aggiornamento delle Norme tecniche per le costruzioni (NTC 2018) - par. 11.4, 11.5, 11.6 (ancoranti, precompressione, tiranti, appoggi)"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2018/02/20/42/so/8/sg/pdf
+    accessed: 2026-07-25
+    sha256: dda1e397d56d71aa0f5bc457c3ba9b77064a468699dfc37bd056ac6c47105a46
+    license: public-domain
+    binary_path: not_in_repo/ntc2018-gu42.pdf
+    md_path: references/fonti/ntc2018-par-11-4-11-6.md
+    excerpt_path: references/estratti/ancoraggi-appoggi-checklist.md
+    notes: |
+      Pubblicato in GU n. 42 del 20/02/2018 - Suppl. Ord. n. 8.
+      SHA256 calcolato su not_in_repo/ntc2018-gu42.pdf con doppio download
+      riproducibile (stessa fonte GU delle altre skill NTC del repo); hash
+      validato live dalla CI del repo su ogni PR.
+      Par. 11.4-11.6 (Cap. 11 «Materiali e prodotti per uso strutturale»),
+      pagina GU 344 = pagina PDF 348, estratto con `pdftotext -layout` e
+      trascritto verbatim in references/fonti/ntc2018-par-11-4-11-6.md. I
+      riferimenti (categoria C2, Sistema VVCP 1, sigle ETAG 001/032/013, serie
+      UNI EN 1337) sono stati verificati sull'immagine renderizzata della
+      pagina PDF 348 (pdftoppm -r 150 -png). Contenuti rilevanti:
+      - 11.4.1 ancoranti per uso strutturale: qualificazione punto C) del
+        §11.1, base ETAG 001 (anche prove di accettazione); per azioni
+        sismiche, per tutte le classi d'uso (punto 2.4.2) categoria di
+        prestazione minima da soddisfare = C2 (Annesso E, tab. 1.1, §1.2 ETAG
+        001).
+      - 11.4.2 giunti di dilatazione stradale: punto C) del §11.1, base ETAG
+        032.
+      - 11.5.1 sistemi di precompressione a cavi post-tesi: punto C) del §11.1;
+        qualificazione via Certificato di valutazione tecnica (Linea Guida
+        CSLP); fornitura con CVT o marcatura CE su ETA + manuale; il Direttore
+        dei Lavori verifica, rifiuta le forniture prive di documentazione,
+        verifica la posa e le prove di accettazione (verifica geometrica/
+        tolleranze + caratteristiche meccaniche); prove secondo ETAG 013.
+      - 11.5.2 tiranti di ancoraggio per uso geotecnico (attivi/passivi): punto
+        C) del §11.1; per i tipo attivo CVT via Linea Guida CSLP; fornitura con
+        CVT o CE su ETA + manuale; verifica e prove di accettazione del DL.
+      - 11.6 appoggi strutturali: dispositivi di vincolo per trasmettere
+        carichi e vincolare gradi di liberta'; punto A del §11.1 -> conformi
+        alla serie UNI EN 1337 + Marcatura CE, Sistema VVCP 1 per applicazioni
+        critiche; se non ricadenti -> caso C) del §11.1.
+      Restano fuori scope: il progetto/verifiche dei tiranti (§ 6.6, skill
+      tiranti-ancoraggio-ntc); i dispositivi antisismici UNI EN 15129 (§ 11.9,
+      skill dispositivi-antisismici-qualificazione-ntc); il dettaglio delle
+      prove nelle Linee guida/norme europee (ETAG, UNI EN 1337).

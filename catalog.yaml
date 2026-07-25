@@ -10,7 +10,7 @@ areas:
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
-  count: 54
+  count: 55
 - id: edilizia-urbanistica-catasto
   name: Edilizia, urbanistica & catasto
   order: 3
@@ -139,6 +139,25 @@ skills:
   - sicurezza-lavoro
   - qualificazione-imprese
   - dlgs-81-2008
+- id: ancoraggi-precompressione-appoggi-qualificazione-ntc
+  area: strutture-geotecnica
+  title: 'Ancoranti, tiranti e appoggi: qualificazione (NTC 2018 par. 11.4-11.6)'
+  summary: 'Inquadra qualificazione e accettazione di ancoranti, giunti, precompressione, tiranti e appoggi (NTC 2018 par.
+    11.4-11.6): ancoranti ETAG 001 e categoria sismica C2 (11.4), precompressione/tiranti via CVT/ETA e ETAG 013 (11.5), appoggi
+    UNI EN 1337 + Marcatura CE (11.6).'
+  normative_refs:
+  - 'NTC 2018 - par. 11.4: ancoranti per uso strutturale punto C par. 11.1 ETAG 001, categoria sismica C2 per tutte le classi
+    d''uso (11.4.1); giunti di dilatazione stradale ETAG 032 (11.4.2)'
+  - 'NTC 2018 - par. 11.5-11.6: precompressione post-tesi e tiranti geotecnici punto C par. 11.1 (CVT/ETA, prove ETAG 013);
+    appoggi punto A par. 11.1 UNI EN 1337 + CE (VVCP 1) o caso C'
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - ancoranti
+  - precompressione
+  - appoggi-strutturali
+  - ntc-2018
+  - accettazione
 - id: atex-luoghi-lavoro-dlgs81
   area: sicurezza-lavoro-cantieri
   title: ATEX luoghi di lavoro - D.Lgs. 81/2008 Titolo XI
