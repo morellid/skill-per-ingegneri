@@ -1,0 +1,20 @@
+schema_version: 1
+skill: progettazione-antincendio-basso-rischio-dm2021
+last_verified: 2026-07-25
+sources:
+  - id: dm-3-9-2021-gu259
+    title: "D.M. 3 settembre 2021 (Min. interno / Min. lavoro) - Criteri generali di progettazione, realizzazione ed esercizio della sicurezza antincendio per luoghi di lavoro (art. 46 c.3 lett. a punti 1-2 D.Lgs 81/2008) - GU Serie Generale n. 259 del 29/10/2021"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2021/10/29/259/sg/pdf
+    accessed: 2026-07-25
+    sha256: ed6c9c91b8340150535b690a53390114f17289c8a5255c8a2e22501f3b3027ec
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu259-2021.pdf
+    md_path: references/fonti/dm-3-9-2021-progettazione-antincendio.md
+    excerpt_path: references/estratti/progettazione-antincendio-checklist.md
+    notes: >-
+      PDF ufficiale della Gazzetta Ufficiale n. 259/2021 (88 pagine; il decreto occupa le pp. 7-16). Hash verificato con
+      doppio download riproducibile. Il decreto (artt. 1-5) e l'Allegato I sono trascritti nel md_path. Poiche'
+      pdftotext perde i segni di disuguaglianza, tutte le costanti numeriche con verso di disuguaglianza sono state
+      verificate a immagine con pdftoppm -r 150 (pagine PDF 14, 17, 18, 20 = GU pp. 10, 13, 14, 16). Il Codice PI (DM
+      3/8/2015) richiamato per i casi non a basso rischio e le norme UNI citate non sono riprodotti (diritto d'autore).

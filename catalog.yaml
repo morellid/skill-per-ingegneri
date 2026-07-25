@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 26
+  count: 27
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -2211,6 +2211,24 @@ skills:
   - scia-antincendio
   - certificato-prevenzione-incendi
   - vigili-del-fuoco
+- id: progettazione-antincendio-basso-rischio-dm2021
+  area: sicurezza-lavoro-cantieri
+  title: Progettazione antincendio luoghi di lavoro a basso rischio (D.M. 3/9/2021)
+  summary: 'Progettazione sicurezza antincendio nei luoghi di lavoro (D.M. 3/9/2021, art. 46 D.Lgs 81/2008): rischio incendio
+    nel DVR, quale regola si applica (RTV / minicodice / Codice PI), requisiti di basso rischio e strategia antincendio (esodo,
+    estintori, GSA). Non progetta le misure.'
+  normative_refs:
+  - D.M. 3 settembre 2021 (progettazione sicurezza antincendio luoghi di lavoro) - artt. 1-5 e Allegato I
+  - D.Lgs. 81/2008 art. 46 c.3 lett. a) punti 1-2 e art. 17 c.1 lett. a) (DVR)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - antincendio
+  - progettazione
+  - basso-rischio
+  - minicodice
+  - dm-3-9-2021
+  - sicurezza-lavoro
 - id: psc-piano-sicurezza-coordinamento-dlgs81
   area: sicurezza-lavoro-cantieri
   title: PSC - Piano di Sicurezza e Coordinamento (D.Lgs 81/2008 art. 100 + Allegato XV)
