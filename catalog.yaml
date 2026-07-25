@@ -6,7 +6,7 @@ areas:
 - id: sicurezza-lavoro-cantieri
   name: Sicurezza sul lavoro & cantieri
   order: 1
-  count: 27
+  count: 28
 - id: strutture-geotecnica
   name: Strutture & geotecnica
   order: 2
@@ -2973,6 +2973,24 @@ skills:
   - dlgs-81-2008
   - valutazione-rischio
   - sorveglianza-sanitaria
+- id: valutazione-rischio-cem-dlgs81
+  area: sicurezza-lavoro-cantieri
+  title: Rischio campi elettromagnetici (CEM) - D.Lgs 81/2008 Titolo VIII Capo IV
+  summary: 'Valutazione del rischio da campi elettromagnetici dei lavoratori (D.Lgs 81/2008 Titolo VIII Capo IV, artt. 206-212):
+    quadro VLE/VA (Allegato XXXVI), quando misura/calcolo, effetti diretti/indiretti, gruppi sensibili, misure, sorveglianza
+    sanitaria. Non riproduce i valori.'
+  normative_refs:
+  - D.Lgs. 9/4/2008 n. 81 - artt. 206-208 (campo di applicazione, definizioni, VLE e valori d'azione CEM)
+  - D.Lgs. 9/4/2008 n. 81 - artt. 209-212 e Allegato XXXVI (valutazione, misure, sorveglianza sanitaria, deroghe)
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - dlgs-81-2008
+  - sicurezza-lavoro
+  - rischio-cem
+  - campi-elettromagnetici
+  - agenti-fisici
+  - vle-va
 - id: valutazione-rischio-chimico-dlgs81
   area: sicurezza-lavoro-cantieri
   title: Valutazione del rischio chimico - agenti chimici pericolosi (D.Lgs. 81/2008)

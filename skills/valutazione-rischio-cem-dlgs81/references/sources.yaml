@@ -1,0 +1,20 @@
+schema_version: 1
+skill: valutazione-rischio-cem-dlgs81
+last_verified: 2026-07-25
+sources:
+  - id: dlgs-81-2008-consolidato-inl-2025-01
+    title: "D.Lgs. 9 aprile 2008, n. 81 (T.U. salute e sicurezza sul lavoro) - Titolo VIII Capo IV (artt. 206-212) e Allegato XXXVI - Testo coordinato Edizione gennaio 2025 (INL)"
+    type: pdf-consolidato-inl
+    url: https://www.ispettorato.gov.it/files/2025/01/TU-81-08-Ed.-Gennaio-2025-1.pdf
+    accessed: 2026-07-25
+    sha256: f593e1806de920dc16def37920c5623cda2450075ed56051852f2caf6045899a
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/dlgs81-inl.pdf
+    md_path: references/fonti/dlgs-81-2008-titolo-viii-capo-iv.md
+    excerpt_path: references/estratti/valutazione-cem-checklist.md
+    notes: >-
+      Testo coordinato INL (non ufficiale: cross-check su Normattiva/Gazzetta Ufficiale). Artt. 206-212 (e 210-bis)
+      estratti con pdftotext -layout (prosa legale, estrazione pulita). Capo IV modificato dal D.Lgs 159/2016 (recepimento
+      dir. 2013/35/UE). I valori numerici VLE/VA dell'Allegato XXXVI (tabelle frequenza-dipendenti, parti I/II/III) sono
+      referenziati per struttura, non riprodotti cella per cella. Stesso PDF/hash usato da altre skill D.Lgs 81 (doppio
+      download riproducibile).
