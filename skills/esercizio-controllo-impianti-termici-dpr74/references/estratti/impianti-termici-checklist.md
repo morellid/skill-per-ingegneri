@@ -51,6 +51,33 @@
 - [ ] Effettuare il controllo anche: alla **prima messa in esercizio** (a cura dell'installatore);
       in caso di **sostituzione del generatore**; per interventi che modificano l'efficienza.
 
+## 5-bis. Obbligo FER a monte dell'intervento sull'impianto termico (D.Lgs. 5/2026)
+
+> Fonte: `references/fonti/dlgs-5-2026-allegato-iii-estratto.md` (D.Lgs. 9 gennaio 2026, n. 5, art.
+> 29). Questa skill **avverte e rinvia**: la trattazione completa e' in
+> `relazione-tecnica-requisiti-minimi-dlgs192`.
+
+- [ ] Prima di progettare l'intervento, verificare se integra una **ristrutturazione dell'impianto
+      termico** ai sensi del **DM 26/6/2015** come modificato dal **DM MASE 28/10/2025**: da quella
+      qualificazione dipende l'ingresso nel campo di applicazione dell'**Allegato III del D.Lgs.
+      199/2021** (Sezione A punto 1, come sostituito dall'art. 29 del D.Lgs. 5/2026).
+- [ ] Se rientra, verificare l'obbligo di copertura da fonti rinnovabili pari al **15% della somma
+      dei consumi previsti per la climatizzazione invernale e la climatizzazione estiva** (Sezione B
+      punto 1, lett. d).
+- [ ] Non trattare l'**esclusione della relazione tecnica** dell'art. 8, c. 1 del D.Lgs. 192/2005
+      (pompa di calore fino a 15 kW; sostituzione del generatore sotto la soglia del DM 37/2008) come
+      un esonero dall'obbligo FER: sono **piani distinti**.
+- [ ] Se l'obbligo non e' assolvibile e la **relazione tecnica non e' dovuta**, ricordare che la
+      **Sezione D punto 1** impone al progettista di **comunicare al Comune** la motivazione
+      dell'impossibilita' tecnica o della non convenienza economica, secondo le modalita' da esso
+      individuate.
+- [ ] **Decorrenza**: l'Allegato III si applica agli edifici per i quali la **richiesta del titolo
+      edilizio** e' presentata decorsi **180 giorni dall'entrata in vigore** del decreto. Il D.Lgs.
+      5/2026 non ha un articolo di entrata in vigore; la scheda Normattiva dell'atto attesta
+      l'entrata in vigore al **4 febbraio 2026**, e 180 giorni dopo cade il **3 agosto 2026**. La
+      formula e' testualmente ambigua: verificare il testo vigente prima di dare per acquisito il
+      regime.
+
 ## 6. Documentazione
 
 - [ ] Tenere il **libretto di impianto** (modello del **DM 10 febbraio 2014**) e conservare i

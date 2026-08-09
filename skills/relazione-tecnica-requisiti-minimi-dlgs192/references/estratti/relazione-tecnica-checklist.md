@@ -23,6 +23,11 @@
       **valutazione di fattibilita' tecnica, ambientale ed economica** dei **sistemi alternativi ad
       alta efficienza** (rinnovabili, cogenerazione, teleriscaldamento/teleraffrescamento, pompe di
       calore, monitoraggio/controllo dei consumi), **documentata**.
+- [ ] **Distinto e ulteriore**: gli **obblighi FER** dell'**Allegato III del D.Lgs. 199/2021**, come
+      modificato dall'art. 29 del **D.Lgs. 5/2026** (RED III), impongono quote **minime obbligatorie**
+      di copertura da rinnovabili, le cui verifiche vanno anch'esse **dentro questa relazione**. La
+      valutazione di fattibilita' del c. 1-bis **non** li assolve. Checklist dedicata in
+      `references/estratti/obblighi-fer-allegato-iii.md`.
 
 ## 3. Asseverazione a fine lavori e controlli (art. 8, cc. 2-5)
 

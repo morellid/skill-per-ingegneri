@@ -1454,12 +1454,14 @@ skills:
   area: energia-incentivi
   title: Esercizio, controllo e manutenzione degli impianti termici (DPR 74/2013)
   summary: 'Applica i criteri del DPR 74/2013 per esercizio, controllo e manutenzione degli impianti termici: temperature
-    massime (20/18 C +2), periodi e orari per zona climatica A-F, responsabile/terzo responsabile, controllo di efficienza
-    energetica e RCEE (>10/12 kW). Non redige il RCEE.'
+    massime, periodi e orari per zona A-F, terzo responsabile, RCEE (>10/12 kW). Avverte dell''obbligo FER del 15% che il
+    D.Lgs. 5/2026 lega alla ristrutturazione d''impianto.'
   normative_refs:
   - D.P.R. 16 aprile 2013, n. 74 - artt. 3, 4, 5, 6, 7, 8 e Allegato A
+  - D.Lgs. 9 gennaio 2026, n. 5 (RED III) - art. 29, che include gli interventi di ristrutturazione dell'impianto termico
+    nel campo di applicazione dell'Allegato III del D.Lgs. 199/2021 (obbligo FER 15%)
   - D.Lgs. 192/2005 (attuazione dir. 2002/91/CE) + DM 10 febbraio 2014 (libretto di impianto) - richiamati
-  version: 0.1.0-alpha
+  version: 0.2.0-alpha
   status: alpha
   tags:
   - impianti-termici
@@ -1467,6 +1469,7 @@ skills:
   - efficienza-energetica
   - terzo-responsabile
   - rcee
+  - fonti-rinnovabili
 - id: espropriazione-pubblica-utilita-dpr327
   area: appalti-opere-pubbliche
   title: 'Espropriazione per pubblica utilità: fasi, indennità, decreto (DPR 327/2001)'
@@ -2377,14 +2380,16 @@ skills:
 - id: relazione-tecnica-requisiti-minimi-dlgs192
   area: energia-incentivi
   title: Relazione tecnica requisiti minimi energetici (D.Lgs. 192/2005 art. 8)
-  summary: 'Inquadra la relazione tecnica di progetto sui requisiti minimi energetici (''ex legge 10'') - D.Lgs. 192/2005
-    art. 8: chi la redige e quando si deposita, esclusioni, sistemi alternativi, asseverazione del DL a fine lavori, controlli
-    e sanzioni (art. 15 c. 3-4). Non la redige.'
+  summary: 'Inquadra la relazione tecnica sui requisiti minimi energetici (''ex legge 10'') - D.Lgs. 192/2005 art. 8: chi
+    la redige, deposito, esclusioni, asseverazione del DL, sanzioni. Include gli obblighi FER dell''Allegato III del D.Lgs.
+    199/2021 modificato dal D.Lgs. 5/2026. Non la redige.'
   normative_refs:
   - D.Lgs. 19 agosto 2005, n. 192 - art. 8 (relazione tecnica, accertamenti e ispezioni) e art. 15, commi 1, 3, 4 (sanzioni)
-  - 'Rinvio (non riprodotti): DM 26/6/2015 (requisiti minimi), decreto MiSE con gli schemi di relazione, DM 37/2008 (soglia
-    generatore), D.Lgs. 192/2005 art. 6 (APE) e art. 7 (esercizio impianti)'
-  version: 0.1.0-alpha
+  - D.Lgs. 9 gennaio 2026, n. 5 (RED III) - artt. 29-30, che modificano l'Allegato III (obblighi di integrazione delle fonti
+    rinnovabili negli edifici) e l'Allegato IV del D.Lgs. 8 novembre 2021, n. 199
+  - 'Rinvio (non riprodotti): DM 26/6/2015 come mod. dal DM MASE 28/10/2025 (requisiti minimi e definizioni), schemi di relazione,
+    DM 37/2008, Allegato II del D.Lgs. 199/2021, art. 6 (APE) e art. 7'
+  version: 0.2.0-alpha
   status: alpha
   tags:
   - relazione-tecnica
@@ -2392,6 +2397,8 @@ skills:
   - dlgs-192-2005
   - requisiti-minimi
   - efficienza-energetica
+  - fonti-rinnovabili
+  - red-iii
 - id: requisiti-acustici-passivi-edifici-dpcm
   area: edilizia-urbanistica-catasto
   title: Requisiti acustici passivi degli edifici (DPCM 5 dicembre 1997)

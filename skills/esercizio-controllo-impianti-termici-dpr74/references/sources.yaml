@@ -1,6 +1,6 @@
 schema_version: 1
 skill: esercizio-controllo-impianti-termici-dpr74
-last_verified: 2026-07-16
+last_verified: 2026-08-09
 
 # Fonte per i criteri di esercizio, conduzione, controllo e manutenzione degli impianti
 # termici per la climatizzazione: valori massimi di temperatura, periodi e orari di esercizio
@@ -35,3 +35,63 @@ sources:
       sull'atto. Il modello di LIBRETTO DI IMPIANTO e i modelli RCEE aggiornati sono nel DM
       attuativo 10 febbraio 2014 (citato, non riprodotto). La skill copre il quadro e i criteri,
       non i campi dei moduli.
+
+  - id: dlgs-5-2026-allegato-iii-estratto
+    title: "D.Lgs. 9 gennaio 2026, n. 5 (attuazione direttiva UE 2023/2413 - RED III) - art. 29, parti dell'Allegato III del D.Lgs. 199/2021 rilevanti per gli interventi sull'impianto termico (GU Serie generale n. 15 del 20 gennaio 2026)"
+    type: decreto-legislativo
+    # PDF del fascicolo integrale di Gazzetta Ufficiale: e' l'unica forma di URL PDF servita da
+    # gazzettaufficiale.it (la forma /eli/id/.../sg/pdf a livello di singolo atto risponde 404).
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/01/20/15/sg/pdf
+    accessed: 2026-08-09
+    sha256: 3d13cb9afa45d5c3f9c737e892f30af5ba7df08733bb891a9f51dd534d73c3a1
+    license: public-domain
+    binary_path: not_in_repo/gu-sg-15-2026.pdf
+    md_path: references/fonti/dlgs-5-2026-allegato-iii-estratto.md
+    excerpt_path: references/estratti/impianti-termici-checklist.md
+    notes: |
+      Codice redazionale 26G00018, 121 pagine PDF, hash stabile su doppio download (3d13cb9a...).
+      Estrazione con pdftotext SENZA -layout per il corpo dell'atto (due colonne) e CON -layout per
+      le pagine "Note" (colonna singola). La forma di URL /eli/id/.../sg/pdf a livello di singolo
+      atto risponde 404.
+      Fonte AGGIUNTA IN v0.2.0-alpha con scopo deliberatamente RISTRETTO: di questo decreto rilevano
+      qui solo le disposizioni che fanno scattare una verifica sulle fonti rinnovabili in occasione
+      di un intervento sull'impianto termico. Trascritti verbatim in
+      references/fonti/dlgs-5-2026-allegato-iii-estratto.md: art. 29 c. 1 lett. b) punto 2 (nuovo
+      campo di applicazione dell'Allegato III, che include ora gli "edifici esistenti oggetto di
+      interventi di ristrutturazione dell'impianto termico" - pag. GU 21); art. 29 c. 1 lett. c)
+      punto 2 lett. d) (copertura del 15% della somma dei consumi per climatizzazione invernale ed
+      estiva - pag. GU 21); Sezione D punto 1 dell'Allegato III risultante, dalle "Note all'art. 29"
+      (motivazione della deroga nella relazione ex art. 8 c. 1 del D.Lgs. 192/2005, e comunicazione
+      al Comune quando quella relazione non e' dovuta - pag. GU 55).
+      DECORRENZA: il decreto non contiene un articolo di entrata in vigore (l'ultimo e' l'art. 51,
+      clausola di invarianza finanziaria). La data risultante non e' nel PDF: e' presa dalla scheda
+      Normattiva registrata come fonte dlgs-5-2026-entrata-in-vigore, che dichiara "Entrata in vigore
+      del provvedimento: 04/02/2026"; 180 giorni dopo cade il 3 agosto 2026. La
+      formula "decorsi centottanta giorni dall'entrata in vigore del presente decreto" e' pero'
+      testualmente ambigua perche' inserita dentro l'Allegato III del D.Lgs. 199/2021: l'ambiguita'
+      e' segnalata, non risolta d'ufficio.
+      LIMITE DI RESA: questa skill NON tratta gli obblighi FER, non calcola le quote di copertura e
+      non qualifica l'intervento ai sensi del DM 26/6/2015 come modificato dal DM MASE 28/10/2025.
+      Si limita ad AVVERTIRE che un intervento sull'impianto termico puo' ora far scattare la
+      verifica dell'Allegato III, e a rinviare alla skill
+      relazione-tecnica-requisiti-minimi-dlgs192, che trascrive l'art. 29 per intero e l'Allegato III
+      risultante in tutte le Sezioni A-E.
+
+  - id: dlgs-5-2026-entrata-in-vigore
+    title: "D.Lgs. 9 gennaio 2026, n. 5 - scheda Normattiva dell'atto: data di entrata in vigore"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-09;5!vig=2026-08-09
+    accessed: 2026-08-09
+    sha256: 1a67500175fe6f8a3d545212af0d3f0cb3c7f8d473c12ea7fada779b6245d831
+    license: public-domain
+    binary_path: not_in_repo/dlgs-5-2026-normattiva-idx.html
+    md_path: references/fonti/dlgs-5-2026-entrata-in-vigore.md
+    excerpt_path: references/estratti/impianti-termici-checklist.md
+    notes: |
+      Scopo minimo: la sola data di entrata in vigore del D.Lgs. 5/2026, che serve all'avvertenza
+      FER di questa skill. La scheda Normattiva la dichiara direttamente ("Entrata in vigore del
+      provvedimento: 04/02/2026"), quindi la skill non deve derivarla dalla vacatio ordinaria di
+      15 giorni, che sarebbe un'affermazione normativa priva di fonte nel PDF di Gazzetta.
+      Hash stabile su doppio download. URL pinnato a !vig=2026-08-09: ad ogni aggiornamento
+      riscaricare con nuovo !vig= e registrare il nuovo SHA256.
+      LIMITE DI RESA: non e' stato trascritto altro dalla scheda.

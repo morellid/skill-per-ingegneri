@@ -1,14 +1,15 @@
 ---
 name: relazione-tecnica-requisiti-minimi-dlgs192
-description: "Supporto documentale al progettista e al direttore dei lavori per la relazione tecnica di progetto attestante la rispondenza alle prescrizioni per il contenimento del consumo di energia (la 'relazione ex legge 10'), ai sensi del D.Lgs. 19 agosto 2005, n. 192, art. 8 (con le sanzioni dell'art. 15, commi 1, 3, 4). Aiuta il tecnico a collocare correttamente questo elaborato: chi la redige - il progettista o i progettisti nelle rispettive competenze edili, impiantistiche termotecniche, elettriche e illuminotecniche, inserendo calcoli e verifiche - e come va depositata dal proprietario in doppia copia presso le amministrazioni competenti contestualmente alla dichiarazione di inizio lavori o alla domanda di titolo abilitativo (art. 8 c. 1); le esclusioni (pompa di calore fino a 15 kW e sostituzione del generatore sotto la soglia del DM 37/2008); la valutazione di fattibilità tecnica, ambientale ed economica dei sistemi alternativi ad alta efficienza (rinnovabili, cogenerazione, teleriscaldamento, pompe di calore) per nuove costruzioni e ristrutturazioni importanti (c. 1-bis); l'asseverazione di conformità delle opere alla relazione e l'attestato di qualificazione energetica che il direttore dei lavori presenta al comune con la fine lavori, pena l'inefficacia della dichiarazione di fine lavori (c. 2); la conservazione presso il comune e gli accertamenti e ispezioni in corso d'opera o entro cinque anni (cc. 3-5); il regime di dichiarazione sostitutiva di atto notorio (art. 15 c. 1) e le sanzioni al professionista per relazione non conforme agli schemi (700-4200 euro, art. 15 c. 3) e al direttore dei lavori per omessa asseverazione (1000-6000 euro, art. 15 c. 4). Use when an engineer or architect (as designer or works director) must frame the energy-compliance technical report and its deposit/asseveration duties for a building project under D.Lgs. 192/2005 art. 8; it is a documentary aid and does NOT draft the report, does NOT perform the energy calculations/verifications (see the minimum-requirements decree DM 26/6/2015), does NOT cover the APE (art. 6), and does NOT replace the designer or the works director."
+description: "Supporto documentale al progettista e al direttore dei lavori per la relazione tecnica di progetto attestante la rispondenza alle prescrizioni per il contenimento del consumo di energia (la 'relazione ex legge 10'), ai sensi del D.Lgs. 19 agosto 2005, n. 192, art. 8 (con le sanzioni dell'art. 15, commi 1, 3, 4). Aiuta il tecnico a collocare correttamente questo elaborato: chi la redige - il progettista o i progettisti nelle rispettive competenze edili, impiantistiche termotecniche, elettriche e illuminotecniche, inserendo calcoli e verifiche - e come va depositata dal proprietario in doppia copia presso le amministrazioni competenti contestualmente alla dichiarazione di inizio lavori o alla domanda di titolo abilitativo (art. 8 c. 1); le esclusioni (pompa di calore fino a 15 kW e sostituzione del generatore sotto la soglia del DM 37/2008); la valutazione di fattibilità tecnica, ambientale ed economica dei sistemi alternativi ad alta efficienza (rinnovabili, cogenerazione, teleriscaldamento, pompe di calore) per nuove costruzioni e ristrutturazioni importanti (c. 1-bis); l'asseverazione di conformità delle opere alla relazione e l'attestato di qualificazione energetica che il direttore dei lavori presenta al comune con la fine lavori, pena l'inefficacia della dichiarazione di fine lavori (c. 2); la conservazione presso il comune e gli accertamenti e ispezioni in corso d'opera o entro cinque anni (cc. 3-5); il regime di dichiarazione sostitutiva di atto notorio (art. 15 c. 1) e le sanzioni al professionista per relazione non conforme agli schemi (700-4200 euro, art. 15 c. 3) e al direttore dei lavori per omessa asseverazione (1000-6000 euro, art. 15 c. 4). Copre inoltre gli obblighi di integrazione delle fonti rinnovabili negli edifici dell'Allegato III del D.Lgs. 199/2021 come modificato dal D.Lgs. 9 gennaio 2026, n. 5 (RED III), le cui verifiche vanno inserite proprio in questa relazione: quote di copertura FER per nuova costruzione (60%), ristrutturazione importante di primo livello (40%), di secondo livello (15%) e ristrutturazione dell'impianto termico (15%), maggiorazione per edifici pubblici, potenza elettrica FER minima, esonero per teleriscaldamento efficiente, motivazione dell'impossibilità tecnica o della non convenienza economica in relazione, e trasmissione di copia al GSE. Use when an engineer or architect (as designer or works director) must frame the energy-compliance technical report, its deposit/asseveration duties and the renewable-energy integration obligations for a building project under D.Lgs. 192/2005 art. 8 and Allegato III of D.Lgs. 199/2021; it is a documentary aid and does NOT draft the report, does NOT perform the energy calculations/verifications (see the minimum-requirements decree DM 26/6/2015), does NOT cover the APE (art. 6), and does NOT replace the designer or the works director."
 license: MIT
 area: energia-incentivi
 title: "Relazione tecnica requisiti minimi energetici (D.Lgs. 192/2005 art. 8)"
-summary: "Inquadra la relazione tecnica di progetto sui requisiti minimi energetici ('ex legge 10') - D.Lgs. 192/2005 art. 8: chi la redige e quando si deposita, esclusioni, sistemi alternativi, asseverazione del DL a fine lavori, controlli e sanzioni (art. 15 c. 3-4). Non la redige."
+summary: "Inquadra la relazione tecnica sui requisiti minimi energetici ('ex legge 10') - D.Lgs. 192/2005 art. 8: chi la redige, deposito, esclusioni, asseverazione del DL, sanzioni. Include gli obblighi FER dell'Allegato III del D.Lgs. 199/2021 modificato dal D.Lgs. 5/2026. Non la redige."
 normative_refs:
   - "D.Lgs. 19 agosto 2005, n. 192 - art. 8 (relazione tecnica, accertamenti e ispezioni) e art. 15, commi 1, 3, 4 (sanzioni)"
-  - "Rinvio (non riprodotti): DM 26/6/2015 (requisiti minimi), decreto MiSE con gli schemi di relazione, DM 37/2008 (soglia generatore), D.Lgs. 192/2005 art. 6 (APE) e art. 7 (esercizio impianti)"
-version: 0.1.0-alpha
+  - "D.Lgs. 9 gennaio 2026, n. 5 (RED III) - artt. 29-30, che modificano l'Allegato III (obblighi di integrazione delle fonti rinnovabili negli edifici) e l'Allegato IV del D.Lgs. 8 novembre 2021, n. 199"
+  - "Rinvio (non riprodotti): DM 26/6/2015 come mod. dal DM MASE 28/10/2025 (requisiti minimi e definizioni), schemi di relazione, DM 37/2008, Allegato II del D.Lgs. 199/2021, art. 6 (APE) e art. 7"
+version: 0.2.0-alpha
 status: alpha
 tags:
   - relazione-tecnica
@@ -16,6 +17,8 @@ tags:
   - dlgs-192-2005
   - requisiti-minimi
   - efficienza-energetica
+  - fonti-rinnovabili
+  - red-iii
 ---
 
 # Relazione tecnica di rispondenza ai requisiti minimi - ex legge 10 (D.Lgs. 192/2005 art. 8)
@@ -61,6 +64,53 @@ di fattibilita' tecnica, ambientale ed economica** dei **sistemi alternativi ad 
 **pompe di calore**, sistemi di monitoraggio/controllo attivo dei consumi), **documentata** e
 disponibile a fini di verifica.
 
+## Obblighi FER negli edifici (Allegato III D.Lgs. 199/2021, modificato dal D.Lgs. 5/2026)
+
+Il **D.Lgs. 9 gennaio 2026, n. 5** (recepimento della direttiva UE 2023/2413, **RED III**) modifica
+con l'**art. 29** l'**Allegato III del D.Lgs. 199/2021** con una serie di sostituzioni puntuali, tra
+cui l'integrale sostituzione del punto 1 della Sezione A (ambito) e del punto 1 della Sezione B
+(quote di copertura). Rileva qui perche' l'Allegato III
+stabilisce esso stesso che **calcoli, verifiche e motivazioni si scrivono nella relazione tecnica ex
+art. 8, c. 1** (Sezione D punto 1 e Sezione E punto 1).
+
+**Ambito** (Sezione A): edifici di **nuova costruzione**, edifici esistenti oggetto di
+**ristrutturazione importante** (primo o secondo livello) e edifici esistenti oggetto di
+**ristrutturazione dell'impianto termico**, per i quali la **richiesta del titolo edilizio** e'
+presentata **decorsi 180 giorni dall'entrata in vigore** del decreto. Il D.Lgs. 5/2026 non ha un
+articolo di entrata in vigore; Normattiva attesta l'entrata in vigore al **4 febbraio 2026**, e 180
+giorni dopo cade il **3 agosto 2026**. La formula e' pero' **testualmente ambigua** (e' inserita
+dentro l'Allegato III del D.Lgs. 199/2021): vedi
+`references/estratti/obblighi-fer-allegato-iii.md`, sezione 1.
+
+**Quote di copertura** (Sezione B punto 1), da rispettare **contemporaneamente** dove ne sono
+indicate due:
+
+| Intervento | Quota su ACS | Quota sulla somma |
+|---|---|---|
+| Nuova costruzione | 60% | 60% di ACS + clim. invernale + clim. estiva |
+| Ristrutturazione importante di **primo** livello | 40% | 40% di ACS + clim. invernale + clim. estiva |
+| Ristrutturazione importante di **secondo** livello | - | 15% di clim. invernale + clim. estiva |
+| Ristrutturazione dell'**impianto termico** | - | 15% di clim. invernale + clim. estiva |
+
+Le ultime due righe sono la **novita' sostanziale**: la ristrutturazione di secondo livello e la
+sostituzione/ristrutturazione dell'impianto termico entrano nell'ambito con una quota propria.
+Per gli **edifici pubblici** le percentuali sono **maggiorate di 5 punti** e la potenza elettrica FER
+obbligatoria e' **incrementata del 10%** (punto 5).
+
+Restano da verificare: divieto di assolvere l'obbligo con **effetto Joule** salvo unita' in **classe
+B o superiore** (punto 2); **potenza elettrica FER** minima con k = 0,025 (esistenti) / 0,05 (nuovi)
+sulla superficie in pianta (punto 3, formula pubblicata come immagine in Gazzetta); **esonero** per
+allaccio a **teleriscaldamento/teleraffrescamento efficiente** a copertura integrale (punto 4);
+collocazione degli impianti su edificio o pertinenze, con **esclusione del fotovoltaico a terra**
+(Sezione C). In caso di **impossibilita' tecnica o non convenienza economica** la motivazione va
+**dettagliata in relazione esaminando tutte le opzioni tecnologiche**, e l'obbligo compensativo su
+EP H,C,W,nren scatta **solo** per nuovi edifici e ristrutturazioni importanti di **primo** livello
+(Sezione D). Copia della relazione va **trasmessa al GSE** e la verifica e' fatta **dai Comuni su
+quella relazione** (Sezione E).
+
+Dettaglio operativo in `references/estratti/obblighi-fer-allegato-iii.md` e nel task
+[`verifica-obblighi-fer-edifici`](tasks/verifica-obblighi-fer-edifici.md).
+
 ## Asseverazione a fine lavori e controlli (art. 8, cc. 2-5)
 
 - **Asseverazione** (c. 2): a fine lavori il **direttore dei lavori** assevera la **conformita'**
@@ -90,6 +140,12 @@ disponibile a fini di verifica.
   verifiche** energetiche (rinvio a `trasmittanza-termica-opache-dm2015` e al **DM 26/6/2015**).
 - **Non riproduce** gli **schemi di relazione** del decreto attuativo MiSE ne' i requisiti numerici
   del DM 26/6/2015.
+- **Non qualifica** l'intervento come ristrutturazione importante di primo o secondo livello o come
+  ristrutturazione dell'impianto termico: le definizioni sono nel **DM 26/6/2015** come modificato
+  dal **DM MASE 28/10/2025**, richiamate per rinvio e non riprodotte.
+- **Non riproduce** l'**Allegato II** del D.Lgs. 199/2021 (requisiti e specifiche tecniche degli
+  impianti FER) ne' l'**Allegato IV** (requisiti minimi di prodotto), ne' le **linee guida CTI**
+  previste dalla Sezione C punto 4.
 - **Non copre** l'**APE** (art. 6, skill dedicata), l'**esercizio degli impianti** (art. 7) ne' i
   commi 2 e 5-10 dell'art. 15 (controlli e sanzioni APE/impianti).
 
@@ -99,6 +155,7 @@ disponibile a fini di verifica.
 |---|---|
 | [`inquadra-relazione-deposito`](tasks/inquadra-relazione-deposito.md) | Stabilisce se la relazione tecnica e' dovuta, chi la redige, cosa contiene (incl. sistemi alternativi) e come/quando si deposita (art. 8 cc. 1, 1-bis) |
 | [`inquadra-asseverazione-sanzioni`](tasks/inquadra-asseverazione-sanzioni.md) | Inquadra l'asseverazione del DL a fine lavori, i controlli del Comune e le sanzioni a professionista e DL (art. 8 cc. 2-5; art. 15 cc. 1, 3, 4) |
+| [`verifica-obblighi-fer-edifici`](tasks/verifica-obblighi-fer-edifici.md) | Stabilisce se e in che misura scattano gli obblighi FER dell'Allegato III del D.Lgs. 199/2021 modificato dal D.Lgs. 5/2026, e cosa deve contenere la relazione tecnica di conseguenza |
 
 ## Riferimenti normativi
 
@@ -107,12 +164,23 @@ disponibile a fini di verifica.
   fine lavori), 3-5 (conservazione, accertamenti e ispezioni); **art. 15** (Sanzioni): cc. 1
   (dichiarazione sostitutiva), 3 (professionista, 700-4200 euro), 4 (direttore dei lavori, 1000-6000
   euro).
-- Citati come **rinvio** (non riprodotti): **DM 26/6/2015** (requisiti minimi), **decreto MiSE** con
-  gli **schemi** di relazione, **DM 37/2008** (soglia generatore), **art. 6** (APE), **art. 7**
-  (esercizio impianti), **DPR 445/2000** (dichiarazioni sostitutive).
+- **D.Lgs. 9 gennaio 2026, n. 5** (attuazione della direttiva UE 2023/2413, RED III), **art. 29**
+  (modifiche all'**Allegato III del D.Lgs. 199/2021** - obblighi di integrazione delle fonti
+  rinnovabili negli edifici: Sezione A campo di applicazione, Sezione B obblighi, Sezione C
+  caratteristiche degli impianti, Sezione D impossibilita' tecnica e non convenienza economica,
+  Sezione E modalita' di verifica) e **art. 30** (Allegato IV), pubblicato in **GU Serie generale
+  n. 15 del 20 gennaio 2026**.
+- Citati come **rinvio** (non riprodotti): **DM 26/6/2015** come modificato dal **DM MASE
+  28/10/2025** (requisiti minimi e definizioni di ristrutturazione importante e di ristrutturazione
+  dell'impianto termico), **decreto MiSE** con gli **schemi** di relazione, **DM 37/2008** (soglia
+  generatore), **Allegato II** del D.Lgs. 199/2021, **D.Lgs. 102/2014** art. 2 c. 2 lett. tt)
+  (teleriscaldamento efficiente), **art. 6** (APE), **art. 7** (esercizio impianti), **DPR 445/2000**
+  (dichiarazioni sostitutive).
 
 Dettaglio in `references/sources.yaml`, `references/fonti/dlgs-192-2005-art8-15.md`,
-`references/estratti/relazione-tecnica-checklist.md`.
+`references/fonti/dlgs-5-2026-allegato-iii.md`,
+`references/estratti/relazione-tecnica-checklist.md`,
+`references/estratti/obblighi-fer-allegato-iii.md`.
 
 ## Avvertenza
 
