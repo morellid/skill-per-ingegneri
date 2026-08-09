@@ -1,0 +1,10 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: Regimi autorizzativi degli impianti FER e Modello Unico Parte III (D.Lgs. 190/2024)
+short_description: "Supporto documentale per capire sotto quale regime amministrativo ricade un intervento su impianti a fonti rinnovabili (inclusi accumuli, elettrolizzatori e opere connesse) secondo il D.Lgs. 25 novembre 2024, n. 190: attivita' libera (art. 7, Allegato A), PAS (art. 8, Allegato B) o autorizzazione unica (art. 9, Allegato C), con la regola del progetto unico contro il frazionamento, i vincoli e le interferenze che fanno salire il regime, i termini di silenzio-assenso della PAS (30/45/60 giorni) e i termini dell'autorizzazione unica con VIA e VIncA. Copre inoltre il Modello Unico Parte III adottato dal D.M. MASE 15 luglio 2026, n. 223, da trasmettere alla piattaforma SUER entro cinque giorni dall'entrata in esercizio (sei mesi per gli impianti gia' in esercizio). NON presenta istanze, non riproduce i campi del modulo (l'Allegato 1 non e' nel PDF del decreto), non copre aree idonee e zone di accelerazione ne' la disciplina regionale di adeguamento."
+default_prompt: |
+  Devo installare un impianto fotovoltaico: sotto quale regime ricade secondo il D.Lgs.
+  190/2024 - attivita' libera, PAS o autorizzazione unica? Quali vincoli o interferenze
+  possono farlo salire di regime, quali termini e documenti si applicano, e devo trasmettere
+  il Modello Unico Parte III alla piattaforma SUER? Cita articoli e allegati.
