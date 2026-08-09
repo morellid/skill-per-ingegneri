@@ -1,0 +1,61 @@
+schema_version: 1
+skill: impianti-fer-regimi-autorizzativi-dlgs190
+last_verified: 2026-08-09
+
+# Fonti per l'inquadramento del regime amministrativo (attivita' libera / PAS /
+# autorizzazione unica) degli interventi su impianti a fonti rinnovabili, e per l'adempimento
+# del Modello Unico Parte III da trasmettere alla piattaforma SUER per gli interventi in
+# attivita' libera.
+
+sources:
+  - id: dlgs-190-2024-regimi
+    title: "D.Lgs. 25 novembre 2024, n. 190 - Disciplina dei regimi amministrativi per la produzione di energia da fonti rinnovabili (testo vigente al 2026-08-09): artt. 1, 5, 6, 7, 8, 9 e allegati A, B, C"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-11-25;190!vig=2026-08-09
+    accessed: 2026-08-09
+    sha256: 5bb983a7cc6a99105d33bbf27dfaf965048329a9e7b3fbe0b440bb067e417930
+    license: public-domain
+    binary_path: not_in_repo/d190-idx.html
+    md_path: references/fonti/dlgs-190-2024-regimi.md
+    excerpt_path: references/estratti/triage-regimi-amministrativi.md
+    notes: |
+      Codice redazionale 24G00205 (GU Serie generale n. 291 del 12/12/2024). Indice Normattiva
+      pinnato a !vig=2026-08-09 (hash verificato riproducibile con il metodo di
+      scripts/fetch-sources.sh). Articoli e allegati recuperati singolarmente via caricaArticolo
+      nella stessa sessione e trascritti verbatim nel md_path.
+      TESTO CONSOLIDATO, non originario: il decreto e' stato novellato in particolare dal D.Lgs.
+      26 novembre 2025, n. 178. Versioni trascritte (con "Testo in vigore dal"): art. 1 v.2
+      (11-12-2025), art. 5 v.3 (21-1-2026), art. 6 v.2 (11-12-2025), art. 7 v.3 (11-12-2025),
+      art. 8 v.4 (19-4-2026), art. 9 v.4 (11-12-2025), Allegato A v.4, Allegato B v.5, Allegato C
+      v.4 (tutti 21-2-2026).
+      LIMITE DI RESA: non sono trascritti gli artt. 2, 3, 4, 10, 11, 11-bis, 12, 13 e seguenti,
+      ne' l'Allegato D (norme abrogate). L'Allegato C-bis (ripartizione regionale di potenza
+      minima) e' consultato ma non riprodotto: la Tabella 1 e' "Parte di provvedimento in formato
+      grafico" e non e' estraibile dal testo.
+
+  - id: dm-mase-223-2026
+    title: "D.M. MASE 15 luglio 2026, n. 223 - Adozione del Modello Unico Parte III per gli impianti a fonti rinnovabili soggetti a regime di attivita' libera e modifiche al Modello Unico Parte I e II"
+    type: decreto-ministeriale
+    url: https://www.mase.gov.it/portale/documents/d/guest/mase_udcm_dm_0000223-15-07-2026-pdf
+    accessed: 2026-08-09
+    sha256: e87b9569f5ba28487fb24c6a71ac2e5fcd2c78996291b36987198f60fc4c7380
+    license: public-domain
+    binary_path: not_in_repo/dm-mase-223-2026.pdf
+    md_path: references/fonti/dm-mase-223-2026.md
+    excerpt_path: references/estratti/modello-unico-parte-iii-suer.md
+    notes: |
+      PDF firmato digitalmente sul sito istituzionale MASE, protocollo
+      m_amte.MASE.UDCM DECRETI MINISTRO.R.0000223.15-07-2026 (303411 byte, 5 pagine, colonna
+      singola: estrazione con pdftotext -layout). Adottato previa intesa in Conferenza unificata,
+      Repertorio atti n. 81/CU, seduta del 7 luglio 2026. Trascrizione integrale (premesse,
+      artt. 1-3, sottoscrizione) nel md_path.
+      LIMITE DI RESA (1): l'Allegato 1, cioe' il modulo "Modello Unico Parte III" con i campi da
+      compilare, NON e' contenuto nel PDF, che si chiude con la firma del Ministro. I campi del
+      modulo non sono noti da questa fonte.
+      LIMITE DI RESA (2): il decreto entra in vigore il giorno successivo alla pubblicazione sul
+      sito MASE (art. 3 c. 1) e quella data non compare nel PDF. Non sono quindi determinabili da
+      questa fonte la data di entrata in vigore, il termine di 15 giorni dell'art. 1 c. 2
+      (disponibilita' del modello su SUER) ne' i sei mesi dell'art. 1 c. 4, che decorrono dalla
+      stessa data.
+      Il DM 2 agosto 2022, n. 297 (Modello Unico Parte I e II) e il DM 11 dicembre 2025, n. 441
+      (Modelli Unici PAS e AU) sono citati ma non scaricati: fuori scope v0.1.

@@ -22,7 +22,7 @@ areas:
 - id: energia-incentivi
   name: Energia & incentivi
   order: 5
-  count: 8
+  count: 9
 - id: ambiente-territorio-mobilita
   name: Ambiente, territorio & mobilita'
   order: 6
@@ -1642,6 +1642,25 @@ skills:
   - garante-privacy
   - tracking-pixel
   - email-marketing
+- id: impianti-fer-regimi-autorizzativi-dlgs190
+  area: energia-incentivi
+  title: Regimi autorizzativi impianti FER e Modello Unico Parte III (D.Lgs. 190/2024)
+  summary: 'Inquadra il regime amministrativo di un impianto FER secondo il D.Lgs. 190/2024: attivita'' libera (all. A), PAS
+    (all. B), autorizzazione unica (all. C), con termini e documenti. Copre il Modello Unico Parte III da trasmettere a SUER
+    (DM MASE 223/2026). Non presenta le istanze.'
+  normative_refs:
+  - D.Lgs. 25 novembre 2024, n. 190 - artt. 1, 5, 6, 7, 8, 9 e Allegati A, B, C (testo consolidato, novellato dal D.Lgs. 178/2025)
+  - D.M. MASE 15 luglio 2026, n. 223 - Modello Unico Parte III e modifiche al Modello Unico Parte I e II
+  - D.Lgs. 199/2021 art. 19 c. 1 e art. 25 c. 3 lett. a); D.M. MASE 368/2024 (SUER); D.M. 297/2022 - richiamati
+  version: 0.1.0-alpha
+  status: alpha
+  tags:
+  - fonti-rinnovabili
+  - autorizzazioni
+  - pas
+  - autorizzazione-unica
+  - suer
+  - modello-unico
 - id: isolamento-sismico-ntc
   area: strutture-geotecnica
   title: Costruzioni con isolamento sismico (NTC 2018 par. 7.10)
