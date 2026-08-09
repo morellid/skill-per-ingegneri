@@ -1,11 +1,14 @@
 schema_version: 1
 skill: relazione-tecnica-requisiti-minimi-dlgs192
-last_verified: 2026-07-17
+last_verified: 2026-08-09
 
-# Fonte per l'inquadramento della RELAZIONE TECNICA DI PROGETTO attestante la rispondenza ai
+# Fonti per l'inquadramento della RELAZIONE TECNICA DI PROGETTO attestante la rispondenza ai
 # requisiti minimi di contenimento dei consumi energetici (la "relazione ex legge 10"): contenuto,
 # deposito, asseverazione del direttore dei lavori a fine lavori, accertamenti/ispezioni, sanzioni.
-# Fonte: D.Lgs. 192/2005, artt. 8 e 15 (cc. 1, 3, 4).
+# Fonte principale: D.Lgs. 192/2005, artt. 8 e 15 (cc. 1, 3, 4).
+# Fonte 2: D.Lgs. 5/2026 (RED III), artt. 29-30, che modificano l'Allegato III del D.Lgs. 199/2021
+# (obblighi di integrazione FER negli edifici) - le verifiche vanno inserite proprio nella relazione
+# tecnica ex art. 8 c. 1 del D.Lgs. 192/2005.
 
 sources:
   - id: dlgs-192-2005-art8-15
@@ -43,3 +46,78 @@ sources:
       MiSE, NON copre l'APE (art. 6, skill attestato-prestazione-energetica-dlgs192, riprodotto per
       rinvio) ne' i commi 2 e 5-10 dell'art. 15 (controlli e sanzioni APE/impianti). Non sostituisce
       il progettista/direttore dei lavori.
+
+  - id: dlgs-5-2026-allegato-iii
+    title: "D.Lgs. 9 gennaio 2026, n. 5 (attuazione direttiva UE 2023/2413 - RED III) - artt. 29-30 e Allegato III del D.Lgs. 199/2021 risultante (GU Serie generale n. 15 del 20 gennaio 2026)"
+    type: decreto-legislativo
+    # PDF del fascicolo integrale di Gazzetta Ufficiale: e' l'unica forma di URL PDF servita da
+    # gazzettaufficiale.it (la forma /eli/id/.../sg/pdf a livello di singolo atto risponde 404).
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/01/20/15/sg/pdf
+    accessed: 2026-08-09
+    sha256: 3d13cb9afa45d5c3f9c737e892f30af5ba7df08733bb891a9f51dd534d73c3a1
+    license: public-domain
+    binary_path: not_in_repo/gu-sg-15-2026.pdf
+    md_path: references/fonti/dlgs-5-2026-allegato-iii.md
+    excerpt_path: references/estratti/obblighi-fer-allegato-iii.md
+    notes: |
+      Codice redazionale 26G00018, 121 pagine PDF, hash stabile su doppio download (3d13cb9a...).
+      Estrazione con pdftotext SENZA -layout: il corpo della Gazzetta e' su due colonne e -layout
+      interlaccia le colonne producendo testo fuori ordine; -layout resta corretto solo per le
+      pagine "Note", impaginate su colonna singola.
+      Trascritti verbatim in references/fonti/dlgs-5-2026-allegato-iii.md: art. 29 (modifiche
+      all'Allegato III del D.Lgs. 199/2021, pag. GU 21-22 = pagine PDF 23-24), incipit dell'art. 30
+      (Allegato IV, pag. GU 22), e il testo risultante dell'Allegato III come riportato nelle "Note
+      all'art. 29" (pag. GU 54-55 = pagine PDF 56-57).
+      Contenuto rilevante per questa skill: nuove quote FER (nuova costruzione 60% ACS + 60% della
+      somma ACS/clim. invernale/clim. estiva; ristrutturazione importante di primo livello 40% +
+      40%; ristrutturazione importante di secondo livello 15% della somma clim. invernale + estiva;
+      ristrutturazione dell'impianto termico 15% della somma clim. invernale + estiva); +5 punti
+      percentuali per edifici pubblici; deroga al divieto di effetto Joule per unita' in classe B o
+      superiore; potenza FER elettrica obbligatoria calcolata con k = 0,025 (esistenti) e 0,05
+      (nuovi) sulla superficie in pianta S; esonero per allaccio a teleriscaldamento o
+      teleraffrescamento efficiente a copertura integrale; impossibilita' tecnica o non convenienza
+      economica da motivare NELLA relazione ex art. 8 c. 1 del D.Lgs. 192/2005 (Sezione D punto 1),
+      con obbligo di EP H,C,W,nren inferiore al limite solo per edifici nuovi e ristrutturazioni
+      importanti di PRIMO livello (Sezione D punto 2); verifica dei Comuni sulla relazione e
+      trasmissione di copia al GSE (Sezione E).
+      DECORRENZA: il decreto NON contiene un articolo di entrata in vigore (l'ultimo e' l'art. 51,
+      clausola di invarianza finanziaria, pag. GU 30). La data risultante non e' nel PDF: e' presa
+      dalla scheda Normattiva registrata come fonte dlgs-5-2026-entrata-in-vigore, che dichiara
+      "Entrata in vigore del provvedimento: 04/02/2026". Il nuovo punto 1 della
+      Sezione A si applica agli edifici "per i quali la richiesta del titolo edilizio e' presentata
+      decorsi centottanta giorni dall'entrata in vigore del presente decreto", cioe' 3 agosto 2026
+      nella lettura che riferisce il termine al D.Lgs. 5/2026. La formula e' testualmente ambigua
+      perche' inserita dentro l'Allegato III del D.Lgs. 199/2021: l'ambiguita' e' segnalata
+      esplicitamente nel md della fonte e nell'estratto, non risolta d'ufficio.
+      LIMITE DI RESA: si riprendono le sole parti dell'Allegato III che incidono sul contenuto della
+      relazione tecnica. NON sono riprodotti: l'Allegato II del D.Lgs. 199/2021 (requisiti e
+      specifiche tecniche degli impianti, richiamato per rinvio dalla Sezione C), il resto
+      dell'Allegato IV (requisiti minimi di prodotto), il DM 26/6/2015 come modificato dal DM MASE
+      28/10/2025 (definizioni di ristrutturazione importante di primo e secondo livello e di
+      ristrutturazione dell'impianto termico, richiamate per rinvio), le linee guida CTI previste
+      dalla Sezione C punto 4, e i restanti 49 articoli del D.Lgs. 5/2026. La formula della potenza
+      FER e' pubblicata come IMMAGINE nel PDF e non e' estraibile come testo: il md ne riporta i soli
+      parametri descritti a parole nella fonte.
+
+  - id: dlgs-5-2026-entrata-in-vigore
+    title: "D.Lgs. 9 gennaio 2026, n. 5 - scheda Normattiva dell'atto: data di entrata in vigore"
+    type: decreto-legislativo
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-01-09;5!vig=2026-08-09
+    accessed: 2026-08-09
+    sha256: 1a67500175fe6f8a3d545212af0d3f0cb3c7f8d473c12ea7fada779b6245d831
+    license: public-domain
+    binary_path: not_in_repo/dlgs-5-2026-normattiva-idx.html
+    md_path: references/fonti/dlgs-5-2026-entrata-in-vigore.md
+    excerpt_path: references/estratti/obblighi-fer-allegato-iii.md
+    notes: |
+      Scopo deliberatamente minimo: una sola informazione, la data di entrata in vigore del
+      D.Lgs. 5/2026. La scheda Normattiva la dichiara direttamente ("Entrata in vigore del
+      provvedimento: 04/02/2026"), quindi la skill non deve derivarla dalla vacatio ordinaria di
+      15 giorni, che sarebbe un'affermazione normativa priva di fonte nel PDF di Gazzetta.
+      Da quella data discende per calendario il termine dei 180 giorni della Sezione A punto 1
+      dell'Allegato III: 3 agosto 2026. Resta aperta la questione testuale su quale decreto
+      designi «presente decreto» in quella formula (vedi fonte dlgs-5-2026-allegato-iii).
+      Hash stabile su doppio download. URL pinnato a !vig=2026-08-09: ad ogni aggiornamento
+      riscaricare con nuovo !vig= e registrare il nuovo SHA256.
+      LIMITE DI RESA: non e' stato trascritto altro dalla scheda. Il testo degli articoli usato
+      dalla skill proviene dal PDF di Gazzetta Ufficiale (fonte dlgs-5-2026-allegato-iii).
