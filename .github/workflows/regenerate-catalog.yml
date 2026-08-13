@@ -11,13 +11,26 @@ name: regenerate-catalog
 #
 # Niente loop infinito: i commit fatti dal GITHUB_TOKEN di default non
 # triggerano nuovi workflow run.
+#
+# Qui vive anche la notifica di deploy al sito (skill-per-ingegneri-landing),
+# e non in un workflow a se' stante, proprio per quella proprieta' del
+# GITHUB_TOKEN: un workflow separato in ascolto su push a main partirebbe
+# quando catalog.yaml e' ancora quello vecchio, e il commit di rigenerazione
+# qui sotto non ne farebbe partire un secondo. Il sito resterebbe fermo a dati
+# stale fino al push successivo. Notificando in coda alla rigenerazione la
+# sequenza e' atomica: rigenera -> committa se serve -> notifica.
+#
+# I paths coprono tutto skills/**, non solo i SKILL.md: il sito impacchetta
+# l'intera directory della skill, quindi anche una modifica a tasks/ o
+# references/ cambia lo zip pubblicato e va ricostruita.
 
 on:
   push:
     branches: [main]
     paths:
-      - 'skills/**/SKILL.md'
+      - 'skills/**'
       - 'areas.yaml'
+      - 'catalog.yaml'
       - 'scripts/build_catalog.py'
       - '.github/workflows/regenerate-catalog.yml'
   workflow_dispatch:
@@ -53,3 +66,30 @@ jobs:
           git add catalog.yaml .claude-plugin/marketplace.json
           git commit -m "chore(catalog): regenerate catalog.yaml + marketplace.json [skip ci]"
           git push
+
+      # Ricostruisce www.ingegneri.ai. Il sito clona questo repo al build e ne
+      # ricava sia le schede sia gli zip scaricabili: senza questo passo si
+      # aggiornerebbe solo quando qualcuno pusha sul repo del sito, che e'
+      # esattamente come il catalogo pubblicato e' andato fuori sincrono.
+      #
+      # Il secret va creato su Vercel (Settings > Git > Deploy Hooks) e aggiunto
+      # qui come VERCEL_DEPLOY_HOOK_URL.
+      #
+      # Se manca, il passo FALLISCE di proposito. Saltarlo in silenzio darebbe
+      # un merge con tutti i check verdi e il sito fermo al catalogo vecchio:
+      # e' esattamente il modo in cui 83 schede su 183 sono finite a puntare a
+      # zip inesistenti senza che nulla lo segnalasse.
+      - name: Notifica deploy al sito
+        env:
+          HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK_URL" ]; then
+            echo "::error::VERCEL_DEPLOY_HOOK_URL non configurato: il sito non e' stato ricostruito e il catalogo pubblicato resta indietro. Crea il Deploy Hook su Vercel (Settings > Git > Deploy Hooks) e aggiungilo come secret di questo repo."
+            exit 1
+          fi
+          code="$(curl -sS -X POST -o /dev/null -w '%{http_code}' "$HOOK_URL")"
+          echo "Deploy hook chiamato, HTTP $code"
+          case "$code" in
+            2*) ;;
+            *) echo "::error::deploy hook fallito (HTTP $code)"; exit 1 ;;
+          esac

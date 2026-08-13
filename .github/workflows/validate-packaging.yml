@@ -1,0 +1,56 @@
+name: validate-packaging
+
+# Verifica che ogni skill a catalogo produca uno zip installabile.
+#
+# Il catalogo pubblicato su www.ingegneri.ai offre per ogni skill un pacchetto
+# da caricare su claude.ai/customize/skills. Fino ad agosto 2026 nessun check
+# verificava che quel pacchetto esistesse o fosse sano: 83 delle 183 schede
+# pubblicate linkavano uno zip inesistente.
+#
+# Workflow separato da validate-catalog.yml, non un job al suo interno: quello
+# filtra su skills/**/SKILL.md, mentre l'impacchettamento dipende dall'intera
+# directory della skill, da build_releases.sh e dalla LICENSE. Ereditarne il
+# filtro avrebbe saltato il test proprio quando cambia il packaging.
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'LICENSE'
+      - 'catalog.yaml'
+      - 'scripts/build_releases.sh'
+      - 'scripts/verify_packages.py'
+      - '.github/workflows/validate-packaging.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'LICENSE'
+      - 'catalog.yaml'
+      - 'scripts/build_releases.sh'
+      - 'scripts/verify_packages.py'
+      - '.github/workflows/validate-packaging.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-packaging:
+    name: Build zip e verifica pacchetti
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Build zip per skill
+        run: ./scripts/build_releases.sh
+
+      # Apre ogni archivio: root singola <id>/, presenza di SKILL.md e LICENSE,
+      # assenza dei path esclusi, elenco entry uguale all'albero sorgente.
+      - name: Verifica pacchetti
+        run: uv run scripts/verify_packages.py

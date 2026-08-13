@@ -28,7 +28,7 @@ skill-per-ingegneri/
 │   ├── validazione.md         # 3 livelli di validazione
 │   └── update-cycle.md        # mantenimento post-release
 ├── templates/skill-template/  # scaffold per scripts/new-skill.sh
-├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh, build_catalog.py, build_releases.sh
+├── scripts/                   # new-skill.sh, validate.sh, fetch-sources.sh, build_catalog.py, build_releases.sh, verify_packages.py
 └── skills/<nome>/             # le skill
     ├── SKILL.md               # entry point + frontmatter (name, description, license: MIT)
     ├── agents/openai.yaml     # UI metadata Codex
@@ -200,21 +200,27 @@ Il workflow `.github/workflows/source-grounding.yml` implementa il gate lato ser
 
 Lo stesso check anti-placeholder e' baked in `scripts/validate.sh`, quindi `./scripts/validate.sh <skill>` localmente fallisce se ci sono placeholder.
 
-## Rilascio degli zip (GitHub Releases per drag-and-drop su Claude.ai)
+## Distribuzione degli zip
 
-Ogni skill viene distribuita come `.zip` autonomo allegato a una GitHub Release. Schema di versionamento: incrementale semplice (`v1`, `v2`, `v3`, ...). Il versionamento per-skill resta separato e vive nei frontmatter SKILL.md (`version: x.y.z`).
+Ogni skill e' distribuita come `.zip` autonomo, con una sola directory top-level `<id>/` contenente il contenuto della skill piu' la `LICENSE` del repo. Prodotto da `scripts/build_releases.sh` (esclude `not_in_repo/`, `__pycache__/`, `.DS_Store`, `*.pyc`).
 
-Per rilasciare:
+Due canali, con ruoli diversi:
+
+**Catalogo del sito (canale primario).** Gli zip scaricabili da [www.ingegneri.ai](https://www.ingegneri.ai/) sono generati al build del sito, non presi dalle Release. Il repo landing clona questo repo, ne ricava sia il testo delle schede sia i pacchetti, e li pubblica dallo stesso commit. Non serve fare nulla qui perche' il catalogo sia aggiornato: `regenerate-catalog.yml` notifica il deploy hook di Vercel a ogni push su `main` che tocca `skills/**`.
+
+> Perche' cosi': fino ad agosto 2026 il sito linkava `releases/latest/download/<id>.zip`, ma le Release si producevano solo al push di un tag `v*`. Dopo `v4` sono state mergiate 81 skill senza generare pacchetti e **83 delle 183 schede pubblicate davano 404**, senza che nessun check se ne accorgesse. Generare gli zip dallo stesso clone da cui viene il testo rende la deriva impossibile, non solo improbabile.
+
+**GitHub Releases (snapshot versionati).** Restano per chi installa da release taggata. Schema incrementale (`v1`, `v2`, ...); il versionamento per-skill vive nei frontmatter (`version: x.y.z`).
 
 ```bash
-./scripts/build_releases.sh                # opzionale: verifica locale (dist/<id>.zip)
-git tag v<N>                               # es. v1, v2
-git push origin v<N>                       # triggera .github/workflows/release.yml
+./scripts/build_releases.sh                # verifica locale -> dist/<id>.zip
+uv run scripts/verify_packages.py          # apre ogni zip e ne verifica la struttura
+git tag v<N> && git push origin v<N>       # triggera .github/workflows/release.yml
 ```
 
 In alternativa, da UI GitHub: crea la release con tag `v<N>`; il workflow rebuilda gli zip e li ricarica con `--clobber` (idempotente).
 
-Il workflow `.github/workflows/release.yml` esegue `scripts/build_releases.sh` su ubuntu-latest, produce 33 zip (uno per skill, top-level dir con SKILL.md + LICENSE) e li allega alla release con `gh release upload`.
+**Gate.** `validate-packaging.yml` gira su PR e push che toccano `skills/**`, `LICENSE` o gli script di packaging: builda tutti gli zip e li verifica con `scripts/verify_packages.py`, che apre ogni archivio e controlla root singola, presenza di `SKILL.md` e `LICENSE`, assenza dei path esclusi e coincidenza dell'elenco entry con l'albero sorgente. "Il file esiste e non e' vuoto" non e' un check sufficiente: non intercetta un pacchetto che ha perso `tasks/` o `references/`.
 
 ## Commit style
 
