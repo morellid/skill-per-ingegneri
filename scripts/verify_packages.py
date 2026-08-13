@@ -58,14 +58,29 @@ def is_excluded(rel_path: str) -> bool:
     )
 
 
+class SymlinkInSkill(Exception):
+    """Una skill contiene un symlink.
+
+    rglob non ricorre dentro le directory symlinked mentre `zip` le segue: i
+    due elenchi divergerebbero e il fallimento arriverebbe con un messaggio
+    fuorviante ("entry inattese"). Meglio dirlo esplicitamente. Oggi nel repo
+    non ce ne sono; se servisse, come impacchettarli e' una decisione da
+    prendere a mano.
+    """
+
+
 def expected_entries(skill_dir: Path) -> set[str]:
     """Entry attese: i file della skill, piu' la LICENSE del repo che
     build_releases.sh copia dentro ogni pacchetto."""
-    entries = {
-        p.relative_to(skill_dir).as_posix()
-        for p in skill_dir.rglob("*")
-        if p.is_file() and not is_excluded(p.relative_to(skill_dir).as_posix())
-    }
+    entries: set[str] = set()
+    for path in skill_dir.rglob("*"):
+        rel = path.relative_to(skill_dir).as_posix()
+        if is_excluded(rel):
+            continue
+        if path.is_symlink():
+            raise SymlinkInSkill(f"symlink non supportato nell'impacchettamento: {rel}")
+        if path.is_file():
+            entries.add(rel)
     entries.add("LICENSE")
     return entries
 
@@ -129,7 +144,13 @@ def main() -> int:
             errors.append(f"{skill_id}: dichiarata in catalog.yaml ma skills/{skill_id}/ non esiste")
             continue
 
-        for problem in verify_package(zip_path, skill_id, expected_entries(skill_dir)):
+        try:
+            expected = expected_entries(skill_dir)
+        except SymlinkInSkill as err:
+            errors.append(f"{skill_id}: {err}")
+            continue
+
+        for problem in verify_package(zip_path, skill_id, expected):
             errors.append(f"{skill_id}: {problem}")
 
     # Zip prodotti per skill che non sono a catalogo: segnalati, non bloccanti.
