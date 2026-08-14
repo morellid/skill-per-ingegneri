@@ -119,6 +119,8 @@ Sintattica + semantica = Regola zero rispettata. Solo sintattica = violazione ma
 5. **Italiano per il contenuto utente**, inglese per struttura/codice/metadata.
 6. **Dual-agent obbligatorio**:
    - Frontmatter `SKILL.md` con `name`, `description`, `license: MIT` (Codex usa `license`; Claude Code lo ignora senza problemi).
+   - `name` max **64 char**, `description` max **1024 char**: sono i limiti del loader delle skill di Claude, non convenzioni interne. Superarli rende la skill **non installabile** (`claude.ai/customize/skills` rifiuta lo zip con `field 'description' in SKILL.md must be at most 1024 characters`). Verificati da `scripts/build_catalog.py` (CI `validate-catalog.yml`).
+   - La `description` e' il testo su cui l'agent decide **se** attivare la skill: cosa fa, su quale norma, per chi, quando usarla e cosa NON fa. Non e' il posto dove riversare l'indice della norma - quello sta nel corpo di `SKILL.md` e nei `tasks/`.
    - File `agents/openai.yaml` con `display_name`, `short_description`, `default_prompt`.
    - Resto del contenuto identico per i due agent.
 7. **Progressive disclosure**. `SKILL.md` e' un router leggero: rinvia a `tasks/<task>.md` solo quando il task e' richiesto.

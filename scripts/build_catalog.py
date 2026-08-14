@@ -55,6 +55,13 @@ OPTIONAL_FIELDS = ("normative_refs", "tags")
 VALID_STATUS = {"alpha", "stable"}
 
 LIMITS = {
+    # name/description: limiti imposti dal loader delle skill di Claude
+    # (claude.ai/customize/skills rifiuta l'upload con "field 'description' in
+    # SKILL.md must be at most 1024 characters"). Non sono convenzioni interne
+    # di questo repo: superarli rende la skill non installabile.
+    "name": 64,
+    "description": 1024,
+    # title/summary/...: convenzioni del catalogo pubblicato (AGENTS.md #9).
     "title": 80,
     "summary": 280,
     "normative_ref": 200,
@@ -105,6 +112,19 @@ def validate_skill(skill_id: str, fm: dict, area_ids: set[str]) -> list[Validati
 
     if fm.get("name") and fm["name"] != skill_id:
         errors.append(ValidationError(skill_id, "name", f"deve essere '{skill_id}', non '{fm['name']}'"))
+
+    # Limiti del loader delle skill di Claude: oltre questi la skill non e'
+    # installabile su claude.ai/customize/skills, a prescindere dal catalogo.
+    for field in ("name", "description"):
+        value = fm.get(field)
+        if isinstance(value, str) and len(value) > LIMITS[field]:
+            errors.append(
+                ValidationError(
+                    skill_id,
+                    field,
+                    f"max {LIMITS[field]} char (limite di installazione di Claude), e' {len(value)}",
+                )
+            )
 
     if fm.get("area") and fm["area"] not in area_ids:
         errors.append(ValidationError(skill_id, "area", f"'{fm['area']}' non in areas.yaml"))
