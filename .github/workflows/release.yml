@@ -4,15 +4,33 @@ name: release
 # Pronti per drag-and-drop su claude.ai/customize/skills.
 #
 # Trigger:
+#   - workflow_call: chiamato da regenerate-catalog.yml dopo un push a main che
+#     tocca skills/ o LICENSE. E' la via normale: ogni aggiornamento delle skill
+#     produce una release nuova senza intervento manuale.
 #   - push: tag che inizia per "v" (es. v1, v2, v3...) -> release automatica
 #   - workflow_dispatch: trigger manuale, richiede il tag come input
 #   - release: published -> rebuilda e ricarica gli zip sulla release appena
 #     creata (utile quando la release viene creata dalla UI di GitHub)
 #
+# Perche' workflow_call e non "regenerate-catalog pusha il tag e ci pensa
+# on.push.tags": un tag pushato con il GITHUB_TOKEN di default NON fa partire
+# nessun workflow ("with the exception of workflow_dispatch and
+# repository_dispatch, other GITHUB_TOKEN-triggered events do not create
+# workflow runs at all"). E' la stessa proprieta' documentata in
+# regenerate-catalog.yml. Un "gh workflow run" funzionerebbe, ma e'
+# fire-and-forget: la run del catalogo resterebbe verde anche con la release
+# fallita, cioe' di nuovo pacchetti pubblicati fermi indietro senza segnale.
+#
 # Idempotente: se la release esiste gia', gli asset vengono ricaricati con
 # --clobber.
 
 on:
+  workflow_call:
+    inputs:
+      tag:
+        description: "Tag da rilasciare (deve esistere gia')"
+        required: true
+        type: string
   push:
     tags:
       - 'v*'
@@ -33,15 +51,27 @@ jobs:
     name: Build zip e upload su GitHub Release
     runs-on: ubuntu-latest
     steps:
+      # inputs.tag e' valorizzato sia da workflow_dispatch sia da workflow_call,
+      # quindi basta lui a coprire entrambi. Deliberatamente NON si usa
+      # github.event_name per distinguere i casi: dentro un workflow chiamato con
+      # workflow_call vale l'evento del chiamante (push su main), non
+      # "workflow_call", e il ramo "push" leggerebbe GITHUB_REF=refs/heads/main.
       - name: Resolve tag
         id: resolve
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            TAG="${GITHUB_REF#refs/tags/}"
-          elif [ "${{ github.event_name }}" = "release" ]; then
-            TAG="${{ github.event.release.tag_name }}"
+          if [ -n "$INPUT_TAG" ]; then
+            TAG="$INPUT_TAG"
+          elif [ -n "$RELEASE_TAG" ]; then
+            TAG="$RELEASE_TAG"
           else
-            TAG="${{ inputs.tag }}"
+            TAG="${GITHUB_REF#refs/tags/}"
+          fi
+          if [ -z "$TAG" ]; then
+            echo "::error::impossibile determinare il tag da rilasciare"
+            exit 1
           fi
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "Rilascio per tag: $TAG"
@@ -51,8 +81,17 @@ jobs:
         with:
           ref: ${{ steps.resolve.outputs.tag }}
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Build zip per skill
         run: ./scripts/build_releases.sh
+
+      # Stessa verifica di validate-packaging.yml, qui applicata agli archivi che
+      # stanno per essere pubblicati: senza, un pacchetto rotto finirebbe sulla
+      # release e la run resterebbe verde.
+      - name: Verifica pacchetti
+        run: uv run scripts/verify_packages.py
 
       - name: Crea o aggiorna release e carica zip
         env:
