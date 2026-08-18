@@ -212,15 +212,26 @@ Due canali, con ruoli diversi:
 
 > Perche' cosi': fino ad agosto 2026 il sito linkava `releases/latest/download/<id>.zip`, ma le Release si producevano solo al push di un tag `v*`. Dopo `v4` sono state mergiate 81 skill senza generare pacchetti e **83 delle 183 schede pubblicate davano 404**, senza che nessun check se ne accorgesse. Generare gli zip dallo stesso clone da cui viene il testo rende la deriva impossibile, non solo improbabile.
 
-**GitHub Releases (snapshot versionati).** Restano per chi installa da release taggata. Schema incrementale (`v1`, `v2`, ...); il versionamento per-skill vive nei frontmatter (`version: x.y.z`).
+**GitHub Releases (snapshot versionati).** Canale per chi usa Claude solo via web: il `README` manda a `releases/latest`. Schema incrementale (`v1`, `v2`, ...); il versionamento per-skill vive nei frontmatter (`version: x.y.z`).
+
+**Non si taggano a mano.** `regenerate-catalog.yml` crea il tag `v<N+1>` e chiama `release.yml` quando il contenuto dei pacchetti (`skills/**`, `LICENSE`, `scripts/build_releases.sh`) differisce da quello dell'ultimo tag. Un push che tocca solo `areas.yaml` o `scripts/build_catalog.py` non produce release.
+
+Il confronto e' con **l'ultimo tag, non con il delta del push**: una run fallita (Actions down, secret scaduto, push perso in una race) lascerebbe altrimenti quella modifica non rilasciata per sempre, perche' il push successivo guarderebbe solo il proprio delta e chiuderebbe verde. Confrontando con lo stato pubblicato, ogni run ripara quello che le precedenti non hanno rilasciato.
+
+> Perche' automatico: `v5` e' stata costruita il 13 agosto 2026, il giorno prima del fix che ha accorciato le `description` oltre il limite di 1024 char. Nessuno ha ritaggato, quindi **144 dei 183 zip dell'ultima release non erano installabili** su `claude.ai/customize/skills`, mentre il sito - ricostruito a ogni push - serviva gia' i pacchetti corretti. Stessa classe di problema degli 83 404 del canale sito, stessa soluzione: il canale si aggiorna da solo o va fuori sincrono.
+
+Il tag viene pushato dal `GITHUB_TOKEN`, che **non fa partire** `on.push.tags`: per questo `release.yml` espone `workflow_call` e viene invocato esplicitamente come job dipendente, cosi' una release fallita rende rossa la run invece di passare inosservata.
+
+I job del workflow (`regenerate` -> `deploy-sito` / `tag` -> `release`) sono separati di proposito: i due canali di pubblicazione devono poter fallire uno senza spegnere l'altro. Un Vercel irraggiungibile non deve impedire la GitHub Release, e un tag non assegnabile non deve lasciare il sito fermo al catalogo vecchio.
+
+Verifica locale prima di mergiare:
 
 ```bash
-./scripts/build_releases.sh                # verifica locale -> dist/<id>.zip
+./scripts/build_releases.sh                # -> dist/<id>.zip
 uv run scripts/verify_packages.py          # apre ogni zip e ne verifica la struttura
-git tag v<N> && git push origin v<N>       # triggera .github/workflows/release.yml
 ```
 
-In alternativa, da UI GitHub: crea la release con tag `v<N>`; il workflow rebuilda gli zip e li ricarica con `--clobber` (idempotente).
+Trigger manuali, se serve rifare una release: `gh workflow run release.yml -f tag=v<N>`, oppure crea la release da UI GitHub con tag `v<N>`; il workflow rebuilda gli zip e li ricarica con `--clobber` (idempotente).
 
 **Gate.** `validate-packaging.yml` gira su PR e push che toccano `skills/**`, `LICENSE` o gli script di packaging: builda tutti gli zip e li verifica con `scripts/verify_packages.py`, che apre ogni archivio e controlla root singola, presenza di `SKILL.md` e `LICENSE`, assenza dei path esclusi e coincidenza dell'elenco entry con l'albero sorgente. "Il file esiste e non e' vuoto" non e' un check sufficiente: non intercetta un pacchetto che ha perso `tasks/` o `references/`.
 

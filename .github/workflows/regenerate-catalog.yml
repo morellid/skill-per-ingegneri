@@ -23,25 +23,47 @@ name: regenerate-catalog
 # I paths coprono tutto skills/**, non solo i SKILL.md: il sito impacchetta
 # l'intera directory della skill, quindi anche una modifica a tasks/ o
 # references/ cambia lo zip pubblicato e va ricostruita.
+#
+# Per lo stesso motivo qui vive anche il taglio della release: le GitHub Release
+# sono il secondo canale di distribuzione degli zip (README -> releases/latest,
+# per chi usa Claude solo via web) ma si producevano solo al push manuale di un
+# tag. Risultato ad agosto 2026: v5 costruita il giorno prima del fix sulle
+# description, e 144 dei 183 zip pubblicati non installabili su
+# claude.ai/customize/skills, mentre il sito - ricostruito a ogni push - era gia'
+# a posto. Ogni push a main che cambia il contenuto dei pacchetti (skills/,
+# LICENSE, build_releases.sh) ora crea il tag successivo e chiama release.yml.
 
 on:
   push:
     branches: [main]
     paths:
       - 'skills/**'
+      - 'LICENSE'
       - 'areas.yaml'
       - 'catalog.yaml'
       - 'scripts/build_catalog.py'
+      - 'scripts/build_releases.sh'
       - '.github/workflows/regenerate-catalog.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+# Due push ravvicinati su main calcolerebbero lo stesso v<N+1>: il primo pusha il
+# tag, il secondo se lo vede rifiutare dal remoto e il suo commit resterebbe
+# senza release. Serializzando per ref il secondo parte a tag gia' esistente e
+# calcola il numero giusto. cancel-in-progress resta false: annullare una run in
+# coda vorrebbe dire saltare una release.
+concurrency:
+  group: regenerate-catalog-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   regenerate:
     name: Rigenera e committa file generati del catalogo
     runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.head.outputs.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -67,6 +89,26 @@ jobs:
           git commit -m "chore(catalog): regenerate catalog.yaml + marketplace.json [skip ci]"
           git push
 
+      # I job a valle taggano e rilasciano questo commit preciso, non "main":
+      # se il passo qui sopra ha committato, la release deve contenere anche il
+      # catalog.yaml allineato.
+      - name: Esponi il commit da rilasciare
+        id: head
+        run: |
+          sha="$(git rev-parse HEAD)"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "Commit da rilasciare: $sha"
+
+  # Sito e GitHub Release sono due canali indipendenti, quindi due job
+  # indipendenti: un Vercel irraggiungibile non deve impedire la pubblicazione
+  # degli zip, e un tag non assegnabile non deve lasciare il sito fermo al
+  # catalogo vecchio. Come step in coda a "regenerate" il primo che fallisce
+  # spegnerebbe l'altro.
+  deploy-sito:
+    name: Notifica deploy al sito
+    needs: regenerate
+    runs-on: ubuntu-latest
+    steps:
       # Ricostruisce www.ingegneri.ai. Il sito clona questo repo al build e ne
       # ricava sia le schede sia gli zip scaricabili: senza questo passo si
       # aggiornerebbe solo quando qualcuno pusha sul repo del sito, che e'
@@ -79,7 +121,7 @@ jobs:
       # un merge con tutti i check verdi e il sito fermo al catalogo vecchio:
       # e' esattamente il modo in cui 83 schede su 183 sono finite a puntare a
       # zip inesistenti senza che nulla lo segnalasse.
-      - name: Notifica deploy al sito
+      - name: Chiama il deploy hook di Vercel
         env:
           HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |
@@ -93,3 +135,95 @@ jobs:
             2*) ;;
             *) echo "::error::deploy hook fallito (HTTP $code)"; exit 1 ;;
           esac
+
+  tag:
+    name: Assegna il tag di release
+    needs: regenerate
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+    steps:
+      # fetch-depth: 0 per avere tutti i tag v* e i loro commit: servono sia a
+      # decidere se rilasciare sia a calcolare il numero successivo.
+      - name: Checkout del commit da rilasciare
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ needs.regenerate.outputs.sha }}
+          fetch-depth: 0
+
+      # Si rilascia solo se e' cambiato cio' che finisce dentro gli zip: un push
+      # su areas.yaml o build_catalog.py fa ripartire questo workflow ma non
+      # cambia un byte dei pacchetti. build_releases.sh invece SI: decide quali
+      # file entrano nell'archivio, quindi una sua correzione va rilasciata anche
+      # senza che nessuna skill sia stata toccata.
+      #
+      # Il confronto e' con l'ULTIMO TAG, non con github.event.before. La
+      # differenza conta: guardare solo il delta del push che ha innescato la run
+      # significa che una release persa resta persa per sempre. Basta che una run
+      # fallisca (push del commit di rigenerazione perso in una race, Actions
+      # down, secret scaduto) e il push successivo, se tocca solo areas.yaml,
+      # concluda "nessuna modifica ai pacchetti" e chiuda verde lasciando
+      # releases/latest indietro. Confrontando con lo stato pubblicato, ogni run
+      # ripara da sola quello che le precedenti non hanno rilasciato.
+      - name: Decidi se rilasciare
+        id: plan
+        run: |
+          last="$(git tag --list 'v[0-9]*' | sed 's/^v//' | grep -E '^[0-9]+$' | sort -n | tail -1)" || true
+
+          if [ -z "$last" ]; then
+            release=true
+            reason="nessun tag di release esistente"
+          elif git diff --name-only "v$last" HEAD \
+               | grep -qE '^(skills/|LICENSE$|scripts/build_releases\.sh$)'; then
+            release=true
+            reason="contenuto dei pacchetti diverso da v$last"
+          else
+            release=false
+            reason="pacchetti identici a v$last"
+          fi
+
+          echo "should_release=$release" >> "$GITHUB_OUTPUT"
+          if [ "$release" = "true" ]; then
+            echo "Release da tagliare: $reason"
+          else
+            echo "Nessuna release: $reason"
+          fi
+
+      # "git push refs/tags/<tag>" e' la prenotazione atomica del numero: se un
+      # altro run l'ha gia' preso il push viene rifiutato, si rilegge la lista e
+      # si riprova. Il concurrency group rende la collisione quasi impossibile,
+      # ma il retry copre anche il tag creato a mano mentre la run gira.
+      - name: Crea e pusha il tag
+        id: tag
+        if: steps.plan.outputs.should_release == 'true'
+        run: |
+          head="$(git rev-parse HEAD)"
+          for attempt in 1 2 3; do
+            git fetch --tags --quiet origin
+            last="$(git tag --list 'v[0-9]*' | sed 's/^v//' | grep -E '^[0-9]+$' | sort -n | tail -1)" || true
+            tag="v$(( ${last:-0} + 1 ))"
+
+            if git push origin "$head:refs/tags/$tag"; then
+              echo "tag=$tag" >> "$GITHUB_OUTPUT"
+              echo "Tag $tag creato su $head"
+              exit 0
+            fi
+            echo "Tag $tag gia' preso, ritento ($attempt/3)"
+          done
+          echo "::error::impossibile assegnare un tag di release dopo 3 tentativi"
+          exit 1
+
+  # Un tag pushato dal GITHUB_TOKEN non fa partire on.push.tags di release.yml:
+  # va chiamato esplicitamente. Vedi il commento in testa a release.yml.
+  #
+  # La condizione guarda l'output invece di un flag "should_release": e'
+  # valorizzato solo dal push del tag andato a buon fine, quindi copre in un
+  # colpo solo "non c'era niente da rilasciare" e "il tag non e' stato assegnato".
+  release:
+    name: Pubblica gli zip sulla GitHub Release
+    needs: tag
+    if: needs.tag.outputs.tag != ''
+    uses: ./.github/workflows/release.yml
+    with:
+      tag: ${{ needs.tag.outputs.tag }}
