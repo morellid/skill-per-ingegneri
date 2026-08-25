@@ -1,0 +1,4 @@
+# Questa directory contiene i markdown delle fonti ufficiali (transcrizione fedele
+# del PDF), uno per fonte dichiarata in sources.yaml. E' lo step gating della
+# Regola zero: senza un MD di fonte per ogni fonte pubblica, non si scrive la skill.
+# Vedi methodology/generazione-skill.md Step 2.5.
