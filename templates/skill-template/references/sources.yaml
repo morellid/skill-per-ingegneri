@@ -7,6 +7,13 @@ last_verified: YYYY-MM-DD
 #   title: titolo completo
 #   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | altro
 #   url: URL canonico della fonte
+#   accept: header Accept da usare nel download (opzionale)
+#   accept_language: header Accept-Language da usare nel download (opzionale)
+#           Servono solo per i repository che espongono piu' rappresentazioni
+#           sullo stesso URL scegliendo in base al content negotiation, come
+#           CELLAR dell'Ufficio pubblicazioni UE: senza header restituisce RDF,
+#           con il solo Accept risponde 400, con Accept: application/xhtml+xml
+#           e accept_language: ita restituisce il testo integrale dell'atto.
 #   accessed: data consultazione (YYYY-MM-DD)
 #   sha256: hash SHA256 del file binario scaricato (REALE, no placeholder)
 #   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other

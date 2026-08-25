@@ -88,6 +88,11 @@ for src in data.get("sources", []):
     license_type = src.get("license", "unknown")
     binary_path = src.get("binary_path")
     expected_hash = src.get("sha256")
+    # Repository che servono piu' rappresentazioni sullo stesso URL scegliendo
+    # in base agli header di richiesta (es. CELLAR dell'Ufficio pubblicazioni
+    # UE, che pretende Accept e Accept-Language insieme).
+    accept = src.get("accept")
+    accept_language = src.get("accept_language")
 
     if not binary_path or binary_path == "null":
         print(f"  [{sid}] nessun binary_path - skip")
@@ -129,7 +134,12 @@ for src in data.get("sources", []):
     # Download
     try:
         print(f"  [{sid}] download da {artifact_url} ...", end=" ")
-        req = urllib.request.Request(artifact_url, headers={"User-Agent": "Mozilla/5.0 (compatible; skill-per-ingegneri-fetch/1.0)"})
+        headers = {"User-Agent": "Mozilla/5.0 (compatible; skill-per-ingegneri-fetch/1.0)"}
+        if accept:
+            headers["Accept"] = accept
+        if accept_language:
+            headers["Accept-Language"] = accept_language
+        req = urllib.request.Request(artifact_url, headers=headers)
         with urllib.request.urlopen(req, timeout=60) as resp, open(local_file, "wb") as out:
             out.write(resp.read())
         with open(local_file, "rb") as f:

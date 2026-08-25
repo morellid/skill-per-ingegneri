@@ -1,0 +1,17 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: CRA - Segnalazione di vulnerabilita' e incidenti (art. 14)
+short_description: |
+  Guida il fabbricante di un prodotto con elementi digitali (PDE) negli obblighi
+  di segnalazione dell'art. 14 del Regolamento (UE) 2024/2847 - Cyber Resilience
+  Act, applicabili dall'11 settembre 2026: qualificazione dell'evento, catene di
+  scadenze 24h/72h/14 giorni/un mese, contenuto minimo delle notifiche, CSIRT
+  coordinatore competente e prerequisiti interni.
+default_prompt: |
+  Fabbrichiamo un prodotto con elementi digitali e abbiamo appena scoperto una
+  vulnerabilita' (o subito un incidente di sicurezza). Aiutami a capire se
+  scatta l'obbligo di segnalazione dell'art. 14 del CRA, da quando decorrono i
+  termini, quali notifiche sono dovute entro quando e con quale contenuto
+  minimo, e a quale CSIRT coordinatore vanno indirizzate. Ti descrivo il
+  prodotto, l'evento e quando ne siamo venuti a conoscenza.

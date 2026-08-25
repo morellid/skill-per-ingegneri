@@ -1,0 +1,92 @@
+schema_version: 1
+skill: cra-segnalazione-art14
+last_verified: 2026-08-25
+
+# Ogni sorgente e' un oggetto con i campi:
+#   id: identificatore locale (usato in task files come rinvio)
+#   title: titolo completo
+#   type: legge | decreto | allegato | linea-guida | norma-uni | norma-cei | circolare | giurisprudenza | regolamento-ue | direttiva-ue | altro
+#   url: URL canonico della fonte
+#   accept / accept_language: header di content negotiation da usare nel download
+#   accessed: data consultazione (YYYY-MM-DD)
+#   sha256: hash SHA256 del file binario scaricato (REALE, no placeholder)
+#   license: public-domain | cc-by | cc-by-nc | proprietary-paid | other
+#   binary_path: path del binario in locale (fuori repo, in not_in_repo/), oppure null
+#   md_path: path del markdown della fonte in references/fonti/
+#   excerpt_path: path dell'estratto curato in references/estratti/
+#   notes: note libere
+#
+# Workflow obbligato (vedi AGENTS.md "Regola zero"):
+#   1. SCARICARE -> binary_path
+#   2. SALVARE l'hash -> sha256
+#   3. CONVERTIRE in MD -> md_path
+#   4. USARE il MD per scrivere la skill
+
+sources:
+  - id: reg-ue-2024-2847-cra-segnalazione
+    title: "Regolamento (UE) 2024/2847 del Parlamento europeo e del Consiglio del 23 ottobre 2024 relativo a requisiti orizzontali di cibersicurezza per i prodotti con elementi digitali (Cyber Resilience Act) - artt. 3, 13, 14, 15, 16, 17, 64, 71 e allegato I parte II"
+    type: regolamento-ue
+    url: http://publications.europa.eu/resource/celex/32024R2847
+    accept: application/xhtml+xml
+    accept_language: ita
+    accessed: 2026-08-25
+    sha256: c545dfacd04be16112595c2de51b35c6d6d0329b565b393de581c77b63659f5b
+    license: public-domain
+    binary_path: not_in_repo/reg-ue-2024-2847-cra-cellar.xhtml
+    md_path: references/fonti/reg-ue-2024-2847-cra-segnalazione.md
+    excerpt_path: references/estratti/cra-art14-obblighi-e-termini.md
+    notes: |
+      Fonte primaria della skill. ELI dell'atto:
+      http://data.europa.eu/eli/reg/2024/2847/oj - CELEX 32024R2847.
+      Scaricata dal repository CELLAR dell'Ufficio delle pubblicazioni UE, che
+      sullo stesso URL serve rappresentazioni diverse in base agli header: senza
+      header restituisce il descrittore RDF (1.889.399 byte), con il solo Accept
+      risponde HTTP 400, con Accept: application/xhtml+xml + Accept-Language: ita
+      restituisce l'XHTML integrale in italiano (743.211 byte, l'hash sopra).
+      La skill cra-classificazione-pde dichiara la stessa norma con
+      ci_fetch_blocked perche' punta all'endpoint PDF di eur-lex.europa.eu, che
+      risponde HTTP 202 con body vuoto a client non-browser. La via CELLAR usata
+      qui e' verificabile dalla CI e non richiede quell'esenzione.
+      Date di applicazione rilevanti (art. 71, par. 2): il Regolamento si applica
+      dall'11 dicembre 2027, ma l'art. 14 si applica dall'11 settembre 2026.
+
+  - id: dir-ue-2022-2555-nis2-segnalazione
+    title: "Direttiva (UE) 2022/2555 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativa a misure per un livello comune elevato di cibersicurezza nell'Unione (NIS2) - art. 6 punti 5 e 6, art. 12 paragrafo 1"
+    type: direttiva-ue
+    url: http://publications.europa.eu/resource/celex/32022L2555
+    accept: application/xhtml+xml
+    accept_language: ita
+    accessed: 2026-08-25
+    sha256: 8cd3ee965243a2b4eaef6d3902ca6d12840950d5e8d144d3f98d156088cf55b1
+    license: public-domain
+    binary_path: not_in_repo/dir-ue-2022-2555-nis2-cellar.xhtml
+    md_path: references/fonti/dir-ue-2022-2555-nis2-segnalazione.md
+    excerpt_path: references/estratti/cra-art14-obblighi-e-termini.md
+    notes: |
+      Necessaria perche' l'art. 3, punti 43) e 45), del CRA non definisce
+      "incidente" e "quasi incidente" ma rinvia all'art. 6, punti 6) e 5), di
+      questa direttiva. L'art. 14, par. 3, del CRA fa scattare l'obbligo su un
+      "incidente grave": senza queste definizioni la qualificazione dell'evento
+      non sarebbe ancorata a un testo. Trascritto anche l'art. 12, par. 1, che
+      istituisce il CSIRT designato come coordinatore richiamato dall'art. 14,
+      par. 7, del CRA. Stessa via CELLAR con content negotiation.
+
+  - id: dlgs-138-2024-csirt-italia
+    title: "Decreto legislativo 4 settembre 2024, n. 138 - Recepimento della direttiva (UE) 2022/2555 (NIS2) - art. 2 c. 1 lett. i), art. 15, art. 16 (CSIRT Italia designato coordinatore per la divulgazione coordinata delle vulnerabilita') - GU Serie generale n. 230 del 01/10/2024"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/id/2024/10/01/24G00155/sg
+    download_url: https://www.gazzettaufficiale.it/eli/gu/2024/10/01/230/sg/pdf
+    accessed: 2026-08-25
+    sha256: 056dfbb1ddd34c163585250ae5631270ed8d27ce16ac5b30576cff4e88169e36
+    license: public-domain
+    binary_path: not_in_repo/gu-230-2024-10-01.pdf
+    md_path: references/fonti/dlgs-138-2024-csirt-italia.md
+    excerpt_path: references/estratti/csirt-coordinatore-e-canale-italiano.md
+    notes: |
+      Cod. red. 24G00155, pag. 1 e segg. del fascicolo; art. 15 a pag. 14, art. 16
+      alle pagg. 15-16. Il PDF integrale del fascicolo ha layer di testo.
+      Serve perche' l'art. 14, par. 7, del CRA impone di notificare tramite il
+      terminale del "CSIRT designato come coordinatore" dello Stato membro di
+      stabilimento principale, ma il Regolamento non nomina il CSIRT di alcuno
+      Stato membro: per l'Italia la designazione e' nell'art. 16, comma 1, di
+      questo decreto (CSIRT Italia, operante all'interno di ACN).
