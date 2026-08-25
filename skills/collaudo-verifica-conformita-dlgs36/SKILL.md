@@ -8,7 +8,8 @@ summary: "Collaudo lavori e verifica di conformita' servizi/forniture (D.Lgs. 36
 normative_refs:
   - "D.Lgs. 31/3/2023 n. 36 - art. 116 cc. 1-3 (collaudo/verifica di conformita', termini, responsabilita')"
   - "D.Lgs. 31/3/2023 n. 36 - art. 116 cc. 4-11 (collaudatori, incompatibilita', RUP/DEC, CRE allegato II.14)"
-version: 0.1.0-alpha
+  - "L. 7/8/2026 n. 152 - art. 1-bis D.L. 107/2026 (sospensione temporanea del recupero dell'anticipazione ex art. 125 D.Lgs. 36/2023, lavori, fino al 31/12/2026, esclusi interventi PNRR)"
+version: 0.2.0-alpha
 status: alpha
 tags:
   - dlgs-36-2023
@@ -48,6 +49,19 @@ un contratto pubblico e ancorarla al **D.Lgs. 36/2023, art. 116**:
   con le regole su tempi, documenti finali e **accertamenti di laboratorio** non
   soggetti a ribasso (cc. 8-11).
 
+Sul versante contabile della chiusura, la skill segnala anche la **deroga temporanea
+in vigore dal 21 agosto 2026**: l'**art. 1-bis del D.L. 107/2026** (inserito dalla
+**L. 7 agosto 2026, n. 152**) autorizza le stazioni appaltanti, **su richiesta
+dell'appaltatore**, a **sospendere il recupero dell'anticipazione** dell'**art. 125
+D.Lgs. 36/2023** negli **appalti di lavori in corso di esecuzione**, per il tempo
+strettamente necessario e comunque **non oltre il 31 dicembre 2026**, con
+**esclusione degli interventi finanziati anche solo in parte con risorse PNRR**.
+Poiche' l'**art. 125 c. 7** lega il certificato di pagamento della **rata di saldo**
+all'esito positivo del collaudo o della verifica di conformita', alla chiusura del
+contratto puo' residuare una quota di anticipazione non recuperata. Il testo
+dell'art. 1-bis **non menziona l'art. 116** e non contiene alcuna disposizione su
+termini del collaudo, natura del certificato o responsabilita' per vizi.
+
 **Non e' una skill che redige atti**: non compila il certificato di collaudo/CRE, non
 riproduce l'allegato II.14, non nomina i collaudatori e non sostituisce la stazione
 appaltante, il RUP o l'organo di collaudo.
@@ -75,10 +89,16 @@ appaltante, il RUP o l'organo di collaudo.
 - **D.Lgs. 31/3/2023 n. 36** (Codice dei contratti pubblici) - **art. 116** (Collaudo e
   verifica di conformita'); rinvio all'**allegato II.14** (modalita'/CRE) e
   all'**allegato II.15** (costi accertamenti).
+- **L. 7 agosto 2026, n. 152** (conversione del D.L. 26 giugno 2026, n. 107; GU Serie
+  generale n. 192 del 20/8/2026) - **art. 1-bis** del D.L. 107/2026, con il testo
+  dell'**art. 125 D.Lgs. 36/2023** riportato nei "Riferimenti normativi" della stessa
+  GU. **Deroga a termine: scade il 31 dicembre 2026.**
 
 Dettaglio in `references/sources.yaml`,
 `references/fonti/dlgs-36-2023-art-116.md`,
-`references/estratti/collaudo-verifica-checklist.md`.
+`references/fonti/l-152-2026-gu-192.md`,
+`references/estratti/collaudo-verifica-checklist.md`,
+`references/estratti/l-152-2026-sospensione-recupero-anticipazione.md`.
 
 ## Avvertenza
 

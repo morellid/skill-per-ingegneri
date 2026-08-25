@@ -8,7 +8,8 @@ summary: "Verifica la conformita' di un disciplinare di gara agli schemi ANAC (b
 normative_refs:
   - "D.Lgs. 36/2023"
   - "Bandi-tipo ANAC (n. 1/2023 agg. Delibera 148/2026, n. 2/2026 SIA Delibera 153/2026)"
-version: 0.3.0
+  - "D.Lgs. 36/2023 art. 125 (anticipazione) e L. 152/2026 art. 1-bis D.L. 107/2026 (sospensione temporanea del recupero, lavori in esecuzione, fino al 31/12/2026)"
+version: 0.4.0
 status: alpha
 tags:
   - anac
@@ -77,6 +78,25 @@ ANAC pubblica schemi di disciplinare articolati per tipo di contratto e criterio
 
 Per le procedure sotto soglia: gli schemi sopra soglia si applicano come riferimento
 con adattamenti motivati; verificare se ANAC ha pubblicato schemi specifici.
+
+## Nota sull'anticipazione nei disciplinari lavori (deroga a termine)
+
+L'**art. 1-bis del D.L. 26 giugno 2026, n. 107**, inserito dalla **L. 7 agosto 2026,
+n. 152** (GU n. 192 del 20/8/2026, in vigore dal 21/8/2026), autorizza le stazioni
+appaltanti a **sospendere il recupero dell'anticipazione** dell'art. 125 D.Lgs.
+36/2023 negli appalti di lavori, **non oltre il 31 dicembre 2026** e con
+**esclusione degli interventi finanziati anche solo in parte con risorse PNRR**.
+
+Rileva per questa skill **in negativo**. Il testo riguarda i lavori **in corso di
+esecuzione**, si attiva **su richiesta dell'appaltatore**, e' una **facolta'** ("sono
+autorizzate a sospendere") e **non contiene alcuna prescrizione sui documenti di
+gara**: non nomina disciplinari, bandi-tipo o ANAC. Non c'e' quindi base nella fonte
+per segnalare come anomalia il disciplinare che non la menziona. Il caso opposto -
+disciplinare che promette ex ante la sospensione ai futuri aggiudicatari - va posto
+come **rilievo da motivare**, non come violazione accertata: la fonte non qualifica
+alcuna clausola di gara. Regole di segnalazione e loro limiti nella categoria H di
+[`tasks/identifica-anomalie-clausole.md`](tasks/identifica-anomalie-clausole.md) e in
+`references/estratti/l-152-2026-anticipazione-e-disciplinari-lavori.md`.
 
 ## Novita' principali Delibere 148/2026 e 153/2026
 
