@@ -1,6 +1,6 @@
 schema_version: 1
 skill: bandi-tipo-anac-checker
-last_verified: 2026-05-18
+last_verified: 2026-08-25
 
 # Fonti normative per la skill di verifica conformita' disciplinari di gara
 # agli schemi ANAC (bandi-tipo) ai sensi del D.Lgs. 36/2023.
@@ -205,6 +205,35 @@ sources:
         perche' i SIA sono strutturalmente servizi intellettuali.
       - Paragrafo 16: in offerta tecnica obbligo di indicare attivita' strumentali svolte con AI; offerta
         di gestione informativa digitale (Capitolato informativo) se richiesto BIM.
+
+  - id: l-152-2026-gu-192
+    title: "Legge 7 agosto 2026, n. 152 - Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 107 - art. 1-bis (Sospensione temporanea del recupero dell'anticipazione nei contratti di lavori pubblici) - GU Serie generale n. 192 del 20/08/2026"
+    type: legge
+    url: https://www.gazzettaufficiale.it/eli/id/2026/08/20/26G00165/SG
+    download_url: https://www.gazzettaufficiale.it/eli/gu/2026/08/20/192/sg/pdf
+    accessed: 2026-08-25
+    sha256: 1131f5ce3b7b807e2627a33b51069bc79b377600f0293cf9a60441026b10c058
+    license: public-domain-italian-law
+    binary_path: not_in_repo/gu-192-2026-08-20.pdf
+    md_path: references/fonti/l-152-2026-gu-192.md
+    excerpt_paths:
+      - references/estratti/l-152-2026-anticipazione-e-disciplinari-lavori.md
+    notes: |
+      Codice redazionale 26G00165 (legge di conversione, pag. 1 del fascicolo);
+      testo coordinato del D.L. 107/2026 con codice redazionale 26A04179 (pag. 42),
+      art. 1-bis a pag. 49, seguito nei "Riferimenti normativi" dal testo integrale
+      dell'art. 125 D.Lgs. 36/2023. Il PDF hashato e' il fascicolo integrale.
+      RILIEVO PER QUESTA SKILL - da leggere prima di usarla: l'art. 1-bis si applica
+      agli "appalti pubblici di lavori IN CORSO DI ESECUZIONE", opera "su richiesta
+      dell'appaltatore" ed e' una facolta' ("sono autorizzate a sospendere"). Il testo
+      non impone alcun adempimento sui documenti di gara e non nomina disciplinari,
+      bandi-tipo o ANAC. La skill lo usa in negativo: per non segnalare come anomalia
+      il richiamo ordinario all'art. 125 nei disciplinari lavori, e per porre come
+      rilievo da motivare - non come violazione accertata, che la fonte non prevede -
+      il disciplinare che prometta ex ante la sospensione ai futuri aggiudicatari.
+      Deroga a termine: scade il 31 dicembre 2026; esclusi gli interventi finanziati
+      anche solo in parte con risorse PNRR.
+      Entrata in vigore della legge di conversione: 21 agosto 2026 (art. 1, c. 2).
 
   - id: regolamento-esecuzione-dlgs-36-allegati
     title: "Allegati al D.Lgs. 36/2023 - Allegato I.14 (schema tipo atti concessori)"

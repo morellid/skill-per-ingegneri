@@ -7,6 +7,61 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-08-25
+
+### Added (closes #496)
+
+Fonte scaricata, hashata e letta (Regola zero):
+- **GU Serie generale n. 192 del 20-8-2026** (PDF integrale del fascicolo)
+  SHA256: 1131f5ce3b7b807e2627a33b51069bc79b377600f0293cf9a60441026b10c058
+  contenente la **L. 7 agosto 2026, n. 152** (cod. red. 26G00165) e il **testo
+  coordinato** del D.L. 26 giugno 2026, n. 107 (cod. red. 26A04179).
+- Trascrizione verbatim in `references/fonti/l-152-2026-gu-192.md`: **art. 1-bis**
+  (Sospensione temporanea del recupero dell'anticipazione nei contratti di lavori
+  pubblici) e **art. 125 D.Lgs. 36/2023** (Anticipazione, modalita' e termini di
+  pagamento del corrispettivo, cc. 1-10) come riportato nei "Riferimenti normativi"
+  della stessa GU.
+- Estratto `references/estratti/l-152-2026-anticipazione-e-disciplinari-lavori.md`.
+- `tasks/identifica-anomalie-clausole.md`: nuova **categoria H** "Anticipazione nei
+  disciplinari lavori", con i parametri dell'art. 125 c. 1 verificabili in gara
+  (misura 20% e tetto 30% da prevedere nei documenti di gara, garanzia fideiussoria
+  obbligatoria, separazione progettazione/esecuzione nell'appalto integrato) e le
+  regole di segnalazione sull'art. 1-bis. Fonte aggiunta all'elenco "Fonti normative"
+  del task.
+
+### Changed
+
+- `SKILL.md`: nuova sezione "Nota sull'anticipazione nei disciplinari lavori (deroga a
+  termine)"; nuovo `normative_refs` su art. 125 D.Lgs. 36/2023 e art. 1-bis D.L.
+  107/2026; version 0.3.0 -> 0.4.0.
+- `references/sources.yaml`: `last_verified` 2026-05-18 -> 2026-08-25.
+
+### Nota sulla premessa della issue #496
+
+La issue chiedeva di trattare l'art. 1-bis come istituto che "i disciplinari di gara
+per lavori 2026 possono prevedere". La lettura della fonte non lo conferma: il testo
+si applica agli "appalti pubblici di lavori **in corso di esecuzione**", su
+**richiesta dell'appaltatore**, come **facolta'** della stazione appaltante ("sono
+autorizzate a sospendere"), e non impone alcun adempimento sui documenti di gara -
+non nomina disciplinari, bandi-tipo ne' ANAC. La skill recepisce quindi la norma
+**in negativo**: l'assenza dell'art. 1-bis dal disciplinare non e' un'anomalia (evita
+il falso positivo), mentre il disciplinare che ne prometta ex ante l'applicazione
+viene posto come **rilievo da motivare o riformulare**, con base testuale nei tre
+elementi incompatibili con un impegno incondizionato assunto in gara (richiesta
+dell'appaltatore, lavori in corso di esecuzione, limite delle risorse disponibili) e
+con l'esclusione PNRR del comma 2. La fonte non qualifica come illegittima alcuna
+clausola di gara: i criteri di segnalazione sono dichiarati nel task e nell'estratto
+come inferenza, non come divieti di legge.
+
+### Scope e limiti
+
+- Deroga **a termine**: scade il 31 dicembre 2026. Dal 1 gennaio 2027 un richiamo
+  all'art. 1-bis va segnalato come riferimento a norma non piu' applicabile, salvo
+  proroga da verificare su fonte ufficiale.
+- L'art. 1-bis non contiene rinvii ai bandi-tipo ne' mandati ad aggiornarli: un
+  eventuale intervento ANAC sugli schemi sara' una fonte ulteriore da scaricare e
+  verificare.
+
 ## [0.3.0] - 2026-07-11
 
 ### Added (paragrafo 28 accesso agli atti / inversione procedimentale - issue #192)

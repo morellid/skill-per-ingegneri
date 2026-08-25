@@ -31,6 +31,12 @@ all'**allegato II.14** per il **CRE** (c. 7).
 
 - **D.Lgs. 31/3/2023 n. 36** (Codice dei contratti pubblici) - art. 116 - testo vigente
   su Normattiva (indice pinnato a `!vig=2026-07-17`, codice 23G00044)
+- **L. 7 agosto 2026, n. 152** (conversione del D.L. 26 giugno 2026, n. 107) - **art.
+  1-bis**, sospensione temporanea del recupero dell'anticipazione nei lavori pubblici,
+  e testo dell'**art. 125 D.Lgs. 36/2023** riportato nei "Riferimenti normativi" - GU
+  Serie generale n. 192 del 20/8/2026 (codice 26G00165). **Deroga a termine: scade il
+  31 dicembre 2026**; esclusi gli interventi finanziati anche solo in parte con
+  risorse PNRR.
 
 Dettaglio in `references/sources.yaml`, `references/fonti/`, `references/estratti/`.
 

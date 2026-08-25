@@ -38,6 +38,9 @@ ln -sfn "$(pwd)/skills/bandi-tipo-anac-checker" "$HOME/.agents/skills/bandi-tipo
 - D.Lgs. 31 marzo 2023 n. 36 - Codice dei contratti pubblici
 - ANAC - Schemi di disciplinare di gara per il D.Lgs. 36/2023 (bandi-tipo)
   https://www.anticorruzione.it/-/bandi-tipo
+- L. 7 agosto 2026 n. 152 (conversione del D.L. 26 giugno 2026 n. 107), art. 1-bis -
+  sospensione temporanea del recupero dell'anticipazione ex art. 125 D.Lgs. 36/2023,
+  GU Serie generale n. 192 del 20/8/2026
 
 Dettaglio completo in `references/sources.yaml`.
 
@@ -50,6 +53,11 @@ Dettaglio completo in `references/sources.yaml`.
 - Non valuta la legittimita' della scelta della procedura ne' la coerenza con il capitolato tecnico
 - Non sostituisce la revisione legale per procedure complesse o di importo rilevante
 - Soglie europee aggiornate ogni 2 anni dalla Commissione UE: verificare i valori correnti
+- La sospensione del recupero dell'anticipazione (art. 1-bis D.L. 107/2026) riguarda
+  i lavori in corso di esecuzione e non impone adempimenti sui documenti di gara: la
+  skill la usa solo per distinguere i falsi positivi dai rilievi da motivare sul
+  disciplinare. I criteri di segnalazione relativi all'art. 1-bis sono inferenze
+  dichiarate, non divieti di legge. Deroga a termine, scade il 31 dicembre 2026
 
 ## Changelog
 

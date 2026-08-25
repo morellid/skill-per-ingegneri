@@ -28,6 +28,7 @@ Leggere prima di procedere:
 - `references/estratti/anac-bandi-tipo-clausole-ai-l132-2025.md` (clausole AI obbligatorie dal 30 maggio 2026)
 - `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (sezione "Paragrafo 28": clausola alternativa accesso agli atti per inversione procedimentale, Parere CdS n. 61/2026)
 - Se l'oggetto e' SIA: `references/estratti/anac-bando-tipo-2-2026-sia-requisiti-bim.md` (importo 65/35, BIM, equo compenso)
+- Se l'oggetto e' lavori: `references/estratti/l-152-2026-anticipazione-e-disciplinari-lavori.md` (anticipazione art. 125; deroga temporanea art. 1-bis D.L. 107/2026 fino al 31/12/2026)
 
 ## Procedura
 
@@ -142,6 +143,39 @@ Vedi `references/fonti/anac-bando-tipo-n1-2023-agg-del-148-2026.md` (sezione "Pa
 - [ ] Modalita' con cui la SA garantisce la disponibilita' dei documenti non indicata: **formale**.
 - [ ] Nessuna previsione di accesso per i partecipanti collocatisi oltre il quinto posto (artt. 3-bis e 22 L. 241/1990): **sostanziale**.
 - Nota: per gare indette prima del 30/05/2026 si applica la versione precedente dello schema (Delibera 365/2025): la clausola alternativa non e' esigibile e la sua assenza non e' un'anomalia.
+
+**Categoria H - Anticipazione nei disciplinari lavori (art. 125 D.Lgs. 36/2023 e deroga temporanea art. 1-bis D.L. 107/2026)**
+
+Vedi `references/estratti/l-152-2026-anticipazione-e-disciplinari-lavori.md`.
+
+Premessa che evita il falso positivo piu' probabile: l'**art. 1-bis del D.L. 107/2026**
+(inserito dalla L. 152/2026, in vigore dal 21/08/2026) si riferisce testualmente agli
+"appalti pubblici di lavori **in corso di esecuzione**", opera "**su richiesta
+dell'appaltatore**" ed e' una facolta' ("le stazioni appaltanti **sono autorizzate**").
+Il testo **non impone alcun adempimento sui documenti di gara** e non nomina
+disciplinari, bandi-tipo o ANAC: la sua assenza dal disciplinare **non e' un'anomalia**.
+
+Le righe della tabella che riguardano l'art. 1-bis sono **criteri di segnalazione
+costruiti su inferenza**, non divieti scritti nella fonte: vanno presentati come
+rilievi da motivare o riformulare, non come violazioni accertate. Le righe che
+riguardano l'art. 125 D.Lgs. 36/2023 sono invece ancorate al testo dell'articolo,
+trascritto in `references/fonti/l-152-2026-gu-192.md`.
+
+| Indicatore | Riferimento | Rischio |
+|-----------|-------------|---------|
+| Anticipazione lavori fissata **sotto** il 20% del valore del contratto | Art. 125 c. 1 D.Lgs. 36/2023 (misura di legge) | Critico |
+| Anticipazione **oltre il 30%** | Art. 125 c. 1 D.Lgs. 36/2023 (tetto all'incremento) | Critico |
+| Incremento oltre il 20% non previsto nei **documenti di gara** ma rinviato alla fase esecutiva | Art. 125 c. 1 D.Lgs. 36/2023 ("Nei documenti di gara puo' essere previsto un incremento") | Sostanziale |
+| Erogazione dell'anticipazione non subordinata a garanzia fideiussoria bancaria o assicurativa | Art. 125 c. 1 D.Lgs. 36/2023 | Critico |
+| Appalto integrato senza distinzione dell'anticipazione tra progettazione ed esecuzione | Artt. 44 e 125 c. 1 D.Lgs. 36/2023 | Sostanziale |
+| Disciplinare che **promette ex ante** al futuro aggiudicatario la sospensione del recupero dell'anticipazione | Art. 1-bis D.L. 107/2026 (facolta' in esecuzione, su istanza, entro le risorse disponibili) | Sostanziale |
+| La stessa promessa in gara **finanziata anche solo in parte con risorse PNRR** | Art. 1-bis c. 2 (esclusione testuale) | Critico |
+| Richiamo all'art. 1-bis in disciplinare di **servizi o forniture** | Art. 1-bis c. 1 (ambito: soli lavori) | Formale |
+| Richiamo all'art. 1-bis senza il termine finale del **31 dicembre 2026**, con esecuzione prevista oltre tale data | Art. 1-bis c. 1 | Formale |
+
+- Nota di efficacia: la deroga **scade il 31 dicembre 2026**. Dal 1 gennaio 2027 un
+  richiamo all'art. 1-bis in un disciplinare va segnalato come riferimento a norma non
+  piu' applicabile, salvo proroga da verificare su fonte ufficiale.
 
 ### Passo 3 - Prioritizzazione e output
 
