@@ -29,6 +29,20 @@ Eccezioni accettate:
     e il fetch e' saltato.
   - testi a pagamento o fonti dichiaratamente non normative/non ufficiali
     (es. `license: proprietary-paid` o `license: other`) -> skip manuale.
+
+Campi `accept` e `accept_language` (opzionali):
+  alcuni repository ufficiali espongono un solo URL per piu' rappresentazioni
+  dello stesso documento e scelgono quale servire in base agli header di
+  richiesta (content negotiation). E' il caso di CELLAR, il repository
+  dell'Ufficio delle pubblicazioni UE, dove servono entrambi gli header:
+
+    nessun header                                   -> RDF, 1.889.399 byte
+    Accept: application/xhtml+xml                   -> HTTP 400
+    Accept: ... + Accept-Language: ita              -> XHTML, 743.211 byte
+
+  Dichiararli in sources.yaml fa si' che fetch e verifica dell'hash usino la
+  stessa rappresentazione, invece di ricorrere a `ci_fetch_blocked` per una
+  fonte che il CI e' perfettamente in grado di verificare.
 """
 
 from __future__ import annotations
@@ -112,8 +126,11 @@ def load_sources(skill_dir: Path) -> dict | None:
         return yaml.safe_load(fh)
 
 
-def _do_fetch(url: str, dest: Path, user_agent: str) -> None:
-    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
+def _do_fetch(
+    url: str, dest: Path, user_agent: str, extra_headers: dict[str, str] | None = None
+) -> None:
+    headers = {"User-Agent": user_agent, **(extra_headers or {})}
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as resp, dest.open("wb") as out:
         while True:
             chunk = resp.read(65536)
@@ -122,9 +139,9 @@ def _do_fetch(url: str, dest: Path, user_agent: str) -> None:
             out.write(chunk)
 
 
-def fetch(url: str, dest: Path) -> None:
+def fetch(url: str, dest: Path, extra_headers: dict[str, str] | None = None) -> None:
     try:
-        _do_fetch(url, dest, USER_AGENT)
+        _do_fetch(url, dest, USER_AGENT, extra_headers)
     except urllib.error.HTTPError as exc:
         if exc.code in (401, 403, 429):
             print(
@@ -132,7 +149,7 @@ def fetch(url: str, dest: Path) -> None:
                 "riprovo con UA browser",
                 flush=True,
             )
-            _do_fetch(url, dest, BROWSER_USER_AGENT)
+            _do_fetch(url, dest, BROWSER_USER_AGENT, extra_headers)
         else:
             raise
 
@@ -166,6 +183,21 @@ def verify_skill(skill_dir: Path) -> list[str]:
         declared_hash = src.get("sha256")
         license_type = src.get("license", "unknown")
         md_path = src.get("md_path")
+        # Alcuni repository ufficiali servono il documento solo via content
+        # negotiation: lo stesso URL restituisce rappresentazioni diverse a
+        # seconda degli header di richiesta. CELLAR (Ufficio pubblicazioni UE)
+        # ne e' il caso tipico e richiede DUE header insieme:
+        #   nessun header                              -> RDF, 1.889.399 byte
+        #   Accept: application/xhtml+xml              -> HTTP 400
+        #   Accept + Accept-Language: ita              -> XHTML, 743.211 byte
+        # Senza gli header giusti il CI scarica la rappresentazione sbagliata e
+        # segnala un hash mismatch inesistente.
+        #
+        extra_headers = {}
+        if src.get("accept"):
+            extra_headers["Accept"] = src["accept"]
+        if src.get("accept_language"):
+            extra_headers["Accept-Language"] = src["accept_language"]
 
         # Regola zero Step 3: per ogni fonte ufficiale con binary_path non null,
         # md_path deve essere dichiarato e il file deve esistere e non essere vuoto.
@@ -261,7 +293,7 @@ def verify_skill(skill_dir: Path) -> list[str]:
         local_path.parent.mkdir(parents=True, exist_ok=True)
         try:
             print(f"[{skill_name}/{sid}] fetch {artifact_url}", flush=True)
-            fetch(artifact_url, local_path)
+            fetch(artifact_url, local_path, extra_headers)
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as exc:
             errors.append(f"[{skill_name}/{sid}] fonte non raggiungibile: {artifact_url} ({exc})")
             continue
