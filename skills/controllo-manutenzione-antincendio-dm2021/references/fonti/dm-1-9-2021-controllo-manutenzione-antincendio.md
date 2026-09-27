@@ -14,8 +14,13 @@
 > Ufficiale (hash verificato con doppio download riproducibile: due download consecutivi hanno prodotto lo stesso
 > SHA256). Il PDF è impaginato su due colonne, quindi le citazioni sono state ricomposte a mano nell'ordine di lettura.
 > Il testo delle leggi e degli atti ufficiali dello Stato è liberamente riproducibile (art. 5 L. 633/1941). I Prospetti
-> 2 e 3.1÷3.13 dell'Allegato II (contenuti minimi di dettaglio della formazione) sono tabelle formative estese: se ne
+> 2 e 3.1÷3.14 (come modificati dal D.M. 15/9/2022) dell'Allegato II (contenuti minimi di dettaglio della formazione) sono tabelle formative estese: se ne
 > riporta la struttura e i punti salienti, non l'intero contenuto cella per cella.
+
+> **Testo consolidato (aggiornato al 2026-09-27)**: il decreto è stato modificato dai D.M. 15/9/2022, 31/8/2023,
+> 13/9/2024, 15/7/2025 e 22/9/2026. Le disposizioni modificate sono riportate qui nel testo vigente, con la fonte di
+> modifica tra parentesi; il testo delle modifiche è trascritto in
+> [`dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md`](dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md).
 
 ---
 
@@ -78,6 +83,18 @@ Ai fini del decreto:
 1. Il decreto **entra in vigore un anno dopo la sua pubblicazione** nella Gazzetta Ufficiale. Pubblicato il
    25 settembre 2021, è dunque in vigore dal **25 settembre 2022**.
 
+1-bis. «Le disposizioni previste all'art. 4 relative alla qualificazione dei tecnici manutentori entrano in vigore a
+   decorrere dal **25 settembre 2026**.» (comma aggiunto dal D.M. 15/9/2022 con termine 25/9/2023; termine differito
+   al 25/9/2024 dal D.M. 31/8/2023, al 25/9/2025 dal D.M. 13/9/2024 e al 25/9/2026 dal D.M. 15/7/2025).
+
+## Art. 6-bis - Disposizioni transitorie (inserito dal D.M. 22/9/2026)
+
+1. «A decorrere dal 25 settembre 2026, i soggetti che entro tale data abbiano presentato **regolare istanza per la
+   valutazione dei requisiti** stabiliti dal presente decreto, fino alla **conclusione della valutazione** e, in ogni
+   caso, **entro e non oltre il 31 marzo 2027**, possono continuare a eseguire gli interventi di manutenzione e i
+   controlli sugli impianti, sulle attrezzature e sugli altri sistemi di sicurezza antincendio **rientranti nelle
+   tipologie oggetto dell'istanza**.»
+
 Firmatari: il Ministro dell'interno (Lamorgese) e il Ministro del lavoro e delle politiche sociali (Orlando).
 
 ---
@@ -136,8 +153,10 @@ Firmatari: il Ministro dell'interno (Lamorgese) e il Ministro del lavoro e delle
 3. A tal fine deve effettuare un **percorso di formazione** erogato da soggetti formatori, pubblici o privati (docenti
    in possesso dei requisiti del punto 2), con i contenuti minimi del punto 3.
 4. Al termine del percorso deve essere **sottoposto alla valutazione dei requisiti** (punto 4).
-5. I soggetti che alla data di entrata in vigore svolgono attività di manutenzione **da almeno 3 anni** sono
-   **esonerati dalla frequenza del corso** ma possono richiedere di essere sottoposti alla valutazione.
+5. «I soggetti che alla data di entrata in vigore del presente decreto svolgono attività di **manutenzione o
+   controllo periodico da almeno tre anni** sono **esonerati dalla frequenza del corso** di cui al punto 3 e **possono
+   richiedere di essere sottoposti alla valutazione** di cui al punto 4, comma 4» (comma sostituito dal D.M.
+   13/9/2024; le parole «o controllo periodico» erano già state aggiunte dal D.M. 15/9/2022).
 6. Il **Corpo nazionale dei vigili del fuoco rilascia l'attestazione** di tecnico manutentore qualificato a seguito di
    valutazione positiva.
 7. Il tecnico deve **mantenersi aggiornato** sull'evoluzione tecnica e normativa.
@@ -160,10 +179,40 @@ Firmatari: il Ministro dell'interno (Lamorgese) e il Ministro del lavoro e delle
    7) relazionarsi con il datore di lavoro sulle attività di controllo e manutenzione; 8) coordinare e controllare
    l'attività di manutenzione.
 2. Il **Prospetto 2** riporta le conoscenze, abilità e competenze richieste per ciascun compito.
-3. I **Prospetti 3.1÷3.13** riportano i contenuti minimi della formazione teorica e delle esercitazioni pratiche per
-   gli impianti/attrezzature/sistemi maggiormente utilizzati nei luoghi di lavoro.
-4. Con decreto del Direttore centrale per la prevenzione e la sicurezza tecnica del Dipartimento dei vigili del fuoco
+3. I **prospetti che seguono** (3.1÷3.14) riportano i contenuti minimi della formazione teorica e delle esercitazioni
+   pratiche per gli impianti/attrezzature/sistemi maggiormente utilizzati nei luoghi di lavoro. Il D.M. 15/9/2022 ha
+   sostituito il Prospetto 3.8 con i Prospetti **3.8.1** (sistemi di evacuazione naturale di fumo e calore, SENFC) e
+   **3.8.2** (sistemi di evacuazione forzata di fumo e calore, SEFFC, e di ventilazione orizzontale, SVOF) e ha aggiunto
+   il Prospetto **3.14** (sistemi a polvere); ha inoltre precisato che i compiti del Prospetto 1 si declinano per
+   ciascuna figura di tecnico secondo i livelli di autonomia e responsabilità delle norme tecniche applicabili e che il
+   Prospetto 2 riporta le competenze **generali** (quelle specifiche sono rinviate alle norme tecniche).
+4. Con decreto del Direttore centrale per la prevenzione e la sicurezza tecnica, antincendio ed energetica (denominazione
+   aggiornata dal D.M. 15/7/2025) del Dipartimento dei vigili del fuoco
    possono essere **aggiornati o definiti ulteriori contenuti minimi** della formazione (anche per sistemi innovativi).
+
+### 4. Valutazione dei requisiti (estratto)
+
+- La valutazione ordinaria (comma 2) comprende, per ogni tipologia per cui si chiede la qualificazione, analisi del
+  curriculum, prova scritta, prova pratica e prova orale; l'esame è superato con almeno 70/100 e con almeno metà del
+  punteggio massimo in ciascuna delle prove scritta, pratica e orale (comma 3).
+- 4. «Per i soggetti di cui al punto 1, comma 5, la valutazione dei requisiti è svolta secondo **modalità
+  semplificate** definite con decreto del direttore centrale per la prevenzione e la sicurezza tecnica, antincendio ed
+  energetica, tenuto conto delle qualificazioni conseguite prima dell'entrata in vigore del presente decreto attestate
+  con certificazione volontaria o rilasciate da una commissione istituita dal Corpo nazionale dei vigili del fuoco, a
+  seguito della frequenza di un corso presso un ente di formazione accreditato con contenuti minimi e durata pari o
+  superiore a quanto indicato nei prospetti dal 3.1 al 3.14» (comma sostituito dal D.M. 13/9/2024).
+- 5. Con il superamento dell'esame la commissione riconosce la qualifica di "tecnico manutentore qualificato".
+
+### 5. Procedure amministrative (estratto)
+
+- 1. La qualifica è **rilasciata dalle strutture centrali e periferiche del Corpo nazionale dei vigili del fuoco** in
+  seguito all'esito favorevole della valutazione davanti a un'apposita commissione esaminatrice.
+- 5-bis. «La tariffa concernente l'attività di valutazione dei requisiti del tecnico manutentore è determinata
+  nell'importo pari al doppio di quella di cui al punto C dell'allegato al decreto del Ministro dell'interno 14 marzo
+  2012» (comma aggiunto dal D.M. 13/9/2024).
+- 7. L'**istanza** di valutazione è rivolta alla Direzione centrale per la prevenzione e la sicurezza tecnica,
+  antincendio ed energetica o alla Direzione regionale competente, specificando la qualifica richiesta; possono essere
+  inoltrate istanze per una o più tipologie di impianti, attrezzature o sistemi.
 
 ---
 

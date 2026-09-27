@@ -17,16 +17,21 @@
 ## 3. Come si ottiene la qualifica (Allegato II)
 
 1. **Percorso di formazione** presso soggetti formatori (docenti con diploma di scuola secondaria superiore ed
-   esperienza triennale documentata) sui contenuti minimi (Prospetti 1, 2 e 3.1÷3.13).
+   esperienza triennale documentata) sui contenuti minimi (Prospetti 1, 2 e seguenti, fino al 3.14 dopo il D.M. 15/9/2022).
 2. **Valutazione dei requisiti** al termine del percorso.
 3. **Attestazione rilasciata dal Corpo nazionale dei vigili del fuoco** a seguito di valutazione positiva.
 4. Obbligo di **aggiornamento** continuo; la **qualifica è valida su tutto il territorio nazionale** (art. 4 c.3).
 
-## 4. Regime transitorio (All. II punto 1, c.5)
+## 4. Chi lavora da anni: esonero dal corso e disciplina transitoria
 
-- Chi, alla **data di entrata in vigore** (25 settembre 2022), svolge attività di manutenzione **da almeno 3 anni** è
-  **esonerato dalla frequenza del corso**, ma **deve comunque sottoporsi alla valutazione**. Quindi "farlo da anni" non
-  esonera dalla valutazione.
+- **Esonero dal corso (All. II punto 1 c.5, testo D.M. 13/9/2024)**: chi, alla data di entrata in vigore del decreto,
+  svolge attività di manutenzione o controllo periodico **da almeno tre anni** è **esonerato dalla frequenza del
+  corso** e **può richiedere** la valutazione con **modalità semplificate** (punto 4 c.4). L'attestazione VVF segue
+  comunque a valutazione positiva (punto 1 c.6): "farlo da anni" esonera dal corso, non dalla qualifica.
+- **Da quando serve la qualifica (art. 6 c.1-bis)**: l'obbligo dell'art. 4 è in vigore dal **25 settembre 2026**.
+- **Art. 6-bis (D.M. 22/9/2026)**: se i tecnici della ditta non sono ancora qualificati ma hanno presentato **istanza
+  di valutazione entro il 25/9/2026** per estintori e IRAI, possono continuare fino all'esito della valutazione e
+  **comunque non oltre il 31/3/2027**. Senza istanza entro quella data, serve l'attestazione.
 
 ## 5. Dove stanno le periodicità
 
@@ -41,7 +46,8 @@
 | Sorveglianza del lavoratore | **OK** se istruito, con liste di controllo (All. I p.2) |
 | Manutenzione/controllo periodico | solo **tecnico manutentore qualificato** (art. 4) |
 | Come si qualifica | formazione + valutazione + **attestazione VVF** (All. II) |
-| Chi lavora da anni | esonero dal **corso** se ≥3 anni, ma **valutazione obbligatoria** |
+| Chi lavora da anni | esonero dal **corso** se ≥3 anni; qualifica solo con **valutazione** (semplificata, su richiesta) |
+| Tecnici non ancora qualificati | ammessi solo con **istanza entro il 25/9/2026**, fino all'esito e max **31/3/2027** (art. 6-bis) |
 | Periodicità | nelle **norme UNI** (Tab. 1) e nel manuale, non nel decreto |
 
 **Fuori scope**: il rilascio della qualifica (Corpo nazionale dei vigili del fuoco) e le periodicità puntuali (norme
