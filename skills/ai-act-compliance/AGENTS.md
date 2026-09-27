@@ -11,12 +11,13 @@ Stato in skill-per-ingegneri:
 - 5 task files: contenuto incompleto / da finalizzare
 - 6 estratti normativi: presenti ma da verificare
 - sources.yaml: scaffold con placeholder
+- Profili nazionali (v0.2.0): D.Lgs. 160/2026 trascritto in `references/fonti/dlgs-160-2026.md` (SHA256 registrato), estratto e task `check-profili-nazionali-italia.md` completi
 
 **Decisione strategica**: sviluppo full-feature su `ai-act-skill` (inglese, EU consultancy market, MIT, distribuito autonomamente). La versione italiana qui resta come bozza per uso da parte di ingegneri Ordini, da rifinire eventualmente con focus italiano specifico (riferimenti al Garante, AGID, DDL Italiano AI Act in approvazione).
 
 ## Quando aggiornare questa skill (vs il repo dedicato)
 
-- Aggiornare **questa skill** se: stiamo aggiungendo riferimenti italiani specifici (DDL italiano AI Act, linee guida AGID per AI nella PA, posizioni Garante su scoring, ecc.).
+- Aggiornare **questa skill** se: stiamo aggiungendo riferimenti italiani specifici (L. 132/2025, D.Lgs. 160/2026 e suoi decreti attuativi, linee guida AGID per AI nella PA, posizioni Garante su scoring, ecc.).
 - Aggiornare **il repo `ai-act-skill`** per: tutto il resto. La skill inglese e' la fonte di verita' per il regolamento UE.
 
 ## Dominio
@@ -30,6 +31,7 @@ Stato in skill-per-ingegneri:
 - **Commission Guidelines on GPAI scope** (luglio 2025)
 - **AI Act Service Desk** - tool ufficiale Commissione (`ai-act-service-desk.ec.europa.eu`)
 - **CEN-CENELEC JTC 21** - standard armonizzati in preparazione
+- (Italia) **D.Lgs. 9 settembre 2026, n. 160** - GU SG n. 214 del 15/09/2026: polizia, reato 437-bis c.p., 231 art. 25-vicies, strumenti processuali civili
 - (Italia) **AGID** - linee guida AI per PA, quando emergeranno
 - (Italia) **Garante** - posizioni su scoring, biometrici, AI nel lavoro
 
@@ -50,6 +52,7 @@ Stato in skill-per-ingegneri:
 - Non sostituire avvocato AI law per casi reali.
 - Non confondere "user" (concetto pre-GDPR) con "deployer" (concetto AI Act).
 - Non assumere che un upstream GPAI provider copra le obbligazioni del downstream system.
+- D.Lgs. 160/2026: non indicare una data di entrata in vigore (il decreto non la fissa, verificare su Normattiva); non trattare "utilizzatore professionale" (art. 437-bis c.4 c.p.) come sinonimo testuale di deployer; non descrivere il 612-quater c.p. (richiamato ma non riportato dal decreto); non attribuire al Titolo I obblighi ulteriori rispetto al Reg. 2024/1689 (art. 1 c.3).
 
 ### Cosa fare
 - Citare articolo + comma + lettera preciso (es. "Art. 5(1)(f)", "Annex III area 4(b)").

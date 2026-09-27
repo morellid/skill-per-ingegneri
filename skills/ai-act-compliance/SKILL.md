@@ -1,13 +1,14 @@
 ---
 name: ai-act-compliance
-description: Verifica la conformita' di un sistema di IA al Reg. UE 2024/1689 (AI Act). Classifica il sistema (vietato / alto rischio / rischio limitato / GPAI), identifica gli obblighi applicabili per fornitore e deployer, e guida la redazione dei documenti richiesti. Use when user asks to assess an AI system for EU AI Act compliance, identify applicable obligations, or classify a system under the regulation.
+description: Verifica la conformita' di un sistema di IA al Reg. UE 2024/1689 (AI Act). Classifica il sistema (vietato / alto rischio / rischio limitato / GPAI), identifica gli obblighi applicabili per fornitore e deployer, e guida la redazione dei documenti richiesti. Copre i profili nazionali italiani del D.Lgs. 160/2026 (reato art. 437-bis c.p., 231, prova e nesso causale nelle azioni di risarcimento, uso da parte delle Forze di polizia). Use when user asks to assess an AI system for EU AI Act compliance, identify applicable obligations, or classify a system under the regulation.
 license: MIT
 area: software-dati-cybersecurity
 title: "AI Act Compliance (IT)"
-summary: "Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza"
+summary: "Classificazione sistemi AI + obblighi provider/deployer/GPAI/trasparenza + profili nazionali D.Lgs. 160/2026 (penale, 231, civile, polizia)"
 normative_refs:
   - "Reg. UE 2024/1689 (AI Act)"
-version: 0.1.3
+  - "D.Lgs. 160/2026 (adeguamento nazionale: polizia, responsabilità penale e civile)"
+version: 0.2.0
 status: alpha
 tags:
   - ai-act
@@ -25,10 +26,11 @@ Usa questa skill quando un ingegnere o un team tecnico deve:
 - Verificare la conformita' agli obblighi di trasparenza (art. 50)
 - Valutare se un modello rientra nella categoria GPAI con rischio sistemico (art. 51)
 - Supportare la redazione della FRIA (Fundamental Rights Impact Assessment, art. 27)
+- Valutare le conseguenze nazionali italiane (D.Lgs. 160/2026): reato art. 437-bis c.p., responsabilità dell'ente 231, azioni civili di risarcimento, uso dell'IA da parte delle Forze di polizia
 
 Non e' adatta a:
 - Sostituire consulenza legale per casi complessi o contenziosi
-- Coprire normative nazionali di attuazione (DDL italiano AI Act, linee guida AGID) non ancora disponibili
+- Coprire la L. 132/2025, i decreti attuativi previsti dal D.Lgs. 160/2026 e le linee guida AgID: non ancora catalogati tra le fonti
 - Certificazione o audit ufficiale
 
 **Target**: ingegneri software, product manager, responsabili tecnici che sviluppano o mettono in servizio sistemi di IA nell'Unione europea.
@@ -46,6 +48,7 @@ In base alla richiesta dell'utente, carica il file task appropriato:
 - **Obblighi deployer alto rischio**: quando l'utente deployer vuole verificare i propri obblighi (art. 26, 27), leggere `tasks/check-deployer-obligations.md`
 - **Obblighi GPAI provider**: quando l'utente sviluppa o distribuisce un modello GPAI (es. LLM), leggere `tasks/check-gpai-provider.md`
 - **Trasparenza (art. 50)**: quando l'utente vuole verificare gli obblighi di disclosure per chatbot, deep fake, emozioni, contenuti sintetici, leggere `tasks/check-trasparenza.md`
+- **Profili nazionali Italia (D.Lgs. 160/2026)**: quando l'utente chiede delle conseguenze penali, 231 o civili in Italia (reato 437-bis c.p., risarcimento danni, prova, assicurazione) o fornisce o usa sistemi IA per le Forze di polizia, leggere `tasks/check-profili-nazionali-italia.md`
 
 Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' desidera o proponi la classificazione come primo step.
 
@@ -76,7 +79,7 @@ Se la richiesta non e' chiara, chiedi all'utente quale sotto-attivita' desidera 
 
 ## Fonti normative
 
-Riferimenti completi in `references/sources.yaml`. Trascrizione fedele della fonte in `references/fonti/ai-act-it-eurlex.md`. Estratti tematici in `references/estratti/`.
+Riferimenti completi in `references/sources.yaml`. Trascrizioni fedeli delle fonti in `references/fonti/ai-act-it-eurlex.md` (Reg. 2024/1689) e `references/fonti/dlgs-160-2026.md` (D.Lgs. 9 settembre 2026, n. 160, GU n. 214 del 15/09/2026; il decreto non fissa la data di entrata in vigore, verificarla su Normattiva). Estratti tematici in `references/estratti/`.
 
 ## Limiti
 

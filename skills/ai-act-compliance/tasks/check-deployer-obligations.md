@@ -28,6 +28,7 @@ Leggere prima: `references/estratti/ai-act-art-26-27-deployer-fria.md`
 - [ ] Persone fisiche specificamente designate alla sorveglianza umana
 - [ ] Possesso di competenza, formazione, autorita'
 - [ ] Risorse di supporto
+- [ ] Italia: l'omissione intenzionale della sorveglianza umana da parte dell'utilizzatore professionale di un sistema ad alto rischio è reato (art. 437-bis c.4 c.p., D.Lgs. 160/2026) se ne deriva pericolo per vita o incolumità; vedi `check-profili-nazionali-italia.md`
 
 ### Par. 4 - Dati di input (se controllati dal deployer)
 - [ ] Rilevanza e rappresentativita' rispetto alla finalita'
@@ -145,6 +146,7 @@ Sinergia con DPIA: [Si - documento integrato / No - separati]
 - GDPR art. 30 (Registro) + 35 (DPIA): vedi skill `gdpr-registro-dpia`
 - LED (D.Lgs. 51/2018): per autorita' di contrasto
 - D.Lgs. 196/2003 art. 154-bis: per DPO settore pubblico
+- D.Lgs. 160/2026: reato 437-bis c.p., 231 art. 25-vicies, accesso alle prove e presunzione del nesso causale nelle azioni di risarcimento; per le Forze di polizia revisione umana qualificata e tracciata degli output (art. 3 c.4). Vedi `check-profili-nazionali-italia.md`
 
 ## Limiti
 
