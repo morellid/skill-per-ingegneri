@@ -1109,7 +1109,7 @@ skills:
     documentazione tecnica Allegato VII
   normative_refs:
   - Reg. UE 2024/2847 (Cyber Resilience Act)
-  version: 0.1.0-alpha
+  version: 0.1.1-alpha
   status: alpha
   tags:
   - cra

@@ -7,7 +7,7 @@ title: "CRA - Classificazione PDE e valutazione della conformita'"
 summary: "Classificazione di un prodotto con elementi digitali (PDE) ai sensi del CRA (default / importante Classe I / Classe II / critico) e selezione del modulo di valutazione della conformita' (A, B+C, H, certificazione europea) + struttura documentazione tecnica Allegato VII"
 normative_refs:
   - "Reg. UE 2024/2847 (Cyber Resilience Act)"
-version: 0.1.0-alpha
+version: 0.1.1-alpha
 status: alpha
 tags:
   - cra
@@ -29,7 +29,7 @@ Quando NON usarla:
 - Prodotti coperti da altri regolamenti settoriali esclusi dal CRA (dispositivi medici Reg. 2017/745 e 2017/746, omologazione veicoli Reg. 2019/2144, aviazione civile Reg. 2018/1139, equipaggiamento marittimo Direttiva 2014/90/UE, sicurezza nazionale/difesa, pezzi di ricambio identici).
 - Implementazione tecnica dei requisiti essenziali di cibersicurezza dell'Allegato I (es. progettazione SBOM, politica CVD, hardening). Questa skill aiuta a stabilire **cosa documentare** e **quale procedura seguire**, non a progettare i controlli tecnici.
 - Procedure ENISA di certificazione europea (Reg. (UE) 2019/881) viste dall'interno dell'ente certificatore.
-- Obblighi di segnalazione vulnerabilita'/incidenti dell'art. 14 (questi richiedono una skill operativa dedicata).
+- Obblighi di segnalazione vulnerabilita'/incidenti dell'art. 14: usare la skill `cra-segnalazione-art14`.
 
 ## Avvertenza
 
@@ -68,7 +68,7 @@ Cosa questa skill NON fa:
 - Non valuta tecnicamente la conformita' del PDE ai requisiti essenziali dell'Allegato I (parte I, prodotto; parte II, gestione vulnerabilita').
 - Non legge gli atti delegati/di esecuzione attesi ex artt. 7 par. 4 e 8 par. 1 (rispettivamente, descrizione tecnica Allegato III e classi critiche Allegato IV): rinvia alla pubblicazione di tali atti per categorie di confine.
 - Non valida la designazione dell'organismo notificato: il fabbricante deve scegliere un organismo notificato attivo (banca dati NANDO della Commissione europea) per il CRA dopo l'11 giugno 2026 (art. 71 par. 2).
-- Non si occupa degli obblighi di segnalazione delle vulnerabilita' attivamente sfruttate e degli incidenti gravi (art. 14): questi richiedono procedure operative dedicate (CSIRT coordinatore, ENISA, piattaforma unica di segnalazione art. 16).
+- Non si occupa degli obblighi di segnalazione delle vulnerabilita' attivamente sfruttate e degli incidenti gravi (art. 14): coperti dalla skill `cra-segnalazione-art14` (CSIRT coordinatore, ENISA, piattaforma unica di segnalazione art. 16).
 - Non sostituisce il giudizio del fabbricante o del professionista firmatario su classificazione, modulo, contenuto della DoC UE e della documentazione tecnica.
 - Non e' una guida all'implementazione tecnica della SBOM, della politica CVD o degli aggiornamenti automatici di sicurezza.
 - Non valuta la conformita' alle norme armonizzate (presunzione di conformita' ex art. 27): segnala il loro eventuale utilizzo e l'impatto sulla procedura, ma non ne verifica l'applicabilita' al progetto concreto.

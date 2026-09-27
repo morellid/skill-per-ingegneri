@@ -8,12 +8,16 @@ e questa skill aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 ## [Unreleased]
 
 ### Noti per v0.2 (rinviati)
-- Sotto-attivita' dedicata agli **obblighi di segnalazione** ex art. 14 (vulnerabilita' attivamente sfruttate e incidenti gravi al CSIRT coordinatore e all'ENISA tramite piattaforma unica di segnalazione art. 16).
 - Sotto-attivita' di supporto alla redazione della **politica di divulgazione coordinata delle vulnerabilita' (CVD)** ex Allegato I parte II.
 - Guida operativa alla redazione della **SBOM** in formato standard (richiesta dall'Allegato I parte II punto 1, dall'Allegato VII punto 8 e dall'art. 13 par. 24).
 - Skill complementare sull'integrazione con il **Reg. (UE) 2019/881** (sistemi europei di certificazione della cibersicurezza, livello "sostanziale" minimo).
 - Aggiornamento alla pubblicazione dell'**atto di esecuzione ex art. 7 par. 4** (descrizione tecnica categorie Allegato III, attesa per 11/12/2025) e degli **atti delegati ex art. 8 par. 1** sulle categorie dell'Allegato IV soggette a certificazione europea obbligatoria.
 - Sostituire le denominazioni abbreviate delle 19 categorie di Classe I in `tasks/classifica-pde.md` con le denominazioni letterali dell'Allegato III, allineando l'estratto curato. Aggiungere art. 2 par. 8 alla discussione delle esclusioni (limite degli obblighi di comunicazione per sicurezza nazionale).
+
+## [0.1.1-alpha] - 2026-09-27
+
+### Changed
+- Gli obblighi di segnalazione ex art. 14 rinviano ora alla skill dedicata `cra-segnalazione-art14` (issue #494), invece di indicarli come skill futura; rimossa la voce corrispondente da "Noti per v0.2".
 
 ## [0.1.0-alpha] - 2026-05-17
 
