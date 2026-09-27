@@ -1,6 +1,6 @@
 schema_version: 1
 skill: controllo-manutenzione-antincendio-dm2021
-last_verified: 2026-07-25
+last_verified: 2026-09-27
 sources:
   - id: dm-1-9-2021-gu230
     title: "D.M. 1° settembre 2021 (Min. interno / Min. lavoro) - Criteri generali per il controllo e la manutenzione degli impianti, attrezzature ed altri sistemi di sicurezza antincendio (art. 46 c.3 D.Lgs 81/2008) - GU Serie Generale n. 230 del 25/09/2021"
@@ -17,3 +17,63 @@ sources:
       doppio download riproducibile. Il decreto e gli Allegati I e II sono trascritti nel md_path. Le periodicita'
       puntuali dei controlli sono rinviate alle norme UNI di prodotto (Tabella 1, All. I), non riprodotte per diritto
       d'autore.
+  - id: dm-15-9-2022-gu224
+    title: "D.M. 15 settembre 2022 (Min. interno / Min. lavoro) - modifiche al D.M. 1 settembre 2021 - GU Serie Generale n. 224 del 24/09/2022"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2022/09/24/224/sg/pdf
+    accessed: 2026-09-27
+    sha256: 288369a4c4d9624da8b9fa9dae92a87ea948247794f72249178006ceb6097b14
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu224-2022.pdf
+    md_path: references/fonti/dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md
+    excerpt_path: references/estratti/controllo-manutenzione-checklist.md
+    notes: >-
+      Codice redazionale 22A05437, pp. 2-4 e allegati A-B. Inserisce l'art. 6 c.1-bis (art. 4 in vigore dal 25/9/2023), sostituisce il Prospetto 3.8 con 3.8.1-3.8.2, aggiunge il Prospetto 3.14 e modifica i punti 1, 3, 4 e 5 dell'Allegato II.
+  - id: dm-31-8-2023-gu212
+    title: "D.M. 31 agosto 2023 (Min. interno / Min. lavoro) - modifica al D.M. 1 settembre 2021 - GU Serie Generale n. 212 dell'11/09/2023"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2023/09/11/212/sg/pdf
+    accessed: 2026-09-27
+    sha256: af247b339513f308a554fa48d87e20713351ee947db1e2a1c0d3244046b592b6
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu212-2023.pdf
+    md_path: references/fonti/dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md
+    excerpt_path: references/estratti/controllo-manutenzione-checklist.md
+    notes: >-
+      Codice redazionale 23A04993, pp. 5-6. Differisce al 25/9/2024 il termine dell'art. 6 c.1-bis.
+  - id: dm-13-9-2024-gu219
+    title: "D.M. 13 settembre 2024 (Min. interno / Min. lavoro) - modifiche ed integrazioni al D.M. 1 settembre 2021 - GU Serie Generale n. 219 del 18/09/2024"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2024/09/18/219/sg/pdf
+    accessed: 2026-09-27
+    sha256: fe72b389a60d951a84497967e4e6e99a087d56eea1bdadcb87208c09b923c78c
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu219-2024.pdf
+    md_path: references/fonti/dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md
+    excerpt_path: references/estratti/controllo-manutenzione-checklist.md
+    notes: >-
+      Codice redazionale 24A04853, pp. 19-21. Differisce al 25/9/2025 il termine dell'art. 6 c.1-bis; sostituisce All. II punto 1 c.5 e punto 4 c.4 (valutazione semplificata); aggiunge punto 5 c.5-bis (tariffa).
+  - id: dm-15-7-2025-gu190
+    title: "D.M. 15 luglio 2025 (Min. interno / Min. lavoro) - modifica al D.M. 1 settembre 2021 - GU Serie Generale n. 190 del 18/08/2025"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2025/08/18/190/sg/pdf
+    accessed: 2026-09-27
+    sha256: 8799b06b0e76afc0ec8c7c86281d2405aae304d40747c0923b041ab24b1a3282
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu190-2025.pdf
+    md_path: references/fonti/dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md
+    excerpt_path: references/estratti/controllo-manutenzione-checklist.md
+    notes: >-
+      Codice redazionale 25A04576, pp. 11-12. Differisce al 25/9/2026 il termine dell'art. 6 c.1-bis; aggiorna la denominazione della Direzione centrale nell'Allegato II.
+  - id: dm-22-9-2026-gu222
+    title: "D.M. 22 settembre 2026 (Min. interno / Min. lavoro) - modifiche al D.M. 1 settembre 2021 - GU Serie Generale n. 222 del 24/09/2026"
+    type: gazzetta-ufficiale-pdf
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/09/24/222/sg/pdf
+    accessed: 2026-09-27
+    sha256: 0a6a22e924a2147299d7560fde7a4b41cfcfc919246564b27ff0aafaf3a2125b
+    license: "Riproduzione libera degli atti ufficiali dello Stato (art. 5 L. 633/1941)"
+    binary_path: not_in_repo/gu222-2026.pdf
+    md_path: references/fonti/dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md
+    excerpt_path: references/estratti/controllo-manutenzione-checklist.md
+    notes: >-
+      Codice redazionale 26A05078, pp. 11-12. Inserisce l'art. 6-bis (disposizioni transitorie): chi ha presentato istanza di valutazione entro il 25/9/2026 prosegue fino all'esito e comunque non oltre il 31/3/2027. Pagina ELI dell'atto: https://www.gazzettaufficiale.it/eli/id/2026/09/24/26A05078/SG

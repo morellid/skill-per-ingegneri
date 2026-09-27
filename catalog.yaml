@@ -857,13 +857,15 @@ skills:
 - id: controllo-manutenzione-antincendio-dm2021
   area: sicurezza-lavoro-cantieri
   title: Controllo e manutenzione antincendio (D.M. 1 settembre 2021)
-  summary: 'Controllo e manutenzione dei sistemi di sicurezza antincendio nei luoghi di lavoro (D.M. 1/9/2021, art. 46 D.Lgs
-    81/2008): registro dei controlli, sorveglianza/controllo periodico/manutenzione, norme UNI (Tab. 1), tecnici manutentori
-    qualificati. Non fissa periodicita'' puntuali.'
+  summary: 'Controllo e manutenzione antincendio nei luoghi di lavoro (D.M. 1/9/2021): registro dei controlli, sorveglianza/controllo
+    periodico/manutenzione, norme UNI (Tab. 1), tecnici manutentori qualificati (dal 25/9/2026, transitorio art. 6-bis fino
+    al 31/3/2027). Non fissa periodicita''.'
   normative_refs:
-  - D.M. 1 settembre 2021 (controllo e manutenzione sistemi di sicurezza antincendio) - artt. 1-6 e Allegati I-II
+  - D.M. 1 settembre 2021 (controllo e manutenzione sistemi di sicurezza antincendio) - artt. 1-6-bis e Allegati I-II
+  - D.M. 15 settembre 2022, 31 agosto 2023, 13 settembre 2024, 15 luglio 2025 (modifiche al D.M. 1 settembre 2021)
+  - D.M. 22 settembre 2026 (art. 6-bis, disciplina transitoria tecnici manutentori qualificati)
   - D.Lgs. 81/2008 art. 46 c.3 lett. a) punto 3 (prevenzione incendi e gestione emergenze)
-  version: 0.1.0-alpha
+  version: 0.2.0-alpha
   status: alpha
   tags:
   - antincendio

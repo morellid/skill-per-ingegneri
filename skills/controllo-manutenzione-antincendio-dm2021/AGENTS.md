@@ -46,8 +46,13 @@ Trascrizione in `references/fonti/dm-1-9-2021-controllo-manutenzione-antincendio
   ecc. Presunzione di conformità ma applicazione volontaria (art. 3 c.2).
 - **Tecnici manutentori qualificati (art. 4 + All. II)**: manutenzione e controllo periodico eseguiti da tecnici
   qualificati (formazione + valutazione + attestazione VVF); qualifica valida su tutto il territorio nazionale. Regime
-  transitorio: chi ha ≥3 anni di attività alla data di entrata in vigore è esonerato dal corso ma non dalla valutazione.
-- **Entrata in vigore/abrogazioni**: in vigore dal 25/9/2022 (art. 6); abrogati art. 3 c.1 lett. e), art. 4 e allegato
+  transitorio: chi ha ≥3 anni di manutenzione o controllo periodico alla data di entrata in vigore è esonerato dal
+  corso e può chiedere la valutazione semplificata (All. II p.1 c.5 e p.4 c.4, testo D.M. 13/9/2024); l'attestazione
+  richiede comunque valutazione positiva.
+- **Disciplina transitoria (art. 6-bis, D.M. 22/9/2026)**: chi ha presentato istanza di valutazione entro il 25/9/2026
+  prosegue per le tipologie dell'istanza fino all'esito e comunque non oltre il 31/3/2027. Non è una proroga generale.
+- **Entrata in vigore/abrogazioni**: in vigore dal 25/9/2022 (art. 6 c.1); art. 4 (qualificazione) in vigore dal
+  25/9/2026 (art. 6 c.1-bis, termine differito dai D.M. 15/9/2022, 31/8/2023, 13/9/2024, 15/7/2025); abrogati art. 3 c.1 lett. e), art. 4 e allegato
   VI del D.M. 10/3/1998 (art. 5).
 
 ## Convenzioni specifiche

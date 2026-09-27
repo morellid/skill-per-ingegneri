@@ -5,6 +5,33 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.2.0-alpha] - 2026-09-27
+
+### Changed (closes #502)
+- Trigger normativo: **D.M. 22 settembre 2026** (GU Serie Generale n. 222 del 24/09/2026, cod. 26A05078), che
+  inserisce l'**art. 6-bis** (disposizioni transitorie) nel D.M. 1/9/2021. Recepiti anche i precedenti decreti di
+  modifica non ancora presenti nella skill: D.M. 15/9/2022 (GU n. 224/2022), D.M. 31/8/2023 (GU n. 212/2023), D.M.
+  13/9/2024 (GU n. 219/2024), D.M. 15/7/2025 (GU n. 190/2025). PDF scaricati con `scripts/fetch-sources.sh`, SHA256 in
+  `references/sources.yaml`, operativo trascritto in
+  `references/fonti/dm-modifiche-2022-2026-controllo-manutenzione-antincendio.md`.
+- Fonte base aggiornata al testo consolidato: art. 6 c.1-bis (art. 4 sulla qualificazione in vigore dal **25/9/2026**),
+  art. 6-bis, All. II punto 1 c.5 e punto 4 c.4 (testo D.M. 13/9/2024), punto 5 c.5-bis, Prospetti 3.8.1/3.8.2/3.14,
+  denominazione della Direzione centrale.
+- `verifica-qualificazione-manutentori`: obbligo di qualifica dal 25/9/2026; art. 6-bis (chi ha presentato istanza
+  entro il 25/9/2026 prosegue per le tipologie dell'istanza fino all'esito e comunque non oltre il 31/3/2027);
+  qualifica per tipologia di impianto.
+
+### Fixed
+- Esonero dal corso per chi ha ≥3 anni di attività: la skill diceva che il soggetto "deve comunque sottoporsi alla
+  valutazione", mentre il testo (sia originario sia sostituito dal D.M. 13/9/2024) dice che "può richiedere" la
+  valutazione (semplificata); l'attestazione resta subordinata a valutazione positiva (All. II punto 1 c.6).
+  Corretti task, checklist, AGENTS.md ed esempio `periodicita-e-manutentore`.
+
+### Note
+- La issue #502 ipotizzava la fine netta del transitorio e l'invalidità dei "NOT (Nulla Osta Transitori)": il testo del
+  D.M. 22/9/2026 introduce invece una disciplina transitoria fino al 31/3/2027 e non menziona alcun "NOT"; la skill
+  segue il testo della GU.
+
 ## [0.1.0-alpha] - 2026-07-25
 
 ### Added (closes #482)

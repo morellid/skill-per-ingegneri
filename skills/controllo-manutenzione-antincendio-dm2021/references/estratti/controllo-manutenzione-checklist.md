@@ -6,7 +6,9 @@ Allegati I-II).
 ## A. Inquadramento e applicabilità
 
 - [ ] L'attività ha impianti/attrezzature/altri **sistemi di sicurezza antincendio** da mantenere (art. 2).
-- [ ] Il decreto è **in vigore dal 25 settembre 2022** (art. 6: un anno dopo la pubblicazione del 25/9/2021).
+- [ ] Il decreto è **in vigore dal 25 settembre 2022** (art. 6 c.1: un anno dopo la pubblicazione del 25/9/2021);
+      le disposizioni dell'**art. 4 sulla qualificazione** dei tecnici manutentori sono **in vigore dal 25 settembre
+      2026** (art. 6 c.1-bis, termine da ultimo differito dal D.M. 15/7/2025).
 - [ ] Il decreto **sostituisce** l'art. 3 c.1 lett. e), l'art. 4 e l'allegato VI del **D.M. 10 marzo 1998** (art. 5).
 
 ## B. I tre livelli di attività (art. 1 definizioni)
@@ -39,8 +41,14 @@ Allegati I-II).
 - [ ] Manutenzione e controllo periodico sono **eseguiti da tecnici manutentori qualificati** (art. 4 c.1; All. I p.1).
 - [ ] Il tecnico ha **conoscenza, abilità e competenza** (All. II p.1) acquisite con **percorso di formazione** +
       **valutazione finale**; **attestazione rilasciata dal Corpo nazionale dei vigili del fuoco**.
-- [ ] **Regime transitorio**: chi alla data di entrata in vigore svolge manutenzione **da almeno 3 anni** è esonerato
-      dal corso ma **deve comunque sottoporsi alla valutazione** (All. II p.1 c.5).
+- [ ] **Esonero dal corso**: chi alla data di entrata in vigore svolge manutenzione o controllo periodico **da almeno
+      tre anni** è esonerato dal corso e **può richiedere** la valutazione con **modalità semplificate** (All. II p.1
+      c.5 e p.4 c.4, come sostituiti dal D.M. 13/9/2024); l'attestazione VVF segue comunque a valutazione positiva
+      (All. II p.1 c.6).
+- [ ] **Disciplina transitoria (art. 6-bis, D.M. 22/9/2026)**: chi ha presentato **istanza di valutazione entro il
+      25/9/2026** può continuare manutenzione e controlli per le **tipologie dell'istanza** fino alla conclusione della
+      valutazione e **comunque non oltre il 31/3/2027**. Senza istanza entro il 25/9/2026 serve l'attestazione.
+- [ ] L'attestazione copre le **tipologie** per cui è stata chiesta la valutazione (All. II p.4 c.2, p.5 c.7).
 - [ ] La **qualifica è valida su tutto il territorio nazionale** (art. 4 c.3).
 - [ ] La sorveglianza NON richiede il tecnico qualificato (può farla il lavoratore istruito).
 
