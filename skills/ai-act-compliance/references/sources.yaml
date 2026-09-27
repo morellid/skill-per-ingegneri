@@ -1,6 +1,6 @@
 schema_version: 1
 skill: ai-act-compliance
-last_verified: 2026-05-17
+last_verified: 2026-09-27
 
 # Ogni sorgente e' un oggetto con i campi:
 #   id: identificatore locale (usato in task files come rinvio)
@@ -46,3 +46,23 @@ sources:
       http://data.europa.eu/eli/reg/2024/1689/oj (reindirizza a eur-lex con WAF).
       Prima del release stabile occorre trovare un mirror scaricabile e verificare
       l'hash. L'estratto committato e' la prova di lettura effettiva del PDF.
+
+  - id: dlgs-160-2026-gu214
+    title: "D.Lgs. 9 settembre 2026, n. 160 - Adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2024/1689 [...] in materia di utilizzo dei sistemi di intelligenza artificiale per l'attivita' di polizia e di responsabilita' civile e penale"
+    type: decreto
+    url: https://www.gazzettaufficiale.it/eli/gu/2026/09/15/214/sg/pdf
+    accessed: 2026-09-27
+    sha256: 5da3dde091e115ec02a9275ad13455f83c478d4eb256d912d9f8e132c7779e75
+    license: public-domain
+    binary_path: not_in_repo/gu214-2026.pdf
+    md_path: references/fonti/dlgs-160-2026.md
+    excerpt_path: references/estratti/dlgs-160-2026-profili-nazionali.md
+    notes: |
+      Fascicolo completo GU Serie Generale n. 214 del 15/09/2026; il decreto occupa le pp. 1-10
+      (codice redazionale 26G00179), seguito dalle NOTE redazionali. Attuazione della delega
+      dell'art. 24 L. 132/2025. Titolo I: uso dell'IA da parte delle Forze di polizia (artt. 1-10);
+      Titolo II: nuovo art. 437-bis c.p., art. 359-ter c.p.p., art. 25-vicies D.Lgs. 231/2001,
+      strumenti processuali civili (artt. 11-20); Titolo III: transitorie e invarianza (artt. 21-22).
+      Il decreto non contiene un articolo sull'entrata in vigore e non fissa alcuna data: la data
+      di entrata in vigore (rilevante per il termine di un anno dell'art. 21) va verificata su
+      Normattiva, non dedotta dal testo.

@@ -11,6 +11,27 @@ versionamento [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Riconfermare date Omnibus dopo pubblicazione in GUUE (testo definitivo + lettera precisa per il nuovo divieto su CSAM/nudifier/deepfake sessuali)
 - Catalogare linee guida Commissione su pratiche vietate, classificazione art. 6, norme armonizzate
 
+## [0.2.0] - 2026-09-27
+
+### Added - profili nazionali D.Lgs. 9 settembre 2026, n. 160 (issue #501)
+
+- Fonte `dlgs-160-2026-gu214`: PDF GU Serie Generale n. 214 del 15/09/2026, SHA256 registrato; trascrizione in `references/fonti/dlgs-160-2026.md` (Titoli II e III integrali, Titolo I per le parti operative)
+- Estratto `references/estratti/dlgs-160-2026-profili-nazionali.md`
+- Task `tasks/check-profili-nazionali-italia.md`: reato art. 437-bis c.p., art. 25-vicies D.Lgs. 231/2001, accesso alle prove (art. 17), presunzione del nesso causale (art. 18), irrilevanza della sola conformità (art. 19), azione diretta verso l'assicuratore (art. 20), Forze di polizia (artt. 1-10, 21)
+- Esempio `examples/profili-nazionali-triage-pronto-soccorso/`
+- Rinvii nei task `check-deployer-obligations.md` (sorveglianza umana, sinergie) e `check-high-risk-provider.md` (art. 14, sinergie)
+- `normative_refs`, descrizione, routing in `SKILL.md`, README, AGENTS.md, `agents/openai.yaml`
+
+### Note - differenze rispetto al testo della issue
+
+- Il decreto **non contiene un articolo sull'entrata in vigore** e non fissa alcuna data: nessuna data riportata nella skill.
+- Il 437-bis richiede pericolo per la **vita o l'incolumità pubblica o individuale** (o per la sicurezza dello Stato), non per la "sicurezza pubblica".
+- Il termine di **30 giorni** (art. 20) è quello per comunicare l'esistenza della polizza RC, non un termine di adeguamento.
+- La presunzione del nesso causale (art. 18) non è limitata al fornitore.
+- L'art. 25-vicies prevede anche **sanzioni interdittive** (art. 9 c.2 lett. b-e D.Lgs. 231/2001).
+- Il Titolo I (polizia) dichiara di **non introdurre nuovi obblighi** rispetto al Reg. 2024/1689.
+- Il decreto richiama l'art. 612-quater c.p. senza descriverlo: la skill non lo qualifica.
+
 ## [0.1.3] - 2026-05-17
 
 ### Changed - rinvii Digital Omnibus (accordo provvisorio 7 maggio 2026, issue #163)

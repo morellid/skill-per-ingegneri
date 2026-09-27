@@ -66,6 +66,7 @@ Leggere prima:
 - [ ] Misure proporzionate ai rischi, all'autonomia, al contesto d'uso
 - [ ] Capacita' di "human in the loop" o "human on the loop" come applicabile
 - [ ] Sistemi alto rischio Allegato III par. 1 lett. a (identificazione biometrica): doppia verifica umana (par. 5)
+- [ ] Italia: omettere le misure di sicurezza o di sorveglianza umana previste per la progettazione e l'immissione sul mercato è reato (art. 437-bis c.p., D.Lgs. 160/2026) se ne deriva pericolo per vita o incolumità; i parametri di sorveglianza umana sono tra i documenti che il giudice civile può ordinare di esibire (art. 17). Vedi `check-profili-nazionali-italia.md`
 
 #### Art. 15 - Accuratezza, robustezza, cybersicurezza
 - [ ] Livelli adeguati di accuratezza, robustezza e cybersicurezza
@@ -222,6 +223,7 @@ Conformita' a tutta la Sezione 2 + responsabilita' attribuibili al provider.
 - **MDR/IVDR** (dispositivi medici): integrazione con conformity assessment esistente
 - **NIS2** per cybersicurezza enterprise: integrazione con misure art. 15
 - **Codice Privacy italiano** D.Lgs. 196/2003: norme nazionali
+- **D.Lgs. 160/2026**: reato 437-bis c.p., 231 art. 25-vicies, regole civili (esibizione di log, risk management, documentazione tecnica e parametri di sorveglianza umana; nesso causale presunto; conformità certificata non esimente). Vedi `check-profili-nazionali-italia.md`
 
 ## Limiti
 

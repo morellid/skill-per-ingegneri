@@ -1,6 +1,6 @@
 # AI Act Compliance (Reg. UE 2024/1689)
 
-> Versione: 0.1.0-alpha
+> Versione: 0.2.0 (alpha)
 > Stato: in sviluppo
 
 Skill di supporto alla compliance al Regolamento UE 2024/1689 (AI Act) per fornitori, deployer e fornitori di modelli GPAI.
@@ -14,19 +14,21 @@ Skill di supporto alla compliance al Regolamento UE 2024/1689 (AI Act) per forni
 
 ## Cosa fa
 
-Cinque sotto-attivita' distinte:
+Sei sotto-attivita' distinte:
 
 1. **Classifica sistema AI** (`classifica-sistema.md`) - vietato / high-risk / trasparenza / minimo / GPAI
 2. **Check obblighi provider high-risk** (`check-high-risk-provider.md`) - art. 8-22 + conformity assessment
 3. **Check obblighi deployer** (`check-deployer-obligations.md`) - art. 26-27 incluso FRIA
 4. **Check obblighi GPAI provider** (`check-gpai-provider.md`) - art. 53-55
 5. **Check obblighi trasparenza** (`check-trasparenza.md`) - art. 50
+6. **Profili nazionali Italia** (`check-profili-nazionali-italia.md`) - D.Lgs. 160/2026: reato art. 437-bis c.p., 231 art. 25-vicies, prova e nesso causale nelle azioni di risarcimento, assicurazione, Forze di polizia
 
 Vedi [SKILL.md](SKILL.md) per il dettaglio.
 
 ## Fonti consultate
 
-- Reg. UE 2024/1689 (AI Act) - testo italiano OJ 12/07/2024 - hash registrato
+- Reg. UE 2024/1689 (AI Act) - testo italiano OJ 12/07/2024
+- D.Lgs. 9 settembre 2026, n. 160 - GU Serie Generale n. 214 del 15/09/2026 - hash SHA256 registrato
 
 Vedi [references/sources.yaml](references/sources.yaml).
 
@@ -43,6 +45,7 @@ Per uso integrato:
 - Norme armonizzate ETSI/CEN-CENELEC in sviluppo
 - Code of Practice GPAI in via di adozione
 - Non sostituisce conformity assessment di organismo notificato
+- D.Lgs. 160/2026: data di entrata in vigore non fissata dal testo; decreti attuativi del Titolo I e L. 132/2025 non catalogati
 
 Vedi [SKILL.md](SKILL.md) sezione "Limiti".
 
