@@ -1,6 +1,6 @@
 # cra-classificazione-pde
 
-> Versione: 0.1.0-alpha
+> Versione: 0.1.1-alpha
 > Stato: in sviluppo (Livello 1, autore + review adversariale)
 
 Skill di supporto alla **classificazione dei prodotti con elementi digitali (PDE)** ai sensi del **Regolamento (UE) 2024/2847 - Cyber Resilience Act (CRA)** e alla selezione della procedura di valutazione della conformita' e della documentazione tecnica richieste.
@@ -24,7 +24,7 @@ Quattro sotto-attivita':
 - Non valuta tecnicamente la conformita' del PDE ai requisiti essenziali dell'Allegato I.
 - Non sostituisce gli atti di esecuzione/delegati attesi (Art. 7 par. 4 - descrizione tecnica Allegato III, attesa per 11/12/2025; Art. 8 par. 1 - categorie Allegato IV soggette a certificazione UE).
 - Non valida la scelta dell'organismo notificato (banca dati NANDO).
-- Non copre gli obblighi di segnalazione vulnerabilita'/incidenti gravi (Art. 14, fuori scope v0.1).
+- Non copre gli obblighi di segnalazione vulnerabilita'/incidenti gravi (Art. 14): vedi la skill `cra-segnalazione-art14`.
 - Non e' una guida operativa all'implementazione SBOM, politica CVD, aggiornamenti automatici (requisiti tecnici Allegato I, parte II).
 - Non interpreta sanzioni amministrative del diritto interno (Art. 64).
 
